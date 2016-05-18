@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+    <head data-layout-view="wide">
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Modify Element (karamba) - Grasshopper Component Reference</title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+    <meta name="description" content="A guide to component Modify Element (karamba) in Grasshopper 3D." />
+<meta name="title" content="Grasshopper Component Reference" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://www.grasshopper3d.com/page/component-reference" />
+<meta property="og:title" content="Grasshopper Component Reference" />
+<link rel="image_src" href="http://grasshopperhelp.tk/ning/2985220.jpg" />
+
+<style type="text/css" media="screen,projection">
+#xg_navigation ul div.xg_subtab ul li a {
+    color:#666666;
+    background:#EAFFBD;
+}
+#xg_navigation ul div.xg_subtab ul li a:hover {
+    color:#333333;
+    background:#F2FFD6;
+}
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../../ning/index.css);
+@import url(../../ning/page.css);
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../../ning/1187549422.css);
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../../ning/1187545030.css);
+</style>
+
+
+<link href="../../style.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+    </head>
+    <body>
+    
+        
+        <div id="xg" class="xg_theme xg_widget_page xg_widget_page_page xg_widget_page_page_show" data-layout-pack="classic">
+            <div id="xg_head">
+                <div id="xg_masthead">
+                    <p id="xg_sitename"><a id="application_name_header_link" href="http://www.grasshopper3d.com/">Grasshopper</a></p>
+                    <p id="xg_sitedesc" class="xj_site_desc">algorithmic modeling for Rhino</p>
+                </div>
+                <div id="xg_navigation">
+                    <ul>
+    <li dojotype="SubTabHover" id="xg_tab_main" class="xg_subtab"><a href="http://www.grasshopper3d.com/"><span>Home</span></a></li>
+	<li dojotype="SubTabHover" id="xg_tab_photo" class="xg_subtab"><a href="http://www.grasshopper3d.com/photo"><span>Galleries</span></a></li>
+	<li dojotype="SubTabHover" id="xg_tab_xn0" class="xg_subtab"><a href="http://www.grasshopper3d.com/page/download-1"><span>Download</span></a></li>
+	<li dojotype="SubTabHover" id="xg_tab_xn2" class="xg_subtab"><a href="http://www.grasshopper3d.com/page/tutorials-1"><span>Tutorials</span></a></li>
+	<li dojotype="SubTabHover" id="xg_tab_forum" class="xg_subtab"><a href="http://www.grasshopper3d.com/forum"><span>Discussions</span></a></li>
+	<li dojotype="SubTabHover" id="xg_tab_docs" class="xg_subtab this"><a href="http://www.grasshopperhelp.tk/"><span>Documentation</span></a></li>
+	<li id="xg_tab_events" class="xg_subtab"><a href="http://www.grasshopper3d.com/events"><span>Events</span></a></li>
+	<li id="xg_tab_profile" class="xg_subtab"><a href="http://www.grasshopper3d.com/"><span>My Page</span></a></li></ul>
+
+                </div>
+            </div>
+            
+            <div id="xg_body">
+                
+				<div class="page">
+
+<div class="content">
+
+<div>
+<h1><img src="../../icons/Karamba/Modify_Element_(karamba).png"/> Modify Element (karamba)</h1>
+<p><a href="../../index.html">Component Index</a> &gt; Karamba > Karamba Model > <b>Modify Element (karamba)</b></p>
+</div>
+<h3>Modifies all types of elements or creates element modifiers that do this when the model is assembled.</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Beam</b></td><td></td><td>Beam to modify on the fly or no input if modification shall take place in the model based on the identifier.</td><td>Element</td></tr>
+<tr><td><b>BeamId</b></td><td></td><td>New Identifier for the given beam or identifier of the beam in the model which should be modified. Use a regular expression to modify more than one beam. Regular expressions start with '&'.</td><td>Text</td></tr>
+<tr><td><b>Height</b></td><td></td><td>Height [cm] of cross-section to given value in centimeter if >0.</td><td>Number</td></tr>
+<tr><td><b>Thickness</b></td><td></td><td>Thickness [cm] of walls of cross-section if >0.</td><td>Number</td></tr>
+<tr><td><b>Active</b></td><td></td><td>If true the beam is active in structure.</td><td>Boolean</td></tr>
+<tr><td><b>Bending</b></td><td></td><td>If true the beam has bending stiffness. Otherwise it is a truss.</td><td>Boolean</td></tr>
+<tr><td><b>ecce-loc</b></td><td></td><td>Vector of eccentricity in [cm] of cross section centroid with respect to beam axis in local beam coordinates.</td><td>Vector</td></tr>
+<tr><td><b>ecce-glo</b></td><td></td><td>Vector of eccentricity in [cm] of cross section centroid with respect to beam axis in global coordinates.</td><td>Vector</td></tr>
+<tr><td><b>Buckling</b></td><td></td><td>If true cross section optimization of the element is done considering buckling. Deactivating buckling can be useful for simulating slender elements which you want to pretension in reality but not in the numerical model.</td><td>Boolean</td></tr>
+<tr><td><b>BklLenY</b></td><td></td><td>Buckling length [m] of element in local Y-direction if > 0.</td><td>Number</td></tr>
+<tr><td><b>BklLenZ</b></td><td></td><td>Buckling length [m] of element in local Z-direction if > 0.</td><td>Number</td></tr>
+<tr><td><b>BklLenLT</b></td><td></td><td>Buckling length [m] of element for lateral torsional buckling if > 0.</td><td>Number</td></tr>
+<tr><td><b>lg</b></td><td></td><td>Distance of transverse load [cm] from the center of shear of the cross section. Is positive if the load points towards the shear center and acts destabilizing for lateral torsional buckling.</td><td>Number</td></tr>
+<tr><td><b>NII</b></td><td></td><td>Normal force [kN] that induces second order theory effects. In case of trusses or beams it is an axial normal force. Tension is positive, compression negative.</td><td>Number</td></tr>
+<tr><td><b>X-ori</b></td><td></td><td>Set X-Orientation of the beam: Flips X-axis of the beam if it points in opposite direction to this vector.</td><td>Vector</td></tr>
+<tr><td><b>Z-ori</b></td><td></td><td>New orientation of the local Z-axis of beam.</td><td>Vector</td></tr>
+<tr><td><b>Alpha</b></td><td></td><td>Rotation angle about local X-axis [deg] in addition to orientation given by orientation vector.</td><td>Number</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Elem</b></td><td></td><td>Modified element or element-modifier.</td><td>Element</td></tr>
+</tbody>
+</table>
+
+
+  </div>
+
+</div>
+
+            </div>
+            <div id="xg_foot">
+                <p class="left">
+    © 2016             &nbsp; Created by <a href="http://www.grasshopper3d.com/profile/HarshGupta367/">Harsh Gupta</a>.            &nbsp;
+    Powered by<a href="http://www.ning.com/?utm_source=online&utm_content=bazfooter&utm_campaign=9000&utm_medium=prd&utm_term=grasshopper3d"><img width="87" height="15" src="../../ning/ningmode.jpg" alt="Ning" class="poweredbylogo" /></a>
+	</p>
+    <p class="right xg_lightfont">
+                    <a href="http://www.grasshopper3d.com/main/embeddable/list">Badges</a> &nbsp;|&nbsp;
+                        <a href="http://www.grasshopper3d.com/main/index/report" dojotype="PromptToJoinLink" _joinprompttext="Please sign up or sign in to complete this step." _hassignup="true" _signinurl="http://www.grasshopper3d.com/main/authorization/signIn?target=http%3A%2F%2Fwww.grasshopper3d.com%2Fmain%2Findex%2Freport">Report an Issue</a> &nbsp;|&nbsp;
+                        <a href="http://www.grasshopper3d.com/main/authorization/termsOfService?previousUrl=http%3A%2F%2Fwww.grasshopper3d.com%2Fpage%2Fcomponent-reference">Terms of Service</a>
+            </p>
+
+            </div>
+        </div>
+        
+        <div id="xj_baz17246" class="xg_theme"></div>
+<div id="xg_overlay" style="display:none;">
+<!--[if lte IE 6.5]><iframe></iframe><![endif]-->
+</div>
+<!--googleoff: all--><noscript>
+	<style type="text/css" media="screen">
+        #xg { position:relative;top:120px; }
+        #xn_bar { top:120px; }
+	</style>
+	<div class="errordesc noscript">
+		<div>
+            <h3><strong>Hello, you need to enable JavaScript to use Grasshopper.</strong></h3>
+            <p>Please check your browser settings or contact your system administrator.</p>
+			
+		</div>
+	</div>
+</noscript><!--googleon: all-->
+
+    </body>
+</html>

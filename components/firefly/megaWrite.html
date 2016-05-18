@@ -1,0 +1,173 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+    <head data-layout-view="wide">
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Mega Write - Grasshopper Component Reference</title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+    <meta name="description" content="A guide to component Mega Write in Grasshopper 3D." />
+<meta name="title" content="Grasshopper Component Reference" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://www.grasshopper3d.com/page/component-reference" />
+<meta property="og:title" content="Grasshopper Component Reference" />
+<link rel="image_src" href="http://grasshopperhelp.tk/ning/2985220.jpg" />
+
+<style type="text/css" media="screen,projection">
+#xg_navigation ul div.xg_subtab ul li a {
+    color:#666666;
+    background:#EAFFBD;
+}
+#xg_navigation ul div.xg_subtab ul li a:hover {
+    color:#333333;
+    background:#F2FFD6;
+}
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../../ning/index.css);
+@import url(../../ning/page.css);
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../../ning/1187549422.css);
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../../ning/1187545030.css);
+</style>
+
+
+<link href="../../style.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+    </head>
+    <body>
+    
+        
+        <div id="xg" class="xg_theme xg_widget_page xg_widget_page_page xg_widget_page_page_show" data-layout-pack="classic">
+            <div id="xg_head">
+                <div id="xg_masthead">
+                    <p id="xg_sitename"><a id="application_name_header_link" href="http://www.grasshopper3d.com/">Grasshopper</a></p>
+                    <p id="xg_sitedesc" class="xj_site_desc">algorithmic modeling for Rhino</p>
+                </div>
+                <div id="xg_navigation">
+                    <ul>
+    <li dojotype="SubTabHover" id="xg_tab_main" class="xg_subtab"><a href="http://www.grasshopper3d.com/"><span>Home</span></a></li>
+	<li dojotype="SubTabHover" id="xg_tab_photo" class="xg_subtab"><a href="http://www.grasshopper3d.com/photo"><span>Galleries</span></a></li>
+	<li dojotype="SubTabHover" id="xg_tab_xn0" class="xg_subtab"><a href="http://www.grasshopper3d.com/page/download-1"><span>Download</span></a></li>
+	<li dojotype="SubTabHover" id="xg_tab_xn2" class="xg_subtab"><a href="http://www.grasshopper3d.com/page/tutorials-1"><span>Tutorials</span></a></li>
+	<li dojotype="SubTabHover" id="xg_tab_forum" class="xg_subtab"><a href="http://www.grasshopper3d.com/forum"><span>Discussions</span></a></li>
+	<li dojotype="SubTabHover" id="xg_tab_docs" class="xg_subtab this"><a href="http://www.grasshopperhelp.tk/"><span>Documentation</span></a></li>
+	<li id="xg_tab_events" class="xg_subtab"><a href="http://www.grasshopper3d.com/events"><span>Events</span></a></li>
+	<li id="xg_tab_profile" class="xg_subtab"><a href="http://www.grasshopper3d.com/"><span>My Page</span></a></li></ul>
+
+                </div>
+            </div>
+            
+            <div id="xg_body">
+                
+				<div class="page">
+
+<div class="content">
+
+<div>
+<h1><img src="../../icons/Firefly/Mega_Write.png"/> Mega Write</h1>
+<p><a href="../../index.html">Component Index</a> &gt; Firefly > Firefly Arduino & IO Boards > <b>Mega Write</b></p>
+</div>
+<h3>This component will write values to all corresponding digital<br>pins on an Arduino Mega board.  Note: This component is<br>meant to be used in tandem with the Firefly Firmata Arduino<br>Sketch which can be downloaded from the Firefly website<br>at: http://www.fireflyexperiments.com.</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Start</b></td><td></td><td>Input an Boolean value (True/False) to start writing values to the Arduino</td><td>Boolean</td></tr>
+<tr><td><b>DPin2~</b></td><td></td><td>Integer to write to Digital Pin 2.  Right-click on the input to set the input status (Digital, PWM, Servo).  If the Digital status is set then the integer (0) will send a LOW value and a (1) will send a HIGH value.  If the PWM status is set then any value between 0-255 can be used to analogWrite to the specified pin.  If the Servo status is set then any value between 0-180 can be used to for servo positioning.</td><td>Integer</td></tr>
+<tr><td><b>DPin3~</b></td><td></td><td>Integer to write to Digital Pin 3.  Right-click on the input to set the input status (Digital, PWM, Servo).  If the Digital status is set then the integer (0) will send a LOW value and a (1) will send a HIGH value.  If the PWM status is set then any value between 0-255 can be used to analogWrite to the specified pin.  If the Servo status is set then any value between 0-180 can be used to for servo positioning.</td><td>Integer</td></tr>
+<tr><td><b>DPin4~</b></td><td></td><td>Integer to write to Digital Pin 4.  Right-click on the input to set the input status (Digital, PWM, Servo).  If the Digital status is set then the integer (0) will send a LOW value and a (1) will send a HIGH value.  If the PWM status is set then any value between 0-255 can be used to analogWrite to the specified pin.  If the Servo status is set then any value between 0-180 can be used to for servo positioning.</td><td>Integer</td></tr>
+<tr><td><b>DPin5~</b></td><td></td><td>Integer to write to Digital Pin 5.  Right-click on the input to set the input status (Digital, PWM, Servo).  If the Digital status is set then the integer (0) will send a LOW value and a (1) will send a HIGH value.  If the PWM status is set then any value between 0-255 can be used to analogWrite to the specified pin.  If the Servo status is set then any value between 0-180 can be used to for servo positioning.</td><td>Integer</td></tr>
+<tr><td><b>DPin6~</b></td><td></td><td>Integer to write to Digital Pin 6.  Right-click on the input to set the input status (Digital, PWM, Servo).  If the Digital status is set then the integer (0) will send a LOW value and a (1) will send a HIGH value.  If the PWM status is set then any value between 0-255 can be used to analogWrite to the specified pin.  If the Servo status is set then any value between 0-180 can be used to for servo positioning.</td><td>Integer</td></tr>
+<tr><td><b>DPin7~</b></td><td></td><td>Integer to write to Digital Pin 7.  Right-click on the input to set the input status (Digital, PWM, Servo).  If the Digital status is set then the integer (0) will send a LOW value and a (1) will send a HIGH value.  If the PWM status is set then any value between 0-255 can be used to analogWrite to the specified pin.  If the Servo status is set then any value between 0-180 can be used to for servo positioning.</td><td>Integer</td></tr>
+<tr><td><b>DPin8~</b></td><td></td><td>Integer to write to Digital Pin 8.  Right-click on the input to set the input status (Digital, PWM, Servo).  If the Digital status is set then the integer (0) will send a LOW value and a (1) will send a HIGH value.  If the PWM status is set then any value between 0-255 can be used to analogWrite to the specified pin.  If the Servo status is set then any value between 0-180 can be used to for servo positioning.</td><td>Integer</td></tr>
+<tr><td><b>DPin9~</b></td><td></td><td>Integer to write to Digital Pin 9.  Right-click on the input to set the input status (Digital, PWM, Servo).  If the Digital status is set then the integer (0) will send a LOW value and a (1) will send a HIGH value.  If the PWM status is set then any value between 0-255 can be used to analogWrite to the specified pin.  If the Servo status is set then any value between 0-180 can be used to for servo positioning.</td><td>Integer</td></tr>
+<tr><td><b>DPin10~</b></td><td></td><td>Integer to write to Digital Pin 10.  Right-click on the input to set the input status (Digital, PWM, Servo).  If the Digital status is set then the integer (0) will send a LOW value and a (1) will send a HIGH value.  If the PWM status is set then any value between 0-255 can be used to analogWrite to the specified pin.  If the Servo status is set then any value between 0-180 can be used to for servo positioning.</td><td>Integer</td></tr>
+<tr><td><b>DPin11~</b></td><td></td><td>Integer to write to Digital Pin 11.  Right-click on the input to set the input status (Digital, PWM, Servo).  If the Digital status is set then the integer (0) will send a LOW value and a (1) will send a HIGH value.  If the PWM status is set then any value between 0-255 can be used to analogWrite to the specified pin.  If the Servo status is set then any value between 0-180 can be used to for servo positioning.</td><td>Integer</td></tr>
+<tr><td><b>DPin12~</b></td><td></td><td>Integer to write to Digital Pin 12.  Right-click on the input to set the input status (Digital, PWM, Servo).  If the Digital status is set then the integer (0) will send a LOW value and a (1) will send a HIGH value.  If the PWM status is set then any value between 0-255 can be used to analogWrite to the specified pin.  If the Servo status is set then any value between 0-180 can be used to for servo positioning.</td><td>Integer</td></tr>
+<tr><td><b>DPin13~</b></td><td></td><td>Integer to write to Digital Pin 13.  Right-click on the input to set the input status (Digital, PWM, Servo).  If the Digital status is set then the integer (0) will send a LOW value and a (1) will send a HIGH value.  If the PWM status is set then any value between 0-255 can be used to analogWrite to the specified pin.  If the Servo status is set then any value between 0-180 can be used to for servo positioning.</td><td>Integer</td></tr>
+<tr><td><b>DPin32</b></td><td></td><td>Integer to write to Digital Pin 32.  Right-click on the input to set the input status (Digital or Servo).  If the Digital status is set then the integer (0) will send a LOW value and a (1) will send a HIGH value.  If the Servo status is set then any value between 0-180 can be used to for servo positioning.</td><td>Integer</td></tr>
+<tr><td><b>DPin33</b></td><td></td><td>Integer to write to Digital Pin 33.  Right-click on the input to set the input status (Digital or Servo).  If the Digital status is set then the integer (0) will send a LOW value and a (1) will send a HIGH value.  If the Servo status is set then any value between 0-180 can be used to for servo positioning.</td><td>Integer</td></tr>
+<tr><td><b>DPin34</b></td><td></td><td>Integer to write to Digital Pin 34.  Right-click on the input to set the input status (Digital or Servo).  If the Digital status is set then the integer (0) will send a LOW value and a (1) will send a HIGH value.  If the Servo status is set then any value between 0-180 can be used to for servo positioning.</td><td>Integer</td></tr>
+<tr><td><b>DPin35</b></td><td></td><td>Integer to write to Digital Pin 35.  Right-click on the input to set the input status (Digital or Servo).  If the Digital status is set then the integer (0) will send a LOW value and a (1) will send a HIGH value.  If the Servo status is set then any value between 0-180 can be used to for servo positioning.</td><td>Integer</td></tr>
+<tr><td><b>DPin36</b></td><td></td><td>Integer to write to Digital Pin 36.  Right-click on the input to set the input status (Digital or Servo).  If the Digital status is set then the integer (0) will send a LOW value and a (1) will send a HIGH value.  If the Servo status is set then any value between 0-180 can be used to for servo positioning.</td><td>Integer</td></tr>
+<tr><td><b>DPin37</b></td><td></td><td>Integer to write to Digital Pin 37.  Right-click on the input to set the input status (Digital or Servo).  If the Digital status is set then the integer (0) will send a LOW value and a (1) will send a HIGH value.  If the Servo status is set then any value between 0-180 can be used to for servo positioning.</td><td>Integer</td></tr>
+<tr><td><b>DPin38</b></td><td></td><td>Integer to write to Digital Pin 38.  Right-click on the input to set the input status (Digital or Servo).  If the Digital status is set then the integer (0) will send a LOW value and a (1) will send a HIGH value.  If the Servo status is set then any value between 0-180 can be used to for servo positioning.</td><td>Integer</td></tr>
+<tr><td><b>DPin39</b></td><td></td><td>Integer to write to Digital Pin 39.  Right-click on the input to set the input status (Digital or Servo).  If the Digital status is set then the integer (0) will send a LOW value and a (1) will send a HIGH value.  If the Servo status is set then any value between 0-180 can be used to for servo positioning.</td><td>Integer</td></tr>
+<tr><td><b>DPin40</b></td><td></td><td>Integer to write to Digital Pin 40.  Right-click on the input to set the input status (Digital or Servo).  If the Digital status is set then the integer (0) will send a LOW value and a (1) will send a HIGH value.  If the Servo status is set then any value between 0-180 can be used to for servo positioning.</td><td>Integer</td></tr>
+<tr><td><b>DPin41</b></td><td></td><td>Integer to write to Digital Pin 41.  Right-click on the input to set the input status (Digital or Servo).  If the Digital status is set then the integer (0) will send a LOW value and a (1) will send a HIGH value.  If the Servo status is set then any value between 0-180 can be used to for servo positioning.</td><td>Integer</td></tr>
+<tr><td><b>DPin42</b></td><td></td><td>Integer to write to Digital Pin 42.  Right-click on the input to set the input status (Digital or Servo).  If the Digital status is set then the integer (0) will send a LOW value and a (1) will send a HIGH value.  If the Servo status is set then any value between 0-180 can be used to for servo positioning.</td><td>Integer</td></tr>
+<tr><td><b>DPin43</b></td><td></td><td>Integer to write to Digital Pin 43.  Right-click on the input to set the input status (Digital or Servo).  If the Digital status is set then the integer (0) will send a LOW value and a (1) will send a HIGH value.  If the Servo status is set then any value between 0-180 can be used to for servo positioning.</td><td>Integer</td></tr>
+<tr><td><b>DPin44</b></td><td></td><td>Integer to write to Digital Pin 44.  Right-click on the input to set the input status (Digital or Servo).  If the Digital status is set then the integer (0) will send a LOW value and a (1) will send a HIGH value.  If the Servo status is set then any value between 0-180 can be used to for servo positioning.</td><td>Integer</td></tr>
+<tr><td><b>DPin45</b></td><td></td><td>Integer to write to Digital Pin 45.  Right-click on the input to set the input status (Digital or Servo).  If the Digital status is set then the integer (0) will send a LOW value and a (1) will send a HIGH value.  If the Servo status is set then any value between 0-180 can be used to for servo positioning.</td><td>Integer</td></tr>
+<tr><td><b>DPin46</b></td><td></td><td>Integer to write to Digital Pin 46.  Right-click on the input to set the input status (Digital or Servo).  If the Digital status is set then the integer (0) will send a LOW value and a (1) will send a HIGH value.  If the Servo status is set then any value between 0-180 can be used to for servo positioning.</td><td>Integer</td></tr>
+<tr><td><b>DPin47</b></td><td></td><td>Integer to write to Digital Pin 47.  Right-click on the input to set the input status (Digital or Servo).  If the Digital status is set then the integer (0) will send a LOW value and a (1) will send a HIGH value.  If the Servo status is set then any value between 0-180 can be used to for servo positioning.</td><td>Integer</td></tr>
+<tr><td><b>DPin48</b></td><td></td><td>Integer to write to Digital Pin 48.  Right-click on the input to set the input status (Digital or Servo).  If the Digital status is set then the integer (0) will send a LOW value and a (1) will send a HIGH value.  If the Servo status is set then any value between 0-180 can be used to for servo positioning.</td><td>Integer</td></tr>
+<tr><td><b>DPin49</b></td><td></td><td>Integer to write to Digital Pin 49.  Right-click on the input to set the input status (Digital or Servo).  If the Digital status is set then the integer (0) will send a LOW value and a (1) will send a HIGH value.  If the Servo status is set then any value between 0-180 can be used to for servo positioning.</td><td>Integer</td></tr>
+<tr><td><b>DPin50</b></td><td></td><td>Integer to write to Digital Pin 50.  Right-click on the input to set the input status (Digital or Servo).  If the Digital status is set then the integer (0) will send a LOW value and a (1) will send a HIGH value.  If the Servo status is set then any value between 0-180 can be used to for servo positioning.</td><td>Integer</td></tr>
+<tr><td><b>DPin51</b></td><td></td><td>Integer to write to Digital Pin 51.  Right-click on the input to set the input status (Digital or Servo).  If the Digital status is set then the integer (0) will send a LOW value and a (1) will send a HIGH value.  If the Servo status is set then any value between 0-180 can be used to for servo positioning.</td><td>Integer</td></tr>
+<tr><td><b>DPin52</b></td><td></td><td>Integer to write to Digital Pin 52.  Right-click on the input to set the input status (Digital or Servo).  If the Digital status is set then the integer (0) will send a LOW value and a (1) will send a HIGH value.  If the Servo status is set then any value between 0-180 can be used to for servo positioning.</td><td>Integer</td></tr>
+<tr><td><b>DPin53</b></td><td></td><td>Integer to write to Digital Pin 53.  Right-click on the input to set the input status (Digital or Servo).  If the Digital status is set then the integer (0) will send a LOW value and a (1) will send a HIGH value.  If the Servo status is set then any value between 0-180 can be used to for servo positioning.</td><td>Integer</td></tr>
+<tr><td><b>Port</b></td><td></td><td>The Port Number has to be the same Serial Port assigned in the Arduino Sketch.  You can find which COM port you are using by clicking on the Tools>Serial Port button on the Arduino IDE.</td><td>Integer</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Out</b></td><td></td><td>Returns the string that will be sent to the Arduino board.  The Arduino sketch that accompanies this component will split this string up and send the values to the appropriate pins.</td><td>Text</td></tr>
+<tr><td><b>Msg</b></td><td></td><td>Current status of Serial Port</td><td>Text</td></tr>
+</tbody>
+</table>
+
+
+  </div>
+
+</div>
+
+            </div>
+            <div id="xg_foot">
+                <p class="left">
+    © 2016             &nbsp; Created by <a href="http://www.grasshopper3d.com/profile/HarshGupta367/">Harsh Gupta</a>.            &nbsp;
+    Powered by<a href="http://www.ning.com/?utm_source=online&utm_content=bazfooter&utm_campaign=9000&utm_medium=prd&utm_term=grasshopper3d"><img width="87" height="15" src="../../ning/ningmode.jpg" alt="Ning" class="poweredbylogo" /></a>
+	</p>
+    <p class="right xg_lightfont">
+                    <a href="http://www.grasshopper3d.com/main/embeddable/list">Badges</a> &nbsp;|&nbsp;
+                        <a href="http://www.grasshopper3d.com/main/index/report" dojotype="PromptToJoinLink" _joinprompttext="Please sign up or sign in to complete this step." _hassignup="true" _signinurl="http://www.grasshopper3d.com/main/authorization/signIn?target=http%3A%2F%2Fwww.grasshopper3d.com%2Fmain%2Findex%2Freport">Report an Issue</a> &nbsp;|&nbsp;
+                        <a href="http://www.grasshopper3d.com/main/authorization/termsOfService?previousUrl=http%3A%2F%2Fwww.grasshopper3d.com%2Fpage%2Fcomponent-reference">Terms of Service</a>
+            </p>
+
+            </div>
+        </div>
+        
+        <div id="xj_baz17246" class="xg_theme"></div>
+<div id="xg_overlay" style="display:none;">
+<!--[if lte IE 6.5]><iframe></iframe><![endif]-->
+</div>
+<!--googleoff: all--><noscript>
+	<style type="text/css" media="screen">
+        #xg { position:relative;top:120px; }
+        #xn_bar { top:120px; }
+	</style>
+	<div class="errordesc noscript">
+		<div>
+            <h3><strong>Hello, you need to enable JavaScript to use Grasshopper.</strong></h3>
+            <p>Please check your browser settings or contact your system administrator.</p>
+			
+		</div>
+	</div>
+</noscript><!--googleon: all-->
+
+    </body>
+</html>
