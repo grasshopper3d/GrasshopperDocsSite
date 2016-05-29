@@ -52,12 +52,11 @@
                 </div>
                 <div id="xg_navigation">
                     <ul>
-    <li dojotype="SubTabHover" id="xg_tab_main" class="xg_subtab"><a href="http://www.grasshopper3d.com/"><span>Home</span></a></li>
-	<li dojotype="SubTabHover" id="xg_tab_photo" class="xg_subtab"><a href="http://www.grasshopper3d.com/photo"><span>Galleries</span></a></li>
-	<li dojotype="SubTabHover" id="xg_tab_xn0" class="xg_subtab"><a href="http://www.grasshopper3d.com/page/download-1"><span>Download</span></a></li>
-	<li dojotype="SubTabHover" id="xg_tab_xn2" class="xg_subtab"><a href="http://www.grasshopper3d.com/page/tutorials-1"><span>Tutorials</span></a></li>
-	<li dojotype="SubTabHover" id="xg_tab_forum" class="xg_subtab"><a href="http://www.grasshopper3d.com/forum"><span>Discussions</span></a></li>
-	<li dojotype="SubTabHover" id="xg_tab_docs" class="xg_subtab this"><a href="http://rhino.github.io/"><span>Documentation</span></a></li>
+    <li id="xg_tab_main" class="xg_subtab"><a href="http://www.grasshopper3d.com/"><span>Home</span></a></li>
+	<li id="xg_tab_photo" class="xg_subtab"><a href="http://www.grasshopper3d.com/photo"><span>View</span></a></li>
+	<li id="xg_tab_xn0" class="xg_subtab"><a href="http://www.grasshopper3d.com/page/download-1"><span>Get</span></a></li>
+	<li id="xg_tab_xn2" class="xg_subtab this"><a href="http://www.grasshopper3d.com/page/tutorials-1"><span>Learn</span></a></li>
+	<li id="xg_tab_forum" class="xg_subtab"><a href="http://www.grasshopper3d.com/forum"><span>Talk</span></a></li>
 	<li id="xg_tab_events" class="xg_subtab"><a href="http://www.grasshopper3d.com/events"><span>Events</span></a></li>
 	<li id="xg_tab_profile" class="xg_subtab"><a href="http://www.grasshopper3d.com/"><span>My Page</span></a></li></ul>
 
@@ -72,7 +71,7 @@
 
 <div>
 <h1>Grasshopper Components</h1>
-<p>Version 0.9.76.0, <b>1990</b> components including addons.</p>
+<p>Version 0.9.76.0, <b>2640</b> components including addons.</p>
 </div>
 <div class="cparent">
 <div class="cchild">
@@ -164,6 +163,7 @@
 <tr><td><img src="icons/Surface/Untrim.png"/></td><td><a href="components/surface/untrim.html">Untrim</a><br><span class="desc">Remove all trim curves from a surface.</span></td></tr>
 <tr><td><img src="icons/Surface/Divide_Surface.png"/></td><td><a href="components/surface/divideSurface.html">Divide Surface</a><br><span class="desc">Generate a grid of {uv} points on a surface.</span></td></tr>
 <tr><td><img src="icons/Surface/Surface_Frames.png"/></td><td><a href="components/surface/surfaceFrames.html">Surface Frames</a><br><span class="desc">Generate a grid of {uv} frames on a surface</span></td></tr>
+<tr><td><img src="icons/Params/Octopus.png"/></td><td><a href="components/params/octopus.html">Octopus</a><br><span class="desc">Multi-objective seach and optimzation</span></td></tr>
 </tbody>
 </table>
 
@@ -586,8 +586,8 @@
 <tr><td><img src="icons/Vector/Plane_3Pt.png"/></td><td><a href="components/vector/plane3Pt.html">Plane 3Pt</a><br><span class="desc">Create a plane through three points.</span></td></tr>
 <tr><td><img src="icons/Vector/Plane_Closest_Point.png"/></td><td><a href="components/vector/planeClosestPoint.html">Plane Closest Point</a><br><span class="desc">Find the closest point on a plane.</span></td></tr>
 <tr><td><img src="icons/Vector/Plane_Fit.png"/></td><td><a href="components/vector/planeFit.html">Plane Fit</a><br><span class="desc">Fit a plane through a set of points.</span></td></tr>
-<tr><td><img src="icons/Vector/Line_+_Line.png"/></td><td><a href="components/vector/lineLine.html">Line + Line</a><br><span class="desc">Create a plane from two line segments.</span></td></tr>
-<tr><td><img src="icons/Vector/Line_+_Pt.png"/></td><td><a href="components/vector/linePt.html">Line + Pt</a><br><span class="desc">Create a plane from a line and a point.</span></td></tr>
+<tr><td><img src="icons/Vector/Line___Line.png"/></td><td><a href="components/vector/lineLine.html">Line + Line</a><br><span class="desc">Create a plane from two line segments.</span></td></tr>
+<tr><td><img src="icons/Vector/Line___Pt.png"/></td><td><a href="components/vector/linePt.html">Line + Pt</a><br><span class="desc">Create a plane from a line and a point.</span></td></tr>
 <tr><td><img src="icons/Vector/Plane_Normal.png"/></td><td><a href="components/vector/planeNormal.html">Plane Normal</a><br><span class="desc">Create a plane perpendicular to a vector.</span></td></tr>
 <tr><td><img src="icons/Vector/Plane_Offset.png"/></td><td><a href="components/vector/planeOffset.html">Plane Offset</a><br><span class="desc">Offset a plane.</span></td></tr>
 <tr><td><img src="icons/Vector/Plane_Origin.png"/></td><td><a href="components/vector/planeOrigin.html">Plane Origin</a><br><span class="desc">Change the origin point of a plane</span></td></tr>
@@ -1404,6 +1404,70 @@
 </div>
 </div>
 <div class="libheader">
+<a href="http://www.food4rhino.com/project/bullant?ufh"><h2>BullAnt</h2></a>
+<span class="desc">Version 1.3.01</span>
+<span class="codeword">(Released 2016-Mar-08)</span><br>
+</div>
+<div class="cparent">
+<div class="cchild">
+<h3>BullAnt</h3>
+<table class="compos">
+<tbody>
+<tr><td><img src="icons/BullAnt/ggCatalogueProfile.png"/></td><td><a href="components/bullant/ggCatalogueProfile.html">ggCatalogueProfile</a><br><span class="desc">Select Catalogue profile</span></td></tr>
+<tr><td><img src="icons/BullAnt/ggInsertPoint.png"/></td><td><a href="components/bullant/ggInsertPoint.html">ggInsertPoint</a><br><span class="desc">Generate Insertion Point</span></td></tr>
+<tr><td><img src="icons/BullAnt/ggGenerateAngle.png"/></td><td><a href="components/bullant/ggGenerateAngle.html">ggGenerateAngle</a><br><span class="desc">Generates an Angle Profile</span></td></tr>
+<tr><td><img src="icons/BullAnt/ggGenerateChannel.png"/></td><td><a href="components/bullant/ggGenerateChannel.html">ggGenerateChannel</a><br><span class="desc">Generates an Channel (U) Profile</span></td></tr>
+<tr><td><img src="icons/BullAnt/ggGenerateCHS.png"/></td><td><a href="components/bullant/ggGenerateCHS.html">ggGenerateCHS</a><br><span class="desc">Generates an Circular Hollow Section Profile</span></td></tr>
+<tr><td><img src="icons/BullAnt/ggGenerateUnivBeam.png"/></td><td><a href="components/bullant/ggGenerateUnivBeam.html">ggGenerateUnivBeam</a><br><span class="desc">Generates an Universal Beam ( I ) Profile</span></td></tr>
+<tr><td><img src="icons/BullAnt/ggGenerateRHS.png"/></td><td><a href="components/bullant/ggGenerateRHS.html">ggGenerateRHS</a><br><span class="desc">Generates a Rectangular or Square Hollow Section Profile</span></td></tr>
+<tr><td><img src="icons/BullAnt/ggBreakDownBlocks.png"/></td><td><a href="components/bullant/ggBreakDownBlocks.html">ggBreakDownBlocks</a><br><span class="desc">Break Blocks down to base geometry and layer names</span></td></tr>
+<tr><td><img src="icons/BullAnt/ggCellFillet.png"/></td><td><a href="components/bullant/ggCellFillet.html">ggCellFillet</a><br><span class="desc">Fillets a cell polygon</span></td></tr>
+<tr><td><img src="icons/BullAnt/ggConvCurve.png"/></td><td><a href="components/bullant/ggConvCurve.html">ggConvCurve</a><br><span class="desc">Convert Curve to polycurve consisting of lines and arcs</span></td></tr>
+<tr><td><img src="icons/BullAnt/ggPolylineToPolyCurve.png"/></td><td><a href="components/bullant/ggPolylineToPolyCurve.html">ggPolylineToPolyCurve</a><br><span class="desc">Convert Polyline to polycurve consisting of lines and arcs</span></td></tr>
+<tr><td><img src="icons/BullAnt/ggCreateTreeFromLists.png"/></td><td><a href="components/bullant/ggCreateTreeFromLists.html">ggCreateTreeFromLists</a><br><span class="desc">Create Tree from two Lists</span></td></tr>
+<tr><td><img src="icons/BullAnt/ggNetworkFillet.png"/></td><td><a href="components/bullant/ggNetworkFillet.html">ggNetworkFillet</a><br><span class="desc">Fillets a curve network</span></td></tr>
+<tr><td><img src="icons/BullAnt/ggCurveNetworkForceDensity.png"/></td><td><a href="components/bullant/ggCurveNetworkForceDensity.html">ggCurveNetworkForceDensity</a><br><span class="desc">Force Density application to Curve Network</span></td></tr>
+<tr><td><img src="icons/BullAnt/ggCurveNetworkForceEqLength.png"/></td><td><a href="components/bullant/ggCurveNetworkForceEqLength.html">ggCurveNetworkForceEqLength</a><br><span class="desc">Force Density application to Curve Network to achieve equal length</span></td></tr>
+<tr><td><img src="icons/BullAnt/ggNetworkPatch.png"/></td><td><a href="components/bullant/ggNetworkPatch.html">ggNetworkPatch</a><br><span class="desc">Create a curve network patch</span></td></tr>
+<tr><td><img src="icons/BullAnt/ggNetworkPolygons.png"/></td><td><a href="components/bullant/ggNetworkPolygons.html">ggNetworkPolygons</a><br><span class="desc">Polygon from Curve network</span></td></tr>
+<tr><td><img src="icons/BullAnt/ggNetworkToMesh.png"/></td><td><a href="components/bullant/ggNetworkToMesh.html">ggNetworkToMesh</a><br><span class="desc">Convert a curve network to Mesh</span></td></tr>
+<tr><td><img src="icons/BullAnt/ggConnectPoints.png"/></td><td><a href="components/bullant/ggConnectPoints.html">ggConnectPoints</a><br><span class="desc">Dot to Dot, Truss Style</span></td></tr>
+<tr><td><img src="icons/BullAnt/ggConnectPointSets.png"/></td><td><a href="components/bullant/ggConnectPointSets.html">ggConnectPointSets</a><br><span class="desc">Dot to Dot in Sets of points</span></td></tr>
+<tr><td><img src="icons/BullAnt/ggDynamicPathMapper.png"/></td><td><a href="components/bullant/ggDynamicPathMapper.html">ggDynamicPathMapper</a><br><span class="desc">Dynamic Path Mapper</span></td></tr>
+<tr><td><img src="icons/BullAnt/ggMeshFalseColor.png"/></td><td><a href="components/bullant/ggMeshFalseColor.html">ggMeshFalseColor</a><br><span class="desc">False Color applied to Mesh</span></td></tr>
+<tr><td><img src="icons/BullAnt/ggGeoDome.png"/></td><td><a href="components/bullant/ggGeoDome.html">ggGeoDome</a><br><span class="desc">Geodesic Dome</span></td></tr>
+<tr><td><img src="icons/BullAnt/ggInflateMesh.png"/></td><td><a href="components/bullant/ggInflateMesh.html">ggInflateMesh</a><br><span class="desc">Inflate Mesh</span></td></tr>
+<tr><td><img src="icons/BullAnt/ggInflateMeshTargetHeight.png"/></td><td><a href="components/bullant/ggInflateMeshTargetHeight.html">ggInflateMeshTargetHeight</a><br><span class="desc">Inflate Mesh to Target Height</span></td></tr>
+<tr><td><img src="icons/BullAnt/ggInflateSurface.png"/></td><td><a href="components/bullant/ggInflateSurface.html">ggInflateSurface</a><br><span class="desc">Inflate Surface</span></td></tr>
+<tr><td><img src="icons/BullAnt/ggLinesToSegments.png"/></td><td><a href="components/bullant/ggLinesToSegments.html">ggLinesToSegments</a><br><span class="desc">Split list of lines into colinear segments</span></td></tr>
+<tr><td><img src="icons/BullAnt/ggInflateParams.png"/></td><td><a href="components/bullant/ggInflateParams.html">ggInflateParams</a><br><span class="desc">Inflate Params</span></td></tr>
+<tr><td><img src="icons/BullAnt/ggMeshPaths.png"/></td><td><a href="components/bullant/ggMeshPaths.html">ggMeshPaths</a><br><span class="desc">Mesh Paths along face edges</span></td></tr>
+<tr><td><img src="icons/BullAnt/ggForceDensityRelaxParams.png"/></td><td><a href="components/bullant/ggForceDensityRelaxParams.html">ggForceDensityRelaxParams</a><br><span class="desc">Force Density Mesh Relaxation Params</span></td></tr>
+<tr><td><img src="icons/BullAnt/ggMeshRepelVerts.png"/></td><td><a href="components/bullant/ggMeshRepelVerts.html">ggMeshRepelVerts</a><br><span class="desc">Force Density Mesh Vertex Repelling</span></td></tr>
+<tr><td><img src="icons/BullAnt/ggMeshResize.png"/></td><td><a href="components/bullant/ggMeshResize.html">ggMeshResize</a><br><span class="desc">Resize Mesh</span></td></tr>
+<tr><td><img src="icons/BullAnt/ggForceDensityRelax.png"/></td><td><a href="components/bullant/ggForceDensityRelax.html">ggForceDensityRelax</a><br><span class="desc">Force Density Mesh Relaxation</span></td></tr>
+<tr><td><img src="icons/BullAnt/ggOcTree.png"/></td><td><a href="components/bullant/ggOcTree.html">ggOcTree</a><br><span class="desc">Geometry Gym OcTree</span></td></tr>
+<tr><td><img src="icons/BullAnt/ggPolyCurve.png"/></td><td><a href="components/bullant/ggPolyCurve.html">ggPolyCurve</a><br><span class="desc">Interpolate Poly Curve</span></td></tr>
+<tr><td><img src="icons/BullAnt/ggPolyhedron.png"/></td><td><a href="components/bullant/ggPolyhedron.html">ggPolyhedron</a><br><span class="desc">Generate Polyhedron</span></td></tr>
+<tr><td><img src="icons/BullAnt/ggProximity_Points.png"/></td><td><a href="components/bullant/ggProximityPoints.html">ggProximity Points</a><br><span class="desc">Geometry Gym Proximity Points</span></td></tr>
+<tr><td><img src="icons/BullAnt/ggRemoveDuplicates.png"/></td><td><a href="components/bullant/ggRemoveDuplicates.html">ggRemoveDuplicates</a><br><span class="desc">Make set of curves without duplicates</span></td></tr>
+<tr><td><img src="icons/BullAnt/ggSimplifyPolyline.png"/></td><td><a href="components/bullant/ggSimplifyPolyline.html">ggSimplifyPolyline</a><br><span class="desc">Simplify Polyline by merging co-linear segments.  If all vertex are within tolerance of a line from first to last point, a line is returned.  Else the routine is recursively called on polylines before and after vertex with greatest deviation.</span></td></tr>
+<tr><td><img src="icons/BullAnt/ggCurvesSplitIntersect.png"/></td><td><a href="components/bullant/ggCurvesSplitIntersect.html">ggCurvesSplitIntersect</a><br><span class="desc">Split curves at Intersection Locations</span></td></tr>
+<tr><td><img src="icons/BullAnt/ggTrussType.png"/></td><td><a href="components/bullant/ggTrussType.html">ggTrussType</a><br><span class="desc">Truss Type: 0 - PRATT, 1 - WARREN, 2 - VIERENDEEL, 3 - BROWN, 4 - HOWE</span></td></tr>
+<tr><td><img src="icons/BullAnt/ggTessellation.png"/></td><td><a href="components/bullant/ggTessellation.html">ggTessellation</a><br><span class="desc">Generate Tessellation</span></td></tr>
+<tr><td><img src="icons/BullAnt/ggTrussFromCurves.png"/></td><td><a href="components/bullant/ggTrussFromCurves.html">ggTrussFromCurves</a><br><span class="desc">Divide and Connect curves, Truss Style</span></td></tr>
+<tr><td><img src="icons/BullAnt/ggTrussFromCurvesLength.png"/></td><td><a href="components/bullant/ggTrussFromCurvesLength.html">ggTrussFromCurvesLength</a><br><span class="desc">Divide and Connect curves by length, Truss Style</span></td></tr>
+<tr><td><img src="icons/BullAnt/ggUnroll.png"/></td><td><a href="components/bullant/ggUnroll.html">ggUnroll</a><br><span class="desc">Unroll Surface</span></td></tr>
+<tr><td><img src="icons/BullAnt/ggVectorStreams.png"/></td><td><a href="components/bullant/ggVectorStreams.html">ggVectorStreams</a><br><span class="desc">Geometry Gym Vector Streams, work in progress, do not rely on results as may change in future revisions</span></td></tr>
+<tr><td><img src="icons/BullAnt/ggProfileOnCurve.png"/></td><td><a href="components/bullant/ggProfileOnCurve.html">ggProfileOnCurve</a><br><span class="desc">Orients Profile on Curve</span></td></tr>
+<tr><td><img src="icons/BullAnt/ggCreateSectionProp.png"/></td><td><a href="components/bullant/ggCreateSectionProp.html">ggCreateSectionProp</a><br><span class="desc">Create Structural Section Property</span></td></tr>
+<tr><td><img src="icons/BullAnt/ggSweepProfile.png"/></td><td><a href="components/bullant/ggSweepProfile.html">ggSweepProfile</a><br><span class="desc">Sweeps Profile on Curve</span></td></tr>
+</tbody>
+</table>
+
+</div>
+</div>
+<div class="libheader">
 <a href="http://www.food4rhino.com/project/centipede?ufh"><h2>Centipede</h2></a>
 <span class="desc">Version 0.7b</span>
 <span class="codeword">(Released 2012-Oct-03)</span><br>
@@ -1591,6 +1655,24 @@
 <tr><td><img src="icons/Elefront/Data_Description.png"/></td><td><a href="components/elefront/dataDescription.html">Data Description</a><br><span class="desc">Use this component to guide your data streams on your canvas in an orderly fashion. Use a meaningful description</span></td></tr>
 <tr><td><img src="icons/Elefront/Block.png"/></td><td><a href="components/elefront/block.html">Block</a><br><span class="desc">Block Parameter</span></td></tr>
 <tr><td><img src="icons/Elefront/Extended_Geometry.png"/></td><td><a href="components/elefront/extendedGeometry.html">Extended Geometry</a><br><span class="desc">Extended Geometry Parameter</span></td></tr>
+</tbody>
+</table>
+
+</div>
+</div>
+<div class="libheader">
+<a href="http://www.food4rhino.com/project/elk?ufh"><h2>Elk</h2></a>
+<span class="desc">Version 2.2.2</span>
+<span class="codeword">(Released 2016-Feb-01)</span><br>
+</div>
+<div class="cparent">
+<div class="cchild">
+<h3>Elk2</h3>
+<table class="compos">
+<tbody>
+<tr><td><img src="icons/Elk/Location.png"/></td><td><a href="components/elk/location.html">Location</a><br><span class="desc">OpenStreetMap and Topograhy</span></td></tr>
+<tr><td><img src="icons/Elk/OSM_Data.png"/></td><td><a href="components/elk/oSMData.html">OSM Data</a><br><span class="desc">Get Point and Tag data from an OSM file.</span></td></tr>
+<tr><td><img src="icons/Elk/Topography.png"/></td><td><a href="components/elk/topography.html">Topography</a><br><span class="desc">Generate Topography surfaces from USGS IMG Raster files or from SRTM HGT files.</span></td></tr>
 </tbody>
 </table>
 
@@ -1807,6 +1889,24 @@
 </div>
 </div>
 <div class="libheader">
+<a href="http://www.food4rhino.com/project/ghexcel?ufh"><h2>GhExcel</h2></a>
+<span class="desc">Version 1.2</span>
+<span class="codeword">(Released 2013-Jun-01)</span><br>
+</div>
+<div class="cparent">
+<div class="cchild">
+<h3>ExcelReadWrite</h3>
+<table class="compos">
+<tbody>
+<tr><td><img src="icons/GhExcel/ExcelDynamicRead.png"/></td><td><a href="components/ghexcel/excelDynamicRead.html">ExcelDynamicRead</a><br><span class="desc">Read data dynamically from excel</span></td></tr>
+<tr><td><img src="icons/GhExcel/ExcelStaticRead.png"/></td><td><a href="components/ghexcel/excelStaticRead.html">ExcelStaticRead</a><br><span class="desc">Read data statically from excel</span></td></tr>
+<tr><td><img src="icons/GhExcel/ExcelWrite.png"/></td><td><a href="components/ghexcel/excelWrite.html">ExcelWrite</a><br><span class="desc">Write data to excel</span></td></tr>
+</tbody>
+</table>
+
+</div>
+</div>
+<div class="libheader">
 <a href="http://www.food4rhino.com/project/ghowl?ufh"><h2>gHowl</h2></a>
 <span class="desc">Version 0.1.r50.0</span>
 <span class="codeword">(Released 2014-Nov-21)</span><br>
@@ -1873,6 +1973,471 @@
 <table class="compos">
 <tbody>
 <tr><td><img src="icons/gHowl/XYZ_to_Geo.png"/></td><td><a href="components/ghowl/xYZToGeo.html">XYZ to Geo</a><br><span class="desc">Map XYZ Coordinates to WSG84</span></td></tr>
+</tbody>
+</table>
+
+</div>
+</div>
+<div class="libheader">
+<a href="http://www.food4rhino.com/project/heteroptera?ufh"><h2>Heteroptera</h2></a>
+<span class="desc">Version 0.2.0.6</span>
+<span class="codeword">(Released 2016-Apr-22)</span><br>
+</div>
+<div class="cparent">
+<div class="cchild">
+<h3>Uncertainty</h3>
+<table class="compos">
+<tbody>
+<tr><td><img src="icons/Heteroptera/Biased_Distributer.png"/></td><td><a href="components/heteroptera/biasedDistributer.html">Biased Distributer</a><br><span class="desc">This is useful for allocating a set of input points to different branch of a output point-tree based on some attractor point called Jellum,so the points bias to belong to a branch related to the nearer Jellum.</span></td></tr>
+<tr><td><img src="icons/Heteroptera/Careless_Range.png"/></td><td><a href="components/heteroptera/carelessRange.html">Careless Range</a><br><span class="desc">Divide a domain into careless equivalent parts and return the numbers</span></td></tr>
+<tr><td><img src="icons/Heteroptera/Cheater_Dice.png"/></td><td><a href="components/heteroptera/cheaterDice.html">Cheater Dice</a><br><span class="desc">Unequal chance item Dice</span></td></tr>
+<tr><td><img src="icons/Heteroptera/Noise_Oscillator.png"/></td><td><a href="components/heteroptera/noiseOscillator.html">Noise Oscillator</a><br><span class="desc">Noise Oscillator(streaming noise)</span></td></tr>
+<tr><td><img src="icons/Heteroptera/Point_Emitter.png"/></td><td><a href="components/heteroptera/pointEmitter.html">Point Emitter</a><br><span class="desc">Emit a bunch of point from each source point  (You can also use F5 key or Grasshopper Timer to refresh the component)</span></td></tr>
+<tr><td><img src="icons/Heteroptera/Chancy_Allocator.png"/></td><td><a href="components/heteroptera/chancyAllocator.html">Chancy Allocator</a><br><span class="desc">Allocating Items to the random branch by defining the chance of each branch. so each item tents to belong to the branch with higher chance.</span></td></tr>
+<tr><td><img src="icons/Heteroptera/Curve_Emitter.png"/></td><td><a href="components/heteroptera/curveEmitter.html">Curve Emitter</a><br><span class="desc">Emit a bunch of point from each curve source   (You can also use F5 key or Grasshopper Timer to refresh the component)</span></td></tr>
+<tr><td><img src="icons/Heteroptera/Dice.png"/></td><td><a href="components/heteroptera/dice.html">Dice</a><br><span class="desc">Rolling N number dices from a list of possibilities  (You can also use F5 key or Grasshopper Timer to refresh the component)</span></td></tr>
+<tr><td><img src="icons/Heteroptera/Random_Direction.png"/></td><td><a href="components/heteroptera/randomDirection.html">Random Direction</a><br><span class="desc">Create random unit vectors(You can also use F5 key or Grasshopper Timer to refresh the component)</span></td></tr>
+<tr><td><img src="icons/Heteroptera/Random_Position.png"/></td><td><a href="components/heteroptera/randomPosition.html">Random Position</a><br><span class="desc">Random position bounded in a rectangle, if input a value into Z, positions randomly translate along the rectangle normal vector in the limit of the value.</span></td></tr>
+<tr><td><img src="icons/Heteroptera/Attractor_Geometrical_Possibility.png"/></td><td><a href="components/heteroptera/attractorGeometricalPossibility.html">Attractor Geometrical Possibility</a><br><span class="desc">Calculate the possibility of existing points by their adjacency to set of attractors</span></td></tr>
+<tr><td><img src="icons/Heteroptera/Geometrical_Possibility.png"/></td><td><a href="components/heteroptera/geometricalPossibility.html">Geometrical Possibility</a><br><span class="desc">Calculate the possibility of existing points by value of each of points</span></td></tr>
+<tr><td><img src="icons/Heteroptera/Randomize_Numbers.png"/></td><td><a href="components/heteroptera/randomizeNumbers.html">Randomize Numbers</a><br><span class="desc">Randomize Numbers by percentage</span></td></tr>
+<tr><td><img src="icons/Heteroptera/Random_Vector.png"/></td><td><a href="components/heteroptera/randomVector.html">Random Vector</a><br><span class="desc">Create random vectors in random direction with a length in a specific domain  (You can also use F5 key or Grasshopper Timer to refresh the component)</span></td></tr>
+<tr><td><img src="icons/Heteroptera/Random.png"/></td><td><a href="components/heteroptera/random.html">Random</a><br><span class="desc">Generate random number  (You can also use F5 key or Grasshopper Timer to refresh the component)</span></td></tr>
+<tr><td><img src="icons/Heteroptera/Seed_Generator.png"/></td><td><a href="components/heteroptera/seedGenerator.html">Seed Generator</a><br><span class="desc">Generate a unique seed number each time it's recalled (You can also use F5 key or Grasshopper Timer to refresh the component)</span></td></tr>
+<tr><td><img src="icons/Heteroptera/Slingshot_Allocator.png"/></td><td><a href="components/heteroptera/slingshotAllocator.html">Slingshot Allocator</a><br><span class="desc">Allocate each item of one list to random branches, it can make it by three different algorithm for distribution items. The number of branches is determined by N.<br> -Arbitrary Distribution: with different branch size.<br> -Homogeneous Distribution: with same branch size as far as possible.<br> -Equal Distribution: with the exact same branch size, it culls overload items randomly.</span></td></tr>
+<tr><td><img src="icons/Heteroptera/Wandering_Vector.png"/></td><td><a href="components/heteroptera/wanderingVector.html">Wandering Vector</a><br><span class="desc">Generating multiple live wandering vectors</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>Tools</h3>
+<table class="compos">
+<tbody>
+<tr><td><img src="icons/Heteroptera/Group.png"/></td><td><a href="components/heteroptera/group.html">Group</a><br><span class="desc">Group reference geometries in rhino scene</span></td></tr>
+<tr><td><img src="icons/Heteroptera/DicAllocator.png"/></td><td><a href="components/heteroptera/dicAllocator.html">DicAllocator</a><br><span class="desc">Allocate each item to specific index of branches</span></td></tr>
+<tr><td><img src="icons/Heteroptera/Branch_Allocator.png"/></td><td><a href="components/heteroptera/branchAllocator.html">Branch Allocator</a><br><span class="desc">Allocate each item to a specific string for each branch</span></td></tr>
+<tr><td><img src="icons/Heteroptera/Ovulate.png"/></td><td><a href="components/heteroptera/ovulate.html">Ovulate</a><br><span class="desc">Bake separate items ordered in a grid ,you can use ye button or use F5 key to ovulate new one  (You can also use F5 key or Grasshopper Timer to refresh the component)</span></td></tr>
+<tr><td><img src="icons/Heteroptera/Text_Baker.png"/></td><td><a href="components/heteroptera/textBaker.html">Text Baker</a><br><span class="desc">Bake a String</span></td></tr>
+<tr><td><img src="icons/Heteroptera/Encryption_Decryption.png"/></td><td><a href="components/heteroptera/encryptionDecryption.html">Encryption/Decryption</a><br><span class="desc">Encrypt and Decrypt a string with a password (key string)</span></td></tr>
+<tr><td><img src="icons/Heteroptera/Stream_Gate.png"/></td><td><a href="components/heteroptera/streamGate.html">Stream Gate</a><br><span class="desc">Allow streaming data if 'Pass' parameter is true</span></td></tr>
+<tr><td><img src="icons/Heteroptera/GenePool_Controller.png"/></td><td><a href="components/heteroptera/genePoolController.html">GenePool Controller</a><br><span class="desc">Controlling Interval and the number of slider in a GenePool, by introducing the Nickname of the GenePool</span></td></tr>
+<tr><td><img src="icons/Heteroptera/HeteroDispatch.png"/></td><td><a href="components/heteroptera/heteroDispatch.html">HeteroDispatch</a><br><span class="desc">Dispatch the items in a list into multiple target lists based on a pattern of indexes</span></td></tr>
+<tr><td><img src="icons/Heteroptera/Quick_Baker.png"/></td><td><a href="components/heteroptera/quickBaker.html">Quick Baker</a><br><span class="desc">Just Bake!</span></td></tr>
+<tr><td><img src="icons/Heteroptera/Replacer.png"/></td><td><a href="components/heteroptera/replacer.html">Replacer</a><br><span class="desc">Replace a Rhino-object with another geometry</span></td></tr>
+<tr><td><img src="icons/Heteroptera/PickSelection.png"/></td><td><a href="components/heteroptera/pickSelection.html">PickSelection</a><br><span class="desc">Pick selected objects in rhino</span></td></tr>
+<tr><td><img src="icons/Heteroptera/Transform.png"/></td><td><a href="components/heteroptera/transform.html">Transform</a><br><span class="desc">Transform a geometry in rhino by a transform information</span></td></tr>
+<tr><td><img src="icons/Heteroptera/Android_UDP_listener.png"/></td><td><a href="components/heteroptera/androidUDPListener.html">Android UDP listener</a><br><span class="desc">Android UDP Listener via 'Grasshopper Controller :<br> https://play.google.com/store/apps/details?id=be.bernaerdt.grasshoppercontroller . <br> (You need using Gh_Timer to run the run the component)</span></td></tr>
+<tr><td><img src="icons/Heteroptera/Unicode.png"/></td><td><a href="components/heteroptera/unicode.html">Unicode</a><br><span class="desc">Generating Unicode Character</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>Maths</h3>
+<table class="compos">
+<tbody>
+<tr><td><img src="icons/Heteroptera/Closest_Numbers.png"/></td><td><a href="components/heteroptera/closestNumbers.html">Closest Numbers</a><br><span class="desc">Find a set of closest Numbers to a specific number (The closest numbers in set D to number S)</span></td></tr>
+<tr><td><img src="icons/Heteroptera/InCommon_Numbers.png"/></td><td><a href="components/heteroptera/inCommonNumbers.html">InCommon Numbers</a><br><span class="desc">Retrieve 'Greatest common divisor' and 'Least common multiple' from a set of integers</span></td></tr>
+<tr><td><img src="icons/Heteroptera/Numbers_Biaser.png"/></td><td><a href="components/heteroptera/numbersBiaser.html">Numbers Biaser</a><br><span class="desc">Bias a set of number by conic function</span></td></tr>
+<tr><td><img src="icons/Heteroptera/Hetero_Mapper.png"/></td><td><a href="components/heteroptera/heteroMapper.html">Hetero Mapper</a><br><span class="desc">External Graph mapper</span></td></tr>
+<tr><td><img src="icons/Heteroptera/Min_Max.png"/></td><td><a href="components/heteroptera/minMax.html">Min/Max</a><br><span class="desc">Extract the minimum and the maximum value of a list of number</span></td></tr>
+<tr><td><img src="icons/Heteroptera/Intersect_Domain.png"/></td><td><a href="components/heteroptera/intersectDomain.html">Intersect Domain</a><br><span class="desc">Calculate an interval by intersecting two intervals</span></td></tr>
+<tr><td><img src="icons/Heteroptera/Interval_Expand.png"/></td><td><a href="components/heteroptera/intervalExpand.html">Interval Expand</a><br><span class="desc">Expand or shrink a domain</span></td></tr>
+<tr><td><img src="icons/Heteroptera/Number_Digitizer.png"/></td><td><a href="components/heteroptera/numberDigitizer.html">Number Digitizer</a><br><span class="desc">modularize(digitize) a number by specific Scope size</span></td></tr>
+<tr><td><img src="icons/Heteroptera/Number_Gridizer.png"/></td><td><a href="components/heteroptera/numberGridizer.html">Number Gridizer</a><br><span class="desc">Put number in a grid with a specified max column number and return the row number and the column number</span></td></tr>
+<tr><td><img src="icons/Heteroptera/List_Normalizer.png"/></td><td><a href="components/heteroptera/listNormalizer.html">List Normalizer</a><br><span class="desc">Normalize a list of numbers</span></td></tr>
+<tr><td><img src="icons/Heteroptera/Number_Limiter.png"/></td><td><a href="components/heteroptera/numberLimiter.html">Number Limiter</a><br><span class="desc">Limit a number within a specific domain</span></td></tr>
+<tr><td><img src="icons/Heteroptera/Intervals_Subtract.png"/></td><td><a href="components/heteroptera/intervalsSubtract.html">Intervals Subtract</a><br><span class="desc">Calculate the result of subtraction from a set of domains by another set of domains</span></td></tr>
+<tr><td><img src="icons/Heteroptera/Symmetrical_Domain.png"/></td><td><a href="components/heteroptera/symmetricalDomain.html">Symmetrical Domain</a><br><span class="desc">Generate the symmetrical domain based on 'O' and length of 'X'</span></td></tr>
+<tr><td><img src="icons/Heteroptera/Symmetrical_Extend.png"/></td><td><a href="components/heteroptera/symmetricalExtend.html">Symmetrical Extend</a><br><span class="desc">BiExtend or shrink a domain with symmetrical value</span></td></tr>
+<tr><td><img src="icons/Heteroptera/Intervals_Union.png"/></td><td><a href="components/heteroptera/intervalsUnion.html">Intervals Union</a><br><span class="desc">Merge and union a set of domains</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>Geometry</h3>
+<table class="compos">
+<tbody>
+<tr><td><img src="icons/Heteroptera/Curve_Planarizer.png"/></td><td><a href="components/heteroptera/curvePlanarizer.html">Curve Planarizer</a><br><span class="desc">Planarizing a curve</span></td></tr>
+<tr><td><img src="icons/Heteroptera/Center.png"/></td><td><a href="components/heteroptera/center.html">Center</a><br><span class="desc">Return the center of a geometry and the min/max dimension based on a plane</span></td></tr>
+<tr><td><img src="icons/Heteroptera/Evaluate_Rect.png"/></td><td><a href="components/heteroptera/evaluateRect.html">Evaluate Rect</a><br><span class="desc">Evaluate a rectangle at normalized{uv} parameter</span></td></tr>
+<tr><td><img src="icons/Heteroptera/Rectangle_Grid.png"/></td><td><a href="components/heteroptera/rectangleGrid.html">Rectangle Grid</a><br><span class="desc">Create a grid of points using a rectangle</span></td></tr>
+<tr><td><img src="icons/Heteroptera/Jellum_Bulger.png"/></td><td><a href="components/heteroptera/jellumBulger.html">Jellum Bulger</a><br><span class="desc">Bulge set of points by some Jellum points</span></td></tr>
+<tr><td><img src="icons/Heteroptera/Modularpoints.png"/></td><td><a href="components/heteroptera/modularpoints.html">Modularpoints</a><br><span class="desc">modularize(digitize) a point by specific Scope size</span></td></tr>
+<tr><td><img src="icons/Heteroptera/Incestuous_Network.png"/></td><td><a href="components/heteroptera/incestuousNetwork.html">Incestuous Network</a><br><span class="desc">Create a simple Incestuous Network between adjacent points</span></td></tr>
+<tr><td><img src="icons/Heteroptera/Variable_Sweep.png"/></td><td><a href="components/heteroptera/variableSweep.html">Variable Sweep</a><br><span class="desc">Quick variable single section sweep</span></td></tr>
+<tr><td><img src="icons/Heteroptera/Hetrosweep.png"/></td><td><a href="components/heteroptera/hetrosweep.html">Hetrosweep</a><br><span class="desc">Quick single section sweep</span></td></tr>
+<tr><td><img src="icons/Heteroptera/Jellum_Attractor.png"/></td><td><a href="components/heteroptera/jellumAttractor.html">Jellum Attractor</a><br><span class="desc">Quick multi-attractor to return a congestive value between 0~1 by curves or points</span></td></tr>
+<tr><td><img src="icons/Heteroptera/Nonincestuous_Network.png"/></td><td><a href="components/heteroptera/nonincestuousNetwork.html">Nonincestuous Network</a><br><span class="desc">Create a Nonincestuous-Network between adjacent points</span></td></tr>
+<tr><td><img src="icons/Heteroptera/Pro._Attractor.png"/></td><td><a href="components/heteroptera/proAttractor.html">Pro. Attractor</a><br><span class="desc">Advanced multi-attraction system for finding a Congestive value</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>Animate</h3>
+<table class="compos">
+<tbody>
+<tr><td><img src="icons/Heteroptera/Baking_Capture.png"/></td><td><a href="components/heteroptera/bakingCapture.html">Baking Capture</a><br><span class="desc">Bake objects and take an auto naming capture shot from, it's useful for creating animation, using viewport graphical-style</span></td></tr>
+<tr><td><img src="icons/Heteroptera/Capacitor.png"/></td><td><a href="components/heteroptera/capacitor.html">Capacitor</a><br><span class="desc">Multi-Step Buffer</span></td></tr>
+<tr><td><img src="icons/Heteroptera/Capture.png"/></td><td><a href="components/heteroptera/capture.html">Capture</a><br><span class="desc">Auto-naming Viewport Capture  (You can also use F5 key or Grasshopper Timer to refresh the component)</span></td></tr>
+<tr><td><img src="icons/Heteroptera/Mass_Additive_Numbers_Buffer.png"/></td><td><a href="components/heteroptera/massAdditiveNumbersBuffer.html">Mass Additive Numbers Buffer</a><br><span class="desc">Each time recall it, it add the input number with the previous inputted number</span></td></tr>
+<tr><td><img src="icons/Heteroptera/Oil.Can.png"/></td><td><a href="components/heteroptera/oilCan.html">Oil.Can</a><br><span class="desc">create a List-Tap, each time you call the component it will drop next item of the list  (You can also use F5 key or Grasshopper Timer to refresh the component)</span></td></tr>
+<tr><td><img src="icons/Heteroptera/TapBuffer.png"/></td><td><a href="components/heteroptera/tapBuffer.html">TapBuffer</a><br><span class="desc">Return an increasing number, each time that the component is called  (You can all use Internal timer , trigger button , F5 key or Grasshopper Timer to refresh the component)</span></td></tr>
+<tr><td><img src="icons/Heteroptera/TimeShifter.png"/></td><td><a href="components/heteroptera/timeShifter.html">TimeShifter</a><br><span class="desc">shift a list of changing data to n step before in its history</span></td></tr>
+<tr><td><img src="icons/Heteroptera/Trailer.png"/></td><td><a href="components/heteroptera/trailer.html">Trailer</a><br><span class="desc">Generate a set of lines from each point of current list to their peers from previous list of points</span></td></tr>
+<tr><td><img src="icons/Heteroptera/Mass_Additive_Vectors_Buffer.png"/></td><td><a href="components/heteroptera/massAdditiveVectorsBuffer.html">Mass Additive Vectors Buffer</a><br><span class="desc">Each time recall it, it add the input vector with the previous inputted vector</span></td></tr>
+<tr><td><img src="icons/Heteroptera/Camera_Crane.png"/></td><td><a href="components/heteroptera/cameraCrane.html">Camera Crane</a><br><span class="desc">Adjusting the active or the specified viewport camera</span></td></tr>
+<tr><td><img src="icons/Heteroptera/Mesh_Traveler.png"/></td><td><a href="components/heteroptera/meshTraveler.html">Mesh Traveler</a><br><span class="desc">Mass additive Vector buffer considering a mesh as a constrain</span></td></tr>
+</tbody>
+</table>
+
+</div>
+</div>
+<div class="libheader">
+<a href="http://www.food4rhino.com/project/ladybug-honeybee?ufh"><h2>Honeybee</h2></a>
+<span class="desc">Version 0.0.59</span>
+<span class="codeword">(Released 2016-Jan-29)</span><br>
+</div>
+<div class="cparent">
+<div class="cchild">
+<h3>09 | Energy | Energy</h3>
+<table class="compos">
+<tbody>
+<tr><td><img src="icons/Honeybee/EP_context_Surfaces.png"/></td><td><a href="components/honeybee/ePContextSurfaces.html">EP context Surfaces</a><br><span class="desc">prepare shading/context geometries</span></td></tr>
+<tr><td><img src="icons/Honeybee/_Run_Energy_Simulation.png"/></td><td><a href="components/honeybee/runEnergySimulation.html"> Run Energy Simulation</a><br><span class="desc">Use this component to export HBZones into an IDF file, and run them through EnergyPlus</span></td></tr>
+<tr><td><img src="icons/Honeybee/Adaptive_Comfort_Analysis_Recipe.png"/></td><td><a href="components/honeybee/adaptiveComfortAnalysisRecipe.html">Adaptive Comfort Analysis Recipe</a><br><span class="desc">Use this component to assemble an adaptive comfort recipe for the "Honeybee_Annual Indoor Comfort Analysis" component</span></td></tr>
+<tr><td><img src="icons/Honeybee/Add_Internal_Mass_to_Zone.png"/></td><td><a href="components/honeybee/addInternalMassToZone.html">Add Internal Mass to Zone</a><br><span class="desc">Use this component to assign internal thermal masses to zones, which can be used to account for the effects of furniture inside zones or massive building components like hearths and chimneys</span></td></tr>
+<tr><td><img src="icons/Honeybee/Balance_Temperature_Calculator.png"/></td><td><a href="components/honeybee/balanceTemperatureCalculator.html">Balance Temperature Calculator</a><br><span class="desc">Use this component to calculate a rough building (or zone) balance temperatrue from a Honeybee energy simulation</span></td></tr>
+<tr><td><img src="icons/Honeybee/Color_Surfaces_by_EP_Result.png"/></td><td><a href="components/honeybee/colorSurfacesByEPResult.html">Color Surfaces by EP Result</a><br><span class="desc">Use this component to color zone surfaces based on EnergyPlus data out of the "Honeybee_Read EP Surface Result" component</span></td></tr>
+<tr><td><img src="icons/Honeybee/Color_Zones_by_EP_Result.png"/></td><td><a href="components/honeybee/colorZonesByEPResult.html">Color Zones by EP Result</a><br><span class="desc">Use this component to color zones based on EnergyPlus data out of the "Honeybee_Read EP Result" component or zone comfort analyses out of the comfort calculator components</span></td></tr>
+<tr><td><img src="icons/Honeybee/Construct_Energy_Balance.png"/></td><td><a href="components/honeybee/constructEnergyBalance.html">Construct Energy Balance</a><br><span class="desc">This component accepst the outputs of the "Read EP Result" and the "Read EP Surface Result" components and outputs a data tree with all of the building-wide energy balance terms</span></td></tr>
+<tr><td><img src="icons/Honeybee/Energy_Shade_Benefit_Evaluator.png"/></td><td><a href="components/honeybee/energyShadeBenefitEvaluator.html">Energy Shade Benefit Evaluator</a><br><span class="desc">This is a component for visualizing the desirability of shade in terms of energy simulation results by using solar vectors, the outdoor temperature, and the simulation hating load, cooling load, and beam gain</span></td></tr>
+<tr><td><img src="icons/Honeybee/Energy_Simulation_Par.png"/></td><td><a href="components/honeybee/energySimulationPar.html">Energy Simulation Par</a><br><span class="desc">EnergyPlus Shadow Parameters</span></td></tr>
+<tr><td><img src="icons/Honeybee/EnergyPlus_Window_Shade_Generator.png"/></td><td><a href="components/honeybee/energyPlusWindowShadeGenerator.html">EnergyPlus Window Shade Generator</a><br><span class="desc">Use this component to generate shades for Honeybee zone windows</span></td></tr>
+<tr><td><img src="icons/Honeybee/Export_To_OpenStudio.png"/></td><td><a href="components/honeybee/exportToOpenStudio.html">Export To OpenStudio</a><br><span class="desc">Use this component to export HBZones into an OpenStudio file, and run them through EnergyPlus</span></td></tr>
+<tr><td><img src="icons/Honeybee/Generate_EP_Output.png"/></td><td><a href="components/honeybee/generateEPOutput.html">Generate EP Output</a><br><span class="desc">This component helps select simulation outputs that can be hooked into the WriteIDF component</span></td></tr>
+<tr><td><img src="icons/Honeybee/Import_idf.png"/></td><td><a href="components/honeybee/importIdf.html">Import idf</a><br><span class="desc">import an idf file to gh<br>This version only imports the geometries<br>Constructions, schedules and systems will be neglected</span></td></tr>
+<tr><td><img src="icons/Honeybee/Indoor_View_Factor_Calculator.png"/></td><td><a href="components/honeybee/indoorViewFactorCalculator.html">Indoor View Factor Calculator</a><br><span class="desc">Use this component to generate test points within a zone and calculate the view factor from each of these points to the other zurfaces in a zone as well as the sky</span></td></tr>
+<tr><td><img src="icons/Honeybee/Lookup_EnergyPlus_Folder.png"/></td><td><a href="components/honeybee/lookupEnergyPlusFolder.html">Lookup EnergyPlus Folder</a><br><span class="desc">Search Energy Simulation Folder</span></td></tr>
+<tr><td><img src="icons/Honeybee/Make_Adiabatic_By_Type.png"/></td><td><a href="components/honeybee/makeAdiabaticByType.html">Make Adiabatic By Type</a><br><span class="desc">Use this component to make certain surface types of a zone adiabatic</span></td></tr>
+<tr><td><img src="icons/Honeybee/Make_Adiabatic.png"/></td><td><a href="components/honeybee/makeAdiabatic.html">Make Adiabatic</a><br><span class="desc">Make Adiabatic</span></td></tr>
+<tr><td><img src="icons/Honeybee/Microclimate_Map_Analysis.png"/></td><td><a href="components/honeybee/microclimateMapAnalysis.html">Microclimate Map Analysis</a><br><span class="desc">Use this component runs an annual comfort assessment off of EnergyPlus results and write all values into csv files</span></td></tr>
+<tr><td><img src="icons/Honeybee/OpenStudio_Systems.png"/></td><td><a href="components/honeybee/openStudioSystems.html">OpenStudio Systems</a><br><span class="desc">OpenStudio Systems, without the inputs in _airSideDetails_ and _plantDetails_ default Open Studio systems will be created</span></td></tr>
+<tr><td><img src="icons/Honeybee/OpenStudioHVACSystemsList.png"/></td><td><a href="components/honeybee/openStudioHVACSystemsList.html">OpenStudioHVACSystemsList</a><br><span class="desc">List ofavailable HVAC templates for OpenStudio</span></td></tr>
+<tr><td><img src="icons/Honeybee/Optimal_Shade_Creator.png"/></td><td><a href="components/honeybee/optimalShadeCreator.html">Optimal Shade Creator</a><br><span class="desc">Use this component to delete out unwanted areas of a shade after a shade benefit evaluation has been run</span></td></tr>
+<tr><td><img src="icons/Honeybee/Outdoor_Comfort_Analysis_Recipe.png"/></td><td><a href="components/honeybee/outdoorComfortAnalysisRecipe.html">Outdoor Comfort Analysis Recipe</a><br><span class="desc">Use this component to assemble an adaptive comfort recipe for the "Honeybee_Annual Indoor Comfort Analysis" component</span></td></tr>
+<tr><td><img src="icons/Honeybee/PMV_Comfort_Analysis_Recipe.png"/></td><td><a href="components/honeybee/pMVComfortAnalysisRecipe.html">PMV Comfort Analysis Recipe</a><br><span class="desc">Use this component to assemble an adaptive comfort recipe for the "Honeybee_Annual Indoor Comfort Analysis" component</span></td></tr>
+<tr><td><img src="icons/Honeybee/Re-run_IDF.png"/></td><td><a href="components/honeybee/rerunIDF.html">Re-run IDF</a><br><span class="desc">This is a component for running a previoulsy-generated </span></td></tr>
+<tr><td><img src="icons/Honeybee/Read_EP_HVAC_Result.png"/></td><td><a href="components/honeybee/readEPHVACResult.html">Read EP HVAC Result</a><br><span class="desc">This component reads the results of an EnergyPlus simulation from the WriteIDF Component or any EnergyPlus result </span></td></tr>
+<tr><td><img src="icons/Honeybee/Read_EP_Result.png"/></td><td><a href="components/honeybee/readEPResult.html">Read EP Result</a><br><span class="desc">This component reads the results of an EnergyPlus simulation from the WriteIDF Component or any EnergyPlus result </span></td></tr>
+<tr><td><img src="icons/Honeybee/Read_EP_Surface_Result.png"/></td><td><a href="components/honeybee/readEPSurfaceResult.html">Read EP Surface Result</a><br><span class="desc">This component reads the results of an EnergyPlus simulation from the WriteIDF Component or any EnergyPlus result </span></td></tr>
+<tr><td><img src="icons/Honeybee/Read_Microclimate_Matrix.png"/></td><td><a href="components/honeybee/readMicroclimateMatrix.html">Read Microclimate Matrix</a><br><span class="desc">This component reads the results of an Adaptive Indoor Comfort Analysis</span></td></tr>
+<tr><td><img src="icons/Honeybee/Set_Ideal_Air_Loads_Parameters.png"/></td><td><a href="components/honeybee/setIdealAirLoadsParameters.html">Set Ideal Air Loads Parameters</a><br><span class="desc">Use this component to change aspects of the ideal air system used in the "Honeybee_Run Energy Simulation" component</span></td></tr>
+<tr><td><img src="icons/Honeybee/ShadowPar.png"/></td><td><a href="components/honeybee/shadowPar.html">ShadowPar</a><br><span class="desc">EnergyPlus Shadow Parameters</span></td></tr>
+<tr><td><img src="icons/Honeybee/Simulation_Control.png"/></td><td><a href="components/honeybee/simulationControl.html">Simulation Control</a><br><span class="desc">Use this component to set EnergyPlus Simulation Controls such as whether to run certain types of HVAC sizing calculations, etc</span></td></tr>
+<tr><td><img src="icons/Honeybee/Surface_Data_Based_On_Type_Detailed.png"/></td><td><a href="components/honeybee/surfaceDataBasedOnTypeDetailed.html">Surface Data Based On Type Detailed</a><br><span class="desc">Use this component to separate grafed lists of surface data that come out of the "Honeybee_Read EP Surface Result" component based on rough surface type</span></td></tr>
+<tr><td><img src="icons/Honeybee/Surface_Data_Based_On_Type.png"/></td><td><a href="components/honeybee/surfaceDataBasedOnType.html">Surface Data Based On Type</a><br><span class="desc">Use this component to separate grafed lists of surface data that come out of the "Honeybee_Read EP Surface Result" component based on rough surface type</span></td></tr>
+<tr><td><img src="icons/Honeybee/Thermal_Autonomy_Analysis.png"/></td><td><a href="components/honeybee/thermalAutonomyAnalysis.html">Thermal Autonomy Analysis</a><br><span class="desc">Use this component to calculate 'Occupied Thermal Comfort Percent' (occTCP) and 'Thermal Autonomy' (TA) from the resultd of a Microclimate Map Analysis</span></td></tr>
+<tr><td><img src="icons/Honeybee/Visualize_Microclimate_Map.png"/></td><td><a href="components/honeybee/visualizeMicroclimateMap.html">Visualize Microclimate Map</a><br><span class="desc">Use this component to produce a colored mesh from a comfResultsMtx</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>00 | Honeybee</h3>
+<table class="compos">
+<tbody>
+<tr><td><img src="icons/Honeybee/addHBGlz.png"/></td><td><a href="components/honeybee/addHBGlz.html">addHBGlz</a><br><span class="desc">Use this component to add a custom glazing surface to a HBSurface or HBZone</span></td></tr>
+<tr><td><img src="icons/Honeybee/AskMe.png"/></td><td><a href="components/honeybee/askMe.html">AskMe</a><br><span class="desc">Use this component to get basic information on Honeybee Objects, whether they are HBSrfs or HBZones</span></td></tr>
+<tr><td><img src="icons/Honeybee/ChangeHBObjName.png"/></td><td><a href="components/honeybee/changeHBObjName.html">ChangeHBObjName</a><br><span class="desc">Change Honeybee Object Names</span></td></tr>
+<tr><td><img src="icons/Honeybee/createHBSrfs.png"/></td><td><a href="components/honeybee/createHBSrfs.html">createHBSrfs</a><br><span class="desc">Create a Honeybee surface, which can be plugged into the "Run Daylight Sumilation" component or combined with other surfaces to make HBZones with the "createHBZones" component</span></td></tr>
+<tr><td><img src="icons/Honeybee/createHBZones.png"/></td><td><a href="components/honeybee/createHBZones.html">createHBZones</a><br><span class="desc">Create an HBZone from HB Surfaces</span></td></tr>
+<tr><td><img src="icons/Honeybee/Decompose_Based_On_Boundary_Condition.png"/></td><td><a href="components/honeybee/decomposeBasedOnBoundaryCondition.html">Decompose Based On Boundary Condition</a><br><span class="desc">Decompose zone surfaces by boundary condition</span></td></tr>
+<tr><td><img src="icons/Honeybee/Decompose_Based_On_Type.png"/></td><td><a href="components/honeybee/decomposeBasedOnType.html">Decompose Based On Type</a><br><span class="desc">Use this component to break down the geometry of your zone by the surface type</span></td></tr>
+<tr><td><img src="icons/Honeybee/DecomposeHBZone.png"/></td><td><a href="components/honeybee/decomposeHBZone.html">DecomposeHBZone</a><br><span class="desc">Decompose Honeybee Zone</span></td></tr>
+<tr><td><img src="icons/Honeybee/Get_or_Set_HB_Object_Name.png"/></td><td><a href="components/honeybee/getOrSetHBObjectName.html">Get or Set HB Object Name</a><br><span class="desc">Change Honeybee Object Names</span></td></tr>
+<tr><td><img src="icons/Honeybee/Glazing_based_on_ratio.png"/></td><td><a href="components/honeybee/glazingBasedOnRatio.html">Glazing based on ratio</a><br><span class="desc">Use this component to generate windows for a HBSurface or HBZone based on a desired window-to-wall ratio</span></td></tr>
+<tr><td><img src="icons/Honeybee/Glazing_Parameters_List.png"/></td><td><a href="components/honeybee/glazingParametersList.html">Glazing Parameters List</a><br><span class="desc">Use this component to generate lists of glazing ratios, breakUp diatance, window heigths, sill heights, or vertical glazing splits for the four primary cardinal directions</span></td></tr>
+<tr><td><img src="icons/Honeybee/Honeybee.png"/></td><td><a href="components/honeybee/honeybee.html">Honeybee</a><br><span class="desc">This component carries all of Honeybee's main classes</span></td></tr>
+<tr><td><img src="icons/Honeybee/IntersectMasses.png"/></td><td><a href="components/honeybee/intersectMasses.html">IntersectMasses</a><br><span class="desc">Use this component to take a list of closed breps (polysurfaces) that you intend to turn into HBZones and split their component surfaces to ensure that there are matching surfaces between each of the adjacent zones</span></td></tr>
+<tr><td><img src="icons/Honeybee/Label_Zone_Surfaces.png"/></td><td><a href="components/honeybee/labelZoneSurfaces.html">Label Zone Surfaces</a><br><span class="desc">Use this component to lablel HBSurfaces or HBZones with their names or energy/daylight properties in the Rhino scene</span></td></tr>
+<tr><td><img src="icons/Honeybee/Label_Zones.png"/></td><td><a href="components/honeybee/labelZones.html">Label Zones</a><br><span class="desc">Use this component to lablel zones with their names in the Rhino scene</span></td></tr>
+<tr><td><img src="icons/Honeybee/Masses2Zones.png"/></td><td><a href="components/honeybee/masses2Zones.html">Masses2Zones</a><br><span class="desc">Use this component to take any list of closed breps and turn them into Honeybee Zones with all of the properties needed to run them through an energy simulation</span></td></tr>
+<tr><td><img src="icons/Honeybee/PerimeterCoreZoning.png"/></td><td><a href="components/honeybee/perimeterCoreZoning.html">PerimeterCoreZoning</a><br><span class="desc">Separate zones into perimeter and core</span></td></tr>
+<tr><td><img src="icons/Honeybee/Remove_Glazing.png"/></td><td><a href="components/honeybee/removeGlazing.html">Remove Glazing</a><br><span class="desc">Remove Glazing </span></td></tr>
+<tr><td><img src="icons/Honeybee/Select_by_Type.png"/></td><td><a href="components/honeybee/selectByType.html">Select by Type</a><br><span class="desc">Select surfaces by type</span></td></tr>
+<tr><td><img src="icons/Honeybee/Separate_By_Normal.png"/></td><td><a href="components/honeybee/separateByNormal.html">Separate By Normal</a><br><span class="desc">Separate surfaces by normal</span></td></tr>
+<tr><td><img src="icons/Honeybee/Separate_conditioned_and_unconditioned_zones.png"/></td><td><a href="components/honeybee/separateConditionedAndUnconditionedZones.html">Separate conditioned and unconditioned zones</a><br><span class="desc">Separate zones into conditioned and unconditioned</span></td></tr>
+<tr><td><img src="icons/Honeybee/Separate_Zones_By_Floor.png"/></td><td><a href="components/honeybee/separateZonesByFloor.html">Separate Zones By Floor</a><br><span class="desc">Separate zones based on floor height</span></td></tr>
+<tr><td><img src="icons/Honeybee/Separate_Zones_By_Orientation.png"/></td><td><a href="components/honeybee/separateZonesByOrientation.html">Separate Zones By Orientation</a><br><span class="desc">Separate zones based on orientation</span></td></tr>
+<tr><td><img src="icons/Honeybee/Separate_Zones_By_Program.png"/></td><td><a href="components/honeybee/separateZonesByProgram.html">Separate Zones By Program</a><br><span class="desc">Separate zones based on zone program</span></td></tr>
+<tr><td><img src="icons/Honeybee/Solve_Adjacencies.png"/></td><td><a href="components/honeybee/solveAdjacencies.html">Solve Adjacencies</a><br><span class="desc">Solve adjacencies</span></td></tr>
+<tr><td><img src="icons/Honeybee/SplitBuildingMass.png"/></td><td><a href="components/honeybee/splitBuildingMass.html">SplitBuildingMass</a><br><span class="desc">Use this component to divide up a brep (polysurface) representative of a complete building massing into smaller volumes that roughly correspond to how a generic EnergyPlus model should be zoned</span></td></tr>
+<tr><td><img src="icons/Honeybee/Surface_Attribute_List.png"/></td><td><a href="components/honeybee/surfaceAttributeList.html">Surface Attribute List</a><br><span class="desc">Provides a list of surface attributes to choose from and plug into the Honeybee_Label Surfaces Component</span></td></tr>
+<tr><td><img src="icons/Honeybee/Zone_Attribute_List.png"/></td><td><a href="components/honeybee/zoneAttributeList.html">Zone Attribute List</a><br><span class="desc">Provides a list of preset values to choose from</span></td></tr>
+<tr><td><img src="icons/Honeybee/Item_Selector.png"/></td><td><a href="components/honeybee/itemSelector.html">Item Selector</a><br><span class="desc">Allows you to select an item or items from an input list</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>13 | WIP</h3>
+<table class="compos">
+<tbody>
+<tr><td><img src="icons/Honeybee/Apply_OpenStudio_Measure.png"/></td><td><a href="components/honeybee/applyOpenStudioMeasure.html">Apply OpenStudio Measure</a><br><span class="desc">This component applies an OpenStudio measure to an OpenStudio file</span></td></tr>
+<tr><td><img src="icons/Honeybee/Convert_IMG.png"/></td><td><a href="components/honeybee/convertIMG.html">Convert IMG</a><br><span class="desc">Convert Image</span></td></tr>
+<tr><td><img src="icons/Honeybee/Create_Pollinator.png"/></td><td><a href="components/honeybee/createPollinator.html">Create Pollinator</a><br><span class="desc">Craet Pollinator (Put parametric results together)</span></td></tr>
+<tr><td><img src="icons/Honeybee/Customize_EnergyPlus_Objects.png"/></td><td><a href="components/honeybee/customizeEnergyPlusObjects.html">Customize EnergyPlus Objects</a><br><span class="desc">Customize EnergyPlus Objects [NOT READY YET!]</span></td></tr>
+<tr><td><img src="icons/Honeybee/Dump_Honeybee_Objects.png"/></td><td><a href="components/honeybee/dumpHoneybeeObjects.html">Dump Honeybee Objects</a><br><span class="desc">Dump Honeybee Objects<br>Use this component to dump Honeybee objects to a file on your system</span></td></tr>
+<tr><td><img src="icons/Honeybee/ExportEPC.png"/></td><td><a href="components/honeybee/exportEPC.html">ExportEPC</a><br><span class="desc">Export to Energy Performace Calculator (EPC)<br></span></td></tr>
+<tr><td><img src="icons/Honeybee/Extrude_Windows.png"/></td><td><a href="components/honeybee/extrudeWindows.html">Extrude Windows</a><br><span class="desc">Extrude pseudo walls from window polygons</span></td></tr>
+<tr><td><img src="icons/Honeybee/FileExplorer.png"/></td><td><a href="components/honeybee/fileExplorer.html">FileExplorer</a><br><span class="desc">Locate a file/directory in windows explorer</span></td></tr>
+<tr><td><img src="icons/Honeybee/generationsystem.png"/></td><td><a href="components/honeybee/generationsystem.html">generationsystem</a><br><span class="desc">Use this component to create a Honeybee generator system</span></td></tr>
+<tr><td><img src="icons/Honeybee/Generator_PV.png"/></td><td><a href="components/honeybee/generatorPV.html">Generator_PV</a><br><span class="desc">Provided by Honeybee 0</span></td></tr>
+<tr><td><img src="icons/Honeybee/Generator_Wind_Horizontialaxis.png"/></td><td><a href="components/honeybee/generatorWindHorizontialaxis.html">Generator_Wind_Horizontialaxis</a><br><span class="desc">Provided by Honeybee 0</span></td></tr>
+<tr><td><img src="icons/Honeybee/Get_Annual_SQL_Data.png"/></td><td><a href="components/honeybee/getAnnualSQLData.html">Get Annual SQL Data</a><br><span class="desc">Export Honeybee Objects to OpenStudio</span></td></tr>
+<tr><td><img src="icons/Honeybee/GrizzlyBear.png"/></td><td><a href="components/honeybee/grizzlyBear.html">GrizzlyBear</a><br><span class="desc">Grizzlybear exports Honeybee zones to gbXML file</span></td></tr>
+<tr><td><img src="icons/Honeybee/IES_Custom_Lamp.png"/></td><td><a href="components/honeybee/iESCustomLamp.html">IES Custom Lamp</a><br><span class="desc">This component can be used to specify a lamp of custom chromaticity, color or color temperature</span></td></tr>
+<tr><td><img src="icons/Honeybee/IES_Luminaire_Zone.png"/></td><td><a href="components/honeybee/iESLuminaireZone.html">IES Luminaire Zone</a><br><span class="desc">This component is to be used for specifying the location of luminaires for electric lighting simulations</span></td></tr>
+<tr><td><img src="icons/Honeybee/IES_Luminaire.png"/></td><td><a href="components/honeybee/iESLuminaire.html">IES Luminaire</a><br><span class="desc">This is the core component for adding photometric data into a lighting simulation</span></td></tr>
+<tr><td><img src="icons/Honeybee/Load_Honeybee_Objects.png"/></td><td><a href="components/honeybee/loadHoneybeeObjects.html">Load Honeybee Objects</a><br><span class="desc">Load Honeybee Objects<br>Use this component to load Honeybee objects from a file on your system</span></td></tr>
+<tr><td><img src="icons/Honeybee/Load_OpenStudio_Measure.png"/></td><td><a href="components/honeybee/loadOpenStudioMeasure.html">Load OpenStudio Measure</a><br><span class="desc">This component loads OpenStudio measureds into Honeybee</span></td></tr>
+<tr><td><img src="icons/Honeybee/Mirror_Honeybee.png"/></td><td><a href="components/honeybee/mirrorHoneybee.html">Mirror Honeybee</a><br><span class="desc">Mirror Honeybee Objects</span></td></tr>
+<tr><td><img src="icons/Honeybee/Move_Honeybee.png"/></td><td><a href="components/honeybee/moveHoneybee.html">Move Honeybee</a><br><span class="desc">Move Honeybee Objects</span></td></tr>
+<tr><td><img src="icons/Honeybee/open_Pollination.png"/></td><td><a href="components/honeybee/openPollination.html">open Pollination</a><br><span class="desc">Use this component to open the Pollination page</span></td></tr>
+<tr><td><img src="icons/Honeybee/OpenStudio_Central_Plant_Orchestrator.png"/></td><td><a href="components/honeybee/openStudioCentralPlantOrchestrator.html">OpenStudio Central Plant Orchestrator</a><br><span class="desc">EPlus Plantside Organizer</span></td></tr>
+<tr><td><img src="icons/Honeybee/OpenStudio_Cooling_Tower.png"/></td><td><a href="components/honeybee/openStudioCoolingTower.html">OpenStudio Cooling Tower</a><br><span class="desc">EPlus Cooling Tower</span></td></tr>
+<tr><td><img src="icons/Honeybee/OpenStudio_EIR_Chiller.png"/></td><td><a href="components/honeybee/openStudioEIRChiller.html">OpenStudio EIR Chiller</a><br><span class="desc">EPlus EIR Chiller</span></td></tr>
+<tr><td><img src="icons/Honeybee/OpenStudio_Hot_Water_Boiler.png"/></td><td><a href="components/honeybee/openStudioHotWaterBoiler.html">OpenStudio Hot Water Boiler</a><br><span class="desc">EPlus Hot Water Boiler</span></td></tr>
+<tr><td><img src="icons/Honeybee/Read_generation_system_results.png"/></td><td><a href="components/honeybee/readgenerationsystemresults.html">Read_generation_system_results</a><br><span class="desc">This component reads the results of an EnergyPlus simulation from the WriteIDF Component or any EnergyPlus result </span></td></tr>
+<tr><td><img src="icons/Honeybee/Rotate_Honeybee.png"/></td><td><a href="components/honeybee/rotateHoneybee.html">Rotate Honeybee</a><br><span class="desc">Rotate Honeybee Objects</span></td></tr>
+<tr><td><img src="icons/Honeybee/simple_Inverter.png"/></td><td><a href="components/honeybee/simpleInverter.html">simple_Inverter</a><br><span class="desc">Provided by Honeybee 0</span></td></tr>
+<tr><td><img src="icons/Honeybee/Visualise_Honeybeegeneration_cashflow.png"/></td><td><a href="components/honeybee/visualiseHoneybeegenerationcashflow.html">Visualise_Honeybeegeneration_cashflow</a><br><span class="desc">Use this component to the calculate and visualise the financial value of Honeybee generation systems over 25 years</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>04 | Daylight | Daylight</h3>
+<table class="compos">
+<tbody>
+<tr><td><img src="icons/Honeybee/Convert_HDR_to_GIF.png"/></td><td><a href="components/honeybee/convertHDRToGIF.html">Convert HDR to GIF</a><br><span class="desc">Convert HDR to GIF</span></td></tr>
+<tr><td><img src="icons/Honeybee/Convert_HDR_to_TIF.png"/></td><td><a href="components/honeybee/convertHDRToTIF.html">Convert HDR to TIF</a><br><span class="desc">Convert HDR to TIF</span></td></tr>
+<tr><td><img src="icons/Honeybee/Convert_TIF_to_HDR.png"/></td><td><a href="components/honeybee/convertTIFToHDR.html">Convert TIF to HDR</a><br><span class="desc">Convert HDR to TIF</span></td></tr>
+<tr><td><img src="icons/Honeybee/Daysim_Annual_Profiles.png"/></td><td><a href="components/honeybee/daysimAnnualProfiles.html">Daysim Annual Profiles</a><br><span class="desc">Read Daysim Annual Profiles</span></td></tr>
+<tr><td><img src="icons/Honeybee/Daysim_Electrical_Lighting_Use.png"/></td><td><a href="components/honeybee/daysimElectricalLightingUse.html">Daysim Electrical Lighting Use</a><br><span class="desc">Daysim's electrical lighting use</span></td></tr>
+<tr><td><img src="icons/Honeybee/Daysim_Occupancy_Generator_Based_On_List.png"/></td><td><a href="components/honeybee/daysimOccupancyGeneratorBasedOnList.html">Daysim Occupancy Generator Based On List</a><br><span class="desc">Daysim Occupancy Generator<br>Daysim calculates the outputs for the hours that the space is occupied</span></td></tr>
+<tr><td><img src="icons/Honeybee/Daysim_Occupancy_Generator.png"/></td><td><a href="components/honeybee/daysimOccupancyGenerator.html">Daysim Occupancy Generator</a><br><span class="desc">Daysim Occupancy Generator<br>Daysim calculates the outputs for the hours that the space is occupied</span></td></tr>
+<tr><td><img src="icons/Honeybee/Daysim_shading_group_sensors.png"/></td><td><a href="components/honeybee/daysimShadingGroupSensors.html">Daysim shading group sensors</a><br><span class="desc">Daysim shading group sensors<br>Read here for more information about Daysim sensors here: http://daysim</span></td></tr>
+<tr><td><img src="icons/Honeybee/Daysim_User_Profiles.png"/></td><td><a href="components/honeybee/daysimUserProfiles.html">Daysim User Profiles</a><br><span class="desc">Daysim User Profiles<br>Read here for details: http://daysim</span></td></tr>
+<tr><td><img src="icons/Honeybee/FalseColor.png"/></td><td><a href="components/honeybee/falseColor.html">FalseColor</a><br><span class="desc">False Color</span></td></tr>
+<tr><td><img src="icons/Honeybee/Glare_Analysis.png"/></td><td><a href="components/honeybee/glareAnalysis.html">Glare Analysis</a><br><span class="desc">Glare Analysis<br>This component is using evalglare for glare calculations</span></td></tr>
+<tr><td><img src="icons/Honeybee/Import_dgp_File.png"/></td><td><a href="components/honeybee/importDgpFile.html">Import dgp File</a><br><span class="desc">Import Annual Daylight Glare Probability</span></td></tr>
+<tr><td><img src="icons/Honeybee/Import_Pts_File.png"/></td><td><a href="components/honeybee/importPtsFile.html">Import Pts File</a><br><span class="desc">Import Radiance Test Grid</span></td></tr>
+<tr><td><img src="icons/Honeybee/Import_rad.png"/></td><td><a href="components/honeybee/importRad.html">Import rad</a><br><span class="desc">Import a rad file to gh<br>This component is just a proof of concept for now and needs major modifications</span></td></tr>
+<tr><td><img src="icons/Honeybee/Lighting_control_Recipe.png"/></td><td><a href="components/honeybee/lightingControlRecipe.html">Lighting control Recipe</a><br><span class="desc">Daysim electrical lighting control</span></td></tr>
+<tr><td><img src="icons/Honeybee/Lookup_Daylighting_Folder.png"/></td><td><a href="components/honeybee/lookupDaylightingFolder.html">Lookup Daylighting Folder</a><br><span class="desc">Search Simulation Folder</span></td></tr>
+<tr><td><img src="icons/Honeybee/MSH2RAD.png"/></td><td><a href="components/honeybee/mSH2RAD.html">MSH2RAD</a><br><span class="desc">Convert a mesh to RAD file</span></td></tr>
+<tr><td><img src="icons/Honeybee/Read_All_the_Hourly_Results_from_Annual_Daylight_Study.png"/></td><td><a href="components/honeybee/readAllTheHourlyResultsFromAnnualDaylightStudy.html">Read All the Hourly Results from Annual Daylight Study</a><br><span class="desc">Read the results of the annual study for a all the hours of the year for all the points</span></td></tr>
+<tr><td><img src="icons/Honeybee/Read_Annual_Result_I.png"/></td><td><a href="components/honeybee/readAnnualResultI.html">Read Annual Result I</a><br><span class="desc">Read Annual Daylight Results I [Standard Daysim Results]</span></td></tr>
+<tr><td><img src="icons/Honeybee/Read_Annual_Result_II.png"/></td><td><a href="components/honeybee/readAnnualResultII.html">Read Annual Result II</a><br><span class="desc">Read Annual Daylight Results II [Daysim]</span></td></tr>
+<tr><td><img src="icons/Honeybee/Read_DS_Result_for_a_point.png"/></td><td><a href="components/honeybee/readDSResultForAPoint.html">Read DS Result for a point</a><br><span class="desc">Read Daysim result for a test point</span></td></tr>
+<tr><td><img src="icons/Honeybee/Read_Hourly_Results_from_Annual_Daylight_Study.png"/></td><td><a href="components/honeybee/readHourlyResultsFromAnnualDaylightStudy.html">Read Hourly Results from Annual Daylight Study</a><br><span class="desc">Read the results of the annual study for a single hour of the year</span></td></tr>
+<tr><td><img src="icons/Honeybee/Read_RAD_Result.png"/></td><td><a href="components/honeybee/readRADResult.html">Read RAD Result</a><br><span class="desc">Read Radiance Results</span></td></tr>
+<tr><td><img src="icons/Honeybee/Refine_Daylight_Simulation.png"/></td><td><a href="components/honeybee/refineDaylightSimulation.html">Refine Daylight Simulation</a><br><span class="desc">Refine simulation for an existing Radiance scene (</span></td></tr>
+<tr><td><img src="icons/Honeybee/Run_Daylight_Simulation.png"/></td><td><a href="components/honeybee/runDaylightSimulation.html">Run Daylight Simulation</a><br><span class="desc">export geometries to rad file, and run daylighting/energy simulation</span></td></tr>
+<tr><td><img src="icons/Honeybee/Set_Exposure_for_HDR.png"/></td><td><a href="components/honeybee/setExposureForHDR.html">Set Exposure for HDR</a><br><span class="desc">Set Exposure for HDR</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>01 | Daylight | Material</h3>
+<table class="compos">
+<tbody>
+<tr><td><img src="icons/Honeybee/Add_to_Radiance_Library.png"/></td><td><a href="components/honeybee/addToRadianceLibrary.html">Add to Radiance Library</a><br><span class="desc">Add Radiance Materials to Library</span></td></tr>
+<tr><td><img src="icons/Honeybee/Call_from_Radiance_Library.png"/></td><td><a href="components/honeybee/callFromRadianceLibrary.html">Call from Radiance Library</a><br><span class="desc">Call Radiance Materials from Library</span></td></tr>
+<tr><td><img src="icons/Honeybee/Radiance_BSDF_Material.png"/></td><td><a href="components/honeybee/radianceBSDFMaterial.html">Radiance BSDF Material</a><br><span class="desc">Radiance BSDF Material<br>Create RADIANCE BSDF material</span></td></tr>
+<tr><td><img src="icons/Honeybee/Radiance_Glass_Material_By_Color.png"/></td><td><a href="components/honeybee/radianceGlassMaterialByColor.html">Radiance Glass Material By Color</a><br><span class="desc">Radiance Glass Material By Color<br>Read more here to understand Radiance materials: http://www</span></td></tr>
+<tr><td><img src="icons/Honeybee/Radiance_Glass_Material.png"/></td><td><a href="components/honeybee/radianceGlassMaterial.html">Radiance Glass Material</a><br><span class="desc">Radiance Glass Material<br>Read more here to understand Radiance materials: http://www</span></td></tr>
+<tr><td><img src="icons/Honeybee/Radiance_Materials_Info.png"/></td><td><a href="components/honeybee/radianceMaterialsInfo.html">Radiance Materials Info</a><br><span class="desc">Radiance Materials Info</span></td></tr>
+<tr><td><img src="icons/Honeybee/Radiance_Metal_Material_By_Color.png"/></td><td><a href="components/honeybee/radianceMetalMaterialByColor.html">Radiance Metal Material By Color</a><br><span class="desc">Radiance Metal Material By Color<br>Create a Standard Radiance Metal Material</span></td></tr>
+<tr><td><img src="icons/Honeybee/Radiance_Metal_Material.png"/></td><td><a href="components/honeybee/radianceMetalMaterial.html">Radiance Metal Material</a><br><span class="desc">Radiance Opaque Material<br>Create a Standard Radiance Opaque Material</span></td></tr>
+<tr><td><img src="icons/Honeybee/Radiance_Mirror_Material_By_Color.png"/></td><td><a href="components/honeybee/radianceMirrorMaterialByColor.html">Radiance Mirror Material By Color</a><br><span class="desc">Radiance Mirror Material By Color<br>Read more here to understand Radiance materials: http://www</span></td></tr>
+<tr><td><img src="icons/Honeybee/Radiance_Mirror_Material.png"/></td><td><a href="components/honeybee/radianceMirrorMaterial.html">Radiance Mirror Material</a><br><span class="desc">Radiance Mirror Material<br>Read more here to understand Radiance materials: http://www</span></td></tr>
+<tr><td><img src="icons/Honeybee/Radiance_Opaque_Material_By_Color.png"/></td><td><a href="components/honeybee/radianceOpaqueMaterialByColor.html">Radiance Opaque Material By Color</a><br><span class="desc">Radiance Opaque Material By Color<br>Create a Standard Radiance Opaque Material</span></td></tr>
+<tr><td><img src="icons/Honeybee/Radiance_Opaque_Material.png"/></td><td><a href="components/honeybee/radianceOpaqueMaterial.html">Radiance Opaque Material</a><br><span class="desc">Radiance Opaque Material<br>Create a Standard Radiance Opaque Material</span></td></tr>
+<tr><td><img src="icons/Honeybee/Radiance_Trans_Material_By_Color.png"/></td><td><a href="components/honeybee/radianceTransMaterialByColor.html">Radiance Trans Material By Color</a><br><span class="desc">Radiance Trans Material<br>This component is useful to create translucent materials</span></td></tr>
+<tr><td><img src="icons/Honeybee/Radiance_Trans_Material.png"/></td><td><a href="components/honeybee/radianceTransMaterial.html">Radiance Trans Material</a><br><span class="desc">Radiance Trans Material<br>This component is useful to create translucent materials</span></td></tr>
+<tr><td><img src="icons/Honeybee/Set_Radiance_Materials.png"/></td><td><a href="components/honeybee/setRadianceMaterials.html">Set Radiance Materials</a><br><span class="desc">Radiance Default Materials</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>08 | Energy | Set Zone Properties</h3>
+<table class="compos">
+<tbody>
+<tr><td><img src="icons/Honeybee/infORventPerArea_Calculator.png"/></td><td><a href="components/honeybee/infORventPerAreaCalculator.html">infORventPerArea Calculator</a><br><span class="desc">Use this component to transform ACH to m3/s-m2</span></td></tr>
+<tr><td><img src="icons/Honeybee/Lighting_Density_Calculator.png"/></td><td><a href="components/honeybee/lightingDensityCalculator.html">Lighting Density Calculator</a><br><span class="desc">Use this component to calculate the Lighting Density Per Area Load from information about your bulb, fixture type, mainteneance, and required lighting level</span></td></tr>
+<tr><td><img src="icons/Honeybee/AddEarthtube.png"/></td><td><a href="components/honeybee/addEarthtube.html">AddEarthtube</a><br><span class="desc">Use this component to add an Energy Plus earth tube to a Zone</span></td></tr>
+<tr><td><img src="icons/Honeybee/Create_EP_Ground.png"/></td><td><a href="components/honeybee/createEPGround.html">Create EP Ground</a><br><span class="desc">Use this component to change the properties of a zone to refelct those of a ground</span></td></tr>
+<tr><td><img src="icons/Honeybee/Create_EP_Plenum.png"/></td><td><a href="components/honeybee/createEPPlenum.html">Create EP Plenum</a><br><span class="desc">Use this component to turn a HBZone into a 'Plenum Zone' with no internal loads</span></td></tr>
+<tr><td><img src="icons/Honeybee/Set_EnergyPlus_Zone_Loads.png"/></td><td><a href="components/honeybee/setEnergyPlusZoneLoads.html">Set EnergyPlus Zone Loads</a><br><span class="desc">Use this component to change the occupancy, lighting, equipment, etc</span></td></tr>
+<tr><td><img src="icons/Honeybee/Set_EnergyPlus_Zone_Schedules.png"/></td><td><a href="components/honeybee/setEnergyPlusZoneSchedules.html">Set EnergyPlus Zone Schedules</a><br><span class="desc">Use this component to change the schedules of your HBZones</span></td></tr>
+<tr><td><img src="icons/Honeybee/Set_EnergyPlus_Zone_Thresholds.png"/></td><td><a href="components/honeybee/setEnergyPlusZoneThresholds.html">Set EnergyPlus Zone Thresholds</a><br><span class="desc">Use this component to set Zone Thresholds like daylighting thresholds and setpoints</span></td></tr>
+<tr><td><img src="icons/Honeybee/Set_EP_Air_Flow.png"/></td><td><a href="components/honeybee/setEPAirFlow.html">Set EP Air Flow</a><br><span class="desc">Use this component to edit the airlfow between your zones and set up natural ventilation, if desired</span></td></tr>
+<tr><td><img src="icons/Honeybee/Set_EP_Surface_Construction.png"/></td><td><a href="components/honeybee/setEPSurfaceConstruction.html">Set EP Surface Construction</a><br><span class="desc">Add Glazing</span></td></tr>
+<tr><td><img src="icons/Honeybee/Set_EP_Zone_Construction.png"/></td><td><a href="components/honeybee/setEPZoneConstruction.html">Set EP Zone Construction</a><br><span class="desc">Update EP construction of zone based on type</span></td></tr>
+<tr><td><img src="icons/Honeybee/Set_EP_Zone_Interior_Construction.png"/></td><td><a href="components/honeybee/setEPZoneInteriorConstruction.html">Set EP Zone Interior Construction</a><br><span class="desc">Set EP Zone Interior Construction</span></td></tr>
+<tr><td><img src="icons/Honeybee/Set_EP_Zone_Underground_Construction.png"/></td><td><a href="components/honeybee/setEPZoneUndergroundConstruction.html">Set EP Zone Underground Construction</a><br><span class="desc">Update EP construction of zone based on type</span></td></tr>
+<tr><td><img src="icons/Honeybee/Set_Loads_And_Schedules.png"/></td><td><a href="components/honeybee/setLoadsAndSchedules.html">Set Loads And Schedules</a><br><span class="desc">Set schedules and loads for zones based on program </span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>06 | Energy | Material | Construction</h3>
+<table class="compos">
+<tbody>
+<tr><td><img src="icons/Honeybee/Add_to_EnergyPlus_Library.png"/></td><td><a href="components/honeybee/addToEnergyPlusLibrary.html">Add to EnergyPlus Library</a><br><span class="desc">Add EnergyPlus Material, Construction or Schedule to Library</span></td></tr>
+<tr><td><img src="icons/Honeybee/Call_from_EP_Construction_Library.png"/></td><td><a href="components/honeybee/callFromEPConstructionLibrary.html">Call from EP Construction Library</a><br><span class="desc">Call from EP Library</span></td></tr>
+<tr><td><img src="icons/Honeybee/Decompose_EP_Construction.png"/></td><td><a href="components/honeybee/decomposeEPConstruction.html">Decompose EP Construction</a><br><span class="desc">Decompose EnergyPlus Construction</span></td></tr>
+<tr><td><img src="icons/Honeybee/Decompose_EP_Material.png"/></td><td><a href="components/honeybee/decomposeEPMaterial.html">Decompose EP Material</a><br><span class="desc">Decompose EnergyPlus Material</span></td></tr>
+<tr><td><img src="icons/Honeybee/EnergyPlus_Construction.png"/></td><td><a href="components/honeybee/energyPlusConstruction.html">EnergyPlus Construction</a><br><span class="desc">Use this component to make your own EnergyPlus construction</span></td></tr>
+<tr><td><img src="icons/Honeybee/EnergyPlus_Glass_Material.png"/></td><td><a href="components/honeybee/energyPlusGlassMaterial.html">EnergyPlus Glass Material</a><br><span class="desc">Use this component to create a custom material for glass, which can be plugged into the "Honeybee_EnergyPlus Construction" component</span></td></tr>
+<tr><td><img src="icons/Honeybee/EnergyPlus_NoMass_Opaque_Material.png"/></td><td><a href="components/honeybee/energyPlusNoMassOpaqueMaterial.html">EnergyPlus NoMass Opaque Material</a><br><span class="desc">Use this component to create a custom opaque material that has no mass, which can be plugged into the "Honeybee_EnergyPlus Construction" component</span></td></tr>
+<tr><td><img src="icons/Honeybee/EnergyPlus_Opaque_Material.png"/></td><td><a href="components/honeybee/energyPlusOpaqueMaterial.html">EnergyPlus Opaque Material</a><br><span class="desc">Use this component to create a custom opaque material, which can be plugged into the "Honeybee_EnergyPlus Construction" component</span></td></tr>
+<tr><td><img src="icons/Honeybee/EnergyPlus_Shade_Material.png"/></td><td><a href="components/honeybee/energyPlusShadeMaterial.html">EnergyPlus Shade Material</a><br><span class="desc">Use this component to create a custom material for shades, which can be plugged into the "Honeybee_EnergyPlus Window Shade Generator" component</span></td></tr>
+<tr><td><img src="icons/Honeybee/EnergyPlus_Window_Air_Gap.png"/></td><td><a href="components/honeybee/energyPlusWindowAirGap.html">EnergyPlus Window Air Gap</a><br><span class="desc">Use this component to create a custom material for a window air gap, which can be plugged into the "Honeybee_EnergyPlus Construction" component</span></td></tr>
+<tr><td><img src="icons/Honeybee/EnergyPlus_Window_Material.png"/></td><td><a href="components/honeybee/energyPlusWindowMaterial.html">EnergyPlus Window Material</a><br><span class="desc">Use this component to create a custom window material that has no mass, which can be plugged into the "Honeybee_EnergyPlus Construction" component</span></td></tr>
+<tr><td><img src="icons/Honeybee/R-Value_With_Air_Films.png"/></td><td><a href="components/honeybee/rValueWithAirFilms.html">R-Value With Air Films</a><br><span class="desc">Use this component to account for air films in the U-Value and R-Value of any decomposed Honeybee construction or material</span></td></tr>
+<tr><td><img src="icons/Honeybee/Search_EP_Construction.png"/></td><td><a href="components/honeybee/searchEPConstruction.html">Search EP Construction</a><br><span class="desc">Search EnergyPlus construction based on Energy modeling standards, climate zone, surface type and building program</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>03 | Daylight | Recipes</h3>
+<table class="compos">
+<tbody>
+<tr><td><img src="icons/Honeybee/Advanced_Dynamic_Shading_Recipe.png"/></td><td><a href="components/honeybee/advancedDynamicShadingRecipe.html">Advanced Dynamic Shading Recipe</a><br><span class="desc">Advanced Shading Recipe for Annual Simulation with Daysim</span></td></tr>
+<tr><td><img src="icons/Honeybee/Annual_Daylight_Simulation.png"/></td><td><a href="components/honeybee/annualDaylightSimulation.html">Annual Daylight Simulation</a><br><span class="desc">Analysis Recipe for Annual Daylighting Simulation</span></td></tr>
+<tr><td><img src="icons/Honeybee/Conceptual_Dynamic_Shading_Recipe.png"/></td><td><a href="components/honeybee/conceptualDynamicShadingRecipe.html">Conceptual Dynamic Shading Recipe</a><br><span class="desc">Conceptual Shading Recipe for Annual Simulation with Daysim<br>You need to add sensor points later in the Daysim result reader</span></td></tr>
+<tr><td><img src="icons/Honeybee/Daylight_Factor_Simulation.png"/></td><td><a href="components/honeybee/daylightFactorSimulation.html">Daylight Factor Simulation</a><br><span class="desc">Analysis Recipie for Daylight Factor Analysis</span></td></tr>
+<tr><td><img src="icons/Honeybee/Daysim_Glare_Control_Recipe.png"/></td><td><a href="components/honeybee/daysimGlareControlRecipe.html">Daysim Glare Control Recipe</a><br><span class="desc">Glare Control Recipe for Annual Simulation with Daysim "Based on exterior illuminance and/or position of the sun"<br>You need to add an external sensor later in the Daysim result reader</span></td></tr>
+<tr><td><img src="icons/Honeybee/Daysim_Shading_State.png"/></td><td><a href="components/honeybee/daysimShadingState.html">Daysim Shading State</a><br><span class="desc">Daysim Shading State for Advanced Dynamic Shading</span></td></tr>
+<tr><td><img src="icons/Honeybee/DSParameters.png"/></td><td><a href="components/honeybee/dSParameters.html">DSParameters</a><br><span class="desc">Analyses Recipe for Annual Daylight Simulation with Daysim</span></td></tr>
+<tr><td><img src="icons/Honeybee/Generate_Test_Points.png"/></td><td><a href="components/honeybee/generateTestPoints.html">Generate Test Points</a><br><span class="desc">Genrate Test Points</span></td></tr>
+<tr><td><img src="icons/Honeybee/Generate_Zone_Test_Points.png"/></td><td><a href="components/honeybee/generateZoneTestPoints.html">Generate Zone Test Points</a><br><span class="desc">Genrate Test Points for all Floor Surfaces in Honeybee Zone</span></td></tr>
+<tr><td><img src="icons/Honeybee/Grid_Based_Simulation.png"/></td><td><a href="components/honeybee/gridBasedSimulation.html">Grid Based Simulation</a><br><span class="desc">Analysis Recipie for Grid-Based Analysis</span></td></tr>
+<tr><td><img src="icons/Honeybee/Image_Based_Simulation.png"/></td><td><a href="components/honeybee/imageBasedSimulation.html">Image Based Simulation</a><br><span class="desc">Analysis Recipie for Image-Based Analysis</span></td></tr>
+<tr><td><img src="icons/Honeybee/RADParameters.png"/></td><td><a href="components/honeybee/rADParameters.html">RADParameters</a><br><span class="desc">Radiance Parameters - Standard<br>Check here for more details: http://radsite</span></td></tr>
+<tr><td><img src="icons/Honeybee/Vertical_Sky_Component.png"/></td><td><a href="components/honeybee/verticalSkyComponent.html">Vertical Sky Component</a><br><span class="desc">Analysis Recipie for Vertical Sky Component<br>The idea Based on this discussion on RADIANCE: http://www</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>11 | THERM</h3>
+<table class="compos">
+<tbody>
+<tr><td><img src="icons/Honeybee/Create_Therm_Boundaries.png"/></td><td><a href="components/honeybee/createThermBoundaries.html">Create Therm Boundaries</a><br><span class="desc">Use this component to create a THERM boundary condition</span></td></tr>
+<tr><td><img src="icons/Honeybee/Create_Therm_Polygons.png"/></td><td><a href="components/honeybee/createThermPolygons.html">Create Therm Polygons</a><br><span class="desc">Use this component to create a THERM polygon with material properties</span></td></tr>
+<tr><td><img src="icons/Honeybee/Import_THERM_XML.png"/></td><td><a href="components/honeybee/importTHERMXML.html">Import THERM XML</a><br><span class="desc">Use this component to read the content of a THERM XML file into Grasshopper</span></td></tr>
+<tr><td><img src="icons/Honeybee/Import_WINDOW_Glz_System.png"/></td><td><a href="components/honeybee/importWINDOWGlzSystem.html">Import WINDOW Glz System</a><br><span class="desc">Use this component to import the content of a LBNL WINDOW text file report as a series of polygons and boundary conditions that can be plugged into the "Write THERM File' component</span></td></tr>
+<tr><td><img src="icons/Honeybee/Import_WINDOW_IDF_Report.png"/></td><td><a href="components/honeybee/importWINDOWIDFReport.html">Import WINDOW IDF Report</a><br><span class="desc">Use this component to import an EnergyPlus window construction from LBNL WINDOW</span></td></tr>
+<tr><td><img src="icons/Honeybee/Read_THERM_Result.png"/></td><td><a href="components/honeybee/readTHERMResult.html">Read THERM Result</a><br><span class="desc">Use this component to import the colored mesh results from a THERM simulation</span></td></tr>
+<tr><td><img src="icons/Honeybee/Therm_Material_to_EnergyPlus_Material.png"/></td><td><a href="components/honeybee/thermMaterialToEnergyPlusMaterial.html">Therm Material to EnergyPlus Material</a><br><span class="desc">Use this component to create a custom opaque material, which can be plugged into the "Honeybee_EnergyPlus Construction" component</span></td></tr>
+<tr><td><img src="icons/Honeybee/Therm_Material.png"/></td><td><a href="components/honeybee/thermMaterial.html">Therm Material</a><br><span class="desc">Use this component to create a custom THERM material, which can be plugged into the "Honeybee_Create Therm Polygons" component</span></td></tr>
+<tr><td><img src="icons/Honeybee/Write_THERM_File.png"/></td><td><a href="components/honeybee/writeTHERMFile.html">Write THERM File</a><br><span class="desc">Use this component to write your THERM polygons and boundary conditions into a therm XML that can be opened ready-to-run in THERM</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>02 | Daylight | Sky</h3>
+<table class="compos">
+<tbody>
+<tr><td><img src="icons/Honeybee/Generate_Average_Sky.png"/></td><td><a href="components/honeybee/generateAverageSky.html">Generate Average Sky</a><br><span class="desc">Generate Average Climate Based Sky<br>This component generate an average climate based data for a single hour during a month</span></td></tr>
+<tr><td><img src="icons/Honeybee/Generate_Climate_Based_Sky.png"/></td><td><a href="components/honeybee/generateClimateBasedSky.html">Generate Climate Based Sky</a><br><span class="desc">Genrate Climate Based Sky<br>This component generate a climate based sky for any hour of the year</span></td></tr>
+<tr><td><img src="icons/Honeybee/Generate_Cumulative_Sky.png"/></td><td><a href="components/honeybee/generateCumulativeSky.html">Generate Cumulative Sky</a><br><span class="desc">This component generate a cumulative sky using GenCumulativeSky</span></td></tr>
+<tr><td><img src="icons/Honeybee/Generate_Custom_Sky.png"/></td><td><a href="components/honeybee/generateCustomSky.html">Generate Custom Sky</a><br><span class="desc">Genrate Custom Sky<br>This component generate a custom sky based on user's input</span></td></tr>
+<tr><td><img src="icons/Honeybee/Generate_Dark_Sky.png"/></td><td><a href="components/honeybee/generateDarkSky.html">Generate Dark Sky</a><br><span class="desc">This component generates a dark sky with 0 illuminance</span></td></tr>
+<tr><td><img src="icons/Honeybee/Generate_Sky_With_Certain_Illuminance_level.png"/></td><td><a href="components/honeybee/generateSkyWithCertainIlluminanceLevel.html">Generate Sky With Certain Illuminance level</a><br><span class="desc">Genrate a Uniform CIE Sky Based on Illuminace Value</span></td></tr>
+<tr><td><img src="icons/Honeybee/Generate_Standard_CIE_Sky.png"/></td><td><a href="components/honeybee/generateStandardCIESky.html">Generate Standard CIE Sky</a><br><span class="desc">Genrate Standard CIE Sky</span></td></tr>
+<tr><td><img src="icons/Honeybee/Watch_The_Sky.png"/></td><td><a href="components/honeybee/watchTheSky.html">Watch The Sky</a><br><span class="desc">Watch The Sky</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>10 | Energy | AirsideSystems</h3>
+<table class="compos">
+<tbody>
+<tr><td><img src="icons/Honeybee/OpenStudio_Air_Handler_Detail.png"/></td><td><a href="components/honeybee/openStudioAirHandlerDetail.html">OpenStudio Air Handler Detail</a><br><span class="desc">OpenStudio Systems</span></td></tr>
+<tr><td><img src="icons/Honeybee/OpenStudio_Airside_Economizer_Detail.png"/></td><td><a href="components/honeybee/openStudioAirsideEconomizerDetail.html">OpenStudio Airside Economizer Detail</a><br><span class="desc">Airside Economizer</span></td></tr>
+<tr><td><img src="icons/Honeybee/OpenStudio_Availability_Manager_List.png"/></td><td><a href="components/honeybee/openStudioAvailabilityManagerList.html">OpenStudio Availability Manager List</a><br><span class="desc">AvailabilityManagerList</span></td></tr>
+<tr><td><img src="icons/Honeybee/OpenStudio_DX_Cooling_Coil.png"/></td><td><a href="components/honeybee/openStudioDXCoolingCoil.html">OpenStudio DX Cooling Coil</a><br><span class="desc">EPlus DX Coil</span></td></tr>
+<tr><td><img src="icons/Honeybee/OpenStudio_DX_Heating_Coil.png"/></td><td><a href="components/honeybee/openStudioDXHeatingCoil.html">OpenStudio DX Heating Coil</a><br><span class="desc">EPlus DX Heating Coil</span></td></tr>
+<tr><td><img src="icons/Honeybee/OpenStudio_Evaporative_Condenser.png"/></td><td><a href="components/honeybee/openStudioEvaporativeCondenser.html">OpenStudio Evaporative Condenser</a><br><span class="desc">Evaporative Condenser</span></td></tr>
+<tr><td><img src="icons/Honeybee/OpenStudio_Fan_Detail.png"/></td><td><a href="components/honeybee/openStudioFanDetail.html">OpenStudio Fan Detail</a><br><span class="desc">Energy Plus Fan Definition</span></td></tr>
+<tr><td><img src="icons/Honeybee/OpenStudio_Mechanical_Controller.png"/></td><td><a href="components/honeybee/openStudioMechanicalController.html">OpenStudio Mechanical Controller</a><br><span class="desc">Mechanical Ventilation Controller<br>This is an optional field that overrides the economizer behavior<br>It adds DCV if you want it as well</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>07 | Energy | Schedule</h3>
+<table class="compos">
+<tbody>
+<tr><td><img src="icons/Honeybee/Call_from_EP_Schedule_Library.png"/></td><td><a href="components/honeybee/callFromEPScheduleLibrary.html">Call from EP Schedule Library</a><br><span class="desc">Call from EP Schedule Library</span></td></tr>
+<tr><td><img src="icons/Honeybee/Convert_EnergyPlus_Schedule_to_Values.png"/></td><td><a href="components/honeybee/convertEnergyPlusScheduleToValues.html">Convert EnergyPlus Schedule to Values</a><br><span class="desc">Use this component to make a 3D chart in the Rhino scene of any climate data or hourly simulation data</span></td></tr>
+<tr><td><img src="icons/Honeybee/Create_CSV_Schedule.png"/></td><td><a href="components/honeybee/createCSVSchedule.html">Create CSV Schedule</a><br><span class="desc">Use this component to write custom </span></td></tr>
+<tr><td><img src="icons/Honeybee/Decompose_EnergyPlus_Schedule.png"/></td><td><a href="components/honeybee/decomposeEnergyPlusSchedule.html">Decompose EnergyPlus Schedule</a><br><span class="desc">Decompose Schedule</span></td></tr>
+<tr><td><img src="icons/Honeybee/Get_Zone_EnergyPlus_Loads.png"/></td><td><a href="components/honeybee/getZoneEnergyPlusLoads.html">Get Zone EnergyPlus Loads</a><br><span class="desc">Look up loads for a Honeybee Zone</span></td></tr>
+<tr><td><img src="icons/Honeybee/Get_Zone_EnergyPlus_Schedules.png"/></td><td><a href="components/honeybee/getZoneEnergyPlusSchedules.html">Get Zone EnergyPlus Schedules</a><br><span class="desc">Look up schedules for a Honeybee Zone</span></td></tr>
+<tr><td><img src="icons/Honeybee/Search_EP_Schedule_Library.png"/></td><td><a href="components/honeybee/searchEPScheduleLibrary.html">Search EP Schedule Library</a><br><span class="desc">Filter EP Schedule Library</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>05 | Energy | Building Program</h3>
+<table class="compos">
+<tbody>
+<tr><td><img src="icons/Honeybee/bldgPrograms.png"/></td><td><a href="components/honeybee/bldgPrograms.html">bldgPrograms</a><br><span class="desc">Provides a list of available building programs from the template</span></td></tr>
+<tr><td><img src="icons/Honeybee/Get_EnergyPlus_Loads.png"/></td><td><a href="components/honeybee/getEnergyPlusLoads.html">Get EnergyPlus Loads</a><br><span class="desc">Look up loads for an specific bldgProgram and zoneProgram</span></td></tr>
+<tr><td><img src="icons/Honeybee/Get_EnergyPlus_Schedules.png"/></td><td><a href="components/honeybee/getEnergyPlusSchedules.html">Get EnergyPlus Schedules</a><br><span class="desc">Look up schedules for an specific bldgProgram and zoneProgram</span></td></tr>
+<tr><td><img src="icons/Honeybee/ListZonePrograms.png"/></td><td><a href="components/honeybee/listZonePrograms.html">ListZonePrograms</a><br><span class="desc">Find list of spaces for each space based on program</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>12 | Developers</h3>
+<table class="compos">
+<tbody>
+<tr><td><img src="icons/Honeybee/Update_Honeybee.png"/></td><td><a href="components/honeybee/updateHoneybee.html">Update Honeybee</a><br><span class="desc">This component [removes | updates] Honeybee components from [grasshopper | a source folder]</span></td></tr>
+</tbody>
+</table>
+
+</div>
+</div>
+<div class="libheader">
+<a href="http://www.food4rhino.com/project/hoopsnake?ufh"><h2>Hoopsnake</h2></a>
+<span class="desc">Version 0.6.7</span>
+<span class="codeword">(Released 2014-Apr-28)</span><br>
+</div>
+<div class="cparent">
+<div class="cchild">
+<h3>yconst.com</h3>
+<table class="compos">
+<tbody>
+<tr><td><img src="icons/Hoopsnake/HoopSnake.png"/></td><td><a href="components/hoopsnake/hoopSnake.html">HoopSnake</a><br><span class="desc">HoopSnake Feedback Component</span></td></tr>
 </tbody>
 </table>
 
@@ -1993,6 +2558,135 @@
 <tr><td><img src="icons/Human/Create_Modify_Materials.png"/></td><td><a href="components/human/createModifyMaterials.html">Create/Modify Materials</a><br><span class="desc">Create or Edit document Render Materials. <br></span></td></tr>
 <tr><td><img src="icons/Human/Modify_Viewport.png"/></td><td><a href="components/human/modifyViewport.html">Modify Viewport</a><br><span class="desc">Use this component to restore a named view in a viewport, set its display mode, or set its camera.</span></td></tr>
 <tr><td><img src="icons/Human/Modify_Object_Attributes.png"/></td><td><a href="components/human/modifyObjectAttributes.html">Modify Object Attributes</a><br><span class="desc">Use this component to modify the object attributes of geometry in Rhino.</span></td></tr>
+</tbody>
+</table>
+
+</div>
+</div>
+<div class="libheader">
+<a href="http://www.food4rhino.com/project/human-ui?ufh"><h2>Human UI</h2></a>
+<span class="desc">Version 0.6.8.0</span>
+<span class="codeword">(Released 2016-May-04)</span><br>
+</div>
+<div class="cparent">
+<div class="cchild">
+<h3>UI Elements</h3>
+<table class="compos">
+<tbody>
+<tr><td><img src="icons/HumanUI/Create_3D_View.png"/></td><td><a href="components/humanui/create3DView.html">Create 3D View</a><br><span class="desc">Creates an orbitable 3d viewport with a custom-defined mesh</span></td></tr>
+<tr><td><img src="icons/HumanUI/Create_Browser.png"/></td><td><a href="components/humanui/createBrowser.html">Create Browser</a><br><span class="desc">Creates a web browser window.</span></td></tr>
+<tr><td><img src="icons/HumanUI/Create_Button.png"/></td><td><a href="components/humanui/createButton.html">Create Button</a><br><span class="desc">Create a Button object.</span></td></tr>
+<tr><td><img src="icons/HumanUI/Create_Checkbox.png"/></td><td><a href="components/humanui/createCheckbox.html">Create Checkbox</a><br><span class="desc">Creates a single checkbox</span></td></tr>
+<tr><td><img src="icons/HumanUI/Create_Checklist.png"/></td><td><a href="components/humanui/createChecklist.html">Create Checklist</a><br><span class="desc">Creates a listbox containing checkboxes.</span></td></tr>
+<tr><td><img src="icons/HumanUI/Create_Color_Picker.png"/></td><td><a href="components/humanui/createColorPicker.html">Create Color Picker</a><br><span class="desc">Creates an interactive color picker, with an optionally supplied set of colors</span></td></tr>
+<tr><td><img src="icons/HumanUI/Create_Image.png"/></td><td><a href="components/humanui/createImage.html">Create Image</a><br><span class="desc">Creates an image object to be added to the window</span></td></tr>
+<tr><td><img src="icons/HumanUI/Create_Label.png"/></td><td><a href="components/humanui/createLabel.html">Create Label</a><br><span class="desc">Creates a label in the window.</span></td></tr>
+<tr><td><img src="icons/HumanUI/Create_List_Box.png"/></td><td><a href="components/humanui/createListBox.html">Create List Box</a><br><span class="desc">Creates a list box from which items can be selected.</span></td></tr>
+<tr><td><img src="icons/HumanUI/Create_Multidimensional_Slider.png"/></td><td><a href="components/humanui/createMultidimensionalSlider.html">Create Multidimensional Slider</a><br><span class="desc">Creates a 2D slider ranging from {0,0} to {1,1}</span></td></tr>
+<tr><td><img src="icons/HumanUI/Create_Shapes.png"/></td><td><a href="components/humanui/createShapes.html">Create Shapes</a><br><span class="desc">Creates shapes from a polylines</span></td></tr>
+<tr><td><img src="icons/HumanUI/Create_Objects_from_XAML.png"/></td><td><a href="components/humanui/createObjectsFromXAML.html">Create Objects from XAML</a><br><span class="desc">Creates UI elements from typed XAML syntax</span></td></tr>
+<tr><td><img src="icons/HumanUI/Create_Pulldown_Menu.png"/></td><td><a href="components/humanui/createPulldownMenu.html">Create Pulldown Menu</a><br><span class="desc">Creates a pulldown menu from which items can be selected.</span></td></tr>
+<tr><td><img src="icons/HumanUI/Create_Radio_Button.png"/></td><td><a href="components/humanui/createRadioButton.html">Create Radio Button</a><br><span class="desc">Creates a single radio button. Be sure to assign a radio button group for proper switching behavior</span></td></tr>
+<tr><td><img src="icons/HumanUI/Create_Rhino_Command_Button.png"/></td><td><a href="components/humanui/createRhinoCommandButton.html">Create Rhino Command Button</a><br><span class="desc">Create a Special Button object to trigger a Rhino command.</span></td></tr>
+<tr><td><img src="icons/HumanUI/Create_Shape.png"/></td><td><a href="components/humanui/createShape.html">Create Shape</a><br><span class="desc">Creates a simple shape from a polyline</span></td></tr>
+<tr><td><img src="icons/HumanUI/Create_Slider.png"/></td><td><a href="components/humanui/createSlider.html">Create Slider</a><br><span class="desc">Create a slider with a label and a value readout.</span></td></tr>
+<tr><td><img src="icons/HumanUI/Create_Text_Block.png"/></td><td><a href="components/humanui/createTextBlock.html">Create Text Block</a><br><span class="desc">Creates a multi-line text block</span></td></tr>
+<tr><td><img src="icons/HumanUI/Create_Text_Box.png"/></td><td><a href="components/humanui/createTextBox.html">Create Text Box</a><br><span class="desc">Create a box for text entry, with a button to pass its value.</span></td></tr>
+<tr><td><img src="icons/HumanUI/Create_True-Only_Button.png"/></td><td><a href="components/humanui/createTrueOnlyButton.html">Create True-Only Button</a><br><span class="desc">Create a True only Button object.</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>UI Main</h3>
+<table class="compos">
+<tbody>
+<tr><td><img src="icons/HumanUI/Set_Window_Properties.png"/></td><td><a href="components/humanui/setWindowProperties.html">Set Window Properties</a><br><span class="desc">Modify various properties of a Window.</span></td></tr>
+<tr><td><img src="icons/HumanUI/Add_Elements.png"/></td><td><a href="components/humanui/addElements.html">Add Elements</a><br><span class="desc">Add WPF Controls to a window</span></td></tr>
+<tr><td><img src="icons/HumanUI/Adjust_Element_Appearance.png"/></td><td><a href="components/humanui/adjustElementAppearance.html">Adjust Element Appearance</a><br><span class="desc">Adjust the color and appearance of individual elements.</span></td></tr>
+<tr><td><img src="icons/HumanUI/Adjust_Element_Positioning.png"/></td><td><a href="components/humanui/adjustElementPositioning.html">Adjust Element Positioning</a><br><span class="desc">Adjust the margins, sizing, and other positioning information of an element. <br>Absolute positioning can get a little wonky, use at your own risk.</span></td></tr>
+<tr><td><img src="icons/HumanUI/Capture_Window_to_File.png"/></td><td><a href="components/humanui/captureWindowToFile.html">Capture Window to File</a><br><span class="desc">Capture a HUI Window to an image</span></td></tr>
+<tr><td><img src="icons/HumanUI/Launch_Transparent_Window.png"/></td><td><a href="components/humanui/launchTransparentWindow.html">Launch Transparent Window</a><br><span class="desc">This component launches a new blank, transparent control window.</span></td></tr>
+<tr><td><img src="icons/HumanUI/Get_Screen_Dimensions.png"/></td><td><a href="components/humanui/getScreenDimensions.html">Get Screen Dimensions</a><br><span class="desc">Gets the dimensions of the current screen</span></td></tr>
+<tr><td><img src="icons/HumanUI/Hide_Show_Element.png"/></td><td><a href="components/humanui/hideShowElement.html">Hide/Show Element</a><br><span class="desc">Allows you to hide or show an element</span></td></tr>
+<tr><td><img src="icons/HumanUI/Launch_Window.png"/></td><td><a href="components/humanui/launchWindow.html">Launch Window</a><br><span class="desc">This component launches a new blank control window.</span></td></tr>
+<tr><td><img src="icons/HumanUI/Restore_Element_States.png"/></td><td><a href="components/humanui/restoreElementStates.html">Restore Element States</a><br><span class="desc">Restore the saved states of UI elements</span></td></tr>
+<tr><td><img src="icons/HumanUI/Save_Element_States.png"/></td><td><a href="components/humanui/saveElementStates.html">Save Element States</a><br><span class="desc">This component lets you save the states of selected elements for later retrieval</span></td></tr>
+<tr><td><img src="icons/HumanUI/Value_Listener.png"/></td><td><a href="components/humanui/valueListener.html">Value Listener</a><br><span class="desc">This component is used to retrieve the values of UI elements from the window. By default it will automatically refresh when those values change.</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>UI Output</h3>
+<table class="compos">
+<tbody>
+<tr><td><img src="icons/HumanUI/Set_3D_View.png"/></td><td><a href="components/humanui/set3DView.html">Set 3D View</a><br><span class="desc">Allows you to modify the contents of an existing 3D view.</span></td></tr>
+<tr><td><img src="icons/HumanUI/Set_3D_View_Textured.png"/></td><td><a href="components/humanui/set3DViewTextured.html">Set 3D View Textured</a><br><span class="desc">Allows you to modify the contents of an existing 3D view.</span></td></tr>
+<tr><td><img src="icons/HumanUI/Set_Browser.png"/></td><td><a href="components/humanui/setBrowser.html">Set Browser</a><br><span class="desc">Control the Browser element - with back/forward buttons, and control over the displayed site etc.</span></td></tr>
+<tr><td><img src="icons/HumanUI/Set_Checklist_Contents.png"/></td><td><a href="components/humanui/setChecklistContents.html">Set Checklist Contents</a><br><span class="desc">Use this to set the contents of a checklist</span></td></tr>
+<tr><td><img src="icons/HumanUI/Set_Image.png"/></td><td><a href="components/humanui/setImage.html">Set Image</a><br><span class="desc">Change the content of an existing Image control.</span></td></tr>
+<tr><td><img src="icons/HumanUI/Set_Label_Contents.png"/></td><td><a href="components/humanui/setLabelContents.html">Set Label Contents</a><br><span class="desc">Modify the contents of an existing label object.</span></td></tr>
+<tr><td><img src="icons/HumanUI/Set_List_Contents.png"/></td><td><a href="components/humanui/setListContents.html">Set List Contents</a><br><span class="desc">Use this to set the contents of either a List Box or a Pulldown Menu</span></td></tr>
+<tr><td><img src="icons/HumanUI/Set_Shape.png"/></td><td><a href="components/humanui/setShape.html">Set Shape</a><br><span class="desc">Replace an existing shape in the window</span></td></tr>
+<tr><td><img src="icons/HumanUI/Set_Shapes.png"/></td><td><a href="components/humanui/setShapes.html">Set Shapes</a><br><span class="desc">Replace an existing shape in the window</span></td></tr>
+<tr><td><img src="icons/HumanUI/Set_TextBlock_Contents.png"/></td><td><a href="components/humanui/setTextBlockContents.html">Set TextBlock Contents</a><br><span class="desc">Modify the contents of an existing Text Block object.</span></td></tr>
+<tr><td><img src="icons/HumanUI/Set_TextBox_Contents.png"/></td><td><a href="components/humanui/setTextBoxContents.html">Set TextBox Contents</a><br><span class="desc">Modify the contents of an existing Text Box object.</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>UI Graphs + Charts</h3>
+<table class="compos">
+<tbody>
+<tr><td><img src="icons/HumanUI/Create_Chart.png"/></td><td><a href="components/humanui/createChart.html">Create Chart</a><br><span class="desc">Creates a Chart from Data and Categories.</span></td></tr>
+<tr><td><img src="icons/HumanUI/Create_Multi_Chart.png"/></td><td><a href="components/humanui/createMultiChart.html">Create Multi Chart</a><br><span class="desc">Creates a Multi Chart from sets of Data and Categories.</span></td></tr>
+<tr><td><img src="icons/HumanUI/Set_Chart_Contents.png"/></td><td><a href="components/humanui/setChartContents.html">Set Chart Contents</a><br><span class="desc">Use this to set the contents of a Chart</span></td></tr>
+<tr><td><img src="icons/HumanUI/Chart_Appearance.png"/></td><td><a href="components/humanui/chartAppearance.html">Chart Appearance</a><br><span class="desc">Use this to set the appearnce of a Chart</span></td></tr>
+<tr><td><img src="icons/HumanUI/Set_Multi_Chart_Contents.png"/></td><td><a href="components/humanui/setMultiChartContents.html">Set Multi Chart Contents</a><br><span class="desc">Use this to set the contents of a MultiChart</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>UI Containers</h3>
+<table class="compos">
+<tbody>
+<tr><td><img src="icons/HumanUI/Create_Grid.png"/></td><td><a href="components/humanui/createGrid.html">Create Grid</a><br><span class="desc">Create a container with absolutely positioned elements. <br> Their input order determines their Z order - set the margins <br>with the "Adjust Element Positioning" component to locate <br>elements inside the grid.<br> Use column and row definitions to create more advanced grids.</span></td></tr>
+<tr><td><img src="icons/HumanUI/Create_Stack.png"/></td><td><a href="components/humanui/createStack.html">Create Stack</a><br><span class="desc">Creates a group of UI elements stacked vertically or horizontally.</span></td></tr>
+<tr><td><img src="icons/HumanUI/Create_View_Box.png"/></td><td><a href="components/humanui/createViewBox.html">Create View Box</a><br><span class="desc">Scale a group of UI Elements by placing them in a ViewBox.</span></td></tr>
+<tr><td><img src="icons/HumanUI/Tabbed_View.png"/></td><td><a href="components/humanui/tabbedView.html">Tabbed View</a><br><span class="desc">Creates a series of tabbed views that can contain UI element layouts</span></td></tr>
+</tbody>
+</table>
+
+</div>
+</div>
+<div class="libheader">
+<a href="http://www.food4rhino.com/project/hummingbird?ufh"><h2>Hummingbird</h2></a>
+<span class="desc">Version 2.3</span>
+<span class="codeword">(Released 2015-Dec-14)</span><br>
+</div>
+<div class="cparent">
+<div class="cchild">
+<h3>Hummingbird</h3>
+<table class="compos">
+<tbody>
+<tr><td><img src="icons/Hummingbird/AdapComps.png"/></td><td><a href="components/hummingbird/adapComps.html">AdapComps</a><br><span class="desc">WhiteFeet ModelBuilder - Add Adaptive Components</span></td></tr>
+<tr><td><img src="icons/Hummingbird/Beams.png"/></td><td><a href="components/hummingbird/beams.html">Beams</a><br><span class="desc">WhiteFeet ModelBuilder - Add Beams</span></td></tr>
+<tr><td><img src="icons/Hummingbird/Columns.png"/></td><td><a href="components/hummingbird/columns.html">Columns</a><br><span class="desc">WhiteFeet ModelBuilder - Add Columns</span></td></tr>
+<tr><td><img src="icons/Hummingbird/Families.png"/></td><td><a href="components/hummingbird/families.html">Families</a><br><span class="desc">WhiteFeet ModelBuilder - Add Revit Families</span></td></tr>
+<tr><td><img src="icons/Hummingbird/FilledRegions.png"/></td><td><a href="components/hummingbird/filledRegions.html">FilledRegions</a><br><span class="desc">WhiteFeet ModelBuilder - Add FilledRegions</span></td></tr>
+<tr><td><img src="icons/Hummingbird/Floors.png"/></td><td><a href="components/hummingbird/floors.html">Floors</a><br><span class="desc">WhiteFeet ModelBuilder - Add Floors</span></td></tr>
+<tr><td><img src="icons/Hummingbird/Grids.png"/></td><td><a href="components/hummingbird/grids.html">Grids</a><br><span class="desc">WhiteFeet ModelBuilder - Add Revit Grid Lines</span></td></tr>
+<tr><td><img src="icons/Hummingbird/Input.png"/></td><td><a href="components/hummingbird/input.html">Input</a><br><span class="desc">WhiteFeet ModelBuilder - Read Input</span></td></tr>
+<tr><td><img src="icons/Hummingbird/Levels.png"/></td><td><a href="components/hummingbird/levels.html">Levels</a><br><span class="desc">WhiteFeet ModelBuilder - Add Revit Levels</span></td></tr>
+<tr><td><img src="icons/Hummingbird/Lines.png"/></td><td><a href="components/hummingbird/lines.html">Lines</a><br><span class="desc">WhiteFeet ModelBuilder - Add Revit Lines</span></td></tr>
+<tr><td><img src="icons/Hummingbird/LoftForms.png"/></td><td><a href="components/hummingbird/loftForms.html">LoftForms</a><br><span class="desc">WhiteFeet ModelBuilder - Add LoftForm from Reference Points</span></td></tr>
+<tr><td><img src="icons/Hummingbird/MassFamilies.png"/></td><td><a href="components/hummingbird/massFamilies.html">MassFamilies</a><br><span class="desc">WhiteFeet ModelBuilder - Add Mass Family Extrusion</span></td></tr>
+<tr><td><img src="icons/Hummingbird/Rooms_Areas.png"/></td><td><a href="components/hummingbird/roomsAreas.html">Rooms/Areas</a><br><span class="desc">WhiteFeet ModelBuilder - Add Rooms & Areas</span></td></tr>
+<tr><td><img src="icons/Hummingbird/TopoSurface.png"/></td><td><a href="components/hummingbird/topoSurface.html">TopoSurface</a><br><span class="desc">WhiteFeet ModelBuilder - Add Revit Topo Surface</span></td></tr>
+<tr><td><img src="icons/Hummingbird/Walls.png"/></td><td><a href="components/hummingbird/walls.html">Walls</a><br><span class="desc">WhiteFeet ModelBuilder - Add Walls</span></td></tr>
 </tbody>
 </table>
 
@@ -2543,6 +3237,177 @@
 </div>
 </div>
 <div class="libheader">
+<a href="http://www.food4rhino.com/project/ladybug-honeybee?ufh"><h2>Ladybug</h2></a>
+<span class="desc">Version 0.0.62</span>
+<span class="codeword">(Released 2016-Jan-29)</span><br>
+</div>
+<div class="cparent">
+<div class="cchild">
+<h3>4 | Extra</h3>
+<table class="compos">
+<tbody>
+<tr><td><img src="icons/Ladybug/Activities_Met_List.png"/></td><td><a href="components/ladybug/activitiesMetList.html">Activities Met List</a><br><span class="desc">Provides a list of available activites and outputs the metabolic rate of that activity for use in the Ladybug PMV comfort calculator</span></td></tr>
+<tr><td><img src="icons/Ladybug/Adaptive_Comfort_Parameters.png"/></td><td><a href="components/ladybug/adaptiveComfortParameters.html">Adaptive Comfort Parameters</a><br><span class="desc">Use this component to set Adaptive comfort parameters for the Adaptive Comfort Calculator or the Adaptive Comfort Chart</span></td></tr>
+<tr><td><img src="icons/Ladybug/Body_Characteristics.png"/></td><td><a href="components/ladybug/bodyCharacteristics.html">Body Characteristics</a><br><span class="desc">Use this component to calculate the Basal Metabolic Rate, Body Mass Index indices and to create the "bodyCharacterstics_" input for the "Thermal comfort indices" component</span></td></tr>
+<tr><td><img src="icons/Ladybug/BTU2Wh.png"/></td><td><a href="components/ladybug/bTU2Wh.html">BTU2Wh</a><br><span class="desc">Use this component to convert energy values in BTU to Wh, kBTU to kWh, BTU/ft2 to Wh/m2, or kBTU/ft2 to kWh/m2</span></td></tr>
+<tr><td><img src="icons/Ladybug/C2F.png"/></td><td><a href="components/ladybug/c2F.html">C2F</a><br><span class="desc">Use this component to convert temperatures from Celcius to Fahrenheit</span></td></tr>
+<tr><td><img src="icons/Ladybug/Capture_View.png"/></td><td><a href="components/ladybug/captureView.html">Capture View</a><br><span class="desc">Use this component to capture Rhino views and save them to your hard drive as as a </span></td></tr>
+<tr><td><img src="icons/Ladybug/CombineSolarEnvelopes.png"/></td><td><a href="components/ladybug/combineSolarEnvelopes.html">CombineSolarEnvelopes</a><br><span class="desc">Use this component to combine two or more solar envelopes from Ladybug_SolarEnvelope component</span></td></tr>
+<tr><td><img src="icons/Ladybug/Comfort_Mannequin.png"/></td><td><a href="components/ladybug/comfortMannequin.html">Comfort Mannequin</a><br><span class="desc">Use this component to color a mannequin based on their relation to a comfort temperature</span></td></tr>
+<tr><td><img src="icons/Ladybug/Construct_Time.png"/></td><td><a href="components/ladybug/constructTime.html">Construct Time</a><br><span class="desc">Use this component to construct a specific hour from corresponding time in hours, minutes and seconds</span></td></tr>
+<tr><td><img src="icons/Ladybug/Create_Legend.png"/></td><td><a href="components/ladybug/createLegend.html">Create Legend</a><br><span class="desc">Use this component to create a custom legend for any set of data or to create a more flexible legend for any ladybug component with a legend</span></td></tr>
+<tr><td><img src="icons/Ladybug/Day_Month_Hour.png"/></td><td><a href="components/ladybug/dayMonthHour.html">Day_Month_Hour</a><br><span class="desc">Use this component to calculate date information from an hour of the year</span></td></tr>
+<tr><td><img src="icons/Ladybug/DOY_HOY.png"/></td><td><a href="components/ladybug/dOYHOY.html">DOY_HOY</a><br><span class="desc">Use this component to calculate the day of the year and hour of the year from an input date with a day of the month, month of the year and hour of the day</span></td></tr>
+<tr><td><img src="icons/Ladybug/F2C.png"/></td><td><a href="components/ladybug/f2C.html">F2C</a><br><span class="desc">Use this component to convert temperatures from Fahrenheit to Celcius</span></td></tr>
+<tr><td><img src="icons/Ladybug/fly.png"/></td><td><a href="components/ladybug/fly.html">fly</a><br><span class="desc">Use Fly to cycle through all connected sliders</span></td></tr>
+<tr><td><img src="icons/Ladybug/Gradient_Library.png"/></td><td><a href="components/ladybug/gradientLibrary.html">Gradient Library</a><br><span class="desc">Use this component to access a library of typical gradients useful throughout Ladybug</span></td></tr>
+<tr><td><img src="icons/Ladybug/kWh2Wh.png"/></td><td><a href="components/ladybug/kWh2Wh.html">kWh2Wh</a><br><span class="desc">Use this component to convert energy values in kW to W, kW/m2 to W/m2, kWh to Wh, kWh/m2 to Wh/m2, kBTU to BTU, or kBTU/ft2 to BTU/ft2</span></td></tr>
+<tr><td><img src="icons/Ladybug/L2G.png"/></td><td><a href="components/ladybug/l2G.html">L2G</a><br><span class="desc">Use this component to convert the liquid volume from Liters to U</span></td></tr>
+<tr><td><img src="icons/Ladybug/Legend_Parameters.png"/></td><td><a href="components/ladybug/legendParameters.html">Legend Parameters</a><br><span class="desc">Use this component to change the colors, numerical range, and/or number of divisions of any Ladybug legend along with the corresponding colored mesh that the legend refers to</span></td></tr>
+<tr><td><img src="icons/Ladybug/Mesh-To-Hatch.png"/></td><td><a href="components/ladybug/meshToHatch.html">Mesh-To-Hatch</a><br><span class="desc">Use this component to bake a clored mesh into the Rhino scene as a series of colored hatches</span></td></tr>
+<tr><td><img src="icons/Ladybug/ms2mph.png"/></td><td><a href="components/ladybug/ms2mph.html">ms2mph</a><br><span class="desc">Convert from m/s to mile/h </span></td></tr>
+<tr><td><img src="icons/Ladybug/North.png"/></td><td><a href="components/ladybug/north.html">North</a><br><span class="desc">Use this component to create a compass sign that indicates the direction of North in the Rhino scene</span></td></tr>
+<tr><td><img src="icons/Ladybug/Orient_to_Camera.png"/></td><td><a href="components/ladybug/orientToCamera.html">Orient to Camera</a><br><span class="desc">Use this component to generate a plane that is oriented perpendicular to the active Rhino viewport camera direction and centered at an input _initPosition point</span></td></tr>
+<tr><td><img src="icons/Ladybug/Orientation_Study_Parameters.png"/></td><td><a href="components/ladybug/orientationStudyParameters.html">Orientation Study Parameters</a><br><span class="desc">Use this component with the Ladybug "Radiation Analysis", "Sunlight Hours Analysis", or "View Analysis" component to set up the parameters for an Orientation Study</span></td></tr>
+<tr><td><img src="icons/Ladybug/Passive_Strategy_List.png"/></td><td><a href="components/ladybug/passiveStrategyList.html">Passive Strategy List</a><br><span class="desc">Provides a list of passive thermal strategies to be plugged into the Ladybug_Psychrometric Chart</span></td></tr>
+<tr><td><img src="icons/Ladybug/Passive_Strategy_Parameters.png"/></td><td><a href="components/ladybug/passiveStrategyParameters.html">Passive Strategy Parameters</a><br><span class="desc">Use this component to adjust the assumptions of the passive strategies that can be overalid on the Ladybug the Psychrometric Chart</span></td></tr>
+<tr><td><img src="icons/Ladybug/PMV_Comfort_Parameters.png"/></td><td><a href="components/ladybug/pMVComfortParameters.html">PMV Comfort Parameters</a><br><span class="desc">Use this component to set PMV comfort parameters for the PMV comfort calculator or the Psychrometric Chart</span></td></tr>
+<tr><td><img src="icons/Ladybug/Real_Time_Radiation_Analysis.png"/></td><td><a href="components/ladybug/realTimeRadiationAnalysis.html">Real Time Radiation Analysis</a><br><span class="desc">Use this component to scroll through the results of a Ladybug Radiation Analysis on an hour-by-hour, day-by-day, or month-by-month basis in real time!<br>The component uses a sky matrix (SkyMxt) from the selectSkyMxt component and the intersection matrix (intersectionMxt) from the Radiation Analysis component to calculate real time radiation results</span></td></tr>
+<tr><td><img src="icons/Ladybug/Recolor_Mesh.png"/></td><td><a href="components/ladybug/recolorMesh.html">Recolor Mesh</a><br><span class="desc">Use this component to re-color a mesh with new a numerical data set whose length corresponds to the number of faces in the _inputMesh</span></td></tr>
+<tr><td><img src="icons/Ladybug/rIP2rSI.png"/></td><td><a href="components/ladybug/rIP2rSI.html">rIP2rSI</a><br><span class="desc">Use this component to convert R-Values in IP (h·ft2·°F/BTU) to R-Values in SI (K·m2/W) to plug into any of the Honeybee material components</span></td></tr>
+<tr><td><img src="icons/Ladybug/Set_the_View.png"/></td><td><a href="components/ladybug/setTheView.html">Set the View</a><br><span class="desc">Use this component to set the camera location and direction for the Rhino "Perspective" viewport</span></td></tr>
+<tr><td><img src="icons/Ladybug/Shading_Parameters_List.png"/></td><td><a href="components/ladybug/shadingParametersList.html">Shading Parameters List</a><br><span class="desc">Use this component to generate shading depths, numbers of shades, horizontal or vertical boolean values, and shade angles for different cardinal directions to be plugged into the "Ladybug_Shading Designer" component or the "Honeybee_EnergyPlus Window Shade Generator"</span></td></tr>
+<tr><td><img src="icons/Ladybug/True_North.png"/></td><td><a href="components/ladybug/trueNorth.html">True North</a><br><span class="desc">Use this component to calculate Earth's true north from magnetic north</span></td></tr>
+<tr><td><img src="icons/Ladybug/uIP2uSI.png"/></td><td><a href="components/ladybug/uIP2uSI.html">uIP2uSI</a><br><span class="desc">Use this component to convert U-Values in IP (BTU/h·ft2·°F) to U-Values in SI (W/K·m2) to plug into any of the Honeybee material components</span></td></tr>
+<tr><td><img src="icons/Ladybug/Wh2BTU.png"/></td><td><a href="components/ladybug/wh2BTU.html">Wh2BTU</a><br><span class="desc">Use this component to convert energy values in Wh to BTU, kWh to kBTU, Wh/m2 to BTU/ft2, or kWh/m2 to kBTU/ft2</span></td></tr>
+<tr><td><img src="icons/Ladybug/Wh2kWh.png"/></td><td><a href="components/ladybug/wh2kWh.html">Wh2kWh</a><br><span class="desc">Use this component to convert energy values in W to kW, W/m2 to kW/m2, Wh to kWh, Wh/m2 to kWh/m2, BTU to kBTU, or BTU/ft2 to kBTU/ft2</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>3 | EnvironmentalAnalysis</h3>
+<table class="compos">
+<tbody>
+<tr><td><img src="icons/Ladybug/Bounce_from_Surface.png"/></td><td><a href="components/ladybug/bounceFromSurface.html">Bounce from Surface</a><br><span class="desc">Use this component to get a sense of how direct sunlight is reflected off of an initial _sourceSrf and subsequently to a set of context_ geometries by tracing sun rays forwards through this geometry</span></td></tr>
+<tr><td><img src="icons/Ladybug/Comfort_Shade_Benefit_Evaluator.png"/></td><td><a href="components/ladybug/comfortShadeBenefitEvaluator.html">Comfort Shade Benefit Evaluator</a><br><span class="desc">This is a component for visualizing the desirability of shade in terms of comfort temperature by using solar vectors, a series of hourly temperatures (usually outdoor temperatures), and an assumed balance temperature</span></td></tr>
+<tr><td><img src="icons/Ladybug/DC_to_AC_derate_factor.png"/></td><td><a href="components/ladybug/dCToACDerateFactor.html">DC to AC derate factor</a><br><span class="desc">Use this component to calculate overall DC to AC derate factor for Photovoltaics Surface's "DCtoACderateFactor_" input</span></td></tr>
+<tr><td><img src="icons/Ladybug/Forward_Raytracing.png"/></td><td><a href="components/ladybug/forwardRaytracing.html">Forward Raytracing</a><br><span class="desc">Use this component to get a sense of how sunlight is reflected by a set of context geometries by tracing sun rays forwards through this geometry</span></td></tr>
+<tr><td><img src="icons/Ladybug/Photovoltaics_Performance_Metrics.png"/></td><td><a href="components/ladybug/photovoltaicsPerformanceMetrics.html">Photovoltaics Performance Metrics</a><br><span class="desc">Use this component to calculate various Photovoltaics performance metrics</span></td></tr>
+<tr><td><img src="icons/Ladybug/Photovoltaics_Surface.png"/></td><td><a href="components/ladybug/photovoltaicsSurface.html">Photovoltaics Surface</a><br><span class="desc">Use this component to calculate amount of electrical energy that can be produced by a surface<br>if a certain percentage of it is covered with Photovoltaics</span></td></tr>
+<tr><td><img src="icons/Ladybug/Radiation_Analysis.png"/></td><td><a href="components/ladybug/radiationAnalysis.html">Radiation Analysis</a><br><span class="desc">This component allows you to calculate the radiation fallin on input _geometry using a sky matrix from the selectSkyMxt component</span></td></tr>
+<tr><td><img src="icons/Ladybug/ShadingDesigner.png"/></td><td><a href="components/ladybug/shadingDesigner.html">ShadingDesigner</a><br><span class="desc">Use this component to generate shading breps for any glazed surface or list of glazed surfaces</span></td></tr>
+<tr><td><img src="icons/Ladybug/SolarEnvelope.png"/></td><td><a href="components/ladybug/solarEnvelope.html">SolarEnvelope</a><br><span class="desc">Use this component to generate a solar envelope for a given test surface, set of solar vectors, and context geometry that you want to ensure solar access to</span></td></tr>
+<tr><td><img src="icons/Ladybug/SolarEnvelopeBasic.png"/></td><td><a href="components/ladybug/solarEnvelopeBasic.html">SolarEnvelopeBasic</a><br><span class="desc">Use this component to generate a solar envelope for a closed boundary curve with minimum inputs</span></td></tr>
+<tr><td><img src="icons/Ladybug/SolarFan.png"/></td><td><a href="components/ladybug/solarFan.html">SolarFan</a><br><span class="desc">Use this component to generate a solar fan for a given test surface and set of solar vectors</span></td></tr>
+<tr><td><img src="icons/Ladybug/SolarFanBasic.png"/></td><td><a href="components/ladybug/solarFanBasic.html">SolarFanBasic</a><br><span class="desc">Use this component to generate a solar fan with minimumal input data</span></td></tr>
+<tr><td><img src="icons/Ladybug/Sunlight_Hours_Analysis.png"/></td><td><a href="components/ladybug/sunlightHoursAnalysis.html">Sunlight Hours Analysis</a><br><span class="desc">This component calculates the number of hours of direct sunlight received by input geometry using sun vectors from the sunPath component</span></td></tr>
+<tr><td><img src="icons/Ladybug/Sunpath_Shading.png"/></td><td><a href="components/ladybug/sunpathShading.html">Sunpath Shading</a><br><span class="desc">This component calculates the shading of:<br>- Photovoltaic modules<br>- Solar Water Heating collectors<br>- any other purpose (shading of points)</span></td></tr>
+<tr><td><img src="icons/Ladybug/Tilt_And_Orientation_Factor.png"/></td><td><a href="components/ladybug/tiltAndOrientationFactor.html">Tilt And Orientation Factor</a><br><span class="desc">This component calculates the Optimal Tilt, Optimal Orientation and TOF (Tilt and Orientation Factor) for PV modules or Solar water heating collectors</span></td></tr>
+<tr><td><img src="icons/Ladybug/View_Analysis.png"/></td><td><a href="components/ladybug/viewAnalysis.html">View Analysis</a><br><span class="desc">Use this component to evaluate the visibility of input _geometry from a set of key viewing points</span></td></tr>
+<tr><td><img src="icons/Ladybug/View_From_Sun.png"/></td><td><a href="components/ladybug/viewFromSun.html">View From Sun</a><br><span class="desc">Use this component to open a new viewport in Rhino that shows the view from the sun</span></td></tr>
+<tr><td><img src="icons/Ladybug/view_Rose.png"/></td><td><a href="components/ladybug/viewRose.html">view Rose</a><br><span class="desc">Use this component to see the area visible from a given viewpoint across a 2D plane of vision</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>2 | VisualizeWeatherData</h3>
+<table class="compos">
+<tbody>
+<tr><td><img src="icons/Ladybug/3D_Chart.png"/></td><td><a href="components/ladybug/3DChart.html">3D Chart</a><br><span class="desc">Use this component to make a 3D chart in the Rhino scene of any climate data or hourly simulation data</span></td></tr>
+<tr><td><img src="icons/Ladybug/Adaptive_Comfort_Chart.png"/></td><td><a href="components/ladybug/adaptiveComfortChart.html">Adaptive Comfort Chart</a><br><span class="desc">Use this component to calculate the adaptive comfort for a given set of input conditions</span></td></tr>
+<tr><td><img src="icons/Ladybug/Colored_Sky_Visualizer.png"/></td><td><a href="components/ladybug/coloredSkyVisualizer.html">Colored Sky Visualizer</a><br><span class="desc">Use this component to visualize a Perez sky as a colored mesh in the Rhino scene using the weather file location, a time and date, and an estimate of turbidity (or amount of particulates in the atmosphere</span></td></tr>
+<tr><td><img src="icons/Ladybug/GenCumulativeSkyMtx.png"/></td><td><a href="components/ladybug/genCumulativeSkyMtx.html">GenCumulativeSkyMtx</a><br><span class="desc">This component uses Radiance's gendaymtx function to calculate the sky's radiation for each hour of the year</span></td></tr>
+<tr><td><img src="icons/Ladybug/Import_Ground_Temp.png"/></td><td><a href="components/ladybug/importGroundTemp.html">Import Ground Temp</a><br><span class="desc">Use this component to visualise ground temperatures throughout the year at specific depths</span></td></tr>
+<tr><td><img src="icons/Ladybug/Monthly_Bar_Chart.png"/></td><td><a href="components/ladybug/monthlyBarChart.html">Monthly Bar Chart</a><br><span class="desc">Use this component to make a bar chart in the Rhino scene of any monhtly or avrMonthyPerHour climate data or simulation data</span></td></tr>
+<tr><td><img src="icons/Ladybug/Outdoor_Solar_Temperature_Adjustor.png"/></td><td><a href="components/ladybug/outdoorSolarTemperatureAdjustor.html">Outdoor Solar Temperature Adjustor</a><br><span class="desc">Use this component to adjust an existing Mean Radiant Temperature for shortwave solar radiation</span></td></tr>
+<tr><td><img src="icons/Ladybug/Psychrometric_Chart.png"/></td><td><a href="components/ladybug/psychrometricChart.html">Psychrometric Chart</a><br><span class="desc">Use this component to draw a psychrometric chart in the Rhino scene and evaluate a set of temperatures and humidity ratios in terms of indoor comfort</span></td></tr>
+<tr><td><img src="icons/Ladybug/Radiation_Calla_Lily.png"/></td><td><a href="components/ladybug/radiationCallaLily.html">Radiation Calla Lily</a><br><span class="desc">Use this component to draw Radiation Calla Lily or Dome, which shows you how radiation would fall on an object from all directions for a given sky</span></td></tr>
+<tr><td><img src="icons/Ladybug/Radiation_Rose.png"/></td><td><a href="components/ladybug/radiationRose.html">Radiation Rose</a><br><span class="desc">Use this component to make a radiation rose in the Rhino scene</span></td></tr>
+<tr><td><img src="icons/Ladybug/selectSkyMtx.png"/></td><td><a href="components/ladybug/selectSkyMtx.html">selectSkyMtx</a><br><span class="desc">Use this component to select a specific sky matrix (skyMxt) for an hour of the year or for an analysis period</span></td></tr>
+<tr><td><img src="icons/Ladybug/Sky_Dome.png"/></td><td><a href="components/ladybug/skyDome.html">Sky Dome</a><br><span class="desc">This component allows you to visualize a selected sky matrix from the selectSkyMxt component in order to see the patches of the sky dome where radiation is coming from</span></td></tr>
+<tr><td><img src="icons/Ladybug/SunPath.png"/></td><td><a href="components/ladybug/sunPath.html">SunPath</a><br><span class="desc">Use this component to make a 3D sun-path (aka</span></td></tr>
+<tr><td><img src="icons/Ladybug/Wind_Boundary_Profile.png"/></td><td><a href="components/ladybug/windBoundaryProfile.html">Wind Boundary Profile</a><br><span class="desc">Use this component to visualize a wind profile curve for a given terrain type</span></td></tr>
+<tr><td><img src="icons/Ladybug/Wind_Rose.png"/></td><td><a href="components/ladybug/windRose.html">Wind Rose</a><br><span class="desc">Use this component to make a windRose in the Rhino scene</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>6 | WIP</h3>
+<table class="compos">
+<tbody>
+<tr><td><img src="icons/Ladybug/Bioclimatic_Chart.png"/></td><td><a href="components/ladybug/bioclimaticChart.html">Bioclimatic Chart</a><br><span class="desc">This is the Bioclimactic Chart</span></td></tr>
+<tr><td><img src="icons/Ladybug/Cold_Water_Temperature.png"/></td><td><a href="components/ladybug/coldWaterTemperature.html">Cold Water Temperature</a><br><span class="desc">Use this component to calculate the cold (inlet, mains) water temperature, if water pipes are burried undeground</span></td></tr>
+<tr><td><img src="icons/Ladybug/Commercial_Public_Apartment_Hot_Water.png"/></td><td><a href="components/ladybug/commercialPublicApartmentHotWater.html">Commercial Public Apartment Hot Water</a><br><span class="desc">Use this component to calculate domestic hot water consumption for each hour during a year, for Commercial, Public and Apartment buildings</span></td></tr>
+<tr><td><img src="icons/Ladybug/Photovoltaics_Module.png"/></td><td><a href="components/ladybug/photovoltaicsModule.html">Photovoltaics Module</a><br><span class="desc">Use this component to define the Photovoltaics module settings</span></td></tr>
+<tr><td><img src="icons/Ladybug/PV_SWH_System_Size.png"/></td><td><a href="components/ladybug/pVSWHSystemSize.html">PV SWH System Size</a><br><span class="desc">Use this component to generate the PVsurface or SWHsurface for "Photovoltaics surface" or "Solar Water Heating surface" components, based on initial PV or SWH system sizes</span></td></tr>
+<tr><td><img src="icons/Ladybug/Residential_Hot_Water.png"/></td><td><a href="components/ladybug/residentialHotWater.html">Residential Hot Water</a><br><span class="desc">Use this component to calculate domestic hot water consumption for each hour during a year, for a single family household (house)</span></td></tr>
+<tr><td><img src="icons/Ladybug/Shading_Mask.png"/></td><td><a href="components/ladybug/shadingMask.html">Shading Mask</a><br><span class="desc">Use this component to see the portion of the sky dome that is masked by context geometry around a given viewpoint</span></td></tr>
+<tr><td><img src="icons/Ladybug/Shading_Mask_II.png"/></td><td><a href="components/ladybug/shadingMaskII.html">Shading Mask_II</a><br><span class="desc">Use this component to see the portion of the sky dome that is masked by context geometry around a given viewpoint</span></td></tr>
+<tr><td><img src="icons/Ladybug/Shadow_Study.png"/></td><td><a href="components/ladybug/shadowStudy.html">Shadow Study</a><br><span class="desc">Use this component to generate outline curves representing shadows cast by input _geometry for a given _sunVector</span></td></tr>
+<tr><td><img src="icons/Ladybug/Solar_Water_Heating_Performance_Metrics.png"/></td><td><a href="components/ladybug/solarWaterHeatingPerformanceMetrics.html">Solar Water Heating Performance Metrics</a><br><span class="desc">Use this component to calculate various Solar water heating performance metrics</span></td></tr>
+<tr><td><img src="icons/Ladybug/Solar_Water_Heating_Surface.png"/></td><td><a href="components/ladybug/solarWaterHeatingSurface.html">Solar Water Heating Surface</a><br><span class="desc">Use this component to calculate amount of thermal energy that can be produced by a surface<br>if a certain percentage of it is covered with Solar water heating liquid collectors</span></td></tr>
+<tr><td><img src="icons/Ladybug/Solar_Water_Heating_System_Detailed.png"/></td><td><a href="components/ladybug/solarWaterHeatingSystemDetailed.html">Solar Water Heating System Detailed</a><br><span class="desc">Use this component to define a detailed Solar water heating system settings</span></td></tr>
+<tr><td><img src="icons/Ladybug/Solar_Water_Heating_System.png"/></td><td><a href="components/ladybug/solarWaterHeatingSystem.html">Solar Water Heating System</a><br><span class="desc">Use this component to define Solar water heating system settings</span></td></tr>
+<tr><td><img src="icons/Ladybug/WetBulbTemp.png"/></td><td><a href="components/ladybug/wetBulbTemp.html">WetBulbTemp</a><br><span class="desc">Use this component to calculate Wet Bulb Temperature and Dew Point Temperature</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>1 | AnalyzeWeatherData</h3>
+<table class="compos">
+<tbody>
+<tr><td><img src="icons/Ladybug/Adaptive_Comfort_Calculator.png"/></td><td><a href="components/ladybug/adaptiveComfortCalculator.html">Adaptive Comfort Calculator</a><br><span class="desc">Use this component to calculate the adaptive comfort for a given set of input conditions</span></td></tr>
+<tr><td><img src="icons/Ladybug/Analysis_Period.png"/></td><td><a href="components/ladybug/analysisPeriod.html">Analysis Period</a><br><span class="desc">Use this component to set an analysis period, which can be used as input for a variety of other Ladybug and Honeybee components</span></td></tr>
+<tr><td><img src="icons/Ladybug/Average_Data.png"/></td><td><a href="components/ladybug/averageData.html">Average Data</a><br><span class="desc">Use this component to select the data out of an annual hourly data stream (from the importEPW component) using the "Analysis Period" component</span></td></tr>
+<tr><td><img src="icons/Ladybug/Branch_Data.png"/></td><td><a href="components/ladybug/branchData.html">Branch Data</a><br><span class="desc">Use this component to convert any list of annual data into a data tree branched by day of the year, month of the year, or hour of the day</span></td></tr>
+<tr><td><img src="icons/Ladybug/CDD_HDD.png"/></td><td><a href="components/ladybug/cDDHDD.html">CDD_HDD</a><br><span class="desc">Calculates heating and cooling degree-days</span></td></tr>
+<tr><td><img src="icons/Ladybug/CDH_HDH.png"/></td><td><a href="components/ladybug/cDHHDH.html">CDH_HDH</a><br><span class="desc">Calculates heating and cooling degree-hours</span></td></tr>
+<tr><td><img src="icons/Ladybug/Clothing_Function.png"/></td><td><a href="components/ladybug/clothingFunction.html">Clothing Function</a><br><span class="desc">Use this component to generate a list of values representing a clothing schedule based on outdoor air temperature</span></td></tr>
+<tr><td><img src="icons/Ladybug/Humidity_Ratio_Calculator.png"/></td><td><a href="components/ladybug/humidityRatioCalculator.html">Humidity Ratio Calculator</a><br><span class="desc">Calculates the humidity ratio from the ladybug weather file import parameters<br>Conversion formulas are taken from the following publications:<br>Vaisala</span></td></tr>
+<tr><td><img src="icons/Ladybug/Outdoor_Comfort_Calculator.png"/></td><td><a href="components/ladybug/outdoorComfortCalculator.html">Outdoor Comfort Calculator</a><br><span class="desc">Use this component to calculate the Universal Thermal Climate Index (UTCI) for a set of input climate conditions</span></td></tr>
+<tr><td><img src="icons/Ladybug/PMV_Comfort_Calculator.png"/></td><td><a href="components/ladybug/pMVComfortCalculator.html">PMV Comfort Calculator</a><br><span class="desc">Use this component to calculate comfort metrics of Predicted Mean Vote (PMV), the Percent of People Dissatisfied (PPD), and the Standard Effective Temperature (SET) for a set of climate conditions and occupant behavior/clothing</span></td></tr>
+<tr><td><img src="icons/Ladybug/Separate_data.png"/></td><td><a href="components/ladybug/separateData.html">Separate data</a><br><span class="desc">Use this component to separate the text strings from the numbers in the climate data streams output from the Import EPW component</span></td></tr>
+<tr><td><img src="icons/Ladybug/Thermal_Comfort_Indices.png"/></td><td><a href="components/ladybug/thermalComfortIndices.html">Thermal Comfort Indices</a><br><span class="desc">Use this component to calculate various thermal comfort indices:<br>------<br>- HI (Heat Index)<br>- humidex (humidity index)<br>- DI (Discomfort Index)<br>- WCI (Wind Chill Index)<br>- WCT (Wind Chill Temperature)<br>- WBGT (Wet-Bulb Globe Temperature) indoors<br>- WBGT (Wet-Bulb Globe Temperature) outdoors<br>- TE (Effective Temperature)<br>- AT (Apparent Temperature)<br>- TS (Thermal Sensation)<br>- ASV (Actual Sensation Vote)<br>- MRT (Mean Radiant Temperature)<br>- Iclp (Predicted Insulation Index Of Clothing)<br>- HR (Heart Rate)<br>- DhRa (Dehydration Risk)<br>- PET (Physiological Equivalent Temperature)<br>- THI (Temperature Humidity Index)<br>- PHS (Predicted Heat Strain)</span></td></tr>
+<tr><td><img src="icons/Ladybug/Wind_Speed_Calculator.png"/></td><td><a href="components/ladybug/windSpeedCalculator.html">Wind Speed Calculator</a><br><span class="desc">Use this component to calculate wind speed at a specific height for a given terrain type</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>0 | Ladybug</h3>
+<table class="compos">
+<tbody>
+<tr><td><img src="icons/Ladybug/Construct_Location.png"/></td><td><a href="components/ladybug/constructLocation.html">Construct Location</a><br><span class="desc">Use this component if you do not have an </span></td></tr>
+<tr><td><img src="icons/Ladybug/Create_LB_Header.png"/></td><td><a href="components/ladybug/createLBHeader.html">Create LB Header</a><br><span class="desc">Use this component to generates a Ladybug Header that can be combined with any raw data in order to format it for use with the Ladybug/Honeybee components</span></td></tr>
+<tr><td><img src="icons/Ladybug/Decompose_Location.png"/></td><td><a href="components/ladybug/decomposeLocation.html">Decompose Location</a><br><span class="desc">Use this component to separate and exctract the information in the 'location' output of the importEPW or constructLocation component</span></td></tr>
+<tr><td><img src="icons/Ladybug/download_EPW_Weather_File.png"/></td><td><a href="components/ladybug/downloadEPWWeatherFile.html">download EPW Weather File</a><br><span class="desc">Use this component to open the epwmap page in your default web browser and download an </span></td></tr>
+<tr><td><img src="icons/Ladybug/Import_epw.png"/></td><td><a href="components/ladybug/importEpw.html">Import epw</a><br><span class="desc">Use this component to import lists of weather data into Grasshopper from a standard </span></td></tr>
+<tr><td><img src="icons/Ladybug/Import_Location.png"/></td><td><a href="components/ladybug/importLocation.html">Import Location</a><br><span class="desc">Use this component to import location data from a standard </span></td></tr>
+<tr><td><img src="icons/Ladybug/Import_stat.png"/></td><td><a href="components/ladybug/importStat.html">Import stat</a><br><span class="desc">Use this component to import climate data found in the </span></td></tr>
+<tr><td><img src="icons/Ladybug/Ladybug.png"/></td><td><a href="components/ladybug/ladybug.html">Ladybug</a><br><span class="desc">This component carries all of Ladybug's main classes</span></td></tr>
+<tr><td><img src="icons/Ladybug/Open_EPW_And_STAT_Weather_Files.png"/></td><td><a href="components/ladybug/openEPWAndSTATWeatherFiles.html">Open EPW And STAT Weather Files</a><br><span class="desc">Use this component to automatically download a </span></td></tr>
+<tr><td><img src="icons/Ladybug/Open_EPW_Weather_File.png"/></td><td><a href="components/ladybug/openEPWWeatherFile.html">Open EPW Weather File</a><br><span class="desc">Use this component to open an </span></td></tr>
+<tr><td><img src="icons/Ladybug/Open_STAT_File.png"/></td><td><a href="components/ladybug/openSTATFile.html">Open STAT File</a><br><span class="desc">Use this component to open a </span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>5 | Developers</h3>
+<table class="compos">
+<tbody>
+<tr><td><img src="icons/Ladybug/Export_Ladybug.png"/></td><td><a href="components/ladybug/exportLadybug.html">Export Ladybug</a><br><span class="desc">Code Developers of Ladybug and Honeybee can use this component to export Ladybug/Honeybee user objects and source code that they create to the Github folder on their computer</span></td></tr>
+<tr><td><img src="icons/Ladybug/Update_Ladybug.png"/></td><td><a href="components/ladybug/updateLadybug.html">Update Ladybug</a><br><span class="desc">Code Developers and Beta Testers of new Ladybug components can use this component to remove old Ladybug components, add new Ladybug components, and update existing Ladybug components from a synced Github folder on their computer</span></td></tr>
+</tbody>
+</table>
+
+</div>
+</div>
+<div class="libheader">
 <a href="http://www.food4rhino.com/project/lunchbox?ufh"><h2>LunchBox</h2></a>
 <span class="desc">Version 2016.3.21</span>
 <span class="codeword">(Released 2016-Mar-22)</span><br>
@@ -2674,6 +3539,252 @@
 <tr><td><img src="icons/LunchBox/Panel_Frame.png"/></td><td><a href="components/lunchbox/panelFrame.html">Panel Frame</a><br><span class="desc">Creates an offset frame using a panel.</span></td></tr>
 <tr><td><img src="icons/LunchBox/Subdivide_Quad.png"/></td><td><a href="components/lunchbox/subdivideQuad.html">Subdivide Quad</a><br><span class="desc">Subdivides a quad into self-similar cells.</span></td></tr>
 <tr><td><img src="icons/LunchBox/Subdivide_Triangle.png"/></td><td><a href="components/lunchbox/subdivideTriangle.html">Subdivide Triangle</a><br><span class="desc">Subdivides a triangle into self-similar cells.</span></td></tr>
+</tbody>
+</table>
+
+</div>
+</div>
+<div class="libheader">
+<a href="http://www.food4rhino.com/project/mesh?ufh"><h2>MeshPlus</h2></a>
+<span class="desc">Version 2.1.00</span>
+<span class="codeword">(Released 2015-Nov-04)</span><br>
+</div>
+<div class="cparent">
+<div class="cchild">
+<h3>Subdivision</h3>
+<table class="compos">
+<tbody>
+<tr><td><img src="icons/MeshPlus/Aperture_0.png"/></td><td><a href="components/meshplus/aperture0.html">Aperture+0</a><br><span class="desc">Replaces selected faces of a mesh or the interior of a curve with a frame around the edge by evaluating points from the points along face's edges to its center, creating 0 new points along the edge.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Aperture_2.png"/></td><td><a href="components/meshplus/aperture2.html">Aperture+2</a><br><span class="desc">Replaces selected faces of a mesh or the interior of a curve with a frame around the edge by evaluating points from points along the face's edge to its center, creating 2 new points along the edge and removing the face's vertex.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Aperture_3.png"/></td><td><a href="components/meshplus/aperture3.html">Aperture+3</a><br><span class="desc">Replaces selected faces of a mesh or the interior of a curve with a frame around the edge by evaluating points from points along the face's edge to its center, creating 3 new points along the edge and removing the face's vertex.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Center_1.png"/></td><td><a href="components/meshplus/center1.html">Center+1</a><br><span class="desc">Replaces selected faces of a mesh or the interior of a curve with a frame around the edge by creating 1 new points along the edge.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Center_3.png"/></td><td><a href="components/meshplus/center3.html">Center+3</a><br><span class="desc">Replaces selected faces of a mesh or the interior of a curve with a frame around the edge by creating 3 new points along the edge and removes the face's vertex.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Dense_1.png"/></td><td><a href="components/meshplus/dense1.html">Dense+1</a><br><span class="desc">Replaces selected faces of a mesh or the interior of a curve with a frame around the edge by adding a vertex at the face center and creating 1 new point along the edge.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Fan_2.png"/></td><td><a href="components/meshplus/fan2.html">Fan+2</a><br><span class="desc">Replaces selected faces of a mesh or the interior of a curve with a frame around the edge by creating 2 new points along the edge and one at its center, removing the face's vertex.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Fan_3.png"/></td><td><a href="components/meshplus/fan3.html">Fan+3</a><br><span class="desc">Replaces selected faces of a mesh or the interior of a curve with a frame around the edge by creating 3 new points along the edge and removing the face's vertex.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Frame_0.png"/></td><td><a href="components/meshplus/frame0.html">Frame+0</a><br><span class="desc">Replaces selected faces of a mesh or the interior of a curve with a frame around the edge by evaluating a point from the face's vertex to its center, creating 0 new points along the edge.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Frame_1.png"/></td><td><a href="components/meshplus/frame1.html">Frame+1</a><br><span class="desc">Replaces selected faces of a mesh or the interior of a curve with a frame around the edge by evaluating points from the face's vertex and edge midpoint to its center, creating 1 new points along the edge.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Frame_2.png"/></td><td><a href="components/meshplus/frame2.html">Frame+2</a><br><span class="desc">Replaces selected faces of a mesh or the interior of a curve with a frame around the edge by evaluating a point from the face's vertex to its center, creating 2 new points along the edge.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Frame_3.png"/></td><td><a href="components/meshplus/frame3.html">Frame+3</a><br><span class="desc">Replaces selected faces of a mesh or the interior of a curve with a frame around the edge by evaluating points from the face's vertex and edge midpoint to its center, creating 3 new points along the edge.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Pinwheel_2.png"/></td><td><a href="components/meshplus/pinwheel2.html">Pinwheel+2</a><br><span class="desc">Replaces selected faces of a mesh or the interior of a curve with a frame around the edge by creating 2 new points along the edge and removing the face's vertex.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Snub_0.png"/></td><td><a href="components/meshplus/snub0.html">Snub+0</a><br><span class="desc">Replaces selected faces of a mesh or the interior of a curve with a frame around the edge by evaluating a point from the face's edge midpoint to its center, creating 0 new points along the edge.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Snub_1.png"/></td><td><a href="components/meshplus/snub1.html">Snub+1</a><br><span class="desc">Replaces selected faces of a mesh or the interior of a curve with a frame around the edge by evaluating a point from the face's edge midpoint to its center, creating 1 new points along the edge.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Snub_2.png"/></td><td><a href="components/meshplus/snub2.html">Snub+2</a><br><span class="desc">Replaces selected faces of a mesh or the interior of a curve with a frame around the edge by evaluating a point from the face's edge midpoint to its center, creating 2 new points along the edge and removing the face's vertex.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Snub_3.png"/></td><td><a href="components/meshplus/snub3.html">Snub+3</a><br><span class="desc">Replaces selected faces of a mesh or the interior of a curve with a frame around the edge by evaluating a point from the face's edge midpoint to its center, creating 3 new points along the edge and removing the face's vertex.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Stellate_0.png"/></td><td><a href="components/meshplus/stellate0.html">Stellate+0</a><br><span class="desc">Replaces selected faces of a mesh or the interior of a curve with a frame around the edge by adding a vertex at the face center and creating 0 new points along the edge.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/T_3.png"/></td><td><a href="components/meshplus/t3.html">T+3</a><br><span class="desc">Replaces selected faces of a mesh or the interior of a curve with a frame around the edge by evaluating a point from the face's vertex to its center, creating 3 new points along the edge and removing the face's vertex.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Tri_Frame_1.png"/></td><td><a href="components/meshplus/triFrame1.html">Tri Frame+1</a><br><span class="desc">Replaces selected faces of a mesh or the interior of a curve with a frame around the edge by evaluating a point from the face's vertex to its center, creating 1 new points along the edge.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Tri_Frame_2.png"/></td><td><a href="components/meshplus/triFrame2.html">Tri Frame+2</a><br><span class="desc">Replaces selected faces of a mesh or the interior of a curve with a frame around the edge by evaluating a point from the face's vertex to its center, creating 2 new points along the edge and removing the existing face's vertex.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Tri_Frame_3.png"/></td><td><a href="components/meshplus/triFrame3.html">Tri Frame+3</a><br><span class="desc">Replaces selected faces of a mesh or the interior of a curve with a frame around the edge by evaluating points from the face's vertex and edge midpoint to its center, creating 3 new points along the edge.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/X_2.png"/></td><td><a href="components/meshplus/x2.html">X+2</a><br><span class="desc">Replaces selected faces of a mesh or the interior of a curve with a frame around the edge by evaluating a point from the face's edge midpoint to its center, creating 2 new points along the edge.</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>Analyze</h3>
+<table class="compos">
+<tbody>
+<tr><td><img src="icons/MeshPlus/Connected_Edge_Angles.png"/></td><td><a href="components/meshplus/connectedEdgeAngles.html">Connected Edge Angles</a><br><span class="desc">Returns the angle at each vertex normal of a mesh tested against the vector along each connected edge.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Connected_Edge_Lengths.png"/></td><td><a href="components/meshplus/connectedEdgeLengths.html">Connected Edge Lengths</a><br><span class="desc">Returns the cumulative length of each edge connected to a given vertex.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Connected_Faces.png"/></td><td><a href="components/meshplus/connectedFaces.html">Connected Faces</a><br><span class="desc">Returns the number of faces connected to each face.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Connected_Vertex_Normal_Angle.png"/></td><td><a href="components/meshplus/connectedVertexNormalAngle.html">Connected Vertex Normal Angle</a><br><span class="desc">Returns the angle at each vertex normal of a mesh tested against the connected vertex normals.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Edge_Lengths.png"/></td><td><a href="components/meshplus/edgeLengths.html">Edge Lengths</a><br><span class="desc">Returns the length for each edge of the mesh.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Edge_Shared_Face_Angles.png"/></td><td><a href="components/meshplus/edgeSharedFaceAngles.html">Edge Shared Face Angles</a><br><span class="desc">Returns the angle of the faces connected to each edge.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Extract_Edges.png"/></td><td><a href="components/meshplus/extractEdges.html">Extract Edges</a><br><span class="desc">Returns the edge lines and topology vertices in the topology order of the mesh.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Face_Edge_Lengths.png"/></td><td><a href="components/meshplus/faceEdgeLengths.html">Face Edge Lengths</a><br><span class="desc">Returns the cumulative edge length of each face of a mesh.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Face_Normal_Direction.png"/></td><td><a href="components/meshplus/faceNormalDirection.html">Face Normal Direction</a><br><span class="desc">Returns the angle at each face normal of a mesh tested against a vector.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Face_to_Face_Angles.png"/></td><td><a href="components/meshplus/faceToFaceAngles.html">Face to Face Angles</a><br><span class="desc">Returns the angle at each face normal of a mesh tested against its connected face normals.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Face_Vertex_Angles.png"/></td><td><a href="components/meshplus/faceVertexAngles.html">Face Vertex Angles</a><br><span class="desc">Returns the angle at each face normal of a mesh tested the normals at it's vertices.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Mesh_Face_Area.png"/></td><td><a href="components/meshplus/meshFaceArea.html">Mesh Face Area</a><br><span class="desc">Returns the area of each face of a mesh.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Topology_Vertices.png"/></td><td><a href="components/meshplus/topologyVertices.html">Topology Vertices</a><br><span class="desc">Returns the mesh vertices per earch topology vertex of the mesh.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Unitize_Mesh_Distances.png"/></td><td><a href="components/meshplus/unitizeMeshDistances.html">Unitize Mesh Distances</a><br><span class="desc">Returns a unitized value for each specifed component of a mesh, vertex, face center, or edge midpoint based on its distance to the closest sample index point relative to the furthest point from all sample points. This value is remapped to a user specified domain.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Valence.png"/></td><td><a href="components/meshplus/valence.html">Valence</a><br><span class="desc">Returns the valence or number of connected vertices to a given vertex.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Vertex_Face_Angles.png"/></td><td><a href="components/meshplus/vertexFaceAngles.html">Vertex Face Angles</a><br><span class="desc">Returns the angle at each vertex normal of a mesh tested against the connected vertex normals.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Vertex_Normal_Direction.png"/></td><td><a href="components/meshplus/vertexNormalDirection.html">Vertex Normal Direction</a><br><span class="desc">Returns the angle at each vertex normal of a mesh tested against a vector.</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>Volume</h3>
+<table class="compos">
+<tbody>
+<tr><td><img src="icons/MeshPlus/Batwing.png"/></td><td><a href="components/meshplus/batwing.html">Batwing</a><br><span class="desc">Creates a volumetric mesh from either a single mesh face and depth or between two parallel meshes of idential construction based on the topology of the Batwing adapted with parametric inputs to the geometric proportions within the bounds of each offset pair of mesh faces.<br>(</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Box.png"/></td><td><a href="components/meshplus/box.html">Box</a><br><span class="desc">Creates a mesh which spans two meshes bridging them from either the vertex or edge center</span></td></tr>
+<tr><td><img src="icons/MeshPlus/CLP.png"/></td><td><a href="components/meshplus/cLP.html">CLP</a><br><span class="desc">Creates a volumetric mesh from either a single mesh face and depth or between two parallel meshes of idential construction based on the topology of the Schwarz CLP adapted with parametric inputs to the geometric proportions within the bounds of each offset pair of mesh faces.<br>(</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Cross.png"/></td><td><a href="components/meshplus/cross.html">Cross</a><br><span class="desc">Creates a mesh which spans two meshes bridging them from the face center and connecting faces at either the vertex point or edge centers</span></td></tr>
+<tr><td><img src="icons/MeshPlus/D.png"/></td><td><a href="components/meshplus/d.html">D</a><br><span class="desc">Creates a volumetric mesh from either a single mesh face and depth or between two parallel meshes of idential construction based on the topology of the Schwarz D adapted with parametric inputs to the geometric proportions within the bounds of each offset pair of mesh faces.<br>(</span></td></tr>
+<tr><td><img src="icons/MeshPlus/F-RD.png"/></td><td><a href="components/meshplus/fRD.html">F-RD</a><br><span class="desc">Creates a volumetric mesh from either a single mesh face and depth or between two parallel meshes of idential construction based on the topology of the Schoen F-RD adapted with parametric inputs to the geometric proportions within the bounds of each offset pair of mesh faces.<br>(</span></td></tr>
+<tr><td><img src="icons/MeshPlus/F-RDr.png"/></td><td><a href="components/meshplus/fRDr.html">F-RDr</a><br><span class="desc">Creates a volumetric mesh from either a single mesh face and depth or between two parallel meshes of idential construction based on the topology of the Schoen F-RDr adapted with parametric inputs to the geometric proportions within the bounds of each offset pair of mesh faces.<br>(</span></td></tr>
+<tr><td><img src="icons/MeshPlus/F-RDr2.png"/></td><td><a href="components/meshplus/fRDr2.html">F-RDr2</a><br><span class="desc">Creates a volumetric mesh from either a single mesh face and depth or between two parallel meshes of idential construction based on the topology of the Schoen F-RDr with higher vertex count, adapted with parametric inputs to the geometric proportions within the bounds of each offset pair of mesh faces.<br>(</span></td></tr>
+<tr><td><img src="icons/MeshPlus/I-WP.png"/></td><td><a href="components/meshplus/iWP.html">I-WP</a><br><span class="desc">Creates a volumetric mesh from either a single mesh face and depth or between two parallel meshes of idential construction based on the topology of the Schoen I-WP adapted with parametric inputs to the geometric proportions within the bounds of each offset pair of mesh faces.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/I-WPr.png"/></td><td><a href="components/meshplus/iWPr.html">I-WPr</a><br><span class="desc">Creates a volumetric mesh from either a single mesh face and depth or between two parallel meshes of idential construction based on the topology of the Schoen I-WPr adapted with parametric inputs to the geometric proportions within the bounds of each offset pair of mesh faces.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Nevious.png"/></td><td><a href="components/meshplus/nevious.html">Nevious</a><br><span class="desc">Creates a volumetric mesh from either a single mesh face and depth or between two parallel meshes of idential construction based on the topology of the Neovious adapted with parametric inputs to the geometric proportions within the bounds of each offset pair of mesh faces.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/P.png"/></td><td><a href="components/meshplus/p.html">P</a><br><span class="desc">Creates a volumetric mesh from either a single mesh face and depth or between two parallel meshes of idential construction based on the topology of the Schwarz P adapted with parametric inputs to the geometric proportions within the bounds of each offset pair of mesh faces.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Pa.png"/></td><td><a href="components/meshplus/pa.html">Pa</a><br><span class="desc">Creates a volumetric mesh from either a single mesh face and depth or between two parallel meshes of idential construction based on the topology of the Schwarz Pa adapted with parametric inputs to the geometric proportions within the bounds of each offset pair of mesh faces.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/SS.png"/></td><td><a href="components/meshplus/sS.html">SS</a><br><span class="desc">Creates a volumetric mesh from either a single mesh face and depth or between two parallel meshes of idential construction based on the topology of the SS adapted with parametric inputs to the geometric proportions within the bounds of each offset pair of mesh faces.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Switch.png"/></td><td><a href="components/meshplus/switch.html">Switch</a><br><span class="desc">Creates a mesh which spans two meshes bridging them from either the vertex or edge center</span></td></tr>
+<tr><td><img src="icons/MeshPlus/X&T.png"/></td><td><a href="components/meshplus/xT.html">X&T</a><br><span class="desc">Creates a volumetric mesh from either a single mesh face and depth or between two parallel meshes of idential construction bridging the vertices to the face center between two mesh faces</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>Make</h3>
+<table class="compos">
+<tbody>
+<tr><td><img src="icons/MeshPlus/Cairo_Tiling.png"/></td><td><a href="components/meshplus/cairoTiling.html">Cairo Tiling</a><br><span class="desc">Applies a Mesh to a surface based on the Cairo Tiling tesselation covering its domain, recognizing closure in both the U and V directions when the patterning allows.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Diamond_Tiling.png"/></td><td><a href="components/meshplus/diamondTiling.html">Diamond Tiling</a><br><span class="desc">Applies a Mesh to a surface based on Diamond Tiling tesselation covering its domain, recognizing closure in both the U and V directions when the patterning allows.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Elongated_Triangle_Tiling.png"/></td><td><a href="components/meshplus/elongatedTriangleTiling.html">Elongated Triangle Tiling</a><br><span class="desc">Applies a Mesh to a surface based on the Elongated Triangle tesselation covering its domain, recognizing closure in both the U and V directions when the patterning allows.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Fill_Mesh_Holes.png"/></td><td><a href="components/meshplus/fillMeshHoles.html">Fill Mesh Holes</a><br><span class="desc">Creates a simple fan mesh from an input curve with options for introducing vertex colors</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Mesh_Loft.png"/></td><td><a href="components/meshplus/meshLoft.html">Mesh Loft</a><br><span class="desc">Creates a mesh from the control points of input curves with multiple methods for defining topology</span></td></tr>
+<tr><td><img src="icons/MeshPlus/ngon_Mesh.png"/></td><td><a href="components/meshplus/ngonMesh.html">ngon Mesh</a><br><span class="desc">This experimental component creates a topology map for mesh comprised of faces of with a vertex count of 3 or higher. This component takes a list of polylines with coincident control points and merges these points into a mesh, creating unified vertices, edge, faces, and normals as well as a map of the topological relationships between the elements.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Patterned_Triangulation.png"/></td><td><a href="components/meshplus/patternedTriangulation.html">Patterned Triangulation</a><br><span class="desc">Applies a boolean pattern based Triangular Mesh to a surface covering its domain, recognizing closure in both the U and V directions when the patterning allows.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Regular_Triangulation.png"/></td><td><a href="components/meshplus/regularTriangulation.html">Regular Triangulation</a><br><span class="desc">Applies a Regular Triangular Mesh to a surface covering its domain, recognizing closure in both the U and V directions when the patterning allows.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Rhombitrihexagonal_Tiling.png"/></td><td><a href="components/meshplus/rhombitrihexagonalTiling.html">Rhombitrihexagonal Tiling</a><br><span class="desc">Applies a Mesh to a surface based on the Rhombitrihexagonal tesselation covering its domain, recognizing closure in both the U and V directions when the patterning allows. All non quad faces are triangulated at output.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Snub_Square_Tiling.png"/></td><td><a href="components/meshplus/snubSquareTiling.html">Snub Square Tiling</a><br><span class="desc">Applies a Mesh to a surface based on the Snubbed Square tesselation covering its domain, recognizing closure in both the U and V directions when the patterning allows.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Truncated_Square_Tiling.png"/></td><td><a href="components/meshplus/truncatedSquareTiling.html">Truncated Square Tiling</a><br><span class="desc">Applies a Mesh to a surface based on the Truncated Square tesselation covering its domain, recognizing closure in both the U and V directions when the patterning allows. All non quad faces are triangulated at output.</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>Smooth</h3>
+<table class="compos">
+<tbody>
+<tr><td><img src="icons/MeshPlus/Weighted_Catmull_Clark_Subdivision.png"/></td><td><a href="components/meshplus/weightedCatmullClarkSubdivision.html">Weighted Catmull Clark Subdivision</a><br><span class="desc">Based off of the implementation of Weaverbird's subdivision, this implementation of Catmull Clark Subdivision introduced the option to modify the weight of smoothing or displacement from origin, of the face, edge, and vertex based vertices.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Catmull_Clark_nGon_Subdivision.png"/></td><td><a href="components/meshplus/catmullClarkNGonSubdivision.html">Catmull Clark nGon Subdivision</a><br><span class="desc">Applies Catmull Clark Subdivision to a list of closed polylines which are treated as the faces and vertices of a nGon mesh.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Doo_Sabin_Subdivision.png"/></td><td><a href="components/meshplus/dooSabinSubdivision.html">Doo Sabin Subdivision</a><br><span class="desc">Applies Doo Sabin Subdivision to a list of closed polylines which are treated as the faces and vertices of a nGon mesh.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Expansion_Subdivision.png"/></td><td><a href="components/meshplus/expansionSubdivision.html">Expansion Subdivision</a><br><span class="desc">Applies Expansion Subdivision to a list of closed polylines which are treated as the faces and vertices of a nGon mesh. Expansion is similar to the Doo Sabin method, but creates its new vertices at a unitized position between the existing vertex and face center.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Face_Center_Subdivision.png"/></td><td><a href="components/meshplus/faceCenterSubdivision.html">Face Center Subdivision</a><br><span class="desc">Applies Face Center Subdivision to a list of closed polylines which are treated as the faces and vertices of a nGon mesh.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Mid_Edge_Subdivision.png"/></td><td><a href="components/meshplus/midEdgeSubdivision.html">Mid Edge Subdivision</a><br><span class="desc">Applies Mid Edge Subdivision to a list of closed polylines which are treated as the faces and vertices of a nGon mesh.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Modified_Kobbelt_Subdivision.png"/></td><td><a href="components/meshplus/modifiedKobbeltSubdivision.html">Modified Kobbelt Subdivision</a><br><span class="desc">Applies a modified version of Kobbelt Subdivision which creates new quad faces from a list of closed polylines which are treated as the faces and vertices of a nGon mesh.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Root_3_Subdivision.png"/></td><td><a href="components/meshplus/root3Subdivision.html">Root 3 Subdivision</a><br><span class="desc">Applies Root 3 Subdivision to a list of closed polylines which are treated as the faces and vertices of a nGon mesh.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Weighted_Butterfly_Subdivision.png"/></td><td><a href="components/meshplus/weightedButterflySubdivision.html">Weighted Butterfly Subdivision</a><br><span class="desc">Implements the basic form of Butterfly subdivision which maintains the original meshes vertex locations. This method does requires a closed mesh volume with only triangular faces.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Weighted_Loop_Subdivision.png"/></td><td><a href="components/meshplus/weightedLoopSubdivision.html">Weighted Loop Subdivision</a><br><span class="desc">Based off of the implementation of Weaverbird's subdivision, this implementation of Loop Subdivision introduced the option to modify the weight of smoothing or displacement from origin, of the edge and vertex based vertices.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Weighted_Root_3_Subdivision.png"/></td><td><a href="components/meshplus/weightedRoot3Subdivision.html">Weighted Root 3 Subdivision</a><br><span class="desc">An implementation of Root 3 Subdivision, this method follows the model established in weaverbird for resolving edge conditions. For a correct implementation, mesh faces should be triangular, however the method has been modified to allow for quad faces as well.</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>Map</h3>
+<table class="compos">
+<tbody>
+<tr><td><img src="icons/MeshPlus/Map_Face_Values.png"/></td><td><a href="components/meshplus/mapFaceValues.html">Map Face Values</a><br><span class="desc">Maps and averages unitized values cooresponding to each face of a mesh to its other constituent elements.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Baycentric_Mesh_Morph.png"/></td><td><a href="components/meshplus/baycentricMeshMorph.html">Baycentric Mesh Morph</a><br><span class="desc">Uses Barycentric Mapping to morph meshes from reference boundaries to each face of a target mesh, or pair of meshes with identical topologies.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Map_Curve_to_Curve.png"/></td><td><a href="components/meshplus/mapCurveToCurve.html">Map Curve to Curve</a><br><span class="desc">Uses Barycentric Mapping to morph curves from a reference boundary polyline to a target polyline of the same topology.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Map_Curves_to_Mesh.png"/></td><td><a href="components/meshplus/mapCurvesToMesh.html">Map Curves to Mesh</a><br><span class="desc">Uses Barycentric Mapping to morph curves from reference boundaries to each face of a target mesh, or pair of meshes with identical topologies.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Map_Mesh_to_Curves.png"/></td><td><a href="components/meshplus/mapMeshToCurves.html">Map Mesh to Curves</a><br><span class="desc">Uses Barycentric Mapping to morph meshes from a reference boundary polyline to a target polyline of the same topology.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Map_Points_to_Curve.png"/></td><td><a href="components/meshplus/mapPointsToCurve.html">Map Points to Curve</a><br><span class="desc">Uses Barycentric Mapping to morph points from a reference boundary polyline to a target polyline of the same topology.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Map_Points_to_Mesh.png"/></td><td><a href="components/meshplus/mapPointsToMesh.html">Map Points to Mesh</a><br><span class="desc">Uses Barycentric Mapping to morph points from reference boundaries to each face of a target mesh, or pair of meshes with identical topologies.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Map_Vertex_Values.png"/></td><td><a href="components/meshplus/mapVertexValues.html">Map Vertex Values</a><br><span class="desc">Maps and averages unitized values cooresponding to each vertex of a mesh to its other constituent elements.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Mesh_Twisted_Box.png"/></td><td><a href="components/meshplus/meshTwistedBox.html">Mesh Twisted Box</a><br><span class="desc">Creates twisted boxes which either span or project off of quad mesh faces creating 8 points which can be used to define a twisted box. This allows for box morphing to be mapped to meshes, replacing the faces with morphed objects.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Wrap_Data.png"/></td><td><a href="components/meshplus/wrapData.html">Wrap Data</a><br><span class="desc">Converts a list of data into an integer indexed dictionary which is wrapped into a single object.<br>The component was developed for mapping colors, numbers, and other data to ngon components to simplify the process of data matching.</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>Edit</h3>
+<table class="compos">
+<tbody>
+<tr><td><img src="icons/MeshPlus/Mesh_Caps.png"/></td><td><a href="components/meshplus/meshCaps.html">Mesh Caps</a><br><span class="desc">Caps all naked edges in a mesh by introducing a new point at the averaged volumetric center fanning about it.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Explode_Unwelded.png"/></td><td><a href="components/meshplus/explodeUnwelded.html">Explode Unwelded</a><br><span class="desc">Implements Explode Unwelded. <br>"Explode the mesh into submeshes where a submesh is a collection of faces that are contained within a closed loop of "unwelded" edges."</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Mesh_Explode.png"/></td><td><a href="components/meshplus/meshExplode.html">Mesh Explode</a><br><span class="desc">Explodes each face of a mesh into a new single faced mesh which maintains vertex colors and whose normals can either be rebuilt or retain the existing vertex normals.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Mesh_Extend.png"/></td><td><a href="components/meshplus/meshExtend.html">Mesh Extend</a><br><span class="desc">Extends all naked edges of a mesh by a given distance by adding a new row of mesh faces</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Mesh_Offset_&_Extrude.png"/></td><td><a href="components/meshplus/meshOffsetExtrude.html">Mesh Offset & Extrude</a><br><span class="desc">Takes a mesh and offsets along each vertex normal or aligned with input vectors with independent options for closing the top, bottom and edges as well as offseting in both directions.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Offset_Edges.png"/></td><td><a href="components/meshplus/offsetEdges.html">Offset Edges</a><br><span class="desc">Takes edge of a mesh and offsets it along the vertex normal or extrudes along a input vector. Output can be toggled between a single mesh or individual meshes per face.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Span_&_Bridge.png"/></td><td><a href="components/meshplus/spanBridge.html">Span & Bridge</a><br><span class="desc">Removes multiple pairs of mesh faces at given indices from either one or two meshes and bridges the resulting naked edges. An optional sorting boolean attempts to organize the vertexes to avoid torsion in the bridging</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Unweld_&_Explode.png"/></td><td><a href="components/meshplus/unweldExplode.html">Unweld & Explode</a><br><span class="desc">Unwelds a mesh at the user specified angle and explodes it into new meshes at unwelded edges.</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>Select</h3>
+<table class="compos">
+<tbody>
+<tr><td><img src="icons/MeshPlus/Face_Bands.png"/></td><td><a href="components/meshplus/faceBands.html">Face Bands</a><br><span class="desc">Indexes Mesh Faces based on their topological distance from naked edges or selected points.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Proximity_Vertex_Selection.png"/></td><td><a href="components/meshplus/proximityVertexSelection.html">Proximity Vertex Selection</a><br><span class="desc">Selects vertices based on their closest point distance to sample geometries.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Select_by_Topological_Distance.png"/></td><td><a href="components/meshplus/selectByTopologicalDistance.html">Select by Topological Distance</a><br><span class="desc">Returns a series of unitized values per vertex based on their topological edge's cumulative physical distance, divided by a user specified range for selection.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Select_by_Vertex_Angle.png"/></td><td><a href="components/meshplus/selectByVertexAngle.html">Select by Vertex Angle</a><br><span class="desc">Selects vertices based on an angle tolerance, determined by testing the angle between all edges shared by a vertex about a face and sums the value.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Select_Mesh_Edge.png"/></td><td><a href="components/meshplus/selectMeshEdge.html">Select Mesh Edge</a><br><span class="desc">Allows for the selection of Grasshopper or Rhino Mesh Edges. Returning the Indices, Mid Point, and Representational Line at each selection. <br>(</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Select_Mesh_Faces.png"/></td><td><a href="components/meshplus/selectMeshFaces.html">Select Mesh Faces</a><br><span class="desc">Allows for the selection of Grasshopper or Rhino Mesh Faces. Returning the Indices, Face Center, Face, and Face Normal at each selection. <br>(</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Select_Mesh_Vertices.png"/></td><td><a href="components/meshplus/selectMeshVertices.html">Select Mesh Vertices</a><br><span class="desc">Allows for the selection of Grasshopper or Rhino Mesh Vertices. Returning the Indices, Point, and Normal at each selection. <br>(</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Vertex_Rings.png"/></td><td><a href="components/meshplus/vertexRings.html">Vertex Rings</a><br><span class="desc">Indexes Vertices based on their topological distance from naked edges or selected points.</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>Effects</h3>
+<table class="compos">
+<tbody>
+<tr><td><img src="icons/MeshPlus/Antisnub.png"/></td><td><a href="components/meshplus/antisnub.html">Antisnub</a><br><span class="desc">Creates an advanced face effect by creating the antiprism extrusion from each face and snubbing the top corner vertex of each new face on each face of the original mesh outwards along the direction of the face normal. All (c,s,d,t) values corespond to the input meshes face sequence and can recieve either a single value are a corresponding list of values.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Hair.png"/></td><td><a href="components/meshplus/hair.html">Hair</a><br><span class="desc">Creates an advanced hair effect from a tapered extrusion which can rotate within a pore relief on each face of the mesh outwards along the direction of the face normal. All (c,s,d,t) values corespond to the input meshes face sequence and can recieve either a single value are a corresponding list of values.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Node.png"/></td><td><a href="components/meshplus/node.html">Node</a><br><span class="desc">Creates an advanced face effect stellating the face and creating an optional directional pore from each new face on each face of the original mesh outwards along the direction of the face normal. All (c,s,d,t) values corespond to the input meshes face sequence and can recieve either a single value are a corresponding list of values.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Peel.png"/></td><td><a href="components/meshplus/peel.html">Peel</a><br><span class="desc">Creates an advanced peeling effect rotating subdivided faes outwards about each edge of each face of the mesh outwards along the direction of the face normal. All (c,s,d,t) values corespond to the input meshes face sequence and can recieve either a single value are a corresponding list of values.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Pinch.png"/></td><td><a href="components/meshplus/pinch.html">Pinch</a><br><span class="desc">Creates an advanced pinching moving points at the vertex and edge centers independently towards the center of each face of the mesh outwards along the direction of the face normal. All (c,s,d,t) values corespond to the input meshes face sequence and can recieve either a single value are a corresponding list of values.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Polyp.png"/></td><td><a href="components/meshplus/polyp.html">Polyp</a><br><span class="desc">Creates an advanced polyp effect from the edge of each face of the mesh outwards along the direction of the face normal. All (c,s,d,t) values corespond to the input meshes face sequence and can recieve either a single value are a corresponding list of values.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Pore.png"/></td><td><a href="components/meshplus/pore.html">Pore</a><br><span class="desc">Creates a pore effect with a flat edge and raised facet on each face of the mesh outwards along the direction of the face normal. All (c,s,d,t) values corespond to the input meshes face sequence and can recieve either a single value are a corresponding list of values.</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>Modify</h3>
+<table class="compos">
+<tbody>
+<tr><td><img src="icons/MeshPlus/Align_Mesh_Vertices.png"/></td><td><a href="components/meshplus/alignMeshVertices.html">Align Mesh Vertices</a><br><span class="desc">Collapses vertex positions based on their proximity and the sequence in which they are toplogically ordered.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Calculate_Vertex_Normals.png"/></td><td><a href="components/meshplus/calculateVertexNormals.html">Calculate Vertex Normals</a><br><span class="desc">Rebuilds vertex normals with a full range of options.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Compute_Face_Normals.png"/></td><td><a href="components/meshplus/computeFaceNormals.html">Compute Face Normals</a><br><span class="desc">Rebuilds the Face Normals for a mesh with a full range of options.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Mirror_Face_Orientation.png"/></td><td><a href="components/meshplus/mirrorFaceOrientation.html">Mirror Face Orientation</a><br><span class="desc">Mirrors selected face topology.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Reverse_Face_Normal.png"/></td><td><a href="components/meshplus/reverseFaceNormal.html">Reverse Face Normal</a><br><span class="desc">Reverses selected face normals</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Shift_Face_Orientation.png"/></td><td><a href="components/meshplus/shiftFaceOrientation.html">Shift Face Orientation</a><br><span class="desc">Shifts selected face topology, similar to rotating the face.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Triangulate_Mesh.png"/></td><td><a href="components/meshplus/triangulateMesh.html">Triangulate Mesh</a><br><span class="desc">Triangulates the quad faces of mesh based on natural direction, shortest/ longest length, or greatest or smallest area.</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>Weave</h3>
+<table class="compos">
+<tbody>
+<tr><td><img src="icons/MeshPlus/Continuum.png"/></td><td><a href="components/meshplus/continuum.html">Continuum</a><br><span class="desc">Creates a series of connections perpendicular and parallel to each meshes face creating a loop from front face to back face. Inspired by the work of Erwin Hauer.<br>(</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Criss_Cross.png"/></td><td><a href="components/meshplus/crissCross.html">Criss Cross</a><br><span class="desc">Creates a series of connections perpendicular and parallel to each meshes face bridging between every other edge. <br>(</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Link.png"/></td><td><a href="components/meshplus/link.html">Link</a><br><span class="desc">Creates a series of radially arrayed links from each mesh face edge about each face center and back to the same edge</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Net.png"/></td><td><a href="components/meshplus/net.html">Net</a><br><span class="desc">Creates a series of radially arrayed interlocking ribbons from each mesh face edge about each face center</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Thatch.png"/></td><td><a href="components/meshplus/thatch.html">Thatch</a><br><span class="desc">Converts each face into a quad set of thatch woven meshes</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Weave.png"/></td><td><a href="components/meshplus/weave.html">Weave</a><br><span class="desc">Converts each face of a mesh into two interwoven meshes</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>Show</h3>
+<table class="compos">
+<tbody>
+<tr><td><img src="icons/MeshPlus/Highlight.png"/></td><td><a href="components/meshplus/highlight.html">Highlight</a><br><span class="desc">Applies a color to all naked edge or non naked vertex points in a mesh</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Label_Edge.png"/></td><td><a href="components/meshplus/labelEdge.html">Label Edge</a><br><span class="desc">Creates point lists of points at each mesh edge at its midpoint</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Label_Face.png"/></td><td><a href="components/meshplus/labelFace.html">Label Face</a><br><span class="desc">Creates point lists of center points of each mesh face at its center</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Label_Topo_Vert.png"/></td><td><a href="components/meshplus/labelTopoVert.html">Label Topo Vert</a><br><span class="desc">Creates point lists of the meshes topology vertex points offset on the face to remove overlap</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Label_Vertex_Indices.png"/></td><td><a href="components/meshplus/labelVertexIndices.html">Label Vertex Indices</a><br><span class="desc">Creates point lists of vertex sequence of each face offset on the face to remove overlap</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Label_Vertex.png"/></td><td><a href="components/meshplus/labelVertex.html">Label Vertex</a><br><span class="desc">Creates point lists of the meshes vertex points offset on the face to remove overlap</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>Loop</h3>
+<table class="compos">
+<tbody>
+<tr><td><img src="icons/MeshPlus/Branch.png"/></td><td><a href="components/meshplus/branch.html">Branch</a><br><span class="desc">Recursively branches each mesh face which is parallel to the original mesh faces into a set of new subdivided quad extrusions.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Crumple.png"/></td><td><a href="components/meshplus/crumple.html">Crumple</a><br><span class="desc">Recursively stellates each mesh face into a new mesh offset along the face normal.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Crystalize.png"/></td><td><a href="components/meshplus/crystalize.html">Crystalize</a><br><span class="desc">Recursively decomposes each mesh face into a new truncated open mesh pyramid offset along the face normal</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Expand.png"/></td><td><a href="components/meshplus/expand.html">Expand</a><br><span class="desc">Recursively decomposes each mesh face into a new mesh offset along the face normal connected only by the corner vertices.</span></td></tr>
+<tr><td><img src="icons/MeshPlus/Facet.png"/></td><td><a href="components/meshplus/facet.html">Facet</a><br><span class="desc">Recursively stellates a new face made from the midpoints of the edge lines.</span></td></tr>
 </tbody>
 </table>
 

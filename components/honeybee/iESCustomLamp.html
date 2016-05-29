@@ -1,0 +1,180 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+    <head data-layout-view="wide">
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>IES Custom Lamp - Grasshopper Component Reference</title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+    <meta name="description" content="A guide to component IES Custom Lamp in Grasshopper 3D." />
+<meta name="title" content="Grasshopper Component Reference" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://www.grasshopper3d.com/page/component-reference" />
+<meta property="og:title" content="Grasshopper Component Reference" />
+<link rel="image_src" href="http://rhino.github.io/ning/2985220.jpg" />
+
+<style type="text/css" media="screen,projection">
+#xg_navigation ul div.xg_subtab ul li a {
+    color:#666666;
+    background:#EAFFBD;
+}
+#xg_navigation ul div.xg_subtab ul li a:hover {
+    color:#333333;
+    background:#F2FFD6;
+}
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../../ning/index.css);
+@import url(../../ning/page.css);
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../../ning/1187549422.css);
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../../ning/1187545030.css);
+</style>
+
+
+<link href="../../style.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+    </head>
+    <body>
+    
+        
+        <div id="xg" class="xg_theme xg_widget_page xg_widget_page_page xg_widget_page_page_show" data-layout-pack="classic">
+            <div id="xg_head">
+                <div id="xg_masthead">
+                    <p id="xg_sitename"><a id="application_name_header_link" href="http://www.grasshopper3d.com/">Grasshopper</a></p>
+                    <p id="xg_sitedesc" class="xj_site_desc">algorithmic modeling for Rhino</p>
+                </div>
+                <div id="xg_navigation">
+                    <ul>
+    <li id="xg_tab_main" class="xg_subtab"><a href="http://www.grasshopper3d.com/"><span>Home</span></a></li>
+	<li id="xg_tab_photo" class="xg_subtab"><a href="http://www.grasshopper3d.com/photo"><span>View</span></a></li>
+	<li id="xg_tab_xn0" class="xg_subtab"><a href="http://www.grasshopper3d.com/page/download-1"><span>Get</span></a></li>
+	<li id="xg_tab_xn2" class="xg_subtab this"><a href="http://www.grasshopper3d.com/page/tutorials-1"><span>Learn</span></a></li>
+	<li id="xg_tab_forum" class="xg_subtab"><a href="http://www.grasshopper3d.com/forum"><span>Talk</span></a></li>
+	<li id="xg_tab_events" class="xg_subtab"><a href="http://www.grasshopper3d.com/events"><span>Events</span></a></li>
+	<li id="xg_tab_profile" class="xg_subtab"><a href="http://www.grasshopper3d.com/"><span>My Page</span></a></li></ul>
+
+                </div>
+            </div>
+            
+            <div id="xg_body">
+                
+				<div class="page">
+
+<div class="content">
+
+<div>
+<h1><img src="../../icons/Honeybee/IES_Custom_Lamp.png"/> IES Custom Lamp</h1>
+<p><a href="../../index.html">Component Index</a> &gt; Honeybee > 13 | WIP > <b>IES Custom Lamp</b></p>
+</div>
+<h3>This component can be used to specify a lamp of custom chromaticity, color or color temperature. <br>.<br>If _lampName is specified from an existing list of lamps (which can be seen by hovering over the _lampName input), then the chromaticity associated with the lamp will be used.<br>.<br>In case _lampName isn't present in the list,a lamp with chromaticity corresponding to 3200K will be defined.<br>.<br>If case the custom lamp is being defined by specifying _colorTemp_ or _xCor,_yCor_, it is recommended that the lampDetails output be connected to a text panel for displaying the chromaticity and color temperature of the lamp.<br>.<br>In case of a conflict, input options on the top will override inputs below them.<br>-<br>Technical Notes:<br>----------------------<br>The Color Matching Functions used for calculations were obtained from Wyszecki, Gunter, and Walter Stanley Stiles. Color science. Vol. 8. New York: Wiley, 1982.<br>.<br>The calculation of CCT and Duv are based on: Ohno, Yoshi. Practical use and calculation of CCT and Duv. Leukos 10.1 (2014): 47-55.<br>.<br>CCT calculations should be within +/- 0.1 % margin of error. The Planckian Table used for calculations is based on a 1% step-size.<br>.<br>While (x,y), (u,v) or (u'v') coordinates may be specified for any valid location on the chromaticity diagram, CCT and Duv will only be displayed if the absolute value of Duv is less than or equal to 0.02.<br>.<br>.<br>!!WARNING !!<br>------------------<br>The colors specified in this component only affect the luminance and chromaticity of the light source. <br>The color fidelity or gamut area of the source cannot be modified by this component.<br>So, color fidelity metrics such as CRI cannot be considered in these calculations.</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>_lampName</b></td><td>_lampName</td><td>Specify a name for the lamp.The name can be a predefined lamp name or any other name.
+_
+The following lamp names are predefined. The values in parenthesis are the x,y 1931 chromaticity coordinates and lumen depreciation values.:
+clear metal halide    (0.396, 0.39, 0.8)
+cool white            (0.376, 0.368, 0.85)
+cool white deluxe     (0.376, 0.368, 0.85)
+deluxe cool white     (0.376, 0.368, 0.85)
+deluxe warm white     (0.44, 0.403, 0.85)
+fluorescent           (0.376, 0.368, 0.85)
+halogen               (0.4234, 0.399, 1)
+incandescent          (0.453, 0.405, 0.95)
+mercury               (0.373, 0.415, 0.8)
+metal halide          (0.396, 0.39, 0.8)
+quartz                (0.424, 0.399, 1)
+sodium                (0.569, 0.421, 0.93)
+warm white            (0.44, 0.403, 0.85)
+warm white deluxe     (0.44, 0.403, 0.85)
+xenon                 (0.324, 0.324, 1)
+_
+For example,specifying "cool white" (without the quotes) as input will set the x,y,Lumen Depreciation values to 0.376, 0.368 and 0.85 respectively.
+_
+Specifying an arbitrary name like "lampx" will create a lamp with x,y,lumen depreciation values of 0.333,0.333 and 1 respectively. These values can then be modified by specifying _colorTemp_ or _xCor_ and _yCor_ or _rgbColors_.</td><td>Goo</td></tr>
+<tr><td><b>_colorTemp_</b></td><td>_colorTemp_</td><td>Specify a color temperature for the lamp.The color temperature will be used to calculate the chromatcity coordinates of the lamp on the CIE 1931 xy diagram. Lumen depreciation factor for the lamp can be set by specifying a value for the _deprFactor_ input. Valid values for color temperature are from 1000 to 25000.</td><td>Goo</td></tr>
+<tr><td><b>--------------</b></td><td>--------------</td><td>Script variable iesCustomLamp</td><td>Goo</td></tr>
+<tr><td><b>_xCor_</b></td><td>_xCor_</td><td>Specify a chromaticity coordinate for the lamp. The default coordinate is the x coordinate for the CIE 1931 Color Space.</td><td>Goo</td></tr>
+<tr><td><b>_yCor_</b></td><td>_yCor_</td><td>Specify a chromaticity coordinate for the lamp. The default coordinate is the y coordinate for the CIE 1931 Color Space.</td><td>Goo</td></tr>
+<tr><td><b>_colorSpace_</b></td><td>_colorSpace_</td><td>Specify a color space for the chromaticity coordinates. The values and their corresponding color spaces are
+0 - CIE 1931 Color Space (default)
+1 - CIE 1960 Color Space
+2 - CIE 1976 Color Space</td><td>Goo</td></tr>
+<tr><td><b>--------------</b></td><td>--------------</td><td>Script input --------------.</td><td>Goo</td></tr>
+<tr><td><b>_rgbColors_</b></td><td>_rgbColors_</td><td>Specify a (r,g,b) color value using either the Grasshopper Colour Swatch (preferred) or a text panel. If the alpha value for the Colour Swatch is set to a value other than 255 then that value will be multiplied with the _deprFactor_.</td><td>Goo</td></tr>
+<tr><td><b>_deprFactor_</b></td><td>_deprFactor_</td><td>Lamp lumen depreciation factor.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>out</b></td><td>readMe!</td><td>The execution information, as output and error streams</td><td>String</td></tr>
+<tr><td><b>lampDetails</b></td><td>lampDetails</td><td>Information about the lamp defined as per the input parameters.</td><td>Goo</td></tr>
+<tr><td><b>customLamp</b></td><td>customLamp</td><td>Connect this to the customLamp_ input in the Honeybee_IES Luminaire option.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+
+  </div>
+
+</div>
+
+            </div>
+            <div id="xg_foot">
+                <p class="left">
+    © 2016             &nbsp; Created by <a href="http://www.grasshopper3d.com/profile/HarshGupta367/">Harsh Gupta</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a>
+	</p>
+    <p class="right xg_lightfont">
+                    <a href="http://www.grasshopper3d.com/main/embeddable/list">Badges</a> &nbsp;|&nbsp;
+                        <a href="http://www.grasshopper3d.com/main/index/report" dojotype="PromptToJoinLink" _joinprompttext="Please sign up or sign in to complete this step." _hassignup="true" _signinurl="http://www.grasshopper3d.com/main/authorization/signIn?target=http%3A%2F%2Fwww.grasshopper3d.com%2Fmain%2Findex%2Freport">Report an Issue</a> &nbsp;|&nbsp;
+                        <a href="http://www.grasshopper3d.com/main/authorization/termsOfService?previousUrl=http%3A%2F%2Fwww.grasshopper3d.com%2Fpage%2Fcomponent-reference">Terms of Service</a>
+            </p>
+
+            </div>
+        </div>
+        
+        <div id="xj_baz17246" class="xg_theme"></div>
+<div id="xg_overlay" style="display:none;">
+<!--[if lte IE 6.5]><iframe></iframe><![endif]-->
+</div>
+<!--googleoff: all--><noscript>
+	<style type="text/css" media="screen">
+        #xg { position:relative;top:120px; }
+        #xn_bar { top:120px; }
+	</style>
+	<div class="errordesc noscript">
+		<div>
+            <h3><strong>Hello, you need to enable JavaScript to use Grasshopper.</strong></h3>
+            <p>Please check your browser settings or contact your system administrator.</p>
+			
+		</div>
+	</div>
+</noscript><!--googleon: all-->
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    </body>
+</html>

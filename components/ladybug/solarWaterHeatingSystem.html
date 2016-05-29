@@ -1,0 +1,228 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+    <head data-layout-view="wide">
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Solar Water Heating System - Grasshopper Component Reference</title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+    <meta name="description" content="A guide to component Solar Water Heating System in Grasshopper 3D." />
+<meta name="title" content="Grasshopper Component Reference" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://www.grasshopper3d.com/page/component-reference" />
+<meta property="og:title" content="Grasshopper Component Reference" />
+<link rel="image_src" href="http://rhino.github.io/ning/2985220.jpg" />
+
+<style type="text/css" media="screen,projection">
+#xg_navigation ul div.xg_subtab ul li a {
+    color:#666666;
+    background:#EAFFBD;
+}
+#xg_navigation ul div.xg_subtab ul li a:hover {
+    color:#333333;
+    background:#F2FFD6;
+}
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../../ning/index.css);
+@import url(../../ning/page.css);
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../../ning/1187549422.css);
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../../ning/1187545030.css);
+</style>
+
+
+<link href="../../style.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+    </head>
+    <body>
+    
+        
+        <div id="xg" class="xg_theme xg_widget_page xg_widget_page_page xg_widget_page_page_show" data-layout-pack="classic">
+            <div id="xg_head">
+                <div id="xg_masthead">
+                    <p id="xg_sitename"><a id="application_name_header_link" href="http://www.grasshopper3d.com/">Grasshopper</a></p>
+                    <p id="xg_sitedesc" class="xj_site_desc">algorithmic modeling for Rhino</p>
+                </div>
+                <div id="xg_navigation">
+                    <ul>
+    <li id="xg_tab_main" class="xg_subtab"><a href="http://www.grasshopper3d.com/"><span>Home</span></a></li>
+	<li id="xg_tab_photo" class="xg_subtab"><a href="http://www.grasshopper3d.com/photo"><span>View</span></a></li>
+	<li id="xg_tab_xn0" class="xg_subtab"><a href="http://www.grasshopper3d.com/page/download-1"><span>Get</span></a></li>
+	<li id="xg_tab_xn2" class="xg_subtab this"><a href="http://www.grasshopper3d.com/page/tutorials-1"><span>Learn</span></a></li>
+	<li id="xg_tab_forum" class="xg_subtab"><a href="http://www.grasshopper3d.com/forum"><span>Talk</span></a></li>
+	<li id="xg_tab_events" class="xg_subtab"><a href="http://www.grasshopper3d.com/events"><span>Events</span></a></li>
+	<li id="xg_tab_profile" class="xg_subtab"><a href="http://www.grasshopper3d.com/"><span>My Page</span></a></li></ul>
+
+                </div>
+            </div>
+            
+            <div id="xg_body">
+                
+				<div class="page">
+
+<div class="content">
+
+<div>
+<h1><img src="../../icons/Ladybug/Solar_Water_Heating_System.png"/> Solar Water Heating System</h1>
+<p><a href="../../index.html">Component Index</a> &gt; Ladybug > 6 | WIP > <b>Solar Water Heating System</b></p>
+</div>
+<h3>Use this component to define Solar water heating system settings.<br>If nothing inputed, the following swh system will be used by default:<br>- glazed flat plate collectors<br>- active<br>- closed loop<br>- 1 story<br>- unshaded<br></h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>collectorType_</b></td><td>collectorType_</td><td>Type of the collector. The following ones can be used:
+-
+0 - unglazed flat plate
+Least expensive.
+Mostly used for single home domestic how water heating and for heating swimming pools.
+More cost efficient in tropical and subtropical environments. They can also be used in moderate climates for seasonal usage.
+Can output water temperatures up to 30°C (86°F).
+-
+1 - glazed flat plate
+Less expensive.
+More cost efficient in warm and mild-warm climates. But also used in temperate climates.
+Mostly used for single home domestic how water heating, space heating and space cooling. And for heating swimming pools.
+Can output water temperatures up to 60°C (140°F).
+-
+2 - evacuated tube
+The most expensive.
+More cost efficient in cold temperate and cold climates (with low ambient temperature, for example: during winter) and during overcast skies.
+Evacuated tube collectors (or concentrating collectors) are typically used for industrial applications, or multi residential or commercial buildings for space heating and space cooling.
+Can output water temperatures higher than 90°C (194°F) degrees, up to 177°C (350°F).
+-
+-
+If not supplied, glazed flat plate collectors (1) will be used.</td><td>Goo</td></tr>
+<tr><td><b>activeSWHsystem_</b></td><td>activeSWHsystem_</td><td>Define whether the swh system is active (pumped) or passive (not pumped).
+-
+0 - passive (not pumped) swh system
+Less expensive.
+More efficient in warm and mild-warm climates.
+Does not require electricity to operate.
+Is used for domestic hot water heating and space heating of a single home.
+If positioned on a roof require putting a storage tank above the collector, and therefor impose the roof construction to be able to carry the weight of the storage tank.
+SWHsurface component supports passive swh systems with auxiliary heater.
+-
+1 - active (pumped) swh system
+More expensive.
+More efficient in temperate and cold climates.
+Require electricity to operate and battery back-up in case of power outage.
+Can be used for domestic hot water heating, space heating and space cooling of a single home, building or several buildings (central heating).
+More efficient in warm and mild-warm climates, where it rarely freezes
+-
+-
+If not supplied, active (pumped) loop will be used.</td><td>Goo</td></tr>
+<tr><td><b>openLoop_</b></td><td>openLoop_</td><td>Define whether the swh system has an open (indirect) or closed (indirect) solar loop.
+-
+0 - closed (indirect) loop
+Usage of heatexchanger. Antifreeze is a working fluid.
+More expensive.
+More efficient in temperate and cold climates where freezing may occur.
+Also suitable for locations with hard water hardness (mineral content).
+-
+1 - open (direct) loop
+No usage of heatexchangers. Water is the working fluid.
+Less expensive.
+More efficient in warm and mild-warm climates, where it rarely freezes (air temperature never drops below 5°C(41°F) degrees).
+Only suitable for locations with low water hardness (mineral content) otherwise limescale will form in solar collectors.
+-
+-
+If not supplied, closed (indirect) loop will be used.</td><td>Goo</td></tr>
+<tr><td><b>numberOfStories_</b></td><td>numberOfStories_</td><td>Total number of stories plus basement (if there is a basement).
+This input is used to calculate the total piping length in the solar loop, based on an assumption that the storage tank will be located at the lowest story (basement or ground floor), and solar collectors are located at the roof.
+-
+Example 1:
+a house with a ground floor, first floor and a basement - has 3 stories total.
+Example 2:
+a house with a ground floor, first floor, second floor and without a basement - has 3 stories total.
+-
+If sollar collectors are used on a ground instead of roof, use the "Solar Water Heating System Detailed" component instead of this one to enter the exact pipe length of the solar loop.
+-
+-
+If not supplied, "1" story will be used as a default value (a house with only a ground floor, without a basement).</td><td>Goo</td></tr>
+<tr><td><b>_______________</b></td><td>_______________</td><td>Script variable SolarWaterHeatingSystemSimplified</td><td>Goo</td></tr>
+<tr><td><b>skyViewFactor_</b></td><td>skyViewFactor_</td><td>Continuous Sky View Factor - portion of the visible sky (dome). It defines the shading of the parts of diffuse irradiance. It ranges from 0 to 1.
+Import it from "Sunpath shading" component's "skyViewFactor" output.
+-
+If not supplied, 1 will be used as a default value (SWHsurface is unshaded).
+-
+Unitless.</td><td>Goo</td></tr>
+<tr><td><b>beamIndexPerHour_</b></td><td>beamIndexPerHour_</td><td>Transmission index of beam (direct) irradiance for each hour during a year. It ranges from 0-1.
+Import it from "Sunpath shading" component's "beamIndexPerHour" output.
+-
+If not supplied, a value of 1 for each hour during a year, will be used (SWHsurface is unshaded).
+-
+Unitless.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>out</b></td><td>readMe!</td><td>...</td><td>String</td></tr>
+<tr><td><b>SWHsystemSettings</b></td><td>SWHsystemSettings</td><td>A list of all Solar water heating system settings. Plug it to SWHsurface component's "SWHsystemSettings_" input.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+
+  </div>
+
+</div>
+
+            </div>
+            <div id="xg_foot">
+                <p class="left">
+    © 2016             &nbsp; Created by <a href="http://www.grasshopper3d.com/profile/HarshGupta367/">Harsh Gupta</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a>
+	</p>
+    <p class="right xg_lightfont">
+                    <a href="http://www.grasshopper3d.com/main/embeddable/list">Badges</a> &nbsp;|&nbsp;
+                        <a href="http://www.grasshopper3d.com/main/index/report" dojotype="PromptToJoinLink" _joinprompttext="Please sign up or sign in to complete this step." _hassignup="true" _signinurl="http://www.grasshopper3d.com/main/authorization/signIn?target=http%3A%2F%2Fwww.grasshopper3d.com%2Fmain%2Findex%2Freport">Report an Issue</a> &nbsp;|&nbsp;
+                        <a href="http://www.grasshopper3d.com/main/authorization/termsOfService?previousUrl=http%3A%2F%2Fwww.grasshopper3d.com%2Fpage%2Fcomponent-reference">Terms of Service</a>
+            </p>
+
+            </div>
+        </div>
+        
+        <div id="xj_baz17246" class="xg_theme"></div>
+<div id="xg_overlay" style="display:none;">
+<!--[if lte IE 6.5]><iframe></iframe><![endif]-->
+</div>
+<!--googleoff: all--><noscript>
+	<style type="text/css" media="screen">
+        #xg { position:relative;top:120px; }
+        #xn_bar { top:120px; }
+	</style>
+	<div class="errordesc noscript">
+		<div>
+            <h3><strong>Hello, you need to enable JavaScript to use Grasshopper.</strong></h3>
+            <p>Please check your browser settings or contact your system administrator.</p>
+			
+		</div>
+	</div>
+</noscript><!--googleon: all-->
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    </body>
+</html>

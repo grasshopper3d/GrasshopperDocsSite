@@ -1,0 +1,167 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+    <head data-layout-view="wide">
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Visualise_Honeybeegeneration_cashflow - Grasshopper Component Reference</title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+    <meta name="description" content="A guide to component Visualise_Honeybeegeneration_cashflow in Grasshopper 3D." />
+<meta name="title" content="Grasshopper Component Reference" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://www.grasshopper3d.com/page/component-reference" />
+<meta property="og:title" content="Grasshopper Component Reference" />
+<link rel="image_src" href="http://rhino.github.io/ning/2985220.jpg" />
+
+<style type="text/css" media="screen,projection">
+#xg_navigation ul div.xg_subtab ul li a {
+    color:#666666;
+    background:#EAFFBD;
+}
+#xg_navigation ul div.xg_subtab ul li a:hover {
+    color:#333333;
+    background:#F2FFD6;
+}
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../../ning/index.css);
+@import url(../../ning/page.css);
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../../ning/1187549422.css);
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../../ning/1187545030.css);
+</style>
+
+
+<link href="../../style.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+    </head>
+    <body>
+    
+        
+        <div id="xg" class="xg_theme xg_widget_page xg_widget_page_page xg_widget_page_page_show" data-layout-pack="classic">
+            <div id="xg_head">
+                <div id="xg_masthead">
+                    <p id="xg_sitename"><a id="application_name_header_link" href="http://www.grasshopper3d.com/">Grasshopper</a></p>
+                    <p id="xg_sitedesc" class="xj_site_desc">algorithmic modeling for Rhino</p>
+                </div>
+                <div id="xg_navigation">
+                    <ul>
+    <li id="xg_tab_main" class="xg_subtab"><a href="http://www.grasshopper3d.com/"><span>Home</span></a></li>
+	<li id="xg_tab_photo" class="xg_subtab"><a href="http://www.grasshopper3d.com/photo"><span>View</span></a></li>
+	<li id="xg_tab_xn0" class="xg_subtab"><a href="http://www.grasshopper3d.com/page/download-1"><span>Get</span></a></li>
+	<li id="xg_tab_xn2" class="xg_subtab this"><a href="http://www.grasshopper3d.com/page/tutorials-1"><span>Learn</span></a></li>
+	<li id="xg_tab_forum" class="xg_subtab"><a href="http://www.grasshopper3d.com/forum"><span>Talk</span></a></li>
+	<li id="xg_tab_events" class="xg_subtab"><a href="http://www.grasshopper3d.com/events"><span>Events</span></a></li>
+	<li id="xg_tab_profile" class="xg_subtab"><a href="http://www.grasshopper3d.com/"><span>My Page</span></a></li></ul>
+
+                </div>
+            </div>
+            
+            <div id="xg_body">
+                
+				<div class="page">
+
+<div class="content">
+
+<div>
+<h1><img src="../../icons/Honeybee/Visualise_Honeybeegeneration_cashflow.png"/> Visualise_Honeybeegeneration_cashflow</h1>
+<p><a href="../../index.html">Component Index</a> &gt; Honeybee > 13 | WIP > <b>Visualise_Honeybeegeneration_cashflow</b></p>
+</div>
+<h3>Use this component to the calculate and visualise the financial value of Honeybee generation systems over 25 years. At present you can only create grid connected renewable energy systems without storage. For this reason you must specify both the grid electricity price and fed in tariff rate.<br>The financial value of the Honeybee generator systems is calculated by calculating how much energy is consumed by the facility and produced by the Honeybee generator systems for every hour of the year.<br>For every hour of the year if electricity is generated and the facility requires electricity, the facility will automatically consume the electricity generated. This will generate a revenue as the facility did not have to purchase electricity from the grid.<br>Any surplus electricity generated in any hour throughout the year will be fed back into the grid at the tariff rate, and generate a revenue.<br></h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>_inputData</b></td><td>_inputData</td><td>To use this component please input all the outputs from the component readEP_generation_system_results here</td><td>Goo</td></tr>
+<tr><td><b>discountFactor_</b></td><td>discountFactor_</td><td>An optional input - specify the interest rate as a percentage to calculate a discount factor for each Honeybee generation system. A discount factor is a ratio used to calculate the present value of a future revenue or cost that occurs in any year of the system lifetime (25 years) using the equation - fd = 1/(1+i)^N where: i = real interest rate ,N = number of years. If this field is left blank no discount factor will be applied</td><td>Goo</td></tr>
+<tr><td><b>_gridElectCostSchedule</b></td><td>_gridElectCostSchedule</td><td>The cost of grid connected electricty per Kwh in US dollars
+If you want to specify a flat rate just specify one value this will be used across all the hours of the year.
+Otherwise specify the grid electricity cost for 288 hours of the year that is for each hour of the day for one day in every month of the year.
+Use a list with 288 values to do this.</td><td>Goo</td></tr>
+<tr><td><b>_feedInTariffSchedule</b></td><td>_feedInTariffSchedule</td><td>The price that the utility will pay per Kwh in US dollars for power fed back into the grid. 
+If you want to specify a flat rate just specify one value this will be used across all the hours of the year.
+Otherwise specify the grid electricity cost for 288 hours of the year that is for each hour of the day for one day in every month of the year.
+Use a list with 288 values to do this.</td><td>Goo</td></tr>
+<tr><td><b>graphDataByHBSystem_</b></td><td>graphDataByHBSystem_</td><td>Set to True to visualise the the financial value of each Honeybee generation system.</td><td>Goo</td></tr>
+<tr><td><b>graphDataByCost_</b></td><td>graphDataByCost_</td><td>Set to True to sum each Honeybee generation system's costs and revenues together and then to visualise these figures by type e.g replacement costs, capital costs etc.
+to visualise each generator system by cost run mutliple Energy Plus simulations and visualise results seperately.</td><td>Goo</td></tr>
+<tr><td><b>_xScale_</b></td><td>_xScale_</td><td>The scale of the X axis of the graph. The default will plot the X axis with a length of 215 Rhino model units</td><td>Goo</td></tr>
+<tr><td><b>_zScale_</b></td><td>_zScale_</td><td>The scale of the Y axis of the graph. The default will plot the Z axis with a length of 85 Rhino model units</td><td>Goo</td></tr>
+<tr><td><b>_fontSize_</b></td><td>_fontSize_</td><td>An optional input, use a float to change the size of the font on the graph.</td><td>Goo</td></tr>
+<tr><td><b>_basePoint_</b></td><td>_basePoint_</td><td>An optional input, use a 3D point to locate the 3D chart in the Rhino Model.  The default is set to the Rhino origin at (0,0,0).</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>out</b></td><td>Readme!</td><td>The execution information, as output and error streams</td><td>String</td></tr>
+<tr><td><b>gensystem_value</b></td><td>gensystem_value</td><td>The net present cost of each Honeybee generation system. The net present cost is the present value of all the costs of installing and operating that Honeybee generation system over 25 years minus the present value of the all the revenues that the system earns over 25 years. 
+Thus a positive value means that compared to just buying electricity from the grid the Honeybee generation system will save money while a negative value means that it will be more cost effective to simply buy electricity from the grid.</td><td>Goo</td></tr>
+<tr><td><b>dataMeshes</b></td><td>dataMeshes</td><td>Script output dataMeshes.</td><td>Goo</td></tr>
+<tr><td><b>axisMeshes</b></td><td>axisMeshes</td><td>Script variable HB_GeneratorCashflow</td><td>Goo</td></tr>
+<tr><td><b>textSrfs</b></td><td>textSrfs</td><td>Script output textSrfs.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+
+  </div>
+
+</div>
+
+            </div>
+            <div id="xg_foot">
+                <p class="left">
+    © 2016             &nbsp; Created by <a href="http://www.grasshopper3d.com/profile/HarshGupta367/">Harsh Gupta</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a>
+	</p>
+    <p class="right xg_lightfont">
+                    <a href="http://www.grasshopper3d.com/main/embeddable/list">Badges</a> &nbsp;|&nbsp;
+                        <a href="http://www.grasshopper3d.com/main/index/report" dojotype="PromptToJoinLink" _joinprompttext="Please sign up or sign in to complete this step." _hassignup="true" _signinurl="http://www.grasshopper3d.com/main/authorization/signIn?target=http%3A%2F%2Fwww.grasshopper3d.com%2Fmain%2Findex%2Freport">Report an Issue</a> &nbsp;|&nbsp;
+                        <a href="http://www.grasshopper3d.com/main/authorization/termsOfService?previousUrl=http%3A%2F%2Fwww.grasshopper3d.com%2Fpage%2Fcomponent-reference">Terms of Service</a>
+            </p>
+
+            </div>
+        </div>
+        
+        <div id="xj_baz17246" class="xg_theme"></div>
+<div id="xg_overlay" style="display:none;">
+<!--[if lte IE 6.5]><iframe></iframe><![endif]-->
+</div>
+<!--googleoff: all--><noscript>
+	<style type="text/css" media="screen">
+        #xg { position:relative;top:120px; }
+        #xn_bar { top:120px; }
+	</style>
+	<div class="errordesc noscript">
+		<div>
+            <h3><strong>Hello, you need to enable JavaScript to use Grasshopper.</strong></h3>
+            <p>Please check your browser settings or contact your system administrator.</p>
+			
+		</div>
+	</div>
+</noscript><!--googleon: all-->
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    </body>
+</html>

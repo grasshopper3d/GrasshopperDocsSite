@@ -1,0 +1,236 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+    <head data-layout-view="wide">
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>PV SWH System Size - Grasshopper Component Reference</title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+    <meta name="description" content="A guide to component PV SWH System Size in Grasshopper 3D." />
+<meta name="title" content="Grasshopper Component Reference" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://www.grasshopper3d.com/page/component-reference" />
+<meta property="og:title" content="Grasshopper Component Reference" />
+<link rel="image_src" href="http://rhino.github.io/ning/2985220.jpg" />
+
+<style type="text/css" media="screen,projection">
+#xg_navigation ul div.xg_subtab ul li a {
+    color:#666666;
+    background:#EAFFBD;
+}
+#xg_navigation ul div.xg_subtab ul li a:hover {
+    color:#333333;
+    background:#F2FFD6;
+}
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../../ning/index.css);
+@import url(../../ning/page.css);
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../../ning/1187549422.css);
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../../ning/1187545030.css);
+</style>
+
+
+<link href="../../style.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+    </head>
+    <body>
+    
+        
+        <div id="xg" class="xg_theme xg_widget_page xg_widget_page_page xg_widget_page_page_show" data-layout-pack="classic">
+            <div id="xg_head">
+                <div id="xg_masthead">
+                    <p id="xg_sitename"><a id="application_name_header_link" href="http://www.grasshopper3d.com/">Grasshopper</a></p>
+                    <p id="xg_sitedesc" class="xj_site_desc">algorithmic modeling for Rhino</p>
+                </div>
+                <div id="xg_navigation">
+                    <ul>
+    <li id="xg_tab_main" class="xg_subtab"><a href="http://www.grasshopper3d.com/"><span>Home</span></a></li>
+	<li id="xg_tab_photo" class="xg_subtab"><a href="http://www.grasshopper3d.com/photo"><span>View</span></a></li>
+	<li id="xg_tab_xn0" class="xg_subtab"><a href="http://www.grasshopper3d.com/page/download-1"><span>Get</span></a></li>
+	<li id="xg_tab_xn2" class="xg_subtab this"><a href="http://www.grasshopper3d.com/page/tutorials-1"><span>Learn</span></a></li>
+	<li id="xg_tab_forum" class="xg_subtab"><a href="http://www.grasshopper3d.com/forum"><span>Talk</span></a></li>
+	<li id="xg_tab_events" class="xg_subtab"><a href="http://www.grasshopper3d.com/events"><span>Events</span></a></li>
+	<li id="xg_tab_profile" class="xg_subtab"><a href="http://www.grasshopper3d.com/"><span>My Page</span></a></li></ul>
+
+                </div>
+            </div>
+            
+            <div id="xg_body">
+                
+				<div class="page">
+
+<div class="content">
+
+<div>
+<h1><img src="../../icons/Ladybug/PV_SWH_System_Size.png"/> PV SWH System Size</h1>
+<p><a href="../../index.html">Component Index</a> &gt; Ladybug > 6 | WIP > <b>PV SWH System Size</b></p>
+</div>
+<h3>Use this component to generate the PVsurface or SWHsurface for "Photovoltaics surface" or "Solar Water Heating surface" components, based on initial PV or SWH system sizes.<br></h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>_location</b></td><td>_location</td><td>The output from the "importEPW" or "constructLocation" component.  This is essentially a list of text summarizing a location on the earth.</td><td>Goo</td></tr>
+<tr><td><b>_PVmoduleSettings</b></td><td>_PVmoduleSettings</td><td>A list of PV module settings. Use the "Photovoltaics Module" component to generate them.</td><td>Goo</td></tr>
+<tr><td><b>_SWHsystemSettings</b></td><td>_SWHsystemSettings</td><td>A list of all SWH system settings. Use the "Solar Water Heating System" or "Solar Water Heating System Detailed" components to generate them.</td><td>Goo</td></tr>
+<tr><td><b>systemSize_</b></td><td>systemSize_</td><td>1) In case of PV array: DC (Direct current) power rating of the photovoltaic array in kilowatts (kW) at standard test conditions (STC). 
+2) In case of SWH array: Capacity of the collectors array in thermal kilowatts (kw) at global or local testing conditions (ISO 9806, EN 12975, ASHRAE 93 ...)
+-
+If not supplied, 4 kW will be used as a default.
+-
+In kiloWatts (kW) or thermal kiloWatts (kWt).</td><td>Goo</td></tr>
+<tr><td><b>arrayTiltAngle_</b></td><td>arrayTiltAngle_</td><td>An angle from horizontal of the inclination of the PV/SWH array plane. Example: 0 = horizontal, 90 = vertical. (range 0-180)
+-
+To get the maximal amount of energy, input the "optimalTilt" output from "Tilt And Orientation Factor"'s component.
+-
+If not supplied, location's latitude will be used as default value.
+-
+In degrees (°).</td><td>Goo</td></tr>
+<tr><td><b>arrayAzimuthAngle_</b></td><td>arrayAzimuthAngle_</td><td>The orientation angle (clockwise from the true north) of the PV/SWH array plane's normal vector. (range 0-360)
+-
+To get the maximal amount of energy, input the "optimalAzimuth" output from "Tilt And Orientation Factor"'s component.
+-
+If not supplied, the following values will be used as default: 180 (due south) for northern hemisphere, 0 (due north) for southern hemisphere.
+-
+In degrees(°).</td><td>Goo</td></tr>
+<tr><td><b>_________________</b></td><td>_________________</td><td>Script variable PhotovoltaicsSurface</td><td>Goo</td></tr>
+<tr><td><b>tiltedArrayHeight_</b></td><td>tiltedArrayHeight_</td><td>The height of the array, measured in the tilted plane.
+It is depends on the height/width of the PV module/SWH collector. It also depends on the way modules/collectors are positioned in PV/SWH array (vertically or horizontally).
+It can vary from 1 to 2.3 meters x number of modules/collectors in a single PV/SWH column.
+-
+If not supplied, default value of 1.6 meters (with a single PV module/SWH collector per row) will be used.
+-
+In meters.</td><td>Goo</td></tr>
+<tr><td><b>numberOfRows_</b></td><td>numberOfRows_</td><td>Number of rows to which PV or SWH array will be divided to.
+-
+If not supplied, 1 will be used as a default value (PV/SWH array will have only 1 row).</td><td>Goo</td></tr>
+<tr><td><b>skewRowsDistance_</b></td><td>skewRowsDistance_</td><td>Distance in meters by which PV/SWH rows will be skewed.
+Use positive distance to skew the rows to the left.
+And negative distance to skew the rows to the right.
+-
+It requires the "numberOfRows_" to be larger than 1 in order to be able to skew the rows.
+-
+If not supplied, 0 will be used as a default (no rows skewing).</td><td>Goo</td></tr>
+<tr><td><b>minimalSpacingPeriod_</b></td><td>minimalSpacingPeriod_</td><td>Analysis period for which the minimal spacing distance between PV modules/SWH collector rows will derived of.
+In general this analysis period is taken from 9 to 15 hour on a day at which sun is at its lowest position during a year. That is 21th December in Northern and 21th June in Southern hemisphere (winter and summer solstice).
+However, this may not be economical for locations with higher latitudes due to low electricity generation during December/June.
+-
+So the following "minimalSpacingPeriod_" should be used based on location's latitude:
+* latitude <= 44: 21. December (northern hemisphere) / 21. June (southern hemisphere). 9-15hours
+* latitude 44 - 53: 15. November or 15. January (northern hemisphere) / 15. May or 15. July (southern hemisphere). 9-15hours
+* latitude 53 - 57: 15. October or 15. February (northern hemisphere) / 15. April or 15. August (southern hemisphere). 9-15hours
+* latitude > 57: 15. September or 15. March (for both northern and southern hemisphere). 9-15hours
+-
+It requires the "numberOfRows_" to be larger than 1 in order visualize the minimal spacing between rows.
+-
+If not supplied, it will be calculated based on upper mentioned criteria.</td><td>Goo</td></tr>
+<tr><td><b>baseSurface_</b></td><td>baseSurface_</td><td>Surface on which PV/SWH array will be laid onto.
+This can be a surface of an angled or flat roof. Or an angled or flat terrain. A facade of a building etc.
+-
+If not supplied, a regular horizontal surface in Rhino's XY plane will be used, as a default.</td><td>Goo</td></tr>
+<tr><td><b>arrayOriginPt_</b></td><td>arrayOriginPt_</td><td>UV coordinate of baseSurface_ at which PV_SWH array will start.
+It ranges from 0 to 1.0 for both U and V coordinate.
+Use grasshopper's "Construct Point" or "MD slider" components to input it.
+-
+If not supplied, (0.5,0,0) will be used as a default value.</td><td>Goo</td></tr>
+<tr><td><b>arrayOriginCorner_</b></td><td>arrayOriginCorner_</td><td>Corner at which the PV/SWH array begins:
+-
+0 - center bottom
+1 - left bottom
+2 - right bottom
+-
+If not supplied, 0 will be used as a default (bottom center).</td><td>Goo</td></tr>
+<tr><td><b>north_</b></td><td>north_</td><td>Input a vector to be used as a true North direction, or a number between 0 and 360 that represents the clockwise degrees off from the Y-axis.
+-
+If not supplied, default North direction will be set to the Y-axis (0 degrees).</td><td>Goo</td></tr>
+<tr><td><b>_________________</b></td><td>_________________</td><td>Script variable PV_SWH_SystemSize</td><td>Goo</td></tr>
+<tr><td><b>energyLoadPerHour_</b></td><td>energyLoadPerHour_</td><td>A list of energy load values for each hour, during a year.
+1) In case of PV array: Electrical energy used for any kind of load: heating, cooling, electric lights, solar water heating circulation pump etc.
+Use Honeybee "Read EP Result" component or any other one to generate it.
+-
+2) In case of SWH array: Thermal heating energy (or electrical energy) required to heat domestic hot water and/or space heating load and/or space cooling load.
+Use Ladybug "Domestic hot water" or "Hot water" components to calculate it.
+-
+The purpose of this input is to divide the energy loads to each PV/SWH array rows.
+-
+If not inputted, "energyLoadPerRowPerHour" output will not be calculated.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>out</b></td><td>readMe!</td><td>...</td><td>String</td></tr>
+<tr><td><b>PV_SWHsurface</b></td><td>PV_SWHsurface</td><td>Surfaces on which PV modules/SWH collectors will be laid on.</td><td>Goo</td></tr>
+<tr><td><b>PV_SWHsurfacesArea</b></td><td>PV_SWHsurfacesArea</td><td>Total area of the PV_SWHsurfaces.
+-
+In Rhino documents units (meters, centimeters, feets...).</td><td>Goo</td></tr>
+<tr><td><b>minimalSpacingDate</b></td><td>minimalSpacingDate</td><td>Exact date taken from "minimalSpacingPeriod_" input for which minimal spacing between rows has been calculated.</td><td>Goo</td></tr>
+<tr><td><b>arrayOriginPt</b></td><td>arrayOriginPt</td><td>Origin point of the PV / SWH array.</td><td>Goo</td></tr>
+<tr><td><b>energyLoadPerRowPerHour</b></td><td>energyLoadPerRowPerHour</td><td>"energyLoadPerHour_" input's data divided to rows.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+
+  </div>
+
+</div>
+
+            </div>
+            <div id="xg_foot">
+                <p class="left">
+    © 2016             &nbsp; Created by <a href="http://www.grasshopper3d.com/profile/HarshGupta367/">Harsh Gupta</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a>
+	</p>
+    <p class="right xg_lightfont">
+                    <a href="http://www.grasshopper3d.com/main/embeddable/list">Badges</a> &nbsp;|&nbsp;
+                        <a href="http://www.grasshopper3d.com/main/index/report" dojotype="PromptToJoinLink" _joinprompttext="Please sign up or sign in to complete this step." _hassignup="true" _signinurl="http://www.grasshopper3d.com/main/authorization/signIn?target=http%3A%2F%2Fwww.grasshopper3d.com%2Fmain%2Findex%2Freport">Report an Issue</a> &nbsp;|&nbsp;
+                        <a href="http://www.grasshopper3d.com/main/authorization/termsOfService?previousUrl=http%3A%2F%2Fwww.grasshopper3d.com%2Fpage%2Fcomponent-reference">Terms of Service</a>
+            </p>
+
+            </div>
+        </div>
+        
+        <div id="xj_baz17246" class="xg_theme"></div>
+<div id="xg_overlay" style="display:none;">
+<!--[if lte IE 6.5]><iframe></iframe><![endif]-->
+</div>
+<!--googleoff: all--><noscript>
+	<style type="text/css" media="screen">
+        #xg { position:relative;top:120px; }
+        #xn_bar { top:120px; }
+	</style>
+	<div class="errordesc noscript">
+		<div>
+            <h3><strong>Hello, you need to enable JavaScript to use Grasshopper.</strong></h3>
+            <p>Please check your browser settings or contact your system administrator.</p>
+			
+		</div>
+	</div>
+</noscript><!--googleon: all-->
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    </body>
+</html>

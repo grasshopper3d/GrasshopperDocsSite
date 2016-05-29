@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+    <head data-layout-view="wide">
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Generator_Wind_Horizontialaxis - Grasshopper Component Reference</title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+    <meta name="description" content="A guide to component Generator_Wind_Horizontialaxis in Grasshopper 3D." />
+<meta name="title" content="Grasshopper Component Reference" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://www.grasshopper3d.com/page/component-reference" />
+<meta property="og:title" content="Grasshopper Component Reference" />
+<link rel="image_src" href="http://rhino.github.io/ning/2985220.jpg" />
+
+<style type="text/css" media="screen,projection">
+#xg_navigation ul div.xg_subtab ul li a {
+    color:#666666;
+    background:#EAFFBD;
+}
+#xg_navigation ul div.xg_subtab ul li a:hover {
+    color:#333333;
+    background:#F2FFD6;
+}
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../../ning/index.css);
+@import url(../../ning/page.css);
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../../ning/1187549422.css);
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../../ning/1187545030.css);
+</style>
+
+
+<link href="../../style.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+    </head>
+    <body>
+    
+        
+        <div id="xg" class="xg_theme xg_widget_page xg_widget_page_page xg_widget_page_page_show" data-layout-pack="classic">
+            <div id="xg_head">
+                <div id="xg_masthead">
+                    <p id="xg_sitename"><a id="application_name_header_link" href="http://www.grasshopper3d.com/">Grasshopper</a></p>
+                    <p id="xg_sitedesc" class="xj_site_desc">algorithmic modeling for Rhino</p>
+                </div>
+                <div id="xg_navigation">
+                    <ul>
+    <li id="xg_tab_main" class="xg_subtab"><a href="http://www.grasshopper3d.com/"><span>Home</span></a></li>
+	<li id="xg_tab_photo" class="xg_subtab"><a href="http://www.grasshopper3d.com/photo"><span>View</span></a></li>
+	<li id="xg_tab_xn0" class="xg_subtab"><a href="http://www.grasshopper3d.com/page/download-1"><span>Get</span></a></li>
+	<li id="xg_tab_xn2" class="xg_subtab this"><a href="http://www.grasshopper3d.com/page/tutorials-1"><span>Learn</span></a></li>
+	<li id="xg_tab_forum" class="xg_subtab"><a href="http://www.grasshopper3d.com/forum"><span>Talk</span></a></li>
+	<li id="xg_tab_events" class="xg_subtab"><a href="http://www.grasshopper3d.com/events"><span>Events</span></a></li>
+	<li id="xg_tab_profile" class="xg_subtab"><a href="http://www.grasshopper3d.com/"><span>My Page</span></a></li></ul>
+
+                </div>
+            </div>
+            
+            <div id="xg_body">
+                
+				<div class="page">
+
+<div class="content">
+
+<div>
+<h1><img src="../../icons/Honeybee/Generator_Wind_Horizontialaxis.png"/> Generator_Wind_Horizontialaxis</h1>
+<p><a href="../../index.html">Component Index</a> &gt; Honeybee > 13 | WIP > <b>Generator_Wind_Horizontialaxis</b></p>
+</div>
+
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>TemplateMediumTurbine_</b></td><td>TemplateMediumTurbine_</td><td>If set to True a medium sized turbine will be created with pre-set values, the turbines values can be viewed from the ReadMe! output. Template values can be changed for each input below by entering a value for each input. Otherwise if no input is given template values will be used for each input.</td><td>Goo</td></tr>
+<tr><td><b>TemplateLargeTurbine_</b></td><td>TemplateLargeTurbine_</td><td>If set to True a large sized turbine will be created with pre-set values, the turbines values can be viewed from the ReadMe! output. Template values can be changed for each input below by entering a value for each input. Otherwise if no input is given template values will be used for each input.</td><td>Goo</td></tr>
+<tr><td><b>_name</b></td><td>_name</td><td>The name for this wind turbine</td><td>Goo</td></tr>
+<tr><td><b>+++++++++++++++</b></td><td>+++++++++++++++</td><td>The name for this wind turbine</td><td>Goo</td></tr>
+<tr><td><b>_simpleOrAnalytical</b></td><td>_simpleOrAnalytical</td><td>An integer of 1 or 2 that defines whether the wind turbine is simple or analytical,
+the default is the simple model with a coefficient of 0.40 - The simple model uses one maximum power coefficient as a maximum fraction of power extraction from ambient wind.
+While the analytical model uses 6 with the default analytical coefficents (used only if turbine switched to analytical) being 0.5176,116,0.4,0,5 and 21 details of each model can be seen at http://bigladdersoftware.com/epx/docs/8-3/input-output-reference/group-electric-load-center.html#field-maximum-power-coefficient
+and http://bigladdersoftware.com/epx/docs/8-3/input-output-reference/group-electric-load-center.html#field-power-coefficient-parameter respectively.</td><td>Goo</td></tr>
+<tr><td><b>_powerControl</b></td><td>_powerControl</td><td>This field is the type of rotor control for the wind turbine. This protects the system against the overloading for a system with no speed or pitch control and also to maximize the energy yield for the system. Four different control types are classified in the literature: 
+1-Fixed Speed Fixed Pitch (FSFP),
+2-Fixed Speed Variable Pitch (FSVP),
+3-Variable Speed Fixed Pitch (VSFP), and
+4-Variable Speed Variable Pitch (VSVP).
+enter an integer input of 1,2,3 and 4 to select these options respectively.</td><td>Goo</td></tr>
+<tr><td><b>_rotorSpeed</b></td><td>_rotorSpeed</td><td>This field is the maximum rotational speed of the rotor at the rated power of the wind turbine in rev/min (revolution per minute). It is used to determine the tip speed ratio of the rotor and relative flow velocity incident on a single blade of the VAWT systems.</td><td>Goo</td></tr>
+<tr><td><b>_rotorDiameter</b></td><td>_rotorDiameter</td><td>This field is the diameter of the rotor (in meters ). Note that this field is not the height of the blade, but the diameter of the perpendicular circle from the vertical pole in the VAWT systems. It determines the swept area of the rotor of the HAWT systems and the chordal velocity of the VAWT systems.</td><td>Goo</td></tr>
+<tr><td><b>overallHeight</b></td><td>overallHeight</td><td>This field is the height of the hub of the HAWT system, or of the pole of the VAWT system (in meters). It is necessary to estimate local air density and the wind speed at this particular height where the wind turbine system is installed.</td><td>Goo</td></tr>
+<tr><td><b>_numberOfBlades</b></td><td>_numberOfBlades</td><td>This field is the number of blades of the wind turbine. The azimuth angle of the rotor of the VAWT system is determined by dividing 360 degree by this field so that the model determines the chordal velocity component and the normal velocity component of the system. The default value is 3.</td><td>Goo</td></tr>
+<tr><td><b>_powerOutput</b></td><td>_powerOutput</td><td>This field is the nominal power output of the wind turbine system at the rated wind speed (in W or Btu/hr). Note that the maximum power of the system should be entered with no control, i.e. FSFP control type, can physically produce. Manufacturer data sometimes describes this as “peak power” or “rated capacity”. If the local wind speed is greater than the rated wind speed, the model assumes constant power output of this field.</td><td>Goo</td></tr>
+<tr><td><b>_ratedWindSpeed</b></td><td>_ratedWindSpeed</td><td>This field is the wind speed that the wind turbine system indicates the peak in the power curve (in m/s ). The system produces the maximum power at this speed and the speed of the rotor is managed based on this wind speed.</td><td>Goo</td></tr>
+<tr><td><b>_cutInWindSpeed</b></td><td>_cutInWindSpeed</td><td>This field is the lowest wind speed where the wind turbine system can be operated (in m/s). No power generation is achieved as long as the ambient wind speed is lower than this speed</td><td>Goo</td></tr>
+<tr><td><b>_cutOutWindspeed</b></td><td>_cutOutWindspeed</td><td>This field is the greatest wind speed (in m/s). When the wind speed exceeds this value, the wind turbine system needs to be stopped because of inefficiencies in the system. All systems that have either pitch or speed control must be stopped when the ambient wind speed exceeds this speed. Note that the user should input a wind speed above which physical damage to the system might be caused in the case of a FSFP system. It appears as “extreme/survival/design wind speed” in the literature. The system will be turned off when the ambient wind speed is over this speed.</td><td>Goo</td></tr>
+<tr><td><b>_overallTurbineEfficiency</b></td><td>_overallTurbineEfficiency</td><td>This field is the overall system efficiency of the wind turbine system. It includes all the conversion losses as well as transient losses during the dynamic control when the ambient wind speed is between the rated wind speed and cut-out wind speed (see previous fields). The user also has the ability to specify delivery losses from the system to the local area. If the user does not enter a fraction, the model assumes the default value of 0.835. Note that the fraction must be between zero and one.</td><td>Goo</td></tr>
+<tr><td><b>_maxTipSpeedRatio</b></td><td>_maxTipSpeedRatio</td><td>This field is the maximum tip speed ratio between the rotor velocity and ambient wind velocity. The rotor speed varies with this ratio to maximize the power output when the rotor control types are variable speed ones. This field allows the user to adjust the power output from the particular system or to find the optimal tip speed ratio of the system. Optimal tip speed ratio is dependent on the number of blades. It is typically about 6, 5, and 3 for two-bladed, three-bladed, and four-bladed rotor, respectively. For the vertical axis wind turbine, it is smaller than horizontal axis wind turbine, and varies with the chord area.</td><td>Goo</td></tr>
+<tr><td><b>_maxPowerCoefficient</b></td><td>_maxPowerCoefficient</td><td>Used only with the simple model, this is the maximum fraction of power extraction possible from the ambient wind. This value can be calculated from the power curve published in most manufacturers' specifications by using the kinetic energy equation as
+Cp = P/0.5*ρ*A*V^3  where: P = power production at the rated wind speed [W], ρ = density of air [kg/m3], A = swept area of rotor [m2], V = rated wind speed [m/s], Cp = power coefficient</td><td>Goo</td></tr>
+<tr><td><b>_powerCoefficients</b></td><td>_powerCoefficients</td><td>Used only with the analytical model - Use a grasshopper panel set to multiline data to specify the 6 power coefficients - If none are specified the defaults outlined in the Energy Plus documentation will be used. More information can be found at: http://bigladdersoftware.com/epx/docs/8-2/input-output-reference/group-electric-load-center.html#field-power-coefficient-parameter</td><td>Goo</td></tr>
+<tr><td><b>_localAvWindspeed</b></td><td>_localAvWindspeed</td><td>This is the local annual average wind speed that represents a representative wind profile at the location of the system (in m/s ). It is used to factor the difference in wind speed between the weather file wind data and the locally measured wind data so that the model minimizes uncertainties caused by improper wind data at the particular location. Considerable differences between the weather file wind data and the local wind data typically appear so it is important to consider this carefully in order to use accurate local wind data in the simulation. The model internally determines a multiplier and it is multiplied by the weather file wind data adjusted at the height of the system</td><td>Goo</td></tr>
+<tr><td><b>_heightLocalMetrologicalStation</b></td><td>_heightLocalMetrologicalStation</td><td>This is the height that the local wind speed is measured (in meters ). The annual average wind speed (see previous field) input by the user is internally recalculated by existing EnergyPlus functions at the height of the local station. This modified wind speed is then factored and applied to the weather file wind data. The minimum and default values are zero and 50 meters.</td><td>Goo</td></tr>
+<tr><td><b>_turbinecost</b></td><td>_turbinecost</td><td>The cost of the turbine</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>out</b></td><td>ReadMe!</td><td>The execution information, as output and error streams</td><td>String</td></tr>
+<tr><td><b>HBWindTurbine</b></td><td>HBWindTurbine</td><td>A Honeybee wind turbine. To run this in an EnergyPlus system you must first add it to a Honeybee generation system - to do so connect this output to the HB_generationobjects input of the Honeybee_generationsystem component</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+
+  </div>
+
+</div>
+
+            </div>
+            <div id="xg_foot">
+                <p class="left">
+    © 2016             &nbsp; Created by <a href="http://www.grasshopper3d.com/profile/HarshGupta367/">Harsh Gupta</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a>
+	</p>
+    <p class="right xg_lightfont">
+                    <a href="http://www.grasshopper3d.com/main/embeddable/list">Badges</a> &nbsp;|&nbsp;
+                        <a href="http://www.grasshopper3d.com/main/index/report" dojotype="PromptToJoinLink" _joinprompttext="Please sign up or sign in to complete this step." _hassignup="true" _signinurl="http://www.grasshopper3d.com/main/authorization/signIn?target=http%3A%2F%2Fwww.grasshopper3d.com%2Fmain%2Findex%2Freport">Report an Issue</a> &nbsp;|&nbsp;
+                        <a href="http://www.grasshopper3d.com/main/authorization/termsOfService?previousUrl=http%3A%2F%2Fwww.grasshopper3d.com%2Fpage%2Fcomponent-reference">Terms of Service</a>
+            </p>
+
+            </div>
+        </div>
+        
+        <div id="xj_baz17246" class="xg_theme"></div>
+<div id="xg_overlay" style="display:none;">
+<!--[if lte IE 6.5]><iframe></iframe><![endif]-->
+</div>
+<!--googleoff: all--><noscript>
+	<style type="text/css" media="screen">
+        #xg { position:relative;top:120px; }
+        #xn_bar { top:120px; }
+	</style>
+	<div class="errordesc noscript">
+		<div>
+            <h3><strong>Hello, you need to enable JavaScript to use Grasshopper.</strong></h3>
+            <p>Please check your browser settings or contact your system administrator.</p>
+			
+		</div>
+	</div>
+</noscript><!--googleon: all-->
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    </body>
+</html>

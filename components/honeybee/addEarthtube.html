@@ -1,0 +1,211 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+    <head data-layout-view="wide">
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>AddEarthtube - Grasshopper Component Reference</title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+    <meta name="description" content="A guide to component AddEarthtube in Grasshopper 3D." />
+<meta name="title" content="Grasshopper Component Reference" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://www.grasshopper3d.com/page/component-reference" />
+<meta property="og:title" content="Grasshopper Component Reference" />
+<link rel="image_src" href="http://rhino.github.io/ning/2985220.jpg" />
+
+<style type="text/css" media="screen,projection">
+#xg_navigation ul div.xg_subtab ul li a {
+    color:#666666;
+    background:#EAFFBD;
+}
+#xg_navigation ul div.xg_subtab ul li a:hover {
+    color:#333333;
+    background:#F2FFD6;
+}
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../../ning/index.css);
+@import url(../../ning/page.css);
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../../ning/1187549422.css);
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../../ning/1187545030.css);
+</style>
+
+
+<link href="../../style.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+    </head>
+    <body>
+    
+        
+        <div id="xg" class="xg_theme xg_widget_page xg_widget_page_page xg_widget_page_page_show" data-layout-pack="classic">
+            <div id="xg_head">
+                <div id="xg_masthead">
+                    <p id="xg_sitename"><a id="application_name_header_link" href="http://www.grasshopper3d.com/">Grasshopper</a></p>
+                    <p id="xg_sitedesc" class="xj_site_desc">algorithmic modeling for Rhino</p>
+                </div>
+                <div id="xg_navigation">
+                    <ul>
+    <li id="xg_tab_main" class="xg_subtab"><a href="http://www.grasshopper3d.com/"><span>Home</span></a></li>
+	<li id="xg_tab_photo" class="xg_subtab"><a href="http://www.grasshopper3d.com/photo"><span>View</span></a></li>
+	<li id="xg_tab_xn0" class="xg_subtab"><a href="http://www.grasshopper3d.com/page/download-1"><span>Get</span></a></li>
+	<li id="xg_tab_xn2" class="xg_subtab this"><a href="http://www.grasshopper3d.com/page/tutorials-1"><span>Learn</span></a></li>
+	<li id="xg_tab_forum" class="xg_subtab"><a href="http://www.grasshopper3d.com/forum"><span>Talk</span></a></li>
+	<li id="xg_tab_events" class="xg_subtab"><a href="http://www.grasshopper3d.com/events"><span>Events</span></a></li>
+	<li id="xg_tab_profile" class="xg_subtab"><a href="http://www.grasshopper3d.com/"><span>My Page</span></a></li></ul>
+
+                </div>
+            </div>
+            
+            <div id="xg_body">
+                
+				<div class="page">
+
+<div class="content">
+
+<div>
+<h1><img src="../../icons/Honeybee/AddEarthtube.png"/> AddEarthtube</h1>
+<p><a href="../../index.html">Component Index</a> &gt; Honeybee > 08 | Energy | Set Zone Properties > <b>AddEarthtube</b></p>
+</div>
+<h3>Use this component to add an Energy Plus earth tube to a Zone.<br>An earth tube is a long, underground metal or plastic pipe through which air is drawn. During cooling season, as air travels through the pipe, it gives up some of its heat to the surrounding soil and enters the room as cooler air. Similarly, during heating season, as air travels through the pipe, it receives some of its heat from the soil and enters the room as warmer air. Simple earth tubes in EnergyPlus can be controlled by a schedule and through the specification of minimum, maximum, and delta temperatures as described below. As with infiltration and ventilation, the actual flow rate of air through the earth tube can be modified by the temperature difference between the inside and outside environment and the wind speed. The basic equation used to calculate air flow rate of earth tube in EnergyPlus is:<br>EarthTubeFlowRate = E*F*[A+B|Tzone-Todb|+C(Windspeed)+D(Windspeed^2)]<br>Where:<br>1. E is the maximum amount of air mass flow rate of the earth tube expected at design conditions.<br>2. F is the schedule that modifies the maximum design volume flow fraction between 0 and 1.<br>3. Tzone is the temperature of the zone which the Earthtube is attached to and Todb is the outdoor dry blub temperature as odb stands for outdoor dry blub temperature.<br>4. A,B,C and D are Constant term flow coefficients,Temperature Term flow coefficients, Velocity Term flow coefficients and Velocity squared term flow coefficients respectively they are set at the default values of 0.606,2.0199999E-02,5.9800001E-04 and 0.0000000E+00. In future versions the user will be able to specify these.<br>For more information about the Energy Plus Earthtube please see:<br>http://bigladdersoftware.com/epx/docs/8-2/input-output-reference/group-airflow.html#zoneearthtube-earth-tube<br></h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>_HBZones</b></td><td>_HBZones</td><td>The Honeybee zones to which Earthtubes will be added to. Only one earth tube will be added to each zone.</td><td>Goo</td></tr>
+<tr><td><b>_epwFile</b></td><td>_epwFile</td><td>An .epw file path on your system as a text string. Used to find the ground temperature of the site so Earthtube calculations can be undertaken.</td><td>Goo</td></tr>
+<tr><td><b>schedules_</b></td><td>schedules_</td><td>This field can be a schedule or a list of schedules which correspond sequentially to the _HBZones. If no schedule is given for a zone the default schedule "ALWAYS ON" will be used.
+-
+F is the name of the schedule that modifies the maximum design volume flow rate parameter . This fraction between 0.0 and 1.0 is noted as Fschedule in the EarthTubeFlowRate equation the  .</td><td>Goo</td></tr>
+<tr><td><b>_designFlowrates</b></td><td>_designFlowrates</td><td>This field can be a float or a list of floats which correspond sequentially to the _HBZones. Each float (noted as Edesign in the EarthTubeFlowRate equation) is the maximum amount of air mass flow rate of the earth tube expected at design conditions the default is 0 m3/s.
+If no flow rate is given for a zone the default will be used.
+-
+The flow rate is expressed in units of m3/s. The design value is modified by the schedule fraction and user specified coefficients (Open this component to see the equation).</td><td>Goo</td></tr>
+<tr><td><b>_mincoolingTemps_</b></td><td>_mincoolingTemps_</td><td>This field can be a float or a list of floats which correspond sequentially to the _HBZones.
+-
+Each float is the indoor temperature (in Celsius) below which the earth tube is shut off the default is -100 degrees C. This lower temperature limit is intended to avoid overcooling a space and thus result in a heating load.
+-
+For example, if the user specifies a minimum temperature of 20 C, earth tube is assumed to be available if the zone air temperature is above 20 C. If the zone air temperature drops below 20C, then earth tube is automatically turned off.
+If no temperature is given for a zone the default will be used.</td><td>Goo</td></tr>
+<tr><td><b>_maxheatingTemps_</b></td><td>_maxheatingTemps_</td><td>This field can be a float or a list of floats which correspond sequentially to the _HBZones. Each float is the indoor temperature (in Celsius) above which the earth tube is shut off the default is 100 degrees C.
+-
+This higher temperature limit is intended to avoid overheating a space and thus result in a cooling load.For example, if the user specifies a maximum temperature of 20 C, earth tube is assumed to be available if the zone air temperature is below 20 C.
+-
+If the zone air temperature rises above 20C, then earth tube is automatically turned off. If no temperature is given for a zone the default will be used.</td><td>Goo</td></tr>
+<tr><td><b>_deltaTemps_</b></td><td>_deltaTemps_</td><td>This field can be a float or a list of floats which correspond sequentially to the _HBZones. Each float is the temperature difference (in Celsius) between the indoor and outdoor air dry-bulb temperatures below which the earth tube is shut off the default is 2 degrees C.
+-
+This is to allow the earth tube to be stopped either if the temperature outside is too warm and could potentially heat the space or if the temperature outside is too cold and could potentially cool the space. For example, if the user specifies a delta temperature of 2C, earth tube is assumed to be available if the temperature difference between indoor and outdoor temperature is at least 2 C
+-
+If the outside air dry-bulb temperature is less than 2C cooler or warmer than the indoor dry-bulb temperature, then the earth tube is automatically turned off.
+If no temperature is given for a zone the default will be used.</td><td>Goo</td></tr>
+<tr><td><b>_earthTubeTypes_</b></td><td>_earthTubeTypes_</td><td>This field can be integer or a list of integers between 1 and 3 which correspond sequentially to the _HBZones. Each integer from 1 to 3 defines the type of earth tube as one of the following options: Natural a value of 1, Exhaust a value of 2, or Intake a value of 3. 
+-
+A natural earth tube is assumed to be air movement/exchange that will not consume any fan energy or is the result of natural air flow through the tube and into the building. Values for fan pressure and efficiency for a natural flow earth tube are ignored. For either Exhaust or Intake, values for fan pressure and efficiency define the fan electric consumption.
+-
+For Natural and Exhaust earth tubes, the conditions of the air entering the space are assumed to be equivalent to the air which is cooled or heated by passing along the pipe.
+-
+For Intake earth tubes, an appropriate amount of fan heat is added to the air stream. The default is a Natural Earthtube and this will be used if no earth tube type is given for the zone.</td><td>Goo</td></tr>
+<tr><td><b>_fanPrises_</b></td><td>_fanPrises_</td><td>This field can be a float or a list of floats which correspond sequentially to the _HBZones. Each float is the pressure rise experienced across the fan in Pascals (N/m2) the default is 150 Pascals which will be used if no value is given for a zone.
+-
+This is a function of the fan and plays a role in determining the amount of energy consumed by the fan.</td><td>Goo</td></tr>
+<tr><td><b>_fanEfficiencies_</b></td><td>_fanEfficiencies_</td><td>This field can be a float or a list of floats between 0 and 1 which correspond sequentially to the _HBZones. Each float is the earth tube fan efficiency which is a decimal number between 0.0 and 1.0 the default is 1 which will be used if no value is given for a zone.
+-
+This is a function of the fan and plays a role in determining the amount of energy consumed by the fan.</td><td>Goo</td></tr>
+<tr><td><b>_pipeRadii_</b></td><td>_pipeRadii_</td><td>This field can be a float or a list of floats which correspond sequentially to the _HBZones. Each float is the radius of the earth tube(in meters) the default is 0.5 meter which will be used if no value is given for a zone. This plays a role in determining the amount of heat transferred from the surrounding soil to the air passing along the pipe. 
+-
+If the pipe has non-circular cross section, user can use the concept of hydraulic diameter where Radius = 2*Area/Perimeter.</td><td>Goo</td></tr>
+<tr><td><b>_pipeThicknesses_</b></td><td>_pipeThicknesses_</td><td>This field can be a float or a list of floats which correspond sequentially to the _HBZones. Each float is the thickness of the earth tube wall (in meters) the default is 0.2 meters which will be used if no value is given for a zone. 
+-
+This plays a role in determining the amountof heat transferred from the surrounding soil to the air passing along the earth tube.</td><td>Goo</td></tr>
+<tr><td><b>_pipeLengths_</b></td><td>_pipeLengths_</td><td>This field can be a float or a list of floats which correspond sequentially to the _HBZones. Each float is the total length of the pipe (in meters) the default is 15 meters which will be used if no value is given for a zone. 
+-
+This plays a role in determining the amount of heat transferred from the surrounding soil to the air passing along the pipe. As the length of the pipe becomes longer, the amount of the heat transfer becomes larger</td><td>Goo</td></tr>
+<tr><td><b>_pipeDepths_</b></td><td>_pipeDepths_</td><td>This field can be a float or a list of floats which correspond sequentially to the _HBZones. Each float is the depth of the pipe under the ground surface (in meters) the default is 3 meters which will be used if no value is given for a zone. 
+-
+This plays a role in determining the temperature of the soil surrounding the pipe.</td><td>Goo</td></tr>
+<tr><td><b>+++++++++++++++</b></td><td>+++++++++++++++</td><td>Script variable</td><td>Goo</td></tr>
+<tr><td><b>_soilCondition_</b></td><td>_soilCondition_</td><td>An integer between 1 to 4 that defines the actual condition of the soil surrounding ALL the earth tubes: HeavyAndSaturated a value of 1, HeavyAndDamp a value of 2, HeavyAndDry a value of 3 or LightAndDry a value of 4. 
+-
+This determines the thermal diffusivity and thermal conductivity of the surrounding soil, which play a role in determining the amount of heat transferred from the surrounding soil to the air passing along ALL the pipes.
+-
+The default is 1 - HeavyAndSaturated.</td><td>Goo</td></tr>
+<tr><td><b>_conditionGroundSurface_</b></td><td>_conditionGroundSurface_</td><td>An integer between 1 to 8 and defines the condition of the ground surface above ALL the earth tubes.
+-
+Bare and wet is a value of 1, Bare and moist is a value of 2, Bare and Arid is a value of 3, Bare and dry is a value of 4, Covered and wet is a value of 5,
+-
+Covered and moist is a value of 6, Covered and arid is a value of 7, Covered and dry is a value of 8 the default is 1 - Bare and wet.</td><td>Goo</td></tr>
+<tr><td><b>_pipeThermalConductivity_</b></td><td>_pipeThermalConductivity_</td><td>This field can be a float or a list of floats which correspond sequentially to the _HBZones. Each float is the thermal conductivity of the pipe (in W/m-K) the default is 200 W/m-K. 
+-
+This plays a role in determining the amount of heat transferred from the surrounding soil to the air passing along ALL the earth tubes.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Readme</b></td><td>Readme</td><td>Details of the earth tubes created.</td><td>Goo</td></tr>
+<tr><td><b>earthTubeHBZones</b></td><td>earthTubeHBZones</td><td>The Honeybee zones that have been modified by this component - these zones now contain an earth tube</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+
+  </div>
+
+</div>
+
+            </div>
+            <div id="xg_foot">
+                <p class="left">
+    © 2016             &nbsp; Created by <a href="http://www.grasshopper3d.com/profile/HarshGupta367/">Harsh Gupta</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a>
+	</p>
+    <p class="right xg_lightfont">
+                    <a href="http://www.grasshopper3d.com/main/embeddable/list">Badges</a> &nbsp;|&nbsp;
+                        <a href="http://www.grasshopper3d.com/main/index/report" dojotype="PromptToJoinLink" _joinprompttext="Please sign up or sign in to complete this step." _hassignup="true" _signinurl="http://www.grasshopper3d.com/main/authorization/signIn?target=http%3A%2F%2Fwww.grasshopper3d.com%2Fmain%2Findex%2Freport">Report an Issue</a> &nbsp;|&nbsp;
+                        <a href="http://www.grasshopper3d.com/main/authorization/termsOfService?previousUrl=http%3A%2F%2Fwww.grasshopper3d.com%2Fpage%2Fcomponent-reference">Terms of Service</a>
+            </p>
+
+            </div>
+        </div>
+        
+        <div id="xj_baz17246" class="xg_theme"></div>
+<div id="xg_overlay" style="display:none;">
+<!--[if lte IE 6.5]><iframe></iframe><![endif]-->
+</div>
+<!--googleoff: all--><noscript>
+	<style type="text/css" media="screen">
+        #xg { position:relative;top:120px; }
+        #xn_bar { top:120px; }
+	</style>
+	<div class="errordesc noscript">
+		<div>
+            <h3><strong>Hello, you need to enable JavaScript to use Grasshopper.</strong></h3>
+            <p>Please check your browser settings or contact your system administrator.</p>
+			
+		</div>
+	</div>
+</noscript><!--googleon: all-->
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    </body>
+</html>

@@ -1,0 +1,167 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+    <head data-layout-view="wide">
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Thermal Autonomy Analysis - Grasshopper Component Reference</title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+    <meta name="description" content="A guide to component Thermal Autonomy Analysis in Grasshopper 3D." />
+<meta name="title" content="Grasshopper Component Reference" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://www.grasshopper3d.com/page/component-reference" />
+<meta property="og:title" content="Grasshopper Component Reference" />
+<link rel="image_src" href="http://rhino.github.io/ning/2985220.jpg" />
+
+<style type="text/css" media="screen,projection">
+#xg_navigation ul div.xg_subtab ul li a {
+    color:#666666;
+    background:#EAFFBD;
+}
+#xg_navigation ul div.xg_subtab ul li a:hover {
+    color:#333333;
+    background:#F2FFD6;
+}
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../../ning/index.css);
+@import url(../../ning/page.css);
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../../ning/1187549422.css);
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../../ning/1187545030.css);
+</style>
+
+
+<link href="../../style.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+    </head>
+    <body>
+    
+        
+        <div id="xg" class="xg_theme xg_widget_page xg_widget_page_page xg_widget_page_page_show" data-layout-pack="classic">
+            <div id="xg_head">
+                <div id="xg_masthead">
+                    <p id="xg_sitename"><a id="application_name_header_link" href="http://www.grasshopper3d.com/">Grasshopper</a></p>
+                    <p id="xg_sitedesc" class="xj_site_desc">algorithmic modeling for Rhino</p>
+                </div>
+                <div id="xg_navigation">
+                    <ul>
+    <li id="xg_tab_main" class="xg_subtab"><a href="http://www.grasshopper3d.com/"><span>Home</span></a></li>
+	<li id="xg_tab_photo" class="xg_subtab"><a href="http://www.grasshopper3d.com/photo"><span>View</span></a></li>
+	<li id="xg_tab_xn0" class="xg_subtab"><a href="http://www.grasshopper3d.com/page/download-1"><span>Get</span></a></li>
+	<li id="xg_tab_xn2" class="xg_subtab this"><a href="http://www.grasshopper3d.com/page/tutorials-1"><span>Learn</span></a></li>
+	<li id="xg_tab_forum" class="xg_subtab"><a href="http://www.grasshopper3d.com/forum"><span>Talk</span></a></li>
+	<li id="xg_tab_events" class="xg_subtab"><a href="http://www.grasshopper3d.com/events"><span>Events</span></a></li>
+	<li id="xg_tab_profile" class="xg_subtab"><a href="http://www.grasshopper3d.com/"><span>My Page</span></a></li></ul>
+
+                </div>
+            </div>
+            
+            <div id="xg_body">
+                
+				<div class="page">
+
+<div class="content">
+
+<div>
+<h1><img src="../../icons/Honeybee/Thermal_Autonomy_Analysis.png"/> Thermal Autonomy Analysis</h1>
+<p><a href="../../index.html">Component Index</a> &gt; Honeybee > 09 | Energy | Energy > <b>Thermal Autonomy Analysis</b></p>
+</div>
+<h3>Use this component to calculate 'Occupied Thermal Comfort Percent' (occTCP) and 'Thermal Autonomy' (TA) from the resultd of a Microclimate Map Analysis.<br>'Occupied Thermal Comfort Percent' (occTCP) is defined here as the the percent of occupied time where a point of space meets or exceeds a given set of thermal comfort acceptability criteria.<br>Precedents for Thermal Comfort Percent (TCP) as a metric to spatially evaluate the desirability of a given space can be found in the PhD thesis of Tarek Rakha (http://www.tarekrakha.com/#/research/).<br>'Thermal Autonomy' (TA) is defined here as the the percent of occupied time where a point of space meets or exceeds a given set of thermal comfort acceptability criteria through passive means only.<br>Precedents for Thermal Autonomy (TA) as a metric to evaluate the passive operation of a given space can be found in the work of Brendon Levitt.<br>Levitt, B.; Ubbelohde, M.; Loisos, G.; Brown, N.  Thermal Autonomy as Metric and Design Process. Loisos + Ubbelohde, Alameda, California, California College of the Arts, San Francisco. 2013.<br>(http://www.coolshadow.com/research/Levitt_Thermal%20Autonomy%20as%20Metric%20and%20Design%20Process.pdf)<br></h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>_comfResultsMtx</b></td><td>_comfResultsMtx</td><td>A comfort matrix (adaptive, PMV or Outdoor) output from either the 'Honeybee_Microclimate Map Analysis' component or the 'Honeybee_Read Microclimate Matrix' component.</td><td>Goo</td></tr>
+<tr><td><b>_degOrPMVMtx</b></td><td>_degOrPMVMtx</td><td>The degreeFromTargetMtx, PMV_Mtx, or DegFromNeutralMtx from either the 'Honeybee_Microclimate Map Analysis' component or the 'Honeybee_Read Microclimate Matrix' component.</td><td>Goo</td></tr>
+<tr><td><b>_viewFactorMesh</b></td><td>_viewFactorMesh</td><td>The list of view factor meshes that comes out of the  "Honeybee_Indoor View Factor Calculator".</td><td>Goo</td></tr>
+<tr><td><b>_HBZones</b></td><td>_HBZones</td><td>The HBZones out of any of the HB components that generate or alter zones.  Note that these should ideally be the zones that are fed into the Run Energy Simulation component as surfaces may not align otherwise.  Zones read back into Grasshopper from the Import idf component will not align correctly with the EP Result data.</td><td>Goo</td></tr>
+<tr><td><b>_totalThermalEnergy_</b></td><td>_totalThermalEnergy_</td><td>The totalThermalEnergy output from the "Honeybee_Read EP Result" component.  If no data tree is connected here, it will be assumed that all zones are completely passive and only occupancy will be taken into accout for the Thermal Autonomy calculation.</td><td>Goo</td></tr>
+<tr><td><b>occupancyFiles_</b></td><td>occupancyFiles_</td><td>Optional occupancy CSV files that will be used to set the occupied period of the Thermal Autonomy calculation.  These can be either EnergyPlus CSV schedules made with the 'Honeybee_Create CSV Schedule' component or Daysim occupancy files made with the 'Honyebee_Daysim Occupancy Generator' component (the two produce files of the same format).  This can be either a list of files that match the connected HBZones or a single occupancy file to be used for all connected zones.  By default, this component will create the occupancy peirod from the occupancy schedule assigned to the connected _HBzones so you should usually not have need for this input and should instead change the HBZone occupancy schedule before running the simulation.</td><td>Goo</td></tr>
+<tr><td><b>occupancyThreshold_</b></td><td>occupancyThreshold_</td><td>An optional number between 0 and 1 that sets the minimum occupancy at which a zone is considered occupied.  This is done as the default occupancy is taken from the HBZone's occupancy schedules and, in some cases this value is low enough to ignore for the sake of calculating thermal autonomy.  The default is set to 0 such that any time when the zones are occpied count towards the values calculated by this component.</td><td>Goo</td></tr>
+<tr><td><b>fileName_</b></td><td>fileName_</td><td>An optional file name for the result files as a string.</td><td>Goo</td></tr>
+<tr><td><b>workingDir_</b></td><td>workingDir_</td><td>An optional working directory on your system. Default is set to C:\Ladybug</td><td>Goo</td></tr>
+<tr><td><b>writeResultFile_</b></td><td>writeResultFile_</td><td>Set to 1 or 'True' to have the component write all results into CSV result files and set to 0 or 'False' to not have the component write these files.  The default is set to 'True' as these simulations can be long and you usually want a copy of your results.  You may want to set it to 'False' if you are just scrolling through key hours and want the fastest run possible.  Set to 2 if you want the component to only write the results for the TCPocc and TCA matrices.</td><td>Goo</td></tr>
+<tr><td><b>parallel_</b></td><td>parallel_</td><td>Set to 'True' to have the operation run with multiple cores and 'False' to run it with a single core.  Note that, because the calculation performed by this component is fairly simple, setting parallel to 'True' can sometimes increase the calculation time so it should only be used in cases where there are a large number of test points.  Because of the possibility of increaseing calculation time, the default is set to 'False' to run the operation as single-core.</td><td>Goo</td></tr>
+<tr><td><b>_runIt</b></td><td>_runIt</td><td>Set boolean to "True" to run the component and calculate comfort autonomy.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>readMe!</b></td><td>readMe!</td><td>...</td><td>String</td></tr>
+<tr><td><b>===========</b></td><td>===========</td><td>...</td><td>Goo</td></tr>
+<tr><td><b>occTCP_Mtx</b></td><td>occTCP_Mtx</td><td>A python matrix containing the 'Themal Comfort Percent' (TCP) values for only the occupied period of the model.  Connect this to the 'Honeybee_Visualize Microclimate Map' component in order to display the data. 'Occupied Thermal Comfort Percent' (occTCP) is defined here as the the percent of occupied time where a point of space meets or exceeds a given set of thermal comfort acceptability criteria.  This is essentially the same thing as the adaptComfMtx, PMVComfMtx, or outdoorComfMtx but with the unoccupied hours discounted.</td><td>Goo</td></tr>
+<tr><td><b>TA_Mtx</b></td><td>TA_Mtx</td><td>A python matrix containing the 'Thermal Autonomy' (TA) values for each of the faces of the connected _viewFactorMesh. Connect this to the 'Honeybee_Visualize Microclimate Map' component in order to display the data. 'Thermal Autonomy' (TA) is defined here as the the percent of occupied time where a point of space meets or exceeds a given set of thermal comfort acceptability criteria through passive means only.</td><td>Goo</td></tr>
+<tr><td><b>OverHeatedMtx</b></td><td>OverHeatedMtx</td><td>A python matrix containing the overheated hours for each of the faces of the connected _viewFactorMesh.  Connect this to the 'Honeybee_Visualize Microclimate Map' component in order to display the data. Overheated hours are essentially the number of occupied hours that a point is warmer than that specified by a given set of thermal comfort acceptability criteria.</td><td>Goo</td></tr>
+<tr><td><b>UnderHeatedMtx</b></td><td>UnderHeatedMtx</td><td>A python matrix containing the underheated hours for each of the faces of the connected _viewFactorMesh.  Connect this to the 'Honeybee_Visualize Microclimate Map' component in order to display the data. Underheated hours are essentially the number of occupied hours that a point is colder than that specified by a given set of thermal comfort acceptability criteria.</td><td>Goo</td></tr>
+<tr><td><b>===========</b></td><td>===========</td><td>...</td><td>Goo</td></tr>
+<tr><td><b>occTCP_Result</b></td><td>occTCP_Result</td><td>A csv file address containing the 'Themal Comfort Percent' (TCP) values for only the occupied period of the model.</td><td>Goo</td></tr>
+<tr><td><b>TA_Result</b></td><td>TA_Result</td><td>A csv file address containing the 'Thermal Autonomy' (TA) values for each of the faces of the connected _viewFactorMesh.</td><td>Goo</td></tr>
+<tr><td><b>OverHeatedResult</b></td><td>OverHeatedResult</td><td>A csv file address containing the overheated hours for each of the faces of the connected _viewFactorMesh.</td><td>Goo</td></tr>
+<tr><td><b>UnderHeatedResult</b></td><td>UnderHeatedResult</td><td>A csv file address containing the underheated hours for each of the faces of the connected _viewFactorMesh.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+
+  </div>
+
+</div>
+
+            </div>
+            <div id="xg_foot">
+                <p class="left">
+    © 2016             &nbsp; Created by <a href="http://www.grasshopper3d.com/profile/HarshGupta367/">Harsh Gupta</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a>
+	</p>
+    <p class="right xg_lightfont">
+                    <a href="http://www.grasshopper3d.com/main/embeddable/list">Badges</a> &nbsp;|&nbsp;
+                        <a href="http://www.grasshopper3d.com/main/index/report" dojotype="PromptToJoinLink" _joinprompttext="Please sign up or sign in to complete this step." _hassignup="true" _signinurl="http://www.grasshopper3d.com/main/authorization/signIn?target=http%3A%2F%2Fwww.grasshopper3d.com%2Fmain%2Findex%2Freport">Report an Issue</a> &nbsp;|&nbsp;
+                        <a href="http://www.grasshopper3d.com/main/authorization/termsOfService?previousUrl=http%3A%2F%2Fwww.grasshopper3d.com%2Fpage%2Fcomponent-reference">Terms of Service</a>
+            </p>
+
+            </div>
+        </div>
+        
+        <div id="xj_baz17246" class="xg_theme"></div>
+<div id="xg_overlay" style="display:none;">
+<!--[if lte IE 6.5]><iframe></iframe><![endif]-->
+</div>
+<!--googleoff: all--><noscript>
+	<style type="text/css" media="screen">
+        #xg { position:relative;top:120px; }
+        #xn_bar { top:120px; }
+	</style>
+	<div class="errordesc noscript">
+		<div>
+            <h3><strong>Hello, you need to enable JavaScript to use Grasshopper.</strong></h3>
+            <p>Please check your browser settings or contact your system administrator.</p>
+			
+		</div>
+	</div>
+</noscript><!--googleon: all-->
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    </body>
+</html>
