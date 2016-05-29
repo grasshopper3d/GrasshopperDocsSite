@@ -10,7 +10,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://www.grasshopper3d.com/page/component-reference" />
 <meta property="og:title" content="Grasshopper Component Reference" />
-<link rel="image_src" href="http://grasshopperhelp.tk/ning/2985220.jpg" />
+<link rel="image_src" href="http://rhino.github.io/ning/2985220.jpg" />
 
 <style type="text/css" media="screen,projection">
 #xg_navigation ul div.xg_subtab ul li a {
@@ -57,7 +57,7 @@
 	<li dojotype="SubTabHover" id="xg_tab_xn0" class="xg_subtab"><a href="http://www.grasshopper3d.com/page/download-1"><span>Download</span></a></li>
 	<li dojotype="SubTabHover" id="xg_tab_xn2" class="xg_subtab"><a href="http://www.grasshopper3d.com/page/tutorials-1"><span>Tutorials</span></a></li>
 	<li dojotype="SubTabHover" id="xg_tab_forum" class="xg_subtab"><a href="http://www.grasshopper3d.com/forum"><span>Discussions</span></a></li>
-	<li dojotype="SubTabHover" id="xg_tab_docs" class="xg_subtab this"><a href="http://www.grasshopperhelp.tk/"><span>Documentation</span></a></li>
+	<li dojotype="SubTabHover" id="xg_tab_docs" class="xg_subtab this"><a href="http://rhino.github.io/"><span>Documentation</span></a></li>
 	<li id="xg_tab_events" class="xg_subtab"><a href="http://www.grasshopper3d.com/events"><span>Events</span></a></li>
 	<li id="xg_tab_profile" class="xg_subtab"><a href="http://www.grasshopper3d.com/"><span>My Page</span></a></li></ul>
 
@@ -72,7 +72,7 @@
 
 <div>
 <h1><img src="../../icons/Karamba/Beam_Resultant_Forces_(karamba).png"/> Beam Resultant Forces (karamba)</h1>
-<p><a href="../../index.html">Component Index</a> &gt; Karamba > Karamba Results > <b>Beam Resultant Forces (karamba)</b></p>
+<p><a href="../../index.html">Component Index</a> &gt; Karamba > Results > <b>Beam Resultant Forces (karamba)</b></p>
 </div>
 <h3>Retrieves maximum resultant section forces for all beam elements of the model.</h3>
 <h2>Inputs</h2>
@@ -81,11 +81,11 @@
 <tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
 </thead>
 <tbody>
-<tr><td><b>Model</b></td><td></td><td>Model with calculated displacements</td><td>Model</td></tr>
-<tr><td><b>BeamIds</b></td><td></td><td>Identifiers of beams for which to retrieve results. By default all beams are included.</td><td>Text</td></tr>
-<tr><td><b>LCase</b></td><td></td><td>Number of loadcase for which to retrieve results. By default results for all load cases are retrieved.</td><td>Integer</td></tr>
-<tr><td><b>maxL</b></td><td></td><td>Maximum distance [m] between probing points for calculating the maximum resultants.</td><td>Number</td></tr>
-<tr><td><b>NRes</b></td><td></td><td>Number of probing points per beam element for calculating the maximum resultants. Can be overruled when providing a value for maxL.</td><td>Integer</td></tr>
+<tr><td><b>Analyzed model</b></td><td>Model</td><td>Model with calculated displacements</td><td>Model</td></tr>
+<tr><td><b>Beam identifiers</b></td><td>BeamIds</td><td>Identifiers of beams for which to retrieve results. By default all beams are included.</td><td>String</td></tr>
+<tr><td><b>Load case</b></td><td>LCase</td><td>Number of loadcase for which to retrieve results. By default results for all load cases are retrieved.</td><td>Integer</td></tr>
+<tr><td><b>Maximum probing distance [m]</b></td><td>maxL</td><td>Maximum distance [m] between probing points for calculating the maximum resultants.</td><td>Number</td></tr>
+<tr><td><b>Number of probing points per element</b></td><td>NRes</td><td>Number of probing points per beam element for calculating the maximum resultants. Can be overruled when providing a value for maxL.</td><td>Integer</td></tr>
 </tbody>
 </table>
 
@@ -95,16 +95,16 @@
 <tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
 </thead>
 <tbody>
-<tr><td><b>Model</b></td><td></td><td>Model with calculated displacements</td><td>Model</td></tr>
-<tr><td><b>N</b></td><td></td><td>Largest axial forces N [kN] of all elements of all load-cases. 
+<tr><td><b>Analyzed model</b></td><td>Model</td><td>Model with calculated displacements</td><td>Model</td></tr>
+<tr><td><b>Normal Force [kN]</b></td><td>N</td><td>Largest axial forces N [kN] of all elements of all load-cases. 
 N: Compressive forces < 0; tensile forces > 0. 
 N is calculated at NPoi points along the element. For N the one which is the larger by absolute value is returned.
 Path structure: Load-case/Beam.</td><td>Number</td></tr>
-<tr><td><b>M</b></td><td></td><td>Largest resultant moment M [kNm] of all elements of all load-cases. 
+<tr><td><b>Resultant bending moment [kNm]</b></td><td>M</td><td>Largest resultant moment M [kNm] of all elements of all load-cases. 
 M: the largest resultant value of the in-cross-section moments My and Mz 
 M is calculated at NPoi points along the element.
 Path structure: Load-case/Beam.</td><td>Number</td></tr>
-<tr><td><b>V</b></td><td></td><td>Largest resultant shear force V [kN] of all elements of all load-cases. 
+<tr><td><b>Resultant shear force [kN]</b></td><td>V</td><td>Largest resultant shear force V [kN] of all elements of all load-cases. 
 V: the resultant value of the in-cross-section shear forces Vy and Vz 
 V is calculated at NPoi points along the element.
 Path structure: Load-case/Beam.</td><td>Number</td></tr>
@@ -119,8 +119,8 @@ Path structure: Load-case/Beam.</td><td>Number</td></tr>
             </div>
             <div id="xg_foot">
                 <p class="left">
-    © 2016             &nbsp; Created by <a href="http://www.grasshopper3d.com/profile/HarshGupta367/">Harsh Gupta</a>.            &nbsp;
-    Powered by<a href="http://www.ning.com/?utm_source=online&utm_content=bazfooter&utm_campaign=9000&utm_medium=prd&utm_term=grasshopper3d"><img width="87" height="15" src="../../ning/ningmode.jpg" alt="Ning" class="poweredbylogo" /></a>
+    © 2016             &nbsp; Created by <a href="http://www.grasshopper3d.com/profile/HarshGupta367/">Harsh Gupta</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a>
 	</p>
     <p class="right xg_lightfont">
                     <a href="http://www.grasshopper3d.com/main/embeddable/list">Badges</a> &nbsp;|&nbsp;

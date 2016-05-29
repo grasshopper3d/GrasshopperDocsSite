@@ -10,7 +10,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://www.grasshopper3d.com/page/component-reference" />
 <meta property="og:title" content="Grasshopper Component Reference" />
-<link rel="image_src" href="http://grasshopperhelp.tk/ning/2985220.jpg" />
+<link rel="image_src" href="http://rhino.github.io/ning/2985220.jpg" />
 
 <style type="text/css" media="screen,projection">
 #xg_navigation ul div.xg_subtab ul li a {
@@ -57,7 +57,7 @@
 	<li dojotype="SubTabHover" id="xg_tab_xn0" class="xg_subtab"><a href="http://www.grasshopper3d.com/page/download-1"><span>Download</span></a></li>
 	<li dojotype="SubTabHover" id="xg_tab_xn2" class="xg_subtab"><a href="http://www.grasshopper3d.com/page/tutorials-1"><span>Tutorials</span></a></li>
 	<li dojotype="SubTabHover" id="xg_tab_forum" class="xg_subtab"><a href="http://www.grasshopper3d.com/forum"><span>Discussions</span></a></li>
-	<li dojotype="SubTabHover" id="xg_tab_docs" class="xg_subtab this"><a href="http://www.grasshopperhelp.tk/"><span>Documentation</span></a></li>
+	<li dojotype="SubTabHover" id="xg_tab_docs" class="xg_subtab this"><a href="http://rhino.github.io/"><span>Documentation</span></a></li>
 	<li id="xg_tab_events" class="xg_subtab"><a href="http://www.grasshopper3d.com/events"><span>Events</span></a></li>
 	<li id="xg_tab_profile" class="xg_subtab"><a href="http://www.grasshopper3d.com/"><span>My Page</span></a></li></ul>
 
@@ -72,7 +72,7 @@
 
 <div>
 <h1><img src="../../icons/Karamba/Optimize_Cross_Section_(karamba).png"/> Optimize Cross Section (karamba)</h1>
-<p><a href="../../index.html">Component Index</a> &gt; Karamba > Karamba Algorithms > <b>Optimize Cross Section (karamba)</b></p>
+<p><a href="../../index.html">Component Index</a> &gt; Karamba > Algorithms > <b>Optimize Cross Section (karamba)</b></p>
 </div>
 <h3>Selects optimum cross sections for beams and shells in the model according to EC3 (EN 1993-1-1) for steel structures.</h3>
 <h2>Inputs</h2>
@@ -81,20 +81,20 @@
 <tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
 </thead>
 <tbody>
-<tr><td><b>Model</b></td><td></td><td>Model for which to calculate deflections</td><td>Model</td></tr>
-<tr><td><b>ElemIds</b></td><td></td><td>List of identifiers of single elements that take part in cross section design. By default the whole structure is included.</td><td>Generic Data</td></tr>
-<tr><td><b>GroupIds</b></td><td></td><td>List of identifiers of groups of elements that take part in cross section design and shall have uniform cross section. You can use the names of element sets and regular expressions for defining groups.</td><td>Text</td></tr>
-<tr><td><b>CroSecs</b></td><td></td><td>List of cross sections for the optimization.
+<tr><td><b>Model</b></td><td>Model</td><td>Model for which to calculate deflections</td><td>Model</td></tr>
+<tr><td><b>Elem Identifiers</b></td><td>ElemIds</td><td>List of identifiers of single elements that take part in cross section design. By default the whole structure is included.</td><td>Goo</td></tr>
+<tr><td><b>Group Identifiers</b></td><td>GroupIds</td><td>List of identifiers of groups of elements that take part in cross section design and shall have uniform cross section. You can use the names of element sets and regular expressions for defining groups.</td><td>String</td></tr>
+<tr><td><b>Cross sections</b></td><td>CroSecs</td><td>List of cross sections for the optimization.
 Make sure that the more preferable (lighter) profiles come first in the list.
 Search for sufficient cross section starts at the beginning of the list and ends as soon as a sufficient cross section is found.The elements you want to optimize must have an initial cross section whose family attribute matches that of the cross sections in the list you want to use for optimization.</td><td>CrossSection</td></tr>
-<tr><td><b>MaxUtil</b></td><td></td><td>Target value of the element utilization. '1.0' means full utilization.</td><td>Number</td></tr>
-<tr><td><b>MaxDisp</b></td><td></td><td>Maximum admissible displacement [m] for all load cases. If negative no limit exists.</td><td>Number</td></tr>
-<tr><td><b>ULSIter</b></td><td></td><td>Maximum number of iterations to be used for the ultimate limit state (ULS) cross section optimization. Cross section optimization as implemented here is an iterative process. If stopped prematurely results do not converge and may be incorrect.</td><td>Integer</td></tr>
-<tr><td><b>DispIter</b></td><td></td><td>Maximum number of iterations to be used for the cross section optimization with respect to the maximum admissible displacement (SLS). Cross section optimization as implemented here is an iterative process. If stopped prematurely results do not converge and may be incorrect.</td><td>Integer</td></tr>
-<tr><td><b>nSamples</b></td><td></td><td>Number of sample points where cross section forces and resistance are compared for cross section design.</td><td>Integer</td></tr>
-<tr><td><b>Elast</b></td><td></td><td>True: elastic cross section design; false: plastic cross section design. Default: true.</td><td>Boolean</td></tr>
-<tr><td><b>gammaM0</b></td><td></td><td>Material safety factor in case that buckling does not lead to failure.</td><td>Number</td></tr>
-<tr><td><b>gammaM1</b></td><td></td><td>Material safety factor in case that buckling leads to failure.</td><td>Number</td></tr>
+<tr><td><b>Maximum utilization</b></td><td>MaxUtil</td><td>Target value of the element utilization. '1.0' means full utilization.</td><td>Number</td></tr>
+<tr><td><b>Maximum displacement [m]</b></td><td>MaxDisp</td><td>Maximum admissible displacement [m] for all load cases. If negative no limit exists.</td><td>Number</td></tr>
+<tr><td><b>Ultimate Limit State Iterations</b></td><td>ULSIter</td><td>Maximum number of iterations to be used for the ultimate limit state (ULS) cross section optimization. Cross section optimization as implemented here is an iterative process. If stopped prematurely results do not converge and may be incorrect.</td><td>Integer</td></tr>
+<tr><td><b>Displacement Iterations</b></td><td>DispIter</td><td>Maximum number of iterations to be used for the cross section optimization with respect to the maximum admissible displacement (SLS). Cross section optimization as implemented here is an iterative process. If stopped prematurely results do not converge and may be incorrect.</td><td>Integer</td></tr>
+<tr><td><b>Number of sample points</b></td><td>nSamples</td><td>Number of sample points where cross section forces and resistance are compared for cross section design.</td><td>Integer</td></tr>
+<tr><td><b>Elastic design</b></td><td>Elast</td><td>True: elastic cross section design; false: plastic cross section design. Default: true.</td><td>Boolean</td></tr>
+<tr><td><b>gammaM0</b></td><td>gammaM0</td><td>Material safety factor in case that buckling does not lead to failure.</td><td>Number</td></tr>
+<tr><td><b>gammaM1</b></td><td>gammaM1</td><td>Material safety factor in case that buckling leads to failure.</td><td>Number</td></tr>
 </tbody>
 </table>
 
@@ -104,11 +104,11 @@ Search for sufficient cross section starts at the beginning of the list and ends
 <tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
 </thead>
 <tbody>
-<tr><td><b>Model</b></td><td></td><td>Model with optimized cross sections</td><td>Model</td></tr>
-<tr><td><b>Info</b></td><td></td><td>Information regarding the cross section design process</td><td>Text</td></tr>
-<tr><td><b>Mass</b></td><td></td><td>Mass of structure in [kg]</td><td>Number</td></tr>
-<tr><td><b>Disp</b></td><td></td><td>Maximum displacement [m] of each load-case of the model at end-points and mid-points of elements</td><td>Number</td></tr>
-<tr><td><b>Energy</b></td><td></td><td>Internal elastic energy [kNm] of each load-cases of the model</td><td>Number</td></tr>
+<tr><td><b>Model with optimized cross sections</b></td><td>Model</td><td>Model with optimized cross sections</td><td>Model</td></tr>
+<tr><td><b>Info</b></td><td>Info</td><td>Information regarding the cross section design process</td><td>String</td></tr>
+<tr><td><b>Mass [kg]</b></td><td>Mass</td><td>Mass of structure in [kg]</td><td>Number</td></tr>
+<tr><td><b>Maximum displacement [m]</b></td><td>Disp</td><td>Maximum displacement [m] of each load-case of the model at end-points and mid-points of elements</td><td>Number</td></tr>
+<tr><td><b>Elastic Energy [kNm]</b></td><td>Energy</td><td>Internal elastic energy [kNm] of each load-cases of the model</td><td>Number</td></tr>
 </tbody>
 </table>
 
@@ -120,8 +120,8 @@ Search for sufficient cross section starts at the beginning of the list and ends
             </div>
             <div id="xg_foot">
                 <p class="left">
-    © 2016             &nbsp; Created by <a href="http://www.grasshopper3d.com/profile/HarshGupta367/">Harsh Gupta</a>.            &nbsp;
-    Powered by<a href="http://www.ning.com/?utm_source=online&utm_content=bazfooter&utm_campaign=9000&utm_medium=prd&utm_term=grasshopper3d"><img width="87" height="15" src="../../ning/ningmode.jpg" alt="Ning" class="poweredbylogo" /></a>
+    © 2016             &nbsp; Created by <a href="http://www.grasshopper3d.com/profile/HarshGupta367/">Harsh Gupta</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a>
 	</p>
     <p class="right xg_lightfont">
                     <a href="http://www.grasshopper3d.com/main/embeddable/list">Badges</a> &nbsp;|&nbsp;

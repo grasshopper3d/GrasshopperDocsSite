@@ -10,7 +10,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://www.grasshopper3d.com/page/component-reference" />
 <meta property="og:title" content="Grasshopper Component Reference" />
-<link rel="image_src" href="http://grasshopperhelp.tk/ning/2985220.jpg" />
+<link rel="image_src" href="http://rhino.github.io/ning/2985220.jpg" />
 
 <style type="text/css" media="screen,projection">
 #xg_navigation ul div.xg_subtab ul li a {
@@ -57,7 +57,7 @@
 	<li dojotype="SubTabHover" id="xg_tab_xn0" class="xg_subtab"><a href="http://www.grasshopper3d.com/page/download-1"><span>Download</span></a></li>
 	<li dojotype="SubTabHover" id="xg_tab_xn2" class="xg_subtab"><a href="http://www.grasshopper3d.com/page/tutorials-1"><span>Tutorials</span></a></li>
 	<li dojotype="SubTabHover" id="xg_tab_forum" class="xg_subtab"><a href="http://www.grasshopper3d.com/forum"><span>Discussions</span></a></li>
-	<li dojotype="SubTabHover" id="xg_tab_docs" class="xg_subtab this"><a href="http://www.grasshopperhelp.tk/"><span>Documentation</span></a></li>
+	<li dojotype="SubTabHover" id="xg_tab_docs" class="xg_subtab this"><a href="http://rhino.github.io/"><span>Documentation</span></a></li>
 	<li id="xg_tab_events" class="xg_subtab"><a href="http://www.grasshopper3d.com/events"><span>Events</span></a></li>
 	<li id="xg_tab_profile" class="xg_subtab"><a href="http://www.grasshopper3d.com/"><span>My Page</span></a></li></ul>
 
@@ -72,7 +72,7 @@
 
 <div>
 <h1><img src="../../icons/TTToolbox/Write_Options.png"/> Write Options</h1>
-<p><a href="../../index.html">Component Index</a> &gt; TT Toolbox > TT Toolbox Excel > <b>Write Options</b></p>
+<p><a href="../../index.html">Component Index</a> &gt; TT Toolbox > Excel > <b>Write Options</b></p>
 </div>
 <h3>Option settings for writing data to Excel.</h3>
 <h2>Inputs</h2>
@@ -81,13 +81,13 @@
 <tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
 </thead>
 <tbody>
-<tr><td><b>[FP]</b></td><td></td><td>File path pointing to an excel file which will be opened and written to. Only .xlsx file types will be recognized. If the file does not exist and the path is valid, a new file will be created and saved after writing data.</td><td>Text</td></tr>
-<tr><td><b>[C/O]</b></td><td></td><td>Set to false to partially overwrite data in excel and maintain any formatting in the worksheet. True clears all data and formatting in the sheet, then writes new data.</td><td>Boolean</td></tr>
-<tr><td><b>[Save]</b></td><td></td><td>Set to true to save the excel file after writing data.  A valid file path must be specified in order for a file to be saved.</td><td>Boolean</td></tr>
-<tr><td><b>[Close]</b></td><td></td><td>Set to true to close the file after writing data.  If true, Save after write will be set to true automatically.  Use this setting to create a series of files by animating a slider to avoid opening a bunch of excel instnaces.</td><td>Boolean</td></tr>
-<tr><td><b>[Cs]</b></td><td></td><td>Cell to start writing columns in.</td><td>Integer</td></tr>
-<tr><td><b>[Rs]</b></td><td></td><td>Row to start writing columns in.</td><td>Integer</td></tr>
-<tr><td><b>[FC]</b></td><td></td><td>A list of 2 or 3 colors to define the conditional formatting color range. Conditional formatting will be added to the tree of data if colors are specified.</td><td>Colour</td></tr>
+<tr><td><b>File Path</b></td><td>[FP]</td><td>File path pointing to an excel file which will be opened and written to. Only .xlsx file types will be recognized. If the file does not exist and the path is valid, a new file will be created and saved after writing data.</td><td>String</td></tr>
+<tr><td><b>Clear Data / Overwrite</b></td><td>[C/O]</td><td>Set to false to partially overwrite data in excel and maintain any formatting in the worksheet. True clears all data and formatting in the sheet, then writes new data.</td><td>Boolean</td></tr>
+<tr><td><b>Save after write?</b></td><td>[Save]</td><td>Set to true to save the excel file after writing data.  A valid file path must be specified in order for a file to be saved.</td><td>Boolean</td></tr>
+<tr><td><b>Close after write?</b></td><td>[Close]</td><td>Set to true to close the file after writing data.  If true, Save after write will be set to true automatically.  Use this setting to create a series of files by animating a slider to avoid opening a bunch of excel instnaces.</td><td>Boolean</td></tr>
+<tr><td><b>Column Start Position</b></td><td>[Cs]</td><td>Cell to start writing columns in.</td><td>Integer</td></tr>
+<tr><td><b>Row Start Position</b></td><td>[Rs]</td><td>Row to start writing columns in.</td><td>Integer</td></tr>
+<tr><td><b>Conditional Formatting Colors</b></td><td>[FC]</td><td>A list of 2 or 3 colors to define the conditional formatting color range. Conditional formatting will be added to the tree of data if colors are specified.</td><td>Colour</td></tr>
 </tbody>
 </table>
 
@@ -97,8 +97,8 @@
 <tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
 </thead>
 <tbody>
-<tr><td><b>Out</b></td><td></td><td>Text output for errors, messages, debugging, etc.</td><td>Text</td></tr>
-<tr><td><b>WO</b></td><td></td><td>Options string to input into Write To Excel component.</td><td>Text</td></tr>
+<tr><td><b>User Messages</b></td><td>Out</td><td>Text output for errors, messages, debugging, etc.</td><td>String</td></tr>
+<tr><td><b>Write Options</b></td><td>WO</td><td>Options string to input into Write To Excel component.</td><td>String</td></tr>
 </tbody>
 </table>
 
@@ -110,8 +110,8 @@
             </div>
             <div id="xg_foot">
                 <p class="left">
-    © 2016             &nbsp; Created by <a href="http://www.grasshopper3d.com/profile/HarshGupta367/">Harsh Gupta</a>.            &nbsp;
-    Powered by<a href="http://www.ning.com/?utm_source=online&utm_content=bazfooter&utm_campaign=9000&utm_medium=prd&utm_term=grasshopper3d"><img width="87" height="15" src="../../ning/ningmode.jpg" alt="Ning" class="poweredbylogo" /></a>
+    © 2016             &nbsp; Created by <a href="http://www.grasshopper3d.com/profile/HarshGupta367/">Harsh Gupta</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a>
 	</p>
     <p class="right xg_lightfont">
                     <a href="http://www.grasshopper3d.com/main/embeddable/list">Badges</a> &nbsp;|&nbsp;

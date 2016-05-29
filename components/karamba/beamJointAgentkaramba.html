@@ -10,7 +10,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://www.grasshopper3d.com/page/component-reference" />
 <meta property="og:title" content="Grasshopper Component Reference" />
-<link rel="image_src" href="http://grasshopperhelp.tk/ning/2985220.jpg" />
+<link rel="image_src" href="http://rhino.github.io/ning/2985220.jpg" />
 
 <style type="text/css" media="screen,projection">
 #xg_navigation ul div.xg_subtab ul li a {
@@ -57,7 +57,7 @@
 	<li dojotype="SubTabHover" id="xg_tab_xn0" class="xg_subtab"><a href="http://www.grasshopper3d.com/page/download-1"><span>Download</span></a></li>
 	<li dojotype="SubTabHover" id="xg_tab_xn2" class="xg_subtab"><a href="http://www.grasshopper3d.com/page/tutorials-1"><span>Tutorials</span></a></li>
 	<li dojotype="SubTabHover" id="xg_tab_forum" class="xg_subtab"><a href="http://www.grasshopper3d.com/forum"><span>Discussions</span></a></li>
-	<li dojotype="SubTabHover" id="xg_tab_docs" class="xg_subtab this"><a href="http://www.grasshopperhelp.tk/"><span>Documentation</span></a></li>
+	<li dojotype="SubTabHover" id="xg_tab_docs" class="xg_subtab this"><a href="http://rhino.github.io/"><span>Documentation</span></a></li>
 	<li id="xg_tab_events" class="xg_subtab"><a href="http://www.grasshopper3d.com/events"><span>Events</span></a></li>
 	<li id="xg_tab_profile" class="xg_subtab"><a href="http://www.grasshopper3d.com/"><span>My Page</span></a></li></ul>
 
@@ -72,7 +72,7 @@
 
 <div>
 <h1><img src="../../icons/Karamba/Beam-Joint-Agent_(karamba).png"/> Beam-Joint-Agent (karamba)</h1>
-<p><a href="../../index.html">Component Index</a> &gt; Karamba > Karamba Cross Section > <b>Beam-Joint-Agent (karamba)</b></p>
+<p><a href="../../index.html">Component Index</a> &gt; Karamba > Cross Section > <b>Beam-Joint-Agent (karamba)</b></p>
 </div>
 <h3>Sets a hinge at the connection of a beam to another element or node.</h3>
 <h2>Inputs</h2>
@@ -81,13 +81,13 @@
 <tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
 </thead>
 <tbody>
-<tr><td><b>AtElemIds</b></td><td></td><td>List of identifiers of beams at which a joint shall be placed.</td><td>Text</td></tr>
-<tr><td><b>ToElemIds</b></td><td></td><td>List of identifiers of beams to which the joint shall connect.</td><td>Text</td></tr>
-<tr><td><b>ToNodeInd</b></td><td></td><td>List of indexes of nodes to which the joint shall connect.</td><td>Integer</td></tr>
-<tr><td><b>ToGeom</b></td><td></td><td>List of geometric items (points, curves, planes, breps or meshes) to which the joint shall connect.</td><td>Generic Data</td></tr>
-<tr><td><b>Ct</b></td><td></td><td>Translational spring stiffness [kN/m] of the joint.Values take effect if corresponding DOF is set to hinge.</td><td>Vector</td></tr>
-<tr><td><b>Cr</b></td><td></td><td>Rotational spring stiffness [kNm/rad] of the joint.Values take effect if corresponding DOF is set to hinge.</td><td>Vector</td></tr>
-<tr><td><b>Dofs</b></td><td></td><td>List of degree of freedom indexes (0:tx, 1:ty, 2:tz, 3:rx, 4:ry, 5:rz) to be released at starting-node in addition to those selected via check-boxes.</td><td>Integer</td></tr>
+<tr><td><b>At element identifiers</b></td><td>AtElemIds</td><td>List of identifiers of beams at which a joint shall be placed.</td><td>String</td></tr>
+<tr><td><b>To element identifiers</b></td><td>ToElemIds</td><td>List of identifiers of beams to which the joint shall connect.</td><td>String</td></tr>
+<tr><td><b>To node index</b></td><td>ToNodeInd</td><td>List of indexes of nodes to which the joint shall connect.</td><td>Integer</td></tr>
+<tr><td><b>To geometry</b></td><td>ToGeom</td><td>List of geometric items (points, curves, planes, breps or meshes) to which the joint shall connect.</td><td>Goo</td></tr>
+<tr><td><b>Ct [kN/m]</b></td><td>Ct</td><td>Translational spring stiffness [kN/m] of the joint.Values take effect if corresponding DOF is set to hinge.</td><td>Vector</td></tr>
+<tr><td><b>Cr [kNm/rad]</b></td><td>Cr</td><td>Rotational spring stiffness [kNm/rad] of the joint.Values take effect if corresponding DOF is set to hinge.</td><td>Vector</td></tr>
+<tr><td><b>Dofs</b></td><td>Dofs</td><td>List of degree of freedom indexes (0:tx, 1:ty, 2:tz, 3:rx, 4:ry, 5:rz) to be released at starting-node in addition to those selected via check-boxes.</td><td>Integer</td></tr>
 </tbody>
 </table>
 
@@ -97,7 +97,7 @@
 <tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
 </thead>
 <tbody>
-<tr><td><b>Joint</b></td><td></td><td>Definition of a joint.</td><td>CrossSection</td></tr>
+<tr><td><b>Joint</b></td><td>Joint</td><td>Definition of a joint.</td><td>CrossSection</td></tr>
 </tbody>
 </table>
 
@@ -109,8 +109,8 @@
             </div>
             <div id="xg_foot">
                 <p class="left">
-    © 2016             &nbsp; Created by <a href="http://www.grasshopper3d.com/profile/HarshGupta367/">Harsh Gupta</a>.            &nbsp;
-    Powered by<a href="http://www.ning.com/?utm_source=online&utm_content=bazfooter&utm_campaign=9000&utm_medium=prd&utm_term=grasshopper3d"><img width="87" height="15" src="../../ning/ningmode.jpg" alt="Ning" class="poweredbylogo" /></a>
+    © 2016             &nbsp; Created by <a href="http://www.grasshopper3d.com/profile/HarshGupta367/">Harsh Gupta</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a>
 	</p>
     <p class="right xg_lightfont">
                     <a href="http://www.grasshopper3d.com/main/embeddable/list">Badges</a> &nbsp;|&nbsp;

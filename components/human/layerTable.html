@@ -10,7 +10,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://www.grasshopper3d.com/page/component-reference" />
 <meta property="og:title" content="Grasshopper Component Reference" />
-<link rel="image_src" href="http://grasshopperhelp.tk/ning/2985220.jpg" />
+<link rel="image_src" href="http://rhino.github.io/ning/2985220.jpg" />
 
 <style type="text/css" media="screen,projection">
 #xg_navigation ul div.xg_subtab ul li a {
@@ -57,7 +57,7 @@
 	<li dojotype="SubTabHover" id="xg_tab_xn0" class="xg_subtab"><a href="http://www.grasshopper3d.com/page/download-1"><span>Download</span></a></li>
 	<li dojotype="SubTabHover" id="xg_tab_xn2" class="xg_subtab"><a href="http://www.grasshopper3d.com/page/tutorials-1"><span>Tutorials</span></a></li>
 	<li dojotype="SubTabHover" id="xg_tab_forum" class="xg_subtab"><a href="http://www.grasshopper3d.com/forum"><span>Discussions</span></a></li>
-	<li dojotype="SubTabHover" id="xg_tab_docs" class="xg_subtab this"><a href="http://www.grasshopperhelp.tk/"><span>Documentation</span></a></li>
+	<li dojotype="SubTabHover" id="xg_tab_docs" class="xg_subtab this"><a href="http://rhino.github.io/"><span>Documentation</span></a></li>
 	<li id="xg_tab_events" class="xg_subtab"><a href="http://www.grasshopper3d.com/events"><span>Events</span></a></li>
 	<li id="xg_tab_profile" class="xg_subtab"><a href="http://www.grasshopper3d.com/"><span>My Page</span></a></li></ul>
 
@@ -71,8 +71,8 @@
 <div class="content">
 
 <div>
-<h1><img src="../../icons/Human/layerTable.png"/> Layer Table</h1>
-<p><a href="../../index.html">Component Index</a> &gt; Human > Document Info > <b>LayerTable</b></p>
+<h1><img src="../../icons/Human/Layer_Table.png"/> Layer Table</h1>
+<p><a href="../../index.html">Component Index</a> &gt; Human > Document Info > <b>Layer Table</b></p>
 </div>
 <h3>Gets the list of layers in the active document</h3>
 <h2>Inputs</h2>
@@ -81,7 +81,7 @@
 <tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
 </thead>
 <tbody>
-<tr><td><b>Update</b></td><td>U</td><td>Set this value to true to update the layer table</td><td>Tree, true of Boolean</td></tr>
+<tr><td><b>Update</b></td><td>U</td><td>Set this value to true to update the layer table</td><td>Boolean</td></tr>
 <tr><td><b>Auto-Update</b></td><td>AU</td><td>If this value is set to true, the component will listen for changes to the layer table, and automatically update each time something changes. Use with caution - you can create an infinite loop if you create layers downstream based on outputs from this component.</td><td>Boolean</td></tr>
 </tbody>
 </table>
@@ -92,14 +92,14 @@
 <tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
 </thead>
 <tbody>
-<tr><td><b>Layers</b></td><td>L</td><td>The list of layer names in the active document</td><td>List of Text</td></tr>
-<tr><td><b>Full Layer Paths</b></td><td>LF</td><td>The list of layer names in the document, including nesting information</td><td>List of Text</td></tr>
-<tr><td><b>Layer Colors</b></td><td>C</td><td>The colors of the document Layers</td><td>List of Colour</td></tr>
-<tr><td><b>Linetypes</b></td><td>LT</td><td>The list of linetypes associated with the document layers</td><td>List of Text</td></tr>
-<tr><td><b>Material Names</b></td><td>M</td><td>The list of material names associated with the document layers</td><td>List of Text</td></tr>
-<tr><td><b>Visible</b></td><td>V</td><td>True if layer is visible.</td><td>List of Boolean</td></tr>
-<tr><td><b>Print Width</b></td><td>PW</td><td>The print widths associated with the document layers</td><td>List of Number</td></tr>
-<tr><td><b>Print Color</b></td><td>PC</td><td>The print color for the layer</td><td>List of Colour</td></tr>
+<tr><td><b>Layers</b></td><td>L</td><td>The list of layer names in the active document</td><td>String</td></tr>
+<tr><td><b>Full Layer Paths</b></td><td>LF</td><td>The list of layer names in the document, including nesting information</td><td>String</td></tr>
+<tr><td><b>Layer Colors</b></td><td>C</td><td>The colors of the document Layers</td><td>Colour</td></tr>
+<tr><td><b>Linetypes</b></td><td>LT</td><td>The list of linetypes associated with the document layers</td><td>String</td></tr>
+<tr><td><b>Material Names</b></td><td>M</td><td>The list of material names associated with the document layers</td><td>String</td></tr>
+<tr><td><b>Visible</b></td><td>V</td><td>True if layer is visible.</td><td>Boolean</td></tr>
+<tr><td><b>Print Width</b></td><td>PW</td><td>The print widths associated with the document layers</td><td>Number</td></tr>
+<tr><td><b>Print Color</b></td><td>PC</td><td>The print color for the layer</td><td>Colour</td></tr>
 </tbody>
 </table>
 
@@ -111,8 +111,8 @@
             </div>
             <div id="xg_foot">
                 <p class="left">
-    © 2016             &nbsp; Created by <a href="http://www.grasshopper3d.com/profile/HarshGupta367/">Harsh Gupta</a>.            &nbsp;
-    Powered by<a href="http://www.ning.com/?utm_source=online&utm_content=bazfooter&utm_campaign=9000&utm_medium=prd&utm_term=grasshopper3d"><img width="87" height="15" src="../../ning/ningmode.jpg" alt="Ning" class="poweredbylogo" /></a>
+    © 2016             &nbsp; Created by <a href="http://www.grasshopper3d.com/profile/HarshGupta367/">Harsh Gupta</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a>
 	</p>
     <p class="right xg_lightfont">
                     <a href="http://www.grasshopper3d.com/main/embeddable/list">Badges</a> &nbsp;|&nbsp;

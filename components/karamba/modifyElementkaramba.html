@@ -10,7 +10,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://www.grasshopper3d.com/page/component-reference" />
 <meta property="og:title" content="Grasshopper Component Reference" />
-<link rel="image_src" href="http://grasshopperhelp.tk/ning/2985220.jpg" />
+<link rel="image_src" href="http://rhino.github.io/ning/2985220.jpg" />
 
 <style type="text/css" media="screen,projection">
 #xg_navigation ul div.xg_subtab ul li a {
@@ -57,7 +57,7 @@
 	<li dojotype="SubTabHover" id="xg_tab_xn0" class="xg_subtab"><a href="http://www.grasshopper3d.com/page/download-1"><span>Download</span></a></li>
 	<li dojotype="SubTabHover" id="xg_tab_xn2" class="xg_subtab"><a href="http://www.grasshopper3d.com/page/tutorials-1"><span>Tutorials</span></a></li>
 	<li dojotype="SubTabHover" id="xg_tab_forum" class="xg_subtab"><a href="http://www.grasshopper3d.com/forum"><span>Discussions</span></a></li>
-	<li dojotype="SubTabHover" id="xg_tab_docs" class="xg_subtab this"><a href="http://www.grasshopperhelp.tk/"><span>Documentation</span></a></li>
+	<li dojotype="SubTabHover" id="xg_tab_docs" class="xg_subtab this"><a href="http://rhino.github.io/"><span>Documentation</span></a></li>
 	<li id="xg_tab_events" class="xg_subtab"><a href="http://www.grasshopper3d.com/events"><span>Events</span></a></li>
 	<li id="xg_tab_profile" class="xg_subtab"><a href="http://www.grasshopper3d.com/"><span>My Page</span></a></li></ul>
 
@@ -72,7 +72,7 @@
 
 <div>
 <h1><img src="../../icons/Karamba/Modify_Element_(karamba).png"/> Modify Element (karamba)</h1>
-<p><a href="../../index.html">Component Index</a> &gt; Karamba > Karamba Model > <b>Modify Element (karamba)</b></p>
+<p><a href="../../index.html">Component Index</a> &gt; Karamba > Model > <b>Modify Element (karamba)</b></p>
 </div>
 <h3>Modifies all types of elements or creates element modifiers that do this when the model is assembled.</h3>
 <h2>Inputs</h2>
@@ -81,23 +81,23 @@
 <tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
 </thead>
 <tbody>
-<tr><td><b>Beam</b></td><td></td><td>Beam to modify on the fly or no input if modification shall take place in the model based on the identifier.</td><td>Element</td></tr>
-<tr><td><b>BeamId</b></td><td></td><td>New Identifier for the given beam or identifier of the beam in the model which should be modified. Use a regular expression to modify more than one beam. Regular expressions start with '&'.</td><td>Text</td></tr>
-<tr><td><b>Height</b></td><td></td><td>Height [cm] of cross-section to given value in centimeter if >0.</td><td>Number</td></tr>
-<tr><td><b>Thickness</b></td><td></td><td>Thickness [cm] of walls of cross-section if >0.</td><td>Number</td></tr>
-<tr><td><b>Active</b></td><td></td><td>If true the beam is active in structure.</td><td>Boolean</td></tr>
-<tr><td><b>Bending</b></td><td></td><td>If true the beam has bending stiffness. Otherwise it is a truss.</td><td>Boolean</td></tr>
-<tr><td><b>ecce-loc</b></td><td></td><td>Vector of eccentricity in [cm] of cross section centroid with respect to beam axis in local beam coordinates.</td><td>Vector</td></tr>
-<tr><td><b>ecce-glo</b></td><td></td><td>Vector of eccentricity in [cm] of cross section centroid with respect to beam axis in global coordinates.</td><td>Vector</td></tr>
-<tr><td><b>Buckling</b></td><td></td><td>If true cross section optimization of the element is done considering buckling. Deactivating buckling can be useful for simulating slender elements which you want to pretension in reality but not in the numerical model.</td><td>Boolean</td></tr>
-<tr><td><b>BklLenY</b></td><td></td><td>Buckling length [m] of element in local Y-direction if > 0.</td><td>Number</td></tr>
-<tr><td><b>BklLenZ</b></td><td></td><td>Buckling length [m] of element in local Z-direction if > 0.</td><td>Number</td></tr>
-<tr><td><b>BklLenLT</b></td><td></td><td>Buckling length [m] of element for lateral torsional buckling if > 0.</td><td>Number</td></tr>
-<tr><td><b>lg</b></td><td></td><td>Distance of transverse load [cm] from the center of shear of the cross section. Is positive if the load points towards the shear center and acts destabilizing for lateral torsional buckling.</td><td>Number</td></tr>
-<tr><td><b>NII</b></td><td></td><td>Normal force [kN] that induces second order theory effects. In case of trusses or beams it is an axial normal force. Tension is positive, compression negative.</td><td>Number</td></tr>
-<tr><td><b>X-ori</b></td><td></td><td>Set X-Orientation of the beam: Flips X-axis of the beam if it points in opposite direction to this vector.</td><td>Vector</td></tr>
-<tr><td><b>Z-ori</b></td><td></td><td>New orientation of the local Z-axis of beam.</td><td>Vector</td></tr>
-<tr><td><b>Alpha</b></td><td></td><td>Rotation angle about local X-axis [deg] in addition to orientation given by orientation vector.</td><td>Number</td></tr>
+<tr><td><b>Beam</b></td><td>Beam</td><td>Beam to modify on the fly or no input if modification shall take place in the model based on the identifier.</td><td>Element</td></tr>
+<tr><td><b>Beam identifier</b></td><td>BeamId</td><td>New Identifier for the given beam or identifier of the beam in the model which should be modified. Use a regular expression to modify more than one beam. Regular expressions start with '&'.</td><td>String</td></tr>
+<tr><td><b>Height[cm]</b></td><td>Height</td><td>Height [cm] of cross-section to given value in centimeter if >0.</td><td>Number</td></tr>
+<tr><td><b>Thickness[cm]</b></td><td>Thickness</td><td>Thickness [cm] of walls of cross-section if >0.</td><td>Number</td></tr>
+<tr><td><b>Active</b></td><td>Active</td><td>If true the beam is active in structure.</td><td>Boolean</td></tr>
+<tr><td><b>Bending</b></td><td>Bending</td><td>If true the beam has bending stiffness. Otherwise it is a truss.</td><td>Boolean</td></tr>
+<tr><td><b>local eccentricity [cm]</b></td><td>ecce-loc</td><td>Vector of eccentricity in [cm] of cross section centroid with respect to beam axis in local beam coordinates.</td><td>Vector</td></tr>
+<tr><td><b>global eccentricity [cm]</b></td><td>ecce-glo</td><td>Vector of eccentricity in [cm] of cross section centroid with respect to beam axis in global coordinates.</td><td>Vector</td></tr>
+<tr><td><b>Consider Buckling</b></td><td>Buckling</td><td>If true cross section optimization of the element is done considering buckling. Deactivating buckling can be useful for simulating slender elements which you want to pretension in reality but not in the numerical model.</td><td>Boolean</td></tr>
+<tr><td><b>Buckling Length Y[m]</b></td><td>BklLenY</td><td>Buckling length [m] of element in local Y-direction if > 0.</td><td>Number</td></tr>
+<tr><td><b>Buckling Length Z[m]</b></td><td>BklLenZ</td><td>Buckling length [m] of element in local Z-direction if > 0.</td><td>Number</td></tr>
+<tr><td><b>Buckling Length LT[m]</b></td><td>BklLenLT</td><td>Buckling length [m] of element for lateral torsional buckling if > 0.</td><td>Number</td></tr>
+<tr><td><b>lg[cm]</b></td><td>lg</td><td>Distance of transverse load [cm] from the center of shear of the cross section. Is positive if the load points towards the shear center and acts destabilizing for lateral torsional buckling.</td><td>Number</td></tr>
+<tr><td><b>NII[kN]</b></td><td>NII</td><td>Normal force [kN] that induces second order theory effects. In case of trusses or beams it is an axial normal force. Tension is positive, compression negative.</td><td>Number</td></tr>
+<tr><td><b>X-ori</b></td><td>X-ori</td><td>Set X-Orientation of the beam: Flips X-axis of the beam if it points in opposite direction to this vector.</td><td>Vector</td></tr>
+<tr><td><b>Z-ori</b></td><td>Z-ori</td><td>New orientation of the local Z-axis of beam.</td><td>Vector</td></tr>
+<tr><td><b>Alpha [deg]</b></td><td>Alpha</td><td>Rotation angle about local X-axis [deg] in addition to orientation given by orientation vector.</td><td>Number</td></tr>
 </tbody>
 </table>
 
@@ -107,7 +107,7 @@
 <tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
 </thead>
 <tbody>
-<tr><td><b>Elem</b></td><td></td><td>Modified element or element-modifier.</td><td>Element</td></tr>
+<tr><td><b>Element</b></td><td>Elem</td><td>Modified element or element-modifier.</td><td>Element</td></tr>
 </tbody>
 </table>
 
@@ -119,8 +119,8 @@
             </div>
             <div id="xg_foot">
                 <p class="left">
-    © 2016             &nbsp; Created by <a href="http://www.grasshopper3d.com/profile/HarshGupta367/">Harsh Gupta</a>.            &nbsp;
-    Powered by<a href="http://www.ning.com/?utm_source=online&utm_content=bazfooter&utm_campaign=9000&utm_medium=prd&utm_term=grasshopper3d"><img width="87" height="15" src="../../ning/ningmode.jpg" alt="Ning" class="poweredbylogo" /></a>
+    © 2016             &nbsp; Created by <a href="http://www.grasshopper3d.com/profile/HarshGupta367/">Harsh Gupta</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a>
 	</p>
     <p class="right xg_lightfont">
                     <a href="http://www.grasshopper3d.com/main/embeddable/list">Badges</a> &nbsp;|&nbsp;

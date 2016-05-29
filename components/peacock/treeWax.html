@@ -10,7 +10,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://www.grasshopper3d.com/page/component-reference" />
 <meta property="og:title" content="Grasshopper Component Reference" />
-<link rel="image_src" href="http://grasshopperhelp.tk/ning/2985220.jpg" />
+<link rel="image_src" href="http://rhino.github.io/ning/2985220.jpg" />
 
 <style type="text/css" media="screen,projection">
 #xg_navigation ul div.xg_subtab ul li a {
@@ -57,7 +57,7 @@
 	<li dojotype="SubTabHover" id="xg_tab_xn0" class="xg_subtab"><a href="http://www.grasshopper3d.com/page/download-1"><span>Download</span></a></li>
 	<li dojotype="SubTabHover" id="xg_tab_xn2" class="xg_subtab"><a href="http://www.grasshopper3d.com/page/tutorials-1"><span>Tutorials</span></a></li>
 	<li dojotype="SubTabHover" id="xg_tab_forum" class="xg_subtab"><a href="http://www.grasshopper3d.com/forum"><span>Discussions</span></a></li>
-	<li dojotype="SubTabHover" id="xg_tab_docs" class="xg_subtab this"><a href="http://www.grasshopperhelp.tk/"><span>Documentation</span></a></li>
+	<li dojotype="SubTabHover" id="xg_tab_docs" class="xg_subtab this"><a href="http://rhino.github.io/"><span>Documentation</span></a></li>
 	<li id="xg_tab_events" class="xg_subtab"><a href="http://www.grasshopper3d.com/events"><span>Events</span></a></li>
 	<li id="xg_tab_profile" class="xg_subtab"><a href="http://www.grasshopper3d.com/"><span>My Page</span></a></li></ul>
 
@@ -72,7 +72,7 @@
 
 <div>
 <h1><img src="../../icons/Peacock/Tree_wax.png"/> Tree wax</h1>
-<p><a href="../../index.html">Component Index</a> &gt; Peacock > Peacock Production > <b>Tree wax</b></p>
+<p><a href="../../index.html">Component Index</a> &gt; Peacock > Production > <b>Tree wax</b></p>
 </div>
 <h3>Create a tree and place geometry at the ends of branches</h3>
 <h2>Inputs</h2>
@@ -81,18 +81,18 @@
 <tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
 </thead>
 <tbody>
-<tr><td><b>Geo</b></td><td></td><td>Geometry for placing on the tree</td><td>Geometry</td></tr>
-<tr><td><b>Pt</b></td><td></td><td>Reference point that will be the closest point for placing geometry</td><td>Point</td></tr>
-<tr><td><b>Vec</b></td><td></td><td>Reference vector for placing the geometry</td><td>Vector</td></tr>
-<tr><td><b>Num</b></td><td></td><td>Number of copies or several numbers for several geometries</td><td>Integer</td></tr>
-<tr><td><b>Height</b></td><td></td><td>Height of tree</td><td>Number</td></tr>
-<tr><td><b>Dom</b></td><td></td><td>Normalized domain to the position of the branches</td><td>Domain</td></tr>
-<tr><td><b>Angle</b></td><td></td><td>Angle in radians for the rotation of the branches</td><td>Number</td></tr>
-<tr><td><b>Length</b></td><td></td><td>Length of branches</td><td>Number</td></tr>
-<tr><td><b>Elevat</b></td><td></td><td>Elevation of branches</td><td>Number</td></tr>
-<tr><td><b>Trunk</b></td><td></td><td>Width of the trunk of tree</td><td>Number</td></tr>
-<tr><td><b>Branch</b></td><td></td><td>Width of the Branches of tree</td><td>Number</td></tr>
-<tr><td><b>Act</b></td><td></td><td>Activate the solid tree</td><td>Boolean</td></tr>
+<tr><td><b>Geometry</b></td><td>Geo</td><td>Geometry for placing on the tree</td><td>GeometricGoo</td></tr>
+<tr><td><b>Reference Point</b></td><td>Pt</td><td>Reference point that will be the closest point for placing geometry</td><td>Point</td></tr>
+<tr><td><b>Reference vector</b></td><td>Vec</td><td>Reference vector for placing the geometry</td><td>Vector</td></tr>
+<tr><td><b>Number</b></td><td>Num</td><td>Number of copies or several numbers for several geometries</td><td>Integer</td></tr>
+<tr><td><b>Height</b></td><td>Height</td><td>Height of tree</td><td>Number</td></tr>
+<tr><td><b>Domain</b></td><td>Dom</td><td>Normalized domain to the position of the branches</td><td>Interval</td></tr>
+<tr><td><b>Angle</b></td><td>Angle</td><td>Angle in radians for the rotation of the branches</td><td>Number</td></tr>
+<tr><td><b>Length branches</b></td><td>Length</td><td>Length of branches</td><td>Number</td></tr>
+<tr><td><b>Elevation branches</b></td><td>Elevat</td><td>Elevation of branches</td><td>Number</td></tr>
+<tr><td><b>Width Trunk</b></td><td>Trunk</td><td>Width of the trunk of tree</td><td>Number</td></tr>
+<tr><td><b>Width Branches</b></td><td>Branch</td><td>Width of the Branches of tree</td><td>Number</td></tr>
+<tr><td><b>Activate solid tree</b></td><td>Act</td><td>Activate the solid tree</td><td>Boolean</td></tr>
 </tbody>
 </table>
 
@@ -102,9 +102,9 @@
 <tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
 </thead>
 <tbody>
-<tr><td><b>Crvs</b></td><td></td><td>Curves tree for preview</td><td>Curve</td></tr>
-<tr><td><b>Geo</b></td><td></td><td>Geometry placed in the tree</td><td>Geometry</td></tr>
-<tr><td><b>Tree</b></td><td></td><td>Resulting solid tree</td><td>Brep</td></tr>
+<tr><td><b>Curves tree</b></td><td>Crvs</td><td>Curves tree for preview</td><td>Curve</td></tr>
+<tr><td><b>Geometry</b></td><td>Geo</td><td>Geometry placed in the tree</td><td>GeometricGoo</td></tr>
+<tr><td><b>Solid Tree</b></td><td>Tree</td><td>Resulting solid tree</td><td>Brep</td></tr>
 </tbody>
 </table>
 
@@ -116,8 +116,8 @@
             </div>
             <div id="xg_foot">
                 <p class="left">
-    © 2016             &nbsp; Created by <a href="http://www.grasshopper3d.com/profile/HarshGupta367/">Harsh Gupta</a>.            &nbsp;
-    Powered by<a href="http://www.ning.com/?utm_source=online&utm_content=bazfooter&utm_campaign=9000&utm_medium=prd&utm_term=grasshopper3d"><img width="87" height="15" src="../../ning/ningmode.jpg" alt="Ning" class="poweredbylogo" /></a>
+    © 2016             &nbsp; Created by <a href="http://www.grasshopper3d.com/profile/HarshGupta367/">Harsh Gupta</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a>
 	</p>
     <p class="right xg_lightfont">
                     <a href="http://www.grasshopper3d.com/main/embeddable/list">Badges</a> &nbsp;|&nbsp;

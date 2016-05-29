@@ -10,7 +10,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://www.grasshopper3d.com/page/component-reference" />
 <meta property="og:title" content="Grasshopper Component Reference" />
-<link rel="image_src" href="http://grasshopperhelp.tk/ning/2985220.jpg" />
+<link rel="image_src" href="http://rhino.github.io/ning/2985220.jpg" />
 
 <style type="text/css" media="screen,projection">
 #xg_navigation ul div.xg_subtab ul li a {
@@ -57,7 +57,7 @@
 	<li dojotype="SubTabHover" id="xg_tab_xn0" class="xg_subtab"><a href="http://www.grasshopper3d.com/page/download-1"><span>Download</span></a></li>
 	<li dojotype="SubTabHover" id="xg_tab_xn2" class="xg_subtab"><a href="http://www.grasshopper3d.com/page/tutorials-1"><span>Tutorials</span></a></li>
 	<li dojotype="SubTabHover" id="xg_tab_forum" class="xg_subtab"><a href="http://www.grasshopper3d.com/forum"><span>Discussions</span></a></li>
-	<li dojotype="SubTabHover" id="xg_tab_docs" class="xg_subtab this"><a href="http://www.grasshopperhelp.tk/"><span>Documentation</span></a></li>
+	<li dojotype="SubTabHover" id="xg_tab_docs" class="xg_subtab this"><a href="http://rhino.github.io/"><span>Documentation</span></a></li>
 	<li id="xg_tab_events" class="xg_subtab"><a href="http://www.grasshopper3d.com/events"><span>Events</span></a></li>
 	<li id="xg_tab_profile" class="xg_subtab"><a href="http://www.grasshopper3d.com/"><span>My Page</span></a></li></ul>
 
@@ -72,7 +72,7 @@
 
 <div>
 <h1><img src="../../icons/Mosquito/MapPlaces.png"/> MapPlaces</h1>
-<p><a href="../../index.html">Component Index</a> &gt; Mosquito > Mosquito Geo > <b>MapPlaces</b></p>
+<p><a href="../../index.html">Component Index</a> &gt; Mosquito > Geo > <b>MapPlaces</b></p>
 </div>
 <h3>Extracts Google Places data (Requires GooglePlaces APIKey. Visit the Google APIs Console at https://code.google.com/apis/console) - by Carson Smuts 2015</h3>
 <h2>Inputs</h2>
@@ -81,11 +81,11 @@
 <tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
 </thead>
 <tbody>
-<tr><td><b>Point</b></td><td></td><td>Center of area to search for places</td><td>Point</td></tr>
-<tr><td><b>Radius</b></td><td></td><td>The radius to search</td><td>Number</td></tr>
-<tr><td><b>Lat</b></td><td></td><td>The latitude of the search center - Y coordinate</td><td>Number</td></tr>
-<tr><td><b>Lon</b></td><td></td><td>The longitude of the search center - X coordinate</td><td>Number</td></tr>
-<tr><td><b>Key</b></td><td></td><td>Your Google API Key - each key can perform 1000 searches per day</td><td>Text</td></tr>
+<tr><td><b>Point</b></td><td>Point</td><td>Center of area to search for places</td><td>Point</td></tr>
+<tr><td><b>Number</b></td><td>Radius</td><td>The radius to search</td><td>Number</td></tr>
+<tr><td><b>Number</b></td><td>Lat</td><td>The latitude of the search center - Y coordinate</td><td>Number</td></tr>
+<tr><td><b>Number</b></td><td>Lon</td><td>The longitude of the search center - X coordinate</td><td>Number</td></tr>
+<tr><td><b>String</b></td><td>Key</td><td>Your Google API Key - each key can perform 1000 searches per day</td><td>String</td></tr>
 </tbody>
 </table>
 
@@ -95,12 +95,12 @@
 <tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
 </thead>
 <tbody>
-<tr><td><b>Points</b></td><td></td><td>Points that represent places of interest</td><td>Point</td></tr>
-<tr><td><b>Name</b></td><td></td><td>The name of the place</td><td>Text</td></tr>
-<tr><td><b>Icon</b></td><td></td><td>The place icon</td><td>Text</td></tr>
-<tr><td><b>Type</b></td><td></td><td>The place type categories</td><td>Text</td></tr>
-<tr><td><b>Rating</b></td><td></td><td>The place rating</td><td>Text</td></tr>
-<tr><td><b>Vicinity</b></td><td></td><td>The area</td><td>Text</td></tr>
+<tr><td><b>Point</b></td><td>Points</td><td>Points that represent places of interest</td><td>Point</td></tr>
+<tr><td><b>String</b></td><td>Name</td><td>The name of the place</td><td>String</td></tr>
+<tr><td><b>String</b></td><td>Icon</td><td>The place icon</td><td>String</td></tr>
+<tr><td><b>String</b></td><td>Type</td><td>The place type categories</td><td>String</td></tr>
+<tr><td><b>String</b></td><td>Rating</td><td>The place rating</td><td>String</td></tr>
+<tr><td><b>String</b></td><td>Vicinity</td><td>The area</td><td>String</td></tr>
 </tbody>
 </table>
 
@@ -112,8 +112,8 @@
             </div>
             <div id="xg_foot">
                 <p class="left">
-    © 2016             &nbsp; Created by <a href="http://www.grasshopper3d.com/profile/HarshGupta367/">Harsh Gupta</a>.            &nbsp;
-    Powered by<a href="http://www.ning.com/?utm_source=online&utm_content=bazfooter&utm_campaign=9000&utm_medium=prd&utm_term=grasshopper3d"><img width="87" height="15" src="../../ning/ningmode.jpg" alt="Ning" class="poweredbylogo" /></a>
+    © 2016             &nbsp; Created by <a href="http://www.grasshopper3d.com/profile/HarshGupta367/">Harsh Gupta</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a>
 	</p>
     <p class="right xg_lightfont">
                     <a href="http://www.grasshopper3d.com/main/embeddable/list">Badges</a> &nbsp;|&nbsp;

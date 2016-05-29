@@ -10,7 +10,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://www.grasshopper3d.com/page/component-reference" />
 <meta property="og:title" content="Grasshopper Component Reference" />
-<link rel="image_src" href="http://grasshopperhelp.tk/ning/2985220.jpg" />
+<link rel="image_src" href="http://rhino.github.io/ning/2985220.jpg" />
 
 <style type="text/css" media="screen,projection">
 #xg_navigation ul div.xg_subtab ul li a {
@@ -57,7 +57,7 @@
 	<li dojotype="SubTabHover" id="xg_tab_xn0" class="xg_subtab"><a href="http://www.grasshopper3d.com/page/download-1"><span>Download</span></a></li>
 	<li dojotype="SubTabHover" id="xg_tab_xn2" class="xg_subtab"><a href="http://www.grasshopper3d.com/page/tutorials-1"><span>Tutorials</span></a></li>
 	<li dojotype="SubTabHover" id="xg_tab_forum" class="xg_subtab"><a href="http://www.grasshopper3d.com/forum"><span>Discussions</span></a></li>
-	<li dojotype="SubTabHover" id="xg_tab_docs" class="xg_subtab this"><a href="http://www.grasshopperhelp.tk/"><span>Documentation</span></a></li>
+	<li dojotype="SubTabHover" id="xg_tab_docs" class="xg_subtab this"><a href="http://rhino.github.io/"><span>Documentation</span></a></li>
 	<li id="xg_tab_events" class="xg_subtab"><a href="http://www.grasshopper3d.com/events"><span>Events</span></a></li>
 	<li id="xg_tab_profile" class="xg_subtab"><a href="http://www.grasshopper3d.com/"><span>My Page</span></a></li></ul>
 
@@ -72,7 +72,7 @@
 
 <div>
 <h1><img src="../../icons/Karamba/Line_to_Beam_(karamba).png"/> Line to Beam (karamba)</h1>
-<p><a href="../../index.html">Component Index</a> &gt; Karamba > Karamba Model > <b>Line to Beam (karamba)</b></p>
+<p><a href="../../index.html">Component Index</a> &gt; Karamba > Model > <b>Line to Beam (karamba)</b></p>
 </div>
 <h3>Geometry is assumed to be given in [m]. Creates beams with default properties from given lines. Lines that meet at a common point are thus connected with each other. Karamba assumes input to be in meters.</h3>
 <h2>Inputs</h2>
@@ -81,12 +81,12 @@
 <tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
 </thead>
 <tbody>
-<tr><td><b>Pts</b></td><td></td><td>List of points which will be inserted at the beginning of the node-list at the output-plug. This makes it easy to reference them by index in the model later on.</td><td>Point</td></tr>
-<tr><td><b>Line</b></td><td></td><td>Straight line which will be connected to others if they meet at common points. Node indexes may change if lines are added.</td><td>Curve</td></tr>
-<tr><td><b>New</b></td><td></td><td>If false, a line only result in an element if it connects to points given in the 'Points' input-plug.</td><td>Boolean</td></tr>
-<tr><td><b>Remove</b></td><td></td><td>Remove duplicate lines - otherwise there could be two elements on the same spot which is normally not preferred.</td><td>Boolean</td></tr>
-<tr><td><b>LDist</b></td><td></td><td>Limit distance [m] for coincident points. If negative, nodes of elements are tested for proximity (<ABS(LDist)) to list of points given to the input-plug only. This allows to add zero-length elements.</td><td>Number</td></tr>
-<tr><td><b>BeamId</b></td><td></td><td>Identifier of the beam. Need not be unique in a model.</td><td>Text</td></tr>
+<tr><td><b>Points</b></td><td>Pts</td><td>List of points which will be inserted at the beginning of the node-list at the output-plug. This makes it easy to reference them by index in the model later on.</td><td>Point</td></tr>
+<tr><td><b>Line</b></td><td>Line</td><td>Straight line which will be connected to others if they meet at common points. Node indexes may change if lines are added.</td><td>Curve</td></tr>
+<tr><td><b>New</b></td><td>New</td><td>If false, a line only result in an element if it connects to points given in the 'Points' input-plug.</td><td>Boolean</td></tr>
+<tr><td><b>Remove</b></td><td>Remove</td><td>Remove duplicate lines - otherwise there could be two elements on the same spot which is normally not preferred.</td><td>Boolean</td></tr>
+<tr><td><b>Limit distance [m]</b></td><td>LDist</td><td>Limit distance [m] for coincident points. If negative, nodes of elements are tested for proximity (<ABS(LDist)) to list of points given to the input-plug only. This allows to add zero-length elements.</td><td>Number</td></tr>
+<tr><td><b>Beam identifier</b></td><td>BeamId</td><td>Identifier of the beam. Need not be unique in a model.</td><td>String</td></tr>
 </tbody>
 </table>
 
@@ -96,9 +96,9 @@
 <tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
 </thead>
 <tbody>
-<tr><td><b>Pts</b></td><td></td><td>Points for the model</td><td>Point</td></tr>
-<tr><td><b>Elem</b></td><td></td><td>Beam of the model with default properties</td><td>Element</td></tr>
-<tr><td><b>Info</b></td><td></td><td>Information regarding the conversion of lines to beams</td><td>Text</td></tr>
+<tr><td><b>Points</b></td><td>Pts</td><td>Points for the model</td><td>Point</td></tr>
+<tr><td><b>Element</b></td><td>Elem</td><td>Beam of the model with default properties</td><td>Element</td></tr>
+<tr><td><b>Info</b></td><td>Info</td><td>Information regarding the conversion of lines to beams</td><td>String</td></tr>
 </tbody>
 </table>
 
@@ -110,8 +110,8 @@
             </div>
             <div id="xg_foot">
                 <p class="left">
-    © 2016             &nbsp; Created by <a href="http://www.grasshopper3d.com/profile/HarshGupta367/">Harsh Gupta</a>.            &nbsp;
-    Powered by<a href="http://www.ning.com/?utm_source=online&utm_content=bazfooter&utm_campaign=9000&utm_medium=prd&utm_term=grasshopper3d"><img width="87" height="15" src="../../ning/ningmode.jpg" alt="Ning" class="poweredbylogo" /></a>
+    © 2016             &nbsp; Created by <a href="http://www.grasshopper3d.com/profile/HarshGupta367/">Harsh Gupta</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a>
 	</p>
     <p class="right xg_lightfont">
                     <a href="http://www.grasshopper3d.com/main/embeddable/list">Badges</a> &nbsp;|&nbsp;

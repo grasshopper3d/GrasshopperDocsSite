@@ -10,7 +10,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://www.grasshopper3d.com/page/component-reference" />
 <meta property="og:title" content="Grasshopper Component Reference" />
-<link rel="image_src" href="http://grasshopperhelp.tk/ning/2985220.jpg" />
+<link rel="image_src" href="http://rhino.github.io/ning/2985220.jpg" />
 
 <style type="text/css" media="screen,projection">
 #xg_navigation ul div.xg_subtab ul li a {
@@ -57,7 +57,7 @@
 	<li dojotype="SubTabHover" id="xg_tab_xn0" class="xg_subtab"><a href="http://www.grasshopper3d.com/page/download-1"><span>Download</span></a></li>
 	<li dojotype="SubTabHover" id="xg_tab_xn2" class="xg_subtab"><a href="http://www.grasshopper3d.com/page/tutorials-1"><span>Tutorials</span></a></li>
 	<li dojotype="SubTabHover" id="xg_tab_forum" class="xg_subtab"><a href="http://www.grasshopper3d.com/forum"><span>Discussions</span></a></li>
-	<li dojotype="SubTabHover" id="xg_tab_docs" class="xg_subtab this"><a href="http://www.grasshopperhelp.tk/"><span>Documentation</span></a></li>
+	<li dojotype="SubTabHover" id="xg_tab_docs" class="xg_subtab this"><a href="http://rhino.github.io/"><span>Documentation</span></a></li>
 	<li id="xg_tab_events" class="xg_subtab"><a href="http://www.grasshopper3d.com/events"><span>Events</span></a></li>
 	<li id="xg_tab_profile" class="xg_subtab"><a href="http://www.grasshopper3d.com/"><span>My Page</span></a></li></ul>
 
@@ -72,7 +72,7 @@
 
 <div>
 <h1><img src="../../icons/Karamba/User_Iso-Lines_(karamba).png"/> User Iso-Lines (karamba)</h1>
-<p><a href="../../index.html">Component Index</a> &gt; Karamba > Karamba Utilities > <b>User Iso-Lines (karamba)</b></p>
+<p><a href="../../index.html">Component Index</a> &gt; Karamba > Utilities > <b>User Iso-Lines (karamba)</b></p>
 </div>
 <h3>Returns iso-lines at intersection point of given line with shell based on user supplied values.</h3>
 <h2>Inputs</h2>
@@ -81,11 +81,11 @@
 <tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
 </thead>
 <tbody>
-<tr><td><b>Model</b></td><td></td><td>Model with shells</td><td>Model</td></tr>
-<tr><td><b>Vals</b></td><td></td><td>Values used for constructing the iso-lines: one for each node of the model.</td><td>Number</td></tr>
-<tr><td><b>Sources</b></td><td></td><td>List of lines that intersect the shell or points close to it that define the source of a stream line.</td><td>Generic Data</td></tr>
-<tr><td><b>Seg-L</b></td><td></td><td>Approximate length of the segments of the iso-lines [m].</td><td>Number</td></tr>
-<tr><td><b>Smooth</b></td><td></td><td>If 'true' force flow lines output are splines otherwise lists of straight lines.</td><td>Boolean</td></tr>
+<tr><td><b>Model</b></td><td>Model</td><td>Model with shells</td><td>Model</td></tr>
+<tr><td><b>Values</b></td><td>Vals</td><td>Values used for constructing the iso-lines: one for each node of the model.</td><td>Number</td></tr>
+<tr><td><b>List of sources of iso lines (Lines|Points)</b></td><td>Sources</td><td>List of lines that intersect the shell or points close to it that define the source of a stream line.</td><td>Goo</td></tr>
+<tr><td><b>Segment Length</b></td><td>Seg-L</td><td>Approximate length of the segments of the iso-lines [m].</td><td>Number</td></tr>
+<tr><td><b>Smoothing</b></td><td>Smooth</td><td>If 'true' force flow lines output are splines otherwise lists of straight lines.</td><td>Boolean</td></tr>
 </tbody>
 </table>
 
@@ -95,9 +95,9 @@
 <tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
 </thead>
 <tbody>
-<tr><td><b>Model</b></td><td></td><td>Model with shells</td><td>Model</td></tr>
-<tr><td><b>Lines</b></td><td></td><td>Iso-lines: There are two halves per line which meet at the intersection point.</td><td>Curve</td></tr>
-<tr><td><b>Value</b></td><td></td><td>Value at the corresponding iso-line. There are two values per iso-line in order to match the structure of the iso-line output.</td><td>Number</td></tr>
+<tr><td><b>Model</b></td><td>Model</td><td>Model with shells</td><td>Model</td></tr>
+<tr><td><b>L</b></td><td>Lines</td><td>Iso-lines: There are two halves per line which meet at the intersection point.</td><td>Curve</td></tr>
+<tr><td><b>V</b></td><td>Value</td><td>Value at the corresponding iso-line. There are two values per iso-line in order to match the structure of the iso-line output.</td><td>Number</td></tr>
 </tbody>
 </table>
 
@@ -109,8 +109,8 @@
             </div>
             <div id="xg_foot">
                 <p class="left">
-    © 2016             &nbsp; Created by <a href="http://www.grasshopper3d.com/profile/HarshGupta367/">Harsh Gupta</a>.            &nbsp;
-    Powered by<a href="http://www.ning.com/?utm_source=online&utm_content=bazfooter&utm_campaign=9000&utm_medium=prd&utm_term=grasshopper3d"><img width="87" height="15" src="../../ning/ningmode.jpg" alt="Ning" class="poweredbylogo" /></a>
+    © 2016             &nbsp; Created by <a href="http://www.grasshopper3d.com/profile/HarshGupta367/">Harsh Gupta</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a>
 	</p>
     <p class="right xg_lightfont">
                     <a href="http://www.grasshopper3d.com/main/embeddable/list">Badges</a> &nbsp;|&nbsp;

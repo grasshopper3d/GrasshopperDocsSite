@@ -10,7 +10,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://www.grasshopper3d.com/page/component-reference" />
 <meta property="og:title" content="Grasshopper Component Reference" />
-<link rel="image_src" href="http://grasshopperhelp.tk/ning/2985220.jpg" />
+<link rel="image_src" href="http://rhino.github.io/ning/2985220.jpg" />
 
 <style type="text/css" media="screen,projection">
 #xg_navigation ul div.xg_subtab ul li a {
@@ -57,7 +57,7 @@
 	<li dojotype="SubTabHover" id="xg_tab_xn0" class="xg_subtab"><a href="http://www.grasshopper3d.com/page/download-1"><span>Download</span></a></li>
 	<li dojotype="SubTabHover" id="xg_tab_xn2" class="xg_subtab"><a href="http://www.grasshopper3d.com/page/tutorials-1"><span>Tutorials</span></a></li>
 	<li dojotype="SubTabHover" id="xg_tab_forum" class="xg_subtab"><a href="http://www.grasshopper3d.com/forum"><span>Discussions</span></a></li>
-	<li dojotype="SubTabHover" id="xg_tab_docs" class="xg_subtab this"><a href="http://www.grasshopperhelp.tk/"><span>Documentation</span></a></li>
+	<li dojotype="SubTabHover" id="xg_tab_docs" class="xg_subtab this"><a href="http://rhino.github.io/"><span>Documentation</span></a></li>
 	<li id="xg_tab_events" class="xg_subtab"><a href="http://www.grasshopper3d.com/events"><span>Events</span></a></li>
 	<li id="xg_tab_profile" class="xg_subtab"><a href="http://www.grasshopper3d.com/"><span>My Page</span></a></li></ul>
 
@@ -71,20 +71,18 @@
 <div class="content">
 
 <div>
-<h1><img src="../../icons/MinSurf/MinSrf_msh_4c.png"/> Minimal Surface Mesh</h1>
-<p><a href="../../index.html">Component Index</a> &gt; MinSurf > MinSurf > <b>MinSrf 4C Mesh</b></p>
+<h1><img src="../../icons/MinSurf/Minimal_Surface_Mesh.png"/> Minimal Surface Mesh</h1>
+<p><a href="../../index.html">Component Index</a> &gt; MinSurf > MinSurf > <b>Minimal Surface Mesh</b></p>
 </div>
-<h3>Construct a minimal surface based on 4 boundry curves</h3>
+<h3>Construct a minimal surface based on 2 boundry curves as mesh</h3>
 <h2>Inputs</h2>
 <table>
 <thead>
 <tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
 </thead>
 <tbody>
-<tr><td><b>U0 Curve</b></td><td>U0</td><td>The First U Curve</td><td>List of Curve</td></tr>
-<tr><td><b>U1 Curve</b></td><td>U1</td><td>The Second U Curve</td><td>List of Curve</td></tr>
-<tr><td><b>V0 Curve</b></td><td>V0</td><td>The first V Curve</td><td>List of Curve</td></tr>
-<tr><td><b>V1 Curve</b></td><td>V1</td><td>The Second V Curve</td><td>List of Curve</td></tr>
+<tr><td><b>C0 Curve</b></td><td>C0</td><td>The First Curve</td><td>Curve</td></tr>
+<tr><td><b>C1 Curve</b></td><td>C1</td><td>The Second Curve</td><td>Curve</td></tr>
 <tr><td><b>U Count</b></td><td>U</td><td>Sample Density for U points. The higher the value the the more precise</td><td>Integer</td></tr>
 <tr><td><b>V Count</b></td><td>V</td><td>Sample Density for V points. The higher the value the the more precise</td><td>Integer</td></tr>
 <tr><td><b>Itteration</b></td><td>I</td><td>The solver itteration will refine the solution. leave blank or set to 0 to auto compute</td><td>Integer</td></tr>
@@ -97,8 +95,8 @@
 <tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
 </thead>
 <tbody>
-<tr><td><b>UV point Grid</b></td><td>P</td><td>The UV points that define the surface</td><td>Tree of Point</td></tr>
-<tr><td><b>Resulting Mesh</b></td><td>M</td><td>The Minimal Surface as mesh</td><td>Mesh</td></tr>
+<tr><td><b>UV point Grid</b></td><td>P</td><td>The UV points that define the surface</td><td>Point</td></tr>
+<tr><td><b>Resulting Surface</b></td><td>S</td><td>The Minimal Surface</td><td>Mesh</td></tr>
 </tbody>
 </table>
 
@@ -110,8 +108,8 @@
             </div>
             <div id="xg_foot">
                 <p class="left">
-    © 2016             &nbsp; Created by <a href="http://www.grasshopper3d.com/profile/HarshGupta367/">Harsh Gupta</a>.            &nbsp;
-    Powered by<a href="http://www.ning.com/?utm_source=online&utm_content=bazfooter&utm_campaign=9000&utm_medium=prd&utm_term=grasshopper3d"><img width="87" height="15" src="../../ning/ningmode.jpg" alt="Ning" class="poweredbylogo" /></a>
+    © 2016             &nbsp; Created by <a href="http://www.grasshopper3d.com/profile/HarshGupta367/">Harsh Gupta</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a>
 	</p>
     <p class="right xg_lightfont">
                     <a href="http://www.grasshopper3d.com/main/embeddable/list">Badges</a> &nbsp;|&nbsp;

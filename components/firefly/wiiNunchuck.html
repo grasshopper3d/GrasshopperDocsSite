@@ -10,7 +10,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://www.grasshopper3d.com/page/component-reference" />
 <meta property="og:title" content="Grasshopper Component Reference" />
-<link rel="image_src" href="http://grasshopperhelp.tk/ning/2985220.jpg" />
+<link rel="image_src" href="http://rhino.github.io/ning/2985220.jpg" />
 
 <style type="text/css" media="screen,projection">
 #xg_navigation ul div.xg_subtab ul li a {
@@ -57,7 +57,7 @@
 	<li dojotype="SubTabHover" id="xg_tab_xn0" class="xg_subtab"><a href="http://www.grasshopper3d.com/page/download-1"><span>Download</span></a></li>
 	<li dojotype="SubTabHover" id="xg_tab_xn2" class="xg_subtab"><a href="http://www.grasshopper3d.com/page/tutorials-1"><span>Tutorials</span></a></li>
 	<li dojotype="SubTabHover" id="xg_tab_forum" class="xg_subtab"><a href="http://www.grasshopper3d.com/forum"><span>Discussions</span></a></li>
-	<li dojotype="SubTabHover" id="xg_tab_docs" class="xg_subtab this"><a href="http://www.grasshopperhelp.tk/"><span>Documentation</span></a></li>
+	<li dojotype="SubTabHover" id="xg_tab_docs" class="xg_subtab this"><a href="http://rhino.github.io/"><span>Documentation</span></a></li>
 	<li id="xg_tab_events" class="xg_subtab"><a href="http://www.grasshopper3d.com/events"><span>Events</span></a></li>
 	<li id="xg_tab_profile" class="xg_subtab"><a href="http://www.grasshopper3d.com/"><span>My Page</span></a></li></ul>
 
@@ -72,7 +72,7 @@
 
 <div>
 <h1><img src="../../icons/Firefly/Wii_Nunchuck.png"/> Wii Nunchuck</h1>
-<p><a href="../../index.html">Component Index</a> &gt; Firefly > Firefly Arduino & IO Boards > <b>Wii Nunchuck</b></p>
+<p><a href="../../index.html">Component Index</a> &gt; Firefly > Arduino & I/O Boards > <b>Wii Nunchuck</b></p>
 </div>
 <h3>This component will read all of the sensor values from<br>the Wii Nunchuck. Note: This component is meant to<br>be used in tandem with the Wii Nunchuck Arduino Sketch<br>which can be downloaded from the Firefly website at:<br>http://www.Fireflyexperiments.com.</h3>
 <h2>Inputs</h2>
@@ -81,8 +81,8 @@
 <tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
 </thead>
 <tbody>
-<tr><td><b>Start</b></td><td></td><td>Input an Boolean value (True/False) to start receiving values from the Arduino.  Note: You must first open the serial connection by using the Open Port component (Firefly/Boards/Open Port) before setting the Start input value to True.</td><td>Boolean</td></tr>
-<tr><td><b>Port</b></td><td></td><td>The Port Number has to be the same Serial Port assigned in the Arduino Sketch.  You can find which COM port you are using by clicking on the Tools>Serial Port button on the Arduino IDE.</td><td>Integer</td></tr>
+<tr><td><b>Start Reading Values</b></td><td>Start</td><td>Input an Boolean value (True/False) to start receiving values from the Arduino.  Note: You must first open the serial connection by using the Open Port component (Firefly/Boards/Open Port) before setting the Start input value to True.</td><td>Boolean</td></tr>
+<tr><td><b>PortNumber</b></td><td>Port</td><td>The Port Number has to be the same Serial Port assigned in the Arduino Sketch.  You can find which COM port you are using by clicking on the Tools>Serial Port button on the Arduino IDE.</td><td>Integer</td></tr>
 </tbody>
 </table>
 
@@ -92,14 +92,14 @@
 <tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
 </thead>
 <tbody>
-<tr><td><b>AccX</b></td><td></td><td>Returns the accelerometer X value</td><td>Integer</td></tr>
-<tr><td><b>AccY</b></td><td></td><td>Returns the accelerometer Y value</td><td>Integer</td></tr>
-<tr><td><b>AccZ</b></td><td></td><td>Returns the accelerometer Z value</td><td>Integer</td></tr>
-<tr><td><b>JoyX</b></td><td></td><td>Returns the joystick value of the X-axis</td><td>Integer</td></tr>
-<tr><td><b>JoyY</b></td><td></td><td>Returns the joystick value of the Y-axis</td><td>Integer</td></tr>
-<tr><td><b>Zbut</b></td><td></td><td>Returns the status of the Z button</td><td>Integer</td></tr>
-<tr><td><b>Cbut</b></td><td></td><td>Returns the status of the C button</td><td>Integer</td></tr>
-<tr><td><b>Msg</b></td><td></td><td>Current status of Serial Port</td><td>Text</td></tr>
+<tr><td><b>Accelerometer X</b></td><td>AccX</td><td>Returns the accelerometer X value</td><td>Integer</td></tr>
+<tr><td><b>Accelerometer Y</b></td><td>AccY</td><td>Returns the accelerometer Y value</td><td>Integer</td></tr>
+<tr><td><b>Accelerometer Z</b></td><td>AccZ</td><td>Returns the accelerometer Z value</td><td>Integer</td></tr>
+<tr><td><b>Joystick X</b></td><td>JoyX</td><td>Returns the joystick value of the X-axis</td><td>Integer</td></tr>
+<tr><td><b>Joystick Y</b></td><td>JoyY</td><td>Returns the joystick value of the Y-axis</td><td>Integer</td></tr>
+<tr><td><b>Z Button</b></td><td>Zbut</td><td>Returns the status of the Z button</td><td>Integer</td></tr>
+<tr><td><b>C Button</b></td><td>Cbut</td><td>Returns the status of the C button</td><td>Integer</td></tr>
+<tr><td><b>Status Message</b></td><td>Msg</td><td>Current status of Serial Port</td><td>String</td></tr>
 </tbody>
 </table>
 
@@ -111,8 +111,8 @@
             </div>
             <div id="xg_foot">
                 <p class="left">
-    © 2016             &nbsp; Created by <a href="http://www.grasshopper3d.com/profile/HarshGupta367/">Harsh Gupta</a>.            &nbsp;
-    Powered by<a href="http://www.ning.com/?utm_source=online&utm_content=bazfooter&utm_campaign=9000&utm_medium=prd&utm_term=grasshopper3d"><img width="87" height="15" src="../../ning/ningmode.jpg" alt="Ning" class="poweredbylogo" /></a>
+    © 2016             &nbsp; Created by <a href="http://www.grasshopper3d.com/profile/HarshGupta367/">Harsh Gupta</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a>
 	</p>
     <p class="right xg_lightfont">
                     <a href="http://www.grasshopper3d.com/main/embeddable/list">Badges</a> &nbsp;|&nbsp;

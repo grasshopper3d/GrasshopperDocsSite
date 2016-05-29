@@ -10,7 +10,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://www.grasshopper3d.com/page/component-reference" />
 <meta property="og:title" content="Grasshopper Component Reference" />
-<link rel="image_src" href="http://grasshopperhelp.tk/ning/2985220.jpg" />
+<link rel="image_src" href="http://rhino.github.io/ning/2985220.jpg" />
 
 <style type="text/css" media="screen,projection">
 #xg_navigation ul div.xg_subtab ul li a {
@@ -57,7 +57,7 @@
 	<li dojotype="SubTabHover" id="xg_tab_xn0" class="xg_subtab"><a href="http://www.grasshopper3d.com/page/download-1"><span>Download</span></a></li>
 	<li dojotype="SubTabHover" id="xg_tab_xn2" class="xg_subtab"><a href="http://www.grasshopper3d.com/page/tutorials-1"><span>Tutorials</span></a></li>
 	<li dojotype="SubTabHover" id="xg_tab_forum" class="xg_subtab"><a href="http://www.grasshopper3d.com/forum"><span>Discussions</span></a></li>
-	<li dojotype="SubTabHover" id="xg_tab_docs" class="xg_subtab this"><a href="http://www.grasshopperhelp.tk/"><span>Documentation</span></a></li>
+	<li dojotype="SubTabHover" id="xg_tab_docs" class="xg_subtab this"><a href="http://rhino.github.io/"><span>Documentation</span></a></li>
 	<li id="xg_tab_events" class="xg_subtab"><a href="http://www.grasshopper3d.com/events"><span>Events</span></a></li>
 	<li id="xg_tab_profile" class="xg_subtab"><a href="http://www.grasshopper3d.com/"><span>My Page</span></a></li></ul>
 
@@ -71,8 +71,8 @@
 <div class="content">
 
 <div>
-<h1><img src="../../icons/ASTools/FilletIcon24x24.png"/> Fillet Constant Radius</h1>
-<p><a href="../../index.html">Component Index</a> &gt; ASTools > Surface > <b>FCR</b></p>
+<h1><img src="../../icons/ASTools/Fillet_Constant_Radius.png"/> Fillet Constant Radius</h1>
+<p><a href="../../index.html">Component Index</a> &gt; ASTools > Surface > <b>Fillet Constant Radius</b></p>
 </div>
 <h3>Creates a surfacefillet with constant radius</h3>
 <h2>Inputs</h2>
@@ -86,8 +86,9 @@
 <tr><td><b>Radius</b></td><td>r</td><td>Radius of the fillet</td><td>Number</td></tr>
 <tr><td><b>Side</b></td><td>i</td><td>At the intersecting curves, there are up to 4 possibilities to create a fillet (index 0-3)</td><td>Integer</td></tr>
 <tr><td><b>Curvature Matching</b></td><td>bCM</td><td>Bezierfillets can be matched to curvature</td><td>Boolean</td></tr>
-<tr><td><b>hasBezierArc</b></td><td>bBA</td><td>Prefering an bezierarcs over nurbsarc? Bezierarcs sligthly differ from a real circle, but they stay non-rational. \n This makes it easier to work with, when creating f.e. filletedges</td><td>Boolean</td></tr>
-<tr><td><b>Order</b></td><td>o</td><td> if the order is between 3 and 12,the resulting shape will be simplyfied. Any other number keeps it exact.</td><td>Integer</td></tr>
+<tr><td><b>hasBezierArc</b></td><td>bBA</td><td>Prefering an bezierarcs over nurbsarc? Bezierarcs sligthly differ from a real circle, but they stay non-rational. 
+ This makes it easier to work with, when creating f.e. filletedges</td><td>Boolean</td></tr>
+<tr><td><b>Order</b></td><td>o</td><td>if the order is between 3 and 12,the resulting shape will be simplyfied. Any other number keeps it exact.</td><td>Integer</td></tr>
 </tbody>
 </table>
 
@@ -97,7 +98,7 @@
 <tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
 </thead>
 <tbody>
-<tr><td><b>Fillets</b></td><td>F</td><td>Fillet</td><td>List of Surface</td></tr>
+<tr><td><b>Fillets</b></td><td>F</td><td>Fillet</td><td>Surface</td></tr>
 </tbody>
 </table>
 
@@ -109,8 +110,8 @@
             </div>
             <div id="xg_foot">
                 <p class="left">
-    © 2016             &nbsp; Created by <a href="http://www.grasshopper3d.com/profile/HarshGupta367/">Harsh Gupta</a>.            &nbsp;
-    Powered by<a href="http://www.ning.com/?utm_source=online&utm_content=bazfooter&utm_campaign=9000&utm_medium=prd&utm_term=grasshopper3d"><img width="87" height="15" src="../../ning/ningmode.jpg" alt="Ning" class="poweredbylogo" /></a>
+    © 2016             &nbsp; Created by <a href="http://www.grasshopper3d.com/profile/HarshGupta367/">Harsh Gupta</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a>
 	</p>
     <p class="right xg_lightfont">
                     <a href="http://www.grasshopper3d.com/main/embeddable/list">Badges</a> &nbsp;|&nbsp;

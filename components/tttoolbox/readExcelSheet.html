@@ -10,7 +10,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://www.grasshopper3d.com/page/component-reference" />
 <meta property="og:title" content="Grasshopper Component Reference" />
-<link rel="image_src" href="http://grasshopperhelp.tk/ning/2985220.jpg" />
+<link rel="image_src" href="http://rhino.github.io/ning/2985220.jpg" />
 
 <style type="text/css" media="screen,projection">
 #xg_navigation ul div.xg_subtab ul li a {
@@ -57,7 +57,7 @@
 	<li dojotype="SubTabHover" id="xg_tab_xn0" class="xg_subtab"><a href="http://www.grasshopper3d.com/page/download-1"><span>Download</span></a></li>
 	<li dojotype="SubTabHover" id="xg_tab_xn2" class="xg_subtab"><a href="http://www.grasshopper3d.com/page/tutorials-1"><span>Tutorials</span></a></li>
 	<li dojotype="SubTabHover" id="xg_tab_forum" class="xg_subtab"><a href="http://www.grasshopper3d.com/forum"><span>Discussions</span></a></li>
-	<li dojotype="SubTabHover" id="xg_tab_docs" class="xg_subtab this"><a href="http://www.grasshopperhelp.tk/"><span>Documentation</span></a></li>
+	<li dojotype="SubTabHover" id="xg_tab_docs" class="xg_subtab this"><a href="http://rhino.github.io/"><span>Documentation</span></a></li>
 	<li id="xg_tab_events" class="xg_subtab"><a href="http://www.grasshopper3d.com/events"><span>Events</span></a></li>
 	<li id="xg_tab_profile" class="xg_subtab"><a href="http://www.grasshopper3d.com/"><span>My Page</span></a></li></ul>
 
@@ -72,7 +72,7 @@
 
 <div>
 <h1><img src="../../icons/TTToolbox/Read_Excel_Sheet.png"/> Read Excel Sheet</h1>
-<p><a href="../../index.html">Component Index</a> &gt; TT Toolbox > TT Toolbox Excel > <b>Read Excel Sheet</b></p>
+<p><a href="../../index.html">Component Index</a> &gt; TT Toolbox > Excel > <b>Read Excel Sheet</b></p>
 </div>
 <h3>Read data from an Excel worksheet</h3>
 <h2>Inputs</h2>
@@ -81,10 +81,10 @@
 <tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
 </thead>
 <tbody>
-<tr><td><b>R?</b></td><td></td><td>Read data from Excel?</td><td>Boolean</td></tr>
-<tr><td><b>[Fp]</b></td><td></td><td>Path to the excel file to open. If none is provided, the open workbook will be read.</td><td>Text</td></tr>
-<tr><td><b>[Ws]</b></td><td></td><td>Provide a one-based worksheet index or a worksheet name.</td><td>Text</td></tr>
-<tr><td><b>[L]</b></td><td></td><td>listen for changes to the worksheet?</td><td>Boolean</td></tr>
+<tr><td><b>Run?</b></td><td>R?</td><td>Read data from Excel?</td><td>Boolean</td></tr>
+<tr><td><b>File Path</b></td><td>[Fp]</td><td>Path to the excel file to open. If none is provided, the open workbook will be read.</td><td>String</td></tr>
+<tr><td><b>Worksheet</b></td><td>[Ws]</td><td>Provide a one-based worksheet index or a worksheet name.</td><td>String</td></tr>
+<tr><td><b>Listen?</b></td><td>[L]</td><td>listen for changes to the worksheet?</td><td>Boolean</td></tr>
 </tbody>
 </table>
 
@@ -94,9 +94,9 @@
 <tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
 </thead>
 <tbody>
-<tr><td><b>Out</b></td><td></td><td>Text output for errors, messages, debugging, etc.</td><td>Text</td></tr>
-<tr><td><b>C</b></td><td></td><td>Data formatted in columns</td><td>Generic Data</td></tr>
-<tr><td><b>R</b></td><td></td><td>Data formatted in rows</td><td>Generic Data</td></tr>
+<tr><td><b>User Messages</b></td><td>Out</td><td>Text output for errors, messages, debugging, etc.</td><td>String</td></tr>
+<tr><td><b>Columns</b></td><td>C</td><td>Data formatted in columns</td><td>Goo</td></tr>
+<tr><td><b>Rows</b></td><td>R</td><td>Data formatted in rows</td><td>Goo</td></tr>
 </tbody>
 </table>
 
@@ -108,8 +108,8 @@
             </div>
             <div id="xg_foot">
                 <p class="left">
-    © 2016             &nbsp; Created by <a href="http://www.grasshopper3d.com/profile/HarshGupta367/">Harsh Gupta</a>.            &nbsp;
-    Powered by<a href="http://www.ning.com/?utm_source=online&utm_content=bazfooter&utm_campaign=9000&utm_medium=prd&utm_term=grasshopper3d"><img width="87" height="15" src="../../ning/ningmode.jpg" alt="Ning" class="poweredbylogo" /></a>
+    © 2016             &nbsp; Created by <a href="http://www.grasshopper3d.com/profile/HarshGupta367/">Harsh Gupta</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a>
 	</p>
     <p class="right xg_lightfont">
                     <a href="http://www.grasshopper3d.com/main/embeddable/list">Badges</a> &nbsp;|&nbsp;

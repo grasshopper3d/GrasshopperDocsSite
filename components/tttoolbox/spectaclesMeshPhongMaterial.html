@@ -10,7 +10,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://www.grasshopper3d.com/page/component-reference" />
 <meta property="og:title" content="Grasshopper Component Reference" />
-<link rel="image_src" href="http://grasshopperhelp.tk/ning/2985220.jpg" />
+<link rel="image_src" href="http://rhino.github.io/ning/2985220.jpg" />
 
 <style type="text/css" media="screen,projection">
 #xg_navigation ul div.xg_subtab ul li a {
@@ -57,7 +57,7 @@
 	<li dojotype="SubTabHover" id="xg_tab_xn0" class="xg_subtab"><a href="http://www.grasshopper3d.com/page/download-1"><span>Download</span></a></li>
 	<li dojotype="SubTabHover" id="xg_tab_xn2" class="xg_subtab"><a href="http://www.grasshopper3d.com/page/tutorials-1"><span>Tutorials</span></a></li>
 	<li dojotype="SubTabHover" id="xg_tab_forum" class="xg_subtab"><a href="http://www.grasshopper3d.com/forum"><span>Discussions</span></a></li>
-	<li dojotype="SubTabHover" id="xg_tab_docs" class="xg_subtab this"><a href="http://www.grasshopperhelp.tk/"><span>Documentation</span></a></li>
+	<li dojotype="SubTabHover" id="xg_tab_docs" class="xg_subtab this"><a href="http://rhino.github.io/"><span>Documentation</span></a></li>
 	<li id="xg_tab_events" class="xg_subtab"><a href="http://www.grasshopper3d.com/events"><span>Events</span></a></li>
 	<li id="xg_tab_profile" class="xg_subtab"><a href="http://www.grasshopper3d.com/"><span>My Page</span></a></li></ul>
 
@@ -72,7 +72,7 @@
 
 <div>
 <h1><img src="../../icons/TTToolbox/Spectacles_MeshPhongMaterial.png"/> Spectacles_MeshPhongMaterial</h1>
-<p><a href="../../index.html">Component Index</a> &gt; TT Toolbox > TT Toolbox Spectacles > <b>Spectacles_MeshPhongMaterial</b></p>
+<p><a href="../../index.html">Component Index</a> &gt; TT Toolbox > Spectacles > <b>Spectacles_MeshPhongMaterial</b></p>
 </div>
 <h3>Create a shiny material for meshes</h3>
 <h2>Inputs</h2>
@@ -81,12 +81,12 @@
 <tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
 </thead>
 <tbody>
-<tr><td><b>C</b></td><td></td><td>Diffuse color of the material</td><td>Colour</td></tr>
-<tr><td><b>[aC]</b></td><td></td><td>Ambient color of the material, multiplied by the color of the ambient light in the scene.  Default is black</td><td>Colour</td></tr>
-<tr><td><b>[eC]</b></td><td></td><td>Emissive (light) color of the material, essentially a solid color unaffected by other lighting. Default is black.</td><td>Colour</td></tr>
-<tr><td><b>[sC]</b></td><td></td><td>Specular color of the material, i.e., how shiny the material is and the color of its shine. Setting this the same color as the diffuse value (times some intensity) makes the material more metallic-looking; setting this to some gray makes the material look more plastic. Default is dark gray.</td><td>Colour</td></tr>
-<tr><td><b>[S]</b></td><td></td><td>How shiny the specular highlight is; a higher value gives a sharper highlight. Default is 30</td><td>Number</td></tr>
-<tr><td><b>[O]</b></td><td></td><td>Number in the range of 0.0 - 1.0 indicating how transparent the material is. A value of 0.0 indicates fully transparent, 1.0 is fully opaque.</td><td>Number</td></tr>
+<tr><td><b>Color</b></td><td>C</td><td>Diffuse color of the material</td><td>Colour</td></tr>
+<tr><td><b>Ambient Color</b></td><td>[aC]</td><td>Ambient color of the material, multiplied by the color of the ambient light in the scene.  Default is black</td><td>Colour</td></tr>
+<tr><td><b>Emissive Color</b></td><td>[eC]</td><td>Emissive (light) color of the material, essentially a solid color unaffected by other lighting. Default is black.</td><td>Colour</td></tr>
+<tr><td><b>Specular Color</b></td><td>[sC]</td><td>Specular color of the material, i.e., how shiny the material is and the color of its shine. Setting this the same color as the diffuse value (times some intensity) makes the material more metallic-looking; setting this to some gray makes the material look more plastic. Default is dark gray.</td><td>Colour</td></tr>
+<tr><td><b>Shininess</b></td><td>[S]</td><td>How shiny the specular highlight is; a higher value gives a sharper highlight. Default is 30</td><td>Number</td></tr>
+<tr><td><b>[Opacity]</b></td><td>[O]</td><td>Number in the range of 0.0 - 1.0 indicating how transparent the material is. A value of 0.0 indicates fully transparent, 1.0 is fully opaque.</td><td>Number</td></tr>
 </tbody>
 </table>
 
@@ -96,7 +96,7 @@
 <tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
 </thead>
 <tbody>
-<tr><td><b>Mm</b></td><td></td><td>Mesh Material.  Feed this into the Spectacles Mesh component.</td><td>Generic Data</td></tr>
+<tr><td><b>Mesh Material</b></td><td>Mm</td><td>Mesh Material.  Feed this into the Spectacles Mesh component.</td><td>Goo</td></tr>
 </tbody>
 </table>
 
@@ -108,8 +108,8 @@
             </div>
             <div id="xg_foot">
                 <p class="left">
-    © 2016             &nbsp; Created by <a href="http://www.grasshopper3d.com/profile/HarshGupta367/">Harsh Gupta</a>.            &nbsp;
-    Powered by<a href="http://www.ning.com/?utm_source=online&utm_content=bazfooter&utm_campaign=9000&utm_medium=prd&utm_term=grasshopper3d"><img width="87" height="15" src="../../ning/ningmode.jpg" alt="Ning" class="poweredbylogo" /></a>
+    © 2016             &nbsp; Created by <a href="http://www.grasshopper3d.com/profile/HarshGupta367/">Harsh Gupta</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a>
 	</p>
     <p class="right xg_lightfont">
                     <a href="http://www.grasshopper3d.com/main/embeddable/list">Badges</a> &nbsp;|&nbsp;
