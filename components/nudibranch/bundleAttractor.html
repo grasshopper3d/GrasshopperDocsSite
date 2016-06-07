@@ -2,17 +2,17 @@
 <html lang="en" xmlns:og="http://ogp.me/ns#">
 <head data-layout-view="wide">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>DownHill - Grasshopper Component Reference</title>
+<title>BundleAttractor - Grasshopper Component Reference</title>
 <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 <link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
 
-<meta name="description" content="A guide to component DownHill in Grasshopper 3D." />
+<meta name="description" content="A guide to component BundleAttractor in Grasshopper 3D." />
 <meta name="title" content="Grasshopper Component Reference" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://rhino.github.io/" />
-<meta property="og:title" content="DownHill - Grasshopper Component Reference" />
+<meta property="og:title" content="BundleAttractor - Grasshopper Component Reference" />
 
-<meta property="wiki-page" content="GH Nudibranch DownHill.md" />
+<meta property="wiki-page" content="GH Nudibranch BundleAttractor.md" />
 
 <link rel="image_src" href="http://rhino.github.io/ning/2985220.jpg" />
 
@@ -74,21 +74,24 @@
 <div class="content">
 
 <div>
-<h1><img src="../../icons/Nudibranch/DownHill.png"/> DownHill</h1>
-<p><a href="../../index.html">Component Index</a> &gt; Nudibranch > Scramblers > <b>DownHill</b></p>
+<h1><img src="../../icons/Nudibranch/BundleAttractor.png"/> BundleAttractor</h1>
+<p><a href="../../index.html">Component Index</a> &gt; Nudibranch > Attractors > <b>BundleAttractor</b></p>
 </div>
-<h3>Generates the gradient descent paths on a surface for any provided point list.</h3>
+<h3>Generates an iteratively bundled pointlist for any given datatree population of points.</h3>
 <h2>Inputs</h2>
 <table>
 <thead>
 <tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
 </thead>
 <tbody>
-<tr><td><b>Terrain</b></td><td>S</td><td>Surface terrain</td><td>Surface</td></tr>
-<tr><td><b>Points</b></td><td>P</td><td>Point List to affect</td><td>Point</td></tr>
-<tr><td><b>Force</b></td><td>F</td><td>Global (gravity) force for all the particles</td><td>Number</td></tr>
-<tr><td><b>Incremental</b></td><td>In</td><td>Global angle for all the particles resulting in an incremental descent(radians)</td><td>Number</td></tr>
+<tr><td><b>Points</b></td><td>P</td><td>Point Datatree to bundle</td><td>Point</td></tr>
+<tr><td><b>Range</b></td><td>R</td><td>Bundling range</td><td>Number</td></tr>
+<tr><td><b>Force</b></td><td>F</td><td>Global force for all the bundling points</td><td>Number</td></tr>
+<tr><td><b>Tension</b></td><td>T</td><td>Global tension for all the bundling points within a tree branch</td><td>Number</td></tr>
+<tr><td><b>Attraction/Repulsion</b></td><td>A</td><td>Toggle between attraction and repulsion</td><td>Boolean</td></tr>
+<tr><td><b>Fixed</b></td><td>Fi</td><td>Toggle between Fixed and NonFixed points</td><td>Boolean</td></tr>
 <tr><td><b>Iterations</b></td><td>It</td><td>Number of iterations</td><td>Integer</td></tr>
+<tr><td><b>RelaxSteps</b></td><td>Re</td><td>Individual relaxation steps in between iterations(smoother bundling, don't over do it)</td><td>Integer</td></tr>
 </tbody>
 </table>
 
@@ -100,7 +103,6 @@
 <tbody>
 <tr><td><b>NewPoints</b></td><td>P</td><td>The generated point list per iteration</td><td>Point</td></tr>
 <tr><td><b>NewVectors</b></td><td>V</td><td>The generated vector list per iteration</td><td>Vector</td></tr>
-<tr><td><b>Paths</b></td><td>C</td><td>The generated path from each point's route on the surface</td><td>Curve</td></tr>
 </tbody>
 </table>
 

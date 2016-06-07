@@ -2,17 +2,17 @@
 <html lang="en" xmlns:og="http://ogp.me/ns#">
 <head data-layout-view="wide">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>DownHill - Grasshopper Component Reference</title>
+<title>Read Saved Thermal Results - Grasshopper Component Reference</title>
 <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 <link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
 
-<meta name="description" content="A guide to component DownHill in Grasshopper 3D." />
+<meta name="description" content="A guide to component Read Saved Thermal Results in Grasshopper 3D." />
 <meta name="title" content="Grasshopper Component Reference" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://rhino.github.io/" />
-<meta property="og:title" content="DownHill - Grasshopper Component Reference" />
+<meta property="og:title" content="Read Saved Thermal Results - Grasshopper Component Reference" />
 
-<meta property="wiki-page" content="GH Nudibranch DownHill.md" />
+<meta property="wiki-page" content="GH DIVA Read_Saved_Thermal_Results.md" />
 
 <link rel="image_src" href="http://rhino.github.io/ning/2985220.jpg" />
 
@@ -74,33 +74,20 @@
 <div class="content">
 
 <div>
-<h1><img src="../../icons/Nudibranch/DownHill.png"/> DownHill</h1>
-<p><a href="../../index.html">Component Index</a> &gt; Nudibranch > Scramblers > <b>DownHill</b></p>
+<h1><img src="../../icons/DIVA/Read_Saved_Thermal_Results.png"/> Read Saved Thermal Results</h1>
+<p><a href="../../index.html">Component Index</a> &gt; DIVA > DIVA Thermal > <b>Read Saved Thermal Results</b></p>
 </div>
-<h3>Generates the gradient descent paths on a surface for any provided point list.</h3>
-<h2>Inputs</h2>
-<table>
-<thead>
-<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
-</thead>
-<tbody>
-<tr><td><b>Terrain</b></td><td>S</td><td>Surface terrain</td><td>Surface</td></tr>
-<tr><td><b>Points</b></td><td>P</td><td>Point List to affect</td><td>Point</td></tr>
-<tr><td><b>Force</b></td><td>F</td><td>Global (gravity) force for all the particles</td><td>Number</td></tr>
-<tr><td><b>Incremental</b></td><td>In</td><td>Global angle for all the particles resulting in an incremental descent(radians)</td><td>Number</td></tr>
-<tr><td><b>Iterations</b></td><td>It</td><td>Number of iterations</td><td>Integer</td></tr>
-</tbody>
-</table>
-
+<h3>This component reads the results of saved thermal<br>simulation projects.<br>__________________________________________<br><br>Instructions:<br><br>1) Right click the 'Project' button and select a<br>    saved project from the list. (The list is<br>    populated from the default 'Projects' folder in<br>    C:\DIVA\Thermal\Grasshopper\Projects. The<br>    project 'Viper_Temp' simply stores the most recent<br>    simulation.) To enter a results file path manually,<br>    select the 'Input CSV path manually' option.<br><br>2) Right-click the 'Metrics' button and select the<br>    output variables to display. If you have manually<br>    input a csv file containing multi-zone data,<br>    the sum over all zones will be output for each zone<br>    metric. To call up the project inputs and runtime <br>    messages, or the dxf geometry created by EnergyPlus,<br>    use the 'Show inputs...' and 'Show DXF...' items at<br>    the top of the Metrics list.<br></h3>
 <h2>Outputs</h2>
 <table>
 <thead>
 <tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
 </thead>
 <tbody>
-<tr><td><b>NewPoints</b></td><td>P</td><td>The generated point list per iteration</td><td>Point</td></tr>
-<tr><td><b>NewVectors</b></td><td>V</td><td>The generated vector list per iteration</td><td>Vector</td></tr>
-<tr><td><b>Paths</b></td><td>C</td><td>The generated path from each point's route on the surface</td><td>Curve</td></tr>
+<tr><td><b>Metric Heating E</b></td><td>Heating E</td><td>Heating Energy Consumption (load divided by efficiency) [kWh] (Monthly)</td><td>Goo</td></tr>
+<tr><td><b>Metric Cooling E</b></td><td>Cooling E</td><td>Cooling Energy Consumption (load divided by efficiency) [kWh] (Monthly)</td><td>Goo</td></tr>
+<tr><td><b>Metric Elec:Lights</b></td><td>Elec:Lights</td><td>InteriorLights:Electricity [kWh] (Monthly)</td><td>Goo</td></tr>
+<tr><td><b>Metric Elec:Equip</b></td><td>Elec:Equip</td><td>InteriorEquipment:Electricity [kWh] (Monthly)</td><td>Goo</td></tr>
 </tbody>
 </table>
 

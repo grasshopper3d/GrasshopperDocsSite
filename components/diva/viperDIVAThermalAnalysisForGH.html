@@ -1,0 +1,194 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+<head data-layout-view="wide">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Viper: DIVA Thermal Analysis for GH - Grasshopper Component Reference</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+
+<meta name="description" content="A guide to component Viper: DIVA Thermal Analysis for GH in Grasshopper 3D." />
+<meta name="title" content="Grasshopper Component Reference" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://rhino.github.io/" />
+<meta property="og:title" content="Viper: DIVA Thermal Analysis for GH - Grasshopper Component Reference" />
+
+<meta property="wiki-page" content="GH DIVA Viper__DIVA_Thermal_Analysis_for_GH.md" />
+
+<link rel="image_src" href="http://rhino.github.io/ning/2985220.jpg" />
+
+<style type="text/css" media="screen,projection">
+#xg_navigation ul div.xg_subtab ul li a {
+    color:#666666;
+    background:#EAFFBD;
+}
+#xg_navigation ul div.xg_subtab ul li a:hover {
+    color:#333333;
+    background:#F2FFD6;
+}
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../../ning/index.css);
+@import url(../../ning/page.css);
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../../ning/1187549422.css);
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../../ning/1187545030.css);
+</style>
+
+
+<link href="../../style.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+    </head>
+    <body>
+    
+        
+        <div id="xg" class="xg_theme xg_widget_page xg_widget_page_page xg_widget_page_page_show" data-layout-pack="classic">
+            <div id="xg_head">
+                <div id="xg_masthead">
+                    <p id="xg_sitename"><a id="application_name_header_link" href="http://www.grasshopper3d.com/">Grasshopper</a></p>
+                    <p id="xg_sitedesc" class="xj_site_desc">algorithmic modeling for Rhino</p>
+                </div>
+                <div id="xg_navigation">
+                    <ul>
+    <li id="xg_tab_main" class="xg_subtab"><a href="http://www.grasshopper3d.com/"><span>Home</span></a></li>
+	<li id="xg_tab_photo" class="xg_subtab"><a href="http://www.grasshopper3d.com/photo"><span>View</span></a></li>
+	<li id="xg_tab_xn0" class="xg_subtab"><a href="http://www.grasshopper3d.com/page/download-1"><span>Get</span></a></li>
+	<li id="xg_tab_xn2" class="xg_subtab this"><a href="http://www.grasshopper3d.com/page/tutorials-1"><span>Learn</span></a></li>
+	<li id="xg_tab_forum" class="xg_subtab"><a href="http://www.grasshopper3d.com/forum"><span>Talk</span></a></li>
+	<li id="xg_tab_events" class="xg_subtab"><a href="http://www.grasshopper3d.com/events"><span>Events</span></a></li>
+	<li id="xg_tab_profile" class="xg_subtab"><a href="http://www.grasshopper3d.com/"><span>My Page</span></a></li></ul>
+
+                </div>
+            </div>
+            
+            <div id="xg_body">
+                
+				<div class="page">
+
+<div class="content">
+
+<div>
+<h1><img src="../../icons/DIVA/Viper__DIVA_Thermal_Analysis_for_GH.png"/> Viper: DIVA Thermal Analysis for GH</h1>
+<p><a href="../../index.html">Component Index</a> &gt; DIVA > DIVA Thermal > <b>Viper: DIVA Thermal Analysis for GH</b></p>
+</div>
+<h3>This component performs a single-zone thermal simulation using EnergyPlus, an open-<br>source software operated by the US Department of Energy (http://apps1.eere.energy.gov).<br>________________________________________________________________________<br><br>Instructions:<br><br>1) Create one or a number of breps that collectively form a SINGLE CLOSED volume,<br>    representing the  physical boundary of the thermal zone. Note: All breps must be<br>    PLANAR or composed of planar faces.<br>2) Feed each brep through a 'Construction Assembly' (CA) component, which<br>    you must use to assign materials. Multiple breps of the same construction<br>    can be fed into a single CA component. (We'll deal with windows in step 4). The<br>    CA component can be found in the 'DIVA Thermal' group under the 'DIVA' tab.<br>3) Connect the output from the CA components into the 'Zone' input parameter of the<br>    Viper component.<br>4) Create windows as additional breps that are 'on top of' -- i.e., coplanar with --<br>    the zone breps<br>5) Repeat step (2) for window breps, this time using the 'Window Unit' component and<br>    connecting its output to the 'Window' input of the Viper component<br>6) Create breps to represent any detached shading surfaces (overhangs, other buildings,<br>    fences, trees, etc.). The reflectance of these surfaces can be set using the<br>    'Fixed Shade' component. Or, the breps can be passed directly to the 'Fixed Shade'<br>    input of the Viper component, in which case a default reflectance of 0.35 will be<br>    assumed.<br>7) If you want to save the results of the simulation for later reference, provide<br>    a string to the 'Project_Name' input.<br>8) Set the occypancy type and weather location by clicking on the 'Program' and<br>    'Location' buttons.<br>9) Set internal gain densities, thermostat set points, lighting controls, air flow rates,<br>     and other variables as desired.  (Hover over the input for details.)<br>10) To launch simulation, set 'Run' to True<br></h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Project Name</b></td><td>Project Name</td><td>Project Name (optional)</td><td>String</td></tr>
+<tr><td><b>People [/m2]</b></td><td>People</td><td>(Number of people)/m2 (optional)</td><td>Number</td></tr>
+<tr><td><b>Lights [W/m2]</b></td><td>Lights</td><td>Lighting load (W/m2) (optional)</td><td>Number</td></tr>
+<tr><td><b>Equipment [W/m2]</b></td><td>Equip</td><td>Equipment load (W/m2) (optional)</td><td>Number</td></tr>
+<tr><td><b>Heating Set Point [deg C]</b></td><td>HtgSetP</td><td>Heating Set Point [deg C] (optional)</td><td>Number</td></tr>
+<tr><td><b>Cooling Set Point [deg C]</b></td><td>ClgSetP</td><td>Cooling Set Point [deg C] (optional)</td><td>Number</td></tr>
+<tr><td><b>Heating COP</b></td><td>Htg COP</td><td>Heating Efficiency (Coefficient of Performance) (optional)</td><td>Number</td></tr>
+<tr><td><b>Cooling COP</b></td><td>Clg COP</td><td>Cooling Efficiency (Coefficient of Performance) (optional)</td><td>Number</td></tr>
+<tr><td><b>Infiltration</b></td><td>Infiltration</td><td>Infiltration Rate (air changes per hour) (optional)</td><td>Number</td></tr>
+<tr><td><b>FreshAir</b></td><td>FreshAir</td><td>Minimum Outside Air Flow per Person {(m3/s)/person} (optional)</td><td>Number</td></tr>
+<tr><td><b>Lighting Control [lux]</b></td><td>Lighting Cntrl</td><td>Set daylighing control level or schedule (optional)
+If you enter a number, EnergyPlus will use this number as a dimming control value
+(one sample node will be automatically placed at the centroid of the floor area, 0.8 meters off 
+the ground).
+Alternatively, you can output a lighting schedule using the DIVA Daylight component (recommended).
+First, run a climate-based simulation with the desired lighting control type, and request the 
+'Lighting Control Schedule Path' output from the Outputs tab of the Daylight-component 'Settings'
+menu. (This path is the intgain.csv file generated by DIVA.)
+If the input is left blank, no dimming controls will be used, and Viper will assume a default
+lighting schedule based on occupancy type.</td><td>String</td></tr>
+<tr><td><b>Zone Breps</b></td><td>Zone</td><td>Connect outputs of CA components
+to this node.
+
+Note: Do NOT flatten, graft, or otherwise alter the
+paths or structure of the data tree.</td><td>Brep</td></tr>
+<tr><td><b>Window</b></td><td>Window</td><td>Connect outputs of WU components (optional)
+to this node.
+
+Note: Do NOT flatten, graft, or otherwise alter the
+paths or structure of the data tree.</td><td>Brep</td></tr>
+<tr><td><b>Shade</b></td><td>Shade</td><td>Shading objects (optional).
+Use the 'Shade' component to assign reflectances, glazing materials, 
+and transmittance schedules to shading objects, then connect output here.</td><td>String</td></tr>
+<tr><td><b>Write Only</b></td><td>Write Only</td><td>When 'Write Only' AND 'Run' are True, Viper will write the IDF without launching EnergyPlus. 
+(Useful for creating batches.)  (optional)</td><td>Boolean</td></tr>
+<tr><td><b>Run Simulation</b></td><td>Run</td><td>Run Simulation</td><td>Boolean</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Output Message</b></td><td>messages</td><td>Messages, Warnings, and Errors</td><td>String</td></tr>
+<tr><td><b>Metric Heating E</b></td><td>Heating E</td><td>Heating Energy Consumption (load divided by efficiency) [kWh] (Monthly)</td><td>Goo</td></tr>
+<tr><td><b>Metric Cooling E</b></td><td>Cooling E</td><td>Cooling Energy Consumption (load divided by efficiency) [kWh] (Monthly)</td><td>Goo</td></tr>
+<tr><td><b>Metric Elec:Lights</b></td><td>Elec:Lights</td><td>InteriorLights:Electricity [kWh] (Monthly)</td><td>Goo</td></tr>
+<tr><td><b>Metric Elec:Equip</b></td><td>Elec:Equip</td><td>InteriorEquipment:Electricity [kWh] (Monthly)</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+
+  </div>
+
+</div>
+
+            </div>
+            <div id="xg_foot">
+                <p class="left">
+    © 2016             &nbsp; Created by <a href="http://www.grasshopper3d.com/profile/HarshGupta367/">Harsh Gupta</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a>
+	</p>
+    <p class="right xg_lightfont">
+                    <a href="http://www.grasshopper3d.com/main/embeddable/list">Badges</a> &nbsp;|&nbsp;
+                        <a href="http://www.grasshopper3d.com/main/index/report" dojotype="PromptToJoinLink" _joinprompttext="Please sign up or sign in to complete this step." _hassignup="true" _signinurl="http://www.grasshopper3d.com/main/authorization/signIn?target=http%3A%2F%2Fwww.grasshopper3d.com%2Fmain%2Findex%2Freport">Report an Issue</a> &nbsp;|&nbsp;
+                        <a href="http://www.grasshopper3d.com/main/authorization/termsOfService?previousUrl=http%3A%2F%2Fwww.grasshopper3d.com%2Fpage%2Fcomponent-reference">Terms of Service</a>
+            </p>
+
+            </div>
+        </div>
+        
+        <div id="xj_baz17246" class="xg_theme"></div>
+<div id="xg_overlay" style="display:none;">
+<!--[if lte IE 6.5]><iframe></iframe><![endif]-->
+</div>
+<!--googleoff: all--><noscript>
+	<style type="text/css" media="screen">
+        #xg { position:relative;top:120px; }
+        #xn_bar { top:120px; }
+	</style>
+	<div class="errordesc noscript">
+		<div>
+            <h3><strong>Hello, you need to enable JavaScript to use Grasshopper.</strong></h3>
+            <p>Please check your browser settings or contact your system administrator.</p>
+			
+		</div>
+	</div>
+</noscript><!--googleon: all-->
+
+<script src="/js/jquery.js"></script>
+<script src="/js/kramed.min.js"></script>
+<script src="/js/component.js"></script>
+<script src="/js/user.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    </body>
+</html>
