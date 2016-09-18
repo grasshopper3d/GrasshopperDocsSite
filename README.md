@@ -1,13 +1,9 @@
 # rhino.github.io
 Documentation for open source components of Grasshopper, the fantastic visual programming tool built into Rhino.
 
-# Adding and updating plugins
-I use a semi-automated process to add plugins into the system, using some scripts written on my PC. These scripts are not web-based, so it cannot be done on a web site. It takes about 5 minutes to add/update a plugin into the database, which is then generated into HTML. To request a plugin addition / updation, add an [Issue](https://github.com/rhino/rhino.github.io/issues) or add a post in the [GH forum thread](http://www.grasshopper3d.com/forum/topics/component-reference-for-gh?xg_source=activity&id=2985220%3ATopic%3A1522149&page=6#comments) and I'll look into it as soon as possible.
-
 # Plugin index
-Listed in the order of addition into the website.
+Listed in the order they were added in.
 
-### Lot 1
 - [SpiderWeb](http://www.food4rhino.com/project/spiderweb?ufh), 4.2, 2015-Jul-20
 - [MinSurf](http://www.food4rhino.com/project/minsurf?ufh), 3.0.0.2, 2013-Apr-04
 - [Kangaroo2](http://www.food4rhino.com/project/kangaroo?ufh), 2.1.2, 2016-Apr-12
@@ -24,8 +20,6 @@ Listed in the order of addition into the website.
 - [Bowerbird](http://www.grasshopper3d.com/group/bowerbird), 0.6.3, 2015-Jan-19
 - [Anemone](http://www.food4rhino.com/project/anemone?ufh), 0.4, 2015-Dec-14
 - [Meshtools](http://www.grasshopper3d.com/forum/topics/mesh-pipe), 1.0, 2013-Feb-02
-
-### Lot 2
 - [Clipper](http://www.food4rhino.com/project/clipper?ufh), 0.2.1, 2015-Feb-04
 - [Panda](http://www.food4rhino.com/project/panda?ufh), 1.1, 2016-Apr-13
 - [Paneling Tools](http://www.food4rhino.com/project/pt-gh?ufh), 2014.12.17.01, 2014-Dec-18
@@ -34,34 +28,24 @@ Listed in the order of addition into the website.
 - [Bengesht](http://www.food4rhino.com/project/bengesht?ufh), 3.0.0.0, 2016-Mar-25
 - [gHowl](http://www.food4rhino.com/project/ghowl?ufh), 0.1.r50.0, 2014-Nov-21
 - [FlowLines](http://www.food4rhino.com/project/flowl?ufh), 1.0, 2011-Jul-25
-
-### Lot 3
 - [Kangaroo](http://www.food4rhino.com/project/kangaroo?ufh), 0.099, 2015-Apr-29
 - [Centipede](http://www.food4rhino.com/project/centipede?ufh), 0.7b, 2012-Oct-03
 - [3DVoronoi](http://www.grasshopper3d.com/forum/topics/3d-voronoi-4), 1.0, 2011-Aug-30
 - [TSplines](http://www.autodesk.com/education/free-software/t-splines-plug-in-for-rhino), 4.0, 2014-Jan-19
 - [Firefly](http://www.food4rhino.com/project/firefly?ufh), 1.0.0.70, 2015-Mar-25
 - [TT Toolbox](http://www.food4rhino.com/project/tttoolbox?ufh), 1.7, 2015-Dec-04
-
-### Lot 4
 - [MetaHopper](http://www.grasshopper3d.com/group/metahopper), 1.0, 2016-May-04
 - [Karamba](http://www.food4rhino.com/project/karamba?ufh), 1.1.0, 2015-Mar-14
-
-### Lot 5
 - [Ivy](http://www.food4rhino.com/project/ivy?ufh), 0.52, 2016-Feb-03
 - [Culebra](http://www.food4rhino.com/project/culebra?ufh), 1.0, 2016-Mar-10
 - [Mosquito](http://www.food4rhino.com/project/mosquito?ufh), 0.4, 2015-Nov-27
 - [Elefront](http://www.food4rhino.com/project/elefront?ufh), 1.1.0, 2015-Nov-03
 - [Monolith](http://www.food4rhino.com/project/monolith?ufh), 0.2.5879.24551, 2016-Feb-05
-
-### Lot 6
 - [Alba](http://www.ryanhoover.org/rd/alba.php), 0.111, Unknown, 
 - [FabTools](http://www.food4rhino.com/project/fabtools?ufh), 0.92, 2013-Jul-03
 - [Phyllomachine](http://www.food4rhino.com/project/phyllomachine?ufh), 1.0, 2015-May-29
 - [Peacock](http://www.food4rhino.com/project/Peacock?ufh), 0.90, 2015-Jan-18, 
 - [Xylinus](http://www.ryanhoover.org/rd/xylinus.php), 0.2, Unknown
-
-### Lot 7
 - [BullAnt](http://www.food4rhino.com/project/bullant?ufh), 1.3.01, 2016-Mar-08
 - [Elk](http://www.food4rhino.com/project/elk?ufh), 2.2.2, 2016-Feb-01
 - [GhExcel](http://www.food4rhino.com/project/ghexcel?ufh), 1.2, 2013-Jun-01
@@ -72,9 +56,12 @@ Listed in the order of addition into the website.
 - [Hummingbird](http://www.food4rhino.com/project/hummingbird?ufh), 2.3, 2015-Dec-14
 - [Ladybug](http://www.food4rhino.com/project/ladybug-honeybee?ufh), 0.0.62, 2016-Jan-29
 - [Mesh+](http://www.food4rhino.com/project/mesh?ufh), 2.1.00, 2015-Nov-04
-
-### Lot 8
 - [Nudibranch](http://www.food4rhino.com/project/nudibranch?ufh), 0.028, 2016-Jun-03
 - [DIVA](http://www.solemma.net/DIVA-for-Rhino/download.html), 3.0.0.6, 2015
 - [Octopus](http://www.food4rhino.com/project/octopus?ufh), 0.3.6, 2015-Sep-26
 - [Dodo](http://www.food4rhino.com/project/scientific-tools-parametric-design?ufh&etx), 1.0.2.0, 2016-Feb-24
+
+# Want to add or update a plugin?
+Simply add an [Issue](https://github.com/rhino/rhino.github.io/issues) with the name and link of the plugin, or add a post in the [GH forum thread](http://www.grasshopper3d.com/forum/topics/component-reference-for-gh?xg_source=activity&id=2985220%3ATopic%3A1522149&page=6#comments). I'll add it up as soon as possible.
+
+Sadly users cannot add plugins themselves, because I use some advanced Grasshopper scripts to extract plugin metadata. Such things cannot be done on a server at the moment. Contact me if you are interested in contributing this method. You will need experience with C# .NET and GH.
