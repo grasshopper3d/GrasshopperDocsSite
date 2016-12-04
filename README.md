@@ -60,6 +60,7 @@ Listed in the order they were added in.
 - [DIVA](http://www.solemma.net/DIVA-for-Rhino/download.html), 3.0.0.6, 2015
 - [Octopus](http://www.food4rhino.com/project/octopus?ufh), 0.3.6, 2015-Sep-26
 - [Dodo](http://www.food4rhino.com/project/scientific-tools-parametric-design?ufh&etx), 1.0.2.0, 2016-Feb-24
+- [Doodlebug](www.grasshopper3d.com/group/doodlebug?xg_source=activity), CC 2015, 2016
 
 # Want to add or update a plugin?
 Simply add an [Issue](https://github.com/rhino/rhino.github.io/issues) with the name and link of the plugin, or add a post in the [GH forum thread](http://www.grasshopper3d.com/forum/topics/component-reference-for-gh?xg_source=activity&id=2985220%3ATopic%3A1522149&page=6#comments). I'll add it up as soon as possible.
