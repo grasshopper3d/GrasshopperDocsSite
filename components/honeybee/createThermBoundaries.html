@@ -75,7 +75,7 @@
 
 <div>
 <h1><img src="../../icons/Honeybee/Create_Therm_Boundaries.png"/> Create Therm Boundaries</h1>
-<p><a href="../../index.html">Component Index</a> &gt; Honeybee > 11 | THERM > <b>Create Therm Boundaries</b></p>
+<p><a href="../../index.html">Component Index</a> &gt; <a href="../../index.html#Honeybee">Honeybee</a> > 11 | THERM > <b>Create Therm Boundaries</b></p>
 </div>
 <h3>Use this component to create a THERM boundary condition.<br></h3>
 <h2>Inputs</h2>
@@ -87,12 +87,13 @@
 <tr><td><b>_boundaryCurve</b></td><td>_boundaryCurve</td><td>A polyline or list of polylines that coincide with the thermPolygons that you plan to connect to the "Write Therm File" component.</td><td>Goo</td></tr>
 <tr><td><b>_name</b></td><td>_name</td><td>An name for the boundary condition to keep track of it through the creation of the THERM model.  If no value is input here, a default unique name will be generated.</td><td>Goo</td></tr>
 <tr><td><b>_temperature</b></td><td>_temperature</td><td>A numerical value that represents the temperature at the boundary in degrees Celcius.</td><td>Goo</td></tr>
-<tr><td><b>_filmCoefficient</b></td><td>_filmCoefficient</td><td>Either a numerical value in W/m2-K that represents the conductivity of the air film at the boundary condition or simply input the word 'indoor' or 'outdoor' to have the film coefficient autocalculated based on the position of geometry in the Rhino scene and an interpolation of values from Table 10 from chapter 26 of ASHRAE Fundementals 2013:
+<tr><td><b>_filmCoefficient</b></td><td>_filmCoefficient</td><td>A numerical value in W/m2-K that represents the convective resistance of the air film at the boundary condition.  Alternatively, you can simply input the word 'indoor' or 'outdoor' to have the film coefficient autocalculated based on the position of geometry in the Rhino scene and an interpolation of values from Table 10 from chapter 26 of ASHRAE Fundementals 2013.
 _
-Typical film coefficient values range from 26 W/m2-K (for an NFRC exterior envelope) to 2.5 W/m2-K (for an interior wood/vinyl surface).
+Typical film coefficient values range from 36 W/m2-K (for an exterior condition where outdoor wind strips away most convective resistance) to 2.5 W/m2-K (for a vertically-oriented interior wood/vinyl surface).
 _
-Note that, when inputting 'outdoor', the component will assume an outdoor wind speed of 3.4 m/s (22.7 W/m2-K) and, for higher wind speeds, higher film coefficients should be input (ie. 6.7 m/s = 34.0 W/m2-K).</td><td>Goo</td></tr>
+Note that, when inputting 'outdoor', the component will assume an outdoor wind speed of ~4.5 m/s (and a corresponding film coefficient of 26 W/m2-K). You may want to simulate with a lower wind speed of 3.4 m/s (filmCoefficient = 22.7 W/m2-K) or a higher wind speed of 6.7 m/s (filmCoefficient = 34.0 W/m2-K).</td><td>Goo</td></tr>
 <tr><td><b>emissivity_</b></td><td>emissivity_</td><td>An optional number between 0 and 1 to set an override for the emissivity along the boundary.  By default, the Grasshopper components will take the emissivity of the material that is adjacent to the boundary.  However, a value here can over-ride this value to account for coatings like those on Low-E glass or matte paint on metallic materials.</td><td>Goo</td></tr>
+<tr><td><b>customRadEnv_</b></td><td>customRadEnv_</td><td>A list of radiant environmental properties from the 'Honeybee_Custom Radiant Environment' component.  Inputting values here will create a radiant environment that is different than typical NFRC conditions.</td><td>Goo</td></tr>
 <tr><td><b>uFactorTag_</b></td><td>uFactorTag_</td><td>An optional text string to define a U-Factor tag for the boundary condition.  U-Factor tags are used tell THERM the boundary on which you would like to compute a U-Value.  The default is set to to have no U-Factor tag.  This input can be any text string.  For example "Frame", "Edge", or "Spacer."</td><td>Goo</td></tr>
 <tr><td><b>RGBColor_</b></td><td>RGBColor_</td><td>An optional color to set the color of the boundary condition when you import it into THERM.</td><td>Goo</td></tr>
 </tbody>
@@ -117,7 +118,7 @@ Note that, when inputting 'outdoor', the component will assume an outdoor wind s
             </div>
             <div id="xg_foot">
                 <p class="left">
-    © 2016             &nbsp; Created by <a href="http://www.grasshopper3d.com/profile/HarshGupta367/">Harsh Gupta</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    © 2018             &nbsp; Created by <a href="http://www.stackoverflow.com/cv/robin-rodricks">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
     Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a>
 	</p>
     <p class="right xg_lightfont">

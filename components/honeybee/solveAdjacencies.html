@@ -75,7 +75,7 @@
 
 <div>
 <h1><img src="../../icons/Honeybee/Solve_Adjacencies.png"/> Solve Adjacencies</h1>
-<p><a href="../../index.html">Component Index</a> &gt; Honeybee > 00 | Honeybee > <b>Solve Adjacencies</b></p>
+<p><a href="../../index.html">Component Index</a> &gt; <a href="../../index.html#Honeybee">Honeybee</a> > 00 | Honeybee > <b>Solve Adjacencies</b></p>
 </div>
 <h3>Solve adjacencies<br></h3>
 <h2>Inputs</h2>
@@ -86,6 +86,7 @@
 <tbody>
 <tr><td><b>_HBZones</b></td><td>_HBZones</td><td>A list of Honeybee zones for which you want to calculate whether they are next to each other.</td><td>Goo</td></tr>
 <tr><td><b>altConstruction_</b></td><td>altConstruction_</td><td>An optional alternate EP construction to assign to all adjacent surfaces.  The default is set to be "Interior Wall", "Interior Foor" or "Interior Ceiling" or "Interior Window" depending on the type of surface that is adjacent.</td><td>Goo</td></tr>
+<tr><td><b>altWindowConstr_</b></td><td>altWindowConstr_</td><td>An optional alternate EP window construction to assign to all adjacent surfaces.  The default is set to be the "Interior Window" construction with a single pane of clear glass.</td><td>Goo</td></tr>
 <tr><td><b>altBC_</b></td><td>altBC_</td><td>An optional alternate boundary condition such as "Adiabatic".  The default will be "Surafce", which ensures that heat flows across each adjacent surface to a neighboring zone.</td><td>Goo</td></tr>
 <tr><td><b>tolerance_</b></td><td>tolerance_</td><td>The tolerance in Rhino model units that will be used determine whether two zones are adjacent to each other.  If no value is input here, the component will use the tolerance of the Rhino model document.</td><td>Goo</td></tr>
 <tr><td><b>removeCurrentAdjc_</b></td><td>removeCurrentAdjc_</td><td>If you are using this component after already solving for the adjacencies between some of the zones previously, set this to "False" in order to remeber the previously determined adcacency conditions.  If set to "True", the current adjacencies will be removed. The default is set to "False" in order to remeber your previously-set adjacencies.</td><td>Goo</td></tr>
@@ -112,7 +113,7 @@
             </div>
             <div id="xg_foot">
                 <p class="left">
-    © 2016             &nbsp; Created by <a href="http://www.grasshopper3d.com/profile/HarshGupta367/">Harsh Gupta</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    © 2018             &nbsp; Created by <a href="http://www.stackoverflow.com/cv/robin-rodricks">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
     Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a>
 	</p>
     <p class="right xg_lightfont">

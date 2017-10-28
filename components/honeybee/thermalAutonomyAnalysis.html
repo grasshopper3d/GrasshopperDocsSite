@@ -75,7 +75,7 @@
 
 <div>
 <h1><img src="../../icons/Honeybee/Thermal_Autonomy_Analysis.png"/> Thermal Autonomy Analysis</h1>
-<p><a href="../../index.html">Component Index</a> &gt; Honeybee > 09 | Energy | Energy > <b>Thermal Autonomy Analysis</b></p>
+<p><a href="../../index.html">Component Index</a> &gt; <a href="../../index.html#Honeybee">Honeybee</a> > 10 | Energy | Energy > <b>Thermal Autonomy Analysis</b></p>
 </div>
 <h3>Use this component to calculate 'Occupied Thermal Comfort Percent' (occTCP) and 'Thermal Autonomy' (TA) from the resultd of a Microclimate Map Analysis.<br>'Occupied Thermal Comfort Percent' (occTCP) is defined here as the the percent of occupied time where a point of space meets or exceeds a given set of thermal comfort acceptability criteria.<br>Precedents for Thermal Comfort Percent (TCP) as a metric to spatially evaluate the desirability of a given space can be found in the PhD thesis of Tarek Rakha (http://www.tarekrakha.com/#/research/).<br>'Thermal Autonomy' (TA) is defined here as the the percent of occupied time where a point of space meets or exceeds a given set of thermal comfort acceptability criteria through passive means only.<br>Precedents for Thermal Autonomy (TA) as a metric to evaluate the passive operation of a given space can be found in the work of Brendon Levitt.<br>Levitt, B.; Ubbelohde, M.; Loisos, G.; Brown, N.  Thermal Autonomy as Metric and Design Process. Loisos + Ubbelohde, Alameda, California, California College of the Arts, San Francisco. 2013.<br>(http://www.coolshadow.com/research/Levitt_Thermal%20Autonomy%20as%20Metric%20and%20Design%20Process.pdf)<br></h3>
 <h2>Inputs</h2>
@@ -94,7 +94,6 @@
 <tr><td><b>fileName_</b></td><td>fileName_</td><td>An optional file name for the result files as a string.</td><td>Goo</td></tr>
 <tr><td><b>workingDir_</b></td><td>workingDir_</td><td>An optional working directory on your system. Default is set to C:\Ladybug</td><td>Goo</td></tr>
 <tr><td><b>writeResultFile_</b></td><td>writeResultFile_</td><td>Set to 1 or 'True' to have the component write all results into CSV result files and set to 0 or 'False' to not have the component write these files.  The default is set to 'True' as these simulations can be long and you usually want a copy of your results.  You may want to set it to 'False' if you are just scrolling through key hours and want the fastest run possible.  Set to 2 if you want the component to only write the results for the TCPocc and TCA matrices.</td><td>Goo</td></tr>
-<tr><td><b>parallel_</b></td><td>parallel_</td><td>Set to 'True' to have the operation run with multiple cores and 'False' to run it with a single core.  Note that, because the calculation performed by this component is fairly simple, setting parallel to 'True' can sometimes increase the calculation time so it should only be used in cases where there are a large number of test points.  Because of the possibility of increaseing calculation time, the default is set to 'False' to run the operation as single-core.</td><td>Goo</td></tr>
 <tr><td><b>_runIt</b></td><td>_runIt</td><td>Set boolean to "True" to run the component and calculate comfort autonomy.</td><td>Goo</td></tr>
 </tbody>
 </table>
@@ -127,7 +126,7 @@
             </div>
             <div id="xg_foot">
                 <p class="left">
-    © 2016             &nbsp; Created by <a href="http://www.grasshopper3d.com/profile/HarshGupta367/">Harsh Gupta</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    © 2018             &nbsp; Created by <a href="http://www.stackoverflow.com/cv/robin-rodricks">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
     Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a>
 	</p>
     <p class="right xg_lightfont">

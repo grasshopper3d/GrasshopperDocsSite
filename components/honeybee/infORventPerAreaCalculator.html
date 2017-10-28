@@ -75,9 +75,9 @@
 
 <div>
 <h1><img src="../../icons/Honeybee/infORventPerArea_Calculator.png"/> infORventPerArea Calculator</h1>
-<p><a href="../../index.html">Component Index</a> &gt; Honeybee > 08 | Energy | Set Zone Properties > <b>infORventPerArea Calculator</b></p>
+<p><a href="../../index.html">Component Index</a> &gt; <a href="../../index.html#Honeybee">Honeybee</a> > 08 | Energy | Set Zone Properties > <b>infORventPerArea Calculator</b></p>
 </div>
-<h3>Use this component to transform ACH to m3/s-m2.<br>Plug the result to the Honeybee setEPZoneLoads component, infiltrationRatePerArea_ or  infiltrationRatePerArea_ inputs<br></h3>
+<h3>Use this component to transform ACH or inifitration per area of facade to m3/s-m2.<br>Plug the result to the Honeybee setEPZoneLoads component, infiltrationRatePerArea_ or  infiltrationRatePerArea_ inputs<br>For the blowerPressue input, the component assumes a natural pressure differential between indoors and outdoors at 4 Pascals.  However, the passive house standard sets this at a low 0.4303.<br></h3>
 <h2>Inputs</h2>
 <table>
 <thead>
@@ -85,7 +85,9 @@
 </thead>
 <tbody>
 <tr><td><b>_HBZones</b></td><td>_HBZones</td><td>Honeybee zones for which you want to calculate the infiltration or ventilation rates.</td><td>Goo</td></tr>
-<tr><td><b>_airChangeHour</b></td><td>_airChangeHour</td><td>Air Changes per Hour.</td><td>Goo</td></tr>
+<tr><td><b>_airFlowRate</b></td><td>_airFlowRate</td><td>A number representing the air flow rate into the HBZone in Air Changes per Hour (ACH).  Alternatively this number can be in m3/s per m2 of surface area if the input below is set to "False."  The latter is useful for infiltration, which is typically specified as a unit per area of facade.</td><td>Goo</td></tr>
+<tr><td><b>_ACHorM3sM2_</b></td><td>_ACHorM3sM2_</td><td>Set to "True" to have the airFlowRate above interpreted as ACH. Set to "False" to have itinterpreted as m3/s per m2 of outdoor-exposed zone surface area.  This latter is useful for infiltration rates, which are usually defined as an intensity of flow per unit outdoor exposure.  The default is set to True for ACH.</td><td>Goo</td></tr>
+<tr><td><b>_blowerPressure_</b></td><td>_blowerPressure_</td><td>A number representing the pressure differential in Pascals (Pa) between indoors/outdoors at which the specified flow rate above occurs.  When set to 0 or left untouched, the specified input flow rate to this component will be the same as that output from the component (only the units will be converted).  However, many blower door tests for infiltration occur at higher pressure differentials of 50 Pa or 75 Pa.  You can input this pressure differential here in order to convert the flow rate of this blower door test to typical building pressure flow rates of 4 Pa.</td><td>Goo</td></tr>
 </tbody>
 </table>
 
@@ -95,9 +97,9 @@
 <tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
 </thead>
 <tbody>
-<tr><td><b>out</b></td><td>out</td><td>The execution information, as output and error streams</td><td>String</td></tr>
-<tr><td><b>infORventPerArea</b></td><td>infORventPerArea</td><td>infiltrationRatePerArea or ventilationPerArea in m3/s-m2 (Cubic meters per second per square meter of floor)</td><td>Goo</td></tr>
-<tr><td><b>allFloors</b></td><td>allFloors</td><td>Script variable Python</td><td>Goo</td></tr>
+<tr><td><b>out</b></td><td>readMe!</td><td>Report of the calculations</td><td>String</td></tr>
+<tr><td><b>infORventPerArea</b></td><td>infORventPerArea</td><td>infiltrationRatePerArea or ventilationPerArea in m3/s-m2 (Cubic meters per second per square meter of floor) that can be plugged into the "Set EnergyPlus Zone Loads" component.</td><td>Goo</td></tr>
+<tr><td><b>allFloors</b></td><td>allFloors</td><td>The floors of the zones that are used to determine the infORventPerArea.</td><td>Goo</td></tr>
 </tbody>
 </table>
 
@@ -109,7 +111,7 @@
             </div>
             <div id="xg_foot">
                 <p class="left">
-    © 2016             &nbsp; Created by <a href="http://www.grasshopper3d.com/profile/HarshGupta367/">Harsh Gupta</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    © 2018             &nbsp; Created by <a href="http://www.stackoverflow.com/cv/robin-rodricks">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
     Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a>
 	</p>
     <p class="right xg_lightfont">

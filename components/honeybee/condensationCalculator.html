@@ -1,0 +1,190 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+<head data-layout-view="wide">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Condensation calculator - Grasshopper Component Reference</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+
+<meta name="description" content="A guide to component Condensation calculator in Grasshopper 3D." />
+<meta name="title" content="Grasshopper Component Reference" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://rhino.github.io/" />
+<meta property="og:title" content="Condensation calculator - Grasshopper Component Reference" />
+
+<meta property="wiki-page" content="GH Honeybee Condensation_calculator.md" />
+
+<link rel="image_src" href="http://rhino.github.io/ning/2985220.jpg" />
+
+<style type="text/css" media="screen,projection">
+#xg_navigation ul div.xg_subtab ul li a {
+    color:#666666;
+    background:#EAFFBD;
+}
+#xg_navigation ul div.xg_subtab ul li a:hover {
+    color:#333333;
+    background:#F2FFD6;
+}
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../../ning/index.css);
+@import url(../../ning/page.css);
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../../ning/1187549422.css);
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../../ning/1187545030.css);
+</style>
+
+
+<link href="../../style.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+    </head>
+    <body>
+    
+        
+        <div id="xg" class="xg_theme xg_widget_page xg_widget_page_page xg_widget_page_page_show" data-layout-pack="classic">
+            <div id="xg_head">
+                <div id="xg_masthead">
+                    <p id="xg_sitename"><a id="application_name_header_link" href="http://rhino.github.io/">Grasshopper</a></p>
+                    <p id="xg_sitedesc" class="xj_site_desc">algorithmic modeling for Rhino</p>
+                </div>
+                <div id="xg_navigation">
+                    <ul>
+    <li id="xg_tab_main" class="xg_subtab"><a href="http://www.grasshopper3d.com/"><span>Home</span></a></li>
+	<li id="xg_tab_photo" class="xg_subtab"><a href="http://www.grasshopper3d.com/photo"><span>View</span></a></li>
+	<li id="xg_tab_xn0" class="xg_subtab"><a href="http://www.grasshopper3d.com/page/download-1"><span>Get</span></a></li>
+	<li id="xg_tab_xn2" class="xg_subtab this"><a href="http://rhino.github.io/"><span>Learn</span></a></li>
+	<li id="xg_tab_forum" class="xg_subtab"><a href="http://www.grasshopper3d.com/forum"><span>Talk</span></a></li>
+	<li id="xg_tab_events" class="xg_subtab"><a href="http://www.grasshopper3d.com/events"><span>Events</span></a></li>
+	<li id="xg_tab_profile" class="xg_subtab"><a href="http://www.grasshopper3d.com/"><span>My Page</span></a></li></ul>
+
+                </div>
+            </div>
+            
+            <div id="xg_body">
+                
+				<div class="page">
+
+<div class="content">
+
+<div>
+<h1><img src="../../icons/Honeybee/Condensation_calculator.png"/> Condensation calculator</h1>
+<p><a href="../../index.html">Component Index</a> &gt; <a href="../../index.html#Honeybee">Honeybee</a> > 13 | WIP > <b>Condensation calculator</b></p>
+</div>
+<h3>Use this component to calculate the Dew Point, Relative Humidity and Condensation on each layer of a wall. It accounts the air films (internal and external).<br>Sources:<br>http://andrew.rsmas.miami.edu/bmcnoldy/Humidity.html<br>http://www.ajdesigner.com/phphumidity/dewpoint_equation_dewpoint_temperature.php#ajscroll<br>http://forums.finehomebuilding.com/breaktime/energy-heating-insulation/dewpoint-spreadsheet<br></h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>_cnstrName</b></td><td>_cnstrName</td><td>EnergyPlus construction name</td><td>Goo</td></tr>
+<tr><td><b>surfaceType_</b></td><td>surfaceType_</td><td>An integer value from 0 to 3 that represents one of the following surface types:
+0 - Exterior Wall/Window
+1 - Exterior Roof
+2 - Exposed Floor</td><td>Goo</td></tr>
+<tr><td><b>_internalTemp</b></td><td>_internalTemp</td><td>Indoors temperature of room</td><td>Goo</td></tr>
+<tr><td><b>_outTemp</b></td><td>_outTemp</td><td>Outdoors temperature of room</td><td>Goo</td></tr>
+<tr><td><b>_internalRelativeHumidity</b></td><td>_internalRelativeHumidity</td><td>Indoors relative humidity</td><td>Goo</td></tr>
+<tr><td><b>::::::::::::::::::::::::::::::::::::::</b></td><td>::::::::::::::::::::::::::::::::::::::</td><td>Script variable HB_CondensationCalculator</td><td>Goo</td></tr>
+<tr><td><b>_basePoint_</b></td><td>_basePoint_</td><td>An optional point with which to locate the 3D chart in the Rhino Model.  The default is set to the Rhino origin at (0,0,0).</td><td>Goo</td></tr>
+<tr><td><b>_scale_</b></td><td>_scale_</td><td>The scale of the surface type section. The default is set to 1.</td><td>Goo</td></tr>
+<tr><td><b>bakeIt_</b></td><td>bakeIt_</td><td>An integer that tells the component if/how to bake the bojects in the Rhino scene.  The default is set to 0.  Choose from the following options:
+0 (or False) - No geometry will be baked into the Rhino scene (this is the default).
+1 (or True) - The geometry will be baked into the Rhino scene as a colored hatch and Rhino text objects, which facilitates easy export to PDF or vector-editing programs.
+2 - The geometry will be baked into the Rhino scene as colored meshes, which is useful for recording the results of paramteric runs as light Rhino geometry.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>out</b></td><td>readMe!</td><td>...</td><td>String</td></tr>
+<tr><td><b>materials</b></td><td>materials</td><td>List of materials (from outside to inside). Includes film Air layers. Ordered from Inside to Outside layers. They include Air Films.</td><td>Goo</td></tr>
+<tr><td><b>comments</b></td><td>comments</td><td>Comments for each layer of materials if any. Ordered from Inside to Outside layers</td><td>Goo</td></tr>
+<tr><td><b>rWall</b></td><td>rWall</td><td>rWall</td><td>Goo</td></tr>
+<tr><td><b>tempWall</b></td><td>tempWall</td><td>temperature for each layer in wall (outter edge of layer). Ordered from Inside to Outside layers</td><td>Goo</td></tr>
+<tr><td><b>rhWall</b></td><td>rhWall</td><td>relative humdity for each layer in wall (outter edge of layer). Ordered from Inside to Outside layers</td><td>Goo</td></tr>
+<tr><td><b>dewPointWall</b></td><td>dewPointWall</td><td>Dew Point for each layer in wall (outter edge of layer). Ordered from Inside to Outside layers</td><td>Goo</td></tr>
+<tr><td><b>condensationWall</b></td><td>condensationWall</td><td>State the status of condensation on wall (Yes or No). Ordered from Inside to Outside layers</td><td>Goo</td></tr>
+<tr><td><b>::::::::::::::::::::::::::::::::::::::</b></td><td>::::::::::::::::::::::::::::::::::::::</td><td>Script variable HB_CondensationCalculator</td><td>Goo</td></tr>
+<tr><td><b>layersWallGeo</b></td><td>layersWallGeo</td><td>layersWallGeo</td><td>Goo</td></tr>
+<tr><td><b>resultLines</b></td><td>resultLines</td><td>resultLines</td><td>Goo</td></tr>
+<tr><td><b>resultLinesColors</b></td><td>resultLinesColors</td><td>resultLinesColors</td><td>Goo</td></tr>
+<tr><td><b>scaleRH_TempGeo</b></td><td>scaleRH_TempGeo</td><td>scaleRH_TempGeo</td><td>Goo</td></tr>
+<tr><td><b>allLabels</b></td><td>allLabels</td><td>allLabels</td><td>Goo</td></tr>
+<tr><td><b>::::::::::::::::::::::::::::::::::::::</b></td><td>::::::::::::::::::::::::::::::::::::::</td><td>Script variable HB_CondensationCalculator</td><td>Goo</td></tr>
+<tr><td><b>finalJoinedMesh</b></td><td>finalJoinedMesh</td><td>finalJoinedMesh</td><td>Goo</td></tr>
+<tr><td><b>legend</b></td><td>legend</td><td>legend</td><td>Goo</td></tr>
+<tr><td><b>allLabels</b></td><td>allLabels</td><td>Script variable HB_CondensationCalculator</td><td>Goo</td></tr>
+<tr><td><b>wallLegendCoord</b></td><td>wallLegendCoord</td><td>wallLegendCoord</td><td>Goo</td></tr>
+<tr><td><b>allDataCurves</b></td><td>allDataCurves</td><td>allDataCurves</td><td>Goo</td></tr>
+<tr><td><b>textSize</b></td><td>textSize</td><td>textSize</td><td>Goo</td></tr>
+<tr><td><b>decimalPlaces</b></td><td>decimalPlaces</td><td>decimalPlaces</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+
+  </div>
+
+</div>
+
+            </div>
+            <div id="xg_foot">
+                <p class="left">
+    © 2018             &nbsp; Created by <a href="http://www.stackoverflow.com/cv/robin-rodricks">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a>
+	</p>
+    <p class="right xg_lightfont">
+                    <a href="http://www.grasshopper3d.com/main/embeddable/list">Badges</a> &nbsp;|&nbsp;
+                        <a href="http://www.grasshopper3d.com/main/index/report" dojotype="PromptToJoinLink" _joinprompttext="Please sign up or sign in to complete this step." _hassignup="true" _signinurl="http://www.grasshopper3d.com/main/authorization/signIn?target=http%3A%2F%2Fwww.grasshopper3d.com%2Fmain%2Findex%2Freport">Report an Issue</a> &nbsp;|&nbsp;
+                        <a href="http://www.grasshopper3d.com/main/authorization/termsOfService?previousUrl=http%3A%2F%2Fwww.grasshopper3d.com%2Fpage%2Fcomponent-reference">Terms of Service</a>
+            </p>
+
+            </div>
+        </div>
+        
+        <div id="xj_baz17246" class="xg_theme"></div>
+<div id="xg_overlay" style="display:none;">
+<!--[if lte IE 6.5]><iframe></iframe><![endif]-->
+</div>
+<!--googleoff: all--><noscript>
+	<style type="text/css" media="screen">
+        #xg { position:relative;top:120px; }
+        #xn_bar { top:120px; }
+	</style>
+	<div class="errordesc noscript">
+		<div>
+            <h3><strong>Hello, you need to enable JavaScript to use Grasshopper.</strong></h3>
+            <p>Please check your browser settings or contact your system administrator.</p>
+			
+		</div>
+	</div>
+</noscript><!--googleon: all-->
+
+<script src="/js/jquery.js"></script>
+<script src="/js/kramed.min.js"></script>
+<script src="/js/component.js"></script>
+<script src="/js/user.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    </body>
+</html>

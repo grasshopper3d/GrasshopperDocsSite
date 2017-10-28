@@ -75,19 +75,38 @@
 
 <div>
 <h1><img src="../../icons/Peacock/Text_by_curve.png"/> Text by curve</h1>
-<p><a href="../../index.html">Component Index</a> &gt; Peacock > Workbench > <b>Text by curve</b></p>
+<p><a href="../../index.html">Component Index</a> &gt; <a href="../../index.html#Peacock">Peacock</a> > Workbench > <b>Text by curve</b></p>
 </div>
-<h3>Draw text as curves over a rail curve</h3>
+<h3>Draw text as surfaces over a rail curve</h3>
 <h2>Inputs</h2>
 <table>
 <thead>
 <tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
 </thead>
 <tbody>
-<tr><td><b>Curve</b></td><td>Crv</td><td>Rail curve</td><td>Curve</td></tr>
-<tr><td><b>Text</b></td><td>Txt</td><td>The text to draw</td><td>String</td></tr>
+<tr><td><b>Curve</b></td><td>Rail</td><td>Rail curve</td><td>Curve</td></tr>
+<tr><td><b>Text</b></td><td>Text</td><td>The text to draw</td><td>String</td></tr>
 <tr><td><b>Font</b></td><td>Font</td><td>The font name to display</td><td>String</td></tr>
-<tr><td><b>Size</b></td><td>Size</td><td>Size in Rhino units</td><td>Number</td></tr>
+<tr><td><b>Height</b></td><td>Hgt</td><td>Height in Rhino units</td><td>Number</td></tr>
+<tr><td><b>Bold</b></td><td>Bold</td><td>Bold font</td><td>Boolean</td></tr>
+<tr><td><b>Cursive</b></td><td>Cur</td><td>Cursive font</td><td>Boolean</td></tr>
+<tr><td><b>Justification</b></td><td>Jus</td><td>Text justification. Plug a ValueList component to AutoList function.
+0 => Left
+1 => Center
+2 => Right
+3 => Bottom
+4 => bottomleft
+5 => BottomCenter
+6 => bottomRight
+7 => Middle
+8 => MiddleLeft
+9 => MiddleCenter
+10 => MiddleRight
+11 => Top
+12 => topLeft
+13 => TopCenter
+14 => TopRight</td><td>Integer</td></tr>
+<tr><td><b>Separation</b></td><td>Sep</td><td>Separation between letters. It can be a value or a list of values.</td><td>Number</td></tr>
 <tr><td><b>Angle</b></td><td>Ang</td><td>Rotation angle in radians</td><td>Number</td></tr>
 </tbody>
 </table>
@@ -98,7 +117,8 @@
 <tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
 </thead>
 <tbody>
-<tr><td><b>Text</b></td><td>T</td><td>Resulting text as curves</td><td>Curve</td></tr>
+<tr><td><b>Text</b></td><td>T</td><td>Resulting text as surfaces</td><td>Surface</td></tr>
+<tr><td><b>Planes</b></td><td>P</td><td>Planes of each letter</td><td>Plane</td></tr>
 </tbody>
 </table>
 
@@ -110,7 +130,7 @@
             </div>
             <div id="xg_foot">
                 <p class="left">
-    © 2016             &nbsp; Created by <a href="http://www.grasshopper3d.com/profile/HarshGupta367/">Harsh Gupta</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    © 2018             &nbsp; Created by <a href="http://www.stackoverflow.com/cv/robin-rodricks">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
     Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a>
 	</p>
     <p class="right xg_lightfont">

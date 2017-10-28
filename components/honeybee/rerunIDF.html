@@ -75,21 +75,18 @@
 
 <div>
 <h1><img src="../../icons/Honeybee/Re-run_IDF.png"/> Re-run IDF</h1>
-<p><a href="../../index.html">Component Index</a> &gt; Honeybee > 09 | Energy | Energy > <b>Re-run IDF</b></p>
+<p><a href="../../index.html">Component Index</a> &gt; <a href="../../index.html#Honeybee">Honeybee</a> > 10 | Energy | Energy > <b>Re-run IDF</b></p>
 </div>
-<h3>This is a component for running a previoulsy-generated .idf file through EnergyPlus with a different weather file.<br></h3>
+<h3>This is a component for running a previoulsy-generated .idf file through EnergyPlus.<br></h3>
 <h2>Inputs</h2>
 <table>
 <thead>
 <tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
 </thead>
 <tbody>
-<tr><td><b>_workingDir</b></td><td>_workingDir</td><td>The working directory of the energyPlus idf.</td><td>Goo</td></tr>
-<tr><td><b>_idfFileName</b></td><td>_idfFileName</td><td>Name of the idf file (e.g. sample1.idf).</td><td>Goo</td></tr>
+<tr><td><b>_idfFilePath</b></td><td>_idfFilePath</td><td>Name of the idf file (e.g. sample1.idf).</td><td>Goo</td></tr>
 <tr><td><b>_epwFileAddress</b></td><td>_epwFileAddress</td><td>Address to epw weather file.</td><td>Goo</td></tr>
-<tr><td><b>_EPDirectory</b></td><td>_EPDirectory</td><td>[Optional] where EnergyPlus is installed on your system</td><td>Goo</td></tr>
-<tr><td><b>_writeIt</b></td><td>_writeIt</td><td>Set to true to create the new folder with batch file</td><td>Goo</td></tr>
-<tr><td><b>runIt_</b></td><td>runIt_</td><td>Set to 'True' to run the simulation.</td><td>Goo</td></tr>
+<tr><td><b>_runIt</b></td><td>_runIt</td><td>Set to 'True' to run the simulation.</td><td>Goo</td></tr>
 </tbody>
 </table>
 
@@ -100,7 +97,6 @@
 </thead>
 <tbody>
 <tr><td><b>out</b></td><td>report</td><td>Report!</td><td>String</td></tr>
-<tr><td><b>batchFileAddress</b></td><td>batchFileAddress</td><td>Script variable Re-Run IDF</td><td>Goo</td></tr>
 <tr><td><b>resultFileAddress</b></td><td>resultFileAddress</td><td>The address of the EnergyPlus result file.</td><td>Goo</td></tr>
 </tbody>
 </table>
@@ -113,7 +109,7 @@
             </div>
             <div id="xg_foot">
                 <p class="left">
-    © 2016             &nbsp; Created by <a href="http://www.grasshopper3d.com/profile/HarshGupta367/">Harsh Gupta</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    © 2018             &nbsp; Created by <a href="http://www.stackoverflow.com/cv/robin-rodricks">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
     Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a>
 	</p>
     <p class="right xg_lightfont">

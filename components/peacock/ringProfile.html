@@ -2,17 +2,17 @@
 <html lang="en" xmlns:og="http://ogp.me/ns#">
 <head data-layout-view="wide">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Ring profile - Grasshopper Component Reference</title>
+<title>Ring Profile - Grasshopper Component Reference</title>
 <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 <link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
 
-<meta name="description" content="A guide to component Ring profile in Grasshopper 3D." />
+<meta name="description" content="A guide to component Ring Profile in Grasshopper 3D." />
 <meta name="title" content="Grasshopper Component Reference" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://rhino.github.io/" />
-<meta property="og:title" content="Ring profile - Grasshopper Component Reference" />
+<meta property="og:title" content="Ring Profile - Grasshopper Component Reference" />
 
-<meta property="wiki-page" content="GH Peacock Ring_profile.md" />
+<meta property="wiki-page" content="GH Peacock Ring_Profile.md" />
 
 <link rel="image_src" href="http://rhino.github.io/ning/2985220.jpg" />
 
@@ -74,8 +74,8 @@
 <div class="content">
 
 <div>
-<h1><img src="../../icons/Peacock/Ring_profile.png"/> Ring profile</h1>
-<p><a href="../../index.html">Component Index</a> &gt; Peacock > Rings > <b>Ring profile</b></p>
+<h1><img src="../../icons/Peacock/Ring_Profile.png"/> Ring Profile</h1>
+<p><a href="../../index.html">Component Index</a> &gt; <a href="../../index.html#Peacock">Peacock</a> > Rings > <b>Ring Profile</b></p>
 </div>
 <h3>Create a ring using a profile curve</h3>
 <h2>Inputs</h2>
@@ -85,11 +85,17 @@
 </thead>
 <tbody>
 <tr><td><b>Plane</b></td><td>Pln</td><td>Base plane of ring</td><td>Plane</td></tr>
-<tr><td><b>Size</b></td><td>Size</td><td>Size of circle (european gauge)</td><td>Number</td></tr>
-<tr><td><b>Profile curve</b></td><td>Crv</td><td>Open planar curve for the section of the ring</td><td>Curve</td></tr>
-<tr><td><b>Top width</b></td><td>TopW</td><td>Width at top</td><td>Number</td></tr>
-<tr><td><b>Bottom width</b></td><td>BottomW</td><td>Width at bottom</td><td>Number</td></tr>
-<tr><td><b>Lateral thickness</b></td><td>LateralT</td><td>Thickness at lateral</td><td>Number</td></tr>
+<tr><td><b>Regional system</b></td><td>Reg</td><td>Regional system to gauge rings. Plug a ValueList component to AutoList function.
+0 => ISO (International Organization for Standardization). mm of circunference.
+1 => European size.
+2 => British size.
+3 => American size.
+4 => Japanese size.</td><td>Integer</td></tr>
+<tr><td><b>Size</b></td><td>Size</td><td>Size of ring. Plug a ValueList component to AutoList function</td><td>Number</td></tr>
+<tr><td><b>Profile curve</b></td><td>Crv</td><td>Planar curve (in the XY plane) for the section of the ring</td><td>Curve</td></tr>
+<tr><td><b>Width</b></td><td>Wid</td><td>One value -> uniform width.
+Two values -> top width, bottom width.</td><td>Number</td></tr>
+<tr><td><b>Thickness</b></td><td>Thk</td><td>Thickness values</td><td>Number</td></tr>
 </tbody>
 </table>
 
@@ -99,7 +105,8 @@
 <tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
 </thead>
 <tbody>
-<tr><td><b>Ring</b></td><td>R</td><td>Resulting ring</td><td>GeometricGoo</td></tr>
+<tr><td><b>Ring</b></td><td>R</td><td>Resulting ring</td><td>Brep</td></tr>
+<tr><td><b>Gauge</b></td><td>G</td><td>Gauge circle</td><td>Circle</td></tr>
 </tbody>
 </table>
 
@@ -111,7 +118,7 @@
             </div>
             <div id="xg_foot">
                 <p class="left">
-    © 2016             &nbsp; Created by <a href="http://www.grasshopper3d.com/profile/HarshGupta367/">Harsh Gupta</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    © 2018             &nbsp; Created by <a href="http://www.stackoverflow.com/cv/robin-rodricks">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
     Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a>
 	</p>
     <p class="right xg_lightfont">

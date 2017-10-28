@@ -75,7 +75,7 @@
 
 <div>
 <h1><img src="../../icons/Honeybee/Import_WINDOW_Glz_System.png"/> Import WINDOW Glz System</h1>
-<p><a href="../../index.html">Component Index</a> &gt; Honeybee > 11 | THERM > <b>Import WINDOW Glz System</b></p>
+<p><a href="../../index.html">Component Index</a> &gt; <a href="../../index.html#Honeybee">Honeybee</a> > 11 | THERM > <b>Import WINDOW Glz System</b></p>
 </div>
 <h3>Use this component to import the content of a LBNL WINDOW text file report as a series of polygons and boundary conditions that can be plugged into the "Write THERM File' component.<br></h3>
 <h2>Inputs</h2>
@@ -85,8 +85,12 @@
 </thead>
 <tbody>
 <tr><td><b>_windowGlzSysReport</b></td><td>_windowGlzSysReport</td><td>A filepath to a detailed galzing system text file report exportedby WINDOW.</td><td>Goo</td></tr>
-<tr><td><b>_location_</b></td><td>_location_</td><td>An optional point to set the location of the glazing system in the Rhino scene.  The default is set to the Rhino origin.</td><td>Goo</td></tr>
-<tr><td><b>_orientation_</b></td><td>_orientation_</td><td>A number from 0 to 180 to set the orientation of the glazing system in the vertical XZ plane or simply the word 'horizontal' to represent a surface laying flat in the XY plane.  The default is set to 90 to have the gazing system be perfectly vertical.</td><td>Goo</td></tr>
+<tr><td><b>_location_</b></td><td>_location_</td><td>An optional plane or point to set the location of the glazing system in the Rhino scene.  The default is set to the Rhino origin and in the XY plane.</td><td>Goo</td></tr>
+<tr><td><b>_orientation_</b></td><td>_orientation_</td><td>An integer that sets the orientation of the window in the Rhino scene.  Choose from the following options that correspond with THERM's options:
+0 = Up
+1 = Down
+2 = Left
+3 = Right</td><td>Goo</td></tr>
 <tr><td><b>_sightLineToGlzBottom_</b></td><td>_sightLineToGlzBottom_</td><td>A number in Rhino model units that represents the distance from the bottom of the glass pane to the end of the frame (where the 'edge of glass' starts).  The default is set to 12.7 mm.</td><td>Goo</td></tr>
 <tr><td><b>_spacerHeight_</b></td><td>_spacerHeight_</td><td>A number in Rhino model units that represents the distance from the bottom of the glass pane to the end of the spacer. The default is set to 12.7 mm.</td><td>Goo</td></tr>
 <tr><td><b>_edgeOfGlassDim_</b></td><td>_edgeOfGlassDim_</td><td>A number in Rhino model units that represents the distance from the start of the frame to the start of the 'center of glass' zone.  This 'edge of glass' zone typically has a U-Value that is higher than the rest of the glass. The default is set to 63.5 mm.</td><td>Goo</td></tr>
@@ -105,8 +109,6 @@
 <tr><td><b>thermPolygons</b></td><td>thermPolygons</td><td>The therm polygons for the glazing system.</td><td>Goo</td></tr>
 <tr><td><b>indoorBCs</b></td><td>indoorBCs</td><td>The thermBCs that represent the interior side of the glazing system, including separate boundary conditions for the edge of frame and center of glass.  Note that a boundary condition for with the 'Frame' UFactorTag must be made separately.</td><td>Goo</td></tr>
 <tr><td><b>outdoorBC</b></td><td>outdoorBC</td><td>A single thermBC that represents the exterior side of the glazing system.  This includes the exterior conditions taken from the report.</td><td>Goo</td></tr>
-<tr><td><b>--------------------</b></td><td>--------------------</td><td>...</td><td>Goo</td></tr>
-<tr><td><b>materials</b></td><td>materials</td><td>A list of materials that correspond to the thermPolygons.  These can be used to assign the properties to new glazing geomtry.</td><td>Goo</td></tr>
 <tr><td><b>indoorProperties</b></td><td>indoorProperties</td><td>A list of properties for the interior boundary condition in the following order: Name, temperature, film coefficient.  These can be used to create a boundary condition for the 'Frame.'</td><td>Goo</td></tr>
 <tr><td><b>outdoorProperties</b></td><td>outdoorProperties</td><td>A list of properties for the exterior boundary condition in the following order: Name, temperature, film coefficient.  These can be used to create a boundary condition that includes the frame of the window.</td><td>Goo</td></tr>
 </tbody>
@@ -120,7 +122,7 @@
             </div>
             <div id="xg_foot">
                 <p class="left">
-    © 2016             &nbsp; Created by <a href="http://www.grasshopper3d.com/profile/HarshGupta367/">Harsh Gupta</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    © 2018             &nbsp; Created by <a href="http://www.stackoverflow.com/cv/robin-rodricks">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
     Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a>
 	</p>
     <p class="right xg_lightfont">

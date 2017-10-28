@@ -75,7 +75,7 @@
 
 <div>
 <h1><img src="../../icons/Honeybee/PMV_Comfort_Analysis_Recipe.png"/> PMV Comfort Analysis Recipe</h1>
-<p><a href="../../index.html">Component Index</a> &gt; Honeybee > 09 | Energy | Energy > <b>PMV Comfort Analysis Recipe</b></p>
+<p><a href="../../index.html">Component Index</a> &gt; <a href="../../index.html#Honeybee">Honeybee</a> > 10 | Energy | Energy > <b>PMV Comfort Analysis Recipe</b></p>
 </div>
 <h3>Use this component to assemble an adaptive comfort recipe for the "Honeybee_Annual Indoor Comfort Analysis" component.<br></h3>
 <h2>Inputs</h2>
@@ -101,13 +101,21 @@
 <tr><td><b>wellMixedAirOverride_</b></td><td>wellMixedAirOverride_</td><td>Set to "True" if you know that your building will have a forced air system with diffusers meant to mix the air as well as possilbe.  This will prevent the calculation from running the air stratification function and instead assume well mixed conditions.  This input can also be a list of 8760 boolean values that represent the hours of the year when a forced air system or ceiling fans are run to mix the air.  The default is set to 'False' to run the stratification calculation for every hour of the year, assuming no forced air heating/cooling system.</td><td>Goo</td></tr>
 <tr><td><b>inletHeightOverride_</b></td><td>inletHeightOverride_</td><td>An optional list of float values that match the data tree of view factor meshes and represent the height, in meters, from the bottom of the view factor mesh to the window inlet height.  This will override the default value used in the air stratification calculation, which sets the inlet height in the bottom half of the average glazing height.</td><td>Goo</td></tr>
 <tr><td><b>windowShadeTransmiss_</b></td><td>windowShadeTransmiss_</td><td>A decimal value between 0 and 1 that represents the transmissivity of the shades on the windows of a zone (1 is no shade and 0 is fully shaded).  This input can also be a list of 8760 values between 0 and 1 that represents a list of hourly window shade transmissivities to be applied to all windows of the model. Finally and most importantly, this can be the 'windowTransmissivity' output of the 'Read EP Surface Result' component for an energy model that has been run with window shades.  This final option ensures that the energy model and the confort map results are always aligned although it is the most computationally expensive of the options.  The default is set to 0, which assumes no additional shading to windows.</td><td>Goo</td></tr>
-<tr><td><b>cloAbsorptivity_</b></td><td>cloAbsorptivity_</td><td>An optional decimal value between 0 and 1 that represents the fraction of solar radiation reflected off of the ground.  By default, this is set to 0.25, which is characteristic of most indoor floors.  You may want to increase this value for concrete or decrease it for dark carpets.</td><td>Goo</td></tr>
-<tr><td><b>additionalWindSpeed_</b></td><td>additionalWindSpeed_</td><td>An additional value of indoor wind speed in m/s to be added to the base speed computed from the zone volume and hourly flow volume.  Use this input to account for objects like ceiling fans that might increase the interior wind speed felt by the occupants while not affecting the total flow volume into the zone much. This input can also be a list of 8760 additional wind speed values that represent the hours of the year when wind speed is increased.  Lastly, this input can be a data tree of values with branches that are each 8760 values long and correspond to the branches of the input viewFactorMesh_.  This last option enables you to specify different wind speeds for different continuous air volumes.</td><td>Goo</td></tr>
-<tr><td><b>outdoorTerrain_</b></td><td>outdoorTerrain_</td><td>An interger from 0 to 3 that sets the terrain class associated with the wind speed used in outdoor wind calculations. Interger values represent the following terrain classes:
-0 = Urban: large city centres, 50% of buildings above 21m over a distance of at least 2000m upwind.
+<tr><td><b>cloAbsorptivity_</b></td><td>cloAbsorptivity_</td><td>An optional decimal value between 0 and 1 that represents the fraction of solar radiation absorbed by the human body. The default is set to 0.7 for (average/brown) skin and average clothing.  You may want to increase this value for darker skin or darker clothing.</td><td>Goo</td></tr>
+<tr><td><b>windSpeed_</b></td><td>windSpeed_</td><td>A value in m/s to set the wind speed of the comfort calculation. Use this input to account for objects like ceiling fans that might increase the interior wind speed or input custom wind speed values from a CFD simulation.
+_
+This input can also be a list of 8760 additional wind speed values that represent the hours of the year.
+Alternatively, this input can be a data tree of values with branches that are each 8760 values long and correspond to the branches of the input viewFactorMesh_.
+This can also be a data tree of values with one branch for each point in the input viewFactorMesh_.
+Finally, this input can be the file path to a .csv file that is organized with 8760 values in each column and a number of columns that correspond to the number of test points.  This last option is recommended if trying to synchronize CFD results with the microclimate maps.
+_
+If no value is input here, the comfort map components will compute a minimum indoor air speed from the zone volume and hourly flow volume and will use the EPW wind speed for outdoor conditions.</td><td>Goo</td></tr>
+<tr><td><b>outdoorTerrain_</b></td><td>outdoorTerrain_</td><td>An interger or text string that sets the terrain class associated with the wind speed used in outdoor wind calculations. Interger values represent the following terrain classes:
+0 = City: large city centres, 50% of buildings above 21m over a distance of at least 2000m upwind.
 1 = Suburban: suburbs, wooded areas.
 2 = Country: open, with scattered objects generally less than 10m high.
 3 = Water: Flat, unobstructed areas exposed to wind flowing over a large water body (no more than 500m inland).</td><td>Goo</td></tr>
+<tr><td><b>north_</b></td><td>north_</td><td>Input a vector to be used as a true North direction for the comfort analysis or a number between 0 and 360 that represents the degrees off from the y-axis to make North.  The default North direction is set to the Y-axis (0 degrees).</td><td>Goo</td></tr>
 </tbody>
 </table>
 
@@ -129,7 +137,7 @@
             </div>
             <div id="xg_foot">
                 <p class="left">
-    © 2016             &nbsp; Created by <a href="http://www.grasshopper3d.com/profile/HarshGupta367/">Harsh Gupta</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    © 2018             &nbsp; Created by <a href="http://www.stackoverflow.com/cv/robin-rodricks">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
     Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a>
 	</p>
     <p class="right xg_lightfont">

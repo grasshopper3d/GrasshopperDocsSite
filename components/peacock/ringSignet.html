@@ -2,17 +2,17 @@
 <html lang="en" xmlns:og="http://ogp.me/ns#">
 <head data-layout-view="wide">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Ring signet - Grasshopper Component Reference</title>
+<title>Ring Signet - Grasshopper Component Reference</title>
 <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 <link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
 
-<meta name="description" content="A guide to component Ring signet in Grasshopper 3D." />
+<meta name="description" content="A guide to component Ring Signet in Grasshopper 3D." />
 <meta name="title" content="Grasshopper Component Reference" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://rhino.github.io/" />
-<meta property="og:title" content="Ring signet - Grasshopper Component Reference" />
+<meta property="og:title" content="Ring Signet - Grasshopper Component Reference" />
 
-<meta property="wiki-page" content="GH Peacock Ring_signet.md" />
+<meta property="wiki-page" content="GH Peacock Ring_Signet.md" />
 
 <link rel="image_src" href="http://rhino.github.io/ning/2985220.jpg" />
 
@@ -74,10 +74,10 @@
 <div class="content">
 
 <div>
-<h1><img src="../../icons/Peacock/Ring_signet.png"/> Ring signet</h1>
-<p><a href="../../index.html">Component Index</a> &gt; Peacock > Rings > <b>Ring signet</b></p>
+<h1><img src="../../icons/Peacock/Ring_Signet.png"/> Ring Signet</h1>
+<p><a href="../../index.html">Component Index</a> &gt; <a href="../../index.html#Peacock">Peacock</a> > Rings > <b>Ring Signet</b></p>
 </div>
-<h3>Create a ring with a curve for the signet and a other curve for the lateral section</h3>
+<h3>Create a ring with a curve for the signet</h3>
 <h2>Inputs</h2>
 <table>
 <thead>
@@ -85,14 +85,21 @@
 </thead>
 <tbody>
 <tr><td><b>Plane</b></td><td>Pln</td><td>Base plane of ring</td><td>Plane</td></tr>
-<tr><td><b>Size</b></td><td>Size</td><td>Size of ring (european gauge)</td><td>Number</td></tr>
-<tr><td><b>Signet Curve</b></td><td>SignetCrv</td><td>Planar curve to signet of ring</td><td>Curve</td></tr>
-<tr><td><b>Lateral curve</b></td><td>LateralCrv</td><td>Open planar curve to lateral of ring</td><td>Curve</td></tr>
-<tr><td><b>Top width</b></td><td>TopW</td><td>Width at top</td><td>Number</td></tr>
-<tr><td><b>Bottom width</b></td><td>BottomW</td><td>Width at bottom</td><td>Number</td></tr>
-<tr><td><b>Top thickness</b></td><td>TopT</td><td>Thickness at top</td><td>Number</td></tr>
-<tr><td><b>Lateral thickness</b></td><td>LateralT</td><td>Thickness at lateral</td><td>Number</td></tr>
-<tr><td><b>Bottom thickness</b></td><td>BottomT</td><td>Thickness at bottom</td><td>Number</td></tr>
+<tr><td><b>Regional system</b></td><td>Reg</td><td>Regional system to gauge rings. Plug a ValueList component to AutoList function.
+0 => ISO (International Organization for Standardization). mm of circunference.
+1 => European size.
+2 => British size.
+3 => American size.
+4 => Japanese size.</td><td>Integer</td></tr>
+<tr><td><b>Size</b></td><td>Size</td><td>Size of ring. Plug a ValueList component to AutoList function</td><td>Number</td></tr>
+<tr><td><b>Signet Curve</b></td><td>Crv</td><td>Planar curve to signet of ring (in XY plane)</td><td>Curve</td></tr>
+<tr><td><b>Width as list</b></td><td>Wid</td><td>One value -> uniform width.
+Two values -> top width, bottom width.
+Three values -> top width, midle width, bottom width.</td><td>Number</td></tr>
+<tr><td><b>Thickness as list</b></td><td>Thk</td><td>One value -> uniform thickness.
+Two values -> top thickness, bottom thickness.
+Three values -> top thickness, midle thickness, bottom thickness.</td><td>Number</td></tr>
+<tr><td><b>Bulge</b></td><td>Blg</td><td>Bulge factor</td><td>Number</td></tr>
 </tbody>
 </table>
 
@@ -103,6 +110,7 @@
 </thead>
 <tbody>
 <tr><td><b>Ring</b></td><td>R</td><td>Resulting ring</td><td>Brep</td></tr>
+<tr><td><b>Gauge</b></td><td>G</td><td>Gauge circle</td><td>Circle</td></tr>
 </tbody>
 </table>
 
@@ -114,7 +122,7 @@
             </div>
             <div id="xg_foot">
                 <p class="left">
-    © 2016             &nbsp; Created by <a href="http://www.grasshopper3d.com/profile/HarshGupta367/">Harsh Gupta</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    © 2018             &nbsp; Created by <a href="http://www.stackoverflow.com/cv/robin-rodricks">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
     Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a>
 	</p>
     <p class="right xg_lightfont">

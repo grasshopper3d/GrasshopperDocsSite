@@ -75,7 +75,7 @@
 
 <div>
 <h1><img src="../../icons/Honeybee/Set_EnergyPlus_Zone_Schedules.png"/> Set EnergyPlus Zone Schedules</h1>
-<p><a href="../../index.html">Component Index</a> &gt; Honeybee > 08 | Energy | Set Zone Properties > <b>Set EnergyPlus Zone Schedules</b></p>
+<p><a href="../../index.html">Component Index</a> &gt; <a href="../../index.html#Honeybee">Honeybee</a> > 08 | Energy | Set Zone Properties > <b>Set EnergyPlus Zone Schedules</b></p>
 </div>
 <h3>Use this component to change the schedules of your HBZones.<br></h3>
 <h2>Inputs</h2>
@@ -85,14 +85,14 @@
 </thead>
 <tbody>
 <tr><td><b>_HBZones</b></td><td>_HBZones</td><td>HBZones for which you want to change shcedules.</td><td>Goo</td></tr>
-<tr><td><b>occupancySchedules_</b></td><td>occupancySchedules_</td><td>...</td><td>Goo</td></tr>
-<tr><td><b>occupancyActivitySchs_</b></td><td>occupancyActivitySchs_</td><td>A text string representing the shceudle for the metabolic rate of the occupants that you want to use.  This can be either a shcedule from the schedule libirary or a CSV file path to a CSV schedule you created with the "Honeybee_Create CSV Schedule" component. If this is a CSV schedule, the values in it should be Watts and the "units_" input should be "ActivityLevel."</td><td>Goo</td></tr>
-<tr><td><b>heatingSetPtSchedules_</b></td><td>heatingSetPtSchedules_</td><td>...</td><td>Goo</td></tr>
-<tr><td><b>coolingSetPtSchedules_</b></td><td>coolingSetPtSchedules_</td><td>...</td><td>Goo</td></tr>
-<tr><td><b>lightingSchedules_</b></td><td>lightingSchedules_</td><td>...</td><td>Goo</td></tr>
-<tr><td><b>equipmentSchedules_</b></td><td>equipmentSchedules_</td><td>...</td><td>Goo</td></tr>
-<tr><td><b>infiltrationSchedules_</b></td><td>infiltrationSchedules_</td><td>...</td><td>Goo</td></tr>
-<tr><td><b>HVACAvailabilitySchs_</b></td><td>HVACAvailabilitySchs_</td><td>Script variable setEPZoneSchedules</td><td>Goo</td></tr>
+<tr><td><b>occupancySchedules_</b></td><td>occupancySchedules_</td><td>A text string representing the occupancy shceudle that you want to use.  This can be either a shcedule from the "Honeybee_Call from EP Schedule Library" component, a schedule from the "Honeybee_Annual Schedule" component, or a CSV schedule from the "Honeybee_Create CSV Schedule" component.</td><td>Goo</td></tr>
+<tr><td><b>occupancyActivitySchs_</b></td><td>occupancyActivitySchs_</td><td>A text string representing the shceudle for the metabolic rate of the occupants that you want to use.  This can be either a shcedule from the "Honeybee_Call from EP Schedule Library" component, a schedule from the "Honeybee_Annual Schedule" component, or a CSV schedule from the "Honeybee_Create CSV Schedule" component. If this is a custon schedule, the values in it should be Watts and the "units_" or "_schedTypeLimits_" input should be "ActivityLevel."</td><td>Goo</td></tr>
+<tr><td><b>heatingSetPtSchedules_</b></td><td>heatingSetPtSchedules_</td><td>A text string representing the heating setpoint shceudle that you want to use.  This can be either a shcedule from the "Honeybee_Call from EP Schedule Library" component, a schedule from the "Honeybee_Annual Schedule" component, or a CSV schedule from the "Honeybee_Create CSV Schedule" component.  If this is a custon schedule, the values in it should be Watts and the "units_" or "_schedTypeLimits_" input should be "Temperature."</td><td>Goo</td></tr>
+<tr><td><b>coolingSetPtSchedules_</b></td><td>coolingSetPtSchedules_</td><td>A text string representing the cooling setpoint shceudle that you want to use.  This can be either a shcedule from the "Honeybee_Call from EP Schedule Library" component, a schedule from the "Honeybee_Annual Schedule" component, or a CSV schedule from the "Honeybee_Create CSV Schedule" component.  If this is a custon schedule, the values in it should be Watts and the "units_" or "_schedTypeLimits_" input should be "Temperature."</td><td>Goo</td></tr>
+<tr><td><b>lightingSchedules_</b></td><td>lightingSchedules_</td><td>A text string representing the lighting shceudle that you want to use.  This can be either a shcedule from the "Honeybee_Call from EP Schedule Library" component, a schedule from the "Honeybee_Annual Schedule" component, or a CSV schedule from the "Honeybee_Create CSV Schedule" component.</td><td>Goo</td></tr>
+<tr><td><b>equipmentSchedules_</b></td><td>equipmentSchedules_</td><td>A text string representing the equipment shceudle that you want to use.  This can be either a shcedule from the "Honeybee_Call from EP Schedule Library" component, a schedule from the "Honeybee_Annual Schedule" component, or a CSV schedule from the "Honeybee_Create CSV Schedule" component.</td><td>Goo</td></tr>
+<tr><td><b>infiltrationSchedules_</b></td><td>infiltrationSchedules_</td><td>A text string representing the infiltration shceudle that you want to use.  This can be either a shcedule from the "Honeybee_Call from EP Schedule Library" component, a schedule from the "Honeybee_Annual Schedule" component, or a CSV schedule from the "Honeybee_Create CSV Schedule" component.</td><td>Goo</td></tr>
+<tr><td><b>ventilationSchedules_</b></td><td>ventilationSchedules_</td><td>A text string representing the ventilation shceudle that you want to use.  Note that this schedule overrides the typical ventilation that occurs based on the occupancy shcedule and the "ventilationPerPerson."  The ventilation will be hard-sized based on this schedule and the maximum combined flowrates of "ventilationPerPerson" and "ventilationPerarea."  This can be either a shcedule from the "Honeybee_Call from EP Schedule Library" component, a schedule from the "Honeybee_Annual Schedule" component, or a CSV schedule from the "Honeybee_Create CSV Schedule" component.</td><td>Goo</td></tr>
 </tbody>
 </table>
 
@@ -115,7 +115,7 @@
             </div>
             <div id="xg_foot">
                 <p class="left">
-    © 2016             &nbsp; Created by <a href="http://www.grasshopper3d.com/profile/HarshGupta367/">Harsh Gupta</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    © 2018             &nbsp; Created by <a href="http://www.stackoverflow.com/cv/robin-rodricks">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
     Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a>
 	</p>
     <p class="right xg_lightfont">

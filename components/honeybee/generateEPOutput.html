@@ -75,9 +75,9 @@
 
 <div>
 <h1><img src="../../icons/Honeybee/Generate_EP_Output.png"/> Generate EP Output</h1>
-<p><a href="../../index.html">Component Index</a> &gt; Honeybee > 09 | Energy | Energy > <b>Generate EP Output</b></p>
+<p><a href="../../index.html">Component Index</a> &gt; <a href="../../index.html#Honeybee">Honeybee</a> > 10 | Energy | Energy > <b>Generate EP Output</b></p>
 </div>
-<h3>This component helps select simulation outputs that can be hooked into the WriteIDF component.  Outputs are taken from here:<br>http://apps1.eere.energy.gov/buildings/energyplus/pdfs/inputoutputreference.pdf<br></h3>
+<h3>This component helps select simulation outputs that can be hooked into the "Honyebee_Export to OpenStudio" component.  Outputs are taken from here:<br>http://bigladdersoftware.com/epx/docs/8-3/input-output-reference/<br>You can also use the "Honeybee_Read Result Dictionary" component after running a simulation to get a list of all possible outputs that you can request from a given simulation.<br></h3>
 <h2>Inputs</h2>
 <table>
 <thead>
@@ -92,8 +92,10 @@
 <tr><td><b>surfaceTempAnalysis_</b></td><td>surfaceTempAnalysis_</td><td>Set to "True" to have EnergyPlus solve for the interior and exterior surface temperatures of the individual surfaces of each zone.</td><td>Goo</td></tr>
 <tr><td><b>surfaceEnergyAnalysis_</b></td><td>surfaceEnergyAnalysis_</td><td>Set to "True" to have EnergyPlus solve for the gains and losses through the individual surfaces of each zone.</td><td>Goo</td></tr>
 <tr><td><b>glazingSolarAnalysis_</b></td><td>glazingSolarAnalysis_</td><td>Set to "True" to have EnergyPlus solve for the transmitted beam, diffuse, and total solar gain through the individual window surfaces of each zone.  These outputs are needed for Energy Shade Benefit Analysis.</td><td>Goo</td></tr>
-<tr><td><b>HBgeneration_</b></td><td>HBgeneration_</td><td>Set to "True" to have EnergyPlus solve for variables related to HB generation objects like solar panels, wind turbines, batteries, etc.</td><td>Goo</td></tr>
-<tr><td><b>____________________</b></td><td>____________________</td><td>...</td><td>Goo</td></tr>
+<tr><td><b>_loadType_</b></td><td>_loadType_</td><td>An integer or text value to set the type of load outputs requested (sensible, latent, total).  The default is set to "0 = Total" but you may want to change this to "1 = Sensible" for zone HVAC sizing, etc.  Choose from the following options:
+0 = Total
+1 = Sensible
+2 = Latent</td><td>Goo</td></tr>
 <tr><td><b>timestep_</b></td><td>timestep_</td><td>Specify a timestep by inputing the words 'hourly', 'daily', 'monthly' or 'annual'.  The default is set to hourly.</td><td>Goo</td></tr>
 </tbody>
 </table>
@@ -105,7 +107,7 @@
 </thead>
 <tbody>
 <tr><td><b>out</b></td><td>report</td><td>Report!</td><td>String</td></tr>
-<tr><td><b>simulationOutputs</b></td><td>simulationOutputs</td><td>EnergyPlus code that should be plugged into the "simulationOutputs" parameter of the "writeIDF" component.</td><td>Goo</td></tr>
+<tr><td><b>simulationOutputs</b></td><td>simulationOutputs</td><td>EnergyPlus code that should be plugged into the "simulationOutputs" parameter of the "Honeybee_Export to OpenStudio" component.</td><td>Goo</td></tr>
 </tbody>
 </table>
 
@@ -117,7 +119,7 @@
             </div>
             <div id="xg_foot">
                 <p class="left">
-    © 2016             &nbsp; Created by <a href="http://www.grasshopper3d.com/profile/HarshGupta367/">Harsh Gupta</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    © 2018             &nbsp; Created by <a href="http://www.stackoverflow.com/cv/robin-rodricks">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
     Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a>
 	</p>
     <p class="right xg_lightfont">

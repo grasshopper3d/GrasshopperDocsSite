@@ -75,9 +75,9 @@
 
 <div>
 <h1><img src="../../icons/Honeybee/Dump_Honeybee_Objects.png"/> Dump Honeybee Objects</h1>
-<p><a href="../../index.html">Component Index</a> &gt; Honeybee > 13 | WIP > <b>Dump Honeybee Objects</b></p>
+<p><a href="../../index.html">Component Index</a> &gt; <a href="../../index.html#Honeybee">Honeybee</a> > 00 | Honeybee > <b>Dump Honeybee Objects</b></p>
 </div>
-<h3>Dump Honeybee Objects<br>Use this component to dump Honeybee objects to a file on your system.<br>You can use load Honeybee objects to load the file to Grasshopper.<br></h3>
+<h3>Dump Honeybee Objects<br>Use this component to dump Honeybee objects to a file on your system.<br>You can use load Honeybee objects to load the file to Grasshopper.<br>WARNING: This component does not write custom schedules or materials within the file but it does write the names of the constructions and schedules.<br>Accordingly, to properly load objects agian, you must connect the full strings of these objects to a "Add to EnergyPlus Library" component in any GH cript that loads the HBZones from the file.<br></h3>
 <h2>Inputs</h2>
 <table>
 <thead>
@@ -85,7 +85,8 @@
 </thead>
 <tbody>
 <tr><td><b>_HBObjects</b></td><td>_HBObjects</td><td>A list of Honeybee objects</td><td>Goo</td></tr>
-<tr><td><b>_filePath</b></td><td>_filePath</td><td>A valid path to a file on your drive (e.g. c:\ladybug\20ZonesExample.HB)</td><td>Goo</td></tr>
+<tr><td><b>_fileName</b></td><td>_fileName</td><td>A name for the file to which HBObjects will be written (e.g. 20ZonesExample.HB).</td><td>Goo</td></tr>
+<tr><td><b>_workingDir_</b></td><td>_workingDir_</td><td>An optional working directory into which the HBZones will be written.  The default is set to C:\ladybug.</td><td>Goo</td></tr>
 <tr><td><b>_dump</b></td><td>_dump</td><td>Set to True to save the objects to file</td><td>Goo</td></tr>
 </tbody>
 </table>
@@ -97,6 +98,7 @@
 </thead>
 <tbody>
 <tr><td><b>out</b></td><td>readMe!</td><td>...</td><td>String</td></tr>
+<tr><td><b>filePath</b></td><td>filePath</td><td>The location of the file where the HBZones have been saved.</td><td>Goo</td></tr>
 </tbody>
 </table>
 
@@ -108,7 +110,7 @@
             </div>
             <div id="xg_foot">
                 <p class="left">
-    © 2016             &nbsp; Created by <a href="http://www.grasshopper3d.com/profile/HarshGupta367/">Harsh Gupta</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    © 2018             &nbsp; Created by <a href="http://www.stackoverflow.com/cv/robin-rodricks">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
     Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a>
 	</p>
     <p class="right xg_lightfont">

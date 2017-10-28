@@ -75,7 +75,7 @@
 
 <div>
 <h1><img src="../../icons/Ladybug/Recolor_Mesh.png"/> Recolor Mesh</h1>
-<p><a href="../../index.html">Component Index</a> &gt; Ladybug > 4 | Extra > <b>Recolor Mesh</b></p>
+<p><a href="../../index.html">Component Index</a> &gt; <a href="../../index.html#Ladybug">Ladybug</a> > 5 | Extra > <b>Recolor Mesh</b></p>
 </div>
 <h3>Use this component to re-color a mesh with new a numerical data set whose length corresponds to the number of faces in the _inputMesh.<br>This component is useful if you have post-processed any of the numerical data out of the Ladybug components using Grasshopper math components.<br>It is also necessary to view results from the Ladybug Real Time Radiation Analysis.<br></h3>
 <h2>Inputs</h2>
@@ -87,6 +87,8 @@
 <tr><td><b>_analysisResult</b></td><td>_analysisResult</td><td>A numerical data set whose length corresponds to the number of faces in the _inputMesh.  This data will be used to re-color the _inputMesh.</td><td>Goo</td></tr>
 <tr><td><b>_inputMesh</b></td><td>_inputMesh</td><td>An already-colored mesh from one of the Ladybug components which you would like to re-color based on data in the _analysisResult.</td><td>Goo</td></tr>
 <tr><td><b>heightDomain_</b></td><td>heightDomain_</td><td>Optional height domain to create a 3D mesh result. Use Construct Domain component to create a domain</td><td>Goo</td></tr>
+<tr><td><b>lowBoundColor_</b></td><td>lowBoundColor_</td><td>A color representing the higher boundary of the legend's numerical range, use the Swatch component to specify a color.</td><td>Goo</td></tr>
+<tr><td><b>highBoundColor_</b></td><td>highBoundColor_</td><td>A color representing the lowest boundary of the legend's numerical range, use the Swatch component to specify a color.</td><td>Goo</td></tr>
 <tr><td><b>legendPar_</b></td><td>legendPar_</td><td>Optional legend parameters from the Ladybug Legend Parameters component.  Legend Parameters can be used to change the colors, numerical range, and/or number of divisions of any Ladybug legend along with the corresponding colored mesh.</td><td>Goo</td></tr>
 <tr><td><b>analysisTitle_</b></td><td>analysisTitle_</td><td>Text representing a new title for the re-colored mesh.  If no title is input here, the default will read "unnamed."</td><td>Goo</td></tr>
 <tr><td><b>legendTitle_</b></td><td>legendTitle_</td><td>Text representing a new legend title for re-colored mesh. Legends are usually titled with the units of the _analysisResult.  If no text is provided here, the default title will read "unkown units."</td><td>Goo</td></tr>
@@ -108,8 +110,8 @@
 <tr><td><b>newMesh</b></td><td>newMesh</td><td>A new mesh that has been re-colored based on the _analysisResult data.</td><td>Goo</td></tr>
 <tr><td><b>newLegend</b></td><td>newLegend</td><td>A new legend that that corresponds to the colors of the newMesh. Connect this output to a grasshopper "Geo" component in order to preview this legend separately in the Rhino scene.</td><td>Goo</td></tr>
 <tr><td><b>legendBasePt</b></td><td>legendBasePt</td><td>The legend base point, which can be used to move the legend in relation to the newMesh with the grasshopper "move" component.</td><td>Goo</td></tr>
-<tr><td><b>meshColors</b></td><td>meshColors</td><td>Script variable reColorMesh</td><td>Goo</td></tr>
-<tr><td><b>legendColors</b></td><td>legendColors</td><td>Script variable reColorMesh</td><td>Goo</td></tr>
+<tr><td><b>meshColors</b></td><td>meshColors</td><td>The colors associated with each face of the newMesh.</td><td>Goo</td></tr>
+<tr><td><b>legendColors</b></td><td>legendColors</td><td>The colors associated with each segment of the newLegend.</td><td>Goo</td></tr>
 </tbody>
 </table>
 
@@ -121,7 +123,7 @@
             </div>
             <div id="xg_foot">
                 <p class="left">
-    © 2016             &nbsp; Created by <a href="http://www.grasshopper3d.com/profile/HarshGupta367/">Harsh Gupta</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    © 2018             &nbsp; Created by <a href="http://www.stackoverflow.com/cv/robin-rodricks">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
     Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a>
 	</p>
     <p class="right xg_lightfont">

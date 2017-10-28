@@ -75,7 +75,7 @@
 
 <div>
 <h1><img src="../../icons/Ladybug/Radiation_Analysis.png"/> Radiation Analysis</h1>
-<p><a href="../../index.html">Component Index</a> &gt; Ladybug > 3 | EnvironmentalAnalysis > <b>Radiation Analysis</b></p>
+<p><a href="../../index.html">Component Index</a> &gt; <a href="../../index.html#Ladybug">Ladybug</a> > 3 | EnvironmentalAnalysis > <b>Radiation Analysis</b></p>
 </div>
 <h3>This component allows you to calculate the radiation fallin on input _geometry using a sky matrix from the selectSkyMxt component.<br>This type of radiation sutdy is useful for building surfaces such as windows, where you might be interested in solar heat gain, or solar panels, where you might be interested in the energy that can be collected.<br>This component is also good for surfaces representing outdoor spaces (such as parks or seating areas) where radiation could affect thermal comfort or vegetation growth.<br>No reflection of sunlight is included in the radiation analysis with this component and it should therefore be used<br>neither for interior daylight studies nor for complex geometries nor for surfaces with high a reflectivity.<br>For these situations where the relfection of light is important, the Honeybee daylight components should be used instead of this one.<br></h3>
 <h2>Inputs</h2>
@@ -88,7 +88,7 @@
 <tr><td><b>_geometry</b></td><td>_geometry</td><td>Geometry for which radiation analysis will be conducted.  Geometry must be either a Brep, a Mesh or a list of Breps or Meshes.</td><td>Goo</td></tr>
 <tr><td><b>context_</b></td><td>context_</td><td>Context geometry that could block sunlight to the test _geometry.  Conext geometry must be either a Brep, a Mesh or a list of Breps or Meshes.</td><td>Goo</td></tr>
 <tr><td><b>_gridSize_</b></td><td>_gridSize_</td><td>A number in Rhino model units that represents the average size of a grid cell for radiation analysis on the test surface(s).  This value should be smaller than the smallest dimension of the test geometry for meaningful results.  Note that, the smaller the grid size, the higher the resolution of the analysis and the longer the calculation will take.</td><td>Goo</td></tr>
-<tr><td><b>_disFromBase</b></td><td>_disFromBase</td><td>A number in Rhino model units that represents the offset distance of the test point grid from the input test _geometry.  Usually, the test point grid is offset by a small amount from the test _geometry in order to ensure that radiation analysis is done for the correct side of the test _geometry.  If the resulting radiation mesh of this component is offset to the wrong side of test _geometry, you should use the "Flip" Rhino command on the test _geometry before inputting it to this component.</td><td>Goo</td></tr>
+<tr><td><b>_disFromBase</b></td><td>_disFromBase</td><td>A number in Rhino model units that represents the offset distance of the test point grid from the input test _geometry.  Usually, the test point grid is offset by a small amount from the test _geometry in order to ensure that radiation analysis is done for the correct side of the test _geometry.  If the resulting testPts of this component are offset to the wrong side of test _geometry, you should use the "Flip" Rhino command on the test _geometry before inputting it to this component.</td><td>Goo</td></tr>
 <tr><td><b>orientationStudyP_</b></td><td>orientationStudyP_</td><td>Optional output from the "Orientation Study Parameter" component.  You can use an Orientation Study input here to answer questions like "What orientation of my building will give me the highest or lowest radiation gain for my analysis period?"  An Orientation Study will automatically rotate your input _geometry around several times and record the radiation results each time in order to output a list of values for totalRadiation and a grafted data stream for radiationResult.</td><td>Goo</td></tr>
 <tr><td><b>_selectedSkyMtx</b></td><td>_selectedSkyMtx</td><td>The output from the selectSkyMtx component.</td><td>Goo</td></tr>
 <tr><td><b>_____________________</b></td><td>_____________________</td><td>...</td><td>Goo</td></tr>
@@ -133,7 +133,7 @@
             </div>
             <div id="xg_foot">
                 <p class="left">
-    © 2016             &nbsp; Created by <a href="http://www.grasshopper3d.com/profile/HarshGupta367/">Harsh Gupta</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    © 2018             &nbsp; Created by <a href="http://www.stackoverflow.com/cv/robin-rodricks">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
     Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a>
 	</p>
     <p class="right xg_lightfont">

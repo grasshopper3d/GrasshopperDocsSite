@@ -75,7 +75,7 @@
 
 <div>
 <h1><img src="../../icons/Honeybee/Read_EP_Surface_Result.png"/> Read EP Surface Result</h1>
-<p><a href="../../index.html">Component Index</a> &gt; Honeybee > 09 | Energy | Energy > <b>Read EP Surface Result</b></p>
+<p><a href="../../index.html">Component Index</a> &gt; <a href="../../index.html#Honeybee">Honeybee</a> > 10 | Energy | Energy > <b>Read EP Surface Result</b></p>
 </div>
 <h3>This component reads the results of an EnergyPlus simulation from the WriteIDF Component or any EnergyPlus result .csv file address.  Note that, if you use this component without the WriteIDF component, you should make sure that a corresponding .eio file is next to your .csv file at the input address that you specify.<br>This component reads only the results related to surfaces.  For results related to zones, you should use the "Honeybee_Read EP Result" component.<br></h3>
 <h2>Inputs</h2>
@@ -97,14 +97,14 @@
 <tbody>
 <tr><td><b>surfaceIndoorTemp</b></td><td>surfaceIndoorTemp</td><td>The indoor surface temperature of each surface (degrees Celcius).</td><td>Goo</td></tr>
 <tr><td><b>surfaceOutdoorTemp</b></td><td>surfaceOutdoorTemp</td><td>The outdoor surface temperature of each surface (degrees Celcius).</td><td>Goo</td></tr>
-<tr><td><b>.</b></td><td>.</td><td></td><td>Goo</td></tr>
-<tr><td><b>.</b></td><td>.</td><td></td><td>Goo</td></tr>
-<tr><td><b>.</b></td><td>.</td><td></td><td>Goo</td></tr>
-<tr><td><b>.</b></td><td>.</td><td></td><td>Goo</td></tr>
-<tr><td><b>.</b></td><td>.</td><td></td><td>Goo</td></tr>
-<tr><td><b>.</b></td><td>.</td><td></td><td>Goo</td></tr>
-<tr><td><b>.</b></td><td>.</td><td></td><td>Goo</td></tr>
-<tr><td><b>.</b></td><td>.</td><td></td><td>Goo</td></tr>
+<tr><td><b>surfaceEnergyFlow</b></td><td>surfaceEnergyFlow</td><td>The heat loss (negative) or heat gain (positive) through each building surfaces (kWh).</td><td>Goo</td></tr>
+<tr><td><b>opaqueEnergyFlow</b></td><td>opaqueEnergyFlow</td><td>The heat loss (negative) or heat gain (positive) through each building opaque surface (kWh).</td><td>Goo</td></tr>
+<tr><td><b>glazEnergyFlow</b></td><td>glazEnergyFlow</td><td>The heat loss (negative) or heat gain (positive) through each building glazing surface (kWh).  Note that the value here includes both solar gains and conduction losses/gains.</td><td>Goo</td></tr>
+<tr><td><b>windowTotalSolarEnergy</b></td><td>windowTotalSolarEnergy</td><td>The total solar energy transmitted through each of the glazing surfaces to the zone (kWh).</td><td>Goo</td></tr>
+<tr><td><b>windowBeamEnergy</b></td><td>windowBeamEnergy</td><td>The total direct solar beam energy transmitted through each of the glazing surfaces to the zone (kWh).</td><td>Goo</td></tr>
+<tr><td><b>windowDiffEnergy</b></td><td>windowDiffEnergy</td><td>The total diffuse solar energy transmitted through each of the glazing surfaces to the zone (kWh).</td><td>Goo</td></tr>
+<tr><td><b>windowTransmissivity</b></td><td>windowTransmissivity</td><td>The hourly transmissivity of the exterior windows of the model.  This data is needed to align a comfort map with an energy model possessing shades.</td><td>Goo</td></tr>
+<tr><td><b>otherSurfaceData</b></td><td>otherSurfaceData</td><td>Other surface data that is in the result file (in no particular order).  Note that this data cannot be normalized by floor area as the component does not know if it can be normalized.</td><td>Goo</td></tr>
 </tbody>
 </table>
 
@@ -116,7 +116,7 @@
             </div>
             <div id="xg_foot">
                 <p class="left">
-    © 2016             &nbsp; Created by <a href="http://www.grasshopper3d.com/profile/HarshGupta367/">Harsh Gupta</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    © 2018             &nbsp; Created by <a href="http://www.stackoverflow.com/cv/robin-rodricks">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
     Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a>
 	</p>
     <p class="right xg_lightfont">

@@ -75,21 +75,20 @@
 
 <div>
 <h1><img src="../../icons/Ladybug/Photovoltaics_Module.png"/> Photovoltaics Module</h1>
-<p><a href="../../index.html">Component Index</a> &gt; Ladybug > 6 | WIP > <b>Photovoltaics Module</b></p>
+<p><a href="../../index.html">Component Index</a> &gt; <a href="../../index.html#Ladybug">Ladybug</a> > 4 | Renewables > <b>Photovoltaics Module</b></p>
 </div>
-<h3>Use this component to define the Photovoltaics module settings.<br>If nothing inputed, the following PV module settings will be used by default:<br>- moduleType: Close (flush) roof mount <br>- moduleEfficiency: 15%<br>- temperatureCoefficient: -0.5 %/°C<br>- moduleActiveAreaPercent: 90%<br></h3>
+<h3>Use this component to define the Photovoltaics crystalline silicon (c-Si) module settings.<br>If nothing inputed, the following PV module settings will be used by default:<br>- module material: crystalline silicon (c-Si)<br>- mountType: Close (flush) roof mount <br>- moduleEfficiency: 15%<br>- temperatureCoefficient: -0.5 %/C<br>- moduleActiveAreaPercent: 90%<br>If you would like to use a thin-film module, then use the thin-film module from "Import Sandia Photovoltaics Module" component.<br>Sources:<br>http://prod.sandia.gov/techlib/access-control.cgi/2004/043535.pdf<br></h3>
 <h2>Inputs</h2>
 <table>
 <thead>
 <tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
 </thead>
 <tbody>
-<tr><td><b>moduleType_</b></td><td>moduleType_</td><td>Module type and mounting configuration:
+<tr><td><b>mountType_</b></td><td>mountType_</td><td>Mounting type (configuration) of a module. There are three of them:
 -
-0 = Glass/cell/polymer sheet, Insulated back (pv curtain wall, pv skylights)
-1 = Glass/cell/glass, Close (flush) roof mount (pv array mounted parallel and relatively close to the plane of the roof (between 5 and 15 centimenters))
-2 = Glass/cell/polymer sheet, Open rack (ground mount array, flat/sloped roof array that is tilted, pole-mount solar panels, solar carports, solar canopies)
-3 = Glass/cell/glass, Open rack (the same as upper "2" type, just with a glass on the back part of the module).
+0 = Insulated back (pv curtain wall, pv skylights)
+1 = Close (flush) roof mount (pv array mounted parallel and relatively close to the plane of the roof (between 5 and 15 centimenters))
+2 = Open rack (ground mount array, flat/sloped roof array that is tilted, pole-mount solar panels, solar carports, solar canopies)
 -
 If not supplied, default type: "Glass/cell/glass, Close (flush) roof mount" (1) is used.</td><td>Goo</td></tr>
 <tr><td><b>moduleEfficiency_</b></td><td>moduleEfficiency_</td><td>The ratio of electrical energy output from the PV module to input solar energy from the sun.
@@ -98,13 +97,13 @@ Current typical module efficiencies for crystalline silicon modules range from 1
 If not defined, default value of 15(%) will be used.
 -
 In percent (%).</td><td>Goo</td></tr>
-<tr><td><b>temperatureCoefficient_</b></td><td>temperatureCoefficient_</td><td>A coefficient which accounts for the percentage the solar module's DC output power decrease/increase for every degree Celsius the solar cells temperature rises above/below 25°C. 
+<tr><td><b>temperatureCoefficient_</b></td><td>temperatureCoefficient_</td><td>A coefficient which accounts for the percentage the solar module's DC output power decrease/increase for every degree Celsius the solar cells temperature rises above/below 25C. 
 -
 In general it ranges from -0.44 to -0.5 for crystaline silicon modules.
 -
 If not supplied, -0.5 will be used as a default.
 -
-In %/°C.</td><td>Goo</td></tr>
+In %/C.</td><td>Goo</td></tr>
 <tr><td><b>moduleActiveAreaPercent_</b></td><td>moduleActiveAreaPercent_</td><td>Percentage of the module's area excluding module framing and gaps between cells. 
 -
 If not supplied, default value of 90(%) will be used.
@@ -132,7 +131,7 @@ In percent (%).</td><td>Goo</td></tr>
             </div>
             <div id="xg_foot">
                 <p class="left">
-    © 2016             &nbsp; Created by <a href="http://www.grasshopper3d.com/profile/HarshGupta367/">Harsh Gupta</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    © 2018             &nbsp; Created by <a href="http://www.stackoverflow.com/cv/robin-rodricks">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
     Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a>
 	</p>
     <p class="right xg_lightfont">

@@ -75,7 +75,7 @@
 
 <div>
 <h1><img src="../../icons/Ladybug/View_Analysis.png"/> View Analysis</h1>
-<p><a href="../../index.html">Component Index</a> &gt; Ladybug > 3 | EnvironmentalAnalysis > <b>View Analysis</b></p>
+<p><a href="../../index.html">Component Index</a> &gt; <a href="../../index.html#Ladybug">Ladybug</a> > 3 | EnvironmentalAnalysis > <b>View Analysis</b></p>
 </div>
 <h3>Use this component to evaluate the visibility of input _geometry from a set of key viewing points.<br>For example, this component can be used to evaluate the visibility of an 3D architectural feature from a set of key viewing points along a nearby street or park where people congregate.<br>Another example would be evaluating the visibility of park vegetation geometry from a set of key sun position points from the sunPath component.<br>Yet another example would be evaluating the "visibility" of an outdoor overhead radiative heater from a set of key "viewing" points located over a human body standing beneath it.<br>This component outputs a percentage of viewpoints seen by the input _geometry.  In the three examples here, this would be the percentage of the 3D architectural feature seen from the street, the percentage of sunlit hours received by the vegetation, or the percentage of the human body warmed by the heater.<br>This component will evaluate view from the test points objectively in all directions. <br></h3>
 <h2>Inputs</h2>
@@ -93,8 +93,11 @@
 0 - Horizontal Radial - The percentage of the 360 horizontal view band visible from each test point. Use this to study horizontal views from interior spaces to the outdoors. 
  1 - Horizontal 60 Degree Cone of Vision - The percentage of the 360 horizontal view band bounded on top and bottom by a 30 degree offset from the horizontal (derived from the human cone of vision). Use this to study views from interior spaces to the outdoors. Note that this will discount the _geometry from the calculation and only look at _context that blocks the scene. 
 2 - Spherical - The percentage of the sphere surrounding each of the test points that is not blocked by context geometry. Note that this will discount the _geometry from the calculation and only look at _context that blocks the scene. 
-3 - Skyview - The percentage of the sky that is visible from the input _geometry.</td><td>Goo</td></tr>
+3 - Sky Exposure - The percentage of the sky that is visible from the points of the input _geometry (as opposed to Sky View, which is the amount of sky seen by a surface).  This is equivalent to a solid angle or even-spaced ray-tracing calculation from the point.  It is useful for evaluating one's general visual connection to the sky at a given set of points. 
+4 - Sky View - The percentage of the sky that is visible from the surface _geometry (as opposed to Sky Exposure, which is the amount of sky seen by the points).  While Sky Exposure treats each patch of the sky with relatively equal weight, sky view weights these patches by their area projected into the plane of the surface being evaluated.  In other words, sky view for a horizontal surface would give more importance to the sky patches that are overhead vs near the horizon.  Sky view is an important factor in for modelling urban heat island since the inability of warm urban surfaces to radiate heat to a cool night sky is one of the largest contributors of the heat island effect.</td><td>Goo</td></tr>
 <tr><td><b>viewPtsWeights_</b></td><td>viewPtsWeights_</td><td>A list of numbers that align with the test points to assign weights of importance to the several _viewTypeOrPoints that have been connected.  Weighted values should be between 0 and 1 and should be closer to 1 if a certain point is more important. The default value for all points is 0, which means they all have an equal importance. This input could be useful in cases such as the radiative heater example where points on the human body with exposed skin could be weighted at a higher value.</td><td>Goo</td></tr>
+<tr><td><b>geometryBlocksView_</b></td><td>geometryBlocksView_</td><td>Set to 'True' to have the component count the input _geometry as opaque and set to 'False' to discount the _geometry from the calculation and only look at context_ that blocks the view.  The default is set to 'False' for all types of view studies except for (3 - Sky Exposure) and (4 - Sky View), where the default is set to 'True.'</td><td>Goo</td></tr>
+<tr><td><b>-----</b></td><td>-----</td><td>...</td><td>Goo</td></tr>
 <tr><td><b>_____________________</b></td><td>_____________________</td><td>...</td><td>Goo</td></tr>
 <tr><td><b>legendPar_</b></td><td>legendPar_</td><td>Optional legend parameters from the Ladybug Legend Parameters component.</td><td>Goo</td></tr>
 <tr><td><b>parallel_</b></td><td>parallel_</td><td>Set to 'True' to run the visibility analysis using multiple CPUs.  This can dramatically decrease calculation time but can interfere with other intense computational processes that might be running on your machine.</td><td>Goo</td></tr>
@@ -136,7 +139,7 @@
             </div>
             <div id="xg_foot">
                 <p class="left">
-    © 2016             &nbsp; Created by <a href="http://www.grasshopper3d.com/profile/HarshGupta367/">Harsh Gupta</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    © 2018             &nbsp; Created by <a href="http://www.stackoverflow.com/cv/robin-rodricks">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
     Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a>
 	</p>
     <p class="right xg_lightfont">

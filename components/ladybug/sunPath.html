@@ -75,7 +75,7 @@
 
 <div>
 <h1><img src="../../icons/Ladybug/SunPath.png"/> SunPath</h1>
-<p><a href="../../index.html">Component Index</a> &gt; Ladybug > 2 | VisualizeWeatherData > <b>SunPath</b></p>
+<p><a href="../../index.html">Component Index</a> &gt; <a href="../../index.html#Ladybug">Ladybug</a> > 2 | VisualizeWeatherData > <b>SunPath</b></p>
 </div>
 <h3>Use this component to make a 3D sun-path (aka. sun plot) in the Rhino scene.  The component also outputs sun vectors that can be used for sunlight hours analysis or shading design with the other Ladybug components.<br>The sun-path function used here is a Python version of the RADIANCE sun-path script by Greg Ward. The RADIANCE source code can be accessed at:<br>http://www.radiance-online.org/download-install/CVS%20source%20code<br></h3>
 <h2>Inputs</h2>
@@ -97,6 +97,10 @@ Note that a linear interpolation will be used to generate curves and suns for ti
 <tr><td><b>_centerPt_</b></td><td>_centerPt_</td><td>Input a point here to change the location of the sun path in the Rhino scene.  The default is set to the Rhino model origin (0,0,0).</td><td>Goo</td></tr>
 <tr><td><b>_sunPathScale_</b></td><td>_sunPathScale_</td><td>Input a number here to change the scale of the sun path.  The default is set to 1.</td><td>Goo</td></tr>
 <tr><td><b>_sunScale_</b></td><td>_sunScale_</td><td>Input a number here to change the scale of the sun spheres located along the sun path.  The default is set to 1.</td><td>Goo</td></tr>
+<tr><td><b>_projection_</b></td><td>_projection_</td><td>A number to set the projection of the sky hemisphere.  The default is set to draw a 3D hemisphere.  Choose from the following options:
+0 = 3D hemisphere
+1 = Orthographic (straight projection to the XY Plane)
+2 = Stereographic (equi-angular projection to the XY Plane)</td><td>Goo</td></tr>
 <tr><td><b>----------------</b></td><td>----------------</td><td>Script variable sunPath</td><td>Goo</td></tr>
 <tr><td><b>annualHourlyData_</b></td><td>annualHourlyData_</td><td>An optional list of hourly data from the Import epw component, which will be used to color the sun spheres of the sun path (e.g. dryBulbTemperature).</td><td>Goo</td></tr>
 <tr><td><b>conditionalStatement_</b></td><td>conditionalStatement_</td><td>This input allows users to remove data that does not fit specific conditions or criteria from the sun path. To use this input correctly, hourly data, such as temperature or humidity, must be plugged into the annualHourlyData_ input. The conditional statement input here should be a valid condition statement in Python, such as "a>25" or "b<80" (without quotation marks).
@@ -105,7 +109,7 @@ For example, if you have hourly dry bulb temperature connected as the first list
 <tr><td><b>legendPar_</b></td><td>legendPar_</td><td>Optional legend parameters from the Ladybug Legend Parameters component.</td><td>Goo</td></tr>
 <tr><td><b>----------------</b></td><td>----------------</td><td>Script variable sunPath</td><td>Goo</td></tr>
 <tr><td><b>_dailyOrAnnualSunPath_</b></td><td>_dailyOrAnnualSunPath_</td><td>By default, this value is set to "True" (or 1), which will produce a sun path for the whole year.  Set this input to "False" (or 0) to generate a sun path for just one day of the year (or several days if multiple days are included in the analysis period).</td><td>Goo</td></tr>
-<tr><td><b>solarOrStandardTime_</b></td><td>solarOrStandardTime_</td><td>Set to 'True' to have the sunPath display in solar time and set to 'False' to have it display in standard time.  The default is set to 'False.'  Note that this input only changes the way in which the supath curves are drawn currently and does not yet change the position of the sun based on the input hour.</td><td>Goo</td></tr>
+<tr><td><b>_solarOrStandardTime_</b></td><td>_solarOrStandardTime_</td><td>Set to 'True' to have the sunPath display in solar time and set to 'False' to have it display in standard time.  The default is set to 'False.'  Note that this input only changes the way in which the supath curves are drawn currently and does not yet change the position of the sun based on the input hour.</td><td>Goo</td></tr>
 <tr><td><b>bakeIt_</b></td><td>bakeIt_</td><td>An integer that tells the component if/how to bake the bojects in the Rhino scene.  The default is set to 0.  Choose from the following options:
 0 (or False) - No geometry will be baked into the Rhino scene (this is the default).
 1 (or True) - The geometry will be baked into the Rhino scene as a colored hatch and Rhino text objects, which facilitates easy export to PDF or vector-editing programs.
@@ -125,7 +129,9 @@ For example, if you have hourly dry bulb temperature connected as the first list
 <tr><td><b>sunAzimuths</b></td><td>sunAzimuths</td><td>Number(s) indicating the sun azimuths in degrees for each sun position on the sun path.</td><td>Goo</td></tr>
 <tr><td><b>--------------</b></td><td>--------------</td><td>...</td><td>Goo</td></tr>
 <tr><td><b>sunSpheresMesh</b></td><td>sunSpheresMesh</td><td>A colored mesh of spheres representing sun positions.  Colors indicate annualHourlyData_ and will be yellow if no data is hooked up to annualHourlyData_.</td><td>Goo</td></tr>
-<tr><td><b>sunPathCrvs</b></td><td>sunPathCrvs</td><td>A set of guide curves that mark the path of the sun across the sky dome.</td><td>Goo</td></tr>
+<tr><td><b>sunPathCrvs</b></td><td>sunPathCrvs</td><td>A set of curves that mark the path of the sun across the sky dome.</td><td>Goo</td></tr>
+<tr><td><b>compassCrvs</b></td><td>compassCrvs</td><td>A set of curves and text meshes that denote the cardinal directions and azimuth angles.</td><td>Goo</td></tr>
+<tr><td><b>altitudeCrvs</b></td><td>altitudeCrvs</td><td>A set of circular curves that denote the altitude.  Note that these will only appear when the _projection_ is set to something other than a 3D sun path.</td><td>Goo</td></tr>
 <tr><td><b>legend</b></td><td>legend</td><td>A legend for the sun path. Connect this output to a grasshopper "Geo" component in order to preview the legend separately in the Rhino scene.</td><td>Goo</td></tr>
 <tr><td><b>legendBasePts</b></td><td>legendBasePts</td><td>The legend base point(s), which can be used to move the legend(s) in relation to the sun path with the grasshopper "move" component.</td><td>Goo</td></tr>
 <tr><td><b>title</b></td><td>title</td><td>The title text of the sun path.  Hook this up to a native Grasshopper 'Geo' component to preview it separately from the other outputs.</td><td>Goo</td></tr>
@@ -147,7 +153,7 @@ For example, if you have hourly dry bulb temperature connected as the first list
             </div>
             <div id="xg_foot">
                 <p class="left">
-    © 2016             &nbsp; Created by <a href="http://www.grasshopper3d.com/profile/HarshGupta367/">Harsh Gupta</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    © 2018             &nbsp; Created by <a href="http://www.stackoverflow.com/cv/robin-rodricks">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
     Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a>
 	</p>
     <p class="right xg_lightfont">

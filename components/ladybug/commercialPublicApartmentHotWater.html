@@ -75,7 +75,7 @@
 
 <div>
 <h1><img src="../../icons/Ladybug/Commercial_Public_Apartment_Hot_Water.png"/> Commercial Public Apartment Hot Water</h1>
-<p><a href="../../index.html">Component Index</a> &gt; Ladybug > 6 | WIP > <b>Commercial Public Apartment Hot Water</b></p>
+<p><a href="../../index.html">Component Index</a> &gt; <a href="../../index.html#Ladybug">Ladybug</a> > 4 | Renewables > <b>Commercial Public Apartment Hot Water</b></p>
 </div>
 <h3>Use this component to calculate domestic hot water consumption for each hour during a year, for Commercial, Public and Apartment buildings.<br>The following types of buildings are supported:<br>- office<br>- apartment house or multifamily building<br>- hotel/motel<br>- restaurants, cafeterias<br>- drive-ins, grilles, luncheonettes, sandwich, snack shops<br>- primary school<br>- junior and senior high school<br>- men's dormitory<br>- women's dormitory<br>- hospital<br>- nursing home<br>- factory<br>Component based on paper: ASHRAE 2003 Applications Handbook (SI), Chapter 49, Service water heating:<br>https://cours.etsmtl.ca/mec735/Documents/Notes_de_cours/2012/Hiver_2012/Service_Water_heating_ASHRAE.pdf<br></h3>
 <h2>Inputs</h2>
@@ -110,6 +110,7 @@
 <tr><td><b>_numberOfUnits</b></td><td>_numberOfUnits</td><td>Number of units for upper chosen "_buildingType". Represents the number of:
 -
 - apartment units:  apartment houses
+- rooms: hotel/motel
 - occupants:  offices, elementary, junior, senior high schools, dormitories , hospitals, factories
 - meals per day:  (full meal) restaurants, cafeterias; drive-ins, grilles, luncheonettes, sandwich, snack shops
 - beds:  nursing homes</td><td>Goo</td></tr>
@@ -153,7 +154,8 @@ nursing home -  1
 factory -  1
 -
 If not supplied, it will be picked based on chosen "_buildingType" input.</td><td>Goo</td></tr>
-<tr><td><b>occupancyDuration_</b></td><td>occupancyDuration_</td><td>Number of adults (14 years and older) in household.
+<tr><td><b>occupancyDuration_</b></td><td>occupancyDuration_</td><td>Total number of hours in a single day during which the chosen _buildingType will be used.
+It can not be less than 1 nor larger than 24. Also it can not exceed the 24 when summed with occupancyStartingHour_.
 -
 office -  9
 apartment house -  15
@@ -241,7 +243,7 @@ In (L/day) Liters/day.</td><td>Goo</td></tr>
             </div>
             <div id="xg_foot">
                 <p class="left">
-    © 2016             &nbsp; Created by <a href="http://www.grasshopper3d.com/profile/HarshGupta367/">Harsh Gupta</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    © 2018             &nbsp; Created by <a href="http://www.stackoverflow.com/cv/robin-rodricks">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
     Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a>
 	</p>
     <p class="right xg_lightfont">

@@ -75,7 +75,7 @@
 
 <div>
 <h1><img src="../../icons/Ladybug/Colored_Sky_Visualizer.png"/> Colored Sky Visualizer</h1>
-<p><a href="../../index.html">Component Index</a> &gt; Ladybug > 2 | VisualizeWeatherData > <b>Colored Sky Visualizer</b></p>
+<p><a href="../../index.html">Component Index</a> &gt; <a href="../../index.html#Ladybug">Ladybug</a> > 2 | VisualizeWeatherData > <b>Colored Sky Visualizer</b></p>
 </div>
 <h3>Use this component to visualize a Perez sky as a colored mesh in the Rhino scene using the weather file location, a time and date, and an estimate of turbidity (or amount of particulates in the atmosphere.<br></h3>
 <h2>Inputs</h2>
@@ -95,7 +95,11 @@
 <tr><td><b>resolution_</b></td><td>resolution_</td><td>An optional input for the resolution of the generated mesh.  A higher resolution will produce a less-splotchy image but will take longer to calculate.  The default is set to 10 for a realtively quick calculation.</td><td>Goo</td></tr>
 <tr><td><b>scale_</b></td><td>scale_</td><td>An optional input to scale the dome mesh.  The default is set to 1.</td><td>Goo</td></tr>
 <tr><td><b>centerPt_</b></td><td>centerPt_</td><td>An optional point to move the center of the sky dome mesh.  The default is set to the Rhino origin.</td><td>Goo</td></tr>
-<tr><td><b>domeOrRect_</b></td><td>domeOrRect_</td><td>Set to "True" to generate a sky color mesh that is in the shape of a dome and set to "False" to generate a sky as a flat rectangular mesh.  The default is set to "True" to generate the sky as a dome.</td><td>Goo</td></tr>
+<tr><td><b>_projection_</b></td><td>_projection_</td><td>A number to set the projection of the sky hemisphere.  The default is set to draw a 3D hemisphere.  Choose from the following options:
+0 = 3D hemisphere
+1 = Orthographic (straight projection to the XY Plane)
+2 = Stereographic (equi-angular projection to the XY Plane)
+3 = Cylindrical (unrolled rectangular map of the sky - like a Mercator projection)</td><td>Goo</td></tr>
 <tr><td><b>bakeIt_</b></td><td>bakeIt_</td><td>An integer that tells the component if/how to bake the bojects in the Rhino scene.  The default is set to 0.  Choose from the following options:
 0 (or False) - No geometry will be baked into the Rhino scene (this is the default).
 1 (or True) - The geometry will be baked into the Rhino scene as a colored hatch and Rhino text objects, which facilitates easy export to PDF or vector-editing programs.
@@ -125,7 +129,7 @@
             </div>
             <div id="xg_foot">
                 <p class="left">
-    © 2016             &nbsp; Created by <a href="http://www.grasshopper3d.com/profile/HarshGupta367/">Harsh Gupta</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    © 2018             &nbsp; Created by <a href="http://www.stackoverflow.com/cv/robin-rodricks">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
     Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a>
 	</p>
     <p class="right xg_lightfont">

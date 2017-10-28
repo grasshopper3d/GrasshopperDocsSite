@@ -75,7 +75,7 @@
 
 <div>
 <h1><img src="../../icons/Honeybee/Microclimate_Map_Analysis.png"/> Microclimate Map Analysis</h1>
-<p><a href="../../index.html">Component Index</a> &gt; Honeybee > 09 | Energy | Energy > <b>Microclimate Map Analysis</b></p>
+<p><a href="../../index.html">Component Index</a> &gt; <a href="../../index.html#Honeybee">Honeybee</a> > 10 | Energy | Energy > <b>Microclimate Map Analysis</b></p>
 </div>
 <h3>Use this component runs an annual comfort assessment off of EnergyPlus results and write all values into csv files.<br>The results in these files can be used for creating indoor comfort maps.<br></h3>
 <h2>Inputs</h2>
@@ -107,15 +107,15 @@
 <tr><td><b>===============</b></td><td>===============</td><td>...</td><td>Goo</td></tr>
 <tr><td><b>radTempMtx</b></td><td>radTempMtx</td><td>A python matrix containing MRT data for every hour of the analysis to be plugged into the 'Honeybee_Visualize Annual Comfort Results' component.</td><td>Goo</td></tr>
 <tr><td><b>airTempMtx</b></td><td>airTempMtx</td><td>A python matrix containing air temperature data for every hour of the analysis to be plugged into the 'Honeybee_Visualize Annual Comfort Results' component.</td><td>Goo</td></tr>
-<tr><td><b>UTCI_Mtx</b></td><td>UTCI_Mtx</td><td>A python matrix containing universal thermal climate index (UTCI) data for every hour of the analysis to be plugged into the 'Honeybee_Visualize Annual Comfort Results' component.</td><td>Goo</td></tr>
-<tr><td><b>OutdoorComfMtx</b></td><td>OutdoorComfMtx</td><td>A python matrix containing outdoor (UTCI) comfort data for every hour of the analysis to be plugged into the 'Honeybee_Visualize Annual Comfort Results' component.</td><td>Goo</td></tr>
-<tr><td><b>DegFromNeutralMtx</b></td><td>DegFromNeutralMtx</td><td>A python matrix containing the degrees from the neutral UTCI value of 20 C for every hour of the analysis to be plugged into the 'Honeybee_Visualize Annual Comfort Results' component.</td><td>Goo</td></tr>
+<tr><td><b>operativeTempMtx</b></td><td>operativeTempMtx</td><td>A python matrix containing operative temperature data for every hour of the analysis to be plugged into the 'Honeybee_Visualize Annual Comfort Results' component.</td><td>Goo</td></tr>
+<tr><td><b>adaptComfMtx</b></td><td>adaptComfMtx</td><td>A python matrix containing adaptive comfort data for every hour of the analysis to be plugged into the 'Honeybee_Visualize Annual Comfort Results' component.</td><td>Goo</td></tr>
+<tr><td><b>degFromTargetMtx</b></td><td>degFromTargetMtx</td><td>A python matrix containing degrees from tartget temperature data for every hour of the analysis to be plugged into the 'Honeybee_Visualize Annual Comfort Results' component.</td><td>Goo</td></tr>
 <tr><td><b>===============</b></td><td>===============</td><td>...</td><td>Goo</td></tr>
 <tr><td><b>radTempResult</b></td><td>radTempResult</td><td>A csv file address containing the radiant temperature resultsfor each point for every hour of the analysis.</td><td>Goo</td></tr>
 <tr><td><b>airTempResult</b></td><td>airTempResult</td><td>A csv file address containing the air temperature results for each point for every hour of the analysis.</td><td>Goo</td></tr>
-<tr><td><b>UTCI_Result</b></td><td>UTCI_Result</td><td>A csv file address containing universal thermal climate index (UTCI) results for each point for every hour of the analysis.</td><td>Goo</td></tr>
-<tr><td><b>OutdoorComfResult</b></td><td>OutdoorComfResult</td><td>A csv file address containing the a series of 0's and 1's indicating whether a certain point is comfortable for every hour of the analysis.</td><td>Goo</td></tr>
-<tr><td><b>DegFromNeutralResult</b></td><td>DegFromNeutralResult</td><td>A csv file address containing the degrees from the neutral UTCI value of 20 C indicating the distance that a certain point is from the neutral temperature for every hour of the analysis.</td><td>Goo</td></tr>
+<tr><td><b>operativeTempResult</b></td><td>operativeTempResult</td><td>A csv file address containing the operative temperature results for each point for every hour of the analysis.</td><td>Goo</td></tr>
+<tr><td><b>adaptComfResult</b></td><td>adaptComfResult</td><td>A csv file address containing the a series of 0's and 1's indicating whether a certain point is comfortable for every hour of the analysis.</td><td>Goo</td></tr>
+<tr><td><b>degFromTargetResult</b></td><td>degFromTargetResult</td><td>A csv file address containing the a series of numbers indicating the degrees that a certain point is from the neutral temperature for every hour of the analysis.</td><td>Goo</td></tr>
 </tbody>
 </table>
 
@@ -127,7 +127,7 @@
             </div>
             <div id="xg_foot">
                 <p class="left">
-    © 2016             &nbsp; Created by <a href="http://www.grasshopper3d.com/profile/HarshGupta367/">Harsh Gupta</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    © 2018             &nbsp; Created by <a href="http://www.stackoverflow.com/cv/robin-rodricks">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
     Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a>
 	</p>
     <p class="right xg_lightfont">

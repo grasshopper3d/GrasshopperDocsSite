@@ -8,7 +8,12 @@ $('#toc').toc({
     'highlightOnScroll': true, //add class to heading that is currently in focus
     'highlightOffset': 100, //offset to trigger the next headline a new section is highlighted 
     'anchorName': function(i, heading, prefix) { //custom function for anchor name
-        return prefix+i;
+		
+		// NAMED
+		return $(heading).attr("data-anchor") || "System";
+		
+		// NUMBERED
+        //return prefix+i;
     },
     'headerText': function(i, heading, $heading) { //custom function building the header-item text
         return $heading.text();

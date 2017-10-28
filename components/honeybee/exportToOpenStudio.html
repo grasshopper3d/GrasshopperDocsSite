@@ -75,7 +75,7 @@
 
 <div>
 <h1><img src="../../icons/Honeybee/Export_To_OpenStudio.png"/> Export To OpenStudio</h1>
-<p><a href="../../index.html">Component Index</a> &gt; Honeybee > 09 | Energy | Energy > <b>Export To OpenStudio</b></p>
+<p><a href="../../index.html">Component Index</a> &gt; <a href="../../index.html#Honeybee">Honeybee</a> > 10 | Energy | Energy > <b>Export To OpenStudio</b></p>
 </div>
 <h3>Use this component to export HBZones into an OpenStudio file, and run them through EnergyPlus.<br>The component outputs the report from the simulation, the file path of the IDF file, and the CSV result file from the EnergyPlus run, and two other result files that record outputs in different formats.<br></h3>
 <h2>Inputs</h2>
@@ -100,9 +100,15 @@
 <tr><td><b>_HBZones</b></td><td>_HBZones</td><td>The HBZones that you wish to write into an OSM file and/or run through EnergyPlus.  These can be from any of the components that output HBZones.</td><td>Goo</td></tr>
 <tr><td><b>HBContext_</b></td><td>HBContext_</td><td>Optional HBContext geometry from the "Honeybee_EP Context Surfaces." component.</td><td>Goo</td></tr>
 <tr><td><b>simulationOutputs_</b></td><td>simulationOutputs_</td><td>A list of the outputs that you would like EnergyPlus to write into the result CSV file.  This can be any set of any outputs that you would like from EnergyPlus, writen as a list of text that will be written into the IDF.  It is recommended that, if you are not expereinced with writing EnergyPlus outputs, you should use the "Honeybee_Write EP Result Parameters" component to request certain types of common outputs.</td><td>Goo</td></tr>
+<tr><td><b>additionalStrings_</b></td><td>additionalStrings_</td><td>THIS OPTION IS JUST FOR ADVANCED USERS OF ENERGYPLUS.  You can input additional text strings here that you would like written into the IDF.  The strings input here should be complete EnergyPlus objects that are correctly formatted.  You can input as many objects as you like in a list.  This input can be used to write objects into the IDF that are not currently supported by Honeybee.</td><td>Goo</td></tr>
 <tr><td><b>::::::::::::::::::::::::::::::::::::::</b></td><td>::::::::::::::::::::::::::::::::::::::</td><td>Script variable exportToOpenStudio</td><td>Goo</td></tr>
-<tr><td><b>_writeOSM</b></td><td>_writeOSM</td><td>Set to "True" to have the component take your HBZones and other inputs and write them into an OSM file.  The file path of the resulting OSM file will appear in the osmFileAddress output of this component.  Note that only setting this to "True" and not setting the output below to "Tru"e will not automatically run the file through EnergyPlus for you.</td><td>Goo</td></tr>
-<tr><td><b>runSimulation_</b></td><td>runSimulation_</td><td>Set to "True" to have the component run your OSM file through EnergyPlus once it has finished writing it.  This will ensure that a CSV result file appears in the resultFileAddress output.</td><td>Goo</td></tr>
+<tr><td><b>_writeOSM</b></td><td>_writeOSM</td><td>Set to "True" to have the component take your HBZones and other inputs and write them into an OSM file.  Note that only setting this to "True" and not setting the output below to "True" will not automatically run the file through EnergyPlus for you.</td><td>Goo</td></tr>
+<tr><td><b>runSimulation_</b></td><td>runSimulation_</td><td>Set to "True" to have the component generate an IDF file from the OSM file and run the IDF through through EnergyPlus.  Set to "False" to not run the file (this is the default).  You can also connect an integer for the following options:
+0 = Do Not Run OSM and IDF thrrough EnergyPlus
+1 = Run the OSM and IDF through EnergyPlus with a command prompt window that displays the progress of the simulation
+2 = Run the OSM and IDF through EnergyPlus in the background (without the command line popup window).
+3 = Generate an IDF from the OSM file but do not run it through EnergyPlus</td><td>Goo</td></tr>
+<tr><td><b>openOpenStudio_</b></td><td>openOpenStudio_</td><td>Set to "True" to open the OSM file in the OpenStudio interface.  This is useful if you want to visualize the HVAC system in OpenStudio, you want to edit the HVAC further in OpenStudio, or just want to run the simulation from OpenStudio instead of Rhino/GH.  Note that, for this to work, you must have .osm files associated with the OpenStudio application.</td><td>Goo</td></tr>
 <tr><td><b>fileName_</b></td><td>fileName_</td><td>Optional text which will be used to name your OSM, IDF and result files.  Change this to aviod over-writing results of previous energy simulations.</td><td>Goo</td></tr>
 <tr><td><b>workingDir_</b></td><td>workingDir_</td><td>An optional working directory to a folder on your system, into which your OSM, IDF and result files will be written.  NOTE THAT DIRECTORIES INPUT HERE SHOULD NOT HAVE ANY SPACES OR UNDERSCORES IN THE FILE PATH.</td><td>Goo</td></tr>
 </tbody>
@@ -114,13 +120,15 @@
 <tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
 </thead>
 <tbody>
-<tr><td><b>out</b></td><td>ReadMe!</td><td>The execution information, as output and error streams</td><td>String</td></tr>
+<tr><td><b>out</b></td><td>readMe!</td><td>Check here to see a report of the EnergyPlus run, including errors.</td><td>String</td></tr>
 <tr><td><b>osmFileAddress</b></td><td>osmFileAddress</td><td>The file path of the OSM file that has been generated on your machine.</td><td>Goo</td></tr>
-<tr><td><b>idfFileAddress</b></td><td>idfFileAddress</td><td>The file path of the IDF file that has been generated on your machine. This only happens when you set "runSimulation_" to "True."</td><td>Goo</td></tr>
-<tr><td><b>resultsFileAddress</b></td><td>resultsFileAddress</td><td>Script variable exportToOpenStudio</td><td>Goo</td></tr>
-<tr><td><b>sqlFileAddress</b></td><td>sqlFileAddress</td><td>The file path of the SQL result file that has been generated on your machine. This only happens when you set "runSimulation_" to "True."</td><td>Goo</td></tr>
-<tr><td><b>meterFileAddress</b></td><td>meterFileAddress</td><td>The file path of the building's meter result file that has been generated on your machine. This only happens when you set "runSimulation_" to "True."</td><td>Goo</td></tr>
+<tr><td><b>idfFileAddress</b></td><td>idfFileAddress</td><td>The file path of the IDF file that has been generated on your machine. This file is only generated when you set "runSimulation_" to "True."</td><td>Goo</td></tr>
+<tr><td><b>resultFileAddress</b></td><td>resultFileAddress</td><td>The file path of the CSV result file that has been generated on your machine.  This file is only generated when you set "runSimulation_" to "True."</td><td>Goo</td></tr>
+<tr><td><b>eioFileAddress</b></td><td>eioFileAddress</td><td>The file path of the EIO file that has been generated on your machine.  This file contains information about the sizes of all HVAC equipment from the simulation.  This file is only generated when you set "runSimulation_" to "True."</td><td>Goo</td></tr>
+<tr><td><b>rddFileAddress</b></td><td>rddFileAddress</td><td>The file path of the Result Data Dictionary (.rdd) file that is generated after running the file through EnergyPlus.  This file contains all possible outputs that can be requested from the EnergyPlus model.  Use the "Honeybee_Read Result Dictionary" to see what outputs can be requested.</td><td>Goo</td></tr>
+<tr><td><b>htmlReport</b></td><td>htmlReport</td><td>Script variable exportToOpenStudio</td><td>Goo</td></tr>
 <tr><td><b>studyFolder</b></td><td>studyFolder</td><td>The directory in which the simulation has been run.  Connect this to the 'Honeybee_Lookup EnergyPlus' folder to bring many of the files in this directory into Grasshopper.</td><td>Goo</td></tr>
+<tr><td><b>model</b></td><td>model</td><td>The openStudio model ojbect. Use this output to generate gbXML files from your OpwnStudio models.</td><td>Goo</td></tr>
 </tbody>
 </table>
 
@@ -132,7 +140,7 @@
             </div>
             <div id="xg_foot">
                 <p class="left">
-    © 2016             &nbsp; Created by <a href="http://www.grasshopper3d.com/profile/HarshGupta367/">Harsh Gupta</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    © 2018             &nbsp; Created by <a href="http://www.stackoverflow.com/cv/robin-rodricks">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
     Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a>
 	</p>
     <p class="right xg_lightfont">

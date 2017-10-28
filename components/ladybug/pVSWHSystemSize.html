@@ -75,7 +75,7 @@
 
 <div>
 <h1><img src="../../icons/Ladybug/PV_SWH_System_Size.png"/> PV SWH System Size</h1>
-<p><a href="../../index.html">Component Index</a> &gt; Ladybug > 6 | WIP > <b>PV SWH System Size</b></p>
+<p><a href="../../index.html">Component Index</a> &gt; <a href="../../index.html#Ladybug">Ladybug</a> > 4 | Renewables > <b>PV SWH System Size</b></p>
 </div>
 <h3>Use this component to generate the PVsurface or SWHsurface for "Photovoltaics surface" or "Solar Water Heating surface" components, based on initial PV or SWH system sizes.<br></h3>
 <h2>Inputs</h2>
@@ -85,7 +85,7 @@
 </thead>
 <tbody>
 <tr><td><b>_location</b></td><td>_location</td><td>The output from the "importEPW" or "constructLocation" component.  This is essentially a list of text summarizing a location on the earth.</td><td>Goo</td></tr>
-<tr><td><b>_PVmoduleSettings</b></td><td>_PVmoduleSettings</td><td>A list of PV module settings. Use the "Photovoltaics Module" component to generate them.</td><td>Goo</td></tr>
+<tr><td><b>_PVmoduleSettings</b></td><td>_PVmoduleSettings</td><td>A list of PV module settings. Use the "Simplified Photovoltaics Module" or "Import CEC Photovoltaics Module" or "Import Sandia Photovoltaics Module" components to generate them.</td><td>Goo</td></tr>
 <tr><td><b>_SWHsystemSettings</b></td><td>_SWHsystemSettings</td><td>A list of all SWH system settings. Use the "Solar Water Heating System" or "Solar Water Heating System Detailed" components to generate them.</td><td>Goo</td></tr>
 <tr><td><b>systemSize_</b></td><td>systemSize_</td><td>1) In case of PV array: DC (Direct current) power rating of the photovoltaic array in kilowatts (kW) at standard test conditions (STC). 
 2) In case of SWH array: Capacity of the collectors array in thermal kilowatts (kw) at global or local testing conditions (ISO 9806, EN 12975, ASHRAE 93 ...)
@@ -137,6 +137,8 @@ So the following "minimalSpacingPeriod_" should be used based on location's lati
 -
 It requires the "numberOfRows_" to be larger than 1 in order visualize the minimal spacing between rows.
 -
+Use Ladybug "Analysis Period" component to define this input.
+-
 If not supplied, it will be calculated based on upper mentioned criteria.</td><td>Goo</td></tr>
 <tr><td><b>baseSurface_</b></td><td>baseSurface_</td><td>Surface on which PV/SWH array will be laid onto.
 This can be a surface of an angled or flat roof. Or an angled or flat terrain. A facade of a building etc.
@@ -152,6 +154,7 @@ If not supplied, (0.5,0,0) will be used as a default value.</td><td>Goo</td></tr
 0 - center bottom
 1 - left bottom
 2 - right bottom
+3 - center top
 -
 If not supplied, 0 will be used as a default (bottom center).</td><td>Goo</td></tr>
 <tr><td><b>north_</b></td><td>north_</td><td>Input a vector to be used as a true North direction, or a number between 0 and 360 that represents the clockwise degrees off from the Y-axis.
@@ -163,7 +166,7 @@ If not supplied, default North direction will be set to the Y-axis (0 degrees).<
 Use Honeybee "Read EP Result" component or any other one to generate it.
 -
 2) In case of SWH array: Thermal heating energy (or electrical energy) required to heat domestic hot water and/or space heating load and/or space cooling load.
-Use Ladybug "Domestic hot water" or "Hot water" components to calculate it.
+Use Ladybug "Residential Hot Water" or "Commercial Public Apartment Hot Water" components to calculate it (simply plugin their "heatingLoadPerHour" outputs).
 -
 The purpose of this input is to divide the energy loads to each PV/SWH array rows.
 -
@@ -182,6 +185,10 @@ If not inputted, "energyLoadPerRowPerHour" output will not be calculated.</td><t
 <tr><td><b>PV_SWHsurfacesArea</b></td><td>PV_SWHsurfacesArea</td><td>Total area of the PV_SWHsurfaces.
 -
 In Rhino documents units (meters, centimeters, feets...).</td><td>Goo</td></tr>
+<tr><td><b>minimalSpacing</b></td><td>minimalSpacing</td><td>Minimal distance between fixed (anchor) points of rows.
+The distance is measured on the ground (or along the base surface if it has been inputted).
+-
+In meters.</td><td>Goo</td></tr>
 <tr><td><b>minimalSpacingDate</b></td><td>minimalSpacingDate</td><td>Exact date taken from "minimalSpacingPeriod_" input for which minimal spacing between rows has been calculated.</td><td>Goo</td></tr>
 <tr><td><b>arrayOriginPt</b></td><td>arrayOriginPt</td><td>Origin point of the PV / SWH array.</td><td>Goo</td></tr>
 <tr><td><b>energyLoadPerRowPerHour</b></td><td>energyLoadPerRowPerHour</td><td>"energyLoadPerHour_" input's data divided to rows.</td><td>Goo</td></tr>
@@ -196,7 +203,7 @@ In Rhino documents units (meters, centimeters, feets...).</td><td>Goo</td></tr>
             </div>
             <div id="xg_foot">
                 <p class="left">
-    © 2016             &nbsp; Created by <a href="http://www.grasshopper3d.com/profile/HarshGupta367/">Harsh Gupta</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    © 2018             &nbsp; Created by <a href="http://www.stackoverflow.com/cv/robin-rodricks">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
     Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a>
 	</p>
     <p class="right xg_lightfont">

@@ -75,9 +75,9 @@
 
 <div>
 <h1><img src="../../icons/Peacock/Animation.png"/> Animation</h1>
-<p><a href="../../index.html">Component Index</a> &gt; Peacock > Analysis > <b>Animation</b></p>
+<p><a href="../../index.html">Component Index</a> &gt; <a href="../../index.html#Peacock">Peacock</a> > Analysis > <b>Animation</b></p>
 </div>
-<h3>Create a simple animation from a guide curve (requires Timer component)</h3>
+<h3>Create a simple animation from a guide curve.</h3>
 <h2>Inputs</h2>
 <table>
 <thead>
@@ -85,13 +85,14 @@
 </thead>
 <tbody>
 <tr><td><b>Play</b></td><td>Play</td><td>Play the animation</td><td>Boolean</td></tr>
+<tr><td><b>Pause</b></td><td>Pause</td><td>Pause the animation</td><td>Boolean</td></tr>
 <tr><td><b>Rail</b></td><td>Rail</td><td>Rail curve to guide the camera</td><td>Curve</td></tr>
-<tr><td><b>Target</b></td><td>Pln</td><td>Camera target</td><td>Plane</td></tr>
-<tr><td><b>Speed</b></td><td>Speed</td><td>Speed of animation</td><td>Number</td></tr>
-<tr><td><b>Up</b></td><td>Up</td><td>Up vector (Plug a ValueList component | Autolist function by Florian Frank blickfeld7.com)
-0 = Universal Z axis
-1 = Axis Z of input plane
-2 = Perpendicular to the tangent of the curve guide</td><td>Goo</td></tr>
+<tr><td><b>Target</b></td><td>Target</td><td>Camera target</td><td>Plane</td></tr>
+<tr><td><b>Up Mode</b></td><td>Up</td><td>Up vector mode.
+0 => Universal Z axis.
+1 => Axis Z of input plane.
+2 => Perpendicular to the tangent on the rail.</td><td>Integer</td></tr>
+<tr><td><b>Speed</b></td><td>Speed</td><td>Speed of animation (usually between -1 ~ 1)</td><td>Number</td></tr>
 </tbody>
 </table>
 
@@ -103,7 +104,7 @@
             </div>
             <div id="xg_foot">
                 <p class="left">
-    © 2016             &nbsp; Created by <a href="http://www.grasshopper3d.com/profile/HarshGupta367/">Harsh Gupta</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    © 2018             &nbsp; Created by <a href="http://www.stackoverflow.com/cv/robin-rodricks">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
     Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a>
 	</p>
     <p class="right xg_lightfont">

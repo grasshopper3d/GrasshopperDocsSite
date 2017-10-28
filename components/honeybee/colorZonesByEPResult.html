@@ -75,7 +75,7 @@
 
 <div>
 <h1><img src="../../icons/Honeybee/Color_Zones_by_EP_Result.png"/> Color Zones by EP Result</h1>
-<p><a href="../../index.html">Component Index</a> &gt; Honeybee > 09 | Energy | Energy > <b>Color Zones by EP Result</b></p>
+<p><a href="../../index.html">Component Index</a> &gt; <a href="../../index.html#Honeybee">Honeybee</a> > 10 | Energy | Energy > <b>Color Zones by EP Result</b></p>
 </div>
 <h3>Use this component to color zones based on EnergyPlus data out of the "Honeybee_Read EP Result" component or zone comfort analyses out of the comfort calculator components.<br>By default, zones will be colored based on total energy per unit floor area of the zone in the case of energy input data or colored based on total average value of each zone in the case of temperature, humidity or comfort input data.<br>If total annual simulation data has been connected, the analysisPeriod_ input can be used to select out a specific period fo the year for coloration.<br>In order to color zones by individual hours/months, connecting interger values to the "stepOfSimulation_" will allow you to scroll though each step of the input data.<br></h3>
 <h2>Inputs</h2>
@@ -91,7 +91,6 @@
 <tr><td><b>analysisPeriod_</b></td><td>analysisPeriod_</td><td>Optional analysisPeriod_ to take a slice out of an annual data stream.  Note that this will only work if the connected data is for a full year and the data is hourly.  Otherwise, this input will be ignored. Also note that connecting a value to 'stepOfSimulation_' will override this input.</td><td>Goo</td></tr>
 <tr><td><b>stepOfSimulation_</b></td><td>stepOfSimulation_</td><td>Optional interger for the hour of simulation to color the zones with.  Connecting a value here will override the analysisPeriod_ input.</td><td>Goo</td></tr>
 <tr><td><b>legendPar_</b></td><td>legendPar_</td><td>Optional legend parameters from the Ladybug Legend Parameters component.</td><td>Goo</td></tr>
-<tr><td><b>recallHBHive_</b></td><td>recallHBHive_</td><td>Set to 'True' to recall the zones from the hive each time the input changes and 'False' to simply copy the zones to memory.  Calling the zones from the hive can take some more time but this is necessary if you are making changes to the zones and you want to check them.  Otherwise, if you are just scrolling through attributes, it is nice to set this to 'False' for speed.  The default is set to 'False' for speed.</td><td>Goo</td></tr>
 <tr><td><b>_runIt</b></td><td>_runIt</td><td>Set boolean to 'True' to run the component and color the zones.</td><td>Goo</td></tr>
 </tbody>
 </table>
@@ -123,7 +122,7 @@
             </div>
             <div id="xg_foot">
                 <p class="left">
-    © 2016             &nbsp; Created by <a href="http://www.grasshopper3d.com/profile/HarshGupta367/">Harsh Gupta</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    © 2018             &nbsp; Created by <a href="http://www.stackoverflow.com/cv/robin-rodricks">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
     Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a>
 	</p>
     <p class="right xg_lightfont">

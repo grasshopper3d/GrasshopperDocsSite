@@ -75,9 +75,9 @@
 
 <div>
 <h1><img src="../../icons/Peacock/Hollow_thickness.png"/> Hollow thickness</h1>
-<p><a href="../../index.html">Component Index</a> &gt; Peacock > Workbench > <b>Hollow thickness</b></p>
+<p><a href="../../index.html">Component Index</a> &gt; <a href="../../index.html#Peacock">Peacock</a> > Workbench > <b>Hollow thickness</b></p>
 </div>
-<h3>Subtract hollow by thickness</h3>
+<h3>Subtracts a hollow specifying the thickness</h3>
 <h2>Inputs</h2>
 <table>
 <thead>
@@ -85,8 +85,13 @@
 </thead>
 <tbody>
 <tr><td><b>Geometry</b></td><td>Geo</td><td>Base geometry</td><td>GeometricGoo</td></tr>
-<tr><td><b>Plane</b></td><td>Pln</td><td>Base plane</td><td>Plane</td></tr>
-<tr><td><b>Thickness</b></td><td>Thk</td><td>A value of thickness for uniform scale or three values for X, Y and Z</td><td>Number</td></tr>
+<tr><td><b>Plane</b></td><td>Pln</td><td>Base plane to get boundingbox.
+X axis -> ThkL, Y axis -> ThkF, Z axis -> ThkU, ThkB.</td><td>Plane</td></tr>
+<tr><td><b>Top</b></td><td>Top</td><td>Decrease on top</td><td>Number</td></tr>
+<tr><td><b>Lateral</b></td><td>Lat</td><td>Decrease on laterals</td><td>Number</td></tr>
+<tr><td><b>Front and back</b></td><td>FB</td><td>Decrease on front and back</td><td>Number</td></tr>
+<tr><td><b>Bottom</b></td><td>Bot</td><td>Decrease on bottom</td><td>Number</td></tr>
+<tr><td><b>Subtraction</b></td><td>Sub</td><td>Perform boolean difference</td><td>Boolean</td></tr>
 </tbody>
 </table>
 
@@ -96,8 +101,8 @@
 <tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
 </thead>
 <tbody>
-<tr><td><b>Geometry</b></td><td>G</td><td>Scaled and subtracted geometry</td><td>GeometricGoo</td></tr>
-<tr><td><b>Transform</b></td><td>X</td><td>Transformation data</td><td>Transform</td></tr>
+<tr><td><b>Geometry</b></td><td>G</td><td>Resulting geometry</td><td>GeometricGoo</td></tr>
+<tr><td><b>Transformation</b></td><td>X</td><td>Compound transformation</td><td>Transform</td></tr>
 </tbody>
 </table>
 
@@ -109,7 +114,7 @@
             </div>
             <div id="xg_foot">
                 <p class="left">
-    © 2016             &nbsp; Created by <a href="http://www.grasshopper3d.com/profile/HarshGupta367/">Harsh Gupta</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    © 2018             &nbsp; Created by <a href="http://www.stackoverflow.com/cv/robin-rodricks">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
     Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a>
 	</p>
     <p class="right xg_lightfont">

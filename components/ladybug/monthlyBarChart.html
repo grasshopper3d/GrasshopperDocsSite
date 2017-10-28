@@ -75,7 +75,7 @@
 
 <div>
 <h1><img src="../../icons/Ladybug/Monthly_Bar_Chart.png"/> Monthly Bar Chart</h1>
-<p><a href="../../index.html">Component Index</a> &gt; Ladybug > 2 | VisualizeWeatherData > <b>Monthly Bar Chart</b></p>
+<p><a href="../../index.html">Component Index</a> &gt; <a href="../../index.html#Ladybug">Ladybug</a> > 2 | VisualizeWeatherData > <b>Monthly Bar Chart</b></p>
 </div>
 <h3>Use this component to make a bar chart in the Rhino scene of any monhtly or avrMonthyPerHour climate data or simulation data.<br>This component can also plot daily or hourly data but, for visualizing this type of data, it is recommended that you use the "Ladybug_3D Chart" component.<br></h3>
 <h2>Inputs</h2>
@@ -85,14 +85,8 @@
 </thead>
 <tbody>
 <tr><td><b>_inputData</b></td><td>_inputData</td><td>A list of input data to plot.  This should usually be data out of the 'Ladybug_Average Data' component or monthly data from an energy simulation but can also be hourly or daily data from the 'Ladybug_Import EPW.'  However, it is recommended that you use the 'Ladybug_3D Chart' component for daily or hourly data as this is usually a bit clearer.</td><td>Goo</td></tr>
-<tr><td><b>comfortModel_</b></td><td>comfortModel_</td><td>An optional interger to draw the comfort model on the chart.  Choose from the following: 
- 0 - No comfort range 
- 1 - PMV comfort range (indoor) 
- 2 - Adaptive confort range (naturally ventilated) 
- 3 - UTCI Comfort (outdoor) 
- Note that this option is only available when temperature is connected so, by default, it is set to 0 for no comfort range.</td><td>Goo</td></tr>
-<tr><td><b>bldgBalancePt_</b></td><td>bldgBalancePt_</td><td>An optional float value to represent the outdoor temperature at which the energy passively flowing into a building is equal to that flowing out of the building.  This is usually a number that is well below the comfort temperture (~ 12C - 18C) since the internal heat of a building and its insulation keep the interior warmer then the exterior.  However, by default, this is set to 23.5C for fully outdoor conditions.</td><td>Goo</td></tr>
-<tr><td><b>_______________</b></td><td>_______________</td><td>...</td><td>Goo</td></tr>
+<tr><td><b>.</b></td><td>.</td><td></td><td>Goo</td></tr>
+<tr><td><b>.</b></td><td>.</td><td></td><td>Goo</td></tr>
 <tr><td><b>stackValues_</b></td><td>stackValues_</td><td>Set to 'True' if you have multiple connected monthly or daily _inputData with the same units and want them to be drawn as bars stacked on top of each other.  Otherwise, all bars for monthly/daily data will be placed next to each other.  The default is set to 'False' to have these bars placed next to each other.</td><td>Goo</td></tr>
 <tr><td><b>plotFromZero_</b></td><td>plotFromZero_</td><td>Set to 'True' to have the component plot all bar values starting from zero (as opposed from the bottom of the chart, which might be a negative number).  This is useful when you are plotting the terms of an energy balance where you want gains to be above zero and losses to be below.  It can be detrimental if you are plotting temperatures in degrees celcius and do not want negative values to go below zero.  As such, the default is set to 'False' to not plot from zero.</td><td>Goo</td></tr>
 <tr><td><b>altTitle_</b></td><td>altTitle_</td><td>An optional text string to replace the default title of the chart of the chart.  The default is set to pick out the location of the data connected to 'inputData.'</td><td>Goo</td></tr>
@@ -100,6 +94,7 @@
 <tr><td><b>_basePoint_</b></td><td>_basePoint_</td><td>An optional point with which to locate the 3D chart in the Rhino Model.  The default is set to the Rhino origin at (0,0,0).</td><td>Goo</td></tr>
 <tr><td><b>_xScale_</b></td><td>_xScale_</td><td>The scale of the X axis of the graph. The default is set to 1 and this will plot the X axis with a length of 120 Rhino model units (for 12 months of the year).</td><td>Goo</td></tr>
 <tr><td><b>_yScale_</b></td><td>_yScale_</td><td>The scale of the Y axis of the graph. The default is set to 1 and this will plot the Y axis with a length of 50 Rhino model units.</td><td>Goo</td></tr>
+<tr><td><b>_labelPtsOffset_</b></td><td>_labelPtsOffset_</td><td>A number in Rhino model units that represents the distance between the top of bars on the chart and the location where the dataLabelPts are. If you set this value to 0, you can use the dataLabelPts to create a polyline of monthly values.  The default is autocalculated based on the scale of the chart.</td><td>Goo</td></tr>
 <tr><td><b>legendPar_</b></td><td>legendPar_</td><td>Optional legend parameters from the Ladybug Legend Parameters component.</td><td>Goo</td></tr>
 <tr><td><b>bakeIt_</b></td><td>bakeIt_</td><td>An integer that tells the component if/how to bake the bojects in the Rhino scene.  The default is set to 0.  Choose from the following options:
 0 (or False) - No geometry will be baked into the Rhino scene (this is the default).
@@ -126,6 +121,7 @@
 <tr><td><b>legendBasePt</b></td><td>legendBasePt</td><td>The legend base point, which can be used to move the legend in relation to the chart with the grasshopper "move" component.</td><td>Goo</td></tr>
 <tr><td><b>dataLabelPts</b></td><td>dataLabelPts</td><td>A series of points that mark where each of the bars or lines of the chart lie.  You can use this to label the bars or lines with numerical values using a native grasshopper "text tag" component and the data that you have connected to the _inputData of this component.</td><td>Goo</td></tr>
 <tr><td><b>comfortBand</b></td><td>comfortBand</td><td>A series of meshes that represent the comfort range in each month according to the input comfortModel_.</td><td>Goo</td></tr>
+<tr><td><b>comfortLegend</b></td><td>comfortLegend</td><td>A legend for the comfort model. This legend will only be provided if temperature is fed to this component and the value provided to the comfortModel_ is either 1, 2, or 3.</td><td>Goo</td></tr>
 </tbody>
 </table>
 
@@ -137,7 +133,7 @@
             </div>
             <div id="xg_foot">
                 <p class="left">
-    © 2016             &nbsp; Created by <a href="http://www.grasshopper3d.com/profile/HarshGupta367/">Harsh Gupta</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    © 2018             &nbsp; Created by <a href="http://www.stackoverflow.com/cv/robin-rodricks">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
     Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a>
 	</p>
     <p class="right xg_lightfont">

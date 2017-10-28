@@ -75,7 +75,7 @@
 
 <div>
 <h1><img src="../../icons/Ladybug/Thermal_Comfort_Indices.png"/> Thermal Comfort Indices</h1>
-<p><a href="../../index.html">Component Index</a> &gt; Ladybug > 1 | AnalyzeWeatherData > <b>Thermal Comfort Indices</b></p>
+<p><a href="../../index.html">Component Index</a> &gt; <a href="../../index.html#Ladybug">Ladybug</a> > 1 | AnalyzeWeatherData > <b>Thermal Comfort Indices</b></p>
 </div>
 <h3>Use this component to calculate various thermal comfort indices:<br>------<br>- HI (Heat Index)<br>- humidex (humidity index)<br>- DI (Discomfort Index)<br>- WCI (Wind Chill Index)<br>- WCT (Wind Chill Temperature)<br>- WBGT (Wet-Bulb Globe Temperature) indoors<br>- WBGT (Wet-Bulb Globe Temperature) outdoors<br>- TE (Effective Temperature)<br>- AT (Apparent Temperature)<br>- TS (Thermal Sensation)<br>- ASV (Actual Sensation Vote)<br>- MRT (Mean Radiant Temperature)<br>- Iclp (Predicted Insulation Index Of Clothing)<br>- HR (Heart Rate)<br>- DhRa (Dehydration Risk)<br>- PET (Physiological Equivalent Temperature)<br>- THI (Temperature Humidity Index)<br>- PHS (Predicted Heat Strain)<br></h3>
 <h2>Inputs</h2>
@@ -109,19 +109,19 @@
 <tr><td><b>_dryBulbTemperature</b></td><td>_dryBulbTemperature</td><td>Air temperature.
 Input a single value or a whole list from "Import epw" component's "dryBulbTemperature" output.
 -
-In Celsius degrees (°C).</td><td>Goo</td></tr>
+In Celsius degrees (C).</td><td>Goo</td></tr>
 <tr><td><b>meanRadiantTemperature_</b></td><td>meanRadiantTemperature_</td><td>An average temperature of the surfaces that surround the analysis location.
 For indoor conditions or outdoor in-shade, it should be equal to air temperature. So just input the same data you inputted to "_dryBulbTemperature".
 -
 If nothing supplied, it will be calculated for outdoor conditions (both in-shade and out-shade).
 -
-In Celsius degrees (°C).</td><td>Goo</td></tr>
+In Celsius degrees (C).</td><td>Goo</td></tr>
 <tr><td><b>dewPointTemperature_</b></td><td>dewPointTemperature_</td><td>Dew point temperature.
 Input a single value or a whole list from "Import epw" component's "dewPointTemperature" output.
 -
 If not supplied, it will be calculated from _dryBulbTemperature and relativeHumidity_ data.
 -
-In Celsius degrees (°C).</td><td>Goo</td></tr>
+In Celsius degrees (C).</td><td>Goo</td></tr>
 <tr><td><b>relativeHumidity_</b></td><td>relativeHumidity_</td><td>Relative humidity.
 Input a single value or a whole list from "Import epw" component's "relativeHumidity" output.
 -
@@ -135,13 +135,6 @@ In this way we converted the 10 meter wind speed from the .epw file to required 
 If not supplied, default value of 0.3 m/s is used (meaning: the analysis is conducted in outdoor no wind conditions, or indoor conditions).
 -
 In meters/second.</td><td>Goo</td></tr>
-<tr><td><b>globalHorizontalRadiation_</b></td><td>globalHorizontalRadiation_</td><td>Total amount of direct and diffuse solar radiation that an analysis person received.
-Use the "globalHorizontalRadiation" data from Ladybug's "Import epw" component for analysis without shading.
-For analysis with shading included, use the "shadedSolarRadiationPerHour" output from "Sunpath shading" component instead.
--
-If not supplied, default value of 0 Wh/m2 will be used (meaning: the analysis is conducted in outdoor in shade conditions, or indoor conditions).
--
-In Wh/m2.</td><td>Goo</td></tr>
 <tr><td><b>totalSkyCover_</b></td><td>totalSkyCover_</td><td>Amount of sky dome covered by clouds.
 Input a single value or a whole list from "Import epw" component's "totalSkyCover" output.
 It ranges from from 1 to 10. For example: 1 is 1/10 covered. 10 is total coverage (10/10).
@@ -149,12 +142,23 @@ It ranges from from 1 to 10. For example: 1 is 1/10 covered. 10 is total coverag
 If not supplied 6/10 will be used (cloud coverage of temperate humid climate).
 -
 In tenths of sky cover.</td><td>Goo</td></tr>
+<tr><td><b>solarRadiationPerHour_</b></td><td>solarRadiationPerHour_</td><td>Amount of solar radiation that an analysis person received.
+-
+1) If you would like to do an analysis accounted for shading (more precise) use the "Sunpath shading" component and its "shadedSolarRadiationPerHour" output.
+Or use "Radiation Analysis" component's "radiationResult" output. Be sure to scale the "radiationResult" output data 1000 times (to convert it from kW/m2 to W/m2).
+The "Sunpath shading" component will account for partial shading from the trees, while "Radiation Analysis" will not.
+-
+2) If you would not like to do an analysis accounted for shading (because it's quicker that way), then you can simply supply the data from "Import epw" component's "diffuseHorizontalRadiation" output. In this way it will be assumed that an analysis is being conducted in outdoor in-shade conditions, or indoor conditions.
+-
+If nothing supplied, default value of 0 Wh/m2 will be used (no solar radiation at all).
+-
+In Wh/m2.</td><td>Goo</td></tr>
 <tr><td><b>bodyCharacteristics_</b></td><td>bodyCharacteristics_</td><td>A list of body characteristics in the following order: age, sex, height, weight, bodyPosition, clothingInsulation, acclimated, metabolicRate, activityDuration.
 Use Ladybug's "Body Characteristics" component to generate it.
 -
 If not supplied, the following default values will be used:
 --
-30 - age
+35 - age
 "male" - sex
 175 - height in centimeters
 75 - weight in kilograms
@@ -182,7 +186,7 @@ If not supplied, the whole year period will be used as an analysis period.</td><
 <tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
 </thead>
 <tbody>
-<tr><td><b>out</b></td><td>readMe!</td><td>...</td><td>String</td></tr>
+<tr><td><b>out</b></td><td>readMe!</td><td>If your _comfortIndex is set to either 15 or 16, and you are performing analysis for a single hour, then this output will show additional results related with PET (Physiological Equivalent Temperature).</td><td>String</td></tr>
 <tr><td><b>comfortIndexValue</b></td><td>comfortIndexValue</td><td>The value of the chosen comfort.</td><td>Goo</td></tr>
 <tr><td><b>comfortIndexLevel</b></td><td>comfortIndexLevel</td><td>The level (category, sensation) of the chosen index.</td><td>Goo</td></tr>
 <tr><td><b>comfortableOrNot</b></td><td>comfortableOrNot</td><td>Indication of whether that person is comfortable (1) or not (0) at particular hour.</td><td>Goo</td></tr>
@@ -200,7 +204,7 @@ If not supplied, the whole year period will be used as an analysis period.</td><
             </div>
             <div id="xg_foot">
                 <p class="left">
-    © 2016             &nbsp; Created by <a href="http://www.grasshopper3d.com/profile/HarshGupta367/">Harsh Gupta</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    © 2018             &nbsp; Created by <a href="http://www.stackoverflow.com/cv/robin-rodricks">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
     Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a>
 	</p>
     <p class="right xg_lightfont">

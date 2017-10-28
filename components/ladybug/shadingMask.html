@@ -75,19 +75,32 @@
 
 <div>
 <h1><img src="../../icons/Ladybug/Shading_Mask.png"/> Shading Mask</h1>
-<p><a href="../../index.html">Component Index</a> &gt; Ladybug > 6 | WIP > <b>Shading Mask</b></p>
+<p><a href="../../index.html">Component Index</a> &gt; <a href="../../index.html#Ladybug">Ladybug</a> > 3 | EnvironmentalAnalysis > <b>Shading Mask</b></p>
 </div>
-<h3>Use this component to see the portion of the sky dome that is masked by context geometry around a given viewpoint.<br>The component will generate separate meshs for the portions of the sky dome that are masked and visible.<br>The component will also calculate the percentage of the sky that is masked by the context geometry and the percentage that is visible (the sky view factor).<br></h3>
+<h3>Use this component to see the portion of the sky dome that is masked by context geometry around a given point.<br>The component will generate separate meshs for the portions of the sky dome that are masked and visible.<br>The component will also calculate the percentage of the sky that is masked by the context geometry and the percentage that is visible (the sky view factor).<br>-output<br></h3>
 <h2>Inputs</h2>
 <table>
 <thead>
 <tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
 </thead>
 <tbody>
-<tr><td><b>_testPt</b></td><td>_testPt</td><td>A view point for which one wants to see the portion of the sky masked by the context geometry surrounding this point.</td><td>Goo</td></tr>
-<tr><td><b>_context</b></td><td>_context</td><td>Context geometry surrounding the _testPt that could block the view to the sky.  Geometry must be a Brep or list of Breps.</td><td>Goo</td></tr>
-<tr><td><b>_skyDensity_</b></td><td>_skyDensity_</td><td>An integer that is greater than or equal to 0, which to sets the number of times that the Tergenza sky patches are split.  Set to 0 to view a sky mask with the typical Tregenza sky, which will divide up the sky with a coarse density of 145 sky patches.  Set to 1 to view a sky mask of a Reinhart sky, which will divide up each of these Tergenza patches into 4 patches to make a sky with a total of 580 sky patches. Higher numbers input here will ensure a greater accuracy but will also take longer. The default is set to 3 to give you a high accuracy.</td><td>Goo</td></tr>
-<tr><td><b>scale_</b></td><td>scale_</td><td>Scale of the sky dome</td><td>Goo</td></tr>
+<tr><td><b>_centerPtOrPlane_</b></td><td>_centerPtOrPlane_</td><td>A point or plane from which the visible portion of the sky will be evaluated.  If a point is input here, the component will calculate Sky Exposure (or the fraction of the sky hemisphere that is visible from the point).  If a plane is input here, the component will calculate Sky View (or the fraction of the sky visible from a surface in this plane).  If no value is input here, the component will assume a point (Sky Exposure) at the Rhino origin.</td><td>Goo</td></tr>
+<tr><td><b>context_</b></td><td>context_</td><td>Context geometry surrounding the _centerPtOrPlane_ that could block the view to the sky.  Geometry can be either a list of surfaces, breps, or meshes (this component converts everything to a mesh for a fast calculation).</td><td>Goo</td></tr>
+<tr><td><b>orientation_</b></td><td>orientation_</td><td>A number between 0 and 360 that sets the orientation of a vertically-oriented surface for which you want to visualize the sky view.  Alternatively, this input can just be the words "north", "east", "south" or "west."  This will block out the portion of the sky that is not visible from a vertical surface with this orientation. Note that an input here will project the patches into the plane of this vertical orientation to calculate a Sky View result (overriding any plane input to the _centerPtOrPlane_).  The default is set to have no orientation.</td><td>Goo</td></tr>
+<tr><td><b>overhangProject_</b></td><td>overhangProject_</td><td>A number between 0 and 90 that sets the angle between the _centerPtOrPlane_ and the edge of an imagined horizontal overhang projecting past the point.  Note that this option is only available when there is an input for orientation_ above. This allows one to visualise the portion of the sky blocked by an overhang with this projection anle.</td><td>Goo</td></tr>
+<tr><td><b>leftFinProject_</b></td><td>leftFinProject_</td><td>A number between 0 and 180 that sets the angle between the _centerPtOrPlane_ and the edge of an imagined vertical fin projecting past the left side of the point.  Note that this option is only available when there is an input for orientation_ above. This allows one to visualise the portion of the sky blocked by vertical fin on the left side of the point with this projection anle.</td><td>Goo</td></tr>
+<tr><td><b>rightFinProject_</b></td><td>rightFinProject_</td><td>A number between 0 and 180 that sets the angle between the _centerPtOrPlane_ and the edge of an imagined vertical fin projecting past the right side of the point.  Note that this option is only available when there is an input for orientation_ above. This allows one to visualise the portion of the sky blocked by vertical fin on the right side of the point with this projection anle.</td><td>Goo</td></tr>
+<tr><td><b>----------</b></td><td>----------</td><td>. ...</td><td>Goo</td></tr>
+<tr><td><b>_skyDensity_</b></td><td>_skyDensity_</td><td>An integer that is greater than or equal to 0, which to sets the number of times that the Tergenza sky patches are split.  Set to 0 to view a sky mask with the typical Tregenza sky, which will divide up the sky with a coarse density of 145 sky patches.  Higher numbers input here will ensure a greater accuracy but will also take longer. The default is set to 3 to give you an error that is usually less than 1% sky view.  It is recommended that you use values of 3 or above for accurate results.</td><td>Goo</td></tr>
+<tr><td><b>_projection_</b></td><td>_projection_</td><td>A number to set the projection of the sky hemisphere.  The default is set to draw a 3D hemisphere.  Choose from the following options:
+0 = 3D hemisphere
+1 = Orthographic (straight projection to the XY Plane)
+2 = Stereographic (equi-angular projection to the XY Plane)</td><td>Goo</td></tr>
+<tr><td><b>_scale_</b></td><td>_scale_</td><td>Use this input to change the scale of the sky dome.  The default is set to 1.</td><td>Goo</td></tr>
+<tr><td><b>bakeIt_</b></td><td>bakeIt_</td><td>An integer that tells the component if/how to bake the bojects in the Rhino scene.  The default is set to 0.  Choose from the following options:
+0 (or False) - No geometry will be baked into the Rhino scene (this is the default).
+1 (or True) - The geometry will be baked into the Rhino scene as a colored hatch and Rhino text objects, which facilitates easy export to PDF or vector-editing programs.
+2 - The geometry will be baked into the Rhino scene as colored meshes, which is useful for recording the results of paramteric runs as light Rhino geometry.</td><td>Goo</td></tr>
 </tbody>
 </table>
 
@@ -97,10 +110,15 @@
 <tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
 </thead>
 <tbody>
-<tr><td><b>masked</b></td><td>masked</td><td>A mesh of the portion of the sky dome masked by the _context geometry.</td><td>Goo</td></tr>
-<tr><td><b>visible</b></td><td>visible</td><td>A mesh of the portion of the sky dome visible by the _testPt through the _context geometry.</td><td>Goo</td></tr>
-<tr><td><b>percMasked</b></td><td>percMasked</td><td>The percentage of the sky masked by the _context geometry at the _testPt.</td><td>Goo</td></tr>
-<tr><td><b>skyView</b></td><td>skyView</td><td>The percentage of the sky visible by the _testPt through the _context geometry.</td><td>Goo</td></tr>
+<tr><td><b>contextMask</b></td><td>contextMask</td><td>A mesh of the portion of the sky dome masked by the context_ geometry.</td><td>Goo</td></tr>
+<tr><td><b>orientationMask</b></td><td>orientationMask</td><td>A mesh of the portion of the sky dome masked by the fact that a surface is facing a given orientation.</td><td>Goo</td></tr>
+<tr><td><b>strategyMask</b></td><td>strategyMask</td><td>A mesh of the portion of the sky dome masked by the overhang, left fin, and right fin projections.</td><td>Goo</td></tr>
+<tr><td><b>skyMask</b></td><td>skyMask</td><td>A mesh of the portion of the sky dome visible by the _centerPtOrPlane_ through the context_ geometry.</td><td>Goo</td></tr>
+<tr><td><b>----------</b></td><td>----------</td><td>...</td><td>Goo</td></tr>
+<tr><td><b>contextExposure</b></td><td>contextExposure</td><td>The percentage of the hemispherical sky dome masked by the context_ geometry.</td><td>Goo</td></tr>
+<tr><td><b>orientExposure</b></td><td>orientExposure</td><td>The percentage of the hemispherical sky dome masked by the fact that a surface is facing a given orientation.</td><td>Goo</td></tr>
+<tr><td><b>strategyExposure</b></td><td>strategyExposure</td><td>The percentage of the hemispherical sky dome masked by the overhang, left fin, and right fin projections.</td><td>Goo</td></tr>
+<tr><td><b>skyExposure</b></td><td>skyExposure</td><td>The percentage of the hemispherical sky dome visible through the context_ geometry and the strategy geometry.</td><td>Goo</td></tr>
 </tbody>
 </table>
 
@@ -112,7 +130,7 @@
             </div>
             <div id="xg_foot">
                 <p class="left">
-    © 2016             &nbsp; Created by <a href="http://www.grasshopper3d.com/profile/HarshGupta367/">Harsh Gupta</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    © 2018             &nbsp; Created by <a href="http://www.stackoverflow.com/cv/robin-rodricks">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
     Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a>
 	</p>
     <p class="right xg_lightfont">

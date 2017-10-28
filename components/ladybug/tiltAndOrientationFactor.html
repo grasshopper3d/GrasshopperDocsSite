@@ -75,7 +75,7 @@
 
 <div>
 <h1><img src="../../icons/Ladybug/Tilt_And_Orientation_Factor.png"/> Tilt And Orientation Factor</h1>
-<p><a href="../../index.html">Component Index</a> &gt; Ladybug > 3 | EnvironmentalAnalysis > <b>Tilt And Orientation Factor</b></p>
+<p><a href="../../index.html">Component Index</a> &gt; <a href="../../index.html#Ladybug">Ladybug</a> > 4 | Renewables > <b>Tilt And Orientation Factor</b></p>
 </div>
 <h3>This component calculates the Optimal Tilt, Optimal Orientation and TOF (Tilt and Orientation Factor) for PV modules or Solar water heating collectors.<br>TOF is a solar radiation at the actual tilt and orientation divided by the solar radiation at the optimum tilt and orientation.<br></h3>
 <h2>Inputs</h2>
@@ -108,9 +108,7 @@ Unitless.</td><td>Goo</td></tr>
 Example - precision of 4, would mean that 4 fields in X direction (Azimuth) and 4 fields in Y direction (Tilt) = 16 fields, will be used to calculate the final "geometry" mesh.
 For lower precision numbers (say < 20) even precision numbers are more accurate.
 -
-CAUTION!!! Precision numbers (10 >) require stronger performance PCs. If your PC is somewhat "weaker", the precision of < 10 will be just fine.
--
-If not supplied, default value of 2 will be used.</td><td>Goo</td></tr>
+If not supplied, default value of 20 will be used.</td><td>Goo</td></tr>
 <tr><td><b>scale_</b></td><td>scale_</td><td>Scale of the overall geometry.
 -
 If not supplied, default value of 1 will be used.</td><td>Goo</td></tr>
@@ -118,6 +116,7 @@ If not supplied, default value of 1 will be used.</td><td>Goo</td></tr>
 -
 If not supplied, default point of (-15,0,0) will be used.</td><td>Goo</td></tr>
 <tr><td><b>legendPar_</b></td><td>legendPar_</td><td>Optional legend parameters from the Ladybug "Legend Parameters" component.</td><td>Goo</td></tr>
+<tr><td><b>analysisPeriod_</b></td><td>analysisPeriod_</td><td>Script variable TOF</td><td>Goo</td></tr>
 <tr><td><b>___________________</b></td><td>___________________</td><td>Script input ______________________.</td><td>Goo</td></tr>
 <tr><td><b>bakeIt_</b></td><td>bakeIt_</td><td>Set to "True" to bake the Tilt and orientation factor results into the Rhino scene.
 -
@@ -154,7 +153,7 @@ In degrees (°).</td><td>Goo</td></tr>
 In inches/inches</td><td>Goo</td></tr>
 <tr><td><b>optimalRadiation</b></td><td>optimalRadiation</td><td>Total solar radiation per square meter for a whole year received on a PV_SWHsurface of optimal tilt and azimuth, at given location.
 In kWh/m2</td><td>Goo</td></tr>
-<tr><td><b>___________________</b></td><td>___________________</td><td>Script variable PhotovoltaicsSurface</td><td>Goo</td></tr>
+<tr><td><b>___________________</b></td><td>___________________</td><td>Script variable TOF</td><td>Goo</td></tr>
 <tr><td><b>geometry</b></td><td>geometry</td><td>Geometry of the whole TOF mesh chart.
 Connect this output to a Grasshopper's "Geo" parameter in order to preview the "geometry" separately in the Rhino scene.</td><td>Goo</td></tr>
 <tr><td><b>originPt</b></td><td>originPt</td><td>The origin point of the "geometry" output.
@@ -173,7 +172,7 @@ Use this point to move "geometry" output around in the Rhino scene with the gras
             </div>
             <div id="xg_foot">
                 <p class="left">
-    © 2016             &nbsp; Created by <a href="http://www.grasshopper3d.com/profile/HarshGupta367/">Harsh Gupta</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    © 2018             &nbsp; Created by <a href="http://www.stackoverflow.com/cv/robin-rodricks">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
     Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a>
 	</p>
     <p class="right xg_lightfont">

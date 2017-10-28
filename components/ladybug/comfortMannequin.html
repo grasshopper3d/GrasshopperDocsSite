@@ -75,7 +75,7 @@
 
 <div>
 <h1><img src="../../icons/Ladybug/Comfort_Mannequin.png"/> Comfort Mannequin</h1>
-<p><a href="../../index.html">Component Index</a> &gt; Ladybug > 4 | Extra > <b>Comfort Mannequin</b></p>
+<p><a href="../../index.html">Component Index</a> &gt; <a href="../../index.html#Ladybug">Ladybug</a> > 5 | Extra > <b>Comfort Mannequin</b></p>
 </div>
 <h3>Use this component to color a mannequin based on their relation to a comfort temperature.<br></h3>
 <h2>Inputs</h2>
@@ -92,6 +92,10 @@
 <tr><td><b>rotationAngle_</b></td><td>rotationAngle_</td><td>An optional rotation angle in degrees.  Use this number to adjust the angle of the comfort mannequin in space.  The angle of the mannequin in relation to the sun can have a large effect on the amount of radiation that falls on it and thus largely affect the resulting mean radiant temperature.</td><td>Goo</td></tr>
 <tr><td><b>bodyLocation_</b></td><td>bodyLocation_</td><td>An optional point that sets the position of the comfort mannequin in space.  Use this to move the comfort mannequin around in relation to contextShading_ connected below. The default is set to the Rhino origin.</td><td>Goo</td></tr>
 <tr><td><b>legendPar_</b></td><td>legendPar_</td><td>Optional legend parameters from the Ladybug Legend Parameters component.</td><td>Goo</td></tr>
+<tr><td><b>bakeIt_</b></td><td>bakeIt_</td><td>An integer that tells the component if/how to bake the bojects in the Rhino scene.  The default is set to 0.  Choose from the following options:
+0 (or False) - No geometry will be baked into the Rhino scene (this is the default).
+1 (or True) - The geometry will be baked into the Rhino scene as a colored hatch and Rhino text objects, which facilitates easy export to PDF or vector-editing programs.
+2 - The geometry will be baked into the Rhino scene as colored meshes, which is useful for recording the results of paramteric runs as light Rhino geometry.</td><td>Goo</td></tr>
 </tbody>
 </table>
 
@@ -115,7 +119,7 @@
             </div>
             <div id="xg_foot">
                 <p class="left">
-    © 2016             &nbsp; Created by <a href="http://www.grasshopper3d.com/profile/HarshGupta367/">Harsh Gupta</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    © 2018             &nbsp; Created by <a href="http://www.stackoverflow.com/cv/robin-rodricks">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
     Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a>
 	</p>
     <p class="right xg_lightfont">

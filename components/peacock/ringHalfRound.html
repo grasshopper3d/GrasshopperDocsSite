@@ -75,7 +75,7 @@
 
 <div>
 <h1><img src="../../icons/Peacock/Ring_half_round.png"/> Ring half round</h1>
-<p><a href="../../index.html">Component Index</a> &gt; Peacock > Rings > <b>Ring half round</b></p>
+<p><a href="../../index.html">Component Index</a> &gt; <a href="../../index.html#Peacock">Peacock</a> > Rings > <b>Ring half round</b></p>
 </div>
 <h3>Creates a half round ring</h3>
 <h2>Inputs</h2>
@@ -84,15 +84,28 @@
 <tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
 </thead>
 <tbody>
-<tr><td><b>Plane</b></td><td>Pln</td><td>Base plane of ring</td><td>Plane</td></tr>
-<tr><td><b>Size</b></td><td>Size</td><td>Size of ring (european gauge)</td><td>Number</td></tr>
-<tr><td><b>Top width</b></td><td>TopW</td><td>Width at top</td><td>Number</td></tr>
-<tr><td><b>Bottom width</b></td><td>BottomW</td><td>Width at bottom</td><td>Number</td></tr>
-<tr><td><b>Top thickness</b></td><td>TopT</td><td>Thickness at top</td><td>Number</td></tr>
-<tr><td><b>Bottom thickness</b></td><td>BottomT</td><td>Thickness at bottom</td><td>Number</td></tr>
-<tr><td><b>Soft edge</b></td><td>SoftE</td><td>Soften the edge (values ​​between 0 and 1)
-Note * If the value is zero, the result will be a brep. If nonzero, a surface.
-Note * This loses accuracy of the width and thickness.</td><td>Number</td></tr>
+<tr><td><b>Plane</b></td><td>Pln</td><td>Base plane</td><td>Plane</td></tr>
+<tr><td><b>Regional system</b></td><td>Reg</td><td>Regional system to gauge rings. Plug a ValueList component to AutoList function.
+0 => ISO (International Organization for Standardization). mm of circunference.
+1 => European size.
+2 => British size.
+3 => American size.
+4 => Japanese size.</td><td>Integer</td></tr>
+<tr><td><b>Size</b></td><td>Size</td><td>Size of ring. Plug a ValueList component to AutoList function</td><td>Number</td></tr>
+<tr><td><b>Width</b></td><td>Wid</td><td>Width values. You can set:
+One value for uniform width.
+Two values for width at up and bottom.
+Three values for width at up, middle and bottom.
+Eleven values for non-uniform width.
+More values for non-uniform width increasing sections/resolution.</td><td>Number</td></tr>
+<tr><td><b>Thickness</b></td><td>Thk</td><td>Thickness values. You can set:
+One value for uniform thickness.
+Two values for thickness at up and bottom.
+Three values for thickness at up, middle and bottom.
+Eleven values for non-uniform thickness.
+More values for non-uniform thickness increasing sections/resolution.</td><td>Number</td></tr>
+<tr><td><b>Bulge</b></td><td>Blg</td><td>Bulge factor to adjust curvature</td><td>Number</td></tr>
+<tr><td><b>Soft edge</b></td><td>Soft</td><td>Soften the edge between 0 ~ 1 (0 => Half round as brep, >0 => Rounded as surface).</td><td>Number</td></tr>
 </tbody>
 </table>
 
@@ -103,6 +116,7 @@ Note * This loses accuracy of the width and thickness.</td><td>Number</td></tr>
 </thead>
 <tbody>
 <tr><td><b>Ring</b></td><td>R</td><td>Resulting ring</td><td>Brep</td></tr>
+<tr><td><b>Girdle</b></td><td>G</td><td>Resulting girdle circle</td><td>Circle</td></tr>
 </tbody>
 </table>
 
@@ -114,7 +128,7 @@ Note * This loses accuracy of the width and thickness.</td><td>Number</td></tr>
             </div>
             <div id="xg_foot">
                 <p class="left">
-    © 2016             &nbsp; Created by <a href="http://www.grasshopper3d.com/profile/HarshGupta367/">Harsh Gupta</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    © 2018             &nbsp; Created by <a href="http://www.stackoverflow.com/cv/robin-rodricks">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
     Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a>
 	</p>
     <p class="right xg_lightfont">

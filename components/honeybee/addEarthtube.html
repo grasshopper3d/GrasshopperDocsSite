@@ -75,7 +75,7 @@
 
 <div>
 <h1><img src="../../icons/Honeybee/AddEarthtube.png"/> AddEarthtube</h1>
-<p><a href="../../index.html">Component Index</a> &gt; Honeybee > 08 | Energy | Set Zone Properties > <b>AddEarthtube</b></p>
+<p><a href="../../index.html">Component Index</a> &gt; <a href="../../index.html#Honeybee">Honeybee</a> > 08 | Energy | Set Zone Properties > <b>AddEarthtube</b></p>
 </div>
 <h3>Use this component to add an Energy Plus earth tube to a Zone.<br>An earth tube is a long, underground metal or plastic pipe through which air is drawn. During cooling season, as air travels through the pipe, it gives up some of its heat to the surrounding soil and enters the room as cooler air. Similarly, during heating season, as air travels through the pipe, it receives some of its heat from the soil and enters the room as warmer air. Simple earth tubes in EnergyPlus can be controlled by a schedule and through the specification of minimum, maximum, and delta temperatures as described below. As with infiltration and ventilation, the actual flow rate of air through the earth tube can be modified by the temperature difference between the inside and outside environment and the wind speed. The basic equation used to calculate air flow rate of earth tube in EnergyPlus is:<br>EarthTubeFlowRate = E*F*[A+B|Tzone-Todb|+C(Windspeed)+D(Windspeed^2)]<br>Where:<br>1. E is the maximum amount of air mass flow rate of the earth tube expected at design conditions.<br>2. F is the schedule that modifies the maximum design volume flow fraction between 0 and 1.<br>3. Tzone is the temperature of the zone which the Earthtube is attached to and Todb is the outdoor dry blub temperature as odb stands for outdoor dry blub temperature.<br>4. A,B,C and D are Constant term flow coefficients,Temperature Term flow coefficients, Velocity Term flow coefficients and Velocity squared term flow coefficients respectively they are set at the default values of 0.606,2.0199999E-02,5.9800001E-04 and 0.0000000E+00. In future versions the user will be able to specify these.<br>For more information about the Energy Plus Earthtube please see:<br>http://bigladdersoftware.com/epx/docs/8-2/input-output-reference/group-airflow.html#zoneearthtube-earth-tube<br></h3>
 <h2>Inputs</h2>
@@ -158,7 +158,7 @@ This plays a role in determining the amount of heat transferred from the surroun
 <tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
 </thead>
 <tbody>
-<tr><td><b>Readme</b></td><td>Readme</td><td>Details of the earth tubes created.</td><td>Goo</td></tr>
+<tr><td><b>readMe</b></td><td>readMe</td><td>Details of the earth tubes created.</td><td>Goo</td></tr>
 <tr><td><b>earthTubeHBZones</b></td><td>earthTubeHBZones</td><td>The Honeybee zones that have been modified by this component - these zones now contain an earth tube</td><td>Goo</td></tr>
 </tbody>
 </table>
@@ -171,7 +171,7 @@ This plays a role in determining the amount of heat transferred from the surroun
             </div>
             <div id="xg_foot">
                 <p class="left">
-    © 2016             &nbsp; Created by <a href="http://www.grasshopper3d.com/profile/HarshGupta367/">Harsh Gupta</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    © 2018             &nbsp; Created by <a href="http://www.stackoverflow.com/cv/robin-rodricks">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
     Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a>
 	</p>
     <p class="right xg_lightfont">

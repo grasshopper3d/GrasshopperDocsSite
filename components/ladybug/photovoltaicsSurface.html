@@ -75,9 +75,9 @@
 
 <div>
 <h1><img src="../../icons/Ladybug/Photovoltaics_Surface.png"/> Photovoltaics Surface</h1>
-<p><a href="../../index.html">Component Index</a> &gt; Ladybug > 3 | EnvironmentalAnalysis > <b>Photovoltaics Surface</b></p>
+<p><a href="../../index.html">Component Index</a> &gt; <a href="../../index.html#Ladybug">Ladybug</a> > 4 | Renewables > <b>Photovoltaics Surface</b></p>
 </div>
-<h3>Use this component to calculate amount of electrical energy that can be produced by a surface<br>if a certain percentage of it is covered with Photovoltaics.<br>Component based on NREL PVWatts v1 fixed tilt calculator for crystalline silicon (c-Si) photovoltaics.<br>Sources:<br>http://www.nrel.gov/docs/fy14osti/60272.pdf<br>https://pvpmc.sandia.gov<br></h3>
+<h3>Use this component to calculate amount of electrical energy that can be produced by a surface<br>if a certain percentage of it is covered with Photovoltaics.<br>Component based on NREL PVWatts v1 fixed tilt calculator for crystalline silicon (c-Si) and thin-film photovoltaics.<br>Sources:<br>http://www.nrel.gov/docs/fy14osti/60272.pdf<br>https://pvpmc.sandia.gov<br></h3>
 <h2>Inputs</h2>
 <table>
 <thead>
@@ -99,12 +99,13 @@ In percent (%).</td><td>Goo</td></tr>
 It can be calculated with Ladybug's "DC to AC derate factor" component.
 -
 If not supplied, default value of 0.85 will be used.</td><td>Goo</td></tr>
-<tr><td><b>PVmoduleSettings_</b></td><td>PVmoduleSettings_</td><td>A list of PV module settings. Use the "Photovoltaics module" component to generate them.
+<tr><td><b>PVmoduleSettings_</b></td><td>PVmoduleSettings_</td><td>A list of PV module settings. Use the "Simplified Photovoltaics Module" or "Import Sandia Photovoltaics Module" or "Import CEC Photovoltaics Module" components to generate them.
 -
 If not supplied, the following PV module settings will be used by default:
+- module material: crystalline silicon (c-Si)
 - moduleType: Close (flush) roof mount
 - moduleEfficiency: 15 %
-- temperatureCoefficient: -0.5 %/°C
+- temperatureCoefficient: -0.5 %/C
 - moduleActiveAreaPercent: 90 %</td><td>Goo</td></tr>
 <tr><td><b>north_</b></td><td>north_</td><td>Input a vector to be used as a true North direction, or a number between 0 and 360 that represents the clockwise degrees off from the Y-axis.
 -
@@ -123,7 +124,7 @@ Unitless.</td><td>Goo</td></tr>
 <tr><td><b>conditionalStatement_</b></td><td>conditionalStatement_</td><td>This input allows users to calculate the Photovoltaics surface component results only for those annualHourlyData_ values which fit specific conditions or criteria. To use this input correctly, hourly data, such as dryBulbTemperature or windSpeed, must be plugged into the "annualHourlyData_" input. The conditional statement input here should be a valid condition statement in Python, such as "a>25" or "b<3" (without the quotation marks).
 conditionalStatement_ accepts "and" and "or" operators. To visualize the hourly data, English letters should be used as variables, and each letter alphabetically corresponds to each of the lists (in their respective order): "a" always represents the 1st list, "b" always represents the 2nd list, etc.
 -
-For example, if you have an hourly dryBulbTemperature connected as the first list, and windSpeed connected as the second list (both to the annualHourlyData_ input), and you want to plot the data for the time period when temperature is between 18°C and 23°C, and windSpeed is larger than 3m/s, the conditionalStatement_ should be written as "18<a<23 and b>3" (without the quotation marks).</td><td>Goo</td></tr>
+For example, if you have an hourly dryBulbTemperature connected as the first list, and windSpeed connected as the second list (both to the annualHourlyData_ input), and you want to plot the data for the time period when temperature is between 18C and 23C, and windSpeed is larger than 3m/s, the conditionalStatement_ should be written as "18<a<23 and b>3" (without the quotation marks).</td><td>Goo</td></tr>
 <tr><td><b>_________________</b></td><td>_________________</td><td>Script input ______________________.</td><td>Goo</td></tr>
 <tr><td><b>_runIt</b></td><td>_runIt</td><td>...</td><td>Goo</td></tr>
 </tbody>
@@ -153,12 +154,9 @@ In kWh.</td><td>Goo</td></tr>
 <tr><td><b>totalRadiationPerHour</b></td><td>totalRadiationPerHour</td><td>Total Incident POA (Plane of array) irradiance for each hour during a year.
 -
 In kWh/m2.</td><td>Goo</td></tr>
-<tr><td><b>moduleTemperaturePerHour</b></td><td>moduleTemperaturePerHour</td><td>Module's back surface temperature for each hour during year.
--
-In °C.</td><td>Goo</td></tr>
 <tr><td><b>cellTemperaturePerHour</b></td><td>cellTemperaturePerHour</td><td>Cell temperature for each hour during year.
 -
-In °C.</td><td>Goo</td></tr>
+In C.</td><td>Goo</td></tr>
 <tr><td><b>_______________________</b></td><td>_______________________</td><td>Script variable PhotovoltaicsSurface</td><td>Goo</td></tr>
 <tr><td><b>PVsurfaceTiltAngle</b></td><td>PVsurfaceTiltAngle</td><td>The angle from horizontal of the inclination of the PVsurface. Example: 0 = horizontal, 90 = vertical.
 It ranges from 0-180.
@@ -182,7 +180,7 @@ In kW.</td><td>Goo</td></tr>
             </div>
             <div id="xg_foot">
                 <p class="left">
-    © 2016             &nbsp; Created by <a href="http://www.grasshopper3d.com/profile/HarshGupta367/">Harsh Gupta</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    © 2018             &nbsp; Created by <a href="http://www.stackoverflow.com/cv/robin-rodricks">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
     Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a>
 	</p>
     <p class="right xg_lightfont">
