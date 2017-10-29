@@ -70,14 +70,14 @@ Listed in the order they were added in.
 # Plugins that failed to provide metadata
 
 - [Octopus](http://www.food4rhino.com/app/octopus), 0.3.6, 2015-Sep-26
- - Does not install properly. No new components appear to be loaded. Add an issue if you can help debug this.
+   - Does not install properly. No new components appear to be loaded. Add an issue if you can help debug this.
 
 - [MeshEdit](http://www.food4rhino.com/app/meshedit), 2.0, 2017-Jun-25
- - DLL is obfuscated and therefore the metadata cannot be extracted. Ask the author to build a non-obfuscated DLL.
+   - DLL is obfuscated and therefore the metadata cannot be extracted. Ask the author to build a non-obfuscated DLL.
  
 - [Aether](http://www.grasshopper3d.com/profiles/blogs/aether-simple-speedy-spatial-fields-for-grasshopper
 ), 1.0, 2014-Dec-16
- - Does not install properly. No new components appear to be loaded. Add an issue if you can help debug this.
+   - Does not install properly. No new components appear to be loaded. Add an issue if you can help debug this.
 
 # Want to add or update a plugin?
 Simply add an [Issue](https://github.com/rhino/rhino.github.io/issues) with the name and link of the plugin, or add a post in the [GH forum thread](http://www.grasshopper3d.com/forum/topics/component-reference-for-gh?xg_source=activity&id=2985220%3ATopic%3A1522149&page=6#comments). I'll add it up as soon as possible.
