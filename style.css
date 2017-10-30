@@ -105,7 +105,6 @@ table tr:nth-child(2n) {
   font-family: "Open Sans", Verdana, Arial, sans-serif;
   font-weight: normal;
   line-height: 1.8;
-  position: relative;
   padding-left: 30px;
   margin-left: -30px;
   font-weight: normal;
@@ -238,6 +237,8 @@ h3 {
 
 
 
+/* TOC ON INDEX */
+
 #toc {
     top: 0px;
     left: 0px;
@@ -281,4 +282,94 @@ h3 {
 }
 #toc .toc-active a {
 	color: #000;
+}
+
+.libheader a, .libheader a:hover, .libheader a:focus {
+    text-decoration: none;
+}
+
+.libheader h2 {
+	line-height: 2;
+    text-decoration: underline;
+}
+
+
+/* ADDON PAGE */
+
+.addon-buttons {
+	text-align: right;
+	float: right;
+}
+.addon-buttons a {
+	display: inline-block;
+	border: 5px solid #3B7400;
+	padding: 10px 20px 5px 20px;
+	margin: 10px 10px 10px 10px;
+	color: #FFF;
+	background-color: #61A717;
+	height: 35px;
+	font-size: 16px;
+    text-decoration: none;
+	transition: background-color 100ms;
+}
+.addon-buttons a:hover, .addon-buttons a:focus {
+	background-color: #3B7400;
+    text-decoration: none;
+}
+h6 {
+	/*color: #548A00;*/
+}
+
+
+
+/* GH BAR */
+.ghbar-head-title {
+	margin-bottom: 10px;
+}
+.ghbar {
+	margin-bottom: 20px;
+}
+.ghbar-table {
+	padding: 0px;
+	margin: 0px;
+}
+.ghbar-table td {
+	padding: 5px 5px 0px 0px;
+	border: 0 none;
+}
+.ghbar-table tr {
+	padding: 0px;
+	margin: 0px;
+}
+.ghgroup {
+	border: 1px solid #999;
+	border-radius: 5px;
+	padding: 5px 0px 0px 0px;
+	margin: 0px;
+}
+.ghcolumn {
+	width: 25px;
+}
+.ghgroup-table {
+	padding: 0px;
+	margin: 0px;
+}
+.ghgroup-table tr {
+	height: 70px;
+}
+.ghgroup-table td {
+	padding: 0px 2px 0px 2px;
+	border: 0 none;
+	vertical-align: top;
+}
+.ghgroup-title-row {
+	padding: 0px 0px !important;
+	height: 10px !important;
+}
+.ghgroup-title {
+	font-size: 12px;
+	color: #FFF;
+	background-color: #777;
+	text-align: center;
+	overflow: hidden;
 }

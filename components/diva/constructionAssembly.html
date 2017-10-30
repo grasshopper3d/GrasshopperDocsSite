@@ -73,9 +73,118 @@
 
 <div class="content">
 
+<div class="ghbar">
+<table class="ghbar-table">
+<tr>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/diva/dIVADaylightAnalysisForGH.html"><img class="ghicon" src="../../icons/DIVA/DIVA_Daylight_Analysis_for_GH.png" title="DIVA Daylight Analysis for GH"></a>
+<a href="../../components/diva/material.html"><img class="ghicon" src="../../icons/DIVA/Material.png" title="Material"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/diva/analysisGrid.html"><img class="ghicon" src="../../icons/DIVA/Analysis_Grid.png" title="Analysis Grid"></a>
+<a href="../../components/diva/legend.html"><img class="ghicon" src="../../icons/DIVA/Legend.png" title="Legend"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="2">
+DIVA Daylight
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/diva/constructionAssembly.html"><img class="ghicon" src="../../icons/DIVA/Construction_Assembly.png" title="Construction Assembly"></a>
+<a href="../../components/diva/shade.html"><img class="ghicon" src="../../icons/DIVA/Shade.png" title="Shade"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/diva/readSavedThermalResults.html"><img class="ghicon" src="../../icons/DIVA/Read_Saved_Thermal_Results.png" title="Read Saved Thermal Results"></a>
+<a href="../../components/diva/viperDIVAThermalAnalysisForGH.html"><img class="ghicon" src="../../icons/DIVA/Viper__DIVA_Thermal_Analysis_for_GH.png" title="Viper: DIVA Thermal Analysis for GH"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/diva/windowUnit.html"><img class="ghicon" src="../../icons/DIVA/Window_Unit.png" title="Window Unit"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+DIVA Thermal
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/diva/fARCalculator.html"><img class="ghicon" src="../../icons/DIVA/FAR_Calculator.png" title="FAR Calculator"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+Massing Tools
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/diva/solarEnvelope.html"><img class="ghicon" src="../../icons/DIVA/Solar_Envelope.png" title="Solar Envelope"></a>
+<a href="../../components/diva/solarFan.html"><img class="ghicon" src="../../icons/DIVA/Solar_Fan.png" title="Solar Fan"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/diva/solarPositionCalculator.html"><img class="ghicon" src="../../icons/DIVA/Solar_Position_Calculator.png" title="Solar Position Calculator"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="2">
+Solar Tools
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+
+<div class="addon-buttons">
+<a href="http://www.solemma.net/DIVA-for-Rhino/download.html">Download</a>
+</div>
+
 <div>
 <h1><img src="../../icons/DIVA/Construction_Assembly.png"/> Construction Assembly</h1>
-<p><a href="../../index.html">Component Index</a> &gt; <a href="../../index.html#DIVA">DIVA</a> > DIVA Thermal > <b>Construction Assembly</b></p>
+<p><a href="../../index.html#DIVA">Component Index</a> &gt; <a href="../../addons/diva.html">DIVA</a> > DIVA Thermal > <b>Construction Assembly</b></p>
 </div>
 <h3>This component must be used to assign constructions assemblies to zone geometry<br>before that geometry can be passed on to the 'Viper' component for thermal analysis.<br>___________________________________________________________________<br><br>Instructions:<br><br>1) Connect one or more breps to the input 'Brep'. Breps must be PLANAR or composed<br>    of planar faces.<br><br>2) Click the Assembly button and select a construction assembly from the list.<br><br>3) Connect the output to the 'Zone' input in the Viper component.<br>    <br>___________________________________________________________________<br><br>Custom Construction Assemblies:<br><br>To build your own assemlby from material layers:<br><br>1) Click the Assembly button and select 'Custom Assembly'.<br><br>2) Click the 'Layers' button and select the number of material layers deired.<br><br>3) Click each layer button ('L1', etc.) and select a material item for that<br>    layer. You must also provide a thickness (in INCHES) for each layer in the<br>    corresponding input parameter ('L1_thickness', etc.) If you wish to set the R-value<br>    of an insulation layer rather than its thickness, use the 'Insulation: Set R-Value'<br>    material.<br><br>4) If you want to save your new assembly to the library, provide a unique name to the<br>    'Name' input and click the 'Save' button.<br></h3>
 <h2>Inputs</h2>

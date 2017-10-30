@@ -1,0 +1,203 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+<head data-layout-view="wide">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Kangaroo2 - Grasshopper Addon Reference</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+
+<meta name="description" content="Complete documentation for the Kangaroo2 addon in Grasshopper 3D." />
+<meta name="title" content="Grasshopper Addon Reference" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://rhino.github.io/" />
+<meta property="og:title" content="Kangaroo2 - Grasshopper Addon Reference" />
+
+<meta property="wiki-page" content="$WIKI$" />
+
+<link rel="image_src" href="http://rhino.github.io/ning/2985220.jpg" />
+
+<style type="text/css" media="screen,projection">
+#xg_navigation ul div.xg_subtab ul li a {
+    color:#666666;
+    background:#EAFFBD;
+}
+#xg_navigation ul div.xg_subtab ul li a:hover {
+    color:#333333;
+    background:#F2FFD6;
+}
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../ning/index.css);
+@import url(../ning/page.css);
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../ning/1187549422.css);
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../ning/1187545030.css);
+</style>
+
+
+<link href="../style.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+    </head>
+    <body>
+    
+        
+        <div id="xg" class="xg_theme xg_widget_page xg_widget_page_page xg_widget_page_page_show" data-layout-pack="classic">
+            <div id="xg_head">
+                <div id="xg_masthead">
+                    <p id="xg_sitename"><a id="application_name_header_link" href="http://rhino.github.io/">Grasshopper</a></p>
+                    <p id="xg_sitedesc" class="xj_site_desc">algorithmic modeling for Rhino</p>
+                </div>
+                <div id="xg_navigation">
+                    <ul>
+    <li id="xg_tab_main" class="xg_subtab"><a href="http://www.grasshopper3d.com/"><span>Home</span></a></li>
+	<li id="xg_tab_photo" class="xg_subtab"><a href="http://www.grasshopper3d.com/photo"><span>View</span></a></li>
+	<li id="xg_tab_xn0" class="xg_subtab"><a href="http://www.grasshopper3d.com/page/download-1"><span>Get</span></a></li>
+	<li id="xg_tab_xn2" class="xg_subtab this"><a href="http://rhino.github.io/"><span>Learn</span></a></li>
+	<li id="xg_tab_forum" class="xg_subtab"><a href="http://www.grasshopper3d.com/forum"><span>Talk</span></a></li>
+	<li id="xg_tab_events" class="xg_subtab"><a href="http://www.grasshopper3d.com/events"><span>Events</span></a></li>
+	<li id="xg_tab_profile" class="xg_subtab"><a href="http://www.grasshopper3d.com/"><span>My Page</span></a></li></ul>
+
+                </div>
+            </div>
+            
+            <div id="xg_body">
+                
+				<div class="page">
+
+<div class="content">
+
+<div class="addon-buttons">
+<a href="http://www.food4rhino.com/app/kangaroo">Download</a>
+</div>
+
+<div>
+<h1>Kangaroo2</h1>
+<h6>ADDON</h6>
+<p><a href="../index.html#Kangaroo2">Component Index</a> &gt; <b>Kangaroo2</b></p>
+</div>
+
+<div class="cchild">
+<h3>Goals</h3>
+<table class="compos">
+<tbody>
+<tr><td><a href="../components/kangaroo2/anchor.html"><img src="../icons/Kangaroo2/Anchor.png"/></a></td><td><a href="../components/kangaroo2/anchor.html">Anchor</a><br><span class="desc">Anchor</span></td></tr>
+<tr><td><a href="../components/kangaroo2/anchorXYZ.html"><img src="../icons/Kangaroo2/AnchorXYZ.png"/></a></td><td><a href="../components/kangaroo2/anchorXYZ.html">AnchorXYZ</a><br><span class="desc">Fix a point only along chosen world axes. If you need to reset the initial position, disconnect then reconnect the Point input.</span></td></tr>
+<tr><td><a href="../components/kangaroo2/angle.html"><img src="../icons/Kangaroo2/Angle.png"/></a></td><td><a href="../components/kangaroo2/angle.html">Angle</a><br><span class="desc">Angle</span></td></tr>
+<tr><td><a href="../components/kangaroo2/angleSnap.html"><img src="../icons/Kangaroo2/AngleSnap.png"/></a></td><td><a href="../components/kangaroo2/angleSnap.html">AngleSnap</a><br><span class="desc">Snap the angle between 2 lines to the closest whole number multiple of a given value</span></td></tr>
+<tr><td><a href="../components/kangaroo2/clampAngle.html"><img src="../icons/Kangaroo2/ClampAngle.png"/></a></td><td><a href="../components/kangaroo2/clampAngle.html">ClampAngle</a><br><span class="desc">Keep an angle between 2 lines within a given range</span></td></tr>
+<tr><td><a href="../components/kangaroo2/clampLength.html"><img src="../icons/Kangaroo2/ClampLength.png"/></a></td><td><a href="../components/kangaroo2/clampLength.html">ClampLength</a><br><span class="desc">Keep length within given bounds</span></td></tr>
+<tr><td><a href="../components/kangaroo2/coLinear.html"><img src="../icons/Kangaroo2/CoLinear.png"/></a></td><td><a href="../components/kangaroo2/coLinear.html">CoLinear</a><br><span class="desc">CoLinear</span></td></tr>
+<tr><td><a href="../components/kangaroo2/collide2d.html"><img src="../icons/Kangaroo2/Collide2d.png"/></a></td><td><a href="../components/kangaroo2/collide2d.html">Collide2d</a><br><span class="desc">Collisions between closed polygons in a given plane</span></td></tr>
+<tr><td><a href="../components/kangaroo2/collider.html"><img src="../icons/Kangaroo2/Collider.png"/></a></td><td><a href="../components/kangaroo2/collider.html">Collider</a><br><span class="desc">Collisions between thickened line segments and spheres</span></td></tr>
+<tr><td><a href="../components/kangaroo2/constantTension.html"><img src="../icons/Kangaroo2/ConstantTension.png"/></a></td><td><a href="../components/kangaroo2/constantTension.html">ConstantTension</a><br><span class="desc">An element which adapts its stiffness to maintain a constant force</span></td></tr>
+<tr><td><a href="../components/kangaroo2/coPlanar.html"><img src="../icons/Kangaroo2/CoPlanar.png"/></a></td><td><a href="../components/kangaroo2/coPlanar.html">CoPlanar</a><br><span class="desc">CoPlanar</span></td></tr>
+<tr><td><a href="../components/kangaroo2/coSpherical.html"><img src="../icons/Kangaroo2/CoSpherical.png"/></a></td><td><a href="../components/kangaroo2/coSpherical.html">CoSpherical</a><br><span class="desc">CoSpherical</span></td></tr>
+<tr><td><a href="../components/kangaroo2/curvePointCollide.html"><img src="../icons/Kangaroo2/CurvePointCollide.png"/></a></td><td><a href="../components/kangaroo2/curvePointCollide.html">CurvePointCollide</a><br><span class="desc">Keep a set of points outside or inside a given 2d curve</span></td></tr>
+<tr><td><a href="../components/kangaroo2/cyclicQuad.html"><img src="../icons/Kangaroo2/CyclicQuad.png"/></a></td><td><a href="../components/kangaroo2/cyclicQuad.html">CyclicQuad</a><br><span class="desc">Make a quadrilateral have a circumscribed circle</span></td></tr>
+<tr><td><a href="../components/kangaroo2/direction.html"><img src="../icons/Kangaroo2/Direction.png"/></a></td><td><a href="../components/kangaroo2/direction.html">Direction</a><br><span class="desc">Align a line segment with a given vector, or if none supplied, the closest of the World XYZ vectors</span></td></tr>
+<tr><td><a href="../components/kangaroo2/dynamicWeight1d.html"><img src="../icons/Kangaroo2/DynamicWeight1d.png"/></a></td><td><a href="../components/kangaroo2/dynamicWeight1d.html">DynamicWeight1d</a><br><span class="desc">A load in the negative Z direction, which updates its magnitude according to the length of the line</span></td></tr>
+<tr><td><a href="../components/kangaroo2/equalLength.html"><img src="../icons/Kangaroo2/EqualLength.png"/></a></td><td><a href="../components/kangaroo2/equalLength.html">EqualLength</a><br><span class="desc">EqualLength</span></td></tr>
+<tr><td><a href="../components/kangaroo2/floor.html"><img src="../icons/Kangaroo2/Floor.png"/></a></td><td><a href="../components/kangaroo2/floor.html">Floor</a><br><span class="desc">Floor</span></td></tr>
+<tr><td><a href="../components/kangaroo2/hinge.html"><img src="../icons/Kangaroo2/Hinge.png"/></a></td><td><a href="../components/kangaroo2/hinge.html">Hinge</a><br><span class="desc">Hinge</span></td></tr>
+<tr><td><a href="../components/kangaroo2/lengthSnap.html"><img src="../icons/Kangaroo2/LengthSnap.png"/></a></td><td><a href="../components/kangaroo2/lengthSnap.html">LengthSnap</a><br><span class="desc">Snap length to whole number multiples of a given number</span></td></tr>
+<tr><td><a href="../components/kangaroo2/magnetSnap.html"><img src="../icons/Kangaroo2/MagnetSnap.png"/></a></td><td><a href="../components/kangaroo2/magnetSnap.html">MagnetSnap</a><br><span class="desc">Snap points together according to proximity</span></td></tr>
+<tr><td><a href="../components/kangaroo2/onCurve.html"><img src="../icons/Kangaroo2/OnCurve.png"/></a></td><td><a href="../components/kangaroo2/onCurve.html">OnCurve</a><br><span class="desc">Keep a point on a given Curve</span></td></tr>
+<tr><td><a href="../components/kangaroo2/onMesh.html"><img src="../icons/Kangaroo2/OnMesh.png"/></a></td><td><a href="../components/kangaroo2/onMesh.html">OnMesh</a><br><span class="desc">Keep a point on a given Mesh</span></td></tr>
+<tr><td><a href="../components/kangaroo2/onPlane.html"><img src="../icons/Kangaroo2/OnPlane.png"/></a></td><td><a href="../components/kangaroo2/onPlane.html">OnPlane</a><br><span class="desc">Keep a point on a given plane</span></td></tr>
+<tr><td><a href="../components/kangaroo2/planarize.html"><img src="../icons/Kangaroo2/Planarize.png"/></a></td><td><a href="../components/kangaroo2/planarize.html">Planarize</a><br><span class="desc">Planarize</span></td></tr>
+<tr><td><a href="../components/kangaroo2/plasticAnchor.html"><img src="../icons/Kangaroo2/PlasticAnchor.png"/></a></td><td><a href="../components/kangaroo2/plasticAnchor.html">PlasticAnchor</a><br><span class="desc">PlasticAnchor</span></td></tr>
+<tr><td><a href="../components/kangaroo2/plasticHinge.html"><img src="../icons/Kangaroo2/PlasticHinge.png"/></a></td><td><a href="../components/kangaroo2/plasticHinge.html">PlasticHinge</a><br><span class="desc">Like Hinge, except folding beyond the plastic/elastic threshold will alter the rest angle</span></td></tr>
+<tr><td><a href="../components/kangaroo2/plasticLength.html"><img src="../icons/Kangaroo2/PlasticLength.png"/></a></td><td><a href="../components/kangaroo2/plasticLength.html">PlasticLength</a><br><span class="desc">This tries to preserve the length of the line elastically, until it is deformed beyond the limit, then its rest length gets changed</span></td></tr>
+<tr><td><a href="../components/kangaroo2/polygonArea.html"><img src="../icons/Kangaroo2/PolygonArea.png"/></a></td><td><a href="../components/kangaroo2/polygonArea.html">PolygonArea</a><br><span class="desc">PolygonArea</span></td></tr>
+<tr><td><a href="../components/kangaroo2/pressure.html"><img src="../icons/Kangaroo2/Pressure.png"/></a></td><td><a href="../components/kangaroo2/pressure.html">Pressure</a><br><span class="desc">A force normal to each triangle, and proportional to its area</span></td></tr>
+<tr><td><a href="../components/kangaroo2/rigidBody.html"><img src="../icons/Kangaroo2/RigidBody.png"/></a></td><td><a href="../components/kangaroo2/rigidBody.html">RigidBody</a><br><span class="desc">RigidBody</span></td></tr>
+<tr><td><a href="../components/kangaroo2/smooth.html"><img src="../icons/Kangaroo2/Smooth.png"/></a></td><td><a href="../components/kangaroo2/smooth.html">Smooth</a><br><span class="desc">Smooth</span></td></tr>
+<tr><td><a href="../components/kangaroo2/soapFilm.html"><img src="../icons/Kangaroo2/SoapFilm.png"/></a></td><td><a href="../components/kangaroo2/soapFilm.html">SoapFilm</a><br><span class="desc">Area minimizing triangle, for generating zero mean curvature meshes</span></td></tr>
+<tr><td><a href="../components/kangaroo2/solidPointCollide.html"><img src="../icons/Kangaroo2/SolidPointCollide.png"/></a></td><td><a href="../components/kangaroo2/solidPointCollide.html">SolidPointCollide</a><br><span class="desc">Keep a set of points outside or inside a given Mesh</span></td></tr>
+<tr><td><a href="../components/kangaroo2/sphereCollide.html"><img src="../icons/Kangaroo2/SphereCollide.png"/></a></td><td><a href="../components/kangaroo2/sphereCollide.html">SphereCollide</a><br><span class="desc">Collisions between large numbers of equal sized spheres</span></td></tr>
+<tr><td><a href="../components/kangaroo2/lengthLine.html"><img src="../icons/Kangaroo2/Length(Line).png"/></a></td><td><a href="../components/kangaroo2/lengthLine.html">Length(Line)</a><br><span class="desc">Length(Line)</span></td></tr>
+<tr><td><a href="../components/kangaroo2/tangentialSmooth.html"><img src="../icons/Kangaroo2/TangentialSmooth.png"/></a></td><td><a href="../components/kangaroo2/tangentialSmooth.html">TangentialSmooth</a><br><span class="desc">Smooth a mesh only in the local tangent planes. Used in conjunction with SoapFilm</span></td></tr>
+<tr><td><a href="../components/kangaroo2/tangentIncircles.html"><img src="../icons/Kangaroo2/TangentIncircles.png"/></a></td><td><a href="../components/kangaroo2/tangentIncircles.html">TangentIncircles</a><br><span class="desc">TangentIncircles</span></td></tr>
+<tr><td><a href="../components/kangaroo2/transform.html"><img src="../icons/Kangaroo2/Transform.png"/></a></td><td><a href="../components/kangaroo2/transform.html">Transform</a><br><span class="desc">Keep a given transformation between 2 points</span></td></tr>
+<tr><td><a href="../components/kangaroo2/load.html"><img src="../icons/Kangaroo2/Load.png"/></a></td><td><a href="../components/kangaroo2/load.html">Load</a><br><span class="desc">Load</span></td></tr>
+<tr><td><a href="../components/kangaroo2/volume.html"><img src="../icons/Kangaroo2/Volume.png"/></a></td><td><a href="../components/kangaroo2/volume.html">Volume</a><br><span class="desc">Set the total volume of a mesh</span></td></tr>
+<tr><td><a href="../components/kangaroo2/coincident.html"><img src="../icons/Kangaroo2/Coincident.png"/></a></td><td><a href="../components/kangaroo2/coincident.html">Coincident</a><br><span class="desc">Equivalent to a zero length constraint between a pair of points</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>Main</h3>
+<table class="compos">
+<tbody>
+<tr><td><a href="../components/kangaroo2/show.html"><img src="../icons/Kangaroo2/Show.png"/></a></td><td><a href="../components/kangaroo2/show.html">Show</a><br><span class="desc">Show</span></td></tr>
+<tr><td><a href="../components/kangaroo2/grab.html"><img src="../icons/Kangaroo2/Grab.png"/></a></td><td><a href="../components/kangaroo2/grab.html">Grab</a><br><span class="desc">This lets you drag particles in Rhino. Hold Alt key and drag with LMB, or toggle anchors with LMB+RMB</span></td></tr>
+<tr><td><a href="../components/kangaroo2/solverbouncy.html"><img src="../icons/Kangaroo2/Solver(bouncy).png"/></a></td><td><a href="../components/kangaroo2/solverbouncy.html">Solver(bouncy)</a><br><span class="desc">Solver with momentum</span></td></tr>
+<tr><td><a href="../components/kangaroo2/solver.html"><img src="../icons/Kangaroo2/Solver.png"/></a></td><td><a href="../components/kangaroo2/solver.html">Solver</a><br><span class="desc">The main component where Goals are combined and applied</span></td></tr>
+<tr><td><a href="../components/kangaroo2/zombieSolver.html"><img src="../icons/Kangaroo2/ZombieSolver.png"/></a></td><td><a href="../components/kangaroo2/zombieSolver.html">ZombieSolver</a><br><span class="desc">A version of the solver component which keeps all iterations internal, and outputs the final result</span></td></tr>
+</tbody>
+</table>
+
+</div>
+
+  </div>
+
+</div>
+
+            </div>
+            <div id="xg_foot">
+                <p class="left">
+    © 2018             &nbsp; Created by <a href="http://www.stackoverflow.com/cv/robin-rodricks">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    Hosted by<a href="http://www.github.com/"><img src="../images/github.png" alt="Github" class="poweredbylogo" /></a>
+	</p>
+    <p class="right xg_lightfont">
+                    <a href="http://www.grasshopper3d.com/main/embeddable/list">Badges</a> &nbsp;|&nbsp;
+                        <a href="http://www.grasshopper3d.com/main/index/report" dojotype="PromptToJoinLink" _joinprompttext="Please sign up or sign in to complete this step." _hassignup="true" _signinurl="http://www.grasshopper3d.com/main/authorization/signIn?target=http%3A%2F%2Fwww.grasshopper3d.com%2Fmain%2Findex%2Freport">Report an Issue</a> &nbsp;|&nbsp;
+                        <a href="http://www.grasshopper3d.com/main/authorization/termsOfService?previousUrl=http%3A%2F%2Fwww.grasshopper3d.com%2Fpage%2Fcomponent-reference">Terms of Service</a>
+            </p>
+
+            </div>
+        </div>
+        
+        <div id="xj_baz17246" class="xg_theme"></div>
+<div id="xg_overlay" style="display:none;">
+<!--[if lte IE 6.5]><iframe></iframe><![endif]-->
+</div>
+<!--googleoff: all--><noscript>
+	<style type="text/css" media="screen">
+        #xg { position:relative;top:120px; }
+        #xn_bar { top:120px; }
+	</style>
+	<div class="errordesc noscript">
+		<div>
+            <h3><strong>Hello, you need to enable JavaScript to use Grasshopper.</strong></h3>
+            <p>Please check your browser settings or contact your system administrator.</p>
+			
+		</div>
+	</div>
+</noscript><!--googleon: all-->
+
+<script src="/js/jquery.js"></script>
+<script src="/js/kramed.min.js"></script>
+<script src="/js/component.js"></script>
+<script src="/js/user.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    </body>
+</html>

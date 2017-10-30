@@ -73,9 +73,118 @@
 
 <div class="content">
 
+<div class="ghbar">
+<table class="ghbar-table">
+<tr>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/diva/dIVADaylightAnalysisForGH.html"><img class="ghicon" src="../../icons/DIVA/DIVA_Daylight_Analysis_for_GH.png" title="DIVA Daylight Analysis for GH"></a>
+<a href="../../components/diva/material.html"><img class="ghicon" src="../../icons/DIVA/Material.png" title="Material"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/diva/analysisGrid.html"><img class="ghicon" src="../../icons/DIVA/Analysis_Grid.png" title="Analysis Grid"></a>
+<a href="../../components/diva/legend.html"><img class="ghicon" src="../../icons/DIVA/Legend.png" title="Legend"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="2">
+DIVA Daylight
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/diva/constructionAssembly.html"><img class="ghicon" src="../../icons/DIVA/Construction_Assembly.png" title="Construction Assembly"></a>
+<a href="../../components/diva/shade.html"><img class="ghicon" src="../../icons/DIVA/Shade.png" title="Shade"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/diva/readSavedThermalResults.html"><img class="ghicon" src="../../icons/DIVA/Read_Saved_Thermal_Results.png" title="Read Saved Thermal Results"></a>
+<a href="../../components/diva/viperDIVAThermalAnalysisForGH.html"><img class="ghicon" src="../../icons/DIVA/Viper__DIVA_Thermal_Analysis_for_GH.png" title="Viper: DIVA Thermal Analysis for GH"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/diva/windowUnit.html"><img class="ghicon" src="../../icons/DIVA/Window_Unit.png" title="Window Unit"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+DIVA Thermal
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/diva/fARCalculator.html"><img class="ghicon" src="../../icons/DIVA/FAR_Calculator.png" title="FAR Calculator"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+Massing Tools
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/diva/solarEnvelope.html"><img class="ghicon" src="../../icons/DIVA/Solar_Envelope.png" title="Solar Envelope"></a>
+<a href="../../components/diva/solarFan.html"><img class="ghicon" src="../../icons/DIVA/Solar_Fan.png" title="Solar Fan"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/diva/solarPositionCalculator.html"><img class="ghicon" src="../../icons/DIVA/Solar_Position_Calculator.png" title="Solar Position Calculator"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="2">
+Solar Tools
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+
+<div class="addon-buttons">
+<a href="http://www.solemma.net/DIVA-for-Rhino/download.html">Download</a>
+</div>
+
 <div>
 <h1><img src="../../icons/DIVA/Viper__DIVA_Thermal_Analysis_for_GH.png"/> Viper: DIVA Thermal Analysis for GH</h1>
-<p><a href="../../index.html">Component Index</a> &gt; <a href="../../index.html#DIVA">DIVA</a> > DIVA Thermal > <b>Viper: DIVA Thermal Analysis for GH</b></p>
+<p><a href="../../index.html#DIVA">Component Index</a> &gt; <a href="../../addons/diva.html">DIVA</a> > DIVA Thermal > <b>Viper: DIVA Thermal Analysis for GH</b></p>
 </div>
 <h3>This component performs a single-zone thermal simulation using EnergyPlus, an open-<br>source software operated by the US Department of Energy (http://apps1.eere.energy.gov).<br>________________________________________________________________________<br><br>Instructions:<br><br>1) Create one or a number of breps that collectively form a SINGLE CLOSED volume,<br>    representing the  physical boundary of the thermal zone. Note: All breps must be<br>    PLANAR or composed of planar faces.<br>2) Feed each brep through a 'Construction Assembly' (CA) component, which<br>    you must use to assign materials. Multiple breps of the same construction<br>    can be fed into a single CA component. (We'll deal with windows in step 4). The<br>    CA component can be found in the 'DIVA Thermal' group under the 'DIVA' tab.<br>3) Connect the output from the CA components into the 'Zone' input parameter of the<br>    Viper component.<br>4) Create windows as additional breps that are 'on top of' -- i.e., coplanar with --<br>    the zone breps<br>5) Repeat step (2) for window breps, this time using the 'Window Unit' component and<br>    connecting its output to the 'Window' input of the Viper component<br>6) Create breps to represent any detached shading surfaces (overhangs, other buildings,<br>    fences, trees, etc.). The reflectance of these surfaces can be set using the<br>    'Fixed Shade' component. Or, the breps can be passed directly to the 'Fixed Shade'<br>    input of the Viper component, in which case a default reflectance of 0.35 will be<br>    assumed.<br>7) If you want to save the results of the simulation for later reference, provide<br>    a string to the 'Project_Name' input.<br>8) Set the occypancy type and weather location by clicking on the 'Program' and<br>    'Location' buttons.<br>9) Set internal gain densities, thermostat set points, lighting controls, air flow rates,<br>     and other variables as desired.  (Hover over the input for details.)<br>10) To launch simulation, set 'Run' to True<br></h3>
 <h2>Inputs</h2>

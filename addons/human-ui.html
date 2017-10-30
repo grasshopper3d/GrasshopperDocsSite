@@ -1,0 +1,549 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+<head data-layout-view="wide">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Human UI - Grasshopper Addon Reference</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+
+<meta name="description" content="Complete documentation for the Human UI addon in Grasshopper 3D." />
+<meta name="title" content="Grasshopper Addon Reference" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://rhino.github.io/" />
+<meta property="og:title" content="Human UI - Grasshopper Addon Reference" />
+
+<meta property="wiki-page" content="$WIKI$" />
+
+<link rel="image_src" href="http://rhino.github.io/ning/2985220.jpg" />
+
+<style type="text/css" media="screen,projection">
+#xg_navigation ul div.xg_subtab ul li a {
+    color:#666666;
+    background:#EAFFBD;
+}
+#xg_navigation ul div.xg_subtab ul li a:hover {
+    color:#333333;
+    background:#F2FFD6;
+}
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../ning/index.css);
+@import url(../ning/page.css);
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../ning/1187549422.css);
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../ning/1187545030.css);
+</style>
+
+
+<link href="../style.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+    </head>
+    <body>
+    
+        
+        <div id="xg" class="xg_theme xg_widget_page xg_widget_page_page xg_widget_page_page_show" data-layout-pack="classic">
+            <div id="xg_head">
+                <div id="xg_masthead">
+                    <p id="xg_sitename"><a id="application_name_header_link" href="http://rhino.github.io/">Grasshopper</a></p>
+                    <p id="xg_sitedesc" class="xj_site_desc">algorithmic modeling for Rhino</p>
+                </div>
+                <div id="xg_navigation">
+                    <ul>
+    <li id="xg_tab_main" class="xg_subtab"><a href="http://www.grasshopper3d.com/"><span>Home</span></a></li>
+	<li id="xg_tab_photo" class="xg_subtab"><a href="http://www.grasshopper3d.com/photo"><span>View</span></a></li>
+	<li id="xg_tab_xn0" class="xg_subtab"><a href="http://www.grasshopper3d.com/page/download-1"><span>Get</span></a></li>
+	<li id="xg_tab_xn2" class="xg_subtab this"><a href="http://rhino.github.io/"><span>Learn</span></a></li>
+	<li id="xg_tab_forum" class="xg_subtab"><a href="http://www.grasshopper3d.com/forum"><span>Talk</span></a></li>
+	<li id="xg_tab_events" class="xg_subtab"><a href="http://www.grasshopper3d.com/events"><span>Events</span></a></li>
+	<li id="xg_tab_profile" class="xg_subtab"><a href="http://www.grasshopper3d.com/"><span>My Page</span></a></li></ul>
+
+                </div>
+            </div>
+            
+            <div id="xg_body">
+                
+				<div class="page">
+
+<div class="content">
+
+<div class="addon-buttons">
+<a href="http://www.food4rhino.com/app/human-ui">Download</a>
+</div>
+
+<div>
+<h1>Human UI</h1>
+<h6>ADDON</h6>
+<p><a href="../index.html#HumanUI">Component Index</a> &gt; <b>Human UI</b></p>
+</div>
+
+<div class="ghbar">
+<table class="ghbar-table">
+<tr>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/humanui/createGrid.html"><img class="ghicon" src="../icons/HumanUI/Create_Grid.png" title="Create Grid"></a>
+<a href="../components/humanui/createStack.html"><img class="ghicon" src="../icons/HumanUI/Create_Stack.png" title="Create Stack"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/humanui/createViewBox.html"><img class="ghicon" src="../icons/HumanUI/Create_View_Box.png" title="Create View Box"></a>
+<a href="../components/humanui/tabbedView.html"><img class="ghicon" src="../icons/HumanUI/Tabbed_View.png" title="Tabbed View"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/humanui/createExpander.html"><img class="ghicon" src="../icons/HumanUI/Create_Expander.png" title="Create Expander"></a>
+<a href="../components/humanui/createScrollViewer.html"><img class="ghicon" src="../icons/HumanUI/Create_Scroll_Viewer.png" title="Create Scroll Viewer"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/humanui/createSimpleGrid.html"><img class="ghicon" src="../icons/HumanUI/Create_Simple_Grid.png" title="Create Simple Grid"></a>
+<a href="../components/humanui/createWrapPanel.html"><img class="ghicon" src="../icons/HumanUI/Create_WrapPanel.png" title="Create WrapPanel"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="4">
+UI Containers
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/humanui/create3DView.html"><img class="ghicon" src="../icons/HumanUI/Create_3D_View.png" title="Create 3D View"></a>
+<a href="../components/humanui/createBrowser.html"><img class="ghicon" src="../icons/HumanUI/Create_Browser.png" title="Create Browser"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/humanui/createButton.html"><img class="ghicon" src="../icons/HumanUI/Create_Button.png" title="Create Button"></a>
+<a href="../components/humanui/createCheckbox.html"><img class="ghicon" src="../icons/HumanUI/Create_Checkbox.png" title="Create Checkbox"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/humanui/createChecklist.html"><img class="ghicon" src="../icons/HumanUI/Create_Checklist.png" title="Create Checklist"></a>
+<a href="../components/humanui/createColorPicker.html"><img class="ghicon" src="../icons/HumanUI/Create_Color_Picker.png" title="Create Color Picker"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/humanui/createImage.html"><img class="ghicon" src="../icons/HumanUI/Create_Image.png" title="Create Image"></a>
+<a href="../components/humanui/createLabel.html"><img class="ghicon" src="../icons/HumanUI/Create_Label.png" title="Create Label"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/humanui/createListBox.html"><img class="ghicon" src="../icons/HumanUI/Create_List_Box.png" title="Create List Box"></a>
+<a href="../components/humanui/createMultidimensionalSlider.html"><img class="ghicon" src="../icons/HumanUI/Create_Multidimensional_Slider.png" title="Create Multidimensional Slider"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/humanui/createShapes.html"><img class="ghicon" src="../icons/HumanUI/Create_Shapes.png" title="Create Shapes"></a>
+<a href="../components/humanui/createObjectsFromXAML.html"><img class="ghicon" src="../icons/HumanUI/Create_Objects_from_XAML.png" title="Create Objects from XAML"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/humanui/createPulldownMenu.html"><img class="ghicon" src="../icons/HumanUI/Create_Pulldown_Menu.png" title="Create Pulldown Menu"></a>
+<a href="../components/humanui/createRadioButton.html"><img class="ghicon" src="../icons/HumanUI/Create_Radio_Button.png" title="Create Radio Button"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/humanui/createRhinoCommandButton.html"><img class="ghicon" src="../icons/HumanUI/Create_Rhino_Command_Button.png" title="Create Rhino Command Button"></a>
+<a href="../components/humanui/createShape.html"><img class="ghicon" src="../icons/HumanUI/Create_Shape.png" title="Create Shape"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/humanui/createSlider.html"><img class="ghicon" src="../icons/HumanUI/Create_Slider.png" title="Create Slider"></a>
+<a href="../components/humanui/createTextBlock.html"><img class="ghicon" src="../icons/HumanUI/Create_Text_Block.png" title="Create Text Block"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/humanui/createTextBox.html"><img class="ghicon" src="../icons/HumanUI/Create_Text_Box.png" title="Create Text Box"></a>
+<a href="../components/humanui/createTrueOnlyButton.html"><img class="ghicon" src="../icons/HumanUI/Create_True-Only_Button.png" title="Create True-Only Button"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/humanui/createDataTable.html"><img class="ghicon" src="../icons/HumanUI/Create_Data_Table.png" title="Create Data Table"></a>
+<a href="../components/humanui/createFilePicker.html"><img class="ghicon" src="../icons/HumanUI/Create_File_Picker.png" title="Create File Picker"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/humanui/createGradientEditor.html"><img class="ghicon" src="../icons/HumanUI/Create_Gradient_Editor.png" title="Create Gradient Editor"></a>
+<a href="../components/humanui/createMarkdownViewer.html"><img class="ghicon" src="../icons/HumanUI/Create_Markdown_Viewer.png" title="Create Markdown Viewer"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/humanui/createRangeSlider.html"><img class="ghicon" src="../icons/HumanUI/Create_Range_Slider.png" title="Create Range Slider"></a>
+<a href="../components/humanui/createToggle.html"><img class="ghicon" src="../icons/HumanUI/Create_Toggle.png" title="Create Toggle"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/humanui/createGraphMapper.html"><img class="ghicon" src="../icons/HumanUI/Create_Graph_Mapper.png" title="Create Graph Mapper"></a>
+<a href="../components/humanui/attachTooltipToElement.html"><img class="ghicon" src="../icons/HumanUI/Attach_Tooltip_to_Element.png" title="Attach Tooltip to Element"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="14">
+UI Elements
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/humanui/createChart.html"><img class="ghicon" src="../icons/HumanUI/Create_Chart.png" title="Create Chart"></a>
+<a href="../components/humanui/createMultiChart.html"><img class="ghicon" src="../icons/HumanUI/Create_Multi_Chart.png" title="Create Multi Chart"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/humanui/setChartContents.html"><img class="ghicon" src="../icons/HumanUI/Set_Chart_Contents.png" title="Set Chart Contents"></a>
+<a href="../components/humanui/chartAppearance.html"><img class="ghicon" src="../icons/HumanUI/Chart_Appearance.png" title="Chart Appearance"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/humanui/setMultiChartContents.html"><img class="ghicon" src="../icons/HumanUI/Set_Multi_Chart_Contents.png" title="Set Multi Chart Contents"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+UI Graphs + Charts
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/humanui/setWindowProperties.html"><img class="ghicon" src="../icons/HumanUI/Set_Window_Properties.png" title="Set Window Properties"></a>
+<a href="../components/humanui/addElements.html"><img class="ghicon" src="../icons/HumanUI/Add_Elements.png" title="Add Elements"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/humanui/adjustElementAppearance.html"><img class="ghicon" src="../icons/HumanUI/Adjust_Element_Appearance.png" title="Adjust Element Appearance"></a>
+<a href="../components/humanui/adjustElementPositioning.html"><img class="ghicon" src="../icons/HumanUI/Adjust_Element_Positioning.png" title="Adjust Element Positioning"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/humanui/captureWindowToFile.html"><img class="ghicon" src="../icons/HumanUI/Capture_Window_to_File.png" title="Capture Window to File"></a>
+<a href="../components/humanui/launchTransparentWindow.html"><img class="ghicon" src="../icons/HumanUI/Launch_Transparent_Window.png" title="Launch Transparent Window"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/humanui/getScreenDimensions.html"><img class="ghicon" src="../icons/HumanUI/Get_Screen_Dimensions.png" title="Get Screen Dimensions"></a>
+<a href="../components/humanui/hideShowElement.html"><img class="ghicon" src="../icons/HumanUI/Hide_Show_Element.png" title="Hide/Show Element"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/humanui/launchWindow.html"><img class="ghicon" src="../icons/HumanUI/Launch_Window.png" title="Launch Window"></a>
+<a href="../components/humanui/restoreElementStates.html"><img class="ghicon" src="../icons/HumanUI/Restore_Element_States.png" title="Restore Element States"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/humanui/saveElementStates.html"><img class="ghicon" src="../icons/HumanUI/Save_Element_States.png" title="Save Element States"></a>
+<a href="../components/humanui/valueListener.html"><img class="ghicon" src="../icons/HumanUI/Value_Listener.png" title="Value Listener"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/humanui/captureWindowOrElementToFile.html"><img class="ghicon" src="../icons/HumanUI/Capture_Window_or_Element_to_File.png" title="Capture Window or Element to File"></a>
+<a href="../components/humanui/makeChildWindow.html"><img class="ghicon" src="../icons/HumanUI/Make_Child_Window.png" title="Make Child Window"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/humanui/windowStatus.html"><img class="ghicon" src="../icons/HumanUI/Window_Status.png" title="Window Status"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="8">
+UI Main
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/humanui/set3DView.html"><img class="ghicon" src="../icons/HumanUI/Set_3D_View.png" title="Set 3D View"></a>
+<a href="../components/humanui/set3DViewTextured.html"><img class="ghicon" src="../icons/HumanUI/Set_3D_View_Textured.png" title="Set 3D View Textured"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/humanui/setBrowser.html"><img class="ghicon" src="../icons/HumanUI/Set_Browser.png" title="Set Browser"></a>
+<a href="../components/humanui/setChecklistContents.html"><img class="ghicon" src="../icons/HumanUI/Set_Checklist_Contents.png" title="Set Checklist Contents"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/humanui/setImage.html"><img class="ghicon" src="../icons/HumanUI/Set_Image.png" title="Set Image"></a>
+<a href="../components/humanui/setLabelContents.html"><img class="ghicon" src="../icons/HumanUI/Set_Label_Contents.png" title="Set Label Contents"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/humanui/setListContents.html"><img class="ghicon" src="../icons/HumanUI/Set_List_Contents.png" title="Set List Contents"></a>
+<a href="../components/humanui/setShape.html"><img class="ghicon" src="../icons/HumanUI/Set_Shape.png" title="Set Shape"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/humanui/setShapes.html"><img class="ghicon" src="../icons/HumanUI/Set_Shapes.png" title="Set Shapes"></a>
+<a href="../components/humanui/setTextBlockContents.html"><img class="ghicon" src="../icons/HumanUI/Set_TextBlock_Contents.png" title="Set TextBlock Contents"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/humanui/setTextBoxContents.html"><img class="ghicon" src="../icons/HumanUI/Set_TextBox_Contents.png" title="Set TextBox Contents"></a>
+<a href="../components/humanui/setDataTable.html"><img class="ghicon" src="../icons/HumanUI/Set_Data_Table.png" title="Set Data Table"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/humanui/setSlider.html"><img class="ghicon" src="../icons/HumanUI/Set_Slider.png" title="Set Slider"></a>
+<a href="../components/humanui/set3DViewProperties.html"><img class="ghicon" src="../icons/HumanUI/Set_3D_View_Properties.png" title="Set 3D View Properties"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/humanui/setCheckBox.html"><img class="ghicon" src="../icons/HumanUI/Set_CheckBox.png" title="Set CheckBox"></a>
+<a href="../components/humanui/setExpander.html"><img class="ghicon" src="../icons/HumanUI/Set_Expander.png" title="Set Expander"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/humanui/setTabbedView.html"><img class="ghicon" src="../icons/HumanUI/Set_Tabbed_View.png" title="Set Tabbed View"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="9">
+UI Output
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="cchild">
+<h3>UI Elements</h3>
+<table class="compos">
+<tbody>
+<tr><td><a href="../components/humanui/create3DView.html"><img src="../icons/HumanUI/Create_3D_View.png"/></a></td><td><a href="../components/humanui/create3DView.html">Create 3D View</a><br><span class="desc">Creates an orbitable 3d viewport with a custom-defined mesh</span></td></tr>
+<tr><td><a href="../components/humanui/createBrowser.html"><img src="../icons/HumanUI/Create_Browser.png"/></a></td><td><a href="../components/humanui/createBrowser.html">Create Browser</a><br><span class="desc">Creates a web browser window.</span></td></tr>
+<tr><td><a href="../components/humanui/createButton.html"><img src="../icons/HumanUI/Create_Button.png"/></a></td><td><a href="../components/humanui/createButton.html">Create Button</a><br><span class="desc">Create a Button object.</span></td></tr>
+<tr><td><a href="../components/humanui/createCheckbox.html"><img src="../icons/HumanUI/Create_Checkbox.png"/></a></td><td><a href="../components/humanui/createCheckbox.html">Create Checkbox</a><br><span class="desc">Creates a single checkbox</span></td></tr>
+<tr><td><a href="../components/humanui/createChecklist.html"><img src="../icons/HumanUI/Create_Checklist.png"/></a></td><td><a href="../components/humanui/createChecklist.html">Create Checklist</a><br><span class="desc">Creates a listbox containing checkboxes.</span></td></tr>
+<tr><td><a href="../components/humanui/createColorPicker.html"><img src="../icons/HumanUI/Create_Color_Picker.png"/></a></td><td><a href="../components/humanui/createColorPicker.html">Create Color Picker</a><br><span class="desc">Creates an interactive color picker, with an optionally supplied set of colors</span></td></tr>
+<tr><td><a href="../components/humanui/createImage.html"><img src="../icons/HumanUI/Create_Image.png"/></a></td><td><a href="../components/humanui/createImage.html">Create Image</a><br><span class="desc">Creates an image object to be added to the window</span></td></tr>
+<tr><td><a href="../components/humanui/createLabel.html"><img src="../icons/HumanUI/Create_Label.png"/></a></td><td><a href="../components/humanui/createLabel.html">Create Label</a><br><span class="desc">Creates a label in the window.</span></td></tr>
+<tr><td><a href="../components/humanui/createListBox.html"><img src="../icons/HumanUI/Create_List_Box.png"/></a></td><td><a href="../components/humanui/createListBox.html">Create List Box</a><br><span class="desc">Creates a list box from which items can be selected.</span></td></tr>
+<tr><td><a href="../components/humanui/createMultidimensionalSlider.html"><img src="../icons/HumanUI/Create_Multidimensional_Slider.png"/></a></td><td><a href="../components/humanui/createMultidimensionalSlider.html">Create Multidimensional Slider</a><br><span class="desc">Creates a 2D slider ranging from {0,0} to {1,1}</span></td></tr>
+<tr><td><a href="../components/humanui/createShapes.html"><img src="../icons/HumanUI/Create_Shapes.png"/></a></td><td><a href="../components/humanui/createShapes.html">Create Shapes</a><br><span class="desc">Creates shapes from a polylines</span></td></tr>
+<tr><td><a href="../components/humanui/createObjectsFromXAML.html"><img src="../icons/HumanUI/Create_Objects_from_XAML.png"/></a></td><td><a href="../components/humanui/createObjectsFromXAML.html">Create Objects from XAML</a><br><span class="desc">Creates UI elements from typed XAML syntax</span></td></tr>
+<tr><td><a href="../components/humanui/createPulldownMenu.html"><img src="../icons/HumanUI/Create_Pulldown_Menu.png"/></a></td><td><a href="../components/humanui/createPulldownMenu.html">Create Pulldown Menu</a><br><span class="desc">Creates a pulldown menu from which items can be selected.</span></td></tr>
+<tr><td><a href="../components/humanui/createRadioButton.html"><img src="../icons/HumanUI/Create_Radio_Button.png"/></a></td><td><a href="../components/humanui/createRadioButton.html">Create Radio Button</a><br><span class="desc">Creates a single radio button. Be sure to assign a radio button group for proper switching behavior</span></td></tr>
+<tr><td><a href="../components/humanui/createRhinoCommandButton.html"><img src="../icons/HumanUI/Create_Rhino_Command_Button.png"/></a></td><td><a href="../components/humanui/createRhinoCommandButton.html">Create Rhino Command Button</a><br><span class="desc">Create a Special Button object to trigger a Rhino command.</span></td></tr>
+<tr><td><a href="../components/humanui/createShape.html"><img src="../icons/HumanUI/Create_Shape.png"/></a></td><td><a href="../components/humanui/createShape.html">Create Shape</a><br><span class="desc">Creates a simple shape from a polyline</span></td></tr>
+<tr><td><a href="../components/humanui/createSlider.html"><img src="../icons/HumanUI/Create_Slider.png"/></a></td><td><a href="../components/humanui/createSlider.html">Create Slider</a><br><span class="desc">Create a slider with a label and a value readout.</span></td></tr>
+<tr><td><a href="../components/humanui/createTextBlock.html"><img src="../icons/HumanUI/Create_Text_Block.png"/></a></td><td><a href="../components/humanui/createTextBlock.html">Create Text Block</a><br><span class="desc">Creates a multi-line text block</span></td></tr>
+<tr><td><a href="../components/humanui/createTextBox.html"><img src="../icons/HumanUI/Create_Text_Box.png"/></a></td><td><a href="../components/humanui/createTextBox.html">Create Text Box</a><br><span class="desc">Create a box for text entry, with a button to pass its value.</span></td></tr>
+<tr><td><a href="../components/humanui/createTrueOnlyButton.html"><img src="../icons/HumanUI/Create_True-Only_Button.png"/></a></td><td><a href="../components/humanui/createTrueOnlyButton.html">Create True-Only Button</a><br><span class="desc">Create a True only Button object.</span></td></tr>
+<tr><td><a href="../components/humanui/createDataTable.html"><img src="../icons/HumanUI/Create_Data_Table.png"/></a></td><td><a href="../components/humanui/createDataTable.html">Create Data Table</a><br><span class="desc">Creates a Data Table view</span></td></tr>
+<tr><td><a href="../components/humanui/createFilePicker.html"><img src="../icons/HumanUI/Create_File_Picker.png"/></a></td><td><a href="../components/humanui/createFilePicker.html">Create File Picker</a><br><span class="desc">Create a dialog box that lets you choose a path for a file, folder, or save path.</span></td></tr>
+<tr><td><a href="../components/humanui/createGradientEditor.html"><img src="../icons/HumanUI/Create_Gradient_Editor.png"/></a></td><td><a href="../components/humanui/createGradientEditor.html">Create Gradient Editor</a><br><span class="desc">Creates an editable gradient in the UI</span></td></tr>
+<tr><td><a href="../components/humanui/createMarkdownViewer.html"><img src="../icons/HumanUI/Create_Markdown_Viewer.png"/></a></td><td><a href="../components/humanui/createMarkdownViewer.html">Create Markdown Viewer</a><br><span class="desc">Creates a block of formatted text based on Markdown-formatted input</span></td></tr>
+<tr><td><a href="../components/humanui/createRangeSlider.html"><img src="../icons/HumanUI/Create_Range_Slider.png"/></a></td><td><a href="../components/humanui/createRangeSlider.html">Create Range Slider</a><br><span class="desc">Creates a double-slider that describes a range</span></td></tr>
+<tr><td><a href="../components/humanui/createToggle.html"><img src="../icons/HumanUI/Create_Toggle.png"/></a></td><td><a href="../components/humanui/createToggle.html">Create Toggle</a><br><span class="desc">Creates an on-off toggle.</span></td></tr>
+<tr><td><a href="../components/humanui/createGraphMapper.html"><img src="../icons/HumanUI/Create_Graph_Mapper.png"/></a></td><td><a href="../components/humanui/createGraphMapper.html">Create Graph Mapper</a><br><span class="desc">Creates a Bezier Graph Mapper</span></td></tr>
+<tr><td><a href="../components/humanui/attachTooltipToElement.html"><img src="../icons/HumanUI/Attach_Tooltip_to_Element.png"/></a></td><td><a href="../components/humanui/attachTooltipToElement.html">Attach Tooltip to Element</a><br><span class="desc">Attach a tooltip to a UI element</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>UI Output</h3>
+<table class="compos">
+<tbody>
+<tr><td><a href="../components/humanui/set3DView.html"><img src="../icons/HumanUI/Set_3D_View.png"/></a></td><td><a href="../components/humanui/set3DView.html">Set 3D View</a><br><span class="desc">Allows you to modify the contents of an existing 3D view.</span></td></tr>
+<tr><td><a href="../components/humanui/set3DViewTextured.html"><img src="../icons/HumanUI/Set_3D_View_Textured.png"/></a></td><td><a href="../components/humanui/set3DViewTextured.html">Set 3D View Textured</a><br><span class="desc">Allows you to modify the contents of an existing 3D view.</span></td></tr>
+<tr><td><a href="../components/humanui/setBrowser.html"><img src="../icons/HumanUI/Set_Browser.png"/></a></td><td><a href="../components/humanui/setBrowser.html">Set Browser</a><br><span class="desc">Control the Browser element - with back/forward buttons, and control over the displayed site etc.</span></td></tr>
+<tr><td><a href="../components/humanui/setChecklistContents.html"><img src="../icons/HumanUI/Set_Checklist_Contents.png"/></a></td><td><a href="../components/humanui/setChecklistContents.html">Set Checklist Contents</a><br><span class="desc">Use this to set the contents of a checklist</span></td></tr>
+<tr><td><a href="../components/humanui/setImage.html"><img src="../icons/HumanUI/Set_Image.png"/></a></td><td><a href="../components/humanui/setImage.html">Set Image</a><br><span class="desc">Change the content of an existing Image control.</span></td></tr>
+<tr><td><a href="../components/humanui/setLabelContents.html"><img src="../icons/HumanUI/Set_Label_Contents.png"/></a></td><td><a href="../components/humanui/setLabelContents.html">Set Label Contents</a><br><span class="desc">Modify the contents of an existing label object.</span></td></tr>
+<tr><td><a href="../components/humanui/setListContents.html"><img src="../icons/HumanUI/Set_List_Contents.png"/></a></td><td><a href="../components/humanui/setListContents.html">Set List Contents</a><br><span class="desc">Use this to set the contents of either a List Box or a Pulldown Menu</span></td></tr>
+<tr><td><a href="../components/humanui/setShape.html"><img src="../icons/HumanUI/Set_Shape.png"/></a></td><td><a href="../components/humanui/setShape.html">Set Shape</a><br><span class="desc">Replace an existing shape in the window</span></td></tr>
+<tr><td><a href="../components/humanui/setShapes.html"><img src="../icons/HumanUI/Set_Shapes.png"/></a></td><td><a href="../components/humanui/setShapes.html">Set Shapes</a><br><span class="desc">Replace an existing shape in the window</span></td></tr>
+<tr><td><a href="../components/humanui/setTextBlockContents.html"><img src="../icons/HumanUI/Set_TextBlock_Contents.png"/></a></td><td><a href="../components/humanui/setTextBlockContents.html">Set TextBlock Contents</a><br><span class="desc">Modify the contents of an existing Text Block object.</span></td></tr>
+<tr><td><a href="../components/humanui/setTextBoxContents.html"><img src="../icons/HumanUI/Set_TextBox_Contents.png"/></a></td><td><a href="../components/humanui/setTextBoxContents.html">Set TextBox Contents</a><br><span class="desc">Modify the contents of an existing Text Box object.</span></td></tr>
+<tr><td><a href="../components/humanui/setDataTable.html"><img src="../icons/HumanUI/Set_Data_Table.png"/></a></td><td><a href="../components/humanui/setDataTable.html">Set Data Table</a><br><span class="desc">Update the contents of a Data Table</span></td></tr>
+<tr><td><a href="../components/humanui/setSlider.html"><img src="../icons/HumanUI/Set_Slider.png"/></a></td><td><a href="../components/humanui/setSlider.html">Set Slider</a><br><span class="desc">Modify the range and value of a slider.</span></td></tr>
+<tr><td><a href="../components/humanui/set3DViewProperties.html"><img src="../icons/HumanUI/Set_3D_View_Properties.png"/></a></td><td><a href="../components/humanui/set3DViewProperties.html">Set 3D View Properties</a><br><span class="desc">Additional controls for modifying a 3D view</span></td></tr>
+<tr><td><a href="../components/humanui/setCheckBox.html"><img src="../icons/HumanUI/Set_CheckBox.png"/></a></td><td><a href="../components/humanui/setCheckBox.html">Set CheckBox</a><br><span class="desc">Modify an existing Check Box object.</span></td></tr>
+<tr><td><a href="../components/humanui/setExpander.html"><img src="../icons/HumanUI/Set_Expander.png"/></a></td><td><a href="../components/humanui/setExpander.html">Set Expander</a><br><span class="desc">Sets the properties of an expander container</span></td></tr>
+<tr><td><a href="../components/humanui/setTabbedView.html"><img src="../icons/HumanUI/Set_Tabbed_View.png"/></a></td><td><a href="../components/humanui/setTabbedView.html">Set Tabbed View</a><br><span class="desc">Sets the properties of a tabbed view</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>UI Main</h3>
+<table class="compos">
+<tbody>
+<tr><td><a href="../components/humanui/setWindowProperties.html"><img src="../icons/HumanUI/Set_Window_Properties.png"/></a></td><td><a href="../components/humanui/setWindowProperties.html">Set Window Properties</a><br><span class="desc">Modify various properties of a Window.</span></td></tr>
+<tr><td><a href="../components/humanui/addElements.html"><img src="../icons/HumanUI/Add_Elements.png"/></a></td><td><a href="../components/humanui/addElements.html">Add Elements</a><br><span class="desc">Add WPF Controls to a window</span></td></tr>
+<tr><td><a href="../components/humanui/adjustElementAppearance.html"><img src="../icons/HumanUI/Adjust_Element_Appearance.png"/></a></td><td><a href="../components/humanui/adjustElementAppearance.html">Adjust Element Appearance</a><br><span class="desc">Adjust the color and appearance of individual elements.</span></td></tr>
+<tr><td><a href="../components/humanui/adjustElementPositioning.html"><img src="../icons/HumanUI/Adjust_Element_Positioning.png"/></a></td><td><a href="../components/humanui/adjustElementPositioning.html">Adjust Element Positioning</a><br><span class="desc">Adjust the margins, sizing, and other positioning information of an element. <br>Absolute positioning can get a little wonky, use at your own risk.</span></td></tr>
+<tr><td><a href="../components/humanui/captureWindowToFile.html"><img src="../icons/HumanUI/Capture_Window_to_File.png"/></a></td><td><a href="../components/humanui/captureWindowToFile.html">Capture Window to File</a><br><span class="desc">Capture a HUI Window to an image</span></td></tr>
+<tr><td><a href="../components/humanui/launchTransparentWindow.html"><img src="../icons/HumanUI/Launch_Transparent_Window.png"/></a></td><td><a href="../components/humanui/launchTransparentWindow.html">Launch Transparent Window</a><br><span class="desc">This component launches a new blank, transparent control window.</span></td></tr>
+<tr><td><a href="../components/humanui/getScreenDimensions.html"><img src="../icons/HumanUI/Get_Screen_Dimensions.png"/></a></td><td><a href="../components/humanui/getScreenDimensions.html">Get Screen Dimensions</a><br><span class="desc">Gets the dimensions of the current screen</span></td></tr>
+<tr><td><a href="../components/humanui/hideShowElement.html"><img src="../icons/HumanUI/Hide_Show_Element.png"/></a></td><td><a href="../components/humanui/hideShowElement.html">Hide/Show Element</a><br><span class="desc">Allows you to hide or show an element</span></td></tr>
+<tr><td><a href="../components/humanui/launchWindow.html"><img src="../icons/HumanUI/Launch_Window.png"/></a></td><td><a href="../components/humanui/launchWindow.html">Launch Window</a><br><span class="desc">This component launches a new blank control window.</span></td></tr>
+<tr><td><a href="../components/humanui/restoreElementStates.html"><img src="../icons/HumanUI/Restore_Element_States.png"/></a></td><td><a href="../components/humanui/restoreElementStates.html">Restore Element States</a><br><span class="desc">Restore the saved states of UI elements</span></td></tr>
+<tr><td><a href="../components/humanui/saveElementStates.html"><img src="../icons/HumanUI/Save_Element_States.png"/></a></td><td><a href="../components/humanui/saveElementStates.html">Save Element States</a><br><span class="desc">This component lets you save the states of selected elements for later retrieval</span></td></tr>
+<tr><td><a href="../components/humanui/valueListener.html"><img src="../icons/HumanUI/Value_Listener.png"/></a></td><td><a href="../components/humanui/valueListener.html">Value Listener</a><br><span class="desc">This component is used to retrieve the values of UI elements from the window. By default it will automatically refresh when those values change.</span></td></tr>
+<tr><td><a href="../components/humanui/captureWindowOrElementToFile.html"><img src="../icons/HumanUI/Capture_Window_or_Element_to_File.png"/></a></td><td><a href="../components/humanui/captureWindowOrElementToFile.html">Capture Window or Element to File</a><br><span class="desc">Capture a HUI Window or individual element to an image</span></td></tr>
+<tr><td><a href="../components/humanui/makeChildWindow.html"><img src="../icons/HumanUI/Make_Child_Window.png"/></a></td><td><a href="../components/humanui/makeChildWindow.html">Make Child Window</a><br><span class="desc">Make one window a child of another</span></td></tr>
+<tr><td><a href="../components/humanui/windowStatus.html"><img src="../icons/HumanUI/Window_Status.png"/></a></td><td><a href="../components/humanui/windowStatus.html">Window Status</a><br><span class="desc">Gets the current status of the specified Window</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>UI Containers</h3>
+<table class="compos">
+<tbody>
+<tr><td><a href="../components/humanui/createGrid.html"><img src="../icons/HumanUI/Create_Grid.png"/></a></td><td><a href="../components/humanui/createGrid.html">Create Grid</a><br><span class="desc">Create a container with absolutely positioned elements</span></td></tr>
+<tr><td><a href="../components/humanui/createStack.html"><img src="../icons/HumanUI/Create_Stack.png"/></a></td><td><a href="../components/humanui/createStack.html">Create Stack</a><br><span class="desc">Creates a group of UI elements stacked vertically or horizontally.</span></td></tr>
+<tr><td><a href="../components/humanui/createViewBox.html"><img src="../icons/HumanUI/Create_View_Box.png"/></a></td><td><a href="../components/humanui/createViewBox.html">Create View Box</a><br><span class="desc">Scale a group of UI Elements by placing them in a ViewBox.</span></td></tr>
+<tr><td><a href="../components/humanui/tabbedView.html"><img src="../icons/HumanUI/Tabbed_View.png"/></a></td><td><a href="../components/humanui/tabbedView.html">Tabbed View</a><br><span class="desc">Creates a series of tabbed views that can contain UI element layouts</span></td></tr>
+<tr><td><a href="../components/humanui/createExpander.html"><img src="../icons/HumanUI/Create_Expander.png"/></a></td><td><a href="../components/humanui/createExpander.html">Create Expander</a><br><span class="desc">A collapsible expander for content</span></td></tr>
+<tr><td><a href="../components/humanui/createScrollViewer.html"><img src="../icons/HumanUI/Create_Scroll_Viewer.png"/></a></td><td><a href="../components/humanui/createScrollViewer.html">Create Scroll Viewer</a><br><span class="desc">Allows an element to scroll independently of the rest of the window</span></td></tr>
+<tr><td><a href="../components/humanui/createSimpleGrid.html"><img src="../icons/HumanUI/Create_Simple_Grid.png"/></a></td><td><a href="../components/humanui/createSimpleGrid.html">Create Simple Grid</a><br><span class="desc">Create a container with elements in a grid according to the path structure provided</span></td></tr>
+<tr><td><a href="../components/humanui/createWrapPanel.html"><img src="../icons/HumanUI/Create_WrapPanel.png"/></a></td><td><a href="../components/humanui/createWrapPanel.html">Create WrapPanel</a><br><span class="desc">Creates a group of UI elements WrapPaneled vertically or horizontally.</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>UI Graphs + Charts</h3>
+<table class="compos">
+<tbody>
+<tr><td><a href="../components/humanui/createChart.html"><img src="../icons/HumanUI/Create_Chart.png"/></a></td><td><a href="../components/humanui/createChart.html">Create Chart</a><br><span class="desc">Creates a Chart from Data and Categories.</span></td></tr>
+<tr><td><a href="../components/humanui/createMultiChart.html"><img src="../icons/HumanUI/Create_Multi_Chart.png"/></a></td><td><a href="../components/humanui/createMultiChart.html">Create Multi Chart</a><br><span class="desc">Creates a Multi Chart from sets of Data and Categories.</span></td></tr>
+<tr><td><a href="../components/humanui/setChartContents.html"><img src="../icons/HumanUI/Set_Chart_Contents.png"/></a></td><td><a href="../components/humanui/setChartContents.html">Set Chart Contents</a><br><span class="desc">Use this to set the contents of a Chart</span></td></tr>
+<tr><td><a href="../components/humanui/chartAppearance.html"><img src="../icons/HumanUI/Chart_Appearance.png"/></a></td><td><a href="../components/humanui/chartAppearance.html">Chart Appearance</a><br><span class="desc">Use this to set the appearnce of a Chart</span></td></tr>
+<tr><td><a href="../components/humanui/setMultiChartContents.html"><img src="../icons/HumanUI/Set_Multi_Chart_Contents.png"/></a></td><td><a href="../components/humanui/setMultiChartContents.html">Set Multi Chart Contents</a><br><span class="desc">Use this to set the contents of a MultiChart</span></td></tr>
+</tbody>
+</table>
+
+</div>
+
+  </div>
+
+</div>
+
+            </div>
+            <div id="xg_foot">
+                <p class="left">
+    © 2018             &nbsp; Created by <a href="http://www.stackoverflow.com/cv/robin-rodricks">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    Hosted by<a href="http://www.github.com/"><img src="../images/github.png" alt="Github" class="poweredbylogo" /></a>
+	</p>
+    <p class="right xg_lightfont">
+                    <a href="http://www.grasshopper3d.com/main/embeddable/list">Badges</a> &nbsp;|&nbsp;
+                        <a href="http://www.grasshopper3d.com/main/index/report" dojotype="PromptToJoinLink" _joinprompttext="Please sign up or sign in to complete this step." _hassignup="true" _signinurl="http://www.grasshopper3d.com/main/authorization/signIn?target=http%3A%2F%2Fwww.grasshopper3d.com%2Fmain%2Findex%2Freport">Report an Issue</a> &nbsp;|&nbsp;
+                        <a href="http://www.grasshopper3d.com/main/authorization/termsOfService?previousUrl=http%3A%2F%2Fwww.grasshopper3d.com%2Fpage%2Fcomponent-reference">Terms of Service</a>
+            </p>
+
+            </div>
+        </div>
+        
+        <div id="xj_baz17246" class="xg_theme"></div>
+<div id="xg_overlay" style="display:none;">
+<!--[if lte IE 6.5]><iframe></iframe><![endif]-->
+</div>
+<!--googleoff: all--><noscript>
+	<style type="text/css" media="screen">
+        #xg { position:relative;top:120px; }
+        #xn_bar { top:120px; }
+	</style>
+	<div class="errordesc noscript">
+		<div>
+            <h3><strong>Hello, you need to enable JavaScript to use Grasshopper.</strong></h3>
+            <p>Please check your browser settings or contact your system administrator.</p>
+			
+		</div>
+	</div>
+</noscript><!--googleon: all-->
+
+<script src="/js/jquery.js"></script>
+<script src="/js/kramed.min.js"></script>
+<script src="/js/component.js"></script>
+<script src="/js/user.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    </body>
+</html>

@@ -1,0 +1,499 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+<head data-layout-view="wide">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Alba - Grasshopper Addon Reference</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+
+<meta name="description" content="Complete documentation for the Alba addon in Grasshopper 3D." />
+<meta name="title" content="Grasshopper Addon Reference" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://rhino.github.io/" />
+<meta property="og:title" content="Alba - Grasshopper Addon Reference" />
+
+<meta property="wiki-page" content="$WIKI$" />
+
+<link rel="image_src" href="http://rhino.github.io/ning/2985220.jpg" />
+
+<style type="text/css" media="screen,projection">
+#xg_navigation ul div.xg_subtab ul li a {
+    color:#666666;
+    background:#EAFFBD;
+}
+#xg_navigation ul div.xg_subtab ul li a:hover {
+    color:#333333;
+    background:#F2FFD6;
+}
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../ning/index.css);
+@import url(../ning/page.css);
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../ning/1187549422.css);
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../ning/1187545030.css);
+</style>
+
+
+<link href="../style.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+    </head>
+    <body>
+    
+        
+        <div id="xg" class="xg_theme xg_widget_page xg_widget_page_page xg_widget_page_page_show" data-layout-pack="classic">
+            <div id="xg_head">
+                <div id="xg_masthead">
+                    <p id="xg_sitename"><a id="application_name_header_link" href="http://rhino.github.io/">Grasshopper</a></p>
+                    <p id="xg_sitedesc" class="xj_site_desc">algorithmic modeling for Rhino</p>
+                </div>
+                <div id="xg_navigation">
+                    <ul>
+    <li id="xg_tab_main" class="xg_subtab"><a href="http://www.grasshopper3d.com/"><span>Home</span></a></li>
+	<li id="xg_tab_photo" class="xg_subtab"><a href="http://www.grasshopper3d.com/photo"><span>View</span></a></li>
+	<li id="xg_tab_xn0" class="xg_subtab"><a href="http://www.grasshopper3d.com/page/download-1"><span>Get</span></a></li>
+	<li id="xg_tab_xn2" class="xg_subtab this"><a href="http://rhino.github.io/"><span>Learn</span></a></li>
+	<li id="xg_tab_forum" class="xg_subtab"><a href="http://www.grasshopper3d.com/forum"><span>Talk</span></a></li>
+	<li id="xg_tab_events" class="xg_subtab"><a href="http://www.grasshopper3d.com/events"><span>Events</span></a></li>
+	<li id="xg_tab_profile" class="xg_subtab"><a href="http://www.grasshopper3d.com/"><span>My Page</span></a></li></ul>
+
+                </div>
+            </div>
+            
+            <div id="xg_body">
+                
+				<div class="page">
+
+<div class="content">
+
+<div class="addon-buttons">
+<a href="http://www.ryanhoover.org/rd/alba.php">Download</a>
+</div>
+
+<div>
+<h1>Alba</h1>
+<h6>ADDON</h6>
+<p><a href="../index.html#Alba">Component Index</a> &gt; <b>Alba</b></p>
+</div>
+
+<div class="ghbar">
+<table class="ghbar-table">
+<tr>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/alba/bioBrickCategoriesOfParts.html"><img class="ghicon" src="../icons/Alba/BioBrick_Categories_of_Parts.png" title="BioBrick Categories of Parts"></a>
+<a href="../components/alba/bioBrickPrefixAndSuffixAdder.html"><img class="ghicon" src="../icons/Alba/BioBrick_Prefix_and_Suffix_Adder.png" title="BioBrick Prefix and Suffix Adder"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/alba/bioBricksLibrary.html"><img class="ghicon" src="../icons/Alba/BioBricks_Library.png" title="BioBricks Library"></a>
+<a href="../components/alba/bioBricksPrefixStandard.html"><img class="ghicon" src="../icons/Alba/BioBricks_Prefix__Standard.png" title=" BioBricks Prefix  Standard"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/alba/bioBricksPrefixATG.html"><img class="ghicon" src="../icons/Alba/BioBricks_Prefix_ATG.png" title=" BioBricks Prefix ATG"></a>
+<a href="../components/alba/bioBricksSuffix.html"><img class="ghicon" src="../icons/Alba/BioBricks_Suffix.png" title=" BioBricks Suffix"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/alba/e0240GFPWithRBSAndTerminator.html"><img class="ghicon" src="../icons/Alba/E0240_GFP_with_RBS,_and_Terminator.png" title="E0240 GFP with RBS, and Terminator"></a>
+<a href="../components/alba/gFPWithPromoterRBSAndTerminator.html"><img class="ghicon" src="../icons/Alba/GFP_with_Promoter,__RBS,_and_Terminator.png" title="GFP with Promoter,  RBS, and Terminator"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/alba/plasmidBackbonesDNA.html"><img class="ghicon" src="../icons/Alba/Plasmid_Backbones_DNA.png" title="Plasmid Backbones DNA"></a>
+<a href="../components/alba/plasmidInsert.html"><img class="ghicon" src="../icons/Alba/Plasmid_Insert.png" title="Plasmid Insert"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/alba/promoterDNA.html"><img class="ghicon" src="../icons/Alba/Promoter_DNA.png" title=" Promoter DNA"></a>
+<a href="../components/alba/proteinCodingDNA.html"><img class="ghicon" src="../icons/Alba/Protein_Coding_DNA.png" title="Protein Coding DNA"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/alba/resistanceToChloramphenicol.html"><img class="ghicon" src="../icons/Alba/Resistance_to_Chloramphenicol_.png" title="Resistance to Chloramphenicol "></a>
+<a href="../components/alba/resistanceToKanamycine.html"><img class="ghicon" src="../icons/Alba/Resistance_to_Kanamycine.png" title="Resistance to Kanamycine"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/alba/resistanceToTetracycline.html"><img class="ghicon" src="../icons/Alba/Resistance_to_Tetracycline_.png" title="Resistance to Tetracycline "></a>
+<a href="../components/alba/resitanceToAmp.html"><img class="ghicon" src="../icons/Alba/Resitance_to_Amp.png" title="Resitance to Amp"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/alba/rFPWithRBSAndTerminator.html"><img class="ghicon" src="../icons/Alba/RFP_with_RBS,_and_Terminator.png" title="RFP with RBS, and Terminator"></a>
+<a href="../components/alba/ribosomeBindingSiteDNA.html"><img class="ghicon" src="../icons/Alba/Ribosome_Binding_Site_DNA.png" title=" Ribosome Binding Site DNA"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/alba/teminatorDNA.html"><img class="ghicon" src="../icons/Alba/Teminator_DNA.png" title="Teminator DNA"></a>
+<a href="../components/alba/yFPWithRBSAndTerminator.html"><img class="ghicon" src="../icons/Alba/YFP_with_RBS,_and_Terminator.png" title="YFP with RBS, and Terminator"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="10">
+    Library
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/alba/complementaryStrand.html"><img class="ghicon" src="../icons/Alba/Complementary_Strand.png" title="Complementary Strand"></a>
+<a href="../components/alba/dNAClean.html"><img class="ghicon" src="../icons/Alba/DNA_Clean.png" title="DNA Clean"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/alba/dNAFind.html"><img class="ghicon" src="../icons/Alba/DNA_Find.png" title="DNA Find"></a>
+<a href="../components/alba/primerDesign.html"><img class="ghicon" src="../icons/Alba/Primer_Design.png" title="Primer Design"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/alba/randomDNA.html"><img class="ghicon" src="../icons/Alba/Random_DNA.png" title="Random DNA"></a>
+<a href="../components/alba/reverseDNA.html"><img class="ghicon" src="../icons/Alba/Reverse_DNA.png" title="Reverse DNA"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/alba/reverseSubdomain.html"><img class="ghicon" src="../icons/Alba/Reverse_Subdomain.png" title="Reverse Subdomain"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="4">
+    Utilities
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/alba/aminoAcidVisualizer.html"><img class="ghicon" src="../icons/Alba/Amino_Acid_Visualizer.png" title="Amino Acid Visualizer"></a>
+<a href="../components/alba/dNASubdomainVisualizer.html"><img class="ghicon" src="../icons/Alba/DNA__Subdomain_Visualizer.png" title="DNA  Subdomain Visualizer"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/alba/dNAComplementaryStrandVisualizer.html"><img class="ghicon" src="../icons/Alba/DNA_Complementary_Strand_Visualizer.png" title="DNA Complementary Strand Visualizer"></a>
+<a href="../components/alba/dNAComplementarySubdomainVisualizer.html"><img class="ghicon" src="../icons/Alba/DNA_Complementary_Subdomain_Visualizer.png" title="DNA Complementary Subdomain Visualizer"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/alba/dNAVisualizer.html"><img class="ghicon" src="../icons/Alba/DNA_Visualizer.png" title=" DNA Visualizer"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+    Visualize
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/alba/eColiOptimization.html"><img class="ghicon" src="../icons/Alba/E._coli_Optimization.png" title="E. coli Optimization"></a>
+<a href="../components/alba/simpleTranscription.html"><img class="ghicon" src="../icons/Alba/Simple_Transcription.png" title="Simple Transcription"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/alba/simpleTranslation.html"><img class="ghicon" src="../icons/Alba/Simple_Translation.png" title="Simple Translation"></a>
+<a href="../components/alba/transcriptionPromoterToTerminator.html"><img class="ghicon" src="../icons/Alba/Transcription_Promoter_to_Terminator.png" title="Transcription Promoter to Terminator"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/alba/transcriptionΣ.html"><img class="ghicon" src="../icons/Alba/Transcription_σ.png" title="Transcription &#963;"></a>
+<a href="../components/alba/translation.html"><img class="ghicon" src="../icons/Alba/Translation.png" title="Translation"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+   Transcription/Translation
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/alba/enzymeList.html"><img class="ghicon" src="../icons/Alba/Enzyme_List.png" title="Enzyme List"></a>
+<a href="../components/alba/restrictionEnzymeDigest.html"><img class="ghicon" src="../icons/Alba/Restriction_Enzyme_Digest.png" title="Restriction Enzyme Digest"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/alba/restrictionEnzymesCutLocations.html"><img class="ghicon" src="../icons/Alba/Restriction_Enzymes_Cut_Locations.png" title="Restriction Enzymes Cut Locations"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="2">
+  Digest
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/alba/aSimpleLigation.html"><img class="ghicon" src="../icons/Alba/A_Simple__Ligation_.png" title="A Simple  Ligation "></a>
+<a href="../components/alba/ligate.html"><img class="ghicon" src="../icons/Alba/Ligate.png" title="Ligate"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/alba/stickyEnds.html"><img class="ghicon" src="../icons/Alba/Sticky_Ends.png" title="Sticky Ends"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="2">
+  Ligate
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/alba/pDBSort.html"><img class="ghicon" src="../icons/Alba/PDB__Sort.png" title="PDB  Sort"></a>
+<a href="../components/alba/pDBOpen.html"><img class="ghicon" src="../icons/Alba/PDB_Open.png" title="PDB Open"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/alba/pDBPlot.html"><img class="ghicon" src="../icons/Alba/PDB_Plot.png" title="PDB Plot"></a>
+<a href="../components/alba/proteinQuery.html"><img class="ghicon" src="../icons/Alba/Protein_Query.png" title="Protein Query"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/alba/proteinRibbon.html"><img class="ghicon" src="../icons/Alba/Protein_Ribbon.png" title="Protein Ribbon"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+  Protein
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="cchild">
+<h3>    Library</h3>
+<table class="compos">
+<tbody>
+<tr><td><a href="../components/alba/bioBrickCategoriesOfParts.html"><img src="../icons/Alba/BioBrick_Categories_of_Parts.png"/></a></td><td><a href="../components/alba/bioBrickCategoriesOfParts.html">BioBrick Categories of Parts</a><br><span class="desc">Provides a list of part categories for inputinto the BB Library</span></td></tr>
+<tr><td><a href="../components/alba/bioBrickPrefixAndSuffixAdder.html"><img src="../icons/Alba/BioBrick_Prefix_and_Suffix_Adder.png"/></a></td><td><a href="../components/alba/bioBrickPrefixAndSuffixAdder.html">BioBrick Prefix and Suffix Adder</a><br><span class="desc">Contains a cluster of Grasshopper components</span></td></tr>
+<tr><td><a href="../components/alba/bioBricksLibrary.html"><img src="../icons/Alba/BioBricks_Library.png"/></a></td><td><a href="../components/alba/bioBricksLibrary.html">BioBricks Library</a><br><span class="desc">library of all the parts in the BioBricks registry.</span></td></tr>
+<tr><td><a href="../components/alba/bioBricksPrefixStandard.html"><img src="../icons/Alba/BioBricks_Prefix__Standard.png"/></a></td><td><a href="../components/alba/bioBricksPrefixStandard.html"> BioBricks Prefix  Standard</a><br><span class="desc">simply the sequence of the standard BioBricks prefix used to enable ligation with compatible sticky ends</span></td></tr>
+<tr><td><a href="../components/alba/bioBricksPrefixATG.html"><img src="../icons/Alba/BioBricks_Prefix_ATG.png"/></a></td><td><a href="../components/alba/bioBricksPrefixATG.html"> BioBricks Prefix ATG</a><br><span class="desc">simply the sequence of the standard BioBricks prefix used, with sequences starting with ATG, to enable ligation with compatible sticky ends</span></td></tr>
+<tr><td><a href="../components/alba/bioBricksSuffix.html"><img src="../icons/Alba/BioBricks_Suffix.png"/></a></td><td><a href="../components/alba/bioBricksSuffix.html"> BioBricks Suffix</a><br><span class="desc">simply the sequence of the standard BioBricks suffix used to enable ligation with compatible sticky ends</span></td></tr>
+<tr><td><a href="../components/alba/e0240GFPWithRBSAndTerminator.html"><img src="../icons/Alba/E0240_GFP_with_RBS,_and_Terminator.png"/></a></td><td><a href="../components/alba/e0240GFPWithRBSAndTerminator.html">E0240 GFP with RBS, and Terminator</a><br><span class="desc">RBS: B0032  +  <br>GFP Reporter: E0040 +  <br>Terminators: B0010  & B0012<br></span></td></tr>
+<tr><td><a href="../components/alba/gFPWithPromoterRBSAndTerminator.html"><img src="../icons/Alba/GFP_with_Promoter,__RBS,_and_Terminator.png"/></a></td><td><a href="../components/alba/gFPWithPromoterRBSAndTerminator.html">GFP with Promoter,  RBS, and Terminator</a><br><span class="desc">Tet Promotor R0040 + <br>RBS: B0034  +  <br>GFP Reporter: E0040  +  <br>Terminators: B0010  & B0012<br></span></td></tr>
+<tr><td><a href="../components/alba/plasmidBackbonesDNA.html"><img src="../icons/Alba/Plasmid_Backbones_DNA.png"/></a></td><td><a href="../components/alba/plasmidBackbonesDNA.html">Plasmid Backbones DNA</a><br><span class="desc">Provides the DNA for teh 4 commonly use BioBrick backbones.</span></td></tr>
+<tr><td><a href="../components/alba/plasmidInsert.html"><img src="../icons/Alba/Plasmid_Insert.png"/></a></td><td><a href="../components/alba/plasmidInsert.html">Plasmid Insert</a><br><span class="desc">Insert a gene into a plasmid backbone, optionall add in the BB prefix and suffix. Index reamins at beginning of gene; the prefix is at the end of the sequence.</span></td></tr>
+<tr><td><a href="../components/alba/promoterDNA.html"><img src="../icons/Alba/Promoter_DNA.png"/></a></td><td><a href="../components/alba/promoterDNA.html"> Promoter DNA</a><br><span class="desc">Provides a list of the 10 most commomnly used BioBrick promoters, and outputs the DNA of the selected part.</span></td></tr>
+<tr><td><a href="../components/alba/proteinCodingDNA.html"><img src="../icons/Alba/Protein_Coding_DNA.png"/></a></td><td><a href="../components/alba/proteinCodingDNA.html">Protein Coding DNA</a><br><span class="desc">Provides a list of the 10 most commomnly used BioBrick protein codeing sequences, and outputs the DNA of the selected part.</span></td></tr>
+<tr><td><a href="../components/alba/resistanceToChloramphenicol.html"><img src="../icons/Alba/Resistance_to_Chloramphenicol_.png"/></a></td><td><a href="../components/alba/resistanceToChloramphenicol.html">Resistance to Chloramphenicol </a><br><span class="desc">DNA sequence to produce Chloramphenicol resistance </span></td></tr>
+<tr><td><a href="../components/alba/resistanceToKanamycine.html"><img src="../icons/Alba/Resistance_to_Kanamycine.png"/></a></td><td><a href="../components/alba/resistanceToKanamycine.html">Resistance to Kanamycine</a><br><span class="desc">DNA sequence to produce Kanamycine resistance </span></td></tr>
+<tr><td><a href="../components/alba/resistanceToTetracycline.html"><img src="../icons/Alba/Resistance_to_Tetracycline_.png"/></a></td><td><a href="../components/alba/resistanceToTetracycline.html">Resistance to Tetracycline </a><br><span class="desc">DNA sequence to produce Tetracycline resistance. On BioBrick plasmid backbone pSB1T3 this gene is on the primary strand.</span></td></tr>
+<tr><td><a href="../components/alba/resitanceToAmp.html"><img src="../icons/Alba/Resitance_to_Amp.png"/></a></td><td><a href="../components/alba/resitanceToAmp.html">Resitance to Amp</a><br><span class="desc">DNA sequence to produce Ampicillin resistance </span></td></tr>
+<tr><td><a href="../components/alba/rFPWithRBSAndTerminator.html"><img src="../icons/Alba/RFP_with_RBS,_and_Terminator.png"/></a></td><td><a href="../components/alba/rFPWithRBSAndTerminator.html">RFP with RBS, and Terminator</a><br><span class="desc">RBS: B0034  +  <br>RFP Reporter: E1010 +  <br>Terminators: B0010  & B0012<br></span></td></tr>
+<tr><td><a href="../components/alba/ribosomeBindingSiteDNA.html"><img src="../icons/Alba/Ribosome_Binding_Site_DNA.png"/></a></td><td><a href="../components/alba/ribosomeBindingSiteDNA.html"> Ribosome Binding Site DNA</a><br><span class="desc">Provides a list of the 10 most commomnly used BioBrick RBS, and outputs the DNA of the selected part.</span></td></tr>
+<tr><td><a href="../components/alba/teminatorDNA.html"><img src="../icons/Alba/Teminator_DNA.png"/></a></td><td><a href="../components/alba/teminatorDNA.html">Teminator DNA</a><br><span class="desc">Provides a list of the 10 most commomnly used BioBrick terminators, and outputs the DNA of the selected part.</span></td></tr>
+<tr><td><a href="../components/alba/yFPWithRBSAndTerminator.html"><img src="../icons/Alba/YFP_with_RBS,_and_Terminator.png"/></a></td><td><a href="../components/alba/yFPWithRBSAndTerminator.html">YFP with RBS, and Terminator</a><br><span class="desc">RBS: B0034  +  <br>YFP Reporter: E0030  +  <br>Terminators: B0010  & B0012<br></span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>    Utilities</h3>
+<table class="compos">
+<tbody>
+<tr><td><a href="../components/alba/complementaryStrand.html"><img src="../icons/Alba/Complementary_Strand.png"/></a></td><td><a href="../components/alba/complementaryStrand.html">Complementary Strand</a><br><span class="desc">creates a complementary strand based in the input sequence</span></td></tr>
+<tr><td><a href="../components/alba/dNAClean.html"><img src="../icons/Alba/DNA_Clean.png"/></a></td><td><a href="../components/alba/dNAClean.html">DNA Clean</a><br><span class="desc">gets rid of anything that is not a, A,T,G, or C and capitalizes all characters</span></td></tr>
+<tr><td><a href="../components/alba/dNAFind.html"><img src="../icons/Alba/DNA_Find.png"/></a></td><td><a href="../components/alba/dNAFind.html">DNA Find</a><br><span class="desc">Finds a sequence within a sequence and return the domain of its location.</span></td></tr>
+<tr><td><a href="../components/alba/primerDesign.html"><img src="../icons/Alba/Primer_Design.png"/></a></td><td><a href="../components/alba/primerDesign.html">Primer Design</a><br><span class="desc">to find a primer with good melt temp and GC content and avoiding bad hairpins</span></td></tr>
+<tr><td><a href="../components/alba/randomDNA.html"><img src="../icons/Alba/Random_DNA.png"/></a></td><td><a href="../components/alba/randomDNA.html">Random DNA</a><br><span class="desc">create a ramndom string of GTAC</span></td></tr>
+<tr><td><a href="../components/alba/reverseDNA.html"><img src="../icons/Alba/Reverse_DNA.png"/></a></td><td><a href="../components/alba/reverseDNA.html">Reverse DNA</a><br><span class="desc">reverses the sequence of DNA</span></td></tr>
+<tr><td><a href="../components/alba/reverseSubdomain.html"><img src="../icons/Alba/Reverse_Subdomain.png"/></a></td><td><a href="../components/alba/reverseSubdomain.html">Reverse Subdomain</a><br><span class="desc">reverses the position and direction of a subdomain</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>   Transcription/Translation</h3>
+<table class="compos">
+<tbody>
+<tr><td><a href="../components/alba/eColiOptimization.html"><img src="../icons/Alba/E._coli_Optimization.png"/></a></td><td><a href="../components/alba/eColiOptimization.html">E. coli Optimization</a><br><span class="desc">create an optimized RNA sequence for E coli to produce the input AA chain.</span></td></tr>
+<tr><td><a href="../components/alba/simpleTranscription.html"><img src="../icons/Alba/Simple_Transcription.png"/></a></td><td><a href="../components/alba/simpleTranscription.html">Simple Transcription</a><br><span class="desc">simple conversion DNA to RNA changing T to U</span></td></tr>
+<tr><td><a href="../components/alba/simpleTranslation.html"><img src="../icons/Alba/Simple_Translation.png"/></a></td><td><a href="../components/alba/simpleTranslation.html">Simple Translation</a><br><span class="desc">converts RNA into Amino Acids</span></td></tr>
+<tr><td><a href="../components/alba/transcriptionPromoterToTerminator.html"><img src="../icons/Alba/Transcription_Promoter_to_Terminator.png"/></a></td><td><a href="../components/alba/transcriptionPromoterToTerminator.html">Transcription Promoter to Terminator</a><br><span class="desc">Transcribes DNA to RNA starting just after the promoter site and ending just prior to the termitator site</span></td></tr>
+<tr><td><a href="../components/alba/transcriptionΣ.html"><img src="../icons/Alba/Transcription_σ.png"/></a></td><td><a href="../components/alba/transcriptionΣ.html">Transcription σ</a><br><span class="desc">Converts DNA to RNA based on -35 and -10 sites</span></td></tr>
+<tr><td><a href="../components/alba/translation.html"><img src="../icons/Alba/Translation.png"/></a></td><td><a href="../components/alba/translation.html">Translation</a><br><span class="desc">Translates RNA to amino acid chain with options for finding the proper reading frame</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>  Protein</h3>
+<table class="compos">
+<tbody>
+<tr><td><a href="../components/alba/pDBSort.html"><img src="../icons/Alba/PDB__Sort.png"/></a></td><td><a href="../components/alba/pDBSort.html">PDB  Sort</a><br><span class="desc">sort protein data base file</span></td></tr>
+<tr><td><a href="../components/alba/pDBOpen.html"><img src="../icons/Alba/PDB_Open.png"/></a></td><td><a href="../components/alba/pDBOpen.html">PDB Open</a><br><span class="desc">make the pdb info accessible</span></td></tr>
+<tr><td><a href="../components/alba/pDBPlot.html"><img src="../icons/Alba/PDB_Plot.png"/></a></td><td><a href="../components/alba/pDBPlot.html">PDB Plot</a><br><span class="desc">create a visual energy plot of a pdb file</span></td></tr>
+<tr><td><a href="../components/alba/proteinQuery.html"><img src="../icons/Alba/Protein_Query.png"/></a></td><td><a href="../components/alba/proteinQuery.html">Protein Query</a><br><span class="desc">Search the RCSB Protein DataBase for matching Amino Acis sequences and the address of a corresponding .pdb file.</span></td></tr>
+<tr><td><a href="../components/alba/proteinRibbon.html"><img src="../icons/Alba/Protein_Ribbon.png"/></a></td><td><a href="../components/alba/proteinRibbon.html">Protein Ribbon</a><br><span class="desc">visualizes the structure of a  protein</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>    Visualize</h3>
+<table class="compos">
+<tbody>
+<tr><td><a href="../components/alba/aminoAcidVisualizer.html"><img src="../icons/Alba/Amino_Acid_Visualizer.png"/></a></td><td><a href="../components/alba/aminoAcidVisualizer.html">Amino Acid Visualizer</a><br><span class="desc">Creates and displays an offset complementary strand</span></td></tr>
+<tr><td><a href="../components/alba/dNASubdomainVisualizer.html"><img src="../icons/Alba/DNA__Subdomain_Visualizer.png"/></a></td><td><a href="../components/alba/dNASubdomainVisualizer.html">DNA  Subdomain Visualizer</a><br><span class="desc">Visualizes the specified subdomain of a  strand</span></td></tr>
+<tr><td><a href="../components/alba/dNAComplementaryStrandVisualizer.html"><img src="../icons/Alba/DNA_Complementary_Strand_Visualizer.png"/></a></td><td><a href="../components/alba/dNAComplementaryStrandVisualizer.html">DNA Complementary Strand Visualizer</a><br><span class="desc">Creates and displays an offset complementary strand</span></td></tr>
+<tr><td><a href="../components/alba/dNAComplementarySubdomainVisualizer.html"><img src="../icons/Alba/DNA_Complementary_Subdomain_Visualizer.png"/></a></td><td><a href="../components/alba/dNAComplementarySubdomainVisualizer.html">DNA Complementary Subdomain Visualizer</a><br><span class="desc">Visualizes the specified subdomain of a created offset complementary strand</span></td></tr>
+<tr><td><a href="../components/alba/dNAVisualizer.html"><img src="../icons/Alba/DNA_Visualizer.png"/></a></td><td><a href="../components/alba/dNAVisualizer.html"> DNA Visualizer</a><br><span class="desc">Visualizes the DNA in the Rhino viewport</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>  Ligate</h3>
+<table class="compos">
+<tbody>
+<tr><td><a href="../components/alba/aSimpleLigation.html"><img src="../icons/Alba/A_Simple__Ligation_.png"/></a></td><td><a href="../components/alba/aSimpleLigation.html">A Simple  Ligation </a><br><span class="desc">Concatenates two DNA sequences</span></td></tr>
+<tr><td><a href="../components/alba/ligate.html"><img src="../icons/Alba/Ligate.png"/></a></td><td><a href="../components/alba/ligate.html">Ligate</a><br><span class="desc">Ligate tests to see if 2 strands have matching sticky ends. Is sothey are joined together. If both ends connect, plasmid is set to true.</span></td></tr>
+<tr><td><a href="../components/alba/stickyEnds.html"><img src="../icons/Alba/Sticky_Ends.png"/></a></td><td><a href="../components/alba/stickyEnds.html">Sticky Ends</a><br><span class="desc">identifies the overhanging ends of DNA.</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>  Digest</h3>
+<table class="compos">
+<tbody>
+<tr><td><a href="../components/alba/enzymeList.html"><img src="../icons/Alba/Enzyme_List.png"/></a></td><td><a href="../components/alba/enzymeList.html">Enzyme List</a><br><span class="desc">A list of enzymes  to choose from that passes the proper index for the Restriction Enzymes output object</span></td></tr>
+<tr><td><a href="../components/alba/restrictionEnzymeDigest.html"><img src="../icons/Alba/Restriction_Enzyme_Digest.png"/></a></td><td><a href="../components/alba/restrictionEnzymeDigest.html">Restriction Enzyme Digest</a><br><span class="desc">Cuts up DNA based on target sits of the input restriction enzyme and outputs double stranded DNA with sticky ends.</span></td></tr>
+<tr><td><a href="../components/alba/restrictionEnzymesCutLocations.html"><img src="../icons/Alba/Restriction_Enzymes_Cut_Locations.png"/></a></td><td><a href="../components/alba/restrictionEnzymesCutLocations.html">Restriction Enzymes Cut Locations</a><br><span class="desc">outputs the cut locations of any major restriction enzyme. use the Enzymes List to choose the enzyme you want or enter the index if you know it already</span></td></tr>
+</tbody>
+</table>
+
+</div>
+
+  </div>
+
+</div>
+
+            </div>
+            <div id="xg_foot">
+                <p class="left">
+    © 2018             &nbsp; Created by <a href="http://www.stackoverflow.com/cv/robin-rodricks">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    Hosted by<a href="http://www.github.com/"><img src="../images/github.png" alt="Github" class="poweredbylogo" /></a>
+	</p>
+    <p class="right xg_lightfont">
+                    <a href="http://www.grasshopper3d.com/main/embeddable/list">Badges</a> &nbsp;|&nbsp;
+                        <a href="http://www.grasshopper3d.com/main/index/report" dojotype="PromptToJoinLink" _joinprompttext="Please sign up or sign in to complete this step." _hassignup="true" _signinurl="http://www.grasshopper3d.com/main/authorization/signIn?target=http%3A%2F%2Fwww.grasshopper3d.com%2Fmain%2Findex%2Freport">Report an Issue</a> &nbsp;|&nbsp;
+                        <a href="http://www.grasshopper3d.com/main/authorization/termsOfService?previousUrl=http%3A%2F%2Fwww.grasshopper3d.com%2Fpage%2Fcomponent-reference">Terms of Service</a>
+            </p>
+
+            </div>
+        </div>
+        
+        <div id="xj_baz17246" class="xg_theme"></div>
+<div id="xg_overlay" style="display:none;">
+<!--[if lte IE 6.5]><iframe></iframe><![endif]-->
+</div>
+<!--googleoff: all--><noscript>
+	<style type="text/css" media="screen">
+        #xg { position:relative;top:120px; }
+        #xn_bar { top:120px; }
+	</style>
+	<div class="errordesc noscript">
+		<div>
+            <h3><strong>Hello, you need to enable JavaScript to use Grasshopper.</strong></h3>
+            <p>Please check your browser settings or contact your system administrator.</p>
+			
+		</div>
+	</div>
+</noscript><!--googleon: all-->
+
+<script src="/js/jquery.js"></script>
+<script src="/js/kramed.min.js"></script>
+<script src="/js/component.js"></script>
+<script src="/js/user.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    </body>
+</html>

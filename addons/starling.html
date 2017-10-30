@@ -1,0 +1,349 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+<head data-layout-view="wide">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Starling - Grasshopper Addon Reference</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+
+<meta name="description" content="Complete documentation for the Starling addon in Grasshopper 3D." />
+<meta name="title" content="Grasshopper Addon Reference" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://rhino.github.io/" />
+<meta property="og:title" content="Starling - Grasshopper Addon Reference" />
+
+<meta property="wiki-page" content="$WIKI$" />
+
+<link rel="image_src" href="http://rhino.github.io/ning/2985220.jpg" />
+
+<style type="text/css" media="screen,projection">
+#xg_navigation ul div.xg_subtab ul li a {
+    color:#666666;
+    background:#EAFFBD;
+}
+#xg_navigation ul div.xg_subtab ul li a:hover {
+    color:#333333;
+    background:#F2FFD6;
+}
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../ning/index.css);
+@import url(../ning/page.css);
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../ning/1187549422.css);
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../ning/1187545030.css);
+</style>
+
+
+<link href="../style.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+    </head>
+    <body>
+    
+        
+        <div id="xg" class="xg_theme xg_widget_page xg_widget_page_page xg_widget_page_page_show" data-layout-pack="classic">
+            <div id="xg_head">
+                <div id="xg_masthead">
+                    <p id="xg_sitename"><a id="application_name_header_link" href="http://rhino.github.io/">Grasshopper</a></p>
+                    <p id="xg_sitedesc" class="xj_site_desc">algorithmic modeling for Rhino</p>
+                </div>
+                <div id="xg_navigation">
+                    <ul>
+    <li id="xg_tab_main" class="xg_subtab"><a href="http://www.grasshopper3d.com/"><span>Home</span></a></li>
+	<li id="xg_tab_photo" class="xg_subtab"><a href="http://www.grasshopper3d.com/photo"><span>View</span></a></li>
+	<li id="xg_tab_xn0" class="xg_subtab"><a href="http://www.grasshopper3d.com/page/download-1"><span>Get</span></a></li>
+	<li id="xg_tab_xn2" class="xg_subtab this"><a href="http://rhino.github.io/"><span>Learn</span></a></li>
+	<li id="xg_tab_forum" class="xg_subtab"><a href="http://www.grasshopper3d.com/forum"><span>Talk</span></a></li>
+	<li id="xg_tab_events" class="xg_subtab"><a href="http://www.grasshopper3d.com/events"><span>Events</span></a></li>
+	<li id="xg_tab_profile" class="xg_subtab"><a href="http://www.grasshopper3d.com/"><span>My Page</span></a></li></ul>
+
+                </div>
+            </div>
+            
+            <div id="xg_body">
+                
+				<div class="page">
+
+<div class="content">
+
+<div class="addon-buttons">
+<a href="http://www.food4rhino.com/app/starling">Download</a>
+</div>
+
+<div>
+<h1>Starling</h1>
+<h6>ADDON</h6>
+<p><a href="../index.html#Starling">Component Index</a> &gt; <b>Starling</b></p>
+</div>
+
+<div class="ghbar">
+<table class="ghbar-table">
+<tr>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/starling/pmAdjacentFaces.html"><img class="ghicon" src="../icons/Starling/pmAdjacentFaces.png" title="pmAdjacentFaces"></a>
+<a href="../components/starling/pmCreatePolylines.html"><img class="ghicon" src="../icons/Starling/pmCreatePolylines.png" title="pmCreatePolylines"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/starling/pmConnectedFaces.html"><img class="ghicon" src="../icons/Starling/pmConnectedFaces.png" title="pmConnectedFaces"></a>
+<a href="../components/starling/pmDecompose.html"><img class="ghicon" src="../icons/Starling/pmDecompose.png" title="pmDecompose"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/starling/pmDual.html"><img class="ghicon" src="../icons/Starling/pmDual.png" title="pmDual"></a>
+<a href="../components/starling/pmLaplacianSmooth.html"><img class="ghicon" src="../icons/Starling/pmLaplacianSmooth.png" title="pmLaplacianSmooth"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/starling/pmNakedVertices.html"><img class="ghicon" src="../icons/Starling/pmNakedVertices.png" title="pmNakedVertices"></a>
+<a href="../components/starling/pmConnectedVertices.html"><img class="ghicon" src="../icons/Starling/pmConnectedVertices.png" title="pmConnectedVertices"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/starling/pmOffset.html"><img class="ghicon" src="../icons/Starling/pmOffset.png" title="pmOffset"></a>
+<a href="../components/starling/pmTruncate.html"><img class="ghicon" src="../icons/Starling/pmTruncate.png" title="pmTruncate"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/starling/pmUniqueEdges.html"><img class="ghicon" src="../icons/Starling/pmUniqueEdges.png" title="pmUniqueEdges"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="6">
+Alchemists
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/starling/slChord.html"><img class="ghicon" src="../icons/Starling/slChord.png" title="slChord"></a>
+<a href="../components/starling/slSphere.html"><img class="ghicon" src="../icons/Starling/slSphere.png" title="slSphere"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/starling/slTutte.html"><img class="ghicon" src="../icons/Starling/slTutte.png" title="slTutte"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="2">
+Cartographers
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/starling/slFastMesh.html"><img class="ghicon" src="../icons/Starling/slFastMesh.png" title="slFastMesh"></a>
+<a href="../components/starling/slHull3D.html"><img class="ghicon" src="../icons/Starling/slHull3D.png" title="slHull3D"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/starling/slSourceMesh.html"><img class="ghicon" src="../icons/Starling/slSourceMesh.png" title="slSourceMesh"></a>
+<a href="../components/starling/slStarMesh.html"><img class="ghicon" src="../icons/Starling/slStarMesh.png" title="slStarMesh"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/starling/slTopoDisk.html"><img class="ghicon" src="../icons/Starling/slTopoDisk.png" title="slTopoDisk"></a>
+<a href="../components/starling/slTopoSphere.html"><img class="ghicon" src="../icons/Starling/slTopoSphere.png" title="slTopoSphere"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+Darners
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/starling/slGuide2D.html"><img class="ghicon" src="../icons/Starling/slGuide2D.png" title="slGuide2D"></a>
+<a href="../components/starling/slGuide3D.html"><img class="ghicon" src="../icons/Starling/slGuide3D.png" title="slGuide3D"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+Guides
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/starling/slRelax.html"><img class="ghicon" src="../icons/Starling/slRelax.png" title="slRelax"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+Smoothen
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="cchild">
+<h3>Alchemists</h3>
+<table class="compos">
+<tbody>
+<tr><td><a href="../components/starling/pmAdjacentFaces.html"><img src="../icons/Starling/pmAdjacentFaces.png"/></a></td><td><a href="../components/starling/pmAdjacentFaces.html">pmAdjacentFaces</a><br><span class="desc">Generates DataTree of faces adjacent to each face</span></td></tr>
+<tr><td><a href="../components/starling/pmCreatePolylines.html"><img src="../icons/Starling/pmCreatePolylines.png"/></a></td><td><a href="../components/starling/pmCreatePolylines.html">pmCreatePolylines</a><br><span class="desc">Create polylines from pMesh data. Works same as List item + polyline when one pMesh data is provided</span></td></tr>
+<tr><td><a href="../components/starling/pmConnectedFaces.html"><img src="../icons/Starling/pmConnectedFaces.png"/></a></td><td><a href="../components/starling/pmConnectedFaces.html">pmConnectedFaces</a><br><span class="desc">Generates DataTree of faces connected to each vertice</span></td></tr>
+<tr><td><a href="../components/starling/pmDecompose.html"><img src="../icons/Starling/pmDecompose.png"/></a></td><td><a href="../components/starling/pmDecompose.html">pmDecompose</a><br><span class="desc">Create pMesh topology using polylines</span></td></tr>
+<tr><td><a href="../components/starling/pmDual.html"><img src="../icons/Starling/pmDual.png"/></a></td><td><a href="../components/starling/pmDual.html">pmDual</a><br><span class="desc">Dual pMesh operation</span></td></tr>
+<tr><td><a href="../components/starling/pmLaplacianSmooth.html"><img src="../icons/Starling/pmLaplacianSmooth.png"/></a></td><td><a href="../components/starling/pmLaplacianSmooth.html">pmLaplacianSmooth</a><br><span class="desc">Laplacian smoothing/Weighted laplacian smoothing (when number of input weights is equal to number of vertices)</span></td></tr>
+<tr><td><a href="../components/starling/pmNakedVertices.html"><img src="../icons/Starling/pmNakedVertices.png"/></a></td><td><a href="../components/starling/pmNakedVertices.html">pmNakedVertices</a><br><span class="desc">Outputs list of booleans and naked vertices themself (true = naked)</span></td></tr>
+<tr><td><a href="../components/starling/pmConnectedVertices.html"><img src="../icons/Starling/pmConnectedVertices.png"/></a></td><td><a href="../components/starling/pmConnectedVertices.html">pmConnectedVertices</a><br><span class="desc">Generates DataTree of vertices connected to each vertice</span></td></tr>
+<tr><td><a href="../components/starling/pmOffset.html"><img src="../icons/Starling/pmOffset.png"/></a></td><td><a href="../components/starling/pmOffset.html">pmOffset</a><br><span class="desc">pMesh offset</span></td></tr>
+<tr><td><a href="../components/starling/pmTruncate.html"><img src="../icons/Starling/pmTruncate.png"/></a></td><td><a href="../components/starling/pmTruncate.html">pmTruncate</a><br><span class="desc">pMesh truncation</span></td></tr>
+<tr><td><a href="../components/starling/pmUniqueEdges.html"><img src="../icons/Starling/pmUniqueEdges.png"/></a></td><td><a href="../components/starling/pmUniqueEdges.html">pmUniqueEdges</a><br><span class="desc">Finds unique topology edges</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>Darners</h3>
+<table class="compos">
+<tbody>
+<tr><td><a href="../components/starling/slFastMesh.html"><img src="../icons/Starling/slFastMesh.png"/></a></td><td><a href="../components/starling/slFastMesh.html">slFastMesh</a><br><span class="desc">Makes Sl compatible mesh with multiple BReps</span></td></tr>
+<tr><td><a href="../components/starling/slHull3D.html"><img src="../icons/Starling/slHull3D.png"/></a></td><td><a href="../components/starling/slHull3D.html">slHull3D</a><br><span class="desc">Incremental 3d convex hull</span></td></tr>
+<tr><td><a href="../components/starling/slSourceMesh.html"><img src="../icons/Starling/slSourceMesh.png"/></a></td><td><a href="../components/starling/slSourceMesh.html">slSourceMesh</a><br><span class="desc">Create mesh with polyline</span></td></tr>
+<tr><td><a href="../components/starling/slStarMesh.html"><img src="../icons/Starling/slStarMesh.png"/></a></td><td><a href="../components/starling/slStarMesh.html">slStarMesh</a><br><span class="desc">Create mesh with polyline</span></td></tr>
+<tr><td><a href="../components/starling/slTopoDisk.html"><img src="../icons/Starling/slTopoDisk.png"/></a></td><td><a href="../components/starling/slTopoDisk.html">slTopoDisk</a><br><span class="desc">Make mesh a topological disk (by adding faces)</span></td></tr>
+<tr><td><a href="../components/starling/slTopoSphere.html"><img src="../icons/Starling/slTopoSphere.png"/></a></td><td><a href="../components/starling/slTopoSphere.html">slTopoSphere</a><br><span class="desc">Make mesh a topological sphere (by adding faces)</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>Cartographers</h3>
+<table class="compos">
+<tbody>
+<tr><td><a href="../components/starling/slChord.html"><img src="../icons/Starling/slChord.png"/></a></td><td><a href="../components/starling/slChord.html">slChord</a><br><span class="desc">Preserve chord length disk embedding</span></td></tr>
+<tr><td><a href="../components/starling/slSphere.html"><img src="../icons/Starling/slSphere.png"/></a></td><td><a href="../components/starling/slSphere.html">slSphere</a><br><span class="desc">Topological sphere embedding</span></td></tr>
+<tr><td><a href="../components/starling/slTutte.html"><img src="../icons/Starling/slTutte.png"/></a></td><td><a href="../components/starling/slTutte.html">slTutte</a><br><span class="desc">Tutte barycentric disk embedding</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>Guides</h3>
+<table class="compos">
+<tbody>
+<tr><td><a href="../components/starling/slGuide2D.html"><img src="../icons/Starling/slGuide2D.png"/></a></td><td><a href="../components/starling/slGuide2D.html">slGuide2D</a><br><span class="desc">Remap points onto mesh</span></td></tr>
+<tr><td><a href="../components/starling/slGuide3D.html"><img src="../icons/Starling/slGuide3D.png"/></a></td><td><a href="../components/starling/slGuide3D.html">slGuide3D</a><br><span class="desc">Remap points onto mesh</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>Smoothen</h3>
+<table class="compos">
+<tbody>
+<tr><td><a href="../components/starling/slRelax.html"><img src="../icons/Starling/slRelax.png"/></a></td><td><a href="../components/starling/slRelax.html">slRelax</a><br><span class="desc">Relax mesh</span></td></tr>
+</tbody>
+</table>
+
+</div>
+
+  </div>
+
+</div>
+
+            </div>
+            <div id="xg_foot">
+                <p class="left">
+    © 2018             &nbsp; Created by <a href="http://www.stackoverflow.com/cv/robin-rodricks">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    Hosted by<a href="http://www.github.com/"><img src="../images/github.png" alt="Github" class="poweredbylogo" /></a>
+	</p>
+    <p class="right xg_lightfont">
+                    <a href="http://www.grasshopper3d.com/main/embeddable/list">Badges</a> &nbsp;|&nbsp;
+                        <a href="http://www.grasshopper3d.com/main/index/report" dojotype="PromptToJoinLink" _joinprompttext="Please sign up or sign in to complete this step." _hassignup="true" _signinurl="http://www.grasshopper3d.com/main/authorization/signIn?target=http%3A%2F%2Fwww.grasshopper3d.com%2Fmain%2Findex%2Freport">Report an Issue</a> &nbsp;|&nbsp;
+                        <a href="http://www.grasshopper3d.com/main/authorization/termsOfService?previousUrl=http%3A%2F%2Fwww.grasshopper3d.com%2Fpage%2Fcomponent-reference">Terms of Service</a>
+            </p>
+
+            </div>
+        </div>
+        
+        <div id="xj_baz17246" class="xg_theme"></div>
+<div id="xg_overlay" style="display:none;">
+<!--[if lte IE 6.5]><iframe></iframe><![endif]-->
+</div>
+<!--googleoff: all--><noscript>
+	<style type="text/css" media="screen">
+        #xg { position:relative;top:120px; }
+        #xn_bar { top:120px; }
+	</style>
+	<div class="errordesc noscript">
+		<div>
+            <h3><strong>Hello, you need to enable JavaScript to use Grasshopper.</strong></h3>
+            <p>Please check your browser settings or contact your system administrator.</p>
+			
+		</div>
+	</div>
+</noscript><!--googleon: all-->
+
+<script src="/js/jquery.js"></script>
+<script src="/js/kramed.min.js"></script>
+<script src="/js/component.js"></script>
+<script src="/js/user.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    </body>
+</html>

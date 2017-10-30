@@ -1,0 +1,420 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+<head data-layout-view="wide">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Weaverbird - Grasshopper Addon Reference</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+
+<meta name="description" content="Complete documentation for the Weaverbird addon in Grasshopper 3D." />
+<meta name="title" content="Grasshopper Addon Reference" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://rhino.github.io/" />
+<meta property="og:title" content="Weaverbird - Grasshopper Addon Reference" />
+
+<meta property="wiki-page" content="$WIKI$" />
+
+<link rel="image_src" href="http://rhino.github.io/ning/2985220.jpg" />
+
+<style type="text/css" media="screen,projection">
+#xg_navigation ul div.xg_subtab ul li a {
+    color:#666666;
+    background:#EAFFBD;
+}
+#xg_navigation ul div.xg_subtab ul li a:hover {
+    color:#333333;
+    background:#F2FFD6;
+}
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../ning/index.css);
+@import url(../ning/page.css);
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../ning/1187549422.css);
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../ning/1187545030.css);
+</style>
+
+
+<link href="../style.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+    </head>
+    <body>
+    
+        
+        <div id="xg" class="xg_theme xg_widget_page xg_widget_page_page xg_widget_page_page_show" data-layout-pack="classic">
+            <div id="xg_head">
+                <div id="xg_masthead">
+                    <p id="xg_sitename"><a id="application_name_header_link" href="http://rhino.github.io/">Grasshopper</a></p>
+                    <p id="xg_sitedesc" class="xj_site_desc">algorithmic modeling for Rhino</p>
+                </div>
+                <div id="xg_navigation">
+                    <ul>
+    <li id="xg_tab_main" class="xg_subtab"><a href="http://www.grasshopper3d.com/"><span>Home</span></a></li>
+	<li id="xg_tab_photo" class="xg_subtab"><a href="http://www.grasshopper3d.com/photo"><span>View</span></a></li>
+	<li id="xg_tab_xn0" class="xg_subtab"><a href="http://www.grasshopper3d.com/page/download-1"><span>Get</span></a></li>
+	<li id="xg_tab_xn2" class="xg_subtab this"><a href="http://rhino.github.io/"><span>Learn</span></a></li>
+	<li id="xg_tab_forum" class="xg_subtab"><a href="http://www.grasshopper3d.com/forum"><span>Talk</span></a></li>
+	<li id="xg_tab_events" class="xg_subtab"><a href="http://www.grasshopper3d.com/events"><span>Events</span></a></li>
+	<li id="xg_tab_profile" class="xg_subtab"><a href="http://www.grasshopper3d.com/"><span>My Page</span></a></li></ul>
+
+                </div>
+            </div>
+            
+            <div id="xg_body">
+                
+				<div class="page">
+
+<div class="content">
+
+<div class="addon-buttons">
+<a href="http://www.giuliopiacentino.com/weaverbird/">Download</a>
+</div>
+
+<div>
+<h1>Weaverbird</h1>
+<h6>ADDON</h6>
+<p><a href="../index.html#Weaverbird">Component Index</a> &gt; <b>Weaverbird</b></p>
+</div>
+
+<div class="ghbar">
+<table class="ghbar-table">
+<tr>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/weaverbird/meshFromLinesWeaveBack.html"><img class="ghicon" src="../icons/Weaverbird/Mesh_From_Lines_(Weave_Back).png" title="Mesh From Lines (Weave Back)"></a>
+<a href="../components/weaverbird/tile.html"><img class="ghicon" src="../icons/Weaverbird/Tile.png" title="Tile"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+Wb Create
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/weaverbird/meshAntiprism.html"><img class="ghicon" src="../icons/Weaverbird/Mesh_Antiprism.png" title="Mesh Antiprism"></a>
+<a href="../components/weaverbird/meshPyramid.html"><img class="ghicon" src="../icons/Weaverbird/Mesh_Pyramid.png" title="Mesh Pyramid"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/weaverbird/meshPrism.html"><img class="ghicon" src="../icons/Weaverbird/Mesh_Prism.png" title="Mesh Prism"></a>
+<a href="../components/weaverbird/meshDipyramid.html"><img class="ghicon" src="../icons/Weaverbird/Mesh_Dipyramid.png" title="Mesh Dipyramid"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/weaverbird/meshMeshIcosahedron.html"><img class="ghicon" src="../icons/Weaverbird/Mesh_Mesh_Icosahedron.png" title="Mesh Mesh Icosahedron"></a>
+<a href="../components/weaverbird/polylinesDodecahedron.html"><img class="ghicon" src="../icons/Weaverbird/Polylines_Dodecahedron.png" title="Polylines Dodecahedron"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+Wb Define
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/weaverbird/joinMeshesAndWeld.html"><img class="ghicon" src="../icons/Weaverbird/Join_Meshes_and_Weld.png" title="Join Meshes and Weld"></a>
+<a href="../components/weaverbird/dualGraph.html"><img class="ghicon" src="../icons/Weaverbird/Dual_graph.png" title="Dual graph"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/weaverbird/rerouteFaces.html"><img class="ghicon" src="../icons/Weaverbird/Reroute_Faces.png" title="Reroute Faces"></a>
+<a href="../components/weaverbird/rerouteFacesByPattern.html"><img class="ghicon" src="../icons/Weaverbird/Reroute_Faces_by_Pattern.png" title="Reroute Faces by Pattern"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/weaverbird/unifyFaceWindings.html"><img class="ghicon" src="../icons/Weaverbird/Unify_face_windings.png" title="Unify face windings"></a>
+<a href="../components/weaverbird/verticesComponent.html"><img class="ghicon" src="../icons/Weaverbird/Vertices_Component.png" title="Vertices Component"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/weaverbird/facePolylines.html"><img class="ghicon" src="../icons/Weaverbird/Face_Polylines.png" title="Face Polylines"></a>
+<a href="../components/weaverbird/meshEdges.html"><img class="ghicon" src="../icons/Weaverbird/Mesh_Edges.png" title="Mesh Edges"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/weaverbird/nakedBoundary.html"><img class="ghicon" src="../icons/Weaverbird/Naked_boundary.png" title="Naked boundary"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="5">
+Wb Extract
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/weaverbird/laplacianSmoothing.html"><img class="ghicon" src="../icons/Weaverbird/Laplacian_Smoothing.png" title="Laplacian Smoothing"></a>
+<a href="../components/weaverbird/blurMesh.html"><img class="ghicon" src="../icons/Weaverbird/Blur_Mesh.png" title="Blur Mesh"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/weaverbird/laplacianHCSmoothing.html"><img class="ghicon" src="../icons/Weaverbird/LaplacianHC_Smoothing.png" title="LaplacianHC Smoothing"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="2">
+Wb Smoothen
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/weaverbird/loopSubdivision.html"><img class="ghicon" src="../icons/Weaverbird/Loop_Subdivision.png" title="Loop Subdivision"></a>
+<a href="../components/weaverbird/innerPolygonsSubdivision.html"><img class="ghicon" src="../icons/Weaverbird/Inner_Polygons_Subdivision.png" title="Inner Polygons Subdivision"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/weaverbird/sierpinskiTrianglesSubdivision.html"><img class="ghicon" src="../icons/Weaverbird/Sierpinski_Triangles_Subdivision.png" title="Sierpinski Triangles Subdivision"></a>
+<a href="../components/weaverbird/catmullClarkSubdivision.html"><img class="ghicon" src="../icons/Weaverbird/Catmull-Clark_Subdivision.png" title="Catmull-Clark Subdivision"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/weaverbird/splitPolygonsSubdivision.html"><img class="ghicon" src="../icons/Weaverbird/Split_Polygons_Subdivision.png" title="Split Polygons Subdivision"></a>
+<a href="../components/weaverbird/midedgeSubdivision.html"><img class="ghicon" src="../icons/Weaverbird/Midedge_Subdivision.png" title="Midedge Subdivision"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/weaverbird/splitTrianglesSubdivision.html"><img class="ghicon" src="../icons/Weaverbird/Split_Triangles_Subdivision.png" title="Split Triangles Subdivision"></a>
+<a href="../components/weaverbird/constantQuadsSplitSubdivision.html"><img class="ghicon" src="../icons/Weaverbird/Constant_Quads_Split_Subdivision.png" title="Constant Quads Split Subdivision"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="4">
+Wb SubD
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/weaverbird/offsetMesh.html"><img class="ghicon" src="../icons/Weaverbird/Offset_Mesh.png" title="Offset Mesh"></a>
+<a href="../components/weaverbird/sierpinskiCarpet.html"><img class="ghicon" src="../icons/Weaverbird/Sierpinski_Carpet.png" title="Sierpinski Carpet"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/weaverbird/meshWindow.html"><img class="ghicon" src="../icons/Weaverbird/Mesh_Window.png" title="Mesh Window"></a>
+<a href="../components/weaverbird/pictureFrame.html"><img class="ghicon" src="../icons/Weaverbird/Picture_Frame.png" title="Picture Frame"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/weaverbird/bevelEdges.html"><img class="ghicon" src="../icons/Weaverbird/Bevel_Edges.png" title="Bevel Edges"></a>
+<a href="../components/weaverbird/stellateCumulation.html"><img class="ghicon" src="../icons/Weaverbird/Stellate_Cumulation.png" title="Stellate/Cumulation"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/weaverbird/meshThicken.html"><img class="ghicon" src="../icons/Weaverbird/Mesh_Thicken.png" title="Mesh Thicken"></a>
+<a href="../components/weaverbird/bevelVertices.html"><img class="ghicon" src="../icons/Weaverbird/Bevel_Vertices.png" title="Bevel Vertices"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="4">
+Wb Transform
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="cchild">
+<h3>Wb Extract</h3>
+<table class="compos">
+<tbody>
+<tr><td><a href="../components/weaverbird/joinMeshesAndWeld.html"><img src="../icons/Weaverbird/Join_Meshes_and_Weld.png"/></a></td><td><a href="../components/weaverbird/joinMeshesAndWeld.html">Join Meshes and Weld</a><br><span class="desc"></span></td></tr>
+<tr><td><a href="../components/weaverbird/dualGraph.html"><img src="../icons/Weaverbird/Dual_graph.png"/></a></td><td><a href="../components/weaverbird/dualGraph.html">Dual graph</a><br><span class="desc"></span></td></tr>
+<tr><td><a href="../components/weaverbird/rerouteFaces.html"><img src="../icons/Weaverbird/Reroute_Faces.png"/></a></td><td><a href="../components/weaverbird/rerouteFaces.html">Reroute Faces</a><br><span class="desc"></span></td></tr>
+<tr><td><a href="../components/weaverbird/rerouteFacesByPattern.html"><img src="../icons/Weaverbird/Reroute_Faces_by_Pattern.png"/></a></td><td><a href="../components/weaverbird/rerouteFacesByPattern.html">Reroute Faces by Pattern</a><br><span class="desc"></span></td></tr>
+<tr><td><a href="../components/weaverbird/unifyFaceWindings.html"><img src="../icons/Weaverbird/Unify_face_windings.png"/></a></td><td><a href="../components/weaverbird/unifyFaceWindings.html">Unify face windings</a><br><span class="desc"></span></td></tr>
+<tr><td><a href="../components/weaverbird/verticesComponent.html"><img src="../icons/Weaverbird/Vertices_Component.png"/></a></td><td><a href="../components/weaverbird/verticesComponent.html">Vertices Component</a><br><span class="desc"></span></td></tr>
+<tr><td><a href="../components/weaverbird/facePolylines.html"><img src="../icons/Weaverbird/Face_Polylines.png"/></a></td><td><a href="../components/weaverbird/facePolylines.html">Face Polylines</a><br><span class="desc"></span></td></tr>
+<tr><td><a href="../components/weaverbird/meshEdges.html"><img src="../icons/Weaverbird/Mesh_Edges.png"/></a></td><td><a href="../components/weaverbird/meshEdges.html">Mesh Edges</a><br><span class="desc"></span></td></tr>
+<tr><td><a href="../components/weaverbird/nakedBoundary.html"><img src="../icons/Weaverbird/Naked_boundary.png"/></a></td><td><a href="../components/weaverbird/nakedBoundary.html">Naked boundary</a><br><span class="desc"></span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>Wb SubD</h3>
+<table class="compos">
+<tbody>
+<tr><td><a href="../components/weaverbird/loopSubdivision.html"><img src="../icons/Weaverbird/Loop_Subdivision.png"/></a></td><td><a href="../components/weaverbird/loopSubdivision.html">Loop Subdivision</a><br><span class="desc"></span></td></tr>
+<tr><td><a href="../components/weaverbird/innerPolygonsSubdivision.html"><img src="../icons/Weaverbird/Inner_Polygons_Subdivision.png"/></a></td><td><a href="../components/weaverbird/innerPolygonsSubdivision.html">Inner Polygons Subdivision</a><br><span class="desc"></span></td></tr>
+<tr><td><a href="../components/weaverbird/sierpinskiTrianglesSubdivision.html"><img src="../icons/Weaverbird/Sierpinski_Triangles_Subdivision.png"/></a></td><td><a href="../components/weaverbird/sierpinskiTrianglesSubdivision.html">Sierpinski Triangles Subdivision</a><br><span class="desc"></span></td></tr>
+<tr><td><a href="../components/weaverbird/catmullClarkSubdivision.html"><img src="../icons/Weaverbird/Catmull-Clark_Subdivision.png"/></a></td><td><a href="../components/weaverbird/catmullClarkSubdivision.html">Catmull-Clark Subdivision</a><br><span class="desc"></span></td></tr>
+<tr><td><a href="../components/weaverbird/splitPolygonsSubdivision.html"><img src="../icons/Weaverbird/Split_Polygons_Subdivision.png"/></a></td><td><a href="../components/weaverbird/splitPolygonsSubdivision.html">Split Polygons Subdivision</a><br><span class="desc"></span></td></tr>
+<tr><td><a href="../components/weaverbird/midedgeSubdivision.html"><img src="../icons/Weaverbird/Midedge_Subdivision.png"/></a></td><td><a href="../components/weaverbird/midedgeSubdivision.html">Midedge Subdivision</a><br><span class="desc"></span></td></tr>
+<tr><td><a href="../components/weaverbird/splitTrianglesSubdivision.html"><img src="../icons/Weaverbird/Split_Triangles_Subdivision.png"/></a></td><td><a href="../components/weaverbird/splitTrianglesSubdivision.html">Split Triangles Subdivision</a><br><span class="desc"></span></td></tr>
+<tr><td><a href="../components/weaverbird/constantQuadsSplitSubdivision.html"><img src="../icons/Weaverbird/Constant_Quads_Split_Subdivision.png"/></a></td><td><a href="../components/weaverbird/constantQuadsSplitSubdivision.html">Constant Quads Split Subdivision</a><br><span class="desc"></span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>Wb Transform</h3>
+<table class="compos">
+<tbody>
+<tr><td><a href="../components/weaverbird/offsetMesh.html"><img src="../icons/Weaverbird/Offset_Mesh.png"/></a></td><td><a href="../components/weaverbird/offsetMesh.html">Offset Mesh</a><br><span class="desc"></span></td></tr>
+<tr><td><a href="../components/weaverbird/sierpinskiCarpet.html"><img src="../icons/Weaverbird/Sierpinski_Carpet.png"/></a></td><td><a href="../components/weaverbird/sierpinskiCarpet.html">Sierpinski Carpet</a><br><span class="desc"></span></td></tr>
+<tr><td><a href="../components/weaverbird/meshWindow.html"><img src="../icons/Weaverbird/Mesh_Window.png"/></a></td><td><a href="../components/weaverbird/meshWindow.html">Mesh Window</a><br><span class="desc"></span></td></tr>
+<tr><td><a href="../components/weaverbird/pictureFrame.html"><img src="../icons/Weaverbird/Picture_Frame.png"/></a></td><td><a href="../components/weaverbird/pictureFrame.html">Picture Frame</a><br><span class="desc"></span></td></tr>
+<tr><td><a href="../components/weaverbird/bevelEdges.html"><img src="../icons/Weaverbird/Bevel_Edges.png"/></a></td><td><a href="../components/weaverbird/bevelEdges.html">Bevel Edges</a><br><span class="desc"></span></td></tr>
+<tr><td><a href="../components/weaverbird/stellateCumulation.html"><img src="../icons/Weaverbird/Stellate_Cumulation.png"/></a></td><td><a href="../components/weaverbird/stellateCumulation.html">Stellate/Cumulation</a><br><span class="desc"></span></td></tr>
+<tr><td><a href="../components/weaverbird/meshThicken.html"><img src="../icons/Weaverbird/Mesh_Thicken.png"/></a></td><td><a href="../components/weaverbird/meshThicken.html">Mesh Thicken</a><br><span class="desc"></span></td></tr>
+<tr><td><a href="../components/weaverbird/bevelVertices.html"><img src="../icons/Weaverbird/Bevel_Vertices.png"/></a></td><td><a href="../components/weaverbird/bevelVertices.html">Bevel Vertices</a><br><span class="desc"></span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>Wb Define</h3>
+<table class="compos">
+<tbody>
+<tr><td><a href="../components/weaverbird/meshAntiprism.html"><img src="../icons/Weaverbird/Mesh_Antiprism.png"/></a></td><td><a href="../components/weaverbird/meshAntiprism.html">Mesh Antiprism</a><br><span class="desc"></span></td></tr>
+<tr><td><a href="../components/weaverbird/meshPyramid.html"><img src="../icons/Weaverbird/Mesh_Pyramid.png"/></a></td><td><a href="../components/weaverbird/meshPyramid.html">Mesh Pyramid</a><br><span class="desc"></span></td></tr>
+<tr><td><a href="../components/weaverbird/meshPrism.html"><img src="../icons/Weaverbird/Mesh_Prism.png"/></a></td><td><a href="../components/weaverbird/meshPrism.html">Mesh Prism</a><br><span class="desc"></span></td></tr>
+<tr><td><a href="../components/weaverbird/meshDipyramid.html"><img src="../icons/Weaverbird/Mesh_Dipyramid.png"/></a></td><td><a href="../components/weaverbird/meshDipyramid.html">Mesh Dipyramid</a><br><span class="desc"></span></td></tr>
+<tr><td><a href="../components/weaverbird/meshMeshIcosahedron.html"><img src="../icons/Weaverbird/Mesh_Mesh_Icosahedron.png"/></a></td><td><a href="../components/weaverbird/meshMeshIcosahedron.html">Mesh Mesh Icosahedron</a><br><span class="desc"></span></td></tr>
+<tr><td><a href="../components/weaverbird/polylinesDodecahedron.html"><img src="../icons/Weaverbird/Polylines_Dodecahedron.png"/></a></td><td><a href="../components/weaverbird/polylinesDodecahedron.html">Polylines Dodecahedron</a><br><span class="desc"></span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>Wb Smoothen</h3>
+<table class="compos">
+<tbody>
+<tr><td><a href="../components/weaverbird/laplacianSmoothing.html"><img src="../icons/Weaverbird/Laplacian_Smoothing.png"/></a></td><td><a href="../components/weaverbird/laplacianSmoothing.html">Laplacian Smoothing</a><br><span class="desc"></span></td></tr>
+<tr><td><a href="../components/weaverbird/blurMesh.html"><img src="../icons/Weaverbird/Blur_Mesh.png"/></a></td><td><a href="../components/weaverbird/blurMesh.html">Blur Mesh</a><br><span class="desc"></span></td></tr>
+<tr><td><a href="../components/weaverbird/laplacianHCSmoothing.html"><img src="../icons/Weaverbird/LaplacianHC_Smoothing.png"/></a></td><td><a href="../components/weaverbird/laplacianHCSmoothing.html">LaplacianHC Smoothing</a><br><span class="desc"></span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>Wb Create</h3>
+<table class="compos">
+<tbody>
+<tr><td><a href="../components/weaverbird/meshFromLinesWeaveBack.html"><img src="../icons/Weaverbird/Mesh_From_Lines_(Weave_Back).png"/></a></td><td><a href="../components/weaverbird/meshFromLinesWeaveBack.html">Mesh From Lines (Weave Back)</a><br><span class="desc"></span></td></tr>
+<tr><td><a href="../components/weaverbird/tile.html"><img src="../icons/Weaverbird/Tile.png"/></a></td><td><a href="../components/weaverbird/tile.html">Tile</a><br><span class="desc"></span></td></tr>
+</tbody>
+</table>
+
+</div>
+
+  </div>
+
+</div>
+
+            </div>
+            <div id="xg_foot">
+                <p class="left">
+    © 2018             &nbsp; Created by <a href="http://www.stackoverflow.com/cv/robin-rodricks">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    Hosted by<a href="http://www.github.com/"><img src="../images/github.png" alt="Github" class="poweredbylogo" /></a>
+	</p>
+    <p class="right xg_lightfont">
+                    <a href="http://www.grasshopper3d.com/main/embeddable/list">Badges</a> &nbsp;|&nbsp;
+                        <a href="http://www.grasshopper3d.com/main/index/report" dojotype="PromptToJoinLink" _joinprompttext="Please sign up or sign in to complete this step." _hassignup="true" _signinurl="http://www.grasshopper3d.com/main/authorization/signIn?target=http%3A%2F%2Fwww.grasshopper3d.com%2Fmain%2Findex%2Freport">Report an Issue</a> &nbsp;|&nbsp;
+                        <a href="http://www.grasshopper3d.com/main/authorization/termsOfService?previousUrl=http%3A%2F%2Fwww.grasshopper3d.com%2Fpage%2Fcomponent-reference">Terms of Service</a>
+            </p>
+
+            </div>
+        </div>
+        
+        <div id="xj_baz17246" class="xg_theme"></div>
+<div id="xg_overlay" style="display:none;">
+<!--[if lte IE 6.5]><iframe></iframe><![endif]-->
+</div>
+<!--googleoff: all--><noscript>
+	<style type="text/css" media="screen">
+        #xg { position:relative;top:120px; }
+        #xn_bar { top:120px; }
+	</style>
+	<div class="errordesc noscript">
+		<div>
+            <h3><strong>Hello, you need to enable JavaScript to use Grasshopper.</strong></h3>
+            <p>Please check your browser settings or contact your system administrator.</p>
+			
+		</div>
+	</div>
+</noscript><!--googleon: all-->
+
+<script src="/js/jquery.js"></script>
+<script src="/js/kramed.min.js"></script>
+<script src="/js/component.js"></script>
+<script src="/js/user.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    </body>
+</html>
