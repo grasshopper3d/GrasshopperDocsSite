@@ -58,11 +58,12 @@
                     <ul>
     <li id="xg_tab_main" class="xg_subtab"><a href="http://www.grasshopper3d.com/"><span>Home</span></a></li>
 	<li id="xg_tab_photo" class="xg_subtab"><a href="http://www.grasshopper3d.com/photo"><span>View</span></a></li>
-	<li id="xg_tab_xn0" class="xg_subtab"><a href="http://www.grasshopper3d.com/page/download-1"><span>Get</span></a></li>
+	<li id="xg_tab_xn0" class="xg_subtab"><a href="http://www.grasshopper3d.com/page/download-1"><span>Download</span></a></li>
+	<li id="xg_tab_forum" class="xg_subtab"><a href="https://discourse.mcneel.com/c/grasshopper"><span>Forums&#47;Support</span></a></li>
 	<li id="xg_tab_xn2" class="xg_subtab this"><a href="http://rhino.github.io/"><span>Learn</span></a></li>
-	<li id="xg_tab_forum" class="xg_subtab"><a href="http://www.grasshopper3d.com/forum"><span>Talk</span></a></li>
-	<li id="xg_tab_events" class="xg_subtab"><a href="http://www.grasshopper3d.com/events"><span>Events</span></a></li>
-	<li id="xg_tab_profile" class="xg_subtab"><a href="http://www.grasshopper3d.com/"><span>My Page</span></a></li></ul>
+	<li id="xg_tab_events" class="xg_subtab"><a href="https://www.grasshopper3d.com/page/tutorials-1"><span>Learn</span></a></li>
+	<li id="xg_tab_events" class="xg_subtab"><a href="http://www.grasshopper3d.com/events"><span>Attend</span></a></li>
+	<li id="xg_tab_profile" class="xg_subtab"><a href="http://www.grasshopper3d.com/profiles"><span>My Page</span></a></li></ul>
 
                 </div>
             </div>
@@ -940,7 +941,7 @@
 
 
 <div class="addon-buttons">
-<a href="http://www.food4rhino.com/app/ladybug-honeybee">Download</a>
+<a href="https://www.food4rhino.com/app/ladybug-tools">Download</a>
 </div>
 
 <div>
@@ -959,7 +960,7 @@
 <tr><td><b>ptsVectors_</b></td><td>ptsVectors_</td><td>Script variable readDSResults</td><td>Goo</td></tr>
 <tr><td><b>occupancyFiles_</b></td><td>occupancyFiles_</td><td>Address to a Daysim occupancy file. You can find some example in \Daysim\occ. Use Honeybee Occupancy Generator to generate a custom occupancy file. You can also use EnergyPlus Schedules directly. If the schedule is using continuous values any value larger than .2 will be considered as occupied.</td><td>Goo</td></tr>
 <tr><td><b>_DLAIllumThresholds_</b></td><td>_DLAIllumThresholds_</td><td>Illuminance threshold for Daylight Autonomy calculation in lux. Default is set to 300 lux.</td><td>Goo</td></tr>
-<tr><td><b>lightingControlGroups_</b></td><td>lightingControlGroups_</td><td>Daysim lighting control groups. Daysim can model up to 10 lighting control groups together. Default is > cntrlType = 4, lightingPower = 250, lightingSetpoint = 300, ballastLossFactor = 20, standbyPower = 3, delayTime = 5</td><td>Goo</td></tr>
+<tr><td><b>lightingControlGroups_</b></td><td>lightingControlGroups_</td><td>Daysim lighting control groups. Daysim can model up to 10 lighting control groups together. Default is ; cntrlType = 4, lightingPower = 250, lightingSetpoint = 300, ballastLossFactor = 20, standbyPower = 3, delayTime = 5</td><td>Goo</td></tr>
 <tr><td><b>SHDGroupI_Sensors_</b></td><td>SHDGroupI_Sensors_</td><td>Senors for dhading group I. Use shadingGroupSensors component to prepare the inputs</td><td>Goo</td></tr>
 <tr><td><b>SHDGroupII_Sensors_</b></td><td>SHDGroupII_Sensors_</td><td>Senors for dhading group II. Use shadingGroupSensors component to prepare the inputs</td><td>Goo</td></tr>
 <tr><td><b>_runIt</b></td><td>_runIt</td><td>set to True to run the analysis</td><td>Goo</td></tr>
@@ -972,12 +973,12 @@
 <tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
 </thead>
 <tbody>
-<tr><td><b>DLA</b></td><td>DLA</td><td>Daylight Autonomy > Percentage of the time during the active occupancy hours that the test point receives more daylight than the illuminance threshold.</td><td>Goo</td></tr>
-<tr><td><b>UDLI_Less_100</b></td><td>UDLI_Less_100</td><td>Useful Daylight illuminance > Percentage of time during the active occupancy hours that the test point receives less than 100 lux.</td><td>Goo</td></tr>
-<tr><td><b>UDLI_100_2000</b></td><td>UDLI_100_2000</td><td>Useful Daylight illuminance > Percentage of time during the active occupancy hours that the test point receives between 100 and 2000 lux.</td><td>Goo</td></tr>
-<tr><td><b>UDLI_More_2000</b></td><td>UDLI_More_2000</td><td>Useful Daylight illuminance > Percentage of time during the active occupancy hours that the test point receives more than 2000 lux.</td><td>Goo</td></tr>
-<tr><td><b>CDA</b></td><td>CDA</td><td>Continuous Daylight Autonomy > Similar to Daylight Autonomy except that the point receives illuminaceLevel/illuminace threshold for hours that illuminance level is less than the threshold.</td><td>Goo</td></tr>
-<tr><td><b>sDA</b></td><td>sDA</td><td>Spatial Daylight Autonomy > sDA is the percent of analysis points across the analysis area that meet or exceed _DLAIllumThresholds value (set to 300 lux for LEED) for at least 50% of the analysis period. Honeybee doesn't consider the effect of dynamic blinds in calculating sDA.</td><td>Goo</td></tr>
+<tr><td><b>DLA</b></td><td>DLA</td><td>Daylight Autonomy ; Percentage of the time during the active occupancy hours that the test point receives more daylight than the illuminance threshold.</td><td>Goo</td></tr>
+<tr><td><b>UDLI_Less_100</b></td><td>UDLI_Less_100</td><td>Useful Daylight illuminance ; Percentage of time during the active occupancy hours that the test point receives less than 100 lux.</td><td>Goo</td></tr>
+<tr><td><b>UDLI_100_2000</b></td><td>UDLI_100_2000</td><td>Useful Daylight illuminance ; Percentage of time during the active occupancy hours that the test point receives between 100 and 2000 lux.</td><td>Goo</td></tr>
+<tr><td><b>UDLI_More_2000</b></td><td>UDLI_More_2000</td><td>Useful Daylight illuminance ; Percentage of time during the active occupancy hours that the test point receives more than 2000 lux.</td><td>Goo</td></tr>
+<tr><td><b>CDA</b></td><td>CDA</td><td>Continuous Daylight Autonomy ; Similar to Daylight Autonomy except that the point receives illuminaceLevel/illuminace threshold for hours that illuminance level is less than the threshold.</td><td>Goo</td></tr>
+<tr><td><b>sDA</b></td><td>sDA</td><td>Spatial Daylight Autonomy ; sDA is the percent of analysis points across the analysis area that meet or exceed _DLAIllumThresholds value (set to 300 lux for LEED) for at least 50% of the analysis period. Honeybee doesn't consider the effect of dynamic blinds in calculating sDA.</td><td>Goo</td></tr>
 <tr><td><b>annualProfiles</b></td><td>annualProfiles</td><td>A .csv file generated by Daysim that can be used as lighting schedule for annual energy simulation</td><td>Goo</td></tr>
 <tr><td><b>htmReport</b></td><td>htmReport</td><td>Script variable readDSResults</td><td>Goo</td></tr>
 </tbody>
@@ -991,7 +992,7 @@
             </div>
             <div id="xg_foot">
                 <p class="left">
-    © 2018             &nbsp; Created by <a href="http://www.stackoverflow.com/cv/robin-rodricks">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    © 2018-2020             &nbsp; Created by <a href="https://github.com/robinrodricks/">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
     Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a>
 	</p>
     <p class="right xg_lightfont">

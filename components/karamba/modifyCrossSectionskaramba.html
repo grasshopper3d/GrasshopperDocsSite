@@ -58,11 +58,12 @@
                     <ul>
     <li id="xg_tab_main" class="xg_subtab"><a href="http://www.grasshopper3d.com/"><span>Home</span></a></li>
 	<li id="xg_tab_photo" class="xg_subtab"><a href="http://www.grasshopper3d.com/photo"><span>View</span></a></li>
-	<li id="xg_tab_xn0" class="xg_subtab"><a href="http://www.grasshopper3d.com/page/download-1"><span>Get</span></a></li>
+	<li id="xg_tab_xn0" class="xg_subtab"><a href="http://www.grasshopper3d.com/page/download-1"><span>Download</span></a></li>
+	<li id="xg_tab_forum" class="xg_subtab"><a href="https://discourse.mcneel.com/c/grasshopper"><span>Forums&#47;Support</span></a></li>
 	<li id="xg_tab_xn2" class="xg_subtab this"><a href="http://rhino.github.io/"><span>Learn</span></a></li>
-	<li id="xg_tab_forum" class="xg_subtab"><a href="http://www.grasshopper3d.com/forum"><span>Talk</span></a></li>
-	<li id="xg_tab_events" class="xg_subtab"><a href="http://www.grasshopper3d.com/events"><span>Events</span></a></li>
-	<li id="xg_tab_profile" class="xg_subtab"><a href="http://www.grasshopper3d.com/"><span>My Page</span></a></li></ul>
+	<li id="xg_tab_events" class="xg_subtab"><a href="https://www.grasshopper3d.com/page/tutorials-1"><span>Learn</span></a></li>
+	<li id="xg_tab_events" class="xg_subtab"><a href="http://www.grasshopper3d.com/events"><span>Attend</span></a></li>
+	<li id="xg_tab_profile" class="xg_subtab"><a href="http://www.grasshopper3d.com/profiles"><span>My Page</span></a></li></ul>
 
                 </div>
             </div>
@@ -488,25 +489,25 @@ Utilities
 <tr><td><b>Family name of cross section</b></td><td>Family</td><td>Family name of cross section: defines a group of cross sections for cross section optimization.</td><td>String</td></tr>
 <tr><td><b>Elem Ids</b></td><td>Elem Ids</td><td>List of identifier of elements to attach cross section to.</td><td>String</td></tr>
 <tr><td><b>local eccentricity [cm]</b></td><td>ecce-loc</td><td>Vector of eccentricity in [cm] with respect to beam axis in local beam coordinates.</td><td>Vector</td></tr>
-<tr><td><b>Height [cm]</b></td><td>Height</td><td>Height [cm] of the cross-section given in centimeter if >0.</td><td>Number</td></tr>
-<tr><td><b>Thickness [cm]</b></td><td>Thick</td><td>Wall-thickness [cm] of the cross-section given in centimeter if >0.</td><td>Number</td></tr>
-<tr><td><b>Area [cm2]</b></td><td>A</td><td>Cross section area [cm2] if >0.</td><td>Number</td></tr>
-<tr><td><b>AreaY [cm2]</b></td><td>Ay</td><td>Equivalent shear area [cm2] for shear in local Y-direction if >0.</td><td>Number</td></tr>
-<tr><td><b>AreaZ [cm2]</b></td><td>Az</td><td>Equivalent shear area [cm2] for shear in local Z-direction if >0.</td><td>Number</td></tr>
-<tr><td><b>Iyy [cm4]</b></td><td>Iyy</td><td>Moment of inertia [cm4] about the local Y-axis if >0.</td><td>Number</td></tr>
-<tr><td><b>Izz [cm4]</b></td><td>Izz</td><td>Moment of inertia [cm4] about the local Z-axis if >0.</td><td>Number</td></tr>
-<tr><td><b>Ipp [cm4]</b></td><td>Ipp</td><td>Primary or St. Venant torsional moment of inertia [cm4] about the local X-axis if >0.</td><td>Number</td></tr>
-<tr><td><b>Cw [cm6]</b></td><td>Cw</td><td>Warping torsional constant [cm6] if >0.</td><td>Number</td></tr>
-<tr><td><b>Wely+ [cm3]</b></td><td>Wely+</td><td>Elastic resistance moment [cm3] about the local Y-axis for the extreme point on the positive local Z-axis if >0.</td><td>Number</td></tr>
-<tr><td><b>Wely- [cm3]</b></td><td>Wely-</td><td>Elastic resistance moment [cm3] about the local Y-axis for the extreme point on the negative local Z-axis if >0.</td><td>Number</td></tr>
-<tr><td><b>Wply [cm3]</b></td><td>Wply</td><td>Plastic resistance moment [cm3] about the local Y-axis if >0.</td><td>Number</td></tr>
-<tr><td><b>Welz+ [cm3]</b></td><td>Welz+</td><td>Elastic resistance moment [cm3] about the local Z-axis for the extreme point on the positive local Y-axis if >0.</td><td>Number</td></tr>
-<tr><td><b>Welz- [cm3]</b></td><td>Welz-</td><td>Elastic resistance moment [cm3] about the local Z-axis for the extreme point on the negative local Y-axis if >0.</td><td>Number</td></tr>
-<tr><td><b>Wplz [cm3]</b></td><td>Wplz</td><td>Plastic resistance moment [cm3] about the local Z-axis if >0.</td><td>Number</td></tr>
-<tr><td><b>Wt [cm3]</b></td><td>Wt</td><td>Minimum torsional resistance moment [cm3] if >0.</td><td>Number</td></tr>
-<tr><td><b>alphaY</b></td><td>alphaY</td><td>Buckling coefficient about local Y-axis according to EC3 if >0.</td><td>Number</td></tr>
-<tr><td><b>alphaZ</b></td><td>alphaZ</td><td>Buckling coefficient about local Z-axis according to EC3 if >0.</td><td>Number</td></tr>
-<tr><td><b>alphaLT</b></td><td>alphaLT</td><td>Coefficient for lateral torsional buckling according to EC3 if >0.</td><td>Number</td></tr>
+<tr><td><b>Height [cm]</b></td><td>Height</td><td>Height [cm] of the cross-section given in centimeter if ;0.</td><td>Number</td></tr>
+<tr><td><b>Thickness [cm]</b></td><td>Thick</td><td>Wall-thickness [cm] of the cross-section given in centimeter if ;0.</td><td>Number</td></tr>
+<tr><td><b>Area [cm2]</b></td><td>A</td><td>Cross section area [cm2] if ;0.</td><td>Number</td></tr>
+<tr><td><b>AreaY [cm2]</b></td><td>Ay</td><td>Equivalent shear area [cm2] for shear in local Y-direction if ;0.</td><td>Number</td></tr>
+<tr><td><b>AreaZ [cm2]</b></td><td>Az</td><td>Equivalent shear area [cm2] for shear in local Z-direction if ;0.</td><td>Number</td></tr>
+<tr><td><b>Iyy [cm4]</b></td><td>Iyy</td><td>Moment of inertia [cm4] about the local Y-axis if ;0.</td><td>Number</td></tr>
+<tr><td><b>Izz [cm4]</b></td><td>Izz</td><td>Moment of inertia [cm4] about the local Z-axis if ;0.</td><td>Number</td></tr>
+<tr><td><b>Ipp [cm4]</b></td><td>Ipp</td><td>Primary or St. Venant torsional moment of inertia [cm4] about the local X-axis if ;0.</td><td>Number</td></tr>
+<tr><td><b>Cw [cm6]</b></td><td>Cw</td><td>Warping torsional constant [cm6] if ;0.</td><td>Number</td></tr>
+<tr><td><b>Wely+ [cm3]</b></td><td>Wely+</td><td>Elastic resistance moment [cm3] about the local Y-axis for the extreme point on the positive local Z-axis if ;0.</td><td>Number</td></tr>
+<tr><td><b>Wely- [cm3]</b></td><td>Wely-</td><td>Elastic resistance moment [cm3] about the local Y-axis for the extreme point on the negative local Z-axis if ;0.</td><td>Number</td></tr>
+<tr><td><b>Wply [cm3]</b></td><td>Wply</td><td>Plastic resistance moment [cm3] about the local Y-axis if ;0.</td><td>Number</td></tr>
+<tr><td><b>Welz+ [cm3]</b></td><td>Welz+</td><td>Elastic resistance moment [cm3] about the local Z-axis for the extreme point on the positive local Y-axis if ;0.</td><td>Number</td></tr>
+<tr><td><b>Welz- [cm3]</b></td><td>Welz-</td><td>Elastic resistance moment [cm3] about the local Z-axis for the extreme point on the negative local Y-axis if ;0.</td><td>Number</td></tr>
+<tr><td><b>Wplz [cm3]</b></td><td>Wplz</td><td>Plastic resistance moment [cm3] about the local Z-axis if ;0.</td><td>Number</td></tr>
+<tr><td><b>Wt [cm3]</b></td><td>Wt</td><td>Minimum torsional resistance moment [cm3] if ;0.</td><td>Number</td></tr>
+<tr><td><b>alphaY</b></td><td>alphaY</td><td>Buckling coefficient about local Y-axis according to EC3 if ;0.</td><td>Number</td></tr>
+<tr><td><b>alphaZ</b></td><td>alphaZ</td><td>Buckling coefficient about local Z-axis according to EC3 if ;0.</td><td>Number</td></tr>
+<tr><td><b>alphaLT</b></td><td>alphaLT</td><td>Coefficient for lateral torsional buckling according to EC3 if ;0.</td><td>Number</td></tr>
 </tbody>
 </table>
 
@@ -528,7 +529,7 @@ Utilities
             </div>
             <div id="xg_foot">
                 <p class="left">
-    © 2018             &nbsp; Created by <a href="http://www.stackoverflow.com/cv/robin-rodricks">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    © 2018-2020             &nbsp; Created by <a href="https://github.com/robinrodricks/">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
     Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a>
 	</p>
     <p class="right xg_lightfont">

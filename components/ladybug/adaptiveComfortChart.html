@@ -58,11 +58,12 @@
                     <ul>
     <li id="xg_tab_main" class="xg_subtab"><a href="http://www.grasshopper3d.com/"><span>Home</span></a></li>
 	<li id="xg_tab_photo" class="xg_subtab"><a href="http://www.grasshopper3d.com/photo"><span>View</span></a></li>
-	<li id="xg_tab_xn0" class="xg_subtab"><a href="http://www.grasshopper3d.com/page/download-1"><span>Get</span></a></li>
+	<li id="xg_tab_xn0" class="xg_subtab"><a href="http://www.grasshopper3d.com/page/download-1"><span>Download</span></a></li>
+	<li id="xg_tab_forum" class="xg_subtab"><a href="https://discourse.mcneel.com/c/grasshopper"><span>Forums&#47;Support</span></a></li>
 	<li id="xg_tab_xn2" class="xg_subtab this"><a href="http://rhino.github.io/"><span>Learn</span></a></li>
-	<li id="xg_tab_forum" class="xg_subtab"><a href="http://www.grasshopper3d.com/forum"><span>Talk</span></a></li>
-	<li id="xg_tab_events" class="xg_subtab"><a href="http://www.grasshopper3d.com/events"><span>Events</span></a></li>
-	<li id="xg_tab_profile" class="xg_subtab"><a href="http://www.grasshopper3d.com/"><span>My Page</span></a></li></ul>
+	<li id="xg_tab_events" class="xg_subtab"><a href="https://www.grasshopper3d.com/page/tutorials-1"><span>Learn</span></a></li>
+	<li id="xg_tab_events" class="xg_subtab"><a href="http://www.grasshopper3d.com/events"><span>Attend</span></a></li>
+	<li id="xg_tab_profile" class="xg_subtab"><a href="http://www.grasshopper3d.com/profiles"><span>My Page</span></a></li></ul>
 
                 </div>
             </div>
@@ -633,7 +634,7 @@
 
 
 <div class="addon-buttons">
-<a href="http://www.food4rhino.com/app/ladybug-honeybee">Download</a>
+<a href="https://www.food4rhino.com/app/ladybug-tools">Download</a>
 </div>
 
 <div>
@@ -650,16 +651,16 @@
 <tr><td><b>_dryBulbTemperature</b></td><td>_dryBulbTemperature</td><td>A number representing the dry bulb temperature of the air in degrees Celcius.  This input can also accept a list of temperatures representing conditions at different times or the direct output of dryBulbTemperature from the 'Read EP Result' or 'Import EPW' component.</td><td>Goo</td></tr>
 <tr><td><b>meanRadiantTemperature_</b></td><td>meanRadiantTemperature_</td><td>A number representing the mean radiant temperature of the surrounding surfaces in degrees Celcius.  If no value is plugged in here, this component will assume that the mean radiant temperature is equal to air temperature value above.  This input can also accept a list of temperatures representing conditions at different times or the direct output from the 'Read EP Result' or 'Import EPW' component.</td><td>Goo</td></tr>
 <tr><td><b>_prevailingOutdoorTemp</b></td><td>_prevailingOutdoorTemp</td><td>A number representing the prevailing outdoor temperature in degrees Celcius.  For the ASHRAE standard, this is the average monthly outdoor temperature and, for the European standard, this is a running mean outdoor temperature calculated from the conditions of the last week.  For this reason, this input can also accept the direct output of dryBulbTemperature from the 'Import EPW' component if houlry values for the full year are connected for the other inputs of this component.  This input from the 'Import EPW' component is recommended.</td><td>Goo</td></tr>
-<tr><td><b>windSpeed_</b></td><td>windSpeed_</td><td>A number representing the wind speed of the air in meters per second.  If no value is plugged in here, this component will assume a low wind speed of < 0.2 m/s, characteristic of most naturally ventilated buildings without fans.  This input can also accept several wind speeds to generate multiple comfort polygons.  Lastly, this component can accept the direct output of windSpeed from of the Import EPW component and, from this data, two comfort polygons will be drawn representing the maximum and minumu wind speed.</td><td>Goo</td></tr>
+<tr><td><b>windSpeed_</b></td><td>windSpeed_</td><td>A number representing the wind speed of the air in meters per second.  If no value is plugged in here, this component will assume a low wind speed of ; 0.2 m/s, characteristic of most naturally ventilated buildings without fans.  This input can also accept several wind speeds to generate multiple comfort polygons.  Lastly, this component can accept the direct output of windSpeed from of the Import EPW component and, from this data, two comfort polygons will be drawn representing the maximum and minumu wind speed.</td><td>Goo</td></tr>
 <tr><td><b>------------------------------</b></td><td>------------------------------</td><td>...</td><td>Goo</td></tr>
 <tr><td><b>comfortPar_</b></td><td>comfortPar_</td><td>Optional comfort parameters from the "Ladybug_Adaptive Comfort Parameters" component.  Use this to select either the US or European comfort model, set the threshold of acceptibility for comfort or compute prevailing outdoor temperature by a monthly average or running mean.  These comfortPar can also be used to set a levelOfConditioning, which makes use of research outside of the official published standards that surveyed people in air conditioned buildings.</td><td>Goo</td></tr>
 <tr><td><b>includeColdTime_</b></td><td>includeColdTime_</td><td>Set to "True" to have the component include the time period where the outdoor temperature is too cold for the official ASHRAE or European standard and set to "False" to exclude it.  When the outdoor temperatue is too cold for these standards, a correlation from recent research is used.  The default is set to "True" to include the cold period in the visualization and output.</td><td>Goo</td></tr>
 <tr><td><b>------------------------------</b></td><td>------------------------------</td><td>Script variable AdaptiveChart</td><td>Goo</td></tr>
 <tr><td><b>analysisPeriod_</b></td><td>analysisPeriod_</td><td>An optional analysis period from the Analysis Period component.  If no Analysis period is given and epw or energy simulation data has been connected, the analysis will be run for the enitre year.</td><td>Goo</td></tr>
 <tr><td><b>annualHourlyData_</b></td><td>annualHourlyData_</td><td>An optional list of hourly data from the 'Import EPW' component, which will be used to create hourPointColors that correspond to the hours of the data (e.g. windSpeed).  You can connect up several different annualHourly data here.</td><td>Goo</td></tr>
-<tr><td><b>conditionalStatement_</b></td><td>conditionalStatement_</td><td>This input allows users to remove data that does not fit specific conditions or criteria from the adaptive chart. The conditional statement input here should be a valid condition statement in Python, such as "a>25" or "b<80" (without quotation marks).
+<tr><td><b>conditionalStatement_</b></td><td>conditionalStatement_</td><td>This input allows users to remove data that does not fit specific conditions or criteria from the adaptive chart. The conditional statement input here should be a valid condition statement in Python, such as "a;25" or "b;80" (without quotation marks).
 The current version of this component accepts "and" and "or" operators. To visualize the hourly data, only lowercase English letters should be used as variables, and each letter alphabetically corresponds to each of the lists (in their respective order): "a" always represents the 1st list plugged into annualHourlyData_, "b" always represents the 2nd list plugged into annualHourlyData_, "c" always represents the 3rd list plugged into annualHourlyData_, etc.
-For example, if you want to plot the data for the time period when temperature is between 18C and 23C, and humidity is less than 80%, the conditional statement should be written as “18<a<23 and b<80” (without quotation marks).</td><td>Goo</td></tr>
+For example, if you want to plot the data for the time period when temperature is between 18C and 23C, and humidity is less than 80%, the conditional statement should be written as “18;a;23 and b;80” (without quotation marks).</td><td>Goo</td></tr>
 <tr><td><b>basePoint_</b></td><td>basePoint_</td><td>An optional base point that will be used to place the adaptive chart in the Rhino scene.  If no base point is provided, the base point will be the Rhino model origin.</td><td>Goo</td></tr>
 <tr><td><b>scale_</b></td><td>scale_</td><td>An optional number to change the scale of the adaptive chart in the Rhino scene.  By default, this value is set to 1.</td><td>Goo</td></tr>
 <tr><td><b>legendPar_</b></td><td>legendPar_</td><td>Optional legend parameters from the Ladybug Legend Parameters component.</td><td>Goo</td></tr>
@@ -706,7 +707,7 @@ For example, if you want to plot the data for the time period when temperature i
             </div>
             <div id="xg_foot">
                 <p class="left">
-    © 2018             &nbsp; Created by <a href="http://www.stackoverflow.com/cv/robin-rodricks">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    © 2018-2020             &nbsp; Created by <a href="https://github.com/robinrodricks/">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
     Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a>
 	</p>
     <p class="right xg_lightfont">

@@ -58,11 +58,12 @@
                     <ul>
     <li id="xg_tab_main" class="xg_subtab"><a href="http://www.grasshopper3d.com/"><span>Home</span></a></li>
 	<li id="xg_tab_photo" class="xg_subtab"><a href="http://www.grasshopper3d.com/photo"><span>View</span></a></li>
-	<li id="xg_tab_xn0" class="xg_subtab"><a href="http://www.grasshopper3d.com/page/download-1"><span>Get</span></a></li>
+	<li id="xg_tab_xn0" class="xg_subtab"><a href="http://www.grasshopper3d.com/page/download-1"><span>Download</span></a></li>
+	<li id="xg_tab_forum" class="xg_subtab"><a href="https://discourse.mcneel.com/c/grasshopper"><span>Forums&#47;Support</span></a></li>
 	<li id="xg_tab_xn2" class="xg_subtab this"><a href="http://rhino.github.io/"><span>Learn</span></a></li>
-	<li id="xg_tab_forum" class="xg_subtab"><a href="http://www.grasshopper3d.com/forum"><span>Talk</span></a></li>
-	<li id="xg_tab_events" class="xg_subtab"><a href="http://www.grasshopper3d.com/events"><span>Events</span></a></li>
-	<li id="xg_tab_profile" class="xg_subtab"><a href="http://www.grasshopper3d.com/"><span>My Page</span></a></li></ul>
+	<li id="xg_tab_events" class="xg_subtab"><a href="https://www.grasshopper3d.com/page/tutorials-1"><span>Learn</span></a></li>
+	<li id="xg_tab_events" class="xg_subtab"><a href="http://www.grasshopper3d.com/events"><span>Attend</span></a></li>
+	<li id="xg_tab_profile" class="xg_subtab"><a href="http://www.grasshopper3d.com/profiles"><span>My Page</span></a></li></ul>
 
                 </div>
             </div>
@@ -633,7 +634,7 @@
 
 
 <div class="addon-buttons">
-<a href="http://www.food4rhino.com/app/ladybug-honeybee">Download</a>
+<a href="https://www.food4rhino.com/app/ladybug-tools">Download</a>
 </div>
 
 <div>
@@ -666,19 +667,19 @@
 <tr><td><b>out</b></td><td>readMe!</td><td>...</td><td>String</td></tr>
 <tr><td><b>------------------------------</b></td><td>------------------------------</td><td>...</td><td>Goo</td></tr>
 <tr><td><b>universalThermalClimateIndex</b></td><td>universalThermalClimateIndex</td><td>The UTCI of the input conditions in degrees Celcius. Perhaps the most familiar application of Univeral Thermal Climate Index (UTCI) is the temperature given by TV weathermen and women when they say that, even though the dry bulb temperature outside is a certain value, the temperature actually "feels like" something higher or lower. UTCI is this temperature of what the weather "feels like" and it takes into account radiant temperature (usually including solar radiation), relative humidity, wind speed and uses them in a human energy balance model to give a temperature value that is indicative of the heat stress or cold stress felt by the human body.</td><td>Goo</td></tr>
-<tr><td><b>comfortableOrNot</b></td><td>comfortableOrNot</td><td>A stream of 0's and 1's (or "False" and "True" values) indicating whether a person outside is comfortable for each hour of the input conditions.  0 indicates that a person is not comfortable while 1 indicates that a person is comfortable.  A person is considered to be comfortable when he/she experiences no thermal stress (9 < UTCI < 26).</td><td>Goo</td></tr>
+<tr><td><b>comfortableOrNot</b></td><td>comfortableOrNot</td><td>A stream of 0's and 1's (or "False" and "True" values) indicating whether a person outside is comfortable for each hour of the input conditions.  0 indicates that a person is not comfortable while 1 indicates that a person is comfortable.  A person is considered to be comfortable when he/she experiences no thermal stress (9 ; UTCI ; 26).</td><td>Goo</td></tr>
 <tr><td><b>thermalStress</b></td><td>thermalStress</td><td>A stream of interger values from -1 to +1 that indicate the following:
--1 - Cold Stress - cold conditions (UTCI < 9C).
-0  - No Thermal Stress - comfortable conditions (9C < UTCI < 26C).
-+1 - Heat Stress - hot conditions (UTCI > 26C).</td><td>Goo</td></tr>
+-1 - Cold Stress - cold conditions (UTCI ; 9C).
+0  - No Thermal Stress - comfortable conditions (9C ; UTCI ; 26C).
++1 - Heat Stress - hot conditions (UTCI ; 26C).</td><td>Goo</td></tr>
 <tr><td><b>conditionOfPerson</b></td><td>conditionOfPerson</td><td>A stream of interger values from -3 to +3 that indicate the following:
--3 - Strong Cold Stress - potential public health hazard with higher-than-normal mortality rates (UTCI < -13C).
--2 - Moderate Cold Stress - cold but no public health hazard (-13C < UTCI < 0C).
--1 - Slight Cold Stress - cool but comfortable for short periods of time (0C < UTCI < 9C)
-0  - No Thermal Stress  - comfortable conditions (9C < UTCI < 26C).
-+1 - Slight Heat Stress - warm but comfortable for short periods of time (26C < UTCI < 28C).
-+2 - Moderate Heat Stress - hot but no public health hazard (28C < UTCI < 32C).
-+3 - Strong Heat Stress - potential public health hazard with higher-than-normal mortality rates (UTCI > 32C).</td><td>Goo</td></tr>
+-3 - Strong Cold Stress - potential public health hazard with higher-than-normal mortality rates (UTCI ; -13C).
+-2 - Moderate Cold Stress - cold but no public health hazard (-13C ; UTCI ; 0C).
+-1 - Slight Cold Stress - cool but comfortable for short periods of time (0C ; UTCI ; 9C)
+0  - No Thermal Stress  - comfortable conditions (9C ; UTCI ; 26C).
++1 - Slight Heat Stress - warm but comfortable for short periods of time (26C ; UTCI ; 28C).
++2 - Moderate Heat Stress - hot but no public health hazard (28C ; UTCI ; 32C).
++3 - Strong Heat Stress - potential public health hazard with higher-than-normal mortality rates (UTCI ; 32C).</td><td>Goo</td></tr>
 <tr><td><b>------------------------------</b></td><td>------------------------------</td><td>Script variable UTCIComfortCalculator</td><td>Goo</td></tr>
 <tr><td><b>percentOfTimeComfortable</b></td><td>percentOfTimeComfortable</td><td>The percent of the input data for which the UTCI indicates no thermal stress (comfortable conditions).  Comfortable conditions are when the UTCI is between 9 and 26 degrees Celcius.</td><td>Goo</td></tr>
 <tr><td><b>percentComfForShortPeriod</b></td><td>percentComfForShortPeriod</td><td>The percent of the input data for which the UTCI indicates slight heat/cold stress.  This indicates conditions that are comfortable for short periods of time with proper attire.  This includes all conditions when the UTCI is between 0 and 9 degrees Celcius or between 26 and 28 degrees Celcius.</td><td>Goo</td></tr>
@@ -695,7 +696,7 @@
             </div>
             <div id="xg_foot">
                 <p class="left">
-    © 2018             &nbsp; Created by <a href="http://www.stackoverflow.com/cv/robin-rodricks">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    © 2018-2020             &nbsp; Created by <a href="https://github.com/robinrodricks/">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
     Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a>
 	</p>
     <p class="right xg_lightfont">

@@ -58,11 +58,12 @@
                     <ul>
     <li id="xg_tab_main" class="xg_subtab"><a href="http://www.grasshopper3d.com/"><span>Home</span></a></li>
 	<li id="xg_tab_photo" class="xg_subtab"><a href="http://www.grasshopper3d.com/photo"><span>View</span></a></li>
-	<li id="xg_tab_xn0" class="xg_subtab"><a href="http://www.grasshopper3d.com/page/download-1"><span>Get</span></a></li>
+	<li id="xg_tab_xn0" class="xg_subtab"><a href="http://www.grasshopper3d.com/page/download-1"><span>Download</span></a></li>
+	<li id="xg_tab_forum" class="xg_subtab"><a href="https://discourse.mcneel.com/c/grasshopper"><span>Forums&#47;Support</span></a></li>
 	<li id="xg_tab_xn2" class="xg_subtab this"><a href="http://rhino.github.io/"><span>Learn</span></a></li>
-	<li id="xg_tab_forum" class="xg_subtab"><a href="http://www.grasshopper3d.com/forum"><span>Talk</span></a></li>
-	<li id="xg_tab_events" class="xg_subtab"><a href="http://www.grasshopper3d.com/events"><span>Events</span></a></li>
-	<li id="xg_tab_profile" class="xg_subtab"><a href="http://www.grasshopper3d.com/"><span>My Page</span></a></li></ul>
+	<li id="xg_tab_events" class="xg_subtab"><a href="https://www.grasshopper3d.com/page/tutorials-1"><span>Learn</span></a></li>
+	<li id="xg_tab_events" class="xg_subtab"><a href="http://www.grasshopper3d.com/events"><span>Attend</span></a></li>
+	<li id="xg_tab_profile" class="xg_subtab"><a href="http://www.grasshopper3d.com/profiles"><span>My Page</span></a></li></ul>
 
                 </div>
             </div>
@@ -633,7 +634,7 @@
 
 
 <div class="addon-buttons">
-<a href="http://www.food4rhino.com/app/ladybug-honeybee">Download</a>
+<a href="https://www.food4rhino.com/app/ladybug-tools">Download</a>
 </div>
 
 <div>
@@ -665,13 +666,13 @@
 <tr><td><b>relativeHumidity</b></td><td>relativeHumidity</td><td>"This is the hourly Relative Humidity in percent. Valid values range from 0% to 110%. Missing value for this field is 999."</td><td>Goo</td></tr>
 <tr><td><b>windSpeed</b></td><td>windSpeed</td><td>"This is the hourly wind speed in m/sec. Values can range from 0 to 40. Missing value is 999."</td><td>Goo</td></tr>
 <tr><td><b>windDirection</b></td><td>windDirection</td><td>"This is the hourly Wind Direction in degrees where the convention is that North=0.0, East=90.0, South=180.0, West=270.0. (If wind is calm for the given hour, the direction equals zero.) Values can range from 0 to 360. Missing value is 999."</td><td>Goo</td></tr>
-<tr><td><b>directNormalRadiation</b></td><td>directNormalRadiation</td><td>"This is the hourly Direct Normal Radiation in Wh/m2. (Amount of solar radiation in Wh/m2 received directly from the solar disk on a surface perpendicular to the sun's rays, during the number of minutes preceding the time indicated.) If the field is missing ( 9999) or invalid (<0), it is set to 0. Counts of such missing values are totaled and presented at the end of the runperiod."</td><td>Goo</td></tr>
-<tr><td><b>diffuseHorizontalRadiation</b></td><td>diffuseHorizontalRadiation</td><td>"This is the hourly Diffuse Horizontal Radiation in Wh/m2. (Amount of solar radiation in Wh/m2 received from the sky (excluding the solar disk) on a horizontal surface during the number of minutes preceding the time indicated.) If the field is missing ( 9999) or invalid (<0), it is set to 0. Counts of such missing values are totaled and presented at the end of the runperiod."</td><td>Goo</td></tr>
+<tr><td><b>directNormalRadiation</b></td><td>directNormalRadiation</td><td>"This is the hourly Direct Normal Radiation in Wh/m2. (Amount of solar radiation in Wh/m2 received directly from the solar disk on a surface perpendicular to the sun's rays, during the number of minutes preceding the time indicated.) If the field is missing ( 9999) or invalid (;0), it is set to 0. Counts of such missing values are totaled and presented at the end of the runperiod."</td><td>Goo</td></tr>
+<tr><td><b>diffuseHorizontalRadiation</b></td><td>diffuseHorizontalRadiation</td><td>"This is the hourly Diffuse Horizontal Radiation in Wh/m2. (Amount of solar radiation in Wh/m2 received from the sky (excluding the solar disk) on a horizontal surface during the number of minutes preceding the time indicated.) If the field is missing ( 9999) or invalid (;0), it is set to 0. Counts of such missing values are totaled and presented at the end of the runperiod."</td><td>Goo</td></tr>
 <tr><td><b>globalHorizontalRadiation</b></td><td>globalHorizontalRadiation</td><td>"This is the hourly Global Horizontal Radiation in Wh/m2. (Total amount of direct and diffuse solar radiation in Wh/m2 received on a horizontal surface during the number of minutes preceding the time indicated.) It is not currently used in EnergyPlus calculations. It should have a minimum value of 0; missing value for this field is 9999."</td><td>Goo</td></tr>
 <tr><td><b>horizontalInfraredRadiation</b></td><td>horizontalInfraredRadiation</td><td>Script variable importEPW</td><td>Goo</td></tr>
-<tr><td><b>directNormalIlluminance</b></td><td>directNormalIlluminance</td><td>"This is the hourly Direct Normal Illuminance in lux. (Average amount of illuminance in hundreds of lux received directly from the solar disk on a surface perpendicular to the sun's rays, during the number of minutes preceding the time indicated.) It is not currently used in EnergyPlus calculations. It should have a minimum value of 0; missing value for this field is 999999 and will be considered missing of >= 999900."</td><td>Goo</td></tr>
-<tr><td><b>diffuseHorizontalIlluminance</b></td><td>diffuseHorizontalIlluminance</td><td>"This is the hourly Diffuse Horizontal Illuminance in lux. (Average amount of illuminance in hundreds of lux received from the sky (excluding the solar disk) on a horizontal surface during the number of minutes preceding the time indicated.) It is not currently used in EnergyPlus calculations. It should have a minimum value of 0; missing value for this field is 999999 and will be considered missing of >= 999900."</td><td>Goo</td></tr>
-<tr><td><b>globalHorizontalIlluminance</b></td><td>globalHorizontalIlluminance</td><td>"This is the hourly Global Horizontal Illuminance in lux. (Average total amount of direct and diffuse illuminance in hundreds of lux received on a horizontal surface during the number of minutes preceding the time indicated.) It is not currently used in EnergyPlus calculations. It should have a minimum value of 0; missing value for this field is 999999 and will be considered missing of >= 999900."</td><td>Goo</td></tr>
+<tr><td><b>directNormalIlluminance</b></td><td>directNormalIlluminance</td><td>"This is the hourly Direct Normal Illuminance in lux. (Average amount of illuminance in hundreds of lux received directly from the solar disk on a surface perpendicular to the sun's rays, during the number of minutes preceding the time indicated.) It is not currently used in EnergyPlus calculations. It should have a minimum value of 0; missing value for this field is 999999 and will be considered missing of ;= 999900."</td><td>Goo</td></tr>
+<tr><td><b>diffuseHorizontalIlluminance</b></td><td>diffuseHorizontalIlluminance</td><td>"This is the hourly Diffuse Horizontal Illuminance in lux. (Average amount of illuminance in hundreds of lux received from the sky (excluding the solar disk) on a horizontal surface during the number of minutes preceding the time indicated.) It is not currently used in EnergyPlus calculations. It should have a minimum value of 0; missing value for this field is 999999 and will be considered missing of ;= 999900."</td><td>Goo</td></tr>
+<tr><td><b>globalHorizontalIlluminance</b></td><td>globalHorizontalIlluminance</td><td>"This is the hourly Global Horizontal Illuminance in lux. (Average total amount of direct and diffuse illuminance in hundreds of lux received on a horizontal surface during the number of minutes preceding the time indicated.) It is not currently used in EnergyPlus calculations. It should have a minimum value of 0; missing value for this field is 999999 and will be considered missing of ;= 999900."</td><td>Goo</td></tr>
 <tr><td><b>totalSkyCover</b></td><td>totalSkyCover</td><td>"This is the fraction for total sky cover (tenths of coverage). (i.e. 1 is 1/10 covered. 10 is total coverage). (Amount of sky dome in tenths covered by clouds or obscuring phenomena at the hour indicated at the time indicated.) Minimum value is 0; maximum value is 10; missing value is 99."</td><td>Goo</td></tr>
 <tr><td><b>barometricPressure</b></td><td>barometricPressure</td><td>"This is the hourly weather station pressure in Pa. Valid values range from 31,000 to 120,000... Missing value for this field is 999999."</td><td>Goo</td></tr>
 <tr><td><b>modelYear</b></td><td>modelYear</td><td>The year from which the hourly data has been extracted. EPW files are synthesized from real recorded data from different years in a given climate. This is done to ensure that, for each month, the selected data is statistically representative of the average monthly conditions over the 18+ years of recording the data. Different EPW files will be synthesized from different years depeding on whether they are TMY (Typical Meteorological Year), TMY2, TMY3, AMY (Actual Meteorological Year) or other.</td><td>Goo</td></tr>
@@ -686,7 +687,7 @@
             </div>
             <div id="xg_foot">
                 <p class="left">
-    © 2018             &nbsp; Created by <a href="http://www.stackoverflow.com/cv/robin-rodricks">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    © 2018-2020             &nbsp; Created by <a href="https://github.com/robinrodricks/">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
     Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a>
 	</p>
     <p class="right xg_lightfont">

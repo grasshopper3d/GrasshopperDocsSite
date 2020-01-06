@@ -58,11 +58,12 @@
                     <ul>
     <li id="xg_tab_main" class="xg_subtab"><a href="http://www.grasshopper3d.com/"><span>Home</span></a></li>
 	<li id="xg_tab_photo" class="xg_subtab"><a href="http://www.grasshopper3d.com/photo"><span>View</span></a></li>
-	<li id="xg_tab_xn0" class="xg_subtab"><a href="http://www.grasshopper3d.com/page/download-1"><span>Get</span></a></li>
+	<li id="xg_tab_xn0" class="xg_subtab"><a href="http://www.grasshopper3d.com/page/download-1"><span>Download</span></a></li>
+	<li id="xg_tab_forum" class="xg_subtab"><a href="https://discourse.mcneel.com/c/grasshopper"><span>Forums&#47;Support</span></a></li>
 	<li id="xg_tab_xn2" class="xg_subtab this"><a href="http://rhino.github.io/"><span>Learn</span></a></li>
-	<li id="xg_tab_forum" class="xg_subtab"><a href="http://www.grasshopper3d.com/forum"><span>Talk</span></a></li>
-	<li id="xg_tab_events" class="xg_subtab"><a href="http://www.grasshopper3d.com/events"><span>Events</span></a></li>
-	<li id="xg_tab_profile" class="xg_subtab"><a href="http://www.grasshopper3d.com/"><span>My Page</span></a></li></ul>
+	<li id="xg_tab_events" class="xg_subtab"><a href="https://www.grasshopper3d.com/page/tutorials-1"><span>Learn</span></a></li>
+	<li id="xg_tab_events" class="xg_subtab"><a href="http://www.grasshopper3d.com/events"><span>Attend</span></a></li>
+	<li id="xg_tab_profile" class="xg_subtab"><a href="http://www.grasshopper3d.com/profiles"><span>My Page</span></a></li></ul>
 
                 </div>
             </div>
@@ -633,7 +634,7 @@
 
 
 <div class="addon-buttons">
-<a href="http://www.food4rhino.com/app/ladybug-honeybee">Download</a>
+<a href="https://www.food4rhino.com/app/ladybug-tools">Download</a>
 </div>
 
 <div>
@@ -686,10 +687,10 @@ However if we perform the analysis for the period from late spring to early autu
 If not supplied, the whole year period will be used as an analysis period.</td><td>Goo</td></tr>
 <tr><td><b>_________________</b></td><td>_________________</td><td>Script variable PedestrianWindComfort</td><td>Goo</td></tr>
 <tr><td><b>annualHourlyData_</b></td><td>annualHourlyData_</td><td>An optional list of hourly data from Ladybug's "Import epw" component (e.g. windSpeed), which will be used for "conditionalStatement_".</td><td>Goo</td></tr>
-<tr><td><b>conditionalStatement_</b></td><td>conditionalStatement_</td><td>This input allows users to calculate the Pedestrian wind comfort component results only for those annualHourlyData_ values which fit specific conditions or criteria. To use this input correctly, hourly data, such as windSpeed or windDirection, must be plugged into the "annualHourlyData_" input. The conditional statement input here should be a valid condition statement in Python, such as "a>4" or "b<90" (without the quotation marks).
+<tr><td><b>conditionalStatement_</b></td><td>conditionalStatement_</td><td>This input allows users to calculate the Pedestrian wind comfort component results only for those annualHourlyData_ values which fit specific conditions or criteria. To use this input correctly, hourly data, such as windSpeed or windDirection, must be plugged into the "annualHourlyData_" input. The conditional statement input here should be a valid condition statement in Python, such as "a;4" or "b;90" (without the quotation marks).
 conditionalStatement_ accepts "and" and "or" operators. To visualize the hourly data, English letters should be used as variables, and each letter alphabetically corresponds to each of the lists (in their respective order): "a" always represents the 1st list, "b" always represents the 2nd list, etc.
 -
-For example, if you have an hourly windSpeed connected as the first list, and windDirection connected as the second list (both to the annualHourlyData_ input), and you want to plot the data for the time period when windSpeed is larger than 4m/s and windDirection is southerly, the conditionalStatement_ should be written as "a>4 and b==180" (without the quotation marks).</td><td>Goo</td></tr>
+For example, if you have an hourly windSpeed connected as the first list, and windDirection connected as the second list (both to the annualHourlyData_ input), and you want to plot the data for the time period when windSpeed is larger than 4m/s and windDirection is southerly, the conditionalStatement_ should be written as "a;4 and b==180" (without the quotation marks).</td><td>Goo</td></tr>
 <tr><td><b>_________________</b></td><td>_________________</td><td>Script variable HorizonAngles</td><td>Goo</td></tr>
 <tr><td><b>bakeIt_</b></td><td>bakeIt_</td><td>Set to "True" to bake the pedestrianComfortMesh, pedestrianSafetyMesh, legend, legend2 into the Rhino scene.
 -
@@ -709,11 +710,11 @@ If not supplied default value "False" will be used.</td><td>Goo</td></tr>
 <tr><td><b>pedestrianComfortCategory</b></td><td>pedestrianComfortCategory</td><td>Pedestrian wind comfort categories for each face centroid of the _analysisGeometry mesh.
 The categories depend on the threshold wind speed for particular point: the wind speed that for 95% of the chosen analysis period is below a certain value. With values being the following:
 -
-0) < 4 m/s  sitting (outdoor cafes, patios, terraces, benches, gardens, parks, fountains, monuments...)
+0) ; 4 m/s  sitting (outdoor cafes, patios, terraces, benches, gardens, parks, fountains, monuments...)
 1) 4-6 m/s  standing (building entrances or exits, bus stops, children’s play areas...)
 2) 6-8 m/s  leisurely walking (general areas of walking, strolling and sightseeing, window shopping, public/private sidewalks, pathways, public spaces...)
 3) 8-10 m/s  business walking (walking from one place to another quickly, or where individuals pass rapidly through local areas around buildings, public/private vehicular drop-off zones, roads and car parks, cyclists pathways...)
-4) > 10 m/s  uncomfortable (uncomfortable for all pedestrian activities)
+4) ; 10 m/s  uncomfortable (uncomfortable for all pedestrian activities)
 -
 If resultGradient_ input is set to True, then upper mentioned category values will be calculated as floats, instead of integers.</td><td>Goo</td></tr>
 <tr><td><b>pedestrianSafetyCategory</b></td><td>pedestrianSafetyCategory</td><td>Pedestrian wind safety categories for each face centroid of the _analysisGeometry mesh.
@@ -768,7 +769,7 @@ Connect this output to a Grasshopper's "Point" parameter in order to preview the
             </div>
             <div id="xg_foot">
                 <p class="left">
-    © 2018             &nbsp; Created by <a href="http://www.stackoverflow.com/cv/robin-rodricks">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    © 2018-2020             &nbsp; Created by <a href="https://github.com/robinrodricks/">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
     Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a>
 	</p>
     <p class="right xg_lightfont">
