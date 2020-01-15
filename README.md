@@ -1,7 +1,7 @@
 # rhino.github.io
 Documentation for open source components of Grasshopper, the fantastic visual programming tool built into Rhino.
 
-Created by <a href="http://www.stackoverflow.com/cv/robin-rodricks">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>.
+Created by <a href="https://github.com/robinrodricks">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>.
 
 Last updated on 15th Jan 2020.
 
