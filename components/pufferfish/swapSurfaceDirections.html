@@ -1,0 +1,997 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+<head data-layout-view="wide">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Swap Surface Directions - Grasshopper Component Reference</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+
+<meta name="description" content="A guide to component Swap Surface Directions in Grasshopper 3D." />
+<meta name="title" content="Grasshopper Component Reference" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://rhino.github.io/" />
+<meta property="og:title" content="Swap Surface Directions - Grasshopper Component Reference" />
+
+<meta property="wiki-page" content="GH Pufferfish Swap_Surface_Directions.md" />
+
+<link rel="image_src" href="http://rhino.github.io/ning/2985220.jpg" />
+
+<style type="text/css" media="screen,projection">
+#xg_navigation ul div.xg_subtab ul li a {
+    color:#666666;
+    background:#EAFFBD;
+}
+#xg_navigation ul div.xg_subtab ul li a:hover {
+    color:#333333;
+    background:#F2FFD6;
+}
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../../ning/index.css);
+@import url(../../ning/page.css);
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../../ning/1187549422.css);
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../../ning/1187545030.css);
+</style>
+
+
+<link href="../../style.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+    </head>
+    <body>
+    
+        
+        <div id="xg" class="xg_theme xg_widget_page xg_widget_page_page xg_widget_page_page_show" data-layout-pack="classic">
+            <div id="xg_head">
+                <div id="xg_masthead">
+                    <p id="xg_sitename"><a id="application_name_header_link" href="http://rhino.github.io/">Grasshopper</a></p>
+                    <p id="xg_sitedesc" class="xj_site_desc">algorithmic modeling for Rhino</p>
+                </div>
+                <div id="xg_navigation">
+                    <ul>
+    <li id="xg_tab_main" class="xg_subtab"><a href="http://www.grasshopper3d.com/"><span>Home</span></a></li>
+	<li id="xg_tab_photo" class="xg_subtab"><a href="http://www.grasshopper3d.com/photo"><span>View</span></a></li>
+	<li id="xg_tab_xn0" class="xg_subtab"><a href="http://www.grasshopper3d.com/page/download-1"><span>Download</span></a></li>
+	<li id="xg_tab_forum" class="xg_subtab"><a href="https://discourse.mcneel.com/c/grasshopper"><span>Forums&#47;Support</span></a></li>
+	<li id="xg_tab_xn2" class="xg_subtab this"><a href="http://rhino.github.io/"><span>Learn</span></a></li>
+	<li id="xg_tab_events" class="xg_subtab"><a href="http://www.grasshopper3d.com/events"><span>Attend</span></a></li>
+	<li id="xg_tab_profile" class="xg_subtab"><a href="http://www.grasshopper3d.com/profiles"><span>My Page</span></a></li></ul>
+
+                </div>
+            </div>
+            
+            <div id="xg_body">
+                
+				<div class="page">
+
+<div class="content">
+
+<div class="ghbar">
+<table class="ghbar-table">
+<tr>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/colorToPoint.html"><img class="ghicon" src="../../icons/Pufferfish/Color_To_Point.png" title="Color To Point"></a>
+<a href="../../components/pufferfish/grayscaleColor.html"><img class="ghicon" src="../../icons/Pufferfish/Grayscale_Color.png" title="Grayscale Color"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/invertColor.html"><img class="ghicon" src="../../icons/Pufferfish/Invert_Color.png" title="Invert Color"></a>
+<a href="../../components/pufferfish/mirrorCombineColors.html"><img class="ghicon" src="../../icons/Pufferfish/Mirror_Combine_Colors.png" title="Mirror Combine Colors"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/mirrorCutColors.html"><img class="ghicon" src="../../icons/Pufferfish/Mirror_Cut_Colors.png" title="Mirror Cut Colors"></a>
+<a href="../../components/pufferfish/pointToColor.html"><img class="ghicon" src="../../icons/Pufferfish/Point_To_Color.png" title="Point To Color"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/tweenConsecutiveColors.html"><img class="ghicon" src="../../icons/Pufferfish/Tween_Consecutive_Colors.png" title="Tween Consecutive Colors"></a>
+<a href="../../components/pufferfish/tweenThroughColors.html"><img class="ghicon" src="../../icons/Pufferfish/Tween_Through_Colors.png" title="Tween Through Colors"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/tweenTwoColors.html"><img class="ghicon" src="../../icons/Pufferfish/Tween_Two_Colors.png" title="Tween Two Colors"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="5">
+Color
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/alignCurveSeams.html"><img class="ghicon" src="../../icons/Pufferfish/Align_Curve_Seams.png" title="Align Curve Seams"></a>
+<a href="../../components/pufferfish/arcCircleEllipse.html"><img class="ghicon" src="../../icons/Pufferfish/Arc_Circle_Ellipse.png" title="Arc/Circle/Ellipse"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/averageCurve.html"><img class="ghicon" src="../../icons/Pufferfish/Average_Curve.png" title="Average Curve"></a>
+<a href="../../components/pufferfish/closeCurve.html"><img class="ghicon" src="../../icons/Pufferfish/Close_Curve.png" title="Close Curve"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/compatibilizePolylines.html"><img class="ghicon" src="../../icons/Pufferfish/Compatibilize_Polylines.png" title="Compatibilize Polylines"></a>
+<a href="../../components/pufferfish/curveAlignCurveSeams.html"><img class="ghicon" src="../../icons/Pufferfish/Curve_Align_Curve_Seams.png" title="Curve Align Curve Seams"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/curveDegree.html"><img class="ghicon" src="../../icons/Pufferfish/Curve_Degree.png" title="Curve Degree"></a>
+<a href="../../components/pufferfish/curveLengthAt.html"><img class="ghicon" src="../../icons/Pufferfish/Curve_Length_At.png" title="Curve Length At"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/curveLengthBetween.html"><img class="ghicon" src="../../icons/Pufferfish/Curve_Length_Between.png" title="Curve Length Between"></a>
+<a href="../../components/pufferfish/curveSpans.html"><img class="ghicon" src="../../icons/Pufferfish/Curve_Spans.png" title="Curve Spans"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/discretePolyline.html"><img class="ghicon" src="../../icons/Pufferfish/Discrete_Polyline.png" title="Discrete Polyline"></a>
+<a href="../../components/pufferfish/isArcCircleEllipse.html"><img class="ghicon" src="../../icons/Pufferfish/Is_Arc_Circle_Ellipse.png" title="Is Arc/Circle/Ellipse"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/isCurveKinky.html"><img class="ghicon" src="../../icons/Pufferfish/Is_Curve_Kinky.png" title="Is Curve Kinky"></a>
+<a href="../../components/pufferfish/isCurveLinear.html"><img class="ghicon" src="../../icons/Pufferfish/Is_Curve_Linear.png" title="Is Curve Linear"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/isCurveSegmented.html"><img class="ghicon" src="../../icons/Pufferfish/Is_Curve_Segmented.png" title="Is Curve Segmented"></a>
+<a href="../../components/pufferfish/mirrorCutCurve.html"><img class="ghicon" src="../../icons/Pufferfish/Mirror_Cut_Curve.png" title="Mirror Cut Curve"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/netOnSurface.html"><img class="ghicon" src="../../icons/Pufferfish/Net_On_Surface.png" title="Net On Surface"></a>
+<a href="../../components/pufferfish/parameterCurveDivideSurface.html"><img class="ghicon" src="../../icons/Pufferfish/Parameter_Curve_Divide_Surface.png" title="Parameter Curve Divide Surface"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/parameterGridOnSurface.html"><img class="ghicon" src="../../icons/Pufferfish/Parameter_Grid_On_Surface.png" title="Parameter Grid On Surface"></a>
+<a href="../../components/pufferfish/parameterSurfaceGrid.html"><img class="ghicon" src="../../icons/Pufferfish/Parameter_Surface_Grid.png" title="Parameter Surface Grid"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/parameterSurfaceIsocurve.html"><img class="ghicon" src="../../icons/Pufferfish/Parameter_Surface_Isocurve.png" title="Parameter Surface Isocurve"></a>
+<a href="../../components/pufferfish/planeTrimCurve.html"><img class="ghicon" src="../../icons/Pufferfish/Plane_Trim_Curve.png" title="Plane Trim Curve"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/pointsTrimCurve.html"><img class="ghicon" src="../../icons/Pufferfish/Points_Trim_Curve.png" title="Points Trim Curve"></a>
+<a href="../../components/pufferfish/rebuildCurve.html"><img class="ghicon" src="../../icons/Pufferfish/Rebuild_Curve.png" title="Rebuild Curve"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/rebuildCurveSegments.html"><img class="ghicon" src="../../icons/Pufferfish/Rebuild_Curve_Segments.png" title="Rebuild Curve Segments"></a>
+<a href="../../components/pufferfish/rectangleFit.html"><img class="ghicon" src="../../icons/Pufferfish/Rectangle_Fit.png" title="Rectangle Fit"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/remapCurveDomain.html"><img class="ghicon" src="../../icons/Pufferfish/Remap_Curve_Domain.png" title="Remap Curve Domain"></a>
+<a href="../../components/pufferfish/reparameterizeCurve.html"><img class="ghicon" src="../../icons/Pufferfish/Reparameterize_Curve.png" title="Reparameterize Curve"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/seamToCurveCorner.html"><img class="ghicon" src="../../icons/Pufferfish/Seam_To_Curve_Corner.png" title="Seam To Curve Corner"></a>
+<a href="../../components/pufferfish/slideCurveAlongCurve.html"><img class="ghicon" src="../../icons/Pufferfish/Slide_Curve_Along_Curve.png" title="Slide Curve Along Curve"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/superimposeCurve.html"><img class="ghicon" src="../../icons/Pufferfish/Superimpose_Curve.png" title="Superimpose Curve"></a>
+<a href="../../components/pufferfish/trimCurveWithPlane.html"><img class="ghicon" src="../../icons/Pufferfish/Trim_Curve_With_Plane.png" title="Trim Curve With Plane"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/trimCurveWithPoints.html"><img class="ghicon" src="../../icons/Pufferfish/Trim_Curve_With_Points.png" title="Trim Curve With Points"></a>
+<a href="../../components/pufferfish/tweenConsecutiveCurves.html"><img class="ghicon" src="../../icons/Pufferfish/Tween_Consecutive_Curves.png" title="Tween Consecutive Curves"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/tweenConsecutiveCurvesAlongCurve.html"><img class="ghicon" src="../../icons/Pufferfish/Tween_Consecutive_Curves_Along_Curve.png" title="Tween Consecutive Curves Along Curve"></a>
+<a href="../../components/pufferfish/tweenConsecutiveCurvesOnSurface.html"><img class="ghicon" src="../../icons/Pufferfish/Tween_Consecutive_Curves_On_Surface.png" title="Tween Consecutive Curves On Surface"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/tweenThroughCurves.html"><img class="ghicon" src="../../icons/Pufferfish/Tween_Through_Curves.png" title="Tween Through Curves"></a>
+<a href="../../components/pufferfish/tweenThroughCurvesAlongCurve.html"><img class="ghicon" src="../../icons/Pufferfish/Tween_Through_Curves_Along_Curve.png" title="Tween Through Curves Along Curve"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/tweenThroughCurvesOnSurface.html"><img class="ghicon" src="../../icons/Pufferfish/Tween_Through_Curves_On_Surface.png" title="Tween Through Curves On Surface"></a>
+<a href="../../components/pufferfish/tweenTwoCurves.html"><img class="ghicon" src="../../icons/Pufferfish/Tween_Two_Curves.png" title="Tween Two Curves"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/tweenTwoCurvesAlongCurve.html"><img class="ghicon" src="../../icons/Pufferfish/Tween_Two_Curves_Along_Curve.png" title="Tween Two Curves Along Curve"></a>
+<a href="../../components/pufferfish/tweenTwoCurvesOnSurface.html"><img class="ghicon" src="../../icons/Pufferfish/Tween_Two_Curves_On_Surface.png" title="Tween Two Curves On Surface"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/weightedAverageCurve.html"><img class="ghicon" src="../../icons/Pufferfish/Weighted_Average_Curve.png" title="Weighted Average Curve"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="22">
+Curve
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/averageDomain.html"><img class="ghicon" src="../../icons/Pufferfish/Average_Domain.png" title="Average Domain"></a>
+<a href="../../components/pufferfish/averageDomain.html"><img class="ghicon" src="../../icons/Pufferfish/Average_Domain².png" title="Average Domain\u00b2"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/mirrorCombineDomains.html"><img class="ghicon" src="../../icons/Pufferfish/Mirror_Combine_Domains.png" title="Mirror Combine Domains"></a>
+<a href="../../components/pufferfish/mirrorCombineDomains.html"><img class="ghicon" src="../../icons/Pufferfish/Mirror_Combine_Domains².png" title="Mirror Combine Domains\u00b2"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/mirrorCutDomains.html"><img class="ghicon" src="../../icons/Pufferfish/Mirror_Cut_Domains.png" title="Mirror Cut Domains"></a>
+<a href="../../components/pufferfish/mirrorCutDomains.html"><img class="ghicon" src="../../icons/Pufferfish/Mirror_Cut_Domains².png" title="Mirror Cut Domains\u00b2"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/reparameterizeDomains.html"><img class="ghicon" src="../../icons/Pufferfish/Reparameterize_Domains.png" title="Reparameterize Domains"></a>
+<a href="../../components/pufferfish/reparameterizeDomains.html"><img class="ghicon" src="../../icons/Pufferfish/Reparameterize_Domains².png" title="Reparameterize Domains\u00b2"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/slideWithinDomain.html"><img class="ghicon" src="../../icons/Pufferfish/Slide_Within_Domain.png" title="Slide Within Domain"></a>
+<a href="../../components/pufferfish/slideWithinDomain.html"><img class="ghicon" src="../../icons/Pufferfish/Slide_Within_Domain².png" title="Slide Within Domain\u00b2"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/tweenConsecutiveDomains.html"><img class="ghicon" src="../../icons/Pufferfish/Tween_Consecutive_Domains.png" title="Tween Consecutive Domains"></a>
+<a href="../../components/pufferfish/tweenConsecutiveDomains.html"><img class="ghicon" src="../../icons/Pufferfish/Tween_Consecutive_Domains².png" title="Tween Consecutive Domains\u00b2"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/tweenThroughDomains.html"><img class="ghicon" src="../../icons/Pufferfish/Tween_Through_Domains.png" title="Tween Through Domains"></a>
+<a href="../../components/pufferfish/tweenThroughDomains.html"><img class="ghicon" src="../../icons/Pufferfish/Tween_Through_Domains².png" title="Tween Through Domains\u00b2"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/tweenTwoDomains.html"><img class="ghicon" src="../../icons/Pufferfish/Tween_Two_Domains.png" title="Tween Two Domains"></a>
+<a href="../../components/pufferfish/tweenTwoDomains.html"><img class="ghicon" src="../../icons/Pufferfish/Tween_Two_Domains².png" title="Tween Two Domains\u00b2"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/twoWayDomain.html"><img class="ghicon" src="../../icons/Pufferfish/Two_Way_Domain.png" title="Two Way Domain"></a>
+<a href="../../components/pufferfish/twoWayDomain.html"><img class="ghicon" src="../../icons/Pufferfish/Two_Way_Domain².png" title="Two Way Domain\u00b2"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/weightedAverageDomain.html"><img class="ghicon" src="../../icons/Pufferfish/Weighted_Average_Domain.png" title="Weighted Average Domain"></a>
+<a href="../../components/pufferfish/weightedAverageDomain.html"><img class="ghicon" src="../../icons/Pufferfish/Weighted_Average_Domain².png" title="Weighted Average Domain\u00b2"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="10">
+Domain
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/dispatchIndices.html"><img class="ghicon" src="../../icons/Pufferfish/Dispatch_Indices.png" title="Dispatch Indices"></a>
+<a href="../../components/pufferfish/lastIndex.html"><img class="ghicon" src="../../icons/Pufferfish/Last_Index.png" title="Last Index"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/listIndices.html"><img class="ghicon" src="../../icons/Pufferfish/List_Indices.png" title="List Indices"></a>
+<a href="../../components/pufferfish/mirrorCombineItems.html"><img class="ghicon" src="../../icons/Pufferfish/Mirror_Combine_Items.png" title="Mirror Combine Items"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/mirrorCutItems.html"><img class="ghicon" src="../../icons/Pufferfish/Mirror_Cut_Items.png" title="Mirror Cut Items"></a>
+<a href="../../components/pufferfish/siftIndices.html"><img class="ghicon" src="../../icons/Pufferfish/Sift_Indices.png" title="Sift Indices"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+List
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/averageMesh.html"><img class="ghicon" src="../../icons/Pufferfish/Average_Mesh.png" title="Average Mesh"></a>
+<a href="../../components/pufferfish/closeMesh.html"><img class="ghicon" src="../../icons/Pufferfish/Close_Mesh.png" title="Close Mesh"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/isMeshClosed.html"><img class="ghicon" src="../../icons/Pufferfish/Is_Mesh_Closed.png" title="Is Mesh Closed"></a>
+<a href="../../components/pufferfish/mirrorCutMesh.html"><img class="ghicon" src="../../icons/Pufferfish/Mirror_Cut_Mesh.png" title="Mirror Cut Mesh"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/offsetMesh.html"><img class="ghicon" src="../../icons/Pufferfish/Offset_Mesh.png" title="Offset Mesh"></a>
+<a href="../../components/pufferfish/parameterSurfaceMesh.html"><img class="ghicon" src="../../icons/Pufferfish/Parameter_Surface_Mesh.png" title="Parameter Surface Mesh"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/planeTrimMesh.html"><img class="ghicon" src="../../icons/Pufferfish/Plane_Trim_Mesh.png" title="Plane Trim Mesh"></a>
+<a href="../../components/pufferfish/polylineToMesh.html"><img class="ghicon" src="../../icons/Pufferfish/Polyline_To_Mesh.png" title="Polyline To Mesh"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/rebuildMesh.html"><img class="ghicon" src="../../icons/Pufferfish/Rebuild_Mesh.png" title="Rebuild Mesh"></a>
+<a href="../../components/pufferfish/recursiveMorphMesh.html"><img class="ghicon" src="../../icons/Pufferfish/Recursive_Morph_Mesh.png" title="Recursive Morph Mesh"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/reduceMesh.html"><img class="ghicon" src="../../icons/Pufferfish/Reduce_Mesh.png" title="Reduce Mesh"></a>
+<a href="../../components/pufferfish/reduceMeshByFaces.html"><img class="ghicon" src="../../icons/Pufferfish/Reduce_Mesh_By_Faces.png" title="Reduce Mesh By Faces"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/trimMeshWithPlane.html"><img class="ghicon" src="../../icons/Pufferfish/Trim_Mesh_With_Plane.png" title="Trim Mesh With Plane"></a>
+<a href="../../components/pufferfish/tweenConsecutiveMeshes.html"><img class="ghicon" src="../../icons/Pufferfish/Tween_Consecutive_Meshes.png" title="Tween Consecutive Meshes"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/tweenThroughMeshes.html"><img class="ghicon" src="../../icons/Pufferfish/Tween_Through_Meshes.png" title="Tween Through Meshes"></a>
+<a href="../../components/pufferfish/tweenTwoMeshes.html"><img class="ghicon" src="../../icons/Pufferfish/Tween_Two_Meshes.png" title="Tween Two Meshes"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/weightedAverageMesh.html"><img class="ghicon" src="../../icons/Pufferfish/Weighted_Average_Mesh.png" title="Weighted Average Mesh"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="9">
+Mesh
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/curveGraphMapper.html"><img class="ghicon" src="../../icons/Pufferfish/Curve_Graph_Mapper.png" title="Curve Graph Mapper"></a>
+<a href="../../components/pufferfish/deconstructNumber.html"><img class="ghicon" src="../../icons/Pufferfish/Deconstruct_Number.png" title="Deconstruct Number"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/defaultAngleTolerance.html"><img class="ghicon" src="../../icons/Pufferfish/Default_Angle_Tolerance.png" title="Default Angle Tolerance"></a>
+<a href="../../components/pufferfish/documentAngleTolerance.html"><img class="ghicon" src="../../icons/Pufferfish/Document_Angle_Tolerance.png" title="Document Angle Tolerance"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/documentDistanceTolerance.html"><img class="ghicon" src="../../icons/Pufferfish/Document_Distance_Tolerance.png" title="Document Distance Tolerance"></a>
+<a href="../../components/pufferfish/highestLowestNumbers.html"><img class="ghicon" src="../../icons/Pufferfish/Highest_&_Lowest_Numbers.png" title="Highest &amp; Lowest Numbers"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/itemIndexList.html"><img class="ghicon" src="../../icons/Pufferfish/Item_Index_List.png" title="Item Index List"></a>
+<a href="../../components/pufferfish/lastIndexRange.html"><img class="ghicon" src="../../icons/Pufferfish/Last_Index_Range.png" title="Last Index Range"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/listLengthRange.html"><img class="ghicon" src="../../icons/Pufferfish/List_Length_Range.png" title="List Length Range"></a>
+<a href="../../components/pufferfish/massDivision.html"><img class="ghicon" src="../../icons/Pufferfish/Mass_Division.png" title="Mass Division"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/massSubtraction.html"><img class="ghicon" src="../../icons/Pufferfish/Mass_Subtraction.png" title="Mass Subtraction"></a>
+<a href="../../components/pufferfish/mirrorCombineNumbers.html"><img class="ghicon" src="../../icons/Pufferfish/Mirror_Combine_Numbers.png" title="Mirror Combine Numbers"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/mirrorCutNumbers.html"><img class="ghicon" src="../../icons/Pufferfish/Mirror_Cut_Numbers.png" title="Mirror Cut Numbers"></a>
+<a href="../../components/pufferfish/partitionNumber.html"><img class="ghicon" src="../../icons/Pufferfish/Partition_Number.png" title="Partition Number"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/percentage.html"><img class="ghicon" src="../../icons/Pufferfish/Percentage.png" title="Percentage"></a>
+<a href="../../components/pufferfish/reparameterizedRange.html"><img class="ghicon" src="../../icons/Pufferfish/Reparameterized_Range.png" title="Reparameterized Range"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/reparameterizeNumbers.html"><img class="ghicon" src="../../icons/Pufferfish/Reparameterize_Numbers.png" title="Reparameterize Numbers"></a>
+<a href="../../components/pufferfish/roundToDecimalPlace.html"><img class="ghicon" src="../../icons/Pufferfish/Round_To_Decimal_Place.png" title="Round To Decimal Place"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/roundToFactor.html"><img class="ghicon" src="../../icons/Pufferfish/Round_To_Factor.png" title="Round To Factor"></a>
+<a href="../../components/pufferfish/roundToNearest.html"><img class="ghicon" src="../../icons/Pufferfish/Round_To_Nearest.png" title="Round To Nearest"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/tweenConsecutiveNumbers.html"><img class="ghicon" src="../../icons/Pufferfish/Tween_Consecutive_Numbers.png" title="Tween Consecutive Numbers"></a>
+<a href="../../components/pufferfish/tweenThroughNumbers.html"><img class="ghicon" src="../../icons/Pufferfish/Tween_Through_Numbers.png" title="Tween Through Numbers"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/tweenTwoNumbers.html"><img class="ghicon" src="../../icons/Pufferfish/Tween_Two_Numbers.png" title="Tween Two Numbers"></a>
+<a href="../../components/pufferfish/xMinusOne.html"><img class="ghicon" src="../../icons/Pufferfish/X_Minus_One.png" title="X Minus One"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/xPlusOne.html"><img class="ghicon" src="../../icons/Pufferfish/X_Plus_One.png" title="X Plus One"></a>
+<a href="../../components/pufferfish/zeroDistanceTolerance.html"><img class="ghicon" src="../../icons/Pufferfish/Zero_Distance_Tolerance.png" title="Zero Distance Tolerance"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="13">
+Number
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/averagePlane.html"><img class="ghicon" src="../../icons/Pufferfish/Average_Plane.png" title="Average Plane"></a>
+<a href="../../components/pufferfish/closestPlaneOrientation.html"><img class="ghicon" src="../../icons/Pufferfish/Closest_Plane_Orientation.png" title="Closest Plane Orientation"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/flipPlane.html"><img class="ghicon" src="../../icons/Pufferfish/Flip_Plane.png" title="Flip Plane"></a>
+<a href="../../components/pufferfish/mirrorCutPlanes.html"><img class="ghicon" src="../../icons/Pufferfish/Mirror_Cut_Planes.png" title="Mirror Cut Planes"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/offsetPlane.html"><img class="ghicon" src="../../icons/Pufferfish/Offset_Plane.png" title="Offset Plane"></a>
+<a href="../../components/pufferfish/parameterPlaneDivideSurface.html"><img class="ghicon" src="../../icons/Pufferfish/Parameter_Plane_Divide_Surface.png" title="Parameter Plane Divide Surface"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/planeTrimPlanes.html"><img class="ghicon" src="../../icons/Pufferfish/Plane_Trim_Planes.png" title="Plane Trim Planes"></a>
+<a href="../../components/pufferfish/trimPlanesWithPlane.html"><img class="ghicon" src="../../icons/Pufferfish/Trim_Planes_With_Plane.png" title="Trim Planes With Plane"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/tweenConsecutivePlanes.html"><img class="ghicon" src="../../icons/Pufferfish/Tween_Consecutive_Planes.png" title="Tween Consecutive Planes"></a>
+<a href="../../components/pufferfish/tweenConsecutivePlanesOnCurve.html"><img class="ghicon" src="../../icons/Pufferfish/Tween_Consecutive_Planes_On_Curve.png" title="Tween Consecutive Planes On Curve"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/tweenConsecutivePlanesOnSurface.html"><img class="ghicon" src="../../icons/Pufferfish/Tween_Consecutive_Planes_On_Surface.png" title="Tween Consecutive Planes On Surface"></a>
+<a href="../../components/pufferfish/tweenThroughPlanes.html"><img class="ghicon" src="../../icons/Pufferfish/Tween_Through_Planes.png" title="Tween Through Planes"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/tweenThroughPlanesOnCurve.html"><img class="ghicon" src="../../icons/Pufferfish/Tween_Through_Planes_On_Curve.png" title="Tween Through Planes On Curve"></a>
+<a href="../../components/pufferfish/tweenThroughPlanesOnSurface.html"><img class="ghicon" src="../../icons/Pufferfish/Tween_Through_Planes_On_Surface.png" title="Tween Through Planes On Surface"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/tweenTwoPlanes.html"><img class="ghicon" src="../../icons/Pufferfish/Tween_Two_Planes.png" title="Tween Two Planes"></a>
+<a href="../../components/pufferfish/tweenTwoPlanesOnCurve.html"><img class="ghicon" src="../../icons/Pufferfish/Tween_Two_Planes_On_Curve.png" title="Tween Two Planes On Curve"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/tweenTwoPlanesOnSurface.html"><img class="ghicon" src="../../icons/Pufferfish/Tween_Two_Planes_On_Surface.png" title="Tween Two Planes On Surface"></a>
+<a href="../../components/pufferfish/weightedAveragePlane.html"><img class="ghicon" src="../../icons/Pufferfish/Weighted_Average_Plane.png" title="Weighted Average Plane"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="9">
+Plane
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/arePointsCollinear.html"><img class="ghicon" src="../../icons/Pufferfish/Are_Points_Collinear.png" title="Are Points Collinear"></a>
+<a href="../../components/pufferfish/arePointsCoplanar.html"><img class="ghicon" src="../../icons/Pufferfish/Are_Points_Coplanar.png" title="Are Points Coplanar"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/curveEditPoints.html"><img class="ghicon" src="../../icons/Pufferfish/Curve_Edit_Points.png" title="Curve Edit Points"></a>
+<a href="../../components/pufferfish/curveMiddlePoint.html"><img class="ghicon" src="../../icons/Pufferfish/Curve_Middle_Point.png" title="Curve Middle Point"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/mapPointToSurface.html"><img class="ghicon" src="../../icons/Pufferfish/Map_Point_To_Surface.png" title="Map Point To Surface"></a>
+<a href="../../components/pufferfish/mirrorCutPoints.html"><img class="ghicon" src="../../icons/Pufferfish/Mirror_Cut_Points.png" title="Mirror Cut Points"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/move2Pt.html"><img class="ghicon" src="../../icons/Pufferfish/Move_2Pt.png" title="Move 2Pt"></a>
+<a href="../../components/pufferfish/parameterPointDivideSurface.html"><img class="ghicon" src="../../icons/Pufferfish/Parameter_Point_Divide_Surface.png" title="Parameter Point Divide Surface"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/pinchnSpread.html"><img class="ghicon" src="../../icons/Pufferfish/Pinch'n'Spread.png" title="Pinch&#39;n&#39;Spread"></a>
+<a href="../../components/pufferfish/planeTrimPoints.html"><img class="ghicon" src="../../icons/Pufferfish/Plane_Trim_Points.png" title="Plane Trim Points"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/pointDivideCurveSegments.html"><img class="ghicon" src="../../icons/Pufferfish/Point_Divide_Curve_Segments.png" title="Point Divide Curve Segments"></a>
+<a href="../../components/pufferfish/pointDivideCurveTargetLength.html"><img class="ghicon" src="../../icons/Pufferfish/Point_Divide_Curve_Target_Length.png" title="Point Divide Curve Target Length"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/pointMeshSide.html"><img class="ghicon" src="../../icons/Pufferfish/Point_Mesh_Side.png" title="Point Mesh Side"></a>
+<a href="../../components/pufferfish/pointPlaneSide.html"><img class="ghicon" src="../../icons/Pufferfish/Point_Plane_Side.png" title="Point Plane Side"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/pointSurfaceEdge.html"><img class="ghicon" src="../../icons/Pufferfish/Point_Surface_Edge.png" title="Point Surface Edge"></a>
+<a href="../../components/pufferfish/pointSurfaceSide.html"><img class="ghicon" src="../../icons/Pufferfish/Point_Surface_Side.png" title="Point Surface Side"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/reparameterizePoints.html"><img class="ghicon" src="../../icons/Pufferfish/Reparameterize_Points.png" title="Reparameterize Points"></a>
+<a href="../../components/pufferfish/surfaceEditPoints.html"><img class="ghicon" src="../../icons/Pufferfish/Surface_Edit_Points.png" title="Surface Edit Points"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/trimPointsWithPlane.html"><img class="ghicon" src="../../icons/Pufferfish/Trim_Points_With_Plane.png" title="Trim Points With Plane"></a>
+<a href="../../components/pufferfish/tweenConsecutivePoints.html"><img class="ghicon" src="../../icons/Pufferfish/Tween_Consecutive_Points.png" title="Tween Consecutive Points"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/tweenConsecutivePointsOnCurve.html"><img class="ghicon" src="../../icons/Pufferfish/Tween_Consecutive_Points_On_Curve.png" title="Tween Consecutive Points On Curve"></a>
+<a href="../../components/pufferfish/tweenConsecutivePointsOnSurface.html"><img class="ghicon" src="../../icons/Pufferfish/Tween_Consecutive_Points_On_Surface.png" title="Tween Consecutive Points On Surface"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/tweenThroughPoints.html"><img class="ghicon" src="../../icons/Pufferfish/Tween_Through_Points.png" title="Tween Through Points"></a>
+<a href="../../components/pufferfish/tweenThroughPointsOnCurve.html"><img class="ghicon" src="../../icons/Pufferfish/Tween_Through_Points_On_Curve.png" title="Tween Through Points On Curve"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/tweenThroughPointsOnSurface.html"><img class="ghicon" src="../../icons/Pufferfish/Tween_Through_Points_On_Surface.png" title="Tween Through Points On Surface"></a>
+<a href="../../components/pufferfish/tweenTwoPoints.html"><img class="ghicon" src="../../icons/Pufferfish/Tween_Two_Points.png" title="Tween Two Points"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/tweenTwoPointsOnCurve.html"><img class="ghicon" src="../../icons/Pufferfish/Tween_Two_Points_On_Curve.png" title="Tween Two Points On Curve"></a>
+<a href="../../components/pufferfish/tweenTwoPointsOnSurface.html"><img class="ghicon" src="../../icons/Pufferfish/Tween_Two_Points_On_Surface.png" title="Tween Two Points On Surface"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="14">
+Point
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/automaticEdgeSurface.html"><img class="ghicon" src="../../icons/Pufferfish/Automatic_Edge_Surface.png" title="Automatic Edge Surface"></a>
+<a href="../../components/pufferfish/automaticNetworkSurface.html"><img class="ghicon" src="../../icons/Pufferfish/Automatic_Network_Surface.png" title="Automatic Network Surface"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/averageSurface.html"><img class="ghicon" src="../../icons/Pufferfish/Average_Surface.png" title="Average Surface"></a>
+<a href="../../components/pufferfish/edgeUnsplitSurface.html"><img class="ghicon" src="../../icons/Pufferfish/Edge_Unsplit_Surface.png" title="Edge Unsplit Surface"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/extrudeTaperedPolysurface.html"><img class="ghicon" src="../../icons/Pufferfish/Extrude_Tapered_Polysurface.png" title="Extrude Tapered Polysurface"></a>
+<a href="../../components/pufferfish/extrudeUnsplitSurface.html"><img class="ghicon" src="../../icons/Pufferfish/Extrude_Unsplit_Surface.png" title="Extrude Unsplit Surface"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/flipPolysurface.html"><img class="ghicon" src="../../icons/Pufferfish/Flip_Polysurface.png" title="Flip Polysurface"></a>
+<a href="../../components/pufferfish/isPolysurfaceClosed.html"><img class="ghicon" src="../../icons/Pufferfish/Is_Polysurface_Closed.png" title="Is Polysurface Closed"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/isSurfaceClosed.html"><img class="ghicon" src="../../icons/Pufferfish/Is_Surface_Closed.png" title="Is Surface Closed"></a>
+<a href="../../components/pufferfish/isSurfaceCollapsed.html"><img class="ghicon" src="../../icons/Pufferfish/Is_Surface_Collapsed.png" title="Is Surface Collapsed"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/isSurfaceSingular.html"><img class="ghicon" src="../../icons/Pufferfish/Is_Surface_Singular.png" title="Is Surface Singular"></a>
+<a href="../../components/pufferfish/isSurfaceTrimmed.html"><img class="ghicon" src="../../icons/Pufferfish/Is_Surface_Trimmed.png" title="Is Surface Trimmed"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/loftUnsplitSurface.html"><img class="ghicon" src="../../icons/Pufferfish/Loft_Unsplit_Surface.png" title="Loft Unsplit Surface"></a>
+<a href="../../components/pufferfish/meshToPolysurface.html"><img class="ghicon" src="../../icons/Pufferfish/Mesh_To_Polysurface.png" title="Mesh To Polysurface"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/mirrorCutPolysurface.html"><img class="ghicon" src="../../icons/Pufferfish/Mirror_Cut_Polysurface.png" title="Mirror Cut Polysurface"></a>
+<a href="../../components/pufferfish/mirrorCutSurface.html"><img class="ghicon" src="../../icons/Pufferfish/Mirror_Cut_Surface.png" title="Mirror Cut Surface"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/offsetSurface.html"><img class="ghicon" src="../../icons/Pufferfish/Offset_Surface.png" title="Offset Surface"></a>
+<a href="../../components/pufferfish/parameterSubdivideSurface.html"><img class="ghicon" src="../../icons/Pufferfish/Parameter_Subdivide_Surface.png" title="Parameter Subdivide Surface"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/planeTrimSurface.html"><img class="ghicon" src="../../icons/Pufferfish/Plane_Trim_Surface.png" title="Plane Trim Surface"></a>
+<a href="../../components/pufferfish/rebuildSurface.html"><img class="ghicon" src="../../icons/Pufferfish/Rebuild_Surface.png" title="Rebuild Surface"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/remapSurfaceDomain.html"><img class="ghicon" src="../../icons/Pufferfish/Remap_Surface_Domain².png" title="Remap Surface Domain\u00b2"></a>
+<a href="../../components/pufferfish/reparameterizeSurface.html"><img class="ghicon" src="../../icons/Pufferfish/Reparameterize_Surface.png" title="Reparameterize Surface"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/shellPolysurface.html"><img class="ghicon" src="../../icons/Pufferfish/Shell_Polysurface.png" title="Shell Polysurface"></a>
+<a href="../../components/pufferfish/shrinkTrimmedSurface.html"><img class="ghicon" src="../../icons/Pufferfish/Shrink_Trimmed_Surface.png" title="Shrink Trimmed Surface"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/splitKinkySurface.html"><img class="ghicon" src="../../icons/Pufferfish/Split_Kinky_Surface.png" title="Split Kinky Surface"></a>
+<a href="../../components/pufferfish/superimposeSurface.html"><img class="ghicon" src="../../icons/Pufferfish/Superimpose_Surface.png" title="Superimpose Surface"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/surfaceDegree.html"><img class="ghicon" src="../../icons/Pufferfish/Surface_Degree.png" title="Surface Degree"></a>
+<a href="../../components/pufferfish/surfaceSpans.html"><img class="ghicon" src="../../icons/Pufferfish/Surface_Spans.png" title="Surface Spans"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/swapSurfaceDirections.html"><img class="ghicon" src="../../icons/Pufferfish/Swap_Surface_Directions.png" title="Swap Surface Directions"></a>
+<a href="../../components/pufferfish/sweepUnsplitSurface.html"><img class="ghicon" src="../../icons/Pufferfish/Sweep_Unsplit_Surface.png" title="Sweep Unsplit Surface"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/trimSurfaceWithPlane.html"><img class="ghicon" src="../../icons/Pufferfish/Trim_Surface_With_Plane.png" title="Trim Surface With Plane"></a>
+<a href="../../components/pufferfish/tweenConsecutiveSurfaces.html"><img class="ghicon" src="../../icons/Pufferfish/Tween_Consecutive_Surfaces.png" title="Tween Consecutive Surfaces"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/tweenThroughSurfaces.html"><img class="ghicon" src="../../icons/Pufferfish/Tween_Through_Surfaces.png" title="Tween Through Surfaces"></a>
+<a href="../../components/pufferfish/tweenTwoSurfaces.html"><img class="ghicon" src="../../icons/Pufferfish/Tween_Two_Surfaces.png" title="Tween Two Surfaces"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/tweenTwoSurfacesAlongCurve.html"><img class="ghicon" src="../../icons/Pufferfish/Tween_Two_Surfaces_Along_Curve.png" title="Tween Two Surfaces Along Curve"></a>
+<a href="../../components/pufferfish/unrollPolysurface.html"><img class="ghicon" src="../../icons/Pufferfish/Unroll_Polysurface.png" title="Unroll Polysurface"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/unsplitEdgeSurface.html"><img class="ghicon" src="../../icons/Pufferfish/Unsplit_Edge_Surface.png" title="Unsplit Edge Surface"></a>
+<a href="../../components/pufferfish/unsplitExtrudeSurface.html"><img class="ghicon" src="../../icons/Pufferfish/Unsplit_Extrude_Surface.png" title="Unsplit Extrude Surface"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/unsplitLoftSurface.html"><img class="ghicon" src="../../icons/Pufferfish/Unsplit_Loft_Surface.png" title="Unsplit Loft Surface"></a>
+<a href="../../components/pufferfish/unsplitRailRevolveSurface.html"><img class="ghicon" src="../../icons/Pufferfish/Unsplit_Rail_Revolve_Surface.png" title="Unsplit Rail Revolve Surface"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/unsplitSumSurface.html"><img class="ghicon" src="../../icons/Pufferfish/Unsplit_Sum_Surface.png" title="Unsplit Sum Surface"></a>
+<a href="../../components/pufferfish/unsplitSweepSurface.html"><img class="ghicon" src="../../icons/Pufferfish/Unsplit_Sweep_Surface.png" title="Unsplit Sweep Surface"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/weightedAverageSurface.html"><img class="ghicon" src="../../icons/Pufferfish/Weighted_Average_Surface.png" title="Weighted Average Surface"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="22">
+Surface
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/massTransform.html"><img class="ghicon" src="../../icons/Pufferfish/Mass_Transform.png" title="Mass Transform"></a>
+<a href="../../components/pufferfish/mirrorCombineTransforms.html"><img class="ghicon" src="../../icons/Pufferfish/Mirror_Combine_Transforms.png" title="Mirror Combine Transforms"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/mirrorCutTransforms.html"><img class="ghicon" src="../../icons/Pufferfish/Mirror_Cut_Transforms.png" title="Mirror Cut Transforms"></a>
+<a href="../../components/pufferfish/moveToPoint.html"><img class="ghicon" src="../../icons/Pufferfish/Move_To_Point.png" title="Move To Point"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/recursiveTransform.html"><img class="ghicon" src="../../icons/Pufferfish/Recursive_Transform.png" title="Recursive Transform"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+Transform
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/closestVector.html"><img class="ghicon" src="../../icons/Pufferfish/Closest_Vector.png" title="Closest Vector"></a>
+<a href="../../components/pufferfish/mirrorCombineVectors.html"><img class="ghicon" src="../../icons/Pufferfish/Mirror_Combine_Vectors.png" title="Mirror Combine Vectors"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/mirrorCutVectors.html"><img class="ghicon" src="../../icons/Pufferfish/Mirror_Cut_Vectors.png" title="Mirror Cut Vectors"></a>
+<a href="../../components/pufferfish/reparameterizeVectors.html"><img class="ghicon" src="../../icons/Pufferfish/Reparameterize_Vectors.png" title="Reparameterize Vectors"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/tweenConsecutiveVectors.html"><img class="ghicon" src="../../icons/Pufferfish/Tween_Consecutive_Vectors.png" title="Tween Consecutive Vectors"></a>
+<a href="../../components/pufferfish/tweenThroughVectors.html"><img class="ghicon" src="../../icons/Pufferfish/Tween_Through_Vectors.png" title="Tween Through Vectors"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pufferfish/tweenTwoVectors.html"><img class="ghicon" src="../../icons/Pufferfish/Tween_Two_Vectors.png" title="Tween Two Vectors"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="4">
+Vector
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+
+<div class="addon-buttons">
+<a href="https://www.food4rhino.com/app/pufferfish">Download</a>
+</div>
+
+<div>
+<h1><img src="../../icons/Pufferfish/Swap_Surface_Directions.png"/> Swap Surface Directions</h1>
+<p><a href="../../index.html#Pufferfish">Component Index</a> &gt; <a href="../../addons/pufferfish.html">Pufferfish</a> > Surface > <b>SwapSrfDir</b></p>
+</div>
+<h3>Swap or reverse the {u} and {v} directions of a surface, also works with trimmed surfaces but trims will swap as well.</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Surface</b></td><td>S</td><td>Surface to change directions of</td><td>Brep</td></tr>
+<tr><td><b>Reverse U</b></td><td>U</td><td>Reverse the surface {u} direction</td><td>Boolean</td></tr>
+<tr><td><b>Reverse V</b></td><td>V</td><td>Reverse the surface {v} direction</td><td>Boolean</td></tr>
+<tr><td><b>Swap UV</b></td><td>UV</td><td>Swap the surface {u} and {v} directions</td><td>Boolean</td></tr>
+<tr><td><b>Surface</b></td><td>S</td><td>Surface to change directions of</td><td>Surface</td></tr>
+<tr><td><b>Reverse U</b></td><td>U</td><td>Reverse the surface {u} direction</td><td>Boolean</td></tr>
+<tr><td><b>Reverse V</b></td><td>V</td><td>Reverse the surface {v} direction</td><td>Boolean</td></tr>
+<tr><td><b>Swap UV</b></td><td>UV</td><td>Swap the surface {u} and {v} directions</td><td>Boolean</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Swapped</b></td><td>S</td><td>Resulting swapped direction surface</td><td>Brep</td></tr>
+<tr><td><b>Swapped</b></td><td>S</td><td>Resulting swapped direction surface</td><td>Surface</td></tr>
+</tbody>
+</table>
+
+
+  </div>
+
+</div>
+
+            </div>
+            <div id="xg_foot">
+                <p class="left">
+    © 2018-2020  <a href="https://github.com/robinrodricks/">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a> &nbsp;
+	Rhino & Grasshopper are trademarks of <a href="https://www.rhino3d.com/">Robert McNeel & Associates</a>.
+	</p>
+    <p class="right xg_lightfont">
+                    <a href="http://www.grasshopper3d.com/main/embeddable/list">Badges</a> &nbsp;|&nbsp;
+                        <a href="http://www.grasshopper3d.com/main/index/report" dojotype="PromptToJoinLink" _joinprompttext="Please sign up or sign in to complete this step." _hassignup="true" _signinurl="http://www.grasshopper3d.com/main/authorization/signIn?target=http%3A%2F%2Fwww.grasshopper3d.com%2Fmain%2Findex%2Freport">Report an Issue</a> &nbsp;|&nbsp;
+                        <a href="http://www.grasshopper3d.com/main/authorization/termsOfService?previousUrl=http%3A%2F%2Fwww.grasshopper3d.com%2Fpage%2Fcomponent-reference">Terms of Service</a>
+            </p>
+
+            </div>
+        </div>
+        
+        <div id="xj_baz17246" class="xg_theme"></div>
+<div id="xg_overlay" style="display:none;">
+<!--[if lte IE 6.5]><iframe></iframe><![endif]-->
+</div>
+<!--googleoff: all--><noscript>
+	<style type="text/css" media="screen">
+        #xg { position:relative;top:120px; }
+        #xn_bar { top:120px; }
+	</style>
+	<div class="errordesc noscript">
+		<div>
+            <h3><strong>Hello, you need to enable JavaScript to use Grasshopper.</strong></h3>
+            <p>Please check your browser settings or contact your system administrator.</p>
+			
+		</div>
+	</div>
+</noscript><!--googleon: all-->
+
+<script src="/js/jquery.js"></script>
+<script src="/js/kramed.min.js"></script>
+<script src="/js/component.js"></script>
+<script src="/js/user.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    </body>
+</html>

@@ -61,7 +61,6 @@
 	<li id="xg_tab_xn0" class="xg_subtab"><a href="http://www.grasshopper3d.com/page/download-1"><span>Download</span></a></li>
 	<li id="xg_tab_forum" class="xg_subtab"><a href="https://discourse.mcneel.com/c/grasshopper"><span>Forums&#47;Support</span></a></li>
 	<li id="xg_tab_xn2" class="xg_subtab this"><a href="http://rhino.github.io/"><span>Learn</span></a></li>
-	<li id="xg_tab_events" class="xg_subtab"><a href="https://www.grasshopper3d.com/page/tutorials-1"><span>Learn</span></a></li>
 	<li id="xg_tab_events" class="xg_subtab"><a href="http://www.grasshopper3d.com/events"><span>Attend</span></a></li>
 	<li id="xg_tab_profile" class="xg_subtab"><a href="http://www.grasshopper3d.com/profiles"><span>My Page</span></a></li></ul>
 
@@ -195,17 +194,12 @@ Sound
 <td>
 <div class="ghcolumn">
 <a href="../../components/mosquito/stringRecorder.html"><img class="ghicon" src="../../icons/Mosquito/String_Recorder.png" title="String Recorder"></a>
-<a href="../../components/mosquito/stringDuplicates.html"><img class="ghicon" src="../../icons/Mosquito/StringDuplicates.png" title="StringDuplicates"></a>
-</div>
-</td>
-<td>
-<div class="ghcolumn">
 <a href="../../components/mosquito/sonicStringSearch.html"><img class="ghicon" src="../../icons/Mosquito/SonicStringSearch.png" title="SonicStringSearch"></a>
 </div>
 </td>
 </tr>
 <tr class="ghgroup-title-row">
-<td class="ghgroup-title" colspan="2">
+<td class="ghgroup-title" colspan="1">
 Strings
 </td>
 </tr>
@@ -250,7 +244,6 @@ Tools
 <td>
 <div class="ghcolumn">
 <a href="../../components/mosquito/targetRays.html"><img class="ghicon" src="../../icons/Mosquito/TargetRays.png" title="TargetRays"></a>
-<a href="../../components/mosquito/vasariCSV.html"><img class="ghicon" src="../../icons/Mosquito/Vasari_CSV.png" title="Vasari CSV"></a>
 </div>
 </td>
 </tr>
@@ -273,7 +266,7 @@ Vector
 
 <div>
 <h1><img src="../../icons/Mosquito/MapPlaces.png"/> MapPlaces</h1>
-<p><a href="../../index.html#Mosquito">Component Index</a> &gt; <a href="../../addons/mosquito.html">Mosquito</a> > Geo > <b>MapPlaces</b></p>
+<p><a href="../../index.html#Mosquito">Component Index</a> &gt; <a href="../../addons/mosquito.html">Mosquito</a> > Geo > <b>Places API Data</b></p>
 </div>
 <h3>Extracts Google Places data (Requires GooglePlaces APIKey. Visit the Google APIs Console at https://code.google.com/apis/console) - by Carson Smuts 2015</h3>
 <h2>Inputs</h2>
@@ -286,7 +279,7 @@ Vector
 <tr><td><b>Number</b></td><td>Radius</td><td>The radius to search</td><td>Number</td></tr>
 <tr><td><b>Number</b></td><td>Lat</td><td>The latitude of the search center - Y coordinate</td><td>Number</td></tr>
 <tr><td><b>Number</b></td><td>Lon</td><td>The longitude of the search center - X coordinate</td><td>Number</td></tr>
-<tr><td><b>String</b></td><td>Key</td><td>Your Google API Key - each key can perform 1000 searches per day</td><td>String</td></tr>
+<tr><td><b>String</b></td><td>Key</td><td>Your Google API Key - each key can perform 1000 searches per day</td><td>Text</td></tr>
 </tbody>
 </table>
 
@@ -297,11 +290,11 @@ Vector
 </thead>
 <tbody>
 <tr><td><b>Point</b></td><td>Points</td><td>Points that represent places of interest</td><td>Point</td></tr>
-<tr><td><b>String</b></td><td>Name</td><td>The name of the place</td><td>String</td></tr>
-<tr><td><b>String</b></td><td>Icon</td><td>The place icon</td><td>String</td></tr>
-<tr><td><b>String</b></td><td>Type</td><td>The place type categories</td><td>String</td></tr>
-<tr><td><b>String</b></td><td>Rating</td><td>The place rating</td><td>String</td></tr>
-<tr><td><b>String</b></td><td>Vicinity</td><td>The area</td><td>String</td></tr>
+<tr><td><b>String</b></td><td>Name</td><td>The name of the place</td><td>Text</td></tr>
+<tr><td><b>String</b></td><td>Icon</td><td>The place icon</td><td>Text</td></tr>
+<tr><td><b>String</b></td><td>Type</td><td>The place type categories</td><td>Text</td></tr>
+<tr><td><b>String</b></td><td>Rating</td><td>The place rating</td><td>Text</td></tr>
+<tr><td><b>String</b></td><td>Vicinity</td><td>The area</td><td>Text</td></tr>
 </tbody>
 </table>
 
@@ -313,8 +306,9 @@ Vector
             </div>
             <div id="xg_foot">
                 <p class="left">
-    © 2018-2020             &nbsp; Created by <a href="https://github.com/robinrodricks/">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
-    Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a>
+    © 2018-2020  <a href="https://github.com/robinrodricks/">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a> &nbsp;
+	Rhino & Grasshopper are trademarks of <a href="https://www.rhino3d.com/">Robert McNeel & Associates</a>.
 	</p>
     <p class="right xg_lightfont">
                     <a href="http://www.grasshopper3d.com/main/embeddable/list">Badges</a> &nbsp;|&nbsp;

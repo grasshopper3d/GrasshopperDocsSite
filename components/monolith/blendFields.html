@@ -1,0 +1,402 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+<head data-layout-view="wide">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Blend Fields - Grasshopper Component Reference</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+
+<meta name="description" content="A guide to component Blend Fields in Grasshopper 3D." />
+<meta name="title" content="Grasshopper Component Reference" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://rhino.github.io/" />
+<meta property="og:title" content="Blend Fields - Grasshopper Component Reference" />
+
+<meta property="wiki-page" content="GH Monolith Blend_Fields.md" />
+
+<link rel="image_src" href="http://rhino.github.io/ning/2985220.jpg" />
+
+<style type="text/css" media="screen,projection">
+#xg_navigation ul div.xg_subtab ul li a {
+    color:#666666;
+    background:#EAFFBD;
+}
+#xg_navigation ul div.xg_subtab ul li a:hover {
+    color:#333333;
+    background:#F2FFD6;
+}
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../../ning/index.css);
+@import url(../../ning/page.css);
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../../ning/1187549422.css);
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../../ning/1187545030.css);
+</style>
+
+
+<link href="../../style.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+    </head>
+    <body>
+    
+        
+        <div id="xg" class="xg_theme xg_widget_page xg_widget_page_page xg_widget_page_page_show" data-layout-pack="classic">
+            <div id="xg_head">
+                <div id="xg_masthead">
+                    <p id="xg_sitename"><a id="application_name_header_link" href="http://rhino.github.io/">Grasshopper</a></p>
+                    <p id="xg_sitedesc" class="xj_site_desc">algorithmic modeling for Rhino</p>
+                </div>
+                <div id="xg_navigation">
+                    <ul>
+    <li id="xg_tab_main" class="xg_subtab"><a href="http://www.grasshopper3d.com/"><span>Home</span></a></li>
+	<li id="xg_tab_photo" class="xg_subtab"><a href="http://www.grasshopper3d.com/photo"><span>View</span></a></li>
+	<li id="xg_tab_xn0" class="xg_subtab"><a href="http://www.grasshopper3d.com/page/download-1"><span>Download</span></a></li>
+	<li id="xg_tab_forum" class="xg_subtab"><a href="https://discourse.mcneel.com/c/grasshopper"><span>Forums&#47;Support</span></a></li>
+	<li id="xg_tab_xn2" class="xg_subtab this"><a href="http://rhino.github.io/"><span>Learn</span></a></li>
+	<li id="xg_tab_events" class="xg_subtab"><a href="http://www.grasshopper3d.com/events"><span>Attend</span></a></li>
+	<li id="xg_tab_profile" class="xg_subtab"><a href="http://www.grasshopper3d.com/profiles"><span>My Page</span></a></li></ul>
+
+                </div>
+            </div>
+            
+            <div id="xg_body">
+                
+				<div class="page">
+
+<div class="content">
+
+<div class="ghbar">
+<table class="ghbar-table">
+<tr>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/monolith/addSources.html"><img class="ghicon" src="../../icons/Monolith/Add_Sources.png" title="Add Sources"></a>
+<a href="../../components/monolith/combineSources.html"><img class="ghicon" src="../../icons/Monolith/Combine_Sources.png" title="Combine Sources"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/monolith/construct2DPaintBitmap.html"><img class="ghicon" src="../../icons/Monolith/Construct_2D_Paint_Bitmap.png" title="Construct 2D Paint Bitmap"></a>
+<a href="../../components/monolith/constructFunctionSource.html"><img class="ghicon" src="../../icons/Monolith/Construct_Function_Source.png" title="Construct Function Source"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/monolith/constructGeometricSource.html"><img class="ghicon" src="../../icons/Monolith/Construct_Geometric_Source.png" title="Construct Geometric Source"></a>
+<a href="../../components/monolith/constructBitmapSource.html"><img class="ghicon" src="../../icons/Monolith/Construct_Bitmap_Source.png" title="Construct Bitmap Source"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/monolith/constructBitmapStackSource.html"><img class="ghicon" src="../../icons/Monolith/Construct_Bitmap_Stack_Source.png" title="Construct Bitmap Stack Source"></a>
+<a href="../../components/monolith/constructVoxelsFromFile.html"><img class="ghicon" src="../../icons/Monolith/Construct_Voxels_From_File.png" title="Construct Voxels From File"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/monolith/functionPresets.html"><img class="ghicon" src="../../icons/Monolith/Function_Presets.png" title="Function Presets"></a>
+<a href="../../components/monolith/bitmapBlend.html"><img class="ghicon" src="../../icons/Monolith/Bitmap_Blend.png" title="Bitmap Blend"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/monolith/bitmapLoft.html"><img class="ghicon" src="../../icons/Monolith/Bitmap_Loft.png" title="Bitmap Loft"></a>
+<a href="../../components/monolith/multiplySources.html"><img class="ghicon" src="../../icons/Monolith/Multiply_Sources.png" title="Multiply Sources"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="6">
+Construct
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/monolith/blendFields.html"><img class="ghicon" src="../../icons/Monolith/Blend_Fields.png" title="Blend Fields"></a>
+<a href="../../components/monolith/gaussianBlurFilter.html"><img class="ghicon" src="../../icons/Monolith/Gaussian_Blur_Filter.png" title="Gaussian Blur Filter"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/monolith/insideOutFilter.html"><img class="ghicon" src="../../icons/Monolith/Inside_Out_Filter.png" title="Inside Out Filter"></a>
+<a href="../../components/monolith/blurFilterKernel.html"><img class="ghicon" src="../../icons/Monolith/Blur_Filter_(Kernel).png" title="Blur Filter (Kernel)"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/monolith/laplacianFilter.html"><img class="ghicon" src="../../icons/Monolith/Laplacian_Filter.png" title="Laplacian Filter"></a>
+<a href="../../components/monolith/maximumFilterKernel.html"><img class="ghicon" src="../../icons/Monolith/Maximum_Filter_(Kernel).png" title="Maximum Filter (Kernel)"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/monolith/medianFilterKernel.html"><img class="ghicon" src="../../icons/Monolith/Median_Filter_(Kernel).png" title="Median Filter (Kernel)"></a>
+<a href="../../components/monolith/minimumFilterKernel.html"><img class="ghicon" src="../../icons/Monolith/Minimum_Filter_(Kernel).png" title="Minimum Filter (Kernel)"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/monolith/symmetryFilter.html"><img class="ghicon" src="../../icons/Monolith/Symmetry_Filter.png" title="Symmetry Filter"></a>
+<a href="../../components/monolith/twistFilter.html"><img class="ghicon" src="../../icons/Monolith/Twist_Filter.png" title="Twist Filter"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="5">
+Filters
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/monolith/getMillipedeField.html"><img class="ghicon" src="../../icons/Monolith/Get_Millipede_Field.png" title="Get Millipede Field"></a>
+<a href="../../components/monolith/setMillipedeDensities.html"><img class="ghicon" src="../../icons/Monolith/Set_Millipede_Densities.png" title="Set Millipede Densities"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+Millipede
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/monolith/colorMeshByRatio.html"><img class="ghicon" src="../../icons/Monolith/Color_Mesh_By_Ratio.png" title="Color Mesh By Ratio"></a>
+<a href="../../components/monolith/colorMeshByRGB.html"><img class="ghicon" src="../../icons/Monolith/Color_Mesh_By_RGB.png" title="Color Mesh By RGB"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/monolith/getChannelNames.html"><img class="ghicon" src="../../icons/Monolith/Get_Channel_Names.png" title="Get Channel Names"></a>
+<a href="../../components/monolith/getIsoMesh.html"><img class="ghicon" src="../../icons/Monolith/Get_Iso_Mesh.png" title="Get Iso Mesh"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/monolith/getMeshSlices.html"><img class="ghicon" src="../../icons/Monolith/Get_Mesh_Slices.png" title="Get Mesh Slices"></a>
+<a href="../../components/monolith/getSlicePlane.html"><img class="ghicon" src="../../icons/Monolith/Get_Slice_Plane.png" title="Get Slice Plane"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/monolith/getVoxelPoints.html"><img class="ghicon" src="../../icons/Monolith/Get_Voxel_Points.png" title="Get Voxel Points"></a>
+<a href="../../components/monolith/isoMesh.html"><img class="ghicon" src="../../icons/Monolith/IsoMesh.png" title="IsoMesh"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/monolith/getVoxelValues.html"><img class="ghicon" src="../../icons/Monolith/GetVoxelValues.png" title="GetVoxelValues"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="5">
+Outputs
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/monolith/getMonolithData.html"><img class="ghicon" src="../../icons/Monolith/Get_Monolith_Data.png" title="Get Monolith Data"></a>
+<a href="../../components/monolith/streamToMonolith.html"><img class="ghicon" src="../../icons/Monolith/StreamToMonolith.png" title="StreamToMonolith"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+Stream
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/monolith/channelFill.html"><img class="ghicon" src="../../icons/Monolith/Channel_Fill.png" title="Channel Fill"></a>
+<a href="../../components/monolith/channelInvert.html"><img class="ghicon" src="../../icons/Monolith/Channel_Invert.png" title="Channel Invert"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/monolith/channelNoise.html"><img class="ghicon" src="../../icons/Monolith/Channel_Noise.png" title="Channel Noise"></a>
+<a href="../../components/monolith/getVoxelValues.html"><img class="ghicon" src="../../icons/Monolith/Get_Voxel_Values.png" title="Get Voxel Values"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/monolith/channelHistogram.html"><img class="ghicon" src="../../icons/Monolith/Channel_Histogram.png" title="Channel Histogram"></a>
+<a href="../../components/monolith/setVoxelValues.html"><img class="ghicon" src="../../icons/Monolith/Set_Voxel_Values.png" title="Set Voxel Values"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/monolith/channelSwap.html"><img class="ghicon" src="../../icons/Monolith/Channel_Swap.png" title="Channel Swap"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="4">
+Transform Channels
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/monolith/3dViewport.html"><img class="ghicon" src="../../icons/Monolith/3d_Viewport.png" title="3d Viewport"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+Views
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+
+<div class="addon-buttons">
+<a href="https://www.food4rhino.com/app/monolith">Download</a>
+</div>
+
+<div>
+<h1><img src="../../icons/Monolith/Blend_Fields.png"/> Blend Fields</h1>
+<p><a href="../../index.html#Monolith">Component Index</a> &gt; <a href="../../addons/monolith.html">Monolith</a> > Filters > <b>Blend</b></p>
+</div>
+<h3>Blends two voxel fields</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Voxels1</b></td><td>Voxels</td><td>Voxels</td><td>Generic Data</td></tr>
+<tr><td><b>Voxels2</b></td><td>Voxels</td><td>Voxels</td><td>Generic Data</td></tr>
+<tr><td><b>vfactor1</b></td><td>vfactor1</td><td>vfactor1</td><td>Number</td></tr>
+<tr><td><b>vfactor2</b></td><td>vfactor2</td><td>vfactor2</td><td>Number</td></tr>
+<tr><td><b>mfactor1</b></td><td>mfactor1</td><td>mfactor1</td><td>Number</td></tr>
+<tr><td><b>mfactor2</b></td><td>mfactor2</td><td>mfactor2</td><td>Number</td></tr>
+<tr><td><b>Box</b></td><td>Box</td><td>Box</td><td>Box</td></tr>
+<tr><td><b>Resolution</b></td><td>Resolution</td><td>Resolution</td><td>Integer</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Voxels</b></td><td>Voxels</td><td>Voxels</td><td>Generic Data</td></tr>
+<tr><td><b>Box</b></td><td>Box</td><td>Box</td><td>Box</td></tr>
+</tbody>
+</table>
+
+
+  </div>
+
+</div>
+
+            </div>
+            <div id="xg_foot">
+                <p class="left">
+    © 2018-2020  <a href="https://github.com/robinrodricks/">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a> &nbsp;
+	Rhino & Grasshopper are trademarks of <a href="https://www.rhino3d.com/">Robert McNeel & Associates</a>.
+	</p>
+    <p class="right xg_lightfont">
+                    <a href="http://www.grasshopper3d.com/main/embeddable/list">Badges</a> &nbsp;|&nbsp;
+                        <a href="http://www.grasshopper3d.com/main/index/report" dojotype="PromptToJoinLink" _joinprompttext="Please sign up or sign in to complete this step." _hassignup="true" _signinurl="http://www.grasshopper3d.com/main/authorization/signIn?target=http%3A%2F%2Fwww.grasshopper3d.com%2Fmain%2Findex%2Freport">Report an Issue</a> &nbsp;|&nbsp;
+                        <a href="http://www.grasshopper3d.com/main/authorization/termsOfService?previousUrl=http%3A%2F%2Fwww.grasshopper3d.com%2Fpage%2Fcomponent-reference">Terms of Service</a>
+            </p>
+
+            </div>
+        </div>
+        
+        <div id="xj_baz17246" class="xg_theme"></div>
+<div id="xg_overlay" style="display:none;">
+<!--[if lte IE 6.5]><iframe></iframe><![endif]-->
+</div>
+<!--googleoff: all--><noscript>
+	<style type="text/css" media="screen">
+        #xg { position:relative;top:120px; }
+        #xn_bar { top:120px; }
+	</style>
+	<div class="errordesc noscript">
+		<div>
+            <h3><strong>Hello, you need to enable JavaScript to use Grasshopper.</strong></h3>
+            <p>Please check your browser settings or contact your system administrator.</p>
+			
+		</div>
+	</div>
+</noscript><!--googleon: all-->
+
+<script src="/js/jquery.js"></script>
+<script src="/js/kramed.min.js"></script>
+<script src="/js/component.js"></script>
+<script src="/js/user.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    </body>
+</html>

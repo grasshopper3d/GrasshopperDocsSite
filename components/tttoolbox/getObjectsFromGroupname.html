@@ -1,0 +1,476 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+<head data-layout-view="wide">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Get objects from groupname - Grasshopper Component Reference</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+
+<meta name="description" content="A guide to component Get objects from groupname in Grasshopper 3D." />
+<meta name="title" content="Grasshopper Component Reference" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://rhino.github.io/" />
+<meta property="og:title" content="Get objects from groupname - Grasshopper Component Reference" />
+
+<meta property="wiki-page" content="GH TTToolbox Get_objects_from_groupname.md" />
+
+<link rel="image_src" href="http://rhino.github.io/ning/2985220.jpg" />
+
+<style type="text/css" media="screen,projection">
+#xg_navigation ul div.xg_subtab ul li a {
+    color:#666666;
+    background:#EAFFBD;
+}
+#xg_navigation ul div.xg_subtab ul li a:hover {
+    color:#333333;
+    background:#F2FFD6;
+}
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../../ning/index.css);
+@import url(../../ning/page.css);
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../../ning/1187549422.css);
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../../ning/1187545030.css);
+</style>
+
+
+<link href="../../style.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+    </head>
+    <body>
+    
+        
+        <div id="xg" class="xg_theme xg_widget_page xg_widget_page_page xg_widget_page_page_show" data-layout-pack="classic">
+            <div id="xg_head">
+                <div id="xg_masthead">
+                    <p id="xg_sitename"><a id="application_name_header_link" href="http://rhino.github.io/">Grasshopper</a></p>
+                    <p id="xg_sitedesc" class="xj_site_desc">algorithmic modeling for Rhino</p>
+                </div>
+                <div id="xg_navigation">
+                    <ul>
+    <li id="xg_tab_main" class="xg_subtab"><a href="http://www.grasshopper3d.com/"><span>Home</span></a></li>
+	<li id="xg_tab_photo" class="xg_subtab"><a href="http://www.grasshopper3d.com/photo"><span>View</span></a></li>
+	<li id="xg_tab_xn0" class="xg_subtab"><a href="http://www.grasshopper3d.com/page/download-1"><span>Download</span></a></li>
+	<li id="xg_tab_forum" class="xg_subtab"><a href="https://discourse.mcneel.com/c/grasshopper"><span>Forums&#47;Support</span></a></li>
+	<li id="xg_tab_xn2" class="xg_subtab this"><a href="http://rhino.github.io/"><span>Learn</span></a></li>
+	<li id="xg_tab_events" class="xg_subtab"><a href="http://www.grasshopper3d.com/events"><span>Attend</span></a></li>
+	<li id="xg_tab_profile" class="xg_subtab"><a href="http://www.grasshopper3d.com/profiles"><span>My Page</span></a></li></ul>
+
+                </div>
+            </div>
+            
+            <div id="xg_body">
+                
+				<div class="page">
+
+<div class="content">
+
+<div class="ghbar">
+<table class="ghbar-table">
+<tr>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/tttoolbox/aggregator.html"><img class="ghicon" src="../../icons/TTToolbox/Aggregator.png" title="Aggregator"></a>
+<a href="../../components/tttoolbox/colibriInputs.html"><img class="ghicon" src="../../icons/TTToolbox/Colibri_Inputs.png" title="Colibri Inputs"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/tttoolbox/colibriOutputs.html"><img class="ghicon" src="../../icons/TTToolbox/Colibri_Outputs.png" title="Colibri Outputs"></a>
+<a href="../../components/tttoolbox/imageParameters.html"><img class="ghicon" src="../../icons/TTToolbox/Image_Parameters.png" title="Image Parameters"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/tttoolbox/iterator.html"><img class="ghicon" src="../../icons/TTToolbox/Iterator.png" title="Iterator"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+Colibri
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/tttoolbox/colibriAggregator.html"><img class="ghicon" src="../../icons/TTToolbox/Colibri_Aggregator.png" title="Colibri Aggregator"></a>
+<a href="../../components/tttoolbox/colibriParameters.html"><img class="ghicon" src="../../icons/TTToolbox/Colibri_Parameters.png" title="Colibri Parameters"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/tttoolbox/imageSetting.html"><img class="ghicon" src="../../icons/TTToolbox/Image_Setting.png" title="Image Setting"></a>
+<a href="../../components/tttoolbox/colibriIterator.html"><img class="ghicon" src="../../icons/TTToolbox/Colibri_Iterator.png" title="Colibri Iterator"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/tttoolbox/iterationSelection.html"><img class="ghicon" src="../../icons/TTToolbox/Iteration_Selection.png" title="Iteration Selection"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+Colibri 2.0
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/tttoolbox/dOptionsStyle.html"><img class="ghicon" src="../../icons/TTToolbox/D_Options_Style.png" title="D_Options_Style"></a>
+<a href="../../components/tttoolbox/textOptions.html"><img class="ghicon" src="../../icons/TTToolbox/Text_Options.png" title="Text Options"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/tttoolbox/graph.html"><img class="ghicon" src="../../icons/TTToolbox/Graph.png" title="Graph"></a>
+<a href="../../components/tttoolbox/labelValueDisplay.html"><img class="ghicon" src="../../icons/TTToolbox/Label_Value_Display.png" title="Label/Value Display"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/tttoolbox/gradientColourLegend.html"><img class="ghicon" src="../../icons/TTToolbox/Gradient_Colour_Legend.png" title="Gradient Colour Legend"></a>
+<a href="../../components/tttoolbox/steppedColourLegend.html"><img class="ghicon" src="../../icons/TTToolbox/Stepped_Colour_Legend.png" title="Stepped Colour Legend"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+Dashboard
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/tttoolbox/readExcelSheet.html"><img class="ghicon" src="../../icons/TTToolbox/Read_Excel_Sheet.png" title="Read Excel Sheet"></a>
+<a href="../../components/tttoolbox/writeOptions.html"><img class="ghicon" src="../../icons/TTToolbox/Write_Options.png" title="Write Options"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/tttoolbox/writeToExcel.html"><img class="ghicon" src="../../icons/TTToolbox/Write_To_Excel.png" title="Write To Excel"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="2">
+Excel
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/tttoolbox/spectaclesMaterial.html"><img class="ghicon" src="../../icons/TTToolbox/Spectacles_Material.png" title="Spectacles_Material"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+materials
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/tttoolbox/launchBrowser.html"><img class="ghicon" src="../../icons/TTToolbox/Launch_Browser.png" title="Launch Browser"></a>
+<a href="../../components/tttoolbox/platypusConnection.html"><img class="ghicon" src="../../icons/TTToolbox/Platypus_Connection.png" title="Platypus Connection"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/tttoolbox/pullGHGHGeometry.html"><img class="ghicon" src="../../icons/TTToolbox/Pull_GH_GH_Geometry.png" title="Pull GH&gt;GH Geometry"></a>
+<a href="../../components/tttoolbox/pushGHGHGeometry.html"><img class="ghicon" src="../../icons/TTToolbox/Push_GH_GH_Geometry.png" title="Push GH&gt;GH Geometry"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/tttoolbox/streamLines.html"><img class="ghicon" src="../../icons/TTToolbox/Stream_Lines.png" title="Stream Lines"></a>
+<a href="../../components/tttoolbox/streamMeshes.html"><img class="ghicon" src="../../icons/TTToolbox/Stream_Meshes.png" title="Stream Meshes"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/tttoolbox/streamSliders.html"><img class="ghicon" src="../../icons/TTToolbox/Stream_Sliders.png" title="Stream Sliders"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="4">
+Platypus
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/tttoolbox/spectaclesColibri3DObjects.html"><img class="ghicon" src="../../icons/TTToolbox/Spectacles_Colibri_3DObjects.png" title="Spectacles Colibri_3DObjects"></a>
+<a href="../../components/tttoolbox/launchSpectaclesViewer.html"><img class="ghicon" src="../../icons/TTToolbox/Launch_Spectacles_Viewer.png" title="Launch Spectacles Viewer"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/tttoolbox/spectaclesLine.html"><img class="ghicon" src="../../icons/TTToolbox/Spectacles_Line.png" title="Spectacles_Line"></a>
+<a href="../../components/tttoolbox/spectaclesLineBasicMaterial.html"><img class="ghicon" src="../../icons/TTToolbox/Spectacles_LineBasicMaterial.png" title="Spectacles_LineBasicMaterial"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/tttoolbox/spectaclesMesh.html"><img class="ghicon" src="../../icons/TTToolbox/Spectacles_Mesh.png" title="Spectacles_Mesh"></a>
+<a href="../../components/tttoolbox/spectaclesMeshBasicMaterial.html"><img class="ghicon" src="../../icons/TTToolbox/Spectacles_MeshBasicMaterial.png" title="Spectacles_MeshBasicMaterial"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/tttoolbox/spectaclesMeshColoredFaces.html"><img class="ghicon" src="../../icons/TTToolbox/Spectacles_MeshColoredFaces.png" title="Spectacles_MeshColoredFaces"></a>
+<a href="../../components/tttoolbox/spectaclesMeshColoredVertices.html"><img class="ghicon" src="../../icons/TTToolbox/Spectacles_MeshColoredVertices.png" title="Spectacles_MeshColoredVertices"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/tttoolbox/spectaclesMeshLambertMaterial.html"><img class="ghicon" src="../../icons/TTToolbox/Spectacles_MeshLambertMaterial.png" title="Spectacles_MeshLambertMaterial"></a>
+<a href="../../components/tttoolbox/spectaclesMeshPhongMaterial.html"><img class="ghicon" src="../../icons/TTToolbox/Spectacles_MeshPhongMaterial.png" title="Spectacles_MeshPhongMaterial"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/tttoolbox/spectaclesScene.html"><img class="ghicon" src="../../icons/TTToolbox/Spectacles_Scene.png" title="Spectacles_Scene"></a>
+<a href="../../components/tttoolbox/spectaclesSceneCompiler.html"><img class="ghicon" src="../../icons/TTToolbox/Spectacles_SceneCompiler.png" title="Spectacles_SceneCompiler"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/tttoolbox/spectaclesViews.html"><img class="ghicon" src="../../icons/TTToolbox/Spectacles_Views.png" title="Spectacles_Views"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="7">
+Spectacles
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/tttoolbox/bruteForce.html"><img class="ghicon" src="../../icons/TTToolbox/Brute_Force.png" title="Brute Force"></a>
+<a href="../../components/tttoolbox/getHoursAndDays.html"><img class="ghicon" src="../../icons/TTToolbox/Get_Hours_and_Days.png" title="Get Hours and Days"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/tttoolbox/curveType.html"><img class="ghicon" src="../../icons/TTToolbox/Curve_Type.png" title="Curve Type"></a>
+<a href="../../components/tttoolbox/dashboard.html"><img class="ghicon" src="../../icons/TTToolbox/Dashboard.png" title="Dashboard"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/tttoolbox/dataBrancher.html"><img class="ghicon" src="../../icons/TTToolbox/Data_Brancher.png" title="Data Brancher"></a>
+<a href="../../components/tttoolbox/cADExporter.html"><img class="ghicon" src="../../icons/TTToolbox/CAD_Exporter.png" title="CAD Exporter"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/tttoolbox/galapagosListener.html"><img class="ghicon" src="../../icons/TTToolbox/Galapagos_Listener.png" title="Galapagos Listener"></a>
+<a href="../../components/tttoolbox/getGroupsFromBrep.html"><img class="ghicon" src="../../icons/TTToolbox/Get_Groups_From_Brep.png" title="Get Groups From Brep"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/tttoolbox/getGroupsFromDocument.html"><img class="ghicon" src="../../icons/TTToolbox/Get_groups_from_document.png" title="Get groups from document"></a>
+<a href="../../components/tttoolbox/getObjectsFromGroupname.html"><img class="ghicon" src="../../icons/TTToolbox/Get_objects_from_groupname.png" title="Get objects from groupname"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/tttoolbox/getGeometryAttributes.html"><img class="ghicon" src="../../icons/TTToolbox/Get_Geometry_Attributes.png" title="Get Geometry Attributes"></a>
+<a href="../../components/tttoolbox/getGeometryNames.html"><img class="ghicon" src="../../icons/TTToolbox/Get_Geometry_Names.png" title="Get Geometry Names"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/tttoolbox/matchTreeStructure.html"><img class="ghicon" src="../../icons/TTToolbox/Match_Tree_Structure.png" title="Match Tree Structure"></a>
+<a href="../../components/tttoolbox/removeDuplicateLines.html"><img class="ghicon" src="../../icons/TTToolbox/Remove_Duplicate_Lines.png" title="Remove Duplicate Lines"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/tttoolbox/removeDuplicatePoints.html"><img class="ghicon" src="../../icons/TTToolbox/Remove_Duplicate_Points.png" title="Remove Duplicate Points"></a>
+<a href="../../components/tttoolbox/tTSafeDelete.html"><img class="ghicon" src="../../icons/TTToolbox/TT_Safe_Delete.png" title="TT Safe Delete"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/tttoolbox/sharedNodes.html"><img class="ghicon" src="../../icons/TTToolbox/SharedNodes.png" title="SharedNodes"></a>
+<a href="../../components/tttoolbox/sortCurvesAlongCrv.html"><img class="ghicon" src="../../icons/TTToolbox/Sort_Curves_Along_Crv.png" title="Sort Curves Along Crv"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/tttoolbox/treeBranchIndex.html"><img class="ghicon" src="../../icons/TTToolbox/Tree_Branch_Index.png" title="Tree Branch Index"></a>
+<a href="../../components/tttoolbox/treeBranch.html"><img class="ghicon" src="../../icons/TTToolbox/Tree_Branch.png" title="Tree Branch"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/tttoolbox/treeItemIndex.html"><img class="ghicon" src="../../icons/TTToolbox/Tree_Item_Index.png" title="Tree Item Index"></a>
+<a href="../../components/tttoolbox/treeItem.html"><img class="ghicon" src="../../icons/TTToolbox/Tree_Item.png" title="Tree Item"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/tttoolbox/tTSweep.html"><img class="ghicon" src="../../icons/TTToolbox/TT_Sweep.png" title="TT Sweep"></a>
+<a href="../../components/tttoolbox/tTSweepNames.html"><img class="ghicon" src="../../icons/TTToolbox/TT_Sweep_Names.png" title="TT Sweep Names"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="12">
+TT Tools
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+
+<div class="addon-buttons">
+<a href="https://www.food4rhino.com/app/tttoolbox">Download</a>
+</div>
+
+<div>
+<h1><img src="../../icons/TTToolbox/Get_objects_from_groupname.png"/> Get objects from groupname</h1>
+<p><a href="../../index.html#TTToolbox">Component Index</a> &gt; <a href="../../addons/tt-toolbox.html">TT Toolbox</a> > TT Tools > <b>GetObjects</b></p>
+</div>
+<h3>Get brep objects from rhino group</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Group</b></td><td>G</td><td>Group name</td><td>Text</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Breps</b></td><td>B</td><td>Breps in that group</td><td>Brep</td></tr>
+</tbody>
+</table>
+
+
+  </div>
+
+</div>
+
+            </div>
+            <div id="xg_foot">
+                <p class="left">
+    © 2018-2020  <a href="https://github.com/robinrodricks/">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a> &nbsp;
+	Rhino & Grasshopper are trademarks of <a href="https://www.rhino3d.com/">Robert McNeel & Associates</a>.
+	</p>
+    <p class="right xg_lightfont">
+                    <a href="http://www.grasshopper3d.com/main/embeddable/list">Badges</a> &nbsp;|&nbsp;
+                        <a href="http://www.grasshopper3d.com/main/index/report" dojotype="PromptToJoinLink" _joinprompttext="Please sign up or sign in to complete this step." _hassignup="true" _signinurl="http://www.grasshopper3d.com/main/authorization/signIn?target=http%3A%2F%2Fwww.grasshopper3d.com%2Fmain%2Findex%2Freport">Report an Issue</a> &nbsp;|&nbsp;
+                        <a href="http://www.grasshopper3d.com/main/authorization/termsOfService?previousUrl=http%3A%2F%2Fwww.grasshopper3d.com%2Fpage%2Fcomponent-reference">Terms of Service</a>
+            </p>
+
+            </div>
+        </div>
+        
+        <div id="xj_baz17246" class="xg_theme"></div>
+<div id="xg_overlay" style="display:none;">
+<!--[if lte IE 6.5]><iframe></iframe><![endif]-->
+</div>
+<!--googleoff: all--><noscript>
+	<style type="text/css" media="screen">
+        #xg { position:relative;top:120px; }
+        #xn_bar { top:120px; }
+	</style>
+	<div class="errordesc noscript">
+		<div>
+            <h3><strong>Hello, you need to enable JavaScript to use Grasshopper.</strong></h3>
+            <p>Please check your browser settings or contact your system administrator.</p>
+			
+		</div>
+	</div>
+</noscript><!--googleon: all-->
+
+<script src="/js/jquery.js"></script>
+<script src="/js/kramed.min.js"></script>
+<script src="/js/component.js"></script>
+<script src="/js/user.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    </body>
+</html>

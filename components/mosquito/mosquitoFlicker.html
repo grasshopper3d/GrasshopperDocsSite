@@ -61,7 +61,6 @@
 	<li id="xg_tab_xn0" class="xg_subtab"><a href="http://www.grasshopper3d.com/page/download-1"><span>Download</span></a></li>
 	<li id="xg_tab_forum" class="xg_subtab"><a href="https://discourse.mcneel.com/c/grasshopper"><span>Forums&#47;Support</span></a></li>
 	<li id="xg_tab_xn2" class="xg_subtab this"><a href="http://rhino.github.io/"><span>Learn</span></a></li>
-	<li id="xg_tab_events" class="xg_subtab"><a href="https://www.grasshopper3d.com/page/tutorials-1"><span>Learn</span></a></li>
 	<li id="xg_tab_events" class="xg_subtab"><a href="http://www.grasshopper3d.com/events"><span>Attend</span></a></li>
 	<li id="xg_tab_profile" class="xg_subtab"><a href="http://www.grasshopper3d.com/profiles"><span>My Page</span></a></li></ul>
 
@@ -195,17 +194,12 @@ Sound
 <td>
 <div class="ghcolumn">
 <a href="../../components/mosquito/stringRecorder.html"><img class="ghicon" src="../../icons/Mosquito/String_Recorder.png" title="String Recorder"></a>
-<a href="../../components/mosquito/stringDuplicates.html"><img class="ghicon" src="../../icons/Mosquito/StringDuplicates.png" title="StringDuplicates"></a>
-</div>
-</td>
-<td>
-<div class="ghcolumn">
 <a href="../../components/mosquito/sonicStringSearch.html"><img class="ghicon" src="../../icons/Mosquito/SonicStringSearch.png" title="SonicStringSearch"></a>
 </div>
 </td>
 </tr>
 <tr class="ghgroup-title-row">
-<td class="ghgroup-title" colspan="2">
+<td class="ghgroup-title" colspan="1">
 Strings
 </td>
 </tr>
@@ -250,7 +244,6 @@ Tools
 <td>
 <div class="ghcolumn">
 <a href="../../components/mosquito/targetRays.html"><img class="ghicon" src="../../icons/Mosquito/TargetRays.png" title="TargetRays"></a>
-<a href="../../components/mosquito/vasariCSV.html"><img class="ghicon" src="../../icons/Mosquito/Vasari_CSV.png" title="Vasari CSV"></a>
 </div>
 </td>
 </tr>
@@ -273,7 +266,7 @@ Vector
 
 <div>
 <h1><img src="../../icons/Mosquito/MosquitoFlicker.png"/> MosquitoFlicker</h1>
-<p><a href="../../index.html#Mosquito">Component Index</a> &gt; <a href="../../addons/mosquito.html">Mosquito</a> > Media > <b>MosquitoFlicker</b></p>
+<p><a href="../../index.html#Mosquito">Component Index</a> &gt; <a href="../../addons/mosquito.html">Mosquito</a> > Media > <b>Flicker</b></p>
 </div>
 <h3>Flicker API tap  by Carson</h3>
 <h2>Inputs</h2>
@@ -282,18 +275,18 @@ Vector
 <tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
 </thead>
 <tbody>
-<tr><td><b>String</b></td><td>Search</td><td>The photo tag you wish to search for</td><td>String</td></tr>
-<tr><td><b>String</b></td><td>Return</td><td>The number of returns, 100 is default if, 500 max</td><td>String</td></tr>
-<tr><td><b>String</b></td><td>StartDate</td><td>The date you wish to search from: yyyy-mm-dd</td><td>String</td></tr>
-<tr><td><b>String</b></td><td>EndDate</td><td>The date you wish to search to: yyyy-mm-dd</td><td>String</td></tr>
-<tr><td><b>String</b></td><td>Latitude</td><td>Geo-Latitude you wish to search</td><td>String</td></tr>
-<tr><td><b>String</b></td><td>Longitude</td><td>Geo-Longitude you wish to search</td><td>String</td></tr>
+<tr><td><b>String</b></td><td>Search</td><td>The photo tag you wish to search for</td><td>Text</td></tr>
+<tr><td><b>String</b></td><td>Return</td><td>The number of returns, 100 is default if, 500 max</td><td>Text</td></tr>
+<tr><td><b>String</b></td><td>StartDate</td><td>The date you wish to search from: yyyy-mm-dd</td><td>Text</td></tr>
+<tr><td><b>String</b></td><td>EndDate</td><td>The date you wish to search to: yyyy-mm-dd</td><td>Text</td></tr>
+<tr><td><b>String</b></td><td>Latitude</td><td>Geo-Latitude you wish to search</td><td>Text</td></tr>
+<tr><td><b>String</b></td><td>Longitude</td><td>Geo-Longitude you wish to search</td><td>Text</td></tr>
 <tr><td><b>Integer</b></td><td>Radius</td><td>The Radius - MUST be greater than zero and less than 20 miles (or 32 kilometers)</td><td>Integer</td></tr>
-<tr><td><b>String</b></td><td>Units</td><td>Radius is in km or miles? it will be km if left open - Input is mi or km</td><td>String</td></tr>
+<tr><td><b>String</b></td><td>Units</td><td>Radius is in km or miles? it will be km if left open - Input is mi or km </td><td>Text</td></tr>
 <tr><td><b>Boolean</b></td><td>hasGeo</td><td>Must the photo contain Geo-Data?</td><td>Boolean</td></tr>
 <tr><td><b>Boolean</b></td><td>Tags</td><td>Search through photo tags instead of both tags and photo description?</td><td>Boolean</td></tr>
 <tr><td><b>Integer</b></td><td>Page</td><td>Itterate through pages by specifying them here</td><td>Integer</td></tr>
-<tr><td><b>String</b></td><td>UserID</td><td>The users flickr account you would like to search</td><td>String</td></tr>
+<tr><td><b>String</b></td><td>UserID</td><td>The users flickr account you would like to search</td><td>Text</td></tr>
 </tbody>
 </table>
 
@@ -303,17 +296,17 @@ Vector
 <tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
 </thead>
 <tbody>
-<tr><td><b>String</b></td><td>User</td><td>The Users Screen Name</td><td>String</td></tr>
-<tr><td><b>String</b></td><td>Title</td><td>The Title of the image</td><td>String</td></tr>
-<tr><td><b>String</b></td><td>Date</td><td>The Date the image was taken</td><td>String</td></tr>
+<tr><td><b>String</b></td><td>User</td><td>The Users Screen Name</td><td>Text</td></tr>
+<tr><td><b>String</b></td><td>Title</td><td>The Title of the image</td><td>Text</td></tr>
+<tr><td><b>String</b></td><td>Date</td><td>The Date the image was taken</td><td>Text</td></tr>
 <tr><td><b>Point</b></td><td>GeoPoint</td><td>The point at which the image was taken</td><td>Point</td></tr>
-<tr><td><b>String</b></td><td>Info</td><td>The Date the image was taken</td><td>String</td></tr>
-<tr><td><b>String</b></td><td>URL</td><td>URL to the image</td><td>String</td></tr>
-<tr><td><b>String</b></td><td>sURL</td><td>URL to a small image version</td><td>String</td></tr>
-<tr><td><b>String</b></td><td>IDs</td><td>The images ID, usefull for culling/finding duplicates</td><td>String</td></tr>
-<tr><td><b>String</b></td><td>Tags</td><td>The Tags associated with this image</td><td>String</td></tr>
-<tr><td><b>String</b></td><td>Pages</td><td>Tells you how many pages are available</td><td>String</td></tr>
-<tr><td><b>String</b></td><td>DateUpld</td><td>Date that the file was uploaded (Format in second since Epoch</td><td>String</td></tr>
+<tr><td><b>String</b></td><td>Info</td><td>The Date the image was taken</td><td>Text</td></tr>
+<tr><td><b>String</b></td><td>URL</td><td>URL to the image</td><td>Text</td></tr>
+<tr><td><b>String</b></td><td>sURL</td><td>URL to a small image version</td><td>Text</td></tr>
+<tr><td><b>String</b></td><td>IDs</td><td>The images ID, usefull for culling/finding duplicates</td><td>Text</td></tr>
+<tr><td><b>String</b></td><td>Tags</td><td>The Tags associated with this image</td><td>Text</td></tr>
+<tr><td><b>String</b></td><td>Pages</td><td>Tells you how many pages are available</td><td>Text</td></tr>
+<tr><td><b>String</b></td><td>DateUpld</td><td>Date that the file was uploaded (Format in second since Epoch</td><td>Text</td></tr>
 </tbody>
 </table>
 
@@ -325,8 +318,9 @@ Vector
             </div>
             <div id="xg_foot">
                 <p class="left">
-    © 2018-2020             &nbsp; Created by <a href="https://github.com/robinrodricks/">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
-    Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a>
+    © 2018-2020  <a href="https://github.com/robinrodricks/">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a> &nbsp;
+	Rhino & Grasshopper are trademarks of <a href="https://www.rhino3d.com/">Robert McNeel & Associates</a>.
 	</p>
     <p class="right xg_lightfont">
                     <a href="http://www.grasshopper3d.com/main/embeddable/list">Badges</a> &nbsp;|&nbsp;

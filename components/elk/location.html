@@ -61,7 +61,6 @@
 	<li id="xg_tab_xn0" class="xg_subtab"><a href="http://www.grasshopper3d.com/page/download-1"><span>Download</span></a></li>
 	<li id="xg_tab_forum" class="xg_subtab"><a href="https://discourse.mcneel.com/c/grasshopper"><span>Forums&#47;Support</span></a></li>
 	<li id="xg_tab_xn2" class="xg_subtab this"><a href="http://rhino.github.io/"><span>Learn</span></a></li>
-	<li id="xg_tab_events" class="xg_subtab"><a href="https://www.grasshopper3d.com/page/tutorials-1"><span>Learn</span></a></li>
 	<li id="xg_tab_events" class="xg_subtab"><a href="http://www.grasshopper3d.com/events"><span>Attend</span></a></li>
 	<li id="xg_tab_profile" class="xg_subtab"><a href="http://www.grasshopper3d.com/profiles"><span>My Page</span></a></li></ul>
 
@@ -83,12 +82,13 @@
 <tr>
 <td>
 <div class="ghcolumn">
+<a href="../../components/elk/highways.html"><img class="ghicon" src="../../icons/Elk/Highways.png" title="Highways"></a>
 <a href="../../components/elk/location.html"><img class="ghicon" src="../../icons/Elk/Location.png" title="Location"></a>
-<a href="../../components/elk/oSMData.html"><img class="ghicon" src="../../icons/Elk/OSM_Data.png" title="OSM Data"></a>
 </div>
 </td>
 <td>
 <div class="ghcolumn">
+<a href="../../components/elk/oSMData.html"><img class="ghicon" src="../../icons/Elk/OSM_Data.png" title="OSM Data"></a>
 <a href="../../components/elk/topography.html"><img class="ghicon" src="../../icons/Elk/Topography.png" title="Topography"></a>
 </div>
 </td>
@@ -112,7 +112,7 @@ Elk2
 
 <div>
 <h1><img src="../../icons/Elk/Location.png"/> Location</h1>
-<p><a href="../../index.html#Elk">Component Index</a> &gt; <a href="../../addons/elk.html">Elk</a> > Elk2 > <b>Location</b></p>
+<p><a href="../../index.html#Elk">Component Index</a> &gt; <a href="../../addons/elk.html">Elk</a> > Elk2 > <b>Loc</b></p>
 </div>
 <h3>OpenStreetMap and Topograhy</h3>
 <h2>Inputs</h2>
@@ -121,7 +121,7 @@ Elk2
 <tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
 </thead>
 <tbody>
-<tr><td><b>File Path (text)</b></td><td>File</td><td>File path for the OSM file.</td><td>String</td></tr>
+<tr><td><b>File Path (text)</b></td><td>File</td><td>File path for the OSM file.</td><td>Text</td></tr>
 </tbody>
 </table>
 
@@ -131,10 +131,10 @@ Elk2
 <tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
 </thead>
 <tbody>
-<tr><td><b>OSM Point Data</b></td><td>OSM</td><td>Holds point and identification OSM data.</td><td>Elk.GHComponents.OSMPointData</td></tr>
-<tr><td><b>OSMFile</b></td><td>File</td><td>Path to the OSM file.</td><td>String</td></tr>
-<tr><td><b>Longitude Domain</b></td><td>Lon</td><td>MIN and MAX longitude domain found in the OSM file.</td><td>Interval</td></tr>
-<tr><td><b>Latitude Domain</b></td><td>Lat</td><td>MIN and MAX latitude domain found in the OSM file.</td><td>Interval</td></tr>
+<tr><td><b>OSM Point Data</b></td><td>OSM</td><td>Holds point and identification OSM data.</td><td>OSM Point</td></tr>
+<tr><td><b>OSMFile</b></td><td>File</td><td>Path to the OSM file.</td><td>Text</td></tr>
+<tr><td><b>Longitude Domain</b></td><td>Lon</td><td>MIN and MAX longitude domain found in the OSM file.</td><td>Domain</td></tr>
+<tr><td><b>Latitude Domain</b></td><td>Lat</td><td>MIN and MAX latitude domain found in the OSM file.</td><td>Domain</td></tr>
 </tbody>
 </table>
 
@@ -146,8 +146,9 @@ Elk2
             </div>
             <div id="xg_foot">
                 <p class="left">
-    © 2018-2020             &nbsp; Created by <a href="https://github.com/robinrodricks/">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
-    Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a>
+    © 2018-2020  <a href="https://github.com/robinrodricks/">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a> &nbsp;
+	Rhino & Grasshopper are trademarks of <a href="https://www.rhino3d.com/">Robert McNeel & Associates</a>.
 	</p>
     <p class="right xg_lightfont">
                     <a href="http://www.grasshopper3d.com/main/embeddable/list">Badges</a> &nbsp;|&nbsp;

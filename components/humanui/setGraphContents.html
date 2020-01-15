@@ -1,0 +1,506 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+<head data-layout-view="wide">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Set Graph Contents - Grasshopper Component Reference</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+
+<meta name="description" content="A guide to component Set Graph Contents in Grasshopper 3D." />
+<meta name="title" content="Grasshopper Component Reference" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://rhino.github.io/" />
+<meta property="og:title" content="Set Graph Contents - Grasshopper Component Reference" />
+
+<meta property="wiki-page" content="GH HumanUI Set_Graph_Contents.md" />
+
+<link rel="image_src" href="http://rhino.github.io/ning/2985220.jpg" />
+
+<style type="text/css" media="screen,projection">
+#xg_navigation ul div.xg_subtab ul li a {
+    color:#666666;
+    background:#EAFFBD;
+}
+#xg_navigation ul div.xg_subtab ul li a:hover {
+    color:#333333;
+    background:#F2FFD6;
+}
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../../ning/index.css);
+@import url(../../ning/page.css);
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../../ning/1187549422.css);
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../../ning/1187545030.css);
+</style>
+
+
+<link href="../../style.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+    </head>
+    <body>
+    
+        
+        <div id="xg" class="xg_theme xg_widget_page xg_widget_page_page xg_widget_page_page_show" data-layout-pack="classic">
+            <div id="xg_head">
+                <div id="xg_masthead">
+                    <p id="xg_sitename"><a id="application_name_header_link" href="http://rhino.github.io/">Grasshopper</a></p>
+                    <p id="xg_sitedesc" class="xj_site_desc">algorithmic modeling for Rhino</p>
+                </div>
+                <div id="xg_navigation">
+                    <ul>
+    <li id="xg_tab_main" class="xg_subtab"><a href="http://www.grasshopper3d.com/"><span>Home</span></a></li>
+	<li id="xg_tab_photo" class="xg_subtab"><a href="http://www.grasshopper3d.com/photo"><span>View</span></a></li>
+	<li id="xg_tab_xn0" class="xg_subtab"><a href="http://www.grasshopper3d.com/page/download-1"><span>Download</span></a></li>
+	<li id="xg_tab_forum" class="xg_subtab"><a href="https://discourse.mcneel.com/c/grasshopper"><span>Forums&#47;Support</span></a></li>
+	<li id="xg_tab_xn2" class="xg_subtab this"><a href="http://rhino.github.io/"><span>Learn</span></a></li>
+	<li id="xg_tab_events" class="xg_subtab"><a href="http://www.grasshopper3d.com/events"><span>Attend</span></a></li>
+	<li id="xg_tab_profile" class="xg_subtab"><a href="http://www.grasshopper3d.com/profiles"><span>My Page</span></a></li></ul>
+
+                </div>
+            </div>
+            
+            <div id="xg_body">
+                
+				<div class="page">
+
+<div class="content">
+
+<div class="ghbar">
+<table class="ghbar-table">
+<tr>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/humanui/createBorder.html"><img class="ghicon" src="../../icons/HumanUI/Create_Border.png" title="Create Border"></a>
+<a href="../../components/humanui/createExpander.html"><img class="ghicon" src="../../icons/HumanUI/Create_Expander.png" title="Create Expander"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/humanui/createGrid.html"><img class="ghicon" src="../../icons/HumanUI/Create_Grid.png" title="Create Grid"></a>
+<a href="../../components/humanui/createScrollViewer.html"><img class="ghicon" src="../../icons/HumanUI/Create_Scroll_Viewer.png" title="Create Scroll Viewer"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/humanui/createSimpleGrid.html"><img class="ghicon" src="../../icons/HumanUI/Create_Simple_Grid.png" title="Create Simple Grid"></a>
+<a href="../../components/humanui/createStack.html"><img class="ghicon" src="../../icons/HumanUI/Create_Stack.png" title="Create Stack"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/humanui/createViewBox.html"><img class="ghicon" src="../../icons/HumanUI/Create_View_Box.png" title="Create View Box"></a>
+<a href="../../components/humanui/createWrapPanel.html"><img class="ghicon" src="../../icons/HumanUI/Create_WrapPanel.png" title="Create WrapPanel"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/humanui/tabbedView.html"><img class="ghicon" src="../../icons/HumanUI/Tabbed_View.png" title="Tabbed View"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="5">
+UI Containers
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/humanui/create3DView.html"><img class="ghicon" src="../../icons/HumanUI/Create_3D_View.png" title="Create 3D View"></a>
+<a href="../../components/humanui/createBrowser.html"><img class="ghicon" src="../../icons/HumanUI/Create_Browser.png" title="Create Browser"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/humanui/createButton.html"><img class="ghicon" src="../../icons/HumanUI/Create_Button.png" title="Create Button"></a>
+<a href="../../components/humanui/createCheckbox.html"><img class="ghicon" src="../../icons/HumanUI/Create_Checkbox.png" title="Create Checkbox"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/humanui/createChecklist.html"><img class="ghicon" src="../../icons/HumanUI/Create_Checklist.png" title="Create Checklist"></a>
+<a href="../../components/humanui/createColorPicker.html"><img class="ghicon" src="../../icons/HumanUI/Create_Color_Picker.png" title="Create Color Picker"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/humanui/createDataTable.html"><img class="ghicon" src="../../icons/HumanUI/Create_Data_Table.png" title="Create Data Table"></a>
+<a href="../../components/humanui/createFilePicker.html"><img class="ghicon" src="../../icons/HumanUI/Create_File_Picker.png" title="Create File Picker"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/humanui/createGradientEditor.html"><img class="ghicon" src="../../icons/HumanUI/Create_Gradient_Editor.png" title="Create Gradient Editor"></a>
+<a href="../../components/humanui/createGraphMapper.html"><img class="ghicon" src="../../icons/HumanUI/Create_Graph_Mapper.png" title="Create Graph Mapper"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/humanui/createImage.html"><img class="ghicon" src="../../icons/HumanUI/Create_Image.png" title="Create Image"></a>
+<a href="../../components/humanui/createLabel.html"><img class="ghicon" src="../../icons/HumanUI/Create_Label.png" title="Create Label"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/humanui/createListBox.html"><img class="ghicon" src="../../icons/HumanUI/Create_List_Box.png" title="Create List Box"></a>
+<a href="../../components/humanui/createMarkdownViewer.html"><img class="ghicon" src="../../icons/HumanUI/Create_Markdown_Viewer.png" title="Create Markdown Viewer"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/humanui/createMultidimensionalSlider.html"><img class="ghicon" src="../../icons/HumanUI/Create_Multidimensional_Slider.png" title="Create Multidimensional Slider"></a>
+<a href="../../components/humanui/createShapes.html"><img class="ghicon" src="../../icons/HumanUI/Create_Shapes.png" title="Create Shapes"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/humanui/createObjectsFromXAML.html"><img class="ghicon" src="../../icons/HumanUI/Create_Objects_from_XAML.png" title="Create Objects from XAML"></a>
+<a href="../../components/humanui/createPulldownMenu.html"><img class="ghicon" src="../../icons/HumanUI/Create_Pulldown_Menu.png" title="Create Pulldown Menu"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/humanui/createRadioButton.html"><img class="ghicon" src="../../icons/HumanUI/Create_Radio_Button.png" title="Create Radio Button"></a>
+<a href="../../components/humanui/createRangeSlider.html"><img class="ghicon" src="../../icons/HumanUI/Create_Range_Slider.png" title="Create Range Slider"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/humanui/createRhinoCommandButton.html"><img class="ghicon" src="../../icons/HumanUI/Create_Rhino_Command_Button.png" title="Create Rhino Command Button"></a>
+<a href="../../components/humanui/createRhinoPickButton.html"><img class="ghicon" src="../../icons/HumanUI/Create_Rhino_Pick_Button.png" title="Create Rhino Pick Button"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/humanui/createSeparator.html"><img class="ghicon" src="../../icons/HumanUI/Create_Separator.png" title="Create Separator"></a>
+<a href="../../components/humanui/createShape.html"><img class="ghicon" src="../../icons/HumanUI/Create_Shape.png" title="Create Shape"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/humanui/createSlider.html"><img class="ghicon" src="../../icons/HumanUI/Create_Slider.png" title="Create Slider"></a>
+<a href="../../components/humanui/createTextBlock.html"><img class="ghicon" src="../../icons/HumanUI/Create_Text_Block.png" title="Create Text Block"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/humanui/createTextBox.html"><img class="ghicon" src="../../icons/HumanUI/Create_Text_Box.png" title="Create Text Box"></a>
+<a href="../../components/humanui/createToggle.html"><img class="ghicon" src="../../icons/HumanUI/Create_Toggle.png" title="Create Toggle"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/humanui/attachTooltipToElement.html"><img class="ghicon" src="../../icons/HumanUI/Attach_Tooltip_to_Element.png" title="Attach Tooltip to Element"></a>
+<a href="../../components/humanui/createTrueOnlyButton.html"><img class="ghicon" src="../../icons/HumanUI/Create_True-Only_Button.png" title="Create True-Only Button"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="15">
+UI Elements
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/humanui/createChart.html"><img class="ghicon" src="../../icons/HumanUI/Create_Chart.png" title="Create Chart"></a>
+<a href="../../components/humanui/createMultiChart.html"><img class="ghicon" src="../../icons/HumanUI/Create_Multi_Chart.png" title="Create Multi Chart"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/humanui/setChartContents.html"><img class="ghicon" src="../../icons/HumanUI/Set_Chart_Contents.png" title="Set Chart Contents"></a>
+<a href="../../components/humanui/chartAppearance.html"><img class="ghicon" src="../../icons/HumanUI/Chart_Appearance.png" title="Chart Appearance"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/humanui/setGraphContents.html"><img class="ghicon" src="../../icons/HumanUI/Set_Graph_Contents.png" title="Set Graph Contents"></a>
+<a href="../../components/humanui/setMultiChartContents.html"><img class="ghicon" src="../../icons/HumanUI/Set_Multi_Chart_Contents.png" title="Set Multi Chart Contents"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+UI Graphs + Charts
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/humanui/addElements.html"><img class="ghicon" src="../../icons/HumanUI/Add_Elements.png" title="Add Elements"></a>
+<a href="../../components/humanui/adjustElementAppearance.html"><img class="ghicon" src="../../icons/HumanUI/Adjust_Element_Appearance.png" title="Adjust Element Appearance"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/humanui/adjustElementPositioning.html"><img class="ghicon" src="../../icons/HumanUI/Adjust_Element_Positioning.png" title="Adjust Element Positioning"></a>
+<a href="../../components/humanui/captureWindowOrElementToFile.html"><img class="ghicon" src="../../icons/HumanUI/Capture_Window_or_Element_to_File.png" title="Capture Window or Element to File"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/humanui/captureWindowToFile.html"><img class="ghicon" src="../../icons/HumanUI/Capture_Window_to_File.png" title="Capture Window to File"></a>
+<a href="../../components/humanui/containerContents.html"><img class="ghicon" src="../../icons/HumanUI/Container_Contents.png" title="Container Contents"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/humanui/launchTransparentWindow.html"><img class="ghicon" src="../../icons/HumanUI/Launch_Transparent_Window.png" title="Launch Transparent Window"></a>
+<a href="../../components/humanui/filterUIElements.html"><img class="ghicon" src="../../icons/HumanUI/Filter_UI_Elements.png" title="Filter UI Elements"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/humanui/getElementProperties.html"><img class="ghicon" src="../../icons/HumanUI/Get_Element_Properties.png" title="Get Element Properties"></a>
+<a href="../../components/humanui/getScreenDimensions.html"><img class="ghicon" src="../../icons/HumanUI/Get_Screen_Dimensions.png" title="Get Screen Dimensions"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/humanui/hideShowElement.html"><img class="ghicon" src="../../icons/HumanUI/Hide_Show_Element.png" title="Hide/Show Element"></a>
+<a href="../../components/humanui/launchWindow.html"><img class="ghicon" src="../../icons/HumanUI/Launch_Window.png" title="Launch Window"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/humanui/makeChildWindow.html"><img class="ghicon" src="../../icons/HumanUI/Make_Child_Window.png" title="Make Child Window"></a>
+<a href="../../components/humanui/restoreElementStates.html"><img class="ghicon" src="../../icons/HumanUI/Restore_Element_States.png" title="Restore Element States"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/humanui/saveElementStates.html"><img class="ghicon" src="../../icons/HumanUI/Save_Element_States.png" title="Save Element States"></a>
+<a href="../../components/humanui/setElementProperty.html"><img class="ghicon" src="../../icons/HumanUI/Set_Element_Property.png" title="Set Element Property"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/humanui/setWindowProperties.html"><img class="ghicon" src="../../icons/HumanUI/Set_Window_Properties.png" title="Set Window Properties"></a>
+<a href="../../components/humanui/valueListener.html"><img class="ghicon" src="../../icons/HumanUI/Value_Listener.png" title="Value Listener"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/humanui/windowStatus.html"><img class="ghicon" src="../../icons/HumanUI/Window_Status.png" title="Window Status"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="10">
+UI Main
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/humanui/addElementsToShapes.html"><img class="ghicon" src="../../icons/HumanUI/Add_Elements_to_Shape(s).png" title="Add Elements to Shape(s)"></a>
+<a href="../../components/humanui/set3DView.html"><img class="ghicon" src="../../icons/HumanUI/Set_3D_View.png" title="Set 3D View"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/humanui/set3DViewProperties.html"><img class="ghicon" src="../../icons/HumanUI/Set_3D_View_Properties.png" title="Set 3D View Properties"></a>
+<a href="../../components/humanui/set3DViewTextured.html"><img class="ghicon" src="../../icons/HumanUI/Set_3D_View_Textured.png" title="Set 3D View Textured"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/humanui/setBrowser.html"><img class="ghicon" src="../../icons/HumanUI/Set_Browser.png" title="Set Browser"></a>
+<a href="../../components/humanui/setButton.html"><img class="ghicon" src="../../icons/HumanUI/Set_Button.png" title="Set Button"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/humanui/setCheckBox.html"><img class="ghicon" src="../../icons/HumanUI/Set_CheckBox.png" title="Set CheckBox"></a>
+<a href="../../components/humanui/setChecklistContents.html"><img class="ghicon" src="../../icons/HumanUI/Set_Checklist_Contents.png" title="Set Checklist Contents"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/humanui/setColorPicker.html"><img class="ghicon" src="../../icons/HumanUI/Set_Color_Picker.png" title="Set Color Picker"></a>
+<a href="../../components/humanui/setDataTable.html"><img class="ghicon" src="../../icons/HumanUI/Set_Data_Table.png" title="Set Data Table"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/humanui/setExpander.html"><img class="ghicon" src="../../icons/HumanUI/Set_Expander.png" title="Set Expander"></a>
+<a href="../../components/humanui/setImage.html"><img class="ghicon" src="../../icons/HumanUI/Set_Image.png" title="Set Image"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/humanui/setLabelContents.html"><img class="ghicon" src="../../icons/HumanUI/Set_Label_Contents.png" title="Set Label Contents"></a>
+<a href="../../components/humanui/setListContents.html"><img class="ghicon" src="../../icons/HumanUI/Set_List_Contents.png" title="Set List Contents"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/humanui/setMultidimensionalSlider.html"><img class="ghicon" src="../../icons/HumanUI/Set_Multidimensional_Slider.png" title="Set Multidimensional Slider"></a>
+<a href="../../components/humanui/setShape.html"><img class="ghicon" src="../../icons/HumanUI/Set_Shape.png" title="Set Shape"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/humanui/setShapes.html"><img class="ghicon" src="../../icons/HumanUI/Set_Shapes.png" title="Set Shapes"></a>
+<a href="../../components/humanui/setSlider.html"><img class="ghicon" src="../../icons/HumanUI/Set_Slider.png" title="Set Slider"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/humanui/setTabbedView.html"><img class="ghicon" src="../../icons/HumanUI/Set_Tabbed_View.png" title="Set Tabbed View"></a>
+<a href="../../components/humanui/setTextBlockContents.html"><img class="ghicon" src="../../icons/HumanUI/Set_TextBlock_Contents.png" title="Set TextBlock Contents"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/humanui/setTextBoxContents.html"><img class="ghicon" src="../../icons/HumanUI/Set_TextBox_Contents.png" title="Set TextBox Contents"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="11">
+UI Output
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/humanui/elemFromGuid.html"><img class="ghicon" src="../../icons/HumanUI/ElemFromGuid.png" title="ElemFromGuid"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+UI Testing
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+
+<div class="addon-buttons">
+<a href="https://www.food4rhino.com/app/human-ui">Download</a>
+</div>
+
+<div>
+<h1><img src="../../icons/HumanUI/Set_Graph_Contents.png"/> Set Graph Contents</h1>
+<p><a href="../../index.html#HumanUI">Component Index</a> &gt; <a href="../../addons/human-ui.html">Human UI</a> > UI Graphs + Charts > <b>SetGraph</b></p>
+</div>
+<h3>Use this to set the contents of a Graph</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Graph to modify</b></td><td>G</td><td>The Pie Graph object to modify</td><td>Generic Data</td></tr>
+<tr><td><b>New Pie Graph Values</b></td><td>V</td><td>The new values to graph in the pie graph</td><td>Number</td></tr>
+<tr><td><b>New Pie Graph Names</b></td><td>N</td><td>The names of the data items to be graphed</td><td>Text</td></tr>
+<tr><td><b>Title</b></td><td>T</td><td>The title of the graph</td><td>Text</td></tr>
+<tr><td><b>SubTitle</b></td><td>sT</td><td>The subtitle of the graph</td><td>Text</td></tr>
+</tbody>
+</table>
+
+
+  </div>
+
+</div>
+
+            </div>
+            <div id="xg_foot">
+                <p class="left">
+    © 2018-2020  <a href="https://github.com/robinrodricks/">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a> &nbsp;
+	Rhino & Grasshopper are trademarks of <a href="https://www.rhino3d.com/">Robert McNeel & Associates</a>.
+	</p>
+    <p class="right xg_lightfont">
+                    <a href="http://www.grasshopper3d.com/main/embeddable/list">Badges</a> &nbsp;|&nbsp;
+                        <a href="http://www.grasshopper3d.com/main/index/report" dojotype="PromptToJoinLink" _joinprompttext="Please sign up or sign in to complete this step." _hassignup="true" _signinurl="http://www.grasshopper3d.com/main/authorization/signIn?target=http%3A%2F%2Fwww.grasshopper3d.com%2Fmain%2Findex%2Freport">Report an Issue</a> &nbsp;|&nbsp;
+                        <a href="http://www.grasshopper3d.com/main/authorization/termsOfService?previousUrl=http%3A%2F%2Fwww.grasshopper3d.com%2Fpage%2Fcomponent-reference">Terms of Service</a>
+            </p>
+
+            </div>
+        </div>
+        
+        <div id="xj_baz17246" class="xg_theme"></div>
+<div id="xg_overlay" style="display:none;">
+<!--[if lte IE 6.5]><iframe></iframe><![endif]-->
+</div>
+<!--googleoff: all--><noscript>
+	<style type="text/css" media="screen">
+        #xg { position:relative;top:120px; }
+        #xn_bar { top:120px; }
+	</style>
+	<div class="errordesc noscript">
+		<div>
+            <h3><strong>Hello, you need to enable JavaScript to use Grasshopper.</strong></h3>
+            <p>Please check your browser settings or contact your system administrator.</p>
+			
+		</div>
+	</div>
+</noscript><!--googleon: all-->
+
+<script src="/js/jquery.js"></script>
+<script src="/js/kramed.min.js"></script>
+<script src="/js/component.js"></script>
+<script src="/js/user.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    </body>
+</html>

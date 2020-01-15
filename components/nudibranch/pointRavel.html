@@ -61,7 +61,6 @@
 	<li id="xg_tab_xn0" class="xg_subtab"><a href="http://www.grasshopper3d.com/page/download-1"><span>Download</span></a></li>
 	<li id="xg_tab_forum" class="xg_subtab"><a href="https://discourse.mcneel.com/c/grasshopper"><span>Forums&#47;Support</span></a></li>
 	<li id="xg_tab_xn2" class="xg_subtab this"><a href="http://rhino.github.io/"><span>Learn</span></a></li>
-	<li id="xg_tab_events" class="xg_subtab"><a href="https://www.grasshopper3d.com/page/tutorials-1"><span>Learn</span></a></li>
 	<li id="xg_tab_events" class="xg_subtab"><a href="http://www.grasshopper3d.com/events"><span>Attend</span></a></li>
 	<li id="xg_tab_profile" class="xg_subtab"><a href="http://www.grasshopper3d.com/profiles"><span>My Page</span></a></li></ul>
 
@@ -90,17 +89,12 @@
 <td>
 <div class="ghcolumn">
 <a href="../../components/nudibranch/satellite.html"><img class="ghicon" src="../../icons/Nudibranch/Satellite.png" title="Satellite"></a>
-<a href="../../components/nudibranch/slicer.html"><img class="ghicon" src="../../icons/Nudibranch/Slicer.png" title="Slicer"></a>
-</div>
-</td>
-<td>
-<div class="ghcolumn">
 <a href="../../components/nudibranch/walkers.html"><img class="ghicon" src="../../icons/Nudibranch/Walkers.png" title="Walkers"></a>
 </div>
 </td>
 </tr>
 <tr class="ghgroup-title-row">
-<td class="ghgroup-title" colspan="3">
+<td class="ghgroup-title" colspan="2">
 Animators
 </td>
 </tr>
@@ -132,7 +126,6 @@ Animators
 <td>
 <div class="ghcolumn">
 <a href="../../components/nudibranch/pointRavel.html"><img class="ghicon" src="../../icons/Nudibranch/PointRavel.png" title="PointRavel"></a>
-<a href="../../components/nudibranch/twirlAttractor.html"><img class="ghicon" src="../../icons/Nudibranch/TwirlAttractor.png" title="TwirlAttractor"></a>
 </div>
 </td>
 </tr>
@@ -157,37 +150,24 @@ Attractors
 <td>
 <div class="ghcolumn">
 <a href="../../components/nudibranch/curveHicking.html"><img class="ghicon" src="../../icons/Nudibranch/CurveHicking.png" title="CurveHicking"></a>
-<a href="../../components/nudibranch/pointHicking.html"><img class="ghicon" src="../../icons/Nudibranch/PointHicking.png" title="PointHicking"></a>
+<a href="../../components/nudibranch/downHill.html"><img class="ghicon" src="../../icons/Nudibranch/DownHill.png" title="DownHill"></a>
 </div>
 </td>
 <td>
 <div class="ghcolumn">
+<a href="../../components/nudibranch/pointHicking.html"><img class="ghicon" src="../../icons/Nudibranch/PointHicking.png" title="PointHicking"></a>
 <a href="../../components/nudibranch/pointPatrolling.html"><img class="ghicon" src="../../icons/Nudibranch/PointPatrolling.png" title="PointPatrolling"></a>
 </div>
 </td>
-</tr>
-<tr class="ghgroup-title-row">
-<td class="ghgroup-title" colspan="3">
-Scramblers
-</td>
-</tr>
-</table>
-</div>
-</td>
-<td>
-<div class="ghgroup">
-<table class="ghgroup-table">
-<tr>
 <td>
 <div class="ghcolumn">
-<a href="../../components/nudibranch/box3dGrid.html"><img class="ghicon" src="../../icons/Nudibranch/Box3dGrid.png" title="Box3dGrid"></a>
-<a href="../../components/nudibranch/frameGrid.html"><img class="ghicon" src="../../icons/Nudibranch/FrameGrid.png" title="FrameGrid"></a>
+<a href="../../components/nudibranch/upHill.html"><img class="ghicon" src="../../icons/Nudibranch/UpHill.png" title="UpHill"></a>
 </div>
 </td>
 </tr>
 <tr class="ghgroup-title-row">
-<td class="ghgroup-title" colspan="1">
-Utilities
+<td class="ghgroup-title" colspan="4">
+Scramblers
 </td>
 </tr>
 </table>
@@ -204,7 +184,7 @@ Utilities
 
 <div>
 <h1><img src="../../icons/Nudibranch/PointRavel.png"/> PointRavel</h1>
-<p><a href="../../index.html#Nudibranch">Component Index</a> &gt; <a href="../../addons/nudibranch.html">Nudibranch</a> > Attractors > <b>PointRavel</b></p>
+<p><a href="../../index.html#Nudibranch">Component Index</a> &gt; <a href="../../addons/nudibranch.html">Nudibranch</a> > Attractors > <b>PtRavel</b></p>
 </div>
 <h3>Generates distance raveled numerical values for any given pointlist, being affected by any number of point attractors.</h3>
 <h2>Inputs</h2>
@@ -218,7 +198,7 @@ Utilities
 <tr><td><b>Range</b></td><td>R</td><td>Attractor's unique range (Leave one single value for global)</td><td>Number</td></tr>
 <tr><td><b>Asc/Desc</b></td><td>As</td><td>Toggle between Ascending/Descending values</td><td>Boolean</td></tr>
 <tr><td><b>Min/Max</b></td><td>Mi</td><td>Toggle culling between Minimum/Maximum values</td><td>Boolean</td></tr>
-<tr><td><b>Seed</b></td><td>S</td><td>Seed number to choose between different random cases</td><td>Integer</td></tr>
+<tr><td><b>Seed</b></td><td>S</td><td>Seed number to choose between different random cases </td><td>Integer</td></tr>
 <tr><td><b>Force</b></td><td>F</td><td>Global force for all the attractors</td><td>Number</td></tr>
 </tbody>
 </table>
@@ -241,8 +221,9 @@ Utilities
             </div>
             <div id="xg_foot">
                 <p class="left">
-    © 2018-2020             &nbsp; Created by <a href="https://github.com/robinrodricks/">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
-    Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a>
+    © 2018-2020  <a href="https://github.com/robinrodricks/">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a> &nbsp;
+	Rhino & Grasshopper are trademarks of <a href="https://www.rhino3d.com/">Robert McNeel & Associates</a>.
 	</p>
     <p class="right xg_lightfont">
                     <a href="http://www.grasshopper3d.com/main/embeddable/list">Badges</a> &nbsp;|&nbsp;

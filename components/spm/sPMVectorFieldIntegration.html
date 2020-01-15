@@ -61,7 +61,6 @@
 	<li id="xg_tab_xn0" class="xg_subtab"><a href="http://www.grasshopper3d.com/page/download-1"><span>Download</span></a></li>
 	<li id="xg_tab_forum" class="xg_subtab"><a href="https://discourse.mcneel.com/c/grasshopper"><span>Forums&#47;Support</span></a></li>
 	<li id="xg_tab_xn2" class="xg_subtab this"><a href="http://rhino.github.io/"><span>Learn</span></a></li>
-	<li id="xg_tab_events" class="xg_subtab"><a href="https://www.grasshopper3d.com/page/tutorials-1"><span>Learn</span></a></li>
 	<li id="xg_tab_events" class="xg_subtab"><a href="http://www.grasshopper3d.com/events"><span>Attend</span></a></li>
 	<li id="xg_tab_profile" class="xg_subtab"><a href="http://www.grasshopper3d.com/profiles"><span>My Page</span></a></li></ul>
 
@@ -199,7 +198,7 @@ Utilities
 
 <div>
 <h1><img src="../../icons/SPM/SPM_Vector_Field_Integration.png"/> SPM Vector Field Integration</h1>
-<p><a href="../../index.html#SPM">Component Index</a> &gt; <a href="../../addons/spm.html">SPM</a> > Integration > <b>SPM Vector Field Integration</b></p>
+<p><a href="../../index.html#SPM">Component Index</a> &gt; <a href="../../addons/spm.html">SPM</a> > Integration > <b>SPM Integration</b></p>
 </div>
 <h3>Statically or dynamically integrates points travelling through a vector field</h3>
 <h2>Inputs</h2>
@@ -209,11 +208,11 @@ Utilities
 </thead>
 <tbody>
 <tr><td><b>Field Points</b></td><td>P</td><td>List of points in the vector field (parallel to VT)</td><td>Point</td></tr>
-<tr><td><b>Field Vectors/Tensors</b></td><td>VT</td><td>List of vectors or tensors in the vector field (parallel to P)</td><td>Goo</td></tr>
+<tr><td><b>Field Vectors/Tensors</b></td><td>VT</td><td>List of vectors or tensors in the vector field (parallel to P)</td><td>Generic Data</td></tr>
 <tr><td><b>Start Points</b></td><td>SP</td><td>Points to simulate travelling through the vector field</td><td>Point</td></tr>
 <tr><td><b>Particle Life Time</b></td><td>LT</td><td>Number of iterations for each particle to exist, by default these are respawned at their original start points when this time is up</td><td>Integer</td></tr>
-<tr><td><b>Dynamics</b></td><td>D</td><td>List of dynamics to modify the vector field with</td><td>Goo</td></tr>
-<tr><td><b>Settings</b></td><td>S</td><td>List of settings objects to customize integration parameters</td><td>Goo</td></tr>
+<tr><td><b>Dynamics</b></td><td>D</td><td>List of dynamics to modify the vector field with</td><td>Generic Data</td></tr>
+<tr><td><b>Settings</b></td><td>S</td><td>List of settings objects to customize integration parameters</td><td>Generic Data</td></tr>
 <tr><td><b>Dynamic Simulation</b></td><td>DI</td><td>Dynamically simulate the integration, one step at a time. If true, each run will integrate a series of particles for lifetime of LT. If false then the integration will run once and return all points at once. In this case LT is the number of steps to integrate.</td><td>Boolean</td></tr>
 <tr><td><b>Reset Simulation</b></td><td>RS</td><td>Reset the simulation to the starting point. This is only used when in dynamic integration mode (DI is true)</td><td>Boolean</td></tr>
 </tbody>
@@ -238,8 +237,9 @@ Utilities
             </div>
             <div id="xg_foot">
                 <p class="left">
-    © 2018-2020             &nbsp; Created by <a href="https://github.com/robinrodricks/">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
-    Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a>
+    © 2018-2020  <a href="https://github.com/robinrodricks/">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a> &nbsp;
+	Rhino & Grasshopper are trademarks of <a href="https://www.rhino3d.com/">Robert McNeel & Associates</a>.
 	</p>
     <p class="right xg_lightfont">
                     <a href="http://www.grasshopper3d.com/main/embeddable/list">Badges</a> &nbsp;|&nbsp;

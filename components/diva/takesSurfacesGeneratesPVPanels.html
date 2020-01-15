@@ -1,0 +1,453 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+<head data-layout-view="wide">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Takes surfaces, generates PV panels - Grasshopper Component Reference</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+
+<meta name="description" content="A guide to component Takes surfaces, generates PV panels in Grasshopper 3D." />
+<meta name="title" content="Grasshopper Component Reference" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://rhino.github.io/" />
+<meta property="og:title" content="Takes surfaces, generates PV panels - Grasshopper Component Reference" />
+
+<meta property="wiki-page" content="GH DIVA Takes_surfaces,_generates_PV_panels.md" />
+
+<link rel="image_src" href="http://rhino.github.io/ning/2985220.jpg" />
+
+<style type="text/css" media="screen,projection">
+#xg_navigation ul div.xg_subtab ul li a {
+    color:#666666;
+    background:#EAFFBD;
+}
+#xg_navigation ul div.xg_subtab ul li a:hover {
+    color:#333333;
+    background:#F2FFD6;
+}
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../../ning/index.css);
+@import url(../../ning/page.css);
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../../ning/1187549422.css);
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../../ning/1187545030.css);
+</style>
+
+
+<link href="../../style.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+    </head>
+    <body>
+    
+        
+        <div id="xg" class="xg_theme xg_widget_page xg_widget_page_page xg_widget_page_page_show" data-layout-pack="classic">
+            <div id="xg_head">
+                <div id="xg_masthead">
+                    <p id="xg_sitename"><a id="application_name_header_link" href="http://rhino.github.io/">Grasshopper</a></p>
+                    <p id="xg_sitedesc" class="xj_site_desc">algorithmic modeling for Rhino</p>
+                </div>
+                <div id="xg_navigation">
+                    <ul>
+    <li id="xg_tab_main" class="xg_subtab"><a href="http://www.grasshopper3d.com/"><span>Home</span></a></li>
+	<li id="xg_tab_photo" class="xg_subtab"><a href="http://www.grasshopper3d.com/photo"><span>View</span></a></li>
+	<li id="xg_tab_xn0" class="xg_subtab"><a href="http://www.grasshopper3d.com/page/download-1"><span>Download</span></a></li>
+	<li id="xg_tab_forum" class="xg_subtab"><a href="https://discourse.mcneel.com/c/grasshopper"><span>Forums&#47;Support</span></a></li>
+	<li id="xg_tab_xn2" class="xg_subtab this"><a href="http://rhino.github.io/"><span>Learn</span></a></li>
+	<li id="xg_tab_events" class="xg_subtab"><a href="http://www.grasshopper3d.com/events"><span>Attend</span></a></li>
+	<li id="xg_tab_profile" class="xg_subtab"><a href="http://www.grasshopper3d.com/profiles"><span>My Page</span></a></li></ul>
+
+                </div>
+            </div>
+            
+            <div id="xg_body">
+                
+				<div class="page">
+
+<div class="content">
+
+<div class="ghbar">
+<table class="ghbar-table">
+<tr>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/diva/batchRunner.html"><img class="ghicon" src="../../icons/DIVA/BatchRunner.png" title="BatchRunner"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+.Simulation
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/diva/integrateIndicators.html"><img class="ghicon" src="../../icons/DIVA/IntegrateIndicators.png" title="IntegrateIndicators"></a>
+<a href="../../components/diva/loadResultFile.html"><img class="ghicon" src="../../icons/DIVA/Load_result_file.png" title="Load result file"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/diva/loadZoneResults.html"><img class="ghicon" src="../../icons/DIVA/Load_Zone_Results.png" title="Load Zone Results"></a>
+<a href="../../components/diva/surfaceAnalysis.html"><img class="ghicon" src="../../icons/DIVA/SurfaceAnalysis.png" title="SurfaceAnalysis"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/diva/uTCI.html"><img class="ghicon" src="../../icons/DIVA/UTCI.png" title="UTCI"></a>
+<a href="../../components/diva/weather.html"><img class="ghicon" src="../../icons/DIVA/Weather.png" title="Weather"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/diva/xYPlot.html"><img class="ghicon" src="../../icons/DIVA/XYPlot.png" title="XYPlot"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="4">
+Analysis
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/diva/imageViewer.html"><img class="ghicon" src="../../icons/DIVA/Image_Viewer.png" title="Image Viewer"></a>
+<a href="../../components/diva/hourOfYear.html"><img class="ghicon" src="../../icons/DIVA/Hour_Of_Year.png" title="Hour Of Year"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+Data
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/diva/daylightModel.html"><img class="ghicon" src="../../icons/DIVA/Daylight_Model.png" title="Daylight Model"></a>
+<a href="../../components/diva/floorCutter.html"><img class="ghicon" src="../../icons/DIVA/Floor_cutter.png" title="Floor cutter"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/diva/geometryFilter.html"><img class="ghicon" src="../../icons/DIVA/GeometryFilter.png" title="GeometryFilter"></a>
+<a href="../../components/diva/aSGetObjNameLayer.html"><img class="ghicon" src="../../icons/DIVA/AS_GetObjNameLayer.png" title="AS_GetObjNameLayer"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/diva/fromRhinoDoc.html"><img class="ghicon" src="../../icons/DIVA/FromRhinoDoc.png" title="FromRhinoDoc"></a>
+<a href="../../components/diva/intersector.html"><img class="ghicon" src="../../icons/DIVA/Intersector.png" title="Intersector"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+Geometry
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/diva/applyIndicators.html"><img class="ghicon" src="../../icons/DIVA/Apply_indicators.png" title="Apply indicators"></a>
+<a href="../../components/diva/construction.html"><img class="ghicon" src="../../icons/DIVA/Construction.png" title="Construction"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/diva/gasMaterial.html"><img class="ghicon" src="../../icons/DIVA/Gas_material.png" title="Gas material"></a>
+<a href="../../components/diva/glazingMaterial.html"><img class="ghicon" src="../../icons/DIVA/Glazing_Material.png" title="Glazing Material"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/diva/layer.html"><img class="ghicon" src="../../icons/DIVA/Layer.png" title="Layer"></a>
+<a href="../../components/diva/library.html"><img class="ghicon" src="../../icons/DIVA/Library.png" title="Library"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/diva/opaqueMaterial.html"><img class="ghicon" src="../../icons/DIVA/Opaque_Material.png" title="Opaque Material"></a>
+<a href="../../components/diva/simpleWindow.html"><img class="ghicon" src="../../icons/DIVA/Simple_Window.png" title="Simple Window"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/diva/thermalBridge.html"><img class="ghicon" src="../../icons/DIVA/Thermal_Bridge.png" title="Thermal Bridge"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="5">
+Materials
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/diva/takesSurfacesGeneratesPVPanels.html"><img class="ghicon" src="../../icons/DIVA/Takes_surfaces,_generates_PV_panels.png" title="Takes surfaces, generates PV panels"></a>
+<a href="../../components/diva/runsAPVSimulation.html"><img class="ghicon" src="../../icons/DIVA/Runs_a_PV_simulation.png" title="Runs a PV simulation"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+PV
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/diva/arraySchedule.html"><img class="ghicon" src="../../icons/DIVA/Array_Schedule.png" title="Array Schedule"></a>
+<a href="../../components/diva/daySchedule.html"><img class="ghicon" src="../../icons/DIVA/Day_Schedule.png" title="Day Schedule"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/diva/weekSchedule.html"><img class="ghicon" src="../../icons/DIVA/Week_Schedule.png" title="Week Schedule"></a>
+<a href="../../components/diva/yearSchedule.html"><img class="ghicon" src="../../icons/DIVA/Year_Schedule.png" title="Year Schedule"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="2">
+Schedules
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/diva/zoneDomesticHotWater.html"><img class="ghicon" src="../../icons/DIVA/Zone_domestic_hot_water.png" title="Zone domestic hot water"></a>
+<a href="../../components/diva/floorSettings.html"><img class="ghicon" src="../../icons/DIVA/Floor_settings.png" title="Floor settings"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/diva/windowSettings.html"><img class="ghicon" src="../../icons/DIVA/Window_settings.png" title="Window settings"></a>
+<a href="../../components/diva/zoneConditioning.html"><img class="ghicon" src="../../icons/DIVA/Zone_conditioning.png" title="Zone conditioning"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/diva/zoneConstructions.html"><img class="ghicon" src="../../icons/DIVA/Zone_constructions.png" title="Zone constructions"></a>
+<a href="../../components/diva/zoneLoads.html"><img class="ghicon" src="../../icons/DIVA/Zone_loads.png" title="Zone loads"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/diva/zoneSettings.html"><img class="ghicon" src="../../icons/DIVA/Zone_settings.png" title="Zone settings"></a>
+<a href="../../components/diva/zoneVentilation.html"><img class="ghicon" src="../../icons/DIVA/Zone_ventilation.png" title="Zone ventilation"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="4">
+Settings
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/diva/solarEnvelope.html"><img class="ghicon" src="../../icons/DIVA/Solar_Envelope.png" title="Solar Envelope"></a>
+<a href="../../components/diva/solarFan.html"><img class="ghicon" src="../../icons/DIVA/Solar_Fan.png" title="Solar Fan"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+Sun
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/diva/boundaryConditionObject.html"><img class="ghicon" src="../../icons/DIVA/Boundary_condition_object.png" title="Boundary condition object"></a>
+<a href="../../components/diva/building.html"><img class="ghicon" src="../../icons/DIVA/Building.png" title="Building"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/diva/face.html"><img class="ghicon" src="../../icons/DIVA/Face.png" title="Face"></a>
+<a href="../../components/diva/zoneConnectivityNetwork.html"><img class="ghicon" src="../../icons/DIVA/Zone_Connectivity_Network.png" title="Zone Connectivity Network"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/diva/simulationEngine.html"><img class="ghicon" src="../../icons/DIVA/Simulation_Engine.png" title="Simulation Engine"></a>
+<a href="../../components/diva/shadingSurface.html"><img class="ghicon" src="../../icons/DIVA/Shading_Surface.png" title="Shading Surface"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/diva/window.html"><img class="ghicon" src="../../icons/DIVA/Window.png" title="Window"></a>
+<a href="../../components/diva/thermalZone.html"><img class="ghicon" src="../../icons/DIVA/Thermal_Zone.png" title="Thermal Zone"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="4">
+Thermal Model
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+
+<div class="addon-buttons">
+<a href="http://www.solemma.net/">Download</a>
+</div>
+
+<div>
+<h1><img src="../../icons/DIVA/Takes_surfaces,_generates_PV_panels.png"/> Takes surfaces, generates PV panels</h1>
+<p><a href="../../index.html#DIVA">Component Index</a> &gt; <a href="../../addons/diva.html">DIVA</a> > PV > <b>PV</b></p>
+</div>
+<h3>Takes surfaces, generates PV simulation IDF</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Brep Surfaces</b></td><td>Surf</td><td>Collection of Brep Surfaces (Surface normal indicates panel front)</td><td>Brep</td></tr>
+<tr><td><b>Efficiency (fraction)</b></td><td>Eff</td><td>PV module efficiency (fraction)</td><td>Number</td></tr>
+<tr><td><b>Effective area (fraction)</b></td><td>Area</td><td>Area covered with PV cells (fraction)</td><td>Number</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>List of PV panels</b></td><td>Panel</td><td>List of PV panels</td><td>Generic Data</td></tr>
+</tbody>
+</table>
+
+
+  </div>
+
+</div>
+
+            </div>
+            <div id="xg_foot">
+                <p class="left">
+    © 2018-2020  <a href="https://github.com/robinrodricks/">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a> &nbsp;
+	Rhino & Grasshopper are trademarks of <a href="https://www.rhino3d.com/">Robert McNeel & Associates</a>.
+	</p>
+    <p class="right xg_lightfont">
+                    <a href="http://www.grasshopper3d.com/main/embeddable/list">Badges</a> &nbsp;|&nbsp;
+                        <a href="http://www.grasshopper3d.com/main/index/report" dojotype="PromptToJoinLink" _joinprompttext="Please sign up or sign in to complete this step." _hassignup="true" _signinurl="http://www.grasshopper3d.com/main/authorization/signIn?target=http%3A%2F%2Fwww.grasshopper3d.com%2Fmain%2Findex%2Freport">Report an Issue</a> &nbsp;|&nbsp;
+                        <a href="http://www.grasshopper3d.com/main/authorization/termsOfService?previousUrl=http%3A%2F%2Fwww.grasshopper3d.com%2Fpage%2Fcomponent-reference">Terms of Service</a>
+            </p>
+
+            </div>
+        </div>
+        
+        <div id="xj_baz17246" class="xg_theme"></div>
+<div id="xg_overlay" style="display:none;">
+<!--[if lte IE 6.5]><iframe></iframe><![endif]-->
+</div>
+<!--googleoff: all--><noscript>
+	<style type="text/css" media="screen">
+        #xg { position:relative;top:120px; }
+        #xn_bar { top:120px; }
+	</style>
+	<div class="errordesc noscript">
+		<div>
+            <h3><strong>Hello, you need to enable JavaScript to use Grasshopper.</strong></h3>
+            <p>Please check your browser settings or contact your system administrator.</p>
+			
+		</div>
+	</div>
+</noscript><!--googleon: all-->
+
+<script src="/js/jquery.js"></script>
+<script src="/js/kramed.min.js"></script>
+<script src="/js/component.js"></script>
+<script src="/js/user.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    </body>
+</html>

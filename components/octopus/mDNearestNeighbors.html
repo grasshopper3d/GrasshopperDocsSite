@@ -1,0 +1,400 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+<head data-layout-view="wide">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>MD NearestNeighbors - Grasshopper Component Reference</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+
+<meta name="description" content="A guide to component MD NearestNeighbors in Grasshopper 3D." />
+<meta name="title" content="Grasshopper Component Reference" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://rhino.github.io/" />
+<meta property="og:title" content="MD NearestNeighbors - Grasshopper Component Reference" />
+
+<meta property="wiki-page" content="GH Octopus MD_NearestNeighbors.md" />
+
+<link rel="image_src" href="http://rhino.github.io/ning/2985220.jpg" />
+
+<style type="text/css" media="screen,projection">
+#xg_navigation ul div.xg_subtab ul li a {
+    color:#666666;
+    background:#EAFFBD;
+}
+#xg_navigation ul div.xg_subtab ul li a:hover {
+    color:#333333;
+    background:#F2FFD6;
+}
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../../ning/index.css);
+@import url(../../ning/page.css);
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../../ning/1187549422.css);
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../../ning/1187545030.css);
+</style>
+
+
+<link href="../../style.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+    </head>
+    <body>
+    
+        
+        <div id="xg" class="xg_theme xg_widget_page xg_widget_page_page xg_widget_page_page_show" data-layout-pack="classic">
+            <div id="xg_head">
+                <div id="xg_masthead">
+                    <p id="xg_sitename"><a id="application_name_header_link" href="http://rhino.github.io/">Grasshopper</a></p>
+                    <p id="xg_sitedesc" class="xj_site_desc">algorithmic modeling for Rhino</p>
+                </div>
+                <div id="xg_navigation">
+                    <ul>
+    <li id="xg_tab_main" class="xg_subtab"><a href="http://www.grasshopper3d.com/"><span>Home</span></a></li>
+	<li id="xg_tab_photo" class="xg_subtab"><a href="http://www.grasshopper3d.com/photo"><span>View</span></a></li>
+	<li id="xg_tab_xn0" class="xg_subtab"><a href="http://www.grasshopper3d.com/page/download-1"><span>Download</span></a></li>
+	<li id="xg_tab_forum" class="xg_subtab"><a href="https://discourse.mcneel.com/c/grasshopper"><span>Forums&#47;Support</span></a></li>
+	<li id="xg_tab_xn2" class="xg_subtab this"><a href="http://rhino.github.io/"><span>Learn</span></a></li>
+	<li id="xg_tab_events" class="xg_subtab"><a href="http://www.grasshopper3d.com/events"><span>Attend</span></a></li>
+	<li id="xg_tab_profile" class="xg_subtab"><a href="http://www.grasshopper3d.com/profiles"><span>My Page</span></a></li></ul>
+
+                </div>
+            </div>
+            
+            <div id="xg_body">
+                
+				<div class="page">
+
+<div class="content">
+
+<div class="ghbar">
+<table class="ghbar-table">
+<tr>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/octopus/breederSettingsAlloEL.html"><img class="ghicon" src="../../icons/Octopus/Breeder_Settings_-_All_(oEL).png" title="Breeder Settings - All (oEL)"></a>
+<a href="../../components/octopus/breederSettingsBasicsoEL.html"><img class="ghicon" src="../../icons/Octopus/Breeder_Settings_-_Basics_(oEL).png" title="Breeder Settings - Basics (oEL)"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/octopus/crossoveroEL.html"><img class="ghicon" src="../../icons/Octopus/Crossover_(oEL).png" title="Crossover (oEL)"></a>
+<a href="../../components/octopus/deconstructNetworkoEL.html"><img class="ghicon" src="../../icons/Octopus/Deconstruct_Network_(oEL).png" title="Deconstruct Network (oEL)"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/octopus/deconstructNetworkObjoEL.html"><img class="ghicon" src="../../icons/Octopus/Deconstruct_Network_Obj_(oEL).png" title="Deconstruct Network Obj (oEL)"></a>
+<a href="../../components/octopus/evaluateNetworkoEL.html"><img class="ghicon" src="../../icons/Octopus/Evaluate_Network_(oEL).png" title="Evaluate Network (oEL)"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/octopus/fieldCurveoEL.html"><img class="ghicon" src="../../icons/Octopus/Field_Curve_(oEL).png" title="Field Curve (oEL)"></a>
+<a href="../../components/octopus/fieldCurveMToEL.html"><img class="ghicon" src="../../icons/Octopus/Field_Curve_MT_(oEL).png" title="Field Curve MT (oEL)"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/octopus/modifyWeightsoEL.html"><img class="ghicon" src="../../icons/Octopus/Modify_Weights_(oEL).png" title="Modify Weights (oEL)"></a>
+<a href="../../components/octopus/mutateWeightsoEL.html"><img class="ghicon" src="../../icons/Octopus/Mutate_Weights_(oEL).png" title="Mutate Weights (oEL)"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/octopus/breederoEL.html"><img class="ghicon" src="../../icons/Octopus/Breeder_(oEL).png" title="Breeder (oEL)"></a>
+<a href="../../components/octopus/randomNetworkoEL.html"><img class="ghicon" src="../../icons/Octopus/Random_Network_(oEL).png" title="Random Network (oEL)"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/octopus/showNetworkoEL.html"><img class="ghicon" src="../../icons/Octopus/Show_Network_(oEL).png" title="Show Network (oEL)"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="7">
+Evolutionary Learning
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/octopus/checkParetoDominance.html"><img class="ghicon" src="../../icons/Octopus/Check_Pareto_Dominance.png" title="Check Pareto Dominance"></a>
+<a href="../../components/octopus/computeDiversity.html"><img class="ghicon" src="../../icons/Octopus/Compute_Diversity.png" title="Compute Diversity"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/octopus/constructSolution.html"><img class="ghicon" src="../../icons/Octopus/Construct_Solution.png" title="Construct Solution"></a>
+<a href="../../components/octopus/cullDuplicateSolutions.html"><img class="ghicon" src="../../icons/Octopus/Cull_Duplicate_Solutions.png" title="Cull Duplicate Solutions"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/octopus/deconstructSolution.html"><img class="ghicon" src="../../icons/Octopus/Deconstruct_Solution.png" title="Deconstruct Solution"></a>
+<a href="../../components/octopus/cullElite.html"><img class="ghicon" src="../../icons/Octopus/Cull_Elite.png" title="Cull Elite"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/octopus/cullParetoFronts.html"><img class="ghicon" src="../../icons/Octopus/Cull_Pareto_Fronts.png" title="Cull Pareto Fronts"></a>
+<a href="../../components/octopus/hypervolumeContributions.html"><img class="ghicon" src="../../icons/Octopus/Hypervolume_Contributions.png" title="Hypervolume Contributions"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/octopus/hypervolume.html"><img class="ghicon" src="../../icons/Octopus/Hypervolume.png" title="Hypervolume"></a>
+<a href="../../components/octopus/mutate.html"><img class="ghicon" src="../../icons/Octopus/Mutate.png" title="Mutate"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/octopus/crossover.html"><img class="ghicon" src="../../icons/Octopus/Crossover.png" title="Crossover"></a>
+<a href="../../components/octopus/tournamentSelection.html"><img class="ghicon" src="../../icons/Octopus/Tournament_Selection.png" title="Tournament Selection"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="6">
+Explicit Components
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/octopus/octopusLoop.html"><img class="ghicon" src="../../icons/Octopus/Octopus_Loop.png" title="Octopus Loop"></a>
+<a href="../../components/octopus/octopusEvaluator.html"><img class="ghicon" src="../../icons/Octopus/Octopus_Evaluator.png" title="Octopus Evaluator"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/octopus/octopusGenericEvaluator.html"><img class="ghicon" src="../../icons/Octopus/Octopus_Generic_Evaluator.png" title="Octopus Generic Evaluator"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="2">
+Loop
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/octopus/octopus.html"><img class="ghicon" src="../../icons/Octopus/Octopus.png" title="Octopus"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+Octopus
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/octopus/networkTrainingSettingsoSL.html"><img class="ghicon" src="../../icons/Octopus/Network_Training_Settings_(oSL).png" title="Network Training Settings (oSL)"></a>
+<a href="../../components/octopus/networkEvaluateoSL.html"><img class="ghicon" src="../../icons/Octopus/Network_Evaluate_(oSL).png" title="Network Evaluate (oSL)"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/octopus/networkLearningoSL.html"><img class="ghicon" src="../../icons/Octopus/Network_Learning_(oSL).png" title="Network Learning (oSL)"></a>
+<a href="../../components/octopus/sVMEvaluateoSL.html"><img class="ghicon" src="../../icons/Octopus/SVM_Evaluate_(oSL).png" title="SVM Evaluate (oSL)"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/octopus/sVMLearningoSL.html"><img class="ghicon" src="../../icons/Octopus/SVM_Learning_(oSL).png" title="SVM Learning (oSL)"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+Supervised Learning
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/octopus/controllerComponent.html"><img class="ghicon" src="../../icons/Octopus/ControllerComponent.png" title="ControllerComponent"></a>
+<a href="../../components/octopus/if.html"><img class="ghicon" src="../../icons/Octopus/If.png" title="If"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+Test
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/octopus/mDNearestNeighbors.html"><img class="ghicon" src="../../icons/Octopus/MD_NearestNeighbors.png" title="MD NearestNeighbors"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+Utilities
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/octopus/selectSolutions.html"><img class="ghicon" src="../../icons/Octopus/Select_Solutions.png" title="Select Solutions"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+View
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+
+<div class="addon-buttons">
+<a href="https://www.food4rhino.com/app/octopus">Download</a>
+</div>
+
+<div>
+<h1><img src="../../icons/Octopus/MD_NearestNeighbors.png"/> MD NearestNeighbors</h1>
+<p><a href="../../index.html#Octopus">Component Index</a> &gt; <a href="../../addons/octopus.html">Octopus</a> > Utilities > <b>MD NearN</b></p>
+</div>
+<h3>Neighbourhood search of multi-dimensional points (euclidean kd-tree)</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>S</b></td><td>Set</td><td>Set to search from; each branch is a point, where the list items are the coordinates</td><td>Number</td></tr>
+<tr><td><b>C</b></td><td>Cloud</td><td>Cloud to search in; each branch is a point, where the list items are the coordinates</td><td>Number</td></tr>
+<tr><td><b>N</b></td><td>NN</td><td>Number of nearest neighbours to find</td><td>Integer</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Connectivity</b></td><td>C</td><td>Output Connectivity by indices</td><td>Integer</td></tr>
+</tbody>
+</table>
+
+
+  </div>
+
+</div>
+
+            </div>
+            <div id="xg_foot">
+                <p class="left">
+    © 2018-2020  <a href="https://github.com/robinrodricks/">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a> &nbsp;
+	Rhino & Grasshopper are trademarks of <a href="https://www.rhino3d.com/">Robert McNeel & Associates</a>.
+	</p>
+    <p class="right xg_lightfont">
+                    <a href="http://www.grasshopper3d.com/main/embeddable/list">Badges</a> &nbsp;|&nbsp;
+                        <a href="http://www.grasshopper3d.com/main/index/report" dojotype="PromptToJoinLink" _joinprompttext="Please sign up or sign in to complete this step." _hassignup="true" _signinurl="http://www.grasshopper3d.com/main/authorization/signIn?target=http%3A%2F%2Fwww.grasshopper3d.com%2Fmain%2Findex%2Freport">Report an Issue</a> &nbsp;|&nbsp;
+                        <a href="http://www.grasshopper3d.com/main/authorization/termsOfService?previousUrl=http%3A%2F%2Fwww.grasshopper3d.com%2Fpage%2Fcomponent-reference">Terms of Service</a>
+            </p>
+
+            </div>
+        </div>
+        
+        <div id="xj_baz17246" class="xg_theme"></div>
+<div id="xg_overlay" style="display:none;">
+<!--[if lte IE 6.5]><iframe></iframe><![endif]-->
+</div>
+<!--googleoff: all--><noscript>
+	<style type="text/css" media="screen">
+        #xg { position:relative;top:120px; }
+        #xn_bar { top:120px; }
+	</style>
+	<div class="errordesc noscript">
+		<div>
+            <h3><strong>Hello, you need to enable JavaScript to use Grasshopper.</strong></h3>
+            <p>Please check your browser settings or contact your system administrator.</p>
+			
+		</div>
+	</div>
+</noscript><!--googleon: all-->
+
+<script src="/js/jquery.js"></script>
+<script src="/js/kramed.min.js"></script>
+<script src="/js/component.js"></script>
+<script src="/js/user.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    </body>
+</html>

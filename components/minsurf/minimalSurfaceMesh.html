@@ -61,7 +61,6 @@
 	<li id="xg_tab_xn0" class="xg_subtab"><a href="http://www.grasshopper3d.com/page/download-1"><span>Download</span></a></li>
 	<li id="xg_tab_forum" class="xg_subtab"><a href="https://discourse.mcneel.com/c/grasshopper"><span>Forums&#47;Support</span></a></li>
 	<li id="xg_tab_xn2" class="xg_subtab this"><a href="http://rhino.github.io/"><span>Learn</span></a></li>
-	<li id="xg_tab_events" class="xg_subtab"><a href="https://www.grasshopper3d.com/page/tutorials-1"><span>Learn</span></a></li>
 	<li id="xg_tab_events" class="xg_subtab"><a href="http://www.grasshopper3d.com/events"><span>Attend</span></a></li>
 	<li id="xg_tab_profile" class="xg_subtab"><a href="http://www.grasshopper3d.com/profiles"><span>My Page</span></a></li></ul>
 
@@ -112,7 +111,7 @@ MinSurf
 
 <div>
 <h1><img src="../../icons/MinSurf/Minimal_Surface_Mesh.png"/> Minimal Surface Mesh</h1>
-<p><a href="../../index.html#MinSurf">Component Index</a> &gt; <a href="../../addons/minsurf.html">MinSurf</a> > MinSurf > <b>Minimal Surface Mesh</b></p>
+<p><a href="../../index.html#MinSurf">Component Index</a> &gt; <a href="../../addons/minsurf.html">MinSurf</a> > MinSurf > <b>MinSurf 2C Mesh</b></p>
 </div>
 <h3>Construct a minimal surface based on 2 boundry curves as mesh</h3>
 <h2>Inputs</h2>
@@ -123,6 +122,13 @@ MinSurf
 <tbody>
 <tr><td><b>C0 Curve</b></td><td>C0</td><td>The First Curve</td><td>Curve</td></tr>
 <tr><td><b>C1 Curve</b></td><td>C1</td><td>The Second Curve</td><td>Curve</td></tr>
+<tr><td><b>U Count</b></td><td>U</td><td>Sample Density for U points. The higher the value the the more precise</td><td>Integer</td></tr>
+<tr><td><b>V Count</b></td><td>V</td><td>Sample Density for V points. The higher the value the the more precise</td><td>Integer</td></tr>
+<tr><td><b>Itteration</b></td><td>I</td><td>The solver itteration will refine the solution. leave blank or set to 0 to auto compute</td><td>Integer</td></tr>
+<tr><td><b>U0 Curve</b></td><td>U0</td><td>The First U Curve</td><td>Curve</td></tr>
+<tr><td><b>U1 Curve</b></td><td>U1</td><td>The Second U Curve</td><td>Curve</td></tr>
+<tr><td><b>V0 Curve</b></td><td>V0</td><td>The first V Curve</td><td>Curve</td></tr>
+<tr><td><b>V1 Curve</b></td><td>V1</td><td>The Second V Curve</td><td>Curve</td></tr>
 <tr><td><b>U Count</b></td><td>U</td><td>Sample Density for U points. The higher the value the the more precise</td><td>Integer</td></tr>
 <tr><td><b>V Count</b></td><td>V</td><td>Sample Density for V points. The higher the value the the more precise</td><td>Integer</td></tr>
 <tr><td><b>Itteration</b></td><td>I</td><td>The solver itteration will refine the solution. leave blank or set to 0 to auto compute</td><td>Integer</td></tr>
@@ -137,6 +143,8 @@ MinSurf
 <tbody>
 <tr><td><b>UV point Grid</b></td><td>P</td><td>The UV points that define the surface</td><td>Point</td></tr>
 <tr><td><b>Resulting Surface</b></td><td>S</td><td>The Minimal Surface</td><td>Mesh</td></tr>
+<tr><td><b>UV point Grid</b></td><td>P</td><td>The UV points that define the surface</td><td>Point</td></tr>
+<tr><td><b>Resulting Mesh</b></td><td>M</td><td>The Minimal Surface as mesh</td><td>Mesh</td></tr>
 </tbody>
 </table>
 
@@ -148,8 +156,9 @@ MinSurf
             </div>
             <div id="xg_foot">
                 <p class="left">
-    © 2018-2020             &nbsp; Created by <a href="https://github.com/robinrodricks/">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
-    Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a>
+    © 2018-2020  <a href="https://github.com/robinrodricks/">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a> &nbsp;
+	Rhino & Grasshopper are trademarks of <a href="https://www.rhino3d.com/">Robert McNeel & Associates</a>.
 	</p>
     <p class="right xg_lightfont">
                     <a href="http://www.grasshopper3d.com/main/embeddable/list">Badges</a> &nbsp;|&nbsp;

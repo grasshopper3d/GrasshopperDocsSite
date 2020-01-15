@@ -1,0 +1,628 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+<head data-layout-view="wide">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Normalize - Grasshopper Component Reference</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+
+<meta name="description" content="A guide to component Normalize in Grasshopper 3D." />
+<meta name="title" content="Grasshopper Component Reference" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://rhino.github.io/" />
+<meta property="og:title" content="Normalize - Grasshopper Component Reference" />
+
+<meta property="wiki-page" content="GH Peacock Normalize.md" />
+
+<link rel="image_src" href="http://rhino.github.io/ning/2985220.jpg" />
+
+<style type="text/css" media="screen,projection">
+#xg_navigation ul div.xg_subtab ul li a {
+    color:#666666;
+    background:#EAFFBD;
+}
+#xg_navigation ul div.xg_subtab ul li a:hover {
+    color:#333333;
+    background:#F2FFD6;
+}
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../../ning/index.css);
+@import url(../../ning/page.css);
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../../ning/1187549422.css);
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../../ning/1187545030.css);
+</style>
+
+
+<link href="../../style.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+    </head>
+    <body>
+    
+        
+        <div id="xg" class="xg_theme xg_widget_page xg_widget_page_page xg_widget_page_page_show" data-layout-pack="classic">
+            <div id="xg_head">
+                <div id="xg_masthead">
+                    <p id="xg_sitename"><a id="application_name_header_link" href="http://rhino.github.io/">Grasshopper</a></p>
+                    <p id="xg_sitedesc" class="xj_site_desc">algorithmic modeling for Rhino</p>
+                </div>
+                <div id="xg_navigation">
+                    <ul>
+    <li id="xg_tab_main" class="xg_subtab"><a href="http://www.grasshopper3d.com/"><span>Home</span></a></li>
+	<li id="xg_tab_photo" class="xg_subtab"><a href="http://www.grasshopper3d.com/photo"><span>View</span></a></li>
+	<li id="xg_tab_xn0" class="xg_subtab"><a href="http://www.grasshopper3d.com/page/download-1"><span>Download</span></a></li>
+	<li id="xg_tab_forum" class="xg_subtab"><a href="https://discourse.mcneel.com/c/grasshopper"><span>Forums&#47;Support</span></a></li>
+	<li id="xg_tab_xn2" class="xg_subtab this"><a href="http://rhino.github.io/"><span>Learn</span></a></li>
+	<li id="xg_tab_events" class="xg_subtab"><a href="http://www.grasshopper3d.com/events"><span>Attend</span></a></li>
+	<li id="xg_tab_profile" class="xg_subtab"><a href="http://www.grasshopper3d.com/profiles"><span>My Page</span></a></li></ul>
+
+                </div>
+            </div>
+            
+            <div id="xg_body">
+                
+				<div class="page">
+
+<div class="content">
+
+<div class="ghbar">
+<table class="ghbar-table">
+<tr>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/peacock/animation.html"><img class="ghicon" src="../../icons/Peacock/Animation.png" title="Animation"></a>
+<a href="../../components/peacock/curvatureAnalysis.html"><img class="ghicon" src="../../icons/Peacock/Curvature_analysis.png" title="Curvature analysis"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/peacock/directionAnalysis.html"><img class="ghicon" src="../../icons/Peacock/Direction_analysis.png" title="Direction analysis"></a>
+<a href="../../components/peacock/slicer.html"><img class="ghicon" src="../../icons/Peacock/Slicer.png" title="Slicer"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/peacock/thicknessAnalysis.html"><img class="ghicon" src="../../icons/Peacock/Thickness_analysis.png" title="Thickness analysis"></a>
+<a href="../../components/peacock/thicknessDynamic.html"><img class="ghicon" src="../../icons/Peacock/Thickness_dynamic.png" title="Thickness dynamic"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+Analysis
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/peacock/constrain.html"><img class="ghicon" src="../../icons/Peacock/Constrain.png" title="Constrain"></a>
+<a href="../../components/peacock/dispatchIndices.html"><img class="ghicon" src="../../icons/Peacock/Dispatch_Indices.png" title="Dispatch Indices"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/peacock/insertInTree.html"><img class="ghicon" src="../../icons/Peacock/Insert_in_Tree.png" title="Insert in Tree"></a>
+<a href="../../components/peacock/mapToSum.html"><img class="ghicon" src="../../icons/Peacock/MapToSum.png" title="MapToSum"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/peacock/nearestNumber.html"><img class="ghicon" src="../../icons/Peacock/NearestNumber.png" title="NearestNumber"></a>
+<a href="../../components/peacock/nextItem.html"><img class="ghicon" src="../../icons/Peacock/Next_item.png" title="Next item"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/peacock/normalize.html"><img class="ghicon" src="../../icons/Peacock/Normalize.png" title="Normalize"></a>
+<a href="../../components/peacock/rangeArc.html"><img class="ghicon" src="../../icons/Peacock/Range_Arc.png" title="Range Arc"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/peacock/rangeGaussian.html"><img class="ghicon" src="../../icons/Peacock/Range_Gaussian.png" title="Range Gaussian"></a>
+<a href="../../components/peacock/rangeRandom.html"><img class="ghicon" src="../../icons/Peacock/Range_Random_.png" title="Range Random"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/peacock/rangeSigmoid.html"><img class="ghicon" src="../../icons/Peacock/Range_Sigmoid.png" title="Range Sigmoid"></a>
+<a href="../../components/peacock/rangeSine.html"><img class="ghicon" src="../../icons/Peacock/Range_Sine.png" title="Range Sine"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/peacock/shiftPaths.html"><img class="ghicon" src="../../icons/Peacock/Shift_paths.png" title="Shift paths"></a>
+<a href="../../components/peacock/splitDomain.html"><img class="ghicon" src="../../icons/Peacock/Split_domain.png" title="Split domain"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/peacock/splitDomain.html"><img class="ghicon" src="../../icons/Peacock/Split_domain².png" title="Split domain\u00b2"></a>
+<a href="../../components/peacock/symmetryNumbers.html"><img class="ghicon" src="../../icons/Peacock/Symmetry_numbers.png" title="Symmetry numbers"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="8">
+Data
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/peacock/arm.html"><img class="ghicon" src="../../icons/Peacock/Arm.png" title="Arm"></a>
+<a href="../../components/peacock/bust.html"><img class="ghicon" src="../../icons/Peacock/Bust.png" title="Bust"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/peacock/displaySizes.html"><img class="ghicon" src="../../icons/Peacock/Display_sizes.png" title="Display sizes"></a>
+<a href="../../components/peacock/ear.html"><img class="ghicon" src="../../icons/Peacock/Ear.png" title="Ear"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/peacock/finger.html"><img class="ghicon" src="../../icons/Peacock/Finger.png" title="Finger"></a>
+<a href="../../components/peacock/gemPreview.html"><img class="ghicon" src="../../icons/Peacock/Gem_preview.png" title="Gem preview"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/peacock/metalPreview.html"><img class="ghicon" src="../../icons/Peacock/Metal_preview.png" title="Metal preview"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="4">
+Display
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/peacock/bezel.html"><img class="ghicon" src="../../icons/Peacock/Bezel.png" title="Bezel"></a>
+<a href="../../components/peacock/brilliant.html"><img class="ghicon" src="../../icons/Peacock/Brilliant.png" title="Brilliant"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/peacock/cabuchonStudio.html"><img class="ghicon" src="../../icons/Peacock/Cabuchon_studio.png" title="Cabuchon studio"></a>
+<a href="../../components/peacock/channelOnSurface.html"><img class="ghicon" src="../../icons/Peacock/Channel_On_Surface.png" title="Channel On Surface"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/peacock/channel.html"><img class="ghicon" src="../../icons/Peacock/Channel.png" title="Channel"></a>
+<a href="../../components/peacock/cutterSoft.html"><img class="ghicon" src="../../icons/Peacock/Cutter_soft.png" title="Cutter soft"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/peacock/cutter.html"><img class="ghicon" src="../../icons/Peacock/Cutter.png" title="Cutter"></a>
+<a href="../../components/peacock/cuttersInLine0.html"><img class="ghicon" src="../../icons/Peacock/Cutters_In_Line_0.png" title="Cutters In Line 0"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/peacock/cuttersInLine1.html"><img class="ghicon" src="../../icons/Peacock/Cutters_In_Line_1.png" title="Cutters In Line 1"></a>
+<a href="../../components/peacock/cuttersInLine2.html"><img class="ghicon" src="../../icons/Peacock/Cutters_In_Line_2.png" title="Cutters In Line 2"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/peacock/galleryRails.html"><img class="ghicon" src="../../icons/Peacock/Gallery_rails.png" title="Gallery rails"></a>
+<a href="../../components/peacock/gemsBy2Curves.html"><img class="ghicon" src="../../icons/Peacock/Gems_by_2_curves.png" title="Gems by 2 curves"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/peacock/gemsByCurve.html"><img class="ghicon" src="../../icons/Peacock/Gems_by_curve.png" title="Gems by curve"></a>
+<a href="../../components/peacock/gemsStudio.html"><img class="ghicon" src="../../icons/Peacock/Gems_studio.png" title="Gems studio"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/peacock/paveRandom.html"><img class="ghicon" src="../../icons/Peacock/Pave_random.png" title="Pave random"></a>
+<a href="../../components/peacock/prongSimple.html"><img class="ghicon" src="../../icons/Peacock/Prong_simple.png" title="Prong simple"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/peacock/prongsAlongGemsRail.html"><img class="ghicon" src="../../icons/Peacock/Prongs_along_gems_rail.png" title="Prongs along gems rail"></a>
+<a href="../../components/peacock/prongs.html"><img class="ghicon" src="../../icons/Peacock/Prongs.png" title="Prongs"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="9">
+Gems
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/peacock/calotte.html"><img class="ghicon" src="../../icons/Peacock/Calotte.png" title="Calotte"></a>
+<a href="../../components/peacock/chain.html"><img class="ghicon" src="../../icons/Peacock/Chain.png" title="Chain"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/peacock/filigree.html"><img class="ghicon" src="../../icons/Peacock/Filigree.png" title="Filigree"></a>
+<a href="../../components/peacock/milgrain.html"><img class="ghicon" src="../../icons/Peacock/Milgrain.png" title="Milgrain"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/peacock/pipeCustom.html"><img class="ghicon" src="../../icons/Peacock/Pipe_Custom.png" title="Pipe Custom"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+Jewelry
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/peacock/costs.html"><img class="ghicon" src="../../icons/Peacock/Costs.png" title="Costs"></a>
+<a href="../../components/peacock/genRandom.html"><img class="ghicon" src="../../icons/Peacock/genRandom.png" title="genRandom"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/peacock/marketPrice.html"><img class="ghicon" src="../../icons/Peacock/Market_price.png" title="Market price"></a>
+<a href="../../components/peacock/organize.html"><img class="ghicon" src="../../icons/Peacock/Organize.png" title="Organize"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/peacock/timekeeper.html"><img class="ghicon" src="../../icons/Peacock/Timekeeper.png" title="Timekeeper"></a>
+<a href="../../components/peacock/treeWax.html"><img class="ghicon" src="../../icons/Peacock/Tree_wax.png" title="Tree wax"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/peacock/weight.html"><img class="ghicon" src="../../icons/Peacock/Weight.png" title="Weight"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="4">
+Production
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/peacock/profile2Arcs.html"><img class="ghicon" src="../../icons/Peacock/Profile_2Arcs.png" title="Profile 2Arcs"></a>
+<a href="../../components/peacock/profileGem.html"><img class="ghicon" src="../../icons/Peacock/Profile_Gem.png" title="Profile Gem"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/peacock/profileGrooves.html"><img class="ghicon" src="../../icons/Peacock/Profile_Grooves.png" title="Profile Grooves"></a>
+<a href="../../components/peacock/profileHalfRound.html"><img class="ghicon" src="../../icons/Peacock/Profile_HalfRound.png" title="Profile HalfRound"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/peacock/profileHalfRoundTruncated.html"><img class="ghicon" src="../../icons/Peacock/Profile_HalfRoundTruncated.png" title="Profile HalfRoundTruncated"></a>
+<a href="../../components/peacock/profileNBezier.html"><img class="ghicon" src="../../icons/Peacock/Profile_n-Bezier.png" title="Profile n-Bezier"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/peacock/profileOvoid.html"><img class="ghicon" src="../../icons/Peacock/Profile_Ovoid.png" title="Profile Ovoid"></a>
+<a href="../../components/peacock/profileTrack.html"><img class="ghicon" src="../../icons/Peacock/Profile_Track.png" title="Profile Track"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="4">
+Profiles
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/peacock/armGauge.html"><img class="ghicon" src="../../icons/Peacock/Arm_gauge.png" title="Arm gauge"></a>
+<a href="../../components/peacock/gauge.html"><img class="ghicon" src="../../icons/Peacock/Gauge.png" title="Gauge"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/peacock/resizeRing.html"><img class="ghicon" src="../../icons/Peacock/Resize_ring.png" title="Resize ring"></a>
+<a href="../../components/peacock/ringBase.html"><img class="ghicon" src="../../icons/Peacock/Ring_base.png" title="Ring base"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/peacock/ringByCurves.html"><img class="ghicon" src="../../icons/Peacock/Ring_by_curves.png" title="Ring by curves"></a>
+<a href="../../components/peacock/ringHalfRound.html"><img class="ghicon" src="../../icons/Peacock/Ring_half_round.png" title="Ring half round"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/peacock/ringProfile.html"><img class="ghicon" src="../../icons/Peacock/Ring_Profile.png" title="Ring Profile"></a>
+<a href="../../components/peacock/ringSignet.html"><img class="ghicon" src="../../icons/Peacock/Ring_Signet.png" title="Ring Signet"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/peacock/sizeToRadius.html"><img class="ghicon" src="../../icons/Peacock/Size_to_radius.png" title="Size to radius"></a>
+<a href="../../components/peacock/sizeToSize.html"><img class="ghicon" src="../../icons/Peacock/Size_to_size.png" title="Size to size"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="5">
+Rings
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/peacock/brepClosestPoint.html"><img class="ghicon" src="../../icons/Peacock/Brep_closest_point.png" title="Brep closest point"></a>
+<a href="../../components/peacock/brepTopology.html"><img class="ghicon" src="../../icons/Peacock/Brep_topology.png" title="Brep topology"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/peacock/capCustom.html"><img class="ghicon" src="../../icons/Peacock/Cap_custom.png" title="Cap custom"></a>
+<a href="../../components/peacock/closestGeometry.html"><img class="ghicon" src="../../icons/Peacock/Closest_geometry.png" title="Closest geometry"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/peacock/curveArray2d.html"><img class="ghicon" src="../../icons/Peacock/Curve_array_2d.png" title="Curve array 2d"></a>
+<a href="../../components/peacock/curveDiscontinuities.html"><img class="ghicon" src="../../icons/Peacock/Curve_Discontinuities.png" title="Curve Discontinuities"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/peacock/extendSurface.html"><img class="ghicon" src="../../icons/Peacock/Extend_surface.png" title="Extend surface"></a>
+<a href="../../components/peacock/extrudeFromPoint.html"><img class="ghicon" src="../../icons/Peacock/Extrude_from_point.png" title="Extrude from point"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/peacock/extrusionBothSides.html"><img class="ghicon" src="../../icons/Peacock/Extrusion_both_sides.png" title="Extrusion both sides"></a>
+<a href="../../components/peacock/filletPolyline.html"><img class="ghicon" src="../../icons/Peacock/Fillet_polyline.png" title="Fillet polyline"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/peacock/fitCurves.html"><img class="ghicon" src="../../icons/Peacock/Fit_curves.png" title="Fit curves"></a>
+<a href="../../components/peacock/flipPlane.html"><img class="ghicon" src="../../icons/Peacock/Flip_plane.png" title="Flip plane"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/peacock/flowAlongCurve.html"><img class="ghicon" src="../../icons/Peacock/Flow_along_curve.png" title="Flow along curve"></a>
+<a href="../../components/peacock/flowAlongSurface.html"><img class="ghicon" src="../../icons/Peacock/Flow_along_surface.png" title="Flow along surface"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/peacock/frames.html"><img class="ghicon" src="../../icons/Peacock/Frames.png" title="Frames"></a>
+<a href="../../components/peacock/gridOnSurface.html"><img class="ghicon" src="../../icons/Peacock/Grid_On_Surface.png" title="Grid On Surface"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/peacock/hollowThickness.html"><img class="ghicon" src="../../icons/Peacock/Hollow_thickness.png" title="Hollow thickness"></a>
+<a href="../../components/peacock/interpolateFrames.html"><img class="ghicon" src="../../icons/Peacock/Interpolate_frames.png" title="Interpolate frames"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/peacock/interpolatePlanes.html"><img class="ghicon" src="../../icons/Peacock/Interpolate_planes.png" title="Interpolate planes"></a>
+<a href="../../components/peacock/isoCurve.html"><img class="ghicon" src="../../icons/Peacock/IsoCurve.png" title="IsoCurve"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/peacock/isotrim.html"><img class="ghicon" src="../../icons/Peacock/Isotrim.png" title="Isotrim"></a>
+<a href="../../components/peacock/likeAnEmboss.html"><img class="ghicon" src="../../icons/Peacock/Like_an_emboss.png" title="Like an emboss"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/peacock/meshTopology.html"><img class="ghicon" src="../../icons/Peacock/Mesh_topology.png" title="Mesh topology"></a>
+<a href="../../components/peacock/moveFromGeometry.html"><img class="ghicon" src="../../icons/Peacock/Move_from_geometry.png" title="Move from geometry"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/peacock/offsetOnSurfaceVariable.html"><img class="ghicon" src="../../icons/Peacock/Offset_On_Surface_Variable.png" title="Offset On Surface Variable"></a>
+<a href="../../components/peacock/offsetVariable.html"><img class="ghicon" src="../../icons/Peacock/Offset_Variable.png" title="Offset Variable"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/peacock/rasterize.html"><img class="ghicon" src="../../icons/Peacock/Rasterize.png" title="Rasterize"></a>
+<a href="../../components/peacock/rebuildSurface.html"><img class="ghicon" src="../../icons/Peacock/Rebuild_surface.png" title="Rebuild surface"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/peacock/resize.html"><img class="ghicon" src="../../icons/Peacock/Resize.png" title="Resize"></a>
+<a href="../../components/peacock/reverseSurface.html"><img class="ghicon" src="../../icons/Peacock/Reverse_Surface.png" title="Reverse Surface"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/peacock/seamFromPoint.html"><img class="ghicon" src="../../icons/Peacock/Seam_from_point.png" title="Seam from point"></a>
+<a href="../../components/peacock/shatterVariable.html"><img class="ghicon" src="../../icons/Peacock/Shatter_Variable.png" title="Shatter Variable"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/peacock/shellCurve.html"><img class="ghicon" src="../../icons/Peacock/Shell_curve.png" title="Shell curve"></a>
+<a href="../../components/peacock/size.html"><img class="ghicon" src="../../icons/Peacock/Size.png" title="Size"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/peacock/splitMirror.html"><img class="ghicon" src="../../icons/Peacock/Split_&_mirror.png" title="Split &amp; mirror"></a>
+<a href="../../components/peacock/surfaceOffsetSolid.html"><img class="ghicon" src="../../icons/Peacock/Surface_Offset_Solid.png" title="Surface Offset Solid"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/peacock/textByCurve.html"><img class="ghicon" src="../../icons/Peacock/Text_by_curve.png" title="Text by curve"></a>
+<a href="../../components/peacock/texture.html"><img class="ghicon" src="../../icons/Peacock/Texture.png" title="Texture"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/peacock/trimFromMiddle.html"><img class="ghicon" src="../../icons/Peacock/Trim_from_middle.png" title="Trim from middle"></a>
+<a href="../../components/peacock/tryGetCircle.html"><img class="ghicon" src="../../icons/Peacock/Try_get_circle.png" title="Try get circle"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/peacock/tweenMultipleCurves.html"><img class="ghicon" src="../../icons/Peacock/Tween_multiple_curves.png" title="Tween multiple curves"></a>
+<a href="../../components/peacock/unroller.html"><img class="ghicon" src="../../icons/Peacock/Unroller.png" title="Unroller"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="21">
+Workbench
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+
+<div class="addon-buttons">
+<a href="https://www.food4rhino.com/app/peacock">Download</a>
+</div>
+
+<div>
+<h1><img src="../../icons/Peacock/Normalize.png"/> Normalize</h1>
+<p><a href="../../index.html#Peacock">Component Index</a> &gt; <a href="../../addons/peacock.html">Peacock</a> > Data > <b>Normalize</b></p>
+</div>
+<h3>Normalize a list of numbers</h3>
+
+  </div>
+
+</div>
+
+            </div>
+            <div id="xg_foot">
+                <p class="left">
+    © 2018-2020  <a href="https://github.com/robinrodricks/">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a> &nbsp;
+	Rhino & Grasshopper are trademarks of <a href="https://www.rhino3d.com/">Robert McNeel & Associates</a>.
+	</p>
+    <p class="right xg_lightfont">
+                    <a href="http://www.grasshopper3d.com/main/embeddable/list">Badges</a> &nbsp;|&nbsp;
+                        <a href="http://www.grasshopper3d.com/main/index/report" dojotype="PromptToJoinLink" _joinprompttext="Please sign up or sign in to complete this step." _hassignup="true" _signinurl="http://www.grasshopper3d.com/main/authorization/signIn?target=http%3A%2F%2Fwww.grasshopper3d.com%2Fmain%2Findex%2Freport">Report an Issue</a> &nbsp;|&nbsp;
+                        <a href="http://www.grasshopper3d.com/main/authorization/termsOfService?previousUrl=http%3A%2F%2Fwww.grasshopper3d.com%2Fpage%2Fcomponent-reference">Terms of Service</a>
+            </p>
+
+            </div>
+        </div>
+        
+        <div id="xj_baz17246" class="xg_theme"></div>
+<div id="xg_overlay" style="display:none;">
+<!--[if lte IE 6.5]><iframe></iframe><![endif]-->
+</div>
+<!--googleoff: all--><noscript>
+	<style type="text/css" media="screen">
+        #xg { position:relative;top:120px; }
+        #xn_bar { top:120px; }
+	</style>
+	<div class="errordesc noscript">
+		<div>
+            <h3><strong>Hello, you need to enable JavaScript to use Grasshopper.</strong></h3>
+            <p>Please check your browser settings or contact your system administrator.</p>
+			
+		</div>
+	</div>
+</noscript><!--googleon: all-->
+
+<script src="/js/jquery.js"></script>
+<script src="/js/kramed.min.js"></script>
+<script src="/js/component.js"></script>
+<script src="/js/user.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    </body>
+</html>
