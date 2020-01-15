@@ -7,9 +7,8 @@ Last updated on 15th Jan 2020.
 
 # Plugin index
 
-| Name             | Version        | Date        |
-|------------------|----------------|-------------|
 | 3DVoronoi        | 1              | 2011-Aug-30 |
+|------------------|----------------|-------------|
 | Aether           | 1.0            | 2014-Dec-16 |
 | Alba             | 0.111          | Unknown     |
 | Anemone          | 0.4            | 2015-Dec-14 |
@@ -22,10 +21,10 @@ Last updated on 15th Jan 2020.
 | Cocoon           | 1              | 2015-Jul-22 |
 | Culebra          | 2.0-Beta       | 2017-Dec-11 |
 | DIVA             | 4.1.0.12       | 2019        |
-| Dodo             | 0.3            | 2017-May-06 |
+| Dodo             | 0.3            | 2019-Feb-23 |
 | Doodlebug        | CC 2015        | 2016        |
 | EdiTree          | 1.0.0.0        | 2016-Mar-03 |
-| Elefront         | 3.0.4          | 2017-Sep-12 |
+| Elefront         | 4.2.2          | 2019-Sep-27 |
 | Elk              | 2.2.2          | 2016-Feb-01 |
 | FabTools         | 0.92           | 2013-Jul-03 |
 | Firefly          | 1.0.0.70       | 2015-Mar-25 |
@@ -35,15 +34,15 @@ Last updated on 15th Jan 2020.
 | Heteroptera      | 0.4.9.4        | 2017-Oct-16 |
 | Honeybee         | 0.0.62         | 2017-Jul-31 |
 | Hoopsnake        | 0.6.7          | 2014-Apr-28 |
-| Human            | 2017-Feb-08    | 2017-Feb-08 |
-| Human UI         | 0.8.0.0        | 2017-Sep-27 |
+| Human            | 2019-Aug-05    | 2019-Aug-05 |
+| Human UI         | 0.8.1.3        | 2019-Nov-10 |
 | Hummingbird      | 2.3            | 2015-Dec-14 |
 | IntraLattice     | 0.7.6          | 2015-Nov-15 |
-| Ivy              | 0.92           | 2017-Aug-07 |
+| Ivy              | 1.02           | 2020-Jan-04 |
 | Kangaroo 2       | 2.3.3          | 2017-Jul-11 |
-| Karamba          | 1.1.0          | 2015-Mar-14 |
+| Karamba          | 1.3.2          | 2019-Sep-18 |
 | Ladybug          | 0.0.65         | 2017-Jul-31 |
-| LunchBox         | 2018.11.16     | 43403       |
+| LunchBox         | 2018.10.30     | 2018-Oct-30 |
 | MeshEdit         | 2.0            | 2017-Jun-25 |
 | MeshPlus         | 2.1.03         | 2019-Sep-12 |
 | Meshtools        | 1              | 2013-Feb-02 |
@@ -53,8 +52,8 @@ Last updated on 15th Jan 2020.
 | Monolith         | 0.3.6415.29557 | 2017-Jul-26 |
 | Mosquito         | 0.4            | 2015-Nov-27 |
 | Nudibranch       | 0.028          | 2013-Aug-26 |
-| Octopus          | 0.3.6          | 2015-Sep-26 |
-| Paneling Tools   | 2016.01.20     | 2016-Aug-03 |
+| Octopus          | 0.4            | 2018-Dec-05 |
+| Paneling Tools   | 6.18           | 2019-12-19  |
 | Peacock          | 0.99.1         | 2017-Nov-04 |
 | Phyllomachine    | 1              | 2015-May-29 |
 | Plankton         | 0.4.2          | 2017-May-18 |
