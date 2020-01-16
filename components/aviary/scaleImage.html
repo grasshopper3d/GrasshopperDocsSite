@@ -1,0 +1,363 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+<head data-layout-view="wide">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Scale Image - Grasshopper Component Reference</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+
+<meta name="description" content="A guide to component Scale Image in Grasshopper 3D." />
+<meta name="title" content="Grasshopper Component Reference" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://rhino.github.io/" />
+<meta property="og:title" content="Scale Image - Grasshopper Component Reference" />
+
+<meta property="wiki-page" content="GH Aviary Scale_Image.md" />
+
+<link rel="image_src" href="http://rhino.github.io/ning/2985220.jpg" />
+
+<style type="text/css" media="screen,projection">
+#xg_navigation ul div.xg_subtab ul li a {
+    color:#666666;
+    background:#EAFFBD;
+}
+#xg_navigation ul div.xg_subtab ul li a:hover {
+    color:#333333;
+    background:#F2FFD6;
+}
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../../ning/index.css);
+@import url(../../ning/page.css);
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../../ning/1187549422.css);
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../../ning/1187545030.css);
+</style>
+
+
+<link href="../../style.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+    </head>
+    <body>
+    
+        
+        <div id="xg" class="xg_theme xg_widget_page xg_widget_page_page xg_widget_page_page_show" data-layout-pack="classic">
+            <div id="xg_head">
+                <div id="xg_masthead">
+                    <p id="xg_sitename"><a id="application_name_header_link" href="http://rhino.github.io/">Grasshopper</a></p>
+                    <p id="xg_sitedesc" class="xj_site_desc">algorithmic modeling for Rhino</p>
+                </div>
+                <div id="xg_navigation">
+                    <ul>
+    <li id="xg_tab_main" class="xg_subtab"><a href="http://www.grasshopper3d.com/"><span>Home</span></a></li>
+	<li id="xg_tab_photo" class="xg_subtab"><a href="http://www.grasshopper3d.com/photo"><span>View</span></a></li>
+	<li id="xg_tab_xn0" class="xg_subtab"><a href="http://www.grasshopper3d.com/page/download-1"><span>Download</span></a></li>
+	<li id="xg_tab_forum" class="xg_subtab"><a href="https://discourse.mcneel.com/c/grasshopper"><span>Forums&#47;Support</span></a></li>
+	<li id="xg_tab_xn2" class="xg_subtab this"><a href="http://rhino.github.io/"><span>Learn</span></a></li>
+	<li id="xg_tab_events" class="xg_subtab"><a href="http://www.grasshopper3d.com/events"><span>Attend</span></a></li>
+	<li id="xg_tab_profile" class="xg_subtab"><a href="http://www.grasshopper3d.com/profiles"><span>My Page</span></a></li></ul>
+
+                </div>
+            </div>
+            
+            <div id="xg_body">
+                
+				<div class="page">
+
+<div class="content">
+
+<div class="ghbar">
+<table class="ghbar-table">
+<tr>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/aviary/brepToShape.html"><img class="ghicon" src="../../icons/Aviary/Brep_To_Shape.png" title="Brep To Shape"></a>
+<a href="../../components/aviary/composeDrawing.html"><img class="ghicon" src="../../icons/Aviary/Compose_Drawing.png" title="Compose Drawing"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/aviary/curveToShape.html"><img class="ghicon" src="../../icons/Aviary/Curve_To_Shape.png" title="Curve To Shape"></a>
+<a href="../../components/aviary/drawingToBitmap.html"><img class="ghicon" src="../../icons/Aviary/Drawing_to_Bitmap.png" title="Drawing to Bitmap"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/aviary/exportBitmap.html"><img class="ghicon" src="../../icons/Aviary/Export_Bitmap.png" title="Export Bitmap"></a>
+<a href="../../components/aviary/exportSVG.html"><img class="ghicon" src="../../icons/Aviary/Export_SVG.png" title="Export SVG"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/aviary/viewDrawing.html"><img class="ghicon" src="../../icons/Aviary/View_Drawing.png" title="View Drawing"></a>
+<a href="../../components/aviary/meshToShape.html"><img class="ghicon" src="../../icons/Aviary/Mesh_To_Shape.png" title="Mesh To Shape"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/aviary/pointToShape.html"><img class="ghicon" src="../../icons/Aviary/Point_To_Shape.png" title="Point To Shape"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="5">
+Drawing
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/aviary/blurEffect.html"><img class="ghicon" src="../../icons/Aviary/Blur_Effect.png" title="Blur Effect"></a>
+<a href="../../components/aviary/shadowEffect.html"><img class="ghicon" src="../../icons/Aviary/Shadow_Effect.png" title="Shadow Effect"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/aviary/linearGradientFill.html"><img class="ghicon" src="../../icons/Aviary/Linear_Gradient_Fill.png" title="Linear Gradient Fill"></a>
+<a href="../../components/aviary/solidFill.html"><img class="ghicon" src="../../icons/Aviary/Solid_Fill.png" title="Solid Fill"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/aviary/stroke.html"><img class="ghicon" src="../../icons/Aviary/Stroke.png" title="Stroke"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+Graphics
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/aviary/addLayer.html"><img class="ghicon" src="../../icons/Aviary/Add_Layer.png" title="Add Layer"></a>
+<a href="../../components/aviary/applyFilters.html"><img class="ghicon" src="../../icons/Aviary/Apply_Filters.png" title="Apply Filters"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/aviary/buildImage.html"><img class="ghicon" src="../../icons/Aviary/Build_Image.png" title="Build Image"></a>
+<a href="../../components/aviary/compositeImages.html"><img class="ghicon" src="../../icons/Aviary/Composite_Images.png" title="Composite Images"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/aviary/filterAdjust.html"><img class="ghicon" src="../../icons/Aviary/Filter_Adjust.png" title="Filter Adjust"></a>
+<a href="../../components/aviary/filterDifference.html"><img class="ghicon" src="../../icons/Aviary/Filter_Difference.png" title="Filter Difference"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/aviary/filterDithering.html"><img class="ghicon" src="../../icons/Aviary/Filter_Dithering.png" title="Filter Dithering"></a>
+<a href="../../components/aviary/filterEdges.html"><img class="ghicon" src="../../icons/Aviary/Filter_Edges.png" title="Filter Edges"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/aviary/filterEffects.html"><img class="ghicon" src="../../icons/Aviary/Filter_Effects.png" title="Filter Effects"></a>
+<a href="../../components/aviary/extractChannel.html"><img class="ghicon" src="../../icons/Aviary/Extract_Channel.png" title="Extract Channel"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/aviary/filterFigures.html"><img class="ghicon" src="../../icons/Aviary/Filter_Figures.png" title="Filter Figures"></a>
+<a href="../../components/aviary/filterGrayscale.html"><img class="ghicon" src="../../icons/Aviary/Filter_Grayscale.png" title="Filter Grayscale"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/aviary/filterSharpen.html"><img class="ghicon" src="../../icons/Aviary/Filter_Sharpen.png" title="Filter Sharpen"></a>
+<a href="../../components/aviary/filterThreshold.html"><img class="ghicon" src="../../icons/Aviary/Filter_Threshold.png" title="Filter Threshold"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/aviary/fractal.html"><img class="ghicon" src="../../icons/Aviary/Fractal.png" title="Fractal"></a>
+<a href="../../components/aviary/bitmapCorners.html"><img class="ghicon" src="../../icons/Aviary/Bitmap_Corners.png" title="Bitmap Corners"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/aviary/bitmapShapes.html"><img class="ghicon" src="../../icons/Aviary/Bitmap_Shapes.png" title="Bitmap Shapes"></a>
+<a href="../../components/aviary/imageProperties.html"><img class="ghicon" src="../../icons/Aviary/Image_Properties.png" title="Image Properties"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/aviary/imageToBitmap.html"><img class="ghicon" src="../../icons/Aviary/Image_To_Bitmap.png" title="Image To Bitmap"></a>
+<a href="../../components/aviary/imageValueAt.html"><img class="ghicon" src="../../icons/Aviary/Image_Value_At.png" title="Image Value At"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/aviary/imageValues.html"><img class="ghicon" src="../../icons/Aviary/Image_Values.png" title="Image Values"></a>
+<a href="../../components/aviary/imageViewer.html"><img class="ghicon" src="../../icons/Aviary/Image_Viewer.png" title="Image Viewer"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/aviary/loadImage.html"><img class="ghicon" src="../../icons/Aviary/Load_Image.png" title="Load Image"></a>
+<a href="../../components/aviary/mergeLayers.html"><img class="ghicon" src="../../icons/Aviary/Merge_Layers.png" title="Merge Layers"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/aviary/mirrorImage.html"><img class="ghicon" src="../../icons/Aviary/Mirror_Image.png" title="Mirror Image"></a>
+<a href="../../components/aviary/modifyLayer.html"><img class="ghicon" src="../../icons/Aviary/Modify_Layer.png" title="Modify Layer"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/aviary/noise.html"><img class="ghicon" src="../../icons/Aviary/Noise.png" title="Noise"></a>
+<a href="../../components/aviary/polarImage.html"><img class="ghicon" src="../../icons/Aviary/Polar_Image.png" title="Polar Image"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/aviary/resizeImage.html"><img class="ghicon" src="../../icons/Aviary/Resize_Image.png" title="Resize Image"></a>
+<a href="../../components/aviary/rotateImage.html"><img class="ghicon" src="../../icons/Aviary/Rotate_Image.png" title="Rotate Image"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/aviary/scaleImage.html"><img class="ghicon" src="../../icons/Aviary/Scale_Image.png" title="Scale Image"></a>
+<a href="../../components/aviary/shrinkImage.html"><img class="ghicon" src="../../icons/Aviary/Shrink_Image.png" title="Shrink Image"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/aviary/swapChannel.html"><img class="ghicon" src="../../icons/Aviary/Swap_Channel.png" title="Swap Channel"></a>
+<a href="../../components/aviary/swapChannels.html"><img class="ghicon" src="../../icons/Aviary/Swap_Channels.png" title="Swap Channels"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/aviary/traceImage.html"><img class="ghicon" src="../../icons/Aviary/Trace_Image.png" title="Trace Image"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="18">
+Image
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+
+<div class="addon-buttons">
+<a href="https://www.food4rhino.com/app/aviary">Download</a>
+</div>
+
+<div>
+<h1><img src="../../icons/Aviary/Scale_Image.png"/> Scale Image</h1>
+<p><a href="../../index.html#Aviary">Component Index</a> &gt; <a href="../../addons/aviary.html">Aviary</a> > Image > <b>Scale</b></p>
+</div>
+<h3>Scale an image by a unit factor<br>Built on the Accord Imaging Library<br>http://accord-framework.net/</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Image</b></td><td>I</td><td>The Layer Bitmap</td><td>Generic Data</td></tr>
+<tr><td><b>Mode</b></td><td>M</td><td>Mode</td><td>Integer</td></tr>
+<tr><td><b>Scale</b></td><td>S</td><td>Scale</td><td>Number</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Image</b></td><td>I</td><td>An Aviary Image with the filter added to it</td><td>Generic Data</td></tr>
+<tr><td><b>Filter</b></td><td>F</td><td>The specified Filter</td><td>Generic Data</td></tr>
+</tbody>
+</table>
+
+
+  </div>
+
+</div>
+
+            </div>
+            <div id="xg_foot">
+                <p class="left">
+    © 2018-2020  <a href="https://github.com/robinrodricks/">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a> &nbsp;
+	Rhino & Grasshopper are trademarks of <a href="https://www.rhino3d.com/">Robert McNeel & Associates</a>.
+	</p>
+    <p class="right xg_lightfont">
+                    <a href="http://www.grasshopper3d.com/main/embeddable/list">Badges</a> &nbsp;|&nbsp;
+                        <a href="http://www.grasshopper3d.com/main/index/report" dojotype="PromptToJoinLink" _joinprompttext="Please sign up or sign in to complete this step." _hassignup="true" _signinurl="http://www.grasshopper3d.com/main/authorization/signIn?target=http%3A%2F%2Fwww.grasshopper3d.com%2Fmain%2Findex%2Freport">Report an Issue</a> &nbsp;|&nbsp;
+                        <a href="http://www.grasshopper3d.com/main/authorization/termsOfService?previousUrl=http%3A%2F%2Fwww.grasshopper3d.com%2Fpage%2Fcomponent-reference">Terms of Service</a>
+            </p>
+
+            </div>
+        </div>
+        
+        <div id="xj_baz17246" class="xg_theme"></div>
+<div id="xg_overlay" style="display:none;">
+<!--[if lte IE 6.5]><iframe></iframe><![endif]-->
+</div>
+<!--googleoff: all--><noscript>
+	<style type="text/css" media="screen">
+        #xg { position:relative;top:120px; }
+        #xn_bar { top:120px; }
+	</style>
+	<div class="errordesc noscript">
+		<div>
+            <h3><strong>Hello, you need to enable JavaScript to use Grasshopper.</strong></h3>
+            <p>Please check your browser settings or contact your system administrator.</p>
+			
+		</div>
+	</div>
+</noscript><!--googleon: all-->
+
+<script src="/js/jquery.js"></script>
+<script src="/js/kramed.min.js"></script>
+<script src="/js/component.js"></script>
+<script src="/js/user.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    </body>
+</html>
