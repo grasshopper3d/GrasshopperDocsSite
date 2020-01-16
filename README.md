@@ -7,8 +7,9 @@ Last updated on 15th Jan 2020.
 
 # Addon index
 
-| 3DVoronoi        | 1              | 2011-Aug-30 |
+| Name             | Version        | Date Published |
 |------------------|----------------|-------------|
+| 3DVoronoi        | 1              | 2011-Aug-30 |
 | Aether           | 1.0            | 2014-Dec-16 |
 | Alba             | 0.111          | Unknown     |
 | Anemone          | 0.4            | 2015-Dec-14 |
