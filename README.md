@@ -5,10 +5,11 @@ Created by <a href="https://github.com/robinrodricks">Robin Rodricks</a> and <a 
 
 Last updated on 15th Jan 2020.
 
-# Plugin index
+# Addon index
 
-| 3DVoronoi        | 1              | 2011-Aug-30 |
+| Name             | Version        | Release Date |
 |------------------|----------------|-------------|
+| 3DVoronoi        | 1              | 2011-Aug-30 |
 | Aether           | 1.0            | 2014-Dec-16 |
 | Alba             | 0.111          | Unknown     |
 | Anemone          | 0.4            | 2015-Dec-14 |
@@ -73,5 +74,5 @@ Last updated on 15th Jan 2020.
 | Weaverbird       | 0.9.0.1        | 2009-Aug-31 |
 | Xylinus          | 0.2            | Unknown     |
 
-# Want to add or update a plugin?
-Simply add an [Issue](https://github.com/rhino/rhino.github.io/issues) with the name and link of the plugin, or add a post in the [GH forum thread](http://www.grasshopper3d.com/forum/topics/component-reference-for-gh?xg_source=activity&id=2985220%3ATopic%3A1522149&page=6#comments). I'll add it up as soon as possible.
+# Want to add or update an addon?
+Simply add an [Issue](https://github.com/rhino/rhino.github.io/issues) with the name and link of the plugin and I'll look into it.
