@@ -7,7 +7,7 @@ Last updated on 15th Jan 2020.
 
 # Addon index
 
-| Name             | Version        | Date Published |
+| Name             | Version        | Date        |
 |------------------|----------------|-------------|
 | 3DVoronoi        | 1              | 2011-Aug-30 |
 | Aether           | 1.0            | 2014-Dec-16 |
@@ -17,6 +17,7 @@ Last updated on 15th Jan 2020.
 | Aviary           | 1.02.0002      | 2019-Nov-18 |
 | Axolotl          | 1.0            | 2019-Dec-16 |
 | Bengesht         | 3.0.0.0        | 2016-Mar-25 |
+| Biomorpher       | 0.6.1          | 2019-Apr-25 |
 | Bison            | 0.90           | 2020-Jan-02 |
 | Bowerbird        | 0.6.3          | 2015-Jan-19 |
 | Box2D            | 0.2            | 2019-Apr-08 |
@@ -39,9 +40,13 @@ Last updated on 15th Jan 2020.
 | Firefly          | 1.0.0.70       | 2015-Mar-25 |
 | FlexHopper       | 1.1.2          | 2019-Nov-29 |
 | FlowLines        | 1              | 2011-Jul-25 |
+| Galapagos        | 1.0.0007       | 2019-Dec-10 |
 | GeomGym IFC      | 6              | 2019-Dec-19 |
 | GhExcel          | 1.2            | 2013-Jun-01 |
 | gHowl            | 0.1.r50.0      | 2014-Nov-21 |
+| Gismo            | 1.0            | 2019-Nov-23 |
+| Grevit           | 1.0            | 2018-Apr-28 |
+| HAL Robotics     | 1.0-beta       | 2020-01-07  |
 | Heteroptera      | 0.5.1.2        | 2019-Oct-28 |
 | Honeybee         | 0.0.62         | 2017-Jul-31 |
 | Hoopsnake        | 0.6.7          | 2014-Apr-28 |
@@ -51,7 +56,7 @@ Last updated on 15th Jan 2020.
 | IntraLattice     | 0.7.6          | 2015-Nov-15 |
 | Ivy              | 1.02           | 2020-Jan-04 |
 | jSwan            | 1.1.0          | 2019-Nov-11 |
-| Kangaroo 2       | 2.3.3          | 2017-Jul-11 |
+| Kangaroo 2       | 2.3.3          | 2019-Dec-10 |
 | Karamba          | 1.3.2          | 2019-Sep-18 |
 | Ladybug          | 0.0.65         | 2017-Jul-31 |
 | LunchBox         | 2018.10.30     | 2018-Oct-30 |
@@ -83,10 +88,10 @@ Last updated on 15th Jan 2020.
 | SPM              | 0.1.0.3        | 2012-Apr-25 |
 | Starfish         | 0.2            | 2017-Sep-18 |
 | Starling         | 0.2            | 2012-Aug-01 |
+| Topologic        | 1.3.0          | 2019-Dec-25 |
 | TreeFrog         | 2017-Feb-08    | 2017-Feb-08 |
 | TSplines         | 4              | 2014-Jan-19 |
 | TT Toolbox       | 1.9            | 2017-May-25 |
-| Tundra           | 0.1            | 2019-Feb-16 |
 | VisualARQ        | 2.6            | 2019-Dec-12 |
 | Volvox           | 0.3.0.0        | 2016-Feb-16 |
 | Wallacei         | 2.5            | 2019-Nov-17 |
