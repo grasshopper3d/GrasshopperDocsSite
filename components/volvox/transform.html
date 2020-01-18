@@ -1,0 +1,434 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+<head data-layout-view="wide">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Transform - Grasshopper Component Reference</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+
+<meta name="description" content="A guide to component Transform in Grasshopper 3D." />
+<meta name="title" content="Grasshopper Component Reference" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://rhino.github.io/" />
+<meta property="og:title" content="Transform - Grasshopper Component Reference" />
+
+<meta property="wiki-page" content="GH Volvox Transform.md" />
+
+<link rel="image_src" href="http://rhino.github.io/ning/2985220.jpg" />
+
+<style type="text/css" media="screen,projection">
+#xg_navigation ul div.xg_subtab ul li a {
+    color:#666666;
+    background:#EAFFBD;
+}
+#xg_navigation ul div.xg_subtab ul li a:hover {
+    color:#333333;
+    background:#F2FFD6;
+}
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../../ning/index.css);
+@import url(../../ning/page.css);
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../../ning/1187549422.css);
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../../ning/1187545030.css);
+</style>
+
+
+<link href="../../style.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+    </head>
+    <body>
+    
+        
+        <div id="xg" class="xg_theme xg_widget_page xg_widget_page_page xg_widget_page_page_show" data-layout-pack="classic">
+            <div id="xg_head">
+                <div id="xg_masthead">
+                    <p id="xg_sitename"><a id="application_name_header_link" href="http://rhino.github.io/">Grasshopper</a></p>
+                    <p id="xg_sitedesc" class="xj_site_desc">algorithmic modeling for Rhino</p>
+                </div>
+                <div id="xg_navigation">
+                    <ul>
+    <li id="xg_tab_main" class="xg_subtab"><a href="http://www.grasshopper3d.com/"><span>Home</span></a></li>
+	<li id="xg_tab_photo" class="xg_subtab"><a href="http://www.grasshopper3d.com/photo"><span>View</span></a></li>
+	<li id="xg_tab_xn0" class="xg_subtab"><a href="http://www.grasshopper3d.com/page/download-1"><span>Download</span></a></li>
+	<li id="xg_tab_forum" class="xg_subtab"><a href="https://discourse.mcneel.com/c/grasshopper"><span>Forums&#47;Support</span></a></li>
+	<li id="xg_tab_xn2" class="xg_subtab this"><a href="http://rhino.github.io/"><span>Learn</span></a></li>
+	<li id="xg_tab_events" class="xg_subtab"><a href="http://www.grasshopper3d.com/events"><span>Attend</span></a></li>
+	<li id="xg_tab_profile" class="xg_subtab"><a href="http://www.grasshopper3d.com/profiles"><span>My Page</span></a></li></ul>
+
+                </div>
+            </div>
+            
+            <div id="xg_body">
+                
+				<div class="page">
+
+<div class="content">
+
+<div class="ghbar">
+<table class="ghbar-table">
+<tr>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/volvox/about.html"><img class="ghicon" src="../../icons/Volvox/About.png" title="About"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/volvox/average.html"><img class="ghicon" src="../../icons/Volvox/Average.png" title="Average"></a>
+<a href="../../components/volvox/closestPoint.html"><img class="ghicon" src="../../icons/Volvox/Closest_Point.png" title="Closest Point"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/volvox/getPoints.html"><img class="ghicon" src="../../icons/Volvox/Get_Points.png" title="Get Points"></a>
+<a href="../../components/volvox/subCloud.html"><img class="ghicon" src="../../icons/Volvox/Sub_Cloud.png" title="Sub Cloud"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/volvox/cloudPlane.html"><img class="ghicon" src="../../icons/Volvox/Cloud___Plane.png" title="Cloud | Plane"></a>
+<a href="../../components/volvox/cloudStatistics.html"><img class="ghicon" src="../../icons/Volvox/Cloud_Statistics.png" title="Cloud Statistics"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+Analysis
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/volvox/cloudGrid.html"><img class="ghicon" src="../../icons/Volvox/Cloud_Grid.png" title="Cloud Grid"></a>
+<a href="../../components/volvox/constructCloud.html"><img class="ghicon" src="../../icons/Volvox/Construct_Cloud.png" title="Construct Cloud"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/volvox/deconstructCloud.html"><img class="ghicon" src="../../icons/Volvox/Deconstruct_Cloud.png" title="Deconstruct Cloud"></a>
+<a href="../../components/volvox/getPosition.html"><img class="ghicon" src="../../icons/Volvox/Get_Position.png" title="Get Position"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/volvox/mergeClouds.html"><img class="ghicon" src="../../icons/Volvox/Merge_Clouds.png" title="Merge Clouds"></a>
+<a href="../../components/volvox/multiMerge.html"><img class="ghicon" src="../../icons/Volvox/MultiMerge.png" title="MultiMerge"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/volvox/setPosition.html"><img class="ghicon" src="../../icons/Volvox/Set_Position.png" title="Set Position"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="4">
+Cloud
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/volvox/commandLine.html"><img class="ghicon" src="../../icons/Volvox/Command_Line.png" title="Command Line"></a>
+<a href="../../components/volvox/commandLineE57.html"><img class="ghicon" src="../../icons/Volvox/Command_Line_.E57.png" title="Command Line .E57"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/volvox/randomSubsampling.html"><img class="ghicon" src="../../icons/Volvox/Random_Subsampling.png" title="Random Subsampling"></a>
+<a href="../../components/volvox/spatialSubsampling.html"><img class="ghicon" src="../../icons/Volvox/Spatial_Subsampling.png" title="Spatial Subsampling"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/volvox/openFile.html"><img class="ghicon" src="../../icons/Volvox/Open_File.png" title="Open File"></a>
+<a href="../../components/volvox/convertxyz.html"><img class="ghicon" src="../../icons/Volvox/Convert_.xyz.png" title="Convert .xyz"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/volvox/commandLinexyz.html"><img class="ghicon" src="../../icons/Volvox/Command_Line_.xyz.png" title="Command Line .xyz"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="4">
+CloudCompare
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/volvox/cloudEngine.html"><img class="ghicon" src="../../icons/Volvox/Cloud_Engine.png" title="Cloud Engine"></a>
+<a href="../../components/volvox/cloudEngineX.html"><img class="ghicon" src="../../icons/Volvox/Cloud_EngineX.png" title="Cloud EngineX"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/volvox/boxCrop.html"><img class="ghicon" src="../../icons/Volvox/Box_Crop.png" title="Box Crop"></a>
+<a href="../../components/volvox/load.html"><img class="ghicon" src="../../icons/Volvox/Load.png" title="Load"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/volvox/planeClip.html"><img class="ghicon" src="../../icons/Volvox/Plane_Clip.png" title="Plane Clip"></a>
+<a href="../../components/volvox/saveE57.html"><img class="ghicon" src="../../icons/Volvox/Save_E57.png" title="Save E57"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/volvox/save.html"><img class="ghicon" src="../../icons/Volvox/Save.png" title="Save"></a>
+<a href="../../components/volvox/sphereCrop.html"><img class="ghicon" src="../../icons/Volvox/Sphere_Crop.png" title="Sphere Crop"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/volvox/transform.html"><img class="ghicon" src="../../icons/Volvox/Transform.png" title="Transform"></a>
+<a href="../../components/volvox/voxelSubsampling.html"><img class="ghicon" src="../../icons/Volvox/Voxel_Subsampling.png" title="Voxel Subsampling"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="5">
+Engine
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/volvox/loadE57.html"><img class="ghicon" src="../../icons/Volvox/Load_E57.png" title="Load E57"></a>
+<a href="../../components/volvox/loadE57Ex.html"><img class="ghicon" src="../../icons/Volvox/Load_E57_Ex.png" title="Load E57 Ex"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/volvox/e57Metadata.html"><img class="ghicon" src="../../icons/Volvox/E57_Metadata.png" title="E57 Metadata"></a>
+<a href="../../components/volvox/loadxyz.html"><img class="ghicon" src="../../icons/Volvox/Load_.xyz.png" title="Load .xyz"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/volvox/loadxyzEx.html"><img class="ghicon" src="../../icons/Volvox/Load_.xyz_Ex.png" title="Load .xyz Ex"></a>
+<a href="../../components/volvox/saveE57Ex.html"><img class="ghicon" src="../../icons/Volvox/Save_E57_Ex.png" title="Save E57 Ex"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/volvox/savexyz.html"><img class="ghicon" src="../../icons/Volvox/Save_.xyz.png" title="Save .xyz"></a>
+<a href="../../components/volvox/previewxyz.html"><img class="ghicon" src="../../icons/Volvox/Preview_.xyz.png" title="Preview .xyz"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="4">
+I/O
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/volvox/addData.html"><img class="ghicon" src="../../icons/Volvox/Add_Data.png" title="Add Data"></a>
+<a href="../../components/volvox/bounds.html"><img class="ghicon" src="../../icons/Volvox/Bounds.png" title="Bounds"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/volvox/previewData.html"><img class="ghicon" src="../../icons/Volvox/Preview_Data.png" title="Preview Data"></a>
+<a href="../../components/volvox/cullCloud.html"><img class="ghicon" src="../../icons/Volvox/Cull_Cloud.png" title="Cull Cloud"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/volvox/cloudExpression.html"><img class="ghicon" src="../../icons/Volvox/Cloud_Expression.png" title="Cloud Expression"></a>
+<a href="../../components/volvox/cloudScript.html"><img class="ghicon" src="../../icons/Volvox/Cloud_Script.png" title="Cloud Script"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/volvox/getData.html"><img class="ghicon" src="../../icons/Volvox/Get_Data.png" title="Get Data"></a>
+<a href="../../components/volvox/getValue.html"><img class="ghicon" src="../../icons/Volvox/Get_Value.png" title="Get Value"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/volvox/listKeys.html"><img class="ghicon" src="../../icons/Volvox/List_Keys.png" title="List Keys"></a>
+<a href="../../components/volvox/meshCompare.html"><img class="ghicon" src="../../icons/Volvox/Mesh_Compare.png" title="Mesh Compare"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/volvox/removeData.html"><img class="ghicon" src="../../icons/Volvox/Remove_Data.png" title="Remove Data"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="6">
+UserData
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/volvox/cleanCloud.html"><img class="ghicon" src="../../icons/Volvox/Clean_Cloud.png" title="Clean Cloud"></a>
+<a href="../../components/volvox/clippingPlane.html"><img class="ghicon" src="../../icons/Volvox/ClippingPlane.png" title="ClippingPlane"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/volvox/delaunayColored.html"><img class="ghicon" src="../../icons/Volvox/Delaunay_Colored.png" title="Delaunay Colored"></a>
+<a href="../../components/volvox/disjointCloud.html"><img class="ghicon" src="../../icons/Volvox/Disjoint_Cloud.png" title="Disjoint Cloud"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/volvox/meshInclude.html"><img class="ghicon" src="../../icons/Volvox/Mesh_Include.png" title="Mesh Include"></a>
+<a href="../../components/volvox/saveCloud.html"><img class="ghicon" src="../../icons/Volvox/Save_Cloud.png" title="Save Cloud"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/volvox/selection.html"><img class="ghicon" src="../../icons/Volvox/Selection.png" title="Selection"></a>
+<a href="../../components/volvox/voxelColored.html"><img class="ghicon" src="../../icons/Volvox/Voxel_Colored.png" title="Voxel Colored"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="4">
+Util
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+
+<div class="addon-buttons">
+<a href="https://www.food4rhino.com/app/volvox">Download</a>
+</div>
+
+<div>
+<h1><img src="../../icons/Volvox/Transform.png"/> Transform</h1>
+<p><a href="../../index.html#Volvox">Component Index</a> &gt; <a href="../../addons/volvox.html">Volvox</a> > Engine > <b>Transform</b></p>
+</div>
+<h3>Apply transformation to the Point Cloud.</h3>
+
+  </div>
+
+</div>
+
+            </div>
+            <div id="xg_foot">
+                <p class="left">
+    © 2018-2020  <a href="https://github.com/robinrodricks/">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a> &nbsp;
+	Rhino & Grasshopper are trademarks of <a href="https://www.rhino3d.com/">Robert McNeel & Associates</a>.
+	</p>
+    <p class="right xg_lightfont">
+                    <a href="http://www.grasshopper3d.com/main/embeddable/list">Badges</a> &nbsp;|&nbsp;
+                        <a href="http://www.grasshopper3d.com/main/index/report" dojotype="PromptToJoinLink" _joinprompttext="Please sign up or sign in to complete this step." _hassignup="true" _signinurl="http://www.grasshopper3d.com/main/authorization/signIn?target=http%3A%2F%2Fwww.grasshopper3d.com%2Fmain%2Findex%2Freport">Report an Issue</a> &nbsp;|&nbsp;
+                        <a href="http://www.grasshopper3d.com/main/authorization/termsOfService?previousUrl=http%3A%2F%2Fwww.grasshopper3d.com%2Fpage%2Fcomponent-reference">Terms of Service</a>
+            </p>
+
+            </div>
+        </div>
+        
+        <div id="xj_baz17246" class="xg_theme"></div>
+<div id="xg_overlay" style="display:none;">
+<!--[if lte IE 6.5]><iframe></iframe><![endif]-->
+</div>
+<!--googleoff: all--><noscript>
+	<style type="text/css" media="screen">
+        #xg { position:relative;top:120px; }
+        #xn_bar { top:120px; }
+	</style>
+	<div class="errordesc noscript">
+		<div>
+            <h3><strong>Hello, you need to enable JavaScript to use Grasshopper.</strong></h3>
+            <p>Please check your browser settings or contact your system administrator.</p>
+			
+		</div>
+	</div>
+</noscript><!--googleon: all-->
+
+<script src="/js/jquery.js"></script>
+<script src="/js/kramed.min.js"></script>
+<script src="/js/component.js"></script>
+<script src="/js/user.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    </body>
+</html>
