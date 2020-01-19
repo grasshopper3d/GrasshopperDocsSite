@@ -641,41 +641,6 @@
 <p><a href="../../index.html#Ladybug">Component Index</a> &gt; <a href="../../addons/ladybug.html">Ladybug</a> > 7 | WIP > <b>ENVI-Met Building Terrain</b></p>
 </div>
 <h3>Use this component to generate inputs for "LB ENVI-Met Spaces".<br>Sometimes some buildings are not generated when you connect terrain input. Try to move buildings or move the terrain to solve this issue.<br></h3>
-<h2>Inputs</h2>
-<table>
-<thead>
-<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
-</thead>
-<tbody>
-<tr><td><b>_buildings</b></td><td>_buildings</td><td>Geometry that represent ENVI-Met buildings.
--
-Geometry must be closed Brep/Breps.
--
-Try to connect "threeDeeShapes" output of "Gismo" (a plugin for GIS environmental analysis).</td><td>Goo</td></tr>
-<tr><td><b>terrain_</b></td><td>terrain_</td><td>Optional geometry that represent 
-ENVI-Met terrain. Geometry must be the output of "LB Terrain Generator".</td><td>Goo</td></tr>
-<tr><td><b>---------------------</b></td><td>---------------------</td><td>(...)</td><td>Goo</td></tr>
-<tr><td><b>_defaultMaterialsld_</b></td><td>_defaultMaterialsld_</td><td>Default wall/roof property. Use this input to set default building materials.
--
-If no input is connected this input will be concrete slab/roofing tile (00, R1).</td><td>Goo</td></tr>
-<tr><td><b>wallMaterialsId_</b></td><td>wallMaterialsId_</td><td>Use this input to change wall materials.</td><td>Goo</td></tr>
-<tr><td><b>roofMaterialsId_</b></td><td>roofMaterialsId_</td><td>Use this input to change roof materials.</td><td>Goo</td></tr>
-<tr><td><b>_runIt</b></td><td>_runIt</td><td>Set to "True" to run the component and generate envimetBuildings and envimetTerrain.</td><td>Goo</td></tr>
-</tbody>
-</table>
-
-<h2>Outputs</h2>
-<table>
-<thead>
-<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
-</thead>
-<tbody>
-<tr><td><b>out</b></td><td>readMe!</td><td>...</td><td>String</td></tr>
-<tr><td><b>envimetBuildings</b></td><td>envimetBuildings</td><td>Connect this output to "ENVI-Met Spaces" in order to add buildings to ENVI-Met model.</td><td>Goo</td></tr>
-<tr><td><b>envimetTerrain</b></td><td>envimetTerrain</td><td>Connect this output to "ENVI-Met Spaces" in order to add a terrain to ENVI-Met model.</td><td>Goo</td></tr>
-</tbody>
-</table>
-
 
   </div>
 

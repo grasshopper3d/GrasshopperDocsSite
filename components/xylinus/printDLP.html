@@ -273,32 +273,6 @@ Syringe
 <p><a href="../../index.html#Xylinus">Component Index</a> &gt; <a href="../../addons/xylinus.html">Xylinus</a> > DLP > <b>DLP Print</b></p>
 </div>
 <h3>Generate the G Code and synch it with the projected slices</h3>
-<h2>Inputs</h2>
-<table>
-<thead>
-<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
-</thead>
-<tbody>
-<tr><td><b>Slices</b></td><td>Sl</td><td>Contains a collection of generic geometry</td><td>GeometricGoo</td></tr>
-<tr><td><b>DLP Config</b></td><td>C</td><td>Contains a collection of generic data</td><td>Goo</td></tr>
-<tr><td><b>Start / Stop</b></td><td>S</td><td>"True" will begin the print. "False" will end the print and cancle any remaining print.</td><td>Boolean</td></tr>
-<tr><td><b>pause</b></td><td>P</td><td>Contains a collection of boolean values</td><td>Boolean</td></tr>
-<tr><td><b>safe view</b></td><td>SV</td><td>if set to "True" cross sections will be projected in red, which does not activate some resins</td><td>Integer</td></tr>
-<tr><td><b>start and end g code</b></td><td>SE</td><td>Boolean input to determine wether or not to add the start and end g code needed to intiate and end a print. You may also adda customized start and end gcode sequences from the Start G Code and the End G Code components.</td><td>Goo</td></tr>
-</tbody>
-</table>
-
-<h2>Outputs</h2>
-<table>
-<thead>
-<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
-</thead>
-<tbody>
-<tr><td><b>Print Report</b></td><td>R</td><td>Result of merge</td><td>Goo</td></tr>
-<tr><td><b>G Code Stream</b></td><td>GC</td><td>gcode being sent to the printer via FireFly</td><td>Goo</td></tr>
-</tbody>
-</table>
-
 
   </div>
 

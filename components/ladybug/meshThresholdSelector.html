@@ -641,39 +641,6 @@
 <p><a href="../../index.html#Ladybug">Component Index</a> &gt; <a href="../../addons/ladybug.html">Ladybug</a> > 5 | Extra > <b>Mesh Threshold Selector</b></p>
 </div>
 <h3>Use this component to select out the part of a colored mesh that meets a certain conditional statement.  This has multiple uses: The generation of a custom shade from a shade benefit analysis, Quantifying the daylight area from a daylight analysis, Selecting out the portion of a roof with enough solar radiation for PV panels, and much more.<br></h3>
-<h2>Inputs</h2>
-<table>
-<thead>
-<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
-</thead>
-<tbody>
-<tr><td><b>_inputMesh</b></td><td>_inputMesh</td><td>The mesh for which you would like to highlight the portion that meets a threshold.</td><td>Goo</td></tr>
-<tr><td><b>_analysisResult</b></td><td>_analysisResult</td><td>A numerical data set whose length corresponds to the number of faces in the _inputMesh.</td><td>Goo</td></tr>
-<tr><td><b>_operator_</b></td><td>_operator_</td><td>A text string representing an operator for the the conditional statement.  The default is set to be greater than (;).  This must be an operator in python and examples include:
-; - Greater Than
-; - Less Than
-;= - Greater or Equal
-;= - Less or Equal
-== - Equals</td><td>Goo</td></tr>
-<tr><td><b>percentToKeep_</b></td><td>percentToKeep_</td><td>A number between 0 and 100 that represents the percentage of the mesh faces that you would like to include in the resulting newColoredMesh.  By default, this is set to 25%.</td><td>Goo</td></tr>
-<tr><td><b>levelOfPerform_</b></td><td>levelOfPerform_</td><td>An optional number that represents the threshold above which a given mesh face is included in the newColoredMesh.  An input here will override the percent input above.</td><td>Goo</td></tr>
-</tbody>
-</table>
-
-<h2>Outputs</h2>
-<table>
-<thead>
-<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
-</thead>
-<tbody>
-<tr><td><b>out</b></td><td>readMe!</td><td>...</td><td>String</td></tr>
-<tr><td><b>totalValue</b></td><td>totalValue</td><td>The sum of all of the values that meet the criteria multiplied by the mesh face area.  For example, if the _inputMesh is a radiation study mesh, this is equal to the total radiation falling on the newColoredMesh.  For an energy shade benefit mesh, this is the total energy saved by a shade of this size.</td><td>Goo</td></tr>
-<tr><td><b>areaMeetsThresh</b></td><td>areaMeetsThresh</td><td>The area of the newColoredMesh in Rhino model units.</td><td>Goo</td></tr>
-<tr><td><b>newColoredMesh</b></td><td>newColoredMesh</td><td>A new colored mesh with the vlues below the threshold deleted out of it.</td><td>Goo</td></tr>
-<tr><td><b>newMeshOutline</b></td><td>newMeshOutline</td><td>A set of curves outlining the portion of the mesh that is above the threshold.</td><td>Goo</td></tr>
-</tbody>
-</table>
-
 
   </div>
 

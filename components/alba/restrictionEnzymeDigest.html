@@ -338,47 +338,6 @@ Visualize
 <p><a href="../../index.html#Alba">Component Index</a> &gt; <a href="../../addons/alba.html">Alba</a> > Digest > <b>Digest</b></p>
 </div>
 <h3>Cuts up DNA based on target sits of the input restriction enzyme and outputs double stranded DNA with sticky ends.</h3>
-<h2>Inputs</h2>
-<table>
-<thead>
-<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
-</thead>
-<tbody>
-<tr><td><b>Loc</b></td><td>Loc</td><td>Represents a cluster input parameter</td><td>Goo</td></tr>
-<tr><td><b>Text</b></td><td>DNA</td><td>Contains a collection of text fragments</td><td>String</td></tr>
-<tr><td><b>Enzymes</b></td><td>Enz</td><td>Coomon name of the Enzyme. You may use the Enzyme dropdrown object to find the enzyme you are looking for.</td><td>Goo</td></tr>
-<tr><td><b>Subsection of the Primary Strand</b></td><td>i PS</td><td>The enzymes will cut the DNA up, sometimes into multiple fragments. choose which fragment you want by input the index of the substrand. These floin the direction of the Primary strand from 5' to 3'</td><td>Integer</td></tr>
-<tr><td><b>Subsection of the Complementary Strand</b></td><td>i CS</td><td>The enzymes will cut the DNA up, sometimes into multiple fragments. choose which fragment you want by input the index of the substrand. These floin the direction of the Primary strand from 5' to 3'</td><td>Integer</td></tr>
-<tr><td><b>Visualize Digest</b></td><td>Viz</td><td>0 = draw nothing
-1 = draw cuts only
-2 = draw cuts, letters and curve
-3 = draw curves
-4 = draw letters
-5 = draw everything including a trace of the whole strand</td><td>Goo</td></tr>
-<tr><td><b>Plasmid</b></td><td>Plas</td><td>Contains a collection of boolean values</td><td>Boolean</td></tr>
-<tr><td><b>Text Size</b></td><td>Size</td><td>Size of the text</td><td>Number</td></tr>
-<tr><td><b>Color Primary Strand</b></td><td>ColP</td><td>input a swatch or shader</td><td>Material</td></tr>
-<tr><td><b>Color Complementary Strand</b></td><td>ColC</td><td>input a swatch or shader</td><td>Material</td></tr>
-<tr><td><b>Thickness</b></td><td>Thk</td><td>The thickness of the wire display</td><td>Goo</td></tr>
-<tr><td><b>Distance</b></td><td>Dist</td><td>Offset distance</td><td>Number</td></tr>
-</tbody>
-</table>
-
-<h2>Outputs</h2>
-<table>
-<thead>
-<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
-</thead>
-<tbody>
-<tr><td><b>Text</b></td><td>DNA</td><td>Contains a collection of text fragments</td><td>String</td></tr>
-<tr><td><b>Complementary DNA</b></td><td>cDNA</td><td>Subset of base list</td><td>Goo</td></tr>
-<tr><td><b>Curve</b></td><td>Crv</td><td>Resulting sub curve</td><td>Curve</td></tr>
-<tr><td><b>Complementary Curve</b></td><td>cCrv</td><td>Flipped curve</td><td>Curve</td></tr>
-<tr><td><b>points</b></td><td>Pts</td><td>Contains a collection of three-dimensional points</td><td>Point</td></tr>
-<tr><td><b>Complementary Points</b></td><td>cPts</td><td>Contains a collection of three-dimensional points</td><td>Point</td></tr>
-</tbody>
-</table>
-
 
   </div>
 

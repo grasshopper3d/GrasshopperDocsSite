@@ -1,0 +1,493 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+<head data-layout-view="wide">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Break Field - Grasshopper Component Reference</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+
+<meta name="description" content="A guide to component Break Field in Grasshopper 3D." />
+<meta name="title" content="Grasshopper Component Reference" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://rhino.github.io/" />
+<meta property="og:title" content="Break Field - Grasshopper Component Reference" />
+
+<meta property="wiki-page" content="GH GrasshopperVector Break_Field.md" />
+
+<link rel="image_src" href="http://rhino.github.io/ning/2985220.jpg" />
+
+<style type="text/css" media="screen,projection">
+#xg_navigation ul div.xg_subtab ul li a {
+    color:#666666;
+    background:#EAFFBD;
+}
+#xg_navigation ul div.xg_subtab ul li a:hover {
+    color:#333333;
+    background:#F2FFD6;
+}
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../../ning/index.css);
+@import url(../../ning/page.css);
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../../ning/1187549422.css);
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../../ning/1187545030.css);
+</style>
+
+
+<link href="../../style.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+    </head>
+    <body>
+    
+        
+        <div id="xg" class="xg_theme xg_widget_page xg_widget_page_page xg_widget_page_page_show" data-layout-pack="classic">
+            <div id="xg_head">
+                <div id="xg_masthead">
+                    <p id="xg_sitename"><a id="application_name_header_link" href="http://rhino.github.io/">Grasshopper</a></p>
+                    <p id="xg_sitedesc" class="xj_site_desc">algorithmic modeling for Rhino</p>
+                </div>
+                <div id="xg_navigation">
+                    <ul>
+    <li id="xg_tab_main" class="xg_subtab"><a href="http://www.grasshopper3d.com/"><span>Home</span></a></li>
+	<li id="xg_tab_photo" class="xg_subtab"><a href="http://www.grasshopper3d.com/photo"><span>View</span></a></li>
+	<li id="xg_tab_xn0" class="xg_subtab"><a href="http://www.grasshopper3d.com/page/download-1"><span>Download</span></a></li>
+	<li id="xg_tab_forum" class="xg_subtab"><a href="https://discourse.mcneel.com/c/grasshopper"><span>Forums&#47;Support</span></a></li>
+	<li id="xg_tab_xn2" class="xg_subtab this"><a href="http://rhino.github.io/"><span>Learn</span></a></li>
+	<li id="xg_tab_events" class="xg_subtab"><a href="http://www.grasshopper3d.com/events"><span>Attend</span></a></li>
+	<li id="xg_tab_profile" class="xg_subtab"><a href="http://www.grasshopper3d.com/profiles"><span>My Page</span></a></li></ul>
+
+                </div>
+            </div>
+            
+            <div id="xg_body">
+                
+				<div class="page">
+
+<div class="content">
+
+<div class="ghbar">
+<table class="ghbar-table">
+<tr>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppervector/blendColours.html"><img class="ghicon" src="../../icons/GrasshopperVector/Blend_Colours.png" title="Blend Colours"></a>
+<a href="../../components/grasshoppervector/multiplication.html"><img class="ghicon" src="../../icons/GrasshopperVector/Multiplication.png" title="Multiplication"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppervector/subtraction.html"><img class="ghicon" src="../../icons/GrasshopperVector/Subtraction.png" title="Subtraction"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="2">
+Colour
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppervector/breakField.html"><img class="ghicon" src="../../icons/GrasshopperVector/Break_Field.png" title="Break Field"></a>
+<a href="../../components/grasshoppervector/lineCharge.html"><img class="ghicon" src="../../icons/GrasshopperVector/Line_Charge.png" title="Line Charge"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppervector/pointCharge.html"><img class="ghicon" src="../../icons/GrasshopperVector/Point_Charge.png" title="Point Charge"></a>
+<a href="../../components/grasshoppervector/spinForce.html"><img class="ghicon" src="../../icons/GrasshopperVector/Spin_Force.png" title="Spin Force"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppervector/vectorForce.html"><img class="ghicon" src="../../icons/GrasshopperVector/Vector_Force.png" title="Vector Force"></a>
+<a href="../../components/grasshoppervector/evaluateField.html"><img class="ghicon" src="../../icons/GrasshopperVector/Evaluate_Field.png" title="Evaluate Field"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppervector/tensorDisplay.html"><img class="ghicon" src="../../icons/GrasshopperVector/Tensor_Display.png" title="Tensor Display"></a>
+<a href="../../components/grasshoppervector/directionDisplay.html"><img class="ghicon" src="../../icons/GrasshopperVector/Direction_Display.png" title="Direction Display"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppervector/fieldLine.html"><img class="ghicon" src="../../icons/GrasshopperVector/Field_Line.png" title="Field Line"></a>
+<a href="../../components/grasshoppervector/scalarDisplay.html"><img class="ghicon" src="../../icons/GrasshopperVector/Scalar_Display.png" title="Scalar Display"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppervector/perpendicularDisplay.html"><img class="ghicon" src="../../icons/GrasshopperVector/Perpendicular_Display.png" title="Perpendicular Display"></a>
+<a href="../../components/grasshoppervector/mergeFields.html"><img class="ghicon" src="../../icons/GrasshopperVector/Merge_Fields.png" title="Merge Fields"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="6">
+Field
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppervector/hexagonal.html"><img class="ghicon" src="../../icons/GrasshopperVector/Hexagonal.png" title="Hexagonal"></a>
+<a href="../../components/grasshoppervector/populateGeometry.html"><img class="ghicon" src="../../icons/GrasshopperVector/Populate_Geometry.png" title="Populate Geometry"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppervector/freeformCloud.html"><img class="ghicon" src="../../icons/GrasshopperVector/Freeform_Cloud.png" title="Freeform Cloud"></a>
+<a href="../../components/grasshoppervector/populate2D.html"><img class="ghicon" src="../../icons/GrasshopperVector/Populate_2D.png" title="Populate 2D"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppervector/sphericalCloud.html"><img class="ghicon" src="../../icons/GrasshopperVector/Spherical_Cloud.png" title="Spherical Cloud"></a>
+<a href="../../components/grasshoppervector/radial.html"><img class="ghicon" src="../../icons/GrasshopperVector/Radial.png" title="Radial"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppervector/rectangular.html"><img class="ghicon" src="../../icons/GrasshopperVector/Rectangular.png" title="Rectangular"></a>
+<a href="../../components/grasshoppervector/square.html"><img class="ghicon" src="../../icons/GrasshopperVector/Square.png" title="Square"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppervector/triangular.html"><img class="ghicon" src="../../icons/GrasshopperVector/Triangular.png" title="Triangular"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="5">
+Grid
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppervector/adjustPlane.html"><img class="ghicon" src="../../icons/GrasshopperVector/Adjust_Plane.png" title="Adjust Plane"></a>
+<a href="../../components/grasshoppervector/alignPlane.html"><img class="ghicon" src="../../icons/GrasshopperVector/Align_Plane.png" title="Align Plane"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppervector/alignPlanes.html"><img class="ghicon" src="../../icons/GrasshopperVector/Align_Planes.png" title="Align Planes"></a>
+<a href="../../components/grasshoppervector/constructPlane.html"><img class="ghicon" src="../../icons/GrasshopperVector/Construct_Plane.png" title="Construct Plane"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppervector/deconstructPlane.html"><img class="ghicon" src="../../icons/GrasshopperVector/Deconstruct_Plane.png" title="Deconstruct Plane"></a>
+<a href="../../components/grasshoppervector/flipPlane.html"><img class="ghicon" src="../../icons/GrasshopperVector/Flip_Plane.png" title="Flip Plane"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppervector/plane3Pt.html"><img class="ghicon" src="../../icons/GrasshopperVector/Plane_3Pt.png" title="Plane 3Pt"></a>
+<a href="../../components/grasshoppervector/planeClosestPoint.html"><img class="ghicon" src="../../icons/GrasshopperVector/Plane_Closest_Point.png" title="Plane Closest Point"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppervector/planeCoordinates.html"><img class="ghicon" src="../../icons/GrasshopperVector/Plane_Coordinates.png" title="Plane Coordinates"></a>
+<a href="../../components/grasshoppervector/planeFit.html"><img class="ghicon" src="../../icons/GrasshopperVector/Plane_Fit.png" title="Plane Fit"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppervector/lineLine.html"><img class="ghicon" src="../../icons/GrasshopperVector/Line___Line.png" title="Line + Line"></a>
+<a href="../../components/grasshoppervector/linePt.html"><img class="ghicon" src="../../icons/GrasshopperVector/Line___Pt.png" title="Line + Pt"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppervector/planeNormal.html"><img class="ghicon" src="../../icons/GrasshopperVector/Plane_Normal.png" title="Plane Normal"></a>
+<a href="../../components/grasshoppervector/planeOffset.html"><img class="ghicon" src="../../icons/GrasshopperVector/Plane_Offset.png" title="Plane Offset"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppervector/planeOrigin.html"><img class="ghicon" src="../../icons/GrasshopperVector/Plane_Origin.png" title="Plane Origin"></a>
+<a href="../../components/grasshoppervector/rotatePlane.html"><img class="ghicon" src="../../icons/GrasshopperVector/Rotate_Plane.png" title="Rotate Plane"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppervector/xYPlane.html"><img class="ghicon" src="../../icons/GrasshopperVector/XY_Plane.png" title="XY Plane"></a>
+<a href="../../components/grasshoppervector/xZPlane.html"><img class="ghicon" src="../../icons/GrasshopperVector/XZ_Plane.png" title="XZ Plane"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppervector/yZPlane.html"><img class="ghicon" src="../../icons/GrasshopperVector/YZ_Plane.png" title="YZ Plane"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="10">
+Plane
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppervector/projectPoint.html"><img class="ghicon" src="../../icons/GrasshopperVector/Project_Point.png" title="Project Point"></a>
+<a href="../../components/grasshoppervector/closestPoint.html"><img class="ghicon" src="../../icons/GrasshopperVector/Closest_Point.png" title="Closest Point"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppervector/closestPoints.html"><img class="ghicon" src="../../icons/GrasshopperVector/Closest_Points.png" title="Closest Points"></a>
+<a href="../../components/grasshoppervector/constructPoint.html"><img class="ghicon" src="../../icons/GrasshopperVector/Construct_Point.png" title="Construct Point"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppervector/cullDuplicates.html"><img class="ghicon" src="../../icons/GrasshopperVector/Cull_Duplicates.png" title="Cull Duplicates"></a>
+<a href="../../components/grasshoppervector/deconstruct.html"><img class="ghicon" src="../../icons/GrasshopperVector/Deconstruct.png" title="Deconstruct"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppervector/deconstructPoint.html"><img class="ghicon" src="../../icons/GrasshopperVector/Deconstruct_Point.png" title="Deconstruct Point"></a>
+<a href="../../components/grasshoppervector/distance.html"><img class="ghicon" src="../../icons/GrasshopperVector/Distance.png" title="Distance"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppervector/numbersToPoints.html"><img class="ghicon" src="../../icons/GrasshopperVector/Numbers_to_Points.png" title="Numbers to Points"></a>
+<a href="../../components/grasshoppervector/barycentric.html"><img class="ghicon" src="../../icons/GrasshopperVector/Barycentric.png" title="Barycentric"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppervector/pointCylindrical.html"><img class="ghicon" src="../../icons/GrasshopperVector/Point_Cylindrical.png" title="Point Cylindrical"></a>
+<a href="../../components/grasshoppervector/pointGroups.html"><img class="ghicon" src="../../icons/GrasshopperVector/Point_Groups.png" title="Point Groups"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppervector/pointOriented.html"><img class="ghicon" src="../../icons/GrasshopperVector/Point_Oriented.png" title="Point Oriented"></a>
+<a href="../../components/grasshoppervector/pointPolar.html"><img class="ghicon" src="../../icons/GrasshopperVector/Point_Polar.png" title="Point Polar"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppervector/toPolar.html"><img class="ghicon" src="../../icons/GrasshopperVector/To_Polar.png" title="To Polar"></a>
+<a href="../../components/grasshoppervector/pointsToNumbers.html"><img class="ghicon" src="../../icons/GrasshopperVector/Points_to_Numbers.png" title="Points to Numbers"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppervector/pullPoint.html"><img class="ghicon" src="../../icons/GrasshopperVector/Pull_Point.png" title="Pull Point"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="9">
+Point
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppervector/vectorXYZ.html"><img class="ghicon" src="../../icons/GrasshopperVector/Vector_XYZ.png" title="Vector XYZ"></a>
+<a href="../../components/grasshoppervector/deconstructVector.html"><img class="ghicon" src="../../icons/GrasshopperVector/Deconstruct_Vector.png" title="Deconstruct Vector"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppervector/massAddition.html"><img class="ghicon" src="../../icons/GrasshopperVector/Mass_Addition.png" title="Mass Addition"></a>
+<a href="../../components/grasshoppervector/solarIncidence.html"><img class="ghicon" src="../../icons/GrasshopperVector/Solar_Incidence.png" title="Solar Incidence"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppervector/unitVector.html"><img class="ghicon" src="../../icons/GrasshopperVector/Unit_Vector.png" title="Unit Vector"></a>
+<a href="../../components/grasshoppervector/unitX.html"><img class="ghicon" src="../../icons/GrasshopperVector/Unit_X.png" title="Unit X"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppervector/unitY.html"><img class="ghicon" src="../../icons/GrasshopperVector/Unit_Y.png" title="Unit Y"></a>
+<a href="../../components/grasshoppervector/unitZ.html"><img class="ghicon" src="../../icons/GrasshopperVector/Unit_Z.png" title="Unit Z"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppervector/vector2Pt.html"><img class="ghicon" src="../../icons/GrasshopperVector/Vector_2Pt.png" title="Vector 2Pt"></a>
+<a href="../../components/grasshoppervector/amplitude.html"><img class="ghicon" src="../../icons/GrasshopperVector/Amplitude.png" title="Amplitude"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppervector/angle.html"><img class="ghicon" src="../../icons/GrasshopperVector/Angle.png" title="Angle"></a>
+<a href="../../components/grasshoppervector/crossProduct.html"><img class="ghicon" src="../../icons/GrasshopperVector/Cross_Product.png" title="Cross Product"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppervector/divide.html"><img class="ghicon" src="../../icons/GrasshopperVector/Divide.png" title="Divide"></a>
+<a href="../../components/grasshoppervector/dotProduct.html"><img class="ghicon" src="../../icons/GrasshopperVector/Dot_Product.png" title="Dot Product"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppervector/vectorLength.html"><img class="ghicon" src="../../icons/GrasshopperVector/Vector_Length.png" title="Vector Length"></a>
+<a href="../../components/grasshoppervector/multiply.html"><img class="ghicon" src="../../icons/GrasshopperVector/Multiply.png" title="Multiply"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppervector/reverse.html"><img class="ghicon" src="../../icons/GrasshopperVector/Reverse.png" title="Reverse"></a>
+<a href="../../components/grasshoppervector/rotate.html"><img class="ghicon" src="../../icons/GrasshopperVector/Rotate.png" title="Rotate"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppervector/addition.html"><img class="ghicon" src="../../icons/GrasshopperVector/Addition.png" title="Addition"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="10">
+Vector
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+
+<div class="addon-buttons">
+<a href="https://www.rhino3d.com/6/new/grasshopper">Download</a>
+</div>
+
+<div>
+<h1><img src="../../icons/GrasshopperVector/Break_Field.png"/> Break Field</h1>
+<p><a href="../../index.html#GrasshopperVector">Component Index</a> &gt; <a href="../../addons/grasshopper-vector.html">Grasshopper Vector</a> > Field > <b>BreakF</b></p>
+</div>
+<h3>Break a field into individual elements</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Field</b></td><td>F</td><td>Field to break</td><td>Field</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Fields</b></td><td>F</td><td>Elemental fields</td><td>Field</td></tr>
+</tbody>
+</table>
+
+
+  </div>
+
+</div>
+
+            </div>
+            <div id="xg_foot">
+                <p class="left">
+    © 2018-2020  <a href="https://github.com/robinrodricks/">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a> &nbsp;
+	Rhino & Grasshopper are trademarks of <a href="https://www.rhino3d.com/">Robert McNeel & Associates</a>.
+	</p>
+    <p class="right xg_lightfont">
+                    <a href="http://www.grasshopper3d.com/main/embeddable/list">Badges</a> &nbsp;|&nbsp;
+                        <a href="http://www.grasshopper3d.com/main/index/report" dojotype="PromptToJoinLink" _joinprompttext="Please sign up or sign in to complete this step." _hassignup="true" _signinurl="http://www.grasshopper3d.com/main/authorization/signIn?target=http%3A%2F%2Fwww.grasshopper3d.com%2Fmain%2Findex%2Freport">Report an Issue</a> &nbsp;|&nbsp;
+                        <a href="http://www.grasshopper3d.com/main/authorization/termsOfService?previousUrl=http%3A%2F%2Fwww.grasshopper3d.com%2Fpage%2Fcomponent-reference">Terms of Service</a>
+            </p>
+
+            </div>
+        </div>
+        
+        <div id="xj_baz17246" class="xg_theme"></div>
+<div id="xg_overlay" style="display:none;">
+<!--[if lte IE 6.5]><iframe></iframe><![endif]-->
+</div>
+<!--googleoff: all--><noscript>
+	<style type="text/css" media="screen">
+        #xg { position:relative;top:120px; }
+        #xn_bar { top:120px; }
+	</style>
+	<div class="errordesc noscript">
+		<div>
+            <h3><strong>Hello, you need to enable JavaScript to use Grasshopper.</strong></h3>
+            <p>Please check your browser settings or contact your system administrator.</p>
+			
+		</div>
+	</div>
+</noscript><!--googleon: all-->
+
+<script src="/js/jquery.js"></script>
+<script src="/js/kramed.min.js"></script>
+<script src="/js/component.js"></script>
+<script src="/js/user.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    </body>
+</html>

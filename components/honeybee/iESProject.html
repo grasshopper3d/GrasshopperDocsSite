@@ -947,32 +947,6 @@
 <p><a href="../../index.html#Honeybee">Component Index</a> &gt; <a href="../../addons/honeybee.html">Honeybee</a> > 02 | Daylight | Light Source > <b>IES Project</b></p>
 </div>
 <h3>This component is meant for summarizing the details of all the luminaires used in a simulation.</h3>
-<h2>Inputs</h2>
-<table>
-<thead>
-<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
-</thead>
-<tbody>
-<tr><td><b>_elecLightingData</b></td><td>_elecLightingData</td><td>Connect the elecLightingData output of the Honeybee_IES Luminaire component here.</td><td>Goo</td></tr>
-<tr><td><b>outputsToExcel_</b></td><td>outputsToExcel_</td><td>Set this input to True if the outputs are to be written to a MS Excel compatible .csv file.</td><td>Goo</td></tr>
-<tr><td><b>_excelFileLoc_</b></td><td>_excelFileLoc_</td><td>Specify a directory to which the MS Excel file should be saved to.</td><td>Goo</td></tr>
-</tbody>
-</table>
-
-<h2>Outputs</h2>
-<table>
-<thead>
-<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
-</thead>
-<tbody>
-<tr><td><b>out</b></td><td>out</td><td>The execution information, as output and error streams</td><td>String</td></tr>
-<tr><td><b>radFilePaths</b></td><td>radFilePaths</td><td>List of .rad files corresponding to the luminaires to be used in the simulation. Connect this to the additionalRadFiles_ input of Honeybee_Run Daylight Simulation component.</td><td>Goo</td></tr>
-<tr><td><b>billOfQuantity</b></td><td>billOfQuantity</td><td>The bill of quantity of the luminaires used for simulation.</td><td>Goo</td></tr>
-<tr><td><b>luminaireSchedule</b></td><td>luminaireSchedule</td><td>List of luminaires, their location and aiming angles.</td><td>Goo</td></tr>
-<tr><td><b>lumScheduleDetailed</b></td><td>lumScheduleDetailed</td><td>A more detailed luminaire schedule that includes information about custom lamps (if any) used in the simulation.</td><td>Goo</td></tr>
-</tbody>
-</table>
-
 
   </div>
 

@@ -1,0 +1,629 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+<head data-layout-view="wide">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Gate And Ternary - Grasshopper Component Reference</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+
+<meta name="description" content="A guide to component Gate And Ternary in Grasshopper 3D." />
+<meta name="title" content="Grasshopper Component Reference" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://rhino.github.io/" />
+<meta property="og:title" content="Gate And Ternary - Grasshopper Component Reference" />
+
+<meta property="wiki-page" content="GH GrasshopperMaths Gate_And_Ternary.md" />
+
+<link rel="image_src" href="http://rhino.github.io/ning/2985220.jpg" />
+
+<style type="text/css" media="screen,projection">
+#xg_navigation ul div.xg_subtab ul li a {
+    color:#666666;
+    background:#EAFFBD;
+}
+#xg_navigation ul div.xg_subtab ul li a:hover {
+    color:#333333;
+    background:#F2FFD6;
+}
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../../ning/index.css);
+@import url(../../ning/page.css);
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../../ning/1187549422.css);
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../../ning/1187545030.css);
+</style>
+
+
+<link href="../../style.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+    </head>
+    <body>
+    
+        
+        <div id="xg" class="xg_theme xg_widget_page xg_widget_page_page xg_widget_page_page_show" data-layout-pack="classic">
+            <div id="xg_head">
+                <div id="xg_masthead">
+                    <p id="xg_sitename"><a id="application_name_header_link" href="http://rhino.github.io/">Grasshopper</a></p>
+                    <p id="xg_sitedesc" class="xj_site_desc">algorithmic modeling for Rhino</p>
+                </div>
+                <div id="xg_navigation">
+                    <ul>
+    <li id="xg_tab_main" class="xg_subtab"><a href="http://www.grasshopper3d.com/"><span>Home</span></a></li>
+	<li id="xg_tab_photo" class="xg_subtab"><a href="http://www.grasshopper3d.com/photo"><span>View</span></a></li>
+	<li id="xg_tab_xn0" class="xg_subtab"><a href="http://www.grasshopper3d.com/page/download-1"><span>Download</span></a></li>
+	<li id="xg_tab_forum" class="xg_subtab"><a href="https://discourse.mcneel.com/c/grasshopper"><span>Forums&#47;Support</span></a></li>
+	<li id="xg_tab_xn2" class="xg_subtab this"><a href="http://rhino.github.io/"><span>Learn</span></a></li>
+	<li id="xg_tab_events" class="xg_subtab"><a href="http://www.grasshopper3d.com/events"><span>Attend</span></a></li>
+	<li id="xg_tab_profile" class="xg_subtab"><a href="http://www.grasshopper3d.com/profiles"><span>My Page</span></a></li></ul>
+
+                </div>
+            </div>
+            
+            <div id="xg_body">
+                
+				<div class="page">
+
+<div class="content">
+
+<div class="ghbar">
+<table class="ghbar-table">
+<tr>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermaths/gateAndTernary.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Gate_And_Ternary.png" title="Gate And Ternary"></a>
+<a href="../../components/grasshoppermaths/gateOrTernary.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Gate_Or_Ternary.png" title="Gate Or Ternary"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+Boolean
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermaths/constructDomain.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Construct_Domain².png" title="Construct Domain\u00b2"></a>
+<a href="../../components/grasshoppermaths/constructDomain.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Construct_Domain.png" title="Construct Domain"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermaths/deconstructDomain.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Deconstruct_Domain².png" title="Deconstruct Domain\u00b2"></a>
+<a href="../../components/grasshoppermaths/deconstructDomain.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Deconstruct_Domain.png" title="Deconstruct Domain"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermaths/divideDomain.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Divide_Domain².png" title="Divide Domain\u00b2"></a>
+<a href="../../components/grasshoppermaths/divideDomain.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Divide_Domain.png" title="Divide Domain"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermaths/findDomain.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Find_Domain.png" title="Find Domain"></a>
+<a href="../../components/grasshoppermaths/includes.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Includes.png" title="Includes"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermaths/consecutiveDomains.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Consecutive_Domains.png" title="Consecutive Domains"></a>
+<a href="../../components/grasshoppermaths/bounds.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Bounds.png" title="Bounds"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermaths/bounds2D.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Bounds_2D.png" title="Bounds 2D"></a>
+<a href="../../components/grasshoppermaths/remapNumbers.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Remap_Numbers.png" title="Remap Numbers"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="6">
+Domain
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermaths/constructMatrix.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Construct_Matrix.png" title="Construct Matrix"></a>
+<a href="../../components/grasshoppermaths/deconstructMatrix.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Deconstruct_Matrix.png" title="Deconstruct Matrix"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermaths/invertMatrix.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Invert_Matrix.png" title="Invert Matrix"></a>
+<a href="../../components/grasshoppermaths/swapColumns.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Swap_Columns.png" title="Swap Columns"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermaths/swapRows.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Swap_Rows.png" title="Swap Rows"></a>
+<a href="../../components/grasshoppermaths/transposeMatrix.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Transpose_Matrix.png" title="Transpose Matrix"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+Matrix
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermaths/seriesAddition.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Series_Addition.png" title="Series Addition"></a>
+<a href="../../components/grasshoppermaths/gateAnd.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Gate_And.png" title="Gate And"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermaths/gateMajority.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Gate_Majority.png" title="Gate Majority"></a>
+<a href="../../components/grasshoppermaths/equality.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Equality.png" title="Equality"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermaths/factorial.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Factorial.png" title="Factorial"></a>
+<a href="../../components/grasshoppermaths/largerThan.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Larger_Than.png" title="Larger Than"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermaths/massAddition.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Mass_Addition.png" title="Mass Addition"></a>
+<a href="../../components/grasshoppermaths/massMultiplication.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Mass_Multiplication.png" title="Mass Multiplication"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermaths/gateNand.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Gate_Nand.png" title="Gate Nand"></a>
+<a href="../../components/grasshoppermaths/gateNor.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Gate_Nor.png" title="Gate Nor"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermaths/gateNot.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Gate_Not.png" title="Gate Not"></a>
+<a href="../../components/grasshoppermaths/gateOr.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Gate_Or.png" title="Gate Or"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermaths/relativeDifferences.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Relative_Differences.png" title="Relative Differences"></a>
+<a href="../../components/grasshoppermaths/similarity.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Similarity.png" title="Similarity"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermaths/smallerThan.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Smaller_Than.png" title="Smaller Than"></a>
+<a href="../../components/grasshoppermaths/addition.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Addition.png" title="Addition"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermaths/multiplication.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Multiplication.png" title="Multiplication"></a>
+<a href="../../components/grasshoppermaths/subtraction.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Subtraction.png" title="Subtraction"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermaths/gateXnor.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Gate_Xnor.png" title="Gate Xnor"></a>
+<a href="../../components/grasshoppermaths/gateXor.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Gate_Xor.png" title="Gate Xor"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermaths/division.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Division.png" title="Division"></a>
+<a href="../../components/grasshoppermaths/integerDivision.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Integer_Division.png" title="Integer Division"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermaths/modulus.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Modulus.png" title="Modulus"></a>
+<a href="../../components/grasshoppermaths/power.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Power.png" title="Power"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermaths/absolute.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Absolute.png" title="Absolute"></a>
+<a href="../../components/grasshoppermaths/negative.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Negative.png" title="Negative"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="13">
+Operators
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermaths/logN.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Log_N.png" title="Log N"></a>
+<a href="../../components/grasshoppermaths/powerOf10.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Power_of_10.png" title="Power of 10"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermaths/powerOf2.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Power_of_2.png" title="Power of 2"></a>
+<a href="../../components/grasshoppermaths/cube.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Cube.png" title="Cube"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermaths/cubeRoot.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Cube_Root.png" title="Cube Root"></a>
+<a href="../../components/grasshoppermaths/powerOfE.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Power_of_E.png" title="Power of E"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermaths/logarithm.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Logarithm.png" title="Logarithm"></a>
+<a href="../../components/grasshoppermaths/oneOverX.html"><img class="ghicon" src="../../icons/GrasshopperMaths/One_Over_X.png" title="One Over X"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermaths/square.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Square.png" title="Square"></a>
+<a href="../../components/grasshoppermaths/squareRoot.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Square_Root.png" title="Square Root"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="5">
+Polynomials
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermaths/ghPythonScript.html"><img class="ghicon" src="../../icons/GrasshopperMaths/GhPython_Script.png" title="GhPython Script"></a>
+<a href="../../components/grasshoppermaths/evaluate.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Evaluate.png" title="Evaluate"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermaths/expression.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Expression.png" title="Expression"></a>
+<a href="../../components/grasshoppermaths/variableExpression.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Variable_Expression.png" title="Variable Expression"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermaths/f4.html"><img class="ghicon" src="../../icons/GrasshopperMaths/F4.png" title="F4"></a>
+<a href="../../components/grasshoppermaths/f8.html"><img class="ghicon" src="../../icons/GrasshopperMaths/F8.png" title="F8"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermaths/f5.html"><img class="ghicon" src="../../icons/GrasshopperMaths/F5.png" title="F5"></a>
+<a href="../../components/grasshoppermaths/f6.html"><img class="ghicon" src="../../icons/GrasshopperMaths/F6.png" title="F6"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermaths/f7.html"><img class="ghicon" src="../../icons/GrasshopperMaths/F7.png" title="F7"></a>
+<a href="../../components/grasshoppermaths/f1.html"><img class="ghicon" src="../../icons/GrasshopperMaths/F1.png" title="F1"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermaths/f2.html"><img class="ghicon" src="../../icons/GrasshopperMaths/F2.png" title="F2"></a>
+<a href="../../components/grasshoppermaths/f3.html"><img class="ghicon" src="../../icons/GrasshopperMaths/F3.png" title="F3"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermaths/cScript.html"><img class="ghicon" src="../../icons/GrasshopperMaths/C__Script.png" title="C# Script"></a>
+<a href="../../components/grasshoppermaths/vBScript.html"><img class="ghicon" src="../../icons/GrasshopperMaths/VB_Script.png" title="VB Script"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="7">
+Script
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermaths/combineDateTime.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Combine_Date_&_Time.png" title="Combine Date &amp; Time"></a>
+<a href="../../components/grasshoppermaths/constructDate.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Construct_Date.png" title="Construct Date"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermaths/constructExoticDate.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Construct_Exotic_Date.png" title="Construct Exotic Date"></a>
+<a href="../../components/grasshoppermaths/constructSmoothTime.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Construct_Smooth_Time.png" title="Construct Smooth Time"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermaths/constructTime.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Construct_Time.png" title="Construct Time"></a>
+<a href="../../components/grasshoppermaths/dateRange.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Date_Range.png" title="Date Range"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermaths/deconstructDate.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Deconstruct_Date.png" title="Deconstruct Date"></a>
+<a href="../../components/grasshoppermaths/interpolateDate.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Interpolate_Date.png" title="Interpolate Date"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="4">
+Time
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermaths/arcCosine.html"><img class="ghicon" src="../../icons/GrasshopperMaths/ArcCosine.png" title="ArcCosine"></a>
+<a href="../../components/grasshoppermaths/arcSine.html"><img class="ghicon" src="../../icons/GrasshopperMaths/ArcSine.png" title="ArcSine"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermaths/arcTangent.html"><img class="ghicon" src="../../icons/GrasshopperMaths/ArcTangent.png" title="ArcTangent"></a>
+<a href="../../components/grasshoppermaths/cosine.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Cosine.png" title="Cosine"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermaths/coSecant.html"><img class="ghicon" src="../../icons/GrasshopperMaths/CoSecant.png" title="CoSecant"></a>
+<a href="../../components/grasshoppermaths/coTangent.html"><img class="ghicon" src="../../icons/GrasshopperMaths/CoTangent.png" title="CoTangent"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermaths/secant.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Secant.png" title="Secant"></a>
+<a href="../../components/grasshoppermaths/sine.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Sine.png" title="Sine"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermaths/sinc.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Sinc.png" title="Sinc"></a>
+<a href="../../components/grasshoppermaths/tangent.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Tangent.png" title="Tangent"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermaths/degrees.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Degrees.png" title="Degrees"></a>
+<a href="../../components/grasshoppermaths/radians.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Radians.png" title="Radians"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermaths/rightTrigonometry.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Right_Trigonometry.png" title="Right Trigonometry"></a>
+<a href="../../components/grasshoppermaths/centroid.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Centroid.png" title="Centroid"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermaths/circumcentre.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Circumcentre.png" title="Circumcentre"></a>
+<a href="../../components/grasshoppermaths/incentre.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Incentre.png" title="Incentre"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermaths/orthocentre.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Orthocentre.png" title="Orthocentre"></a>
+<a href="../../components/grasshoppermaths/triangleTrigonometry.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Triangle_Trigonometry.png" title="Triangle Trigonometry"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="9">
+Trig
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermaths/average.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Average.png" title="Average"></a>
+<a href="../../components/grasshoppermaths/blurNumbers.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Blur_Numbers.png" title="Blur Numbers"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermaths/complexArgument.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Complex_Argument.png" title="Complex Argument"></a>
+<a href="../../components/grasshoppermaths/complexComponents.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Complex_Components.png" title="Complex Components"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermaths/complexConjugate.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Complex_Conjugate.png" title="Complex Conjugate"></a>
+<a href="../../components/grasshoppermaths/complexModulus.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Complex_Modulus.png" title="Complex Modulus"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermaths/createComplex.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Create_Complex.png" title="Create Complex"></a>
+<a href="../../components/grasshoppermaths/naturalLogarithm.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Natural_logarithm.png" title="Natural logarithm"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermaths/epsilon.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Epsilon.png" title="Epsilon"></a>
+<a href="../../components/grasshoppermaths/extremes.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Extremes.png" title="Extremes"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermaths/interpolateData.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Interpolate_data.png" title="Interpolate data"></a>
+<a href="../../components/grasshoppermaths/goldenRatio.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Golden_Ratio.png" title="Golden Ratio"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermaths/pi.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Pi.png" title="Pi"></a>
+<a href="../../components/grasshoppermaths/truncate.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Truncate.png" title="Truncate"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermaths/weightedAverage.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Weighted_Average.png" title="Weighted Average"></a>
+<a href="../../components/grasshoppermaths/round.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Round.png" title="Round"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermaths/maximum.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Maximum.png" title="Maximum"></a>
+<a href="../../components/grasshoppermaths/minimum.html"><img class="ghicon" src="../../icons/GrasshopperMaths/Minimum.png" title="Minimum"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="9">
+Util
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+
+<div class="addon-buttons">
+<a href="https://www.rhino3d.com/6/new/grasshopper">Download</a>
+</div>
+
+<div>
+<h1><img src="../../icons/GrasshopperMaths/Gate_And_Ternary.png"/> Gate And Ternary</h1>
+<p><a href="../../index.html#GrasshopperMaths">Component Index</a> &gt; <a href="../../addons/grasshopper-maths.html">Grasshopper Maths</a> > Boolean > <b>And</b></p>
+</div>
+<h3>Perform ternary boolean conjunction (AND gate).</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>A</b></td><td>A</td><td>First boolean</td><td>Boolean</td></tr>
+<tr><td><b>B</b></td><td>B</td><td>Second boolean</td><td>Boolean</td></tr>
+<tr><td><b>C</b></td><td>C</td><td>Third boolean</td><td>Boolean</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Result</b></td><td>R</td><td>Resulting value</td><td>Boolean</td></tr>
+</tbody>
+</table>
+
+
+  </div>
+
+</div>
+
+            </div>
+            <div id="xg_foot">
+                <p class="left">
+    © 2018-2020  <a href="https://github.com/robinrodricks/">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a> &nbsp;
+	Rhino & Grasshopper are trademarks of <a href="https://www.rhino3d.com/">Robert McNeel & Associates</a>.
+	</p>
+    <p class="right xg_lightfont">
+                    <a href="http://www.grasshopper3d.com/main/embeddable/list">Badges</a> &nbsp;|&nbsp;
+                        <a href="http://www.grasshopper3d.com/main/index/report" dojotype="PromptToJoinLink" _joinprompttext="Please sign up or sign in to complete this step." _hassignup="true" _signinurl="http://www.grasshopper3d.com/main/authorization/signIn?target=http%3A%2F%2Fwww.grasshopper3d.com%2Fmain%2Findex%2Freport">Report an Issue</a> &nbsp;|&nbsp;
+                        <a href="http://www.grasshopper3d.com/main/authorization/termsOfService?previousUrl=http%3A%2F%2Fwww.grasshopper3d.com%2Fpage%2Fcomponent-reference">Terms of Service</a>
+            </p>
+
+            </div>
+        </div>
+        
+        <div id="xj_baz17246" class="xg_theme"></div>
+<div id="xg_overlay" style="display:none;">
+<!--[if lte IE 6.5]><iframe></iframe><![endif]-->
+</div>
+<!--googleoff: all--><noscript>
+	<style type="text/css" media="screen">
+        #xg { position:relative;top:120px; }
+        #xn_bar { top:120px; }
+	</style>
+	<div class="errordesc noscript">
+		<div>
+            <h3><strong>Hello, you need to enable JavaScript to use Grasshopper.</strong></h3>
+            <p>Please check your browser settings or contact your system administrator.</p>
+			
+		</div>
+	</div>
+</noscript><!--googleon: all-->
+
+<script src="/js/jquery.js"></script>
+<script src="/js/kramed.min.js"></script>
+<script src="/js/component.js"></script>
+<script src="/js/user.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    </body>
+</html>

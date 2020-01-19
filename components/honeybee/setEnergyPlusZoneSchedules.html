@@ -947,35 +947,6 @@
 <p><a href="../../index.html#Honeybee">Component Index</a> &gt; <a href="../../addons/honeybee.html">Honeybee</a> > 08 | Energy | Set Zone Properties > <b>Set Energy Plus Zone Schedules</b></p>
 </div>
 <h3>Use this component to change the schedules of your HBZones.<br></h3>
-<h2>Inputs</h2>
-<table>
-<thead>
-<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
-</thead>
-<tbody>
-<tr><td><b>_HBZones</b></td><td>_HBZones</td><td>HBZones for which you want to change shcedules.</td><td>Goo</td></tr>
-<tr><td><b>occupancySchedules_</b></td><td>occupancySchedules_</td><td>A text string representing the occupancy shceudle that you want to use.  This can be either a shcedule from the "Honeybee_Call from EP Schedule Library" component, a schedule from the "Honeybee_Annual Schedule" component, or a CSV schedule from the "Honeybee_Create CSV Schedule" component.</td><td>Goo</td></tr>
-<tr><td><b>occupancyActivitySchs_</b></td><td>occupancyActivitySchs_</td><td>A text string representing the shceudle for the metabolic rate of the occupants that you want to use.  This can be either a shcedule from the "Honeybee_Call from EP Schedule Library" component, a schedule from the "Honeybee_Annual Schedule" component, or a CSV schedule from the "Honeybee_Create CSV Schedule" component. If this is a custon schedule, the values in it should be Watts and the "units_" or "_schedTypeLimits_" input should be "ActivityLevel."</td><td>Goo</td></tr>
-<tr><td><b>heatingSetPtSchedules_</b></td><td>heatingSetPtSchedules_</td><td>A text string representing the heating setpoint shceudle that you want to use.  This can be either a shcedule from the "Honeybee_Call from EP Schedule Library" component, a schedule from the "Honeybee_Annual Schedule" component, or a CSV schedule from the "Honeybee_Create CSV Schedule" component.  If this is a custon schedule, the values in it should be Watts and the "units_" or "_schedTypeLimits_" input should be "Temperature."</td><td>Goo</td></tr>
-<tr><td><b>coolingSetPtSchedules_</b></td><td>coolingSetPtSchedules_</td><td>A text string representing the cooling setpoint shceudle that you want to use.  This can be either a shcedule from the "Honeybee_Call from EP Schedule Library" component, a schedule from the "Honeybee_Annual Schedule" component, or a CSV schedule from the "Honeybee_Create CSV Schedule" component.  If this is a custon schedule, the values in it should be Watts and the "units_" or "_schedTypeLimits_" input should be "Temperature."</td><td>Goo</td></tr>
-<tr><td><b>lightingSchedules_</b></td><td>lightingSchedules_</td><td>A text string representing the lighting shceudle that you want to use.  This can be either a shcedule from the "Honeybee_Call from EP Schedule Library" component, a schedule from the "Honeybee_Annual Schedule" component, or a CSV schedule from the "Honeybee_Create CSV Schedule" component.</td><td>Goo</td></tr>
-<tr><td><b>equipmentSchedules_</b></td><td>equipmentSchedules_</td><td>A text string representing the equipment shceudle that you want to use.  This can be either a shcedule from the "Honeybee_Call from EP Schedule Library" component, a schedule from the "Honeybee_Annual Schedule" component, or a CSV schedule from the "Honeybee_Create CSV Schedule" component.</td><td>Goo</td></tr>
-<tr><td><b>infiltrationSchedules_</b></td><td>infiltrationSchedules_</td><td>A text string representing the infiltration shceudle that you want to use.  This can be either a shcedule from the "Honeybee_Call from EP Schedule Library" component, a schedule from the "Honeybee_Annual Schedule" component, or a CSV schedule from the "Honeybee_Create CSV Schedule" component.</td><td>Goo</td></tr>
-<tr><td><b>ventilationSchedules_</b></td><td>ventilationSchedules_</td><td>A text string representing the ventilation shceudle that you want to use.  Note that this schedule overrides the typical ventilation that occurs based on the occupancy shcedule and the "ventilationPerPerson."  The ventilation will be hard-sized based on this schedule and the maximum combined flowrates of "ventilationPerPerson" and "ventilationPerarea."  This can be either a shcedule from the "Honeybee_Call from EP Schedule Library" component, a schedule from the "Honeybee_Annual Schedule" component, or a CSV schedule from the "Honeybee_Create CSV Schedule" component.</td><td>Goo</td></tr>
-</tbody>
-</table>
-
-<h2>Outputs</h2>
-<table>
-<thead>
-<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
-</thead>
-<tbody>
-<tr><td><b>schedules</b></td><td>schedules</td><td>A report of what shcedules are assigned to each zone.</td><td>Goo</td></tr>
-<tr><td><b>HBZones</b></td><td>HBZones</td><td>HBZones that have had thier shcedules modified.</td><td>Goo</td></tr>
-</tbody>
-</table>
-
 
   </div>
 

@@ -641,35 +641,6 @@
 <p><a href="../../index.html#Ladybug">Component Index</a> &gt; <a href="../../addons/ladybug.html">Ladybug</a> > 5 | Extra > <b>Legend Parameters</b></p>
 </div>
 <h3>Use this component to change the colors, numerical range, and/or number of divisions of any Ladybug legend along with the corresponding colored mesh that the legend refers to.<br>This component can also move a legend and change its scale.<br>Any Ladybug component that outputs a colored mesh and a legend will have an input that can accept Legend Parameters from this component.<br>This component particularly helpful in making the colors of Ladybug graphics consistent for a presentation or for synchonizing the numerical range and colors between Ladybug graphics.<br></h3>
-<h2>Inputs</h2>
-<table>
-<thead>
-<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
-</thead>
-<tbody>
-<tr><td><b>lowBound_</b></td><td>lowBound_</td><td>A number representing the lower boundary of the legend's numerical range.  The default is set to the lowest value of the data stream that the legend refers to.</td><td>Goo</td></tr>
-<tr><td><b>highBound_</b></td><td>highBound_</td><td>A number representing the higher boundary of the legend's numerical range. The default is set to the highest value of the data stream that the legend refers to.</td><td>Goo</td></tr>
-<tr><td><b>numSegments_</b></td><td>numSegments_</td><td>An interger representing the number of steps between the high and low boundary of the legend.  The default is set to 11 and any custom values put in here should always be greater than or equal to 2.</td><td>Goo</td></tr>
-<tr><td><b>customColors_</b></td><td>customColors_</td><td>A list of colors that will be used to re-color the legend and the corresponding colored mesh(es).  The number of colors input here should match the numSegments_ value input above.  An easy way to generate a list of colors to input here is with the Grasshopper "Gradient" component and a Grasshopper "Series" component connected to the Gradient component's "t" input.  A bunch of Grasshopper "Swatch" components is another way to generate a list of custom colors.  The default colors are a gradient spectrum from blue to yellow to red.</td><td>Goo</td></tr>
-<tr><td><b>legendLocation_</b></td><td>legendLocation_</td><td>Input a point here to change the location of the legend in the Rhino scene.  The default is usually set to the right of the legend's corresponding Ladybug graphic.</td><td>Goo</td></tr>
-<tr><td><b>legendScale_</b></td><td>legendScale_</td><td>Input a number here to change the scale of the legend in relation to its corresponding Ladybug graphic.  The default is set to 1.</td><td>Goo</td></tr>
-<tr><td><b>font_</b></td><td>font_</td><td>An optional text string that sets the font of the text. Examples include "Arial", "Times New Roman" or "Courier" (all without quotations).  The text input here can be any font that is on your computer but the font must be of an Editable file type (as seen in the font folder off of your control panel).  Font files that are Print and Preview will not work.  If you wish to use a Bolded version of the font, include a ", Bold" at the end of the font name (example: "Arial, Bold").</td><td>Goo</td></tr>
-<tr><td><b>fontSize_</b></td><td>fontSize_</td><td>An optional number to set the size of the text in Rhino model units.</td><td>Goo</td></tr>
-<tr><td><b>decimalPlaces_</b></td><td>decimalPlaces_</td><td>An interger representing the number of decimal places to make the legend values.  The default is set to 2 decimal places.</td><td>Goo</td></tr>
-<tr><td><b>removeLessThan_</b></td><td>removeLessThan_</td><td>Set to 'True' to have the ";=" and ";=" symbols removed from the legend.  The default is set to 'False' to have these symbols included.</td><td>Goo</td></tr>
-</tbody>
-</table>
-
-<h2>Outputs</h2>
-<table>
-<thead>
-<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
-</thead>
-<tbody>
-<tr><td><b>legendPar</b></td><td>legendPar</td><td>A list of legend parameters to be plugged into any of the Ladybug components with a legend.</td><td>Goo</td></tr>
-</tbody>
-</table>
-
 
   </div>
 

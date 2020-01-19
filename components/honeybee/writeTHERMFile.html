@@ -947,37 +947,6 @@
 <p><a href="../../index.html#Honeybee">Component Index</a> &gt; <a href="../../addons/honeybee.html">Honeybee</a> > 11 | THERM > <b>Write THERM File</b></p>
 </div>
 <h3>Use this component to write your THERM polygons and boundary conditions into a therm XML that can be opened ready-to-run in THERM.<br></h3>
-<h2>Inputs</h2>
-<table>
-<thead>
-<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
-</thead>
-<tbody>
-<tr><td><b>_polygons</b></td><td>_polygons</td><td>A list of thermPolygons from one or more "Honeybee_Create Therm Polygons" components.</td><td>Goo</td></tr>
-<tr><td><b>boundaries_</b></td><td>boundaries_</td><td>A list of thermBoundaries from one or more "Honeybee_Create Therm Boundaries" components.</td><td>Goo</td></tr>
-<tr><td><b>meshLevel_</b></td><td>meshLevel_</td><td>An optional integer to set the mesh level of the resulting exported file.  The default is set to a coarse value of 8, which is the highest level available. If your model is not too complex, you may want to lower this to decrease the runtime.</td><td>Goo</td></tr>
-<tr><td><b>workingDir_</b></td><td>workingDir_</td><td>An optional working directory to a folder on your system, into which you would like to write the THERM XML and results.  The default will write these files in into your Ladybug default folder.  NOTE THAT DIRECTORIES INPUT HERE SHOULD NOT HAVE ANY SPACES OR UNDERSCORES IN THE FILE PATH.</td><td>Goo</td></tr>
-<tr><td><b>fileName_</b></td><td>fileName_</td><td>An optional text string which will be used to name your THERM XML.  Change this to aviod over-writing results of previous runs of this component.</td><td>Goo</td></tr>
-<tr><td><b>_writeTHMFile</b></td><td>_writeTHMFile</td><td>Set to "True" to have the component take your connected UWGParemeters and write them into an XML file.  The file path of the resulting XML file will appear in the xmlFileAddress output of this component.  Note that only setting this to "True" and not setting the output below to "True" will not automatically run the XML through the Urban Weather Generator for you.</td><td>Goo</td></tr>
-<tr><td><b>runTHERM_</b></td><td>runTHERM_</td><td>Script variable writeTHERM</td><td>Goo</td></tr>
-</tbody>
-</table>
-
-<h2>Outputs</h2>
-<table>
-<thead>
-<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
-</thead>
-<tbody>
-<tr><td><b>out</b></td><td>readMe!</td><td>...</td><td>String</td></tr>
-<tr><td><b>thermFile</b></td><td>thermFile</td><td>The file path of the therm XML file that has been generated on your machine.  Open this file in THERM to see your exported therm model.</td><td>Goo</td></tr>
-<tr><td><b>resultFile</b></td><td>resultFile</td><td>The file path of the THERM results including the mesh of the therm geometry and the values of temperature / heat flow at each point of the mesh.  Note that this file will not be generated unless runTHERM_ is set to "True" and your calculation is successful.</td><td>Goo</td></tr>
-<tr><td><b>uFactorFile</b></td><td>uFactorFile</td><td>The file path to a therm XML file that is written after the simulation is run.  This file contains all results or U-factors accross their respective tags as well as information that helps place the result mesh in the file above correctly in the Rhino scene. Note that this file will not be generated unless runTHERM_ is set to "True" and your calculation is successful.</td><td>Goo</td></tr>
-<tr><td><b>------------</b></td><td>------------</td><td>...</td><td>Goo</td></tr>
-<tr><td><b>probRegion</b></td><td>probRegion</td><td>Check this output for the problematic regions of your model (where holes in the model are).</td><td>Goo</td></tr>
-</tbody>
-</table>
-
 
   </div>
 

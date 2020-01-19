@@ -947,46 +947,6 @@
 <p><a href="../../index.html#Honeybee">Component Index</a> &gt; <a href="../../addons/honeybee.html">Honeybee</a> > 10 | Energy | Energy > <b>Thermal Autonomy Analysis</b></p>
 </div>
 <h3>Use this component to calculate 'Occupied Thermal Comfort Percent' (occTCP) and 'Thermal Autonomy' (TA) from the resultd of a Microclimate Map Analysis.<br>'Occupied Thermal Comfort Percent' (occTCP) is defined here as the the percent of occupied time where a point of space meets or exceeds a given set of thermal comfort acceptability criteria.<br>Precedents for Thermal Comfort Percent (TCP) as a metric to spatially evaluate the desirability of a given space can be found in the PhD thesis of Tarek Rakha (http://www.tarekrakha.com/#/research/).<br>'Thermal Autonomy' (TA) is defined here as the the percent of occupied time where a point of space meets or exceeds a given set of thermal comfort acceptability criteria through passive means only.<br>Precedents for Thermal Autonomy (TA) as a metric to evaluate the passive operation of a given space can be found in the work of Brendon Levitt.<br>Levitt, B.; Ubbelohde, M.; Loisos, G.; Brown, N.  Thermal Autonomy as Metric and Design Process. Loisos + Ubbelohde, Alameda, California, California College of the Arts, San Francisco. 2013.<br>(http://www.coolshadow.com/research/Levitt_Thermal%20Autonomy%20as%20Metric%20and%20Design%20Process.pdf)<br></h3>
-<h2>Inputs</h2>
-<table>
-<thead>
-<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
-</thead>
-<tbody>
-<tr><td><b>_comfResultsMtx</b></td><td>_comfResultsMtx</td><td>A comfort matrix (adaptive, PMV or Outdoor) output from either the 'Honeybee_Microclimate Map Analysis' component or the 'Honeybee_Read Microclimate Matrix' component.</td><td>Goo</td></tr>
-<tr><td><b>_degOrPMVMtx</b></td><td>_degOrPMVMtx</td><td>The degreeFromTargetMtx, PMV_Mtx, or DegFromNeutralMtx from either the 'Honeybee_Microclimate Map Analysis' component or the 'Honeybee_Read Microclimate Matrix' component.</td><td>Goo</td></tr>
-<tr><td><b>_viewFactorMesh</b></td><td>_viewFactorMesh</td><td>The list of view factor meshes that comes out of the  "Honeybee_Indoor View Factor Calculator".</td><td>Goo</td></tr>
-<tr><td><b>_HBZones</b></td><td>_HBZones</td><td>The HBZones out of any of the HB components that generate or alter zones.  Note that these should ideally be the zones that are fed into the Run Energy Simulation component as surfaces may not align otherwise.  Zones read back into Grasshopper from the Import idf component will not align correctly with the EP Result data.</td><td>Goo</td></tr>
-<tr><td><b>_totalThermalEnergy_</b></td><td>_totalThermalEnergy_</td><td>The totalThermalEnergy output from the "Honeybee_Read EP Result" component.  If no data tree is connected here, it will be assumed that all zones are completely passive and only occupancy will be taken into accout for the Thermal Autonomy calculation.</td><td>Goo</td></tr>
-<tr><td><b>occupancyFiles_</b></td><td>occupancyFiles_</td><td>Optional occupancy CSV files that will be used to set the occupied period of the Thermal Autonomy calculation.  These can be either EnergyPlus CSV schedules made with the 'Honeybee_Create CSV Schedule' component or Daysim occupancy files made with the 'Honyebee_Daysim Occupancy Generator' component (the two produce files of the same format).  This can be either a list of files that match the connected HBZones or a single occupancy file to be used for all connected zones.  By default, this component will create the occupancy peirod from the occupancy schedule assigned to the connected _HBzones so you should usually not have need for this input and should instead change the HBZone occupancy schedule before running the simulation.</td><td>Goo</td></tr>
-<tr><td><b>occupancyThreshold_</b></td><td>occupancyThreshold_</td><td>An optional number between 0 and 1 that sets the minimum occupancy at which a zone is considered occupied.  This is done as the default occupancy is taken from the HBZone's occupancy schedules and, in some cases this value is low enough to ignore for the sake of calculating thermal autonomy.  The default is set to 0 such that any time when the zones are occpied count towards the values calculated by this component.</td><td>Goo</td></tr>
-<tr><td><b>fileName_</b></td><td>fileName_</td><td>An optional file name for the result files as a string.</td><td>Goo</td></tr>
-<tr><td><b>workingDir_</b></td><td>workingDir_</td><td>An optional working directory on your system. Default is set to C:\Ladybug</td><td>Goo</td></tr>
-<tr><td><b>writeResultFile_</b></td><td>writeResultFile_</td><td>Set to 1 or 'True' to have the component write all results into CSV result files and set to 0 or 'False' to not have the component write these files.  The default is set to 'True' as these simulations can be long and you usually want a copy of your results.  You may want to set it to 'False' if you are just scrolling through key hours and want the fastest run possible.  Set to 2 if you want the component to only write the results for the TCPocc and TCA matrices.</td><td>Goo</td></tr>
-<tr><td><b>_runIt</b></td><td>_runIt</td><td>Set boolean to "True" to run the component and calculate comfort autonomy.</td><td>Goo</td></tr>
-</tbody>
-</table>
-
-<h2>Outputs</h2>
-<table>
-<thead>
-<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
-</thead>
-<tbody>
-<tr><td><b>readMe!</b></td><td>readMe!</td><td>...</td><td>String</td></tr>
-<tr><td><b>===========</b></td><td>===========</td><td>...</td><td>Goo</td></tr>
-<tr><td><b>occTCP_Mtx</b></td><td>occTCP_Mtx</td><td>A python matrix containing the 'Themal Comfort Percent' (TCP) values for only the occupied period of the model.  Connect this to the 'Honeybee_Visualize Microclimate Map' component in order to display the data. 'Occupied Thermal Comfort Percent' (occTCP) is defined here as the the percent of occupied time where a point of space meets or exceeds a given set of thermal comfort acceptability criteria.  This is essentially the same thing as the adaptComfMtx, PMVComfMtx, or outdoorComfMtx but with the unoccupied hours discounted.</td><td>Goo</td></tr>
-<tr><td><b>TA_Mtx</b></td><td>TA_Mtx</td><td>A python matrix containing the 'Thermal Autonomy' (TA) values for each of the faces of the connected _viewFactorMesh. Connect this to the 'Honeybee_Visualize Microclimate Map' component in order to display the data. 'Thermal Autonomy' (TA) is defined here as the the percent of occupied time where a point of space meets or exceeds a given set of thermal comfort acceptability criteria through passive means only.</td><td>Goo</td></tr>
-<tr><td><b>OverHeatedMtx</b></td><td>OverHeatedMtx</td><td>A python matrix containing the overheated hours for each of the faces of the connected _viewFactorMesh.  Connect this to the 'Honeybee_Visualize Microclimate Map' component in order to display the data. Overheated hours are essentially the number of occupied hours that a point is warmer than that specified by a given set of thermal comfort acceptability criteria.</td><td>Goo</td></tr>
-<tr><td><b>UnderHeatedMtx</b></td><td>UnderHeatedMtx</td><td>A python matrix containing the underheated hours for each of the faces of the connected _viewFactorMesh.  Connect this to the 'Honeybee_Visualize Microclimate Map' component in order to display the data. Underheated hours are essentially the number of occupied hours that a point is colder than that specified by a given set of thermal comfort acceptability criteria.</td><td>Goo</td></tr>
-<tr><td><b>===========</b></td><td>===========</td><td>...</td><td>Goo</td></tr>
-<tr><td><b>occTCP_Result</b></td><td>occTCP_Result</td><td>A csv file address containing the 'Themal Comfort Percent' (TCP) values for only the occupied period of the model.</td><td>Goo</td></tr>
-<tr><td><b>TA_Result</b></td><td>TA_Result</td><td>A csv file address containing the 'Thermal Autonomy' (TA) values for each of the faces of the connected _viewFactorMesh.</td><td>Goo</td></tr>
-<tr><td><b>OverHeatedResult</b></td><td>OverHeatedResult</td><td>A csv file address containing the overheated hours for each of the faces of the connected _viewFactorMesh.</td><td>Goo</td></tr>
-<tr><td><b>UnderHeatedResult</b></td><td>UnderHeatedResult</td><td>A csv file address containing the underheated hours for each of the faces of the connected _viewFactorMesh.</td><td>Goo</td></tr>
-</tbody>
-</table>
-
 
   </div>
 

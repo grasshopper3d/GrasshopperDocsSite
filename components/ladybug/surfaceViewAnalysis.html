@@ -641,36 +641,6 @@
 <p><a href="../../index.html#Ladybug">Component Index</a> &gt; <a href="../../addons/ladybug.html">Ladybug</a> > 3 | EnvironmentalAnalysis > <b>Surface View Analysis</b></p>
 </div>
 <h3>Use this component to calculate view factors from a point or plane to a set of surfaces.  View factors are used in many thermal comfort calculations such as mean radiant temperture (MRT) or discomfort from radiant assymetry. <br></h3>
-<h2>Inputs</h2>
-<table>
-<thead>
-<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
-</thead>
-<tbody>
-<tr><td><b>_testPtsOrPlanes</b></td><td>_testPtsOrPlanes</td><td>A point or plane from which view vectors will be pojected.  Note that, if a point is connected, all view vectors will be weighted evenly (assuming no directional bias).  However, if a plane is connected, vectors will be weighted based on their angle to the plane normal, producing view factors for a surface in the connected plane.  The first is useful for MRT calculations while the latter is needed for radiant assymetry calculations.  This input can also be a list of points or planes.</td><td>Goo</td></tr>
-<tr><td><b>_testSrfs</b></td><td>_testSrfs</td><td>A list of breps, surfaces, or meshes to which you want to compute view factors.  Note that by meshing and joining several goemtries together, you can calculate the combined view factor to these geometries.</td><td>Goo</td></tr>
-<tr><td><b>context_</b></td><td>context_</td><td>Optional context geometry as breps, surfaces, or meshes that can block the view to the _testSrfs.</td><td>Goo</td></tr>
-<tr><td><b>_viewResolution_</b></td><td>_viewResolution_</td><td>An interger, which sets the number of times that the tergenza skyview patches are split.  A higher number will ensure a greater accuracy but will take longer.  The default is set to 0 for a quick calculation.</td><td>Goo</td></tr>
-<tr><td><b>parallel_</b></td><td>parallel_</td><td>Set to "True" to run the calculation in parallel and set to "False" to run it with a single core.  The default is set to "False."</td><td>Goo</td></tr>
-<tr><td><b>_runIt</b></td><td>_runIt</td><td>Set to 'True' to run the component and claculate view factors.</td><td>Goo</td></tr>
-</tbody>
-</table>
-
-<h2>Outputs</h2>
-<table>
-<thead>
-<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
-</thead>
-<tbody>
-<tr><td><b>out</b></td><td>readMe!</td><td>...</td><td>String</td></tr>
-<tr><td><b>srfViewFactors</b></td><td>srfViewFactors</td><td>A list of view factors that describe the fraction of sperical view taken up by the input surfaces.  These values range from 0 (no view) to 1 (full view).  If multiple _testPtsOrPlanes have been connected, this output will be a data tree with one list for each point.</td><td>Goo</td></tr>
-<tr><td><b>viewVecSrfIndex</b></td><td>viewVecSrfIndex</td><td>The index of the surface that each view vector hit.  This can be used to identify which view pathces are intersected by each surface.  If no surfaces are intersected, this value will be -1.</td><td>Goo</td></tr>
-<tr><td><b>viewVectors</b></td><td>viewVectors</td><td>The view vectors that were projected from each testPtOrPlane.</td><td>Goo</td></tr>
-<tr><td><b>viewPatches</b></td><td>viewPatches</td><td>The patches of the sphere that each view vector correspond to.</td><td>Goo</td></tr>
-<tr><td><b>viewPatchBasePt</b></td><td>viewPatchBasePt</td><td>The center of the viewPatches sphere. This can be used to move the view patches between the testPts.</td><td>Goo</td></tr>
-</tbody>
-</table>
-
 
   </div>
 

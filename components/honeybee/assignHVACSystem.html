@@ -947,37 +947,6 @@
 <p><a href="../../index.html#Honeybee">Component Index</a> &gt; <a href="../../addons/honeybee.html">Honeybee</a> > 09 | Energy | HVACSystems > <b>Assign HVAC System</b></p>
 </div>
 <h3>Use this component to assign OpenStudio Systems to your HBZones.  By default, all HBZones are assigned an Ideal Air Loads system and this component can be used to change this to a real system from the OpenStudioHVACSystemsList component.<br>This component is also used to adjust the features of the HVAC system using the _airDetails_, _heatingDetails_, and _coolingDetails_.  Without the inputs to these Details, template OpenStudio systems will be used.<br></h3>
-<h2>Inputs</h2>
-<table>
-<thead>
-<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
-</thead>
-<tbody>
-<tr><td><b>_HBZones</b></td><td>_HBZones</td><td>The HBZones for which you want to change/adjust the HVAC system.</td><td>Goo</td></tr>
-<tr><td><b>_HVACSystems</b></td><td>_HVACSystems</td><td>A HVAC system template from the "Honeybee_HVACSystemsList" component.  ASHRAE recommends using the following baseline systems for different building types and fuel sources:
-BUILDING TYPE               FOSSIL FUEL/HYBRID/PURCHASED HEAT           ELECTRIC ONLY
-Residential                        1: PTAC | Residential                                                  2: PTHP | Residential
-Non-Res 3 Floors             3: Packaged Single Zone - AC                                   4: Packaged Single Zone - HP
-Non-Res 4-5 Floors          5: Packaged VAV w/ Reheat                                       6: Packaged VAV w/ PFP Boxes
-Non-Res ;5 Floors           7: VAV w/ Reheat                                                        8: VAV w/ PFP Boxes
-Heated Only Sotrage         9: Warm Air Furnace - Gas Fired                              10: Warm Air Furnace - Electric</td><td>Goo</td></tr>
-<tr><td><b>_airDetails_</b></td><td>_airDetails_</td><td>Parameters from the "Honeybee_HVAC Air Details" component. Use these to define the features of the ventilation component (or air side) of the HVAC system.</td><td>Goo</td></tr>
-<tr><td><b>_heatingDetails_</b></td><td>_heatingDetails_</td><td>Parameters from the "Honeybee_HVAC Heating Details" component.  Use these to define the features of the heating plant (or hot water side) of the HVAC system.</td><td>Goo</td></tr>
-<tr><td><b>_coolingDetails_</b></td><td>_coolingDetails_</td><td>Parameters from the "Honeybee_HVAC Cooling Details" component.  Use these to define the features of the cooling plant (or chilled water side) of the HVAC system.</td><td>Goo</td></tr>
-</tbody>
-</table>
-
-<h2>Outputs</h2>
-<table>
-<thead>
-<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
-</thead>
-<tbody>
-<tr><td><b>readMe!</b></td><td>readMe!</td><td>Script variable OSHVACSystems</td><td>Goo</td></tr>
-<tr><td><b>HBZones</b></td><td>HBZones</td><td>HBZones that have been modified to have the assigned _HVACSystems.</td><td>Goo</td></tr>
-</tbody>
-</table>
-
 
   </div>
 

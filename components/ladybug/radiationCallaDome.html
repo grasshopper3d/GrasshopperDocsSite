@@ -641,50 +641,6 @@
 <p><a href="../../index.html#Ladybug">Component Index</a> &gt; <a href="../../addons/ladybug.html">Ladybug</a> > 2 | VisualizeWeatherData > <b>Radiation Calla Dome</b></p>
 </div>
 <h3>Use this component to draw Radiation Calla Dome, which shows you how radiation would fall on an object from all directions for a given sky.<br>It is useful for finding the best direction with which to orient solar panels and gives a sense of the consequences of deviating from such an orientation.<br>The Calla Dome can be understood in three different ways:<br>1) The Calla Dome a 3D representation of all possible radiation roses for a given sky since it includes all vertical angles from 0 to 90.<br>2) The Calla Dome is the reciprocal of the Tergenza Sky Dome since the Cala Dome essentially shows you how the radiation from the sky will fall onto a hemispherical object.<br>3) The Calla Dome is a smart radiation analysis of a hemisphere.  Your results would effectively be the same if you made a hemisphere in Rhino and ran it through the "Radiation Analysis" component but, with this component, you will get a smoother color gradient and the component will automatically output the point (or vector) with the most radiation.<br></h3>
-<h2>Inputs</h2>
-<table>
-<thead>
-<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
-</thead>
-<tbody>
-<tr><td><b>_selectedSkyMtx</b></td><td>_selectedSkyMtx</td><td>The output from the selectSkyMtx component.</td><td>Goo</td></tr>
-<tr><td><b>_horAngleStep_</b></td><td>_horAngleStep_</td><td>An angle in degrees between 0 and 360 that represents the step for horizontal rotation. Smaller numbers will yeild a finer and smoother mesh with smoother colors.  The number input here should be smaller than 360 and divisible by 360.  The default is set to 10 degrees.</td><td>Goo</td></tr>
-<tr><td><b>_verAngleStep_</b></td><td>_verAngleStep_</td><td>Angle in degrees step between 0 and 90 that represents the step for vertical rotation. Smaller numbers will yeild a finer and smoother mesh with smoother colors.  The number input here should be smaller than 90 and divisible by 90.  The default is set to 10 degrees.</td><td>Goo</td></tr>
-<tr><td><b>_centerPoint_</b></td><td>_centerPoint_</td><td>Input a point to locate the center point of the Calla Lily Graph</td><td>Goo</td></tr>
-<tr><td><b>_scale_</b></td><td>_scale_</td><td>Input a number here to change horizontal (XY) scale of the graph. The default value is set to 1.  Note that, for the dome representation, this input will change the scale of the entire dome (both horizontal and vertical).</td><td>Goo</td></tr>
-<tr><td><b>_projection_</b></td><td>_projection_</td><td>A number to set the projection of the sky hemisphere.  The default is set to draw a 3D hemisphere.  Choose from the following options:
-0 = 3D hemisphere
-1 = Orthographic (straight projection to the XY Plane)
-2 = Stereographic (equi-angular projection to the XY Plane)</td><td>Goo</td></tr>
-<tr><td><b>legendPar_</b></td><td>legendPar_</td><td>Optional legend parameters from the Ladybug Legend Parameters component.</td><td>Goo</td></tr>
-<tr><td><b>bakeIt_</b></td><td>bakeIt_</td><td>An integer that tells the component if/how to bake the bojects in the Rhino scene.  The default is set to 0.  Choose from the following options:
-0 (or False) - No geometry will be baked into the Rhino scene (this is the default).
-1 (or True) - The geometry will be baked into the Rhino scene as a colored hatch and Rhino text objects, which facilitates easy export to PDF or vector-editing programs.
-2 - The geometry will be baked into the Rhino scene as colored meshes, which is useful for recording the results of paramteric runs as light Rhino geometry.</td><td>Goo</td></tr>
-<tr><td><b>_runIt</b></td><td>_runIt</td><td>Set to "True" to run the component and generate a radiation Calla Dome.</td><td>Goo</td></tr>
-</tbody>
-</table>
-
-<h2>Outputs</h2>
-<table>
-<thead>
-<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
-</thead>
-<tbody>
-<tr><td><b>out</b></td><td>readMe!</td><td>...</td><td>String</td></tr>
-<tr><td><b>radiationMesh</b></td><td>radiationMesh</td><td>A colored mesh representing radiation of the Calla Dome.</td><td>Goo</td></tr>
-<tr><td><b>baseCrvs</b></td><td>baseCrvs</td><td>A set of guide curves for the Calla Dome.</td><td>Goo</td></tr>
-<tr><td><b>altitudeCrvs</b></td><td>altitudeCrvs</td><td>Script variable radiationCallaLily</td><td>Goo</td></tr>
-<tr><td><b>legend</b></td><td>legend</td><td>A legend of the radiation on the Calla Dome. Connect this output to a grasshopper "Geo" component in order to preview the legend in the Rhino scene.</td><td>Goo</td></tr>
-<tr><td><b>testPts</b></td><td>testPts</td><td>The vertices of the Calla Dome mesh.  These are hidden by default.</td><td>Goo</td></tr>
-<tr><td><b>testPtsInfo</b></td><td>testPtsInfo</td><td>Information for each test point of the Calla Dome mesh.  "HRA" stands for "Horizontal Rotation Angle" while "VRA" stand for "Vertical Rotation Angle."  HRA varies from 0 to 360 while VRA varies from 0 to 90.</td><td>Goo</td></tr>
-<tr><td><b>values</b></td><td>values</td><td>The radiation values for each test points (or mesh faces) of the Calla Doem in kWh/m2.</td><td>Goo</td></tr>
-<tr><td><b>maxRadPt</b></td><td>maxRadPt</td><td>The point on the Cala Lilly with the greatest amount of solar radiation.  This is useful for understanding the best direction to orient solar panels.</td><td>Goo</td></tr>
-<tr><td><b>maxRadVector</b></td><td>maxRadVector</td><td>The vector that should be used to orient solar panels such that they recieve the greatest possible solar radiation.</td><td>Goo</td></tr>
-<tr><td><b>maxRadInfo</b></td><td>maxRadInfo</td><td>Information about the test point with the greates amount of radiation in the Calla Dome.  "HRA" stands for "Horizontal Rotation Angle" while "VRA" stand for "Vertical Rotation Angle."  HRA varies from 0 to 360 while VRA varies from 0 to 90.</td><td>Goo</td></tr>
-</tbody>
-</table>
-
 
   </div>
 

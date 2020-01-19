@@ -641,41 +641,6 @@
 <p><a href="../../index.html#Ladybug">Component Index</a> &gt; <a href="../../addons/ladybug.html">Ladybug</a> > 5 | Extra > <b>Texture Maker</b></p>
 </div>
 <h3>Use this component to generate textures from colored meshes.<br>In order to export model as *obj you should Bake the new mesh and apply texture to its layer material.<br>It is also compatible with Google Earth.<br>How to use it:<br>1) connect colored mesh which comes from LB analysis component<br>2) run the component<br>The output are: a new mesh that you have to bake and a texture that you should add to material of the layer where your mesh will be.<br>Special thanks goes to the author of the function, Vincente Soler.<br>.<br>http://www.grasshopper3d.com/forum/topics/how-to-render-mesh-colors<br></h3>
-<h2>Inputs</h2>
-<table>
-<thead>
-<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
-</thead>
-<tbody>
-<tr><td><b>_analysisMesh</b></td><td>_analysisMesh</td><td>A list of colored Meshes that comes from Grasshopper OR
-.
-"radiationMesh" of "Ladybug_Radiation Analysis"
-.
-"viewStudyMesh" of "Ladybug_View Analysis"
-.
-and so on..</td><td>Goo</td></tr>
-<tr><td><b>transparency_</b></td><td>transparency_</td><td>An optional number between 0 and 1 to set the opacity/transparency of the image.  Note that Rhino may not display this transparency but rendering programs like V-Ray will be able to render it.</td><td>Goo</td></tr>
-<tr><td><b>folder_</b></td><td>folder_</td><td>The folder into which you would like to write the image file. This should be a complete file path to the folder. If no folder is provided, the images will be written to C:/USERNAME/AppData/Roaming/Ladybug/LB_TextureMesh.</td><td>Goo</td></tr>
-<tr><td><b>name_</b></td><td>name_</td><td>The file name that you would like the image to be saved as. If no input is provided it will be created automatically.</td><td>Goo</td></tr>
-<tr><td><b>_layerName_</b></td><td>_layerName_</td><td>An optional text string to set the name of the layer onto which the image-mapped mesh will be baked.</td><td>Goo</td></tr>
-<tr><td><b>softBake_</b></td><td>softBake_</td><td>Set to "True" to run the component and bake the mesh with image material.  However, if this component runs again, the old geometry in the Rhino scene will be overwritten by new geometry, allowing you to make things like rendered animations.</td><td>Goo</td></tr>
-<tr><td><b>_bakeIt</b></td><td>_bakeIt</td><td>Set to "True" to run the component, generate texture images, and bake the mesh into the scene with the image as a material.</td><td>Goo</td></tr>
-</tbody>
-</table>
-
-<h2>Outputs</h2>
-<table>
-<thead>
-<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
-</thead>
-<tbody>
-<tr><td><b>out</b></td><td>readMe!</td><td>...</td><td>String</td></tr>
-<tr><td><b>imagePath</b></td><td>imagePath</td><td>Use this image as texture for the new mesh. Connect imagePath to "DB" input of "Human Create/Modify material" and its output to "Human Create/Modify Layers" to apply material to a layer.</td><td>Goo</td></tr>
-<tr><td><b>alphaPath</b></td><td>alphaPath</td><td>Script variable Texture Maker</td><td>Goo</td></tr>
-<tr><td><b>mesh</b></td><td>mesh</td><td>A new mesh that is structured to correctly accept the image map. This has been baked into the scene for you.</td><td>Goo</td></tr>
-</tbody>
-</table>
-
 
   </div>
 

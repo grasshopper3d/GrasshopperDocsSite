@@ -1,0 +1,587 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+<head data-layout-view="wide">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Grasshopper - Grasshopper Addon Reference</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+
+<meta name="description" content="Complete documentation for the Grasshopper addon in Grasshopper 3D." />
+<meta name="title" content="Grasshopper Addon Reference" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://rhino.github.io/" />
+<meta property="og:title" content="Grasshopper - Grasshopper Addon Reference" />
+
+<meta property="wiki-page" content="$WIKI$" />
+
+<link rel="image_src" href="http://rhino.github.io/ning/2985220.jpg" />
+
+<style type="text/css" media="screen,projection">
+#xg_navigation ul div.xg_subtab ul li a {
+    color:#666666;
+    background:#EAFFBD;
+}
+#xg_navigation ul div.xg_subtab ul li a:hover {
+    color:#333333;
+    background:#F2FFD6;
+}
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../ning/index.css);
+@import url(../ning/page.css);
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../ning/1187549422.css);
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../ning/1187545030.css);
+</style>
+
+
+<link href="../style.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+    </head>
+    <body>
+    
+        
+        <div id="xg" class="xg_theme xg_widget_page xg_widget_page_page xg_widget_page_page_show" data-layout-pack="classic">
+            <div id="xg_head">
+                <div id="xg_masthead">
+                    <p id="xg_sitename"><a id="application_name_header_link" href="http://rhino.github.io/">Grasshopper</a></p>
+                    <p id="xg_sitedesc" class="xj_site_desc">algorithmic modeling for Rhino</p>
+                </div>
+                <div id="xg_navigation">
+                    <ul>
+    <li id="xg_tab_main" class="xg_subtab"><a href="http://www.grasshopper3d.com/"><span>Home</span></a></li>
+	<li id="xg_tab_photo" class="xg_subtab"><a href="http://www.grasshopper3d.com/photo"><span>View</span></a></li>
+	<li id="xg_tab_xn0" class="xg_subtab"><a href="http://www.grasshopper3d.com/page/download-1"><span>Download</span></a></li>
+	<li id="xg_tab_forum" class="xg_subtab"><a href="https://discourse.mcneel.com/c/grasshopper"><span>Forums&#47;Support</span></a></li>
+	<li id="xg_tab_xn2" class="xg_subtab this"><a href="http://rhino.github.io/"><span>Learn</span></a></li>
+	<li id="xg_tab_events" class="xg_subtab"><a href="http://www.grasshopper3d.com/events"><span>Attend</span></a></li>
+	<li id="xg_tab_profile" class="xg_subtab"><a href="http://www.grasshopper3d.com/profiles"><span>My Page</span></a></li></ul>
+
+                </div>
+            </div>
+            
+            <div id="xg_body">
+                
+				<div class="page">
+
+<div class="content">
+
+<div class="addon-buttons">
+<a href="https://www.rhino3d.com/6/new/grasshopper">Download</a>
+</div>
+
+<div>
+<h1>Grasshopper</h1>
+<h6>SYSTEM COMPONENTS</h6>
+<p><a href="../index.html#System">Component Index</a> &gt; <b>Grasshopper</b></p>
+</div>
+
+<div class="ghbar">
+<table class="ghbar-table">
+<tr>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshoppersurface/areaMoments.html"><img class="ghicon" src="../icons/GrasshopperSurface/Area_Moments.png" title="Area Moments"></a>
+<a href="../components/grasshoppersurface/area.html"><img class="ghicon" src="../icons/GrasshopperSurface/Area.png" title="Area"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshoppersurface/boxCorners.html"><img class="ghicon" src="../icons/GrasshopperSurface/Box_Corners.png" title="Box Corners"></a>
+<a href="../components/grasshoppersurface/boxProperties.html"><img class="ghicon" src="../icons/GrasshopperSurface/Box_Properties.png" title="Box Properties"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshoppersurface/brepAreaMoments.html"><img class="ghicon" src="../icons/GrasshopperSurface/Brep_Area_Moments.png" title="Brep Area Moments"></a>
+<a href="../components/grasshoppersurface/brepArea.html"><img class="ghicon" src="../icons/GrasshopperSurface/Brep_Area.png" title="Brep Area"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshoppersurface/brepClosestPoint.html"><img class="ghicon" src="../icons/GrasshopperSurface/Brep_Closest_Point.png" title="Brep Closest Point"></a>
+<a href="../components/grasshoppersurface/brepEdges.html"><img class="ghicon" src="../icons/GrasshopperSurface/Brep_Edges.png" title="Brep Edges"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshoppersurface/pointInBrep.html"><img class="ghicon" src="../icons/GrasshopperSurface/Point_In_Brep.png" title="Point In Brep"></a>
+<a href="../components/grasshoppersurface/pointInBreps.html"><img class="ghicon" src="../icons/GrasshopperSurface/Point_In_Breps.png" title="Point In Breps"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshoppersurface/brepVolumeMoments.html"><img class="ghicon" src="../icons/GrasshopperSurface/Brep_Volume_Moments.png" title="Brep Volume Moments"></a>
+<a href="../components/grasshoppersurface/brepVolume.html"><img class="ghicon" src="../icons/GrasshopperSurface/Brep_Volume.png" title="Brep Volume"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshoppersurface/brepWireframe.html"><img class="ghicon" src="../icons/GrasshopperSurface/Brep_Wireframe.png" title="Brep Wireframe"></a>
+<a href="../components/grasshoppersurface/deconstructBox.html"><img class="ghicon" src="../icons/GrasshopperSurface/Deconstruct_Box.png" title="Deconstruct Box"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshoppersurface/deconstructBrep.html"><img class="ghicon" src="../icons/GrasshopperSurface/Deconstruct_Brep.png" title="Deconstruct Brep"></a>
+<a href="../components/grasshoppersurface/evaluateBox.html"><img class="ghicon" src="../icons/GrasshopperSurface/Evaluate_Box.png" title="Evaluate Box"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshoppersurface/evaluateSurface.html"><img class="ghicon" src="../icons/GrasshopperSurface/Evaluate_Surface.png" title="Evaluate Surface"></a>
+<a href="../components/grasshoppersurface/shapeInBrep.html"><img class="ghicon" src="../icons/GrasshopperSurface/Shape_In_Brep.png" title="Shape In Brep"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshoppersurface/surfaceClosestPoint.html"><img class="ghicon" src="../icons/GrasshopperSurface/Surface_Closest_Point.png" title="Surface Closest Point"></a>
+<a href="../components/grasshoppersurface/surfaceCurvature.html"><img class="ghicon" src="../icons/GrasshopperSurface/Surface_Curvature.png" title="Surface Curvature"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshoppersurface/dimensions.html"><img class="ghicon" src="../icons/GrasshopperSurface/Dimensions.png" title="Dimensions"></a>
+<a href="../components/grasshoppersurface/surfaceInflection.html"><img class="ghicon" src="../icons/GrasshopperSurface/Surface_Inflection.png" title="Surface Inflection"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshoppersurface/isPlanar.html"><img class="ghicon" src="../icons/GrasshopperSurface/Is_Planar.png" title="Is Planar"></a>
+<a href="../components/grasshoppersurface/osculatingCircles.html"><img class="ghicon" src="../icons/GrasshopperSurface/Osculating_Circles.png" title="Osculating Circles"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshoppersurface/surfacePoints.html"><img class="ghicon" src="../icons/GrasshopperSurface/Surface_Points.png" title="Surface Points"></a>
+<a href="../components/grasshoppersurface/principalCurvature.html"><img class="ghicon" src="../icons/GrasshopperSurface/Principal_Curvature.png" title="Principal Curvature"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshoppersurface/pointInTrim.html"><img class="ghicon" src="../icons/GrasshopperSurface/Point_In_Trim.png" title="Point In Trim"></a>
+<a href="../components/grasshoppersurface/volumeMoments.html"><img class="ghicon" src="../icons/GrasshopperSurface/Volume_Moments.png" title="Volume Moments"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshoppersurface/volume.html"><img class="ghicon" src="../icons/GrasshopperSurface/Volume.png" title="Volume"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="15">
+Analysis
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshoppersurface/controlPointLoft.html"><img class="ghicon" src="../icons/GrasshopperSurface/Control_Point_Loft.png" title="Control Point Loft"></a>
+<a href="../components/grasshoppersurface/fitLoft.html"><img class="ghicon" src="../icons/GrasshopperSurface/Fit_Loft.png" title="Fit Loft"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshoppersurface/extrudeAngled.html"><img class="ghicon" src="../icons/GrasshopperSurface/Extrude_Angled.png" title="Extrude Angled"></a>
+<a href="../components/grasshoppersurface/4PointSurface.html"><img class="ghicon" src="../icons/GrasshopperSurface/4Point_Surface.png" title="4Point Surface"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshoppersurface/boundarySurfaces.html"><img class="ghicon" src="../icons/GrasshopperSurface/Boundary_Surfaces.png" title="Boundary Surfaces"></a>
+<a href="../components/grasshoppersurface/edgeSurface.html"><img class="ghicon" src="../icons/GrasshopperSurface/Edge_Surface.png" title="Edge Surface"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshoppersurface/extrude.html"><img class="ghicon" src="../icons/GrasshopperSurface/Extrude.png" title="Extrude"></a>
+<a href="../components/grasshoppersurface/extrudeAlong.html"><img class="ghicon" src="../icons/GrasshopperSurface/Extrude_Along.png" title="Extrude Along"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshoppersurface/extrudeLinear.html"><img class="ghicon" src="../icons/GrasshopperSurface/Extrude_Linear.png" title="Extrude Linear"></a>
+<a href="../components/grasshoppersurface/extrudePoint.html"><img class="ghicon" src="../icons/GrasshopperSurface/Extrude_Point.png" title="Extrude Point"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshoppersurface/fragmentPatch.html"><img class="ghicon" src="../icons/GrasshopperSurface/Fragment_Patch.png" title="Fragment Patch"></a>
+<a href="../components/grasshoppersurface/loftOptions.html"><img class="ghicon" src="../icons/GrasshopperSurface/Loft_Options.png" title="Loft Options"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshoppersurface/loft.html"><img class="ghicon" src="../icons/GrasshopperSurface/Loft.png" title="Loft"></a>
+<a href="../components/grasshoppersurface/networkSurface.html"><img class="ghicon" src="../icons/GrasshopperSurface/Network_Surface.png" title="Network Surface"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshoppersurface/patch.html"><img class="ghicon" src="../icons/GrasshopperSurface/Patch.png" title="Patch"></a>
+<a href="../components/grasshoppersurface/pipe.html"><img class="ghicon" src="../icons/GrasshopperSurface/Pipe.png" title="Pipe"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshoppersurface/pipeVariable.html"><img class="ghicon" src="../icons/GrasshopperSurface/Pipe_Variable.png" title="Pipe Variable"></a>
+<a href="../components/grasshoppersurface/surfaceFromPoints.html"><img class="ghicon" src="../icons/GrasshopperSurface/Surface_From_Points.png" title="Surface From Points"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshoppersurface/railRevolution.html"><img class="ghicon" src="../icons/GrasshopperSurface/Rail_Revolution.png" title="Rail Revolution"></a>
+<a href="../components/grasshoppersurface/revolution.html"><img class="ghicon" src="../icons/GrasshopperSurface/Revolution.png" title="Revolution"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshoppersurface/ruledSurface.html"><img class="ghicon" src="../icons/GrasshopperSurface/Ruled_Surface.png" title="Ruled Surface"></a>
+<a href="../components/grasshoppersurface/sumSurface.html"><img class="ghicon" src="../icons/GrasshopperSurface/Sum_Surface.png" title="Sum Surface"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshoppersurface/sweep1.html"><img class="ghicon" src="../icons/GrasshopperSurface/Sweep1.png" title="Sweep1"></a>
+<a href="../components/grasshoppersurface/sweep2.html"><img class="ghicon" src="../icons/GrasshopperSurface/Sweep2.png" title="Sweep2"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="12">
+Freeform
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshoppersurface/boundingBox.html"><img class="ghicon" src="../icons/GrasshopperSurface/Bounding_Box.png" title="Bounding Box"></a>
+<a href="../components/grasshoppersurface/box2Pt.html"><img class="ghicon" src="../icons/GrasshopperSurface/Box_2Pt.png" title="Box 2Pt"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshoppersurface/boxRectangle.html"><img class="ghicon" src="../icons/GrasshopperSurface/Box_Rectangle.png" title="Box Rectangle"></a>
+<a href="../components/grasshoppersurface/centerBox.html"><img class="ghicon" src="../icons/GrasshopperSurface/Center_Box.png" title="Center Box"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshoppersurface/cone.html"><img class="ghicon" src="../icons/GrasshopperSurface/Cone.png" title="Cone"></a>
+<a href="../components/grasshoppersurface/cylinder.html"><img class="ghicon" src="../icons/GrasshopperSurface/Cylinder.png" title="Cylinder"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshoppersurface/domainBox.html"><img class="ghicon" src="../icons/GrasshopperSurface/Domain_Box.png" title="Domain Box"></a>
+<a href="../components/grasshoppersurface/planeSurface.html"><img class="ghicon" src="../icons/GrasshopperSurface/Plane_Surface.png" title="Plane Surface"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshoppersurface/planeThroughBox.html"><img class="ghicon" src="../icons/GrasshopperSurface/Plane_Through_Box.png" title="Plane Through Box"></a>
+<a href="../components/grasshoppersurface/planeThroughShape.html"><img class="ghicon" src="../icons/GrasshopperSurface/Plane_Through_Shape.png" title="Plane Through Shape"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshoppersurface/quadSphere.html"><img class="ghicon" src="../icons/GrasshopperSurface/Quad_Sphere.png" title="Quad Sphere"></a>
+<a href="../components/grasshoppersurface/sphere.html"><img class="ghicon" src="../icons/GrasshopperSurface/Sphere.png" title="Sphere"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshoppersurface/sphere4Pt.html"><img class="ghicon" src="../icons/GrasshopperSurface/Sphere_4Pt.png" title="Sphere 4Pt"></a>
+<a href="../components/grasshoppersurface/sphereFit.html"><img class="ghicon" src="../icons/GrasshopperSurface/Sphere_Fit.png" title="Sphere Fit"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="7">
+Primitive
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshoppersurface/closedEdges.html"><img class="ghicon" src="../icons/GrasshopperSurface/Closed_Edges.png" title="Closed Edges"></a>
+<a href="../components/grasshoppersurface/convexEdges.html"><img class="ghicon" src="../icons/GrasshopperSurface/Convex_Edges.png" title="Convex Edges"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshoppersurface/edgesFromDirections.html"><img class="ghicon" src="../icons/GrasshopperSurface/Edges_from_Directions.png" title="Edges from Directions"></a>
+<a href="../components/grasshoppersurface/edgesFromLength.html"><img class="ghicon" src="../icons/GrasshopperSurface/Edges_from_Length.png" title="Edges from Length"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshoppersurface/edgesFromLinearity.html"><img class="ghicon" src="../icons/GrasshopperSurface/Edges_from_Linearity.png" title="Edges from Linearity"></a>
+<a href="../components/grasshoppersurface/edgesFromPoints.html"><img class="ghicon" src="../icons/GrasshopperSurface/Edges_from_Points.png" title="Edges from Points"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshoppersurface/edgesFromFaces.html"><img class="ghicon" src="../icons/GrasshopperSurface/Edges_from_Faces.png" title="Edges from Faces"></a>
+<a href="../components/grasshoppersurface/filletEdge.html"><img class="ghicon" src="../icons/GrasshopperSurface/Fillet_Edge.png" title="Fillet Edge"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshoppersurface/brepJoin.html"><img class="ghicon" src="../icons/GrasshopperSurface/Brep_Join.png" title="Brep Join"></a>
+<a href="../components/grasshoppersurface/capHolesEx.html"><img class="ghicon" src="../icons/GrasshopperSurface/Cap_Holes_Ex.png" title="Cap Holes Ex"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshoppersurface/capHoles.html"><img class="ghicon" src="../icons/GrasshopperSurface/Cap_Holes.png" title="Cap Holes"></a>
+<a href="../components/grasshoppersurface/copyTrim.html"><img class="ghicon" src="../icons/GrasshopperSurface/Copy_Trim.png" title="Copy Trim"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshoppersurface/flip.html"><img class="ghicon" src="../icons/GrasshopperSurface/Flip.png" title="Flip"></a>
+<a href="../components/grasshoppersurface/isotrim.html"><img class="ghicon" src="../icons/GrasshopperSurface/Isotrim.png" title="Isotrim"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshoppersurface/mergeFaces.html"><img class="ghicon" src="../icons/GrasshopperSurface/Merge_Faces.png" title="Merge Faces"></a>
+<a href="../components/grasshoppersurface/offsetSurface.html"><img class="ghicon" src="../icons/GrasshopperSurface/Offset_Surface.png" title="Offset Surface"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshoppersurface/offsetSurfaceLoose.html"><img class="ghicon" src="../icons/GrasshopperSurface/Offset_Surface_Loose.png" title="Offset Surface Loose"></a>
+<a href="../components/grasshoppersurface/retrim.html"><img class="ghicon" src="../icons/GrasshopperSurface/Retrim.png" title="Retrim"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshoppersurface/untrim.html"><img class="ghicon" src="../icons/GrasshopperSurface/Untrim.png" title="Untrim"></a>
+<a href="../components/grasshoppersurface/divideSurface.html"><img class="ghicon" src="../icons/GrasshopperSurface/Divide_Surface.png" title="Divide Surface"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshoppersurface/surfaceFrames.html"><img class="ghicon" src="../icons/GrasshopperSurface/Surface_Frames.png" title="Surface Frames"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="11">
+Util
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="cchild">
+<h3>Analysis</h3>
+<table class="addon-compos">
+<tbody>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/areaMoments.html"><img src="../icons/GrasshopperSurface/Area_Moments.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/areaMoments.html">Area Moments</a> <span class="codeword">(AMoments)</span><br><span class="desc">Solve area moments for breps, meshes and planar closed curves.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/area.html"><img src="../icons/GrasshopperSurface/Area.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/area.html">Area</a><br><span class="desc">Solve area properties for breps, meshes and planar closed curves.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/boxCorners.html"><img src="../icons/GrasshopperSurface/Box_Corners.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/boxCorners.html">Box Corners</a><br><span class="desc">Extract all 8 corners of a box.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/boxProperties.html"><img src="../icons/GrasshopperSurface/Box_Properties.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/boxProperties.html">Box Properties</a> <span class="codeword">(BoxProp)</span><br><span class="desc">Get some properties of a box</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/brepAreaMoments.html"><img src="../icons/GrasshopperSurface/Brep_Area_Moments.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/brepAreaMoments.html">Brep Area Moments</a> <span class="codeword">(AMoments)</span><br><span class="desc">Solve Brep area moments.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/brepArea.html"><img src="../icons/GrasshopperSurface/Brep_Area.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/brepArea.html">Brep Area</a> <span class="codeword">(Area)</span><br><span class="desc">Solve Brep area properties.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/brepClosestPoint.html"><img src="../icons/GrasshopperSurface/Brep_Closest_Point.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/brepClosestPoint.html">Brep Closest Point</a> <span class="codeword">(Brep CP)</span><br><span class="desc">Find the closest point on a brep</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/brepEdges.html"><img src="../icons/GrasshopperSurface/Brep_Edges.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/brepEdges.html">Brep Edges</a> <span class="codeword">(Edges)</span><br><span class="desc">Extract the edge curves of a brep.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/pointInBrep.html"><img src="../icons/GrasshopperSurface/Point_In_Brep.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/pointInBrep.html">Point In Brep</a> <span class="codeword">(BrepInc)</span><br><span class="desc">Test whether a point is inside a closed brep</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/pointInBreps.html"><img src="../icons/GrasshopperSurface/Point_In_Breps.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/pointInBreps.html">Point In Breps</a> <span class="codeword">(BrepsInc)</span><br><span class="desc">Test whether a point is inside a collection of closed breps</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/brepVolumeMoments.html"><img src="../icons/GrasshopperSurface/Brep_Volume_Moments.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/brepVolumeMoments.html">Brep Volume Moments</a> <span class="codeword">(VMoments)</span><br><span class="desc">Solve Brep volume moments.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/brepVolume.html"><img src="../icons/GrasshopperSurface/Brep_Volume.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/brepVolume.html">Brep Volume</a> <span class="codeword">(Volume)</span><br><span class="desc">Solve Brep volume properties.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/brepWireframe.html"><img src="../icons/GrasshopperSurface/Brep_Wireframe.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/brepWireframe.html">Brep Wireframe</a> <span class="codeword">(Wires)</span><br><span class="desc">Extract the wireframe curves of a brep.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/deconstructBox.html"><img src="../icons/GrasshopperSurface/Deconstruct_Box.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/deconstructBox.html">Deconstruct Box</a> <span class="codeword">(DeBox)</span><br><span class="desc">Deconstruct a box into its constituent parts.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/deconstructBrep.html"><img src="../icons/GrasshopperSurface/Deconstruct_Brep.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/deconstructBrep.html">Deconstruct Brep</a> <span class="codeword">(DeBrep)</span><br><span class="desc">Deconstruct a brep into its constituent parts.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/evaluateBox.html"><img src="../icons/GrasshopperSurface/Evaluate_Box.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/evaluateBox.html">Evaluate Box</a> <span class="codeword">(Box)</span><br><span class="desc">Evaluate a box in normalised {UVW} space.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/evaluateSurface.html"><img src="../icons/GrasshopperSurface/Evaluate_Surface.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/evaluateSurface.html">Evaluate Surface</a> <span class="codeword">(EvalSrf)</span><br><span class="desc">Evaluate local surface properties at a {uv} coordinate.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/shapeInBrep.html"><img src="../icons/GrasshopperSurface/Shape_In_Brep.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/shapeInBrep.html">Shape In Brep</a> <span class="codeword">(ShapeIn)</span><br><span class="desc">Tests whether a shape is inside a brep</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/surfaceClosestPoint.html"><img src="../icons/GrasshopperSurface/Surface_Closest_Point.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/surfaceClosestPoint.html">Surface Closest Point</a> <span class="codeword">(Srf CP)</span><br><span class="desc">Find the closest point on a surface.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/surfaceCurvature.html"><img src="../icons/GrasshopperSurface/Surface_Curvature.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/surfaceCurvature.html">Surface Curvature</a> <span class="codeword">(Curvature)</span><br><span class="desc">Evaluate the surface curvature at a {uv} coordinate.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/dimensions.html"><img src="../icons/GrasshopperSurface/Dimensions.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/dimensions.html">Dimensions</a> <span class="codeword">(Dim)</span><br><span class="desc">Get the approximate dimensions of a surface</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/surfaceInflection.html"><img src="../icons/GrasshopperSurface/Surface_Inflection.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/surfaceInflection.html">Surface Inflection</a> <span class="codeword">(SInf)</span><br><span class="desc">Compute the inflection curves for a surface</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/isPlanar.html"><img src="../icons/GrasshopperSurface/Is_Planar.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/isPlanar.html">Is Planar</a> <span class="codeword">(Planar)</span><br><span class="desc">Test whether a surface is planar</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/osculatingCircles.html"><img src="../icons/GrasshopperSurface/Osculating_Circles.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/osculatingCircles.html">Osculating Circles</a> <span class="codeword">(Osc)</span><br><span class="desc">Calculate the principal osculating circles of a surface at a {uv} coordinate.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/surfacePoints.html"><img src="../icons/GrasshopperSurface/Surface_Points.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/surfacePoints.html">Surface Points</a> <span class="codeword">(SrfPt)</span><br><span class="desc">Get the control-points of a Nurbs Surface</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/principalCurvature.html"><img src="../icons/GrasshopperSurface/Principal_Curvature.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/principalCurvature.html">Principal Curvature</a> <span class="codeword">(Curvature)</span><br><span class="desc">Evaluate the principal curvature of a surface at a {uv} coordinate.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/pointInTrim.html"><img src="../icons/GrasshopperSurface/Point_In_Trim.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/pointInTrim.html">Point In Trim</a> <span class="codeword">(TrimInc)</span><br><span class="desc">Test whether a {uv} coordinate is inside the trimmed portion of a surface</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/volumeMoments.html"><img src="../icons/GrasshopperSurface/Volume_Moments.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/volumeMoments.html">Volume Moments</a> <span class="codeword">(VMoments)</span><br><span class="desc">Solve volume properties for closed breps and meshes.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/volume.html"><img src="../icons/GrasshopperSurface/Volume.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/volume.html">Volume</a><br><span class="desc">Solve volume properties for closed breps and meshes.</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>Freeform</h3>
+<table class="addon-compos">
+<tbody>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/controlPointLoft.html"><img src="../icons/GrasshopperSurface/Control_Point_Loft.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/controlPointLoft.html">Control Point Loft</a> <span class="codeword">(CPLoft)</span><br><span class="desc">Create a loft through curve control points.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/fitLoft.html"><img src="../icons/GrasshopperSurface/Fit_Loft.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/fitLoft.html">Fit Loft</a> <span class="codeword">(FitLoft)</span><br><span class="desc">Create a loft fitted through a set of curves.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/extrudeAngled.html"><img src="../icons/GrasshopperSurface/Extrude_Angled.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/extrudeAngled.html">Extrude Angled</a> <span class="codeword">(ExtrAng)</span><br><span class="desc">Extrude a planar polyline at angles</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/4PointSurface.html"><img src="../icons/GrasshopperSurface/4Point_Surface.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/4PointSurface.html">4Point Surface</a> <span class="codeword">(Srf4Pt)</span><br><span class="desc">Create a surface connecting three or four corner points.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/boundarySurfaces.html"><img src="../icons/GrasshopperSurface/Boundary_Surfaces.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/boundarySurfaces.html">Boundary Surfaces</a> <span class="codeword">(Boundary)</span><br><span class="desc">Create planar surfaces from a collection of boundary edge curves.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/edgeSurface.html"><img src="../icons/GrasshopperSurface/Edge_Surface.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/edgeSurface.html">Edge Surface</a> <span class="codeword">(EdgeSrf)</span><br><span class="desc">Create a surface from two, three or four edge curves.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/extrude.html"><img src="../icons/GrasshopperSurface/Extrude.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/extrude.html">Extrude</a> <span class="codeword">(Extr)</span><br><span class="desc">Extrude curves and surfaces along a vector.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/extrudeAlong.html"><img src="../icons/GrasshopperSurface/Extrude_Along.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/extrudeAlong.html">Extrude Along</a> <span class="codeword">(ExtrCrv)</span><br><span class="desc">Extrude curves and surfaces along a curve.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/extrudeLinear.html"><img src="../icons/GrasshopperSurface/Extrude_Linear.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/extrudeLinear.html">Extrude Linear</a> <span class="codeword">(Extrude)</span><br><span class="desc">Extrude curves and surfaces along a straight path.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/extrudePoint.html"><img src="../icons/GrasshopperSurface/Extrude_Point.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/extrudePoint.html">Extrude Point</a> <span class="codeword">(Extr)</span><br><span class="desc">Extrude curves and surfaces to a point.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/fragmentPatch.html"><img src="../icons/GrasshopperSurface/Fragment_Patch.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/fragmentPatch.html">Fragment Patch</a> <span class="codeword">(FPatch)</span><br><span class="desc">Create a fragmented patch from a polyline boundary</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/loftOptions.html"><img src="../icons/GrasshopperSurface/Loft_Options.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/loftOptions.html">Loft Options</a> <span class="codeword">(Loft Opt)</span><br><span class="desc">Create loft options from atomic inputs</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/loft.html"><img src="../icons/GrasshopperSurface/Loft.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/loft.html">Loft</a><br><span class="desc">Create a lofted surface through a set of section curves.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/networkSurface.html"><img src="../icons/GrasshopperSurface/Network_Surface.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/networkSurface.html">Network Surface</a> <span class="codeword">(NetSurf)</span><br><span class="desc">Create a surface from curve networks</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/patch.html"><img src="../icons/GrasshopperSurface/Patch.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/patch.html">Patch</a><br><span class="desc">Create a patch surface</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/pipe.html"><img src="../icons/GrasshopperSurface/Pipe.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/pipe.html">Pipe</a><br><span class="desc">Create a pipe surface around a rail curve.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/pipeVariable.html"><img src="../icons/GrasshopperSurface/Pipe_Variable.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/pipeVariable.html">Pipe Variable</a> <span class="codeword">(VPipe)</span><br><span class="desc">Create a pipe surface with variable radii around a rail curve.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/surfaceFromPoints.html"><img src="../icons/GrasshopperSurface/Surface_From_Points.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/surfaceFromPoints.html">Surface From Points</a> <span class="codeword">(SrfGrid)</span><br><span class="desc">Create a nurbs surface from a grid of points.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/railRevolution.html"><img src="../icons/GrasshopperSurface/Rail_Revolution.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/railRevolution.html">Rail Revolution</a> <span class="codeword">(RailRev)</span><br><span class="desc">Create a surface of revolution using a sweep rail.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/revolution.html"><img src="../icons/GrasshopperSurface/Revolution.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/revolution.html">Revolution</a> <span class="codeword">(RevSrf)</span><br><span class="desc">Create a surface of revolution.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/ruledSurface.html"><img src="../icons/GrasshopperSurface/Ruled_Surface.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/ruledSurface.html">Ruled Surface</a> <span class="codeword">(RuleSrf)</span><br><span class="desc">Create a surface between two curves.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/sumSurface.html"><img src="../icons/GrasshopperSurface/Sum_Surface.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/sumSurface.html">Sum Surface</a> <span class="codeword">(SumSrf)</span><br><span class="desc">Create a sum surface from two edge curves.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/sweep1.html"><img src="../icons/GrasshopperSurface/Sweep1.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/sweep1.html">Sweep1</a> <span class="codeword">(Swp1)</span><br><span class="desc">Create a sweep surface with one rail curve.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/sweep2.html"><img src="../icons/GrasshopperSurface/Sweep2.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/sweep2.html">Sweep2</a> <span class="codeword">(Swp2)</span><br><span class="desc">Create a sweep surface with two rail curves.</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>Util</h3>
+<table class="addon-compos">
+<tbody>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/closedEdges.html"><img src="../icons/GrasshopperSurface/Closed_Edges.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/closedEdges.html">Closed Edges</a> <span class="codeword">(EdgesCls)</span><br><span class="desc">Select closed edges.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/convexEdges.html"><img src="../icons/GrasshopperSurface/Convex_Edges.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/convexEdges.html">Convex Edges</a> <span class="codeword">(EdgesCvx)</span><br><span class="desc">Select concave or convex brep edges.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/edgesFromDirections.html"><img src="../icons/GrasshopperSurface/Edges_from_Directions.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/edgesFromDirections.html">Edges from Directions</a> <span class="codeword">(EdgesDir)</span><br><span class="desc">Select brep edges based on edge direction</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/edgesFromLength.html"><img src="../icons/GrasshopperSurface/Edges_from_Length.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/edgesFromLength.html">Edges from Length</a> <span class="codeword">(EdgesLen)</span><br><span class="desc">Select brep edges based on length</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/edgesFromLinearity.html"><img src="../icons/GrasshopperSurface/Edges_from_Linearity.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/edgesFromLinearity.html">Edges from Linearity</a> <span class="codeword">(EdgesLin)</span><br><span class="desc">Select brep edges based on linearity</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/edgesFromPoints.html"><img src="../icons/GrasshopperSurface/Edges_from_Points.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/edgesFromPoints.html">Edges from Points</a> <span class="codeword">(EdgesPt)</span><br><span class="desc">Select brep edges based on point coincidence</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/edgesFromFaces.html"><img src="../icons/GrasshopperSurface/Edges_from_Faces.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/edgesFromFaces.html">Edges from Faces</a> <span class="codeword">(EdgesFaces)</span><br><span class="desc">Select all brep edges that delineate certain faces</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/filletEdge.html"><img src="../icons/GrasshopperSurface/Fillet_Edge.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/filletEdge.html">Fillet Edge</a> <span class="codeword">(FilEdge)</span><br><span class="desc">Fillet some edges of a brep.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/brepJoin.html"><img src="../icons/GrasshopperSurface/Brep_Join.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/brepJoin.html">Brep Join</a> <span class="codeword">(Join)</span><br><span class="desc">Join a number of Breps together</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/capHolesEx.html"><img src="../icons/GrasshopperSurface/Cap_Holes_Ex.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/capHolesEx.html">Cap Holes Ex</a> <span class="codeword">(CapEx)</span><br><span class="desc">Cap as many holes as possible in a Brep.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/capHoles.html"><img src="../icons/GrasshopperSurface/Cap_Holes.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/capHoles.html">Cap Holes</a> <span class="codeword">(Cap)</span><br><span class="desc">Cap all planar holes in a Brep.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/copyTrim.html"><img src="../icons/GrasshopperSurface/Copy_Trim.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/copyTrim.html">Copy Trim</a> <span class="codeword">(Trim)</span><br><span class="desc">Copy UV trim data from one surface to another.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/flip.html"><img src="../icons/GrasshopperSurface/Flip.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/flip.html">Flip</a><br><span class="desc">Flip the normals of a surface based on local or remote geometry</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/isotrim.html"><img src="../icons/GrasshopperSurface/Isotrim.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/isotrim.html">Isotrim</a> <span class="codeword">(SubSrf)</span><br><span class="desc">Extract an isoparametric subset of a surface.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/mergeFaces.html"><img src="../icons/GrasshopperSurface/Merge_Faces.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/mergeFaces.html">Merge Faces</a> <span class="codeword">(FMerge)</span><br><span class="desc">Merge all adjacent co-planar faces in a brep</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/offsetSurface.html"><img src="../icons/GrasshopperSurface/Offset_Surface.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/offsetSurface.html">Offset Surface</a> <span class="codeword">(Offset)</span><br><span class="desc">Offset a surface by a fixed amount.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/offsetSurfaceLoose.html"><img src="../icons/GrasshopperSurface/Offset_Surface_Loose.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/offsetSurfaceLoose.html">Offset Surface Loose</a> <span class="codeword">(Offset (L))</span><br><span class="desc">Offset a surface by moving the control points.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/retrim.html"><img src="../icons/GrasshopperSurface/Retrim.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/retrim.html">Retrim</a><br><span class="desc">Retrim a surface based on 3D trim data from another surface.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/untrim.html"><img src="../icons/GrasshopperSurface/Untrim.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/untrim.html">Untrim</a><br><span class="desc">Remove all trim curves from a surface.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/divideSurface.html"><img src="../icons/GrasshopperSurface/Divide_Surface.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/divideSurface.html">Divide Surface</a> <span class="codeword">(SDivide)</span><br><span class="desc">Generate a grid of {uv} points on a surface.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/surfaceFrames.html"><img src="../icons/GrasshopperSurface/Surface_Frames.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/surfaceFrames.html">Surface Frames</a> <span class="codeword">(SFrames)</span><br><span class="desc">Generate a grid of {uv} frames on a surface</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>Primitive</h3>
+<table class="addon-compos">
+<tbody>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/boundingBox.html"><img src="../icons/GrasshopperSurface/Bounding_Box.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/boundingBox.html">Bounding Box</a> <span class="codeword">(BBox)</span><br><span class="desc">Solve oriented geometry bounding boxes.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/box2Pt.html"><img src="../icons/GrasshopperSurface/Box_2Pt.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/box2Pt.html">Box 2Pt</a> <span class="codeword">(Box)</span><br><span class="desc">Create a box defined by two points.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/boxRectangle.html"><img src="../icons/GrasshopperSurface/Box_Rectangle.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/boxRectangle.html">Box Rectangle</a> <span class="codeword">(BoxRec)</span><br><span class="desc">Create a box defined by a rectangle and a height.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/centerBox.html"><img src="../icons/GrasshopperSurface/Center_Box.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/centerBox.html">Center Box</a> <span class="codeword">(Box)</span><br><span class="desc">Create a box centered on a plane.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/cone.html"><img src="../icons/GrasshopperSurface/Cone.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/cone.html">Cone</a><br><span class="desc">Create a conical surface</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/cylinder.html"><img src="../icons/GrasshopperSurface/Cylinder.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/cylinder.html">Cylinder</a> <span class="codeword">(Cyl)</span><br><span class="desc">Create a cylindrical surface.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/domainBox.html"><img src="../icons/GrasshopperSurface/Domain_Box.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/domainBox.html">Domain Box</a> <span class="codeword">(Box)</span><br><span class="desc">Create a box defined by a base plane and size domains.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/planeSurface.html"><img src="../icons/GrasshopperSurface/Plane_Surface.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/planeSurface.html">Plane Surface</a> <span class="codeword">(PlaneSrf)</span><br><span class="desc">Create a plane surface</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/planeThroughBox.html"><img src="../icons/GrasshopperSurface/Plane_Through_Box.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/planeThroughBox.html">Plane Through Box</a> <span class="codeword">(PxB)</span><br><span class="desc">Fit a rectangular surface through a Box.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/planeThroughShape.html"><img src="../icons/GrasshopperSurface/Plane_Through_Shape.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/planeThroughShape.html">Plane Through Shape</a> <span class="codeword">(PxS)</span><br><span class="desc">Make a rectangular surface that is larger than a given shape.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/quadSphere.html"><img src="../icons/GrasshopperSurface/Quad_Sphere.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/quadSphere.html">Quad Sphere</a> <span class="codeword">(QSph)</span><br><span class="desc">Create a spherical brep made from quad nurbs patches.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/sphere.html"><img src="../icons/GrasshopperSurface/Sphere.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/sphere.html">Sphere</a> <span class="codeword">(Sph)</span><br><span class="desc">Create a spherical surface.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/sphere4Pt.html"><img src="../icons/GrasshopperSurface/Sphere_4Pt.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/sphere4Pt.html">Sphere 4Pt</a> <span class="codeword">(Sph4Pt)</span><br><span class="desc">Create a spherical surface from 4 points.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshoppersurface/sphereFit.html"><img src="../icons/GrasshopperSurface/Sphere_Fit.png"/></a></td><td class="ccol_2"><a href="../components/grasshoppersurface/sphereFit.html">Sphere Fit</a> <span class="codeword">(SFit)</span><br><span class="desc">Fit a sphere to a 3D collection of points</span></td></tr>
+</tbody>
+</table>
+
+</div>
+
+  </div>
+
+</div>
+
+            </div>
+            <div id="xg_foot">
+                <p class="left">
+    © 2018-2020  <a href="https://github.com/robinrodricks/">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    Hosted by<a href="http://www.github.com/"><img src="../images/github.png" alt="Github" class="poweredbylogo" /></a> &nbsp;
+	Rhino & Grasshopper are trademarks of <a href="https://www.rhino3d.com/">Robert McNeel & Associates</a>.
+	</p>
+    <p class="right xg_lightfont">
+                    <a href="http://www.grasshopper3d.com/main/embeddable/list">Badges</a> &nbsp;|&nbsp;
+                        <a href="http://www.grasshopper3d.com/main/index/report" dojotype="PromptToJoinLink" _joinprompttext="Please sign up or sign in to complete this step." _hassignup="true" _signinurl="http://www.grasshopper3d.com/main/authorization/signIn?target=http%3A%2F%2Fwww.grasshopper3d.com%2Fmain%2Findex%2Freport">Report an Issue</a> &nbsp;|&nbsp;
+                        <a href="http://www.grasshopper3d.com/main/authorization/termsOfService?previousUrl=http%3A%2F%2Fwww.grasshopper3d.com%2Fpage%2Fcomponent-reference">Terms of Service</a>
+            </p>
+
+            </div>
+        </div>
+        
+        <div id="xj_baz17246" class="xg_theme"></div>
+<div id="xg_overlay" style="display:none;">
+<!--[if lte IE 6.5]><iframe></iframe><![endif]-->
+</div>
+<!--googleoff: all--><noscript>
+	<style type="text/css" media="screen">
+        #xg { position:relative;top:120px; }
+        #xn_bar { top:120px; }
+	</style>
+	<div class="errordesc noscript">
+		<div>
+            <h3><strong>Hello, you need to enable JavaScript to use Grasshopper.</strong></h3>
+            <p>Please check your browser settings or contact your system administrator.</p>
+			
+		</div>
+	</div>
+</noscript><!--googleon: all-->
+
+<script src="/js/jquery.js"></script>
+<script src="/js/kramed.min.js"></script>
+<script src="/js/component.js"></script>
+<script src="/js/user.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    </body>
+</html>

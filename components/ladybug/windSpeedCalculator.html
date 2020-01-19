@@ -641,44 +641,6 @@
 <p><a href="../../index.html#Ladybug">Component Index</a> &gt; <a href="../../addons/ladybug.html">Ladybug</a> > 1 | AnalyzeWeatherData > <b>Wind Speed Calculator</b></p>
 </div>
 <h3>Use this component to calculate wind speed at a specific height for a given terrain type.  By default, the component will calculate ground wind speed, which is useful for comfrt calculations.  Also, by hooking up wind data from an epw file, you can use the resulting data to create a wind rose at any height.<br></h3>
-<h2>Inputs</h2>
-<table>
-<thead>
-<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
-</thead>
-<tbody>
-<tr><td><b>north_</b></td><td>north_</td><td>Input a vector to be used as a true North direction for the sun path or a number between 0 and 360 that represents the degrees off from the y-axis to make North.  The default North direction is set to the Y-axis (0 degrees).</td><td>Goo</td></tr>
-<tr><td><b>_windSpeed_tenMeters</b></td><td>_windSpeed_tenMeters</td><td>The wind speed from the import EPW component or a number representing the wind speed at 10 meters off the ground in agricultural or airport terrian.  This input also accepts lists of numbers representing different speeds at 10 meters.</td><td>Goo</td></tr>
-<tr><td><b>windDirection_</b></td><td>windDirection_</td><td>The wind direction from the import EPW component or a number in degrees represeting the wind direction from north,  This input also accepts lists of numbers representing different directions.</td><td>Goo</td></tr>
-<tr><td><b>terrainType_</b></td><td>terrainType_</td><td>An interger or text string that sets the terrain class associated with the output windSpeedAtHeight. Interger values represent the following terrain classes:
-0 = City: large city centres, 50% of buildings above 21m over a distance of at least 2000m upwind.
-1 = Suburban: suburbs, wooded areas.
-2 = Country: open, with scattered objects generally less than 10m high.
-3 = Water: Flat, unobstructed areas exposed to wind flowing over a large water body (no more than 500m inland).</td><td>Goo</td></tr>
-<tr><td><b>epwTerrain_</b></td><td>epwTerrain_</td><td>An interger or text string that sets the terrain class associated with the output windSpeedAtHeight. The default is set to 2 for flat clear land, which is typical for most EPW files that are recorded at airports.  Interger values represent the following terrain classes:
-0 = City: large city centres, 50% of buildings above 21m over a distance of at least 2000m upwind.
-1 = Suburban: suburbs, wooded areas.
-2 = Country: open, with scattered objects generally less than 10m high.
-3 = Water: Flat, unobstructed areas exposed to wind flowing over a large water body (no more than 500m inland).</td><td>Goo</td></tr>
-<tr><td><b>heightAboveGround_</b></td><td>heightAboveGround_</td><td>Optional. This is the height above ground for which you would like to measure wind speed. Providing more than one value will generate a list of speeds at each given height. Default height is 2 m above ground, which is what a person standing on the ground would feel.</td><td>Goo</td></tr>
-<tr><td><b>epwHeight_</b></td><td>epwHeight_</td><td>An optional number to set the height at which the _windSpeed_tenMeters was recorded if the wind was not recorded at 10 meters above the ground.  The default is set to 10 meters as this is the height at which all wind in EPW files is recorded.</td><td>Goo</td></tr>
-<tr><td><b>powerOrLog_</b></td><td>powerOrLog_</td><td>Set to "True" to use a power law to translate the wind speed to that at a given height and set to "False" to use a log law to translate the wind speed.  The default is set to "True" for a power law as this is the function that is used by EnergyPlus.</td><td>Goo</td></tr>
-<tr><td><b>analysisPeriod_</b></td><td>analysisPeriod_</td><td>If you have connected data from an EPW component, plug in an analysis period from the Ladybug_Analysis Period component to calculate data for just a portion of the year. The default is Jan 1st 00:00 - Dec 31st 24:00, the entire year.</td><td>Goo</td></tr>
-</tbody>
-</table>
-
-<h2>Outputs</h2>
-<table>
-<thead>
-<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
-</thead>
-<tbody>
-<tr><td><b>out</b></td><td>readMe!</td><td>...</td><td>String</td></tr>
-<tr><td><b>windSpeedAtHeight</b></td><td>windSpeedAtHeight</td><td>The wind speed at the connected height above the ground.</td><td>Goo</td></tr>
-<tr><td><b>windVectorAtHeight</b></td><td>windVectorAtHeight</td><td>Returns a list of vectors representing wind speed and direction at every hour within the analysis period, at each height provided.</td><td>Goo</td></tr>
-</tbody>
-</table>
-
 
   </div>
 

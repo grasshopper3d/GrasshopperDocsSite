@@ -947,34 +947,6 @@
 <p><a href="../../index.html#Honeybee">Component Index</a> &gt; <a href="../../addons/honeybee.html">Honeybee</a> > 06 | Energy | Material | Construction > <b>Energy Plus Opaque Material</b></p>
 </div>
 <h3>Use this component to create a custom opaque material, which can be plugged into the "Honeybee_EnergyPlus Construction" component.<br>This component requires you to know a lot of the characteristics of the material and, you may want to borrow some characteristcs of a similar material in the library.  Use the "Honeybee_Call From EP Construction Library" and the "Honeybee_Decompose EP Material" to help with this.<br>If you are not able to find all of the necessary material characteristcs and your desired material is relatively light, it might be easier for you to use a "Honeybee_EnergyPlus NoMass Opaque Material."<br></h3>
-<h2>Inputs</h2>
-<table>
-<thead>
-<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
-</thead>
-<tbody>
-<tr><td><b>_name</b></td><td>_name</td><td>A text name for your Opaque Material.</td><td>Goo</td></tr>
-<tr><td><b>_roughness_</b></td><td>_roughness_</td><td>A text value that indicated the roughness of your material.  This can be either "VeryRough", "Rough", "MediumRough", "MediumSmooth", "Smooth", and "VerySmooth".  The default is set to "Rough".</td><td>Goo</td></tr>
-<tr><td><b>_thickness</b></td><td>_thickness</td><td>A number that represents the thickness of the material in meters (m).</td><td>Goo</td></tr>
-<tr><td><b>_conductivity</b></td><td>_conductivity</td><td>A number representing the conductivity of the material in W/m-K.  This is essentially the heat flow in Watts across one meter thick of the material when the temperature difference on either side is 1 Kelvin.</td><td>Goo</td></tr>
-<tr><td><b>_density</b></td><td>_density</td><td>A number representing the density of the material in kg/m3.  This is essentially the mass one cubic meter of the material.</td><td>Goo</td></tr>
-<tr><td><b>_specificHeat</b></td><td>_specificHeat</td><td>A number representing the specific heat capacity of the material in J/kg-K.  This is essentially the number of joules needed to raise one kg of the material by 1 degree Kelvin.</td><td>Goo</td></tr>
-<tr><td><b>_thermAbsp_</b></td><td>_thermAbsp_</td><td>An number between 0 and 1 that represents the thermal abstorptance of the material.  The default is set to 0.9, which is common for most non-metallic materials.</td><td>Goo</td></tr>
-<tr><td><b>_solAbsp_</b></td><td>_solAbsp_</td><td>An number between 0 and 1 that represents the abstorptance of solar radiation by the material.  The default is set to 0.7, which is common for most non-metallic materials.</td><td>Goo</td></tr>
-<tr><td><b>_visAbsp_</b></td><td>_visAbsp_</td><td>An number between 0 and 1 that represents the abstorptance of visible light by the material.  The default is set to 0.7, which is common for most non-metallic materials.</td><td>Goo</td></tr>
-</tbody>
-</table>
-
-<h2>Outputs</h2>
-<table>
-<thead>
-<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
-</thead>
-<tbody>
-<tr><td><b>EPMaterial</b></td><td>EPMaterial</td><td>An opaque material that can be plugged into the "Honeybee_EnergyPlus Construction" component.</td><td>Goo</td></tr>
-</tbody>
-</table>
-
 
   </div>
 

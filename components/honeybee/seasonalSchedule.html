@@ -947,32 +947,6 @@
 <p><a href="../../index.html#Honeybee">Component Index</a> &gt; <a href="../../addons/honeybee.html">Honeybee</a> > 07 | Energy | Schedule > <b>Seasonal Schedule</b></p>
 </div>
 <h3>Use this component to generate a seasonal schedule (aka. a schedule composed of different weekly schedules).  Using the weekSched outputs of the other schedule generating components, you can combine these to create a yearly schedule that has different week schedules for different times of the year.<br></h3>
-<h2>Inputs</h2>
-<table>
-<thead>
-<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
-</thead>
-<tbody>
-<tr><td><b>_scheduleName</b></td><td>_scheduleName</td><td>A name for the schedule that this component will create.  This name should be unique among the schedules in your Grasshopper document to ensure that you do not overwrite other schedules.</td><td>Goo</td></tr>
-<tr><td><b>_schedTypeLimits_</b></td><td>_schedTypeLimits_</td><td>A text string from the scheduleTypeLimits output of the 'Honeybee_Call From EP Schedule Library' component.  This value represents the units of the schedule input values.  The default is 'Fractional' for a schedule with values that range between 0 and 1.  Other common inputs include 'Temperature', 'On/Off', and 'ActivityLevel'.</td><td>Goo</td></tr>
-<tr><td><b>_baseWeekSched</b></td><td>_baseWeekSched</td><td>A text string represeting the name of a weekly schedule to use for any parts of the year not specified in the analysisPeriods below.  Such weekly schedules are output from either the 'Honeybee_Constant Schedule' or the 'Honeybee_Annual Schedule' components.</td><td>Goo</td></tr>
-<tr><td><b>_seasonWeekSched1</b></td><td>_seasonWeekSched1</td><td>A text string represeting the name of a weekly schedule to use for analysisPeriod1 below.  Such weekly schedules are output from either the "Honeybee_Constant Schedule" or the "Honeybee_Annual Schedule" components.</td><td>Goo</td></tr>
-<tr><td><b>_analysisPeriod1</b></td><td>_analysisPeriod1</td><td>An analysis period from the Ladybug_Analysis Period that specifies when the seasonWeekSched1_ above is active.</td><td>Goo</td></tr>
-</tbody>
-</table>
-
-<h2>Outputs</h2>
-<table>
-<thead>
-<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
-</thead>
-<tbody>
-<tr><td><b>out</b></td><td>readMe!</td><td>...</td><td>String</td></tr>
-<tr><td><b>schedule</b></td><td>schedule</td><td>The name of the schedule that has been written to the memory of the GH document.  Connect this to any shcedule input of a Honeybee component to assign the schedule.</td><td>Goo</td></tr>
-<tr><td><b>schedIDFText</b></td><td>schedIDFText</td><td>The text needed to tell EnergyPlus how to run the schedule.  If you are done creating/editing a shcedule with this component, you may want to make your GH document smaller by internalizing this IDF text and using the "Honeybee_Add To EnergyPlus Library" component to add the schedule to the memory the next time you open the GH file.  Then you can delete this component.</td><td>Goo</td></tr>
-</tbody>
-</table>
-
 
   </div>
 

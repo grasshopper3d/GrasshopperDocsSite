@@ -165,9 +165,6 @@ a:hover {
   color: #f43f14;
 }
 
-.compos td {
-  line-height: 1.2;
-}
 
 .codeword {
   font-size: 9pt;
@@ -216,6 +213,7 @@ h3 {
 	height: 60px;
 	width: 100%;
 	background: #4C8504 url("images/ghbanner.jpg") no-repeat scroll 0% 0%;
+	margin-top: 50px;
 	padding-top: 0px;
 	padding-left: 20px;
 }
@@ -224,6 +222,25 @@ h3 {
   color: #000;
 }
 
+.lib-buttons {
+    text-align: right;
+    margin-top: -54px;
+}
+
+.lib-buttons a {
+    display: inline-block;
+    padding: 6px 20px 6px 20px;
+    margin: 10px 10px 10px 10px;
+    color: #4c8504;
+    background-color: #bbf548;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 100ms;
+}
+.lib-buttons a:hover, .lib-buttons a:focus {
+	background-color: #e4ffad;
+    text-decoration: none;
+}
 
 .cparent {
 	width: 100%;
@@ -233,6 +250,20 @@ h3 {
   width: 320px;
   display: inline-block;
   padding-right: 10px;
+}
+
+.ccol_2 {
+  width: 270px;
+}
+
+.index-compos {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 5px 0;
+}
+.index-compos td {
+  border: none;
+  padding: 2px 5px;
 }
 
 
@@ -319,6 +350,10 @@ h6 {
 	/*color: #548A00;*/
 }
 
+.addon-compos td {
+  line-height: 1.2;
+}
+
 
 
 /* GH BAR */
@@ -327,6 +362,7 @@ h6 {
 }
 .ghbar {
 	margin-bottom: 20px;
+	overflow-x: auto;
 }
 .ghbar-table {
 	padding: 0px;
@@ -339,12 +375,14 @@ h6 {
 .ghbar-table tr {
 	padding: 0px;
 	margin: 0px;
+	background: none;
 }
 .ghgroup {
 	border: 1px solid #999;
 	border-radius: 5px;
 	padding: 5px 0px 0px 0px;
 	margin: 0px;
+	background-color: white;
 }
 .ghcolumn {
 	width: 25px;

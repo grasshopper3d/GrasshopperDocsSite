@@ -641,53 +641,6 @@
 <p><a href="../../index.html#Ladybug">Component Index</a> &gt; <a href="../../addons/ladybug.html">Ladybug</a> > 7 | WIP > <b>ENVI-Met Spaces</b></p>
 </div>
 <h3>Use this component to generate ENVI-Met v4.0 3D geometry models.<br>Analyze parametric models with ENVI-Met!<br>Save the model in the ENVI_MET Workspace, set the simulation file with ENVI_MET ConfigWizard and run the simulation.<br>N.B. It can write files with equidistant grid only. If you want to visualize INX file with ENVI_MET SPACES you need to use "Open 3D view".<br></h3>
-<h2>Inputs</h2>
-<table>
-<thead>
-<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
-</thead>
-<tbody>
-<tr><td><b>_location</b></td><td>_location</td><td>The output from the importEPW or constructLocation component.  This is essentially a list of text summarizing a location on the earth.</td><td>Goo</td></tr>
-<tr><td><b>_north_</b></td><td>_north_</td><td>Input a number between 0 and 360 that represents the degrees off from the y-axis to make North.  The default North direction is set to the Y-axis (0 degrees).</td><td>Goo</td></tr>
-<tr><td><b>basePoint_</b></td><td>basePoint_</td><td>Input a point here to move ENVI-Met grid. If no input is provided it will be origin point.</td><td>Goo</td></tr>
-<tr><td><b>------------------</b></td><td>------------------</td><td>(...)</td><td>Goo</td></tr>
-<tr><td><b>_numX_</b></td><td>_numX_</td><td>Number of grid cells in base plane x direction. Default value is 20.</td><td>Goo</td></tr>
-<tr><td><b>_numY_</b></td><td>_numY_</td><td>Number of grid cells in base plane y direction. Default value is 20.</td><td>Goo</td></tr>
-<tr><td><b>_numZ_</b></td><td>_numZ_</td><td>Number of grid cells in base plane z direction. Default value is 20.</td><td>Goo</td></tr>
-<tr><td><b>_dimX_</b></td><td>_dimX_</td><td>Size of grid cell in meter. Default value is 3.0.</td><td>Goo</td></tr>
-<tr><td><b>_dimY_</b></td><td>_dimY_</td><td>Size of grid cell in meter. Default value is 3.0.</td><td>Goo</td></tr>
-<tr><td><b>_dimZ_</b></td><td>_dimZ_</td><td>Size of grid cell in meter. Default value is 3.0.</td><td>Goo</td></tr>
-<tr><td><b>--------------------</b></td><td>--------------------</td><td>(...)</td><td>Goo</td></tr>
-<tr><td><b>baseSoilmaterial_</b></td><td>baseSoilmaterial_</td><td>Connect a profileId that you want to use as base material of soil. If no id is provided it will be 'LO'.</td><td>Goo</td></tr>
-<tr><td><b>numNestingGrid_</b></td><td>numNestingGrid_</td><td>Connect an integer to set nesting grid around main area. If no input is connected this will be 3.</td><td>Goo</td></tr>
-<tr><td><b>nestingGridSoil_</b></td><td>nestingGridSoil_</td><td>Connect two envimet ID soils to set soil profile for nesting grids. Use "LB ENVI-Met Read Library" for that.
--
-If no input is connected this input will be ('LO', 'LO').</td><td>Goo</td></tr>
-<tr><td><b>--------------------</b></td><td>--------------------</td><td>Script input ------------------.</td><td>Goo</td></tr>
-<tr><td><b>_envimetBuildings</b></td><td>_envimetBuildings</td><td>Output which comes from "LB ENVI-Met Building Terrain".</td><td>Goo</td></tr>
-<tr><td><b>envimetTerrain_</b></td><td>envimetTerrain_</td><td>Output which comes from "LB ENVI-Met Building Terrain".</td><td>Goo</td></tr>
-<tr><td><b>envimetPlants_</b></td><td>envimetPlants_</td><td>Output which comes from "LB ENVI-Met Soil Plant Source".</td><td>Goo</td></tr>
-<tr><td><b>envimetSoils_</b></td><td>envimetSoils_</td><td>Output which comes from "LB ENVI-Met Soil Plant Source".</td><td>Goo</td></tr>
-<tr><td><b>envimetSources_</b></td><td>envimetSources_</td><td>Output which comes from "LB ENVI-Met Soil Plant Source".</td><td>Goo</td></tr>
-<tr><td><b>--------------------</b></td><td>--------------------</td><td>Script variable ENVI-Spaces</td><td>Goo</td></tr>
-<tr><td><b>_folder</b></td><td>_folder</td><td>The folder into which you would like to write the envimet model. This should be a complete file path to the folder.</td><td>Goo</td></tr>
-<tr><td><b>fileName_</b></td><td>fileName_</td><td>The file name that you would like the envimet model to be saved as. Default name is "LBenvimet".</td><td>Goo</td></tr>
-<tr><td><b>_runIt</b></td><td>_runIt</td><td>Set to "True" to run the component and generate the envimet model.</td><td>Goo</td></tr>
-</tbody>
-</table>
-
-<h2>Outputs</h2>
-<table>
-<thead>
-<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
-</thead>
-<tbody>
-<tr><td><b>out</b></td><td>readMe!</td><td>...</td><td>String</td></tr>
-<tr><td><b>points</b></td><td>points</td><td>Preview of 3D grid of points.</td><td>Goo</td></tr>
-<tr><td><b>INXfileAddress</b></td><td>INXfileAddress</td><td>The file path of the inx result file that has been generated on your machine.</td><td>Goo</td></tr>
-</tbody>
-</table>
-
 
   </div>
 

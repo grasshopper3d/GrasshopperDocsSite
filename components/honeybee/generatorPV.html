@@ -947,36 +947,6 @@
 <p><a href="../../index.html#Honeybee">Component Index</a> &gt; <a href="../../addons/honeybee.html">Honeybee</a> > 13 | WIP > <b>Generator PV</b></p>
 </div>
 <h3></h3>
-<h2>Inputs</h2>
-<table>
-<thead>
-<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
-</thead>
-<tbody>
-<tr><td><b>_name_</b></td><td>_name_</td><td>An optional input, a name or a list of names of PV generators which correspond sequentially to the Honeybee surfaces in _HBSurfaces. Without this input PV generators will be assigned default names.</td><td>Goo</td></tr>
-<tr><td><b>_HBSurfaces</b></td><td>_HBSurfaces</td><td>A Honeybee/context surface or a list of Honeybee/context surfaces to which one Photovolatic generator will be mounted on each surface.</td><td>Goo</td></tr>
-<tr><td><b>_cellsEfficiency</b></td><td>_cellsEfficiency</td><td>A float or a list of floats that sequentially detail the efficiency of the Photovoltaic generator cells on each Honeybee surface in _HBSurfaces as a fraction. e.g the first float corresponds to the first Honeybee surface. If only one float is given this value will be used for all other PV generators.</td><td>Goo</td></tr>
-<tr><td><b>_integrationMode</b></td><td>_integrationMode</td><td>EnergyPlus allows for different ways of integrating with other EnergyPlus heat transfer surfaces and models and calculating Photovoltaic cell temperature. This field is a integer or a list of integers sequentially to _HBSurfaces between 1 and 6 that defines the heat transfer integration mode used in the calculations as one of the following options. Decoupled a value of 1, DecoupledUllebergDynamic a value of 2, IntegratedSurfaceOutsideFace a value of 3, IntegratedTranspiredCollector a value of 4, IntegratedExteriorVentedCavity a value of 5, PhotovoltaicThermalSolarCollector a value of 6. If only one integer is given this value will be used for all other PV generators. More information about each mode can be found on page 1767 and 1768 of the Energyplus Input Output reference.</td><td>Goo</td></tr>
-<tr><td><b>_NoParallel</b></td><td>_NoParallel</td><td>A integer or a list of integers that sequentially correspond to each Honeybee surface in _HBSurfaces. These integers define the series-wired strings of PV modules that are in parallel to form the PV generator on each Honeybee surface. The product of this field and the next field will equal the total number of modules in the PV generator on each Honeybee surface. If only one integer is given this value will be used for all other PV generators.</td><td>Goo</td></tr>
-<tr><td><b>_Noseries</b></td><td>_Noseries</td><td>A integer or a list of integers that sequentially correspond to each Honeybee surface in _HBSurfaces.  These integers define the number of modules wired in series (on each string) to form the PV generator on each Honeybee surface in _HBSurfaces. The product of this field and the previous field will equal the total number of modules in the PV generator on each Honeybee surface. If only one integer is given this value will be used for all other PV generators.</td><td>Goo</td></tr>
-<tr><td><b>_costPVPerModule</b></td><td>_costPVPerModule</td><td>A float or a list of floats which give the cost of each PV generator on each Honeybee surface in _HBSurfaces in whatever currency the user wishes - (This is the sum of the cost of each PV module on the surface in question, as a PV generator is made up of one or several PV modules). If only one float is given this value will be used for all other PV generators.</td><td>Goo</td></tr>
-<tr><td><b>_powerOutputPerModule</b></td><td>_powerOutputPerModule</td><td>A float or a list of floats which give the rated power output of each PV generator on each Honeybee surface in _HBSurfaces in watts. (This is the sum of the rated power output of each PV module on the surface in question, as a PV generator is made up of one or several PV modules). If only one float is given this value will be used for all other PV generators.</td><td>Goo</td></tr>
-<tr><td><b>_PVInverter</b></td><td>_PVInverter</td><td>The inverter servicing all the PV generators in this component - to assign an inverter connect the HB_inverter here from the Honeybee inverter component</td><td>Goo</td></tr>
-<tr><td><b>sandiaMode_</b></td><td>sandiaMode_</td><td>Input just ONE Sandria data set as a panel here. Examples can be seen in C:\EnergyPlusV8-4-0\MacroDataSet\SandiaPVdata</td><td>Goo</td></tr>
-</tbody>
-</table>
-
-<h2>Outputs</h2>
-<table>
-<thead>
-<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
-</thead>
-<tbody>
-<tr><td><b>readMe</b></td><td>readMe</td><td>Script variable PVgen</td><td>Goo</td></tr>
-<tr><td><b>PV_HBSurfaces</b></td><td>PV_HBSurfaces</td><td>The Honeybee/context surfaces that have been modified by this component - these surfaces now contain PV generators to run in an EnergyPlus simulation. To do so you need to add them to a Honeybee generation system first - connect them to the PV_HBSurfaces input of a Honeybee_generationsystem component.</td><td>Goo</td></tr>
-</tbody>
-</table>
-
 
   </div>
 

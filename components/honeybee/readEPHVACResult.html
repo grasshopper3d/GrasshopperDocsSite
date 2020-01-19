@@ -947,30 +947,6 @@
 <p><a href="../../index.html#Honeybee">Component Index</a> &gt; <a href="../../addons/honeybee.html">Honeybee</a> > 10 | Energy | Energy > <b>Read EP HVAC Result</b></p>
 </div>
 <h3>This component reads the results of an EnergyPlus simulation from the WriteIDF Component or any EnergyPlus result .csv file address.  Note that, if you use this component without the WriteIDF component, you should make sure that a corresponding .eio file is next to your .csv file at the input address that you specify.<br>This component reads only the results related to zone ideal air and earth tube HVAC systems.  For other results related to zones, you should use the "Honeybee_Read EP Result" component and, for results related to surfaces, you should use the "Honeybee_Read EP Surface Result" component.<br></h3>
-<h2>Inputs</h2>
-<table>
-<thead>
-<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
-</thead>
-<tbody>
-<tr><td><b>_resultFileAddress</b></td><td>_resultFileAddress</td><td>The result file address that comes out of the WriteIDF component.</td><td>Goo</td></tr>
-</tbody>
-</table>
-
-<h2>Outputs</h2>
-<table>
-<thead>
-<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
-</thead>
-<tbody>
-<tr><td><b>supplyVolFlow</b></td><td>supplyVolFlow</td><td>The mass of supply air flowing into each zone in kg/s.</td><td>Goo</td></tr>
-<tr><td><b>supplyAirTemp</b></td><td>supplyAirTemp</td><td>The mean air temperature of the supply air for each zone (degrees Celcius).</td><td>Goo</td></tr>
-<tr><td><b>supplyAirHumidity</b></td><td>supplyAirHumidity</td><td>The relative humidity of the supply air for each zone (%).</td><td>Goo</td></tr>
-<tr><td><b>unmetHoursCooling</b></td><td>unmetHoursCooling</td><td>Time Zone Cooling Setpoint Not Met Time</td><td>Goo</td></tr>
-<tr><td><b>unmetHoursHeating</b></td><td>unmetHoursHeating</td><td>Time Zone Heating Setpoint Not Met Time</td><td>Goo</td></tr>
-</tbody>
-</table>
-
 
   </div>
 

@@ -947,32 +947,6 @@
 <p><a href="../../index.html#Honeybee">Component Index</a> &gt; <a href="../../addons/honeybee.html">Honeybee</a> > 10 | Energy | Energy > <b>Simulation Control</b></p>
 </div>
 <h3>Use this component to set EnergyPlus Simulation Controls such as whether to run certain types of HVAC sizing calculations, etc.<br></h3>
-<h2>Inputs</h2>
-<table>
-<thead>
-<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
-</thead>
-<tbody>
-<tr><td><b>doZoneSizingCalculation_</b></td><td>doZoneSizingCalculation_</td><td>Set to "True" to have EnergyPlus do a sizing calculation for the zones.  The default is set to "True."</td><td>Goo</td></tr>
-<tr><td><b>doSystemSizingCalculation_</b></td><td>doSystemSizingCalculation_</td><td>Set to "True" to have EnergyPlus do a sizing calculation for the HVAC system.  The default is set to "True."</td><td>Goo</td></tr>
-<tr><td><b>doPlantSizingCalculation_</b></td><td>doPlantSizingCalculation_</td><td>Set to "True" to have EnergyPlus do a sizing calculation for the HVAC plant (boiler and chiller).  The default is set to "True", although with ideal air loads, there is no plant as each zone has its own ideal air system and there is no central plant between zones.</td><td>Goo</td></tr>
-<tr><td><b>runSimForSizingPeriods_</b></td><td>runSimForSizingPeriods_</td><td>Set to "True" to have EnergyPlus run a simulation for the Sizing periods specified in the IDF.  The default is set to "False."  By default, the sizing periods are set to the extreme hot and extreme cold weeks of the weather file but a custom ddy file can also be specified with the "Honeybee_Energy Simulation Par" component.</td><td>Goo</td></tr>
-<tr><td><b>runSimForRunPeriods_</b></td><td>runSimForRunPeriods_</td><td>Set to "True" to have EnergyPlus run the simulation for energy use over the entire year of the EPW.  The default is set to "True."</td><td>Goo</td></tr>
-<tr><td><b>maxWarmupDays_</b></td><td>maxWarmupDays_</td><td>The minimum number of warmup days that you want the energyplus simulation to run before recording result values.  The default is set to 6.</td><td>Goo</td></tr>
-<tr><td><b>minWarmupDays_</b></td><td>minWarmupDays_</td><td>Script variable simControl</td><td>Goo</td></tr>
-</tbody>
-</table>
-
-<h2>Outputs</h2>
-<table>
-<thead>
-<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
-</thead>
-<tbody>
-<tr><td><b>simControls</b></td><td>simControls</td><td>A set of simulation controls tha can be plugged into the "Honeybee_Energy Simulation Par" component.</td><td>Goo</td></tr>
-</tbody>
-</table>
-
 
   </div>
 

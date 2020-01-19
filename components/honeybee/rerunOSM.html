@@ -947,35 +947,6 @@
 <p><a href="../../index.html#Honeybee">Component Index</a> &gt; <a href="../../addons/honeybee.html">Honeybee</a> > 10 | Energy | Energy > <b>Re-run OSM</b></p>
 </div>
 <h3>This is a component for running a previoulsy-generated .osm file through EnergyPlus.<br></h3>
-<h2>Inputs</h2>
-<table>
-<thead>
-<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
-</thead>
-<tbody>
-<tr><td><b>_osmFilePath</b></td><td>_osmFilePath</td><td>A file path of the an OpemStdio file</td><td>Goo</td></tr>
-<tr><td><b>_epwFileAddress</b></td><td>_epwFileAddress</td><td>Address to epw weather file.</td><td>Goo</td></tr>
-<tr><td><b>_runIt</b></td><td>_runIt</td><td>Set to "True" to have the component generate an IDF file from the OSM file and run the IDF through through EnergyPlus.  Set to "False" to not run the file (this is the default).  You can also connect an integer for the following options:
-0 = Do Not Run OSM and IDF thrrough EnergyPlus
-1 = Run the OSM and IDF through EnergyPlus with a command prompt window that displays the progress of the simulation
-2 = Run the OSM and IDF through EnergyPlus in the background (without the command line popup window).
-3 = Generate an IDF from the OSM file but do not run it through EnergyPlus</td><td>Goo</td></tr>
-</tbody>
-</table>
-
-<h2>Outputs</h2>
-<table>
-<thead>
-<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
-</thead>
-<tbody>
-<tr><td><b>out</b></td><td>readMe!</td><td>Report!</td><td>String</td></tr>
-<tr><td><b>idfFileAddress</b></td><td>idfFileAddress</td><td>Script variable Re-Run OSM</td><td>Goo</td></tr>
-<tr><td><b>resultFileAddress</b></td><td>resultFileAddress</td><td>The address of the EnergyPlus result file.</td><td>Goo</td></tr>
-<tr><td><b>studyFolder</b></td><td>studyFolder</td><td>The directory in which the simulation has been run.  Connect this to the 'Honeybee_Lookup EnergyPlus' folder to bring many of the files in this directory into Grasshopper.</td><td>Goo</td></tr>
-</tbody>
-</table>
-
 
   </div>
 

@@ -947,33 +947,6 @@
 <p><a href="../../index.html#Honeybee">Component Index</a> &gt; <a href="../../addons/honeybee.html">Honeybee</a> > 13 | WIP > <b>Read generation system results</b></p>
 </div>
 <h3>This component reads the results of an EnergyPlus simulation from the WriteIDF Component or any EnergyPlus result .csv file address.  Note that, if you use this component without the WriteIDF component, you should make sure that a corresponding .eio file is next to your .csv file at the input address that you specify.<br>This component reads only the results related to Honeybee generation systems.  For other results related to zones, you should use the "Honeybee_Read EP Result" for HVAC use the "Honeybee_Read EP HVAC Result" component and, for results related to surfaces, you should use the "Honeybee_Read EP Surface Result" component.<br></h3>
-<h2>Inputs</h2>
-<table>
-<thead>
-<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
-</thead>
-<tbody>
-<tr><td><b>_resultFileAddress</b></td><td>_resultFileAddress</td><td>The result file address that comes out of the WriteIDF component.</td><td>Goo</td></tr>
-<tr><td><b>_idfFileAddress</b></td><td>_idfFileAddress</td><td>The IDF file address that comes out of the WriteIDF component.</td><td>Goo</td></tr>
-</tbody>
-</table>
-
-<h2>Outputs</h2>
-<table>
-<thead>
-<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
-</thead>
-<tbody>
-<tr><td><b>out</b></td><td>Readme!</td><td>The execution information, as output and error streams</td><td>String</td></tr>
-<tr><td><b>totalelectdemand</b></td><td>totalelectdemand</td><td>The total electricity demand of the facility in Kwh</td><td>Goo</td></tr>
-<tr><td><b>netpurchasedelect</b></td><td>netpurchasedelect</td><td>The net purchased electricity of the facility in Kwh
-- a negative value means that the facility produced surplus electricity and it was
-sold to the grid.</td><td>Goo</td></tr>
-<tr><td><b>generatorproducedenergy</b></td><td>generatorproducedenergy</td><td>The electricity produced by each Honeybee generator in the facility</td><td>Goo</td></tr>
-<tr><td><b>financialdata</b></td><td>financialdata</td><td>The financial data of the Honeybee generators in the facility.</td><td>Goo</td></tr>
-</tbody>
-</table>
-
 
   </div>
 

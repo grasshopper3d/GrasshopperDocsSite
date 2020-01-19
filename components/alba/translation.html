@@ -338,36 +338,6 @@ Visualize
 <p><a href="../../index.html#Alba">Component Index</a> &gt; <a href="../../addons/alba.html">Alba</a> > Transcription/Translation > <b>Translation</b></p>
 </div>
 <h3>Translates RNA to amino acid chain with options for finding the proper reading frame</h3>
-<h2>Inputs</h2>
-<table>
-<thead>
-<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
-</thead>
-<tbody>
-<tr><td><b>RNA</b></td><td>RNA</td><td>Contains a collection of text fragments</td><td>String</td></tr>
-<tr><td><b>Domain from larger sequence</b></td><td>Sub</td><td>optional domain from the larger sequence to establish locations withing the broader context</td><td>Interval</td></tr>
-<tr><td><b>Ribosome Binding Site Sequence</b></td><td>RBS</td><td>Ribosome Binding Site Sequence as RNA or DNA</td><td>String</td></tr>
-<tr><td><b>shift frame</b></td><td>Shift</td><td>shift the frame 0,1,or 2 nucleuotides</td><td>Integer</td></tr>
-<tr><td><b>Start Point</b></td><td>Start</td><td>0=beginning of input RNA, 1=1st start codon, 2= 2nd start codon, etc</td><td>Integer</td></tr>
-<tr><td><b>Stop Point</b></td><td>Stop</td><td>0=end of input RNA, 1=1st stop codon, 2= 2nd stop codon, etc</td><td>Integer</td></tr>
-<tr><td><b>Verbosity</b></td><td>V</td><td>input an integer1-2 to determine the output version of the amino acid identification.  0=one letter, 1=three letter, 2= word</td><td>Integer</td></tr>
-</tbody>
-</table>
-
-<h2>Outputs</h2>
-<table>
-<thead>
-<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
-</thead>
-<tbody>
-<tr><td><b>Amino Acid Sequence</b></td><td>AA</td><td>Filtered stream</td><td>Goo</td></tr>
-<tr><td><b>Text</b></td><td>Codons</td><td>Contains a collection of text fragments</td><td>String</td></tr>
-<tr><td><b>Domain of Total DNA Sequence</b></td><td>Sub DNA</td><td>Domain relative to the location in the total DNA sequence based on the input refernce domain</td><td>Interval</td></tr>
-<tr><td><b>Domain of RNA</b></td><td>Sub RNA</td><td>Numeric domain between {A} and {B}</td><td>Interval</td></tr>
-<tr><td><b>Domain of Amino Acids</b></td><td>Sub AA</td><td>Numeric domain between {A} and {B}</td><td>Interval</td></tr>
-</tbody>
-</table>
-
 
   </div>
 

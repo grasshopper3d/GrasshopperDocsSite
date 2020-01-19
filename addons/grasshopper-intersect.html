@@ -1,0 +1,429 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+<head data-layout-view="wide">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Grasshopper - Grasshopper Addon Reference</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+
+<meta name="description" content="Complete documentation for the Grasshopper addon in Grasshopper 3D." />
+<meta name="title" content="Grasshopper Addon Reference" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://rhino.github.io/" />
+<meta property="og:title" content="Grasshopper - Grasshopper Addon Reference" />
+
+<meta property="wiki-page" content="$WIKI$" />
+
+<link rel="image_src" href="http://rhino.github.io/ning/2985220.jpg" />
+
+<style type="text/css" media="screen,projection">
+#xg_navigation ul div.xg_subtab ul li a {
+    color:#666666;
+    background:#EAFFBD;
+}
+#xg_navigation ul div.xg_subtab ul li a:hover {
+    color:#333333;
+    background:#F2FFD6;
+}
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../ning/index.css);
+@import url(../ning/page.css);
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../ning/1187549422.css);
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../ning/1187545030.css);
+</style>
+
+
+<link href="../style.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+    </head>
+    <body>
+    
+        
+        <div id="xg" class="xg_theme xg_widget_page xg_widget_page_page xg_widget_page_page_show" data-layout-pack="classic">
+            <div id="xg_head">
+                <div id="xg_masthead">
+                    <p id="xg_sitename"><a id="application_name_header_link" href="http://rhino.github.io/">Grasshopper</a></p>
+                    <p id="xg_sitedesc" class="xj_site_desc">algorithmic modeling for Rhino</p>
+                </div>
+                <div id="xg_navigation">
+                    <ul>
+    <li id="xg_tab_main" class="xg_subtab"><a href="http://www.grasshopper3d.com/"><span>Home</span></a></li>
+	<li id="xg_tab_photo" class="xg_subtab"><a href="http://www.grasshopper3d.com/photo"><span>View</span></a></li>
+	<li id="xg_tab_xn0" class="xg_subtab"><a href="http://www.grasshopper3d.com/page/download-1"><span>Download</span></a></li>
+	<li id="xg_tab_forum" class="xg_subtab"><a href="https://discourse.mcneel.com/c/grasshopper"><span>Forums&#47;Support</span></a></li>
+	<li id="xg_tab_xn2" class="xg_subtab this"><a href="http://rhino.github.io/"><span>Learn</span></a></li>
+	<li id="xg_tab_events" class="xg_subtab"><a href="http://www.grasshopper3d.com/events"><span>Attend</span></a></li>
+	<li id="xg_tab_profile" class="xg_subtab"><a href="http://www.grasshopper3d.com/profiles"><span>My Page</span></a></li></ul>
+
+                </div>
+            </div>
+            
+            <div id="xg_body">
+                
+				<div class="page">
+
+<div class="content">
+
+<div class="addon-buttons">
+<a href="https://www.rhino3d.com/6/new/grasshopper">Download</a>
+</div>
+
+<div>
+<h1>Grasshopper</h1>
+<h6>SYSTEM COMPONENTS</h6>
+<p><a href="../index.html#System">Component Index</a> &gt; <b>Grasshopper</b></p>
+</div>
+
+<div class="ghbar">
+<table class="ghbar-table">
+<tr>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshopperintersect/curveLine.html"><img class="ghicon" src="../icons/GrasshopperIntersect/Curve___Line.png" title="Curve | Line"></a>
+<a href="../components/grasshopperintersect/curvePlane.html"><img class="ghicon" src="../icons/GrasshopperIntersect/Curve___Plane.png" title="Curve | Plane"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshopperintersect/lineLine.html"><img class="ghicon" src="../icons/GrasshopperIntersect/Line___Line.png" title="Line | Line"></a>
+<a href="../components/grasshopperintersect/linePlane.html"><img class="ghicon" src="../icons/GrasshopperIntersect/Line___Plane.png" title="Line | Plane"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshopperintersect/brepLine.html"><img class="ghicon" src="../icons/GrasshopperIntersect/Brep___Line.png" title="Brep | Line"></a>
+<a href="../components/grasshopperintersect/brepPlane.html"><img class="ghicon" src="../icons/GrasshopperIntersect/Brep___Plane.png" title="Brep | Plane"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshopperintersect/contour.html"><img class="ghicon" src="../icons/GrasshopperIntersect/Contour.png" title="Contour"></a>
+<a href="../components/grasshopperintersect/contourex.html"><img class="ghicon" src="../icons/GrasshopperIntersect/Contour_(ex).png" title="Contour (ex)"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshopperintersect/meshRay.html"><img class="ghicon" src="../icons/GrasshopperIntersect/Mesh___Ray.png" title="Mesh | Ray"></a>
+<a href="../components/grasshopperintersect/meshPlane.html"><img class="ghicon" src="../icons/GrasshopperIntersect/Mesh___Plane.png" title="Mesh | Plane"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshopperintersect/surfaceLine.html"><img class="ghicon" src="../icons/GrasshopperIntersect/Surface___Line.png" title="Surface | Line"></a>
+<a href="../components/grasshopperintersect/isoVist.html"><img class="ghicon" src="../icons/GrasshopperIntersect/IsoVist.png" title="IsoVist"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshopperintersect/isoVistRay.html"><img class="ghicon" src="../icons/GrasshopperIntersect/IsoVist_Ray.png" title="IsoVist Ray"></a>
+<a href="../components/grasshopperintersect/planePlanePlane.html"><img class="ghicon" src="../icons/GrasshopperIntersect/Plane___Plane___Plane.png" title="Plane | Plane | Plane"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshopperintersect/planePlane.html"><img class="ghicon" src="../icons/GrasshopperIntersect/Plane___Plane.png" title="Plane | Plane"></a>
+<a href="../components/grasshopperintersect/planeRegion.html"><img class="ghicon" src="../icons/GrasshopperIntersect/Plane_Region.png" title="Plane Region"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="8">
+Mathematical
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshopperintersect/curveCurve.html"><img class="ghicon" src="../icons/GrasshopperIntersect/Curve___Curve.png" title="Curve | Curve"></a>
+<a href="../components/grasshopperintersect/curveSelf.html"><img class="ghicon" src="../icons/GrasshopperIntersect/Curve___Self.png" title="Curve | Self"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshopperintersect/multipleCurves.html"><img class="ghicon" src="../icons/GrasshopperIntersect/Multiple_Curves.png" title="Multiple Curves"></a>
+<a href="../components/grasshopperintersect/brepCurve.html"><img class="ghicon" src="../icons/GrasshopperIntersect/Brep___Curve.png" title="Brep | Curve"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshopperintersect/brepBrep.html"><img class="ghicon" src="../icons/GrasshopperIntersect/Brep___Brep.png" title="Brep | Brep"></a>
+<a href="../components/grasshopperintersect/collisionManyMany.html"><img class="ghicon" src="../icons/GrasshopperIntersect/Collision_Many_Many.png" title="Collision Many|Many"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshopperintersect/collisionOneMany.html"><img class="ghicon" src="../icons/GrasshopperIntersect/Collision_One_Many.png" title="Collision One|Many"></a>
+<a href="../components/grasshopperintersect/meshCurve.html"><img class="ghicon" src="../icons/GrasshopperIntersect/Mesh___Curve.png" title="Mesh | Curve"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshopperintersect/meshMesh.html"><img class="ghicon" src="../icons/GrasshopperIntersect/Mesh___Mesh.png" title="Mesh | Mesh"></a>
+<a href="../components/grasshopperintersect/surfaceCurve.html"><img class="ghicon" src="../icons/GrasshopperIntersect/Surface___Curve.png" title="Surface | Curve"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshopperintersect/surfaceSplit.html"><img class="ghicon" src="../icons/GrasshopperIntersect/Surface_Split.png" title="Surface Split"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="6">
+Physical
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshopperintersect/splitWithBrep.html"><img class="ghicon" src="../icons/GrasshopperIntersect/Split_with_Brep.png" title="Split with Brep"></a>
+<a href="../components/grasshopperintersect/splitWithBreps.html"><img class="ghicon" src="../icons/GrasshopperIntersect/Split_with_Breps.png" title="Split with Breps"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshopperintersect/trimWithBrep.html"><img class="ghicon" src="../icons/GrasshopperIntersect/Trim_with_Brep.png" title="Trim with Brep"></a>
+<a href="../components/grasshopperintersect/trimWithBreps.html"><img class="ghicon" src="../icons/GrasshopperIntersect/Trim_with_Breps.png" title="Trim with Breps"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshopperintersect/trimWithRegions.html"><img class="ghicon" src="../icons/GrasshopperIntersect/Trim_with_Regions.png" title="Trim with Regions"></a>
+<a href="../components/grasshopperintersect/trimWithRegion.html"><img class="ghicon" src="../icons/GrasshopperIntersect/Trim_with_Region.png" title="Trim with Region"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+Region
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshopperintersect/solidDifference.html"><img class="ghicon" src="../icons/GrasshopperIntersect/Solid_Difference.png" title="Solid Difference"></a>
+<a href="../components/grasshopperintersect/solidIntersection.html"><img class="ghicon" src="../icons/GrasshopperIntersect/Solid_Intersection.png" title="Solid Intersection"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshopperintersect/trimSolid.html"><img class="ghicon" src="../icons/GrasshopperIntersect/Trim_Solid.png" title="Trim Solid"></a>
+<a href="../components/grasshopperintersect/solidUnion.html"><img class="ghicon" src="../icons/GrasshopperIntersect/Solid_Union.png" title="Solid Union"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshopperintersect/boxSlits.html"><img class="ghicon" src="../icons/GrasshopperIntersect/Box_Slits.png" title="Box Slits"></a>
+<a href="../components/grasshopperintersect/boundaryVolume.html"><img class="ghicon" src="../icons/GrasshopperIntersect/Boundary_Volume.png" title="Boundary Volume"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshopperintersect/regionDifference.html"><img class="ghicon" src="../icons/GrasshopperIntersect/Region_Difference.png" title="Region Difference"></a>
+<a href="../components/grasshopperintersect/regionIntersection.html"><img class="ghicon" src="../icons/GrasshopperIntersect/Region_Intersection.png" title="Region Intersection"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshopperintersect/regionUnion.html"><img class="ghicon" src="../icons/GrasshopperIntersect/Region_Union.png" title="Region Union"></a>
+<a href="../components/grasshopperintersect/meshDifference.html"><img class="ghicon" src="../icons/GrasshopperIntersect/Mesh_Difference.png" title="Mesh Difference"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshopperintersect/meshIntersection.html"><img class="ghicon" src="../icons/GrasshopperIntersect/Mesh_Intersection.png" title="Mesh Intersection"></a>
+<a href="../components/grasshopperintersect/meshUnion.html"><img class="ghicon" src="../icons/GrasshopperIntersect/Mesh_Union.png" title="Mesh Union"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshopperintersect/meshSplit.html"><img class="ghicon" src="../icons/GrasshopperIntersect/Mesh_Split.png" title="Mesh Split"></a>
+<a href="../components/grasshopperintersect/regionSlits.html"><img class="ghicon" src="../icons/GrasshopperIntersect/Region_Slits.png" title="Region Slits"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshopperintersect/splitBrep.html"><img class="ghicon" src="../icons/GrasshopperIntersect/Split_Brep.png" title="Split Brep"></a>
+<a href="../components/grasshopperintersect/splitBrepMultiple.html"><img class="ghicon" src="../icons/GrasshopperIntersect/Split_Brep_Multiple.png" title="Split Brep Multiple"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="8">
+Shape
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="cchild">
+<h3>Mathematical</h3>
+<table class="addon-compos">
+<tbody>
+<tr><td class="ccol_1"><a href="../components/grasshopperintersect/curveLine.html"><img src="../icons/GrasshopperIntersect/Curve___Line.png"/></a></td><td class="ccol_2"><a href="../components/grasshopperintersect/curveLine.html">Curve | Line</a> <span class="codeword">(CLX)</span><br><span class="desc">Solve intersection events for a curve and a line.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshopperintersect/curvePlane.html"><img src="../icons/GrasshopperIntersect/Curve___Plane.png"/></a></td><td class="ccol_2"><a href="../components/grasshopperintersect/curvePlane.html">Curve | Plane</a> <span class="codeword">(PCX)</span><br><span class="desc">Solve intersection events for a curve and a plane.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshopperintersect/lineLine.html"><img src="../icons/GrasshopperIntersect/Line___Line.png"/></a></td><td class="ccol_2"><a href="../components/grasshopperintersect/lineLine.html">Line | Line</a> <span class="codeword">(LLX)</span><br><span class="desc">Solve intersection events for two lines.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshopperintersect/linePlane.html"><img src="../icons/GrasshopperIntersect/Line___Plane.png"/></a></td><td class="ccol_2"><a href="../components/grasshopperintersect/linePlane.html">Line | Plane</a> <span class="codeword">(PLX)</span><br><span class="desc">Solve intersection event for a line and a plane.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshopperintersect/brepLine.html"><img src="../icons/GrasshopperIntersect/Brep___Line.png"/></a></td><td class="ccol_2"><a href="../components/grasshopperintersect/brepLine.html">Brep | Line</a> <span class="codeword">(BLX)</span><br><span class="desc">Solve intersection events for a Brep and a line.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshopperintersect/brepPlane.html"><img src="../icons/GrasshopperIntersect/Brep___Plane.png"/></a></td><td class="ccol_2"><a href="../components/grasshopperintersect/brepPlane.html">Brep | Plane</a> <span class="codeword">(Sec)</span><br><span class="desc">Solve intersection events for a Brep and a plane (otherwise known as section).</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshopperintersect/contour.html"><img src="../icons/GrasshopperIntersect/Contour.png"/></a></td><td class="ccol_2"><a href="../components/grasshopperintersect/contour.html">Contour</a><br><span class="desc">Create a set of Brep or Mesh contours</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshopperintersect/contourex.html"><img src="../icons/GrasshopperIntersect/Contour_(ex).png"/></a></td><td class="ccol_2"><a href="../components/grasshopperintersect/contourex.html">Contour (ex)</a> <span class="codeword">(Contour)</span><br><span class="desc">Create a set of Brep or Mesh contours</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshopperintersect/meshRay.html"><img src="../icons/GrasshopperIntersect/Mesh___Ray.png"/></a></td><td class="ccol_2"><a href="../components/grasshopperintersect/meshRay.html">Mesh | Ray</a> <span class="codeword">(MeshRay)</span><br><span class="desc">Intersect a mesh with a semi-infinite ray</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshopperintersect/meshPlane.html"><img src="../icons/GrasshopperIntersect/Mesh___Plane.png"/></a></td><td class="ccol_2"><a href="../components/grasshopperintersect/meshPlane.html">Mesh | Plane</a> <span class="codeword">(Sec)</span><br><span class="desc">Solve intersection events for a Mesh and a Plane (otherwise known as section).</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshopperintersect/surfaceLine.html"><img src="../icons/GrasshopperIntersect/Surface___Line.png"/></a></td><td class="ccol_2"><a href="../components/grasshopperintersect/surfaceLine.html">Surface | Line</a> <span class="codeword">(SLX)</span><br><span class="desc">Solve intersection events for a surface and a line.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshopperintersect/isoVist.html"><img src="../icons/GrasshopperIntersect/IsoVist.png"/></a></td><td class="ccol_2"><a href="../components/grasshopperintersect/isoVist.html">IsoVist</a> <span class="codeword">(IVist)</span><br><span class="desc">Compute an isovist sampling at a location</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshopperintersect/isoVistRay.html"><img src="../icons/GrasshopperIntersect/IsoVist_Ray.png"/></a></td><td class="ccol_2"><a href="../components/grasshopperintersect/isoVistRay.html">IsoVist Ray</a> <span class="codeword">(IVRay)</span><br><span class="desc">Compute a single isovist sample at a location</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshopperintersect/planePlanePlane.html"><img src="../icons/GrasshopperIntersect/Plane___Plane___Plane.png"/></a></td><td class="ccol_2"><a href="../components/grasshopperintersect/planePlanePlane.html">Plane | Plane | Plane</a> <span class="codeword">(3PX)</span><br><span class="desc">Solve the intersection events of three planes.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshopperintersect/planePlane.html"><img src="../icons/GrasshopperIntersect/Plane___Plane.png"/></a></td><td class="ccol_2"><a href="../components/grasshopperintersect/planePlane.html">Plane | Plane</a> <span class="codeword">(PPX)</span><br><span class="desc">Solve the intersection event of two planes.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshopperintersect/planeRegion.html"><img src="../icons/GrasshopperIntersect/Plane_Region.png"/></a></td><td class="ccol_2"><a href="../components/grasshopperintersect/planeRegion.html">Plane Region</a> <span class="codeword">(PlReg)</span><br><span class="desc">Create a bounded region from intersecting planes.</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>Shape</h3>
+<table class="addon-compos">
+<tbody>
+<tr><td class="ccol_1"><a href="../components/grasshopperintersect/solidDifference.html"><img src="../icons/GrasshopperIntersect/Solid_Difference.png"/></a></td><td class="ccol_2"><a href="../components/grasshopperintersect/solidDifference.html">Solid Difference</a> <span class="codeword">(SDiff)</span><br><span class="desc">Perform a solid difference on two Brep sets.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshopperintersect/solidIntersection.html"><img src="../icons/GrasshopperIntersect/Solid_Intersection.png"/></a></td><td class="ccol_2"><a href="../components/grasshopperintersect/solidIntersection.html">Solid Intersection</a> <span class="codeword">(SInt)</span><br><span class="desc">Perform a solid intersection on two Brep sets.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshopperintersect/trimSolid.html"><img src="../icons/GrasshopperIntersect/Trim_Solid.png"/></a></td><td class="ccol_2"><a href="../components/grasshopperintersect/trimSolid.html">Trim Solid</a> <span class="codeword">(Trim)</span><br><span class="desc">Cut holes into a shape with a set of solid cutters.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshopperintersect/solidUnion.html"><img src="../icons/GrasshopperIntersect/Solid_Union.png"/></a></td><td class="ccol_2"><a href="../components/grasshopperintersect/solidUnion.html">Solid Union</a> <span class="codeword">(SUnion)</span><br><span class="desc">Perform a solid union on a set of Breps.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshopperintersect/boxSlits.html"><img src="../icons/GrasshopperIntersect/Box_Slits.png"/></a></td><td class="ccol_2"><a href="../components/grasshopperintersect/boxSlits.html">Box Slits</a> <span class="codeword">(Slits)</span><br><span class="desc">Add slits to a collection of intersecting boxes</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshopperintersect/boundaryVolume.html"><img src="../icons/GrasshopperIntersect/Boundary_Volume.png"/></a></td><td class="ccol_2"><a href="../components/grasshopperintersect/boundaryVolume.html">Boundary Volume</a> <span class="codeword">(BVol)</span><br><span class="desc">Create a closed polysurface from boundary surfaces</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshopperintersect/regionDifference.html"><img src="../icons/GrasshopperIntersect/Region_Difference.png"/></a></td><td class="ccol_2"><a href="../components/grasshopperintersect/regionDifference.html">Region Difference</a> <span class="codeword">(RDiff)</span><br><span class="desc">Difference between two sets of planar closed curves (regions)</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshopperintersect/regionIntersection.html"><img src="../icons/GrasshopperIntersect/Region_Intersection.png"/></a></td><td class="ccol_2"><a href="../components/grasshopperintersect/regionIntersection.html">Region Intersection</a> <span class="codeword">(RInt)</span><br><span class="desc">Intersection between two sets of planar closed curves (regions)</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshopperintersect/regionUnion.html"><img src="../icons/GrasshopperIntersect/Region_Union.png"/></a></td><td class="ccol_2"><a href="../components/grasshopperintersect/regionUnion.html">Region Union</a> <span class="codeword">(RUnion)</span><br><span class="desc">Union of a set of planar closed curves (regions)</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshopperintersect/meshDifference.html"><img src="../icons/GrasshopperIntersect/Mesh_Difference.png"/></a></td><td class="ccol_2"><a href="../components/grasshopperintersect/meshDifference.html">Mesh Difference</a> <span class="codeword">(MDif)</span><br><span class="desc">Perform a solid difference on two sets of meshes</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshopperintersect/meshIntersection.html"><img src="../icons/GrasshopperIntersect/Mesh_Intersection.png"/></a></td><td class="ccol_2"><a href="../components/grasshopperintersect/meshIntersection.html">Mesh Intersection</a> <span class="codeword">(MInt)</span><br><span class="desc">Perform a solid intersection on a set of meshes</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshopperintersect/meshUnion.html"><img src="../icons/GrasshopperIntersect/Mesh_Union.png"/></a></td><td class="ccol_2"><a href="../components/grasshopperintersect/meshUnion.html">Mesh Union</a> <span class="codeword">(MUnion)</span><br><span class="desc">Perform a solid union on a set of meshes</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshopperintersect/meshSplit.html"><img src="../icons/GrasshopperIntersect/Mesh_Split.png"/></a></td><td class="ccol_2"><a href="../components/grasshopperintersect/meshSplit.html">Mesh Split</a> <span class="codeword">(MSplit)</span><br><span class="desc">Mesh Mesh split</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshopperintersect/regionSlits.html"><img src="../icons/GrasshopperIntersect/Region_Slits.png"/></a></td><td class="ccol_2"><a href="../components/grasshopperintersect/regionSlits.html">Region Slits</a> <span class="codeword">(RSlits)</span><br><span class="desc">Add slits to a collection of intersecting planar regions</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshopperintersect/splitBrep.html"><img src="../icons/GrasshopperIntersect/Split_Brep.png"/></a></td><td class="ccol_2"><a href="../components/grasshopperintersect/splitBrep.html">Split Brep</a> <span class="codeword">(Split)</span><br><span class="desc">Split one brep with another.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshopperintersect/splitBrepMultiple.html"><img src="../icons/GrasshopperIntersect/Split_Brep_Multiple.png"/></a></td><td class="ccol_2"><a href="../components/grasshopperintersect/splitBrepMultiple.html">Split Brep Multiple</a> <span class="codeword">(SplitMul)</span><br><span class="desc">Split one brep with a bunch of others.</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>Physical</h3>
+<table class="addon-compos">
+<tbody>
+<tr><td class="ccol_1"><a href="../components/grasshopperintersect/curveCurve.html"><img src="../icons/GrasshopperIntersect/Curve___Curve.png"/></a></td><td class="ccol_2"><a href="../components/grasshopperintersect/curveCurve.html">Curve | Curve</a> <span class="codeword">(CCX)</span><br><span class="desc">Solve intersection events for two curves.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshopperintersect/curveSelf.html"><img src="../icons/GrasshopperIntersect/Curve___Self.png"/></a></td><td class="ccol_2"><a href="../components/grasshopperintersect/curveSelf.html">Curve | Self</a> <span class="codeword">(CX)</span><br><span class="desc">Solve all self intersection events for a curve.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshopperintersect/multipleCurves.html"><img src="../icons/GrasshopperIntersect/Multiple_Curves.png"/></a></td><td class="ccol_2"><a href="../components/grasshopperintersect/multipleCurves.html">Multiple Curves</a> <span class="codeword">(MCX)</span><br><span class="desc">Solve intersection events for multiple curves.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshopperintersect/brepCurve.html"><img src="../icons/GrasshopperIntersect/Brep___Curve.png"/></a></td><td class="ccol_2"><a href="../components/grasshopperintersect/brepCurve.html">Brep | Curve</a> <span class="codeword">(BCX)</span><br><span class="desc">Solve intersection events for a Brep and a curve.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshopperintersect/brepBrep.html"><img src="../icons/GrasshopperIntersect/Brep___Brep.png"/></a></td><td class="ccol_2"><a href="../components/grasshopperintersect/brepBrep.html">Brep | Brep</a> <span class="codeword">(BBX)</span><br><span class="desc">Solve intersection events for two Breps.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshopperintersect/collisionManyMany.html"><img src="../icons/GrasshopperIntersect/Collision_Many_Many.png"/></a></td><td class="ccol_2"><a href="../components/grasshopperintersect/collisionManyMany.html">Collision Many|Many</a> <span class="codeword">(ColMM)</span><br><span class="desc">Test for many|many collision between objects</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshopperintersect/collisionOneMany.html"><img src="../icons/GrasshopperIntersect/Collision_One_Many.png"/></a></td><td class="ccol_2"><a href="../components/grasshopperintersect/collisionOneMany.html">Collision One|Many</a> <span class="codeword">(ColOM)</span><br><span class="desc">Test for one|many collision between objects</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshopperintersect/meshCurve.html"><img src="../icons/GrasshopperIntersect/Mesh___Curve.png"/></a></td><td class="ccol_2"><a href="../components/grasshopperintersect/meshCurve.html">Mesh | Curve</a> <span class="codeword">(MCX)</span><br><span class="desc">Mesh Curve intersection</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshopperintersect/meshMesh.html"><img src="../icons/GrasshopperIntersect/Mesh___Mesh.png"/></a></td><td class="ccol_2"><a href="../components/grasshopperintersect/meshMesh.html">Mesh | Mesh</a> <span class="codeword">(MMX)</span><br><span class="desc">Mesh Mesh intersection</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshopperintersect/surfaceCurve.html"><img src="../icons/GrasshopperIntersect/Surface___Curve.png"/></a></td><td class="ccol_2"><a href="../components/grasshopperintersect/surfaceCurve.html">Surface | Curve</a> <span class="codeword">(SCX)</span><br><span class="desc">Solve intersection events for a surface and a curve.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshopperintersect/surfaceSplit.html"><img src="../icons/GrasshopperIntersect/Surface_Split.png"/></a></td><td class="ccol_2"><a href="../components/grasshopperintersect/surfaceSplit.html">Surface Split</a> <span class="codeword">(SrfSplit)</span><br><span class="desc">Split a surface with a bunch of curves.</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>Region</h3>
+<table class="addon-compos">
+<tbody>
+<tr><td class="ccol_1"><a href="../components/grasshopperintersect/splitWithBrep.html"><img src="../icons/GrasshopperIntersect/Split_with_Brep.png"/></a></td><td class="ccol_2"><a href="../components/grasshopperintersect/splitWithBrep.html">Split with Brep</a> <span class="codeword">(Split)</span><br><span class="desc">Split a curve with a Brep.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshopperintersect/splitWithBreps.html"><img src="../icons/GrasshopperIntersect/Split_with_Breps.png"/></a></td><td class="ccol_2"><a href="../components/grasshopperintersect/splitWithBreps.html">Split with Breps</a> <span class="codeword">(Split)</span><br><span class="desc">Split a curve with multiple Breps.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshopperintersect/trimWithBrep.html"><img src="../icons/GrasshopperIntersect/Trim_with_Brep.png"/></a></td><td class="ccol_2"><a href="../components/grasshopperintersect/trimWithBrep.html">Trim with Brep</a> <span class="codeword">(Trim)</span><br><span class="desc">Trim a curve with a Brep.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshopperintersect/trimWithBreps.html"><img src="../icons/GrasshopperIntersect/Trim_with_Breps.png"/></a></td><td class="ccol_2"><a href="../components/grasshopperintersect/trimWithBreps.html">Trim with Breps</a> <span class="codeword">(Trim)</span><br><span class="desc">Trim a curve with multiple Breps.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshopperintersect/trimWithRegions.html"><img src="../icons/GrasshopperIntersect/Trim_with_Regions.png"/></a></td><td class="ccol_2"><a href="../components/grasshopperintersect/trimWithRegions.html">Trim with Regions</a> <span class="codeword">(Trim)</span><br><span class="desc">Trim a curve with multiple regions.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshopperintersect/trimWithRegion.html"><img src="../icons/GrasshopperIntersect/Trim_with_Region.png"/></a></td><td class="ccol_2"><a href="../components/grasshopperintersect/trimWithRegion.html">Trim with Region</a> <span class="codeword">(Trim)</span><br><span class="desc">Trim a curve with a region.</span></td></tr>
+</tbody>
+</table>
+
+</div>
+
+  </div>
+
+</div>
+
+            </div>
+            <div id="xg_foot">
+                <p class="left">
+    © 2018-2020  <a href="https://github.com/robinrodricks/">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    Hosted by<a href="http://www.github.com/"><img src="../images/github.png" alt="Github" class="poweredbylogo" /></a> &nbsp;
+	Rhino & Grasshopper are trademarks of <a href="https://www.rhino3d.com/">Robert McNeel & Associates</a>.
+	</p>
+    <p class="right xg_lightfont">
+                    <a href="http://www.grasshopper3d.com/main/embeddable/list">Badges</a> &nbsp;|&nbsp;
+                        <a href="http://www.grasshopper3d.com/main/index/report" dojotype="PromptToJoinLink" _joinprompttext="Please sign up or sign in to complete this step." _hassignup="true" _signinurl="http://www.grasshopper3d.com/main/authorization/signIn?target=http%3A%2F%2Fwww.grasshopper3d.com%2Fmain%2Findex%2Freport">Report an Issue</a> &nbsp;|&nbsp;
+                        <a href="http://www.grasshopper3d.com/main/authorization/termsOfService?previousUrl=http%3A%2F%2Fwww.grasshopper3d.com%2Fpage%2Fcomponent-reference">Terms of Service</a>
+            </p>
+
+            </div>
+        </div>
+        
+        <div id="xj_baz17246" class="xg_theme"></div>
+<div id="xg_overlay" style="display:none;">
+<!--[if lte IE 6.5]><iframe></iframe><![endif]-->
+</div>
+<!--googleoff: all--><noscript>
+	<style type="text/css" media="screen">
+        #xg { position:relative;top:120px; }
+        #xn_bar { top:120px; }
+	</style>
+	<div class="errordesc noscript">
+		<div>
+            <h3><strong>Hello, you need to enable JavaScript to use Grasshopper.</strong></h3>
+            <p>Please check your browser settings or contact your system administrator.</p>
+			
+		</div>
+	</div>
+</noscript><!--googleon: all-->
+
+<script src="/js/jquery.js"></script>
+<script src="/js/kramed.min.js"></script>
+<script src="/js/component.js"></script>
+<script src="/js/user.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    </body>
+</html>

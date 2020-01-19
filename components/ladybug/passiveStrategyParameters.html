@@ -641,29 +641,6 @@
 <p><a href="../../index.html#Ladybug">Component Index</a> &gt; <a href="../../addons/ladybug.html">Ladybug</a> > 5 | Extra > <b>Passive Strategy Parameters</b></p>
 </div>
 <h3>Use this component to adjust the assumptions of the passive strategies that can be overalid on the Ladybug the Psychrometric Chart. The default assumptions of each of the strategies are as follows: <br>Evaporative Cooling - This polygon represents the conditions under which direct evaporative cooling would be helpful.  As such, it takes as its upper limit the line of constant enthalpy from the edge of the comfort polygon and includes all warm temperatures below it.  If the user has set a minimum humidity tolerance, the polygon will also include the points beneath the comfort polygon as it is assumed that the evaporation of water will both humidify and cool the air.  Nothe that this direct evaporative cooling polygon is slightly different than 2-stage evaporative cooling.<br>Thermal Mass + Night Flush - The polygon represents the conditions under which shaded, night-flushed thermal mass can keep occupants cool. By default, this polygon assumes that temperatures can get as high as 16.7 C above the max temperature of the comfort polygon as long temperatures 12 hours before the hot period are 2.8 C lower than the max temperture of the comfort polygon.  This parameter component can be used to adjust these two numbers. The thermal mass polygon is limited in terms of humidity in that it obeys any limits on absolute humidity that the comfort polygon dies.<br>Occupant Use of Fans - This polygon is made by assuming that a wind speed of 1.5 m/s is the maximum speed tolerable before it starts blowing papers and becomes annoying to occupants.  This strategy parameters component can be used to adjust this maximum acceptable wind speed. As such, the polygon is determined by running a PMV model with this wind speed and the input rad temp, met rate and clo level of the psych chart.  This component obeys any limits on humidity that the comfort polygon does.  Note that this polygon assumes that you are already naturally ventilating and that your natural ventilation period is defined by your comfort polygon.<br>Internal Heat Gain - The component assumes a minimum building balance point of 12.8 C and any conditions that are warmer than that (up to the comfort polygon) will keep occupants comfortable.  It is assumed that, above this outdoor temperature, the building is free-running and occupants are able to open windows as they wish.  Note that this balance temperature of 12.8 is fairly low and assumes a large number of inside heat sources or people as well as in insulated envelope.  This balance temperature can be adjusted with this strategyPar component.<br>Dessicant Dehumidification - This polygon represents the conditions under which dessicant dehumidification would be helpful.  As such, it takes as its upper limit the line of constant enthalpy from the edge of the comfort polygon and includes all humid conditions below it.  Note that this polygon does not appear if there is no upper humidity limit on the comfort polygon.<br></h3>
-<h2>Inputs</h2>
-<table>
-<thead>
-<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
-</thead>
-<tbody>
-<tr><td><b>maxTempAboveComf_</b></td><td>maxTempAboveComf_</td><td>An optional number in degrees C representing the maximum daily temperature above the comfort range which can still be counted in the Thermal Mass + Night Flush polygon.  The default is set to 16.7 C above the highest comfort temperature.</td><td>Goo</td></tr>
-<tr><td><b>minNightDiffBelowComf_</b></td><td>minNightDiffBelowComf_</td><td>An optional number in degrees C representing the minimum temperature below the maximum comfort temperature that the outdoor temperature must drop at night in order to count towards the Thermal Mass + Night Flush polygon. The default is set to 2.8 C.</td><td>Goo</td></tr>
-<tr><td><b>maxComfortableAirSpeed_</b></td><td>maxComfortableAirSpeed_</td><td>An optional number in m/s that represents the maximum winds speed tolerable before it starts blowing papers and becomes annoying to occupants.  This is used to shape the "Occupant Use of Fans" Polygon and the default is set ot 1.5 m/s.</td><td>Goo</td></tr>
-<tr><td><b>lowestBldgBalancePt_</b></td><td>lowestBldgBalancePt_</td><td>An optional number representing the building balance point, which will be used to shape the "Internal Heat Gain" strategy polygon.  The default is set to 12.8 C and it is assumed that, above this outdoor temperature, the building is free-running and occupants are able to open windows as they wish.  Note that this default balance temperature of 12.8 is fairly low and assumes a large number of inside heat sources or people as well as in insulated envelope.</td><td>Goo</td></tr>
-</tbody>
-</table>
-
-<h2>Outputs</h2>
-<table>
-<thead>
-<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
-</thead>
-<tbody>
-<tr><td><b>strategyPar</b></td><td>strategyPar</td><td>Passive strategy parameters that can be plugged into the "Ladybug_Psychrometric Chart" to adjust the assumptions of the passive strategy polygons.</td><td>Goo</td></tr>
-</tbody>
-</table>
-
 
   </div>
 

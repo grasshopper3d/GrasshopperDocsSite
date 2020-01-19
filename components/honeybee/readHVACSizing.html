@@ -947,34 +947,6 @@
 <p><a href="../../index.html#Honeybee">Component Index</a> &gt; <a href="../../addons/honeybee.html">Honeybee</a> > 10 | Energy | Energy > <b>Read HVAC Sizing</b></p>
 </div>
 <h3>This component parses an .eio file from an energy simulation and brings in the sizes of all of the HVAC equipment.<br></h3>
-<h2>Inputs</h2>
-<table>
-<thead>
-<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
-</thead>
-<tbody>
-<tr><td><b>_eioFile</b></td><td>_eioFile</td><td>The file address of the eio file that comes out of the "Honeybee_Lookup EnergyPlus Folder" component.</td><td>Goo</td></tr>
-<tr><td><b>keywords_</b></td><td>keywords_</td><td>Optional keywords that will be used to search through the outputs.</td><td>Goo</td></tr>
-</tbody>
-</table>
-
-<h2>Outputs</h2>
-<table>
-<thead>
-<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
-</thead>
-<tbody>
-<tr><td><b>zonePeakLoadObjs</b></td><td>zonePeakLoadObjs</td><td>Text describing the meaning of the zonePeakLoadVals below.</td><td>Goo</td></tr>
-<tr><td><b>zonePeakLoadVals</b></td><td>zonePeakLoadVals</td><td>The sum of the zone's peak sensible loads on the design days.  These are eventually used to size the HVAC equipment that delivers heating/cooling to the zones.</td><td>Goo</td></tr>
-<tr><td><b>zoneSizingObjs</b></td><td>zoneSizingObjs</td><td>Text describing the meaning of the zoneSizingValues below.</td><td>Goo</td></tr>
-<tr><td><b>zoneSizingValues</b></td><td>zoneSizingValues</td><td>The zone's peak sensible loads multiplied by their respective design "safety" factors (set on the "Energy Simulation Par" component). These safety factors are used to slightly oversize zone heating/cooling equipment and is standard ASHRAE practice.</td><td>Goo</td></tr>
-<tr><td><b>systemSizingObjs</b></td><td>systemSizingObjs</td><td>Text describing the meaning of the systemSizingVals below.</td><td>Goo</td></tr>
-<tr><td><b>systemSizingVals</b></td><td>systemSizingVals</td><td>Values denoting the size of various central HVAC system elemts (like the primary air loop flow rates).</td><td>Goo</td></tr>
-<tr><td><b>componentSizObjs</b></td><td>componentSizObjs</td><td>Text describing the meaning of the componentSizVals below.</td><td>Goo</td></tr>
-<tr><td><b>componentSizVals</b></td><td>componentSizVals</td><td>Values denoting the size of various zone HVAC components (like zone terminal sizes, heating/cooling coil sizes, lengths of chilled beams, etc.).</td><td>Goo</td></tr>
-</tbody>
-</table>
-
 
   </div>
 

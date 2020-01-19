@@ -947,32 +947,6 @@
 <p><a href="../../index.html#Honeybee">Component Index</a> &gt; <a href="../../addons/honeybee.html">Honeybee</a> > 00 | Honeybee > <b>Masses2Zones</b></p>
 </div>
 <h3>Use this component to take any list of closed breps and turn them into Honeybee Zones with all of the properties needed to run them through an energy simulation.<br>This includes constructions of the surfaces, boundary condtions of all of the surfaces (ie ground, exterior, etc), schedules+ loads for occupancy/internal electronics, and settings for an HVAC system if isContitioned_ is set to True.<br></h3>
-<h2>Inputs</h2>
-<table>
-<thead>
-<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
-</thead>
-<tbody>
-<tr><td><b>_zoneMasses</b></td><td>_zoneMasses</td><td>A list of closed breps or a  single closed brep that represents the geometry of the zone(s) that will be output from this component.</td><td>Goo</td></tr>
-<tr><td><b>zoneNames_</b></td><td>zoneNames_</td><td>A list of names for the zones that will be output from this component. Default names will be applied to zones based on their order in the list if this value is left empty.</td><td>Goo</td></tr>
-<tr><td><b>zonePrograms_</b></td><td>zonePrograms_</td><td>A list of zone programs from the Honeybee_ListZonePrograms component that matches the number of breps in the _zoneMasses list.  These zone programs will be applied to the zones that are output from this component and will be used to set the shcedules and loads of these programs. This input can also be a single zoneProgram to be applied to all of the coneected zones.  If no value is connected here, the zone program Office::OpenOffice will be applied to the zones.</td><td>Goo</td></tr>
-<tr><td><b>isConditioned_</b></td><td>isConditioned_</td><td>A list of True/False values that matches the number of breps in the _zoneMasses list. These True/False values will be applied to the ouput zones to either condition them with an Ideal Air Loads System (True) or not condition them at all (False).  This input can also be a single True/False value that can be applied to all of the connected zones.  If no value is connected here, all zones will be conditioned with an Ideal Air Loads System by default.</td><td>Goo</td></tr>
-<tr><td><b>maxRoofAngle_</b></td><td>maxRoofAngle_</td><td>Maximum angle from z vector that the surface will be assumed as a roof. Default is 30 degrees</td><td>Goo</td></tr>
-<tr><td><b>_createHBZones</b></td><td>_createHBZones</td><td>Set to True to generate the zones and assign energy simulation properties to your connected _zoneMasses.</td><td>Goo</td></tr>
-</tbody>
-</table>
-
-<h2>Outputs</h2>
-<table>
-<thead>
-<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
-</thead>
-<tbody>
-<tr><td><b>out</b></td><td>readMe!</td><td>...</td><td>String</td></tr>
-<tr><td><b>HBZones</b></td><td>HBZones</td><td>Honeybee zones that have all of the properties necessary for an energy simulation assigned to them.  Connect these to a "Honeybee_Label Zones" component to see some of these properties.</td><td>Goo</td></tr>
-</tbody>
-</table>
-
 
   </div>
 

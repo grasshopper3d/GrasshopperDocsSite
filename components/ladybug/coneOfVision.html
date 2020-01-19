@@ -641,63 +641,6 @@
 <p><a href="../../index.html#Ladybug">Component Index</a> &gt; <a href="../../addons/ladybug.html">Ladybug</a> > 3 | EnvironmentalAnalysis > <b>Cone Of Vision</b></p>
 </div>
 <h3>Use this component to generate and visualize cones of vision.<br>This component can help you to customize view analysis. Plug its outputs into Ladybug_View Analysis.<br>Car at 25 mph, Car at 45 mph, Car at 65 mph (horizontal angle, distance limits)<br>Source: U. S. Bureau of Land Management. Visual Resource Management Program (Course 8400-05) 2008.<br>Human, Color Recognition, Sign Recognition, Word Recognition (horizontal angle)<br>Human, Color Recognition, Optimal Video Display Area (vertical angle)<br>Source: INO - CNR Istituto Nazionale di Ottica www.ino.it Titolo: Il processo della Visione e Stereoscopia Relatore: Luca Mercatelli 16 aprile 2010 Polo viale.<br></h3>
-<h2>Inputs</h2>
-<table>
-<thead>
-<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
-</thead>
-<tbody>
-<tr><td><b>type_</b></td><td>type_</td><td>This input sets the cone of vision, the cone is defined by four values that are vertical angle+, vertical angle-, horizontal angle+, horizontal angle-, distance limits.
--
-Connect a number from 0 to 9. The default is set to 0.
--
-0 =     Human (50°, 70°, 62°, 62°, 10 meters)
-1 =     Peripheral vision (60°, 70°, 60°, 60°, 10 meters)
-2 =     Outdoor (90°, 15°, 180°, 180°, 100 meters)
-3 =     Car at 25 mph (50°, 15°, 50°, 50°, 182.88 meters)
-4 =     Car at 45 mph (50°, 15°, 33°, 32.5°, 365.76 meters)
-5 =     Car at 65 mph (50°, 15°, 22°, 20°, 609.60 meters)
-6 =     Color Recognition (30°, 40°, 30°, 30°, 10 meters)
-7 =     Sign Recognition (30°, 40°, 15°, 15°, 10 meters)
-8 =     Word Recognition (30°, 40°, 5°, 5°, 10 meters)
-9 =     Optimal Video Display Area (0°, 30°, 30°, 30°, 10 meters)
--
-If no value is provided, it will be 2 ("Outdoor").</td><td>Goo</td></tr>
-<tr><td><b>_viewPoint_</b></td><td>_viewPoint_</td><td>The point of vision in which to generate the cone of vision.
-If not supplied, default value will be the Rhino origin.</td><td>Goo</td></tr>
-<tr><td><b>_viewDirection_</b></td><td>_viewDirection_</td><td>A vector that represents the view direction.
-If not supplied, default value will be the vector of Y-Axis.</td><td>Goo</td></tr>
-<tr><td><b>--------------</b></td><td>--------------</td><td>--------------</td><td>Goo</td></tr>
-<tr><td><b>distanceLimit_</b></td><td>distanceLimit_</td><td>Set the limit of the view.
--
-This input let you customize the cone of vision.</td><td>Goo</td></tr>
-<tr><td><b>vAngleUp_</b></td><td>vAngleUp_</td><td>The vertical angle of the upper visual field. A number from 0.0 to 90.0.
--
-This input let you customize the cone of vision.</td><td>Goo</td></tr>
-<tr><td><b>vAngleDown_</b></td><td>vAngleDown_</td><td>The vertical angle of the lower visual field. A number from 0.0 to 90.0.
--
-This input let you customize the cone of vision.</td><td>Goo</td></tr>
-<tr><td><b>hAngle_</b></td><td>hAngle_</td><td>The horizontal angle from the standard line of sight. A number from 0.0 to 180.0.
--
-This input let you customize the cone of vision.</td><td>Goo</td></tr>
-</tbody>
-</table>
-
-<h2>Outputs</h2>
-<table>
-<thead>
-<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
-</thead>
-<tbody>
-<tr><td><b>out</b></td><td>readMe!</td><td>...</td><td>String</td></tr>
-<tr><td><b>coneOfVision</b></td><td>coneOfVision</td><td>Brep that represent the cone of vision.</td><td>Goo</td></tr>
-<tr><td><b>parameters</b></td><td>parameters</td><td>Connect this list to Ladybug_View Analysis for customizing the view analysis.
--
-the parameters are vertical angle+ (°), vertical angle- (°), horizontal angle (°), distance limit (meters), view direction in the horizontal plane (°).
-NB. 0° is the direction of green axis of Rhino.</td><td>Goo</td></tr>
-</tbody>
-</table>
-
 
   </div>
 

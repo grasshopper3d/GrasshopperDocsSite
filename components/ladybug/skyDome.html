@@ -641,49 +641,6 @@
 <p><a href="../../index.html#Ladybug">Component Index</a> &gt; <a href="../../addons/ladybug.html">Ladybug</a> > 2 | VisualizeWeatherData > <b>Sky Dome</b></p>
 </div>
 <h3>This component allows you to visualize a selected sky matrix from the selectSkyMxt component in order to see the patches of the sky dome where radiation is coming from.<br>The component will produce 3 sky domes by default: a dome showing just the diffuse radiation, a dome showing just the direct radiation, and a dome showing the total radiation.<br></h3>
-<h2>Inputs</h2>
-<table>
-<thead>
-<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
-</thead>
-<tbody>
-<tr><td><b>north_</b></td><td>north_</td><td>Input a vector to be used as a true North direction for the sun path or a number between 0 and 360 that represents the degrees off from the y-axis to make North.  The default North direction is set to the Y-axis (0 degrees).</td><td>Goo</td></tr>
-<tr><td><b>_selectedSkyMtx</b></td><td>_selectedSkyMtx</td><td>The output from the selectSkyMtx component.</td><td>Goo</td></tr>
-<tr><td><b>_centerPoint_</b></td><td>_centerPoint_</td><td>A point that sets the location of the sky domes.  The default is set to the Rhino origin (0,0,0).</td><td>Goo</td></tr>
-<tr><td><b>_scale_</b></td><td>_scale_</td><td>Use this input to change the scale of the sky dome.  The default is set to 1.</td><td>Goo</td></tr>
-<tr><td><b>_projection_</b></td><td>_projection_</td><td>A number to set the projection of the sky hemisphere.  The default is set to draw a 3D hemisphere.  Choose from the following options:
-0 = 3D hemisphere
-1 = Orthographic (straight projection to the XY Plane)
-2 = Stereographic (equi-angular projection to the XY Plane)</td><td>Goo</td></tr>
-<tr><td><b>legendPar_</b></td><td>legendPar_</td><td>Optional legend parameters from the Ladybug Legend Parameters component.</td><td>Goo</td></tr>
-<tr><td><b>showTotalOnly_</b></td><td>showTotalOnly_</td><td>Set to "True" to only show a sky dome with the total radiation.  The default is "False", which will produce 3 sky domes: one of diffuse radiation, one of direct radiation, and one of the total radiation.</td><td>Goo</td></tr>
-<tr><td><b>bakeIt_</b></td><td>bakeIt_</td><td>An integer that tells the component if/how to bake the bojects in the Rhino scene.  The default is set to 0.  Choose from the following options:
-0 (or False) - No geometry will be baked into the Rhino scene (this is the default).
-1 (or True) - The geometry will be baked into the Rhino scene as a colored hatch and Rhino text objects, which facilitates easy export to PDF or vector-editing programs.
-2 - The geometry will be baked into the Rhino scene as colored meshes, which is useful for recording the results of paramteric runs as light Rhino geometry.</td><td>Goo</td></tr>
-<tr><td><b>_runIt</b></td><td>_runIt</td><td>Set to "True" to run the component and generate a sky dome.</td><td>Goo</td></tr>
-</tbody>
-</table>
-
-<h2>Outputs</h2>
-<table>
-<thead>
-<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
-</thead>
-<tbody>
-<tr><td><b>out</b></td><td>readMe!</td><td>...</td><td>String</td></tr>
-<tr><td><b>skyPatchesMesh</b></td><td>skyPatchesMesh</td><td>A colored mesh representing the intensity of radiation for each of the sky patches of the sky dome.</td><td>Goo</td></tr>
-<tr><td><b>baseCrvs</b></td><td>baseCrvs</td><td>A set of guide curves that mark information on the sky dome.</td><td>Goo</td></tr>
-<tr><td><b>altitudeCrvs</b></td><td>altitudeCrvs</td><td>A set of circular curves that denote the altitude.  Note that these will only appear when the _projection_ is set to something other than a 3D sun path.</td><td>Goo</td></tr>
-<tr><td><b>legend</b></td><td>legend</td><td>A legend for the sky dome. Connect this output to a grasshopper "Geo" component in order to preview the legend separately in the Rhino scene.</td><td>Goo</td></tr>
-<tr><td><b>legendBasePts</b></td><td>legendBasePts</td><td>The legend base point(s), which can be used to move the legend(s) in relation to the sky domes with the grasshopper "move" component.</td><td>Goo</td></tr>
-<tr><td><b>skyPatchesCenPts</b></td><td>skyPatchesCenPts</td><td>The center points of sky patches, which can be used to shape Rhino geometry in relation to radiation from different sky patches.</td><td>Goo</td></tr>
-<tr><td><b>skyPatchesAreas</b></td><td>skyPatchesAreas</td><td>The area of sky patches in Rhino model units.</td><td>Goo</td></tr>
-<tr><td><b>skyPatchesAsBrep</b></td><td>skyPatchesAsBrep</td><td>The geometry of sky patches as breps.</td><td>Goo</td></tr>
-<tr><td><b>values</b></td><td>values</td><td>Radiation values for the sky patches in kWh/m2.</td><td>Goo</td></tr>
-</tbody>
-</table>
-
 
   </div>
 

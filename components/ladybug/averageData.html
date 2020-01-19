@@ -641,33 +641,6 @@
 <p><a href="../../index.html#Ladybug">Component Index</a> &gt; <a href="../../addons/ladybug.html">Ladybug</a> > 1 | AnalyzeWeatherData > <b>Average Data</b></p>
 </div>
 <h3>Use this component to select the data out of an annual hourly data stream (from the importEPW component) using the "Analysis Period" component.<br>This componenent also averages or totals the connected hourly data for each day, month, and average hour of each month in the analysis period.<br></h3>
-<h2>Inputs</h2>
-<table>
-<thead>
-<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
-</thead>
-<tbody>
-<tr><td><b>_annualHourlyData</b></td><td>_annualHourlyData</td><td>An hourly data stream from the "Import epw" component.</td><td>Goo</td></tr>
-<tr><td><b>_analysisPeriod_</b></td><td>_analysisPeriod_</td><td>The "analysisPeriod" Output from "Analysis Period" component. If no input is provided, the default analysis period is set to the whole year.</td><td>Goo</td></tr>
-<tr><td><b>totalOrAverage_</b></td><td>totalOrAverage_</td><td>Set to 'True' to have the component total the values for the given periods and set to 'False' to have the component average them.  The default is set to 'False' to average data.</td><td>Goo</td></tr>
-</tbody>
-</table>
-
-<h2>Outputs</h2>
-<table>
-<thead>
-<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
-</thead>
-<tbody>
-<tr><td><b>readMe!</b></td><td>readMe!</td><td>A text confirmation of the analysis period.</td><td>String</td></tr>
-<tr><td><b>selHourlyData</b></td><td>selHourlyData</td><td>The hourly data stream for the analysis period.</td><td>Goo</td></tr>
-<tr><td><b>averagedDaily</b></td><td>averagedDaily</td><td>The averaged data for each day during the analysis period.</td><td>Goo</td></tr>
-<tr><td><b>averagedMonthly</b></td><td>averagedMonthly</td><td>The averaged data for each month during the analysis period.</td><td>Goo</td></tr>
-<tr><td><b>avrMonthlyPerHour</b></td><td>avrMonthlyPerHour</td><td>The data for the average hour of each month during the analysis period.</td><td>Goo</td></tr>
-<tr><td><b>avrAnalysisPeriod</b></td><td>avrAnalysisPeriod</td><td>The averaged data for the analysis period.</td><td>Goo</td></tr>
-</tbody>
-</table>
-
 
   </div>
 

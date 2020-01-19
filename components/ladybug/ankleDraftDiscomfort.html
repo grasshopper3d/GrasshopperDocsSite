@@ -641,27 +641,6 @@
 <p><a href="../../index.html#Ladybug">Component Index</a> &gt; <a href="../../addons/ladybug.html">Ladybug</a> > 1 | AnalyzeWeatherData > <b>Ankle Draft Discomfort</b></p>
 </div>
 <h3>Use this component to calculate discomfort from cold drafts at ankle-level.  The original tests used to create the model involved blowing cold air on subject's ankles at a height of 10 cm off of the ground.<br>The formula has been submitted to be incorporated in the ASHRAE 55 standard with a recommendation that PPD from ankle draft not exceed 20%.  The papers in which this model is published can be found here:<br>Schiavon, S., D. Rim, W. Pasut, W. Nazaroff. 2016. Sensation of draft at uncovered ankles for women exposed to displacement ventilation and underfloor air distribution systems. Building and Environment, 96, 228–236.<br>Liu, S., S. Schiavon, A. Kabanshi, W. Nazaroff. 2016. Predicted percentage of dissatisfied with ankle draft. Accepted Author Manuscript. Indoor Environmental Quality. http://escholarship.org/uc/item/9076254n<br></h3>
-<h2>Inputs</h2>
-<table>
-<thead>
-<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
-</thead>
-<tbody>
-<tr><td><b>_fullBodyPMV</b></td><td>_fullBodyPMV</td><td>The predicted mean vote (PMV) of the subject.  This can be calculated using the "Ladybug_PMV Comfort Calculator" component.  The reason for why PMV is incorporated into this draft discomfort model is that people are likely to feel more uncomfortable from downdraft when their whole body is already feeling cold.</td><td>Goo</td></tr>
-<tr><td><b>_draftAirVeloc</b></td><td>_draftAirVeloc</td><td>The velocity of the draft in m/s.</td><td>Goo</td></tr>
-</tbody>
-</table>
-
-<h2>Outputs</h2>
-<table>
-<thead>
-<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
-</thead>
-<tbody>
-<tr><td><b>PPD</b></td><td>PPD</td><td>Script variable Python</td><td>Goo</td></tr>
-</tbody>
-</table>
-
 
   </div>
 

@@ -947,33 +947,6 @@
 <p><a href="../../index.html#Honeybee">Component Index</a> &gt; <a href="../../addons/honeybee.html">Honeybee</a> > 03 | Daylight | Recipes > <b>RADParameters</b></p>
 </div>
 <h3>Radiance Parameters - Standard<br>Check here for more details: http://radsite.lbl.gov/radiance/refer/Notes/rpict_options.html<br>Read more about the parameters at: http://daysim.ning.com/<br>Here is my favorite presentation by John Mardaljevic: http://radiance-online.org/community/workshops/2011-berkeley-ca/presentations/day1/JM_AmbientCalculation.pdf<br></h3>
-<h2>Inputs</h2>
-<table>
-<thead>
-<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
-</thead>
-<tbody>
-<tr><td><b>_quality</b></td><td>_quality</td><td>0 ; low, 1 ; Medium, 2 ; High</td><td>Goo</td></tr>
-<tr><td><b>_ab_</b></td><td>_ab_</td><td>Number of ambient bounces. "This is the maximum number of diffuse bounces computed by the indirect calculation. A value of zero implies no indirect calculation. "</td><td>Goo</td></tr>
-<tr><td><b>_ad_</b></td><td>_ad_</td><td>Number of ambient divisions. "The error in the Monte Carlo calculation of indirect illuminance will be inversely proportional to the square root of this number. A value of zero implies no indirect calculation."</td><td>Goo</td></tr>
-<tr><td><b>_as_</b></td><td>_as_</td><td>Number of ambient super-samples. "Super-samples are applied only to the ambient divisions which show a significant change."</td><td>Goo</td></tr>
-<tr><td><b>_ar_</b></td><td>_ar_</td><td>Ambient resolution. "This number will determine the maximum density of ambient values used in interpolation. Error will start to increase on surfaces spaced closer than the scene size divided by the ambient resolution. The maximum ambient value density is the scene size times the ambient accuracy."</td><td>Goo</td></tr>
-<tr><td><b>_aa_</b></td><td>_aa_</td><td>Ambient accuracy. "This value will approximately equal the error from indirect illuminance interpolation. A value of zero implies no interpolation"</td><td>Goo</td></tr>
-<tr><td><b>additionalP_</b></td><td>additionalP_</td><td>Use this input to set other Radiance parameters as needed. You need to follow Radiance's standard syntax (e.g. -ps 1 -lw 0.01)</td><td>Goo</td></tr>
-</tbody>
-</table>
-
-<h2>Outputs</h2>
-<table>
-<thead>
-<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
-</thead>
-<tbody>
-<tr><td><b>out</b></td><td>readMe!</td><td>The execution information, as output and error streams</td><td>String</td></tr>
-<tr><td><b>radParameters</b></td><td>radParameters</td><td>Script output radParameters.</td><td>Goo</td></tr>
-</tbody>
-</table>
-
 
   </div>
 

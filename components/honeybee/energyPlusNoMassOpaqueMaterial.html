@@ -947,31 +947,6 @@
 <p><a href="../../index.html#Honeybee">Component Index</a> &gt; <a href="../../addons/honeybee.html">Honeybee</a> > 06 | Energy | Material | Construction > <b>Energy Plus No Mass Opaque Material</b></p>
 </div>
 <h3>Use this component to create a custom opaque material that has no mass, which can be plugged into the "Honeybee_EnergyPlus Construction" component.<br>It is important to note that this component creates a material with no mass and, because of this, the accuracy of the component is not as great as a material that has mass.  However, this component is very useful if you only have an R-value for a material (or a construction) and you know that the mass is relatively small.<br>If you want to create a material that accounts for mass, you should use the "Honeybee_EnergyPlus Window Material" component.<br></h3>
-<h2>Inputs</h2>
-<table>
-<thead>
-<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
-</thead>
-<tbody>
-<tr><td><b>_name</b></td><td>_name</td><td>A text name for your NoMass Opaque Material.</td><td>Goo</td></tr>
-<tr><td><b>_roughness_</b></td><td>_roughness_</td><td>A text value that indicated the roughness of your material.  This can be either "VeryRough", "Rough", "MediumRough", "MediumSmooth", "Smooth", and "VerySmooth".  The default is set to "Rough".</td><td>Goo</td></tr>
-<tr><td><b>_R_Value</b></td><td>_R_Value</td><td>A number representing the R-Value of the material in m2-K/W.</td><td>Goo</td></tr>
-<tr><td><b>_thermAbsp_</b></td><td>_thermAbsp_</td><td>An number between 0 and 1 that represents the thermal abstorptance of the material.  The default is set to 0.9, which is common for most non-metallic materials.</td><td>Goo</td></tr>
-<tr><td><b>_solAbsp_</b></td><td>_solAbsp_</td><td>An number between 0 and 1 that represents the abstorptance of solar radiation by the material.  The default is set to 0.7, which is common for most non-metallic materials.</td><td>Goo</td></tr>
-<tr><td><b>_visAbsp_</b></td><td>_visAbsp_</td><td>An number between 0 and 1 that represents the abstorptance of visible light by the material.  The default is set to 0.7, which is common for most non-metallic materials.</td><td>Goo</td></tr>
-</tbody>
-</table>
-
-<h2>Outputs</h2>
-<table>
-<thead>
-<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
-</thead>
-<tbody>
-<tr><td><b>EPMaterial</b></td><td>EPMaterial</td><td>A no-mass opaque material that can be plugged into the "Honeybee_EnergyPlus Construction" component.</td><td>Goo</td></tr>
-</tbody>
-</table>
-
 
   </div>
 

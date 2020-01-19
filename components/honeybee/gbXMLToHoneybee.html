@@ -947,33 +947,6 @@
 <p><a href="../../index.html#Honeybee">Component Index</a> &gt; <a href="../../addons/honeybee.html">Honeybee</a> > 13 | WIP > <b>gb XML to Honeybee</b></p>
 </div>
 <h3>Import gbXML files as Honeybee zones.<br>This component uses OpenStudio libraries to import the file and at this point<br>the component imports geometry and constrcuctions(if available). Loads, schedules,<br>and eventually systems can be added to the component eventually.<br>You also need to solve adjacencies after importing the zones.<br></h3>
-<h2>Inputs</h2>
-<table>
-<thead>
-<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
-</thead>
-<tbody>
-<tr><td><b>_filepath</b></td><td>_filepath</td><td>Full filepath to xml file.</td><td>Goo</td></tr>
-<tr><td><b>_zoneNames</b></td><td>_zoneNames</td><td>The list of names for thermal zones that you want to be loaded
-from the file. By default the component will import all the zones.</td><td>Goo</td></tr>
-<tr><td><b>_import</b></td><td>_import</td><td>Set to True to import the model.</td><td>Goo</td></tr>
-</tbody>
-</table>
-
-<h2>Outputs</h2>
-<table>
-<thead>
-<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
-</thead>
-<tbody>
-<tr><td><b>out</b></td><td>readMe!</td><td></td><td>String</td></tr>
-<tr><td><b>model</b></td><td>model</td><td>OpenStudio model which is created from the gbXML file. This output
-will only be useful for advanced users to develop custom scipts.</td><td>Goo</td></tr>
-<tr><td><b>HBZones</b></td><td>HBZones</td><td>List of honeybee zones.</td><td>Goo</td></tr>
-<tr><td><b>shadings</b></td><td>shadings</td><td>List of shading surfaces if any.</td><td>Goo</td></tr>
-</tbody>
-</table>
-
 
   </div>
 

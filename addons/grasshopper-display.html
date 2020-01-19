@@ -1,0 +1,427 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+<head data-layout-view="wide">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Grasshopper - Grasshopper Addon Reference</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+
+<meta name="description" content="Complete documentation for the Grasshopper addon in Grasshopper 3D." />
+<meta name="title" content="Grasshopper Addon Reference" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://rhino.github.io/" />
+<meta property="og:title" content="Grasshopper - Grasshopper Addon Reference" />
+
+<meta property="wiki-page" content="$WIKI$" />
+
+<link rel="image_src" href="http://rhino.github.io/ning/2985220.jpg" />
+
+<style type="text/css" media="screen,projection">
+#xg_navigation ul div.xg_subtab ul li a {
+    color:#666666;
+    background:#EAFFBD;
+}
+#xg_navigation ul div.xg_subtab ul li a:hover {
+    color:#333333;
+    background:#F2FFD6;
+}
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../ning/index.css);
+@import url(../ning/page.css);
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../ning/1187549422.css);
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../ning/1187545030.css);
+</style>
+
+
+<link href="../style.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+    </head>
+    <body>
+    
+        
+        <div id="xg" class="xg_theme xg_widget_page xg_widget_page_page xg_widget_page_page_show" data-layout-pack="classic">
+            <div id="xg_head">
+                <div id="xg_masthead">
+                    <p id="xg_sitename"><a id="application_name_header_link" href="http://rhino.github.io/">Grasshopper</a></p>
+                    <p id="xg_sitedesc" class="xj_site_desc">algorithmic modeling for Rhino</p>
+                </div>
+                <div id="xg_navigation">
+                    <ul>
+    <li id="xg_tab_main" class="xg_subtab"><a href="http://www.grasshopper3d.com/"><span>Home</span></a></li>
+	<li id="xg_tab_photo" class="xg_subtab"><a href="http://www.grasshopper3d.com/photo"><span>View</span></a></li>
+	<li id="xg_tab_xn0" class="xg_subtab"><a href="http://www.grasshopper3d.com/page/download-1"><span>Download</span></a></li>
+	<li id="xg_tab_forum" class="xg_subtab"><a href="https://discourse.mcneel.com/c/grasshopper"><span>Forums&#47;Support</span></a></li>
+	<li id="xg_tab_xn2" class="xg_subtab this"><a href="http://rhino.github.io/"><span>Learn</span></a></li>
+	<li id="xg_tab_events" class="xg_subtab"><a href="http://www.grasshopper3d.com/events"><span>Attend</span></a></li>
+	<li id="xg_tab_profile" class="xg_subtab"><a href="http://www.grasshopper3d.com/profiles"><span>My Page</span></a></li></ul>
+
+                </div>
+            </div>
+            
+            <div id="xg_body">
+                
+				<div class="page">
+
+<div class="content">
+
+<div class="addon-buttons">
+<a href="https://www.rhino3d.com/6/new/grasshopper">Download</a>
+</div>
+
+<div>
+<h1>Grasshopper</h1>
+<h6>SYSTEM COMPONENTS</h6>
+<p><a href="../index.html#System">Component Index</a> &gt; <b>Grasshopper</b></p>
+</div>
+
+<div class="ghbar">
+<table class="ghbar-table">
+<tr>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshopperdisplay/addition.html"><img class="ghicon" src="../icons/GrasshopperDisplay/Addition.png" title="Addition"></a>
+<a href="../components/grasshopperdisplay/colourCMYK.html"><img class="ghicon" src="../icons/GrasshopperDisplay/Colour_CMYK.png" title="Colour CMYK"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshopperdisplay/colourHSL.html"><img class="ghicon" src="../icons/GrasshopperDisplay/Colour_HSL.png" title="Colour HSL"></a>
+<a href="../components/grasshopperdisplay/colourHSV.html"><img class="ghicon" src="../icons/GrasshopperDisplay/Colour_HSV.png" title="Colour HSV"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshopperdisplay/colourLab.html"><img class="ghicon" src="../icons/GrasshopperDisplay/Colour_L_ab.png" title="Colour L*ab"></a>
+<a href="../components/grasshopperdisplay/colourLCH.html"><img class="ghicon" src="../icons/GrasshopperDisplay/Colour_LCH.png" title="Colour LCH"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshopperdisplay/colourRGB.html"><img class="ghicon" src="../icons/GrasshopperDisplay/Colour_RGB.png" title="Colour RGB"></a>
+<a href="../components/grasshopperdisplay/colourRGBf.html"><img class="ghicon" src="../icons/GrasshopperDisplay/Colour_RGB_(f).png" title="Colour RGB (f)"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshopperdisplay/splitAHSL.html"><img class="ghicon" src="../icons/GrasshopperDisplay/Split_AHSL.png" title="Split AHSL"></a>
+<a href="../components/grasshopperdisplay/splitAHSV.html"><img class="ghicon" src="../icons/GrasshopperDisplay/Split_AHSV.png" title="Split AHSV"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshopperdisplay/splitARGB.html"><img class="ghicon" src="../icons/GrasshopperDisplay/Split_ARGB.png" title="Split ARGB"></a>
+<a href="../components/grasshopperdisplay/colourXYZ.html"><img class="ghicon" src="../icons/GrasshopperDisplay/Colour_XYZ.png" title="Colour XYZ"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="6">
+Colour
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshopperdisplay/alignedDimension.html"><img class="ghicon" src="../icons/GrasshopperDisplay/Aligned_Dimension.png" title="Aligned Dimension"></a>
+<a href="../components/grasshopperdisplay/arcDimension.html"><img class="ghicon" src="../icons/GrasshopperDisplay/Arc_Dimension.png" title="Arc Dimension"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshopperdisplay/circularDimension.html"><img class="ghicon" src="../icons/GrasshopperDisplay/Circular_Dimension.png" title="Circular Dimension"></a>
+<a href="../components/grasshopperdisplay/angularDimension.html"><img class="ghicon" src="../icons/GrasshopperDisplay/Angular_Dimension.png" title="Angular Dimension"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshopperdisplay/linearDimension.html"><img class="ghicon" src="../icons/GrasshopperDisplay/Linear_Dimension.png" title="Linear Dimension"></a>
+<a href="../components/grasshopperdisplay/lineDimension.html"><img class="ghicon" src="../icons/GrasshopperDisplay/Line_Dimension.png" title="Line Dimension"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshopperdisplay/markerDimension.html"><img class="ghicon" src="../icons/GrasshopperDisplay/Marker_Dimension.png" title="Marker Dimension"></a>
+<a href="../components/grasshopperdisplay/angularDimensionsMesh.html"><img class="ghicon" src="../icons/GrasshopperDisplay/Angular_Dimensions_(Mesh).png" title="Angular Dimensions (Mesh)"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshopperdisplay/serialDimension.html"><img class="ghicon" src="../icons/GrasshopperDisplay/Serial_Dimension.png" title="Serial Dimension"></a>
+<a href="../components/grasshopperdisplay/make2D.html"><img class="ghicon" src="../icons/GrasshopperDisplay/Make2D.png" title="Make2D"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshopperdisplay/make2DRhinoView.html"><img class="ghicon" src="../icons/GrasshopperDisplay/Make2D_Rhino_View.png" title="Make2D Rhino View"></a>
+<a href="../components/grasshopperdisplay/make2DParallelView.html"><img class="ghicon" src="../icons/GrasshopperDisplay/Make2D_Parallel_View.png" title="Make2D Parallel View"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshopperdisplay/make2DPerspectiveView.html"><img class="ghicon" src="../icons/GrasshopperDisplay/Make2D_Perspective_View.png" title="Make2D Perspective View"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="7">
+Dimensions
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshopperdisplay/symbolAdvanced.html"><img class="ghicon" src="../icons/GrasshopperDisplay/Symbol_(Advanced).png" title="Symbol (Advanced)"></a>
+<a href="../components/grasshopperdisplay/symbolSimple.html"><img class="ghicon" src="../icons/GrasshopperDisplay/Symbol_(Simple).png" title="Symbol (Simple)"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshopperdisplay/symbolDisplay.html"><img class="ghicon" src="../icons/GrasshopperDisplay/Symbol_Display.png" title="Symbol Display"></a>
+<a href="../components/grasshopperdisplay/createMaterial.html"><img class="ghicon" src="../icons/GrasshopperDisplay/Create_Material.png" title="Create Material"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshopperdisplay/cloudDisplay.html"><img class="ghicon" src="../icons/GrasshopperDisplay/Cloud_Display.png" title="Cloud Display"></a>
+<a href="../components/grasshopperdisplay/dotDisplay.html"><img class="ghicon" src="../icons/GrasshopperDisplay/Dot_Display.png" title="Dot Display"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+Preview
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshopperdisplay/testCrash.html"><img class="ghicon" src="../icons/GrasshopperDisplay/Test_Crash.png" title="Test Crash"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+Test
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshopperdisplay/pointList.html"><img class="ghicon" src="../icons/GrasshopperDisplay/Point_List.png" title="Point List"></a>
+<a href="../components/grasshopperdisplay/pointOrder.html"><img class="ghicon" src="../icons/GrasshopperDisplay/Point_Order.png" title="Point Order"></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshopperdisplay/vectorDisplay.html"><img class="ghicon" src="../icons/GrasshopperDisplay/Vector_Display.png" title="Vector Display"></a>
+<a href="../components/grasshopperdisplay/vectorDisplayEx.html"><img class="ghicon" src="../icons/GrasshopperDisplay/Vector_Display_Ex.png" title="Vector Display Ex"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="2">
+Vector
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/grasshopperdisplay/viewportDisplay.html"><img class="ghicon" src="../icons/GrasshopperDisplay/Viewport_Display.png" title="Viewport Display"></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+Viewport
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="cchild">
+<h3>Dimensions</h3>
+<table class="addon-compos">
+<tbody>
+<tr><td class="ccol_1"><a href="../components/grasshopperdisplay/alignedDimension.html"><img src="../icons/GrasshopperDisplay/Aligned_Dimension.png"/></a></td><td class="ccol_2"><a href="../components/grasshopperdisplay/alignedDimension.html">Aligned Dimension</a> <span class="codeword">(AlignDim)</span><br><span class="desc">Create a distance annotation between two points</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshopperdisplay/arcDimension.html"><img src="../icons/GrasshopperDisplay/Arc_Dimension.png"/></a></td><td class="ccol_2"><a href="../components/grasshopperdisplay/arcDimension.html">Arc Dimension</a> <span class="codeword">(ArcDim)</span><br><span class="desc">Create an angle annotation based on an arc.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshopperdisplay/circularDimension.html"><img src="../icons/GrasshopperDisplay/Circular_Dimension.png"/></a></td><td class="ccol_2"><a href="../components/grasshopperdisplay/circularDimension.html">Circular Dimension</a> <span class="codeword">(CircleDim)</span><br><span class="desc">Create an angle annotation projected to a circle.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshopperdisplay/angularDimension.html"><img src="../icons/GrasshopperDisplay/Angular_Dimension.png"/></a></td><td class="ccol_2"><a href="../components/grasshopperdisplay/angularDimension.html">Angular Dimension</a> <span class="codeword">(AngleDim)</span><br><span class="desc">Create an angle annotation between points.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshopperdisplay/linearDimension.html"><img src="../icons/GrasshopperDisplay/Linear_Dimension.png"/></a></td><td class="ccol_2"><a href="../components/grasshopperdisplay/linearDimension.html">Linear Dimension</a> <span class="codeword">(LinearDim)</span><br><span class="desc">Create a distance annotation between points, projected to a line.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshopperdisplay/lineDimension.html"><img src="../icons/GrasshopperDisplay/Line_Dimension.png"/></a></td><td class="ccol_2"><a href="../components/grasshopperdisplay/lineDimension.html">Line Dimension</a> <span class="codeword">(LineDim)</span><br><span class="desc">Create a distance annotation along a line.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshopperdisplay/markerDimension.html"><img src="../icons/GrasshopperDisplay/Marker_Dimension.png"/></a></td><td class="ccol_2"><a href="../components/grasshopperdisplay/markerDimension.html">Marker Dimension</a> <span class="codeword">(MarkDim)</span><br><span class="desc">Create a text annotation at a point</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshopperdisplay/angularDimensionsMesh.html"><img src="../icons/GrasshopperDisplay/Angular_Dimensions_(Mesh).png"/></a></td><td class="ccol_2"><a href="../components/grasshopperdisplay/angularDimensionsMesh.html">Angular Dimensions (Mesh)</a> <span class="codeword">(AngleDimMesh)</span><br><span class="desc">Create angle annotations for all mesh corners.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshopperdisplay/serialDimension.html"><img src="../icons/GrasshopperDisplay/Serial_Dimension.png"/></a></td><td class="ccol_2"><a href="../components/grasshopperdisplay/serialDimension.html">Serial Dimension</a> <span class="codeword">(SerialDim)</span><br><span class="desc">Create a distance annotation between multiple points, projected to a line.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshopperdisplay/make2D.html"><img src="../icons/GrasshopperDisplay/Make2D.png"/></a></td><td class="ccol_2"><a href="../components/grasshopperdisplay/make2D.html">Make2D</a><br><span class="desc">Create a hidden line drawing from geometry</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshopperdisplay/make2DRhinoView.html"><img src="../icons/GrasshopperDisplay/Make2D_Rhino_View.png"/></a></td><td class="ccol_2"><a href="../components/grasshopperdisplay/make2DRhinoView.html">Make2D Rhino View</a> <span class="codeword">(M2D Rhino)</span><br><span class="desc">Import a Rhino view for a Make2D solution</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshopperdisplay/make2DParallelView.html"><img src="../icons/GrasshopperDisplay/Make2D_Parallel_View.png"/></a></td><td class="ccol_2"><a href="../components/grasshopperdisplay/make2DParallelView.html">Make2D Parallel View</a> <span class="codeword">(M2D Parallel)</span><br><span class="desc">Define a parallel view for a Make2D solution</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshopperdisplay/make2DPerspectiveView.html"><img src="../icons/GrasshopperDisplay/Make2D_Perspective_View.png"/></a></td><td class="ccol_2"><a href="../components/grasshopperdisplay/make2DPerspectiveView.html">Make2D Perspective View</a> <span class="codeword">(M2D Perspective)</span><br><span class="desc">Define a perspective view for a Make2D solution</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>Colour</h3>
+<table class="addon-compos">
+<tbody>
+<tr><td class="ccol_1"><a href="../components/grasshopperdisplay/addition.html"><img src="../icons/GrasshopperDisplay/Addition.png"/></a></td><td class="ccol_2"><a href="../components/grasshopperdisplay/addition.html">Addition</a> <span class="codeword">(Add)</span><br><span class="desc">Perform colour addition.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshopperdisplay/colourCMYK.html"><img src="../icons/GrasshopperDisplay/Colour_CMYK.png"/></a></td><td class="ccol_2"><a href="../components/grasshopperdisplay/colourCMYK.html">Colour CMYK</a> <span class="codeword">(CMYK)</span><br><span class="desc">Create a colour from floating point {CMYK} channels.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshopperdisplay/colourHSL.html"><img src="../icons/GrasshopperDisplay/Colour_HSL.png"/></a></td><td class="ccol_2"><a href="../components/grasshopperdisplay/colourHSL.html">Colour HSL</a> <span class="codeword">(HSL)</span><br><span class="desc">Create a colour from floating point {HSL} channels.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshopperdisplay/colourHSV.html"><img src="../icons/GrasshopperDisplay/Colour_HSV.png"/></a></td><td class="ccol_2"><a href="../components/grasshopperdisplay/colourHSV.html">Colour HSV</a> <span class="codeword">(HSV)</span><br><span class="desc">Create a colour from floating point {HSV} channels.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshopperdisplay/colourLab.html"><img src="../icons/GrasshopperDisplay/Colour_L_ab.png"/></a></td><td class="ccol_2"><a href="../components/grasshopperdisplay/colourLab.html">Colour L*ab</a> <span class="codeword">(L*AB)</span><br><span class="desc">Create a colour from floating point {CIE L*ab} channels.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshopperdisplay/colourLCH.html"><img src="../icons/GrasshopperDisplay/Colour_LCH.png"/></a></td><td class="ccol_2"><a href="../components/grasshopperdisplay/colourLCH.html">Colour LCH</a> <span class="codeword">(LCH)</span><br><span class="desc">Create a colour from floating point {CIE LCH} channels.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshopperdisplay/colourRGB.html"><img src="../icons/GrasshopperDisplay/Colour_RGB.png"/></a></td><td class="ccol_2"><a href="../components/grasshopperdisplay/colourRGB.html">Colour RGB</a> <span class="codeword">(RGB)</span><br><span class="desc">Create a colour from {RGB} channels.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshopperdisplay/colourRGBf.html"><img src="../icons/GrasshopperDisplay/Colour_RGB_(f).png"/></a></td><td class="ccol_2"><a href="../components/grasshopperdisplay/colourRGBf.html">Colour RGB (f)</a> <span class="codeword">(fRGB)</span><br><span class="desc">Create a colour from floating point {RGB} channels.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshopperdisplay/splitAHSL.html"><img src="../icons/GrasshopperDisplay/Split_AHSL.png"/></a></td><td class="ccol_2"><a href="../components/grasshopperdisplay/splitAHSL.html">Split AHSL</a> <span class="codeword">(AHSL)</span><br><span class="desc">Split a colour into floating point {AHSL} channels</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshopperdisplay/splitAHSV.html"><img src="../icons/GrasshopperDisplay/Split_AHSV.png"/></a></td><td class="ccol_2"><a href="../components/grasshopperdisplay/splitAHSV.html">Split AHSV</a> <span class="codeword">(AHSV)</span><br><span class="desc">Split a colour into floating point {AHSV} channels</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshopperdisplay/splitARGB.html"><img src="../icons/GrasshopperDisplay/Split_ARGB.png"/></a></td><td class="ccol_2"><a href="../components/grasshopperdisplay/splitARGB.html">Split ARGB</a> <span class="codeword">(ARGB)</span><br><span class="desc">Split a colour into floating point {ARGB} channels.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshopperdisplay/colourXYZ.html"><img src="../icons/GrasshopperDisplay/Colour_XYZ.png"/></a></td><td class="ccol_2"><a href="../components/grasshopperdisplay/colourXYZ.html">Colour XYZ</a> <span class="codeword">(XYZ)</span><br><span class="desc">Create a colour from floating point {XYZ} channels (CIE 1931 spec).</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>Preview</h3>
+<table class="addon-compos">
+<tbody>
+<tr><td class="ccol_1"><a href="../components/grasshopperdisplay/symbolAdvanced.html"><img src="../icons/GrasshopperDisplay/Symbol_(Advanced).png"/></a></td><td class="ccol_2"><a href="../components/grasshopperdisplay/symbolAdvanced.html">Symbol (Advanced)</a> <span class="codeword">(SymAdv)</span><br><span class="desc">Advanced symbol display properties</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshopperdisplay/symbolSimple.html"><img src="../icons/GrasshopperDisplay/Symbol_(Simple).png"/></a></td><td class="ccol_2"><a href="../components/grasshopperdisplay/symbolSimple.html">Symbol (Simple)</a> <span class="codeword">(SymSim)</span><br><span class="desc">Simple symbol display properties</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshopperdisplay/symbolDisplay.html"><img src="../icons/GrasshopperDisplay/Symbol_Display.png"/></a></td><td class="ccol_2"><a href="../components/grasshopperdisplay/symbolDisplay.html">Symbol Display</a> <span class="codeword">(Symbol)</span><br><span class="desc">Display symbols</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshopperdisplay/createMaterial.html"><img src="../icons/GrasshopperDisplay/Create_Material.png"/></a></td><td class="ccol_2"><a href="../components/grasshopperdisplay/createMaterial.html">Create Material</a> <span class="codeword">(Material)</span><br><span class="desc">Create an OpenGL material.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshopperdisplay/cloudDisplay.html"><img src="../icons/GrasshopperDisplay/Cloud_Display.png"/></a></td><td class="ccol_2"><a href="../components/grasshopperdisplay/cloudDisplay.html">Cloud Display</a> <span class="codeword">(Cloud)</span><br><span class="desc">Draw a collection of points as a fuzzy cloud</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshopperdisplay/dotDisplay.html"><img src="../icons/GrasshopperDisplay/Dot_Display.png"/></a></td><td class="ccol_2"><a href="../components/grasshopperdisplay/dotDisplay.html">Dot Display</a> <span class="codeword">(Dots)</span><br><span class="desc">Draw a collection of coloured dots</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>Vector</h3>
+<table class="addon-compos">
+<tbody>
+<tr><td class="ccol_1"><a href="../components/grasshopperdisplay/pointList.html"><img src="../icons/GrasshopperDisplay/Point_List.png"/></a></td><td class="ccol_2"><a href="../components/grasshopperdisplay/pointList.html">Point List</a> <span class="codeword">(Points)</span><br><span class="desc">Displays details about lists of points</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshopperdisplay/pointOrder.html"><img src="../icons/GrasshopperDisplay/Point_Order.png"/></a></td><td class="ccol_2"><a href="../components/grasshopperdisplay/pointOrder.html">Point Order</a> <span class="codeword">(Order)</span><br><span class="desc">Displays the order of a list of points</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshopperdisplay/vectorDisplay.html"><img src="../icons/GrasshopperDisplay/Vector_Display.png"/></a></td><td class="ccol_2"><a href="../components/grasshopperdisplay/vectorDisplay.html">Vector Display</a> <span class="codeword">(VDis)</span><br><span class="desc">Preview vectors in the viewport</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/grasshopperdisplay/vectorDisplayEx.html"><img src="../icons/GrasshopperDisplay/Vector_Display_Ex.png"/></a></td><td class="ccol_2"><a href="../components/grasshopperdisplay/vectorDisplayEx.html">Vector Display Ex</a> <span class="codeword">(VDisEx)</span><br><span class="desc">Preview vectors in the viewport</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>Test</h3>
+<table class="addon-compos">
+<tbody>
+<tr><td class="ccol_1"><a href="../components/grasshopperdisplay/testCrash.html"><img src="../icons/GrasshopperDisplay/Test_Crash.png"/></a></td><td class="ccol_2"><a href="../components/grasshopperdisplay/testCrash.html">Test Crash</a><br><span class="desc">Test crashing of GH</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>Viewport</h3>
+<table class="addon-compos">
+<tbody>
+<tr><td class="ccol_1"><a href="../components/grasshopperdisplay/viewportDisplay.html"><img src="../icons/GrasshopperDisplay/Viewport_Display.png"/></a></td><td class="ccol_2"><a href="../components/grasshopperdisplay/viewportDisplay.html">Viewport Display</a><br><span class="desc">Display viewport on canvas</span></td></tr>
+</tbody>
+</table>
+
+</div>
+
+  </div>
+
+</div>
+
+            </div>
+            <div id="xg_foot">
+                <p class="left">
+    © 2018-2020  <a href="https://github.com/robinrodricks/">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    Hosted by<a href="http://www.github.com/"><img src="../images/github.png" alt="Github" class="poweredbylogo" /></a> &nbsp;
+	Rhino & Grasshopper are trademarks of <a href="https://www.rhino3d.com/">Robert McNeel & Associates</a>.
+	</p>
+    <p class="right xg_lightfont">
+                    <a href="http://www.grasshopper3d.com/main/embeddable/list">Badges</a> &nbsp;|&nbsp;
+                        <a href="http://www.grasshopper3d.com/main/index/report" dojotype="PromptToJoinLink" _joinprompttext="Please sign up or sign in to complete this step." _hassignup="true" _signinurl="http://www.grasshopper3d.com/main/authorization/signIn?target=http%3A%2F%2Fwww.grasshopper3d.com%2Fmain%2Findex%2Freport">Report an Issue</a> &nbsp;|&nbsp;
+                        <a href="http://www.grasshopper3d.com/main/authorization/termsOfService?previousUrl=http%3A%2F%2Fwww.grasshopper3d.com%2Fpage%2Fcomponent-reference">Terms of Service</a>
+            </p>
+
+            </div>
+        </div>
+        
+        <div id="xj_baz17246" class="xg_theme"></div>
+<div id="xg_overlay" style="display:none;">
+<!--[if lte IE 6.5]><iframe></iframe><![endif]-->
+</div>
+<!--googleoff: all--><noscript>
+	<style type="text/css" media="screen">
+        #xg { position:relative;top:120px; }
+        #xn_bar { top:120px; }
+	</style>
+	<div class="errordesc noscript">
+		<div>
+            <h3><strong>Hello, you need to enable JavaScript to use Grasshopper.</strong></h3>
+            <p>Please check your browser settings or contact your system administrator.</p>
+			
+		</div>
+	</div>
+</noscript><!--googleon: all-->
+
+<script src="/js/jquery.js"></script>
+<script src="/js/kramed.min.js"></script>
+<script src="/js/component.js"></script>
+<script src="/js/user.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    </body>
+</html>

@@ -641,30 +641,6 @@
 <p><a href="../../index.html#Ladybug">Component Index</a> &gt; <a href="../../addons/ladybug.html">Ladybug</a> > 5 | Extra > <b>Combine Solar Envelopes</b></p>
 </div>
 <h3>Use this component to combine two or more solar envelopes from Ladybug_SolarEnvelope component<br></h3>
-<h2>Inputs</h2>
-<table>
-<thead>
-<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
-</thead>
-<tbody>
-<tr><td><b>_baseSrf</b></td><td>_baseSrf</td><td>A surface representing the area for which you want to create the solar envelope (could also be a closed planer curve). Must be the same as the _BaseSrf connected to the solar Envelope component.</td><td>Goo</td></tr>
-<tr><td><b>_envelopePts</b></td><td>_envelopePts</td><td>A list of 3d points representing the heights to which the solar envelope reaches. Use the envelopePts output from the solar envelope component.</td><td>Goo</td></tr>
-<tr><td><b>HighestEnv_</b></td><td>HighestEnv_</td><td>if HighestEnv_ is True we'll take the highest points and if it's False we'll take the lowest ones. Default value is True</td><td>Goo</td></tr>
-<tr><td><b>_gridSize</b></td><td>_gridSize</td><td>A numeric value inidcating the gird size of the analysis in Rhino model units. Muse be the same as the gridSize_ value connected to the solar Envelope component.</td><td>Goo</td></tr>
-</tbody>
-</table>
-
-<h2>Outputs</h2>
-<table>
-<thead>
-<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
-</thead>
-<tbody>
-<tr><td><b>newEnvPoints</b></td><td>newEnvPoints</td><td>A list of 3d points representing the heights to which the solar envelope reaches.  Plug into a native GH 'Delunay Mesh' component to visualize the full solar envelope.</td><td>Goo</td></tr>
-<tr><td><b>envelopeBrep</b></td><td>envelopeBrep</td><td>Brep representing the envelope.</td><td>Goo</td></tr>
-</tbody>
-</table>
-
 
   </div>
 

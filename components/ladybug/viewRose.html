@@ -641,31 +641,6 @@
 <p><a href="../../index.html#Ladybug">Component Index</a> &gt; <a href="../../addons/ladybug.html">Ladybug</a> > 3 | EnvironmentalAnalysis > <b>view Rose</b></p>
 </div>
 <h3>Use this component to see the area visible from a given viewpoint across a 2D plane of vision.<br>The component will create a circular surface in this plane of vision that is interrupted by context geometry to show the places that can be seen through this context geometry.<br></h3>
-<h2>Inputs</h2>
-<table>
-<thead>
-<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
-</thead>
-<tbody>
-<tr><td><b>_context</b></td><td>_context</td><td>Breps or Meshes representing context geometry that can block the view around a given viewPoint.</td><td>Goo</td></tr>
-<tr><td><b>_plane_</b></td><td>_plane_</td><td>Test Plane</td><td>Goo</td></tr>
-<tr><td><b>_radius</b></td><td>_radius</td><td>A radius to make the view rose in Rhino model units. Note that, if the view rose is not extending past the _context geometry, you should increase this value.</td><td>Goo</td></tr>
-</tbody>
-</table>
-
-<h2>Outputs</h2>
-<table>
-<thead>
-<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
-</thead>
-<tbody>
-<tr><td><b>out</b></td><td>readMe!</td><td>...</td><td>String</td></tr>
-<tr><td><b>viewRose</b></td><td>viewRose</td><td>A surface representing the visible area from the viewpoint past the _context geometry.</td><td>Goo</td></tr>
-<tr><td><b>blocked</b></td><td>blocked</td><td>A set of curves representing the views blocked by the _context geometry from the viewpoint .</td><td>Goo</td></tr>
-<tr><td><b>visibleAngle</b></td><td>visibleAngle</td><td>The total angle of visibility from the viewpoint in the plane of visibility.</td><td>Goo</td></tr>
-</tbody>
-</table>
-
 
   </div>
 

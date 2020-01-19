@@ -641,45 +641,6 @@
 <p><a href="../../index.html#Ladybug">Component Index</a> &gt; <a href="../../addons/ladybug.html">Ladybug</a> > 2 | VisualizeWeatherData > <b>3D Chart</b></p>
 </div>
 <h3>Use this component to make a 3D chart in the Rhino scene of any climate data or hourly simulation data.<br></h3>
-<h2>Inputs</h2>
-<table>
-<thead>
-<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
-</thead>
-<tbody>
-<tr><td><b>_inputData</b></td><td>_inputData</td><td>A list of input data to plot.</td><td>Goo</td></tr>
-<tr><td><b>_basePoint_</b></td><td>_basePoint_</td><td>An optional point with which to locate the 3D chart in the Rhino Model.  The default is set to the Rhino origin at (0,0,0).</td><td>Goo</td></tr>
-<tr><td><b>_xScale_</b></td><td>_xScale_</td><td>The scale of the X axis of the graph. The default will plot the X axis with a length of 3650 Rhino model units (for 365 days of the year). Connect a list of values for multiple graphs.</td><td>Goo</td></tr>
-<tr><td><b>_yScale_</b></td><td>_yScale_</td><td>The scale of the Y axis of the graph. The default will plot the Y axis with a length of 240 Rhino model units (for 24 hours of the day). Connect a list of values for multiple graphs.</td><td>Goo</td></tr>
-<tr><td><b>_zScale_</b></td><td>_zScale_</td><td>The scale of the Z axis of the graph. The default will plot the Z axis with a number of Rhino model units corresponding to the input data values.  Set to 0 to see graphCurves appear on top of the mesh.  Connect a list of values for multiple graphs.</td><td>Goo</td></tr>
-<tr><td><b>_yCount_</b></td><td>_yCount_</td><td>The number of segments on your y-axis.  The default is set to 24 for 24 hours of the day. This variable is particularly useful for input data that is not for each hour of the year.</td><td>Goo</td></tr>
-<tr><td><b>legendPar_</b></td><td>legendPar_</td><td>Optional legend parameters from the Ladybug Legend Parameters component.</td><td>Goo</td></tr>
-<tr><td><b>condStatement_</b></td><td>condStatement_</td><td>An optional conditional statement, which will remove data from the chart that does not fit the conditions. The input must be a valid python conditional statement (e.g. a ; 25).</td><td>Goo</td></tr>
-<tr><td><b>bakeIt_</b></td><td>bakeIt_</td><td>An integer that tells the component if/how to bake the bojects in the Rhino scene.  The default is set to 0.  Choose from the following options:
-0 (or False) - No geometry will be baked into the Rhino scene (this is the default).
-1 (or True) - The geometry will be baked into the Rhino scene as a colored hatch and Rhino text objects, which facilitates easy export to PDF or vector-editing programs.
-2 - The geometry will be baked into the Rhino scene as colored meshes, which is useful for recording the results of paramteric runs as light Rhino geometry.</td><td>Goo</td></tr>
-</tbody>
-</table>
-
-<h2>Outputs</h2>
-<table>
-<thead>
-<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
-</thead>
-<tbody>
-<tr><td><b>out</b></td><td>readMe!</td><td>...</td><td>String</td></tr>
-<tr><td><b>graphMesh</b></td><td>graphMesh</td><td>A 3D plot of the input data as a colored mesh.  Multiple meshes will be output for several input data streams or graph scales.</td><td>Goo</td></tr>
-<tr><td><b>graphCurves</b></td><td>graphCurves</td><td>A list of curves and text surfaces representing the time periods corresponding to the input data.  Note that if the time period of the input data is not clear, no curves or labels will be generated here.</td><td>Goo</td></tr>
-<tr><td><b>legend</b></td><td>legend</td><td>A legend of the chart. Connect this output to a grasshopper "Geo" component in order to preview the legend in the Rhino scene.g</td><td>Goo</td></tr>
-<tr><td><b>legendBasePts</b></td><td>legendBasePts</td><td>The legend base point, which can be used to move the legend in relation to the chart with the native rasshopper "Move" component.</td><td>Goo</td></tr>
-<tr><td><b>title</b></td><td>title</td><td>The title text of the chart.  Hook this up to a native Grasshopper 'Geo' component to preview it separately from the other outputs.</td><td>Goo</td></tr>
-<tr><td><b>titleBasePts</b></td><td>titleBasePts</td><td>Points for placement of the title and axes labels of the chart, which can be used to move these text items in relation to the chart with the native Grasshopper "Move" component.</td><td>Goo</td></tr>
-<tr><td><b>dataPts</b></td><td>dataPts</td><td>Points representing the location of each piece of data on the chart.  Use this to label the points of the chart with text lables using a native grasshopper "Text Tag" component.</td><td>Goo</td></tr>
-<tr><td><b>conditionalHOY</b></td><td>conditionalHOY</td><td>The input data for the hours of the year that pass the conditional statement.</td><td>Goo</td></tr>
-</tbody>
-</table>
-
 
   </div>
 

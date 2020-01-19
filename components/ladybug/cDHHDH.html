@@ -641,36 +641,6 @@
 <p><a href="../../index.html#Ladybug">Component Index</a> &gt; <a href="../../addons/ladybug.html">Ladybug</a> > 1 | AnalyzeWeatherData > <b>CDH HDH</b></p>
 </div>
 <h3>Calculates heating and cooling degree-hours.<br>Degree-hours are defined as the difference between the base temperature and the average ambient outside air temperature multiplied by the number of hours that this difference condition exists.<br></h3>
-<h2>Inputs</h2>
-<table>
-<thead>
-<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
-</thead>
-<tbody>
-<tr><td><b>_hourlyDryBulbTemperature</b></td><td>_hourlyDryBulbTemperature</td><td>Annual dry bulb temperature from the Import epw component (in degrees Celsius).</td><td>Goo</td></tr>
-<tr><td><b>_coolingBaseTemperature_</b></td><td>_coolingBaseTemperature_</td><td>Base temperature for cooling (in degrees Celsius). Default is set to 23.3C but this can be much lower if the analysis is for a building with high heat gain or insulation.</td><td>Goo</td></tr>
-<tr><td><b>_heatingBaseTemperature_</b></td><td>_heatingBaseTemperature_</td><td>Base temperature for heating (in degrees Celsius). Default is set to 18.3C but this can be much lower if the analysis is for a building with high heat gain or insulation.</td><td>Goo</td></tr>
-</tbody>
-</table>
-
-<h2>Outputs</h2>
-<table>
-<thead>
-<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
-</thead>
-<tbody>
-<tr><td><b>out</b></td><td>readMe!</td><td>A ummary of the input.</td><td>String</td></tr>
-<tr><td><b>hourly_coolingDegHours</b></td><td>hourly_coolingDegHours</td><td>Cooling degree-hours for each hour of the year. For visualizations over the whole year, connect this to the grasshopper chart/graph component.</td><td>Goo</td></tr>
-<tr><td><b>hourly_heatingDegHours</b></td><td>hourly_heatingDegHours</td><td>Heating degree-days for each hour of the year. For visualizations over the whole year, connect this to the grasshopper chart/graph component.</td><td>Goo</td></tr>
-<tr><td><b>daily_coolingDegHours</b></td><td>daily_coolingDegHours</td><td>Cooling degree-days summed for each day of the year. For visualizations of over the whole year, connect this to the grasshopper chart/graph component.</td><td>Goo</td></tr>
-<tr><td><b>daily_heatingDegHours</b></td><td>daily_heatingDegHours</td><td>Heating degree-days summed for each day of the year. For visualizations of over the whole year, connect this to the grasshopper chart/graph component.</td><td>Goo</td></tr>
-<tr><td><b>monthly_coolingDegHours</b></td><td>monthly_coolingDegHours</td><td>Cooling degree-days summed for each month of the year.</td><td>Goo</td></tr>
-<tr><td><b>monthly_heatingDegHours</b></td><td>monthly_heatingDegHours</td><td>Heating degree-days summed for each month of the year.</td><td>Goo</td></tr>
-<tr><td><b>annual_coolingDegHours</b></td><td>annual_coolingDegHours</td><td>The total cooling degree-days for the entire year.</td><td>Goo</td></tr>
-<tr><td><b>annual_heatingDegHours</b></td><td>annual_heatingDegHours</td><td>The total heating degree-days for the entire year.</td><td>Goo</td></tr>
-</tbody>
-</table>
-
 
   </div>
 
