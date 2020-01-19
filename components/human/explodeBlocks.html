@@ -357,6 +357,39 @@ Texture Mapping
 <p><a href="../../index.html#Human">Component Index</a> &gt; <a href="../../addons/human.html">Human</a> > Reference > <b>BlockExplode</b></p>
 </div>
 <h3>Explodes a set of Instance Objects into their proper geometry</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Block Objects</b></td><td>block</td><td>Data in the form of Rhino.DocObjects.InstanceObject</td><td>Generic</td></tr>
+<tr><td><b>Block Name Filter</b></td><td>BNF</td><td>An optional filter for the name of the block. Only blocks matching the filter (w/ wildcards like *, ?) will be processed/exploded.</td><td>Text</td></tr>
+<tr><td><b>Block Objects</b></td><td>block</td><td>Data in the form of Rhino.DocObjects.InstanceObject</td><td>Generic</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Geometry</b></td><td>geo</td><td>Block Geometry</td><td>Generic</td></tr>
+<tr><td><b>Attributes</b></td><td>att</td><td>Object Attributes</td><td>Generic</td></tr>
+<tr><td><b>Block Name</b></td><td>name</td><td>The Block definition name</td><td>Text</td></tr>
+<tr><td><b>BoundingBox</b></td><td>bbox</td><td>The Bounding box around the instance definition</td><td>Box</td></tr>
+<tr><td><b>Block Transform</b></td><td>xform</td><td>The transform of this block instance</td><td>Transform</td></tr>
+<tr><td><b>Insertion Plane</b></td><td>pln</td><td>The insertion point of this block instance.</td><td>Plane</td></tr>
+<tr><td><b>Instance Count</b></td><td>ct</td><td>The number of instances of this block present in the Rhino document.</td><td>Integer</td></tr>
+<tr><td><b>Geometry</b></td><td>geo</td><td>Block Geometry</td><td>Generic</td></tr>
+<tr><td><b>Attributes</b></td><td>att</td><td>Object Attributes</td><td>Generic</td></tr>
+<tr><td><b>Block Name</b></td><td>name</td><td>The Block definition name</td><td>String</td></tr>
+<tr><td><b>BoundingBox</b></td><td>bbox</td><td>The Bounding box around the instance definition</td><td>Box</td></tr>
+<tr><td><b>Block Transform</b></td><td>xform</td><td>The transform of this block instance</td><td>Transform</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

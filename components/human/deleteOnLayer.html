@@ -357,6 +357,27 @@ Texture Mapping
 <p><a href="../../index.html#Human">Component Index</a> &gt; <a href="../../addons/human.html">Human</a> > Misc > <b>DelOnLay</b></p>
 </div>
 <h3>Deletes all objects on specified Layers, then passes true.  Useful for appearing to change an object directly in a Rhino document,  in order to take advantage of advanced display capabilities.  WARNING: Make sure that no items on the specified layers are  referenced by any portion of your definition. This includes  both reference through standard parameters and reference  with the Human components.  IF YOU DO NOT ABIDE BY THIS WARNING YOU MAY CRASH GRASSHOPPER!</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Run</b></td><td>run</td><td>When set to true, will delete the items on a specified layer or layers.</td><td>Boolean</td></tr>
+<tr><td><b>Layer</b></td><td>lay</td><td>Layer on which items should be deleted. Warning, will delete all items on the specified layer when run is set to true!</td><td>Text</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>run</b></td><td>run</td><td>Outputs the value of the \"run\" input when the objects have been deleted.</td><td>Boolean</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

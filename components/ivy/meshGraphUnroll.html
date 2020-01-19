@@ -348,6 +348,31 @@
 <p><a href="../../index.html#Ivy">Component Index</a> &gt; <a href="../../addons/ivy.html">Ivy</a> > 6|Special Segmentation > <b>mgUroll</b></p>
 </div>
 <h3>Unroll the underlying mesh of a tree graph.</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>MeshGraph</b></td><td>G</td><td>The MeshGraph object used for the unrolling. The Graph needs to be a TREE</td><td>Any</td></tr>
+<tr><td><b>Start Face</b></td><td>F</td><td>The starting face (root of graph) for the unroll of the mesh</td><td>Integer</td></tr>
+<tr><td><b>UnrollPlane</b></td><td>P</td><td>Plane to perform unroll operation</td><td>Plane</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Mesh</b></td><td>M</td><td>The unrolled mesh pieces</td><td>Mesh</td></tr>
+<tr><td><b>SplitMeshgraphs</b></td><td>Sm</td><td>A list of non overlapping parts of the graph on the original mesh</td><td>Any</td></tr>
+<tr><td><b>SplitFlatGraphs</b></td><td>Sf</td><td>A list of non overlapping parts of the graph with flat mesh</td><td>Any</td></tr>
+<tr><td><b>UnrollEdgeSplits</b></td><td>Es</td><td>The list of edges split by the overlap check process</td><td>Integer</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

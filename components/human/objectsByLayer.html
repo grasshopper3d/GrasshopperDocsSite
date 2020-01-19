@@ -357,6 +357,28 @@ Texture Mapping
 <p><a href="../../index.html#Human">Component Index</a> &gt; <a href="../../addons/human.html">Human</a> > Reference > <b>ObjsByLayer</b></p>
 </div>
 <h3>Get the Rhino Objects on a specified layer. - DEPRECATED - use Dynamic Pipeline</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Layer</b></td><td>lay</td><td>The layer name to find</td><td>Text</td></tr>
+<tr><td><b>Refresh with Pipeline</b></td><td>pl</td><td>Hook up a geometry pipeline component to this input in order to listen for updates to the layer you specify.</td><td>Generic</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Rhino Objects</b></td><td>rhObj</td><td>The raw RhinoObject data harvested from the layer.</td><td>Generic</td></tr>
+<tr><td><b>Object Attributes</b></td><td>att</td><td>The Object attributes for each object.</td><td>Generic</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

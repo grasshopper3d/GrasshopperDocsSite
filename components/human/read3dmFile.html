@@ -357,6 +357,30 @@ Texture Mapping
 <p><a href="../../index.html#Human">Component Index</a> &gt; <a href="../../addons/human.html">Human</a> > Misc > <b>3dm</b></p>
 </div>
 <h3>Reads objects from an external .3dm file</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>File Path</b></td><td>FP</td><td>The path to the 3dm file(s) to read</td><td>Text</td></tr>
+<tr><td><b>Layer Filter</b></td><td>L</td><td>A filter for the layer name</td><td>Text</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Objects</b></td><td>O</td><td>The object geometry</td><td>Geometry</td></tr>
+<tr><td><b>Layer Names</b></td><td>L</td><td>Layer full paths per object</td><td>Text</td></tr>
+<tr><td><b>Attributes</b></td><td>A</td><td>The attributes for each object</td><td>Generic</td></tr>
+<tr><td><b>Units</b></td><td>U</td><td>The file units</td><td>Text</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

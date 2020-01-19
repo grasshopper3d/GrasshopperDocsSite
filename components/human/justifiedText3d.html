@@ -357,6 +357,25 @@ Texture Mapping
 <p><a href="../../index.html#Human">Component Index</a> &gt; <a href="../../addons/human.html">Human</a> > Creation > <b>Justified Text</b></p>
 </div>
 <h3>Creates 3d Text objects with specified size, location, alignment, and font.</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Location</b></td><td>L</td><td>Location and orientation of the text</td><td>Plane</td></tr>
+<tr><td><b>Text</b></td><td>T</td><td>Text to Display</td><td>Text</td></tr>
+<tr><td><b>Size</b></td><td>S</td><td>Size of Text</td><td>Number</td></tr>
+<tr><td><b>Color</b></td><td>C</td><td>Text display color</td><td>Colour</td></tr>
+<tr><td><b>Horizontal Alignment</b></td><td>A</td><td>The horizontal alignment for the text. 0 = Left, 1 = Center, 2 = Right</td><td>Integer</td></tr>
+<tr><td><b>Vertical Alginment</b></td><td>VA</td><td>The vertical alignment for the text. 0 = Bottom, 1 = Middle, 2 = Top</td><td>Integer</td></tr>
+<tr><td><b>Font</b></td><td>F</td><td>The font to use</td><td>Text</td></tr>
+<tr><td><b>Use Meshes</b></td><td>M</td><td>Mesh the text, in order to display transparency? Note: This feature is experimental and does not work well with all fonts.</td><td>Boolean</td></tr>
+<tr><td><b>Attributes</b></td><td>att</td><td>Optional attributes to assign the geometry when baking. This will override the specified display color.</td><td>Generic</td></tr>
+<tr><td><b>Bake</b></td><td>B</td><td>Use this input as an automatic bake trigger - set to true to bake text to the Rhino document.</td><td>Boolean</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

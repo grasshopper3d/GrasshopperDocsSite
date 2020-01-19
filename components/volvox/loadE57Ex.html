@@ -376,6 +376,49 @@ Util
 <p><a href="../../index.html#Volvox">Component Index</a> &gt; <a href="../../addons/volvox.html">Volvox</a> > I/O > <b>LoadE57Ex</b></p>
 </div>
 <h3>Loads selected scans from E57 file together with all available metadata.</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>FilePath</b></td><td>F</td><td>E57 File Path</td><td>Any</td></tr>
+<tr><td><b>Index</b></td><td>I</td><td>Scan index, set to -1 to load all scans from the file</td><td>Integer</td></tr>
+<tr><td><b>Percent</b></td><td>%</td><td>Percent of points to load</td><td>Number</td></tr>
+<tr><td><b>Run</b></td><td>R</td><td>Load file</td><td>Boolean</td></tr>
+<tr><td><b>Abort</b></td><td>A</td><td>Abort loading</td><td>Boolean</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Cloud</b></td><td>Cloud</td><td>Loaded Cloud</td><td>Any</td></tr>
+<tr><td><b>Pose</b></td><td>Pose</td><td>Scan pose</td><td>Plane</td></tr>
+<tr><td><b>Guid</b></td><td>Guid</td><td>Guid</td><td>Text</td></tr>
+<tr><td><b>Name</b></td><td>Name</td><td>Scan name</td><td>Text</td></tr>
+<tr><td><b>Description</b></td><td>Desc</td><td>Scan description</td><td>Text</td></tr>
+<tr><td><b>CartesianB</b></td><td>CartB</td><td>Cartesian bounds</td><td>Number</td></tr>
+<tr><td><b>SphericalB</b></td><td>SphB</td><td>Spherical bounds</td><td>Number</td></tr>
+<tr><td><b>ColorB</b></td><td>ColB</td><td>Color limits R/G/B</td><td>Number</td></tr>
+<tr><td><b>IntensityB</b></td><td>IntB</td><td>Intensity limits</td><td>Number</td></tr>
+<tr><td><b>Vendor</b></td><td>Vendor</td><td>Sensor vendor</td><td>Text</td></tr>
+<tr><td><b>Model</b></td><td>Model</td><td>Sensor model</td><td>Text</td></tr>
+<tr><td><b>Serial</b></td><td>Serial</td><td>Sensor serial number</td><td>Text</td></tr>
+<tr><td><b>Hardware</b></td><td>HW</td><td>Sensor hardware version</td><td>Text</td></tr>
+<tr><td><b>Software</b></td><td>SW</td><td>Sensor software version</td><td>Text</td></tr>
+<tr><td><b>Firmware</b></td><td>FW</td><td>Sensor firmware version</td><td>Text</td></tr>
+<tr><td><b>Temperature</b></td><td>Temp</td><td>Temperature</td><td>Number</td></tr>
+<tr><td><b>Humidity</b></td><td>Humid</td><td>Humidity</td><td>Number</td></tr>
+<tr><td><b>Pressure</b></td><td>Press</td><td>Pressure</td><td>Number</td></tr>
+<tr><td><b>StartTime</b></td><td>STime</td><td>Acquisition start Time/Atomic clock referenced</td><td>Number</td></tr>
+<tr><td><b>EndTime</b></td><td>ETime</td><td>Acquisition end Time/Atomic clock referenced</td><td>Number</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

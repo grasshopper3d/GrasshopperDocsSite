@@ -348,6 +348,29 @@
 <p><a href="../../index.html#Ivy">Component Index</a> &gt; <a href="../../addons/ivy.html">Ivy</a> > 3|Primary Segmentation > <b>mstKv</b></p>
 </div>
 <h3>Compute the minimum spanning tree for the mesh graph using a modified Kruskal's algorithm with max valence preference</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>MeshGraph</b></td><td>G</td><td>The MGraph object used for MST calculation</td><td>Any</td></tr>
+<tr><td><b>Weight Limit</b></td><td>W</td><td>Optional domain for the weights to be considered</td><td>Interval</td></tr>
+<tr><td><b>Valence</b></td><td>V</td><td>The maximum valence for the node. This value signifies a preference not a limit</td><td>Integer</td></tr>
+<tr><td><b>Size</b></td><td>S</td><td>The maximum number of nodes in one piece</td><td>Integer</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>MSTGraph</b></td><td>G</td><td>The minimum spanning tree/trees MGraph object</td><td>Any</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

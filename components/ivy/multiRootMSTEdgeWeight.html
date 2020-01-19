@@ -348,6 +348,28 @@
 <p><a href="../../index.html#Ivy">Component Index</a> &gt; <a href="../../addons/ivy.html">Ivy</a> > 3|Primary Segmentation > <b>mrMSTedge</b></p>
 </div>
 <h3>Constructs a set of trees based on the given graph. The trees start from the given mesh face index and spread outwards based on the weighted MST criteria and never consider weight outside the specified interval. This version considers edge weight</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>MeshGraph</b></td><td>G</td><td>The MGraph object used to perform graph split</td><td>Any</td></tr>
+<tr><td><b>RootFaces</b></td><td>R</td><td>The index of mesh faces where clusters will start to grow</td><td>Integer</td></tr>
+<tr><td><b>Interval</b></td><td>I</td><td>Edges with weight inside this interval will be selected</td><td>Interval</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>SubGraphs</b></td><td>G</td><td>The subgraph objects</td><td>Any</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

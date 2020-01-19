@@ -357,6 +357,47 @@ Texture Mapping
 <p><a href="../../index.html#Human">Component Index</a> &gt; <a href="../../addons/human.html">Human</a> > Document Info > <b>Viewports</b></p>
 </div>
 <h3>Get a list of viewports and their properties</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Update</b></td><td>U</td><td>Toggle this to force an update when autoupdate is not active.</td><td>Boolean</td></tr>
+<tr><td><b>Auto Update</b></td><td>AU</td><td>Set to true to listen for certain changes to viewports. It will update the component when the active viewport changes, or when viewports are added, destroyed, or renamed.</td><td>Boolean</td></tr>
+<tr><td><b>Update</b></td><td>U</td><td>Toggle this to force an update when autoupdate is not active.</td><td>Boolean</td></tr>
+<tr><td><b>Auto Update</b></td><td>AU</td><td>Set to true to listen for certain changes to viewports. It will update the component when the active viewport changes, or when viewports are added, destroyed, or renamed.</td><td>Boolean</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Viewport Names</b></td><td>VP</td><td>The list of viewports</td><td>Text</td></tr>
+<tr><td><b>Active Viewport Index</b></td><td>I</td><td>The index of the currently active viewport</td><td>Integer</td></tr>
+<tr><td><b>Viewport Bounds</b></td><td>B</td><td>A rectangle for each viewport</td><td>Rectangle</td></tr>
+<tr><td><b>Viewport Display Mode</b></td><td>DM</td><td>The english name of the display mode for each viewport</td><td>Text</td></tr>
+<tr><td><b>Camera Location</b></td><td>CL</td><td>The location of the camera in each viewport</td><td>Point</td></tr>
+<tr><td><b>Camera Target</b></td><td>CT</td><td>The location of the camera target in each viewport</td><td>Point</td></tr>
+<tr><td><b>Camera Plane</b></td><td>CP</td><td>The camera plane for each viewport</td><td>Plane</td></tr>
+<tr><td><b>Camera Lens Length</b></td><td>CLL</td><td>The 35mm lens length of the camera in each viewport</td><td>Number</td></tr>
+<tr><td><b>Camera Projection</b></td><td>CPr</td><td>True if the camera is a perspective projection</td><td>Boolean</td></tr>
+<tr><td><b>Camera Up</b></td><td>CU</td><td>The up vector for the camera in each viewport</td><td>Vector</td></tr>
+<tr><td><b>Viewport Names</b></td><td>VP</td><td>The list of viewports</td><td>Text</td></tr>
+<tr><td><b>Active Viewport Index</b></td><td>I</td><td>The index of the currently active viewport</td><td>Integer</td></tr>
+<tr><td><b>Viewport Bounds</b></td><td>B</td><td>A rectangle for each viewport</td><td>Rectangle</td></tr>
+<tr><td><b>Viewport Display Mode</b></td><td>DM</td><td>The english name of the display mode for each viewport</td><td>Text</td></tr>
+<tr><td><b>Camera Location</b></td><td>CL</td><td>The location of the camera in each viewport</td><td>Point</td></tr>
+<tr><td><b>Camera Target</b></td><td>CT</td><td>The location of the camera target in each viewport</td><td>Point</td></tr>
+<tr><td><b>Camera Plane</b></td><td>CP</td><td>The camera plane for each viewport</td><td>Plane</td></tr>
+<tr><td><b>Camera Lens Length</b></td><td>CLL</td><td>The 35mm lens length of the camera in each viewport</td><td>Number</td></tr>
+<tr><td><b>Camera Projection</b></td><td>CPr</td><td>True if the camera is a perspective projection</td><td>Boolean</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

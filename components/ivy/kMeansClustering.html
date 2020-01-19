@@ -348,6 +348,30 @@
 <p><a href="../../index.html#Ivy">Component Index</a> &gt; <a href="../../addons/ivy.html">Ivy</a> > 5|Iterative Segmentation > <b>kMeans</b></p>
 </div>
 <h3>Splits a mesh graph (not a tree) in an iterative fashion based on a number of parts specified by the user</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Reset</b></td><td>R</td><td>Reset the clustering algorithm to the initial step</td><td>Boolean</td></tr>
+<tr><td><b>MeshGraph</b></td><td>G</td><td>The MGraph object used to perform graph split</td><td>Any</td></tr>
+<tr><td><b>Pieces</b></td><td>P</td><td>The number of pieces the graph is to be split in. This is automatic seed picking</td><td>Integer</td></tr>
+<tr><td><b>Seeds</b></td><td>S</td><td>Manual seed specification, specify the indexes of the mesh faces where the clusters will start</td><td>Integer</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>SubGraphs</b></td><td>S</td><td>The produced graph objects</td><td>Any</td></tr>
+<tr><td><b>CenterSeeds</b></td><td>cS</td><td>the seeds after center calculation</td><td>Integer</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

@@ -348,6 +348,32 @@
 <p><a href="../../index.html#Ivy">Component Index</a> &gt; <a href="../../addons/ivy.html">Ivy</a> > 1|Mesh Graph > <b>Nodes</b></p>
 </div>
 <h3>Outputs the relevant information (geometric and numeric) stored in the MeshGraph object nodes</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>MeshGraph</b></td><td>G</td><td>The MGraph object</td><td>Any</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Mesh Id</b></td><td>Id</td><td>The number Id of the corresponding mesh face</td><td>Integer</td></tr>
+<tr><td><b>Point</b></td><td>P</td><td>The point representing the geometric location for the node</td><td>Point</td></tr>
+<tr><td><b>Weight</b></td><td>W</td><td>The weight of the node (mesh faces) if it is set.</td><td>Number</td></tr>
+<tr><td><b>Edges</b></td><td>E</td><td>The number Id for the edges connecting to the node</td><td>Integer</td></tr>
+<tr><td><b>Neighbors</b></td><td>N</td><td>The number Id for the nodes connected to the node by graph edges</td><td>Integer</td></tr>
+<tr><td><b>Depth</b></td><td>D</td><td>The depth of the node in the Tree graph. The number of steps from the closest leaf</td><td>Integer</td></tr>
+<tr><td><b>NodeObject</b></td><td>N</td><td>The node data object. Just for debugging for now</td><td>Generic</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

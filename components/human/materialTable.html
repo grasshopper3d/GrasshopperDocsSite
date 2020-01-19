@@ -357,6 +357,32 @@ Texture Mapping
 <p><a href="../../index.html#Human">Component Index</a> &gt; <a href="../../addons/human.html">Human</a> > Document Info > <b>MatTable</b></p>
 </div>
 <h3>Accesses the render materials in the document</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>update</b></td><td>U</td><td>Update this boolean toggle to refresh the list of document materials</td><td>Boolean</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Material Name</b></td><td>MN</td><td>The names of the materials in the document</td><td>Text</td></tr>
+<tr><td><b>Shader</b></td><td>S</td><td>A Grasshopper shader that approximates the render material as closely as possible.</td><td>Any</td></tr>
+<tr><td><b>Diffuse</b></td><td>Kd</td><td>Color of the diffuse channel</td><td>Colour</td></tr>
+<tr><td><b>Specular</b></td><td>Ks</td><td>Color of the specular highlight</td><td>Colour</td></tr>
+<tr><td><b>Emission</b></td><td>Ke</td><td>Emissive color of the material</td><td>Colour</td></tr>
+<tr><td><b>Alpha</b></td><td>A</td><td>Amount of Transparency (0.0 = Transparent, 1.0 = opaque)</td><td>Number</td></tr>
+<tr><td><b>Gloss</b></td><td>G</td><td>Amount of glossy shine on the material. (0.0 = Matte, 1.0 = Full gloss)</td><td>Number</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

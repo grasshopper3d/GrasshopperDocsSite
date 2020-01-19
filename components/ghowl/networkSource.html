@@ -225,6 +225,18 @@ XML
 <p><a href="../../index.html#gHowl">Component Index</a> &gt; <a href="../../addons/ghowl.html">gHowl</a> > UDP > <b>NetSource</b></p>
 </div>
 <h3>Discovers an external internet connection, and retrieve name and properties if one is available</h3>
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Network adapter is up</b></td><td>N</td><td>Indicates if an external internet connection is available</td><td>Boolean</td></tr>
+<tr><td><b>Adapter properties</b></td><td>S</td><td>Retrieves properties from the first available connection provider:\r\n\r\n[0] iterface name\r\n[1] adapter description\r\n[2] type\r\n[3] maximum theoretical speed (human readable)\r\n[4] speed (long as string)\r\n[5] MAC address\r\n[6] IPv4\r\n[7] IPv6\r\n[8] bytes received\r\n[9] bytes sent\r\n</td><td>String</td></tr>
+<tr><td><b>Local Ip Address</b></td><td>@</td><td>The suggested local IP address to use, visualized in its standard representation</td><td>String</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

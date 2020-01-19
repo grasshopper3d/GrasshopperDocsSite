@@ -348,6 +348,28 @@
 <p><a href="../../index.html#Ivy">Component Index</a> &gt; <a href="../../addons/ivy.html">Ivy</a> > 4|Secondary Segmentation > <b>DevSplit</b></p>
 </div>
 <h3>Splits a mesh graph in subgraphs based on whether edge weight is larger than next edge in tree hierarchy</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>MeshGraph</b></td><td>G</td><td>The MGraph object used to perform graph split</td><td>Any</td></tr>
+<tr><td><b>Deviation</b></td><td>D</td><td>The maximum edge weight deviation in the tree</td><td>Number</td></tr>
+<tr><td><b>MinFaces</b></td><td>M</td><td>The minimum number of faces(nodes) to keep in one subgraph</td><td>Integer</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>SubGraphs</b></td><td>S</td><td>The produced graph objects</td><td>Any</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

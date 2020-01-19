@@ -348,6 +348,27 @@
 <p><a href="../../index.html#Ivy">Component Index</a> &gt; <a href="../../addons/ivy.html">Ivy</a> > 8|Mesh Info > <b>OPE</b></p>
 </div>
 <h3>Gets a set of edges in the MeshGraph that separate peel layers</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>MeshGraph</b></td><td>G</td><td>The MGraph object whose mesh and edges will be used to calculate the orange peel</td><td>Any</td></tr>
+<tr><td><b>StartVertices</b></td><td>S</td><td>List of vertexes to start the peel process from</td><td>Integer</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>CrossEdges</b></td><td>cE</td><td>List of MeshGraph edges that jump between peel layers. Ideally these would have a large weight added later</td><td>Integer</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

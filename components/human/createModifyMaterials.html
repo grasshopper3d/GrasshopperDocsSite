@@ -357,6 +357,33 @@ Texture Mapping
 <p><a href="../../index.html#Human">Component Index</a> &gt; <a href="../../addons/human.html">Human</a> > Document Modifications > <b>Materials</b></p>
 </div>
 <h3>Create or Edit document Render Materials. Note: Component can only modify materials created by the component earlier - it will not recognize materials that were added manually to the Rhino document.</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Name</b></td><td>MN</td><td>Name of material to add or modify.</td><td>Text</td></tr>
+<tr><td><b>Diffuse</b></td><td>Kd</td><td>Color of the diffuse channel</td><td>Colour</td></tr>
+<tr><td><b>Specular</b></td><td>Ks</td><td>Color of the specular highlight</td><td>Colour</td></tr>
+<tr><td><b>Emission</b></td><td>Ke</td><td>Emissive color of the material</td><td>Colour</td></tr>
+<tr><td><b>Alpha</b></td><td>A</td><td>Amount of Transparency (0.0 = Transparent, 1.0 = opaque)</td><td>Number</td></tr>
+<tr><td><b>Gloss</b></td><td>G</td><td>Amount of glossy shine on the material. (0.0 = Matte, 1.0 = Full gloss)</td><td>Number</td></tr>
+<tr><td><b>Diffuse Bitmap</b></td><td>DB</td><td>File path to an image to use in the diffuse channel</td><td>Text</td></tr>
+<tr><td><b>Transparency Bitmap</b></td><td>TB</td><td>File path to an image to use in the transparency channel</td><td>Text</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Name</b></td><td>MN</td><td>Name of materials successfully added or modified</td><td>Text</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

@@ -303,6 +303,31 @@ Quantity
 <p><a href="../../index.html#Pancake">Component Index</a> &gt; <a href="../../addons/pancake.html">Pancake</a> > I/O > <b>pcec3DM</b></p>
 </div>
 <h3>Export options of Rhino format</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Version</b></td><td>V</td><td>The version of Rhino file you want to export. Default current version. Don't use this input if you are connecting this component to PreOpt</td><td>Integer</td></tr>
+<tr><td><b>Drop Preview Mesh</b></td><td>PM</td><td>Control whether to drop preview mesh. Without preview mesh, the file can be smaller but it takes longer to open it next time. Default false.</td><td>Boolean</td></tr>
+<tr><td><b>Save Geometry Only</b></td><td>GO</td><td>Control if only geometry is saved. Default false</td><td>Boolean</td></tr>
+<tr><td><b>Save Texture</b></td><td>T</td><td>Control if texture is saved. Default true</td><td>Boolean</td></tr>
+<tr><td><b>Save Notes</b></td><td>N</td><td>Control if note is saved. Default true</td><td>Boolean</td></tr>
+<tr><td><b>Save Plugin Data</b></td><td>PD</td><td>Control if plugin data is saved. Default true</td><td>Boolean</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>(Pre-)Option</b></td><td>(Pre)Opt</td><td>Connect to Export As component</td><td>Text</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

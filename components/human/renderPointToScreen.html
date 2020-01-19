@@ -357,6 +357,22 @@ Texture Mapping
 <p><a href="../../index.html#Human">Component Index</a> &gt; <a href="../../addons/human.html">Human</a> > Display > <b>PtToScreen</b></p>
 </div>
 <h3>Displays a Point object in a fixed position on screen</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Point</b></td><td>P</td><td>Point to display to screen. Make sure the point is positioned at (or near) the world origin.</td><td>Point</td></tr>
+<tr><td><b>Location</b></td><td>L</td><td>The location to display the point. If \"Scale With Viewport\" is unchecked, specify points in pixel coordinates - \n 100,100,0 will be 100 pixels right and down from the upper-left corner of the viewport.</td><td>Point</td></tr>
+<tr><td><b>Scale Factor</b></td><td>S</td><td>A multiplier on the scale. Use this to adjust the size of the curve in the display.</td><td>Number</td></tr>
+<tr><td><b>Color</b></td><td>C</td><td>The color to display the point.</td><td>Colour</td></tr>
+<tr><td><b>Radius</b></td><td>R</td><td>The size to display the point.</td><td>Integer</td></tr>
+<tr><td><b>Depth</b></td><td>D</td><td>A value between 0-1 that controls the Z-depth of the point display. \nA high number will appear in front of most objects - low will go behind.\nHowever, values exactly equal to 0 or 1 should be avoided - stay slightly within the \nlimits to avoid artifacts</td><td>Number</td></tr>
+<tr><td><b>Fixed</b></td><td>F</td><td>If true, objects remain fixed, oriented to the screen plane - if false, objects rotate when the viewport does.</td><td>Boolean</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

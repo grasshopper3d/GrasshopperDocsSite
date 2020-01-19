@@ -357,6 +357,28 @@ Texture Mapping
 <p><a href="../../index.html#Human">Component Index</a> &gt; <a href="../../addons/human.html">Human</a> > Display > <b>MeshToScreen</b></p>
 </div>
 <h3>Displays a Mesh object in a fixed position on screen</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Mesh</b></td><td>M</td><td>Mesh to display to screen. Make sure the mesh is positioned at (or near) the world origin.</td><td>Mesh</td></tr>
+<tr><td><b>Location</b></td><td>L</td><td>The location to display the mesh. If \"Scale With Viewport\" is unchecked, specify points in pixel coordinates - \n 100,100,0 will be 100 pixels right and down from the upper-left corner of the viewport.</td><td>Point</td></tr>
+<tr><td><b>Scale Factor</b></td><td>S</td><td>A multiplier on the scale. Use this to adjust the size of the mesh in the display.</td><td>Number</td></tr>
+<tr><td><b>Color</b></td><td>C</td><td>The color to display the mesh. This will not override per-vertex mesh colors.</td><td>Colour</td></tr>
+<tr><td><b>Depth</b></td><td>D</td><td>A value between 0-1 that controls the Z-depth of the mesh display. \nA high number will appear in front of most objects - low will go behind.\nHowever, values exactly equal to 0 or 1 should be avoided - stay slightly within the \nlimits to avoid artifacts</td><td>Number</td></tr>
+<tr><td><b>Fixed</b></td><td>F</td><td>If true, objects remain fixed, oriented to the screen plane - if false, objects rotate when the viewport does.</td><td>Boolean</td></tr>
+<tr><td><b>Bitmap Texture</b></td><td>T</td><td>If provided, a bitmap texture for the mesh. Use texture mapping components to align texture.</td><td>Text</td></tr>
+<tr><td><b>Mesh</b></td><td>M</td><td>Mesh to display to screen. Make sure the mesh is positioned at (or near) the world origin.</td><td>Mesh</td></tr>
+<tr><td><b>Location</b></td><td>L</td><td>The location to display the mesh. If \"Scale With Viewport\" is unchecked, specify points in pixel coordinates - \n 100,100,0 will be 100 pixels right and down from the upper-left corner of the viewport.</td><td>Point</td></tr>
+<tr><td><b>Scale Factor</b></td><td>S</td><td>A multiplier on the scale. Use this to adjust the size of the mesh in the display.</td><td>Number</td></tr>
+<tr><td><b>Color</b></td><td>C</td><td>The color to display the mesh. This will not override per-vertex mesh colors.</td><td>Colour</td></tr>
+<tr><td><b>Depth</b></td><td>D</td><td>A value between 0-1 that controls the Z-depth of the mesh display. \nA high number will appear in front of most objects - low will go behind.\nHowever, values exactly equal to 0 or 1 should be avoided - stay slightly within the \nlimits to avoid artifacts</td><td>Number</td></tr>
+<tr><td><b>Fixed</b></td><td>F</td><td>If true, objects remain fixed, oriented to the screen plane - if false, objects rotate when the viewport does.</td><td>Boolean</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

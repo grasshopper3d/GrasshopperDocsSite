@@ -348,6 +348,28 @@
 <p><a href="../../index.html#Ivy">Component Index</a> &gt; <a href="../../addons/ivy.html">Ivy</a> > 6|Special Segmentation > <b>SPath</b></p>
 </div>
 <h3>Compute the shortest (Cheapest) path between 2 nodes in a mesh graph using Djikstra's algorithm. Calculation uses edge weight.</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>MeshGraph</b></td><td>G</td><td>The MGraph object used for MST calculation</td><td>Any</td></tr>
+<tr><td><b>StartFace</b></td><td>S</td><td>The starting node (face) for the shortest path calculation</td><td>Integer</td></tr>
+<tr><td><b>EndFaces</b></td><td>E</td><td>The end nodes (faces) for the shortest path calculation</td><td>Integer</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>ShortestPath</b></td><td>Sp</td><td>The shortest path as a MGraph. Use Display Graph to visualize</td><td>Any</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

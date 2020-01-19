@@ -348,6 +348,29 @@
 <p><a href="../../index.html#Ivy">Component Index</a> &gt; <a href="../../addons/ivy.html">Ivy</a> > 9|Other Tools > <b>Thin</b></p>
 </div>
 <h3>Create a thiner mesh based on the connections in the MeshGraph</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>MeshGraph</b></td><td>G</td><td>The MeshGraph object used to create creases.The graph base mesh will be use. The Graph needs to be a TREE</td><td>Any</td></tr>
+<tr><td><b>Coefficient</b></td><td>c</td><td>A multiplication coefficient for the width of the initial mesh in the MeshGraph. Needs to be between 0.0 and 1.0</td><td>Number</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>OrigGraph</b></td><td>OG</td><td>The MeshGraph object with the added (non visible) thin mesh</td><td>Any</td></tr>
+<tr><td><b>Mesh</b></td><td>Nm</td><td>The mesh</td><td>Mesh</td></tr>
+<tr><td><b>ThinGraph</b></td><td>TG</td><td>The MeshGraph object based on the thin mesh</td><td>Any</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

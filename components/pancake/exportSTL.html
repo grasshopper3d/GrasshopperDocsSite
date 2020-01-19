@@ -303,6 +303,30 @@ Quantity
 <p><a href="../../index.html#Pancake">Component Index</a> &gt; <a href="../../addons/pancake.html">Pancake</a> > I/O > <b>pcExportSTL</b></p>
 </div>
 <h3>This component exports geometries from GH to STL file directlyThis component doesn't rely on any user interface operation in Rhino.</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Mesh</b></td><td>Mesh</td><td>Mesh to be exported</td><td>Mesh</td></tr>
+<tr><td><b>Relocate</b></td><td>Reloc</td><td>Pancake will move the base point of mesh to origin, which helps postprocessing. Disable it if you need to assemble multiple parts.</td><td>Boolean</td></tr>
+<tr><td><b>Save path</b></td><td>Path</td><td>The place where STL file will be saved</td><td>Text</td></tr>
+<tr><td><b>Save as binary file</b></td><td>Binary</td><td>True for binary output and false for ASCII output.</td><td>Boolean</td></tr>
+<tr><td><b>Save now</b></td><td>Save</td><td>Set to true to save the file.</td><td>Boolean</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>OK</b></td><td>OK</td><td>Evaluates true when STL is successfully saved.</td><td>Boolean</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

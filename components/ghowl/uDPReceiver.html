@@ -225,6 +225,29 @@ XML
 <p><a href="../../index.html#gHowl">Component Index</a> &gt; <a href="../../addons/ghowl.html">gHowl</a> > UDP > <b>>UDP<</b></p>
 </div>
 <h3>Allows to receive data on the network</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Address</b></td><td>@</td><td>The local IP address to listen at. If empty, the loopback address is used</td><td>String</td></tr>
+<tr><td><b>Port</b></td><td>P</td><td>The port number to listen at</td><td>Integer</td></tr>
+<tr><td><b>Pattern</b></td><td>#</td><td>The pattern:\r\n0 = Parse received bytes as text\r\n999 = OSC Message\r\n</td><td>Integer</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Info</b></td><td>I</td><td>Network information</td><td>String</td></tr>
+<tr><td><b>Data</b></td><td>D</td><td>The string which was just received</td><td>String</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

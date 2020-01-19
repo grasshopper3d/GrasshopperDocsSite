@@ -303,6 +303,19 @@ Quantity
 <p><a href="../../index.html#Pancake">Component Index</a> &gt; <a href="../../addons/pancake.html">Pancake</a> > I/O > <b>pcInternalize</b></p>
 </div>
 <h3>This component wraps the 'Internalize' feature for automated workflow. This component should be used as a termination component.</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Component</b></td><td>C</td><td>Component filter. Empty by default. When parameter is not empty, only geometries referenced by these components will be internalized.</td><td>Generic</td></tr>
+<tr><td><b>Geometry</b></td><td>G</td><td>Geometry filter. Empty by default. When the parameter is not empty, any geometry outside the list will not be internalized.</td><td>Any</td></tr>
+<tr><td><b>Delete</b></td><td>D</td><td>False by default. If this is true, internalized geometries will be removed from the Rhino document. You must follow guidelines when using this feature to avoid crashing Grasshopper. See manual for details.</td><td>Boolean</td></tr>
+<tr><td><b>OK</b></td><td>OK</td><td>Set this to true to internalize geometries.</td><td>Boolean</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

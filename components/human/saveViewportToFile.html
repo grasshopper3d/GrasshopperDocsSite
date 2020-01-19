@@ -357,6 +357,30 @@ Texture Mapping
 <p><a href="../../index.html#Human">Component Index</a> &gt; <a href="../../addons/human.html">Human</a> > Misc > <b>SaveView</b></p>
 </div>
 <h3>Saves a viewport screenshot or render to a specified filepath.</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Run</b></td><td>R</td><td>Set to true to save the viewport</td><td>Boolean</td></tr>
+<tr><td><b>Viewport Name</b></td><td>VP</td><td>The name of the viepowrt to capture. If not supplied, active viewport will be used.</td><td>Text</td></tr>
+<tr><td><b>Render</b></td><td>Rnd</td><td>Set to true to render with the current renderer. If using V-Ray, be sure to set the v-ray settings to \"Batch\".</td><td>Boolean</td></tr>
+<tr><td><b>File Path</b></td><td>FP</td><td>The location to save the image capture</td><td>Text</td></tr>
+<tr><td><b>Scale Factor</b></td><td>Sc</td><td>A scale factor by which to multiply the current viewport dimensions</td><td>Number</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Saved File Path</b></td><td>P</td><td>The path of the successfully saved image file</td><td>Text</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

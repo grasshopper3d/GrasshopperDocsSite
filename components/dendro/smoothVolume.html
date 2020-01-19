@@ -188,6 +188,30 @@ IO
 <p><a href="../../index.html#Dendro">Component Index</a> &gt; <a href="../../addons/dendro.html">Dendro</a> > Filters > <b>vSmooth</b></p>
 </div>
 <h3>Apply smoothing to volume</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Volume</b></td><td>V</td><td>Volume geometry</td><td>Generic</td></tr>
+<tr><td><b>Width</b></td><td>W</td><td>(Optional) Width of smoothing. This value acts as a multiplier.</td><td>Integer</td></tr>
+<tr><td><b>Type</b></td><td>T</td><td>0 - gaussian, 1 - laplacian, 2 - mean, 3 - median</td><td>Integer</td></tr>
+<tr><td><b>Iterations</b></td><td>I</td><td>Number of smoothing iterations</td><td>Integer</td></tr>
+<tr><td><b>Mask</b></td><td>M</td><td>(Optional) Mask for filter operations</td><td>Generic</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Volume</b></td><td>V</td><td>Smoothed volume</td><td>Generic</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

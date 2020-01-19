@@ -357,6 +357,39 @@ Texture Mapping
 <p><a href="../../index.html#Human">Component Index</a> &gt; <a href="../../addons/human.html">Human</a> > Creation > <b>CreateHatch</b></p>
 </div>
 <h3>Create Hatch Objects with specified pattern, scale, rotation, and attributes</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Bake?</b></td><td>B</td><td>Set this value to true to bake the hatches into your active Rhino Document.</td><td>Boolean</td></tr>
+<tr><td><b>Curves</b></td><td>C</td><td>The sets of curves to hatch. Curves in the same branch will be processed at the same time, producing internal voids where appropriate.</td><td>Curve</td></tr>
+<tr><td><b>Hatch Pattern Name</b></td><td>N</td><td>The name of the hatch to search for. If left blank or if the specified hatch cannot be found, a solid hatch will be used.</td><td>Text</td></tr>
+<tr><td><b>Hatch Scale</b></td><td>S</td><td>Hatch scale</td><td>Number</td></tr>
+<tr><td><b>Hatch Rotation</b></td><td>R</td><td>Hatch rotation in radians</td><td>Number</td></tr>
+<tr><td><b>Attributes</b></td><td>att</td><td>The hatch's object properties</td><td>Generic</td></tr>
+<tr><td><b>Bake?</b></td><td>bake</td><td>Set this value to true to bake the hatches into your active Rhino Document.</td><td>Boolean</td></tr>
+<tr><td><b>Curves</b></td><td>crv</td><td>The sets of curves to hatch. Curves in the same branch will be processed at the same time, producing internal voids where appropriate.</td><td>Curve</td></tr>
+<tr><td><b>Hatch Pattern Name</b></td><td>name</td><td>The name of the hatch to search for. If left blank or if the specified hatch cannot be found, a solid hatch will be used.</td><td>Text</td></tr>
+<tr><td><b>Hatch Scale</b></td><td>scale</td><td>Hatch scale</td><td>Number</td></tr>
+<tr><td><b>Hatch Rotation</b></td><td>rot</td><td>Hatch rotation in radians</td><td>Number</td></tr>
+<tr><td><b>Attributes</b></td><td>att</td><td>The hatch's object properties</td><td>Generic</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Hatch Geometry</b></td><td>HG</td><td>The surfaces or curves of the specified hatch</td><td>Geometry</td></tr>
+<tr><td><b>Hatch Objects</b></td><td>HO</td><td>The native hatch object.</td><td>Generic</td></tr>
+<tr><td><b>Hatch Geometry</b></td><td>geo</td><td>The surfaces or curves of the specified hatch</td><td>Geometry</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

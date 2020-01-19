@@ -348,6 +348,36 @@
 <p><a href="../../index.html#Ivy">Component Index</a> &gt; <a href="../../addons/ivy.html">Ivy</a> > 7|Fabrication > <b>FlatFab</b></p>
 </div>
 <h3>Takes care of the fabrication preparation for the parts</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>SplitMeshgraphs</b></td><td>Sm</td><td>The MeshGraph parts coming from the unroll component</td><td>Any</td></tr>
+<tr><td><b>SplitFlatGraphs</b></td><td>Sf</td><td>The MeshGraphs in their unrolled state also from unroll component</td><td>Any</td></tr>
+<tr><td><b>Flaps</b></td><td>F</td><td>Flap object</td><td>Generic</td></tr>
+<tr><td><b>PieceLocation</b></td><td>L</td><td>Start location for the pieces</td><td>Plane</td></tr>
+<tr><td><b>TextOffset</b></td><td>O</td><td>Offset for the text labels</td><td>Number</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Cut Lines</b></td><td>C</td><td>The cut lines of the unroll</td><td>Curve</td></tr>
+<tr><td><b>FoldIn Lines</b></td><td>Fi</td><td>The fold in lines of the unroll</td><td>Curve</td></tr>
+<tr><td><b>FoldOut Lines</b></td><td>Fo</td><td>The fold out lines of the unroll</td><td>Curve</td></tr>
+<tr><td><b>Flat Lines</b></td><td>Fl</td><td>The flat (no fold) lines of the unroll</td><td>Curve</td></tr>
+<tr><td><b>Text</b></td><td>T</td><td>TextTag text to identify the unroll parts</td><td>Text</td></tr>
+<tr><td><b>Place Holders</b></td><td>P</td><td>Text placeholder to be used with the text</td><td>Plane</td></tr>
+<tr><td><b>InNode curves</b></td><td>Nc</td><td>The in-node geometry. The curves nested in the mesh face</td><td>Curve</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

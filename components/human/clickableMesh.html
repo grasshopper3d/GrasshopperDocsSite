@@ -357,6 +357,29 @@ Texture Mapping
 <p><a href="../../index.html#Human">Component Index</a> &gt; <a href="../../addons/human.html">Human</a> > Misc > <b>ClickM</b></p>
 </div>
 <h3>Allows you to click in the Rhino Viewport to select from a list of meshes. WARNING! This will harvest ALL Rhino mouse clicks - while enabled you will not be able to use Rhinoas normal.</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Enable</b></td><td>E</td><td>Enable click-to-select mode.</td><td>Boolean</td></tr>
+<tr><td><b>Meshes</b></td><td>M</td><td>The meshes you want to be able to click on</td><td>Mesh</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Selected Meshes</b></td><td>M</td><td>The meshes that have been clicked on</td><td>Mesh</td></tr>
+<tr><td><b>Selected Indices</b></td><td>I</td><td>The indices of the selected meshes</td><td>Integer</td></tr>
+<tr><td><b>Mouse Line</b></td><td>ML</td><td>The line that represents the mouse's location</td><td>Line</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

@@ -413,6 +413,30 @@ Attributes
 <p><a href="../../index.html#Elefront">Component Index</a> &gt; <a href="../../addons/elefront.html">Elefront</a> > 05 Block > <b>LinkedBlock</b></p>
 </div>
 <h3>Define a linked Block. Block will be created when baked.</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Geometry</b></td><td>G</td><td>Geometry in each block. Each branch will become a block definition.</td><td>ExtendedGeometry</td></tr>
+<tr><td><b>Attributes</b></td><td>A</td><td>Attributes to assign to geometry in the block</td><td>Generic</td></tr>
+<tr><td><b>Block Name</b></td><td>N</td><td>Block name for each block. Each branch needs its own name. Overwrites the block if a block with the same name exists in the document.</td><td>Text</td></tr>
+<tr><td><b>Base Plane</b></td><td>P</td><td>Base plane for each block. Each branch needs its own base plane.</td><td>Plane</td></tr>
+<tr><td><b>Folder Path</b></td><td>F</td><td>Folder for Exporting Block.</td><td>Text</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Block</b></td><td>B</td><td>Block</td><td>Block</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

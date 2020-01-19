@@ -348,6 +348,30 @@
 <p><a href="../../index.html#Ivy">Component Index</a> &gt; <a href="../../addons/ivy.html">Ivy</a> > 6|Special Segmentation > <b>mgUrollViz</b></p>
 </div>
 <h3>Unroll the underlying mesh of a tree graph on the object itself as a from finding technique.</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>MeshGraph</b></td><td>G</td><td>The MeshGraph object used for the unrolling. The Graph needs to be a TREE</td><td>Any</td></tr>
+<tr><td><b>Start Face</b></td><td>F</td><td>The starting face (root of graph) for the unroll of the mesh</td><td>Integer</td></tr>
+<tr><td><b>Coefficient</b></td><td>C</td><td>A number 0 to 1 denoting a partial deformation between the initial and flat state of the MeshGraph</td><td>Number</td></tr>
+<tr><td><b>Root Distance</b></td><td>D</td><td>The distance from specified root where the unfold will start. Distance is calculated in steps on the tree MeshGraph. \r\nFaces(nodes) closer to the root than the specified distance will not unfold</td><td>Integer</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Unfolded</b></td><td>Uf</td><td>The unfolded or partially unfolded Meshgraph</td><td>Any</td></tr>
+<tr><td><b>Root Plane</b></td><td>rP</td><td>A plane positioned in the center of the root face for the MeshGraph. Use for offset operations or coordinate system change.</td><td>Plane</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

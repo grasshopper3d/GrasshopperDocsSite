@@ -190,6 +190,32 @@ SMARTTest
 <p><a href="../../index.html#SmartForm">Component Index</a> &gt; <a href="../../addons/smartform.html">SmartForm</a> > 0 | Rhino to SmartMesh > <b>SmartGrids</b></p>
 </div>
 <h3>Generate multiple different gridtypes from a surface</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Surface</b></td><td>Srf</td><td>Surfaces to grid</td><td>Surface</td></tr>
+<tr><td><b>Number U</b></td><td>No U</td><td>Number of cells in U-direction</td><td>Number</td></tr>
+<tr><td><b>Number V</b></td><td>No V</td><td>Number of cells in V-direction</td><td>Number</td></tr>
+<tr><td><b>Seed Point U</b></td><td>Pt U</td><td>U-Value of the seedpt</td><td>Number</td></tr>
+<tr><td><b>Seed Point V</b></td><td>Pt V</td><td>V-Value of the seedpt</td><td>Number</td></tr>
+<tr><td><b>First Angle</b></td><td>1 ang</td><td>Angle of the first seedcurve</td><td>Number</td></tr>
+<tr><td><b>Inner Angle</b></td><td>2 ang</td><td>Angle between the two seedcurves</td><td>Number</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>SmartMesh</b></td><td>SMesh</td><td>The meshed surface in the form of a SmartMesh</td><td>Any</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

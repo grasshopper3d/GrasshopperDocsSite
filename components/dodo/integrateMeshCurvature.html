@@ -362,6 +362,31 @@ Surface
 <p><a href="../../index.html#Dodo">Component Index</a> &gt; <a href="../../addons/dodo.html">Dodo</a> > Mesh > <b>IntegrateMshCrv</b></p>
 </div>
 <h3>Integrates the principal directions field of a mesh</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Mesh</b></td><td>M</td><td>Mesh from which integrating the curvature field</td><td>Mesh</td></tr>
+<tr><td><b>Points</b></td><td>P</td><td>Points to start integrating the curvature field from</td><td>Point</td></tr>
+<tr><td><b>Isotropic</b></td><td>B</td><td>If true the principal directions will be orthogonal with k2 being derived as k2 = n ^ k1, if not it will use raw k2 found using the algorithm</td><td>Boolean</td></tr>
+<tr><td><b>Angle</b></td><td>A</td><td>Angle</td><td>Angle</td></tr>
+<tr><td><b>Tolerance</b></td><td>T</td><td>Tolerance</td><td>Number</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>U direction</b></td><td>U</td><td>Curvature field integrated along the U direction</td><td>Curve</td></tr>
+<tr><td><b>V direction</b></td><td>V</td><td>Curvature field integrated along the V direction</td><td>Curve</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

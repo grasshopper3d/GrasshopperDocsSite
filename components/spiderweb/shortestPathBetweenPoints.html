@@ -280,6 +280,32 @@ Tools
 <p><a href="../../index.html#SpiderWeb">Component Index</a> &gt; <a href="../../addons/spiderweb.html">SpiderWeb</a> > Tools > <b>SPBP</b></p>
 </div>
 <h3>Callculates the shortest path between points</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Graph</b></td><td>G</td><td>Graph (grpahVertexList / graphEdgeList)</td><td>Any</td></tr>
+<tr><td><b>StartingPoint</b></td><td>SP</td><td>Index of Starting Points</td><td>Integer</td></tr>
+<tr><td><b>EndPoint</b></td><td>EP</td><td>Index of End Points</td><td>Integer</td></tr>
+<tr><td><b>Weight</b></td><td>W</td><td>Weight of Path</td><td>Number</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>graphEdgeIndex</b></td><td>gEi</td><td>Indices of the used graphEdges</td><td>Integer</td></tr>
+<tr><td><b>graphEdgeWeight</b></td><td>gEw</td><td>Weight of the used graphEdges (how often an edge was used)</td><td>Double</td></tr>
+<tr><td><b>graphVertexIndex</b></td><td>gVi</td><td>Indices of the used graphVertices</td><td>Integer</td></tr>
+<tr><td><b>graphVertexWeight</b></td><td>gVw</td><td>Weight of the used graphVertices (how often a vertex was used)</td><td>Double</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

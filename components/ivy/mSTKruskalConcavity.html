@@ -348,6 +348,27 @@
 <p><a href="../../index.html#Ivy">Component Index</a> &gt; <a href="../../addons/ivy.html">Ivy</a> > 3|Primary Segmentation > <b>mstCon</b></p>
 </div>
 <h3>Compute the minimum spanning tree for the mesh graph including convex, concave and flat region detection. This uses a modified Kruskal algorithm with weight limits</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>MeshGraph</b></td><td>G</td><td>The MGraph object used for MST calculation</td><td>Any</td></tr>
+<tr><td><b>Interval</b></td><td>I</td><td>Edges weights inside this interval will be considered only. Edges crossing from flat to convex or concave will have their weight incremented with 1.0 and edges passing from concave to convex or the other way around will have their weight incremented with 2.0</td><td>Interval</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>MSTGraph</b></td><td>G</td><td>The minimum spanning tree/trees MGraph object</td><td>Any</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

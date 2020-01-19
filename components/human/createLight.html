@@ -357,6 +357,22 @@ Texture Mapping
 <p><a href="../../index.html#Human">Component Index</a> &gt; <a href="../../addons/human.html">Human</a> > Creation > <b>CreateLight</b></p>
 </div>
 <h3>Create Light Object. So far works well for point lights and directional lights</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Bake?</b></td><td>bake</td><td>Set this value to true to bake the lights into your active Rhino Document.</td><td>Boolean</td></tr>
+<tr><td><b>Location</b></td><td>L</td><td>The location of the light</td><td>Point</td></tr>
+<tr><td><b>Direction</b></td><td>D</td><td>The direction of the light (Not relevant for all light styles)</td><td>Vector</td></tr>
+<tr><td><b>Light Style</b></td><td>LS</td><td>The Light Style of the light object. Should be WorldPoint or WorldDirectional for now - in the future WorldSpot, WorldRectangular, and WorldLinear will be supported.</td><td>Text</td></tr>
+<tr><td><b>Intensity</b></td><td>I</td><td>The light intensity, between 0.0-1.0</td><td>Number</td></tr>
+<tr><td><b>Color</b></td><td>C</td><td>The light diffuse color</td><td>Colour</td></tr>
+<tr><td><b>Attributes</b></td><td>att</td><td>The light's object properties</td><td>Generic</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

@@ -437,6 +437,29 @@ Squid Util
 <p><a href="../../index.html#ShapeDiver">Component Index</a> &gt; <a href="../../addons/shapediver.html">ShapeDiver</a> > Squid Instructions > <b>Draw</b></p>
 </div>
 <h3>Draw any type of curve using fill and/or outline</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Curve</b></td><td>C</td><td>Curve to draw</td><td>Curve</td></tr>
+<tr><td><b>Accuracy</b></td><td>A</td><td>Accuracy, set to -1 for default accuracy.\r\nPolylines and lines are not affected.</td><td>Number</td></tr>
+<tr><td><b>Outline</b></td><td>O</td><td>Outline</td><td>Any</td></tr>
+<tr><td><b>Fill</b></td><td>F</td><td>Fill</td><td>Any</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Curve</b></td><td>P</td><td>Due to drawing limitations, almost all curves are transformed into polylines.</td><td>Curve</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

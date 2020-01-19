@@ -357,6 +357,37 @@ Texture Mapping
 <p><a href="../../index.html#Human">Component Index</a> &gt; <a href="../../addons/human.html">Human</a> > Reference > <b>SortByType</b></p>
 </div>
 <h3>Sorts a set of Rhino Objects by type and extracts the Geometry for types that already exist in Grasshopper.</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>RhinoObjects</b></td><td>rhObj</td><td>Either normal Grasshopper Geometry or data in \nthe form Rhino.DocObjects.*, such as comes out of \nthe Dynamic Pipeline component</td><td>Generic</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Points</b></td><td>pt</td><td>Points</td><td>Point</td></tr>
+<tr><td><b>Curves</b></td><td>crv</td><td>Curves</td><td>Curve</td></tr>
+<tr><td><b>Surfaces</b></td><td>srf</td><td>Surfaces</td><td>Surface</td></tr>
+<tr><td><b>Breps</b></td><td>brep</td><td>Breps</td><td>BRep</td></tr>
+<tr><td><b>Meshes</b></td><td>mesh</td><td>Meshes</td><td>Mesh</td></tr>
+<tr><td><b>Text Objects</b></td><td>txt</td><td>Text and Annotation Objects</td><td>Generic</td></tr>
+<tr><td><b>Hatch Objects</b></td><td>hatch</td><td>Hatch Objects</td><td>Generic</td></tr>
+<tr><td><b>Light Objects</b></td><td>light</td><td>Light Objects</td><td>Generic</td></tr>
+<tr><td><b>Blocks</b></td><td>block</td><td>Block Instances</td><td>Generic</td></tr>
+<tr><td><b>Extrusions</b></td><td>extr</td><td>Extrusion Objects, converted to Breps</td><td>BRep</td></tr>
+<tr><td><b>Other</b></td><td>other</td><td>other</td><td>Generic</td></tr>
+<tr><td><b>Type Map</b></td><td>type</td><td>An index corresponding to the type of each object. 0 = point, 1 = curve, 2 = surface, 3 = brep, 4 = mesh, 5 = text, 6 = hatch, 7 = light, 8 = block, 9 = extrusion, 10 = other</td><td>Integer</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

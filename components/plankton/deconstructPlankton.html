@@ -114,6 +114,33 @@ MeshTriangulation
 <p><a href="../../index.html#Plankton">Component Index</a> &gt; <a href="../../addons/plankton.html">Plankton</a> > MeshTriangulation > <b>DeconstructPlankton</b></p>
 </div>
 <h3>Decompose a plankton mesh into its topology information</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>PMesh</b></td><td>PMesh</td><td>The input PlanktonMesh to decompose</td><td>Any</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Vertex_Points</b></td><td>V</td><td>Vertex point positions</td><td>Point</td></tr>
+<tr><td><b>Vertex_Outgoing_Halfedge</b></td><td>V_He</td><td>One of the outgoing halfedges for each vertex</td><td>Integer</td></tr>
+<tr><td><b>Halfedge_StartVertex</b></td><td>He_V</td><td>The starting vertex of each halfedge</td><td>Integer</td></tr>
+<tr><td><b>Halfedge_AdjacentFace</b></td><td>He_F</td><td>The face bordered by each halfedge (or -1 if it is adjacent to a boundary)</td><td>Integer</td></tr>
+<tr><td><b>Halfedge_NextHalfedge</b></td><td>He_Nxt</td><td>The next halfedge around the same face</td><td>Integer</td></tr>
+<tr><td><b>Halfedge_PrevHalfedge</b></td><td>He_Prv</td><td>The previous halfedge around the same face</td><td>Integer</td></tr>
+<tr><td><b>Halfedge_Pair</b></td><td>He_P</td><td>The halfedge joining the same 2 vertices in the opposite direction</td><td>Integer</td></tr>
+<tr><td><b>Face_Halfedge</b></td><td>F_He</td><td>The first halfedge of each face</td><td>Integer</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

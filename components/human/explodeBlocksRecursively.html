@@ -357,6 +357,30 @@ Texture Mapping
 <p><a href="../../index.html#Human">Component Index</a> &gt; <a href="../../addons/human.html">Human</a> > Reference > <b>BlockExplode R</b></p>
 </div>
 <h3>Recursively explodes a set of Instance Objects into their proper geometry, structured in a Data Tree according to block nesting.</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Block Objects</b></td><td>block</td><td>Data in the form of Rhino.DocObjects.InstanceObject</td><td>Generic</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Geometry</b></td><td>geo</td><td>Block Geometry</td><td>Generic</td></tr>
+<tr><td><b>Attributes</b></td><td>att</td><td>Object Attributes</td><td>Generic</td></tr>
+<tr><td><b>Block Names</b></td><td>name</td><td>The Block definition names</td><td>String</td></tr>
+<tr><td><b>BoundingBox</b></td><td>bbox</td><td>The Bounding box around the instance definition</td><td>Box</td></tr>
+<tr><td><b>Block Transforms</b></td><td>xform</td><td>The list of transforms of this block instance and all its parents</td><td>Transform</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

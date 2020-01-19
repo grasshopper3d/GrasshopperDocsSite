@@ -357,6 +357,34 @@ Texture Mapping
 <p><a href="../../index.html#Human">Component Index</a> &gt; <a href="../../addons/human.html">Human</a> > Document Modifications > <b>Layers</b></p>
 </div>
 <h3>Create and Modify Rhino Layers</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Layer Name</b></td><td>L</td><td>Layer to add or modify</td><td>Text</td></tr>
+<tr><td><b>Layer Color</b></td><td>C</td><td>Layer's display color</td><td>Colour</td></tr>
+<tr><td><b>Layer Linetype</b></td><td>LT</td><td>The name of the layer's linetype. A list of available linetypes can be retrieved with the Linetype Table component.</td><td>Text</td></tr>
+<tr><td><b>Layer Material</b></td><td>M</td><td>The name of the layer's render material. Leave as an empty string for the default material.</td><td>Text</td></tr>
+<tr><td><b>Visibility</b></td><td>V</td><td>True if the layer is visible.</td><td>Boolean</td></tr>
+<tr><td><b>Print Width</b></td><td>PW</td><td>Layer Print Width. 0.0 = Default</td><td>Number</td></tr>
+<tr><td><b>Print Color</b></td><td>PC</td><td>Layer print color.</td><td>Colour</td></tr>
+<tr><td><b>Delete Layer</b></td><td>D</td><td>Set to true to delete the layer</td><td>Boolean</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Layer Names</b></td><td>L</td><td>On success, the name of the created/modified layer.</td><td>Text</td></tr>
+<tr><td><b>Layer Full Path</b></td><td>FP</td><td>On success, the full path of the created/modified layer.</td><td>Text</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

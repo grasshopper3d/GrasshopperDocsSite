@@ -190,6 +190,34 @@ SMARTTest
 <p><a href="../../index.html#SmartForm">Component Index</a> &gt; <a href="../../addons/smartform.html">SmartForm</a> > 1 | Smart Modifiers > <b>SmartForm</b></p>
 </div>
 <h3>Relax a SmartMesh</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>SmartMesh</b></td><td>SMesh</td><td>Input a SmartMesh to relax</td><td>Any</td></tr>
+<tr><td><b>Constrain geometry</b></td><td>C</td><td>Constraints for the relaxtion</td><td>Geometry</td></tr>
+<tr><td><b>Stiffness</b></td><td>Stf</td><td>Stiffness in bars</td><td>Number</td></tr>
+<tr><td><b>Slack length</b></td><td>SLen</td><td>Slack length in bars</td><td>Number</td></tr>
+<tr><td><b>Weight</b></td><td>Wt</td><td>Nodal weight</td><td>Number</td></tr>
+<tr><td><b>Inflation</b></td><td>Infl</td><td>Inflation force on panels</td><td>Number</td></tr>
+<tr><td><b>Max iterations</b></td><td>Iter</td><td>Maximum numbers of iterations for relaxation without timer.</td><td>Integer</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Relaxed SmartMesh</b></td><td>SMesh</td><td>The relaxed SmartMesh</td><td>Any</td></tr>
+<tr><td><b>Iterations</b></td><td>Iter</td><td>Number of iterations needed for convergence.</td><td>Number</td></tr>
+<tr><td><b>Total Force</b></td><td>TF</td><td>Total Force</td><td>Number</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

@@ -362,6 +362,32 @@ Surface
 <p><a href="../../index.html#Dodo">Component Index</a> &gt; <a href="../../addons/dodo.html">Dodo</a> > Field > <b>PathOnObj</b></p>
 </div>
 <h3>Integrate a field using an object as a constraint</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Field</b></td><td>F</td><td>Field to evaluate</td><td>Field</td></tr>
+<tr><td><b>Point</b></td><td>P</td><td>Point to start from</td><td>Point</td></tr>
+<tr><td><b>Steps</b></td><td>N</td><td>Number of samples</td><td>Integer</td></tr>
+<tr><td><b>Accuracy</b></td><td>A</td><td>Accuracy hint (will only be loosely obeyed)</td><td>Number</td></tr>
+<tr><td><b>Angle</b></td><td>θ</td><td>Skew angle (in radians)</td><td>Number</td></tr>
+<tr><td><b>Method</b></td><td>M</td><td>Solver (1=Euler, 2=RK2, 3=RK3, 4=RK4)</td><td>Integer</td></tr>
+<tr><td><b>Object</b></td><td>O</td><td>Mesh or a brep on which the trajectory should be constrained</td><td>Geometry</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Polyline</b></td><td>P</td><td>Integrated vector field as polyline</td><td>Curve</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

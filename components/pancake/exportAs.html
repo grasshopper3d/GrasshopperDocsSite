@@ -303,6 +303,33 @@ Quantity
 <p><a href="../../index.html#Pancake">Component Index</a> &gt; <a href="../../addons/pancake.html">Pancake</a> > I/O > <b>pcExportAs</b></p>
 </div>
 <h3>This component exports geometries from GH to various formats with attributes and layer information (if the target format allows).This component uses Rhino's Export from interactive environment. Therefore it would be blocked by another ongoing command.Remember to save your definiton before first export, as sometimes the operation will freeze Grasshopper. If such an issue occurs, try using compatible mode by right-clicking the component.</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Geometry</b></td><td>Geo</td><td>The geometry you want to export</td><td>Generic</td></tr>
+<tr><td><b>Layer</b></td><td>Layer</td><td>Layer to put the geometries. Current layer by default.</td><td>Text</td></tr>
+<tr><td><b>File Location</b></td><td>File</td><td>Where to store the file. Filename and extension should be included.</td><td>Text</td></tr>
+<tr><td><b>Options</b></td><td>Opt</td><td>Options of export. You can feed it with other components or manual data.</td><td>Text</td></tr>
+<tr><td><b>Pre-Options</b></td><td>PreOpt</td><td>General options of export. Connect Rhino file options to this input if needed.</td><td>Text</td></tr>
+<tr><td><b>Overwrite</b></td><td>Overwrite</td><td>Default false. Control if Pancake should overwrite the destination file.</td><td>Boolean</td></tr>
+<tr><td><b>Export</b></td><td>Export</td><td>Set to True to conduct the export.</td><td>Boolean</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>OK</b></td><td>OK</td><td>If the export is successful</td><td>Boolean</td></tr>
+<tr><td><b>Export command</b></td><td>Cmd</td><td>The final command executed</td><td>Text</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

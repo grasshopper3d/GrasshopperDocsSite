@@ -348,6 +348,31 @@
 <p><a href="../../index.html#Ivy">Component Index</a> &gt; <a href="../../addons/ivy.html">Ivy</a> > 9|Other Tools > <b>Weave</b></p>
 </div>
 <h3>Weave two MeshGraph segmentations</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>MeshGraph1</b></td><td>G1</td><td>The first set of meshgraph segments. All segments must be tree graphs and all segments must come from the same original MeshGraph</td><td>Any</td></tr>
+<tr><td><b>MeshGraph2</b></td><td>G2</td><td>The second set of meshgraph segments. All segments must be tree graphs and all segments must come from the same original MeshGraph</td><td>Any</td></tr>
+<tr><td><b>Offset</b></td><td>o</td><td>The maximum deviation of the weave from the original mesh</td><td>Number</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>MeshGraph1</b></td><td>G1</td><td>The first set of weaved meshgraph segments.</td><td>Any</td></tr>
+<tr><td><b>MeshGraph2</b></td><td>G2</td><td>The second set of weaved meshgraph segments.</td><td>Any</td></tr>
+<tr><td><b>First meshes</b></td><td>M1</td><td>The first set as weaved meshes</td><td>Mesh</td></tr>
+<tr><td><b>Second meshes</b></td><td>M2</td><td>The second set as weaved meshes</td><td>Mesh</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

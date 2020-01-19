@@ -303,6 +303,32 @@ Quantity
 <p><a href="../../index.html#Pancake">Component Index</a> &gt; <a href="../../addons/pancake.html">Pancake</a> > I/O > <b>pcFileSeries</b></p>
 </div>
 <h3>Calculate the next filename in a filepath series</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Pattern of filepath</b></td><td>P</td><td>For example, 'D:\\STLExport\\{0}.stl' (without quote) will result in 'D:\\STLExport\\1.stl', '2.stl', etc. Follows 'String.Format' format. Please read manual for detailed information.</td><td>Text</td></tr>
+<tr><td><b>Starting index</b></td><td>S</td><td>Default 1</td><td>Integer</td></tr>
+<tr><td><b>Quantity of filenames</b></td><td>C</td><td>Default -1 (doesn't output multiple names)</td><td>Integer</td></tr>
+<tr><td><b>Generate next</b></td><td>OK</td><td>Set to true to generate the next filepath</td><td>Boolean</td></tr>
+<tr><td><b>Reset</b></td><td>R</td><td>Set to true to reset internal counter. Resetting won't bypass file existence check. We recommend to use the menu entry in the context menu as it doesn't trigger recomputation</td><td>Boolean</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Filepath</b></td><td>FP</td><td>File Path</td><td>Text</td></tr>
+<tr><td><b>List of Filepath</b></td><td>FPL</td><td>File Path (List)</td><td>Text</td></tr>
+<tr><td><b>Counter of first file</b></td><td>C</td><td>Counter of first file</td><td>Integer</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

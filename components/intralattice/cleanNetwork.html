@@ -207,6 +207,30 @@ Utils
 <p><a href="../../index.html#IntraLattice">Component Index</a> &gt; <a href="../../addons/intralattice.html">IntraLattice</a> > Utils > <b>CleanNetwork</b></p>
 </div>
 <h3>Removes duplicate curves from a network, within specified tolerance.</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Struts</b></td><td>Struts</td><td>Strut network to clean.</td><td>Curve</td></tr>
+<tr><td><b>Tolerance</b></td><td>Tol</td><td>Tolerance for combining nodes.</td><td>Number</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Struts</b></td><td>Struts</td><td>Cleaned curve network.</td><td>Curve</td></tr>
+<tr><td><b>Nodes</b></td><td>Nodes</td><td>List of unique nodes.</td><td>Point</td></tr>
+<tr><td><b>CurveStart</b></td><td>I</td><td>Index in 'Nodes' for the start of each curve in 'Struts'.</td><td>Integer</td></tr>
+<tr><td><b>CurveEnd</b></td><td>J</td><td>Index in 'Nodes' for the end of each curve in 'Struts'.</td><td>Integer</td></tr>
+</tbody>
+</table>
+
 
   </div>
 
