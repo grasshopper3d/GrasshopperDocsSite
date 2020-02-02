@@ -315,12 +315,58 @@ h3 {
 	color: #000;
 }
 
+
+/* COMPLETE INDEX PAGE - ADDON LISTING */
+
 .libheader a, .libheader a:hover, .libheader a:focus {
     text-decoration: none;
 }
 
 .libheader h2 {
 	line-height: 2;
+}
+
+
+/* INDEX PAGE - ADDON LISTING */
+
+.libtable {
+	margin: 15px 0;
+	width: 100%;
+}
+
+.libtable th {
+	border: none;
+    padding: 0px 0px;
+}
+.libtable td {
+	border: none;
+    padding: 10px 10px;
+}
+.libtable tr {
+	background: none;
+}
+.libtable tr:nth-child(2n) {
+	background-color: #e2f0c2 !important;
+}
+
+.libtabcell {
+	overflow-x: auto;
+}
+.libheadercell {
+	width: 160px;
+}
+.libheadercell a {
+    display: block;
+    height: 100%;
+	padding: 10px 10px;
+}
+.libheadercell a, .libheadercell a:hover, .libheadercell a:focus {
+    text-decoration: none;
+	color: #9d0000;
+}
+.libheadercell a:hover, .libheadercell a:focus, .libheadercell a:hover .codeword, .libheadercell a:focus .codeword {
+    background-color: #d44200;
+	color: #fff;
 }
 
 
@@ -360,9 +406,13 @@ h6 {
 .ghbar-head-title {
 	margin-bottom: 10px;
 }
-.ghbar {
+.ghbar-addon-page {
 	margin-bottom: 20px;
-	overflow-x: auto;
+	/*overflow-x: auto;*/
+}
+.ghbar {
+	/*margin-bottom: 20px;*/
+	/*overflow-x: auto;*/
 }
 .ghbar-table {
 	padding: 0px;
@@ -378,6 +428,7 @@ h6 {
 	background: none;
 }
 .ghgroup {
+	display: inline-block;
 	border: 1px solid #999;
 	border-radius: 5px;
 	padding: 5px 0px 0px 0px;
