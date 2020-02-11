@@ -464,8 +464,56 @@ h6 {
 img.ghicon {
     font-size: 5px;
 }
+
+/* component button sprites */
 .ghsprite {             
     display: inline-block;
 	width: 24px;
 	height: 24px;
+}
+
+/* TOP tooltips - for component buttons */
+[data-toptip]:before {
+	pointer-events: none;
+    content: attr(data-toptip);
+    position: absolute;
+	display: none;
+    
+    /* customizable */
+    background-color: #111;
+    padding: 2px;
+    color: #fff;
+    border-radius: 20px;
+	font-size: 15px;
+	width: 150px;
+	text-align: center;
+    margin-top: -35px;
+    margin-left: -55px;
+}
+[data-toptip]:hover:before {
+	display: block;
+    opacity: 0.8;
+}
+
+/* BOTTOM tooltips - for component buttons */
+[data-downtip]:before {
+	pointer-events: none;
+    content: attr(data-downtip);
+    position: absolute;
+	display: none;
+    
+    /* customizable */
+    background-color: #111;
+    padding: 2px;
+    color: #fff;
+    border-radius: 20px;
+	font-size: 15px;
+	width: 150px;
+	text-align: center;
+    margin-top: 35px;
+    margin-left: -55px;
+}
+[data-downtip]:hover:before {
+	display: block;
+    opacity: 0.8;
 }
