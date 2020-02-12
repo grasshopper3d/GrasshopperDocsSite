@@ -621,6 +621,184 @@
 <p><a href="../../index.html#Ladybug">Component Index</a> &gt; <a href="../../addons/ladybug.html">Ladybug</a> > 4 | Renewables > <b>Sunpath Shading</b></p>
 </div>
 <h3>This component calculates the shading of:<br>- Photovoltaic modules<br>- Solar Water Heating collectors<br>- any other purpose (shading of points)<br>Use "annualShading", "Sep21toMar21Shading" and "Mar21toSep21Shading" outputs for Photovoltaic modules shading. <br>Use "beamIndexPerHour" and "skyExposureFactor" outputs for Solar Water Heating collectors shading, or any other purpose.<br>Use "shadedSolarRadiationPerHour" data for "solarRadiationPerHour_" input of "Thermal Comfort Indices" component to account for shading.<br>"annualShading" output is based on "Using sun path charts to estimate the effects of shading on PV arrays", University of Oregon, Frank Vignola:<br>http://solardat.uoregon.edu/download/Papers/UsingSunPathChartstoEstimatetheEffectofShadingonPVArrays.pdf<br></h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Epw File</b></td><td>_epwFile</td><td>Input .epw file path by using the "File Path" parameter, or Ladybug's "Open EPW And STAT Weather Files" component.</td><td>Goo</td></tr>
+<tr><td><b>Analysis Geometry</b></td><td>_analysisGeometry</td><td>Input surface(a) or point(b) (a single one or more of them).
+-
+a) Input planar Surface (not polysurface) on which the PV modules/Solar water heating collectors will be applied.
+If you have a polysurface, explode it (using "Deconstruct Brep" component) and then feed its Faces(F) output to _analysisGeometry. Surface normal should be faced towards the sun.
+-
+b) You can also supply point(s) and its shading will be calculated.
+-
+Geometry inputted to "_analysisGeometry", will be accounted for self-shading, so there is no need to input it to the "context_" also.</td><td>Goo</td></tr>
+<tr><td><b>Context</b></td><td>context_</td><td>Buildings, structures, mountains and other permanent obstructions.
+-
+If you supplied surface(s) to the "_analysisGeometry", input them into the "context_" too, to account for self-shading.
+If you inputted point(s) into the "_analysisGeometry", there's no need to input them into the "context_".
+-
+Input polysurfaces, surfaces, or meshes.</td><td>Goo</td></tr>
+<tr><td><b>Coniferous Trees</b></td><td>coniferousTrees_</td><td>This input allows for partial shading from coniferous(evergreen) context trees.
+-
+Input polysurfaces, surfaces, or meshes.</td><td>Goo</td></tr>
+<tr><td><b>Deciduous Trees</b></td><td>deciduousTrees_</td><td>This input allows for partial shading during in-leaf and leaf-less periods from deciduous context trees.
+In-leaf being a period from 21st March to 21st September in the northern hemisphere, and from 21st September to 21st March in the southern hemisphere.
+Leaf-less being a period from 21st September to 21st March in the northern hemisphere, and from 21st March to 21st September in the in the southern hemisphere.
+-
+Input polysurfaces, surfaces, or meshes.</td><td>Goo</td></tr>
+<tr><td><b>Coniferous Allyear Index</b></td><td>coniferousAllyearIndex_</td><td>All year round transmission index for coniferous(evergreen) context trees. It ranges from 0 to 1.0. 0 represents deciduous trees which do not allow solar radiation to pass through them (100% shading). 1 represents all solar radiation passing through deciduous trees, like the trees do not exist (0% shading).
+-
+If not supplied default value of 0.30 (equals 70% shading) will be used.
+-
+Unitless.</td><td>Goo</td></tr>
+<tr><td><b>Deciduous Inleaf Index</b></td><td>deciduousInleafIndex_</td><td>Deciduous context trees transmission index for in-leaf period. In-leaf being a period from 21st March to 21st September in the northern hemisphere, and from 21st September to 21st March in the southern hemisphere.
+It ranges from 0 to 1.0. 0 represents deciduous trees which do not allow solar radiation to pass through them (100% shading). 1 represents all solar radiation passing through deciduous trees, like the trees do not exist (0% shading).
+-
+If not supplied default value of 0.23 (equals 77% shading) will be used.
+-
+Unitless.</td><td>Goo</td></tr>
+<tr><td><b>Deciduous Leafless Index</b></td><td>deciduousLeaflessIndex_</td><td>Deciduous context trees transmission index for leaf-less period. Leaf-less being a period from 21st September to 21st March in the northern hemisphere, and from 21st March to 21st September in the in the southern hemisphere.
+It ranges from 0 to 1.0. 0 represents deciduous trees which do not allow solar radiation to pass through them (100% shading). 1 represents all solar radiation passing through deciduous trees, like the trees do not exist (0% shading).
+-
+If not supplied default value of 0.64 (equals 36% shading) will be used.
+-
+Unitless.</td><td>Goo</td></tr>
+<tr><td><b>Leafless Period</b></td><td>leaflessPeriod_</td><td>Define the leafless period for deciduous trees using Ladybug's "Analysis Period" component.
+IMPORTANT! This input affects only the skyExposureFactor, beamIndexPerHour, shadedSolarRadiationPerHour output. Due to limitations of the used sunpath diagram, it does not affect the Sep21toMar21Shading, Mar21toSep21Shading, annualShading outputs, where default leafless periods (see the line bellow) will always be used.
+-
+If not supplied the following default periods will be used: from 21st September to 21st March in the northern hemisphere, and from 21st March to 21st September in the in the southern hemisphere.</td><td>Goo</td></tr>
+<tr><td><b>ACenergy Per Hour</b></td><td>ACenergyPerHour_</td><td>This input is necessaty only if you are calculating the shading of the PV modules. If that is so, input the "ACenergyPerHour" output data from "Photovoltaics surface" component.
+-
+If you are calculating shading analysis for "Solar water heating surface" component (instead of "Photovoltaics surface" component), leave this input empty.
+-
+If you are calculating shading analysis for any other purpose (of point(s) for example) leave this input empty too.</td><td>Goo</td></tr>
+<tr><td><b>North</b></td><td>north_</td><td>Input a vector to be used as a true North direction, or a number between 0 and 360 that represents the clockwise degrees off from the Y-axis.
+-
+If not supplied, default North direction will be set to the Y-axis (0 degrees).</td><td>Goo</td></tr>
+<tr><td><b>Albedo</b></td><td>albedo_</td><td>A list of 8767 (with header) or 8760 (without the header) albedo values for each hour during a year.
+Albedo (or Reflection coefficient) is an average ratio of the global incident solar radiation reflected from the area surrounding the _analysisGeometry.
+It ranges from 0 to 1.
+-
+It depends on the time of the year/day, surface type, temperature, vegetation, presence of water, ice and snow etc.
+-
+If no list supplied, default value of 0.20 will be used, corrected(increased) for the presence of snow (if any).
+-
+Unitless.</td><td>Goo</td></tr>
+<tr><td><b></b></td><td>___________________</td><td>Script variable PhotovoltaicsShading</td><td>Goo</td></tr>
+<tr><td><b>Output Geometry Index</b></td><td>outputGeometryIndex_</td><td>An index of the surface inputted into "_analysisGeometry" if "_analysisGeometry" would be flattened..
+It determines the surface for which output geometry will be generated.
+-
+If not supplied, geometry for the first surface (index: 0) will be generated as a default.</td><td>Goo</td></tr>
+<tr><td><b>Scale</b></td><td>scale_</td><td>Scale of the overall geometry (sunPath curves, sunWindow mesh).
+Use the scale number which enables encompassing all of your context_, coniferousTrees_, deciduousTrees_ objects.
+-
+If not supplied, default value of 1 will be used.</td><td>Goo</td></tr>
+<tr><td><b>Hours Position Scale</b></td><td>hoursPositionScale_</td><td>Scale factor for positioning of solar time hour points (that's "hoursPositions" output).
+-
+If not supplied, default value of 1 will be used.</td><td>Goo</td></tr>
+<tr><td><b>Precision</b></td><td>precision_</td><td>Overall shading precision. Ranges from 1-100. It represents the square root number of shading analysis points per sun window quadrant.
+Example - precision of 20 would be 400 shading analysis points per single sun window quadrant.
+CAUTION!!! Higher precision numbers (50 ;) require stronger performance PCs. If your "_context" contains only straight shape buildings/objects, and you have just a couple of trees supplied to the "coniferousTrees_" and "deciduousTrees_" inputs, the precision of ;= 50 will be just fine.
+-
+If not supplied, default value of 20 will be used.</td><td>Goo</td></tr>
+<tr><td><b>Legend Par</b></td><td>legendPar_</td><td>Optional legend parameters from the Ladybug "Legend Parameters" component.</td><td>Goo</td></tr>
+<tr><td><b></b></td><td>___________________</td><td>Script input _________________.</td><td>Goo</td></tr>
+<tr><td><b>Bake It</b></td><td>bakeIt_</td><td>Set to "True" to bake the Sunpath shading results into the Rhino scene.
+-
+Baking can only be used if surface(s) is(are) inputted into _analysisGeometry and data is inputted in ACenergyPerHour_. Otherwise there will be nothing to be baked.
+-
+If not supplied default value "False" will be used.</td><td>Goo</td></tr>
+<tr><td><b>Run It</b></td><td>_runIt</td><td>...</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Out</b></td><td>readMe!</td><td>...</td><td>String</td></tr>
+<tr><td><b>Sky Exposure Factor</b></td><td>skyExposureFactor</td><td>Continuous Sky Exposure Factor - portion of the visible sky (dome). It defines the shading of the diffuse irradiance components. It ranges from 0 to 1.
+0 means that the sky dome is competely obstructed by obstacles and all incoming diffuse sky irradiance is blocked (100% shading). 1 means that sky dome is competely free of obstacles (0% shading).
+-
+This output is similar to "skyView" output of Ladybug's "Shading Mask" component. Unlike "skyView" it takes into account transparency of trees. But it does not visually present the shading, which is what "Shading Mask" component does.
+-
+Use it for Ladybug "Solar Water Heating System" or "Solar Water Heating System Detailed" component's "skyExposureFactor_" input to account for diffuse irradiance shading of SWHsurface.
+-
+Unitless.</td><td>Goo</td></tr>
+<tr><td><b>Beam Index Per Hour</b></td><td>beamIndexPerHour</td><td>Transmission index of beam (direct) irradiance for each hour during a year. It ranges from 0-1.
+Transmission index of 0 means 100% shading. Transmission index of 1 means 0% shading.
+It is calculated for each analysisGeometry vertex and then averaged.
+-
+Use it as an input for Ladybug "Solar Water Heating System" or "Solar Water Heating System Detailed" component's "beamIndexPerHour_" input to account for diffuse direct beam shading of SWH surface.
+-
+Unitless.</td><td>Goo</td></tr>
+<tr><td><b>Shaded Solar Radiation Per Hour</b></td><td>shadedSolarRadiationPerHour</td><td>Total shaded incidence for each hour during a year.
+Data from this output can be used for "solarRadiationPerHour_" input of "Thermal Comfort Indices" component to account for shading.
+-
+In Wh/m2.</td><td>Goo</td></tr>
+<tr><td><b></b></td><td>_______________________</td><td>Annual unweighted shading of the active sun window quadrants. Active sun window quadrants are only those which produce AC energy (or solar radiation in case you are using this component for other purposes than Photovoltaics)
+Unweighted means that each active sun window quadrant produces the same percentage of AC power. It is calculated for each PVsurface vertex and then averaged. It ranges from 0-100(%).
+-
+In percent(%).</td><td>Goo</td></tr>
+<tr><td><b>Sep21to Mar21Shading</b></td><td>Sep21toMar21Shading</td><td>Weighted shading of the active sun window quadrants, for period between 21st September to 21st March. Active sun window quadrants are only those which produce AC energy.
+It is calculated for each analysisGeometry vertex and then averaged. It ranges from 0-100(%).
+-
+In percent(%).</td><td>Goo</td></tr>
+<tr><td><b>Mar21to Sep21Shading</b></td><td>Mar21toSep21Shading</td><td>Weighted shading of the active sun window quadrants, for period between 21st March to 21st September. Active sun window quadrants are only those which produce AC energy.
+It is calculated for each analysisGeometry vertex and then averaged. It ranges from 0-100(%).
+-
+In percent(%).</td><td>Goo</td></tr>
+<tr><td><b>Annual Shading</b></td><td>annualShading</td><td>Annual weighted shading of the active sun window quadrants. To calculate it, input the hourly data to "ACenergyPerHour_" input.
+Active sun window quadrants are only those which produce AC energy.
+It is calculated for each analysisGeometry vertex and then averaged. It ranges from 0-100(%).
+-
+Use it as an input for Ladybug "DC to AC derate factor" component's "annualShading_" input to account for shading of PVsurface.
+-
+In percent(%).</td><td>Goo</td></tr>
+<tr><td><b></b></td><td>_______________________</td><td>Script variable PhotovoltaicsShading</td><td>Goo</td></tr>
+<tr><td><b>Annalysis Pts</b></td><td>annalysisPts</td><td>Each vertex of the inputted _analysisGeometry for which a separate shading analysis was conducted.
+-
+Connect this output to a Grasshopper's "Point" parameter in order to preview the "annalysisPts" geometry in the Rhino scene.</td><td>Goo</td></tr>
+<tr><td><b>Sun Window Cen Pt</b></td><td>sunWindowCenPt</td><td>The center point of the "sunWindowCrvs" and "sunWindowMesh" geometry. It is calculated for analysisGeometry area centroid.
+Use this point to move "sunWindowCrvs" and "sunWindowMesh" geometry around in the Rhino scene with the grasshopper's "Move" component.
+-
+Connect this output to a Grasshopper's "Point" parameter in order to preview the "sunWindowCenPt" point in the Rhino scene.</td><td>Goo</td></tr>
+<tr><td><b>Sun Window Crvs</b></td><td>sunWindowCrvs</td><td>Geometry of the sun window based on 3D polar sun path diagram. Perpendicular curves represent solar time hours. Horizontal arc curves represent sun paths for: 21st December, 21st November/January, 21st October/February, 21st September/March, 21st August/April, 21st July/May, 21st June.
+The whole sunWindowCrvs geometry output is calculated for analysisGeometry area centroid.</td><td>Goo</td></tr>
+<tr><td><b>Sun Window Mesh</b></td><td>sunWindowMesh</td><td>Sun window mesh based on 3D polar sun path diagram. It is calculated for analysisGeometry area centroid.
+Black areas represent 100% shaded portions of the sun window (of both active and inactive quadrants). Darker green and green areas represent partially shaded portions from the coniferous and deciduous trees, respectively.
+-
+It is calculated ONLY if data is supplied to the "ACenergyPerHour_" input" !</td><td>Goo</td></tr>
+<tr><td><b>Legend</b></td><td>legend</td><td>A legend of the sunWindowMesh.
+-
+Connect this output to a Grasshopper's "Geo" parameter in order to preview the legend separately in the Rhino scene.</td><td>Goo</td></tr>
+<tr><td><b>Legend Base Pt</b></td><td>legendBasePt</td><td>Legend base point, which can be used to move the "legend" geometry with grasshopper's "Move" component.
+-
+Connect this output to a Grasshopper's "Point" parameter in order to preview the "annalysisPts" geometry in the Rhino scene.</td><td>Goo</td></tr>
+<tr><td><b>Quadrant Centroids</b></td><td>quadrantCentroids</td><td>Centroid for each sun window active quadrant above the horizon.
+-
+Use grasshopper's "Text tag" component to visualize them.</td><td>Goo</td></tr>
+<tr><td><b>Quadrant Shading Percents</b></td><td>quadrantShadingPercents</td><td>Shadinging percent per each sun window active quadrant above the horizon. Active quadrants with less than 0.01% are neglected.
+-
+Use grasshopper's "Text tag" component to visualize them.</td><td>Goo</td></tr>
+<tr><td><b>Quadrant ACenergy Percents</b></td><td>quadrantACenergyPercents</td><td>AC energy percent per each sun window active quadrant above the horizon.
+-
+Use grasshopper's "Text tag" component to visualize them.</td><td>Goo</td></tr>
+<tr><td><b>Hours Positions</b></td><td>hoursPositions</td><td>Solar time hour point positions.
+-
+Use grasshopper's "Text tag" component to visualize them.</td><td>Goo</td></tr>
+<tr><td><b>Hours</b></td><td>hours</td><td>Solar time hour strings.
+-
+Use grasshopper's "Text tag" component to visualize them.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

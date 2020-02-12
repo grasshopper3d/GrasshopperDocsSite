@@ -915,6 +915,34 @@
 <p><a href="../../index.html#Honeybee">Component Index</a> &gt; <a href="../../addons/honeybee.html">Honeybee</a> > 08 | Energy | Set Zone Properties > <b>Create EP Ground</b></p>
 </div>
 <h3>Use this component to change the properties of a zone to refelct those of a ground.  This is particularly useful for setting up outdoor thermal comfort maps when you want the surface temperature of the ground to be caclated with some spatial diversity, reflecting the shadows that other objects cast upon it and the storage of heat in the ground surface.<br>The turning of a zone into a ground zone entails...<br>1) Setting all constructions to be indicative of a certain soil type (see the _soilTypeOrMat description for more information).<br>2) Setting all surfaces except the roof to have the boundary condition of 'ground', including no sun or wind exposure for these surfaces.<br>3) Getting rid of all loads and schedules within the zone.<br>All values for soil type are taken from the Engineering Toolbox, specifically these pages below...<br>Soil Conductivity - http://www.engineeringtoolbox.com/thermal-conductivity-d_429.html<br>Soil Density - http://www.engineeringtoolbox.com/dirt-mud-densities-d_1727.html<br>Soil Heat Capacity - http://www.engineeringtoolbox.com/specific-heat-capacity-d_391.html<br></h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>HBZones</b></td><td>_HBZones</td><td>HBZones to be turned into ground zones, representative of soil.</td><td>Goo</td></tr>
+<tr><td><b>Soil Type Or Mat</b></td><td>_soilTypeOrMat</td><td>Either a material definition output from the 'Honeybee_EnergyPlus Opaque Material' component, the name of a material already in the library, or an integer from 0 to 6 representing the following:
+0 - Dry sand
+1 - Semi-dry sand or dust
+2 - Moits soil
+3 - Mud or soil saturated with water
+4 - Concrete
+5 - Asphalt
+6 - Solid rock or granite</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>HBGrnd Zones</b></td><td>HBGrndZones</td><td>HBZones that have had their properties altered to be ground conditions.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

@@ -915,6 +915,34 @@
 <p><a href="../../index.html#Honeybee">Component Index</a> &gt; <a href="../../addons/honeybee.html">Honeybee</a> > 04 | Daylight | Daylight > <b>Refine Daylight Simulation</b></p>
 </div>
 <h3>Refine simulation for an existing Radiance scene (.oct file)<br></h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Oct File</b></td><td>_octFile</td><td>Script variable Python</td><td>Goo</td></tr>
+<tr><td><b>Analysis Recipe</b></td><td>_analysisRecipe</td><td>An analysis recipe</td><td>Goo</td></tr>
+<tr><td><b>This Run Name</b></td><td>_thisRunName</td><td>Name of this run so you can recognize it later</td><td>Goo</td></tr>
+<tr><td><b>Num Of CPUs</b></td><td>_numOfCPUs_</td><td>Number of CPUs to be used for the studies. This option doesn't work for image-based analysis</td><td>Goo</td></tr>
+<tr><td><b>Run It</b></td><td>_runIt</td><td>Script input _runIt.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Out</b></td><td>readMe!</td><td>The execution information, as output and error streams</td><td>String</td></tr>
+<tr><td><b>Results</b></td><td>results</td><td>Script variable runDaylightAnalysis</td><td>Goo</td></tr>
+<tr><td><b>Test Pts</b></td><td>testPts</td><td>Test points if any</td><td>Goo</td></tr>
+<tr><td><b>Result Files</b></td><td>resultFiles</td><td>Result files. You need to need other components based on the type of the analysis to calculate the results</td><td>Goo</td></tr>
+<tr><td><b>Done</b></td><td>done</td><td>True if the study is over</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

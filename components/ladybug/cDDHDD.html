@@ -621,6 +621,35 @@
 <p><a href="../../index.html#Ladybug">Component Index</a> &gt; <a href="../../addons/ladybug.html">Ladybug</a> > 1 | AnalyzeWeatherData > <b>CDD HDD</b></p>
 </div>
 <h3>Calculates heating and cooling degree-days.<br>Traditionally, degree-days are defined as the difference between a base temperature and the average ambient air temperature multiplied by the number of days that this difference exists.<br>By default, this component uses a more accurate calculation than the traditional method based on the minimum and maximum temperature of each day.<br>You may check the formulas in this page: "http://www.vesma.com/ddd/ddcalcs.htm"<br>If you rather to use the traditional method, set useDailyAvrMethod to True.<br></h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Hourly Dry Bulb Temperature</b></td><td>_hourlyDryBulbTemperature</td><td>Annual dry bulb temperature from the Import epw component (in degrees Celsius).</td><td>Goo</td></tr>
+<tr><td><b>Cooling Base Temperature</b></td><td>_coolingBaseTemperature_</td><td>Base temperature for cooling (in degrees Celsius).  Default is set to 23.3C but this can be much lower if the analysis is for a building with high heat gain or insulation.</td><td>Goo</td></tr>
+<tr><td><b>Heating Base Temperature</b></td><td>_heatingBaseTemperature_</td><td>Base temperature for heating (in degrees Celsius).  Default is set to 18.3C but this can be much lower if the analysis is for a building with high heat gain or insulation.</td><td>Goo</td></tr>
+<tr><td><b>Use Daily Avr Method</b></td><td>useDailyAvrMethod_</td><td>set to "True" to use the traditional method of degree days calculation, which will calculate the average temperature of each day and sum up all of these temperatures over the year.  This is opoosed to this component's default analysis, which will will examine each hour of the year and then convert results to degree-days.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Out</b></td><td>readMe!</td><td>A summary of the input.</td><td>String</td></tr>
+<tr><td><b>Daily cooling Deg Days</b></td><td>daily_coolingDegDays</td><td>Cooling degree-days summed for each day of the year. For visualizations of over the whole year, connect this to the grasshopper chart/graph component.</td><td>Goo</td></tr>
+<tr><td><b>Daily heating Deg Days</b></td><td>daily_heatingDegDays</td><td>Heating degree-days summed for each day of the year. For visualizations of over the whole year, connect this to the grasshopper chart/graph component.</td><td>Goo</td></tr>
+<tr><td><b>Monthly cooling Deg Days</b></td><td>monthly_coolingDegDays</td><td>Cooling degree-days summed for each month of the year.</td><td>Goo</td></tr>
+<tr><td><b>Monthly heating Deg Days</b></td><td>monthly_heatingDegDays</td><td>Heating degree-days summed for each month of the year.</td><td>Goo</td></tr>
+<tr><td><b>Annual cooling Deg Days</b></td><td>annual_coolingDegDays</td><td>The total cooling degree-days for the entire year.</td><td>Goo</td></tr>
+<tr><td><b>Annual heating Deg Days</b></td><td>annual_heatingDegDays</td><td>The total heating degree-days for the entire year.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

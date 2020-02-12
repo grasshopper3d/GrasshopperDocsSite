@@ -621,6 +621,46 @@
 <p><a href="../../index.html#Ladybug">Component Index</a> &gt; <a href="../../addons/ladybug.html">Ladybug</a> > 7 | WIP > <b>Sun Shades Calculator</b></p>
 </div>
 <h3>Use this component to generate shading devices, either surface or pergola, for any glazed surface or list of glazed surfaces.  <br>The component first culls all sun vectors obstructed by the context, if provided.<br>By default it calculates the device as a "new brand" one but it also can calculate the cut profile for a given surface.<br>The default it will generate an overhang over the window (or multiple overhangs if the _numOfShds is increased).  <br>References:<br>Shaviv E., 1975. "A Method for the Design of Fixed External Sun-Shades". "Build International"  (8), Applied Science Publishers LTD, England, (pp.121-150).<br>Shaviv E., 1984. "A Design Tool for Determining the Form of Fixed & Movable Sun-Shades".  "ASHRAE Trans." Vol. 90, AT-84-18 No. 4, Atlanta (pp.1-14).<br></h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Surface Or Pergola</b></td><td>_SurfaceOrPergola_</td><td>0= Device optimised for period, will give the horizontal or tilted surface over the top of the window, or the cut profile device on a provided shading surface. 1= Pergola with fins. Default is 0.</td><td>Goo</td></tr>
+<tr><td><b>Window</b></td><td>_window</td><td>A Surface or Brep representing a window to be used for shading design.  This can also be a list of Surfaces of Breps.</td><td>Goo</td></tr>
+<tr><td><b>Num Of Shds</b></td><td>_numOfShds_</td><td>The number of shades to generated for each glazed surface.</td><td>Goo</td></tr>
+<tr><td><b>Udiv</b></td><td>_udiv_</td><td>Number of row divisions of the window. Used for choosing the lower and higher rows you want to protect. Default is 1.</td><td>Goo</td></tr>
+<tr><td><b>Sun Vectors</b></td><td>_sunVectors</td><td>Output of Ladybug sunPath component.</td><td>Goo</td></tr>
+<tr><td><b>Context</b></td><td>context_</td><td>Breps/surfaces that you want to account for as blocking objects.</td><td>Goo</td></tr>
+<tr><td><b>Shade Surface</b></td><td>shadeSurface_</td><td>An optional shade surface representing a 2D area under consideration for shading.</td><td>Goo</td></tr>
+<tr><td><b>---------------</b></td><td>---------------</td><td>---------------</td><td>Goo</td></tr>
+<tr><td><b>Shd Srf Angle</b></td><td>_shdSrfAngle_</td><td>In case NO shadeSurface is provided a plane over the window will be used as base for the calculation. In this case you can provide the angle of this plane. Default is 0.0.</td><td>Goo</td></tr>
+<tr><td><b>.</b></td><td>.</td><td></td><td>Goo</td></tr>
+<tr><td><b>.</b></td><td>.</td><td></td><td>Goo</td></tr>
+<tr><td><b>Fins Angle</b></td><td>_finsAngle_</td><td>Angle for pergola fins. Default is 45.</td><td>Goo</td></tr>
+<tr><td><b>---------------</b></td><td>---------------</td><td>---------------</td><td>Goo</td></tr>
+<tr><td><b>Delaunay Height</b></td><td>_delaunayHeight_</td><td>Distance from base curve and top intersection points. Used by the Delauney Mesh component. Default is 5.</td><td>Goo</td></tr>
+<tr><td><b>Offset Factor</b></td><td>_offsetFactor_</td><td>VERY important input!! The offset factor for the ConvexHull curve. Will be used for the Delauneay mesh. Default is 40.</td><td>Goo</td></tr>
+<tr><td><b>Res</b></td><td>_res_</td><td>Divide the offset curve for the Delaunay operation.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Out</b></td><td>readMe!</td><td>...</td><td>String</td></tr>
+<tr><td><b>Points On Window</b></td><td>pointsOnWindow</td><td>Net of points on window</td><td>Goo</td></tr>
+<tr><td><b>U Points</b></td><td>uPoints</td><td>Net of points on window</td><td>Goo</td></tr>
+<tr><td><b>Pts Context</b></td><td>ptsContext</td><td>Show the intersection point of sun vectors with context</td><td>Goo</td></tr>
+<tr><td><b>Cull Pts</b></td><td>cullPts</td><td>Show the points that define the contour of the shading device. Pay attention to those more/less dense areas covered by these points.</td><td>Goo</td></tr>
+<tr><td><b>Final Srf</b></td><td>finalSrf</td><td>Surface representing the shape of the shading device.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

@@ -548,6 +548,35 @@ Workbench
 <p><a href="../../index.html#Peacock">Component Index</a> &gt; <a href="../../addons/peacock.html">Peacock</a> > Workbench > <b>Curve array 2d</b></p>
 </div>
 <h3>Create an array 2d of geometry along a curve</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Geometry</b></td><td>G</td><td>Base geometry</td><td>GeometricGoo</td></tr>
+<tr><td><b>Reference</b></td><td>R</td><td>Reference box</td><td>Box</td></tr>
+<tr><td><b>Rail</b></td><td>C</td><td>Array rail curve</td><td>Curve</td></tr>
+<tr><td><b>Orient from</b></td><td>O</td><td>Geometry to orient the array</td><td>GeometricGoo</td></tr>
+<tr><td><b>Parameters</b></td><td>T</td><td>Normalized curve parameters to divide the array in the curve</td><td>Number</td></tr>
+<tr><td><b>UV domains</b></td><td>UV</td><td>UV domains to map divisions</td><td>Interval2D</td></tr>
+<tr><td><b>Width</b></td><td>W</td><td>Width values</td><td>Number</td></tr>
+<tr><td><b>Height</b></td><td>H</td><td>Height values</td><td>Number</td></tr>
+<tr><td><b>Angle</b></td><td>A</td><td>Angle values for twisted box rotation</td><td>Number</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Geometry</b></td><td>G</td><td>Translated geometry</td><td>GeometricGoo</td></tr>
+<tr><td><b>Twisted boxes</b></td><td>T</td><td>Array of twisted boxes</td><td>TwistedBox</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

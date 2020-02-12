@@ -548,6 +548,31 @@ Workbench
 <p><a href="../../index.html#Peacock">Component Index</a> &gt; <a href="../../addons/peacock.html">Peacock</a> > Workbench > <b>Extrusion both sides</b></p>
 </div>
 <h3>Extrude a curve or surface in both sides along a vector</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Curve</b></td><td>C</td><td>Curve to extrude</td><td>GeometricGoo</td></tr>
+<tr><td><b>Direction</b></td><td>D</td><td>Extrude direction. If none is provided, is used the normal vector of input curve/surface.</td><td>Vector</td></tr>
+<tr><td><b>Length</b></td><td>L</td><td>Extrude length</td><td>Number</td></tr>
+<tr><td><b>Both sides</b></td><td>B</td><td>0 = one side.
+1 = both sides, same length.
+2 = both sides, length/2.</td><td>Integer</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Extrusion</b></td><td>E</td><td>Extrusion result</td><td>Brep</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

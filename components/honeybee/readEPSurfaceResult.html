@@ -915,6 +915,36 @@
 <p><a href="../../index.html#Honeybee">Component Index</a> &gt; <a href="../../addons/honeybee.html">Honeybee</a> > 10 | Energy | Energy > <b>Read EP Surface Result</b></p>
 </div>
 <h3>This component reads the results of an EnergyPlus simulation from the WriteIDF Component or any EnergyPlus result .csv file address.  Note that, if you use this component without the WriteIDF component, you should make sure that a corresponding .eio file is next to your .csv file at the input address that you specify.<br>This component reads only the results related to surfaces.  For results related to zones, you should use the "Honeybee_Read EP Result" component.<br></h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Result File Address</b></td><td>_resultFileAddress</td><td>The result file address that comes out of the WriteIDF component.</td><td>Goo</td></tr>
+<tr><td><b>Norm By Srf Area</b></td><td>normBySrfArea_</td><td>Set to 'True' to normalize all surface energy data by the area of the suraces (note that the resulting units will be kWh/m2 as EnergyPlus runs in the metric system).  The default is set to "False."</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Surface Indoor Temp</b></td><td>surfaceIndoorTemp</td><td>The indoor surface temperature of each surface (degrees Celcius).</td><td>Goo</td></tr>
+<tr><td><b>Surface Outdoor Temp</b></td><td>surfaceOutdoorTemp</td><td>The outdoor surface temperature of each surface (degrees Celcius).</td><td>Goo</td></tr>
+<tr><td><b>Surface Energy Flow</b></td><td>surfaceEnergyFlow</td><td>The heat loss (negative) or heat gain (positive) through each building surfaces (kWh).</td><td>Goo</td></tr>
+<tr><td><b>Opaque Energy Flow</b></td><td>opaqueEnergyFlow</td><td>The heat loss (negative) or heat gain (positive) through each building opaque surface (kWh).</td><td>Goo</td></tr>
+<tr><td><b>Glaz Energy Flow</b></td><td>glazEnergyFlow</td><td>The heat loss (negative) or heat gain (positive) through each building glazing surface (kWh).  Note that the value here includes both solar gains and conduction losses/gains.</td><td>Goo</td></tr>
+<tr><td><b>Window Total Solar Energy</b></td><td>windowTotalSolarEnergy</td><td>The total solar energy transmitted through each of the glazing surfaces to the zone (kWh).</td><td>Goo</td></tr>
+<tr><td><b>Window Beam Energy</b></td><td>windowBeamEnergy</td><td>The total direct solar beam energy transmitted through each of the glazing surfaces to the zone (kWh).</td><td>Goo</td></tr>
+<tr><td><b>Window Diff Energy</b></td><td>windowDiffEnergy</td><td>The total diffuse solar energy transmitted through each of the glazing surfaces to the zone (kWh).</td><td>Goo</td></tr>
+<tr><td><b>Window Transmissivity</b></td><td>windowTransmissivity</td><td>The hourly transmissivity of the exterior windows of the model.  This data is needed to align a comfort map with an energy model possessing shades.</td><td>Goo</td></tr>
+<tr><td><b>Other Surface Data</b></td><td>otherSurfaceData</td><td>Other surface data that is in the result file (in no particular order).  Note that this data cannot be normalized by floor area as the component does not know if it can be normalized.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

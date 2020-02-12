@@ -915,6 +915,44 @@
 <p><a href="../../index.html#Honeybee">Component Index</a> &gt; <a href="../../addons/honeybee.html">Honeybee</a> > 00 | Honeybee > <b>create HBSrfs</b></p>
 </div>
 <h3>Create a Honeybee surface, which can be plugged into the "Run Daylight Sumilation" component or combined with other surfaces to make HBZones with the "createHBZones" component.<br></h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Geometry</b></td><td>_geometry</td><td>List of Breps</td><td>Goo</td></tr>
+<tr><td><b>Srf Name</b></td><td>srfName_</td><td>Optional name for surface</td><td>Goo</td></tr>
+<tr><td><b>Srf Type</b></td><td>srfType_</td><td>Optional input for surface type ;
+0- 'WALL'
+0.5- 'UndergroundWall'
+1- 'ROOF'
+1.5- 'UndergroundCeiling'
+2- 'FLOOR'
+2.25- 'UndergroundSlab'
+2.5- 'SlabOnGrade'
+2.75- 'ExposedFloor'
+3- 'CEILING'
+4- 'AIRWALL'
+5- 'WINDOW'
+6- 'SHADING'</td><td>Goo</td></tr>
+<tr><td><b>EPBC</b></td><td>EPBC_</td><td>'Ground', 'Adiabatic', 'Outdoors'</td><td>Goo</td></tr>
+<tr><td><b>EPConstruction</b></td><td>_EPConstruction_</td><td>Optional EnergyPlus construction</td><td>Goo</td></tr>
+<tr><td><b>RADMaterial</b></td><td>_RADMaterial_</td><td>Optional Radiance Material</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Out</b></td><td>readMe!</td><td>...</td><td>String</td></tr>
+<tr><td><b>HBSurface</b></td><td>HBSurface</td><td>Honeybee zone as the result</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

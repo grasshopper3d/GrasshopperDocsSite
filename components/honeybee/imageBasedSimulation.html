@@ -915,6 +915,34 @@
 <p><a href="../../index.html#Honeybee">Component Index</a> &gt; <a href="../../addons/honeybee.html">Honeybee</a> > 03 | Daylight | Recipes > <b>Image Based Simulation</b></p>
 </div>
 <h3>Analysis Recipie for Image-Based Analysis<br></h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Sky File</b></td><td>_skyFile</td><td>Path to a radiance sky file</td><td>Goo</td></tr>
+<tr><td><b>Rhino Views Name</b></td><td>_rhinoViewsName_</td><td>viewName to be rendered</td><td>Goo</td></tr>
+<tr><td><b>Camera Type</b></td><td>_cameraType_</td><td>[0] Perspective, [1] FishEye, [2] Parallel</td><td>Goo</td></tr>
+<tr><td><b>Section Plane</b></td><td>sectionPlane_</td><td>Optional view fore clipping plane. The Plane should be perpendicular to the view</td><td>Goo</td></tr>
+<tr><td><b>Simulation Type</b></td><td>_simulationType_</td><td>[0] illuminance(lux), [1] radiation (wh), [2] luminance (Candela). Default is 2 ; luminance.</td><td>Goo</td></tr>
+<tr><td><b>Image Width</b></td><td>_imageWidth_</td><td>Optional input for image width in pixels</td><td>Goo</td></tr>
+<tr><td><b>Image Height</b></td><td>_imageHeight_</td><td>Optional input for image height in pixels</td><td>Goo</td></tr>
+<tr><td><b>Rad Parameters</b></td><td>_radParameters_</td><td>Radiance parameters</td><td>Goo</td></tr>
+<tr><td><b>Backup Images</b></td><td>backupImages_</td><td>[0] No backup, [1] Backup in the same folder, [2] Backup in separate folders. Default is 0.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Analysis Recipe</b></td><td>analysisRecipe</td><td>Recipe for image-based simulation</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

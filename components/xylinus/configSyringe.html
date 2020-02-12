@@ -261,6 +261,54 @@ Syringe
 <p><a href="../../index.html#Xylinus">Component Index</a> &gt; <a href="../../addons/xylinus.html">Xylinus</a> > Syringe > <b>Config  Syringe</b></p>
 </div>
 <h3>This component holds the primary configurations needed for 3D printing on a standard filimant-based printer. These settings can be passed to or from this component as a condensed list. Settings can also be broken out and fed into Xylinus sub-routines. Setting can be modified through the specific inputs, which will override the condensed config input.</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Box</b></td><td>printer volume domain box</td><td>Input a box with  X,Y,and Z domains that match the dimensions of your printer. This can easily be created with the Domain Box component. If your printer 0 position is in the bottom left corner (as standard) you can simply use the default world XY plane, and just enter the the dimesions of your printer into the X, Y, and Z inputs.</td><td>Box</td></tr>
+<tr><td><b>Number</b></td><td>XY tolerance (mm)</td><td>Contains a collection of floating point numbers</td><td>Number</td></tr>
+<tr><td><b>Number</b></td><td>layer height (mm)</td><td>Contains a collection of floating point numbers</td><td>Number</td></tr>
+<tr><td><b>Number</b></td><td>extrusion width (mm)</td><td>Contains a collection of floating point numbers</td><td>Number</td></tr>
+<tr><td><b>Number</b></td><td>print pressure (psi)</td><td>Contains a collection of floating point numbers</td><td>Number</td></tr>
+<tr><td><b>Number</b></td><td>extruder temperature (C)</td><td>Contains a collection of floating point numbers</td><td>Number</td></tr>
+<tr><td><b>Number</b></td><td>print speed (mm/sec)</td><td>Contains a collection of floating point numbers</td><td>Number</td></tr>
+<tr><td><b>Number</b></td><td>XY rapid speed (mm/sec)</td><td>Contains a collection of floating point numbers</td><td>Number</td></tr>
+<tr><td><b>Number</b></td><td>Z rapid speed (mm/sec)</td><td>Contains a collection of floating point numbers</td><td>Number</td></tr>
+<tr><td><b>Number</b></td><td>retraction vaccuum (Hg)</td><td>Contains a collection of floating point numbers</td><td>Number</td></tr>
+<tr><td><b>Number</b></td><td>retraction duration (sec)</td><td>Contains a collection of floating point numbers</td><td>Number</td></tr>
+<tr><td><b>Number</b></td><td>purge pressure (psi)</td><td>Contains a collection of floating point numbers</td><td>Number</td></tr>
+<tr><td><b>Number</b></td><td>purge duration (sec)</td><td>Contains a collection of floating point numbers</td><td>Number</td></tr>
+<tr><td><b>M Codes for Syringe</b></td><td>M</td><td>Input syringe control M codes specific to your printer using the M Codes Syringe component</td><td>Goo</td></tr>
+<tr><td><b>Primary config for 3DP_F</b></td><td>C</td><td>Optional configuration for 3D printing with filament. Direct entries will override these config entries.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Box</b></td><td>printer volume domain box</td><td>Contains a collection of boxes</td><td>Box</td></tr>
+<tr><td><b>Number</b></td><td>XY tolerance (mm)</td><td>Contains a collection of floating point numbers</td><td>Number</td></tr>
+<tr><td><b>Number</b></td><td>layer height (mm)</td><td>Contains a collection of floating point numbers</td><td>Number</td></tr>
+<tr><td><b>Number</b></td><td>extrusion width (mm)</td><td>Contains a collection of floating point numbers</td><td>Number</td></tr>
+<tr><td><b>Number</b></td><td>print pressure (psi)</td><td>Contains a collection of floating point numbers</td><td>Number</td></tr>
+<tr><td><b>Number</b></td><td>extruder temperature (C)</td><td>Contains a collection of floating point numbers</td><td>Number</td></tr>
+<tr><td><b>Number</b></td><td>print speed (mm/sec)</td><td>Contains a collection of floating point numbers</td><td>Number</td></tr>
+<tr><td><b>Number</b></td><td>XY rapid speed (mm/sec)</td><td>Contains a collection of floating point numbers</td><td>Number</td></tr>
+<tr><td><b>Number</b></td><td>Z rapid speed (mm/sec)</td><td>Contains a collection of floating point numbers</td><td>Number</td></tr>
+<tr><td><b>Number</b></td><td>retraction vaccuum (Hg)</td><td>Contains a collection of floating point numbers</td><td>Number</td></tr>
+<tr><td><b>Number</b></td><td>retraction duration (sec)</td><td>Contains a collection of floating point numbers</td><td>Number</td></tr>
+<tr><td><b>Number</b></td><td>purge pressure (psi)</td><td>Contains a collection of floating point numbers</td><td>Number</td></tr>
+<tr><td><b>Number</b></td><td>purge duration (sec)</td><td>Contains a collection of floating point numbers</td><td>Number</td></tr>
+<tr><td><b>extrusion M codes</b></td><td>M</td><td>Contains a collection of generic data</td><td>Goo</td></tr>
+<tr><td><b>primary config for 3DP_F</b></td><td>C</td><td>primary configurations for 3D printing with filament</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

@@ -548,6 +548,32 @@ Workbench
 <p><a href="../../index.html#Peacock">Component Index</a> &gt; <a href="../../addons/peacock.html">Peacock</a> > Workbench > <b>BrepCP</b></p>
 </div>
 <h3>Find the closest point on a brep</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Point</b></td><td>P</td><td>Sample point</td><td>Point</td></tr>
+<tr><td><b>Brep</b></td><td>B</td><td>Base brep</td><td>Brep</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Point</b></td><td>P</td><td>Closest point</td><td>Point</td></tr>
+<tr><td><b>Normal</b></td><td>N</td><td>Normal at closest point</td><td>Vector</td></tr>
+<tr><td><b>Geometry</b></td><td>G</td><td>Closest geometry</td><td>GeometricGoo</td></tr>
+<tr><td><b>Distance</b></td><td>D</td><td>Distance between sample point and Brep</td><td>Number</td></tr>
+<tr><td><b>Index</b></td><td>I</td><td>Geometry index</td><td>Integer</td></tr>
+<tr><td><b>Type</b></td><td>T</td><td>Geometry type (0 = Face, 1 = Edge, 2 = Vertex)</td><td>Integer</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

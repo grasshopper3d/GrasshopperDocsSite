@@ -320,6 +320,41 @@ Visualize
 <p><a href="../../index.html#Alba">Component Index</a> &gt; <a href="../../addons/alba.html">Alba</a> > Visualize > <b>DNA Comp Sub Viz</b></p>
 </div>
 <h3>Visualizes the specified subdomain of a created offset complementary strand</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Locaction</b></td><td>Loc</td><td>point in Rhino where DNA will be vizualized. For linear strands this is at the start (5' end) . For plasmids, this is the center of the circle.</td><td>Point</td></tr>
+<tr><td><b>DNA Sequence</b></td><td>DNA</td><td>Contains a collection of text fragments</td><td>String</td></tr>
+<tr><td><b>Crv</b></td><td>Crv</td><td>If this input is not null, it will be passed tot he output.</td><td>Goo</td></tr>
+<tr><td><b>Domain 1</b></td><td>SubP</td><td>Base domain</td><td>Interval</td></tr>
+<tr><td><b>Domain</b></td><td>SubC</td><td>Domain of indices to copy</td><td>Interval</td></tr>
+<tr><td><b>Visualize</b></td><td>Viz</td><td>0= draw nothing
+1= draw everything
+2= draw curves only
+3= draw letters only
+4=draw everything and trace the whole strand</td><td>Integer</td></tr>
+<tr><td><b>Text Size</b></td><td>Size</td><td>Size of the text</td><td>Number</td></tr>
+<tr><td><b>Color</b></td><td>Col</td><td>input a swatch or shader</td><td>Material</td></tr>
+<tr><td><b>Thickness</b></td><td>Thk</td><td>The thickness of the wire display</td><td>Integer</td></tr>
+<tr><td><b>Distance</b></td><td>Dist</td><td>Offset distance</td><td>Number</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>DNA</b></td><td>DNA</td><td>Resulting text</td><td>String</td></tr>
+<tr><td><b>Curve</b></td><td>Crv</td><td>Resulting offsets</td><td>Curve</td></tr>
+<tr><td><b>Points</b></td><td>Pts</td><td>Contains a collection of three-dimensional points</td><td>Point</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

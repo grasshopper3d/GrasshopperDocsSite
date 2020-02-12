@@ -261,6 +261,33 @@ Syringe
 <p><a href="../../index.html#Xylinus">Component Index</a> &gt; <a href="../../addons/xylinus.html">Xylinus</a> > Syringe > <b>Print 3D _S</b></p>
 </div>
 <h3>Slices input geometry and renerates G Code to print  [W] walls and infill at [I] density. Works for simple or complex geometries.<br><br><br>a W# walled form without any infil or top/bottom layers. For standard filament printing.</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Geometry</b></td><td>G</td><td>Contains a collection of generic geometry</td><td>GeometricGoo</td></tr>
+<tr><td><b>Primary config for 3DP_F</b></td><td>C</td><td>Optional configuration for 3D printing with filament. Direct entries will override these config entries.</td><td>Goo</td></tr>
+<tr><td><b>Perimenter Wall Count</b></td><td>W</td><td>number of solid perimeter walls to print</td><td>Integer</td></tr>
+<tr><td><b>Infill Ratio (0-1)</b></td><td>I</td><td>Set the density of the infill from 0 (none) to 1 solid).</td><td>Number</td></tr>
+<tr><td><b>Z Clearance</b></td><td>ZC</td><td>Contains a collection of floating point numbers</td><td>Number</td></tr>
+<tr><td><b>start and end g code</b></td><td>SE</td><td>Boolean input to determine wether or not to add the start and end g code needed to intiate and end a print. You may also adda customized start and end gcode sequences from the Start G Code and the End G Code components.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>G Code</b></td><td>GC</td><td>Complete g code for printing a single wall model with no infill</td><td>Goo</td></tr>
+<tr><td><b>Point</b></td><td>Pt</td><td>Contains a collection of three-dimensional points</td><td>Point</td></tr>
+<tr><td><b>Polyline</b></td><td>Pl</td><td>Converted curve</td><td>Curve</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

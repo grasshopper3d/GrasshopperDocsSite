@@ -621,6 +621,31 @@
 <p><a href="../../index.html#Ladybug">Component Index</a> &gt; <a href="../../addons/ladybug.html">Ladybug</a> > 2 | VisualizeWeatherData > <b>select Sky Mtx</b></p>
 </div>
 <h3>Use this component to select a specific sky matrix (skyMxt) for an hour of the year or for an analysis period.<br></h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Cumulative Sky Mtx</b></td><td>_cumulativeSkyMtx</td><td>The output from a GenCumulativeSkyMtx component.</td><td>Goo</td></tr>
+<tr><td><b>HOY</b></td><td>HOY_</td><td>An hour of the year or list of hours of the year for which you would like to select a sky.  This must be a value between 1 and 8760.</td><td>Goo</td></tr>
+<tr><td><b>Analysis Period</b></td><td>_analysisPeriod_</td><td>An analysis period from Analysis Period component.  This will override an input HOY (hour of the year).</td><td>Goo</td></tr>
+<tr><td><b>Remove Diffuse</b></td><td>removeDiffuse_</td><td>Set to "True" if you want to remove the diffuse component of the selected sky.</td><td>Goo</td></tr>
+<tr><td><b>Remove Direct</b></td><td>removeDirect_</td><td>Set to "True" if you want to remove the direct component of the selected sky.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Out</b></td><td>readMe!</td><td>...</td><td>String</td></tr>
+<tr><td><b>Selected Sky Mtx</b></td><td>selectedSkyMtx</td><td>The selected sky matrix (SkyMtx) for the input hour of the year or an analysis period.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

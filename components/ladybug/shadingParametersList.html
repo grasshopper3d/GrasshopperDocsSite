@@ -621,6 +621,29 @@
 <p><a href="../../index.html#Ladybug">Component Index</a> &gt; <a href="../../addons/ladybug.html">Ladybug</a> > 5 | Extra > <b>Shading Parameters List</b></p>
 </div>
 <h3>Use this component to generate shading depths, numbers of shades, horizontal or vertical boolean values, and shade angles for different cardinal directions to be plugged into the "Ladybug_Shading Designer" component or the "Honeybee_EnergyPlus Window Shade Generator".<br></h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>North Shd Param</b></td><td>_northShdParam_</td><td>Shading parameter for north-facing glazing.</td><td>Goo</td></tr>
+<tr><td><b>West Shd Param</b></td><td>_westShdParam_</td><td>Shading parameter for west-facing glazing.</td><td>Goo</td></tr>
+<tr><td><b>South Shd Param</b></td><td>_southShdParam_</td><td>Shading parameter for south-facing glazing.</td><td>Goo</td></tr>
+<tr><td><b>East Shd Param</b></td><td>_eastShdParam_</td><td>Shading parameter for east-facing glazing.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Shd Param List</b></td><td>shdParamList</td><td>A list of shading parameters for different cardinal directions to be plugged into either the input of the "ShadingDesigner" component or the "Honeybee_EnergyPlus Window Shade Generator".  Depending on the type of values that you input, these can go into either of these inputs: _depth, _numOfShds, _distBetween, _horOrVertical_, _shdAngle_.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

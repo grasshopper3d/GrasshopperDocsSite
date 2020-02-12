@@ -621,6 +621,37 @@
 <p><a href="../../index.html#Ladybug">Component Index</a> &gt; <a href="../../addons/ladybug.html">Ladybug</a> > 0 | Ladybug > <b>Import stat</b></p>
 </div>
 <h3>Use this component to import climate data found in the .stat file that downloads with the .epw file (in the same .zip folder).<br>Sepcifcally, this allows you to import the ASHRAE and Koppen climate zones as well as design temperatures representing the temperature extremes of the climate that should be used to design and size heating and cooling systems.<br>Lastly, this component brings in the typical and extreme weeks of the year as ladybug analysis periods that can be plugged into the other ladybug components.<br></h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Stat File</b></td><td>_statFile</td><td>A .stat file path on your system from the Open STAT file component (or typed out as a string).</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Out</b></td><td>readMe!</td><td>...</td><td>String</td></tr>
+<tr><td><b>Ashrae Climate Zone</b></td><td>ashraeClimateZone</td><td>The estimated ASHRAE climate zone of the STAT file.  ASHRAE climate zones are frequently used to make suggestions for heating and cooling systems and correspond to recommendations for insulation levels of a building.  For more information, see this pdf: https://www.ashrae.org/File%20Library/docLib/Public/20081111_CZTables.pdf</td><td>Goo</td></tr>
+<tr><td><b>Koppen Climate Zone</b></td><td>koppenClimateZone</td><td>The estimated Koppen climate zone of the STAT file.  The Koppen climate classification is the most widely used climate classification system and is based on the concept that native vegetation is the best expression of climate. Thus, Koppen climate zones combine average annual and monthly temperatures, precipitation, and the seasonality of precipitation.  For more information, see the wikipendia page on Koppen climate: http://en.wikipedia.org/wiki/K%C3%B6ppen_climate_classification.</td><td>Goo</td></tr>
+<tr><td><b>--------------------</b></td><td>--------------------</td><td>...</td><td>Goo</td></tr>
+<tr><td><b>Heating Design Temp</b></td><td>heatingDesignTemp</td><td>The temperature in Celcius that ASHRAE recommends using to design a heating system for a building.  It rempresents the one of the coldest temperatures of the year for which only 0.4% of the hours are below.</td><td>Goo</td></tr>
+<tr><td><b>Cooling Design Temp</b></td><td>coolingDesignTemp</td><td>The temperature in Celcius that ASHRAE recommends using to design a cooling system for a building.  It rempresents the one of the hottest temperatures of the year for which only 0.4% of the hours are above.</td><td>Goo</td></tr>
+<tr><td><b>--------------------</b></td><td>--------------------</td><td>Script variable importSTAT</td><td>Goo</td></tr>
+<tr><td><b>Extreme Hot Week</b></td><td>extremeHotWeek</td><td>An analysis period representing the hottest week of the typical mean year.  If the stat file does not specify an extreme hot week, it is the most extreme week of the hottest season.</td><td>Goo</td></tr>
+<tr><td><b>Typical Hot Week</b></td><td>typicalHotWeek</td><td>An analysis period representing a typical week of the hottest season in the typical mean year.  Not all stat files specify such a week and, in this case, the output here will be "Null."</td><td>Goo</td></tr>
+<tr><td><b>Typical Week</b></td><td>typicalWeek</td><td>An analysis period representing a typical week of the typical mean year.  If the stat file does not specify a typical week, it is the typical week of Autumn.</td><td>Goo</td></tr>
+<tr><td><b>Typical Cold Week</b></td><td>typicalColdWeek</td><td>An analysis period representing a typical week of the coldest season in the typical mean year.  Not all stat files specify such a week and, in this case, the output here will be "Null."</td><td>Goo</td></tr>
+<tr><td><b>Extreme Cold Week</b></td><td>extremeColdWeek</td><td>An analysis period representing the coldest week of the typical mean year.  If the stat file does not specify an extreme cold week, it is the most extreme week of the coldest season.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

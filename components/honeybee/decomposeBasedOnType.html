@@ -915,6 +915,40 @@
 <p><a href="../../index.html#Honeybee">Component Index</a> &gt; <a href="../../addons/honeybee.html">Honeybee</a> > 00 | Honeybee > <b>Decompose Based On Type</b></p>
 </div>
 <h3>Use this component to break down the geometry of your zone by the surface type.  This is useful for previewing your zones in the rhino scene and making sure that each surface of your zones has the correct surface type.<br></h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>HBZone</b></td><td>_HBZone</td><td>Honeybee Zones for which you want to preview the different surface types.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Walls</b></td><td>walls</td><td>A list of the exterior walls of your zones as breps.  Connect to a Grasshopper "Preview" component to add color to the breps.</td><td>Goo</td></tr>
+<tr><td><b>Interior Walls</b></td><td>interiorWalls</td><td>A list of the interior walls of your zones as breps.  Connect to a Grasshopper "Preview" component to add color to the breps.</td><td>Goo</td></tr>
+<tr><td><b>Air Walls</b></td><td>airWalls</td><td>A list of the air walls of your zones as breps.  Connect to a Grasshopper "Preview" component to add color to the breps.</td><td>Goo</td></tr>
+<tr><td><b>Windows</b></td><td>windows</td><td>A list of windows of your zones as breps.  Connect to a Grasshopper "Preview" component to add color to the breps.</td><td>Goo</td></tr>
+<tr><td><b>Interior Windows</b></td><td>interiorWindows</td><td>A list of interior windows of your zones as breps.  Connect to a Grasshopper "Preview" component to add color to the breps.</td><td>Goo</td></tr>
+<tr><td><b>Skylights</b></td><td>skylights</td><td>A list of skylights of your zones as breps.  Connect to a Grasshopper "Preview" component to add color to the breps.</td><td>Goo</td></tr>
+<tr><td><b>Roofs</b></td><td>roofs</td><td>A list of roofs of your zones as breps.  Connect to a Grasshopper "Preview" component to add color to the breps.</td><td>Goo</td></tr>
+<tr><td><b>Ceilings</b></td><td>ceilings</td><td>A list of ceilings of your zones as breps.  Connect to a Grasshopper "Preview" component to add color to the breps.</td><td>Goo</td></tr>
+<tr><td><b>Floors</b></td><td>floors</td><td>A list of floors of your zones as breps.  Connect to a Grasshopper "Preview" component to add color to the breps.</td><td>Goo</td></tr>
+<tr><td><b>Exposed Floors</b></td><td>exposedFloors</td><td>A list of floors exposed to the outside air as breps.  Connect to a Grasshopper "Preview" component to add color to the breps.</td><td>Goo</td></tr>
+<tr><td><b>Ground Floors</b></td><td>groundFloors</td><td>A list of ground floors of your zones as breps.  Connect to a Grasshopper "Preview" component to add color to the breps.</td><td>Goo</td></tr>
+<tr><td><b>Underground Walls</b></td><td>undergroundWalls</td><td>A list of underground walls of your zones as breps.  Connect to a Grasshopper "Preview" component to add color to the breps.</td><td>Goo</td></tr>
+<tr><td><b>Underground Slabs</b></td><td>undergroundSlabs</td><td>A list of underground floor slabs of your zones as breps.  Connect to a Grasshopper "Preview" component to add color to the breps.</td><td>Goo</td></tr>
+<tr><td><b>Underground Ceilings</b></td><td>undergroundCeilings</td><td>A list of underground ceilings of your zones as breps.  Connect to a Grasshopper "Preview" component to add color to the breps.</td><td>Goo</td></tr>
+<tr><td><b>Shadings</b></td><td>shadings</td><td>A list of shadings of your zones as breps.  Connect to a Grasshopper "Preview" component to add color to the breps.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

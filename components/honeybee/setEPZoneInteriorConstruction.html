@@ -915,6 +915,30 @@
 <p><a href="../../index.html#Honeybee">Component Index</a> &gt; <a href="../../addons/honeybee.html">Honeybee</a> > 08 | Energy | Set Zone Properties > <b>Set EP Zone Interior Construction</b></p>
 </div>
 <h3>Set EP Zones Interior Construction<br></h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>HBZones</b></td><td>_HBZones</td><td>Honeybee zones</td><td>Goo</td></tr>
+<tr><td><b>Int Wall EPConstruction</b></td><td>intWallEPConstruction_</td><td>Optional new construction for interior walls</td><td>Goo</td></tr>
+<tr><td><b>Int Window EPConstruction</b></td><td>intWindowEPConstruction_</td><td>Optional new construction for interior windows</td><td>Goo</td></tr>
+<tr><td><b>Int Floor EPConstruction</b></td><td>intFloorEPConstruction_</td><td>Optional new construction for interior floors</td><td>Goo</td></tr>
+<tr><td><b>Int Ceiling EPConstruction</b></td><td>intCeilingEPConstruction_</td><td>Optional new construction for interior ceilings.  If no value is connected here but a value is connected for interior floors, the intCeiling construction will be assumed to be the same as the intFloor construction above.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Modified HBZones</b></td><td>modifiedHBZones</td><td>Honeybee zone with updated constructions</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

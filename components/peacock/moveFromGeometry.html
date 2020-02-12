@@ -548,6 +548,31 @@ Workbench
 <p><a href="../../index.html#Peacock">Component Index</a> &gt; <a href="../../addons/peacock.html">Peacock</a> > Workbench > <b>Move from geometry</b></p>
 </div>
 <h3>Move a collection of points from the nearest projection in a geometry</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Points</b></td><td>P</td><td>Points to move from geometries</td><td>Point</td></tr>
+<tr><td><b>Geometries</b></td><td>G</td><td>Geometries to move away from</td><td>GeometricGoo</td></tr>
+<tr><td><b>Distances</b></td><td>D</td><td>Distances to move</td><td>Number</td></tr>
+<tr><td><b>Normal</b></td><td>N</td><td>True = move in geometry normal direction. False = move in input - closest point direction.</td><td>Boolean</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Points</b></td><td>P</td><td>Translated points</td><td>Point</td></tr>
+<tr><td><b>Closest points</b></td><td>cP</td><td>Points closest to the geometries</td><td>Point</td></tr>
+<tr><td><b>Vector</b></td><td>V</td><td>Vectors of translation</td><td>Vector</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

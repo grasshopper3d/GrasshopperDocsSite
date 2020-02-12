@@ -621,6 +621,36 @@
 <p><a href="../../index.html#Ladybug">Component Index</a> &gt; <a href="../../addons/ladybug.html">Ladybug</a> > 2 | VisualizeWeatherData > <b>Import Ground Temp</b></p>
 </div>
 <h3>Use this component to visualise ground temperatures throughout the year at specific depths. Please note that epw files usually only provide ground temperature data at depths 0.5 meters, 2 meters and 4 meters thus data has been interpolated for all other depths. In particular this interpolation assumes that ground temperatures do not vary over the seasons once the depth has reach 9 meters below the ground surface.<br></h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Epw File</b></td><td>_epwFile</td><td>An .epw file path on your system as a string</td><td>Goo</td></tr>
+<tr><td><b>Visualisedata Season</b></td><td>visualisedata_Season</td><td>Set to true to visualise the ground temperature data as an average for every season</td><td>Goo</td></tr>
+<tr><td><b>Visualisedata Month</b></td><td>visualisedata_Month</td><td>Set to true to visualise the ground temperature data for every month</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Out</b></td><td>readMe!</td><td>...</td><td>String</td></tr>
+<tr><td><b>Groundtemp1st</b></td><td>groundtemp1st</td><td>In every epw file there are monthly ground temperatures at 3 different depths this is the 1st</td><td>Goo</td></tr>
+<tr><td><b>Groundtemp2nd</b></td><td>groundtemp2nd</td><td>In every epw file there are monthly ground temperatures at 3 different depths this is the 2nd</td><td>Goo</td></tr>
+<tr><td><b>Groundtemp3rd</b></td><td>groundtemp3rd</td><td>In every epw file there are monthly ground temperatures at 3 different depths this is the 3rd</td><td>Goo</td></tr>
+<tr><td><b>Profile Crvs</b></td><td>profileCrvs</td><td>This output draws the curves of the temperature curves connect it to G of the Grasshopper component Custom Preview</td><td>Goo</td></tr>
+<tr><td><b>Crv Colors</b></td><td>crvColors</td><td>This output draws the colours of the temperature curves connect it to S of the Grasshopper component Custom Preview</td><td>Goo</td></tr>
+<tr><td><b>Graph Axes</b></td><td>graphAxes</td><td>This output draws the axes of the graph it doesn't need to be connected to anything</td><td>Goo</td></tr>
+<tr><td><b>Graphtext</b></td><td>graphtext</td><td>This output draws the text of the graph it doesn't need to be connected to anything</td><td>Goo</td></tr>
+<tr><td><b>Legend</b></td><td>Legend</td><td>Script variable Importgroundtemp</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

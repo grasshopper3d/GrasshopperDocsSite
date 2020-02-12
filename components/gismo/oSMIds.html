@@ -231,6 +231,41 @@
 <p><a href="../../index.html#Gismo">Component Index</a> &gt; <a href="../../addons/gismo.html">Gismo</a> > 1 | OpenStreetMap > <b>OSMids</b></p>
 </div>
 <h3>Use this component to define lists of Open Street Map ids.<br>These lists can be used to define:<br>1) only those ids which will be included (isolated) when "OSM shapes" component is ran (use "osm_id_Only" and "osm_way_id_Only" inputs for this)<br>2) ids which will be removed when "OSM shapes" component is ran (use "osm_id_Remove" and "osm_way_id_Remove" inputs for this)<br>3) you can combine 1) and 2) and both define the: included and removed ids.<br>-<br>Additional info:<br>Sometimes "OSM shapes" can output invalid or unwanted shapes. In that case the purpose of this component is to remove those shapes by adding their ids to the "osm_id_Remove_" and/or "osm_way_id_Remove_" inputs.<br>-<br>Provided by Gismo 0.0.3</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Osm id Only</b></td><td>osm_id_Only_</td><td>A list (or a single id) of "osm_id" which will only be included when "OSM shapes" component is ran.
+-
+If this input remains empty, then all "osm_id" will be presented.</td><td>Goo</td></tr>
+<tr><td><b>Osm way id Only</b></td><td>osm_way_id_Only_</td><td>A list (or a single id) of "osm_way_id" which will only be included when "OSM shapes" component is ran.
+-
+If this input remains empty, then all "osm_way_id" will be presented.</td><td>Goo</td></tr>
+<tr><td><b></b></td><td>__________________</td><td>Script variable Python</td><td>Goo</td></tr>
+<tr><td><b>Osm id Remove</b></td><td>osm_id_Remove_</td><td>A list (or a single id) of "osm_id" which will be removed when "OSM shapes" component is ran.
+-
+If this input remains empty, then none of the "osm_id" will be removed.</td><td>Goo</td></tr>
+<tr><td><b>Osm way id Remove</b></td><td>osm_way_id_Remove_</td><td>A list (or a single id) of "osm_way_id" which will be removed when "OSM shapes" component is ran.
+-
+If this input remains empty, then none of the "osm_way_id" will be removed.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Out</b></td><td>readMe!</td><td>...</td><td>String</td></tr>
+<tr><td><b>Only Remove Ids</b></td><td>onlyRemove_Ids</td><td>Data tree containing "osm_id_Only_, osm_way_id_Only_, osm_id_Remove_, osm_way_id_Remove_" inputs.
+-
+Use it for "OSM shapes" component's "onlyRemove_Ids_" input.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

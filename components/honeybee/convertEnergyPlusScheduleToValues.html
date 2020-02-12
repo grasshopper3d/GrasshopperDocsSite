@@ -915,6 +915,41 @@
 <p><a href="../../index.html#Honeybee">Component Index</a> &gt; <a href="../../addons/honeybee.html">Honeybee</a> > 07 | Energy | Schedule > <b>Convert Energy Plus Schedule to Values</b></p>
 </div>
 <h3>Use this component to make a 3D chart in the Rhino scene of any climate data or hourly simulation data.<br></h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Sch Name</b></td><td>_schName</td><td>Name of the EP schedule</td><td>Goo</td></tr>
+<tr><td><b>Week Start Day</b></td><td>_weekStartDay_</td><td>An integer or text descriptor to set the schedule start day of the week. The default is set to 0 - sun - sunday.
+-
+Choose from one of the following:
+0 - sun - sunday
+1 - mon - monday
+2 - tue - tuesday
+3 - wed - wednesday
+4 - thu - thursday
+5 - fri - friday
+6 - sat - saturday</td><td>Goo</td></tr>
+<tr><td><b>Epw File For Hol</b></td><td>epwFileForHol_</td><td>The file address of an EPW file on your system.  This component will automatically look up the national holidays of the country listed in the epw file and factor them into the output "values".</td><td>Goo</td></tr>
+<tr><td><b>Custom Hol</b></td><td>customHol_</td><td>Connect a list of DOYs (from 1 to 365) or a list of strings (example: DEC 25).
+-
+These will be added to any holidays in the epwFile holidays (if connected).</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Values</b></td><td>values</td><td>Hourly values that define the schedule.</td><td>Goo</td></tr>
+<tr><td><b>Holidays</b></td><td>holidays</td><td>Holidays that have been incorporated into the hourly values of the schedule.  Connect these to the 'holidays' output of the "Honeybee_Energy Simulation Par" component to have them factored into the simulation.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

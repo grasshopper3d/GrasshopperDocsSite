@@ -621,6 +621,51 @@
 <p><a href="../../index.html#Ladybug">Component Index</a> &gt; <a href="../../addons/ladybug.html">Ladybug</a> > 5 | Extra > <b>Countour Mesh</b></p>
 </div>
 <h3>Use this component to create contoured visualizations of any analysis mesh and corresponding numerical dataset in Ladybug + Honeybee.<br>Note that this component currently only works for planar meshes.<br></h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Analysis Result</b></td><td>_analysisResult</td><td>A numerical data set whose length corresponds to the number of faces in the _inputMesh.  This data will be used to generate contours from the mesh.</td><td>Goo</td></tr>
+<tr><td><b>Input Mesh</b></td><td>_inputMesh</td><td>An already-colored mesh from one of the Ladybug components which you would like to re-color based on data in the _analysisResult.</td><td>Goo</td></tr>
+<tr><td><b>Contour Type</b></td><td>_contourType_</td><td>An integer to set the type of contour visualization.  The default is set to 0 for colored regions.  Choose from the following options:
+0 - Colored Regions + Labeled Lines
+1 - Colored Regions
+2 - Labeled Lines
+3 - Colored Lines</td><td>Goo</td></tr>
+<tr><td><b>Height Domain</b></td><td>heightDomain_</td><td>Optional height domain to create a 3D mesh result. Use Construct Domain component to create a domain</td><td>Goo</td></tr>
+<tr><td><b>Legend Par</b></td><td>legendPar_</td><td>Optional legend parameters from the Ladybug Legend Parameters component.  Legend Parameters can be used to change the colors, numerical range, and/or number of divisions of any Ladybug legend along with the corresponding colored mesh.</td><td>Goo</td></tr>
+<tr><td><b>Analysis Title</b></td><td>analysisTitle_</td><td>Text representing a new title for the re-colored mesh.  If no title is input here, the default will read "unnamed."</td><td>Goo</td></tr>
+<tr><td><b>Legend Title</b></td><td>legendTitle_</td><td>Text representing a new legend title for re-colored mesh. Legends are usually titled with the units of the _analysisResult.  If no text is provided here, the default title will read "unkown units."</td><td>Goo</td></tr>
+<tr><td><b>Label Size</b></td><td>_labelSize_</td><td>A number to set the size of the text labels for the contours when _contourType_ 0 or 2 is selected.  The default is auto-calculated based on the size of the mesh.</td><td>Goo</td></tr>
+<tr><td><b>Bake It</b></td><td>bakeIt_</td><td>An integer that tells the component if/how to bake the bojects in the Rhino scene.  The default is set to 0.  Choose from the following options:
+0 (or False) - No geometry will be baked into the Rhino scene (this is the default).
+1 (or True) - The geometry will be baked into the Rhino scene as a colored hatch and Rhino text objects, which facilitates easy export to PDF or vector-editing programs.
+2 - The geometry will be baked into the Rhino scene as colored meshes, which is useful for recording the results of paramteric runs as light Rhino geometry.</td><td>Goo</td></tr>
+<tr><td><b>Layer Name</b></td><td>layerName_</td><td>If bakeIt_ is set to "True", input Text here corresponding to the Rhino layer onto which the resulting mesh and legend should be baked.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Out</b></td><td>readMe!</td><td>...</td><td>String</td></tr>
+<tr><td><b>Contour Mesh</b></td><td>contourMesh</td><td>A list of colored meshes that is organized with each contour region as its own color.</td><td>Goo</td></tr>
+<tr><td><b>Underlay Mesh</b></td><td>underlayMesh</td><td>A mesh that is colored face-by-face (like a typical Ladybug mesh), which is plaed under the contour mesh to make the visualization read when the Rhino intersection fails to produce a complete contourMesh.</td><td>Goo</td></tr>
+<tr><td><b>Contour Lines</b></td><td>contourLines</td><td>Curves that show values of constant value along the results.</td><td>Goo</td></tr>
+<tr><td><b>Contour Colors</b></td><td>contourColors</td><td>Connect these to a native Grasshopper Preview componen along with the contourLines to get a colored line visualization.</td><td>Goo</td></tr>
+<tr><td><b>Contour Labels</b></td><td>contourLabels</td><td>A list of text meshes that show the value along each contour line.</td><td>Goo</td></tr>
+<tr><td><b>Legend</b></td><td>legend</td><td>A new legend that that corresponds to the colors of the newMesh. Connect this output to a grasshopper "Geo" component in order to preview this legend separately in the Rhino scene.</td><td>Goo</td></tr>
+<tr><td><b>Legend Base Pt</b></td><td>legendBasePt</td><td>The legend base point, which can be used to move the legend in relation to the newMesh with the grasshopper "move" component.</td><td>Goo</td></tr>
+<tr><td><b>Legend Colors</b></td><td>legendColors</td><td>A list of colors that correspond to each step in the legend.</td><td>Goo</td></tr>
+<tr><td><b>Int Planes</b></td><td>intPlanes</td><td>The planes that were used to intersect the mesh to genrate the contours. Set heightDomain_ to a non-zer number to visualize.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

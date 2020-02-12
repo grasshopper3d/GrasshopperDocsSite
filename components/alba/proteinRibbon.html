@@ -320,6 +320,35 @@ Visualize
 <p><a href="../../index.html#Alba">Component Index</a> &gt; <a href="../../addons/alba.html">Alba</a> > Protein > <b>Protein Ribbon</b></p>
 </div>
 <h3>visualizes the structure of a  protein</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Location</b></td><td>Loc</td><td>Contains a collection of three-dimensional axis-systems</td><td>Plane</td></tr>
+<tr><td><b>Path to PDB file</b></td><td>PDB</td><td>Contains a collection of file paths</td><td>String</td></tr>
+<tr><td><b>threshold count</b></td><td>TC</td><td>threshold count for # consequtive residues for seconary structure</td><td>Number</td></tr>
+<tr><td><b>Threshold angle α vs β</b></td><td>TA</td><td>in radians</td><td>Number</td></tr>
+<tr><td><b>Alpha Helix Color</b></td><td>α</td><td>Input stream 0</td><td>Goo</td></tr>
+<tr><td><b>Beta Sheet Color</b></td><td>β</td><td>Input stream 1</td><td>Goo</td></tr>
+<tr><td><b>Loop Color</b></td><td>L</td><td>Input stream 0</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>all atom points</b></td><td>a</td><td>Reoriented geometry</td><td>GeometricGoo</td></tr>
+<tr><td><b>amino acid residue points</b></td><td>AA</td><td>Simplified data tree.</td><td>Goo</td></tr>
+<tr><td><b>curve</b></td><td>C</td><td>Result of merge</td><td>Goo</td></tr>
+<tr><td><b>Ribbon</b></td><td>R</td><td>Contains a collection of generic geometry</td><td>GeometricGoo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

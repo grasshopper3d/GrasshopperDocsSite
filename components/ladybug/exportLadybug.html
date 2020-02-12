@@ -621,6 +621,28 @@
 <p><a href="../../index.html#Ladybug">Component Index</a> &gt; <a href="../../addons/ladybug.html">Ladybug</a> > 6 | Developers > <b>Export Ladybug</b></p>
 </div>
 <h3>Code Developers of Ladybug and Honeybee can use this component to export Ladybug/Honeybee user objects and source code that they create to the Github folder on their computer.<br>This eases and automates the steps before commiting new components to the Github.<br>This component was written thanks to Giulio Piacentino a really helpful example.<br></h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Components</b></td><td>_components</td><td>Any output from a new Ladybug (or Honeybee) component that you wish to export. Right now, only one component can be connected at a time but you can input a "*" (without quotation marsk) to search all changed Ladybug components on a grasshopper canvas.</td><td>Goo</td></tr>
+<tr><td><b>Target Folder</b></td><td>_targetFolder</td><td>A file path on your system which you would like to export the user object and source code to.  For most code developers, this file path will lead to their Github folder for Ladybug (or Honeybee), which is usually installed in "My Documents" by default. Exported source code will be saved at .\src and exported userObjects will be saved at .\userObjects in this _targetFolder.</td><td>Goo</td></tr>
+<tr><td><b>Export</b></td><td>_export</td><td>Set to "True" to export Ladybug (or Honeybee) components to the _targerFolder.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Out</b></td><td>readMe!</td><td>...</td><td>String</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

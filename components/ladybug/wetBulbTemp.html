@@ -621,6 +621,30 @@
 <p><a href="../../index.html#Ladybug">Component Index</a> &gt; <a href="../../addons/ladybug.html">Ladybug</a> > 1 | AnalyzeWeatherData > <b>Wet Bulb Temp</b></p>
 </div>
 <h3>Use this component to calculate Wet Bulb Temperature and Dew Point Temperature<br>This component uses the "Method for obtaining wet-bulb temperatures by modifying the psychrometric formula"<br>created by J. Sullivan and L. D. Sanders (Center for Experiment Design and Data Analysis).<br>NOAA - National Oceanic and Atmospheric Administration<br>Special thanks goes to the authors of the online wet-bulb temperature calculator <br>http://www.srh.noaa.gov/epz/?n=wxcalc_rh<br></h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Dry Bulb Temperature</b></td><td>_dryBulbTemperature</td><td>The dry bulb temperature [°C] from Import epw component and Ladybug_Average Data or generic lists of numbers.</td><td>Goo</td></tr>
+<tr><td><b>Relative Humidity</b></td><td>_relativeHumidity</td><td>The relative humidity [%] from Import epw component and Ladybug_Average Data or generic lists of numbers.</td><td>Goo</td></tr>
+<tr><td><b>Barometric Pressure</b></td><td>_barometricPressure_</td><td>The barometric pressure [Pa] from Import epw component and Ladybug_Average Data or generic lists of numbers. If no value is connected here, the default pressure will be 101325 Pa, which is air pressure at sea level.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Out</b></td><td>readMe!</td><td>...</td><td>String</td></tr>
+<tr><td><b>Wet Bulb Temp</b></td><td>wetBulbTemp</td><td>The lowest temperature that can be reached by evaporating water into the air.</td><td>Goo</td></tr>
+<tr><td><b>Dew Point Temp</b></td><td>dewPointTemp</td><td>The temperature at which the water vapor contained in a volume of air at a given atmospheric pressure reaches saturation and condenses to form dew.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

@@ -915,6 +915,47 @@
 <p><a href="../../index.html#Honeybee">Component Index</a> &gt; <a href="../../addons/honeybee.html">Honeybee</a> > 04 | Daylight | Daylight > <b>Run Daylight Simulation</b></p>
 </div>
 <h3>export geometries to rad file, and run daylighting/energy simulation<br></h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>HBObjects</b></td><td>_HBObjects</td><td>List of Honeybee objects</td><td>Goo</td></tr>
+<tr><td><b>Analysis Recipe</b></td><td>_analysisRecipe</td><td>An analysis recipe</td><td>Goo</td></tr>
+<tr><td><b>------------------</b></td><td>------------------</td><td>Script variable writeRad</td><td>Goo</td></tr>
+<tr><td><b>Write Rad</b></td><td>_writeRad</td><td>Write simulation files</td><td>Goo</td></tr>
+<tr><td><b>Run Rad</b></td><td>runRad_</td><td>Run the analysis. _writeRad should be also set to true. Set to 2 if you want the analysis to run in background. This option is useful for parametric runs when you don't want to see command shells.</td><td>Goo</td></tr>
+<tr><td><b>Num Of CPUs</b></td><td>_numOfCPUs_</td><td>Number of CPUs to be used for the studies. This option doesn't work for image-based analysis</td><td>Goo</td></tr>
+<tr><td><b>-------------------</b></td><td>-------------------</td><td>Script input |\\|//|\\|//|\\|//|\\|//|.</td><td>Goo</td></tr>
+<tr><td><b>Working Dir</b></td><td>_workingDir_</td><td>Working directory on your system. Default is set to C:\Ladybug</td><td>Goo</td></tr>
+<tr><td><b>Rad File Name</b></td><td>_radFileName_</td><td>Input the project name as a string</td><td>Goo</td></tr>
+<tr><td><b>------------------</b></td><td>------------------</td><td>Script input |//|\\|//|\\|//|\\|//|\\|.</td><td>Goo</td></tr>
+<tr><td><b>Mesh Settings</b></td><td>meshSettings_</td><td>Custom mesh setting. Use Grasshopper mesh setting components</td><td>Goo</td></tr>
+<tr><td><b>Export Air Walls</b></td><td>exportAirWalls_</td><td>Set to True if you want to export air walls as surfaces and False if you don't want air walls be exported.  The default is set to False.</td><td>Goo</td></tr>
+<tr><td><b>Additional Rad Files</b></td><td>additionalRadFiles_</td><td>A list of fullpath to valid radiance files which will be added to the scene</td><td>Goo</td></tr>
+<tr><td><b>Overwrite Results</b></td><td>overwriteResults_</td><td>Set to False if you want the component create a copy of all the results. Default is True</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Out</b></td><td>readMe!</td><td>...</td><td>String</td></tr>
+<tr><td><b>Analysis Type</b></td><td>analysisType</td><td>Type of the analysis (e.g. illuminance, luminance,...)</td><td>Goo</td></tr>
+<tr><td><b>Results Unit</b></td><td>resultsUnit</td><td>Unit of the results (e.g. lux, candela, wh/m2)</td><td>Goo</td></tr>
+<tr><td><b>Results</b></td><td>results</td><td>Path to the results of grid based analysis (includes all the recipes except image-based and annual)</td><td>Goo</td></tr>
+<tr><td><b>Test Pts</b></td><td>testPts</td><td>Test points</td><td>Goo</td></tr>
+<tr><td><b>Result Files</b></td><td>resultFiles</td><td>Script variable runDaylightAnalysis</td><td>Goo</td></tr>
+<tr><td><b>Rad Geo File</b></td><td>radGeoFile</td><td>Script variable runDaylightAnalysis</td><td>Goo</td></tr>
+<tr><td><b>Study Folder</b></td><td>studyFolder</td><td>Script variable runDaylightAnalysis</td><td>Goo</td></tr>
+<tr><td><b>Done</b></td><td>done</td><td>True if the study is over</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

@@ -621,6 +621,41 @@
 <p><a href="../../index.html#Ladybug">Component Index</a> &gt; <a href="../../addons/ladybug.html">Ladybug</a> > 7 | WIP > <b>ENVI-Met Grid</b></p>
 </div>
 <h3>Use this component to visualize ENVI-Met v4.0 data. Connect "resultFileAddress" which comes from ENVI-Met reader.<br>Component mainly based on:<br>https://www.researchgate.net/publication/281031049_Outdoor_Comfort_the_ENVI-BUG_tool_to_evaluate_PMV_values_point_by_point<br></h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Base Point</b></td><td>basePoint_</td><td>Input a point here to move ENVI-Met grid. If no input is provided it will be origin point.</td><td>Goo</td></tr>
+<tr><td><b>Result File Address</b></td><td>_resultFileAddress</td><td>Output comes from "ENVI-Met Reader".</td><td>Goo</td></tr>
+<tr><td><b>Sel XY</b></td><td>_selXY_</td><td>Connect an integer to generate a XY section. Plug a panel to "readMe!" for more info.
+-
+Default value is 0.</td><td>Goo</td></tr>
+<tr><td><b>Sel XZ</b></td><td>selXZ_</td><td>Connect an integer to generate a XZ section. Plug a panel to "readMe!" for more info.</td><td>Goo</td></tr>
+<tr><td><b>Sel YZ</b></td><td>selYZ_</td><td>Connect an integer to generate a YZ section. Plug a panel to "readMe!" for more info.</td><td>Goo</td></tr>
+<tr><td><b>Legend Par</b></td><td>legendPar_</td><td>Optional legend parameters from the Ladybug Legend Parameters component.</td><td>Goo</td></tr>
+<tr><td><b>------------------</b></td><td>------------------</td><td>(...)</td><td>Goo</td></tr>
+<tr><td><b>Run It</b></td><td>_runIt</td><td>Set to "True" to run the component and perform ENVI-Met data visualization.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Out</b></td><td>readMe!</td><td>...</td><td>String</td></tr>
+<tr><td><b>Analysis Mesh</b></td><td>analysisMesh</td><td>Analysis grid of ENVI-Met (XY plane, ZX plane and ZY plane).</td><td>Goo</td></tr>
+<tr><td><b>Analysis Result</b></td><td>analysisResult</td><td>Values corrisponding to each analysis Grid.</td><td>Goo</td></tr>
+<tr><td><b>Test Points</b></td><td>testPoints</td><td>Test points on grids.</td><td>Goo</td></tr>
+<tr><td><b>----------------</b></td><td>----------------</td><td>(...)</td><td>Goo</td></tr>
+<tr><td><b>Legend</b></td><td>legend</td><td>Legend geometry of ENVI-Met Grid.</td><td>Goo</td></tr>
+<tr><td><b>Title Label</b></td><td>titleLabel</td><td>Title geometry with information about project name, location, and date.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

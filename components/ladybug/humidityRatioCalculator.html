@@ -621,6 +621,32 @@
 <p><a href="../../index.html#Ladybug">Component Index</a> &gt; <a href="../../addons/ladybug.html">Ladybug</a> > 1 | AnalyzeWeatherData > <b>Humidity Ratio Calculator</b></p>
 </div>
 <h3>Calculates the humidity ratio from the ladybug weather file import parameters<br>Conversion formulas are taken from the following publications:<br>Vaisala. (2013) Humidity Conversion Formulas: Calculation Formulas for Humidity. www.vaisala.com/Vaisala%20Documents/Application%20notes/Humidity_Conversion_Formulas_B210973EN-F.pdf<br>W. Wagner and A. Pruß:" The IAPWS Formulation 1995 for the Thermodynamic Properties of Ordinary Water Substance for General and Scientific Use ", Journal of Physical and Chemical Reference Data, June 2002 ,Volume 31, Issue 2, pp. 387535<br></h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Dry Bulb Temperature</b></td><td>_dryBulbTemperature</td><td>The dry bulb temperature from the Import epw component.</td><td>Goo</td></tr>
+<tr><td><b>Relative Humidity</b></td><td>_relativeHumidity</td><td>The relative humidity from the Import epw component.</td><td>Goo</td></tr>
+<tr><td><b>Barometric Pressure</b></td><td>barometricPressure_</td><td>The barometric pressure from the Import epw component.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Out</b></td><td>readMe!</td><td>...</td><td>String</td></tr>
+<tr><td><b>Humidity Ratio</b></td><td>humidityRatio</td><td>The hourly humidity ratio (kg water / kg air).</td><td>Goo</td></tr>
+<tr><td><b>Enthalpy</b></td><td>enthalpy</td><td>The hourly enthalpy of the air (kJ / kg).</td><td>Goo</td></tr>
+<tr><td><b>Partial Pressure</b></td><td>partialPressure</td><td>The hourly partial pressure of water vapor in the atmosphere (Pa).</td><td>Goo</td></tr>
+<tr><td><b>Saturation Pressure</b></td><td>saturationPressure</td><td>The saturation pressure of water vapor in the atmosphere (Pa).</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

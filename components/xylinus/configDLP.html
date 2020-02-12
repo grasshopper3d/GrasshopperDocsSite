@@ -261,6 +261,56 @@ Syringe
 <p><a href="../../index.html#Xylinus">Component Index</a> &gt; <a href="../../addons/xylinus.html">Xylinus</a> > DLP > <b>Config  DLP</b></p>
 </div>
 <h3>This component holds the primary configurations needed for 3D printing with an a DLP projector to do SLA. These settings can be passed as a condensed list to many of the components in Xylinus. They can also be broken out and individual setting fed into Xylinus sub-routines.</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>printer volume domain box</b></td><td>printer volume domain box</td><td>Input a box with  X,Y,and Z domains that match the dimensions of your printer. This can easily be created with the Domain Box component. If your printer 0 position is in the bottom left corner (as standard) you can simply use the default world XY plane, and just enter the the dimesions of your printer into the X, Y, and Z inputs.</td><td>Box</td></tr>
+<tr><td><b>print window rect (mm x mm)</b></td><td>print window rect (mm x mm)</td><td>This is used to determine the size/scaling of the background image</td><td>Rectangle</td></tr>
+<tr><td><b>Domain²</b></td><td>print window domain (px X px)</td><td>Contains a collection of 2D number domains</td><td>Interval2D</td></tr>
+<tr><td><b>Data</b></td><td>background image</td><td>Contains a collection of generic data</td><td>Goo</td></tr>
+<tr><td><b>Geometry</b></td><td>calibration geometry</td><td>The calibration geometry is used to establish the proper scaling of the projected print. When the projector window   is opened, it will zoom to this geometry.  At this point, the calibration geomerty should be projecting at its correct diemensions. If not adjust its size accordingly and retest.</td><td>GeometricGoo</td></tr>
+<tr><td><b>baud rate (bytes/sec)</b></td><td>baud rate (bytes/sec)</td><td>Contains a collection of floating point numbers</td><td>Number</td></tr>
+<tr><td><b>Z print speed (mm/sec)</b></td><td>Z print speed (mm/sec)</td><td>Contains a collection of floating point numbers</td><td>Number</td></tr>
+<tr><td><b>Z rapid speed (mm/sec)</b></td><td>Z rapid speed (mm/sec)</td><td>Contains a collection of floating point numbers</td><td>Number</td></tr>
+<tr><td><b>Z lift on peel (mm)</b></td><td>Z lift on peel (mm)</td><td>Contains a collection of floating point numbers</td><td>Number</td></tr>
+<tr><td><b>layer height (mm)</b></td><td>layer height (mm)</td><td>Contains a collection of floating point numbers</td><td>Number</td></tr>
+<tr><td><b>cure times (sec/layer)</b></td><td>cure times (sec/layer)</td><td>You may pass multiple times. They will be used sequentially and the last time will be repeated for all remaining layers.</td><td>Number</td></tr>
+<tr><td><b>dwell post cure (sec)</b></td><td>dwell post cure (sec)</td><td>Contains a collection of floating point numbers</td><td>Number</td></tr>
+<tr><td><b>dwell at top (sec)</b></td><td>dwell at top (sec)</td><td>Contains a collection of floating point numbers</td><td>Number</td></tr>
+<tr><td><b>dwell at bottom (sec)</b></td><td>dwell at bottom (sec)</td><td>Contains a collection of floating point numbers</td><td>Number</td></tr>
+<tr><td><b>peel time scaler</b></td><td>peel time scaler</td><td>Contains a collection of floating point numbers</td><td>Number</td></tr>
+<tr><td><b>Primary config for 3DP_F</b></td><td>C</td><td>Optional configuration for 3D printing with filament. Direct entries will override these config entries.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Box</b></td><td>printer volume domain box</td><td>Contains a collection of boxes</td><td>Box</td></tr>
+<tr><td><b>Rectangle</b></td><td>print window rect (mm x mm)</td><td>Contains a collection of rectangles</td><td>Rectangle</td></tr>
+<tr><td><b>Domain²</b></td><td>print window domain (px X px)</td><td>Contains a collection of 2D number domains</td><td>Interval2D</td></tr>
+<tr><td><b>Data</b></td><td>background image</td><td>Contains a collection of generic data</td><td>Goo</td></tr>
+<tr><td><b>Geometry</b></td><td>calibration geometry</td><td>Contains a collection of generic geometry</td><td>GeometricGoo</td></tr>
+<tr><td><b>Number</b></td><td>baud rate (bytes/sec)</td><td>Contains a collection of floating point numbers</td><td>Number</td></tr>
+<tr><td><b>Number</b></td><td>Z print speed (mm/min)</td><td>Contains a collection of floating point numbers</td><td>Number</td></tr>
+<tr><td><b>Number</b></td><td>Z rapid speed (mm/min)</td><td>Contains a collection of floating point numbers</td><td>Number</td></tr>
+<tr><td><b>Number</b></td><td>Z lift on peel (mm)</td><td>Contains a collection of floating point numbers</td><td>Number</td></tr>
+<tr><td><b>Number</b></td><td>layer height (mm)</td><td>Contains a collection of floating point numbers</td><td>Number</td></tr>
+<tr><td><b>Number</b></td><td>cure times (sec/layer)</td><td>Contains a collection of floating point numbers</td><td>Number</td></tr>
+<tr><td><b>Number</b></td><td>dwell post cure (sec)</td><td>Contains a collection of floating point numbers</td><td>Number</td></tr>
+<tr><td><b>Number</b></td><td>dwell at top (sec)</td><td>Contains a collection of floating point numbers</td><td>Number</td></tr>
+<tr><td><b>Number</b></td><td>dwell at bottom (sec)</td><td>Contains a collection of floating point numbers</td><td>Number</td></tr>
+<tr><td><b>Number</b></td><td>peel time scaler</td><td>Contains a collection of floating point numbers</td><td>Number</td></tr>
+<tr><td><b>Config DLP</b></td><td>C</td><td>primary configurations for 3D printing with DLP.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

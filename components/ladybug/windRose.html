@@ -621,6 +621,59 @@
 <p><a href="../../index.html#Ladybug">Component Index</a> &gt; <a href="../../addons/ladybug.html">Ladybug</a> > 2 | VisualizeWeatherData > <b>Wind Rose</b></p>
 </div>
 <h3>Use this component to make a windRose in the Rhino scene. In this wind rose diagram, each wedge represents the percentage of time the wind came from that direction during the analysis period you choose. You will note that each wedge is also colored. These colors relate directly with the legend displayed on the right. The colors in a wedge conveys the relative percentage of time the wind coming from that direction was within that speed range.<br></h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>North</b></td><td>_north_</td><td>Input a vector to be used as a true North direction for the wind rose or a number between 0 and 360 that represents the degrees off from the y-axis to make North.  The default North direction is set to the Y-axis (0 degrees).</td><td>Goo</td></tr>
+<tr><td><b>Hourly Wind Direction</b></td><td>_hourlyWindDirection</td><td>The list of hourly wind direction data from the Import epw component.</td><td>Goo</td></tr>
+<tr><td><b>Hourly Wind Speed</b></td><td>_hourlyWindSpeed</td><td>The list of hourly wind speed data from the Import epw component.</td><td>Goo</td></tr>
+<tr><td><b>Annual Hourly Data</b></td><td>annualHourlyData_</td><td>An optional list of hourly data from the Import epw component, which will be overlaid on wind rose (e.g. dryBulbTemperature)</td><td>Goo</td></tr>
+<tr><td><b>Analysis Period</b></td><td>_analysisPeriod_</td><td>An optional analysis period from the Analysis Period component.</td><td>Goo</td></tr>
+<tr><td><b>Conditional Statement</b></td><td>conditionalStatement_</td><td>This input allows users to remove data that does not fit specific conditions or criteria from the wind rose. To use this input correctly, hourly data, such as temperature or humidity, must be plugged into the annualHourlyData_ input. The conditional statement input here should be a valid condition statement in Python, such as "a;25" or "b;80" (without quotation marks).
+The current version of this component accepts "and" and "or" operators. To visualize the hourly data, only lowercase English letters should be used as variables, and each letter alphabetically corresponds to each of the lists (in their respective order): "a" always represents the 1st list, "b" always represents the 2nd list, etc.
+For the WindBoundaryProfile component, the variable "a" always represents windSpeed. For example, if you have hourly dry bulb temperature connected as the second list, and relative humidity connected as the third list (both to the annualHourlyData_ input), and you want to plot the data for the time period when temperature is between 18C and 23C, and humidity is less than 80%, the conditional statement should be written as “18;b;23 and c;80” (without quotation marks). This also accepts output from Ladybug_Beaufort Ranges component.</td><td>Goo</td></tr>
+<tr><td><b>Num Of Directions</b></td><td>_numOfDirections_</td><td>A number of cardinal directions with which to divide up the data in wind rose. Values must be greater than 4 since you can have no fewer than 4 cardinal directions.</td><td>Goo</td></tr>
+<tr><td><b>Center Point</b></td><td>_centerPoint_</td><td>Input a point here to change the location of the wind rose in the Rhino scene.  The default is set to the Rhino model origin (0,0,0).</td><td>Goo</td></tr>
+<tr><td><b>Max Frequency</b></td><td>maxFrequency_</td><td>An optional number between 1 and 100 that represents the maximum percentage of hours that the outer-most ring of the wind rose represents.  By default, this value is set by the wind direction with the largest number of hours (the highest frequency) but you may want to change this if you have several wind roses that you want to compare to each other.  For example, if you have wind roses for different months or seasons, which each have different maximum frequencies.</td><td>Goo</td></tr>
+<tr><td><b>Show Frequency</b></td><td>showFrequency_</td><td>Connect boolean and set it to True to display frequency of wind coming from each direction. By default, these values will be displayed in gray color.</td><td>Goo</td></tr>
+<tr><td><b>Show Average Velocity</b></td><td>showAverageVelocity_</td><td>Connect boolean and set it to True to display average wind velocity in m/s for wind coming from each direction. If a conditional statement is connected to the conditionalStatement_ input, a beaufort number is plotted(in square brackets) along with the average velocities. This number indicates the effect caused by wind of average velocity coming from that partcular direction. By default, these values will be displayed in black color.</td><td>Goo</td></tr>
+<tr><td><b>Scale</b></td><td>_scale_</td><td>Input a number here to change the scale of the wind rose.  The default is set to 1.</td><td>Goo</td></tr>
+<tr><td><b>Legend Par</b></td><td>legendPar_</td><td>Optional legend parameters from the Ladybug Legend Parameters component.</td><td>Goo</td></tr>
+<tr><td><b>Bake It</b></td><td>bakeIt_</td><td>An integer that tells the component if/how to bake the bojects in the Rhino scene.  The default is set to 0.  Choose from the following options:
+0 (or False) - No geometry will be baked into the Rhino scene (this is the default).
+1 (or True) - The geometry will be baked into the Rhino scene as a colored hatch and Rhino text objects, which facilitates easy export to PDF or vector-editing programs.
+2 - The geometry will be baked into the Rhino scene as colored meshes, which is useful for recording the results of paramteric runs as light Rhino geometry.</td><td>Goo</td></tr>
+<tr><td><b>Run It</b></td><td>_runIt</td><td>Set this value to "True" to run the component and generate a wind rose in the Rhino scene.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Out</b></td><td>readMe!</td><td>...</td><td>String</td></tr>
+<tr><td><b>Calm Rose Mesh</b></td><td>calmRoseMesh</td><td>A mesh in the center of the wind rose representing the relative number of hours where the wind speed is around 0 m/s.</td><td>Goo</td></tr>
+<tr><td><b>Wind Rose Mesh</b></td><td>windRoseMesh</td><td>A mesh representing the wind speed from different directions for all hours analyzed.</td><td>Goo</td></tr>
+<tr><td><b>Wind Rose Crvs</b></td><td>windRoseCrvs</td><td>A set of guide curves that mark the number of hours corresponding to the windRoseMesh.</td><td>Goo</td></tr>
+<tr><td><b>Wind Rose Cen Pts</b></td><td>windRoseCenPts</td><td>The center point(s) of wind rose(s).  Use this to move the wind roses in relation to one another using the grasshopper "move" component.</td><td>Goo</td></tr>
+<tr><td><b>Legend</b></td><td>legend</td><td>A legend of the wind rose. Connect this output to a grasshopper "Geo" component in order to preview the legend separately in the Rhino scene.</td><td>Goo</td></tr>
+<tr><td><b>Legend Base Pts</b></td><td>legendBasePts</td><td>The legend base point(s), which can be used to move the legend in relation to the rose with the grasshopper "move" component.</td><td>Goo</td></tr>
+<tr><td><b>Title</b></td><td>title</td><td>The title for the wind rose. Connect this output to a grasshopper "Geo" component in order to preview the legend separately in the Rhino scene.</td><td>Goo</td></tr>
+<tr><td><b>Average Velocity Mesh</b></td><td>averageVelocityMesh</td><td>Mesh output for average wind velocities displayed on WindRose. This will only output meshes if boolean value of True is provided to showAverageVelocity_. By default, these meshes are displayed in black color.</td><td>Goo</td></tr>
+<tr><td><b>Frequency Mesh</b></td><td>frequencyMesh</td><td>Mesh output for frequencies displayed on WindRose. This will only output meshes if boolean value of True is provided to showFrequency_. By default, these meshes are displayed in gray color.</td><td>Goo</td></tr>
+<tr><td><b>------------------</b></td><td>------------------</td><td>Script variable windRose</td><td>Goo</td></tr>
+<tr><td><b>Wind Speeds</b></td><td>windSpeeds</td><td>Wind speed data for the wind rose displayed in the Rhino scene.</td><td>Goo</td></tr>
+<tr><td><b>Wind Directions</b></td><td>windDirections</td><td>Wind direction data for the wind rose displayed in the Rhino scene.</td><td>Goo</td></tr>
+<tr><td><b>Average Velocities</b></td><td>averageVelocities</td><td>A list containing average wind velocity for all wind rose directions.</td><td>Goo</td></tr>
+<tr><td><b>Frequencies</b></td><td>frequencies</td><td>A list containing frequency of time the wind is coming from a particular direction for all wind rose directions.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

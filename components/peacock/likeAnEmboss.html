@@ -548,6 +548,34 @@ Workbench
 <p><a href="../../index.html#Peacock">Component Index</a> &gt; <a href="../../addons/peacock.html">Peacock</a> > Workbench > <b>Emboss</b></p>
 </div>
 <h3>Make a embossment on a surface</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Surface</b></td><td>Srf</td><td>Base surface</td><td>Surface</td></tr>
+<tr><td><b>Geometries</b></td><td>Geo</td><td>Geometries to make the embossing.
+Note that each control point assumes the distance to the closest geometry and must be less than the input radius.</td><td>GeometricGoo</td></tr>
+<tr><td><b>Resolution</b></td><td>Res</td><td>Resolution of control points in proportion to the unit of space. Resolution 2.0 on a surface of 5 x 6 units, will give 10 x 12 control points. Set 0 to keep the control points of the input surface.
+Note that this value should be high enough for the embossment to have resolution, but low enough to be computationally manageable.</td><td>Number</td></tr>
+<tr><td><b>Height</b></td><td>Hgt</td><td>Elevation or height for each input geometry.
+Note that moving the control points, it is possible that the actual height of the surface is different.</td><td>Number</td></tr>
+<tr><td><b>Radius</b></td><td>Rad</td><td>Margin or radius of influence for each input geometry, from which embossing will begin at control points that are within this distance.</td><td>Number</td></tr>
+<tr><td><b>Factors</b></td><td>Fac</td><td>List of normalized values (between 0 and 1) to define the contour shape of the embossment</td><td>Number</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Surface</b></td><td>S</td><td>Resulting surface</td><td>Surface</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

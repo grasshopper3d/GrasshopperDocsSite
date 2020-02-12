@@ -143,6 +143,45 @@ Wallacei Utilities
 <p><a href="../../index.html#Wallacei">Component Index</a> &gt; <a href="../../addons/wallacei.html">Wallacei</a> > Wallacei Analytics > <b>FV Graph</b></p>
 </div>
 <h3>Plot the Fitness Values for each individual per generation for data exported from Octopus</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Base Plane</b></td><td>Plane</td><td>Set the origin plane of your graph. If no input provided, graph will be located at World 0,0,0</td><td>Goo</td></tr>
+<tr><td><b>Size of Chart</b></td><td>Scale</td><td>Input a value to change the size of the chart</td><td>Goo</td></tr>
+<tr><td><b>Fitness Values Per Branch</b></td><td>Fitness Values</td><td>Input the Fitness Values extracted from the evolutionary algorithm. The fitness values for each objective must be structures within its own branch.</td><td>Goo</td></tr>
+<tr><td><b>How Many Individuals per Generation</b></td><td>Generation Size?</td><td>How many individuals are there in a single generation?</td><td>Goo</td></tr>
+<tr><td><b>...</b></td><td>-- -- -- -- -- -- -- -- -- -- -- -- --</td><td>Represents a cluster input parameter</td><td>Goo</td></tr>
+<tr><td><b>Names of Fitness Criteria</b></td><td>FC Names</td><td>Input the name of each fitness criteria as a single list</td><td>Goo</td></tr>
+<tr><td><b>...</b></td><td>-- -- -- -- -- -- -- -- -- -- -- -- --</td><td>Represents a cluster input parameter</td><td>Goo</td></tr>
+<tr><td><b>Select Criteria to Analyse</b></td><td>Criteria to Analyse</td><td>Select the criteria to be plotted and analysed</td><td>Integer</td></tr>
+<tr><td><b>Toggle to Inverse Fitness Objective</b></td><td>Inverse Fitness Criteria</td><td>Togge to inverse fitness objective. 1 = Inverse / 0 = Do not inverse</td><td>Goo</td></tr>
+<tr><td><b>...</b></td><td>-- -- -- -- -- -- -- -- -- -- -- -- --</td><td>Represents a cluster input parameter</td><td>Goo</td></tr>
+<tr><td><b>Select a Generation to Highlight</b></td><td>Select Generation</td><td>Select a generation to highlight</td><td>StructurePath</td></tr>
+<tr><td><b>Select Individual to Highlight</b></td><td>Select Solution</td><td>Select the individual in the selected generation to be highlighted</td><td>Integer</td></tr>
+<tr><td><b>...</b></td><td>-- -- -- -- -- -- -- -- -- -- -- -- --</td><td>Represents a cluster input parameter</td><td>Goo</td></tr>
+<tr><td><b>Cull Boundary Solutions</b></td><td>Cull Boundary Solutions</td><td>Delete the solutions that have either the largest or smallest Fitness Values</td><td>Integer</td></tr>
+<tr><td><b>Toggle Between Largest or Smallest Fitness Value</b></td><td>Toggle to Cull Largest or Smallest FV</td><td>Toggle to select whether you want to cull a solution with the largest Fitness Values (TRUE), or a solution with the smallest Fitness Values (FALSE)</td><td>Integer</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Read me</b></td><td>Read me</td><td>Information about the component</td><td>String</td></tr>
+<tr><td><b>Fitness Value Curves</b></td><td>FV Curves</td><td>Connect to 'Crv' paramater to display the fitness value curve per generation</td><td>Curve</td></tr>
+<tr><td><b>Curve of the Selected Generation</b></td><td>Selected Generation</td><td>Connect to 'Crv' paramater to extract the curve of the selected generation</td><td>Goo</td></tr>
+<tr><td><b>Mesh of the Selected Individual</b></td><td>Selected Individual</td><td>Connect to 'Mesh' paramater to extract the mesh of the selected individual</td><td>Goo</td></tr>
+<tr><td><b>The Location of the Solutions That Have Been Culled</b></td><td>Location of Culled Solutions</td><td>Specifies the generation and individual number that have been culled</td><td>Goo</td></tr>
+<tr><td><b>Graph Base</b></td><td>Graph Base</td><td>Connect to 'Geo' paramater to display the graph background</td><td>GeometricGoo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

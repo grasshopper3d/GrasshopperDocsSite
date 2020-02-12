@@ -621,6 +621,111 @@
 <p><a href="../../index.html#Ladybug">Component Index</a> &gt; <a href="../../addons/ladybug.html">Ladybug</a> > 4 | Renewables > <b>Solar Water Heating Surface</b></p>
 </div>
 <h3>Use this component to calculate amount of thermal energy that can be produced by a surface<br>if a certain percentage of it is covered with Solar water heating liquid collectors.<br>The thermal energy can then be used for domestic hot water, space heating or space cooling.<br>Component based on:<br>"Solar Engineering of Thermal Processes", John Wiley and Sons, J. Duffie, W. Beckman, 4th ed., 2013.<br>"Technical Manual for the SAM Solar Water Heating Model", NREL, N. DiOrio, C. Christensen, J. Burch, A. Dobos, 2014.<br>"A simplified method for optimal design of solar water heating systems based on life-cycle energy analysis", Renewable Energy journal, Yan, Wang, Ma, Shi, Vol 74, Feb 2015<br>http://www.wiley.com/WileyCDA/WileyTitle/productCd-0470873663.html<br>https://sam.nrel.gov/system/tdf/SimpleSolarWaterHeatingModel_SAM_0.pdf?file=1&type=node&id=69521<br>http://www.sciencedirect.com/science/article/pii/S0960148114004807<br></h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Epw File</b></td><td>_epwFile</td><td>Input .epw file path by using the "File Path" parameter, or Ladybug's "Open EPW And STAT Weather Files" component.</td><td>Goo</td></tr>
+<tr><td><b>Heating Load Per Hour</b></td><td>_heatingLoadPerHour</td><td>Heating load in electrical energy for each hour during a year. In kWh.
+It represents domestic hot water heating load.
+With added space heating and/or space cooling heating loads.
+-
+To calculate domestic hot water heating load, use Ladybug "Residential Hot Water" or "Commercial Public Apartment Hot Water" components.
+-
+Space heating and space cooling loads can be inputted from Honeybee's "Read EP Result" component.
+Divide each value of space heating load with 0.7, to account for COP(coefficient of performance) of the heating system.
+Space cooling values do not need to be divided with anything (COP = 1.0).</td><td>Goo</td></tr>
+<tr><td><b>SWHsurface</b></td><td>_SWHsurface</td><td>- Input planar Surface (not polysurface) on which the SWH collectors will be applied. If you have a polysurface, explode it (using "Deconstruct Brep" component) and then feed its Faces(F) output to _SWHsurface. Surface normal should be faced towards the sun.
+- Or create the Surface based on initial SWH system size by using "PV SWH system size" component.</td><td>Goo</td></tr>
+<tr><td><b>SWHsurface Percent</b></td><td>SWHsurfacePercent_</td><td>The percentage of surface which will be used for SWH collectors (range 0-100).
+-
+There are no general rules or codes which would limit the percentage of the roof(surface) covered with SWH collectors.
+-
+If not supplied, default value of 100 (all surface area will be covered with SWH collectors) is used.</td><td>Goo</td></tr>
+<tr><td><b></b></td><td>_________________</td><td>Script variable SolarHotWaterSurface</td><td>Goo</td></tr>
+<tr><td><b>SWHsystem Settings</b></td><td>SWHsystemSettings_</td><td>A list of all Solar water heating system settings. Use the "Solar Water Heating System" or "Solar Water Heating System Detailed" components to generate them.
+-
+If not supplied, the following swh system settings will be used by default:
+- glazed flat plate collectors
+- active
+- closed loop
+- pipe length: 20 meters
+- unshaded</td><td>Goo</td></tr>
+<tr><td><b>North</b></td><td>north_</td><td>Input a vector to be used as a true North direction for the sun path, or a number between 0 and 360 that represents the clockwise degrees off from the Y-axis to make North.
+-
+If not supplied, default North direction will be set to the Y-axis (0 degrees).</td><td>Goo</td></tr>
+<tr><td><b>Albedo</b></td><td>albedo_</td><td>A list of 8767 (with header) or 8760 (without the header) albedo values for each hour during a year.
+Albedo (or Reflection coefficient) is an average ratio of the global incident solar radiation reflected from the area surrounding the PV surface.
+It ranges from 0 to 1.
+-
+It depends on the time of the year/day, surface type, temperature, vegetation, presence of water, ice and snow etc.
+-
+If no list supplied, default value of 0.20 will be used, corrected(increased) for the presence of snow (if any).
+-
+Unitless.</td><td>Goo</td></tr>
+<tr><td><b></b></td><td>_________________</td><td>Script variable SolarHotWaterSurface</td><td>Goo</td></tr>
+<tr><td><b>Annual Hourly Data</b></td><td>annualHourlyData_</td><td>An optional list of hourly data from Ladybug's "Import epw" component (e.g. dryBulbTemperature), which will be used for "conditionalStatement_".</td><td>Goo</td></tr>
+<tr><td><b>Conditional Statement</b></td><td>conditionalStatement_</td><td>This input allows users to calculate the Solar water heating surface component results only for those annualHourlyData_ values which fit specific conditions or criteria.
+To use this input correctly, hourly data, such as dryBulbTemperature or windSpeed, must be plugged into the "annualHourlyData_" input. The conditional statement input here should be a valid condition statement in Python, such as "a;25" or "b;3" (without the quotation marks).
+conditionalStatement_ accepts "and" and "or" operators. To visualize the hourly data, English letters should be used as variables, and each letter alphabetically corresponds to each of the lists (in their respective order): "a" always represents the 1st list, "b" always represents the 2nd list, etc.
+-
+For example, if you have an hourly dryBulbTemperature connected as the first list, and windSpeed connected as the second list (both to the annualHourlyData_ input), and you want to plot the data for the time period when temperature is between 18°C and 23°C, and windSpeed is larger than 3m/s, the conditionalStatement_ should be written as "18;a;23 and b;3" (without the quotation marks).
+-
+This input can also be used for analysis of drainback systems. Input a "dryBulbTemperature" data from "Import epw" component into upper "annualHourlyData_" input. Then input "a;5" to this ("conditionalStatement_") input.</td><td>Goo</td></tr>
+<tr><td><b></b></td><td>_________________</td><td>Script variable SolarHotWaterSurface</td><td>Goo</td></tr>
+<tr><td><b>Run It</b></td><td>_runIt</td><td>...</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Out</b></td><td>readMe!</td><td>...</td><td>String</td></tr>
+<tr><td><b></b></td><td>_________________________</td><td>Script variable SolarWaterHeatingSurface</td><td>Goo</td></tr>
+<tr><td><b>Heat From Tank Per Hour</b></td><td>heatFromTankPerHour</td><td>Thermal energy provided by the storage tank per each hour during a year.
+-
+In kWh.</td><td>Goo</td></tr>
+<tr><td><b>Heat From Tank Per Year</b></td><td>heatFromTankPerYear</td><td>Total thermal energy provided by the storage tank for a whole year.
+-
+In kWh.</td><td>Goo</td></tr>
+<tr><td><b>Avr Dailyheat From Tank Per Year</b></td><td>avrDailyheatFromTankPerYear</td><td>An average thermal energy provided by the storage tank per day for a whole year.
+-
+In kWh/day.</td><td>Goo</td></tr>
+<tr><td><b></b></td><td>_________________________</td><td>Script variable SolarHotWaterSurface</td><td>Goo</td></tr>
+<tr><td><b>Heat From Auxiliary Heater Per Hour</b></td><td>heatFromAuxiliaryHeaterPerHour</td><td>Thermal energy provided and Electrical energy spent by an auxiliary heater per each hour during a year.
+Electric auxiliary heater used.
+-
+In kWh.</td><td>Goo</td></tr>
+<tr><td><b>Discharged Heat Per Hour</b></td><td>dischargedHeatPerHour</td><td>Discharged surplus energy ("heat dump") per each hour during a year.
+It can be used to heat a pool, hot tub, greenhouse or as snow-melt system (by using radiant floor tubing bellow sidewalks, or radiatior beneath the entrance stairs).
+-
+In kWh.</td><td>Goo</td></tr>
+<tr><td><b>Pump Energy Per Hour</b></td><td>pumpEnergyPerHour</td><td>Electrical energy spent by the circulation pump(s) per hour during a year.
+-
+In kWh.</td><td>Goo</td></tr>
+<tr><td><b>Tank Water Temperature Per Hour</b></td><td>tankWaterTemperaturePerHour</td><td>Tank water temperature per each hour during a year.
+-
+In °C.</td><td>Goo</td></tr>
+<tr><td><b></b></td><td>_________________________</td><td>Script variable SolarWaterHeatingSurface</td><td>Goo</td></tr>
+<tr><td><b>SWHsurface Tilt Angle</b></td><td>SWHsurfaceTiltAngle</td><td>The angle from horizontal of the inclination of the SWHsurface. Example: 0 = horizontal, 90 = vertical.
+It ranges from 0-180.
+-
+In degrees.</td><td>Goo</td></tr>
+<tr><td><b>SWHsurface Azimuth Angle</b></td><td>SWHsurfaceAzimuthAngle</td><td>The orientation angle (clockwise from the true north) of the SWHsurface normal vector.
+It ranges from 0-360.
+-
+In degrees.</td><td>Goo</td></tr>
+<tr><td><b>System Size</b></td><td>systemSize</td><td>Rated SWH system size. 
+-
+In kWt.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

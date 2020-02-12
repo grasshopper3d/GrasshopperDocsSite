@@ -621,6 +621,34 @@
 <p><a href="../../index.html#Ladybug">Component Index</a> &gt; <a href="../../addons/ladybug.html">Ladybug</a> > 3 | EnvironmentalAnalysis > <b>Steady State Surface Temperature</b></p>
 </div>
 <h3>Use this component to calculate a steady state interior/exterior surface temperature from given given indoor/outdoor air temperatures and surface U-Values.  Note that this component does not currently account for solar radiation, which can greatly alter surface temperatures in the real world.<br>The formulas used to account for air film resistance in this component come from ASHRAE Fundementals 2013, Chapter 26, Table 10 (26.20).<br></h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Out Temp</b></td><td>_outTemp</td><td>A number (or list of numbers) that represent the outdoor air temperature in degrees Celcius.</td><td>Goo</td></tr>
+<tr><td><b>In Temp</b></td><td>_inTemp</td><td>A number (or list of numbers) that represent the indoor air temperature in degrees Celcius.</td><td>Goo</td></tr>
+<tr><td><b>U Value</b></td><td>_uValue</td><td>A number that represents the U-Value of the surface dividing the interior and exterior in SI (W/K·m2).</td><td>Goo</td></tr>
+<tr><td><b>Int Emiss</b></td><td>intEmiss_</td><td>A number between 0 and 1 that represents the interior emissivity of the surface dividing the interior and exterior.  The default is set to 0.9 for a non-metallic surface.</td><td>Goo</td></tr>
+<tr><td><b>Srf Orient</b></td><td>srfOrient_</td><td>A number between 180 (downwards) and -180 (upwards) that represents the angle in degrees of the direction of heat flow.  This is related to the orientation of the surface dividing the interior and exterior. This input can also be the normal vector of a surface that is facing the correct direction of heat flow.  The default is set to 0 degrees for a verically-oriented surface (horizontal heat flow).</td><td>Goo</td></tr>
+<tr><td><b>Out Wind Spd</b></td><td>outWindSpd_</td><td>A number (or list of numbers) that represents the outdoor wind speed in m/s.  This is used to calculate the outdoor film coefficient.  If no value is input here, a default of 6.7 m/s will be assumed (indicating a winter design day).</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>In Film Coeff</b></td><td>inFilmCoeff</td><td>The interior film coefficient as calculated by the interior emissivity, surface orientation and Chapter 26, Table 10 of AHSHRAE Fundemantals.</td><td>Goo</td></tr>
+<tr><td><b>Ext Film Coeff</b></td><td>extFilmCoeff</td><td>Script variable ssSrfTemp</td><td>Goo</td></tr>
+<tr><td><b>In Srf Temp</b></td><td>inSrfTemp</td><td>The steady state interior surface temperature in degrees Celcius.</td><td>Goo</td></tr>
+<tr><td><b>Ext Srf Temp</b></td><td>extSrfTemp</td><td>The steady state exterior surface temperature in degrees Celcius.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

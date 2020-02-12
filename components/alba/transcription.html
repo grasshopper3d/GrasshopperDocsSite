@@ -320,6 +320,33 @@ Visualize
 <p><a href="../../index.html#Alba">Component Index</a> &gt; <a href="../../addons/alba.html">Alba</a> > Transcription/Translation > <b>Transcription σ</b></p>
 </div>
 <h3>Converts DNA to RNA based on -35 and -10 sites</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Text</b></td><td>DNA</td><td>Contains a collection of text fragments</td><td>String</td></tr>
+<tr><td><b>use complimentary strand</b></td><td>Comp</td><td>Contains a collection of boolean values</td><td>Boolean</td></tr>
+<tr><td><b>-35 sequence</b></td><td>-35</td><td>Text to search for.</td><td>String</td></tr>
+<tr><td><b>-10 sequence</b></td><td>-10</td><td>Text to search for.</td><td>String</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>DNA</b></td><td>DNA</td><td>Contains a collection of text fragments</td><td>String</td></tr>
+<tr><td><b>Text</b></td><td>RNA</td><td>Contains a collection of text fragments</td><td>String</td></tr>
+<tr><td><b>IDs of domains sequences of interest</b></td><td>Dom ID</td><td>describes the content of the Doms</td><td>Goo</td></tr>
+<tr><td><b>domains sequences of interest</b></td><td>Doms</td><td>Result of merge</td><td>Goo</td></tr>
+<tr><td><b>sequences of interest</b></td><td>Seqs</td><td>Subset of base list</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

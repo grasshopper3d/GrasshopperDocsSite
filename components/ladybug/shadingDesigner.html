@@ -621,6 +621,39 @@
 <p><a href="../../index.html#Ladybug">Component Index</a> &gt; <a href="../../addons/ladybug.html">Ladybug</a> > 3 | EnvironmentalAnalysis > <b>Shading Designer</b></p>
 </div>
 <h3>Use this component to generate shading breps for any glazed surface or list of glazed surfaces.  The component supports two methods for shading generation.  The first is a simple depth method, which will generate an overhang of the speficied depth (or multiple overhangs if the _numOfShds is increased).  The second method is to input a set of solar vectors from the Sunpath component that should be blocked by the shade.<br></h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Glz Srf</b></td><td>_glzSrf</td><td>A Surface or Brep representing a window to be used for shading design.  This can also be a list of Surfaces of Breps.</td><td>Goo</td></tr>
+<tr><td><b>Depth Or Vector</b></td><td>_depthOrVector</td><td>A number representing the depth of the shade to be generated or a sun vector to be shaded from the _glzSrf.  You can also input lists of depths, which will assign different depths based on cardinal direction.  For example, inputing 4 values for depths will assign each value of the list as follows: item 0 = north depth, item 1 = west depth, item 2 = south depth, item 3 = east depth.  Lists of vectors to be shaded can also be input and shades can be joined together with the mergeVectors_ input.</td><td>Goo</td></tr>
+<tr><td><b>Num Of Shds</b></td><td>_numOfShds</td><td>The number of shades to generated for each glazed surface.</td><td>Goo</td></tr>
+<tr><td><b>Dist Between</b></td><td>_distBetween</td><td>An alternate option to _numOfShds where the input here is the distance in Rhino units between each shade.</td><td>Goo</td></tr>
+<tr><td><b>Run It</b></td><td>_runIt</td><td>Set to 'True' to run the component and generate shades.</td><td>Goo</td></tr>
+<tr><td><b>---------------</b></td><td>---------------</td><td>---------------</td><td>Goo</td></tr>
+<tr><td><b>Optional Shd Srf</b></td><td>optionalShdSrf_</td><td>An optional shade surface representing a 2D area under consideration for shading. This input can only be used with the sun vector method.</td><td>Goo</td></tr>
+<tr><td><b>Optional Planes</b></td><td>optionalPlanes_</td><td>An optional plane (or list of planes) representing a 2D area under consideration for shading.  This input can only be used with the sun vector method.</td><td>Goo</td></tr>
+<tr><td><b>Merge Vectors</b></td><td>mergeVectors_</td><td>Set to 'True' to merge all the shades generated from a list of sun vectors into a single shade. This input can only be used with the sun vector method.</td><td>Goo</td></tr>
+<tr><td><b>---------------</b></td><td>---------------</td><td>---------------</td><td>Goo</td></tr>
+<tr><td><b>Hor Or Vertical</b></td><td>_horOrVertical_</td><td>Set to 'True' to generate horizontal shades or 'False' to generate vertical shades. You can also input lists of _horOrVertical_ input, which will assign different orientations based on cardinal direction.</td><td>Goo</td></tr>
+<tr><td><b>Shd Angle</b></td><td>_shdAngle_</td><td>A number between -90 and 90 that represents an angle in degrees to rotate the shades.  The default is set to '0' for no rotation.  If you have vertical shades, use this to rotate them towards the South by a certain value in degrees.  If applied to windows facing East or West, tilting the shades like this will let in more winter sun than summer sun.  If you have horizontal shades, use this input to angle shades downward.  You can also put in lists of angles to assign different shade angles to different cardinal directions.</td><td>Goo</td></tr>
+<tr><td><b>North</b></td><td>north_</td><td>Input a vector to be used as a true North direction or a number between 0 and 360 that represents the degrees off from the y-axis to make North.  The default North direction is set to the Y-axis (0 degrees).</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Out</b></td><td>readMe!</td><td>...</td><td>String</td></tr>
+<tr><td><b>Shading Srfs</b></td><td>shadingSrfs</td><td>Shading surfaces that were generated based on the inputs.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

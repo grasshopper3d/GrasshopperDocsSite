@@ -915,6 +915,37 @@
 <p><a href="../../index.html#Honeybee">Component Index</a> &gt; <a href="../../addons/honeybee.html">Honeybee</a> > 11 | THERM > <b>Therm Material</b></p>
 </div>
 <h3>Use this component to create a custom THERM material, which can be plugged into the "Honeybee_Create Therm Polygons" component.<br></h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Material Name</b></td><td>_materialName</td><td>A text name for your THERM Material.</td><td>Goo</td></tr>
+<tr><td><b>Conductivity</b></td><td>_conductivity</td><td>A number representing the conductivity of the THERM material in W/m-K.</td><td>Goo</td></tr>
+<tr><td><b>Absorptivity</b></td><td>absorptivity_</td><td>A number between 0 and 1 that represents the solar absorptivity of the material. The default is set to 0.5.</td><td>Goo</td></tr>
+<tr><td><b>Emissivity</b></td><td>emissivity_</td><td>A number between 0 and 1 that represents the emissivity of the material. The default is set to 0.9.</td><td>Goo</td></tr>
+<tr><td><b>Cavity Model</b></td><td>cavityModel_</td><td>An integer that represents the cavity model to use for the material (if it is a gas).  If you are creating a solid material, just leave this input blank.  Cavity models (4 - ISO 15099) and (5 - ISO 15099 ventilated) are used for most situations.  Choose from the following options:
+0 - NFRC
+1 - CEN
+2 - CEN (slightly ventilated)
+3 - NFRC with user dimensions
+4 - ISO 15099
+5 - ISO 15099 ventilated</td><td>Goo</td></tr>
+<tr><td><b>RGBColor</b></td><td>RGBColor_</td><td>An optional color to set the color of the material when you import it into THERM.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Therm Material</b></td><td>thermMaterial</td><td>A therm material that can be plugged into the "Honeybee_Create Therm Polygons" component.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

@@ -231,6 +231,33 @@
 <p><a href="../../index.html#Gismo">Component Index</a> &gt; <a href="../../addons/gismo.html">Gismo</a> > 0 | Gismo > <b>XYtoLocation</b></p>
 </div>
 <h3>Use this component to calculate latitude and longitude coordinates of the _point in Rhino scene.<br>For example: you created some building shapes with Gismo "OSM Shapes" component, and now you would like to check what are the latitude and longtitude coordinates of particular part of the building.<br>-<br>Provided by Gismo 0.0.3</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Point</b></td><td>_point</td><td>A point for which we would like to calculate its latitude and longitude coordinates</td><td>Goo</td></tr>
+<tr><td><b>Anchor Location</b></td><td>anchorLocation_</td><td>Represents latitude,longitude coordinates which correspond to anchorOrigin_ in Rhino scene.
+-
+If nothing added to this input, anchorLocation_ with both latitude and longitude set to "0" will be used as a default.</td><td>Goo</td></tr>
+<tr><td><b>Anchor Origin</b></td><td>anchorOrigin_</td><td>A point in Rhino scene which corresponds to anchorLocation_.
+-
+If nothing added to this input, anchorOrigin will be set to: 0,0,0.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Out</b></td><td>readMe!</td><td>...</td><td>String</td></tr>
+<tr><td><b>Location</b></td><td>location</td><td>Location (latitude, longitude coordinates) of the _point input.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

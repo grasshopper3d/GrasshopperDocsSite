@@ -231,6 +231,60 @@
 <p><a href="../../index.html#Gismo">Component Index</a> &gt; <a href="../../addons/gismo.html">Gismo</a> > 1 | OpenStreetMap > <b>OSM3Droof</b></p>
 </div>
 <h3>Use this component to create 3d roofs geometry.<br>They can be created in two ways:<br>1) If there is a valid value (not equal to "") for the "roof:shape=hipped" and "roof:angle" key, then the 3d roof will be created according to this angle.<br>2) If this value is lacking (equal to ""), then pitched, hipped roof can be created with random angle. Or parapet wall for flat roof, with random height. This requires a domain to be added to the "randomRange_" input.<br>If neither of these two ways are fulfilled, then no creation of 3d roof will be performed.<br>-<br>Component is experimental! In some cases the pitched roof may fail to be created, or it may create an invalid roof geometry!<br>-<br>Provided by Gismo 0.0.3</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Three Dee Shapes</b></td><td>_threeDeeShapes</td><td>Plug in the shapes from the Gismo OSM 3D "threeDeeShapes" output</td><td>Goo</td></tr>
+<tr><td><b>Three Dee Keys</b></td><td>_threeDeeKeys</td><td>Plug in the keys from the Gismo OSM 3D "threeDeeKeys" output.</td><td>Goo</td></tr>
+<tr><td><b>Three Dee Values</b></td><td>_threeDeeValues</td><td>Plug in the values from the Gismo OSM 3D "threeDeeValues" output.</td><td>Goo</td></tr>
+<tr><td><b></b></td><td>________________</td><td>Script variable OSM3D</td><td>Goo</td></tr>
+<tr><td><b>Random Range</b></td><td>randomRange_</td><td>This input can be useful if supplied "_threeDeeShapes" do not contain valid values for "roof:shape" and "roof:angle" keys.
+If they still contain any "building" key with valid value, then the input be used to create a 3d roof, by using a random value.
+So to randomly create 3d roof shapes, just supply the "Construct Domain" to the randomRange_ input. For example, input the "Construct Domain" component by using "20" and "30" as its starting and ending domain values.
+The shape of the random roof will depend on the value defined in "roofType_" input.
+If "roofType_" = 0, then this input would threat the values as height in Rhino document units.
+If "roofType_" = 1, then this input would threat the values as degrees.
+-
+If nothing supplied, no random 3d roofs will be applied.
+-
+Domain in degrees or Rhino document units (meters, feets...).</td><td>Goo</td></tr>
+<tr><td><b>Roof Type</b></td><td>roofType_</td><td>There are two roof geometric types:
+0 - flat, parapet wall
+1 - pitched, hipped roof
+-
+If nothing supplied, the default type 1 type (pitched, hipped roof) will be used.
+-
+Integer.</td><td>Goo</td></tr>
+<tr><td><b></b></td><td>________________</td><td>Script variable Python</td><td>Goo</td></tr>
+<tr><td><b>Bake It</b></td><td>bakeIt_</td><td>Set to "True" to bake the 3d roof geometry into the Rhino scene.
+The geometry will be grouped. To ungroup it, select it and call the "Ungroup" Rhino command.
+-
+If not supplied default value "False" will be used.</td><td>Goo</td></tr>
+<tr><td><b>Run It</b></td><td>_runIt</td><td>...</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Out</b></td><td>readMe!</td><td>...</td><td>String</td></tr>
+<tr><td><b>Three Dee Roof</b></td><td>threeDeeRoof</td><td>Generated 3d roofs from the inputted "_threeDeeRoof".
+-
+This output is experimental! In some cases the pitched roof may fail to be created, or it may create an invalid roof geometry!</td><td>Goo</td></tr>
+<tr><td><b>Three Dee Roof Keys</b></td><td>threeDeeRoofKeys</td><td>A list of keys. This output is the same as "keys" output of "OSM 3D" component.</td><td>Goo</td></tr>
+<tr><td><b>Three Dee Roof Values</b></td><td>threeDeeRoofValues</td><td>Values corresponding to each shape in "threeDeeRoof" output.</td><td>Goo</td></tr>
+<tr><td><b>Angle Or Height</b></td><td>angleOrHeight</td><td>The angle or height of each 3d roof from the "threeDeeRoof" output.
+-
+In Rhino document units (meters, feets...) or degrees.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

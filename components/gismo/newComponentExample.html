@@ -231,6 +231,52 @@
 <p><a href="../../index.html#Gismo">Component Index</a> &gt; <a href="../../addons/gismo.html">Gismo</a> > 3 | More > <b>NewComponentExample</b></p>
 </div>
 <h3>[Gismo welcomes new developers. Even a single new component can benefit and make Gismo a better plugin.]<br>[New components are welcome as long as they follow the code template.]<br>[This component provides the code template for possible new Gismo component which calculates the distance between a point ("_point" input) and a sphere.]<br>[There will be explanations of parts of code, like how to check inputs, how to create a title, a legend... Explanations are written in square brackets. For example: [this is explanation].]<br>[Rhinoscriptsyntax is used as more friendly, but you can also write directly in RhinoCommon, if you want to. Still rhinoscriptsyntax is fine.]<br>-<br>Provided by Gismo 0.0.3</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Point</b></td><td>_point</td><td>A reference point which will be used to measure the distance from it to a sphere.
+[This is a required input. All required inputs, have an underscore on the left side of its name]</td><td>Goo</td></tr>
+<tr><td><b>Sphere Center</b></td><td>_sphereCenter</td><td>A point representing the center of a sphere.
+[This is a required input too: it has an underscore on the left side of its name]</td><td>Goo</td></tr>
+<tr><td><b>Sphere Radius</b></td><td>sphereRadius_</td><td>A number which defines the radius of the sphere.
+[This is an optinal input. It has an underscore on the right side of its name]
+-
+If nothing added to this input, shpereRadius_ will be set to: 10 by default.</td><td>Goo</td></tr>
+<tr><td><b>Legend Bake Par</b></td><td>legendBakePar_</td><td>Optional legend parameters from the Gismo "Legend Bake Parameters" component.
+Use this input to control the look of the "legend" and "title" outputs. And the colors of the "sphere" output.
+[This is an optinal input. It has an underscore on the right side of its name]</td><td>Goo</td></tr>
+<tr><td><b></b></td><td>______________</td><td>Script variable LocationToXY</td><td>Goo</td></tr>
+<tr><td><b>Bake It</b></td><td>bakeIt_</td><td>Set to "True" to bake the shapes geometry into the Rhino scene.
+-
+If not supplied default value "False" will be used.</td><td>Goo</td></tr>
+<tr><td><b>Run It</b></td><td>_runIt</td><td>...
+[This input runs the component. It is used in cases when component is a bit heavier to run. For example: it take a couple of seconds for the component to run.]
+[If component runs quicker than that, then you do not even need this input.]</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Out</b></td><td>readMe!</td><td>...
+[This output is used for debugging. It shows the error message in case something is wrong with the component.]</td><td>String</td></tr>
+<tr><td><b>Distances</b></td><td>distances</td><td>A list of distances between the _point and a sphere.
+-
+In Rhino document units (meters, feets...).</td><td>Goo</td></tr>
+<tr><td><b>Sphere</b></td><td>sphere</td><td>A sphere created from "_sphereCenter" and "shpereRadius_" inputs.
+The sphere is colored in a way that colors correspond to distances between the sphere and _point input.</td><td>Goo</td></tr>
+<tr><td><b>Title</b></td><td>title</td><td>Final geometry title.
+You can change it by using the "legendBakePar_" input (and Gismo "Legend Bake Parameters" component).</td><td>Goo</td></tr>
+<tr><td><b>Legend</b></td><td>legend</td><td>A legend corresponding to distances between the _point and a sphere.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

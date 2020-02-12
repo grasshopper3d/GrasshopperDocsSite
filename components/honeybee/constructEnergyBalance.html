@@ -915,6 +915,43 @@
 <p><a href="../../index.html#Honeybee">Component Index</a> &gt; <a href="../../addons/honeybee.html">Honeybee</a> > 10 | Energy | Energy > <b>Construct Energy Balance</b></p>
 </div>
 <h3>This component accepst the outputs of the "Read EP Result" and the "Read EP Surface Result" components and outputs a data tree with all of the building-wide energy balance terms.  This can then be plugged into the "Ladybug_3D Chart" or "Ladybug_Monthly Bar Chart" to give a visualization of the energy balance of the whole model.<br></h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>HBZones</b></td><td>_HBZones</td><td>The HBZones out of any of the HB components that generate or alter zones.  Note that these should ideally be the zones that are fed into the Run Energy Simulation component.  Zones read back into Grasshopper from the Import idf component will not align correctly with the EP Result data.</td><td>Goo</td></tr>
+<tr><td><b>Cooling</b></td><td>cooling_</td><td>The cooling load from the "Honeybee_Read EP Result" component.</td><td>Goo</td></tr>
+<tr><td><b>Heating</b></td><td>heating_</td><td>The heating load from the "Honeybee_Read EP Result" component.</td><td>Goo</td></tr>
+<tr><td><b>Electric Light</b></td><td>electricLight_</td><td>The electric lighting load from the "Honeybee_Read EP Result" component.</td><td>Goo</td></tr>
+<tr><td><b>Electric Equip</b></td><td>electricEquip_</td><td>The electric equipment load from the "Honeybee_Read EP Result" component.</td><td>Goo</td></tr>
+<tr><td><b>Fan Electric</b></td><td>fanElectric_</td><td>The electric fan load from the "Honeybee_Read EP Result" component.</td><td>Goo</td></tr>
+<tr><td><b>People Gains</b></td><td>peopleGains_</td><td>The people gains from the "Honeybee_Read EP Result" component.</td><td>Goo</td></tr>
+<tr><td><b>Total Solar Gain</b></td><td>totalSolarGain_</td><td>The total solar gain from the "Honeybee_Read EP Result" component.</td><td>Goo</td></tr>
+<tr><td><b>Infiltration Energy</b></td><td>infiltrationEnergy_</td><td>The infiltration heat loss (negative) or heat gain (positive) from the "Honeybee_Read EP Result" component.</td><td>Goo</td></tr>
+<tr><td><b>Mech Ventilation Energy</b></td><td>mechVentilationEnergy_</td><td>The outdoor air heat loss (negative) or heat gain (positive) from the "Honeybee_Read EP Result" component.</td><td>Goo</td></tr>
+<tr><td><b>Nat Vent Energy</b></td><td>natVentEnergy_</td><td>The natural ventilation heat loss (negative) or heat gain (positive) from the "Honeybee_Read EP Result" component.</td><td>Goo</td></tr>
+<tr><td><b>Surface Energy Flow</b></td><td>surfaceEnergyFlow_</td><td>The surface heat loss (negative) or heat gain (positive) from the "Honeybee_Read EP Surface Result" component.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Out</b></td><td>readMe!</td><td>...</td><td>String</td></tr>
+<tr><td><b>--------------------</b></td><td>--------------------</td><td>...</td><td>Goo</td></tr>
+<tr><td><b>Flr Norm Energy Bal</b></td><td>flrNormEnergyBal</td><td>A data tree with the important building-wide energy balance terms normalized by floor area.  This can then be plugged into the "Ladybug_3D Chart" or "Ladybug_Monthly Bar Chart" to give a visualization of the energy balance of the whole model.</td><td>Goo</td></tr>
+<tr><td><b>Flr Norm Bal WStorage</b></td><td>flrNormBalWStorage</td><td>A data tree with the important building-wide energy balance terms normalized by floor area plus an additional term to represent the energy being stored in the building's mass.  If you have input all of the terms of your energy balance to this component, you storage term should be very small in relation to the other energy balance terms.  Thus, this storage term can be a good way to check whether all of your energy balance terms are accounted for.  This output can then be plugged into the "Ladybug_3D Chart" or "Ladybug_Monthly Bar Chart" to give a visualization of the energy balance of the whole model.</td><td>Goo</td></tr>
+<tr><td><b>--------------------</b></td><td>--------------------</td><td>Script variable energyBalance</td><td>Goo</td></tr>
+<tr><td><b>Model Energy Balance</b></td><td>modelEnergyBalance</td><td>A data tree with the important building-wide energy balance terms.  This can then be plugged into the "Ladybug_3D Chart" or "Ladybug_Monthly Bar Chart" to give a visualization of the energy balance of the whole model.</td><td>Goo</td></tr>
+<tr><td><b>Energy Bal With Storage</b></td><td>energyBalWithStorage</td><td>A data tree with the important building-wide energy balance terms plus an additional term to represent the energy being stored in the building's mass.  If you have input all of the terms of your energy balance to this component, you storage term should be very small in relation to the other energy balance terms.  Thus, this storage term can be a good way to check whether all of your energy balance terms are accounted for.  This output can then be plugged into the "Ladybug_3D Chart" or "Ladybug_Monthly Bar Chart" to give a visualization of the energy balance of the whole model.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

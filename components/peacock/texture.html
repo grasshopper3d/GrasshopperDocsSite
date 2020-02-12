@@ -548,6 +548,42 @@ Workbench
 <p><a href="../../index.html#Peacock">Component Index</a> &gt; <a href="../../addons/peacock.html">Peacock</a> > Workbench > <b>Texture</b></p>
 </div>
 <h3>Creates a texture with an image on a surface</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Surface</b></td><td>Srf</td><td>Surface to apply the texture</td><td>Surface</td></tr>
+<tr><td><b>Image</b></td><td>File</td><td>Location of image file</td><td>String</td></tr>
+<tr><td><b>Resolution</b></td><td>Res</td><td>Image resolution between 0 and 1</td><td>Number</td></tr>
+<tr><td><b>Samples</b></td><td>UV</td><td>Number of UV samples (a value for U and one for V)</td><td>Integer</td></tr>
+<tr><td><b>Height</b></td><td>Hgt</td><td>Texture height (set a negative value for flip the texture)</td><td>Goo</td></tr>
+<tr><td><b>Blur</b></td><td>Blr</td><td>Blurring iterations</td><td>Integer</td></tr>
+<tr><td><b>Fixed</b></td><td>Fix</td><td>Texture fixed on the edges of the surface
+Note * Must have sufficient resolution</td><td>Boolean</td></tr>
+<tr><td><b>Channel</b></td><td>Chn</td><td>Channel of values (Plug a ValueList component | AutoList function by Florian Frank, blickfeld7.com)
+0 = Colour
+1 = Hue
+2 = Saturation
+3 = Brightness
+4 = Alpha
+5 = Red
+6 = Green
+7 = Blue</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Surface</b></td><td>S</td><td>Resulting surface</td><td>Surface</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

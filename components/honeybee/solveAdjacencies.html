@@ -915,6 +915,33 @@
 <p><a href="../../index.html#Honeybee">Component Index</a> &gt; <a href="../../addons/honeybee.html">Honeybee</a> > 00 | Honeybee > <b>Solve Adjacencies</b></p>
 </div>
 <h3>Solve adjacencies<br></h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>HBZones</b></td><td>_HBZones</td><td>A list of Honeybee zones for which you want to calculate whether they are next to each other.</td><td>Goo</td></tr>
+<tr><td><b>Alt Construction</b></td><td>altConstruction_</td><td>An optional alternate EP construction to assign to all adjacent surfaces.  The default is set to be "Interior Wall", "Interior Foor" or "Interior Ceiling" or "Interior Window" depending on the type of surface that is adjacent.</td><td>Goo</td></tr>
+<tr><td><b>Alt Window Constr</b></td><td>altWindowConstr_</td><td>An optional alternate EP window construction to assign to all adjacent surfaces.  The default is set to be the "Interior Window" construction with a single pane of clear glass.</td><td>Goo</td></tr>
+<tr><td><b>Alt BC</b></td><td>altBC_</td><td>An optional alternate boundary condition such as "Adiabatic".  The default will be "Surafce", which ensures that heat flows across each adjacent surface to a neighboring zone.</td><td>Goo</td></tr>
+<tr><td><b>Tolerance</b></td><td>tolerance_</td><td>The tolerance in Rhino model units that will be used determine whether two zones are adjacent to each other.  If no value is input here, the component will use the tolerance of the Rhino model document.</td><td>Goo</td></tr>
+<tr><td><b>Remove Current Adjc</b></td><td>removeCurrentAdjc_</td><td>If you are using this component after already solving for the adjacencies between some of the zones previously, set this to "False" in order to remeber the previously determined adcacency conditions.  If set to "True", the current adjacencies will be removed. The default is set to "False" in order to remeber your previously-set adjacencies.</td><td>Goo</td></tr>
+<tr><td><b>Find Adjc</b></td><td>_findAdjc</td><td>Set to "True" to solve adjacencies between zones.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Out</b></td><td>readMe!</td><td>A report of the found adjacencies.</td><td>String</td></tr>
+<tr><td><b>HBZones WADJ</b></td><td>HBZonesWADJ</td><td>A list of Honeybee zones with adjacencies solved.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

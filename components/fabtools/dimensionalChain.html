@@ -184,6 +184,27 @@ Utils
 <p><a href="../../index.html#FabTools">Component Index</a> &gt; <a href="../../addons/fabtools.html">FabTools</a> > Annotation > <b>DimensionalChain</b></p>
 </div>
 <h3>This component ceates a single dimension or a dimensional chain, when more than 2 points are provided. The resulting LinearDimension object can be baked with the Advanced Bake (by blickfeld7.com)<br>Version 0.92</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Plane</b></td><td>pln</td><td>The dimensional chain is related to this planes X-Axis. All dimensions will be positioned on the X-Axis of this plane.</td><td>Plane</td></tr>
+<tr><td><b>Dimensional Points</b></td><td>P</td><td>Provide at least 2 points in order to set a dimension. 3 Points will start a chain.</td><td>Point</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Linear Dimension</b></td><td>dim</td><td>Objects of type LinearDimension. They can be baked by the Advanced Bake Component (by blickfeld7)</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

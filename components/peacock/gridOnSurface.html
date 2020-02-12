@@ -548,6 +548,33 @@ Workbench
 <p><a href="../../index.html#Peacock">Component Index</a> &gt; <a href="../../addons/peacock.html">Peacock</a> > Workbench > <b>GridOnSrf</b></p>
 </div>
 <h3>Place a grid on a surface</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Surface</b></td><td>Srf</td><td>Base surface</td><td>Surface</td></tr>
+<tr><td><b>Grid</b></td><td>Grid</td><td>0 =; Triangular
+1 =; Square
+2 =; Hexagonal</td><td>Integer</td></tr>
+<tr><td><b>Size</b></td><td>Size</td><td>Segment size of a cell</td><td>Number</td></tr>
+<tr><td><b>Centered</b></td><td>Ctr</td><td>Grid centered in the middle of the surface</td><td>Boolean</td></tr>
+<tr><td><b>Strict</b></td><td>Str</td><td>Strict comparasion. If true, are returned only cells that are completely within the surface.</td><td>Boolean</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Grid</b></td><td>G</td><td>Grid cells outlines</td><td>Curve</td></tr>
+<tr><td><b>Planes</b></td><td>P</td><td>Planes at grid centers</td><td>Plane</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

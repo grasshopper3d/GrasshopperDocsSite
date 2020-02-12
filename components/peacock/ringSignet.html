@@ -548,6 +548,42 @@ Workbench
 <p><a href="../../index.html#Peacock">Component Index</a> &gt; <a href="../../addons/peacock.html">Peacock</a> > Rings > <b>Ring Signet</b></p>
 </div>
 <h3>Create a ring with a curve for the signet</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Plane</b></td><td>Pln</td><td>Base plane of ring</td><td>Plane</td></tr>
+<tr><td><b>Regional system</b></td><td>Reg</td><td>Regional system to gauge rings. Plug a ValueList component to AutoList function.
+0 =; ISO (International Organization for Standardization). mm of circunference.
+1 =; European size.
+2 =; British size.
+3 =; American size.
+4 =; Japanese size.</td><td>Integer</td></tr>
+<tr><td><b>Size</b></td><td>Size</td><td>Size of ring. Plug a ValueList component to AutoList function</td><td>Number</td></tr>
+<tr><td><b>Signet Curve</b></td><td>Crv</td><td>Planar curve to signet of ring (in XY plane)</td><td>Curve</td></tr>
+<tr><td><b>Width as list</b></td><td>Wid</td><td>One value -; uniform width.
+Two values -; top width, bottom width.
+Three values -; top width, midle width, bottom width.</td><td>Number</td></tr>
+<tr><td><b>Thickness as list</b></td><td>Thk</td><td>One value -; uniform thickness.
+Two values -; top thickness, bottom thickness.
+Three values -; top thickness, midle thickness, bottom thickness.</td><td>Number</td></tr>
+<tr><td><b>Bulge</b></td><td>Blg</td><td>Bulge factor</td><td>Number</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Ring</b></td><td>R</td><td>Resulting ring</td><td>Brep</td></tr>
+<tr><td><b>Gauge</b></td><td>G</td><td>Gauge circle</td><td>Circle</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

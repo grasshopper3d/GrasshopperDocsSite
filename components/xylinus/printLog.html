@@ -261,6 +261,36 @@ Syringe
 <p><a href="../../index.html#Xylinus">Component Index</a> &gt; <a href="../../addons/xylinus.html">Xylinus</a> > Core > <b>Print Log</b></p>
 </div>
 <h3>saves info about the print into a Google Sheet. (requires Leafcutter plugin)</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Xylinus Config</b></td><td>C</td><td>Contains a collection of generic data</td><td>Goo</td></tr>
+<tr><td><b>media</b></td><td>M</td><td>print media</td><td>Goo</td></tr>
+<tr><td><b>Print Geometry Description</b></td><td>D</td><td>Item to test</td><td>Goo</td></tr>
+<tr><td><b>Notes</b></td><td>N</td><td>Contains a collection of generic data</td><td>Goo</td></tr>
+<tr><td><b>Results</b></td><td>R</td><td>Data stream 5</td><td>Goo</td></tr>
+<tr><td><b>image URL</b></td><td>I</td><td>Data stream 4</td><td>Goo</td></tr>
+<tr><td><b>Append</b></td><td>A</td><td>Input the row number to append or "True" to append the last entry. False will simple result in a new entry. Note 0=Flase and 1=True.</td><td>Integer</td></tr>
+<tr><td><b>Google Authorization</b></td><td>G</td><td>Set to true to launch the authentication dialog</td><td>Boolean</td></tr>
+<tr><td><b>send</b></td><td>S</td><td>Contains a collection of boolean values</td><td>Boolean</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Print Log Data</b></td><td>D</td><td>Contains a collection of generic data</td><td>Goo</td></tr>
+<tr><td><b>Spreadsheet Title</b></td><td>T</td><td>Resulting text consisting of all the fragments</td><td>String</td></tr>
+<tr><td><b>Cell Address</b></td><td>C</td><td>Addresses of updated cells</td><td>String</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

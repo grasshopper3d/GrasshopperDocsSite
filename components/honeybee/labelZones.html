@@ -915,6 +915,32 @@
 <p><a href="../../index.html#Honeybee">Component Index</a> &gt; <a href="../../addons/honeybee.html">Honeybee</a> > 00 | Honeybee > <b>Label Zones</b></p>
 </div>
 <h3>Use this component to lablel zones with their names in the Rhino scene.  This can help ensure that the correct names are assigned to each zone and can help keep track of zones and zone data throughout analysis.<br></h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>HBZones</b></td><td>_HBZones</td><td>The HBZones out of any of the HB components that generate or alter zones.  Note that these should ideally be the zones that are fed into the Run Energy Simulation component.  Zones read back into Grasshopper from the Import idf component will not align correctly with the EP Result data.</td><td>Goo</td></tr>
+<tr><td><b>Attribute</b></td><td>attribute_</td><td>A text string for the zone attribute that you are interested in lableing the zones with.  Possible inputs include "name", "zoneProgram", "isConditioned" or any other Honeybee attribute. Use the "Honeybee_Zone Attribute List" to see all possibilities.</td><td>Goo</td></tr>
+<tr><td><b>Text Height</b></td><td>textHeight_</td><td>An optional number for text height in Rhino model units that can be used to change the size of the label text in the Rhino scene.  The default is set based on the dimensions of the zones.</td><td>Goo</td></tr>
+<tr><td><b>Font</b></td><td>font_</td><td>An optional number that can be used to change the font of the label in the Rhino scene. The default is set to "Verdana".</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Zone Txt Labels</b></td><td>zoneTxtLabels</td><td>The label names of each of the connected zones.  Connect this ouput and the one bleow to a Grasshopper "TexTag3D" component to make your own lables.</td><td>Goo</td></tr>
+<tr><td><b>Label Base Pts</b></td><td>labelBasePts</td><td>The basepoint of the text labels.  Use this along with the ouput above and a Grasshopper "TexTag3D" component to make your own lables.</td><td>Goo</td></tr>
+<tr><td><b>Brep Txt Labels</b></td><td>brepTxtLabels</td><td>A set of surfaces indicating the names of each zone as they correspond to the branches in the EP results and the name of the zone in the headers of data.</td><td>Goo</td></tr>
+<tr><td><b>Zone Wire Frames</b></td><td>zoneWireFrames</td><td>Script variable Python</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

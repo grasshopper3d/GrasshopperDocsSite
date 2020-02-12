@@ -231,6 +231,99 @@
 <p><a href="../../index.html#Gismo">Component Index</a> &gt; <a href="../../addons/gismo.html">Gismo</a> > 2 | Terrain > <b>HorizonAngles</b></p>
 </div>
 <h3>Use this component to create a horizon file (.hor) and visualize horizon angles.<br>-<br>Component based on:<br>"Solmetric SunEye 210 User’s Guide", Solmetric Corporation, 2011<br>http://resources.solmetric.com/get/Solmetric%20SunEye%20200%20Series%20Users%20Guide_en.pdf<br>"PVsyst 6 Help", PVsyst SA<br>http://files.pvsyst.com/help/index.html?horizon_import.htm<br>-<br>Provided by Gismo 0.0.3</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Location</b></td><td>_location</td><td>The output from the "importEPW" or "constructLocation" component.  This is essentially a list of text summarizing a location on the Earth.
+-
+"timeZone" and "elevation" data from the location, are not important for this component.</td><td>Goo</td></tr>
+<tr><td><b>Analysis Geometry</b></td><td>_analysisGeometry</td><td>Input surface(a) or point(b) (a single one or more of them).
+-
+a) Input planar Surface (not polysurface) on which the PV modules/Solar water heating collectors will be applied.
+If you have a polysurface, explode it (using "Deconstruct Brep" component) and then feed its Faces(F) output to _analysisGeometry. Surface normal should be faced towards the sun.
+-
+b) You can also supply point(s).
+For example the "originPt" output from "Terrain shading mask" component.</td><td>Goo</td></tr>
+<tr><td><b>Context</b></td><td>_context</td><td>Input the "terrainShadingMask" output from "Terrain shading mask" component.
+You can additionally input other opaque obstacles surrounding your location: houses, buildings etc.
+Do not input trees, as they are not opaque obstacles and should not be taken into account when analysing the horizon angles.</td><td>Goo</td></tr>
+<tr><td><b>North</b></td><td>north_</td><td>Input a vector to be used as a true North direction, or a number between 0 and 360 that represents the clockwise degrees off from the Y-axis.
+-
+If not supplied, default North direction will be set to the Y-axis (0 degrees).</td><td>Goo</td></tr>
+<tr><td><b>Scale</b></td><td>scale_</td><td>Scale of the overall geometry (horizonAnglesRose mesh, compassCrvs, title, legend).
+-
+If not supplied, default value of 1 will be used.</td><td>Goo</td></tr>
+<tr><td><b>Legend Bake Par</b></td><td>legendBakePar_</td><td>Optional legend bake parameters from the Gismo "Legend Parameters" component.
+-
+Use this input to change the color of the "horizonAnglesRose" output, or edit the "legend" and "title" outputs.</td><td>Goo</td></tr>
+<tr><td><b>Output Geometry Index</b></td><td>outputGeometryIndex_</td><td>An index of the surface or point inputted into "_analysisGeometry" if "_analysisGeometry" would be flattened..
+It determines the surface or point for which output geometry will be generated.
+-
+If not supplied, geometry for the first surface (index: 0) will be generated as a default.</td><td>Goo</td></tr>
+<tr><td><b></b></td><td>_________________</td><td>Script variable Python</td><td>Goo</td></tr>
+<tr><td><b>Working Folder</b></td><td>workingFolder_</td><td>Folder path where .hor files will be created (exported)
+-
+If not supplied, the following default Gismo folder path will be used: "C:\gismo\horizon_files".</td><td>Goo</td></tr>
+<tr><td><b>Horizon File Type</b></td><td>horizonFileType_</td><td>The following .hor file types are supported:
+-
+0 - Meteonorm
+1 - PV*SOL
+2 - PVsyst 5 and PVsyst 6
+3 - PVsyst 4
+-
+If software you intend to use your .hor file to, is not listed above, it's the best to use the horizonFileType 0 (Meteonorm). This type is universal and supported with most sun related applications. Though, it does lack the data about the location, coordinates, altitude etc.
+This type is also mandatory for both Meteonorm 6 and Meteonorm 7.
+-
+If not supplied 0 (Meteonorm 6 and Meteonorm 7) will be used by default.</td><td>Goo</td></tr>
+<tr><td><b>Export Horizon</b></td><td>exportHorizon_</td><td>Set to "True" to bake export(create) a .hor file.
+-
+If not supplied default value "False" will be used.</td><td>Goo</td></tr>
+<tr><td><b></b></td><td>_________________</td><td>Script variable Python</td><td>Goo</td></tr>
+<tr><td><b>Bake It</b></td><td>bakeIt_</td><td>Set to "True" to bake the Horizon angles rose into the Rhino scene.
+-
+If not supplied default value "False" will be used.</td><td>Goo</td></tr>
+<tr><td><b>Run It</b></td><td>_runIt</td><td>...</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Out</b></td><td>readMe!</td><td>...</td><td>String</td></tr>
+<tr><td><b></b></td><td>________________</td><td>Script variable HorizonAngles</td><td>Goo</td></tr>
+<tr><td><b>Azimuths</b></td><td>azimuths</td><td>Azimuth angles (directions) in range from 0 to 360 measured clockwise from true North.
+-
+In degrees.</td><td>Goo</td></tr>
+<tr><td><b>Horizon Angles</b></td><td>horizonAngles</td><td>Horizon (sky view) angles which correspond to each azimuth.
+-
+In degrees.</td><td>Goo</td></tr>
+<tr><td><b>Maximal Azimuth</b></td><td>maximalAzimuth</td><td>Direction which corresponds to the maximalHorizonAngle below.
+-
+In degrees.</td><td>Goo</td></tr>
+<tr><td><b>Maximal Horizon Angle</b></td><td>maximalHorizonAngle</td><td>Maximal horizon angle.
+-
+In degrees.</td><td>Goo</td></tr>
+<tr><td><b></b></td><td>________________</td><td>Script variable Python</td><td>Goo</td></tr>
+<tr><td><b>Horizon Angles Rose</b></td><td>horizonAnglesRose</td><td>A mesh representing horizon angles for each azimuth.</td><td>Goo</td></tr>
+<tr><td><b>Compass Crvs</b></td><td>compassCrvs</td><td>Compass azimuth labels and curves.</td><td>Goo</td></tr>
+<tr><td><b>Origin Pt</b></td><td>originPt</td><td>The origin (center) point of the inputted "_context" geometry.
+It's basically equal to the "_origin" input.
+-
+Use this point to move "horizonAnglesRose", "compassCrvs" and "title" geometry around in the Rhino scene with grasshopper's "Move" component.</td><td>Goo</td></tr>
+<tr><td><b>Title</b></td><td>title</td><td>Title geometry with information about location.</td><td>Goo</td></tr>
+<tr><td><b>Legend</b></td><td>legend</td><td>Legend of the horizonAnglesRose.</td><td>Goo</td></tr>
+<tr><td><b>Legend Plane</b></td><td>legendPlane</td><td>Legend's starting plane, which can be used to move the "legend" geometry with grasshopper's "Move" component.
+-
+Connect this output to a Grasshopper's "Plane" parameter in order to preview the point in the Rhino scene.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

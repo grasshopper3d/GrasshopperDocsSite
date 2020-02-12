@@ -231,6 +231,77 @@
 <p><a href="../../index.html#Gismo">Component Index</a> &gt; <a href="../../addons/gismo.html">Gismo</a> > 1 | OpenStreetMap > <b>OSM3D</b></p>
 </div>
 <h3>Use this component to create 3d geometry of structures/building and tree shapes created with Gismo "OSM shapes" component.<br>Creation of 3d shapes can be done in three ways:<br>1) If there is a valid value (not equal to "") for the "height" key, then the shape will always be extruded according to this value.<br>2) If this value is lacking (equal to ""), then the shape can be extruded according to the "building:levels" key value.<br>3) If both of these two values are lacking (equal to ""), or the very keys are lacking, and there is a valid value ("True") for the "building" key, then the shape will be extruded, according to the supplied domain generated from the randomHeightRange_ input.<br>If neither of these three ways are fulfilled, then no creation of 3d shapes will be performed.<br>-<br>Provided by Gismo 0.0.3</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Shapes</b></td><td>_shapes</td><td>Plug in the shapes from the Gismo OSM shapes "shapes" output</td><td>Goo</td></tr>
+<tr><td><b>Keys</b></td><td>_keys</td><td>Plug in the keys from the Gismo OSM shapes "keys" output.</td><td>Goo</td></tr>
+<tr><td><b>Values</b></td><td>_values</td><td>Plug in the values from the Gismo OSM shapes "values" output.</td><td>Goo</td></tr>
+<tr><td><b>Only Remove Ids</b></td><td>onlyRemove_Ids_</td><td>Use this input to define lists of Open Street Map ids. "OSM ids" component will generate them.
+These lists can be used to define:
+1) only those ids which will be included (isolated) when "OSM 3D" component is ran (use "osm_id_Only" and "osm_way_id_Only" inputs for this).
+2) ids which will be removed when "OSM 3D" component is ran (use "osm_id_Remove" and "osm_way_id_Remove" inputs for this).
+3) you can combine 1) and 2) and both define the: included and removed ids.
+-
+If nothing supplied to this input, then no OSM ids will be isolated nor removed: meaning all of them will be included.</td><td>Goo</td></tr>
+<tr><td><b></b></td><td>________________</td><td>Script variable OSM3D</td><td>Goo</td></tr>
+<tr><td><b>Height Per Level</b></td><td>heightPerLevel_</td><td>Some supplied "_shapes" may contain "building_l" keys. This can be used to extrude those buildings, by supplying the height value of each level (above ground) in Rhino document units (meters, feets...).
+-
+If nothing supplied, the default value of 3 meters (9.84 feets) per level will be used.
+-
+In Rhino document units (meters, feets...).</td><td>Goo</td></tr>
+<tr><td><b>Random Height Range</b></td><td>randomHeightRange_</td><td>This output can be useful if supplied "_shapes" do not contain valid values for "height" and "building_l" keys.
+If they still contain the "building" key with value "True", then this can be used to extrude the shapes, by using some random extrude domain.
+So to randomly extrude "buildings" shapes, just supply the "Construct Domain" to the randomHeightRange_ input. For example, input the "Construct Domain" component by using "20" and "30" as its starting and ending domain values. This will randomly extrude all buildings by 20 to 30 meters height. Of course in case the Rhino document units is: meters. It can be any other unit.
+-
+If nothing supplied, no random extrusion of the shapes will be applied.
+-
+Domain in Rhino document units (meters, feets...).</td><td>Goo</td></tr>
+<tr><td><b>Tree Type</b></td><td>treeType_</td><td>There are three tree geometric types:
+0 - round
+1 - polygonized
+2 - random shaped
+-
+If nothing supplied, the default type 2 type (random) will be used.
+-
+Integer.</td><td>Goo</td></tr>
+<tr><td><b>Ground Terrain</b></td><td>groundTerrain_</td><td>The ground terrain surface on which the "threeDeeShapes" will be laid onto.
+Supply it by using "terrain" output of the Ladybug "Terrain Generator" (type_ = 1) or Gismo "Terrain Generator" (type_ = 2 or type_ = 3) components.
+-
+If nothing supplied, the "threeDeeShapes" will always be laid flat onto a horizontal plane, with plane origin being the "origin" input of the "OSM shapes" component.</td><td>Goo</td></tr>
+<tr><td><b></b></td><td>________________</td><td>Script variable Python</td><td>Goo</td></tr>
+<tr><td><b>Bake It</b></td><td>bakeIt_</td><td>Set to "True" to bake the extruded _shape geometry into the Rhino scene.
+The geometry will be grouped. To ungroup it, select it and call the "Ungroup" Rhino command.
+-
+If not supplied default value "False" will be used.</td><td>Goo</td></tr>
+<tr><td><b>Run It</b></td><td>_runIt</td><td>...</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Out</b></td><td>readMe!</td><td>...</td><td>String</td></tr>
+<tr><td><b>Three Dee Shapes</b></td><td>threeDeeShapes</td><td>Generated 3d shapes from the inputted "_shapes".
+-
+Those can be extruded buildings, or trees.</td><td>Goo</td></tr>
+<tr><td><b>Three Dee Keys</b></td><td>threeDeeKeys</td><td>A list of keys. This output is the same as "keys" output of "OSM shapes" component.</td><td>Goo</td></tr>
+<tr><td><b>Three Dee Values</b></td><td>threeDeeValues</td><td>Values corresponding to each shape in "threeDeeValues" output.
+-
+If 3d shape has not been created then that branch will not have any values (it will be empty).
+Use "Clean Tree" component and set the "E" input to "True" to remove all these empty branches.</td><td>Goo</td></tr>
+<tr><td><b>Height</b></td><td>height</td><td>The height of each shape from the "threeDeeShapes" output.
+-
+In Rhino document units (meters, feets...).</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

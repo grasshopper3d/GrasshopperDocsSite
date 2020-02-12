@@ -231,6 +231,34 @@
 <p><a href="../../index.html#Gismo">Component Index</a> &gt; <a href="../../addons/gismo.html">Gismo</a> > 3 | More > <b>RhinoUnitToMeters</b></p>
 </div>
 <h3>Use this component to convert values from Rhino units to meters. This can be useful for Gismo component's "radius_" inputs, as all of them use values in meters, regardless of what the Rhino units have been set at.<br>-<br>Provided by Gismo 0.0.3</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Value Rhino Unit</b></td><td>_valueRhinoUnit</td><td>A number in Rhino units, which you would like to convert to meters.
+-
+In Rhino document units.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Unit Factor</b></td><td>unitFactor</td><td>Unit conversion factor.
+-
+Unitless.</td><td>Goo</td></tr>
+<tr><td><b>Value Meters</b></td><td>valueMeters</td><td>_valueRhinoUnit number converted to meters.
+It equals: _valueRhinoUnit * unitFactor
+-
+In meters.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

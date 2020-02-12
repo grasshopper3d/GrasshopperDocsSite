@@ -143,6 +143,41 @@ Wallacei Utilities
 <p><a href="../../index.html#Wallacei">Component Index</a> &gt; <a href="../../addons/wallacei.html">Wallacei</a> > Wallacei Analytics > <b>Objective Space</b></p>
 </div>
 <h3>Displays the objective space of the fitness values of the solutions.</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Base Point</b></td><td>Base Pt</td><td>Select the origin point of your graph. If no input provided, graph will be located at 0,0</td><td>Goo</td></tr>
+<tr><td><b>Size of Chart</b></td><td>Scale</td><td>Input a value to change the size of the chart</td><td>Goo</td></tr>
+<tr><td><b>Fitness Values Per Branch</b></td><td>Fitness Values</td><td>Input the Fitness Values extracted from the evolutionary algorithm. The fitness values for each objective must be structures within its own branch.</td><td>Goo</td></tr>
+<tr><td><b>How Many Individuals per Generation</b></td><td>Generation Size?</td><td>How many individuals are there in a single generation?</td><td>Goo</td></tr>
+<tr><td><b>...</b></td><td>-- -- -- -- -- -- -- -- -- --</td><td>Represents a cluster input parameter</td><td>Goo</td></tr>
+<tr><td><b>Names of Fitness Criteria</b></td><td>FC Names</td><td>Input the name of each fitness criteria as a single list</td><td>Goo</td></tr>
+<tr><td><b>Size of box representing each solution</b></td><td>Cube Size</td><td>Insert a number that will define the size of the cubes representing the solutions in the objective space</td><td>Goo</td></tr>
+<tr><td><b>...</b></td><td>-- -- -- -- -- -- -- -- -- --</td><td>Represents a cluster input parameter</td><td>Goo</td></tr>
+<tr><td><b>Delete Boundary Solutions</b></td><td>Cull Boundary Solutions</td><td>Delete the solutions that are on the boundary of the solution space that are negatively affecting the remapped domain of the objective space</td><td>Goo</td></tr>
+<tr><td><b>...</b></td><td>-- -- -- -- -- -- -- -- -- --</td><td>Represents a cluster input parameter</td><td>Goo</td></tr>
+<tr><td><b>Select a Generation</b></td><td>Select Generation</td><td>Select the generation number that the solution you want lies within</td><td>Goo</td></tr>
+<tr><td><b>Select a solution</b></td><td>Select Solution</td><td>Select the solution you want to visualise</td><td>Integer</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Read me</b></td><td>Read me</td><td>Information about the component</td><td>String</td></tr>
+<tr><td><b>Fitness Values for Pareto Front Component</b></td><td>Fitness Values (OS)</td><td>Outputs the Fitness values to be inputted into the Pareto Front Copmponent</td><td>Goo</td></tr>
+<tr><td><b>Objective Space Solution Meshes</b></td><td>Solution Meshes</td><td>Boxes representing the solutions in the objective space</td><td>Mesh</td></tr>
+<tr><td><b>Selected Solution</b></td><td>Selected Solution</td><td>Sphere representing the selected solution</td><td>Mesh</td></tr>
+<tr><td><b>Base Graph</b></td><td>Base Graph</td><td>The base graph of the analysis</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

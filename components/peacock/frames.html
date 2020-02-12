@@ -548,6 +548,30 @@ Workbench
 <p><a href="../../index.html#Peacock">Component Index</a> &gt; <a href="../../addons/peacock.html">Peacock</a> > Workbench > <b>Frames</b></p>
 </div>
 <h3>Divide a curve into planes oriented from a geometry</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Curve</b></td><td>C</td><td>Curve to divide</td><td>Curve</td></tr>
+<tr><td><b>Geometry</b></td><td>G</td><td>Optional geometry to align the planes</td><td>GeometricGoo</td></tr>
+<tr><td><b>Count</b></td><td>N</td><td>Number of planes</td><td>Integer</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Planes</b></td><td>P</td><td>Curve planes</td><td>Plane</td></tr>
+<tr><td><b>Parameters</b></td><td>t</td><td>Position of the planes in the curve</td><td>Number</td></tr>
+<tr><td><b>Indices by segments</b></td><td>I</td><td>Returns the indices of the planes for each curve segment</td><td>Integer</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

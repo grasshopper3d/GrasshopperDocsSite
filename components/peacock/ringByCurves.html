@@ -548,6 +548,40 @@ Workbench
 <p><a href="../../index.html#Peacock">Component Index</a> &gt; <a href="../../addons/peacock.html">Peacock</a> > Rings > <b>Ring curves</b></p>
 </div>
 <h3>Creates a ring with a frontal and side curves</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Plane</b></td><td>Pln</td><td>Base plane of circle</td><td>Plane</td></tr>
+<tr><td><b>Regional system</b></td><td>Reg</td><td>Regional system to gauge rings. Plug a ValueList component to AutoList function.
+0 =; ISO (International Organization for Standardization). mm of circunference.
+1 =; European size.
+2 =; British size.
+3 =; American size.
+4 =; Japanese size.</td><td>Integer</td></tr>
+<tr><td><b>Size</b></td><td>Size</td><td>Size of ring. Plug a ValueList component to AutoList function</td><td>Number</td></tr>
+<tr><td><b>Front Curve</b></td><td>Front</td><td>Closed planar curve to front of ring</td><td>Curve</td></tr>
+<tr><td><b>Lateral curve</b></td><td>Side</td><td>Open planar curve to lateral of ring</td><td>Curve</td></tr>
+<tr><td><b>Top width</b></td><td>TopW</td><td>Width at top</td><td>Number</td></tr>
+<tr><td><b>Bottom width</b></td><td>BotW</td><td>Width at bottom</td><td>Number</td></tr>
+<tr><td><b>Height hole</b></td><td>Hole</td><td>Adjust height of hole</td><td>Number</td></tr>
+<tr><td><b>Side Thickness</b></td><td>ThkS</td><td>Thickness on both sides</td><td>Number</td></tr>
+<tr><td><b>Up/Bottom Thickness</b></td><td>ThkUB</td><td>Thickness on up and bottom</td><td>Number</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Ring</b></td><td>R</td><td>Resulting ring</td><td>Brep</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

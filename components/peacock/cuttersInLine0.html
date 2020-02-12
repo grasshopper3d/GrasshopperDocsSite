@@ -548,6 +548,37 @@ Workbench
 <p><a href="../../index.html#Peacock">Component Index</a> &gt; <a href="../../addons/peacock.html">Peacock</a> > Gems > <b>Cutters In Line 0</b></p>
 </div>
 <h3>Create a cutter through a list of gems</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Gems</b></td><td>Gems</td><td>Gems for the cutter.
+It must be more than one and the same amount of planes.</td><td>Mesh</td></tr>
+<tr><td><b>Planes</b></td><td>Planes</td><td>Planes of gems. X axis must be aligned in the line of gems. 
+It must be more than one and the same amount of gems.</td><td>Plane</td></tr>
+<tr><td><b>Profile curve</b></td><td>Profile</td><td>Closed planar curve for the section of cutter.
+It must be positioned at the origin (0,0,0) of the XY plane.</td><td>Curve</td></tr>
+<tr><td><b>Length Start</b></td><td>LenS</td><td>Extends the start of the cutter</td><td>Number</td></tr>
+<tr><td><b>Length End</b></td><td>LenE</td><td>Extends the end of the cutter</td><td>Number</td></tr>
+<tr><td><b>Elevation</b></td><td>Elevat</td><td>Elevation values to raise the cutter</td><td>Number</td></tr>
+<tr><td><b>Width</b></td><td>Width</td><td>Width values to the section of the cutter</td><td>Number</td></tr>
+<tr><td><b>Thickness</b></td><td>Thk</td><td>Thickness values to the section of the cutter</td><td>Number</td></tr>
+<tr><td><b>Close</b></td><td>Close</td><td>Closed cutter</td><td>Boolean</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Cutter</b></td><td>C0</td><td>Resulting cutter</td><td>Brep</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

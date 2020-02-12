@@ -621,6 +621,36 @@
 <p><a href="../../index.html#Ladybug">Component Index</a> &gt; <a href="../../addons/ladybug.html">Ladybug</a> > 5 | Extra > <b>Create Legend</b></p>
 </div>
 <h3>Use this component to create a custom legend for any set of data or to create a more flexible legend for any ladybug component with a legend.  Specifically, this component outputs data that can be plugged into the grasshopper "Text Tag 3D" component so that the legend text can be baked into the Rhino scene as actual text instead of surfaces representing text.<br></h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Values Or Range</b></td><td>_valuesOrRange</td><td>The list of numerical data that the legend refers to (or just the minimum and maximum numerical values of this data).  If the original numerical data is hooked up, the legend's maximum and minimum values will be set by the max and min of the data set.</td><td>Goo</td></tr>
+<tr><td><b>Legend Base Pt</b></td><td>legendBasePt_</td><td>An optional point to set the location of the legend.  This can be the output legendBasePt of any of the Ladybug components that have a legend.  If a point is hooked up here and another point is hooked up at a legendPar component that is connected to this one, the point on the legendPar component will override the input point here.</td><td>Goo</td></tr>
+<tr><td><b>Legend Title</b></td><td>legendTitle_</td><td>A text string representing a legend title. Legends are usually titled with the units of the data.  If no text is provided here, the default title will read "unkown units."</td><td>Goo</td></tr>
+<tr><td><b>Legend Size</b></td><td>legendSize_</td><td>The initial size of a single colored cell of the legend mesh, which determines the size of the whole legend.  This should be a numerical value corresponding to the length of a legend cell in Rhino model units.  The default is set to 10 Rhino units.</td><td>Goo</td></tr>
+<tr><td><b>Legend Par</b></td><td>legendPar_</td><td>Optional legend parameters from the Ladybug Legend Parameters component.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Legend Mesh</b></td><td>legendMesh</td><td>A colored mesh that corresponds to the input _valuesOrRange. Connect this output to a grasshopper "Mesh" component in order to preview this separately in the Rhino scene.</td><td>Goo</td></tr>
+<tr><td><b>Legend Text Srf</b></td><td>legendTextSrf</td><td>A list of surfaces representing the text labels of the legend.  These surfaces will reflect the font and size input to the legendPar.</td><td>Goo</td></tr>
+<tr><td><b>Legend Base Pt</b></td><td>legendBasePt</td><td>The legend base point, which can be used to move the legend with the grasshopper "move" component.</td><td>Goo</td></tr>
+<tr><td><b>-------------------------</b></td><td>-------------------------</td><td>...</td><td>Goo</td></tr>
+<tr><td><b>Text Values Base Pts</b></td><td>textValuesBasePts</td><td>The base points that correspond to the title text and numerical value text of the legend.  Plug this into the "Location" input of the grasshopper "Text Tag 3D" component in order to display as text in Rhino.</td><td>Goo</td></tr>
+<tr><td><b>Legend Text Values</b></td><td>legendTextValues</td><td>The text strings that correspond to the title and numerical values of the legend.  Plug this into the "Text" input of the grasshopper "Text Tag 3D" component in order to display as text in Rhino.</td><td>Goo</td></tr>
+<tr><td><b>Recommended Text Size</b></td><td>recommendedTextSize</td><td>Values representing recommended text sizes that correspond to the title and numerical values of the legend.  These values are generated based on the legend size and scale. Plug this into the "Size" input of the grasshopper "Text Tag 3D" component in order to display as text in Rhino.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

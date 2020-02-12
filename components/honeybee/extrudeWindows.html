@@ -915,6 +915,28 @@
 <p><a href="../../index.html#Honeybee">Component Index</a> &gt; <a href="../../addons/honeybee.html">Honeybee</a> > 13 | WIP > <b>Extrude Windows</b></p>
 </div>
 <h3>Extrude pseudo walls from window polygons. This component has only been tested with rectangular windows.<br></h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Glazings</b></td><td>_glazings</td><td>Any number of glazing polygons.</td><td>Goo</td></tr>
+<tr><td><b>Thickness</b></td><td>_thickness</td><td>Thickness of the window. Can be a single number or a list of numbers. If its a list then the list should be equal to the number of glazings.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Out</b></td><td>readMe!</td><td>The execution information, as output and error streams</td><td>String</td></tr>
+<tr><td><b>Window Extrusions</b></td><td>windowExtrusions</td><td>Geometric representations of glazing walls.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

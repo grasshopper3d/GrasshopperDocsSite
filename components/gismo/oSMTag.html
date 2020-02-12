@@ -231,6 +231,46 @@
 <p><a href="../../index.html#Gismo">Component Index</a> &gt; <a href="../../addons/gismo.html">Gismo</a> > 1 | OpenStreetMap > <b>OSMtag</b></p>
 </div>
 <h3>Use this component to generate "requiredTag" output. This output is used as input for "OSM search" component. It represents a combination of a key and value(s) for which search at "OSM search" component will be performed.<br>-<br>Search for any OSM tag at: http://taginfo.openstreetmap.org/tags<br>-<br>Provided by Gismo 0.0.3</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>OSMobject Name</b></td><td>_OSMobjectName</td><td>A single or a list of OSM object names.
+Use "OSM Objects" dropdown list to generate it.</td><td>Goo</td></tr>
+<tr><td><b></b></td><td>_____________</td><td>A key for which "requiredTag" output will be created.
+ 
+For example: "leisure". If we also supply "park" to the "requiredValues_" below, then "requiredTag" would be: "leisure=park" which will be a prerequisite for finding all parks in "OSM search" component.</td><td>Goo</td></tr>
+<tr><td><b>Required Key</b></td><td>_requiredKey</td><td>Required key for which "requiredTag" output will be created.
+-
+If you add data to upper "_OSMobjectName" input, you do not have to use this input.
+-
+This input (and "requiredValues_" below it) is used if one would like to create custom "requiredTag" output not based on "OSM Objects" drowdown list.
+For example, if we supply "leisure" to this input, and "park" to the one below ("requiredValues_"), then "requiredTag" output will be created as: "leisure,park" which will be a prerequisite for finding all parks in "OSM search" component.</td><td>Goo</td></tr>
+<tr><td><b>Required Values</b></td><td>requiredValues_</td><td>Required values for which "requiredTag" output will be created.
+-
+If you add data to upper "_OSMobjectName" input, you do not have to use this input.
+-
+This input (and "_requiredKey" above it) is used if one would like to create custom "requiredTag" output not based on "OSM Objects" drowdown list.
+For example, if we supply "park" to this input, and "leisure" to "_requiredKey" above, then "requiredTag" output will be created as: "leisure,park" which will be a prerequisite for finding all parks in "OSM search" component.
+-
+This input can also be left blank. In that case "_requiredKey" input ("leisure") will only be taken into account when generating the "requiredTag" output.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Out</b></td><td>readMe!</td><td>...</td><td>String</td></tr>
+<tr><td><b>Required Tag</b></td><td>requiredTag</td><td>A tag represents a combination between a key and value(s).
+It is prerequisite for finding particular object in "OSM search" component:  so use this output as "_requiredTag" input for "OSM search" component.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

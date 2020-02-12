@@ -915,6 +915,30 @@
 <p><a href="../../index.html#Honeybee">Component Index</a> &gt; <a href="../../addons/honeybee.html">Honeybee</a> > 11 | THERM > <b>Therm Material to Energy Plus Material</b></p>
 </div>
 <h3>Use this component to create a custom opaque material, which can be plugged into the "Honeybee_EnergyPlus Construction" component.<br>This component requires you to know a lot of the characteristics of the material and, you may want to borrow some characteristcs of a similar material in the library.  Use the "Honeybee_Call From EP Construction Library" and the "Honeybee_Decompose EP Material" to help with this.<br>If you are not able to find all of the necessary material characteristcs and your desired material is relatively light, it might be easier for you to use a "Honeybee_EnergyPlus NoMass Opaque Material."<br></h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Therm Material</b></td><td>_thermMaterial</td><td>The name of a Therm material from the ThermMaterials output from the from the "Call from EP Construction Library" component.</td><td>Goo</td></tr>
+<tr><td><b>Roughness</b></td><td>_roughness_</td><td>A text value that indicated the roughness of your material.  This can be either "VeryRough", "Rough", "MediumRough", "MediumSmooth", "Smooth", and "VerySmooth".  The default is set to "Rough".</td><td>Goo</td></tr>
+<tr><td><b>Thickness</b></td><td>_thickness</td><td>A number that represents the thickness of the material in meters (m).</td><td>Goo</td></tr>
+<tr><td><b>Density</b></td><td>_density</td><td>A number representing the density of the material in kg/m3.  This is essentially the mass one cubic meter of the material.</td><td>Goo</td></tr>
+<tr><td><b>Specific Heat</b></td><td>_specificHeat</td><td>A number representing the specific heat capacity of the material in J/kg-K.  This is essentially the number of joules needed to raise one kg of the material by 1 degree Kelvin.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>EPMaterial</b></td><td>EPMaterial</td><td>An opaque material that can be plugged into the "Honeybee_EnergyPlus Construction" component.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

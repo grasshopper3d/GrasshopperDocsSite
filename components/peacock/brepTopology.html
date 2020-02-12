@@ -548,6 +548,40 @@ Workbench
 <p><a href="../../index.html#Peacock">Component Index</a> &gt; <a href="../../addons/peacock.html">Peacock</a> > Workbench > <b>Topology</b></p>
 </div>
 <h3>Get the complete topology of a brep</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Brep</b></td><td>B</td><td>Base brep</td><td>Brep</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Faces</b></td><td>F</td><td>Faces of brep</td><td>Surface</td></tr>
+<tr><td><b>Edges</b></td><td>E</td><td>Edges of brep</td><td>Curve</td></tr>
+<tr><td><b>Vertices</b></td><td>V</td><td>Vertices of brep</td><td>Point</td></tr>
+<tr><td><b>Face | Face adjacency</b></td><td>FF</td><td>For each face, list of all faces that surround it</td><td>Integer</td></tr>
+<tr><td><b>Face | Edge adjacency</b></td><td>FE</td><td>For each face, list of all edges that surround it</td><td>Integer</td></tr>
+<tr><td><b>Face | Vertex adjacency</b></td><td>FV</td><td>For each face, list of all vertex that surround it</td><td>Integer</td></tr>
+<tr><td><b>Naked faces</b></td><td>FN</td><td>For each face, whether or not is a naked face</td><td>Boolean</td></tr>
+<tr><td><b>Edge | Face adjacency</b></td><td>EF</td><td>For each edge, list of all faces that surround it</td><td>Integer</td></tr>
+<tr><td><b>Edge | Edge adjacency</b></td><td>EE</td><td>For each edge, list of all edges that surround it</td><td>Integer</td></tr>
+<tr><td><b>Edge | Vertex adjacency</b></td><td>EV</td><td>For each edge, list of all vertex that surround it</td><td>Integer</td></tr>
+<tr><td><b>Naked edges</b></td><td>EN</td><td>For each edge, whether or not is a naked edge</td><td>Boolean</td></tr>
+<tr><td><b>Vertex | Face adjacency</b></td><td>VF</td><td>For each vertex, list of all face that surround it</td><td>Integer</td></tr>
+<tr><td><b>Vertex | Edge adjacency</b></td><td>VE</td><td>For each vertex, list of all edges that surround it</td><td>Integer</td></tr>
+<tr><td><b>Vertex | Vertex adjacency</b></td><td>VV</td><td>For each vertex, list of all vertex that surround it</td><td>Integer</td></tr>
+<tr><td><b>Naked vertices</b></td><td>VN</td><td>For each vertex, whether or not is a naked vertex</td><td>Boolean</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

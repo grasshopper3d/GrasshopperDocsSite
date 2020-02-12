@@ -320,6 +320,33 @@ Visualize
 <p><a href="../../index.html#Alba">Component Index</a> &gt; <a href="../../addons/alba.html">Alba</a> > Protein > <b>Protein Query</b></p>
 </div>
 <h3>Search the RCSB Protein DataBase for matching Amino Acis sequences and the address of a corresponding .pdb file.</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Text</b></td><td>AA</td><td>Contains a collection of text fragments</td><td>String</td></tr>
+<tr><td><b>Sequence Match Percentage</b></td><td>S%</td><td>Contains a collection of floating point numbers</td><td>Number</td></tr>
+<tr><td><b>Length Match Percentage</b></td><td>L%</td><td>Contains a collection of floating point numbers</td><td>Number</td></tr>
+<tr><td><b>Hit Index</b></td><td>i</td><td>Optional hit index, if you would like to choose a particular result, if you would like to select a particular protein. If left empty, the highest scoring match withing the specified length  threshold  will be selected.</td><td>StructurePath</td></tr>
+<tr><td><b>Open Web Page</b></td><td>W</td><td>If set to True a web page will open in the default browser showing more infomation on the selected protein on the RCSB site. If no match is found, the user is directed to Robetta, a site where the structure of the sequence can be predicted (requires account login and (typically many hours) to process.</td><td>Boolean</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>PDB URL</b></td><td>PDB</td><td>URL on rcsb.org of the .pdb file associated with the matching protein.</td><td>String</td></tr>
+<tr><td><b>All Proteins</b></td><td>M</td><td>Best matching protein accorning to scores, and length, and/or selection.    0 = Hit Index,  1 = ID,  2 = Score, 3 = Length</td><td>Goo</td></tr>
+<tr><td><b>All Proteins</b></td><td>A</td><td>All matching proteins provided by RCSB. 0 = Hit Index,  1 = ID,  2 = Score, 3 = Length</td><td>Goo</td></tr>
+<tr><td><b>Web View Message</b></td><td>W</td><td>message output  regarding web view</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

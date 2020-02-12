@@ -231,6 +231,75 @@
 <p><a href="../../index.html#Gismo">Component Index</a> &gt; <a href="../../addons/gismo.html">Gismo</a> > 1 | OpenStreetMap > <b>OSMsearch</b></p>
 </div>
 <h3>Use this component to search through OSM 2D and 3D shapes. Shapes will be searched by the use of _requiredTag input. To generate _requiredTag input use "OSM tag" component.<br>-<br>1) If you would like to search OSM 2D shapes, add data to _shapes, _keys, _values inputs.  Or<br>2) If you would like to search OSM 3D shapes, then additionally add data to threeDeeShapes_, threeDeeValues_ inputs.<br>-<br>Provided by Gismo 0.0.3</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Required Tag</b></td><td>_requiredTag</td><td>Required tag represents a combination between a key and value(s) for which this component will perform the search.
+Use "OSM tag" component to generate it.</td><td>Goo</td></tr>
+<tr><td><b>Shapes</b></td><td>_shapes</td><td>Plug in the data from the Gismo OSM shapes "shapes" output</td><td>Goo</td></tr>
+<tr><td><b>Keys</b></td><td>_keys</td><td>Plug in the data from the Gismo OSM shapes "keys" output.</td><td>Goo</td></tr>
+<tr><td><b>Values</b></td><td>_values</td><td>Plug in the data from the Gismo OSM shapes "values" output.</td><td>Goo</td></tr>
+<tr><td><b>Three Dee Shapes</b></td><td>threeDeeShapes_</td><td>This input is needed only if you are searching 3D shapes.
+For example: you created 3d buildings with "OSM 3D" component, and now you would like to check which one of all those buildings is a residential building.
+If this is the case, then plug in the data from the Gismo "OSM 3D" "threeDeeShapes" output.
+-
+If nothing supplied, then search of 2d OSM shapes (that's "_shapes" input) will be performed only.</td><td>Goo</td></tr>
+<tr><td><b>Three Dee Values</b></td><td>threeDeeValues_</td><td>This input is needed only if you are searching 3D shapes.
+For example: you created 3d buildings with "OSM 3D" component, and now you would like to check which one of all those buildings is a residential building.
+If this is the case, then plug in the data from the Gismo "OSM 3D" "threeDeeValues" output.
+-
+If nothing supplied, then search of 2d OSM shapes (that's "_shapes" input) will be performed only.</td><td>Goo</td></tr>
+<tr><td><b></b></td><td>_____________</td><td>Script variable OSMsearch</td><td>Goo</td></tr>
+<tr><td><b>Create Footprints</b></td><td>createFootprints_</td><td>In case your shape is a polygon (shapeType_ = 0), this input will create a surface from it.
+-
+This input is irrelevant if you are performing search of 3D OSM shapes (if data is supplied to "threeDeeShapes_" and "threeDeeValues_" inputs).
+-
+If not supplied, default value "False" will be used.</td><td>Goo</td></tr>
+<tr><td><b>Ground Terrain</b></td><td>groundTerrain_</td><td>The ground terrain surface on which the "foundShapes" will be laid onto.
+Supply it by using "terrain" output of the Ladybug "Terrain Generator" (type_ = 1) or Gismo "Terrain Generator" (type_ = 2 or type_ = 3) components.
+-
+If nothing supplied, the "foundShapes" will always be laid flat onto a horizontal plane, with plane origin being the "origin" input of the "OSM shapes" component.</td><td>Goo</td></tr>
+<tr><td><b></b></td><td>_____________</td><td>Script variable Python</td><td>Goo</td></tr>
+<tr><td><b>Bake It</b></td><td>bakeIt_</td><td>Set to "True" to bake the extruded _shape geometry into the Rhino scene.
+The geometry will be grouped. To ungroup it, select it and call the "Ungroup" Rhino command.
+-
+If not supplied default value "False" will be used.</td><td>Goo</td></tr>
+<tr><td><b>Run It</b></td><td>_runIt</td><td>...</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Out</b></td><td>readMe!</td><td>...</td><td>String</td></tr>
+<tr><td><b>Found Shapes</b></td><td>foundShapes</td><td>Inputted "_shapes" (for 2d search) or "threeDeeShapes_" (for 3d search) which correspond to the chosen _requiredTag input.
+-
+If upper "_shapes"/"threeDeeShapes_" do not satisfy the "_requiredTag", then that shape's branch will be empty.
+Use "Clean Tree" component and set the "E" input to "True" to remove all these empty branches.</td><td>Goo</td></tr>
+<tr><td><b>Found Keys</b></td><td>foundKeys</td><td>A list of keys. This output is the same as "keys" output of "OSM shapes" component.</td><td>Goo</td></tr>
+<tr><td><b>Found Values</b></td><td>foundValues</td><td>Values corresponding to each "foundShapes".
+-
+If upper "_shapes"/"threeDeeShapes_" do not satisfy the "_requiredTag", then that branch will not have any values (it will be empty).
+Use "Clean Tree" component and set the "E" input to "True" to remove all these empty branches.</td><td>Goo</td></tr>
+<tr><td><b>Found Shape Or Not</b></td><td>foundShapeOrNot</td><td>If a shape corresponds to the chosen OSM object then the value will be True.
+If it does not, then False is returned. So no empty branches will exist, as False value will be used in their place.
+-
+Boolean value (True or False).</td><td>Goo</td></tr>
+<tr><td><b>Found Object Names</b></td><td>foundObjectNames</td><td>Names of the found OSM objects.</td><td>Goo</td></tr>
+<tr><td><b></b></td><td>_____________</td><td>Script variable OSMsearch</td><td>Goo</td></tr>
+<tr><td><b>Title Origin Pt</b></td><td>titleOriginPt</td><td>Title base point, which can be used to move the "title" geometry with grasshopper's "Move" component.
+-
+Connect this output to a Grasshopper's "Point" parameter in order to preview the point in the Rhino scene.</td><td>Goo</td></tr>
+<tr><td><b>Title</b></td><td>title</td><td>Title geometry with information about "_requiredTag" inputs.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

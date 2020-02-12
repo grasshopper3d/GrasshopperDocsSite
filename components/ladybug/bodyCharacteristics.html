@@ -621,6 +621,178 @@
 <p><a href="../../index.html#Ladybug">Component Index</a> &gt; <a href="../../addons/ladybug.html">Ladybug</a> > 5 | Extra > <b>Body Characteristics</b></p>
 </div>
 <h3>Use this component to calculate the Basal Metabolic Rate, Body Mass Index indices and to create the "bodyCharacterstics_" input for the "Thermal comfort indices" component.<br>Basal Metabolic Rate formula by Mifflin-St. Jeor. Body Mass Index formula by Adolphe Quetelet.<br>Formulas from: "Comparison of predictive equations for resting Metabolic rate in healthy nonobese and obese adults: a systematic review",<br>Frankenfield, Roth-Yousey, Compher, American Dietetic Association, 2005.:<br>https://www.andeal.org/files/Docs/Frankenfield_et_al_2005%5B1%5D.pdf<br></h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Age</b></td><td>age_</td><td>An age of the person.
+-
+If not supplied, default value of 35 will be used.
+-
+In years.</td><td>Goo</td></tr>
+<tr><td><b>Sex</b></td><td>sex_</td><td>Person's sex.
+-
+1 or "male"
+2 or "female"
+3 or "average sex".
+-
+If not supplied, "male" will be used as a default value.</td><td>Goo</td></tr>
+<tr><td><b>Height</b></td><td>height_</td><td>Person's height.
+-
+If not supplied default value of 175 cm will be used.
+-
+In centimetres.</td><td>Goo</td></tr>
+<tr><td><b>Weight</b></td><td>weight_</td><td>Person's weight.
+-
+If not supplied default value of 75 kg will be used.
+-
+In kilograms.</td><td>Goo</td></tr>
+<tr><td><b>Body Position</b></td><td>bodyPosition_</td><td>Position of person's body.
+-
+1 or "sitting" for sitting position.
+2 or "standing" for standing position.
+3 or "crouching" for crouching position.
+-
+If not supplied, 2 (standing) will be used as a default value.</td><td>Goo</td></tr>
+<tr><td><b>Clothing Insulation</b></td><td>clothingInsulation_</td><td>Clothing insulation of a person in "clo" units.
+It ranges from 0 (nude person) to 4 (polar outfit).
+Overall clo value can be determined by adding individual clo values for each type of clothes, based on a clo values table ( http://www.engineeringtoolbox.com/clo-clothing-thermal-insulation-d_732.html )
+A more simplified approch would be:
+-
+0.20 - very light summer clothes (shorts/skirt, t-shirt, slippers, no socks)
+0.55 - summer clothes (light trousers, short sleeves or blouse)
+1 - street-business suit or Typical indoor winter clothing
+1.5 - suit and cotton coat
+2 - winter suit and coat
+2.58 - firefighting clothes
+4 - heavy polar outfit (fur pants, coat, hood, gloves...)
+-
+If not supplied it will be caclulated for each hour based on air temperature, with minimal 0.5 and maximal 4.1 clo values.
+-
+In clo.</td><td>Goo</td></tr>
+<tr><td><b>Clothing Albedo</b></td><td>clothingAlbedo_</td><td>Average clothing and skin albedo of a person.
+Ranges from 0 to 100%. In theory clothes-skin albedo of 0 would absorb, while 100% will reflect all solar radiation.
+Some of the examples:
+-
+light colored (white and bright clothes) - 57 %
+dark colored (black and gray clothes) - 21 %
+medium colored (any clothes colors between upper two) - 37 %
+protective polyethylene/aluminium suits - 95 %
+-
+If not supplied 37% (medium colored) will be used as a default.
+-
+In percent.</td><td>Goo</td></tr>
+<tr><td><b>Acclimated</b></td><td>acclimated_</td><td>Determine whether the test person had previously experienced heat/cold stress.
+-
+"acclimated" or True if person in subject is acclimatized,
+"unacclimated" or False if it's not.
+-
+If no value is supplied, True (acclimated) will be used by default.</td><td>Goo</td></tr>
+<tr><td><b>Metabolic Rate</b></td><td>metabolicRate_</td><td>Activity's metabolic rate in mets. If not supplied 2.32 will be used as default value
+Here are some of the examples of metabolic rates mets based on activity:
+Activity - met
+-------------------
+Reclining  - 0.8
+Seating - 1.0
+Car driving - 1.2
+Sedentary activity (office, dwelling, school, laboratory) - 1.2
+Standing - 1.2
+Standing (light activity: shopping, laboratory, light industry) - 1.6
+Standing (medium activity: shop assistant, domestic work) - 2.0
+Walking (4 km/h) - 2.32
+Walking (5 km/h) - 3.4
+...
+Washing dishes standing - 2.5
+Domestic work (raking leaves on the lawn) - 2.9
+Domestic work (washing by hand and ironing) - 2.9
+Iron and steel (ramming the mould with a pneumatic hammer) - 3.0
+Building industry (brick laying) - 2.2
+Building industry (forming the mould) - 3.1
+Building industry (loading a wheelbarrow with stones and mortar) - 4.7
+Forestry (cutting with chainsaw) - 3.5
+Forestry (working with an axe) - 8.5
+Agriculture (digging with a spade) - 6.5
+...
+Volleyball - 4.0
+Golf - 5.0
+Softball - 5.0
+Gymnastics - 5.5
+Aerobic Dancing - 6.0
+Swimming - 6.0
+Ice skating - 6.2
+Bicycling (15 km/h) - 4.0
+Bicycling (20km/h) - 6.2
+Skiing (9 km/h) - 7.0
+Backpacking - 7.0
+Basketball - 7.0
+Handball - 8.0
+Hockey - 8.0
+Racquetball - 8.0
+Soccer - 8.0
+Running (8 km/h) - 8.5
+Running (15km/h) - 9.5
+-
+If not supplied default value of 2.32 (walking 4 km/h or 1.1m/s) mets will be used.
+-
+In mets.</td><td>Goo</td></tr>
+<tr><td><b>Activity Duration</b></td><td>activityDuration_</td><td>Duration of the activity sequence.
+It should not be lower than 180 minutes (3 hours) and it should be dividable with 60 (meaning only full hour values are accepted: 180, 240, 300, 360, 420, 480, 540 ...)
+-
+If not supplied, default value of 480 minutes (8 hours) will be used.
+-
+In minutes.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Out</b></td><td>readMe!</td><td>...</td><td>String</td></tr>
+<tr><td><b>BMR</b></td><td>BMR</td><td>Basal Metabolic Rate - represents the minimum daily amount of energy needed to keep your body functioning, including breathing and keeping your heart beating, without lossing weight. It does not include the the calories you burn from normal daily activities or exercise.
+To account for daily activities and exercises, this BMR value needs to be multiplied with:
+-
+1.2 - Light or no exercise and desk job
+1.375 - Light exercise or sports 1-3 days a week
+1.55 - Moderate exercise or sports 3-5 days a week
+1.725 - Hard exercise or sports 6-7 days a week
+1.9 - Hard daily exercise or sports and physical job
+-
+Once the person knows the number of daily calories needed to maintain its weight, it can easily calculate the number of calories it needs to eat in order to gain or lose weight.
+In calories/day.</td><td>Goo</td></tr>
+<tr><td><b>BMI</b></td><td>BMI</td><td>Body Mass Index - is the ratio of the persons weight to square of height. It is generally used as a method of screening for weight category.
+In kg/m2.</td><td>Goo</td></tr>
+<tr><td><b>BMILevel</b></td><td>BMILevel</td><td>Level of BMI for adult (18 years and older) males and females:
+----------------
+- for males:
+BMI ; 17.5 - Anorexia
+17.5 ; BMI ; 20.7 - Underweight
+20.7 ; BMI ; 26.4 - Normal weight
+26.4 ; BMI ; 27.8 - Marginally overweight
+27.8 ; BMI ; 31.1 - Overweight
+31.1 ; BMI ; 40 - Obese
+BMI ; 40 - Extreme obesity
+-
+- for females:
+BMI ; 17.5 - Anorexia
+17.5 ; BMI ; 19.1 - Underweight
+19.1 ; BMI ; 25.8 - Normal weight
+25.8 ; BMI ; 27.3 - Marginally overweight
+27.3 ; BMI ; 32.3 - Overweight
+32.3; BMI ; 40 - Obese
+BMI ; 40 - Extreme obesity
+-
+In calories/day.</td><td>Goo</td></tr>
+<tr><td><b>Body Characteristics</b></td><td>bodyCharacteristics</td><td>A list of inputted values (age, sex, height, weight, bodyPosition, clothingInsulation, acclimated, metabolicRate, activityDuration).
+-
+Use it for the "Thermal comfort indices" component's "bodyCharacteristics_" input.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

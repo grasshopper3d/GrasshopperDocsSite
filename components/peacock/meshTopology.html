@@ -548,6 +548,43 @@ Workbench
 <p><a href="../../index.html#Peacock">Component Index</a> &gt; <a href="../../addons/peacock.html">Peacock</a> > Workbench > <b>Mesh topology</b></p>
 </div>
 <h3>Get the complete topology of a mesh</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Mesh</b></td><td>Mesh</td><td>Base mesh</td><td>Mesh</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Vertices</b></td><td>Vertices</td><td>Mesh vertices</td><td>Point</td></tr>
+<tr><td><b>Faces</b></td><td>Faces</td><td>Mesh faces</td><td>Mesh</td></tr>
+<tr><td><b>Edges</b></td><td>Edges</td><td>Mesh edges</td><td>Line</td></tr>
+<tr><td><b>Normals</b></td><td>Normals</td><td>Mesh normals</td><td>Vector</td></tr>
+<tr><td><b>Colors</b></td><td>Colors</td><td>Mesh colors</td><td>Colour</td></tr>
+<tr><td><b>Face | Face adjacency</b></td><td>Face | Face adjacency</td><td>For each face, list of all faces that surround it</td><td>Integer</td></tr>
+<tr><td><b>Face | Edge adjacency</b></td><td>Face | Edge adjacency</td><td>For each face, list of all edges that surround it</td><td>Integer</td></tr>
+<tr><td><b>Face | Vertex adjacency</b></td><td>Face | Vertex adjacency</td><td>For each face, list of all vertex that surround it</td><td>Integer</td></tr>
+<tr><td><b>Naked faces</b></td><td>Naked faces</td><td>For each face, returns whether contains a naked edge</td><td>Boolean</td></tr>
+<tr><td><b>Quad</b></td><td>Quads</td><td>For each face returns whether is a quad face</td><td>Boolean</td></tr>
+<tr><td><b>Edge | Face adjacency</b></td><td>Edge | Face adjacency</td><td>For each edge, list of all faces that surround it</td><td>Integer</td></tr>
+<tr><td><b>Edge | Edge adjacency</b></td><td>Edge | Edge adjacency</td><td>For eachedge, list of all edges that surround it</td><td>Integer</td></tr>
+<tr><td><b>Edge | Vertex adjacency</b></td><td>Edge | Vertex adjacency</td><td>For each edge, list of all vertex that surround it</td><td>Integer</td></tr>
+<tr><td><b>Naked edge</b></td><td>Naked edges</td><td>For each edge returns whether is a naked edge</td><td>Boolean</td></tr>
+<tr><td><b>Vertex | Face adjacency</b></td><td>Vertex | Face adjacency</td><td>For each vertex, list of all face that surround it</td><td>Integer</td></tr>
+<tr><td><b>Vertex | Edge adjacency</b></td><td>Vertex | Edge adjacency</td><td>For each vertex, list of all edges that surround it</td><td>Integer</td></tr>
+<tr><td><b>Vertex | Vertex adjacency</b></td><td>Vertex | Vertex adjacency</td><td>For each vertex, list of all vertices that surround it</td><td>Integer</td></tr>
+<tr><td><b>Naked vertices</b></td><td>Naked vertices</td><td>For each vertex, returns whether is a naked vertex</td><td>Boolean</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

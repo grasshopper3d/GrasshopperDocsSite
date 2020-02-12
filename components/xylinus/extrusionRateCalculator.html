@@ -261,6 +261,29 @@ Syringe
 <p><a href="../../index.html#Xylinus">Component Index</a> &gt; <a href="../../addons/xylinus.html">Xylinus</a> > Filament > <b>Extr Rate</b></p>
 </div>
 <h3>calculate basic extrusion rate as factored by the cross section area of the filament and that of the print extrusion.<br>(pi * (filament diameter/2)sq  /  (extrusion width * layer height)) * extrusion multiplier</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Layer Height</b></td><td>LH</td><td>Layer Height or a Xylinus Filimant Config</td><td>Goo</td></tr>
+<tr><td><b>Extrusion Width</b></td><td>EW</td><td>Extrusion Width or a Xylinus Filimant Config</td><td>Goo</td></tr>
+<tr><td><b>Filament Diameter</b></td><td>FD</td><td>Layer Height or a Xylinus Filimant Config</td><td>Goo</td></tr>
+<tr><td><b>Extrusion Mutiplier</b></td><td>EM</td><td>Extrusion Mulitplier or a Xylinus Filimant Config</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>extrusion rate (E mm / 1  mm travel)</b></td><td>ER</td><td>Expression result</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

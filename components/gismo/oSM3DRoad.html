@@ -231,6 +231,55 @@
 <p><a href="../../index.html#Gismo">Component Index</a> &gt; <a href="../../addons/gismo.html">Gismo</a> > 1 | OpenStreetMap > <b>OSM3Droad</b></p>
 </div>
 <h3>Use this component to create 3d roads geometry.<br>If terrain is used then 3d roads are created for the purpose of visualization. They do not represent the actual terrains roadfilled roads!<br>-<br>If you notice some inconsistency in the final 3d road geometry, lower the value of Rhino's tolerance (Tools->Options->Units->Absolute tolerance). Then rerun the grasshopper definition (Solution->Recompute).<br>-<br>Provided by Gismo 0.0.3</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Shapes</b></td><td>_shapes</td><td>Plug in the road polylines from the Gismo 'OSM shapes' component's "shapes" output ("shapeType_" input set to 1). You can also add data from "foundShapes" output of the "OSM Search" component."</td><td>Goo</td></tr>
+<tr><td><b></b></td><td>________________</td><td>Script variable OSM3D</td><td>Goo</td></tr>
+<tr><td><b>Road Width</b></td><td>roadWidth_</td><td>The width of all polylines added to the upper "_shapes" input.
+-
+If nothing supplied, the default value of 3 meters (approx. 10 feets) per level will be used.
+-
+In Rhino document units (meters, feets...).</td><td>Goo</td></tr>
+<tr><td><b>Road Thickness</b></td><td>roadThickness_</td><td>Height for which road surface will be extruded from the ground.
+-
+Positive road thickness value will extrude the road upwards.
+Negative road thickness value will extrude road downwards.
+-
+If nothing supplied, the default value of 0.25 meters (approx. 0.8 feets) per level will be used.
+-
+In Rhino document units (meters, feets...).</td><td>Goo</td></tr>
+<tr><td><b>Ground Terrain</b></td><td>groundTerrain_</td><td>The ground terrain surface on which the "threeDeeRoads" will be laid onto.
+Supply it by using "terrain" output of the Ladybug "Terrain Generator" (type_ = 1) or Gismo "Terrain Generator" (type_ = 2 or type_ = 3) components.
+-
+ATTENTION!!! Depening on the number of road polylines added to the _shapes input, calculation time may be a bit longer when using terrain.
+-
+If nothing supplied, the "threeDeeRoads" will always be laid flat onto a horizontal plane corresponding to the plane of the "_shapes" polylines.</td><td>Goo</td></tr>
+<tr><td><b></b></td><td>________________</td><td>Script variable Python</td><td>Goo</td></tr>
+<tr><td><b>Bake It</b></td><td>bakeIt_</td><td>Set to "True" to bake the "threeDeeRoads" geometry into the Rhino scene.
+The geometry will be grouped. To ungroup it, select it and call the "Ungroup" Rhino command.
+-
+If not supplied default value "False" will be used.</td><td>Goo</td></tr>
+<tr><td><b>Run It</b></td><td>_runIt</td><td>...</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Out</b></td><td>readMe!</td><td>...</td><td>String</td></tr>
+<tr><td><b>Three Dee Roads</b></td><td>threeDeeRoads</td><td>Generated 3d shapes roads from the inputted "_shapes".
+-
+If you notice some inconsistency in 3d road geometry, lower the value Rhino's tolerance (Tools-;Options-;Units-;Absolute tolerance). Then rerun the grasshopper definition (Solution-;Recompute).</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

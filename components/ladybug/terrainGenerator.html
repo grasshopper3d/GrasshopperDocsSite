@@ -621,6 +621,68 @@
 <p><a href="../../index.html#Ladybug">Component Index</a> &gt; <a href="../../addons/ladybug.html">Ladybug</a> > 7 | WIP > <b>Terrain Generator</b></p>
 </div>
 <h3>This component uses Google Maps API to achieve elevation data and satellite images of the terrain generated.<br>This component requires an internet connection and it runs for free up to 2,500 requests per day. Once you go over this limit the component doesn't work.<br>Note that each surface is a request, for example if you use a surface made by sub-surfaces 6x6, this will be 36 requests.<br>For informations about the rules of use of Google Maps API, take a look at this link:<br>https://developers.google.com/maps/pricing-and-plans/#details<br>Special thanks goes to Google Maps and the authors of gHowl.<br></h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Location</b></td><td>_location</td><td>It accepts two type of inputs.
+a) latitude, longitude and elevation that represent WSG84 coordinates of the base point. You can achieve these type of coordinates from Google Maps or similar.
+e.g. 40.821796, 14.426439, 990
+-
+b) location, you can obtain this type of input from "Ladybug_Construct Location", "Ladybug_Location Finder", "Ladybug_Import epw", "Ladybug_Import Location".</td><td>Goo</td></tr>
+<tr><td><b>Base Point</b></td><td>_basePoint_</td><td>Input a point here to georeference the terrain model.</td><td>Goo</td></tr>
+<tr><td><b>Radius</b></td><td>_radius_</td><td>A radius to make the terrain 3D model in Rhino model units. The default is set to 100.
+-
+If you provide a big radius, this could require lots of time (also a couple of minutes).</td><td>Goo</td></tr>
+<tr><td><b>Type</b></td><td>type_</td><td>Select the type of output:
+0 = rectangular mesh
+1 = rectangular surface
+-
+The default value is 0.</td><td>Goo</td></tr>
+<tr><td><b>Num Of Tiles</b></td><td>_numOfTiles_</td><td>Set the number of tiles (e.g. 4, that means 4x4). If no input is connected this will be 3 (tiles: 3x3).</td><td>Goo</td></tr>
+<tr><td><b>Num Division</b></td><td>_numDivision_</td><td>Set the number of points for each tile. If no input is connected this will be 12 (grid: 13x13).</td><td>Goo</td></tr>
+<tr><td><b>Img Resolution</b></td><td>_imgResolution_</td><td>Connect an integer number which manage the quality of single satellite image.
+-
+The following list shows the approximate level of detail you can expect to see at each _imgResolution_ level:
+1 = World
+5 = Landmass/continent
+10 = City
+15 = Streets
+20 = Buildings
+-
+The default value is 18.</td><td>Goo</td></tr>
+<tr><td><b>Map Type</b></td><td>mapType_</td><td>Connect an integer number, from 0 to 3, which manages the formats of map.
+-
+0 = Satellite (default)
+1 = Roadmap, specifies a standard roadmap image
+2 = Terrain, it shows terrain and vegetation
+3 = Hybrid, it specifies a hybrid of the satellite and roadmap image</td><td>Goo</td></tr>
+<tr><td><b>Folder</b></td><td>folder_</td><td>The folder into which you would like to write the image file. This should be a complete file path to the folder.  If no folder is provided, the images will be written to C:/USERNAME/AppData/Roaming/Ladybug/IMG_Google.</td><td>Goo</td></tr>
+<tr><td><b>Run It</b></td><td>_runIt</td><td>Set to "True" to run the component and generate the 3D terrain model.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Out</b></td><td>readMe!</td><td>...</td><td>String</td></tr>
+<tr><td><b>Points Geo</b></td><td>pointsGeo</td><td>WSG84 coordinates of the grid points (longitude, latitude).</td><td>Goo</td></tr>
+<tr><td><b>Points XY</b></td><td>pointsXY</td><td>Cartesian coordinates of the grid points (X, Y).</td><td>Goo</td></tr>
+<tr><td><b>Points Z</b></td><td>pointsZ</td><td>Z values of the grid points. Connect this output to a Z vector to move the pointsXY in the right positions.</td><td>Goo</td></tr>
+<tr><td><b>Tiles</b></td><td>tiles</td><td>The area which will be calculated. If you want to visualize Satellite images connect this output to 'G' input of 'Human Custom Preview Material'.</td><td>Goo</td></tr>
+<tr><td><b>Image Path</b></td><td>imagePath</td><td>Satellite images from Google Static Maps API. Connect it to 'DB' input of 'Human Custom Preview Material' to apply textures to the 3d model or to the list of input surfaces.</td><td>Goo</td></tr>
+<tr><td><b>-----------</b></td><td>-----------</td><td>...</td><td>Goo</td></tr>
+<tr><td><b>Terrain</b></td><td>terrain</td><td>3D terrain model.</td><td>Goo</td></tr>
+<tr><td><b>Origin</b></td><td>origin</td><td>The origin (center) point of the "terrain" geometry.</td><td>Goo</td></tr>
+<tr><td><b>Elevation</b></td><td>elevation</td><td>Elevation of the origin_ input.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

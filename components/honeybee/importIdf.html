@@ -915,6 +915,29 @@
 <p><a href="../../index.html#Honeybee">Component Index</a> &gt; <a href="../../addons/honeybee.html">Honeybee</a> > 13 | WIP > <b>Import idf</b></p>
 </div>
 <h3>import an idf file to gh<br>This version only imports the geometries<br>Constructions, schedules and systems will be neglected</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Idf File</b></td><td>_idfFile</td><td>File path to an idf file</td><td>Goo</td></tr>
+<tr><td><b>Import EPObjects</b></td><td>importEPObjects_</td><td>Set to True if you want Honeybee import constructions, materials and schedules from this file. You need to do it only once. In case there is an object with similar name already in Honeybee library object will not be imported and you need to rename it in the idf file.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Out</b></td><td>readMe!</td><td>...</td><td>String</td></tr>
+<tr><td><b>HBZones</b></td><td>HBZones</td><td>List of Honeybee zones imported from .idf file</td><td>Goo</td></tr>
+<tr><td><b>Shadings</b></td><td>shadings</td><td>Shading objects if any</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

@@ -621,6 +621,50 @@
 <p><a href="../../index.html#Ladybug">Component Index</a> &gt; <a href="../../addons/ladybug.html">Ladybug</a> > 7 | WIP > <b>ENVI-Met Read Library</b></p>
 </div>
 <h3>This component let you select materials from ENVI-Met library.<br></h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Data Type</b></td><td>_dataType</td><td>Connect an integer from 0 to 6.
+-
+0 = soil
+1 = profile
+2 = material
+3 = wall
+4 = source
+5 = plant
+6 = plant3D
+-
+Default value is 0.</td><td>Goo</td></tr>
+<tr><td><b>Keyword</b></td><td>_keyword_</td><td>Connect a keyword to filter data. E.g. 'asphalt' (_dataType = 0)</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Read Me!</b></td><td>readMe!</td><td>...</td><td>String</td></tr>
+<tr><td><b>Soil Id</b></td><td>soilId</td><td>ENVI-Met soil ID.</td><td>Goo</td></tr>
+<tr><td><b>Soil Data</b></td><td>soilData</td><td>0 = Id
+1 = Description
+2 = Versiegelung
+3 = Water Contentat Saturation
+4 = Water Content At Field Cap
+5 = WaterContentWiltingPoint6 = Matrix Potential
+7 = Hidraulic Conductivity
+8 = Volumetric HeatCapacity
+9 = Clapp Constant
+10 = Heat Conductivity
+11 = Group
+12 = Color</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

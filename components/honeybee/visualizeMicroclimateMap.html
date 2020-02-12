@@ -915,6 +915,40 @@
 <p><a href="../../index.html#Honeybee">Component Index</a> &gt; <a href="../../addons/honeybee.html">Honeybee</a> > 10 | Energy | Energy > <b>Visualize Microclimate Map</b></p>
 </div>
 <h3>Use this component to produce a colored mesh from a comfResultsMtx.<br></h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Comf Results Mtx</b></td><td>_comfResultsMtx</td><td>Any matrix output from the 'Honeybee_Microclimate Map Analysis' component, the 'Honeybee_Thermal Comfort Autonomy Analysis' component, or the 'Honeybee_Read Microclimate Matrix' component.</td><td>Goo</td></tr>
+<tr><td><b>View Factor Mesh</b></td><td>_viewFactorMesh</td><td>The list of view factor meshes that comes out of the  'Honeybee_Indoor View Factor Calculator'.  These will be colored with result data.</td><td>Goo</td></tr>
+<tr><td><b>===========</b></td><td>===========</td><td>...</td><td>Goo</td></tr>
+<tr><td><b>Analysis Period</b></td><td>analysisPeriod_</td><td>Optional analysisPeriod_ to take a slice out of the data stream.  Note that that connecting a value to 'stepOfSimulation_' will override this input.</td><td>Goo</td></tr>
+<tr><td><b>Step Of Simulation</b></td><td>stepOfSimulation_</td><td>Optional interger to select out a step of the simulation to color the mesh with.  Connecting a value here will override the analysisPeriod_ input.</td><td>Goo</td></tr>
+<tr><td><b>Percent Or Total</b></td><td>percentOrTotal_</td><td>Set to 'True' to have the component compute comfort values as a percent of occupied hours or all hours.  Set to 'False' to have the component compute comfort values as a total number of hours.  The default is set to 'True' to calculate comfort as a percent.  Note that this input only works for comfort matrices and not temperature ones.</td><td>Goo</td></tr>
+<tr><td><b>Legend Par</b></td><td>legendPar_</td><td>Optional legend parameters from the Ladybug Legend Parameters component.</td><td>Goo</td></tr>
+<tr><td><b>Run It</b></td><td>runIt_</td><td>Set boolean to "True" to run the component and produce a colored mesh from a comfResultsMtx.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Out</b></td><td>readMe!</td><td>...</td><td>String</td></tr>
+<tr><td><b>=========</b></td><td>=========</td><td>Script variable Python</td><td>Goo</td></tr>
+<tr><td><b>Result Mesh</b></td><td>resultMesh</td><td>A list of colored meshes showing the results form the comfResultsMtx.</td><td>Goo</td></tr>
+<tr><td><b>Legend</b></td><td>legend</td><td>A legend for the colored mesh. Connect this output to a grasshopper "Geo" component in order to preview the legend spearately in the Rhino scene.</td><td>Goo</td></tr>
+<tr><td><b>Legend Base Pt</b></td><td>legendBasePt</td><td>The legend base point, which can be used to move the legend with the grasshopper "move" component.</td><td>Goo</td></tr>
+<tr><td><b>=========</b></td><td>=========</td><td>Script variable Python</td><td>Goo</td></tr>
+<tr><td><b>Result Values</b></td><td>resultValues</td><td>The values of results that are being used to color the results.</td><td>Goo</td></tr>
+<tr><td><b>Result Colors</b></td><td>resultColors</td><td>The colors used for each mesh face.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

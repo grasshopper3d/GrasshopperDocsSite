@@ -621,6 +621,39 @@
 <p><a href="../../index.html#Ladybug">Component Index</a> &gt; <a href="../../addons/ladybug.html">Ladybug</a> > 5 | Extra > <b>Comfort Mannequin</b></p>
 </div>
 <h3>Use this component to color a mannequin based on their relation to a comfort temperature.<br></h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Ambient Temperature</b></td><td>_ambientTemperature</td><td>The temperture around the mannequin, which can be either UTCI (outdoor comfort), Standard Effective Temperature (PMV comfort), or Operative Temperature (Adaptive Comfort).</td><td>Goo</td></tr>
+<tr><td><b>Target Temperature</b></td><td>targetTemperature_</td><td>The target comfort temperature that the mannequin wants to be at.  The default is set to 20C</td><td>Goo</td></tr>
+<tr><td><b>Comfort Range</b></td><td>comfortRange_</td><td>The number of degrees above and below the target temperture that the subject will still find comfortable.  The default is set to 3C, which is pretty common for many comfort metrics.</td><td>Goo</td></tr>
+<tr><td><b>-------------------------</b></td><td>-------------------------</td><td>...</td><td>Goo</td></tr>
+<tr><td><b>Body Posture</b></td><td>bodyPosture_</td><td>An interger to set the posture of the comfort mannequin, which can have a large effect on the radiation striking the mannequin.  0 = Standing, 1 = Sitting, and 2 = Lying Down.  The default is set to 1 for sitting.</td><td>Goo</td></tr>
+<tr><td><b>Rotation Angle</b></td><td>rotationAngle_</td><td>An optional rotation angle in degrees.  Use this number to adjust the angle of the comfort mannequin in space.  The angle of the mannequin in relation to the sun can have a large effect on the amount of radiation that falls on it and thus largely affect the resulting mean radiant temperature.</td><td>Goo</td></tr>
+<tr><td><b>Body Location</b></td><td>bodyLocation_</td><td>An optional point that sets the position of the comfort mannequin in space.  Use this to move the comfort mannequin around in relation to contextShading_ connected below. The default is set to the Rhino origin.</td><td>Goo</td></tr>
+<tr><td><b>Legend Par</b></td><td>legendPar_</td><td>Optional legend parameters from the Ladybug Legend Parameters component.</td><td>Goo</td></tr>
+<tr><td><b>Bake It</b></td><td>bakeIt_</td><td>An integer that tells the component if/how to bake the bojects in the Rhino scene.  The default is set to 0.  Choose from the following options:
+0 (or False) - No geometry will be baked into the Rhino scene (this is the default).
+1 (or True) - The geometry will be baked into the Rhino scene as a colored hatch and Rhino text objects, which facilitates easy export to PDF or vector-editing programs.
+2 - The geometry will be baked into the Rhino scene as colored meshes, which is useful for recording the results of paramteric runs as light Rhino geometry.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Mannequin Mesh</b></td><td>mannequinMesh</td><td>A colored mesh of a comfort mannequin showing the amount of radiation falling over the mannequin's body.</td><td>Goo</td></tr>
+<tr><td><b>Legend</b></td><td>legend</td><td>A legend that corresponds to the colors on the mannequinMesh and shows the relative W/m2.</td><td>Goo</td></tr>
+<tr><td><b>Legend Base Pt</b></td><td>legendBasePt</td><td>The legend base point, which can be used to move the legend in relation to the chart with the grasshopper "move" component.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

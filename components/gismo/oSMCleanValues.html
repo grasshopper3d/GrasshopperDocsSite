@@ -231,6 +231,48 @@
 <p><a href="../../index.html#Gismo">Component Index</a> &gt; <a href="../../addons/gismo.html">Gismo</a> > 1 | OpenStreetMap > <b>OSMcleanValues</b></p>
 </div>
 <h3>A lot of times the items coming from the "values" output of OSM components may have empty data (<empty>).<br>Use this component to clean all that empty data, or to replace it with some other value.<br>-<br>Provided by Gismo 0.0.3</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Shapes</b></td><td>_shapes</td><td>Shapes data tree.
+Connect the "shapes" or "threeDeeShapes" or "foundShapes" output of some of the Gismo OSM components to this component's "_shapes" input."</td><td>Goo</td></tr>
+<tr><td><b>Values Per Key</b></td><td>_valuesPerKey</td><td>Values data tree.
+Connect the \"values\" output for particular key of some of the Gismo components to this input.
+To do that, use the "List Item" component and add the "values" output to its "L" input. Also Set its "index" input to correspond to the specific key you are looking for.
+Then plug the "i" ("item") ouput to this component's "_valuesPerKey" input.</td><td>Goo</td></tr>
+<tr><td><b></b></td><td>____________</td><td>Script variable CleanValues</td><td>Goo</td></tr>
+<tr><td><b>Replace Value</b></td><td>replaceValue_</td><td>If a value from the "_valuesPerKey" input is invalid (equals to ;empty;), then replace it with some number/text added to this input.
+If nothing is added to this input, then in case the value is invalid, it will simply be removed.
+-
+Optionally add a number or a text.</td><td>Goo</td></tr>
+<tr><td><b>Convert To Num</b></td><td>convertToNum_</td><td>Optional input to determine if each of the data added to the "_valuesPerKey" input will be converted to a number or not.
+This is useful as data coming from "values" outputs of Gismo OSM components is always a text (string) even though it may look like it is numeric.
+-
+If nothing is added to this input, default value of "False" will be used.
+-
+Boolean value ("True" or "False").</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Out</b></td><td>readMe!</td><td>...</td><td>String</td></tr>
+<tr><td><b>Cleaned Shapes</b></td><td>cleanedShapes</td><td>Cleaned "_shapes" input.</td><td>Goo</td></tr>
+<tr><td><b>Cleaned Values</b></td><td>cleanedValues</td><td>Cleaned "_valuesPerKey" input.</td><td>Goo</td></tr>
+<tr><td><b>Culling Pattern</b></td><td>cullingPattern</td><td>This ouput shows if an item from the "_valuesPerKey" input is valid or not (invalid items are labeled as: ;empty;).
+-
+If the item is valid, "True" will be generated.
+If it isn't valid, "False" will be generated.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

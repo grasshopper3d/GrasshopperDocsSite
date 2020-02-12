@@ -261,6 +261,31 @@ Syringe
 <p><a href="../../index.html#Xylinus">Component Index</a> &gt; <a href="../../addons/xylinus.html">Xylinus</a> > Filament > <b>Print Crv _F</b></p>
 </div>
 <h3>Converts a curve into g code to 3D print with a standard filament based printer</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Curve Geometry</b></td><td>Crv</td><td>input curve to trace</td><td>Curve</td></tr>
+<tr><td><b>Primary config for 3DP_F</b></td><td>C</td><td>Optional configuration for 3D printing with filament. Direct entries will override these config entries.</td><td>Goo</td></tr>
+<tr><td><b>start and end g code</b></td><td>SE</td><td>Boolean input to determine wether or not to add the start and end g code needed to intiate and end a print. You may also adda customized start and end gcode sequences from the Start G Code and the End G Code components.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>G Code</b></td><td>GC</td><td>Complete g code for printing a single wall model with no infill</td><td>Goo</td></tr>
+<tr><td><b>Point</b></td><td>Pt</td><td>Contains a collection of three-dimensional points</td><td>Point</td></tr>
+<tr><td><b>Printer Lines as polylines</b></td><td>Pl</td><td>polyline describing the path traveled by the printer.</td><td>Curve</td></tr>
+<tr><td><b>Total Filament Extruded (mm)</b></td><td>F</td><td>estimate of the total amount of filament needed to complete this section of g code</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

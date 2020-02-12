@@ -320,6 +320,33 @@ Visualize
 <p><a href="../../index.html#Alba">Component Index</a> &gt; <a href="../../addons/alba.html">Alba</a> > Visualize > <b>DNA Comp Viz</b></p>
 </div>
 <h3>Creates and displays an offset complementary strand</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Locaction</b></td><td>Loc</td><td>point in Rhino where DNA will be vizualized. For linear strands this is at the start (5' end) . For plasmids, this is the center of the circle.</td><td>Point</td></tr>
+<tr><td><b>DNA Sequence</b></td><td>DNA</td><td>Contains a collection of text fragments</td><td>String</td></tr>
+<tr><td><b>Crv</b></td><td>Crv</td><td>If this input is not null, it will be passed tot he output.</td><td>Goo</td></tr>
+<tr><td><b>Reference Points</b></td><td>Pts</td><td>Contains a collection of three-dimensional points</td><td>Point</td></tr>
+<tr><td><b>Size</b></td><td>Size</td><td>Size of the text</td><td>Number</td></tr>
+<tr><td><b>Distance</b></td><td>Dist</td><td>Offset distance</td><td>Number</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>DNA</b></td><td>DNA</td><td>Resulting text</td><td>String</td></tr>
+<tr><td><b>Curve</b></td><td>Crv</td><td>Contains a collection of generic curves</td><td>Curve</td></tr>
+<tr><td><b>points</b></td><td>Pt</td><td>Contains a collection of three-dimensional points</td><td>Point</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

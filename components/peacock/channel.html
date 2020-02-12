@@ -548,6 +548,35 @@ Workbench
 <p><a href="../../index.html#Peacock">Component Index</a> &gt; <a href="../../addons/peacock.html">Peacock</a> > Gems > <b>Channel</b></p>
 </div>
 <h3>Creates a channel for gems from a curve on a surface<br></h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Channel curve</b></td><td>Crv</td><td>Guide curve of channel</td><td>Curve</td></tr>
+<tr><td><b>Surface reference</b></td><td>Srf</td><td>Reference surface on the channel</td><td>Surface</td></tr>
+<tr><td><b>Profile curve</b></td><td>Profile</td><td>Flat curve to draw the side of the channel.
+It must be in the XY plane and be the right side of the channel.</td><td>Curve</td></tr>
+<tr><td><b>Guide parameter</b></td><td>GuideT</td><td>Normalized value (between 0 and 1) to control the height of the output guide curve.</td><td>Number</td></tr>
+<tr><td><b>Side width</b></td><td>Width</td><td>Width on each side of the channel</td><td>Number</td></tr>
+<tr><td><b>Gem width</b></td><td>GemW</td><td>Width of the channel where the gems will go</td><td>Number</td></tr>
+<tr><td><b>Height</b></td><td>Height</td><td>Height of channel</td><td>Number</td></tr>
+<tr><td><b>Base height</b></td><td>BaseH</td><td>Height of the bridge between sides of the channel</td><td>Number</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Channel</b></td><td>C</td><td>Resulting channel</td><td>Brep</td></tr>
+<tr><td><b>Curve guide</b></td><td>G</td><td>Resulting curve guide</td><td>Curve</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

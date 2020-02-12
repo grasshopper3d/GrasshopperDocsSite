@@ -231,6 +231,33 @@
 <p><a href="../../index.html#Gismo">Component Index</a> &gt; <a href="../../addons/gismo.html">Gismo</a> > 0 | Gismo > <b>Gismo</b></p>
 </div>
 <h3>This component contains all Gismo classes. Other Gismo components are being run by referencing these classes.<br>So in order for any other Gismo component to work, you need to run this component first. If this component is ran successfully you will hear the Gismo penquin peeping!!<br>-<br>Provided by Gismo 0.0.3</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Map Folder</b></td><td>mapFolder_</td><td>Optional folder path for MapWinGIS installation folder.
+-
+Most of Gismo's components require MapWinGIS application being installed.
+If you did that, Gismo Gismo component will automatically find your MapWinGIS installation folder.
+However sometimes Gismo Gismo component will fail to find your MapWinGIS installation folder. In that case you need to input it manually by adding it to the mapFolder_ input.</td><td>Goo</td></tr>
+<tr><td><b>Gismo Folder</b></td><td>gismoFolder_</td><td>Optional folder path for Gismo working folder.
+-
+If nothing is supplied to this input, then gismoFolder_ will be set to: "c:\gismo" by default.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Out</b></td><td>readMe!</td><td>This output will inform whether the component has been successfully ran or not.</td><td>String</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

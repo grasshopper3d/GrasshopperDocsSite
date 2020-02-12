@@ -621,6 +621,76 @@
 <p><a href="../../index.html#Ladybug">Component Index</a> &gt; <a href="../../addons/ladybug.html">Ladybug</a> > 7 | WIP > <b>Import Sandia Photovoltaics Module</b></p>
 </div>
 <h3>Use this component to import Photovoltaics module settings for particular module from "Sandia National Laboratories Modules" library.<br>Download library's newest version from the bottom of the following page:<br>https://sam.nrel.gov/libraries<br></h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Modules Library File</b></td><td>_modulesLibraryFile</td><td>Add "Sandia National Laboratories Modules" .csv file path to this input.
+-
+Download its newest version on the bottom of this web page
+sam.nrel.gov/libraries</td><td>Goo</td></tr>
+<tr><td><b>Module Index</b></td><td>moduleIndex_</td><td>An index corresponding to chosen module from "allModuleNames" output.
+-
+If nothing added to this input, "0" will be used as a default (the first module from the "allModuleNames" output will be chosen).</td><td>Goo</td></tr>
+<tr><td><b>New Module Mount Type</b></td><td>newModuleMountType_</td><td>New mounting type (configuration) of the module.
+Each module from "_modulesLibraryFile" input comes with predefined mounting type (configuration). You can see it in "moduleMountType" output.
+If you would like to change that predefined mounting type, then use this input, and the following values:
+-
+0 = Insulated back (pv curtain wall, pv skylights, BIPV installations with obstructed backside airflow)
+1 = Close (flush) roof mount (pv array mounted parallel and relatively close to the plane of the roof (between 5 and 15 centimenters))
+2 = Open rack (ground mount array, flat/sloped roof array that is tilted, pole-mount solar panels, solar carports, solar canopies, BIPV installations with sufficient backside airflow)
+-
+This input is actually the same as "mountType" input of the Ladybug "Simplified Photovoltaics Module" component.
+-
+If nothing is added to this input, default mount type of the chosen module will be used (you can check which one by looking at the "moduleMountType" output).</td><td>Goo</td></tr>
+<tr><td><b>Module Active Area Percent</b></td><td>moduleActiveAreaPercent_</td><td>Percentage of the module's area excluding module framing and gaps between cells. 
+-
+If not supplied, default value of 90(perc.) will be used.
+-
+In percent.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Out</b></td><td>readMe!</td><td>...</td><td>String</td></tr>
+<tr><td><b>All Module Names</b></td><td>allModuleNames</td><td>Names of all crystalline silicon modules from the "_modulesLibraryFile" file.</td><td>Goo</td></tr>
+<tr><td><b></b></td><td>______________</td><td>Script variable ImportSandiaPhotovoltaicsModule</td><td>Goo</td></tr>
+<tr><td><b>Module Name</b></td><td>moduleName</td><td>Name of the chosen module, according to "moduleIndex_" input.</td><td>Goo</td></tr>
+<tr><td><b>Module Material</b></td><td>moduleMaterial</td><td>Material of the chosen module.</td><td>Goo</td></tr>
+<tr><td><b>Module Mount Type</b></td><td>moduleMountType</td><td>Final mount type (configuration) of the chosen module.
+This output can have two values:
+-
+a) default one: coming directly from "_modulesLibraryFile". This value will only appear if "newModuleMountType_" input is empty.
+b) custom one: altered mounting type, according to "newModuleMountType_" input.
+-
+One of the following mount types will be shown:
+-
+0 = Insulated back (pv curtain wall, pv skylights, BIPV installations with obstructed backside airflow)
+1 = Close (flush) roof mount (pv array mounted parallel and relatively close to the plane of the roof (between 5 and 15 centimenters))
+2 = Open rack (ground mount array, flat/sloped roof array that is tilted, pole-mount solar panels, solar carports, solar canopies, BIPV installations with sufficient backside airflow)</td><td>Goo</td></tr>
+<tr><td><b>Module Area</b></td><td>moduleArea</td><td>Area of the chosen module.
+-
+In square meters.</td><td>Goo</td></tr>
+<tr><td><b>Module Power</b></td><td>modulePower</td><td>Module's power at maximum-power point of the chose module.
+-
+In Watts.</td><td>Goo</td></tr>
+<tr><td><b>Module Efficiency</b></td><td>moduleEfficiency</td><td>Module's aperture (active area) efficiency.
+-
+In percent (%).</td><td>Goo</td></tr>
+<tr><td><b>Source Notes</b></td><td>sourceNotes</td><td>Source notes corresponding to the chosen module.
+It basically contains source from which the "PVmoduleSettings" output data has been generated, and date when it has been generated.</td><td>Goo</td></tr>
+<tr><td><b></b></td><td>______________</td><td>Script output ______________.</td><td>Goo</td></tr>
+<tr><td><b>PVmodule Settings</b></td><td>PVmoduleSettings</td><td>A list of PV module settings. Plug it to "Photovoltaics surface" component's "PVmoduleSettings_" input.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

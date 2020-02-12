@@ -915,6 +915,45 @@
 <p><a href="../../index.html#Honeybee">Component Index</a> &gt; <a href="../../addons/honeybee.html">Honeybee</a> > 10 | Energy | Energy > <b>Read EP Result</b></p>
 </div>
 <h3>This component reads the results of an EnergyPlus simulation from the WriteIDF Component or any EnergyPlus result .csv file address.  Note that, if you use this component without the WriteIDF component, you should make sure that a corresponding .eio file is next to your .csv file at the input address that you specify.<br>This component reads only the results related to zones.  For results related to surfaces, you should use the "Honeybee_Read EP Surface Result" component.<br></h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Result File Address</b></td><td>_resultFileAddress</td><td>The result file address that comes out of the WriteIDF component.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Total Thermal Load</b></td><td>totalThermalLoad</td><td>The total thermal energy used by each zone in kWh.  This includes cooling and heating.</td><td>Goo</td></tr>
+<tr><td><b>Thermal Load Balance</b></td><td>thermalLoadBalance</td><td>The thermal energy used by each zone in kWh.  Heating values are positive while cooling values are negative. This is useful for computing balance points.</td><td>Goo</td></tr>
+<tr><td><b>Cooling</b></td><td>cooling</td><td>The cooling energy needed in kWh. For Ideal Air loads, this output is the sum of sensible and latent heat that must be removed from each zone.  For detailed HVAC systems (other than ideal air), this output will be electric energy needed to power each chiller/cooling coil.</td><td>Goo</td></tr>
+<tr><td><b>Heating</b></td><td>heating</td><td>The heating energy needed in kWh. For Ideal Air loads, this is the heat that must be added to each zone.  For detailed HVAC systems (other than ideal air), this will be fuel energy or electric energy needed for each boiler/heating element.</td><td>Goo</td></tr>
+<tr><td><b>Electric Light</b></td><td>electricLight</td><td>The electric lighting energy needed for each zone in kWh.</td><td>Goo</td></tr>
+<tr><td><b>Electric Equip</b></td><td>electricEquip</td><td>The electric equipment energy needed for each zone in kWh.</td><td>Goo</td></tr>
+<tr><td><b>Fan Electric</b></td><td>fanElectric</td><td>The fan electric energy in kWh for either a natural ventilation fan or a heating or cooling system fan.  This ouput will not appear when there is no fan in the model.</td><td>Goo</td></tr>
+<tr><td><b>Pump Electric</b></td><td>pumpElectric</td><td>The water pump electric energy in kWh for a heating or cooling system.  This ouput will not appear when there is no water pump in the model.</td><td>Goo</td></tr>
+<tr><td><b>People Gains</b></td><td>peopleGains</td><td>The internal heat gains in each zone resulting from people (kWh).</td><td>Goo</td></tr>
+<tr><td><b>Total Solar Gain</b></td><td>totalSolarGain</td><td>The total solar gain in each zone(kWh).</td><td>Goo</td></tr>
+<tr><td><b>Infiltration Energy</b></td><td>infiltrationEnergy</td><td>The heat loss (negative) or heat gain (positive) in each zone resulting from infiltration (kWh).</td><td>Goo</td></tr>
+<tr><td><b>Mech Ventilation Energy</b></td><td>mechVentilationEnergy</td><td>The heat loss (negative) or heat gain (positive) in each zone resulting from the outdoor air coming through the HVAC System (kWh).</td><td>Goo</td></tr>
+<tr><td><b>Nat Vent Energy</b></td><td>natVentEnergy</td><td>The heat loss (negative) or heat gain (positive) in each zone resulting from natural ventilation (kWh).</td><td>Goo</td></tr>
+<tr><td><b>Operative Temperature</b></td><td>operativeTemperature</td><td>The mean operative temperature of each zone (degrees Celcius).</td><td>Goo</td></tr>
+<tr><td><b>Air Temperature</b></td><td>airTemperature</td><td>The mean air temperature of each zone (degrees Celcius).</td><td>Goo</td></tr>
+<tr><td><b>Mean Rad Temperature</b></td><td>meanRadTemperature</td><td>The mean radiant temperature of each zone (degrees Celcius).</td><td>Goo</td></tr>
+<tr><td><b>Relative Humidity</b></td><td>relativeHumidity</td><td>The relative humidity of each zone (%).</td><td>Goo</td></tr>
+<tr><td><b>Air Flow Volume</b></td><td>airFlowVolume</td><td>The total volume of air flowing into the room through both the windows and infiltration (m3/s).  This is voulme of air is at standard density (20 C and adjusted for the elevation above sea level of the weather file).</td><td>Goo</td></tr>
+<tr><td><b>Air Heat Gain Rate</b></td><td>airHeatGainRate</td><td>The total heat transfer rate to the air from lighting, equipment(appliances/pulg loads), people, the surfaces of the zone, and gains through the heating system.  This output is useful for the estimation of air stratification in the Comfort Analysis workflow.</td><td>Goo</td></tr>
+<tr><td><b>Other Zone Data</b></td><td>otherZoneData</td><td>Other zone data that is in the result file (in no particular order). Note that this data cannot be normalized by floor area as the component does not know if it can be normalized.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

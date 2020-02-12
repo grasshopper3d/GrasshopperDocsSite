@@ -548,6 +548,46 @@ Workbench
 <p><a href="../../index.html#Peacock">Component Index</a> &gt; <a href="../../addons/peacock.html">Peacock</a> > Gems > <b>Prongs along gems rail</b></p>
 </div>
 <h3>Create prongs between gems on rail</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Girdles</b></td><td>Girdles</td><td>Gem girdles</td><td>Curve</td></tr>
+<tr><td><b>Planes</b></td><td>Planes</td><td>Gem planes. X axis should follow the rail gems.</td><td>Plane</td></tr>
+<tr><td><b>Width</b></td><td>Width</td><td>Width of prongs.
+A value or list of values.</td><td>Number</td></tr>
+<tr><td><b>Height</b></td><td>Height</td><td>Height of prongs.
+A value or list of values.</td><td>Number</td></tr>
+<tr><td><b>Ratio</b></td><td>Ratio</td><td>Ratio of head prongs.
+A value or list of values.</td><td>Number</td></tr>
+<tr><td><b>Depth</b></td><td>Depth</td><td>Depth prongs on gems.
+A value or list of values.</td><td>Number</td></tr>
+<tr><td><b>Down</b></td><td>Down</td><td>Decreases the position of the prongs.
+A value or list of values.</td><td>Number</td></tr>
+<tr><td><b>Locations A</b></td><td>Loc A</td><td>(Optional) Specifies the position of the right prongs using normalized values (between 0 and 1).
+A list of values will apply to all gems.
+One branch per gem will be applied to each gem individually.</td><td>Number</td></tr>
+<tr><td><b>Locations B</b></td><td>Loc B</td><td>(Optional) Specifies the position of the left prongs using normalized values (between 0 and 1).
+A list of values will apply to all gems.
+One branch per gem will be applied to each gem individually.</td><td>Number</td></tr>
+<tr><td><b>Ends</b></td><td>Ends</td><td>If gems rail is open, add prongs at the ends (first and last)</td><td>Boolean</td></tr>
+<tr><td><b>Close</b></td><td>Close</td><td>Close the gems rail to create prongs between the last and the first gem</td><td>Boolean</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Prongs</b></td><td>P</td><td>Resulting prongs</td><td>Brep</td></tr>
+<tr><td><b>Planes</b></td><td>P</td><td>Resulting planes</td><td>Plane</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

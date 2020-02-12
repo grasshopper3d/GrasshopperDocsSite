@@ -548,6 +548,38 @@ Workbench
 <p><a href="../../index.html#Peacock">Component Index</a> &gt; <a href="../../addons/peacock.html">Peacock</a> > Workbench > <b>Unroller</b></p>
 </div>
 <h3>Represents the operation of Rhino's unrolling.</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Brep</b></td><td>Brp</td><td>Brep to unroll</td><td>Brep</td></tr>
+<tr><td><b>Curves</b></td><td>Crvs</td><td>Optional curves to follow the unroll</td><td>Curve</td></tr>
+<tr><td><b>Points</b></td><td>Pts</td><td>Optional points to follow the unroll</td><td>Point</td></tr>
+<tr><td><b>Explode</b></td><td>Exp</td><td>Explode output geometry</td><td>Boolean</td></tr>
+<tr><td><b>Spacing</b></td><td>Spc</td><td>If explode is true, sets the value of spacing</td><td>Number</td></tr>
+<tr><td><b>Absolute tolerance</b></td><td>aTol</td><td>Sets the absolute tolerance for the unrolling operation.
+Absolute tolerance is used in the evaluation of new entities, such as intersections, reprojections and splits.
+In the current implementation, absolute tolerance is used in tessellating rails, fitting curves and pulling back trims.</td><td>Number</td></tr>
+<tr><td><b>Relative tolerance</b></td><td>rTol</td><td>Sets the relative tolerance for the unrolling operation.
+Relative tolerance is used in the evaluation of intrinsic properties, such as computations "along" the surface or brep.
+In the current implementation, relative tolerance is used to decide if a surface is flat enough to try to unroll. That helps ease the scale dependency. The surface has to be linear in one direction within (length * RelativeTolerance) to be considered linear for that purpose. Otherwise smash will ignore that tolerance and unroll anything.</td><td>Number</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Breps</b></td><td>B</td><td>Unrolled breps</td><td>Brep</td></tr>
+<tr><td><b>Curves</b></td><td>C</td><td>Unrolled curves</td><td>Curve</td></tr>
+<tr><td><b>Points</b></td><td>P</td><td>Unrolled points</td><td>Point</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

@@ -915,6 +915,37 @@
 <p><a href="../../index.html#Honeybee">Component Index</a> &gt; <a href="../../addons/honeybee.html">Honeybee</a> > 04 | Daylight | Daylight > <b>False Color</b></p>
 </div>
 <h3>False Color<br></h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>HDRFile Path</b></td><td>_HDRFilePath</td><td>Path to an HDR image file</td><td>Goo</td></tr>
+<tr><td><b>Legend Unit</b></td><td>legendUnit_</td><td>Unit of the legend (e.g. lux, cd/m2,...)</td><td>Goo</td></tr>
+<tr><td><b>Conversion F</b></td><td>conversionF_</td><td>Conversion factor for the results. Default is 179.</td><td>Goo</td></tr>
+<tr><td><b>Legend Max</b></td><td>legendMax_</td><td>Maximum bound for the legend</td><td>Goo</td></tr>
+<tr><td><b>Contour Lines</b></td><td>contourLines_</td><td>Set to True ro render the image with colored lines</td><td>Goo</td></tr>
+<tr><td><b>Contour Bands</b></td><td>contourBands_</td><td>Script variable FalseColor</td><td>Goo</td></tr>
+<tr><td><b>Num Of Segments</b></td><td>numOfSegments_</td><td>An interger representing the number of steps between the high and low boundary of the legend. Default value is set to 10.</td><td>Goo</td></tr>
+<tr><td><b>Legend Position</b></td><td>legendPosition_</td><td>A number between 0 to 11 to set legend position to the given direction WS|W|WN|NW|N|NE|EN|E|ES|SE|S|SW</td><td>Goo</td></tr>
+<tr><td><b>Print Extrema</b></td><td>printExtrema_</td><td>Set to True to cause extrema points to be printed on the brightest and darkest pixels of the input picture.</td><td>Goo</td></tr>
+<tr><td><b>Mask Threshold</b></td><td>maskThreshold_</td><td>Optional number for masking threshold. Pixels with values less than this number will be rendered in black.</td><td>Goo</td></tr>
+<tr><td><b>Use Alter Colors</b></td><td>useAlterColors_</td><td>Set to True to use the alternate colorset.</td><td>Goo</td></tr>
+<tr><td><b>Render</b></td><td>_render</td><td>Set to True to render the new image</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Output File Path</b></td><td>outputFilePath</td><td>Path to the result HDR file</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

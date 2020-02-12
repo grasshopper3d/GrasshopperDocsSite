@@ -231,6 +231,69 @@
 <p><a href="../../index.html#Gismo">Component Index</a> &gt; <a href="../../addons/gismo.html">Gismo</a> > 1 | OpenStreetMap > <b>OSM3Dforest</b></p>
 </div>
 <h3>Use this component to create 3d trees geometry on inputed surfaces.<br>OSM 3D component can create 3d trees. However, there are areas where trees should be located but they do not exist in openstreetmap database, so OSM 3D component will not create them.<br>These areas are forests for example. You can find a forest area with the use of "OSM Search" component and add its "foundShapes" ouput to this component's "_forestSrfs" input. Or any other surface you wish to add trees to.<br>-<br>Provided by Gismo 0.0.3</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Forest Srfs</b></td><td>_forestSrfs</td><td>Plug in surfaces on which trees will be created.
+For example these can be forest surfaces from "OSM Search" component and add its "foundShapes" ouput.</td><td>Goo</td></tr>
+<tr><td><b></b></td><td>_____________</td><td>Script variable OSM3D</td><td>Goo</td></tr>
+<tr><td><b>Tree Type</b></td><td>treeType_</td><td>There are three tree geometric types:
+0 - round
+1 - polygonized
+2 - random shaped
+-
+If nothing supplied, the default type 2 type (random) will be used.
+-
+Integer.</td><td>Goo</td></tr>
+<tr><td><b>Random Height Range</b></td><td>randomHeightRange_</td><td>Height range in which trees will be created.
+For example if you add "5 to 10" to this input, the trees' height will be randomly created from 5 to 10 meters.
+-
+If nothing supplied, default value of 10 to 15 meters will be used.
+-
+Domain in Rhino document units (meters, feets...).</td><td>Goo</td></tr>
+<tr><td><b>Deciduous Or Coniferous</b></td><td>deciduousOrConiferous_</td><td>Leaf type of the tree. The following ones are used:
+0 - deciduous trees
+1 - coniferous trees
+2 - random (either deciduous or coniferous) trees
+-
+If nothing supplied, the default 0 (deciduous trees) will be used.
+-
+Integer.</td><td>Goo</td></tr>
+<tr><td><b>Max Num Of Trees</b></td><td>maxNumOfTrees_</td><td>Maximal number of trees on the largest surface added to the _forestSrfs
+-
+If nothing supplied, the default value of 20 trees will be used.</td><td>Goo</td></tr>
+<tr><td><b>Random Seed</b></td><td>randomSeed_</td><td>Random seed for the positon of the trees.
+-
+If nothing supplied, the default 0 will be used.
+-
+Integer</td><td>Goo</td></tr>
+<tr><td><b></b></td><td>________________</td><td>Script variable Python</td><td>Goo</td></tr>
+<tr><td><b>Bake It</b></td><td>bakeIt_</td><td>Set to "True" to bake the "threeDeeRoads" geometry into the Rhino scene.
+The geometry will be grouped. To ungroup it, select it and call the "Ungroup" Rhino command.
+-
+If not supplied default value "False" will be used.</td><td>Goo</td></tr>
+<tr><td><b>Run It</b></td><td>_runIt</td><td>...</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Out</b></td><td>readMe!</td><td>...</td><td>String</td></tr>
+<tr><td><b>Three Dee Trees</b></td><td>threeDeeTrees</td><td>Generated 3d trees on inputted "_forestSrfs".</td><td>Goo</td></tr>
+<tr><td><b>Three Dee Trees Origin</b></td><td>threeDeeTreesOrigin</td><td>Bottom origin point of each of upper "threeDeeTrees".
+-
+Use grasshopper's "Point" parameter to visualize it.</td><td>Goo</td></tr>
+<tr><td><b>Tree Height</b></td><td>treeHeight</td><td>Height of each of upper "threeDeeTrees".</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

@@ -143,6 +143,42 @@ Wallacei Utilities
 <p><a href="../../index.html#Wallacei">Component Index</a> &gt; <a href="../../addons/wallacei.html">Wallacei</a> > Wallacei Analytics > <b>Fitness Chart</b></p>
 </div>
 <h3>Displays the diamond fitness chart along with the fitness ranking for each solution for data exported from Wallacei.</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Base Plane</b></td><td>Plane</td><td>Set the origin plane of your graph. If no input provided, graph will be located at World 0,0,0</td><td>Goo</td></tr>
+<tr><td><b>Size of Graphical Data</b></td><td>Scale</td><td>Insert slider to control the scale of the data being visualised</td><td>Goo</td></tr>
+<tr><td><b>Fitness Values Per Branch</b></td><td>Fitness Values</td><td>Input the Fitness Values extracted from the evolutionary algorithm. The fitness values for each objective must be structures within its own branch.</td><td>Goo</td></tr>
+<tr><td><b>How Many Individuals per Generation</b></td><td>Generation Size</td><td>How many individuals are there in a single generation?</td><td>Goo</td></tr>
+<tr><td><b>...</b></td><td>-- -- -- -- -- -- --</td><td>Represents a cluster input parameter</td><td>Goo</td></tr>
+<tr><td><b>Names of Fitness Criteria</b></td><td>FC Names</td><td>Input the name of each fitness criteria as a single list</td><td>Goo</td></tr>
+<tr><td><b>Specify Which Fitness Criteria to Inverse</b></td><td>Inverse Fitness Criteria</td><td>Input booleans as list. Number of Booleans should corespond to the number of fitness criteria. 0 = dont inverse // 1 = inverse</td><td>Goo</td></tr>
+<tr><td><b>...</b></td><td>-- -- -- -- -- -- --</td><td>Represents a cluster input parameter</td><td>Goo</td></tr>
+<tr><td><b>Select Generation of Individual</b></td><td>Generation?</td><td>Select the generation in which the individual you want the fitness data for lies within</td><td>Goo</td></tr>
+<tr><td><b>Select the Individual to Analyse</b></td><td>Individual?</td><td>Select the individual to display the fitness data and ranking for</td><td>Goo</td></tr>
+<tr><td><b>...</b></td><td>-- -- -- -- -- -- --</td><td>Represents a cluster input parameter</td><td>Goo</td></tr>
+<tr><td><b>Select the Fitness Criteria to Analyse</b></td><td>Fitness Criteria?</td><td>Select the fitness criteria to view the ranking for</td><td>Goo</td></tr>
+<tr><td><b>Select the Rank of the Selected Criteria</b></td><td>Fitness Rank?</td><td>Select the ranking of the solution to visualise</td><td>Integer</td></tr>
+<tr><td><b>...</b></td><td>-- -- -- -- -- -- --</td><td>Represents a cluster input parameter</td><td>Goo</td></tr>
+<tr><td><b>Colour of Diamond Fitness Chart</b></td><td>Colour</td><td>Input colour swatch to define the colour of the diamond fitness chart (default: red)</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Read me</b></td><td>Read me</td><td>Information about the component</td><td>String</td></tr>
+<tr><td><b>Fitness Chart Diamond</b></td><td>Diamond Mesh</td><td>Output mesh of diamond fitness chart</td><td>Goo</td></tr>
+<tr><td><b>Base Graph for Fitness Chart</b></td><td>Base Graph</td><td>Curves that define the graph of the fitness chart</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

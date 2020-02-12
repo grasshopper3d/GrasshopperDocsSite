@@ -184,6 +184,30 @@ Utils
 <p><a href="../../index.html#FabTools">Component Index</a> &gt; <a href="../../addons/fabtools.html">FabTools</a> > Bake > <b>AdvancedBake</b></p>
 </div>
 <h3>Advanced Bake allows to bake all kinds of geometry Objects with attributes (see BakeAttributes and PlotAttributes by blickfeld7.com). You can bake PointClouds and group geometry when you provide a Grasshopper group. You can also bake TextEntities created with Advanced Text3D (by blickfeld7.com)<br>Version 0.92</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Bake Trigger</b></td><td>bake</td><td>Set this to true in get the Advanced Bake tool running the bake.</td><td>Boolean</td></tr>
+<tr><td><b>Group Geometry</b></td><td>group</td><td>Groups all Geometry in one branch.</td><td>Boolean</td></tr>
+<tr><td><b>Geometry</b></td><td>G</td><td>The geometry to bake.</td><td>Goo</td></tr>
+<tr><td><b>Object Name</b></td><td>N</td><td>The object's name when baked.</td><td>String</td></tr>
+<tr><td><b>Layer</b></td><td>L</td><td>The name of a Layer. If it's not existing the layer will be created. Use "::" to set sublayers.</td><td>String</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Information</b></td><td>info</td><td>Print, Reflect and Error streams</td><td>String</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

@@ -621,6 +621,34 @@
 <p><a href="../../index.html#Ladybug">Component Index</a> &gt; <a href="../../addons/ladybug.html">Ladybug</a> > 3 | EnvironmentalAnalysis > <b>Window Downdraft</b></p>
 </div>
 <h3>Use this component to compute the floor-level downdraft air temperature and velocity at a given set of points that are located close to a cold surface such as a window.  The draft conditions produced by this model are assumed to be 10 cm off of the floor.<br>The model used in this component comes from physical measurements of window downdraft that were further validated using several CFD experiments.  Ther are published in these papers:<br>Heiselberg, P. (1994). “Draft Risk from Cold Vertical Surfaces.” Building and Environment, 29: 297-301.<br>Manz, H. and Frank, T. (2003). "Analysis of Thermal Comfort near Cold Vertical Surfaces by Means of Computational Fluid Dynamics." Indoor Built Environment. 13: 233-242.<br></h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Test Pts</b></td><td>_testPts</td><td>The test points at which downdraft conditions will be evaluated.</td><td>Goo</td></tr>
+<tr><td><b>Window Srfs</b></td><td>_windowSrfs</td><td>Breps or Surfaces representing the window surfaces off of which downdraft flows.</td><td>Goo</td></tr>
+<tr><td><b>Win Srf Temp</b></td><td>_winSrfTemp</td><td>A number representing the surface temperature of the windows in degrees Celcius.</td><td>Goo</td></tr>
+<tr><td><b>Air Temp</b></td><td>_airTemp</td><td>A number representing the air temperature of the room in degrees Celcius.</td><td>Goo</td></tr>
+<tr><td><b>Default Veloc</b></td><td>defaultVeloc_</td><td>A number in m/s that represents the speed of the air that is not in the downdraft. The default is set to 0.05 m/s.</td><td>Goo</td></tr>
+<tr><td><b>Run It</b></td><td>_runIt</td><td>Set to 'True' to run the component and claculate downdraft conditions.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Draft Air Temp</b></td><td>draftAirTemp</td><td>Script output PPD.</td><td>Goo</td></tr>
+<tr><td><b>Draft Air Veloc</b></td><td>draftAirVeloc</td><td>Script variable downDraft</td><td>Goo</td></tr>
+<tr><td><b>----------</b></td><td>----------</td><td>Script variable downDraft</td><td>Goo</td></tr>
+<tr><td><b>Air Flow Planes</b></td><td>airFlowPlanes</td><td>Script variable downDraft</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

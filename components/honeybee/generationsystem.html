@@ -915,6 +915,30 @@
 <p><a href="../../index.html#Honeybee">Component Index</a> &gt; <a href="../../addons/honeybee.html">Honeybee</a> > 13 | WIP > <b>generationsystem</b></p>
 </div>
 <h3>Use this component to create a Honeybee generator system.<br></h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Generator System Name</b></td><td>_GeneratorSystemName</td><td>The name of this Honeybee generation system please make it unique!</td><td>Goo</td></tr>
+<tr><td><b>Maintenance Cost</b></td><td>_MaintenanceCost</td><td>The annual cost of maintaining this Honeybee generation system in US dollars (Other currencies will be available in the future)</td><td>Goo</td></tr>
+<tr><td><b>PVHBSurfaces</b></td><td>PVHBSurfaces_</td><td>The Honeybee/context surfaces that contain PV generators to be included in this generation system</td><td>Goo</td></tr>
+<tr><td><b>HBGeneration Objects</b></td><td>HBGenerationObjects_</td><td>Honeybee batteries or wind turbines to be included in this generation system</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Out</b></td><td>readMe!</td><td>The execution information, as output and error streams</td><td>String</td></tr>
+<tr><td><b>HBGenerator System</b></td><td>HBGeneratorSystem</td><td>The Honeybee generation system - connect this to the input HB_generators on the Honeybee_Run Energy Simulation component to include this generation system in an EnergyPlus simulaton</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

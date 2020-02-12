@@ -915,6 +915,39 @@
 <p><a href="../../index.html#Honeybee">Component Index</a> &gt; <a href="../../addons/honeybee.html">Honeybee</a> > 10 | Energy | Energy > <b>Generate EP Output</b></p>
 </div>
 <h3>This component helps select simulation outputs that can be hooked into the "Honyebee_Export to OpenStudio" component.  Outputs are taken from here:<br>http://bigladdersoftware.com/epx/docs/8-3/input-output-reference/<br>You can also use the "Honeybee_Read Result Dictionary" component after running a simulation to get a list of all possible outputs that you can request from a given simulation.<br></h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Zone Energy Use</b></td><td>zoneEnergyUse_</td><td>Set to "True" to have EnergyPlus solve for basic building energy use such as heating, cooling, electricity for lights and electricity for plug loads for each zone.</td><td>Goo</td></tr>
+<tr><td><b>Zone Gains And Losses</b></td><td>zoneGainsAndLosses_</td><td>Set to "True" to have EnergyPlus solve for building gains and losses such as people gains, solar gains and infiltration losses/gains.</td><td>Goo</td></tr>
+<tr><td><b>Zone Comfort Metrics</b></td><td>zoneComfortMetrics_</td><td>Set to "True" to have EnergyPlus solve for the mean air temperature, mean radiant temperature, operative temperature, and relative humidity of each zone.</td><td>Goo</td></tr>
+<tr><td><b>Comfort Map Variables</b></td><td>comfortMapVariables_</td><td>Set to "True" to have EnergyPlus solve for the air flow and air heat gain of each zone, which is needed for the comfort map air stratification calculation.</td><td>Goo</td></tr>
+<tr><td><b>Zone HVACParams</b></td><td>zoneHVACParams_</td><td>Set to "True" to have EnergyPlus solve for the fractions of heating/cooling loads that are latent vs. sensible as well as the the flow rate and temperature of supply air into each zone.</td><td>Goo</td></tr>
+<tr><td><b>Surface Temp Analysis</b></td><td>surfaceTempAnalysis_</td><td>Set to "True" to have EnergyPlus solve for the interior and exterior surface temperatures of the individual surfaces of each zone.</td><td>Goo</td></tr>
+<tr><td><b>Surface Energy Analysis</b></td><td>surfaceEnergyAnalysis_</td><td>Set to "True" to have EnergyPlus solve for the gains and losses through the individual surfaces of each zone.</td><td>Goo</td></tr>
+<tr><td><b>Glazing Solar Analysis</b></td><td>glazingSolarAnalysis_</td><td>Set to "True" to have EnergyPlus solve for the transmitted beam, diffuse, and total solar gain through the individual window surfaces of each zone.  These outputs are needed for Energy Shade Benefit Analysis.</td><td>Goo</td></tr>
+<tr><td><b>Load Type</b></td><td>_loadType_</td><td>An integer or text value to set the type of load outputs requested (sensible, latent, total).  The default is set to "0 = Total" but you may want to change this to "1 = Sensible" for zone HVAC sizing, etc.  Choose from the following options:
+0 = Total
+1 = Sensible
+2 = Latent</td><td>Goo</td></tr>
+<tr><td><b>Timestep</b></td><td>timestep_</td><td>Specify a timestep by inputing the words 'hourly', 'daily', 'monthly' or 'annual'.  The default is set to hourly.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Out</b></td><td>report</td><td>Report!</td><td>String</td></tr>
+<tr><td><b>Simulation Outputs</b></td><td>simulationOutputs</td><td>EnergyPlus code that should be plugged into the "simulationOutputs" parameter of the "Honeybee_Export to OpenStudio" component.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

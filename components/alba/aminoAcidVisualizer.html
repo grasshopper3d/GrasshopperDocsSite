@@ -320,6 +320,34 @@ Visualize
 <p><a href="../../index.html#Alba">Component Index</a> &gt; <a href="../../addons/alba.html">Alba</a> > Visualize > <b>AA Viz</b></p>
 </div>
 <h3>Creates and displays an offset complementary strand</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Locaction</b></td><td>Loc</td><td>point in Rhino where DNA will be vizualized. For linear strands this is at the start (5' end) . For plasmids, this is the center of the circle.</td><td>Point</td></tr>
+<tr><td><b>DNA Sequence</b></td><td>DNA</td><td>Contains a collection of text fragments</td><td>String</td></tr>
+<tr><td><b>Curve</b></td><td>Crv</td><td>Contains a collection of generic curves</td><td>Curve</td></tr>
+<tr><td><b>Complementary</b></td><td>Comp</td><td>Set to True if running on a complimentary strand. Note: Complementary DNA will need to have the list reversed  for the Tx and the AA Viz inputs, so that it reads 5' to 3'.</td><td>Boolean</td></tr>
+<tr><td><b>Amino Acid Sequence</b></td><td>AA</td><td>Represents a cluster input parameter</td><td>Goo</td></tr>
+<tr><td><b>Domain Ralative to DNA</b></td><td>Sub</td><td>The domain of the DNA corresponting to the reading frame</td><td>Goo</td></tr>
+<tr><td><b>Size</b></td><td>Size</td><td>Size of the text</td><td>Number</td></tr>
+<tr><td><b>Distance</b></td><td>Dist</td><td>Offset distance</td><td>Number</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>points</b></td><td>Pt</td><td>Contains a collection of three-dimensional points</td><td>Point</td></tr>
+<tr><td><b>Curve</b></td><td>Crv</td><td>Contains a collection of generic curves</td><td>Curve</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

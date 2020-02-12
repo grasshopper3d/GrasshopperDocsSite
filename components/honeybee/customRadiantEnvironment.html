@@ -915,6 +915,35 @@
 <p><a href="../../index.html#Honeybee">Component Index</a> &gt; <a href="../../addons/honeybee.html">Honeybee</a> > 11 | THERM > <b>Custom Radiant Environment</b></p>
 </div>
 <h3>Use this component to create a custon radiant environment for THERM boundary condition.  Assigning values here will create radiant conditions that are different from normal NFRC conditions (where radiant temperature equals air temperature, the emissivity of the environment is assumed to be 1, and viewFactor between the boundary and the envrionment is calculated using the geometry of the boundary).<br></h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Radiant Temp</b></td><td>radiantTemp_</td><td>A value in degrees Celcius that represents the radiant temperature of the environment.  If no value is plugged in here, the radiant environment will be assumed to have the same temperature as the air.</td><td>Goo</td></tr>
+<tr><td><b>Env Emissivity</b></td><td>envEmissivity_</td><td>A value between 0 and 1 that represents the emissivity of the environment. Use this ti account for environments made of atypical materials like metals. If no value is plugged in here, it will be assumed that the envrionment has an emissivity of 1.</td><td>Goo</td></tr>
+<tr><td><b>View Factor</b></td><td>viewFactor_</td><td>An optional value between 0 and 1 that sets the view factor of the boundary to the surrounding exterior/interior environment.
+_
+Alternatively, you can simply input the word 'auto' and the view factor will be calculated using THERM's 'Automatic Enclosure' model, which will check the geometry of the boundary condition to see if the boundary is concave (meaning that the boundary blocks some of the view of itself to the environment).
+_
+If a view factor number is connected here, THERM's 'Blackbody Radiation' model will be used and the view factor specified will determine the radiative heat transfer.  A view factor of 1 implies that all edges of the boundary can see 100% of the exterior environment.
+_
+If this is left blank, the 'Automatic Enclosure' model will be used any time an indoor film coefficient is specified (; 10 W/m2K).  A 'Blackbody Radiation' model with a view factor of 1 will be used for all outdoor film coefficients (; 10 W/m2K).  These default boundary conditions assume compliance with the NFRC standard.</td><td>Goo</td></tr>
+<tr><td><b>Heat Flux</b></td><td>heatFlux_</td><td>An optional numerical value in W/m2 that represents additional energy flux across the boundary condition. You can use this to account for solar flux across the exterior boundary condition.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Custom Rad Env</b></td><td>customRadEnv</td><td>A list of radiant environmental properties that can be plugged into the 'Honeybee_Create Therm Boundaries' component in order to run a THERM simulation with a atypical radiant environment.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

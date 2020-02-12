@@ -143,6 +143,47 @@ Wallacei Utilities
 <p><a href="../../index.html#Wallacei">Component Index</a> &gt; <a href="../../addons/wallacei.html">Wallacei</a> > Wallacei Analytics > <b>SD Trend Line</b></p>
 </div>
 <h3>Plot the SD factor for each generation and create the trendline for the entire simulation for data exported from Octopus.</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Base Plane</b></td><td>Plane</td><td>Set the origin plane of your graph. If no input provided, graph will be located at World 0,0,0</td><td>Goo</td></tr>
+<tr><td><b>Size of Chart</b></td><td>Scale</td><td>Input a value to change the size of the chart</td><td>Goo</td></tr>
+<tr><td><b>Fitness Values Per Branch</b></td><td>Fitness Values</td><td>Input the Fitness Values extracted from the evolutionary algorithm. The fitness values for each objective must be structures within its own branch.</td><td>Goo</td></tr>
+<tr><td><b>How Many Individuals per Generation</b></td><td>Generation Size?</td><td>How many individuals are there in a single generation?</td><td>Goo</td></tr>
+<tr><td><b>...</b></td><td>-- -- -- -- -- -- -- -- -- -- -- -- --</td><td>Represents a cluster input parameter</td><td>Goo</td></tr>
+<tr><td><b>Names of Fitness Criteria</b></td><td>FC Names</td><td>Input the name of each fitness criteria as a single list</td><td>Goo</td></tr>
+<tr><td><b>...</b></td><td>-- -- -- -- -- -- -- -- -- -- -- -- --</td><td>Represents a cluster input parameter</td><td>Goo</td></tr>
+<tr><td><b>Select Criteria to Analyse</b></td><td>Criteria to Analyse</td><td>Select the criteria to be plotted and analysed</td><td>Integer</td></tr>
+<tr><td><b>Toggle to Inverse Fitness Objective</b></td><td>Inverse Fitness Criteria</td><td>Togge to inverse fitness objective. 1 = Inverse / 0 = Do not inverse</td><td>Goo</td></tr>
+<tr><td><b>...</b></td><td>-- -- -- -- -- -- -- -- -- -- -- -- --</td><td>Represents a cluster input parameter</td><td>Goo</td></tr>
+<tr><td><b>Select a Generation to Highlight</b></td><td>Select Generation</td><td>Input a generation number to highlight it on the graph</td><td>StructurePath</td></tr>
+<tr><td><b>...</b></td><td>-- -- -- -- -- -- -- -- -- -- -- -- --</td><td>Represents a cluster input parameter</td><td>Goo</td></tr>
+<tr><td><b>Cull Boundary Generations</b></td><td>Cull Boundary Generations</td><td>Delete the generations that have the largest or smallest SD values</td><td>Integer</td></tr>
+<tr><td><b>Toggle Between Largest or Smallest SD Values</b></td><td>Toggle to Cull Largest or Smallest SD Values</td><td>Toggle to select whether you want to cull the generations with the largest SD Values (TRUE), or the generations with the smallest SD Values (FALSE)</td><td>Goo</td></tr>
+<tr><td><b>...</b></td><td>-- -- -- -- -- -- -- -- -- -- -- -- --</td><td>Represents a cluster input parameter</td><td>Goo</td></tr>
+<tr><td><b>Graph Colour</b></td><td>Colour</td><td>Insert a single colour to customise the graph. If no value inserted, the default colour is green</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Read me</b></td><td>Read me</td><td>Information about the component</td><td>String</td></tr>
+<tr><td><b>Standard Deviation Factor</b></td><td>SD Factor</td><td>Standard Deviation factor for each generation</td><td>Goo</td></tr>
+<tr><td><b>Standard Deviation Graph</b></td><td>SD Graph</td><td>Connect to 'Srf' paramater to display the Standard Deviation trend line for the complete simulation</td><td>Surface</td></tr>
+<tr><td><b>SD Factors Trendline</b></td><td>SD Trendline</td><td>Connect to 'Crv' paramater to extract the trendline curve for the plotted SD Values</td><td>Line</td></tr>
+<tr><td><b>Mesh Highlighting the Selected Generation</b></td><td>Selected Generation</td><td>Connect to 'mesh' paramater to choose the selected generation</td><td>Mesh</td></tr>
+<tr><td><b>Generations That Have Been Culled</b></td><td>Culled Generations</td><td>Specifies the generation(s) that has been culled</td><td>Integer</td></tr>
+<tr><td><b>Graph Base</b></td><td>Graph Base</td><td>Connect to 'Geo' paramater to display the graph background</td><td>GeometricGoo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

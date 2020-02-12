@@ -231,6 +231,92 @@
 <p><a href="../../index.html#Gismo">Component Index</a> &gt; <a href="../../addons/gismo.html">Gismo</a> > 2 | Terrain > <b>TerrainGenerator</b></p>
 </div>
 <h3>Use this component to create a geometry of the terrain surrounding the chosen location.<br>Terrain will be created with ALOS 1 arc-second (20 to 30 meters depending on the latitude) grid precision.<br>-<br>Component requires that you are connected to the Internet, as it has to download the topography data.<br>It also requires MapWinGIS application to be installed.<br>Download and install either 32 bit or 64 bit (depending on your Rhino 5 version) version of MapWinGIS from here:<br>https://github.com/MapWindow/MapWinGIS/releases<br>-<br>Component mainly based on:<br>"Mathematical cartography", V. Jovanovic, VGI 1983.<br>"Vincenty solutions of geodesics on the ellipsoid" article by Chris Veness<br>https://books.google.rs/books/about/Matemati%C4%8Dka_kartografija.html?id=GcXEMgEACAAJ&redir_esc=y<br>http://www.movable-type.co.uk/scripts/latlong-vincenty.html<br>-<br>Provided by Gismo 0.0.3</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Location</b></td><td>_location</td><td>The output from the "importEPW" or "constructLocation" component.  This is essentially a list of text summarizing a location on the Earth.
+-
+"timeZone" and "elevation" data from the location, are not important for the creation of a terrain.</td><td>Goo</td></tr>
+<tr><td><b>Radius</b></td><td>radius_</td><td>Horizontal distance to which the surrounding terrain will be taken into account.
+-
+It can not be shorter than 20 meters or longer than 100 000 meters.
+-
+The component itself might inform the user to alter the initial radius_ inputted by the user.
+This is due to restriction of topography data, being limited to 56 latitude South to 60 latitude North range. If radius_ value for chosen location gets any closer to the mentioned range, the component will inform the user to shrink it for a certain amount, so that the radius_ stops at the range limit.
+-
+If not supplied, default value of 100 meters will be used.
+-
+In meters.</td><td>Goo</td></tr>
+<tr><td><b>Source</b></td><td>source_</td><td>There are currently three terrain sources available:
+-
+0 - SRTMGL1: only terrain from -55.9 to 59.9 latitude! Terrain ends at the sea level (no sea/river/lake floor terrain). Terrain resolution varies from 20 to 30 meters.
+1 - AW3D30: only terrain! Terrain ends at the sea level (no sea/river/lake floor terrain). Terrain resolution varies from 20 to 30 meters.
+2 - GMRT: terrain and underwater (sea/river/lake floor) terrain. Sea level is not presented. Terrain and underwater terrain resolution varies from 50 meter to 2000 meters.
+-
+If nothing supplied, 0 will be used as a default (SRTMGL1 terrain only).</td><td>Goo</td></tr>
+<tr><td><b>Type</b></td><td>type_</td><td>There are four terrain types:
+-
+0 - terrain will be created as a mesh with rectangular edges
+1 - terrain will be created as a mesh with circular edges
+2 - terrain will be created as a surface with rectangular edges
+3 - terrain will be created as a surface with circular edges
+-
+If nothing supplied, 1 will be used as a default (terrain will be created as a mesh with circular edges).</td><td>Goo</td></tr>
+<tr><td><b>Origin</b></td><td>origin_</td><td>Origin for the final "terrain" output.
+-
+If not supplied, default point of (0,0,0) will be used.</td><td>Goo</td></tr>
+<tr><td><b>North</b></td><td>north_</td><td>Input a vector to be used as a true North direction, or a number between 0 and 360 that represents the clockwise degrees off from the Y-axis.
+-
+If not supplied, default North direction will be set to the Y-axis (0 degrees).</td><td>Goo</td></tr>
+<tr><td><b>Stand Thickness</b></td><td>standThickness_</td><td>Thickness of the stand.
+A stand is a basically a base constructed below the terrain mesh/surface. It can be used to create a terrain for cfd analysis or visualization purposes.
+-
+If not supplied, default value of 0 (no stand will be created) will be used.
+-
+In Rhino document units.</td><td>Goo</td></tr>
+<tr><td><b>Num Of Contours</b></td><td>numOfContours_</td><td>Number of elevation contours.
+If you would not like the elevationContours output to be calculated, set the numOfContours_ input to 0.
+-
+If not supplied, default value of 10 elevation contours will be used.</td><td>Goo</td></tr>
+<tr><td><b>Legend Bake Par</b></td><td>legendBakePar_</td><td>In case your type_ input is set to 0 or 1, you can use the legendBakePar_ input to control the colors with which the final "terrain" mesh will be colored with based on elevation.
+Use Gismo "Legend Bake Parameters" component's "customColors_" input to control these colors.
+Also use its fontName_ and fontSize_ inputs to change the font, size of the "title" output.</td><td>Goo</td></tr>
+<tr><td><b></b></td><td>_____________</td><td>Script variable Python</td><td>Goo</td></tr>
+<tr><td><b>Bake It</b></td><td>bakeIt_</td><td>Set to "True" to bake the terrain geometry into the Rhino scene.
+-
+If not supplied default value "False" will be used.</td><td>Goo</td></tr>
+<tr><td><b>Run It</b></td><td>_runIt</td><td>!!! ATTENTION !!!   This component may crash Rhino 5 application if radius_ input is set to a value of tens of thousands of meters! This may happen due to Rhino's inability to create such large terrains.
+To prevent this, it is suggested to own a 64 bit version of Rhino 5 and have strong enough PC configuration. If you do not have either of these two, it is recommended to save your .gh definition before running this component!</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Out</b></td><td>readMe!</td><td>...</td><td>String</td></tr>
+<tr><td><b>Terrain</b></td><td>terrain</td><td>The geometry of the terrain.
+-
+Depening on the type_ input it will be either a mesh (type_ = 0 and 1) or a surface (type_ = 2 and 3)</td><td>Goo</td></tr>
+<tr><td><b>Origin</b></td><td>origin</td><td>The origin (center) point of the "terrain" geometry. It's the same as "origin_" input point.
+-
+Use grasshopper's "Point" parameter to visualize it.
+-
+Use this point to move the "terrain" geometry around in the Rhino scene with grasshopper's "Move" component.</td><td>Goo</td></tr>
+<tr><td><b>Elevation</b></td><td>elevation</td><td>Elevation of the origin_ input.
+-
+In Rhino document units.</td><td>Goo</td></tr>
+<tr><td><b>Elevation Contours</b></td><td>elevationContours</td><td>Elevation contours.
+Their number is defined by the numOfContours_ input. Set the numOfContours_ input to 0, if you would not like the elevationContours to be created.</td><td>Goo</td></tr>
+<tr><td><b>Title</b></td><td>title</td><td>Title geometry with information about location, radius, north angle.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

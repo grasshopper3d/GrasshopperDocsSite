@@ -915,6 +915,47 @@
 <p><a href="../../index.html#Honeybee">Component Index</a> &gt; <a href="../../addons/honeybee.html">Honeybee</a> > 10 | Energy | Energy > <b>Microclimate Map Analysis</b></p>
 </div>
 <h3>Use this component runs an annual comfort assessment off of EnergyPlus results and write all values into csv files.<br>The results in these files can be used for creating indoor comfort maps.<br></h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Comf Analysis Recipe</b></td><td>_comfAnalysisRecipe</td><td>A comfort analysis recipe out of one of the comfort recipe component.</td><td>Goo</td></tr>
+<tr><td><b>=============</b></td><td>=============</td><td>...</td><td>Goo</td></tr>
+<tr><td><b>File Name</b></td><td>fileName_</td><td>An optional file name for the result files as a string.</td><td>Goo</td></tr>
+<tr><td><b>Working Dir</b></td><td>workingDir_</td><td>An optional working directory on your system. Default is set to C:\Ladybug</td><td>Goo</td></tr>
+<tr><td><b>=============</b></td><td>=============</td><td>Script variable AdaptIndoorComfAnalysis</td><td>Goo</td></tr>
+<tr><td><b>Analysis Period Or HOY</b></td><td>analysisPeriodOrHOY_</td><td>An analysis period from the 'Ladybug Analysis Period' component or an hour of the analysis between 1 and 8760 for which you want to conduct the analysis. If no value is connected here, the component will run for only noon on the winter solstice.  A single HOY is used by default as longer analysis periods can take a very long time.</td><td>Goo</td></tr>
+<tr><td><b>=============</b></td><td>=============</td><td>Script variable AdaptIndoorComfAnalysis</td><td>Goo</td></tr>
+<tr><td><b>Write Result File</b></td><td>writeResultFile_</td><td>Set to 1 or 'True' to have the component write all results into CSV result files and set to 0 or 'False' to not have the component write these files.  The default is set to 'True' as these simulations can be long and you usually want a copy of your results.  You may want to set it to 'False' if you are just scrolling through key hours and want the fastest run possible.  Set to 2 if you want the component to only write the results of the last two matrices (comfort results and degFromTarget).</td><td>Goo</td></tr>
+<tr><td><b>Parallel</b></td><td>parallel_</td><td>Set to "True" to run the component using multiple CPUs.  This can dramatically decrease calculation time but can interfere with other intense computational processes that might be running on your machine.  For this reason, the default is set to 'False.'</td><td>Goo</td></tr>
+<tr><td><b>Run It</b></td><td>_runIt</td><td>Set boolean to "True" to run the component and generate files for an annual indoor comfort assessment.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Read Me!</b></td><td>readMe!</td><td>...</td><td>String</td></tr>
+<tr><td><b>===============</b></td><td>===============</td><td>...</td><td>Goo</td></tr>
+<tr><td><b>Rad Temp Mtx</b></td><td>radTempMtx</td><td>A python matrix containing MRT data for every hour of the analysis to be plugged into the 'Honeybee_Visualize Annual Comfort Results' component.</td><td>Goo</td></tr>
+<tr><td><b>Air Temp Mtx</b></td><td>airTempMtx</td><td>A python matrix containing air temperature data for every hour of the analysis to be plugged into the 'Honeybee_Visualize Annual Comfort Results' component.</td><td>Goo</td></tr>
+<tr><td><b>Operative Temp Mtx</b></td><td>operativeTempMtx</td><td>A python matrix containing operative temperature data for every hour of the analysis to be plugged into the 'Honeybee_Visualize Annual Comfort Results' component.</td><td>Goo</td></tr>
+<tr><td><b>Adapt Comf Mtx</b></td><td>adaptComfMtx</td><td>A python matrix containing adaptive comfort data for every hour of the analysis to be plugged into the 'Honeybee_Visualize Annual Comfort Results' component.</td><td>Goo</td></tr>
+<tr><td><b>Deg From Target Mtx</b></td><td>degFromTargetMtx</td><td>A python matrix containing degrees from tartget temperature data for every hour of the analysis to be plugged into the 'Honeybee_Visualize Annual Comfort Results' component.</td><td>Goo</td></tr>
+<tr><td><b>===============</b></td><td>===============</td><td>...</td><td>Goo</td></tr>
+<tr><td><b>Rad Temp Result</b></td><td>radTempResult</td><td>A csv file address containing the radiant temperature resultsfor each point for every hour of the analysis.</td><td>Goo</td></tr>
+<tr><td><b>Air Temp Result</b></td><td>airTempResult</td><td>A csv file address containing the air temperature results for each point for every hour of the analysis.</td><td>Goo</td></tr>
+<tr><td><b>Operative Temp Result</b></td><td>operativeTempResult</td><td>A csv file address containing the operative temperature results for each point for every hour of the analysis.</td><td>Goo</td></tr>
+<tr><td><b>Adapt Comf Result</b></td><td>adaptComfResult</td><td>A csv file address containing the a series of 0's and 1's indicating whether a certain point is comfortable for every hour of the analysis.</td><td>Goo</td></tr>
+<tr><td><b>Deg From Target Result</b></td><td>degFromTargetResult</td><td>A csv file address containing the a series of numbers indicating the degrees that a certain point is from the neutral temperature for every hour of the analysis.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

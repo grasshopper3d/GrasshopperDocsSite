@@ -231,6 +231,46 @@
 <p><a href="../../index.html#Gismo">Component Index</a> &gt; <a href="../../addons/gismo.html">Gismo</a> > 3 | More > <b>CreateLegend</b></p>
 </div>
 <h3>Use this component to create a legend for particular geometry and recolor the geometry based on that legend.<br>-<br>Provided by Gismo 0.0.3</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Values</b></td><td>_values</td><td>A list of numerical or textual values for which the legend needs to be created.</td><td>Goo</td></tr>
+<tr><td><b>Analysis Geometry</b></td><td>_analysisGeometry</td><td>The geometry for which the legend needs to be created based on upper "_values" input.
+It can be:
+-
+a) A list of meshes/surfaces/polysurfaces. In that case their number needs to correspond to the number of items added to the "_values" input.
+b) A single mesh. In that case the number of mesh vertices needs to correspond to the number of items added to the "_values" input.</td><td>Goo</td></tr>
+<tr><td><b>Legend Bake Par</b></td><td>legendBakePar_</td><td>Optional legend parameters from the Gismo "Legend Bake Parameters" component.</td><td>Goo</td></tr>
+<tr><td><b>Bake It</b></td><td>bakeIt_</td><td>Set to "True" to bake the terrain analysis geometry into the Rhino scene.
+-
+If not supplied default value "False" will be used.</td><td>Goo</td></tr>
+<tr><td><b>Run It</b></td><td>_runIt</td><td>...</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Out</b></td><td>readMe!</td><td>...</td><td>String</td></tr>
+<tr><td><b>Colored Geometry</b></td><td>coloredGeometry</td><td>"_analysisGeometry" colored for the "_values" input.</td><td>Goo</td></tr>
+<tr><td><b>Title</b></td><td>title</td><td>Title.
+By default it is set to "undefined title". Use the "Legend Bake Parameters" component's "customTitle_" input to change it.</td><td>Goo</td></tr>
+<tr><td><b>Title Origin Pt</b></td><td>titleOriginPt</td><td>Title base point, which can be used to move the "title" geometry with grasshopper's "Move" component.
+-
+Connect this output to a Grasshopper's "Point" parameter in order to preview the point in the Rhino scene.</td><td>Goo</td></tr>
+<tr><td><b>Legend</b></td><td>legend</td><td>Legend geometry of the "coloredGeometry" output.</td><td>Goo</td></tr>
+<tr><td><b>Legend Plane</b></td><td>legendPlane</td><td>Legend starting plane, which can be used to move the "legend" geometry with grasshopper's "Move" component.
+-
+Connect this output to a Grasshopper's "Plane" parameter in order to preview the "legendPlane" plane in the Rhino scene.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

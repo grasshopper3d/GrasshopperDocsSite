@@ -621,6 +621,43 @@
 <p><a href="../../index.html#Ladybug">Component Index</a> &gt; <a href="../../addons/ladybug.html">Ladybug</a> > 0 | Ladybug > <b>Import epw</b></p>
 </div>
 <h3>Use this component to import lists of weather data into Grasshopper from a standard .epw file.<br>For detailed information about the structure of an epw file, you may want to read the<br>"Weather Converter Program" section in "Auxiliary EnergyPlus Programs" document.<br>All descriptions of importaed data are borrowed from this document.<br>The document is available online at this address:<br>http://bigladdersoftware.com/epx/docs/8-3/auxiliary-programs/energyplus-weather-file-epw-data-dictionary.html<br></h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Epw File</b></td><td>_epwFile</td><td>An .epw file path on your system as a string.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Output</b></td><td>readMe!</td><td>...</td><td>String</td></tr>
+<tr><td><b>Latitude</b></td><td>latitude</td><td>The latitude of the weather file location.</td><td>Goo</td></tr>
+<tr><td><b>Location</b></td><td>location</td><td>A list of text summarizing the location data in the weather file (use this to construct the sun path).</td><td>Goo</td></tr>
+<tr><td><b>Dry Bulb Temperature</b></td><td>dryBulbTemperature</td><td>"This is the houlry dry bulb temperature, in C. Note that this is a full numeric field (i.e. 23.6) and not an integer representation with tenths. Valid values range from 70 C to 70 C. Missing value for this field is 99.9."</td><td>Goo</td></tr>
+<tr><td><b>Dew Point Temperature</b></td><td>dewPointTemperature</td><td>"This is the hourly dew point temperature, in C. Note that this is a full numeric field (i.e. 23.6) and not an integer representation with tenths. Valid values range from 70 C to 70 C. Missing value for this field is 99.9."</td><td>Goo</td></tr>
+<tr><td><b>Relative Humidity</b></td><td>relativeHumidity</td><td>"This is the hourly Relative Humidity in percent. Valid values range from 0% to 110%. Missing value for this field is 999."</td><td>Goo</td></tr>
+<tr><td><b>Wind Speed</b></td><td>windSpeed</td><td>"This is the hourly wind speed in m/sec. Values can range from 0 to 40. Missing value is 999."</td><td>Goo</td></tr>
+<tr><td><b>Wind Direction</b></td><td>windDirection</td><td>"This is the hourly Wind Direction in degrees where the convention is that North=0.0, East=90.0, South=180.0, West=270.0. (If wind is calm for the given hour, the direction equals zero.) Values can range from 0 to 360. Missing value is 999."</td><td>Goo</td></tr>
+<tr><td><b>Direct Normal Radiation</b></td><td>directNormalRadiation</td><td>"This is the hourly Direct Normal Radiation in Wh/m2. (Amount of solar radiation in Wh/m2 received directly from the solar disk on a surface perpendicular to the sun's rays, during the number of minutes preceding the time indicated.) If the field is missing ( 9999) or invalid (;0), it is set to 0. Counts of such missing values are totaled and presented at the end of the runperiod."</td><td>Goo</td></tr>
+<tr><td><b>Diffuse Horizontal Radiation</b></td><td>diffuseHorizontalRadiation</td><td>"This is the hourly Diffuse Horizontal Radiation in Wh/m2. (Amount of solar radiation in Wh/m2 received from the sky (excluding the solar disk) on a horizontal surface during the number of minutes preceding the time indicated.) If the field is missing ( 9999) or invalid (;0), it is set to 0. Counts of such missing values are totaled and presented at the end of the runperiod."</td><td>Goo</td></tr>
+<tr><td><b>Global Horizontal Radiation</b></td><td>globalHorizontalRadiation</td><td>"This is the hourly Global Horizontal Radiation in Wh/m2. (Total amount of direct and diffuse solar radiation in Wh/m2 received on a horizontal surface during the number of minutes preceding the time indicated.) It is not currently used in EnergyPlus calculations. It should have a minimum value of 0; missing value for this field is 9999."</td><td>Goo</td></tr>
+<tr><td><b>Horizontal Infrared Radiation</b></td><td>horizontalInfraredRadiation</td><td>Script variable importEPW</td><td>Goo</td></tr>
+<tr><td><b>Direct Normal Illuminance</b></td><td>directNormalIlluminance</td><td>"This is the hourly Direct Normal Illuminance in lux. (Average amount of illuminance in hundreds of lux received directly from the solar disk on a surface perpendicular to the sun's rays, during the number of minutes preceding the time indicated.) It is not currently used in EnergyPlus calculations. It should have a minimum value of 0; missing value for this field is 999999 and will be considered missing of ;= 999900."</td><td>Goo</td></tr>
+<tr><td><b>Diffuse Horizontal Illuminance</b></td><td>diffuseHorizontalIlluminance</td><td>"This is the hourly Diffuse Horizontal Illuminance in lux. (Average amount of illuminance in hundreds of lux received from the sky (excluding the solar disk) on a horizontal surface during the number of minutes preceding the time indicated.) It is not currently used in EnergyPlus calculations. It should have a minimum value of 0; missing value for this field is 999999 and will be considered missing of ;= 999900."</td><td>Goo</td></tr>
+<tr><td><b>Global Horizontal Illuminance</b></td><td>globalHorizontalIlluminance</td><td>"This is the hourly Global Horizontal Illuminance in lux. (Average total amount of direct and diffuse illuminance in hundreds of lux received on a horizontal surface during the number of minutes preceding the time indicated.) It is not currently used in EnergyPlus calculations. It should have a minimum value of 0; missing value for this field is 999999 and will be considered missing of ;= 999900."</td><td>Goo</td></tr>
+<tr><td><b>Total Sky Cover</b></td><td>totalSkyCover</td><td>"This is the fraction for total sky cover (tenths of coverage). (i.e. 1 is 1/10 covered. 10 is total coverage). (Amount of sky dome in tenths covered by clouds or obscuring phenomena at the hour indicated at the time indicated.) Minimum value is 0; maximum value is 10; missing value is 99."</td><td>Goo</td></tr>
+<tr><td><b>Barometric Pressure</b></td><td>barometricPressure</td><td>"This is the hourly weather station pressure in Pa. Valid values range from 31,000 to 120,000... Missing value for this field is 999999."</td><td>Goo</td></tr>
+<tr><td><b>Model Year</b></td><td>modelYear</td><td>The year from which the hourly data has been extracted. EPW files are synthesized from real recorded data from different years in a given climate. This is done to ensure that, for each month, the selected data is statistically representative of the average monthly conditions over the 18+ years of recording the data. Different EPW files will be synthesized from different years depeding on whether they are TMY (Typical Meteorological Year), TMY2, TMY3, AMY (Actual Meteorological Year) or other.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

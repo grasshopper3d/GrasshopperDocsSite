@@ -915,6 +915,28 @@
 <p><a href="../../index.html#Honeybee">Component Index</a> &gt; <a href="../../addons/honeybee.html">Honeybee</a> > 10 | Energy | Energy > <b>Read Result Dictionary</b></p>
 </div>
 <h3>This component parses an .rdd file from an energy simulation to show all possible outputs that could be requested.<br></h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Rdd File</b></td><td>_rddFile</td><td>The file address of the rdd file that comes out of the "Honeybee_Lookup EnergyPlus Folder" component.</td><td>Goo</td></tr>
+<tr><td><b>Keywords</b></td><td>keywords_</td><td>Optional keywords that will be used to search through the outputs.</td><td>Goo</td></tr>
+<tr><td><b>Timestep</b></td><td>_timestep_</td><td>Specify a timestep by inputing the words 'hourly', 'daily', 'monthly' or 'annual'.  The default is set to hourly.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Sim Outputs</b></td><td>simOutputs</td><td>EnergyPlus code that should be plugged into the "simulationOutputs" parameter of the "Honeybee_Export to OpenStudio" component.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

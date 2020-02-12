@@ -231,6 +231,36 @@
 <p><a href="../../index.html#Gismo">Component Index</a> &gt; <a href="../../addons/gismo.html">Gismo</a> > 0 | Gismo > <b>DeconstructLocation</b></p>
 </div>
 <h3>Use this component to exlode an epw location to its parts: locationName, latitude, longitude, timeZone, elevation.<br>-<br>Provided by Gismo 0.0.3</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Location</b></td><td>_location</td><td>An .epw file location: joined string containing information about location's components: locationName, latitude, longitude, timeZone and elevation.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Location Name</b></td><td>locationName</td><td>A name of the location.
+-
+If nothing added to this input, "unknown location" will be used as default locationName_.</td><td>Goo</td></tr>
+<tr><td><b>Latitude</b></td><td>latitude</td><td>Location's latitude coordinate.
+It ranges from -90 for locations south of equator, to 90 for locations above the equator.</td><td>Goo</td></tr>
+<tr><td><b>Longitude</b></td><td>longitude</td><td>Location's longitude coordinate.
+It ranges from -180 for locations west of Prime Meridian, to 180 for locations east of Prime Meridian.</td><td>Goo</td></tr>
+<tr><td><b>Time Zone</b></td><td>timeZone</td><td>The time zone of the location.</td><td>Goo</td></tr>
+<tr><td><b>Elevation</b></td><td>elevation</td><td>Elevation (Altitude) height of the .epw location.
+-
+In meters.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

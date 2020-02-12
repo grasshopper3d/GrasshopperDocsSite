@@ -261,6 +261,29 @@ Syringe
 <p><a href="../../index.html#Xylinus">Component Index</a> &gt; <a href="../../addons/xylinus.html">Xylinus</a> > Core > <b>Setting</b></p>
 </div>
 <h3>If an individual specific setting is input in S, it will be returned. Otherwise the config (C) setting, matching the input ID will be passed. The ID is an integer matching the branch number of the desired setting. The returned setting will have the data structure matching the input ID. Is anything other than a Xylinus Config is input to C, that data will simply be passed to S.</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>setting</b></td><td>S</td><td>Individual specific setting. Will override the config setting.</td><td>Goo</td></tr>
+<tr><td><b>config</b></td><td>C</td><td>Contains a collection of generic data</td><td>Goo</td></tr>
+<tr><td><b>setting number</b></td><td>i</td><td>input an integer matching the branch number of the desired setting.</td><td>Integer</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>setting</b></td><td>S</td><td>Processed tree data</td><td>Goo</td></tr>
+<tr><td><b>Is Config?</b></td><td>C</td><td>Boolean indicating whether or not the dat being passed is derived from a config</td><td>Boolean</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

@@ -231,6 +231,37 @@
 <p><a href="../../index.html#Gismo">Component Index</a> &gt; <a href="../../addons/gismo.html">Gismo</a> > 3 | More > <b>RhinoBooleanUnion</b></p>
 </div>
 <h3>Grasshopper's "Solid Union" component may sometimes fail to perform boolean union of the 3d buildings coming from Gismo "OSM shapes" component.<br>In that case use this component, which replicated Rhino's _BooleanUnion command.<br>-<br>However, this component works much better on Rhino 5, as Rhino 5 allowed creation of soldis with non-manifold edges!<br>-<br>Provided by Gismo 0.0.3</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Three Dee Shapes</b></td><td>_threeDeeShapes</td><td>Plug in the "threeDeeShapes" output from the Gismo "OSM 3D" component</td><td>Goo</td></tr>
+<tr><td><b>Closed Solid</b></td><td>closedSolid_</td><td>Set to "True" to make all the union solids closed.
+-
+If not supplied default value "True" will be used.</td><td>Goo</td></tr>
+<tr><td><b>Bake It</b></td><td>bakeIt_</td><td>Set to "True" to bake the extruded _shape geometry into the Rhino scene.
+The geometry will be grouped. To ungroup it, select it and call the "Ungroup" Rhino command.
+-
+If not supplied default value "False" will be used.</td><td>Goo</td></tr>
+<tr><td><b>Run It</b></td><td>_runIt</td><td>...</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Out</b></td><td>readMe!</td><td>...</td><td>String</td></tr>
+<tr><td><b>Three Dee Shapes Unioned</b></td><td>threeDeeShapesUnioned</td><td>Boolean unioned "_threeDeeShapes" input
+-
+This component works much better on Rhino 5, as Rhino 5 allowed creation of soldis with non-manifold edges!</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

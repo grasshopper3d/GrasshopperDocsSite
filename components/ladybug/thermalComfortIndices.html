@@ -621,6 +621,124 @@
 <p><a href="../../index.html#Ladybug">Component Index</a> &gt; <a href="../../addons/ladybug.html">Ladybug</a> > 1 | AnalyzeWeatherData > <b>Thermal Comfort Indices</b></p>
 </div>
 <h3>Use this component to calculate various thermal comfort indices:<br>------<br>- HI (Heat Index)<br>- humidex (humidity index)<br>- DI (Discomfort Index)<br>- WCI (Wind Chill Index)<br>- WCT (Wind Chill Temperature)<br>- WBGT (Wet-Bulb Globe Temperature) indoors<br>- WBGT (Wet-Bulb Globe Temperature) outdoors<br>- TE (Effective Temperature)<br>- AT (Apparent Temperature)<br>- TS (Thermal Sensation)<br>- ASV (Actual Sensation Vote)<br>- MRT (Mean Radiant Temperature)<br>- Iclp (Predicted Insulation Index Of Clothing)<br>- HR (Heart Rate)<br>- DhRa (Dehydration Risk)<br>- PET (Physiological Equivalent Temperature)<br>- THI (Temperature Humidity Index)<br>- PHS (Predicted Heat Strain)<br></h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Comfort Index</b></td><td>_comfortIndex</td><td>Choose one of the comfort indices:
+0 - HI (Heat Index)
+1 - humidex (humidity index)
+2 - DI (Discomfort Index)
+3 - WCI (Wind Chill Index)
+4 - WCT (Wind Chill Temperature)
+5 - WBGT (Wet-Bulb Globe Temperature) indoors
+6 - WBGT (Wet-Bulb Globe Temperature) outdoors
+7 - TE (Effective Temperature)
+8 - AT (Apparent Temperature)
+9 - TS (Thermal Sensation)
+10 - ASV (Actual Sensation Vote)
+11 - MRT (Mean Radiant Temperature)
+12 - Iclp (Predicted Insulation Index Of Clothing)
+13 - HR (Heart Rate)
+14 - DhRa (Dehydration Risk)
+15 - PET (Physiological Equivalent Temperature) for temperate climates
+16 - PET (Physiological Equivalent Temperature) for tropical and subtropical humid climates
+17 - THI (Temperature Humidity Index)
+18 - PHS (Predicted Heat Strain)</td><td>Goo</td></tr>
+<tr><td><b></b></td><td>____________________</td><td>Script variable ThermalComfortIndices</td><td>Goo</td></tr>
+<tr><td><b>Location</b></td><td>_location</td><td>Input data from Ladybug's "Import epw" "location" output, or create your own location data with Ladybug's "Construct Location" component.</td><td>Goo</td></tr>
+<tr><td><b>Dry Bulb Temperature</b></td><td>_dryBulbTemperature</td><td>Air temperature.
+Input a single value or a whole list from "Import epw" component's "dryBulbTemperature" output.
+-
+In Celsius degrees (C).</td><td>Goo</td></tr>
+<tr><td><b>Mean Radiant Temperature</b></td><td>meanRadiantTemperature_</td><td>An average temperature of the surfaces that surround the analysis location.
+For indoor conditions or outdoor in-shade, it should be equal to air temperature. So just input the same data you inputted to "_dryBulbTemperature".
+-
+If nothing supplied, it will be calculated for outdoor conditions (both in-shade and out-shade).
+-
+In Celsius degrees (C).</td><td>Goo</td></tr>
+<tr><td><b>Dew Point Temperature</b></td><td>dewPointTemperature_</td><td>Dew point temperature.
+Input a single value or a whole list from "Import epw" component's "dewPointTemperature" output.
+-
+If not supplied, it will be calculated from _dryBulbTemperature and relativeHumidity_ data.
+-
+In Celsius degrees (C).</td><td>Goo</td></tr>
+<tr><td><b>Relative Humidity</b></td><td>relativeHumidity_</td><td>Relative humidity.
+Input a single value or a whole list from "Import epw" component's "relativeHumidity" output.
+-
+If not supplied 50% will be used as a default (indoor conditions).
+-
+In percent (from 0% to 110%).</td><td>Goo</td></tr>
+<tr><td><b>Wind Speed</b></td><td>windSpeed_</td><td>Wind speed at 1.1 meters height from analysis surface (height of standing person’s gravity center). It can be a single value or a list of values.
+Take the "windSpeed" output from "Import epw" component and plug it to "Wind Speed Calculator" component's "_windSpeed_tenMeters" input. Set the "heightAboveGround_" input to "1.1". Then plug in the data from "Wind Speed Calculator" component's "windSpeedAtHeight" output to this component's "windSpeed_" input.
+In this way we converted the 10 meter wind speed from the .epw file to required 1.1m.
+-
+If not supplied, default value of 0.3 m/s is used (meaning: the analysis is conducted in outdoor no wind conditions, or indoor conditions).
+-
+In meters/second.</td><td>Goo</td></tr>
+<tr><td><b>Total Sky Cover</b></td><td>totalSkyCover_</td><td>Amount of sky dome covered by clouds.
+Input a single value or a whole list from "Import epw" component's "totalSkyCover" output.
+It ranges from from 1 to 10. For example: 1 is 1/10 covered. 10 is total coverage (10/10).
+-
+If not supplied 6/10 will be used (cloud coverage of temperate humid climate).
+-
+In tenths of sky cover.</td><td>Goo</td></tr>
+<tr><td><b>Solar Radiation Per Hour</b></td><td>solarRadiationPerHour_</td><td>Amount of solar radiation that an analysis person received.
+-
+1) If you would like to do an analysis accounted for shading (more precise) use the "Sunpath shading" component and its "shadedSolarRadiationPerHour" output.
+Or use "Radiation Analysis" component's "radiationResult" output. Be sure to scale the "radiationResult" output data 1000 times (to convert it from kW/m2 to W/m2).
+The "Sunpath shading" component will account for partial shading from the trees, while "Radiation Analysis" will not.
+-
+2) If you would not like to do an analysis accounted for shading (because it's quicker that way), then you can simply supply the data from "Import epw" component's "diffuseHorizontalRadiation" output. In this way it will be assumed that an analysis is being conducted in outdoor in-shade conditions, or indoor conditions.
+-
+If nothing supplied, default value of 0 Wh/m2 will be used (no solar radiation at all).
+-
+In Wh/m2.</td><td>Goo</td></tr>
+<tr><td><b>Body Characteristics</b></td><td>bodyCharacteristics_</td><td>A list of body characteristics in the following order: age, sex, height, weight, bodyPosition, clothingInsulation, acclimated, metabolicRate, activityDuration.
+Use Ladybug's "Body Characteristics" component to generate it.
+-
+If not supplied, the following default values will be used:
+--
+35 - age
+"male" - sex
+175 - height in centimeters
+75 - weight in kilograms
+"standing" - bodyPosition
+None (clothingInsulation - "None" means that it will be calculated based on air temperature)
+37 - clothingAlbedo in % (for medium colored clothes)
+"unacclimated" - acclimated
+2.32 - metabolicRate in mets (2.32 corresponds to walking 4km/h)
+480 - activityDuration in minutes</td><td>Goo</td></tr>
+<tr><td><b></b></td><td>____________________</td><td>Script variable thermalComfortIndices</td><td>Goo</td></tr>
+<tr><td><b>HOY</b></td><td>HOY_</td><td>An hour (or hours) of the year for which you would like to calculate thermal indices. These hours must be a value between 1 and 8760.
+This input will override the analysisPeriod_ input below.
+-
+If not supplied, this input will be ignored.</td><td>Goo</td></tr>
+<tr><td><b>Analysis Period</b></td><td>analysisPeriod_</td><td>An optional analysis period from the "Analysis Period" component.
+-
+If not supplied, the whole year period will be used as an analysis period.</td><td>Goo</td></tr>
+<tr><td><b>Run It</b></td><td>_runIt</td><td>...</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Out</b></td><td>readMe!</td><td>If your _comfortIndex is set to either 15 or 16, and you are performing analysis for a single hour, then this output will show additional results related with PET (Physiological Equivalent Temperature).</td><td>String</td></tr>
+<tr><td><b>Comfort Index Value</b></td><td>comfortIndexValue</td><td>The value of the chosen comfort.</td><td>Goo</td></tr>
+<tr><td><b>Comfort Index Level</b></td><td>comfortIndexLevel</td><td>The level (category, sensation) of the chosen index.</td><td>Goo</td></tr>
+<tr><td><b>Comfortable Or Not</b></td><td>comfortableOrNot</td><td>Indication of whether that person is comfortable (1) or not (0) at particular hour.</td><td>Goo</td></tr>
+<tr><td><b>Percent Comfortable</b></td><td>percentComfortable</td><td>Percentage of time, during which chosen index falls into the comfortable category.</td><td>Goo</td></tr>
+<tr><td><b>Percent Hot Extreme</b></td><td>percentHotExtreme</td><td>Percentage of time, during which chosen index falls into the hot extreme category.</td><td>Goo</td></tr>
+<tr><td><b>Percent Cold Extreme</b></td><td>percentColdExtreme</td><td>Percentage of time, during which chosen index falls into the cold extreme category.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

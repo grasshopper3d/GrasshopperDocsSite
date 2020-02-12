@@ -621,6 +621,30 @@
 <p><a href="../../index.html#Ladybug">Component Index</a> &gt; <a href="../../addons/ladybug.html">Ladybug</a> > 3 | EnvironmentalAnalysis > <b>Forward Raytracing</b></p>
 </div>
 <h3>Use this component to get a sense of how sunlight is reflected by a set of context geometries by tracing sun rays forwards through this geometry.<br>Examples where this component might be useful include the evaluation of the diffusion of light by a light shelf, or testing to see whether a parabolic building geometry (like a Ghery building) might focus sunlight to dangerous levels at certain times of the year.<br>Note that this component assumes that all sun light is reflected off of these geometries specularly (as if they were a mirror) and, for more detailed raytrace analysis, the Honeybee daylight components should be used.<br></h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Start Pts</b></td><td>_startPts</td><td>Points from which the sun rays will be cast towards the _context geometry.  You may want to connect a grid of points here to mimic the fact that direct sun will be streaming evenly from the sky.</td><td>Goo</td></tr>
+<tr><td><b>Start Vectors</b></td><td>_startVectors</td><td>A sun vector from the sunPath component or a list of sun vectors to be forward ray-traced.</td><td>Goo</td></tr>
+<tr><td><b>Context</b></td><td>_context</td><td>Breps or meshes of conext geometry that will reflect the sun rays.  Note that, for curved surfaces, smooth meshes of the geometry will be more accurate than inputing a Brep.</td><td>Goo</td></tr>
+<tr><td><b>Num Of Bounce</b></td><td>_numOfBounce_</td><td>An interger representing the number of ray bounces to trace the sun rays forward.</td><td>Goo</td></tr>
+<tr><td><b>Last Bounce Len</b></td><td>_lastBounceLen_</td><td>A float number representing the length in Rhino model units of the light ray after the last bounce.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Rays</b></td><td>rays</td><td>A series of line curves representing light rays traced forward through the geometry.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

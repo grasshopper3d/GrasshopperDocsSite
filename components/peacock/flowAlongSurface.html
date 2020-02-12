@@ -548,6 +548,29 @@ Workbench
 <p><a href="../../index.html#Peacock">Component Index</a> &gt; <a href="../../addons/peacock.html">Peacock</a> > Workbench > <b>FlowSrf</b></p>
 </div>
 <h3>Deforms an object from a source surface to a target surface.</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Geometry</b></td><td>Geo</td><td>Geometry to flow</td><td>GeometricGoo</td></tr>
+<tr><td><b>Source surface</b></td><td>Src</td><td>Base surface</td><td>Surface</td></tr>
+<tr><td><b>Target surface</b></td><td>Trgt</td><td>Target surface</td><td>Surface</td></tr>
+<tr><td><b>Preserve structure</b></td><td>PsS</td><td>True if the morph should be done in a way that preserves the structure of the geometry. In particular, for NURBS objects, true means that only the control points are moved. The PreserveStructure value does not affect the way meshes and points are morphed.</td><td>Boolean</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Geometry</b></td><td>G</td><td>Resulting geometry</td><td>GeometricGoo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

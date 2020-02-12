@@ -915,6 +915,32 @@
 <p><a href="../../index.html#Honeybee">Component Index</a> &gt; <a href="../../addons/honeybee.html">Honeybee</a> > 02 | Daylight | Light Source > <b>IES Luminaire Zone</b></p>
 </div>
 <h3>This component is to be used for specifying the location of luminaires for electric lighting simulations.<br>    -<br>    For external lighting applications the best option would be to use the aimingPoint_ option to specify where all the luminaires should be aimed to.<br>    In case luminaires are being aimed by specifying spin, tilt and orientation angles, the following conventions apply:<br>1. _spin_ : specifies the rotation of a luminaire about its G0 axis.<br>2. _tilt_: species the rotation of a luminaire around the Y axis.<br>3. _orientation_: specifies the rotation of a luminaire around the Z axis.<br>    The recommended sequence of applying rotations is tilt,orientation and spin. <br>    _<br>    The aiming conventions followed in this component are based on the IES LM-63-2002 and were tested against indoor lighting simulations with AGI32 software.</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Pts List</b></td><td>_ptsList</td><td>List of points/3d coordinates where the luminaires are to be located.</td><td>Goo</td></tr>
+<tr><td><b>Spin</b></td><td>_spin_</td><td>A number represeting the luminaire spin angle in degrees.  This can also be a list of spin angles that match the _ptsList.</td><td>Goo</td></tr>
+<tr><td><b>Tilt</b></td><td>_tilt_</td><td>A number represeting the luminaire tilt angle in degrees.  This can also be a list of tilt angles that match the _ptsList.</td><td>Goo</td></tr>
+<tr><td><b>Orientation</b></td><td>_orientation_</td><td>A number represeting the luminaire rotation angle in degrees.  This can also be a list of orientation angles that match the _ptsList.</td><td>Goo</td></tr>
+<tr><td><b>Aiming Point</b></td><td>aimingPoint_</td><td>A point represeting the location at which the photometric axis of the luminaires should be aimed. This can also be a list of points that match the _ptsList.</td><td>Goo</td></tr>
+<tr><td><b>Custom Lamp</b></td><td>customLamp_</td><td>A custom lamp definition from the "Honeybee_IES Custom Lamp" component.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Out</b></td><td>readMe!</td><td>The execution information, as output and error streams</td><td>String</td></tr>
+<tr><td><b>Luminaire Zone</b></td><td>luminaireZone</td><td>List of coordinates and rotation angles for luminaires</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

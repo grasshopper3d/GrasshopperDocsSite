@@ -915,6 +915,34 @@
 <p><a href="../../index.html#Honeybee">Component Index</a> &gt; <a href="../../addons/honeybee.html">Honeybee</a> > 06 | Energy | Material | Construction > <b>Energy Plus Glass Material</b></p>
 </div>
 <h3>Use this component to create a custom material for glass, which can be plugged into the "Honeybee_EnergyPlus Construction" component.<br>It is important to note that this component creates a material that represents a single pane of glass, which can be combined with the "Honeybee_EnergyPlus Window Air Gap" to make multi-pane windows.  If you have specifications for a whole window element and not individual panes of glass and gas, you are better-off using the "Honeybee_EnergyPlus Window Material" component<br></h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Name</b></td><td>_name</td><td>A text name for your glass material.</td><td>Goo</td></tr>
+<tr><td><b>Thickness</b></td><td>thickness_</td><td>A number that represents the thickness of the pane of glass in meters.  The default is set to 0.003 meters (3 mm).</td><td>Goo</td></tr>
+<tr><td><b>Solar Transmittance</b></td><td>solarTransmittance_</td><td>A number between 0 and 1 that represents the transmittance of solar radiation through the glass at normal incidence.  The default is set to 0.837, which it typical for clear glass without a low-e coating.</td><td>Goo</td></tr>
+<tr><td><b>Solar Reflectance</b></td><td>solarReflectance_</td><td>A number between 0 and 1 that represents the reflectance of solar radiation off the glass at normal incidence.  The default is set to 0.075, which is typical for clear glass without a low-e coating.</td><td>Goo</td></tr>
+<tr><td><b>Visible Transmittance</b></td><td>visibleTransmittance_</td><td>A number between 0 and 1 that represents the transmittance of only visible light through the glass at normal incidence.  This is usally very close to the solarTransmittance_ for non-low-e-coated glass but can differ if the glass has a low-e coating. The default is set to 0.898, which is typical for clear glass without a low-e coating.</td><td>Goo</td></tr>
+<tr><td><b>Visible Reflectance</b></td><td>visibleReflectance_</td><td>A number between 0 and 1 that represents the reflectance of only visible light off the glass at normal incidence.  This is usally very close to the solarReflectance_ for non-low-e-coated glass but can differ if the glass has a low-e coating. The default is set to 0.081, which is typical for clear glass without a low-e coating.</td><td>Goo</td></tr>
+<tr><td><b>Front Emissivity</b></td><td>frontEmissivity_</td><td>A number between 0 and 1 that represents the infrared hemispherical emissivity of the front (outdoor-facing) side of the glass.  This number is usually pretty high for non-low-e-coated glass but can be significantly lower for low-e coated glass.  The default is set to 0.84, which is typical for clear glass without a low-e coating.</td><td>Goo</td></tr>
+<tr><td><b>Back Emissivity</b></td><td>backEmissivity_</td><td>A number between 0 and 1 that represents the infrared hemispherical emissivity of the back (indoor-facing) side of the glass.  This number is usually pretty high for non-low-e-coated glass but can be significantly lower for low-e coated glass.  The default is set to 0.84, which is typical for clear glass without a low-e coating.</td><td>Goo</td></tr>
+<tr><td><b>Conductivity</b></td><td>conductivity_</td><td>A number representing the conductivity of the glass in W/m-K. The default is set to 0.9, which is typical for clear glass without a low-e coating.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>EPMaterial</b></td><td>EPMaterial</td><td>A glass material that can be plugged into the "Honeybee_EnergyPlus Construction" component.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

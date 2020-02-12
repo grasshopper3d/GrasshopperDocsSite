@@ -621,6 +621,42 @@
 <p><a href="../../index.html#Ladybug">Component Index</a> &gt; <a href="../../addons/ladybug.html">Ladybug</a> > 7 | WIP > <b>Kmz Generator</b></p>
 </div>
 <h3>Use this component to export geometries into an Google Earth file.<br>It requires Google Earth. You can download it at this link: https://www.google.it/earth/download/ge/agree.html<br>Once you open kmz file you can continue to update it. This is useful when you change geometries or you want to compare different scenarios.<br>.<br>Updating: Just setting again to "True" _writeKmz, after that right click and select "update" on Google Earth.<br>Special thanks goes to Google and the authors of gHowl.<br></h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Geometry</b></td><td>_geometry</td><td>A list of Breps, Meshes and Surfaces to export.</td><td>Goo</td></tr>
+<tr><td><b>Base Point</b></td><td>_basePoint_</td><td>Input a point here to georeference the model. Default value is origin point.</td><td>Goo</td></tr>
+<tr><td><b>Location</b></td><td>_location</td><td>It accepts two type of inputs. 
+a) latitude, longitude and elevation that represent WSG84 coordinates of the base point. You can achieve these type of coordinates from Google Maps or similar.
+e.g. 40.821796, 14.426439, 990
+-
+b) location, you can obtain this type of input from "Ladybug_Construct Location", "Ladybug_Location Finder", "Ladybug_Import epw", "Ladybug_Import Location".</td><td>Goo</td></tr>
+<tr><td><b>Terrain</b></td><td>_terrain</td><td>Connect the terrain output of "Ladybug_Terrain Generator" to move the geometries in the right altitude automatically.</td><td>Goo</td></tr>
+<tr><td><b>---------------</b></td><td>---------------</td><td>---------------</td><td>Goo</td></tr>
+<tr><td><b>Folder</b></td><td>_folder_</td><td>The folder into which you would like to write the kmz file.  This should be a complete file path to the folder.  If no folder is provided, the images will be written to Ladybug default folder.</td><td>Goo</td></tr>
+<tr><td><b>Name</b></td><td>name_</td><td>Name of kmz file.</td><td>Goo</td></tr>
+<tr><td><b>Material</b></td><td>material_</td><td>Connect Create Material component of Grasshopper, it is part of Display tab. If not supplied it will be default material.</td><td>Goo</td></tr>
+<tr><td><b>Bake It</b></td><td>_bakeIt</td><td>Connect a Grasshopper button. Set to "True" to bake the geometries for Google Earth.</td><td>Goo</td></tr>
+<tr><td><b>Write Kmz</b></td><td>_writeKmz</td><td>Connect a Boolean Toggle. After the baking, set it to "True" to export from Rhino Model to KMZ format.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Out</b></td><td>readMe!</td><td>...</td><td>String</td></tr>
+<tr><td><b>Kmz Path</b></td><td>kmzPath</td><td>Complete path of kmz file.</td><td>Goo</td></tr>
+<tr><td><b>Point On Terrain</b></td><td>pointOnTerrain</td><td>basePoint projected on terrain.</td><td>Goo</td></tr>
+<tr><td><b>Geometry</b></td><td>geometry</td><td>Geometries on the ground.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

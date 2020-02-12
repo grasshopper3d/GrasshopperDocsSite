@@ -915,6 +915,40 @@
 <p><a href="../../index.html#Honeybee">Component Index</a> &gt; <a href="../../addons/honeybee.html">Honeybee</a> > 10 | Energy | Energy > <b>Surface Data Based On Type Detailed</b></p>
 </div>
 <h3>Use this component to separate grafed lists of surface data that come out of the "Honeybee_Read EP Surface Result" component based on rough surface type.  This component separates all surface types but takes sevaral seconds to load and requires HBZones.  For a quicker splitting of data, use the "Honeybee_Surface Data Based On Type" component.<br></h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>HBZones</b></td><td>_HBZones</td><td>Honeybee Zone</td><td>Goo</td></tr>
+<tr><td><b>Srf Data</b></td><td>_srfData</td><td>Script variable decomposeByType</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Walls</b></td><td>walls</td><td>A grafted list of surface data for walls.</td><td>Goo</td></tr>
+<tr><td><b>Interior Walls</b></td><td>interiorWalls</td><td>A grafted list of surface data for interior walls.</td><td>Goo</td></tr>
+<tr><td><b>Air Walls</b></td><td>airWalls</td><td>A grafted list of surface data for air walls.</td><td>Goo</td></tr>
+<tr><td><b>Windows</b></td><td>windows</td><td>A grafted list of surface data for exterior windows.</td><td>Goo</td></tr>
+<tr><td><b>Interior Windows</b></td><td>interiorWindows</td><td>A grafted list of surface data for interior windows.</td><td>Goo</td></tr>
+<tr><td><b>Skylights</b></td><td>skylights</td><td>A grafted list of surface data for skylights.</td><td>Goo</td></tr>
+<tr><td><b>Roofs</b></td><td>roofs</td><td>A grafted list of surface data for roofs.</td><td>Goo</td></tr>
+<tr><td><b>Ceilings</b></td><td>ceilings</td><td>A grafted list of surface data for ceilings.</td><td>Goo</td></tr>
+<tr><td><b>Floors</b></td><td>floors</td><td>A grafted list of surface data for floors.</td><td>Goo</td></tr>
+<tr><td><b>Exposed Floors</b></td><td>exposedFloors</td><td>A grafted list of surface data for exposed floors.</td><td>Goo</td></tr>
+<tr><td><b>Ground Floors</b></td><td>groundFloors</td><td>A grafted list of surface data for ground floors.</td><td>Goo</td></tr>
+<tr><td><b>Underground Walls</b></td><td>undergroundWalls</td><td>A grafted list of surface data for underground walls.</td><td>Goo</td></tr>
+<tr><td><b>Underground Slabs</b></td><td>undergroundSlabs</td><td>Script variable decomposeByType</td><td>Goo</td></tr>
+<tr><td><b>Underground Ceilings</b></td><td>undergroundCeilings</td><td>A grafted list of surface data for underground ceilings.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

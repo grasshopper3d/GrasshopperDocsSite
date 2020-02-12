@@ -621,6 +621,51 @@
 <p><a href="../../index.html#Ladybug">Component Index</a> &gt; <a href="../../addons/ladybug.html">Ladybug</a> > 4 | Renewables > <b>Simplified Photovoltaics Module</b></p>
 </div>
 <h3>Use this component to define simplified Photovoltaics crystalline silicon (c-Si) module settings.<br>If nothing inputed, the following PV module settings will be used by default:<br>- module material: crystalline silicon (c-Si)<br>- mountType: Close (flush) roof mount <br>- moduleEfficiency: 15%<br>- temperatureCoefficient: -0.5 %/C<br>- moduleActiveAreaPercent: 90%<br>If you would like to use a thin-film module, then use the thin-film module from "Import Sandia Photovoltaics Module" or "Import CEC Photovoltaics Module" components.<br>Also for choosing a specific module, not a simplified one, use one of those two components as well.<br>Sources:<br>http://prod.sandia.gov/techlib/access-control.cgi/2004/043535.pdf<br></h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Mount Type</b></td><td>mountType_</td><td>Mounting type (configuration) of a module. There are three of them:
+-
+0 = Insulated back (pv curtain wall, pv skylights, BIPV installations with obstructed bakside airflow)
+1 = Close (flush) roof mount (pv array mounted parallel and relatively close to the plane of the roof (between 5 and 15 centimenters))
+2 = Open rack (ground mount array, flat/sloped roof array that is tilted, pole-mount solar panels, solar carports, solar canopies, BIPV installations with sufficient bakside airflow)
+-
+If not supplied, default type: "Glass/cell/glass, Close (flush) roof mount" (1) is used.</td><td>Goo</td></tr>
+<tr><td><b>Module Efficiency</b></td><td>moduleEfficiency_</td><td>The ratio of electrical energy output from the PV module to input solar energy from the sun.
+Current typical module efficiencies for crystalline silicon modules range from 14-20%
+-
+If not defined, default value of 15(%) will be used.
+-
+In percent (%).</td><td>Goo</td></tr>
+<tr><td><b>Temperature Coefficient</b></td><td>temperatureCoefficient_</td><td>A coefficient which accounts for the percentage the solar module's DC output power decrease/increase for every degree Celsius the solar cells temperature rises above/below 25C. 
+-
+In general it ranges from -0.44 to -0.5 for crystaline silicon modules.
+-
+If not supplied, -0.5 will be used as a default.
+-
+In %/C.</td><td>Goo</td></tr>
+<tr><td><b>Module Active Area Percent</b></td><td>moduleActiveAreaPercent_</td><td>Percentage of the module's area excluding module framing and gaps between cells. 
+-
+If not supplied, default value of 90(%) will be used.
+-
+In percent (%).</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Out</b></td><td>readMe!</td><td>...</td><td>String</td></tr>
+<tr><td><b>PVmodule Settings</b></td><td>PVmoduleSettings</td><td>A list of PV module settings. Plug it to "Photovoltaics surface" component's "PVmoduleSettings_" input.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

@@ -621,6 +621,145 @@
 <p><a href="../../index.html#Ladybug">Component Index</a> &gt; <a href="../../addons/ladybug.html">Ladybug</a> > 4 | Renewables > <b>Solar Water Heating Performance Metrics</b></p>
 </div>
 <h3>Use this component to calculate various Solar water heating performance metrics.<br>Also use it to calculate the optimal SWH system size and tank storage volume.<br></h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>SWHsurface</b></td><td>_SWHsurface</td><td>Use the same "_SWHsurface" you supplied to the "Solar Water Heating Surface" component.</td><td>Goo</td></tr>
+<tr><td><b>SWHsurface Percent</b></td><td>SWHsurfacePercent_</td><td>The percentage of surface which will be used for SWH collectors (range 0-100).
+-
+There are no general rules or codes which would limit the percentage of the roof(surface) covered with SWH collectors.
+-
+If not supplied, default value of 100 (all surface area will be covered in SWH collectors) is used.
+-
+In percent (%).</td><td>Goo</td></tr>
+<tr><td><b>SWHsystem Settings</b></td><td>SWHsystemSettings_</td><td>A list of all Solar water heating system settings. Use the same "SWHsystemSettings_" you supplied to the "Solar Water Heating Surface" component.
+-
+If not supplied, the following swh system settings will be used by default:
+- glazed flat plate collectors
+- active
+- closed loop
+- pipe length: 20 meters
+- unshaded</td><td>Goo</td></tr>
+<tr><td><b></b></td><td>_________________________</td><td>Script variable PhotovoltaicsPerformanceMetrics</td><td>Goo</td></tr>
+<tr><td><b>Heating Load Per Hour</b></td><td>_heatingLoadPerHour</td><td>Use the same "_heatingLoadHour" you supplied to the "Solar Water Heating Surface" component.
+-
+In kWh.</td><td>Goo</td></tr>
+<tr><td><b>Heat From Tank Per Hour</b></td><td>_heatFromTankPerHour</td><td>Import "heatFromTankPerHour" output data from "Solar water heating surface" component.
+-
+In kWh.</td><td>Goo</td></tr>
+<tr><td><b>Heat From Auxiliary Heater Per Hour</b></td><td>_heatFromAuxiliaryHeaterPerHour</td><td>Import "heatFromAuxiliaryHeaterPerHour" output data from "Solar water heating surface" component.
+-
+In kWh.</td><td>Goo</td></tr>
+<tr><td><b>Pump Energy Per Hour</b></td><td>_pumpEnergyPerHour</td><td>Import "pumpEnergyPerHour" output data from "Solar water heating surface" component.
+-
+In kWh.</td><td>Goo</td></tr>
+<tr><td><b></b></td><td>_________________________</td><td>Script variable PhotovoltaicsPerformanceMetrics</td><td>Goo</td></tr>
+<tr><td><b>Energy Cost Per KWh</b></td><td>energyCostPerKWh_</td><td>The cost of one kilowatt hour in any currency unit (dollar, euro, yuan...)
+-
+If not supplied, 0.15 $/kWh will be used as default value.
+-
+In currency/kWh.</td><td>Goo</td></tr>
+<tr><td><b>Collector Embodied Energy Per M2</b></td><td>collectorEmbodiedEnergyPerM2_</td><td>Energy necessary for product life-cycle of SWH collector per square meter.
+-
+If not supplied default value of 1135 (MJ/m2) for unglazed or glazed flat plate collector will be used.
+-
+In MJ/m2 (megajoules per square meter).</td><td>Goo</td></tr>
+<tr><td><b>Tank Embodied Energy Per L</b></td><td>tankEmbodiedEnergyPerL_</td><td>Energy necessary for product life-cycle of storage tank per liter.
+-
+If not supplied default value of 20 (MJ/l) will be used.
+-
+In MJ/l (megajoules per liter).</td><td>Goo</td></tr>
+<tr><td><b>Collector Embodied CO2Per M2</b></td><td>collectorEmbodiedCO2PerM2_</td><td>Carbon emissions produced during SWH collector's life-cycle per square meter..
+-
+If not supplied default value of 65.5 (kg CO2/m2) for unglazed or glazed flat plate collector will be used.
+-
+In kg CO2/m2 (kilogram of CO2 per square meter).</td><td>Goo</td></tr>
+<tr><td><b>Tank Embodied CO2Per L</b></td><td>tankEmbodiedCO2PerL_</td><td>Carbon emissions produced during storage tank's life-cycle per liter.
+-
+If not supplied default value of 0.14 (kg CO2/l) for unglazed or glazed flat plate collector will be used.
+-
+In kg CO2/l (kilogram of CO2 per liter).</td><td>Goo</td></tr>
+<tr><td><b>Collector Lifetime</b></td><td>collectorLifetime_</td><td>Life expectancy of a SWH collector.
+-
+If not supplied default value of 15 (years) will be used.
+-
+In years.</td><td>Goo</td></tr>
+<tr><td><b>Tank Lifetime</b></td><td>tankLifetime_</td><td>Life expectancy of a storage tank.
+-
+If not supplied default value of 10 (years) will be used.
+-
+In years.</td><td>Goo</td></tr>
+<tr><td><b></b></td><td>_________________________</td><td>Script variable PhotovoltaicsPerformanceMetrics</td><td>Goo</td></tr>
+<tr><td><b>Optimal</b></td><td>optimal_</td><td>Set to "True" to calculate optimal system size and tank storage volume.
+-
+Larger system sizes and tank volumes produce more energy, therefor cover more initial heating load, which results in less usage of auxiliary energy. However, the larger the system size and tank volume, more embodied energy is spent.
+In order to find an optimal system size (total size of all collectors) and storage tank volume, life-cycle energy analysis is used to acheive the maximal net energy saving of the swh system. The net energy saving of swh system is the energy saving in kWh remained after an annualized embodied energy (of collectors or storage tank) has been deducted from the operating energy saving of swh system.
+This method of optimization is superior in comparison with other simulation-based methods due to consideration of all energy performance stages (production, operation, maintenance...).
+-
+This optimization method can be used to account for capital costs, instead of embodied energy. This would account only for operation performance stage.
+In this case capital costs of collector/per square meter, and tank/per liter would need to be inputted into: "collectorEmbodiedEnergyPerM2_" and "tankEmbodiedEnergyPerL_" inputs.
+-
+Optimization analysis based on the law of diminishing marginal utility:
+"A simplified method for optimal design of solar water heating systems based on life-cycle energy analysis", Renewable Energy journal, Yan, Wang, Ma, Shi, Vol 74, Feb 2015
+www.sciencedirect.com/science/article/pii/S0960148114004807</td><td>Goo</td></tr>
+<tr><td><b>Run It</b></td><td>_runIt</td><td>...</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Out</b></td><td>readMe!</td><td>...</td><td>String</td></tr>
+<tr><td><b>Optimal System Size</b></td><td>optimalSystemSize</td><td>Optimal SWH system size (optimal total size of SWH collector's array) for a given SWHsurface's tilt, array and "_heatingLoadHour".
+Minimum SWH system size is 0.15 kWt.
+Input it to "systemSize_" input of "PV SWH system size" component to see how much area it would require.
+-
+To calculate it, set the "optimal_" input to "True".
+-
+In thermal kiloWatts (kWt).</td><td>Goo</td></tr>
+<tr><td><b>Optimal Tank Size</b></td><td>optimalTankSize</td><td>Solar water heating storage tank optimal size (volume). Minimum size is 100 liters.
+To calculate it, set the "optimal_" input to "True".
+-
+In liters.</td><td>Goo</td></tr>
+<tr><td><b></b></td><td>_________________</td><td>Script variable SWHperformanceMetrics</td><td>Goo</td></tr>
+<tr><td><b>SEF</b></td><td>SEF</td><td>Solar Energy Factor - ratio of total energy provided by the swh system to auxiliary plus parasitic (circulation pump) energy for a whole year.
+-
+Unitless.</td><td>Goo</td></tr>
+<tr><td><b>Solar Fraction Per Month</b></td><td>SolarFractionPerMonth</td><td>Solar Fraction (or Solar Savings Fraction) - percentage of the heating load requirement that is provided by a swh system for each month during a year.
+It ranges from 0 to 100%.
+-
+In percent (%).</td><td>Goo</td></tr>
+<tr><td><b>Solar Fraction Per Year</b></td><td>SolarFractionPerYear</td><td>Solar Fraction (or Solar Savings Fraction) - percentage of the total heating load requirement that is provided by a swh system for a whole year.
+It ranges from 0 to 100%.
+-
+In percent (%).</td><td>Goo</td></tr>
+<tr><td><b>Energy Value</b></td><td>energyValue</td><td>Total Energy value generated by SWH system for a whole year in currency unit (dollars, euros, yuans...)</td><td>Goo</td></tr>
+<tr><td><b>EROI</b></td><td>EROI</td><td>Energy Return On Investment - a comparison of the generated electricity to the amount of primary energy used throughout the SWH collector's product life-cycle.
+-
+Unitless.</td><td>Goo</td></tr>
+<tr><td><b></b></td><td>_________________</td><td>Script variable SWHperformanceMetrics</td><td>Goo</td></tr>
+<tr><td><b>Embodied Energy</b></td><td>embodiedEnergy</td><td>Total energy necessary for an entire product life-cycle of SWH collectors and storage tank.
+-
+In GJ (gigajoules).</td><td>Goo</td></tr>
+<tr><td><b>Embodied CO2</b></td><td>embodiedCO2</td><td>Total carbon emissions produced during SWH collector and storage tank life-cycle.
+-
+In tCO2 (tons of CO2).</td><td>Goo</td></tr>
+<tr><td><b>CO2emission Rate</b></td><td>CO2emissionRate</td><td>Also called Embodied GHG emissions or GHGEmissions. An index which shows how effective a SWH system is in terms of global warming.
+It is used in comparison with other fuels and technologies (Hydroelectricity(15), Wind(21), Nuclear(60), Geothermal power(91), Natural gas(577), Oil(893), Coal(955) ...)
+-
+In gCO2/kWh.</td><td>Goo</td></tr>
+<tr><td><b>EPBT</b></td><td>EPBT</td><td>Energy PayBack Time - time it takes for SWH system to produce all the energy used through-out its collector's product life-cycle.
+-
+In years.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

@@ -621,6 +621,54 @@
 <p><a href="../../index.html#Ladybug">Component Index</a> &gt; <a href="../../addons/ladybug.html">Ladybug</a> > 3 | EnvironmentalAnalysis > <b>Sunlight Hours Analysis</b></p>
 </div>
 <h3>This component calculates the number of hours of direct sunlight received by input geometry using sun vectors from the sunPath component.<br>This component can be used to evaluate the number of hours of sunlight received by vegetation in a park or the hours where direct sunlight might make a certain outdoor space comfortable or uncomfortable.<br>It can also be used for coarsely-gridded shadow studies in the Rhino scene .  For finer and more detailed shadow studies with simple input geometry, the Ladybug ShadowStudy component can be used.  For detailed shadow studies with complex geometry, the Honeybee daylight tools are recommended.<br></h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>North</b></td><td>north_</td><td>Input a vector to be used as a true North direction for the sun path or a number between 0 and 360 that represents the degrees off from the y-axis to make North.  The default North direction is set to the Y-axis (0 degrees). In case you have provided rotation value for the North in the Sunpath component, there's no need to provide the same rotation value here. Doing this will give you erroneous results.</td><td>Goo</td></tr>
+<tr><td><b>Geometry</b></td><td>_geometry</td><td>Geometry for which sunlight hours analysis will be conducted.  Geometry must be either a Brep, a Mesh or a list of Breps or Meshes.</td><td>Goo</td></tr>
+<tr><td><b>Context</b></td><td>context_</td><td>Context geometry that could block sunlight to the test _geometry.  Conext geometry must be either a Brep, a Mesh or a list of Breps or Meshes.</td><td>Goo</td></tr>
+<tr><td><b>Grid Size</b></td><td>_gridSize_</td><td>A number in Rhino model units that represents the average size of a grid cell for sunlight hours analysis on the test _geometry.  This value should be smaller than the smallest dimension of the test _geometry for meaningful results.  Note that, the smaller the grid size, the higher the resolution of the analysis and the longer the calculation will take.</td><td>Goo</td></tr>
+<tr><td><b>Dis From Base</b></td><td>_disFromBase</td><td>A number in Rhino model units that represents the offset distance of the test point grid from the input test _geometry.  Usually, the test point grid is offset by a small amount from the test _geometry in order to ensure that sunlight hours analysis is done for the correct side of the test _geometry.  If the resulting testPts of this component are offset to the wrong side of test _geometry, you should use the "Flip" Rhino command on the test _geometry before inputting it to this component.</td><td>Goo</td></tr>
+<tr><td><b>Orientation Study P</b></td><td>orientationStudyP_</td><td>Optional output from the "Orientation Study Parameter" component.</td><td>Goo</td></tr>
+<tr><td><b>Sun Vectors</b></td><td>_sunVectors</td><td>Sun vectors from the sunPath component, which will be used to determine the number of hours of direct sunlight received by the test _geometry.</td><td>Goo</td></tr>
+<tr><td><b>Time Step</b></td><td>_timeStep_</td><td>The number of timesteps per hour used by the sunPath component that generated the sun vectors. This number should be smaller than 60 and divisible by 60. The default is set to 1 such that one ssun vector is generated for each hour.</td><td>Goo</td></tr>
+<tr><td><b></b></td><td>___________________</td><td>...</td><td>Goo</td></tr>
+<tr><td><b>Legend Par</b></td><td>legendPar_</td><td>Optional output from the "Orientation Study Parameter" component.  You can use an Orientation Study input here to answer questions like "What orientation of my building will give me the highest or lowest hours of direct sunlight for my analysis period?"  An Orientation Study will automatically rotate your input _geometry around several times and record the sunlight hours results each time in order to output a list of values for totalSunlightHours and a grafted data stream for sunlightHoursResult.</td><td>Goo</td></tr>
+<tr><td><b>Parallel</b></td><td>parallel_</td><td>Set to "True" to run the sunlight hours analysis using multiple CPUs.  This can dramatically decrease calculation time but can interfere with other intense computational processes that might be running on your machine.</td><td>Goo</td></tr>
+<tr><td><b>Run It</b></td><td>_runIt</td><td>Set to "True" to run the component and perform sunlight hours analysis on the input _geometry.</td><td>Goo</td></tr>
+<tr><td><b>Bake It</b></td><td>bakeIt_</td><td>An integer that tells the component if/how to bake the bojects in the Rhino scene.  The default is set to 0.  Choose from the following options:
+0 (or False) - No geometry will be baked into the Rhino scene (this is the default).
+1 (or True) - The geometry will be baked into the Rhino scene as a colored hatch and Rhino text objects, which facilitates easy export to PDF or vector-editing programs.
+2 - The geometry will be baked into the Rhino scene as colored meshes, which is useful for recording the results of paramteric runs as light Rhino geometry.</td><td>Goo</td></tr>
+<tr><td><b>Working Dir</b></td><td>workingDir_</td><td>Use this input to change the working directory of the sunlight hours analysis on your system. Input here must be a valid file path location on your computer.  The default is set to "C:\Ladybug" and it is from this file location that sunlight hours results are loaded into grasshopper after the analysis is done.</td><td>Goo</td></tr>
+<tr><td><b>Project Name</b></td><td>projectName_</td><td>Use this input to change the project name of the files generated in the working directory.  Input here must be a string without special characters.  If "bakeIt_" is set to "True", the result will be baked into a layer with this project name.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Out</b></td><td>readMe!</td><td>...</td><td>String</td></tr>
+<tr><td><b>Context Mesh</b></td><td>contextMesh</td><td>An uncolored mesh representing the context_ geometry that was input to this component. Connect this output to a "Mesh" grasshopper component to preview this output seperately from the others of this component. Note that this mesh is generated before the analysis is run, allowing you to be sure that the right geometry will be run through the analysis before running this component.</td><td>Goo</td></tr>
+<tr><td><b>Analysis Mesh</b></td><td>analysisMesh</td><td>An uncolored mesh representing the test _geometry that will be analyzed.  Connect this output to a "Mesh" grasshopper component to preview this output seperately from the others of this component. Note that this mesh is generated before the analysis is run, allowing you to be sure that the right geometry will be run through the analysis before running this component.</td><td>Goo</td></tr>
+<tr><td><b>Test Pts</b></td><td>testPts</td><td>The grid of test points on the test _geometry that will be used to perform the sunlight hours analysis.  Note that these points are generated before the analysis is run, allowing you to preview the resolution of the result before you run the component.</td><td>Goo</td></tr>
+<tr><td><b>Test Vec</b></td><td>testVec</td><td>Vectors for each of the test points on the test _geometry, which indicate the direction for which sunlight hours analysis is performed.  Hook this and the test points up to a Grasshopper "Vector Display" component to see how analysis is performed on the test _geometry.</td><td>Goo</td></tr>
+<tr><td><b></b></td><td>_____________________</td><td>...</td><td>Goo</td></tr>
+<tr><td><b>Sunlight Hours Result</b></td><td>sunlightHoursResult</td><td>The number of hours of direct sunlight received by each of the test points of the input test _geometry.  Note that is is the number of hours out of the total number of connected _sunVectors.</td><td>Goo</td></tr>
+<tr><td><b>Sunlight Hours Mesh</b></td><td>sunlightHoursMesh</td><td>A colored mesh of the test _geometry representing the hours of direct sunlight received by this input _geometry for the input sunVectors.</td><td>Goo</td></tr>
+<tr><td><b>Sunlight Hours Legend</b></td><td>sunlightHoursLegend</td><td>A legend for the sunlight hours study showing the number of hours that correspond to the colors of the sunlightHoursMesh. Connect this output to a grasshopper "Geo" component in order to preview the legend separately in the Rhino scene.</td><td>Goo</td></tr>
+<tr><td><b>Legend Base Pt</b></td><td>legendBasePt</td><td>The legend base point, which can be used to move the legend in relation to the sunlight hours mesh with the grasshopper "move" component.</td><td>Goo</td></tr>
+<tr><td><b>Total Sunlight Hours</b></td><td>totalSunlightHours</td><td>The average number of hours of direct sunlight received by the test _geometry.</td><td>Goo</td></tr>
+<tr><td><b>Sun Is Visible</b></td><td>sunIsVisible</td><td>A grafted data stream for each test point with a "1" for each hour of the sunVectors that the sun is visible and a "0" for each hour of the sunVectors when the sun is blocked.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

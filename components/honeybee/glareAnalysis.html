@@ -915,6 +915,34 @@
 <p><a href="../../index.html#Honeybee">Component Index</a> &gt; <a href="../../addons/honeybee.html">Honeybee</a> > 04 | Daylight | Daylight > <b>Glare Analysis</b></p>
 </div>
 <h3>Glare Analysis<br>This component is using evalglare for glare calculations. Evalgalare is developed by J. Wienold at Fraunhofer ISE.<br>http://www.ise.fraunhofer.de/en/<br>Check this link for more information about glare analysis. Thanks to Christoph Reinhart, Shelby Doyle, J Alstan Jakubiec and Rashida Mogri.<br>http://web.mit.edu/tito_/www/Projects/Glare/GlareRecommendationsForPractice.html<br></h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>HDRImage Path</b></td><td>_HDRImagePath</td><td>Path to an HDR image file</td><td>Goo</td></tr>
+<tr><td><b>Task Position UV</b></td><td>taskPositionUV_</td><td>Task position in x and y coordinates</td><td>Goo</td></tr>
+<tr><td><b>Task Position Angle</b></td><td>taskPositionAngle_</td><td>Task position opening angle in degrees</td><td>Goo</td></tr>
+<tr><td><b>Run It</b></td><td>_runIt</td><td>Set to True to run the analysis</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Read Me</b></td><td>readMe</td><td>...</td><td>Goo</td></tr>
+<tr><td><b>Glare Check Image</b></td><td>glareCheckImage</td><td>Path to HDR image of the glare study</td><td>Goo</td></tr>
+<tr><td><b>DGP</b></td><td>DGP</td><td>Daylight glare probability.</td><td>Goo</td></tr>
+<tr><td><b>DGI</b></td><td>DGI</td><td>Daylight glare index</td><td>Goo</td></tr>
+<tr><td><b>Glare Comfort Range</b></td><td>glareComfortRange</td><td>Comfort Ranges. Imperceptible Glare [0.35 ; DGP], Perceptible Glare [0.4 ; DGP ;= 0.35], Disturbing Glare [0.45 ; DGP ;= 0.4], Intolerable Glare [DGP ;= 0.45]</td><td>Goo</td></tr>
+<tr><td><b>Image With Task Area</b></td><td>imageWithTaskArea</td><td>Path to HDR image with task area marked with blue circle</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

@@ -915,6 +915,31 @@
 <p><a href="../../index.html#Honeybee">Component Index</a> &gt; <a href="../../addons/honeybee.html">Honeybee</a> > 01 | Daylight | Material > <b>Radiance Trans Material By Color</b></p>
 </div>
 <h3>Radiance Trans Material<br>This component is useful to create translucent materials. Many thanks to David Mead for his slides at:<br>http://radiance-online.org/community/workshops/2010-freiburg/PDF/DavidMead.pdf<br></h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Material Name</b></td><td>_materialName</td><td>Unique name for this material</td><td>Goo</td></tr>
+<tr><td><b>Color</b></td><td>_color</td><td>Material color</td><td>Goo</td></tr>
+<tr><td><b>Specular Reflection</b></td><td>_specularReflection</td><td>Reflected specularity; Matte = min 0, Uncoated Glass ~ .06, Satin = suggested max 0.07</td><td>Goo</td></tr>
+<tr><td><b>Diffuse Transmission</b></td><td>_diffuseTransmission</td><td>Diffuse Transmission; Opaque = 0, Transparent = 1</td><td>Goo</td></tr>
+<tr><td><b>Specular Transmission</b></td><td>_specularTransmission</td><td>Specular Transmission; Diffuse = 0, Clear = 1</td><td>Goo</td></tr>
+<tr><td><b>Roughness</b></td><td>_roughness_</td><td>Specular Transmission; Diffuse = 0, Clear = 1</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Trans Material</b></td><td>transMaterial</td><td>Radiance Material Definition</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

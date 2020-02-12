@@ -621,6 +621,32 @@
 <p><a href="../../index.html#Ladybug">Component Index</a> &gt; <a href="../../addons/ladybug.html">Ladybug</a> > 1 | AnalyzeWeatherData > <b>Clothing Function</b></p>
 </div>
 <h3>Use this component to generate a list of values representing a clothing schedule based on outdoor air temperature.  This schedule can be plugged into the clothingLevel_ input of the PMV Comfort Calculator component.<br>By default, this function used to derive clothing levels based on outside temperature was developed by Schiavon, Stefano and implemented on the CBE comfort tool (http://smap.cbe.berkeley.edu/comforttool/).<br>This version of the component allows users to change the maximum and minimum clothing levels, which Schiavon set at 1 and 0.46 respectively, and the temperatures at which these clothing levels occur, which Schiavon set at 26C and -5 C respectively.<br>Note that Schiavon did not endorse the changing of these values but they are provided here to allow users an additional level of freedom.<br></h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Outdoor Air Temperature</b></td><td>_outdoorAirTemperature</td><td>A number or list of numbers representing the dry bulb temperature of the air in degrees Celcius.  This input can also accept the direct output of dryBulbTemperature from the Import EPW component and this is recommended for hourly comfort analysis.</td><td>Goo</td></tr>
+<tr><td><b>Analysis Period</b></td><td>analysisPeriod_</td><td>If you have hooked up annual temperatures from the importEPW component, use this input to</td><td>Goo</td></tr>
+<tr><td><b>Max Clo</b></td><td>maxClo_</td><td>An optional number representing the maximum clo value that someone will wear on the coldest days of the outdoorAirTemperature input.  The default is set to 1 clo, which corresponds to a 3-piece suit.</td><td>Goo</td></tr>
+<tr><td><b>Max Clo Temp</b></td><td>maxCloTemp_</td><td>An optional number representing the temperature at which the maxClo_ value will be applied.  The default is set to -5C, which means that any lower temperature will get the maxClo_ value.</td><td>Goo</td></tr>
+<tr><td><b>Min Clo</b></td><td>minClo_</td><td>An optional number representing the minimum clo value that someone will wear on the hotest days of the outdoorAirTemperature input.  The default is set to 0.46 clo, which corresponds to shorts and a T-shirt.</td><td>Goo</td></tr>
+<tr><td><b>Min Clo Temp</b></td><td>minCloTemp_</td><td>An optional number representing the temperature at which the minClo_ value will be applied.  The default is set to 26C, which means that any higher temperature will get the minClo_ value.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Out</b></td><td>readMe!</td><td>...</td><td>String</td></tr>
+<tr><td><b>Clo Values</b></td><td>cloValues</td><td>A list of numbers representing the clothing that would be worn at each hour of the _outdoorAirTemperature.  Note that, if the component senses that you have hooked up a stream of hourly data, the clothing levels will alternate on a 12-hour basis.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

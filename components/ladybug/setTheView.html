@@ -621,6 +621,19 @@
 <p><a href="../../index.html#Ladybug">Component Index</a> &gt; <a href="../../addons/ladybug.html">Ladybug</a> > 5 | Extra > <b>Set the View</b></p>
 </div>
 <h3>Use this component to set the camera location and direction for the Rhino "Perspective" viewport.<br>Here is the video that shows how it works: http://www.youtube.com/watch?v=7Mmhz867zY8<br></h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Camera Location</b></td><td>_cameraLocation</td><td>A point representing the location of the viewport camera.</td><td>Goo</td></tr>
+<tr><td><b>Camera Direction</b></td><td>_cameraDirection</td><td>A vector that represents the direction that the viewport camera should face.</td><td>Goo</td></tr>
+<tr><td><b>Uv Look Around</b></td><td>uvLookAround_</td><td>Optional UV coordinates to tilt the viewport camera off from from the input _cameraDirection. Values for UV coordinates must be between -1 and 1 and these correspond to a tilt of 180 degrees in either direction.  It is recommended that you use a Grasshopper sliderMD comonent for input.</td><td>Goo</td></tr>
+<tr><td><b>Lens Length</b></td><td>lensLength_</td><td>An optional float number that sets the lens length of the viewport camera.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

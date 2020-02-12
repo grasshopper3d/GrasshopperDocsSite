@@ -621,6 +621,100 @@
 <p><a href="../../index.html#Ladybug">Component Index</a> &gt; <a href="../../addons/ladybug.html">Ladybug</a> > 4 | Renewables > <b>Photovoltaics Surface</b></p>
 </div>
 <h3>Use this component to calculate amount of electrical energy that can be produced by a surface<br>if a certain percentage of it is covered with Photovoltaics.<br>Component based on NREL PVWatts v1 fixed tilt calculator for crystalline silicon (c-Si) and thin-film photovoltaics.<br>Sources:<br>http://www.nrel.gov/docs/fy14osti/60272.pdf<br>https://pvpmc.sandia.gov<br></h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Epw File</b></td><td>_epwFile</td><td>Input .epw file path by using the "File Path" parameter, or Ladybug's "Open EPW And STAT Weather Files" component.</td><td>Goo</td></tr>
+<tr><td><b>PVsurface</b></td><td>_PVsurface</td><td>- Input planar Grasshopper/Rhino Surface (not a polysurface) on which the PV modules will be applied. If you have a polysurface, explode it (using "Deconstruct Brep" component) and then feed its Faces(F) output to _PVsurface. Surface normal should be faced towards the sun.
+- Or create the Surface based on initial PV system size by using "PV SWH system size" component.</td><td>Goo</td></tr>
+<tr><td><b>PVsurface Percent</b></td><td>PVsurfacePercent_</td><td>The percentage of surface which will be used for PV modules (range 0-100).
+-
+Some countries and states, have local codes which limit the portion of the roof, which can be covered by crystalline silicon modules. For example, this may include having setbacks(distances) of approximatelly 90cm from side and top edges of a roof, as a fire safety regulation.
+-
+If not supplied, default value of 100 (all surface area will be covered in PV modules) is used.
+-
+In percent (%).</td><td>Goo</td></tr>
+<tr><td><b></b></td><td>_________________</td><td>Script variable PhotovoltaicsSurface</td><td>Goo</td></tr>
+<tr><td><b>DCto ACderate Factor</b></td><td>DCtoACderateFactor_</td><td>Factor which accounts for various locations and instances in a PV system where power is lost from DC system nameplate to AC power. It ranges from 0 to 1.
+It can be calculated with Ladybug's "DC to AC derate factor" component.
+-
+If not supplied, default value of 0.85 will be used.</td><td>Goo</td></tr>
+<tr><td><b>PVmodule Settings</b></td><td>PVmoduleSettings_</td><td>A list of PV module settings. Use the "Simplified Photovoltaics Module" or "Import Sandia Photovoltaics Module" or "Import CEC Photovoltaics Module" components to generate them.
+-
+If not supplied, the following PV module settings will be used by default:
+- module material: crystalline silicon (c-Si)
+- moduleType: Close (flush) roof mount
+- moduleEfficiency: 15 %
+- temperatureCoefficient: -0.5 %/C
+- moduleActiveAreaPercent: 90 %</td><td>Goo</td></tr>
+<tr><td><b>North</b></td><td>north_</td><td>Input a vector to be used as a true North direction, or a number between 0 and 360 that represents the clockwise degrees off from the Y-axis.
+-
+If not supplied, default North direction will be set to the Y-axis (0 degrees).</td><td>Goo</td></tr>
+<tr><td><b>Albedo</b></td><td>albedo_</td><td>A list of 8767 (with header) or 8760 (without the header) albedo values for each hour during a year.
+Albedo (or Reflection coefficient) is an average ratio of the global incident solar radiation reflected from the area surrounding the PV surface.
+It ranges from 0 to 1.
+-
+It depends on the time of the year/day, surface type, temperature, vegetation, presence of water, ice and snow etc.
+-
+If no list supplied, default value of 0.20 will be used, corrected(increased) for the presence of snow (if any).
+-
+Unitless.</td><td>Goo</td></tr>
+<tr><td><b></b></td><td>_________________</td><td>Script variable PhotovoltaicsSurface</td><td>Goo</td></tr>
+<tr><td><b>Annual Hourly Data</b></td><td>annualHourlyData_</td><td>An optional list of hourly data from Ladybug's "Import epw" component (e.g. dryBulbTemperature), which will be used for "conditionalStatement_".</td><td>Goo</td></tr>
+<tr><td><b>Conditional Statement</b></td><td>conditionalStatement_</td><td>This input allows users to calculate the Photovoltaics surface component results only for those annualHourlyData_ values which fit specific conditions or criteria. To use this input correctly, hourly data, such as dryBulbTemperature or windSpeed, must be plugged into the "annualHourlyData_" input. The conditional statement input here should be a valid condition statement in Python, such as "a;25" or "b;3" (without the quotation marks).
+conditionalStatement_ accepts "and" and "or" operators. To visualize the hourly data, English letters should be used as variables, and each letter alphabetically corresponds to each of the lists (in their respective order): "a" always represents the 1st list, "b" always represents the 2nd list, etc.
+-
+For example, if you have an hourly dryBulbTemperature connected as the first list, and windSpeed connected as the second list (both to the annualHourlyData_ input), and you want to plot the data for the time period when temperature is between 18C and 23C, and windSpeed is larger than 3m/s, the conditionalStatement_ should be written as "18;a;23 and b;3" (without the quotation marks).</td><td>Goo</td></tr>
+<tr><td><b></b></td><td>_________________</td><td>Script input ______________________.</td><td>Goo</td></tr>
+<tr><td><b>Run It</b></td><td>_runIt</td><td>...</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Out</b></td><td>readMe!</td><td>...</td><td>String</td></tr>
+<tr><td><b></b></td><td>_______________________</td><td>Script variable Python</td><td>Goo</td></tr>
+<tr><td><b>ACenergy Per Hour</b></td><td>ACenergyPerHour</td><td>AC power output for each hour during a year.
+-
+In kWh.</td><td>Goo</td></tr>
+<tr><td><b>ACenergy Per Year</b></td><td>ACenergyPerYear</td><td>Total AC power output for a whole year.
+-
+In kWh.</td><td>Goo</td></tr>
+<tr><td><b>Average Daily ACenergy Per Year</b></td><td>averageDailyACenergyPerYear</td><td>An average AC power output per day for a whole year.
+-
+In kWh/day.</td><td>Goo</td></tr>
+<tr><td><b></b></td><td>_______________________</td><td>Script variable Python</td><td>Goo</td></tr>
+<tr><td><b>DCenergy Per Hour</b></td><td>DCenergyPerHour</td><td>DC power output of the PV array for each hour during a year.
+-
+In kWh.</td><td>Goo</td></tr>
+<tr><td><b>Total Radiation Per Hour</b></td><td>totalRadiationPerHour</td><td>Total Incident POA (Plane of array) irradiance for each hour during a year.
+-
+In kWh/m2.</td><td>Goo</td></tr>
+<tr><td><b>Cell Temperature Per Hour</b></td><td>cellTemperaturePerHour</td><td>Cell temperature for each hour during year.
+-
+In C.</td><td>Goo</td></tr>
+<tr><td><b></b></td><td>_______________________</td><td>Script variable PhotovoltaicsSurface</td><td>Goo</td></tr>
+<tr><td><b>PVsurface Tilt Angle</b></td><td>PVsurfaceTiltAngle</td><td>The angle from horizontal of the inclination of the PVsurface. Example: 0 = horizontal, 90 = vertical.
+It ranges from 0-180.
+-
+In degrees.</td><td>Goo</td></tr>
+<tr><td><b>PVsurface Azimuth Angle</b></td><td>PVsurfaceAzimuthAngle</td><td>The orientation angle (clockwise from the true north) of the PVsurface normal vector.
+It ranges from 0-360.
+-
+In degrees.</td><td>Goo</td></tr>
+<tr><td><b>System Size</b></td><td>systemSize</td><td>DC rating of the PV system.
+-
+In kW.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

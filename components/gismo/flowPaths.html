@@ -231,6 +231,58 @@
 <p><a href="../../index.html#Gismo">Component Index</a> &gt; <a href="../../addons/gismo.html">Gismo</a> > 2 | Terrain > <b>FlowPaths</b></p>
 </div>
 <h3>Use this component to perform the analysis of gravitational water flow.<br>It can be a useful indicator of drainage analysis of a building, terrain, landscape or any other sort of geometry.<br>-<br>Component based on:<br>"Finding the downhill direction vector when given a plane defined by a normal and a point", stackoverflow.com topic by Zach Helms, 2016<br>http://stackoverflow.com/q/14369233/3137724<br>-<br>Provided by Gismo 0.0.3</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Geometry</b></td><td>_geometry</td><td>A surface and/or polysurface and/or mesh for which you would like to conduct the flow path analysis. That can be a building, terrain, landscape or any other sort of geometry.</td><td>Goo</td></tr>
+<tr><td><b>Num Of Initial Pts</b></td><td>numOfInitialPts_</td><td>Number of initial points.
+Each flowpath has a starting point - a point where a rain hit the ground. numOfInitialPts_ input represents the number of these points, therefor representing the number of flowpaths.
+-
+If nothing supplied, numOfInitialPts_ input will be set to 100 (initial points and flowpaths)</td><td>Goo</td></tr>
+<tr><td><b>Initial Pts Spread</b></td><td>initialPtsSpread_</td><td>Initial points spread type - choose one of the two types:
+-
+0 - Rectangular grid (flow paths will start as a regular grid of points)
+1 - Random (flow paths will start as a random group of points)
+-
+If nothing supplied, initialPtsSpread_ input will be set to 1 (Random).</td><td>Goo</td></tr>
+<tr><td><b>Step Size</b></td><td>stepSize_</td><td>Step size of each of the flow paths.
+Step size can singificantly affect the final flow paths disposition. For smaller scale objects, it is advisable to use smaller step sizes (up to 1). For larger scale objects (terrains with sparse resolution), step size can be increased to more than 1.
+-
+If nothing supplied, stepSize_ input will be set to 1 (Rhino documents units: m, ft, in...).
+-
+In Rhino document units.</td><td>Goo</td></tr>
+<tr><td><b>Flow Paths Type</b></td><td>flowPathsType_</td><td>Choose one of the two flow path types:
+-
+0 - Polyline
+1 - Curves
+-
+If nothing supplied, flowPathsType_ input will be set to 0 (Polylines).</td><td>Goo</td></tr>
+<tr><td><b></b></td><td>_____________</td><td>Script variable TerrainAnalysis</td><td>Goo</td></tr>
+<tr><td><b>Bake It</b></td><td>bakeIt_</td><td>Set to "True" to bake the flowpaths geometry into the Rhino scene.
+-
+If not supplied default value "False" will be used.</td><td>Goo</td></tr>
+<tr><td><b>Run It</b></td><td>_runIt</td><td>...</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Out</b></td><td>readMe!</td><td>...</td><td>String</td></tr>
+<tr><td><b>Flow Paths</b></td><td>flowPaths</td><td>A list of polylines/curves representing the flow paths and directions on the given _geometry input.</td><td>Goo</td></tr>
+<tr><td><b>Title</b></td><td>title</td><td>Title geometry with information about the chosen inputs</td><td>Goo</td></tr>
+<tr><td><b>Title Origin</b></td><td>titleOrigin</td><td>Title base point, which can be used to move the "title" geometry with grasshopper's "Move" component.
+-
+Connect this output to a Grasshopper's "Point" parameter in order to preview the point in the Rhino scene.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

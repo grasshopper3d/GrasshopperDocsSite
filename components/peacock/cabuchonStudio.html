@@ -548,6 +548,41 @@ Workbench
 <p><a href="../../index.html#Peacock">Component Index</a> &gt; <a href="../../addons/peacock.html">Peacock</a> > Gems > <b>Cabuchon</b></p>
 </div>
 <h3>Creator of cabuchons</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Plane</b></td><td>Pln</td><td>Base plane of cabochon</td><td>Plane</td></tr>
+<tr><td><b>Type</b></td><td>Type</td><td>Type of cabochon. Plug a ValueList component to AutoList function.
+0 =; Round
+1 =; Oval
+2 =; Rounded square
+3 =; Marquese</td><td>Integer</td></tr>
+<tr><td><b>Cut</b></td><td>Cut</td><td>Cut of cabochon. Plug a ValueList component to AutoList function.
+0 =; Common
+1 =; Double
+2 =; Bevel
+3 =; Open</td><td>Integer</td></tr>
+<tr><td><b>Lenght</b></td><td>L</td><td>Lenght on X axis of given plane</td><td>Number</td></tr>
+<tr><td><b>Width</b></td><td>W</td><td>Width on Y axis of given plane</td><td>Number</td></tr>
+<tr><td><b>Height</b></td><td>H</td><td>Height on Z axis of given plane</td><td>Number</td></tr>
+<tr><td><b>Custom shape</b></td><td>Crv</td><td>Optional closed planar curve to custom shape</td><td>Curve</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Cabuchon</b></td><td>G</td><td>Resulting cabuchon</td><td>Brep</td></tr>
+<tr><td><b>Girdle curve</b></td><td>C</td><td>Girdle of cabuchon</td><td>Curve</td></tr>
+</tbody>
+</table>
+
 
   </div>
 

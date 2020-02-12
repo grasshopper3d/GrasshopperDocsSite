@@ -143,6 +143,37 @@ Wallacei Utilities
 <p><a href="../../index.html#Wallacei">Component Index</a> &gt; <a href="../../addons/wallacei.html">Wallacei</a> > Wallacei Analytics > <b>Paralel Coordinate Plot</b></p>
 </div>
 <h3>Evaluates the fitness values for each solution by comparing each fitness criteria to one another in the form of a parallel coordinate plot.</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Base Plane</b></td><td>Plane</td><td>Set the origin plane of your graph. If no input provided, graph will be located at World 0,0,0</td><td>Plane</td></tr>
+<tr><td><b>Size of Chart</b></td><td>Scale</td><td>Input a value to change the size of the chart</td><td>Goo</td></tr>
+<tr><td><b>Fitness Values Per Branch</b></td><td>Fitness Values</td><td>Input the Fitness Values extracted from the evolutionary algorithm. The fitness values for each objective must be structures within its own branch.</td><td>Goo</td></tr>
+<tr><td><b>How Many Individuals per Generation</b></td><td>Generation Size?</td><td>How many individuals are there in a single generation?</td><td>Goo</td></tr>
+<tr><td><b>...</b></td><td>-- -- -- -- -- -- -- -- -- --</td><td>Represents a cluster input parameter</td><td>Goo</td></tr>
+<tr><td><b>Names of Fitness Criteria</b></td><td>FC Names</td><td>Input the name of each fitness criteria as a single list</td><td>Goo</td></tr>
+<tr><td><b>...</b></td><td>-- -- -- -- -- -- -- -- -- --</td><td>Represents a cluster input parameter</td><td>Goo</td></tr>
+<tr><td><b>Specify Which Fitness Criteria to Inverse</b></td><td>Inverse Fitness Criteria</td><td>Input booleans as list. Number of Booleans should corespond to the number of fitness criteria. 0 = dont inverse // 1 = inverse</td><td>Goo</td></tr>
+<tr><td><b>Change Order of Fitness Criteria</b></td><td>Order of Fitness Criteria</td><td>Input list of integers (1 to 5) in the order you want to view the fitness criteria</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Read me</b></td><td>Read me</td><td>Information about the component</td><td>String</td></tr>
+<tr><td><b>Curve Representing each Solution</b></td><td>Solution Curves</td><td>Curves representing the relationship between the criteria of each solution</td><td>Curve</td></tr>
+<tr><td><b>Parallel Coordinate Analysis</b></td><td>Analysis Data (PC)</td><td>Outputs data for the Wallacei_Parallel Coordinate Plot Analysis' component</td><td>Goo</td></tr>
+<tr><td><b>Graph Base</b></td><td>Graph Base</td><td>Connect to 'Geo' paramater to display the graph background</td><td>Goo</td></tr>
+</tbody>
+</table>
+
 
   </div>
 
