@@ -2,7 +2,7 @@
 <html lang="en" xmlns:og="http://ogp.me/ns#">
 <head data-layout-view="wide">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Outdoor Comfort Calculator - Grasshopper Component Reference</title>
+<title>Outdoor Comfort Calculator - Ladybug - Grasshopper Component Reference</title>
 <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 <link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
 
@@ -10,7 +10,7 @@
 <meta name="title" content="Grasshopper Component Reference" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://rhino.github.io/" />
-<meta property="og:title" content="Outdoor Comfort Calculator - Grasshopper Component Reference" />
+<meta property="og:title" content="Outdoor Comfort Calculator - Ladybug - Grasshopper Component Reference" />
 
 <meta property="wiki-page" content="GH Ladybug Outdoor_Comfort_Calculator.md" />
 
@@ -616,9 +616,12 @@
 <a href="https://www.food4rhino.com/app/ladybug-tools">Download</a>
 </div>
 
-<div>
+<div class="addon-header">
 <h1><div class="ghsprite" style="background: url('../../icons/ladybug.png') -48px -192px" ></div> Outdoor Comfort Calculator</h1>
-<p><a href="../../index.html#Ladybug">Component Index</a> &gt; <a href="../../addons/ladybug.html">Ladybug</a> > 1 | AnalyzeWeatherData > <b>Outdoor Comfort Calculator</b></p>
+<div class="breadcrumb">
+ <a href="../../index.html#Ladybug">Component Index</a>
+  <a href="../../addons/ladybug.html">Ladybug</a><a href="#" class="breadcrumb-nolink">1 | AnalyzeWeatherData</a><a href="#" class="breadcrumb-nolink">Outdoor Comfort Calculator</a>
+</div>
 </div>
 <h3>Use this component to calculate the Universal Thermal Climate Index (UTCI) for a set of input climate conditions.  Perhaps the most familiar application of Univeral Thermal Climate Index (UTCI) is the temperature given by TV weathermen and women when they say that, "even though the dry bulb temperature outside is a certain value, the temperature actually "feels like" something higher or lower."<br>UTCI is this temperature of what the weather "feels like" and it takes into account the radiant temperature (sometimes including solar radiation), relative humidity, and wind speed.  UTCI uses these variables in a human energy balance model to give a temperature value that is indicative of the heat stress or cold stress felt by a human body in the outdoors.<br>A UTCI between 9 and 26 degrees Celcius indicates no thermal stress or comfortable conditions outdoors.<br>A UTCI between 26 and 28 degrees Celcius indicates slight heat stress (comfortable for short periods of time). Between 28 and 32 degrees, UTCI indicates moderate heat stress (hot but not dangerous).  Between 32 and 38 degrees, UTCI indicates strong heat stress (dangerous beyond short periods of time). Above 38, UTCI indicates very strong to extreme heat stress (very dangerous).<br>A UTCI between 0 and 9 degrees Celcius indicates slight cold stress (comfortable for short periods of time). Between 0 and -13 degrees, UTCI indicates moderate cold stress (cold but not dangerous).  Between -13 and -27 degrees, UTCI indicates strong cold stress (dangerous beyond short periods of time).  Below -27, UTCI indicates very stong to extreme cold stress (very dangerous).<br>_<br>UTCI is result of the world's leading comfort specailists' attempt to make an interational standard of outdoor temperature sensation that fills the follwoing requirements:<br>1)	Thermo-physiological significance in the whole range of heat exchange conditions of existing thermal environments<br>2)	Valid in all climates, seasons, and scales<br>3)	Useful for key applications in human biometeorology.<br>_<br>The code that makes this component possible is a Python version of the original Fortran code for calculating UTCI.  Information on UTCI and the original Fortran code can be found here: http://www.utci.org/.<br></h3>
 <h2>Inputs</h2>

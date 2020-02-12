@@ -2,7 +2,7 @@
 <html lang="en" xmlns:og="http://ogp.me/ns#">
 <head data-layout-view="wide">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>OSM 3D Roof - Grasshopper Component Reference</title>
+<title>OSM 3D Roof - Gismo - Grasshopper Component Reference</title>
 <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 <link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
 
@@ -10,7 +10,7 @@
 <meta name="title" content="Grasshopper Component Reference" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://rhino.github.io/" />
-<meta property="og:title" content="OSM 3D Roof - Grasshopper Component Reference" />
+<meta property="og:title" content="OSM 3D Roof - Gismo - Grasshopper Component Reference" />
 
 <meta property="wiki-page" content="GH Gismo OSM_3D_Roof.md" />
 
@@ -226,9 +226,12 @@
 <a href="https://github.com/stgeorges/gismo/">Download</a>
 </div>
 
-<div>
+<div class="addon-header">
 <h1><div class="ghsprite" style="background: url('../../icons/gismo.png') -96px -24px" ></div> OSM 3D Roof</h1>
-<p><a href="../../index.html#Gismo">Component Index</a> &gt; <a href="../../addons/gismo.html">Gismo</a> > 1 | OpenStreetMap > <b>OSM3Droof</b></p>
+<div class="breadcrumb">
+ <a href="../../index.html#Gismo">Component Index</a>
+  <a href="../../addons/gismo.html">Gismo</a><a href="#" class="breadcrumb-nolink">1 | OpenStreetMap</a><a href="#" class="breadcrumb-nolink">OSM3Droof</a>
+</div>
 </div>
 <h3>Use this component to create 3d roofs geometry.<br>They can be created in two ways:<br>1) If there is a valid value (not equal to "") for the "roof:shape=hipped" and "roof:angle" key, then the 3d roof will be created according to this angle.<br>2) If this value is lacking (equal to ""), then pitched, hipped roof can be created with random angle. Or parapet wall for flat roof, with random height. This requires a domain to be added to the "randomRange_" input.<br>If neither of these two ways are fulfilled, then no creation of 3d roof will be performed.<br>-<br>Component is experimental! In some cases the pitched roof may fail to be created, or it may create an invalid roof geometry!<br>-<br>Provided by Gismo 0.0.3</h3>
 <h2>Inputs</h2>

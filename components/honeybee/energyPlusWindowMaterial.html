@@ -2,7 +2,7 @@
 <html lang="en" xmlns:og="http://ogp.me/ns#">
 <head data-layout-view="wide">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Energy Plus Window Material - Grasshopper Component Reference</title>
+<title>Energy Plus Window Material - Honeybee - Grasshopper Component Reference</title>
 <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 <link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
 
@@ -10,7 +10,7 @@
 <meta name="title" content="Grasshopper Component Reference" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://rhino.github.io/" />
-<meta property="og:title" content="Energy Plus Window Material - Grasshopper Component Reference" />
+<meta property="og:title" content="Energy Plus Window Material - Honeybee - Grasshopper Component Reference" />
 
 <meta property="wiki-page" content="GH Honeybee Energy_Plus_Window_Material.md" />
 
@@ -910,9 +910,12 @@
 <a href="https://www.food4rhino.com/app/ladybug-tools">Download</a>
 </div>
 
-<div>
+<div class="addon-header">
 <h1><div class="ghsprite" style="background: url('../../icons/honeybee.png') -168px -144px" ></div> Energy Plus Window Material</h1>
-<p><a href="../../index.html#Honeybee">Component Index</a> &gt; <a href="../../addons/honeybee.html">Honeybee</a> > 06 | Energy | Material | Construction > <b>Energy Plus Window Material</b></p>
+<div class="breadcrumb">
+ <a href="../../index.html#Honeybee">Component Index</a>
+  <a href="../../addons/honeybee.html">Honeybee</a><a href="#" class="breadcrumb-nolink">06 | Energy | Material | Construction</a><a href="#" class="breadcrumb-nolink">Energy Plus Window Material</a>
+</div>
 </div>
 <h3>Use this component to create a custom window material that has no mass, which can be plugged into the "Honeybee_EnergyPlus Construction" component.<br>It is important to note that this component creates a material with no mass and that is meant to represent an entire window element (including all panes of glass and the frame).  Because of this, when you plug this material into the "Honeybee_EnergyPlys Construction" component, it is important that this is the only material connected.  Otherwise, E+ will crash when you try to run it.<br>Also because of this, the accuracy of this material is not as great as a material that has mass.  However, this component is very useful if you only have a U-value, SHGC, and VT for a window construction and no other information.<br>If you want to create a material that accounts for mass, you should use the "Honeybee_EnergyPlus Glass Material" component and the "Honeybee_EnergyPlus Window Air Gap" to create a window construction with one or multiple panes.<br></h3>
 <h2>Inputs</h2>

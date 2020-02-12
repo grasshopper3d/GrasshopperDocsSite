@@ -2,7 +2,7 @@
 <html lang="en" xmlns:og="http://ogp.me/ns#">
 <head data-layout-view="wide">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Adaptive Comfort Chart - Grasshopper Component Reference</title>
+<title>Adaptive Comfort Chart - Ladybug - Grasshopper Component Reference</title>
 <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 <link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
 
@@ -10,7 +10,7 @@
 <meta name="title" content="Grasshopper Component Reference" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://rhino.github.io/" />
-<meta property="og:title" content="Adaptive Comfort Chart - Grasshopper Component Reference" />
+<meta property="og:title" content="Adaptive Comfort Chart - Ladybug - Grasshopper Component Reference" />
 
 <meta property="wiki-page" content="GH Ladybug Adaptive_Comfort_Chart.md" />
 
@@ -616,9 +616,12 @@
 <a href="https://www.food4rhino.com/app/ladybug-tools">Download</a>
 </div>
 
-<div>
+<div class="addon-header">
 <h1><div class="ghsprite" style="background: url('../../icons/ladybug.png') -96px 0px" ></div> Adaptive Comfort Chart</h1>
-<p><a href="../../index.html#Ladybug">Component Index</a> &gt; <a href="../../addons/ladybug.html">Ladybug</a> > 2 | VisualizeWeatherData > <b>Adaptive Comfort Chart</b></p>
+<div class="breadcrumb">
+ <a href="../../index.html#Ladybug">Component Index</a>
+  <a href="../../addons/ladybug.html">Ladybug</a><a href="#" class="breadcrumb-nolink">2 | VisualizeWeatherData</a><a href="#" class="breadcrumb-nolink">Adaptive Comfort Chart</a>
+</div>
 </div>
 <h3>Use this component to calculate the adaptive comfort for a given set of input conditions.<br>This component will output a stream of 0's and 1's indicating whether certain conditions are comfortable given the prevailing mean monthly temperature that ocuppants tend to adapt themselves to.<br>This component will also output a series of interger numbers that indicate the following: -1 = The average monthly temperature is too extreme for the adaptive model. 0 = The input conditions are too cold for occupants. 1 = The input conditions are comfortable for occupants. 2 = The input conditions are too hot for occupants.<br>Lastly, this component outputs the percent of time comfortable, hot, cold and monthly extreme as well as a lit of numbers indicating the upper temperature of comfort and lower temperature of comfort.<br>The adaptive comfort model was created in response to the shortcomings of the PMV model that became apparent when it was applied to buildings without air conditioning.  Namely, the PMV model was over-estimating the discomfort of occupants in warm conditions of nautrally ventilated buildings.<br>Accordingly, the adaptive comfort model was built on the work of hundreds of field studies in which people in naturally ventilated buildings were asked asked about how comfortable they were.<br>Results showed that users tended to adapt themselves to the monthly mean temperature and would be comfortable in buildings so long as the building temperature remained around a value close to that monthly mean.  This situation held true so long as the monthly mean temperature remained above 10 C and below 33.5 C.<br>The comfort models that make this component possible were translated to python from a series of validated javascript comfort models coded at the Berkely Center for the Built Environment (CBE).  The Adaptive model used by both the CBE Tool and this component was originally published in ASHARAE 55.<br>Special thanks goes to the authors of the online CBE Thermal Comfort Tool who first coded the javascript: Hoyt Tyler, Schiavon Stefano, Piccioli Alberto, Moon Dustin, and Steinfeld Kyle. http://cbe.berkeley.edu/comforttool/<br></h3>
 <h2>Inputs</h2>

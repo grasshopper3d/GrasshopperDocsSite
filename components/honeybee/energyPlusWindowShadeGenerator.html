@@ -2,7 +2,7 @@
 <html lang="en" xmlns:og="http://ogp.me/ns#">
 <head data-layout-view="wide">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Energy Plus Window Shade Generator - Grasshopper Component Reference</title>
+<title>Energy Plus Window Shade Generator - Honeybee - Grasshopper Component Reference</title>
 <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 <link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
 
@@ -10,7 +10,7 @@
 <meta name="title" content="Grasshopper Component Reference" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://rhino.github.io/" />
-<meta property="og:title" content="Energy Plus Window Shade Generator - Grasshopper Component Reference" />
+<meta property="og:title" content="Energy Plus Window Shade Generator - Honeybee - Grasshopper Component Reference" />
 
 <meta property="wiki-page" content="GH Honeybee Energy_Plus_Window_Shade_Generator.md" />
 
@@ -910,9 +910,12 @@
 <a href="https://www.food4rhino.com/app/ladybug-tools">Download</a>
 </div>
 
-<div>
+<div class="addon-header">
 <h1><div class="ghsprite" style="background: url('../../icons/honeybee.png') -192px -144px" ></div> Energy Plus Window Shade Generator</h1>
-<p><a href="../../index.html#Honeybee">Component Index</a> &gt; <a href="../../addons/honeybee.html">Honeybee</a> > 10 | Energy | Energy > <b>Energy Plus Window Shade Generator</b></p>
+<div class="breadcrumb">
+ <a href="../../index.html#Honeybee">Component Index</a>
+  <a href="../../addons/honeybee.html">Honeybee</a><a href="#" class="breadcrumb-nolink">10 | Energy | Energy</a><a href="#" class="breadcrumb-nolink">Energy Plus Window Shade Generator</a>
+</div>
 </div>
 <h3>Use this component to generate shades for Honeybee zone windows. The component has two main uses:<br>The first is that it can be used to assign shade objects to HBZones prior to simulation.  These shades can be dynamically controlled via a schedule.  Note that shades created this way will automatically be assigned to the zone and the windowBreps and shadeBreps outputs are just for visualization.<br>The second way to use the component is to create test shade areas for shade benefit evaluation after an energy simulation has already been run.  In this case, the component helps keep the data tree paths of heating, cooling and beam gain synced with that of the zones and windows.  For this, you would take imported EnergyPlus results and hook them up to the "zoneData" inputs and use the output "zoneDataTree" in the shade benefit evaluation.<br></h3>
 <h2>Inputs</h2>

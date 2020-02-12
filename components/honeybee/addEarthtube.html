@@ -2,7 +2,7 @@
 <html lang="en" xmlns:og="http://ogp.me/ns#">
 <head data-layout-view="wide">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Add Earthtube - Grasshopper Component Reference</title>
+<title>Add Earthtube - Honeybee - Grasshopper Component Reference</title>
 <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 <link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
 
@@ -10,7 +10,7 @@
 <meta name="title" content="Grasshopper Component Reference" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://rhino.github.io/" />
-<meta property="og:title" content="Add Earthtube - Grasshopper Component Reference" />
+<meta property="og:title" content="Add Earthtube - Honeybee - Grasshopper Component Reference" />
 
 <meta property="wiki-page" content="GH Honeybee Add_Earthtube.md" />
 
@@ -910,9 +910,12 @@
 <a href="https://www.food4rhino.com/app/ladybug-tools">Download</a>
 </div>
 
-<div>
+<div class="addon-header">
 <h1><div class="ghsprite" style="background: url('../../icons/honeybee.png') -168px 0px" ></div> Add Earthtube</h1>
-<p><a href="../../index.html#Honeybee">Component Index</a> &gt; <a href="../../addons/honeybee.html">Honeybee</a> > 08 | Energy | Set Zone Properties > <b>Add Earthtube</b></p>
+<div class="breadcrumb">
+ <a href="../../index.html#Honeybee">Component Index</a>
+  <a href="../../addons/honeybee.html">Honeybee</a><a href="#" class="breadcrumb-nolink">08 | Energy | Set Zone Properties</a><a href="#" class="breadcrumb-nolink">Add Earthtube</a>
+</div>
 </div>
 <h3>Use this component to add an Energy Plus earth tube to a Zone.<br>An earth tube is a long, underground metal or plastic pipe through which air is drawn. During cooling season, as air travels through the pipe, it gives up some of its heat to the surrounding soil and enters the room as cooler air. Similarly, during heating season, as air travels through the pipe, it receives some of its heat from the soil and enters the room as warmer air. Simple earth tubes in EnergyPlus can be controlled by a schedule and through the specification of minimum, maximum, and delta temperatures as described below. As with infiltration and ventilation, the actual flow rate of air through the earth tube can be modified by the temperature difference between the inside and outside environment and the wind speed. The basic equation used to calculate air flow rate of earth tube in EnergyPlus is:<br>EarthTubeFlowRate = E*F*[A+B|Tzone-Todb|+C(Windspeed)+D(Windspeed^2)]<br>Where:<br>1. E is the maximum amount of air mass flow rate of the earth tube expected at design conditions.<br>2. F is the schedule that modifies the maximum design volume flow fraction between 0 and 1.<br>3. Tzone is the temperature of the zone which the Earthtube is attached to and Todb is the outdoor dry blub temperature as odb stands for outdoor dry blub temperature.<br>4. A,B,C and D are Constant term flow coefficients,Temperature Term flow coefficients, Velocity Term flow coefficients and Velocity squared term flow coefficients respectively they are set at the default values of 0.606,2.0199999E-02,5.9800001E-04 and 0.0000000E+00. In future versions the user will be able to specify these.<br>For more information about the Energy Plus Earthtube please see:<br>http://bigladdersoftware.com/epx/docs/8-2/input-output-reference/group-airflow.html#zoneearthtube-earth-tube<br></h3>
 <h2>Inputs</h2>

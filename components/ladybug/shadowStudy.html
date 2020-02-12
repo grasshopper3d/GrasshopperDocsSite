@@ -2,7 +2,7 @@
 <html lang="en" xmlns:og="http://ogp.me/ns#">
 <head data-layout-view="wide">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Shadow Study - Grasshopper Component Reference</title>
+<title>Shadow Study - Ladybug - Grasshopper Component Reference</title>
 <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 <link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
 
@@ -10,7 +10,7 @@
 <meta name="title" content="Grasshopper Component Reference" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://rhino.github.io/" />
-<meta property="og:title" content="Shadow Study - Grasshopper Component Reference" />
+<meta property="og:title" content="Shadow Study - Ladybug - Grasshopper Component Reference" />
 
 <meta property="wiki-page" content="GH Ladybug Shadow_Study.md" />
 
@@ -616,9 +616,12 @@
 <a href="https://www.food4rhino.com/app/ladybug-tools">Download</a>
 </div>
 
-<div>
+<div class="addon-header">
 <h1><div class="ghsprite" style="background: url('../../icons/ladybug.png') -24px -264px" ></div> Shadow Study</h1>
-<p><a href="../../index.html#Ladybug">Component Index</a> &gt; <a href="../../addons/ladybug.html">Ladybug</a> > 7 | WIP > <b>Shadow Study</b></p>
+<div class="breadcrumb">
+ <a href="../../index.html#Ladybug">Component Index</a>
+  <a href="../../addons/ladybug.html">Ladybug</a><a href="#" class="breadcrumb-nolink">7 | WIP</a><a href="#" class="breadcrumb-nolink">Shadow Study</a>
+</div>
 </div>
 <h3>Use this component to generate outline curves representing shadows cast by input _geometry for a given _sunVector.<br>Note that, to see shadows cast onto a ground, a surface representing the ground plane must be included in the input _geometry.<br>Connect output of Ladybug_Analysis period component to analysisPeriod_ on Ladybug_SunPath component. This will let you use a range of sunvectors. Using these range of sunvectors, you can turn this shadow study into a shadow range study.<br>Also, please note that, for a list of input _geometry that is larger than 4 or 5 breps, the calculation time of this component can be very long.  Please keep the input geometry to small lists or be prepared to wait a long time.<br>WARNING: This component is a proof of concept that will not work in every situation.  It is not ideal for analyzing curved surfaces and it is not able to calculate shadows for geometries that are intersecting each other.<br></h3>
 <h2>Inputs</h2>

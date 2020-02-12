@@ -2,7 +2,7 @@
 <html lang="en" xmlns:og="http://ogp.me/ns#">
 <head data-layout-view="wide">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Split Building Mass2Floors - Grasshopper Component Reference</title>
+<title>Split Building Mass2Floors - Honeybee - Grasshopper Component Reference</title>
 <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 <link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
 
@@ -10,7 +10,7 @@
 <meta name="title" content="Grasshopper Component Reference" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://rhino.github.io/" />
-<meta property="og:title" content="Split Building Mass2Floors - Grasshopper Component Reference" />
+<meta property="og:title" content="Split Building Mass2Floors - Honeybee - Grasshopper Component Reference" />
 
 <meta property="wiki-page" content="GH Honeybee Split_Building_Mass2Floors.md" />
 
@@ -910,9 +910,12 @@
 <a href="https://www.food4rhino.com/app/ladybug-tools">Download</a>
 </div>
 
-<div>
+<div class="addon-header">
 <h1><div class="ghsprite" style="background: url('../../icons/honeybee.png') -96px -480px" ></div> Split Building Mass2Floors</h1>
-<p><a href="../../index.html#Honeybee">Component Index</a> &gt; <a href="../../addons/honeybee.html">Honeybee</a> > 13 | WIP > <b>Split2Floors</b></p>
+<div class="breadcrumb">
+ <a href="../../index.html#Honeybee">Component Index</a>
+  <a href="../../addons/honeybee.html">Honeybee</a><a href="#" class="breadcrumb-nolink">13 | WIP</a><a href="#" class="breadcrumb-nolink">Split2Floors</a>
+</div>
 </div>
 <h3>Use this component to divide up a brep (polysurface) representative of a complete building massing into floors.<br>This generic zoning will divide the input mass into seprate floors based on an input floor height.<br>If you have a single mass representing two towers off of a podium, the two towers are not a continuous mass and you should therefore send each tower and the podium in as a separate Brep into this component.  The component will work for courtyard buildings.<br>Core and perimeter zoneing should work for almost all masses where all walls are planar.  It works in a limited number of cases that have both curved and planar walls.  Also, it is important to note that, if your offset depth is so large in comparison to your building depth as to create perimeter zones that intersect one another, the whole floor will be returned as a single zone.<br>While this component can usually get you the most of the way there, it is still recommended that you bake the output and check the geometry in Rhino before turning the breps into HBZones.<br>The assumption about an E+ zone is that the air is well mixed and all at the same temperature.<br>Therefore, it is usually customary to break up a building depending on the areas where you would expect different building microclimates to exist.<br>This includes breaking up the building into floors (since each floor can have a different microclimate) and breaking up each floor into a core zone and perimeter zones (since each side of the buidling gets a different amount of solar gains and losses/gains through the envelope).<br>This component helps break up building masses into floors, and can be used in conjunction with the Honeybee_SplitBuildingFloor2ThermalZones component to genreate core zone and perimeter zones.<br></h3>
 <h2>Inputs</h2>

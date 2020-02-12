@@ -2,7 +2,7 @@
 <html lang="en" xmlns:og="http://ogp.me/ns#">
 <head data-layout-view="wide">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Intersect Masses - Grasshopper Component Reference</title>
+<title>Intersect Masses - Honeybee - Grasshopper Component Reference</title>
 <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 <link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
 
@@ -10,7 +10,7 @@
 <meta name="title" content="Grasshopper Component Reference" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://rhino.github.io/" />
-<meta property="og:title" content="Intersect Masses - Grasshopper Component Reference" />
+<meta property="og:title" content="Intersect Masses - Honeybee - Grasshopper Component Reference" />
 
 <meta property="wiki-page" content="GH Honeybee Intersect_Masses.md" />
 
@@ -910,9 +910,12 @@
 <a href="https://www.food4rhino.com/app/ladybug-tools">Download</a>
 </div>
 
-<div>
+<div class="addon-header">
 <h1><div class="ghsprite" style="background: url('../../icons/honeybee.png') -144px -264px" ></div> Intersect Masses</h1>
-<p><a href="../../index.html#Honeybee">Component Index</a> &gt; <a href="../../addons/honeybee.html">Honeybee</a> > 00 | Honeybee > <b>Intersect Masses</b></p>
+<div class="breadcrumb">
+ <a href="../../index.html#Honeybee">Component Index</a>
+  <a href="../../addons/honeybee.html">Honeybee</a><a href="#" class="breadcrumb-nolink">00 | Honeybee</a><a href="#" class="breadcrumb-nolink">Intersect Masses</a>
+</div>
 </div>
 <h3>Use this component to take a list of closed breps (polysurfaces) that you intend to turn into HBZones and split their component surfaces to ensure that there are matching surfaces between each of the adjacent zones.<br>Matching surfaces and surface areas betweem adjacent zones are necessary to ensure that the conductive heat flow calculation occurs correctly across the surfaces in an energy simulation.<br>Note that the input here should be closed volumes that are adjacent to each other and touching.  They should not volumetrically overlap.<br>Also note that, while the component has been written in a manner that rarely fails if the input geometry obeys the provisions above, there are still some very complex cases that can be incorrect.<br>As such, it is recommended that you bake the output of this component and check it in Rhino before turning the breps into HBZones.  This component will get you most of the way there but these volumetric operations can be difficult to pull off with a surface modeler like Rhino so you should really check the output.<br></h3>
 <h2>Inputs</h2>

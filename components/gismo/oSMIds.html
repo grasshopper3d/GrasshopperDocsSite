@@ -2,7 +2,7 @@
 <html lang="en" xmlns:og="http://ogp.me/ns#">
 <head data-layout-view="wide">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>OSM Ids - Grasshopper Component Reference</title>
+<title>OSM Ids - Gismo - Grasshopper Component Reference</title>
 <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 <link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
 
@@ -10,7 +10,7 @@
 <meta name="title" content="Grasshopper Component Reference" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://rhino.github.io/" />
-<meta property="og:title" content="OSM Ids - Grasshopper Component Reference" />
+<meta property="og:title" content="OSM Ids - Gismo - Grasshopper Component Reference" />
 
 <meta property="wiki-page" content="GH Gismo OSM_Ids.md" />
 
@@ -226,9 +226,12 @@
 <a href="https://github.com/stgeorges/gismo/">Download</a>
 </div>
 
-<div>
+<div class="addon-header">
 <h1><div class="ghsprite" style="background: url('../../icons/gismo.png') -168px -24px" ></div> OSM Ids</h1>
-<p><a href="../../index.html#Gismo">Component Index</a> &gt; <a href="../../addons/gismo.html">Gismo</a> > 1 | OpenStreetMap > <b>OSMids</b></p>
+<div class="breadcrumb">
+ <a href="../../index.html#Gismo">Component Index</a>
+  <a href="../../addons/gismo.html">Gismo</a><a href="#" class="breadcrumb-nolink">1 | OpenStreetMap</a><a href="#" class="breadcrumb-nolink">OSMids</a>
+</div>
 </div>
 <h3>Use this component to define lists of Open Street Map ids.<br>These lists can be used to define:<br>1) only those ids which will be included (isolated) when "OSM shapes" component is ran (use "osm_id_Only" and "osm_way_id_Only" inputs for this)<br>2) ids which will be removed when "OSM shapes" component is ran (use "osm_id_Remove" and "osm_way_id_Remove" inputs for this)<br>3) you can combine 1) and 2) and both define the: included and removed ids.<br>-<br>Additional info:<br>Sometimes "OSM shapes" can output invalid or unwanted shapes. In that case the purpose of this component is to remove those shapes by adding their ids to the "osm_id_Remove_" and/or "osm_way_id_Remove_" inputs.<br>-<br>Provided by Gismo 0.0.3</h3>
 <h2>Inputs</h2>
