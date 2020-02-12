@@ -5,10 +5,17 @@ Created by <a href="https://github.com/robinrodricks">Robin Rodricks</a> and <a 
 
 Last updated on 12th Feb 2020.
 
+# API for Integrators
+
+We provide JSON feeds containing the metadata of the latest addons and components that are on the website. You can hard-link to these URLs and feed them into you third party application or process the data in any way you wish!
+
+- List of Addons - [addons.json](http://rhino.github.io/addons.json)
+- List of Components - [components.json](http://rhino.github.io/components.json)
+
 # Addon index
 
 | Name             | Version        | Date        |
-|------------------|----------------|-------------|
+| ---------------- | -------------- | ----------- |
 | 3DVoronoi        | 1              | 2011-Aug-30 |
 | Aether           | 1.0            | 2014-Dec-16 |
 | Alba             | 0.111          | Unknown     |
@@ -40,11 +47,12 @@ Last updated on 12th Feb 2020.
 | Firefly          | 1.0.0.70       | 2015-Mar-25 |
 | FlexHopper       | 1.1.2          | 2019-Nov-29 |
 | FlowLines        | 1              | 2011-Jul-25 |
-| Galapagos        | 1.0.0007       | 2019-Dec-10 |
+| Galapagos        | 1.0.0007       | 2019-Dec-15 |
 | GeomGym IFC      | 6              | 2019-Dec-19 |
 | GhExcel          | 1.2            | 2013-Jun-01 |
 | gHowl            | 0.1.r50.0      | 2014-Nov-21 |
 | Gismo            | 1.0            | 2019-Nov-23 |
+| Grasshopper      | 1.0.0007       | 2019-Dec-15 |
 | Grevit           | 1.0            | 2018-Apr-28 |
 | HAL Robotics     | 1.0-beta       | 2020-01-07  |
 | Heteroptera      | 0.5.1.2        | 2019-Oct-28 |
@@ -56,13 +64,13 @@ Last updated on 12th Feb 2020.
 | IntraLattice     | 0.7.6          | 2015-Nov-15 |
 | Ivy              | 1.02           | 2020-Jan-04 |
 | jSwan            | 1.1.0          | 2019-Nov-11 |
-| Kangaroo 2       | 2.3.3          | 2019-Dec-10 |
+| Kangaroo 2       | 2.3.3          | 2019-Dec-15 |
 | Karamba          | 1.3.2          | 2019-Sep-18 |
 | Ladybug          | 0.0.65         | 2017-Jul-31 |
 | LunchBox         | 2018.10.30     | 2018-Oct-30 |
 | MeshEdit         | 2.0            | 2017-Jun-25 |
 | MeshPlus         | 2.1.03         | 2019-Sep-12 |
-| Meshtools        | 1              | 2013-Feb-02 |
+| MeshTools        | 1              | 2013-Feb-02 |
 | MetaHopper       | 1.2.4          | 2019-Nov-13 |
 | Millipede        | 1              | 2014-Mar-01 |
 | MinSurf          | 3.0.0.2        | 2013-Apr-04 |
@@ -74,6 +82,7 @@ Last updated on 12th Feb 2020.
 | Pancake          | 2.1.0.0        | 2019-Dec-25 |
 | Paneling Tools   | 6.18           | 2019-12-19  |
 | Peacock          | 0.99.1         | 2017-Nov-04 |
+| Peregrine        | 2019-Nov-19    | 2019-Nov-19 |
 | Phyllomachine    | 1              | 2015-May-29 |
 | PhysX GH         | 0.1            | 2019-Jan-08 |
 | Plankton         | 0.4.2          | 2017-May-18 |
@@ -94,9 +103,13 @@ Last updated on 12th Feb 2020.
 | TT Toolbox       | 1.9            | 2017-May-25 |
 | VisualARQ        | 2.6            | 2019-Dec-12 |
 | Volvox           | 0.3.0.0        | 2016-Feb-16 |
+| Wasp             | 0.2.08         | 2019-Jul-12 |
 | Wallacei         | 2.5            | 2019-Nov-17 |
 | Weaverbird       | 0.9.0.1        | 2009-Aug-31 |
 | Xylinus          | 0.2            | Unknown     |
+| OpenNest         | 1.0            | 2018-Nov-21 |
+| Ngon             | 2.1            | 2020-Feb-06 |
+
 
 # Want to add or update an addon?
 Simply add an [Issue](https://github.com/rhino/rhino.github.io/issues) with the name and link of the plugin and I'll look into it.
