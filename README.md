@@ -3,7 +3,7 @@ Documentation for open source components of Grasshopper, the fantastic visual pr
 
 Created by <a href="https://github.com/robinrodricks">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>.
 
-Last updated on 15th Jan 2020.
+Last updated on 12th Feb 2020.
 
 # Addon index
 
