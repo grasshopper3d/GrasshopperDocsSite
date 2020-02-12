@@ -910,12 +910,14 @@
 <a href="https://www.food4rhino.com/app/ladybug-tools">Download</a>
 </div>
 
-<div class="addon-header">
+<div class="compo-header">
 <h1><div class="ghsprite" style="background: url('../../icons/honeybee.png') 0px -456px" ></div> Set EP Air Flow</h1>
+
 <div class="breadcrumb">
- <a href="../../index.html#Honeybee">Component Index</a>
+ <a href="../../index.html">Component Index</a>
   <a href="../../addons/honeybee.html">Honeybee</a><a href="#" class="breadcrumb-nolink">08 | Energy | Set Zone Properties</a><a href="#" class="breadcrumb-nolink">Set EP Air Flow</a>
 </div>
+
 </div>
 <h3>Use this component to edit the airflow between your zones's air walls and/or set natural ventilation.  The natural ventilation that this component models is mostly meant for single zones and cases where there is not much airflow between zones. Specifically, this component can model a few common types of natural ventilation:<br>    1 - Single-sided Ventilation - ventilation driven by the height difference across individual windows on a single side of a building.<br>    2 - Cross Ventilation - ventilation driven by the pressure difference across windows on two opposite sides of a building.<br>    3 - Chimney Ventilation - ventilation driven by a chimney/stack that is attached to a zone.<br>    4 - Cowl Ventilation - ventilation driven by wind through a cowl attached to a zone.<br>    5 - Fan-driven Ventilation - ventilation at a constant flow rate driven by a fan.<br>The component can model "multi-zone" natural ventilation so long as there are no major vertical differences in height over multiple zones and the user understands that "mixing objects" of constant air flow are used to dsitribute incoming air between zones that are connected by an air wall.  As such, this method is not meant to model atriums or any method relying on inter-zone buoyancy-driven flow.<br>Natural ventilation (that i nt fan-driven) is computed using the following formulas:<br>Ventilation Wind = Wind Coefficient * Opening Area * Schedule * WindSpd <br>Ventilation Stack = Stack Discharge Coefficient * Opening Area * Schedule * SQRT(2 * Gravity * Operable Height * (|(Temp Zone - Temp Outdoors)| / Temp Zone)) <br>Total Ventilation = SQRT((Ventilation Wind)^2 + (Ventilation Stack)^2)<br></h3>
 <h2>Inputs</h2>

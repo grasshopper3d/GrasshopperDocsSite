@@ -226,12 +226,14 @@
 <a href="https://github.com/stgeorges/gismo/">Download</a>
 </div>
 
-<div class="addon-header">
+<div class="compo-header">
 <h1><div class="ghsprite" style="background: url('../../icons/gismo.png') 0px -72px" ></div> Terrain Shading Mask</h1>
+
 <div class="breadcrumb">
- <a href="../../index.html#Gismo">Component Index</a>
+ <a href="../../index.html">Component Index</a>
   <a href="../../addons/gismo.html">Gismo</a><a href="#" class="breadcrumb-nolink">2 | Terrain</a><a href="#" class="breadcrumb-nolink">TerrainShadingMask</a>
 </div>
+
 </div>
 <h3>Use this component to create a 3D Terrain shading mask for a particular location.<br>It's a diagram which maps the silhouette of the surrounding terrain (hills, valleys, mountains, tree tops...) in 360 degrees directions seen from above the astronomical horizon.<br>It can be used as a "context_" input in mountainous or higher latitude regions for any kind of sun related analysis: sunlight hours analysis, solar radiation analysis, view analysis, photovoltaics/solar water heating sunpath shading ...<br>-<br>!!! ATTENTION !!!   This component may crash Rhino 5 application due to requirement to generate large topography data! To prevent this, it is suggested to own a 64 bit version of Rhino 5 and have strong enough PC configuration. If you do not have either of these two, it is recommended to keep the maxVisibilityRadius_ value to default value of 100 to prevent the crash of Rhino.<br>Also try saving your .gh definition before running this component!<br>-<br>Component requires that you are connected to the Internet, as it has to download the topography data.<br>It also requires MapWinGIS application to be installed.<br>Download and install either 32 bit or 64 bit (depending on your Rhino 5 version) version of MapWinGIS from here:<br>https://github.com/MapWindow/MapWinGIS/releases<br>-<br>Component mainly based on:<br>"Mathematical cartography", V. Jovanovic, VGI 1983.<br>"Surveying and Levelling Second Edition", Tata McGraw-Hill Education Pvt. Ltd., 5.7 Corrections to be applied, N.N. Basak, 2004<br>"Vincenty solutions of geodesics on the ellipsoid" article by Chris Veness<br>https://books.google.rs/books/about/Matemati%C4%8Dka_kartografija.html?id=GcXEMgEACAAJ&redir_esc=y<br>https://books.google.rs/books?id=fIvvAwAAQBAJ&printsec=frontcover#v=onepage&q&f=false<br>http://www.movable-type.co.uk/scripts/latlong-vincenty.html<br>-<br>Provided by Gismo 0.0.3</h3>
 <h2>Inputs</h2>
