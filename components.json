@@ -29057,7 +29057,7 @@
       "category": "Color",
       "summary": "Convert a color to a point by using the colors RGB values for the points XYZ values.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -144px -24px",
+      "iconCss": "background: url('icons/pufferfish.png') -168px -24px",
       "helpLink": "https://rhino.github.io/components/pufferfish/colorToPoint.html"
     },
     {
@@ -29067,7 +29067,7 @@
       "category": "Color",
       "summary": "Convert a color to grayscale by a variety of common luminosity weighting schemes.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -120px -72px",
+      "iconCss": "background: url('icons/pufferfish.png') -144px -72px",
       "helpLink": "https://rhino.github.io/components/pufferfish/grayscaleColor.html"
     },
     {
@@ -29077,7 +29077,7 @@
       "category": "Color",
       "summary": "Invert a color.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -168px -72px",
+      "iconCss": "background: url('icons/pufferfish.png') -216px -72px",
       "helpLink": "https://rhino.github.io/components/pufferfish/invertColor.html"
     },
     {
@@ -29087,7 +29087,7 @@
       "category": "Color",
       "summary": "Mirror a set of colors across its end or start and combine it with the original set.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -144px -120px",
+      "iconCss": "background: url('icons/pufferfish.png') 0px -144px",
       "helpLink": "https://rhino.github.io/components/pufferfish/mirrorCombineColors.html"
     },
     {
@@ -29097,7 +29097,7 @@
       "category": "Color",
       "summary": "Cut a set of colors at an index, mirror the kept side of the cut across the index, and combine it with the kept side.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -72px -144px",
+      "iconCss": "background: url('icons/pufferfish.png') -168px -144px",
       "helpLink": "https://rhino.github.io/components/pufferfish/mirrorCutColors.html"
     },
     {
@@ -29107,7 +29107,7 @@
       "category": "Color",
       "summary": "Convert a point to a color by using the points XYZ values for the colors RGB values.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -72px -240px",
+      "iconCss": "background: url('icons/pufferfish.png') -120px -264px",
       "helpLink": "https://rhino.github.io/components/pufferfish/pointToColor.html"
     },
     {
@@ -29117,7 +29117,7 @@
       "category": "Color",
       "summary": "Tween consecutively between a set of colors.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') 0px -336px",
+      "iconCss": "background: url('icons/pufferfish.png') -24px -360px",
       "helpLink": "https://rhino.github.io/components/pufferfish/tweenConsecutiveColors.html"
     },
     {
@@ -29127,7 +29127,7 @@
       "category": "Color",
       "summary": "Tween through a set of colors.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -144px -360px",
+      "iconCss": "background: url('icons/pufferfish.png') -168px -384px",
       "helpLink": "https://rhino.github.io/components/pufferfish/tweenThroughColors.html"
     },
     {
@@ -29137,7 +29137,7 @@
       "category": "Color",
       "summary": "Tween between two colors.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -48px -408px",
+      "iconCss": "background: url('icons/pufferfish.png') -72px -432px",
       "helpLink": "https://rhino.github.io/components/pufferfish/tweenTwoColors.html"
     },
     {
@@ -29157,7 +29157,7 @@
       "category": "Curve",
       "summary": "Get the arc, circle, or ellipse representation of a curve.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -24px 0px",
+      "iconCss": "background: url('icons/pufferfish.png') -48px 0px",
       "helpLink": "https://rhino.github.io/components/pufferfish/arcCircleEllipse.html"
     },
     {
@@ -29167,7 +29167,7 @@
       "category": "Curve",
       "summary": "Solve the arithmetic average for a set of curves.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -144px 0px",
+      "iconCss": "background: url('icons/pufferfish.png') -168px 0px",
       "helpLink": "https://rhino.github.io/components/pufferfish/averageCurve.html"
     },
     {
@@ -29177,7 +29177,7 @@
       "category": "Curve",
       "summary": "Close an open curve in a variety of ways, if curve is already closed or linear it will output with no change.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -48px -24px",
+      "iconCss": "background: url('icons/pufferfish.png') -72px -24px",
       "helpLink": "https://rhino.github.io/components/pufferfish/closeCurve.html"
     },
     {
@@ -29187,7 +29187,7 @@
       "category": "Curve",
       "summary": "Make a set of polylines compatible(equal) in control point count without changing their shapes.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -168px -24px",
+      "iconCss": "background: url('icons/pufferfish.png') -192px -24px",
       "helpLink": "https://rhino.github.io/components/pufferfish/compatibilizePolylines.html"
     },
     {
@@ -29197,7 +29197,7 @@
       "category": "Curve",
       "summary": "Align the seams for a set of closed curves along a guide curve with the option of snapping to corners, if curve is not closed it will output with no change.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -192px -24px",
+      "iconCss": "background: url('icons/pufferfish.png') -216px -24px",
       "helpLink": "https://rhino.github.io/components/pufferfish/curveAlignCurveSeams.html"
     },
     {
@@ -29207,7 +29207,7 @@
       "category": "Curve",
       "summary": "Get the degree value of a curve.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -216px -24px",
+      "iconCss": "background: url('icons/pufferfish.png') 0px -48px",
       "helpLink": "https://rhino.github.io/components/pufferfish/curveDegree.html"
     },
     {
@@ -29217,7 +29217,7 @@
       "category": "Curve",
       "summary": "Get the length along a curve from its start to a point on the curve (or optionally to a parameter on the curve), if point is not on the curve it will be pulled to it.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -48px -48px",
+      "iconCss": "background: url('icons/pufferfish.png') -72px -48px",
       "helpLink": "https://rhino.github.io/components/pufferfish/curveLengthAt.html"
     },
     {
@@ -29227,7 +29227,7 @@
       "category": "Curve",
       "summary": "Get the lengths along a curve between points on the curve (or optionally parameters on the curve), if points are not on the curve they will be pulled to it.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -72px -48px",
+      "iconCss": "background: url('icons/pufferfish.png') -96px -48px",
       "helpLink": "https://rhino.github.io/components/pufferfish/curveLengthBetween.html"
     },
     {
@@ -29237,7 +29237,7 @@
       "category": "Curve",
       "summary": "Gets the curve sub-domain for each span in a curve and gets information about the spans such as, amount of spans, length of each span, degree of each span, and curve parameters at the span ends.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -120px -48px",
+      "iconCss": "background: url('icons/pufferfish.png') -144px -48px",
       "helpLink": "https://rhino.github.io/components/pufferfish/curveSpans.html"
     },
     {
@@ -29247,7 +29247,7 @@
       "category": "Curve",
       "summary": "Create a polyline made of target vector oriented segments by finding the closest target vector by angle to each vector between the reference vertices.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -192px -48px",
+      "iconCss": "background: url('icons/pufferfish.png') -216px -48px",
       "helpLink": "https://rhino.github.io/components/pufferfish/discretePolyline.html"
     },
     {
@@ -29257,7 +29257,7 @@
       "category": "Curve",
       "summary": "Test if a curve is an arc, circle, or ellipse as defined by Rhino. Curves can be multiple types.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -192px -72px",
+      "iconCss": "background: url('icons/pufferfish.png') 0px -96px",
       "helpLink": "https://rhino.github.io/components/pufferfish/isArcCircleEllipse.html"
     },
     {
@@ -29267,7 +29267,7 @@
       "category": "Curve",
       "summary": "Test if a curve has kinks, and gets information about the kinks such as, amount of kinks and the length along curve where each kink exists.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -216px -72px",
+      "iconCss": "background: url('icons/pufferfish.png') -24px -96px",
       "helpLink": "https://rhino.github.io/components/pufferfish/isCurveKinky.html"
     },
     {
@@ -29277,7 +29277,7 @@
       "category": "Curve",
       "summary": "Test a curve for linearity.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') 0px -96px",
+      "iconCss": "background: url('icons/pufferfish.png') -48px -96px",
       "helpLink": "https://rhino.github.io/components/pufferfish/isCurveLinear.html"
     },
     {
@@ -29287,8 +29287,18 @@
       "category": "Curve",
       "summary": "Test if a curve has segments, and gets information about the segments such as, amount of segments, length of each segment, and degree of each segment.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -24px -96px",
+      "iconCss": "background: url('icons/pufferfish.png') -72px -96px",
       "helpLink": "https://rhino.github.io/components/pufferfish/isCurveSegmented.html"
+    },
+    {
+      "name": "Mesh Edge Loops",
+      "id": "MshEdgLoops",
+      "library": "Pufferfish",
+      "category": "Curve",
+      "summary": "Extract the egde loop polylines of a quad mesh at a specified mesh vertice index.<br><br><br>-base methods by Mateusz Zwierzycki",
+      "description": null,
+      "iconCss": "background: url('icons/pufferfish.png') -192px -120px",
+      "helpLink": "https://rhino.github.io/components/pufferfish/meshEdgeLoops.html"
     },
     {
       "name": "Mirror Cut Curve",
@@ -29297,7 +29307,7 @@
       "category": "Curve",
       "summary": "Cut a curve with a plane, mirror the kept side of the cut across a mirror plane, and combine it with the kept side.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -96px -144px",
+      "iconCss": "background: url('icons/pufferfish.png') -192px -144px",
       "helpLink": "https://rhino.github.io/components/pufferfish/mirrorCutCurve.html"
     },
     {
@@ -29307,7 +29317,7 @@
       "category": "Curve",
       "summary": "Create a net of interpolated curves on a surface.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -168px -168px",
+      "iconCss": "background: url('icons/pufferfish.png') -24px -192px",
       "helpLink": "https://rhino.github.io/components/pufferfish/netOnSurface.html"
     },
     {
@@ -29317,7 +29327,7 @@
       "category": "Curve",
       "summary": "Generate a grid of curves on a surface from domain dividing {u} and {v} parameters, or generate a surface isocurve.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -24px -192px",
+      "iconCss": "background: url('icons/pufferfish.png') -120px -192px",
       "helpLink": "https://rhino.github.io/components/pufferfish/parameterCurveDivideSurface.html"
     },
     {
@@ -29327,7 +29337,7 @@
       "category": "Curve",
       "summary": "Generate a grid of rectangular cells on a surface from domain dividing {u} and {v} parameters.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -120px -192px",
+      "iconCss": "background: url('icons/pufferfish.png') -144px -216px",
       "helpLink": "https://rhino.github.io/components/pufferfish/parameterSurfaceGrid.html"
     },
     {
@@ -29337,7 +29347,7 @@
       "category": "Curve",
       "summary": "Generate an isocurve on a surface from a domain dividing {u} or {v} parameter.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -144px -192px",
+      "iconCss": "background: url('icons/pufferfish.png') -168px -216px",
       "helpLink": "https://rhino.github.io/components/pufferfish/parameterSurfaceIsocurve.html"
     },
     {
@@ -29347,8 +29357,18 @@
       "category": "Curve",
       "summary": "Trim (remove) the parts of a curve on one side of a plane.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -24px -216px",
+      "iconCss": "background: url('icons/pufferfish.png') -48px -240px",
       "helpLink": "https://rhino.github.io/components/pufferfish/planeTrimCurve.html"
+    },
+    {
+      "name": "Point Fit Rectangle",
+      "id": "PtFitRec",
+      "library": "Pufferfish",
+      "category": "Curve",
+      "summary": "Fit a rectangle through a set of points.",
+      "description": null,
+      "iconCss": "background: url('icons/pufferfish.png') -216px -240px",
+      "helpLink": "https://rhino.github.io/components/pufferfish/pointFitRectangle.html"
     },
     {
       "name": "Points Trim Curve",
@@ -29357,7 +29377,7 @@
       "category": "Curve",
       "summary": "Trim a curve with a set of points (or optionally a set of parameters) like a dash pattern, if points are not on the curve they will be pulled to it.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') 0px -240px",
+      "iconCss": "background: url('icons/pufferfish.png') -48px -264px",
       "helpLink": "https://rhino.github.io/components/pufferfish/pointsTrimCurve.html"
     },
     {
@@ -29367,7 +29387,7 @@
       "category": "Curve",
       "summary": "Rebuild a curve to a given point count, degree, and domain.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -120px -240px",
+      "iconCss": "background: url('icons/pufferfish.png') -168px -264px",
       "helpLink": "https://rhino.github.io/components/pufferfish/rebuildCurve.html"
     },
     {
@@ -29377,18 +29397,8 @@
       "category": "Curve",
       "summary": "Search a curve for segments at specified degrees and rebuild them to a specified degree and control point count.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -144px -240px",
+      "iconCss": "background: url('icons/pufferfish.png') -192px -264px",
       "helpLink": "https://rhino.github.io/components/pufferfish/rebuildCurveSegments.html"
-    },
-    {
-      "name": "Rectangle Fit",
-      "id": "RecFit",
-      "library": "Pufferfish",
-      "category": "Curve",
-      "summary": "Fit a rectangle through a set of points.",
-      "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -216px -240px",
-      "helpLink": "https://rhino.github.io/components/pufferfish/rectangleFit.html"
     },
     {
       "name": "Remap Curve Domain",
@@ -29397,7 +29407,7 @@
       "category": "Curve",
       "summary": "Remap a curves {t} domain range to an input domain range with the option of matching the {t} domain range of a guide curve.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -72px -264px",
+      "iconCss": "background: url('icons/pufferfish.png') -96px -288px",
       "helpLink": "https://rhino.github.io/components/pufferfish/remapCurveDomain.html"
     },
     {
@@ -29407,7 +29417,7 @@
       "category": "Curve",
       "summary": "Reparameterize a curve to have a (t) domain range from 0 to 1.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -120px -264px",
+      "iconCss": "background: url('icons/pufferfish.png') -144px -288px",
       "helpLink": "https://rhino.github.io/components/pufferfish/reparameterizeCurve.html"
     },
     {
@@ -29417,7 +29427,7 @@
       "category": "Curve",
       "summary": "Adjust the seam of a closed curve with corners so that the seam is on the closest corner from the initial seam location (or optionally from a guide point), if curve is not closed or has no corners it will output with no change",
       "description": "Adjust the seam of a closed curve with corners so that the seam is on the closest corner from the initial seam location (or optionally from a guide point), if curve is not closed or has no corners it will output with no change.",
-      "iconCss": "background: url('icons/pufferfish.png') -144px -288px",
+      "iconCss": "background: url('icons/pufferfish.png') -168px -312px",
       "helpLink": "https://rhino.github.io/components/pufferfish/seamToCurveCorner.html"
     },
     {
@@ -29427,7 +29437,7 @@
       "category": "Curve",
       "summary": "Slide a curve along a guide curve (or optionally along two guide curves).",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') 0px -312px",
+      "iconCss": "background: url('icons/pufferfish.png') -24px -336px",
       "helpLink": "https://rhino.github.io/components/pufferfish/slideCurveAlongCurve.html"
     },
     {
@@ -29437,7 +29447,7 @@
       "category": "Curve",
       "summary": "Superimpose the control point count, degree, and domain properties of a reference curve onto a target curve.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -96px -312px",
+      "iconCss": "background: url('icons/pufferfish.png') -120px -336px",
       "helpLink": "https://rhino.github.io/components/pufferfish/superimposeCurve.html"
     },
     {
@@ -29447,7 +29457,7 @@
       "category": "Curve",
       "summary": "Tween consecutively between a set of curves.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -24px -336px",
+      "iconCss": "background: url('icons/pufferfish.png') -48px -360px",
       "helpLink": "https://rhino.github.io/components/pufferfish/tweenConsecutiveCurves.html"
     },
     {
@@ -29457,7 +29467,7 @@
       "category": "Curve",
       "summary": "Tween consecutively between a set of curves along a guide curve (or optionally along two guide curves).",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -48px -336px",
+      "iconCss": "background: url('icons/pufferfish.png') -72px -360px",
       "helpLink": "https://rhino.github.io/components/pufferfish/tweenConsecutiveCurvesAlongCurve.html"
     },
     {
@@ -29467,7 +29477,7 @@
       "category": "Curve",
       "summary": "Tween consecutively between a set of curves on a surface, if curves are not on the surface they will be pulled to it.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -72px -336px",
+      "iconCss": "background: url('icons/pufferfish.png') -96px -360px",
       "helpLink": "https://rhino.github.io/components/pufferfish/tweenConsecutiveCurvesOnSurface.html"
     },
     {
@@ -29477,7 +29487,7 @@
       "category": "Curve",
       "summary": "Tween through a set of curves.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -168px -360px",
+      "iconCss": "background: url('icons/pufferfish.png') -192px -384px",
       "helpLink": "https://rhino.github.io/components/pufferfish/tweenThroughCurves.html"
     },
     {
@@ -29487,7 +29497,7 @@
       "category": "Curve",
       "summary": "Tween through a set of curves along a guide curve (or optionally along two guide curves).",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -192px -360px",
+      "iconCss": "background: url('icons/pufferfish.png') -216px -384px",
       "helpLink": "https://rhino.github.io/components/pufferfish/tweenThroughCurvesAlongCurve.html"
     },
     {
@@ -29497,7 +29507,7 @@
       "category": "Curve",
       "summary": "Tween through a set of curves on a surface, if curves are not on the surface they will be pulled to it.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -216px -360px",
+      "iconCss": "background: url('icons/pufferfish.png') 0px -408px",
       "helpLink": "https://rhino.github.io/components/pufferfish/tweenThroughCurvesOnSurface.html"
     },
     {
@@ -29507,7 +29517,7 @@
       "category": "Curve",
       "summary": "Tween between two curves.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -72px -408px",
+      "iconCss": "background: url('icons/pufferfish.png') -96px -432px",
       "helpLink": "https://rhino.github.io/components/pufferfish/tweenTwoCurves.html"
     },
     {
@@ -29517,7 +29527,7 @@
       "category": "Curve",
       "summary": "Tween between two curves along a guide curve (or optionally along two guide curves).",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -96px -408px",
+      "iconCss": "background: url('icons/pufferfish.png') -120px -432px",
       "helpLink": "https://rhino.github.io/components/pufferfish/tweenTwoCurvesAlongCurve.html"
     },
     {
@@ -29527,7 +29537,7 @@
       "category": "Curve",
       "summary": "Tween between two curves on a surface, if curves are not on the surface they will be pulled to it.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -120px -408px",
+      "iconCss": "background: url('icons/pufferfish.png') -144px -432px",
       "helpLink": "https://rhino.github.io/components/pufferfish/tweenTwoCurvesOnSurface.html"
     },
     {
@@ -29537,7 +29547,7 @@
       "category": "Curve",
       "summary": "Solve the arithmetic weighted average for a set of curves.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -192px -456px",
+      "iconCss": "background: url('icons/pufferfish.png') -216px -480px",
       "helpLink": "https://rhino.github.io/components/pufferfish/weightedAverageCurve.html"
     },
     {
@@ -29547,7 +29557,7 @@
       "category": "Domain",
       "summary": "Solve the arithmetic average for a set of domains.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -168px 0px",
+      "iconCss": "background: url('icons/pufferfish.png') -192px 0px",
       "helpLink": "https://rhino.github.io/components/pufferfish/averageDomain.html"
     },
     {
@@ -29557,7 +29567,7 @@
       "category": "Domain",
       "summary": "Solve the arithmetic average for a set of domain²s.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -192px 0px",
+      "iconCss": "background: url('icons/pufferfish.png') -216px 0px",
       "helpLink": "https://rhino.github.io/components/pufferfish/averageDomain.html"
     },
     {
@@ -29567,7 +29577,7 @@
       "category": "Domain",
       "summary": "Mirror a set of domains across its end or start and combine it with the original set.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -168px -120px",
+      "iconCss": "background: url('icons/pufferfish.png') -24px -144px",
       "helpLink": "https://rhino.github.io/components/pufferfish/mirrorCombineDomains.html"
     },
     {
@@ -29577,7 +29587,7 @@
       "category": "Domain",
       "summary": "Mirror a set of domain²s across its end or start and combine it with the original set.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -192px -120px",
+      "iconCss": "background: url('icons/pufferfish.png') -48px -144px",
       "helpLink": "https://rhino.github.io/components/pufferfish/mirrorCombineDomains.html"
     },
     {
@@ -29587,7 +29597,7 @@
       "category": "Domain",
       "summary": "Cut a set of domains at an index, mirror the kept side of the cut across the index, and combine it with the kept side.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -120px -144px",
+      "iconCss": "background: url('icons/pufferfish.png') -216px -144px",
       "helpLink": "https://rhino.github.io/components/pufferfish/mirrorCutDomains.html"
     },
     {
@@ -29597,7 +29607,7 @@
       "category": "Domain",
       "summary": "Cut a set of domain²s at an index, mirror the kept side of the cut across the index, and combine it with the kept side.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -144px -144px",
+      "iconCss": "background: url('icons/pufferfish.png') 0px -168px",
       "helpLink": "https://rhino.github.io/components/pufferfish/mirrorCutDomains.html"
     },
     {
@@ -29607,7 +29617,7 @@
       "category": "Domain",
       "summary": "Reparameterize a set of domains to have a start and end value range from 0 to 1, or an inverted start and end value range from 1 to 0.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -144px -264px",
+      "iconCss": "background: url('icons/pufferfish.png') -168px -288px",
       "helpLink": "https://rhino.github.io/components/pufferfish/reparameterizeDomains.html"
     },
     {
@@ -29617,7 +29627,7 @@
       "category": "Domain",
       "summary": "Reparameterize a set of domain²s to have a start and end value range from 0 to 1 for their {u} and {v} domains, or an inverted start and end value range from 1 to 0.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -168px -264px",
+      "iconCss": "background: url('icons/pufferfish.png') -192px -288px",
       "helpLink": "https://rhino.github.io/components/pufferfish/reparameterizeDomains.html"
     },
     {
@@ -29627,7 +29637,7 @@
       "category": "Domain",
       "summary": "Slide within the start and end of a domain to get a number in the domain.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -24px -312px",
+      "iconCss": "background: url('icons/pufferfish.png') -48px -336px",
       "helpLink": "https://rhino.github.io/components/pufferfish/slideWithinDomain.html"
     },
     {
@@ -29637,7 +29647,7 @@
       "category": "Domain",
       "summary": "Slide within the start and end of a domain² to get a {u} and {v} domain number within the domain².",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -48px -312px",
+      "iconCss": "background: url('icons/pufferfish.png') -72px -336px",
       "helpLink": "https://rhino.github.io/components/pufferfish/slideWithinDomain.html"
     },
     {
@@ -29647,7 +29657,7 @@
       "category": "Domain",
       "summary": "Tween consecutively between a set of domains.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -96px -336px",
+      "iconCss": "background: url('icons/pufferfish.png') -120px -360px",
       "helpLink": "https://rhino.github.io/components/pufferfish/tweenConsecutiveDomains.html"
     },
     {
@@ -29657,7 +29667,7 @@
       "category": "Domain",
       "summary": "Tween consecutively between a set of domain²s.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -120px -336px",
+      "iconCss": "background: url('icons/pufferfish.png') -144px -360px",
       "helpLink": "https://rhino.github.io/components/pufferfish/tweenConsecutiveDomains.html"
     },
     {
@@ -29667,7 +29677,7 @@
       "category": "Domain",
       "summary": "Tween through a set of domains.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') 0px -384px",
+      "iconCss": "background: url('icons/pufferfish.png') -24px -408px",
       "helpLink": "https://rhino.github.io/components/pufferfish/tweenThroughDomains.html"
     },
     {
@@ -29677,7 +29687,7 @@
       "category": "Domain",
       "summary": "Tween through a set of domain²s.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -24px -384px",
+      "iconCss": "background: url('icons/pufferfish.png') -48px -408px",
       "helpLink": "https://rhino.github.io/components/pufferfish/tweenThroughDomains.html"
     },
     {
@@ -29687,7 +29697,7 @@
       "category": "Domain",
       "summary": "Tween between two domains.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -144px -408px",
+      "iconCss": "background: url('icons/pufferfish.png') -168px -432px",
       "helpLink": "https://rhino.github.io/components/pufferfish/tweenTwoDomains.html"
     },
     {
@@ -29697,7 +29707,7 @@
       "category": "Domain",
       "summary": "Tween between two domain²s.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -168px -408px",
+      "iconCss": "background: url('icons/pufferfish.png') -192px -432px",
       "helpLink": "https://rhino.github.io/components/pufferfish/tweenTwoDomains.html"
     },
     {
@@ -29707,7 +29717,7 @@
       "category": "Domain",
       "summary": "Construct a domain from one number that becomes the negative and positive extents of the domain from zero.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -216px -432px",
+      "iconCss": "background: url('icons/pufferfish.png') 0px -480px",
       "helpLink": "https://rhino.github.io/components/pufferfish/twoWayDomain.html"
     },
     {
@@ -29717,7 +29727,7 @@
       "category": "Domain",
       "summary": "Construct a domain² from one {u} number and one {v} number that becomes the negative and positive extents for each direction of the domain² from zero.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') 0px -456px",
+      "iconCss": "background: url('icons/pufferfish.png') -24px -480px",
       "helpLink": "https://rhino.github.io/components/pufferfish/twoWayDomain.html"
     },
     {
@@ -29727,7 +29737,7 @@
       "category": "Domain",
       "summary": "Solve the weighted arithmetic average for a set of domains.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -216px -456px",
+      "iconCss": "background: url('icons/pufferfish.png') 0px -504px",
       "helpLink": "https://rhino.github.io/components/pufferfish/weightedAverageDomain.html"
     },
     {
@@ -29737,7 +29747,7 @@
       "category": "Domain",
       "summary": "Solve the weighted arithmetic average for a set of domain²s.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') 0px -480px",
+      "iconCss": "background: url('icons/pufferfish.png') -24px -504px",
       "helpLink": "https://rhino.github.io/components/pufferfish/weightedAverageDomain.html"
     },
     {
@@ -29747,7 +29757,7 @@
       "category": "List",
       "summary": "Dispatch a list of items into two lists based on a set of indices, those that are at the indices and those which are not",
       "description": "Dispatch a list of items into two lists based on a set of indices, those that are at the indices and those which are not. Items which are at the indices will be ordered based on the input set of indices.",
-      "iconCss": "background: url('icons/pufferfish.png') -216px -48px",
+      "iconCss": "background: url('icons/pufferfish.png') 0px -72px",
       "helpLink": "https://rhino.github.io/components/pufferfish/dispatchIndices.html"
     },
     {
@@ -29757,7 +29767,7 @@
       "category": "List",
       "summary": "Get the last index of a list (list length -1).",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -168px -96px",
+      "iconCss": "background: url('icons/pufferfish.png') 0px -120px",
       "helpLink": "https://rhino.github.io/components/pufferfish/lastIndex.html"
     },
     {
@@ -29767,7 +29777,7 @@
       "category": "List",
       "summary": "Get a list of the indices from a list of items.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -216px -96px",
+      "iconCss": "background: url('icons/pufferfish.png') -48px -120px",
       "helpLink": "https://rhino.github.io/components/pufferfish/listIndices.html"
     },
     {
@@ -29777,7 +29787,7 @@
       "category": "List",
       "summary": "Mirror a set of list items across its end or start and combine it with the original set.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -216px -120px",
+      "iconCss": "background: url('icons/pufferfish.png') -72px -144px",
       "helpLink": "https://rhino.github.io/components/pufferfish/mirrorCombineItems.html"
     },
     {
@@ -29787,7 +29797,7 @@
       "category": "List",
       "summary": "Cut a set of list items at an index, mirror the kept side of the cut across the index, and combine it with the kept side.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -168px -144px",
+      "iconCss": "background: url('icons/pufferfish.png') -24px -168px",
       "helpLink": "https://rhino.github.io/components/pufferfish/mirrorCutItems.html"
     },
     {
@@ -29797,8 +29807,18 @@
       "category": "List",
       "summary": "Sift a list of items into two lists based on a set of indices, those that are at the indices and those which are not",
       "description": "Sift a list of items into two lists based on a set of indices, those that are at the indices and those which are not. Each resulting list will have the same length and order as the input list but will be filled with null placeholders for items that went to the other list.",
-      "iconCss": "background: url('icons/pufferfish.png') -216px -288px",
+      "iconCss": "background: url('icons/pufferfish.png') 0px -336px",
       "helpLink": "https://rhino.github.io/components/pufferfish/siftIndices.html"
+    },
+    {
+      "name": "Angle Split Mesh",
+      "id": "AngSplitMsh",
+      "library": "Pufferfish",
+      "category": "Mesh",
+      "summary": "Split a mesh into separate meshes by measuring an angle tolerance between adjacent mesh face normals, if angle tolerance does not split the mesh it will output with no change",
+      "description": "Split a mesh into separate meshes by measuring an angle tolerance between adjacent mesh face normals, if angle tolerance does not split the mesh it will output with no change.<br><br><br>-base methods by Mateusz Zwierzycki",
+      "iconCss": "background: url('icons/pufferfish.png') -24px 0px",
+      "helpLink": "https://rhino.github.io/components/pufferfish/angleSplitMesh.html"
     },
     {
       "name": "Average Mesh",
@@ -29807,7 +29827,7 @@
       "category": "Mesh",
       "summary": "Solve the arithmetic average for a set of meshes, meshes must have the same topology.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -216px 0px",
+      "iconCss": "background: url('icons/pufferfish.png') 0px -24px",
       "helpLink": "https://rhino.github.io/components/pufferfish/averageMesh.html"
     },
     {
@@ -29817,7 +29837,7 @@
       "category": "Mesh",
       "summary": "Close an open mesh by filling its openings with new mesh faces, if mesh is already closed it will output with no change.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -72px -24px",
+      "iconCss": "background: url('icons/pufferfish.png') -96px -24px",
       "helpLink": "https://rhino.github.io/components/pufferfish/closeMesh.html"
     },
     {
@@ -29827,8 +29847,18 @@
       "category": "Mesh",
       "summary": "Test if a mesh is closed.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -48px -96px",
+      "iconCss": "background: url('icons/pufferfish.png') -96px -96px",
       "helpLink": "https://rhino.github.io/components/pufferfish/isMeshClosed.html"
+    },
+    {
+      "name": "Is Mesh Disjoint",
+      "id": "MshDisjn",
+      "library": "Pufferfish",
+      "category": "Mesh",
+      "summary": "Test if a mesh has disjoint pieces.",
+      "description": null,
+      "iconCss": "background: url('icons/pufferfish.png') -120px -96px",
+      "helpLink": "https://rhino.github.io/components/pufferfish/isMeshDisjoint.html"
     },
     {
       "name": "Mirror Cut Mesh",
@@ -29837,7 +29867,7 @@
       "category": "Mesh",
       "summary": "Cut a mesh with a plane, mirror the kept side of the cut across a mirror plane, and combine it with the kept side.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -192px -144px",
+      "iconCss": "background: url('icons/pufferfish.png') -48px -168px",
       "helpLink": "https://rhino.github.io/components/pufferfish/mirrorCutMesh.html"
     },
     {
@@ -29847,8 +29877,38 @@
       "category": "Mesh",
       "summary": "Offset a mesh with the option of offsetting both sides and creating a solid.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -192px -168px",
+      "iconCss": "background: url('icons/pufferfish.png') -48px -192px",
       "helpLink": "https://rhino.github.io/components/pufferfish/offsetMesh.html"
+    },
+    {
+      "name": "Parameter Extrude Mesh",
+      "id": "ParamExtrMsh",
+      "library": "Pufferfish",
+      "category": "Mesh",
+      "summary": "Create an extruded mesh from a profile curve along a vector, curve, or to a point from domain dividing {u} and {v} parameters, or by lengths between control points, or by angle accuracy, with the option of capping closed profile mesh extrusions",
+      "description": "Create an extruded mesh from a profile curve along a vector, curve, or to a point from domain dividing {u} and {v} parameters, or by lengths between control points, or by angle accuracy, with the option of capping closed profile mesh extrusions.<br><br><br>-base methods by Mateusz Zwierzycki",
+      "iconCss": "background: url('icons/pufferfish.png') -144px -192px",
+      "helpLink": "https://rhino.github.io/components/pufferfish/parameterExtrudeMesh.html"
+    },
+    {
+      "name": "Parameter Loft Mesh",
+      "id": "ParamLoftMsh",
+      "library": "Pufferfish",
+      "category": "Mesh",
+      "summary": "Create a lofted mesh through a set of section curves from domain dividing {u} and {v} parameters, or by lengths between control points, or by angle accuracy, with optional start and end points to loft to",
+      "description": "Create a lofted mesh through a set of section curves from domain dividing {u} and {v} parameters, or by lengths between control points, or by angle accuracy, with optional start and end points to loft to.<br><br><br>-base methods by Mateusz Zwierzycki",
+      "iconCss": "background: url('icons/pufferfish.png') -168px -192px",
+      "helpLink": "https://rhino.github.io/components/pufferfish/parameterLoftMesh.html"
+    },
+    {
+      "name": "Parameter Pipe Mesh",
+      "id": "ParamPipeMsh",
+      "library": "Pufferfish",
+      "category": "Mesh",
+      "summary": "Create a piped mesh along a curve from domain dividing {u} and {v} parameters, or by lengths between control points, or by angle accuracy, with various end types",
+      "description": "Create a piped mesh along a curve from domain dividing {u} and {v} parameters, or by lengths between control points, or by angle accuracy, with various end types.<br><br><br>-base methods by Mateusz Zwierzycki",
+      "iconCss": "background: url('icons/pufferfish.png') -192px -192px",
+      "helpLink": "https://rhino.github.io/components/pufferfish/parameterPipeMesh.html"
     },
     {
       "name": "Parameter Surface Mesh",
@@ -29857,7 +29917,7 @@
       "category": "Mesh",
       "summary": "Generate a mesh on a surface from domain dividing {u} and {v} parameters.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -168px -192px",
+      "iconCss": "background: url('icons/pufferfish.png') -192px -216px",
       "helpLink": "https://rhino.github.io/components/pufferfish/parameterSurfaceMesh.html"
     },
     {
@@ -29867,7 +29927,7 @@
       "category": "Mesh",
       "summary": "Trim (remove) the parts of a mesh on one side of a plane.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -48px -216px",
+      "iconCss": "background: url('icons/pufferfish.png') -72px -240px",
       "helpLink": "https://rhino.github.io/components/pufferfish/planeTrimMesh.html"
     },
     {
@@ -29877,7 +29937,7 @@
       "category": "Mesh",
       "summary": "Create a mesh from a closed or open polyline boundary.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -96px -240px",
+      "iconCss": "background: url('icons/pufferfish.png') -144px -264px",
       "helpLink": "https://rhino.github.io/components/pufferfish/polylineToMesh.html"
     },
     {
@@ -29887,7 +29947,7 @@
       "category": "Mesh",
       "summary": "Rebuild a mesh with options for recomputing normals, removing unused faces and vertices, combining duplicate vertices, unifying normals, flipping normals, and welding vertices within proximity of eachother",
       "description": "Rebuild a mesh with options for recomputing normals, removing unused faces and vertices, combining duplicate vertices, unifying normals, flipping normals, and welding vertices within proximity of eachother.",
-      "iconCss": "background: url('icons/pufferfish.png') -168px -240px",
+      "iconCss": "background: url('icons/pufferfish.png') -216px -264px",
       "helpLink": "https://rhino.github.io/components/pufferfish/rebuildMesh.html"
     },
     {
@@ -29897,7 +29957,7 @@
       "category": "Mesh",
       "summary": "Recursively morph mesh geometries onto mesh faces starting from morphing onto a base mesh, the resulting mesh of each recursive morphing step becomes the new base mesh for the next steps mesh geometry to morph onto its faces",
       "description": "Recursively morph mesh geometries onto mesh faces starting from morphing onto a base mesh, the resulting mesh of each recursive morphing step becomes the new base mesh for the next steps mesh geometry to morph onto its faces.",
-      "iconCss": "background: url('icons/pufferfish.png') 0px -264px",
+      "iconCss": "background: url('icons/pufferfish.png') -24px -288px",
       "helpLink": "https://rhino.github.io/components/pufferfish/recursiveMorphMesh.html"
     },
     {
@@ -29907,7 +29967,7 @@
       "category": "Mesh",
       "summary": "Reduce the face count of a mesh to a target amount (look at Rhino command line to see progress % of operation).",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -48px -264px",
+      "iconCss": "background: url('icons/pufferfish.png') -72px -288px",
       "helpLink": "https://rhino.github.io/components/pufferfish/reduceMesh.html"
     },
     {
@@ -29917,7 +29977,7 @@
       "category": "Mesh",
       "summary": "Tween consecutively between a set of meshes, meshes must have the same topology.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -144px -336px",
+      "iconCss": "background: url('icons/pufferfish.png') -168px -360px",
       "helpLink": "https://rhino.github.io/components/pufferfish/tweenConsecutiveMeshes.html"
     },
     {
@@ -29927,7 +29987,7 @@
       "category": "Mesh",
       "summary": "Tween through a set of meshes, meshes must have the same topology.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -48px -384px",
+      "iconCss": "background: url('icons/pufferfish.png') -72px -408px",
       "helpLink": "https://rhino.github.io/components/pufferfish/tweenThroughMeshes.html"
     },
     {
@@ -29937,7 +29997,7 @@
       "category": "Mesh",
       "summary": "Tween between two meshes, meshes must have the same topology.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -192px -408px",
+      "iconCss": "background: url('icons/pufferfish.png') -216px -432px",
       "helpLink": "https://rhino.github.io/components/pufferfish/tweenTwoMeshes.html"
     },
     {
@@ -29947,7 +30007,7 @@
       "category": "Mesh",
       "summary": "Solve the arithmetic weighted average for a set of meshes, meshes must have the same topology.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -24px -480px",
+      "iconCss": "background: url('icons/pufferfish.png') -48px -504px",
       "helpLink": "https://rhino.github.io/components/pufferfish/weightedAverageMesh.html"
     },
     {
@@ -29957,7 +30017,7 @@
       "category": "Number",
       "summary": "Remap values with a custom graph using input curves.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -24px -48px",
+      "iconCss": "background: url('icons/pufferfish.png') -48px -48px",
       "helpLink": "https://rhino.github.io/components/pufferfish/curveGraphMapper.html"
     },
     {
@@ -29967,7 +30027,7 @@
       "category": "Number",
       "summary": "Deconstruct a number into its whole integer and decimal remainder.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -144px -48px",
+      "iconCss": "background: url('icons/pufferfish.png') -168px -48px",
       "helpLink": "https://rhino.github.io/components/pufferfish/deconstructNumber.html"
     },
     {
@@ -29977,7 +30037,7 @@
       "category": "Number",
       "summary": "Outputs the RhinoMath default angle tolerance value (1 deg | 0.017453 rad ).",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -168px -48px",
+      "iconCss": "background: url('icons/pufferfish.png') -192px -48px",
       "helpLink": "https://rhino.github.io/components/pufferfish/defaultAngleTolerance.html"
     },
     {
@@ -29987,7 +30047,7 @@
       "category": "Number",
       "summary": "Outputs the Rhino documents angle tolerance value (Document Properties > Units > Model > Angle tolerance).",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') 0px -72px",
+      "iconCss": "background: url('icons/pufferfish.png') -24px -72px",
       "helpLink": "https://rhino.github.io/components/pufferfish/documentAngleTolerance.html"
     },
     {
@@ -29997,7 +30057,7 @@
       "category": "Number",
       "summary": "Outputs the Rhino documents absolute distance tolerance value (Document Properties > Units > Model > Absolute tolerance).",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -24px -72px",
+      "iconCss": "background: url('icons/pufferfish.png') -48px -72px",
       "helpLink": "https://rhino.github.io/components/pufferfish/documentDistanceTolerance.html"
     },
     {
@@ -30007,8 +30067,18 @@
       "category": "Number",
       "summary": "Get the highest and lowest values from a set of numbers.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -144px -72px",
+      "iconCss": "background: url('icons/pufferfish.png') -168px -72px",
       "helpLink": "https://rhino.github.io/components/pufferfish/highestLowestNumbers.html"
+    },
+    {
+      "name": "Invert Boolean",
+      "id": "InvBool",
+      "library": "Pufferfish",
+      "category": "Number",
+      "summary": "Invert a boolean by making a true boolean false or a false boolean true.",
+      "description": null,
+      "iconCss": "background: url('icons/pufferfish.png') -192px -72px",
+      "helpLink": "https://rhino.github.io/components/pufferfish/invertBoolean.html"
     },
     {
       "name": "Last Index Range",
@@ -30017,7 +30087,7 @@
       "category": "Number",
       "summary": "Create a range of numbers between 0 and the last index of a list (list length -1).",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -192px -96px",
+      "iconCss": "background: url('icons/pufferfish.png') -24px -120px",
       "helpLink": "https://rhino.github.io/components/pufferfish/lastIndexRange.html"
     },
     {
@@ -30027,7 +30097,7 @@
       "category": "Number",
       "summary": "Create a range of numbers between 0 and the length of a list.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') 0px -120px",
+      "iconCss": "background: url('icons/pufferfish.png') -72px -120px",
       "helpLink": "https://rhino.github.io/components/pufferfish/listLengthRange.html"
     },
     {
@@ -30037,7 +30107,7 @@
       "category": "Number",
       "summary": "Perform mass division on a set of numbers.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -48px -120px",
+      "iconCss": "background: url('icons/pufferfish.png') -120px -120px",
       "helpLink": "https://rhino.github.io/components/pufferfish/massDivision.html"
     },
     {
@@ -30047,7 +30117,7 @@
       "category": "Number",
       "summary": "Perform mass subtraction on a set of numbers.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -72px -120px",
+      "iconCss": "background: url('icons/pufferfish.png') -144px -120px",
       "helpLink": "https://rhino.github.io/components/pufferfish/massSubtraction.html"
     },
     {
@@ -30057,7 +30127,7 @@
       "category": "Number",
       "summary": "Mirror a set of numbers across its end or start and combine it with the original set.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') 0px -144px",
+      "iconCss": "background: url('icons/pufferfish.png') -96px -144px",
       "helpLink": "https://rhino.github.io/components/pufferfish/mirrorCombineNumbers.html"
     },
     {
@@ -30067,7 +30137,7 @@
       "category": "Number",
       "summary": "Cut a set of numbers at an index, mirror the kept side of the cut across the index, and combine it with the kept side.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -216px -144px",
+      "iconCss": "background: url('icons/pufferfish.png') -72px -168px",
       "helpLink": "https://rhino.github.io/components/pufferfish/mirrorCutNumbers.html"
     },
     {
@@ -30077,7 +30147,7 @@
       "category": "Number",
       "summary": "Partition a number as equally as possible by a specified amount of divisions.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -192px -192px",
+      "iconCss": "background: url('icons/pufferfish.png') -216px -216px",
       "helpLink": "https://rhino.github.io/components/pufferfish/partitionNumber.html"
     },
     {
@@ -30087,7 +30157,7 @@
       "category": "Number",
       "summary": "Calculate the percentage of a number.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -216px -192px",
+      "iconCss": "background: url('icons/pufferfish.png') 0px -240px",
       "helpLink": "https://rhino.github.io/components/pufferfish/percentage.html"
     },
     {
@@ -30097,7 +30167,7 @@
       "category": "Number",
       "summary": "Reparameterize a set of numbers to have a domain range from 0 to 1, or an inverted domain range from 1 to 0.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -216px -264px",
+      "iconCss": "background: url('icons/pufferfish.png') 0px -312px",
       "helpLink": "https://rhino.github.io/components/pufferfish/reparameterizeNumbers.html"
     },
     {
@@ -30107,7 +30177,7 @@
       "category": "Number",
       "summary": "Create a range of numbers between 0 and 1.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -192px -264px",
+      "iconCss": "background: url('icons/pufferfish.png') -216px -288px",
       "helpLink": "https://rhino.github.io/components/pufferfish/reparameterizedRange.html"
     },
     {
@@ -30117,7 +30187,7 @@
       "category": "Number",
       "summary": "Round a number to a decimal place or truncate a number at a decimal place.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -72px -288px",
+      "iconCss": "background: url('icons/pufferfish.png') -96px -312px",
       "helpLink": "https://rhino.github.io/components/pufferfish/roundToDecimalPlace.html"
     },
     {
@@ -30127,7 +30197,7 @@
       "category": "Number",
       "summary": "Round a number to a multiplication factor.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -96px -288px",
+      "iconCss": "background: url('icons/pufferfish.png') -120px -312px",
       "helpLink": "https://rhino.github.io/components/pufferfish/roundToFactor.html"
     },
     {
@@ -30137,7 +30207,7 @@
       "category": "Number",
       "summary": "Round numbers in x to the nearest numbers in y with the option of remapping number set x to the domain bounds of number set y.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -120px -288px",
+      "iconCss": "background: url('icons/pufferfish.png') -144px -312px",
       "helpLink": "https://rhino.github.io/components/pufferfish/roundToNearest.html"
     },
     {
@@ -30147,7 +30217,7 @@
       "category": "Number",
       "summary": "Tween consecutively between a set of numbers.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -168px -336px",
+      "iconCss": "background: url('icons/pufferfish.png') -192px -360px",
       "helpLink": "https://rhino.github.io/components/pufferfish/tweenConsecutiveNumbers.html"
     },
     {
@@ -30157,7 +30227,7 @@
       "category": "Number",
       "summary": "Tween through a set of numbers.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -72px -384px",
+      "iconCss": "background: url('icons/pufferfish.png') -96px -408px",
       "helpLink": "https://rhino.github.io/components/pufferfish/tweenThroughNumbers.html"
     },
     {
@@ -30167,7 +30237,7 @@
       "category": "Number",
       "summary": "Tween between two numbers.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -216px -408px",
+      "iconCss": "background: url('icons/pufferfish.png') 0px -456px",
       "helpLink": "https://rhino.github.io/components/pufferfish/tweenTwoNumbers.html"
     },
     {
@@ -30177,7 +30247,7 @@
       "category": "Number",
       "summary": "Subtract one from x.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -96px -480px",
+      "iconCss": "background: url('icons/pufferfish.png') -120px -504px",
       "helpLink": "https://rhino.github.io/components/pufferfish/xMinusOne.html"
     },
     {
@@ -30187,7 +30257,7 @@
       "category": "Number",
       "summary": "Add one to x.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -120px -480px",
+      "iconCss": "background: url('icons/pufferfish.png') -144px -504px",
       "helpLink": "https://rhino.github.io/components/pufferfish/xPlusOne.html"
     },
     {
@@ -30197,7 +30267,7 @@
       "category": "Number",
       "summary": "Outputs the RhinoMath zero distance tolerance value (1.0e-12).",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -144px -480px",
+      "iconCss": "background: url('icons/pufferfish.png') -168px -504px",
       "helpLink": "https://rhino.github.io/components/pufferfish/zeroDistanceTolerance.html"
     },
     {
@@ -30207,7 +30277,7 @@
       "category": "Plane",
       "summary": "Solve the arithmetic average for a set of planes.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') 0px -24px",
+      "iconCss": "background: url('icons/pufferfish.png') -24px -24px",
       "helpLink": "https://rhino.github.io/components/pufferfish/averagePlane.html"
     },
     {
@@ -30217,7 +30287,7 @@
       "category": "Plane",
       "summary": "Find the closest target plane by axis or axes orientation to a reference plane.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -96px -24px",
+      "iconCss": "background: url('icons/pufferfish.png') -120px -24px",
       "helpLink": "https://rhino.github.io/components/pufferfish/closestPlaneOrientation.html"
     },
     {
@@ -30227,7 +30297,7 @@
       "category": "Plane",
       "summary": "Flip a plane by specified axes with the option of using a guide plane.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -72px -72px",
+      "iconCss": "background: url('icons/pufferfish.png') -96px -72px",
       "helpLink": "https://rhino.github.io/components/pufferfish/flipPlane.html"
     },
     {
@@ -30237,7 +30307,7 @@
       "category": "Plane",
       "summary": "Cut a set of planes with a plane, mirror the kept side of the cut across a mirror plane, and combine it with the kept side.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') 0px -168px",
+      "iconCss": "background: url('icons/pufferfish.png') -96px -168px",
       "helpLink": "https://rhino.github.io/components/pufferfish/mirrorCutPlanes.html"
     },
     {
@@ -30247,7 +30317,7 @@
       "category": "Plane",
       "summary": "Offset a plane by specified axes with the option of offsetting both sides.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -216px -168px",
+      "iconCss": "background: url('icons/pufferfish.png') -72px -192px",
       "helpLink": "https://rhino.github.io/components/pufferfish/offsetPlane.html"
     },
     {
@@ -30257,8 +30327,28 @@
       "category": "Plane",
       "summary": "Generate a grid of surface normal oriented planes on a surface from domain dividing {u} and {v} parameters.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -48px -192px",
+      "iconCss": "background: url('icons/pufferfish.png') -216px -192px",
       "helpLink": "https://rhino.github.io/components/pufferfish/parameterPlaneDivideSurface.html"
+    },
+    {
+      "name": "Parameter Plane In Rectangle",
+      "id": "ParamPlnInRec",
+      "library": "Pufferfish",
+      "category": "Plane",
+      "summary": "Locate a rectangle normal oriented plane in a rectangle from a domain dividing {x} and {y} parameter.",
+      "description": null,
+      "iconCss": "background: url('icons/pufferfish.png') 0px -216px",
+      "helpLink": "https://rhino.github.io/components/pufferfish/parameterPlaneInRectangle.html"
+    },
+    {
+      "name": "Parameter Plane On Surface",
+      "id": "ParamPlnOnSrf",
+      "library": "Pufferfish",
+      "category": "Plane",
+      "summary": "Locate a surface normal oriented plane on a surface from a domain dividing {u} and {v} parameter.",
+      "description": null,
+      "iconCss": "background: url('icons/pufferfish.png') -24px -216px",
+      "helpLink": "https://rhino.github.io/components/pufferfish/parameterPlaneOnSurface.html"
     },
     {
       "name": "Plane Trim Planes",
@@ -30267,7 +30357,7 @@
       "category": "Plane",
       "summary": "Trim (remove) the parts of a plane set on one side of a plane.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -72px -216px",
+      "iconCss": "background: url('icons/pufferfish.png') -96px -240px",
       "helpLink": "https://rhino.github.io/components/pufferfish/planeTrimPlanes.html"
     },
     {
@@ -30277,7 +30367,7 @@
       "category": "Plane",
       "summary": "Tween consecutively between a set of planes.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -192px -336px",
+      "iconCss": "background: url('icons/pufferfish.png') -216px -360px",
       "helpLink": "https://rhino.github.io/components/pufferfish/tweenConsecutivePlanes.html"
     },
     {
@@ -30287,7 +30377,7 @@
       "category": "Plane",
       "summary": "Tween consecutively between a set of planes on a curve, if plane origins are not on the curve they will be pulled to it.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -216px -336px",
+      "iconCss": "background: url('icons/pufferfish.png') 0px -384px",
       "helpLink": "https://rhino.github.io/components/pufferfish/tweenConsecutivePlanesOnCurve.html"
     },
     {
@@ -30297,7 +30387,7 @@
       "category": "Plane",
       "summary": "Tween consecutively between a set of planes on a surface, if plane origins are not on the surface they will be pulled to it.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') 0px -360px",
+      "iconCss": "background: url('icons/pufferfish.png') -24px -384px",
       "helpLink": "https://rhino.github.io/components/pufferfish/tweenConsecutivePlanesOnSurface.html"
     },
     {
@@ -30307,7 +30397,7 @@
       "category": "Plane",
       "summary": "Tween through a set of planes.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -96px -384px",
+      "iconCss": "background: url('icons/pufferfish.png') -120px -408px",
       "helpLink": "https://rhino.github.io/components/pufferfish/tweenThroughPlanes.html"
     },
     {
@@ -30317,7 +30407,7 @@
       "category": "Plane",
       "summary": "Tween through a set of planes on a curve, if plane origins are not on the curve they will be pulled to it.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -120px -384px",
+      "iconCss": "background: url('icons/pufferfish.png') -144px -408px",
       "helpLink": "https://rhino.github.io/components/pufferfish/tweenThroughPlanesOnCurve.html"
     },
     {
@@ -30327,7 +30417,7 @@
       "category": "Plane",
       "summary": "Tween through a set of planes on a surface, if plane origins are not on the surface they will be pulled to it.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -144px -384px",
+      "iconCss": "background: url('icons/pufferfish.png') -168px -408px",
       "helpLink": "https://rhino.github.io/components/pufferfish/tweenThroughPlanesOnSurface.html"
     },
     {
@@ -30337,7 +30427,7 @@
       "category": "Plane",
       "summary": "Tween between two planes.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') 0px -432px",
+      "iconCss": "background: url('icons/pufferfish.png') -24px -456px",
       "helpLink": "https://rhino.github.io/components/pufferfish/tweenTwoPlanes.html"
     },
     {
@@ -30347,7 +30437,7 @@
       "category": "Plane",
       "summary": "Tween between two planes on a curve, if plane origins are not on the curve they will be pulled to it.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -24px -432px",
+      "iconCss": "background: url('icons/pufferfish.png') -48px -456px",
       "helpLink": "https://rhino.github.io/components/pufferfish/tweenTwoPlanesOnCurve.html"
     },
     {
@@ -30357,7 +30447,7 @@
       "category": "Plane",
       "summary": "Tween between two planes on a surface, if plane origins are not on the surface they will be pulled to it.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -48px -432px",
+      "iconCss": "background: url('icons/pufferfish.png') -72px -456px",
       "helpLink": "https://rhino.github.io/components/pufferfish/tweenTwoPlanesOnSurface.html"
     },
     {
@@ -30367,7 +30457,7 @@
       "category": "Plane",
       "summary": "Solve the arithmetic weighted average for a set of planes.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -48px -480px",
+      "iconCss": "background: url('icons/pufferfish.png') -72px -504px",
       "helpLink": "https://rhino.github.io/components/pufferfish/weightedAveragePlane.html"
     },
     {
@@ -30377,7 +30467,7 @@
       "category": "Point",
       "summary": "Test a set of points for collinearity.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -48px 0px",
+      "iconCss": "background: url('icons/pufferfish.png') -72px 0px",
       "helpLink": "https://rhino.github.io/components/pufferfish/arePointsCollinear.html"
     },
     {
@@ -30387,7 +30477,7 @@
       "category": "Point",
       "summary": "Test a set of points for coplanarity.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -72px 0px",
+      "iconCss": "background: url('icons/pufferfish.png') -96px 0px",
       "helpLink": "https://rhino.github.io/components/pufferfish/arePointsCoplanar.html"
     },
     {
@@ -30397,7 +30487,7 @@
       "category": "Point",
       "summary": "Extract the edit points on a curve at knot averages, the points an interpolated curve interpolated through.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') 0px -48px",
+      "iconCss": "background: url('icons/pufferfish.png') -24px -48px",
       "helpLink": "https://rhino.github.io/components/pufferfish/curveEditPoints.html"
     },
     {
@@ -30407,7 +30497,7 @@
       "category": "Point",
       "summary": "Get the point at the middle of a curves length or domain.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -96px -48px",
+      "iconCss": "background: url('icons/pufferfish.png') -120px -48px",
       "helpLink": "https://rhino.github.io/components/pufferfish/curveMiddlePoint.html"
     },
     {
@@ -30417,7 +30507,7 @@
       "category": "Point",
       "summary": "Map point to a target surface space from its location relative to a source surface space.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -24px -120px",
+      "iconCss": "background: url('icons/pufferfish.png') -96px -120px",
       "helpLink": "https://rhino.github.io/components/pufferfish/mapPointToSurface.html"
     },
     {
@@ -30427,7 +30517,7 @@
       "category": "Point",
       "summary": "Cut a set of points with a plane, mirror the kept side of the cut across a mirror plane, and combine it with the kept side.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -24px -168px",
+      "iconCss": "background: url('icons/pufferfish.png') -120px -168px",
       "helpLink": "https://rhino.github.io/components/pufferfish/mirrorCutPoints.html"
     },
     {
@@ -30437,8 +30527,28 @@
       "category": "Point",
       "summary": "Generate a grid of points on a surface from domain dividing {u} and {v} parameters.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -72px -192px",
+      "iconCss": "background: url('icons/pufferfish.png') -48px -216px",
       "helpLink": "https://rhino.github.io/components/pufferfish/parameterPointDivideSurface.html"
+    },
+    {
+      "name": "Parameter Point In Rectangle",
+      "id": "ParamPtInRec",
+      "library": "Pufferfish",
+      "category": "Point",
+      "summary": "Locate a point in a rectangle from a domain dividing {x} and {y} parameter.",
+      "description": null,
+      "iconCss": "background: url('icons/pufferfish.png') -72px -216px",
+      "helpLink": "https://rhino.github.io/components/pufferfish/parameterPointInRectangle.html"
+    },
+    {
+      "name": "Parameter Point On Surface",
+      "id": "ParamPtOnSrf",
+      "library": "Pufferfish",
+      "category": "Point",
+      "summary": "Locate a point on a surface from a domain dividing {u} and {v} parameter.",
+      "description": null,
+      "iconCss": "background: url('icons/pufferfish.png') -96px -216px",
+      "helpLink": "https://rhino.github.io/components/pufferfish/parameterPointOnSurface.html"
     },
     {
       "name": "Pinch'n'Spread",
@@ -30447,7 +30557,7 @@
       "category": "Point",
       "summary": "Pinch & spread a set of points by radius and strength values at each location point. Positive strengths pinch, negative strengths spread.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') 0px -216px",
+      "iconCss": "background: url('icons/pufferfish.png') -24px -240px",
       "helpLink": "https://rhino.github.io/components/pufferfish/pinchnSpread.html"
     },
     {
@@ -30457,7 +30567,7 @@
       "category": "Point",
       "summary": "Trim (remove) the parts of a point set on one side of a plane.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -96px -216px",
+      "iconCss": "background: url('icons/pufferfish.png') -120px -240px",
       "helpLink": "https://rhino.github.io/components/pufferfish/planeTrimPoints.html"
     },
     {
@@ -30467,7 +30577,7 @@
       "category": "Point",
       "summary": "Divide each segment of a curve into equal lengths.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -144px -216px",
+      "iconCss": "background: url('icons/pufferfish.png') -168px -240px",
       "helpLink": "https://rhino.github.io/components/pufferfish/pointDivideCurveSegments.html"
     },
     {
@@ -30477,7 +30587,7 @@
       "category": "Point",
       "summary": "Divide a curve into equal lengths that are as close as possible to a target length.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -168px -216px",
+      "iconCss": "background: url('icons/pufferfish.png') -192px -240px",
       "helpLink": "https://rhino.github.io/components/pufferfish/pointDivideCurveTargetLength.html"
     },
     {
@@ -30485,9 +30595,9 @@
       "id": "PtMshSide",
       "library": "Pufferfish",
       "category": "Point",
-      "summary": "Find on which side of a mesh a point exists, if mesh has mis-matched face directions its normals will be unified.",
+      "summary": "Find on which side of a mesh a point exists.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -192px -216px",
+      "iconCss": "background: url('icons/pufferfish.png') 0px -264px",
       "helpLink": "https://rhino.github.io/components/pufferfish/pointMeshSide.html"
     },
     {
@@ -30497,7 +30607,7 @@
       "category": "Point",
       "summary": "Find on which side of a plane a point exists.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -216px -216px",
+      "iconCss": "background: url('icons/pufferfish.png') -24px -264px",
       "helpLink": "https://rhino.github.io/components/pufferfish/pointPlaneSide.html"
     },
     {
@@ -30507,7 +30617,7 @@
       "category": "Point",
       "summary": "Find the surface edge which is closest to a point.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -24px -240px",
+      "iconCss": "background: url('icons/pufferfish.png') -72px -264px",
       "helpLink": "https://rhino.github.io/components/pufferfish/pointSurfaceEdge.html"
     },
     {
@@ -30517,7 +30627,7 @@
       "category": "Point",
       "summary": "Find on which side of a surface a point exists.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -48px -240px",
+      "iconCss": "background: url('icons/pufferfish.png') -96px -264px",
       "helpLink": "https://rhino.github.io/components/pufferfish/pointSurfaceSide.html"
     },
     {
@@ -30527,7 +30637,7 @@
       "category": "Point",
       "summary": "Reparameterize a set of points to have {x}, {y}, {z} coordinates which range from 0 to 1, or an inverted coordinate range from 1 to 0.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') 0px -288px",
+      "iconCss": "background: url('icons/pufferfish.png') -24px -312px",
       "helpLink": "https://rhino.github.io/components/pufferfish/reparameterizePoints.html"
     },
     {
@@ -30537,7 +30647,7 @@
       "category": "Point",
       "summary": "Extract the edit points on a surface at knot averages, the points an interpolated surface interpolated through.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -168px -312px",
+      "iconCss": "background: url('icons/pufferfish.png') -192px -336px",
       "helpLink": "https://rhino.github.io/components/pufferfish/surfaceEditPoints.html"
     },
     {
@@ -30547,7 +30657,7 @@
       "category": "Point",
       "summary": "Tween consecutively between a set of points.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -24px -360px",
+      "iconCss": "background: url('icons/pufferfish.png') -48px -384px",
       "helpLink": "https://rhino.github.io/components/pufferfish/tweenConsecutivePoints.html"
     },
     {
@@ -30557,7 +30667,7 @@
       "category": "Point",
       "summary": "Tween consecutively between a set of points on a curve, if points are not on the curve they will be pulled to it.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -48px -360px",
+      "iconCss": "background: url('icons/pufferfish.png') -72px -384px",
       "helpLink": "https://rhino.github.io/components/pufferfish/tweenConsecutivePointsOnCurve.html"
     },
     {
@@ -30567,7 +30677,7 @@
       "category": "Point",
       "summary": "Tween consecutively between a set of points on a surface, if points are not on the surface they will be pulled to it.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -72px -360px",
+      "iconCss": "background: url('icons/pufferfish.png') -96px -384px",
       "helpLink": "https://rhino.github.io/components/pufferfish/tweenConsecutivePointsOnSurface.html"
     },
     {
@@ -30577,7 +30687,7 @@
       "category": "Point",
       "summary": "Tween through a set of points.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -168px -384px",
+      "iconCss": "background: url('icons/pufferfish.png') -192px -408px",
       "helpLink": "https://rhino.github.io/components/pufferfish/tweenThroughPoints.html"
     },
     {
@@ -30587,7 +30697,7 @@
       "category": "Point",
       "summary": "Tween through a set of points on a curve, if points are not on the curve they will be pulled to it.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -192px -384px",
+      "iconCss": "background: url('icons/pufferfish.png') -216px -408px",
       "helpLink": "https://rhino.github.io/components/pufferfish/tweenThroughPointsOnCurve.html"
     },
     {
@@ -30597,7 +30707,7 @@
       "category": "Point",
       "summary": "Tween through a set of points on a surface, if points are not on the surface they will be pulled to it.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -216px -384px",
+      "iconCss": "background: url('icons/pufferfish.png') 0px -432px",
       "helpLink": "https://rhino.github.io/components/pufferfish/tweenThroughPointsOnSurface.html"
     },
     {
@@ -30607,7 +30717,7 @@
       "category": "Point",
       "summary": "Tween between two points.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -72px -432px",
+      "iconCss": "background: url('icons/pufferfish.png') -96px -456px",
       "helpLink": "https://rhino.github.io/components/pufferfish/tweenTwoPoints.html"
     },
     {
@@ -30617,7 +30727,7 @@
       "category": "Point",
       "summary": "Tween between two points on a curve, if points are not on the curve they will be pulled to it.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -96px -432px",
+      "iconCss": "background: url('icons/pufferfish.png') -120px -456px",
       "helpLink": "https://rhino.github.io/components/pufferfish/tweenTwoPointsOnCurve.html"
     },
     {
@@ -30627,8 +30737,98 @@
       "category": "Point",
       "summary": "Tween between two points on a surface, if points are not on the surface they will be pulled to it.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -120px -432px",
+      "iconCss": "background: url('icons/pufferfish.png') -144px -456px",
       "helpLink": "https://rhino.github.io/components/pufferfish/tweenTwoPointsOnSurface.html"
+    },
+    {
+      "name": "Average SubD",
+      "id": "AvrSubD",
+      "library": "Pufferfish",
+      "category": "SubD",
+      "summary": "Solve the arithmetic average for a set of SubDs, SubDs must have the same topology.<br><br>(*Rhino 7 WIP only)",
+      "description": null,
+      "iconCss": "background: url('icons/pufferfish.png') -192px -504px",
+      "helpLink": "https://rhino.github.io/components/pufferfish/averageSubD.html"
+    },
+    {
+      "name": "Tween Consecutive SubDs",
+      "id": "TwnConSubDs",
+      "library": "Pufferfish",
+      "category": "SubD",
+      "summary": "Tween consecutively between a set of SubDs, SubDs must have the same topology.<br><br>(*Rhino 7 WIP only)",
+      "description": null,
+      "iconCss": "background: url('icons/pufferfish.png') -216px -504px",
+      "helpLink": "https://rhino.github.io/components/pufferfish/tweenConsecutiveSubDs.html"
+    },
+    {
+      "name": "Tween Through SubDs",
+      "id": "TwnThruSubDs",
+      "library": "Pufferfish",
+      "category": "SubD",
+      "summary": "Tween through a set of SubDs, SubDs must have the same topology.<br><br>(*Rhino 7 WIP only)",
+      "description": null,
+      "iconCss": "background: url('icons/pufferfish.png') 0px -528px",
+      "helpLink": "https://rhino.github.io/components/pufferfish/tweenThroughSubDs.html"
+    },
+    {
+      "name": "Tween Two SubDs",
+      "id": "Twn2SubDs",
+      "library": "Pufferfish",
+      "category": "SubD",
+      "summary": "Tween between two SubDs, SubDs must have the same topology.<br><br>(*Rhino 7 WIP only)",
+      "description": null,
+      "iconCss": "background: url('icons/pufferfish.png') -24px -528px",
+      "helpLink": "https://rhino.github.io/components/pufferfish/tweenTwoSubDs.html"
+    },
+    {
+      "name": "Twisted Box Consecutive SubDs",
+      "id": "TBoxConSubDs",
+      "library": "Pufferfish",
+      "category": "SubD",
+      "summary": "Create a layered array of connected twisted boxes consecutively between a set of SubDs from the faces, SubDs must have the same topology.<br><br>(*Rhino 7 WIP only)",
+      "description": null,
+      "iconCss": "background: url('icons/pufferfish.png') -48px -528px",
+      "helpLink": "https://rhino.github.io/components/pufferfish/twistedBoxConsecutiveSubDs.html"
+    },
+    {
+      "name": "Twisted Box SubD",
+      "id": "TBoxSubD",
+      "library": "Pufferfish",
+      "category": "SubD",
+      "summary": "Create a layered array of connected twisted boxes on a SubD from the faces and a parameter domain divided thickness.<br><br>(*Rhino 7 WIP only)",
+      "description": null,
+      "iconCss": "background: url('icons/pufferfish.png') -72px -528px",
+      "helpLink": "https://rhino.github.io/components/pufferfish/twistedBoxSubD.html"
+    },
+    {
+      "name": "Twisted Box Through SubDs",
+      "id": "TBoxThruSubDs",
+      "library": "Pufferfish",
+      "category": "SubD",
+      "summary": "Create a layered array of connected twisted boxes through a set of SubDs from the faces, SubDs must have the same topology.<br><br>(*Rhino 7 WIP only)",
+      "description": null,
+      "iconCss": "background: url('icons/pufferfish.png') -96px -528px",
+      "helpLink": "https://rhino.github.io/components/pufferfish/twistedBoxThroughSubDs.html"
+    },
+    {
+      "name": "Twisted Box Two SubDs",
+      "id": "TBox2SubDs",
+      "library": "Pufferfish",
+      "category": "SubD",
+      "summary": "Create a layered array of connected twisted boxes between SubDs from the faces, SubDs must have the same topology.<br><br>(*Rhino 7 WIP only)",
+      "description": null,
+      "iconCss": "background: url('icons/pufferfish.png') -120px -528px",
+      "helpLink": "https://rhino.github.io/components/pufferfish/twistedBoxTwoSubDs.html"
+    },
+    {
+      "name": "Weighted Average SubD",
+      "id": "WavSubD",
+      "library": "Pufferfish",
+      "category": "SubD",
+      "summary": "Solve the arithmetic weighted average for a set of SubDs, SubDs must have the same topology.<br><br>(*Rhino 7 WIP only)",
+      "description": null,
+      "iconCss": "background: url('icons/pufferfish.png') -144px -528px",
+      "helpLink": "https://rhino.github.io/components/pufferfish/weightedAverageSubD.html"
     },
     {
       "name": "Automatic Edge Surface",
@@ -30637,7 +30837,7 @@
       "category": "Surface",
       "summary": "Create a surface between 2, 3, or 4 auto sorted edge curves.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -96px 0px",
+      "iconCss": "background: url('icons/pufferfish.png') -120px 0px",
       "helpLink": "https://rhino.github.io/components/pufferfish/automaticEdgeSurface.html"
     },
     {
@@ -30647,7 +30847,7 @@
       "category": "Surface",
       "summary": "Create a surface from an auto sorted curve network.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -120px 0px",
+      "iconCss": "background: url('icons/pufferfish.png') -144px 0px",
       "helpLink": "https://rhino.github.io/components/pufferfish/automaticNetworkSurface.html"
     },
     {
@@ -30657,7 +30857,7 @@
       "category": "Surface",
       "summary": "Solve the arithmetic average for a set of surfaces, trimmed surfaces will be treated as untrimmed.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -24px -24px",
+      "iconCss": "background: url('icons/pufferfish.png') -48px -24px",
       "helpLink": "https://rhino.github.io/components/pufferfish/averageSurface.html"
     },
     {
@@ -30667,7 +30867,7 @@
       "category": "Surface",
       "summary": "Extrude a profile with a taper from draft angle.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -48px -72px",
+      "iconCss": "background: url('icons/pufferfish.png') -72px -72px",
       "helpLink": "https://rhino.github.io/components/pufferfish/extrudeTaperedPolysurface.html"
     },
     {
@@ -30677,7 +30877,7 @@
       "category": "Surface",
       "summary": "Flip the normals of a polysurface (Brep), closed polysurfaces (Breps) cannot be flipped and will output with no change.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -96px -72px",
+      "iconCss": "background: url('icons/pufferfish.png') -120px -72px",
       "helpLink": "https://rhino.github.io/components/pufferfish/flipPolysurface.html"
     },
     {
@@ -30687,7 +30887,7 @@
       "category": "Surface",
       "summary": "Test if a polysurface (Brep) is closed.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -72px -96px",
+      "iconCss": "background: url('icons/pufferfish.png') -144px -96px",
       "helpLink": "https://rhino.github.io/components/pufferfish/isPolysurfaceClosed.html"
     },
     {
@@ -30697,7 +30897,7 @@
       "category": "Surface",
       "summary": "Test if a surface is closed and if its edges are closed in the {u} or {v} directions.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -96px -96px",
+      "iconCss": "background: url('icons/pufferfish.png') -168px -96px",
       "helpLink": "https://rhino.github.io/components/pufferfish/isSurfaceClosed.html"
     },
     {
@@ -30707,7 +30907,7 @@
       "category": "Surface",
       "summary": "Test if a surface has edges collapsed to a point (singularities).",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -120px -96px",
+      "iconCss": "background: url('icons/pufferfish.png') -192px -96px",
       "helpLink": "https://rhino.github.io/components/pufferfish/isSurfaceCollapsed.html"
     },
     {
@@ -30717,7 +30917,7 @@
       "category": "Surface",
       "summary": "Test if a surface is trimmed, can also test a polysurface (Brep) for trimmed faces.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -144px -96px",
+      "iconCss": "background: url('icons/pufferfish.png') -216px -96px",
       "helpLink": "https://rhino.github.io/components/pufferfish/isSurfaceTrimmed.html"
     },
     {
@@ -30727,7 +30927,7 @@
       "category": "Surface",
       "summary": "Convert a mesh into a nurbs polysurface (Brep).",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -120px -120px",
+      "iconCss": "background: url('icons/pufferfish.png') -216px -120px",
       "helpLink": "https://rhino.github.io/components/pufferfish/meshToPolysurface.html"
     },
     {
@@ -30737,7 +30937,7 @@
       "category": "Surface",
       "summary": "Cut a polysurface(Brep) with a plane, mirror the kept side of the cut across a mirror plane, and combine it with the kept side. Can also mirror cut surfaces",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -48px -168px",
+      "iconCss": "background: url('icons/pufferfish.png') -144px -168px",
       "helpLink": "https://rhino.github.io/components/pufferfish/mirrorCutPolysurface.html"
     },
     {
@@ -30747,7 +30947,7 @@
       "category": "Surface",
       "summary": "Cut a surface with a plane, mirror the kept side of the cut across a mirror plane, and combine it with the kept side (for trimmed surfaces use Mirror Cut Polysurface).",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -72px -168px",
+      "iconCss": "background: url('icons/pufferfish.png') -168px -168px",
       "helpLink": "https://rhino.github.io/components/pufferfish/mirrorCutSurface.html"
     },
     {
@@ -30755,9 +30955,9 @@
       "id": "OffSrf",
       "library": "Pufferfish",
       "category": "Surface",
-      "summary": "Offset a surface with the option of offsetting both sides and creating a solid, also works with trimmed surfaces and polysurface (Brep) faces.",
+      "summary": "Offset a surface with the option of offsetting both sides and creating a solid, also works with trimmed surfaces and polysurface (Brep) faces as separated offsets.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') 0px -192px",
+      "iconCss": "background: url('icons/pufferfish.png') -96px -192px",
       "helpLink": "https://rhino.github.io/components/pufferfish/offsetSurface.html"
     },
     {
@@ -30767,7 +30967,7 @@
       "category": "Surface",
       "summary": "Generate a grid of subdivision surfaces on a surface from domain dividing {u} and {v} parameters.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -96px -192px",
+      "iconCss": "background: url('icons/pufferfish.png') -120px -216px",
       "helpLink": "https://rhino.github.io/components/pufferfish/parameterSubdivideSurface.html"
     },
     {
@@ -30777,7 +30977,7 @@
       "category": "Surface",
       "summary": "Trim (remove) the parts of a surface on one side of a plane, also works with trimmed surfaces and polysurfaces (Breps).",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -120px -216px",
+      "iconCss": "background: url('icons/pufferfish.png') -144px -240px",
       "helpLink": "https://rhino.github.io/components/pufferfish/planeTrimSurface.html"
     },
     {
@@ -30787,7 +30987,7 @@
       "category": "Surface",
       "summary": "Rebuild a surface to a given point count, degree, and domain in the {u} and {v} directions, also works with trimmed surfaces.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -192px -240px",
+      "iconCss": "background: url('icons/pufferfish.png') 0px -288px",
       "helpLink": "https://rhino.github.io/components/pufferfish/rebuildSurface.html"
     },
     {
@@ -30797,7 +30997,7 @@
       "category": "Surface",
       "summary": "Remap a surfaces {uv} domain² range to an input domain² range with the option of matching the {uv} domain² range of a guide surface, also works with trimmed surfaces.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -96px -264px",
+      "iconCss": "background: url('icons/pufferfish.png') -120px -288px",
       "helpLink": "https://rhino.github.io/components/pufferfish/remapSurfaceDomain.html"
     },
     {
@@ -30807,7 +31007,7 @@
       "category": "Surface",
       "summary": "Reparameterize a surface to have a (uv) domain² range from 0 to 1, also works with trimmed surfaces.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -24px -288px",
+      "iconCss": "background: url('icons/pufferfish.png') -48px -312px",
       "helpLink": "https://rhino.github.io/components/pufferfish/reparameterizeSurface.html"
     },
     {
@@ -30817,7 +31017,7 @@
       "category": "Surface",
       "summary": "Creates a hallowed out thickened shell from a closed polysurface (Brep).",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -168px -288px",
+      "iconCss": "background: url('icons/pufferfish.png') -192px -312px",
       "helpLink": "https://rhino.github.io/components/pufferfish/shellPolysurface.html"
     },
     {
@@ -30827,7 +31027,7 @@
       "category": "Surface",
       "summary": "Shrinks the underlying untrimmed surface of a trimmed surface to be as close as possible to the trimmed surface edges, can also shrink trimmed polysurface (Brep) faces.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -192px -288px",
+      "iconCss": "background: url('icons/pufferfish.png') -216px -312px",
       "helpLink": "https://rhino.github.io/components/pufferfish/shrinkTrimmedSurface.html"
     },
     {
@@ -30837,7 +31037,7 @@
       "category": "Surface",
       "summary": "Split the output surface from an unsplit surface component into a polysurface(Brep) if it has kinks, if surface has no kinks it will output with no change.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -72px -312px",
+      "iconCss": "background: url('icons/pufferfish.png') -96px -336px",
       "helpLink": "https://rhino.github.io/components/pufferfish/splitKinkySurface.html"
     },
     {
@@ -30847,7 +31047,7 @@
       "category": "Surface",
       "summary": "Superimpose the {uv} control point count, {uv} degree, {uv} domain, and trims of a reference surface onto a target surface, also works with trimmed surfaces.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -120px -312px",
+      "iconCss": "background: url('icons/pufferfish.png') -144px -336px",
       "helpLink": "https://rhino.github.io/components/pufferfish/superimposeSurface.html"
     },
     {
@@ -30857,7 +31057,7 @@
       "category": "Surface",
       "summary": "Get the degree value of a surface for its {u} and {v} directions.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -144px -312px",
+      "iconCss": "background: url('icons/pufferfish.png') -168px -336px",
       "helpLink": "https://rhino.github.io/components/pufferfish/surfaceDegree.html"
     },
     {
@@ -30867,7 +31067,7 @@
       "category": "Surface",
       "summary": "Gets the surface sub-domain²s for each span in a surface and gets information about the spans such as, sub-domains of each span, amount of spans in each direction, lengths of each span, degrees of each span, isocurve span parameters, and surface parameter coordinates at the span ends",
       "description": "Gets the surface sub-domain²s for each span in a surface and gets information about the spans such as, sub-domains of each span, amount of spans in each direction, lengths of each span, degrees of each span, isocurve span parameters, and surface parameter coordinates at the span ends.",
-      "iconCss": "background: url('icons/pufferfish.png') -192px -312px",
+      "iconCss": "background: url('icons/pufferfish.png') -216px -336px",
       "helpLink": "https://rhino.github.io/components/pufferfish/surfaceSpans.html"
     },
     {
@@ -30877,7 +31077,7 @@
       "category": "Surface",
       "summary": "Swap or reverse the {u} and {v} directions of a surface, also works with trimmed surfaces but trims will swap as well.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -216px -312px",
+      "iconCss": "background: url('icons/pufferfish.png') 0px -360px",
       "helpLink": "https://rhino.github.io/components/pufferfish/swapSurfaceDirections.html"
     },
     {
@@ -30887,7 +31087,7 @@
       "category": "Surface",
       "summary": "Tween consecutively between a set of surfaces, trimmed surfaces will be treated as untrimmed.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -96px -360px",
+      "iconCss": "background: url('icons/pufferfish.png') -120px -384px",
       "helpLink": "https://rhino.github.io/components/pufferfish/tweenConsecutiveSurfaces.html"
     },
     {
@@ -30897,7 +31097,7 @@
       "category": "Surface",
       "summary": "Tween through a set of surfaces, trimmed surfaces will be treated as untrimmed.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') 0px -408px",
+      "iconCss": "background: url('icons/pufferfish.png') -24px -432px",
       "helpLink": "https://rhino.github.io/components/pufferfish/tweenThroughSurfaces.html"
     },
     {
@@ -30907,7 +31107,7 @@
       "category": "Surface",
       "summary": "Tween between two surfaces, trimmed surfaces will be treated as untrimmed.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -144px -432px",
+      "iconCss": "background: url('icons/pufferfish.png') -168px -456px",
       "helpLink": "https://rhino.github.io/components/pufferfish/tweenTwoSurfaces.html"
     },
     {
@@ -30917,7 +31117,7 @@
       "category": "Surface",
       "summary": "Tween between two surfaces along a guide curve (or optionally along two guide curves), trimmed surfaces will be treated as untrimmed.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -168px -432px",
+      "iconCss": "background: url('icons/pufferfish.png') -192px -456px",
       "helpLink": "https://rhino.github.io/components/pufferfish/tweenTwoSurfacesAlongCurve.html"
     },
     {
@@ -30927,7 +31127,7 @@
       "category": "Surface",
       "summary": "Unroll a polysurface (Brep) so its faces lay flat on a plane, with the options to unroll points and curves along with the polysurface (Brep) faces.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -24px -456px",
+      "iconCss": "background: url('icons/pufferfish.png') -48px -480px",
       "helpLink": "https://rhino.github.io/components/pufferfish/unrollPolysurface.html"
     },
     {
@@ -30937,7 +31137,7 @@
       "category": "Surface",
       "summary": "Create an untrimmed edge surface between 2, 3, or 4 edge curves which doesn't split into a polysurface(Brep) at kinks.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -48px -456px",
+      "iconCss": "background: url('icons/pufferfish.png') -72px -480px",
       "helpLink": "https://rhino.github.io/components/pufferfish/unsplitEdgeSurface.html"
     },
     {
@@ -30947,7 +31147,7 @@
       "category": "Surface",
       "summary": "Create an untrimmed extruded surface from a profile curve or surface along a vector, curve, or to a point, which doesn't split into a polysurface(Brep) at kinks.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -72px -456px",
+      "iconCss": "background: url('icons/pufferfish.png') -96px -480px",
       "helpLink": "https://rhino.github.io/components/pufferfish/unsplitExtrudeSurface.html"
     },
     {
@@ -30957,7 +31157,7 @@
       "category": "Surface",
       "summary": "Create an untrimmed lofted surface through a set of section curves or surfaces which doesn't split into a polysurface(Brep) at kinks.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -96px -456px",
+      "iconCss": "background: url('icons/pufferfish.png') -120px -480px",
       "helpLink": "https://rhino.github.io/components/pufferfish/unsplitLoftSurface.html"
     },
     {
@@ -30967,7 +31167,7 @@
       "category": "Surface",
       "summary": "Create an untrimmed revolved surface from a profile curve or surface guided by a rail curve around an axis line which doesn't split into a polysurface(Brep) at kinks.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -120px -456px",
+      "iconCss": "background: url('icons/pufferfish.png') -144px -480px",
       "helpLink": "https://rhino.github.io/components/pufferfish/unsplitRailRevolveSurface.html"
     },
     {
@@ -30977,7 +31177,7 @@
       "category": "Surface",
       "summary": "Create an untrimmed sum surface from two edge curves which doesn't split into a polysurface(Brep) at kinks.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -144px -456px",
+      "iconCss": "background: url('icons/pufferfish.png') -168px -480px",
       "helpLink": "https://rhino.github.io/components/pufferfish/unsplitSumSurface.html"
     },
     {
@@ -30987,7 +31187,7 @@
       "category": "Surface",
       "summary": "Create an untrimmed swept surface through a set of section curves or surfaces along a rail curve (or optionally along two rail curves) which doesn't split into a polysurface(Brep) at kinks.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -168px -456px",
+      "iconCss": "background: url('icons/pufferfish.png') -192px -480px",
       "helpLink": "https://rhino.github.io/components/pufferfish/unsplitSweepSurface.html"
     },
     {
@@ -30997,7 +31197,7 @@
       "category": "Surface",
       "summary": "Solve the arithmetic weighted average for a set of surfaces, trimmed surfaces will be treated as untrimmed.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -72px -480px",
+      "iconCss": "background: url('icons/pufferfish.png') -96px -504px",
       "helpLink": "https://rhino.github.io/components/pufferfish/weightedAverageSurface.html"
     },
     {
@@ -31007,7 +31207,7 @@
       "category": "Transform",
       "summary": "Create a single mass transform by compounding a set of transforms, like Grasshopper's Compound component but with access to partial results (each step of the mass transformation).",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -96px -120px",
+      "iconCss": "background: url('icons/pufferfish.png') -168px -120px",
       "helpLink": "https://rhino.github.io/components/pufferfish/massTransform.html"
     },
     {
@@ -31017,7 +31217,7 @@
       "category": "Transform",
       "summary": "Mirror a set of transforms across its end or start and combine it with the original set.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -24px -144px",
+      "iconCss": "background: url('icons/pufferfish.png') -120px -144px",
       "helpLink": "https://rhino.github.io/components/pufferfish/mirrorCombineTransforms.html"
     },
     {
@@ -31027,7 +31227,7 @@
       "category": "Transform",
       "summary": "Cut a set of transforms at an index, mirror the kept side of the cut across the index, and combine it with the kept side.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -96px -168px",
+      "iconCss": "background: url('icons/pufferfish.png') -192px -168px",
       "helpLink": "https://rhino.github.io/components/pufferfish/mirrorCutTransforms.html"
     },
     {
@@ -31037,7 +31237,7 @@
       "category": "Transform",
       "summary": "Move (translate) an object from one point to another.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -144px -168px",
+      "iconCss": "background: url('icons/pufferfish.png') 0px -192px",
       "helpLink": "https://rhino.github.io/components/pufferfish/moveToPoint.html"
     },
     {
@@ -31047,7 +31247,7 @@
       "category": "Transform",
       "summary": "Recursively transform geometry to get a self-referential step sequence of transformed geometry.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -24px -264px",
+      "iconCss": "background: url('icons/pufferfish.png') -48px -288px",
       "helpLink": "https://rhino.github.io/components/pufferfish/recursiveTransform.html"
     },
     {
@@ -31057,7 +31257,7 @@
       "category": "Vector",
       "summary": "Find the closest target vector by angle to a reference vector.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -120px -24px",
+      "iconCss": "background: url('icons/pufferfish.png') -144px -24px",
       "helpLink": "https://rhino.github.io/components/pufferfish/closestVector.html"
     },
     {
@@ -31067,7 +31267,7 @@
       "category": "Vector",
       "summary": "Mirror a set of vectors across its end or start and combine it with the original set.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -48px -144px",
+      "iconCss": "background: url('icons/pufferfish.png') -144px -144px",
       "helpLink": "https://rhino.github.io/components/pufferfish/mirrorCombineVectors.html"
     },
     {
@@ -31077,7 +31277,7 @@
       "category": "Vector",
       "summary": "Cut a set of vectors at an index, mirror the kept side of the cut across the index, and combine it with the kept side.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -120px -168px",
+      "iconCss": "background: url('icons/pufferfish.png') -216px -168px",
       "helpLink": "https://rhino.github.io/components/pufferfish/mirrorCutVectors.html"
     },
     {
@@ -31087,7 +31287,7 @@
       "category": "Vector",
       "summary": "Reparameterize a set of vectors to have a length (amplitude) range from 0 to 1, or an inverted length range from 1 to 0.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -48px -288px",
+      "iconCss": "background: url('icons/pufferfish.png') -72px -312px",
       "helpLink": "https://rhino.github.io/components/pufferfish/reparameterizeVectors.html"
     },
     {
@@ -31097,7 +31297,7 @@
       "category": "Vector",
       "summary": "Tween consecutively between a set of vectors.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -120px -360px",
+      "iconCss": "background: url('icons/pufferfish.png') -144px -384px",
       "helpLink": "https://rhino.github.io/components/pufferfish/tweenConsecutiveVectors.html"
     },
     {
@@ -31107,7 +31307,7 @@
       "category": "Vector",
       "summary": "Tween through a set of vectors.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -24px -408px",
+      "iconCss": "background: url('icons/pufferfish.png') -48px -432px",
       "helpLink": "https://rhino.github.io/components/pufferfish/tweenThroughVectors.html"
     },
     {
@@ -31117,7 +31317,7 @@
       "category": "Vector",
       "summary": "Tween between two vectors.",
       "description": null,
-      "iconCss": "background: url('icons/pufferfish.png') -192px -432px",
+      "iconCss": "background: url('icons/pufferfish.png') -216px -456px",
       "helpLink": "https://rhino.github.io/components/pufferfish/tweenTwoVectors.html"
     },
     {
