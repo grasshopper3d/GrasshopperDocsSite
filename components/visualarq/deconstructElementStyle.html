@@ -1,0 +1,1020 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+<head data-layout-view="wide">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Deconstruct Element Style - VisualARQ - Grasshopper Component Reference</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+
+<meta name="description" content="A guide to component Deconstruct Element Style in Grasshopper 3D." />
+<meta name="title" content="Grasshopper Component Reference" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://rhino.github.io/" />
+<meta property="og:title" content="Deconstruct Element Style - VisualARQ - Grasshopper Component Reference" />
+
+<meta property="wiki-page" content="GH VisualARQ Deconstruct_Element_Style.md" />
+
+<link rel="image_src" href="http://rhino.github.io/ning/2985220.jpg" />
+
+<style type="text/css" media="screen,projection">
+#xg_navigation ul div.xg_subtab ul li a {
+    color:#666666;
+    background:#EAFFBD;
+}
+#xg_navigation ul div.xg_subtab ul li a:hover {
+    color:#333333;
+    background:#F2FFD6;
+}
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../../ning/index.css);
+@import url(../../ning/page.css);
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../../ning/1187549422.css);
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../../ning/1187545030.css);
+</style>
+
+
+<link href="../../style.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+    </head>
+    <body>
+    
+        
+        <div id="xg" class="xg_theme xg_widget_page xg_widget_page_page xg_widget_page_page_show" data-layout-pack="classic">
+            <div id="xg_head">
+                <div id="xg_masthead">
+                    <p id="xg_sitename"><a id="application_name_header_link" href="http://rhino.github.io/">Grasshopper</a></p>
+                    <p id="xg_sitedesc" class="xj_site_desc">algorithmic modeling for Rhino</p>
+                </div>
+                <div id="xg_navigation">
+                    <ul>
+    <li id="xg_tab_main" class="xg_subtab"><a href="http://www.grasshopper3d.com/"><span>Home</span></a></li>
+	<li id="xg_tab_photo" class="xg_subtab"><a href="http://www.grasshopper3d.com/photo"><span>View</span></a></li>
+	<li id="xg_tab_xn0" class="xg_subtab"><a href="http://www.grasshopper3d.com/page/download-1"><span>Download</span></a></li>
+	<li id="xg_tab_forum" class="xg_subtab"><a href="https://discourse.mcneel.com/c/grasshopper"><span>Forums&#47;Support</span></a></li>
+	<li id="xg_tab_xn2" class="xg_subtab this"><a href="http://rhino.github.io/"><span>Learn</span></a></li>
+	<li id="xg_tab_events" class="xg_subtab"><a href="http://www.grasshopper3d.com/events"><span>Attend</span></a></li>
+	<li id="xg_tab_profile" class="xg_subtab"><a href="http://www.grasshopper3d.com/profiles"><span>My Page</span></a></li></ul>
+
+                </div>
+            </div>
+            
+            <div id="xg_body">
+                
+				<div class="page">
+
+<div class="content">
+
+<div class="ghbar ">
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/wallLayer.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -168px -432px" data-toptip="Wall Layer"></div></a>
+<a href="../../components/visualarq/deconstructWallLayer.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -192px -432px" data-downtip="Deconstruct Wall Layer"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/deconstructWall.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -216px -432px" data-toptip="Deconstruct Wall"></div></a>
+<a href="../../components/visualarq/wall.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') 0px -456px" data-downtip="Wall"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/wallExtend.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -24px -456px" data-toptip="Wall Extend"></div></a>
+<a href="../../components/visualarq/wallFromSolid.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -48px -456px" data-downtip="Wall From Solid"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/deconstructWallOptions.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -72px -456px" data-toptip="Deconstruct Wall Options"></div></a>
+<a href="../../components/visualarq/wallOptions.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -96px -456px" data-downtip="Wall Options"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/wallStyle.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -120px -456px" data-toptip="Wall Style"></div></a>
+<a href="../../components/visualarq/deconstructWallStyle.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -144px -456px" data-downtip="Deconstruct Wall Style"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="5">
+01.Wall
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/curtainWallFixedDimensionCell.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -24px -120px" data-toptip="Curtain Wall Fixed Dimension Cell"></div></a>
+<a href="../../components/visualarq/deconstructCurtainWallFixedDimensionCell.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -48px -120px" data-downtip="Deconstruct Curtain Wall Fixed Dimension Cell"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/curtainWallFixedNumberCell.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -72px -120px" data-toptip="Curtain Wall Fixed Number Cell"></div></a>
+<a href="../../components/visualarq/deconstructCurtainWallFixedNumberCell.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -96px -120px" data-downtip="Deconstruct Curtain Wall Fixed Number Cell"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/curtainWallHorizontalCell.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -120px -120px" data-toptip="Curtain Wall Horizontal Cell"></div></a>
+<a href="../../components/visualarq/deconstructCurtainWallHorizontalCell.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -144px -120px" data-downtip="Deconstruct Curtain Wall Horizontal Cell"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/curtainWallNoneDivisionCell.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -168px -120px" data-toptip="Curtain Wall None Division Cell"></div></a>
+<a href="../../components/visualarq/deconstructCurtainWallNoneDivisionCell.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -192px -120px" data-downtip="Deconstruct Curtain Wall None Division Cell"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/curtainWallVerticalCell.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -216px -120px" data-toptip="Curtain Wall Vertical Cell"></div></a>
+<a href="../../components/visualarq/deconstructCurtainWallVerticalCell.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') 0px -144px" data-downtip="Deconstruct Curtain Wall Vertical Cell"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/deconstructCurtainWall.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -24px -144px" data-toptip="Deconstruct Curtain Wall"></div></a>
+<a href="../../components/visualarq/curtainWall.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -48px -144px" data-downtip="Curtain Wall"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/curtainWallExtend.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -72px -144px" data-toptip="Curtain Wall Extend"></div></a>
+<a href="../../components/visualarq/curtainWallFrame.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -96px -144px" data-downtip="Curtain Wall Frame"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/deconstructCurtainWallFrame.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -120px -144px" data-toptip="Deconstruct Curtain Wall Frame"></div></a>
+<a href="../../components/visualarq/curtainWallMullion.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -144px -144px" data-downtip="Curtain Wall Mullion"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/deconstructCurtainWallMullion.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -168px -144px" data-toptip="Deconstruct Curtain Wall Mullion"></div></a>
+<a href="../../components/visualarq/deconstructCurtainWallOptions.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -192px -144px" data-downtip="Deconstruct Curtain Wall Options"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/curtainWallOptions.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -216px -144px" data-toptip="Curtain Wall Options"></div></a>
+<a href="../../components/visualarq/curtainWallStyle.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') 0px -168px" data-downtip="Curtain Wall Style"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/deconstructCurtainWallStyle.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -24px -168px" data-toptip="Deconstruct Curtain Wall Style"></div></a>
+<a href="../../components/visualarq/curtainWallSupport.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -48px -168px" data-downtip="Curtain Wall Support"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/deconstructCurtainWallSupport.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -72px -168px" data-toptip="Deconstruct Curtain Wall Support"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="12">
+02.Curtain Wall
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/deconstructBeam.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -48px -72px" data-toptip="Deconstruct Beam"></div></a>
+<a href="../../components/visualarq/beam.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -72px -72px" data-downtip="Beam"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/deconstructBeamOptions.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -96px -72px" data-toptip="Deconstruct Beam Options"></div></a>
+<a href="../../components/visualarq/beamOptions.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -120px -72px" data-downtip="Beam Options"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/beamStyle.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -144px -72px" data-toptip="Beam Style"></div></a>
+<a href="../../components/visualarq/deconstructBeamStyle.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -168px -72px" data-downtip="Deconstruct Beam Style"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+03.Beam
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/columnCoating.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -72px -96px" data-toptip="Column Coating"></div></a>
+<a href="../../components/visualarq/deconstructColumnCoating.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -96px -96px" data-downtip="Deconstruct Column Coating"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/deconstructColumn.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -120px -96px" data-toptip="Deconstruct Column"></div></a>
+<a href="../../components/visualarq/column.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -144px -96px" data-downtip="Column"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/deconstructColumnOptions.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -168px -96px" data-toptip="Deconstruct Column Options"></div></a>
+<a href="../../components/visualarq/columnOptions.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -192px -96px" data-downtip="Column Options"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/columnStyle.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -216px -96px" data-toptip="Column Style"></div></a>
+<a href="../../components/visualarq/deconstructColumnStyle.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') 0px -120px" data-downtip="Deconstruct Column Style"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="4">
+04.Column
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/deconstructDoor.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -96px -168px" data-toptip="Deconstruct Door"></div></a>
+<a href="../../components/visualarq/door.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -120px -168px" data-downtip="Door"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/doorFrame.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -144px -168px" data-toptip="Door Frame"></div></a>
+<a href="../../components/visualarq/deconstructDoorFrame.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -168px -168px" data-downtip="Deconstruct Door Frame"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/doorLeaf.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -192px -168px" data-toptip="Door Leaf"></div></a>
+<a href="../../components/visualarq/deconstructDoorLeaf.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -216px -168px" data-downtip="Deconstruct Door Leaf"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/doorLeafGlass.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') 0px -192px" data-toptip="Door Leaf Glass"></div></a>
+<a href="../../components/visualarq/deconstructDoorLeafGlass.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -24px -192px" data-downtip="Deconstruct Door Leaf Glass"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/deconstructDoorOptions.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -48px -192px" data-toptip="Deconstruct Door Options"></div></a>
+<a href="../../components/visualarq/doorOptions.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -72px -192px" data-downtip="Door Options"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/doorStop.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -96px -192px" data-toptip="Door Stop"></div></a>
+<a href="../../components/visualarq/deconstructDoorStop.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -120px -192px" data-downtip="Deconstruct Door Stop"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/doorStyle.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -144px -192px" data-toptip="Door Style"></div></a>
+<a href="../../components/visualarq/deconstructDoorStyle.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -168px -192px" data-downtip="Deconstruct Door Style"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="7">
+05.Door
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/deconstructWindow.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -168px -456px" data-toptip="Deconstruct Window"></div></a>
+<a href="../../components/visualarq/window.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -192px -456px" data-downtip="Window"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/windowFrame.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -216px -456px" data-toptip="Window Frame"></div></a>
+<a href="../../components/visualarq/deconstructWindowFrame.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') 0px -480px" data-downtip="Deconstruct Window Frame"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/windowLeaf.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -24px -480px" data-toptip="Window Leaf"></div></a>
+<a href="../../components/visualarq/deconstructWindowLeaf.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -48px -480px" data-downtip="Deconstruct Window Leaf"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/windowLeafGlass.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -72px -480px" data-toptip="Window Leaf Glass"></div></a>
+<a href="../../components/visualarq/deconstructWindowLeafGlass.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -96px -480px" data-downtip="Deconstruct Window Leaf Glass"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/deconstructWindowOptions.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -120px -480px" data-toptip="Deconstruct Window Options"></div></a>
+<a href="../../components/visualarq/windowOptions.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -144px -480px" data-downtip="Window Options"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/windowSill.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -168px -480px" data-toptip="Window Sill"></div></a>
+<a href="../../components/visualarq/deconstructWindowSill.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -192px -480px" data-downtip="Deconstruct Window Sill"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/windowStop.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -216px -480px" data-toptip="Window Stop"></div></a>
+<a href="../../components/visualarq/deconstructWindowStop.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') 0px -504px" data-downtip="Deconstruct Window Stop"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/windowStyle.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -24px -504px" data-toptip="Window Style"></div></a>
+<a href="../../components/visualarq/deconstructWindowStyle.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -48px -504px" data-downtip="Deconstruct Window Style"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="8">
+06.Window
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/deconstructOpening.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -168px -240px" data-toptip="Deconstruct Opening"></div></a>
+<a href="../../components/visualarq/opening.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -192px -240px" data-downtip="Opening"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/openingFrame.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -216px -240px" data-toptip="Opening Frame"></div></a>
+<a href="../../components/visualarq/deconstructOpeningFrame.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') 0px -264px" data-downtip="Deconstruct Opening Frame"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/deconstructOpeningOptions.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -24px -264px" data-toptip="Deconstruct Opening Options"></div></a>
+<a href="../../components/visualarq/openingsOptions.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -48px -264px" data-downtip="Openings Options"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/openingStyle.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -72px -264px" data-toptip="Opening Style"></div></a>
+<a href="../../components/visualarq/deconstructOpeningStyle.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -96px -264px" data-downtip="Deconstruct Opening Style"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="4">
+07.Opening
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/deconstructStair.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -72px -408px" data-toptip="Deconstruct Stair"></div></a>
+<a href="../../components/visualarq/stair.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -96px -408px" data-downtip="Stair"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/deconstructStairOptions.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -120px -408px" data-toptip="Deconstruct Stair Options"></div></a>
+<a href="../../components/visualarq/stairOptions.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -144px -408px" data-downtip="Stair Options"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/stairSlab.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -168px -408px" data-toptip="Stair Slab"></div></a>
+<a href="../../components/visualarq/deconstructStairSlab.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -192px -408px" data-downtip="Deconstruct Stair Slab"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/stairStyle.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -216px -408px" data-toptip="Stair Style"></div></a>
+<a href="../../components/visualarq/deconstructStairStyle.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') 0px -432px" data-downtip="Deconstruct Stair Style"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="4">
+08.Stair
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/railingBaluster.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -120px -312px" data-toptip="Railing Baluster"></div></a>
+<a href="../../components/visualarq/deconstructRailingBaluster.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -144px -312px" data-downtip="Deconstruct Railing Baluster"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/deconstructRailing.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -168px -312px" data-toptip="Deconstruct Railing"></div></a>
+<a href="../../components/visualarq/railing.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -192px -312px" data-downtip="Railing"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/deconstructRailingOptions.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -216px -312px" data-toptip="Deconstruct Railing Options"></div></a>
+<a href="../../components/visualarq/railingOptions.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') 0px -336px" data-downtip="Railing Options"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/railingPost.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -24px -336px" data-toptip="Railing Post"></div></a>
+<a href="../../components/visualarq/deconstructRailingPost.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -48px -336px" data-downtip="Deconstruct Railing Post"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/railingRail.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -72px -336px" data-toptip="Railing Rail"></div></a>
+<a href="../../components/visualarq/deconstructRailingRail.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -96px -336px" data-downtip="Deconstruct Railing Rail"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/railingStyle.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -120px -336px" data-toptip="Railing Style"></div></a>
+<a href="../../components/visualarq/deconstructRailingStyle.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -144px -336px" data-downtip="Deconstruct Railing Style"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="6">
+09.Railing
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/slabAddBoundary.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -144px -360px" data-toptip="Slab Add Boundary"></div></a>
+<a href="../../components/visualarq/deconstructSlab.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -168px -360px" data-downtip="Deconstruct Slab"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/slab.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -192px -360px" data-toptip="Slab"></div></a>
+<a href="../../components/visualarq/slabLayer.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -216px -360px" data-downtip="Slab Layer"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/deconstructSlabLayer.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') 0px -384px" data-toptip="Deconstruct Slab Layer"></div></a>
+<a href="../../components/visualarq/deconstructSlabOptions.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -24px -384px" data-downtip="Deconstruct Slab Options"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/slabOptions.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -48px -384px" data-toptip="Slab Options"></div></a>
+<a href="../../components/visualarq/slabStyle.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -72px -384px" data-downtip="Slab Style"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/deconstructSlabStyle.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -96px -384px" data-toptip="Deconstruct Slab Style"></div></a>
+<a href="../../components/visualarq/slabSubtractBoundary.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -120px -384px" data-downtip="Slab Subtract Boundary"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/slabSubtractStairClearance.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -144px -384px" data-toptip="Slab Subtract Stair Clearance"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="6">
+10.Slab
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/roofAddBoundary.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -168px -336px" data-toptip="Roof Add Boundary"></div></a>
+<a href="../../components/visualarq/deconstructRoof.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -192px -336px" data-downtip="Deconstruct Roof"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/roof.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -216px -336px" data-toptip="Roof"></div></a>
+<a href="../../components/visualarq/roofExplode.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') 0px -360px" data-downtip="Roof Explode"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/deconstructRoofOptions.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -24px -360px" data-toptip="Deconstruct Roof Options"></div></a>
+<a href="../../components/visualarq/roofOptions.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -48px -360px" data-downtip="Roof Options"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/roofStyle.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -72px -360px" data-toptip="Roof Style"></div></a>
+<a href="../../components/visualarq/deconstructRoofStyle.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -96px -360px" data-downtip="Deconstruct Roof Style"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/roofSubtractBoundary.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -120px -360px" data-toptip="Roof Subtract Boundary"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="5">
+11.Roof
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/deconstructElement.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -24px -432px" data-toptip="Deconstruct Element"></div></a>
+<a href="../../components/visualarq/element.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -48px -432px" data-downtip="Element"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/deconstructElementOptions.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -72px -432px" data-toptip="Deconstruct Element Options"></div></a>
+<a href="../../components/visualarq/elementOptions.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -96px -432px" data-downtip="Element Options"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/elementStyle.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -120px -432px" data-toptip="Element Style"></div></a>
+<a href="../../components/visualarq/deconstructElementStyle.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -144px -432px" data-downtip="Deconstruct Element Style"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+12.Element
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/deconstructFurniture.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -192px -192px" data-toptip="Deconstruct Furniture"></div></a>
+<a href="../../components/visualarq/furniture.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -216px -192px" data-downtip="Furniture"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/deconstructFurnitureOptions.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') 0px -216px" data-toptip="Deconstruct Furniture Options"></div></a>
+<a href="../../components/visualarq/furnitureOptions.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -24px -216px" data-downtip="Furniture Options"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/furnitureStyle.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -48px -216px" data-toptip="Furniture Style"></div></a>
+<a href="../../components/visualarq/deconstructFurnitureStyle.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -72px -216px" data-downtip="Deconstruct Furniture Style"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+13.Furniture
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/deconstructPlanView.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -120px -264px" data-toptip="Deconstruct PlanView"></div></a>
+<a href="../../components/visualarq/planView.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -144px -264px" data-downtip="PlanView"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/deconstructPlanViewOptions.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -168px -264px" data-toptip="Deconstruct PlanView Options"></div></a>
+<a href="../../components/visualarq/planViewOptions.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -192px -264px" data-downtip="Plan View Options"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/deconstructSection.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -216px -264px" data-toptip="Deconstruct Section"></div></a>
+<a href="../../components/visualarq/section.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') 0px -288px" data-downtip="Section"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/deconstructSectionOptions.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -24px -288px" data-toptip="Deconstruct Section Options"></div></a>
+<a href="../../components/visualarq/sectionOptions.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -48px -288px" data-downtip="Section Options"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/sectionStyle.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -72px -288px" data-toptip="Section Style"></div></a>
+<a href="../../components/visualarq/deconstructSectionStyle.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -96px -288px" data-downtip="Deconstruct Section Style"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/deconstructSectionView.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -120px -288px" data-toptip="Deconstruct SectionView"></div></a>
+<a href="../../components/visualarq/sectionView.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -144px -288px" data-downtip="Section View"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/deconstructSectionViewOptions.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -168px -288px" data-toptip="Deconstruct SectionView Options"></div></a>
+<a href="../../components/visualarq/sectionViewOptions.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -192px -288px" data-downtip="Section View Options"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/deconstructAnnotation.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -216px -288px" data-toptip="Deconstruct Annotation"></div></a>
+<a href="../../components/visualarq/annotation.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') 0px -312px" data-downtip="Annotation"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/deconstructAnnotationOptions.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -24px -312px" data-toptip="Deconstruct Annotation Options"></div></a>
+<a href="../../components/visualarq/annotationOptions.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -48px -312px" data-downtip="Annotation Options"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/annotationStyle.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -72px -312px" data-toptip="Annotation Style"></div></a>
+<a href="../../components/visualarq/deconstructAnnotationStyle.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -96px -312px" data-downtip="Deconstruct Annotation Style"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="10">
+14.Annotation
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/deconstructSpace.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -168px -384px" data-toptip="Deconstruct Space"></div></a>
+<a href="../../components/visualarq/space.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -192px -384px" data-downtip="Space"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/deconstructSpaceOptions.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -216px -384px" data-toptip="Deconstruct Space Options"></div></a>
+<a href="../../components/visualarq/spaceOptions.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') 0px -408px" data-downtip="Space Options"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/spaceStyle.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -24px -408px" data-toptip="Space Style"></div></a>
+<a href="../../components/visualarq/deconstructSpaceStyle.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -48px -408px" data-downtip="Deconstruct Space Style"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+A.Space
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/deconstructBuilding.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -192px -72px" data-toptip="Deconstruct Building"></div></a>
+<a href="../../components/visualarq/building.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -216px -72px" data-downtip="Building"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/getLevel.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') 0px -96px" data-toptip="Get Level"></div></a>
+<a href="../../components/visualarq/deconstructLevel.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -24px -96px" data-downtip="Deconstruct Level"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/level.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -48px -96px" data-toptip="Level"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+B.Levels
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/iProfile.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -96px -216px" data-toptip="I Profile"></div></a>
+<a href="../../components/visualarq/lProfile.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -120px -216px" data-downtip="L Profile"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/90ArcProfile.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -144px -216px" data-toptip="90\u00ba Arc Profile"></div></a>
+<a href="../../components/visualarq/circularProfile.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -168px -216px" data-downtip="Circular Profile"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/circularHollowProfile.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -192px -216px" data-toptip="Circular Hollow Profile"></div></a>
+<a href="../../components/visualarq/customProfile.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -216px -216px" data-downtip="Custom profile"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/decomposeProfile.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') 0px -240px" data-toptip="Decompose Profile"></div></a>
+<a href="../../components/visualarq/gothicProfile.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -24px -240px" data-downtip="Gothic Profile"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/rectangularProfile.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -48px -240px" data-toptip="Rectangular Profile"></div></a>
+<a href="../../components/visualarq/rectangularHollowProfile.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -72px -240px" data-downtip="Rectangular Hollow Profile"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/romanicProfile.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -96px -240px" data-toptip="Romanic Profile"></div></a>
+<a href="../../components/visualarq/tProfile.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -120px -240px" data-downtip="T Profile"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/uProfile.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -144px -240px" data-toptip="U Profile"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="7">
+C.Profile
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/blockDecompose.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') 0px 0px" data-toptip="Block Decompose"></div></a>
+<a href="../../components/visualarq/blockDefinition.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -24px 0px" data-downtip="Block Definition"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/deconstructBlockInstance.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -48px 0px" data-toptip="Deconstruct Block Instance"></div></a>
+<a href="../../components/visualarq/blockInstance.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -72px 0px" data-downtip="Block Instance"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/createHatch.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -96px 0px" data-toptip="Create Hatch"></div></a>
+<a href="../../components/visualarq/hatchExplode.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -120px 0px" data-downtip="Hatch Explode"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/deconstructHatchOptions.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -144px 0px" data-toptip="Deconstruct Hatch Options"></div></a>
+<a href="../../components/visualarq/hatchOptions.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -168px 0px" data-downtip="Hatch Options"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/ifcTag.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -192px 0px" data-toptip="Ifc Tag"></div></a>
+<a href="../../components/visualarq/deconstructParameter.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -216px 0px" data-downtip="Deconstruct Parameter"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/createDocumentParameter.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') 0px -24px" data-toptip="Create Document Parameter"></div></a>
+<a href="../../components/visualarq/getProperty.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -24px -24px" data-downtip="Get Property"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/documentParameters.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -48px -24px" data-toptip="Document Parameters"></div></a>
+<a href="../../components/visualarq/propertyNames.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -72px -24px" data-downtip="Property Names"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/deconstructParameterOptions.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -96px -24px" data-toptip="Deconstruct Parameter Options"></div></a>
+<a href="../../components/visualarq/parameterOptions.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -120px -24px" data-downtip="Parameter Options"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/setProperty.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -144px -24px" data-toptip="Set Property"></div></a>
+<a href="../../components/visualarq/updateProperty.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -168px -24px" data-downtip="Update Property"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/deconstructText.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -192px -24px" data-toptip="Deconstruct Text"></div></a>
+<a href="../../components/visualarq/createText.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -216px -24px" data-downtip="Create Text"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/deconstructTextStyle.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') 0px -48px" data-toptip="Deconstruct Text Style"></div></a>
+<a href="../../components/visualarq/textStyle.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -24px -48px" data-downtip="Text Style"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/addSolids.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -48px -48px" data-toptip="Add Solids"></div></a>
+<a href="../../components/visualarq/visualARQExplode.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -72px -48px" data-downtip="VisualARQ Explode"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/extractSolids.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -96px -48px" data-toptip="Extract Solids"></div></a>
+<a href="../../components/visualarq/visualARQArea.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -120px -48px" data-downtip="VisualARQ Area"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/visualARQThickness.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -144px -48px" data-toptip="VisualARQ Thickness"></div></a>
+<a href="../../components/visualarq/visualARQVolume.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -168px -48px" data-downtip="VisualARQ Volume"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/isKindOf.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -192px -48px" data-toptip="Is Kind Of?"></div></a>
+<a href="../../components/visualarq/createObjectParameter.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -216px -48px" data-downtip="Create Object Parameter"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/visualarq/objectParameter.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') 0px -72px" data-toptip="Object Parameter"></div></a>
+<a href="../../components/visualarq/subtractSolids.html"><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -24px -72px" data-downtip="Subtract Solids"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="16">
+D.Generics
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+
+<div class="addon-buttons">
+<a href="https://www.food4rhino.com/app/visualarq">Download</a>
+</div>
+
+<div class="compo-header">
+<h1><div class="ghsprite" style="background: url('../../icons/visualARQ.png') -144px -432px" ></div> Deconstruct Element Style</h1>
+
+<div class="breadcrumb">
+ <a href="../../index.html">Component Index</a>
+  <a href="../../addons/visualarq.html">VisualARQ</a><a href="#" class="breadcrumb-nolink">12.Element</a><a href="#" class="breadcrumb-nolink">Deconstruct Element Style</a>
+</div>
+
+</div>
+<h3>Deconstruct a element style into its constituent parts.</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Style</b></td><td>S</td><td>Input element style</td><td>VisualARQ.Grasshopper.Types.GhVaUserElementStyle</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Name</b></td><td>N</td><td>Element style name</td><td>String</td></tr>
+<tr><td><b>Components</b></td><td>C</td><td>Element style components
+(none)</td><td>VisualARQ.Grasshopper.Types.GhVaComponent</td></tr>
+<tr><td><b>Model Block</b></td><td>Mb</td><td>Element style block model view</td><td>Block</td></tr>
+<tr><td><b>Plan Block</b></td><td>Pb</td><td>Element style block plan view</td><td>Block</td></tr>
+</tbody>
+</table>
+
+
+  </div>
+
+</div>
+
+            </div>
+            <div id="xg_foot">
+                <p class="left">
+    © 2018-2020  <a href="https://github.com/robinrodricks/">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a> &nbsp;
+	Rhino & Grasshopper are trademarks of <a href="https://www.rhino3d.com/">Robert McNeel & Associates</a>.
+	</p>
+    <p class="right xg_lightfont">
+                    <a href="http://www.grasshopper3d.com/main/embeddable/list">Badges</a> &nbsp;|&nbsp;
+                        <a href="http://www.grasshopper3d.com/main/index/report" dojotype="PromptToJoinLink" _joinprompttext="Please sign up or sign in to complete this step." _hassignup="true" _signinurl="http://www.grasshopper3d.com/main/authorization/signIn?target=http%3A%2F%2Fwww.grasshopper3d.com%2Fmain%2Findex%2Freport">Report an Issue</a> &nbsp;|&nbsp;
+                        <a href="http://www.grasshopper3d.com/main/authorization/termsOfService?previousUrl=http%3A%2F%2Fwww.grasshopper3d.com%2Fpage%2Fcomponent-reference">Terms of Service</a>
+            </p>
+
+            </div>
+        </div>
+        
+        <div id="xj_baz17246" class="xg_theme"></div>
+<div id="xg_overlay" style="display:none;">
+<!--[if lte IE 6.5]><iframe></iframe><![endif]-->
+</div>
+<!--googleoff: all--><noscript>
+	<style type="text/css" media="screen">
+        #xg { position:relative;top:120px; }
+        #xn_bar { top:120px; }
+	</style>
+	<div class="errordesc noscript">
+		<div>
+            <h3><strong>Hello, you need to enable JavaScript to use Grasshopper.</strong></h3>
+            <p>Please check your browser settings or contact your system administrator.</p>
+			
+		</div>
+	</div>
+</noscript><!--googleon: all-->
+
+<script src="/js/jquery.js"></script>
+<script src="/js/kramed.min.js"></script>
+<script src="/js/component.js"></script>
+<script src="/js/user.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    </body>
+</html>

@@ -13881,6 +13881,106 @@
       "helpLink": "https://rhino.github.io/components/grevit/grevitRevitStructuralUnknownFraming.html"
     },
     {
+      "name": "ESRI REST Service Geocode",
+      "id": "RESTGeocode",
+      "library": "Heron",
+      "category": "GIS REST",
+      "summary": "Get coordinates based on a Point-of-Interest or Address",
+      "description": null,
+      "iconCss": "background: url('icons/heron.png') -72px 0px",
+      "helpLink": "https://rhino.github.io/components/heron/eSRIRESTServiceGeocode.html"
+    },
+    {
+      "name": "ESRI REST Service Reverse Geocode",
+      "id": "RESTRevGeo",
+      "library": "Heron",
+      "category": "GIS REST",
+      "summary": "Get the closest addresses to XY coordinates",
+      "description": null,
+      "iconCss": "background: url('icons/heron.png') -144px 0px",
+      "helpLink": "https://rhino.github.io/components/heron/eSRIRESTServiceReverseGeocode.html"
+    },
+    {
+      "name": "Get REST Raster",
+      "id": "RESTRaster",
+      "library": "Heron",
+      "category": "GIS REST",
+      "summary": "Get raster imagery from ArcGIS REST Services",
+      "description": null,
+      "iconCss": "background: url('icons/heron.png') -120px 0px",
+      "helpLink": "https://rhino.github.io/components/heron/getRESTRaster.html"
+    },
+    {
+      "name": "Get REST Service Layers",
+      "id": "RESTLayer",
+      "library": "Heron",
+      "category": "GIS REST",
+      "summary": "Discover ArcGIS REST Service Layers",
+      "description": null,
+      "iconCss": "background: url('icons/heron.png') -96px 0px",
+      "helpLink": "https://rhino.github.io/components/heron/getRESTServiceLayers.html"
+    },
+    {
+      "name": "Get REST Vector",
+      "id": "RESTVector",
+      "library": "Heron",
+      "category": "GIS REST",
+      "summary": "Get vector data from ArcGIS REST Services",
+      "description": null,
+      "iconCss": "background: url('icons/heron.png') -168px 0px",
+      "helpLink": "https://rhino.github.io/components/heron/getRESTVector.html"
+    },
+    {
+      "name": "Decimal Degrees to XY",
+      "id": "DDtoXY",
+      "library": "Heron",
+      "category": "GIS Tools",
+      "summary": "Convert Decimal Degrees Longitude/Latitude to X/Y",
+      "description": null,
+      "iconCss": "background: url('icons/heron.png') 0px 0px",
+      "helpLink": "https://rhino.github.io/components/heron/decimalDegreesToXY.html"
+    },
+    {
+      "name": "Import SHP",
+      "id": "ImportSHP",
+      "library": "Heron",
+      "category": "GIS Tools",
+      "summary": "Import a Shapefile clipped to a boundary",
+      "description": null,
+      "iconCss": "background: url('icons/heron.png') -24px 0px",
+      "helpLink": "https://rhino.github.io/components/heron/importSHP.html"
+    },
+    {
+      "name": "Import Topo",
+      "id": "ImportTopo",
+      "library": "Heron",
+      "category": "GIS Tools",
+      "summary": "Create a topographic mesh from an IMG or HGT file clipped to a boundary",
+      "description": null,
+      "iconCss": "background: url('icons/heron.png') -48px 0px",
+      "helpLink": "https://rhino.github.io/components/heron/importTopo.html"
+    },
+    {
+      "name": "Set EarthAnchorPoint",
+      "id": "SetEAP",
+      "library": "Heron",
+      "category": "GIS Tools",
+      "summary": "Set the Rhino EarthAnchorPoint",
+      "description": null,
+      "iconCss": "background: url('icons/heron.png') -192px 0px",
+      "helpLink": "https://rhino.github.io/components/heron/setEarthAnchorPoint.html"
+    },
+    {
+      "name": "XY to Decimal Degrees",
+      "id": "XYtoDD",
+      "library": "Heron",
+      "category": "GIS Tools",
+      "summary": "Convert X/Y to Decimal Degrees Longitude/Latitude",
+      "description": null,
+      "iconCss": "background: url('icons/heron.png') -216px 0px",
+      "helpLink": "https://rhino.github.io/components/heron/xYToDecimalDegrees.html"
+    },
+    {
       "name": "add HBGlz",
       "id": "add HBGlz",
       "library": "Honeybee",
@@ -20749,6 +20849,456 @@
       "description": "This component uses Google Maps API to achieve elevation data and satellite images of the terrain generated.<br>This component requires an internet connection and it runs for free up to 2,500 requests per day. Once you go over this limit the component doesn't work.<br>Note that each surface is a request, for example if you use a surface made by sub-surfaces 6x6, this will be 36 requests.<br>For informations about the rules of use of Google Maps API, take a look at this link:<br>https://developers.google.com/maps/pricing-and-plans/#details<br>Special thanks goes to Google Maps and the authors of gHowl.<br>",
       "iconCss": "background: url('icons/ladybug.png') -216px -288px",
       "helpLink": "https://rhino.github.io/components/ladybug/terrainGenerator.html"
+    },
+    {
+      "name": "Deconstruct Plant",
+      "id": "Deconstruct Plant",
+      "library": "Lands Design",
+      "category": "01.Plant",
+      "summary": "Deconstruct a plant into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/landsDesign.png') -48px -24px",
+      "helpLink": "https://rhino.github.io/components/landsdesign/deconstructPlant.html"
+    },
+    {
+      "name": "Deconstruct Plant Format Options",
+      "id": "Deconstruct Plant Format Options",
+      "library": "Lands Design",
+      "category": "01.Plant",
+      "summary": "Deconstruct a plant format options into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/landsDesign.png') -96px -24px",
+      "helpLink": "https://rhino.github.io/components/landsdesign/deconstructPlantFormatOptions.html"
+    },
+    {
+      "name": "Deconstruct Plant Options",
+      "id": "Deconstruct Plant Options",
+      "library": "Lands Design",
+      "category": "01.Plant",
+      "summary": "Deconstruct a plant options into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/landsDesign.png') -144px -24px",
+      "helpLink": "https://rhino.github.io/components/landsdesign/deconstructPlantOptions.html"
+    },
+    {
+      "name": "Deconstruct Plant Render Options",
+      "id": "Deconstruct Plant Render Options",
+      "library": "Lands Design",
+      "category": "01.Plant",
+      "summary": "Deconstruct a plant render options into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/landsDesign.png') -192px -24px",
+      "helpLink": "https://rhino.github.io/components/landsdesign/deconstructPlantRenderOptions.html"
+    },
+    {
+      "name": "Deconstruct Specie Characteristics",
+      "id": "Deconstruct Specie Characteristics",
+      "library": "Lands Design",
+      "category": "01.Plant",
+      "summary": "Deconstruct a specie characteristics into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/landsDesign.png') 0px -48px",
+      "helpLink": "https://rhino.github.io/components/landsdesign/deconstructSpecieCharacteristics.html"
+    },
+    {
+      "name": "Deconstruct Specie Soil",
+      "id": "Deconstruct Specie Soil",
+      "library": "Lands Design",
+      "category": "01.Plant",
+      "summary": "Deconstruct a specie soil into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/landsDesign.png') -48px -48px",
+      "helpLink": "https://rhino.github.io/components/landsdesign/deconstructSpecieSoil.html"
+    },
+    {
+      "name": "Deconstruct Species",
+      "id": "Deconstruct Species",
+      "library": "Lands Design",
+      "category": "01.Plant",
+      "summary": "Deconstruct a species into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/landsDesign.png') -24px -48px",
+      "helpLink": "https://rhino.github.io/components/landsdesign/deconstructSpecies.html"
+    },
+    {
+      "name": "Plant",
+      "id": "Plant",
+      "library": "Lands Design",
+      "category": "01.Plant",
+      "summary": "Create a plant from point.",
+      "description": null,
+      "iconCss": "background: url('icons/landsDesign.png') -72px -24px",
+      "helpLink": "https://rhino.github.io/components/landsdesign/plant.html"
+    },
+    {
+      "name": "Plant Format Options",
+      "id": "Plant Format Options",
+      "library": "Lands Design",
+      "category": "01.Plant",
+      "summary": "Create plant format options from atomic inputs.",
+      "description": null,
+      "iconCss": "background: url('icons/landsDesign.png') -120px -24px",
+      "helpLink": "https://rhino.github.io/components/landsdesign/plantFormatOptions.html"
+    },
+    {
+      "name": "Plant Options",
+      "id": "Plant Options",
+      "library": "Lands Design",
+      "category": "01.Plant",
+      "summary": "Create plant options from atomic inputs.",
+      "description": null,
+      "iconCss": "background: url('icons/landsDesign.png') -168px -24px",
+      "helpLink": "https://rhino.github.io/components/landsdesign/plantOptions.html"
+    },
+    {
+      "name": "Plant Render Options",
+      "id": "Plant Render Options",
+      "library": "Lands Design",
+      "category": "01.Plant",
+      "summary": "Create plant render options from atomic inputs.",
+      "description": null,
+      "iconCss": "background: url('icons/landsDesign.png') -216px -24px",
+      "helpLink": "https://rhino.github.io/components/landsdesign/plantRenderOptions.html"
+    },
+    {
+      "name": "Deconstruct Plant Row",
+      "id": "Deconstruct Plant Row",
+      "library": "Lands Design",
+      "category": "02.Plant Row",
+      "summary": "Deconstruct a plant row into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/landsDesign.png') -72px -48px",
+      "helpLink": "https://rhino.github.io/components/landsdesign/deconstructPlantRow.html"
+    },
+    {
+      "name": "Deconstruct Plant Row Options",
+      "id": "Deconstruct Plant Row Options",
+      "library": "Lands Design",
+      "category": "02.Plant Row",
+      "summary": "Deconstruct a plant row options into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/landsDesign.png') -120px -48px",
+      "helpLink": "https://rhino.github.io/components/landsdesign/deconstructPlantRowOptions.html"
+    },
+    {
+      "name": "Plant Row",
+      "id": "Plant Row",
+      "library": "Lands Design",
+      "category": "02.Plant Row",
+      "summary": "Create a plant row from curve.",
+      "description": null,
+      "iconCss": "background: url('icons/landsDesign.png') -96px -48px",
+      "helpLink": "https://rhino.github.io/components/landsdesign/plantRow.html"
+    },
+    {
+      "name": "Plant Row Options",
+      "id": "Plant Row Options",
+      "library": "Lands Design",
+      "category": "02.Plant Row",
+      "summary": "Create plant row options from atomic inputs.",
+      "description": null,
+      "iconCss": "background: url('icons/landsDesign.png') -144px -48px",
+      "helpLink": "https://rhino.github.io/components/landsdesign/plantRowOptions.html"
+    },
+    {
+      "name": "Deconstruct Forest",
+      "id": "Deconstruct Forest",
+      "library": "Lands Design",
+      "category": "03.Forest",
+      "summary": "Deconstruct a forest into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/landsDesign.png') 0px 0px",
+      "helpLink": "https://rhino.github.io/components/landsdesign/deconstructForest.html"
+    },
+    {
+      "name": "Deconstruct Forest Options",
+      "id": "Deconstruct Forest Options",
+      "library": "Lands Design",
+      "category": "03.Forest",
+      "summary": "Deconstruct a forest options into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/landsDesign.png') -48px 0px",
+      "helpLink": "https://rhino.github.io/components/landsdesign/deconstructForestOptions.html"
+    },
+    {
+      "name": "Forest",
+      "id": "Forest",
+      "library": "Lands Design",
+      "category": "03.Forest",
+      "summary": "Create a forest from curve.",
+      "description": null,
+      "iconCss": "background: url('icons/landsDesign.png') -24px 0px",
+      "helpLink": "https://rhino.github.io/components/landsdesign/forest.html"
+    },
+    {
+      "name": "Forest Options",
+      "id": "Forest Options",
+      "library": "Lands Design",
+      "category": "03.Forest",
+      "summary": "Create forest options from atomic inputs.",
+      "description": null,
+      "iconCss": "background: url('icons/landsDesign.png') -72px 0px",
+      "helpLink": "https://rhino.github.io/components/landsdesign/forestOptions.html"
+    },
+    {
+      "name": "Deconstruct Shrub",
+      "id": "Deconstruct Shrub",
+      "library": "Lands Design",
+      "category": "04.Shrub",
+      "summary": "Deconstruct a shrub into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/landsDesign.png') -168px -48px",
+      "helpLink": "https://rhino.github.io/components/landsdesign/deconstructShrub.html"
+    },
+    {
+      "name": "Deconstruct Shrub Options",
+      "id": "Deconstruct Shrub Options",
+      "library": "Lands Design",
+      "category": "04.Shrub",
+      "summary": "Deconstruct a shrub options into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/landsDesign.png') -216px -48px",
+      "helpLink": "https://rhino.github.io/components/landsdesign/deconstructShrubOptions.html"
+    },
+    {
+      "name": "Shrub",
+      "id": "Shrub",
+      "library": "Lands Design",
+      "category": "04.Shrub",
+      "summary": "Create a shrub from curve.",
+      "description": null,
+      "iconCss": "background: url('icons/landsDesign.png') -192px -48px",
+      "helpLink": "https://rhino.github.io/components/landsdesign/shrub.html"
+    },
+    {
+      "name": "Shrub Options",
+      "id": "Shrub Options",
+      "library": "Lands Design",
+      "category": "04.Shrub",
+      "summary": "Create shrub options from atomic inputs.",
+      "description": null,
+      "iconCss": "background: url('icons/landsDesign.png') 0px -72px",
+      "helpLink": "https://rhino.github.io/components/landsdesign/shrubOptions.html"
+    },
+    {
+      "name": "Deconstruct Groundcover",
+      "id": "Deconstruct Groundcover",
+      "library": "Lands Design",
+      "category": "05.Groundcover",
+      "summary": "Deconstruct a groundcover into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/landsDesign.png') -96px 0px",
+      "helpLink": "https://rhino.github.io/components/landsdesign/deconstructGroundcover.html"
+    },
+    {
+      "name": "Deconstruct Groundcover Options",
+      "id": "Deconstruct Groundcover Options",
+      "library": "Lands Design",
+      "category": "05.Groundcover",
+      "summary": "Deconstruct a groundcover options into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/landsDesign.png') -144px 0px",
+      "helpLink": "https://rhino.github.io/components/landsdesign/deconstructGroundcoverOptions.html"
+    },
+    {
+      "name": "Groundcover",
+      "id": "Groundcover",
+      "library": "Lands Design",
+      "category": "05.Groundcover",
+      "summary": "Create a groundcover from curve.",
+      "description": null,
+      "iconCss": "background: url('icons/landsDesign.png') -120px 0px",
+      "helpLink": "https://rhino.github.io/components/landsdesign/groundcover.html"
+    },
+    {
+      "name": "Groundcover Options",
+      "id": "Groundcover Options",
+      "library": "Lands Design",
+      "category": "05.Groundcover",
+      "summary": "Create groundcover options from atomic inputs.",
+      "description": null,
+      "iconCss": "background: url('icons/landsDesign.png') -168px 0px",
+      "helpLink": "https://rhino.github.io/components/landsdesign/groundcoverOptions.html"
+    },
+    {
+      "name": "Deconstruct Path",
+      "id": "Deconstruct Path",
+      "library": "Lands Design",
+      "category": "06.Path",
+      "summary": "Deconstruct a path into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/landsDesign.png') -192px 0px",
+      "helpLink": "https://rhino.github.io/components/landsdesign/deconstructPath.html"
+    },
+    {
+      "name": "Deconstruct Path Options",
+      "id": "Deconstruct Path Options",
+      "library": "Lands Design",
+      "category": "06.Path",
+      "summary": "Deconstruct a path options into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/landsDesign.png') 0px -24px",
+      "helpLink": "https://rhino.github.io/components/landsdesign/deconstructPathOptions.html"
+    },
+    {
+      "name": "Path",
+      "id": "Path",
+      "library": "Lands Design",
+      "category": "06.Path",
+      "summary": "Create a path from curves.",
+      "description": null,
+      "iconCss": "background: url('icons/landsDesign.png') -216px 0px",
+      "helpLink": "https://rhino.github.io/components/landsdesign/path.html"
+    },
+    {
+      "name": "Path Options",
+      "id": "Path Options",
+      "library": "Lands Design",
+      "category": "06.Path",
+      "summary": "Create Path options from atomic inputs.",
+      "description": null,
+      "iconCss": "background: url('icons/landsDesign.png') -24px -24px",
+      "helpLink": "https://rhino.github.io/components/landsdesign/pathOptions.html"
+    },
+    {
+      "name": "Deconstruct Terrain",
+      "id": "Deconstruct Terrain",
+      "library": "Lands Design",
+      "category": "07.Terrain",
+      "summary": "Deconstruct a terrain into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/landsDesign.png') -144px -72px",
+      "helpLink": "https://rhino.github.io/components/landsdesign/deconstructTerrain.html"
+    },
+    {
+      "name": "Deconstruct Terrain Options",
+      "id": "Deconstruct Terrain Options",
+      "library": "Lands Design",
+      "category": "07.Terrain",
+      "summary": "Deconstruct a terrain options into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/landsDesign.png') -72px -96px",
+      "helpLink": "https://rhino.github.io/components/landsdesign/deconstructTerrainOptions.html"
+    },
+    {
+      "name": "Terrain",
+      "id": "Terrain",
+      "library": "Lands Design",
+      "category": "07.Terrain",
+      "summary": "Create a terrain from curves or points.",
+      "description": null,
+      "iconCss": "background: url('icons/landsDesign.png') -168px -72px",
+      "helpLink": "https://rhino.github.io/components/landsdesign/terrain.html"
+    },
+    {
+      "name": "Terrain Boundary",
+      "id": "Terrain Boundary",
+      "library": "Lands Design",
+      "category": "07.Terrain",
+      "summary": "Set a terrain boundary.",
+      "description": null,
+      "iconCss": "background: url('icons/landsDesign.png') -120px -72px",
+      "helpLink": "https://rhino.github.io/components/landsdesign/terrainBoundary.html"
+    },
+    {
+      "name": "Terrain Cut and Fill",
+      "id": "Terrain Cut and Fill",
+      "library": "Lands Design",
+      "category": "07.Terrain",
+      "summary": "Add clearings to terrain.",
+      "description": null,
+      "iconCss": "background: url('icons/landsDesign.png') -192px -72px",
+      "helpLink": "https://rhino.github.io/components/landsdesign/terrainCutAndFill.html"
+    },
+    {
+      "name": "Terrain Divide",
+      "id": "Terrain Divide",
+      "library": "Lands Design",
+      "category": "07.Terrain",
+      "summary": "Create subdivisions in terrain.",
+      "description": null,
+      "iconCss": "background: url('icons/landsDesign.png') -216px -72px",
+      "helpLink": "https://rhino.github.io/components/landsdesign/terrainDivide.html"
+    },
+    {
+      "name": "Terrain Earth Moving",
+      "id": "Terrain Earth Moving",
+      "library": "Lands Design",
+      "category": "07.Terrain",
+      "summary": "Calculates the amount of earth.",
+      "description": null,
+      "iconCss": "background: url('icons/landsDesign.png') 0px -96px",
+      "helpLink": "https://rhino.github.io/components/landsdesign/terrainEarthMoving.html"
+    },
+    {
+      "name": "Terrain Explode",
+      "id": "Terrain Explode",
+      "library": "Lands Design",
+      "category": "07.Terrain",
+      "summary": "Extract the terrain contour lines and meshes.",
+      "description": null,
+      "iconCss": "background: url('icons/landsDesign.png') -24px -96px",
+      "helpLink": "https://rhino.github.io/components/landsdesign/terrainExplode.html"
+    },
+    {
+      "name": "Terrain Options",
+      "id": "Terrain Options",
+      "library": "Lands Design",
+      "category": "07.Terrain",
+      "summary": "Create terrain options from atomic inputs.",
+      "description": null,
+      "iconCss": "background: url('icons/landsDesign.png') -96px -96px",
+      "helpLink": "https://rhino.github.io/components/landsdesign/terrainOptions.html"
+    },
+    {
+      "name": "Terrain Path",
+      "id": "Terrain Path",
+      "library": "Lands Design",
+      "category": "07.Terrain",
+      "summary": "Add paths to terrain.",
+      "description": null,
+      "iconCss": "background: url('icons/landsDesign.png') -48px -96px",
+      "helpLink": "https://rhino.github.io/components/landsdesign/terrainPath.html"
+    },
+    {
+      "name": "Deconstruct Sprinkler",
+      "id": "Deconstruct Sprinkler",
+      "library": "Lands Design",
+      "category": "08.Sprinkler",
+      "summary": "Deconstruct a sprinkler into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/landsDesign.png') -24px -72px",
+      "helpLink": "https://rhino.github.io/components/landsdesign/deconstructSprinkler.html"
+    },
+    {
+      "name": "Deconstruct Sprinkler Options",
+      "id": "Deconstruct Sprinkler Options",
+      "library": "Lands Design",
+      "category": "08.Sprinkler",
+      "summary": "Deconstruct a sprinkler options into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/landsDesign.png') -72px -72px",
+      "helpLink": "https://rhino.github.io/components/landsdesign/deconstructSprinklerOptions.html"
+    },
+    {
+      "name": "Sprinkler",
+      "id": "Sprinkler",
+      "library": "Lands Design",
+      "category": "08.Sprinkler",
+      "summary": "Create a sprinkler from position.",
+      "description": null,
+      "iconCss": "background: url('icons/landsDesign.png') -48px -72px",
+      "helpLink": "https://rhino.github.io/components/landsdesign/sprinkler.html"
+    },
+    {
+      "name": "Sprinkler Options",
+      "id": "Sprinkler Options",
+      "library": "Lands Design",
+      "category": "08.Sprinkler",
+      "summary": "Create sprinkler options from atomic inputs.",
+      "description": null,
+      "iconCss": "background: url('icons/landsDesign.png') -96px -72px",
+      "helpLink": "https://rhino.github.io/components/landsdesign/sprinklerOptions.html"
     },
     {
       "name": "Convert JSON to XML",
@@ -35589,6 +36139,2136 @@
       "description": null,
       "iconCss": "background: url('icons/tTToolbox.png') -48px -96px",
       "helpLink": "https://rhino.github.io/components/tttoolbox/tTSweepNames.html"
+    },
+    {
+      "name": "Deconstruct Wall",
+      "id": "Deconstruct Wall",
+      "library": "VisualARQ",
+      "category": "01.Wall",
+      "summary": "Deconstruct a wall into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -216px -432px",
+      "helpLink": "https://rhino.github.io/components/visualarq/deconstructWall.html"
+    },
+    {
+      "name": "Deconstruct Wall Layer",
+      "id": "Deconstruct Wall Layer",
+      "library": "VisualARQ",
+      "category": "01.Wall",
+      "summary": "Deconstruct a wall layer component into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -192px -432px",
+      "helpLink": "https://rhino.github.io/components/visualarq/deconstructWallLayer.html"
+    },
+    {
+      "name": "Deconstruct Wall Options",
+      "id": "Deconstruct Wall Options",
+      "library": "VisualARQ",
+      "category": "01.Wall",
+      "summary": "Deconstruct a wall options into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -72px -456px",
+      "helpLink": "https://rhino.github.io/components/visualarq/deconstructWallOptions.html"
+    },
+    {
+      "name": "Deconstruct Wall Style",
+      "id": "Deconstruct Wall Style",
+      "library": "VisualARQ",
+      "category": "01.Wall",
+      "summary": "Deconstruct a wall style into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -144px -456px",
+      "helpLink": "https://rhino.github.io/components/visualarq/deconstructWallStyle.html"
+    },
+    {
+      "name": "Wall",
+      "id": "Wall",
+      "library": "VisualARQ",
+      "category": "01.Wall",
+      "summary": "Create a wall from path curve.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') 0px -456px",
+      "helpLink": "https://rhino.github.io/components/visualarq/wall.html"
+    },
+    {
+      "name": "Wall Extend",
+      "id": "Wall Extend",
+      "library": "VisualARQ",
+      "category": "01.Wall",
+      "summary": "Create a wall extending an existing one to a list of geometries.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -24px -456px",
+      "helpLink": "https://rhino.github.io/components/visualarq/wallExtend.html"
+    },
+    {
+      "name": "Wall From Solid",
+      "id": "Wall From Solid",
+      "library": "VisualARQ",
+      "category": "01.Wall",
+      "summary": "Creates a wall from a brep and a path curve.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -48px -456px",
+      "helpLink": "https://rhino.github.io/components/visualarq/wallFromSolid.html"
+    },
+    {
+      "name": "Wall Layer",
+      "id": "Wall Layer",
+      "library": "VisualARQ",
+      "category": "01.Wall",
+      "summary": "Create a wall layer from atomic inputs.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -168px -432px",
+      "helpLink": "https://rhino.github.io/components/visualarq/wallLayer.html"
+    },
+    {
+      "name": "Wall Options",
+      "id": "Wall Options",
+      "library": "VisualARQ",
+      "category": "01.Wall",
+      "summary": "Create wall options from atomic inputs.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -96px -456px",
+      "helpLink": "https://rhino.github.io/components/visualarq/wallOptions.html"
+    },
+    {
+      "name": "Wall Style",
+      "id": "Wall Style",
+      "library": "VisualARQ",
+      "category": "01.Wall",
+      "summary": "Create wall style from atomic inputs.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -120px -456px",
+      "helpLink": "https://rhino.github.io/components/visualarq/wallStyle.html"
+    },
+    {
+      "name": "Curtain Wall",
+      "id": "Curtain Wall",
+      "library": "VisualARQ",
+      "category": "02.Curtain Wall",
+      "summary": "Create a curtain wall from path curve.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -48px -144px",
+      "helpLink": "https://rhino.github.io/components/visualarq/curtainWall.html"
+    },
+    {
+      "name": "Curtain Wall Extend",
+      "id": "Curtain Wall Extend",
+      "library": "VisualARQ",
+      "category": "02.Curtain Wall",
+      "summary": "Create a curtain wall extending an existing one to a list of geometries.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -72px -144px",
+      "helpLink": "https://rhino.github.io/components/visualarq/curtainWallExtend.html"
+    },
+    {
+      "name": "Curtain Wall Fixed Dimension Cell",
+      "id": "Curtain Wall Fixed Dimension Cell",
+      "library": "VisualARQ",
+      "category": "02.Curtain Wall",
+      "summary": "Create a curtain wall cell with fixed size divisions.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -24px -120px",
+      "helpLink": "https://rhino.github.io/components/visualarq/curtainWallFixedDimensionCell.html"
+    },
+    {
+      "name": "Curtain Wall Fixed Number Cell",
+      "id": "Curtain Wall Fixed Number Cell",
+      "library": "VisualARQ",
+      "category": "02.Curtain Wall",
+      "summary": "Create a curtain wall cell with fixed number of divisions.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -72px -120px",
+      "helpLink": "https://rhino.github.io/components/visualarq/curtainWallFixedNumberCell.html"
+    },
+    {
+      "name": "Curtain Wall Frame",
+      "id": "Curtain Wall Frame",
+      "library": "VisualARQ",
+      "category": "02.Curtain Wall",
+      "summary": "Create curtain wall frame from atomic inputs.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -96px -144px",
+      "helpLink": "https://rhino.github.io/components/visualarq/curtainWallFrame.html"
+    },
+    {
+      "name": "Curtain Wall Horizontal Cell",
+      "id": "Curtain Wall Horizontal Cell",
+      "library": "VisualARQ",
+      "category": "02.Curtain Wall",
+      "summary": "Create a curtain wall cell with horizontal divisions.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -120px -120px",
+      "helpLink": "https://rhino.github.io/components/visualarq/curtainWallHorizontalCell.html"
+    },
+    {
+      "name": "Curtain Wall Mullion",
+      "id": "Curtain Wall Mullion",
+      "library": "VisualARQ",
+      "category": "02.Curtain Wall",
+      "summary": "Create curtain wall mullion from atomic inputs.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -144px -144px",
+      "helpLink": "https://rhino.github.io/components/visualarq/curtainWallMullion.html"
+    },
+    {
+      "name": "Curtain Wall None Division Cell",
+      "id": "Curtain Wall None Division Cell",
+      "library": "VisualARQ",
+      "category": "02.Curtain Wall",
+      "summary": "Create a curtain wall cell with none divisions.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -168px -120px",
+      "helpLink": "https://rhino.github.io/components/visualarq/curtainWallNoneDivisionCell.html"
+    },
+    {
+      "name": "Curtain Wall Options",
+      "id": "Curtain Wall Options",
+      "library": "VisualARQ",
+      "category": "02.Curtain Wall",
+      "summary": "Create curtain wall options from atomic inputs.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -216px -144px",
+      "helpLink": "https://rhino.github.io/components/visualarq/curtainWallOptions.html"
+    },
+    {
+      "name": "Curtain Wall Style",
+      "id": "Curtain Wall Style",
+      "library": "VisualARQ",
+      "category": "02.Curtain Wall",
+      "summary": "Create a curtain wall style from atomic inputs.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') 0px -168px",
+      "helpLink": "https://rhino.github.io/components/visualarq/curtainWallStyle.html"
+    },
+    {
+      "name": "Curtain Wall Support",
+      "id": "Curtain Wall Support",
+      "library": "VisualARQ",
+      "category": "02.Curtain Wall",
+      "summary": "Create curtain wall support from atomic inputs.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -48px -168px",
+      "helpLink": "https://rhino.github.io/components/visualarq/curtainWallSupport.html"
+    },
+    {
+      "name": "Curtain Wall Vertical Cell",
+      "id": "Curtain Wall Vertical Cell",
+      "library": "VisualARQ",
+      "category": "02.Curtain Wall",
+      "summary": "Create a curtain wall cell with vertical divisions.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -216px -120px",
+      "helpLink": "https://rhino.github.io/components/visualarq/curtainWallVerticalCell.html"
+    },
+    {
+      "name": "Deconstruct Curtain Wall",
+      "id": "Deconstruct Curtain Wall",
+      "library": "VisualARQ",
+      "category": "02.Curtain Wall",
+      "summary": "Deconstruct a curtain wall into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -24px -144px",
+      "helpLink": "https://rhino.github.io/components/visualarq/deconstructCurtainWall.html"
+    },
+    {
+      "name": "Deconstruct Curtain Wall Fixed Dimension Cell",
+      "id": "Deconstruct Curtain Wall Fixed Dimension Cell",
+      "library": "VisualARQ",
+      "category": "02.Curtain Wall",
+      "summary": "Deconstruct a curtain wall cell with fixed size divisions into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -48px -120px",
+      "helpLink": "https://rhino.github.io/components/visualarq/deconstructCurtainWallFixedDimensionCell.html"
+    },
+    {
+      "name": "Deconstruct Curtain Wall Fixed Number Cell",
+      "id": "Deconstruct Curtain Wall Fixed Number Cell",
+      "library": "VisualARQ",
+      "category": "02.Curtain Wall",
+      "summary": "Deconstruct a curtain wall cell with fixed number of divisions into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -96px -120px",
+      "helpLink": "https://rhino.github.io/components/visualarq/deconstructCurtainWallFixedNumberCell.html"
+    },
+    {
+      "name": "Deconstruct Curtain Wall Frame",
+      "id": "Deconstruct Curtain Wall Frame",
+      "library": "VisualARQ",
+      "category": "02.Curtain Wall",
+      "summary": "Deconstruct a curtain wall frame into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -120px -144px",
+      "helpLink": "https://rhino.github.io/components/visualarq/deconstructCurtainWallFrame.html"
+    },
+    {
+      "name": "Deconstruct Curtain Wall Horizontal Cell",
+      "id": "Deconstruct Curtain Wall Horizontal Cell",
+      "library": "VisualARQ",
+      "category": "02.Curtain Wall",
+      "summary": "Deconstruct a curtain wall cell with horizontal divisions into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -144px -120px",
+      "helpLink": "https://rhino.github.io/components/visualarq/deconstructCurtainWallHorizontalCell.html"
+    },
+    {
+      "name": "Deconstruct Curtain Wall Mullion",
+      "id": "Deconstruct Curtain Wall Mullion",
+      "library": "VisualARQ",
+      "category": "02.Curtain Wall",
+      "summary": "Deconstruct a curtain wall mullion into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -168px -144px",
+      "helpLink": "https://rhino.github.io/components/visualarq/deconstructCurtainWallMullion.html"
+    },
+    {
+      "name": "Deconstruct Curtain Wall None Division Cell",
+      "id": "Deconstruct Curtain Wall None Division Cell",
+      "library": "VisualARQ",
+      "category": "02.Curtain Wall",
+      "summary": "Deconstruct a curtain wall cell with none divisions into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -192px -120px",
+      "helpLink": "https://rhino.github.io/components/visualarq/deconstructCurtainWallNoneDivisionCell.html"
+    },
+    {
+      "name": "Deconstruct Curtain Wall Options",
+      "id": "Deconstruct Curtain Wall Options",
+      "library": "VisualARQ",
+      "category": "02.Curtain Wall",
+      "summary": "Deconstruct a curtain wall options into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -192px -144px",
+      "helpLink": "https://rhino.github.io/components/visualarq/deconstructCurtainWallOptions.html"
+    },
+    {
+      "name": "Deconstruct Curtain Wall Style",
+      "id": "Deconstruct Curtain Wall Style",
+      "library": "VisualARQ",
+      "category": "02.Curtain Wall",
+      "summary": "Deconstruct a curtain wall style into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -24px -168px",
+      "helpLink": "https://rhino.github.io/components/visualarq/deconstructCurtainWallStyle.html"
+    },
+    {
+      "name": "Deconstruct Curtain Wall Support",
+      "id": "Deconstruct Curtain Wall Support",
+      "library": "VisualARQ",
+      "category": "02.Curtain Wall",
+      "summary": "Deconstruct a curtain wall support into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -72px -168px",
+      "helpLink": "https://rhino.github.io/components/visualarq/deconstructCurtainWallSupport.html"
+    },
+    {
+      "name": "Deconstruct Curtain Wall Vertical Cell",
+      "id": "Deconstruct Curtain Wall Vertical Cell",
+      "library": "VisualARQ",
+      "category": "02.Curtain Wall",
+      "summary": "Deconstruct a curtain wall cell with vertical divisions into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') 0px -144px",
+      "helpLink": "https://rhino.github.io/components/visualarq/deconstructCurtainWallVerticalCell.html"
+    },
+    {
+      "name": "Beam",
+      "id": "Beam",
+      "library": "VisualARQ",
+      "category": "03.Beam",
+      "summary": "Create a beam from path curve.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -72px -72px",
+      "helpLink": "https://rhino.github.io/components/visualarq/beam.html"
+    },
+    {
+      "name": "Beam Options",
+      "id": "Beam Options",
+      "library": "VisualARQ",
+      "category": "03.Beam",
+      "summary": "Create beam options from atomic inputs.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -120px -72px",
+      "helpLink": "https://rhino.github.io/components/visualarq/beamOptions.html"
+    },
+    {
+      "name": "Beam Style",
+      "id": "Beam Style",
+      "library": "VisualARQ",
+      "category": "03.Beam",
+      "summary": "Create beam style from atomic inputs.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -144px -72px",
+      "helpLink": "https://rhino.github.io/components/visualarq/beamStyle.html"
+    },
+    {
+      "name": "Deconstruct Beam",
+      "id": "Deconstruct Beam",
+      "library": "VisualARQ",
+      "category": "03.Beam",
+      "summary": "Deconstruct a beam into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -48px -72px",
+      "helpLink": "https://rhino.github.io/components/visualarq/deconstructBeam.html"
+    },
+    {
+      "name": "Deconstruct Beam Options",
+      "id": "Deconstruct Beam Options",
+      "library": "VisualARQ",
+      "category": "03.Beam",
+      "summary": "Deconstruct a beam options into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -96px -72px",
+      "helpLink": "https://rhino.github.io/components/visualarq/deconstructBeamOptions.html"
+    },
+    {
+      "name": "Deconstruct Beam Style",
+      "id": "Deconstruct Beam Style",
+      "library": "VisualARQ",
+      "category": "03.Beam",
+      "summary": "Deconstruct a beam style into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -168px -72px",
+      "helpLink": "https://rhino.github.io/components/visualarq/deconstructBeamStyle.html"
+    },
+    {
+      "name": "Column",
+      "id": "Column",
+      "library": "VisualARQ",
+      "category": "04.Column",
+      "summary": "Create a column from point.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -144px -96px",
+      "helpLink": "https://rhino.github.io/components/visualarq/column.html"
+    },
+    {
+      "name": "Column Coating",
+      "id": "Column Coating",
+      "library": "VisualARQ",
+      "category": "04.Column",
+      "summary": "Create column coating from atomic inputs.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -72px -96px",
+      "helpLink": "https://rhino.github.io/components/visualarq/columnCoating.html"
+    },
+    {
+      "name": "Column Options",
+      "id": "Column Options",
+      "library": "VisualARQ",
+      "category": "04.Column",
+      "summary": "Create column options from atomic inputs.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -192px -96px",
+      "helpLink": "https://rhino.github.io/components/visualarq/columnOptions.html"
+    },
+    {
+      "name": "Column Style",
+      "id": "Column Style",
+      "library": "VisualARQ",
+      "category": "04.Column",
+      "summary": "Create column style from atomic inputs.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -216px -96px",
+      "helpLink": "https://rhino.github.io/components/visualarq/columnStyle.html"
+    },
+    {
+      "name": "Deconstruct Column",
+      "id": "Deconstruct Column",
+      "library": "VisualARQ",
+      "category": "04.Column",
+      "summary": "Deconstruct a column into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -120px -96px",
+      "helpLink": "https://rhino.github.io/components/visualarq/deconstructColumn.html"
+    },
+    {
+      "name": "Deconstruct Column Coating",
+      "id": "Deconstruct Column Coating",
+      "library": "VisualARQ",
+      "category": "04.Column",
+      "summary": "Deconstruct a column coating into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -96px -96px",
+      "helpLink": "https://rhino.github.io/components/visualarq/deconstructColumnCoating.html"
+    },
+    {
+      "name": "Deconstruct Column Options",
+      "id": "Deconstruct Column Options",
+      "library": "VisualARQ",
+      "category": "04.Column",
+      "summary": "Deconstruct a column options into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -168px -96px",
+      "helpLink": "https://rhino.github.io/components/visualarq/deconstructColumnOptions.html"
+    },
+    {
+      "name": "Deconstruct Column Style",
+      "id": "Deconstruct Column Style",
+      "library": "VisualARQ",
+      "category": "04.Column",
+      "summary": "Deconstruct a column style into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') 0px -120px",
+      "helpLink": "https://rhino.github.io/components/visualarq/deconstructColumnStyle.html"
+    },
+    {
+      "name": "Deconstruct Door",
+      "id": "Deconstruct Door",
+      "library": "VisualARQ",
+      "category": "05.Door",
+      "summary": "Deconstruct a door into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -96px -168px",
+      "helpLink": "https://rhino.github.io/components/visualarq/deconstructDoor.html"
+    },
+    {
+      "name": "Deconstruct Door Frame",
+      "id": "Deconstruct Door Frame",
+      "library": "VisualARQ",
+      "category": "05.Door",
+      "summary": "Deconstruct a door frame into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -168px -168px",
+      "helpLink": "https://rhino.github.io/components/visualarq/deconstructDoorFrame.html"
+    },
+    {
+      "name": "Deconstruct Door Leaf",
+      "id": "Deconstruct Door Leaf",
+      "library": "VisualARQ",
+      "category": "05.Door",
+      "summary": "Deconstruct a door leaf into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -216px -168px",
+      "helpLink": "https://rhino.github.io/components/visualarq/deconstructDoorLeaf.html"
+    },
+    {
+      "name": "Deconstruct Door Leaf Glass",
+      "id": "Deconstruct Door Leaf Glass",
+      "library": "VisualARQ",
+      "category": "05.Door",
+      "summary": "Deconstruct a door leaf glass into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -24px -192px",
+      "helpLink": "https://rhino.github.io/components/visualarq/deconstructDoorLeafGlass.html"
+    },
+    {
+      "name": "Deconstruct Door Options",
+      "id": "Deconstruct Door Options",
+      "library": "VisualARQ",
+      "category": "05.Door",
+      "summary": "Deconstruct a door options into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -48px -192px",
+      "helpLink": "https://rhino.github.io/components/visualarq/deconstructDoorOptions.html"
+    },
+    {
+      "name": "Deconstruct Door Stop",
+      "id": "Deconstruct Door Stop",
+      "library": "VisualARQ",
+      "category": "05.Door",
+      "summary": "Deconstruct a door stop into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -120px -192px",
+      "helpLink": "https://rhino.github.io/components/visualarq/deconstructDoorStop.html"
+    },
+    {
+      "name": "Deconstruct Door Style",
+      "id": "Deconstruct Door Style",
+      "library": "VisualARQ",
+      "category": "05.Door",
+      "summary": "Deconstruct a door style into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -168px -192px",
+      "helpLink": "https://rhino.github.io/components/visualarq/deconstructDoorStyle.html"
+    },
+    {
+      "name": "Door",
+      "id": "Door",
+      "library": "VisualARQ",
+      "category": "05.Door",
+      "summary": "Create a door from insert point.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -120px -168px",
+      "helpLink": "https://rhino.github.io/components/visualarq/door.html"
+    },
+    {
+      "name": "Door Frame",
+      "id": "Door Frame",
+      "library": "VisualARQ",
+      "category": "05.Door",
+      "summary": "Create a door frame from atomic inputs.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -144px -168px",
+      "helpLink": "https://rhino.github.io/components/visualarq/doorFrame.html"
+    },
+    {
+      "name": "Door Leaf",
+      "id": "Door Leaf",
+      "library": "VisualARQ",
+      "category": "05.Door",
+      "summary": "Create a door leaf from atomic inputs.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -192px -168px",
+      "helpLink": "https://rhino.github.io/components/visualarq/doorLeaf.html"
+    },
+    {
+      "name": "Door Leaf Glass",
+      "id": "Door Leaf Glass",
+      "library": "VisualARQ",
+      "category": "05.Door",
+      "summary": "Create door leaf glass from atomic inputs.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') 0px -192px",
+      "helpLink": "https://rhino.github.io/components/visualarq/doorLeafGlass.html"
+    },
+    {
+      "name": "Door Options",
+      "id": "Door Options",
+      "library": "VisualARQ",
+      "category": "05.Door",
+      "summary": "Create door options from atomic inputs.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -72px -192px",
+      "helpLink": "https://rhino.github.io/components/visualarq/doorOptions.html"
+    },
+    {
+      "name": "Door Stop",
+      "id": "Door Stop",
+      "library": "VisualARQ",
+      "category": "05.Door",
+      "summary": "Create a door stop from atomic inputs.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -96px -192px",
+      "helpLink": "https://rhino.github.io/components/visualarq/doorStop.html"
+    },
+    {
+      "name": "Door Style",
+      "id": "Door Style",
+      "library": "VisualARQ",
+      "category": "05.Door",
+      "summary": "Create a door style from atomic inputs.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -144px -192px",
+      "helpLink": "https://rhino.github.io/components/visualarq/doorStyle.html"
+    },
+    {
+      "name": "Deconstruct Window",
+      "id": "Deconstruct Window",
+      "library": "VisualARQ",
+      "category": "06.Window",
+      "summary": "Deconstruct a window into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -168px -456px",
+      "helpLink": "https://rhino.github.io/components/visualarq/deconstructWindow.html"
+    },
+    {
+      "name": "Deconstruct Window Frame",
+      "id": "Deconstruct Window Frame",
+      "library": "VisualARQ",
+      "category": "06.Window",
+      "summary": "Deconstruct a window frame into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') 0px -480px",
+      "helpLink": "https://rhino.github.io/components/visualarq/deconstructWindowFrame.html"
+    },
+    {
+      "name": "Deconstruct Window Leaf",
+      "id": "Deconstruct Window Leaf",
+      "library": "VisualARQ",
+      "category": "06.Window",
+      "summary": "Deconstruct a window leaf into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -48px -480px",
+      "helpLink": "https://rhino.github.io/components/visualarq/deconstructWindowLeaf.html"
+    },
+    {
+      "name": "Deconstruct Window Leaf Glass",
+      "id": "Deconstruct Window Leaf Glass",
+      "library": "VisualARQ",
+      "category": "06.Window",
+      "summary": "Deconstruct a window leaf glass into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -96px -480px",
+      "helpLink": "https://rhino.github.io/components/visualarq/deconstructWindowLeafGlass.html"
+    },
+    {
+      "name": "Deconstruct Window Options",
+      "id": "Deconstruct Window Options",
+      "library": "VisualARQ",
+      "category": "06.Window",
+      "summary": "Deconstruct a window options into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -120px -480px",
+      "helpLink": "https://rhino.github.io/components/visualarq/deconstructWindowOptions.html"
+    },
+    {
+      "name": "Deconstruct Window Sill",
+      "id": "Deconstruct Window Sill",
+      "library": "VisualARQ",
+      "category": "06.Window",
+      "summary": "Deconstruct a window sill into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -192px -480px",
+      "helpLink": "https://rhino.github.io/components/visualarq/deconstructWindowSill.html"
+    },
+    {
+      "name": "Deconstruct Window Stop",
+      "id": "Deconstruct Window Stop",
+      "library": "VisualARQ",
+      "category": "06.Window",
+      "summary": "Deconstruct a window stop into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') 0px -504px",
+      "helpLink": "https://rhino.github.io/components/visualarq/deconstructWindowStop.html"
+    },
+    {
+      "name": "Deconstruct Window Style",
+      "id": "Deconstruct Window Style",
+      "library": "VisualARQ",
+      "category": "06.Window",
+      "summary": "Deconstruct a window style into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -48px -504px",
+      "helpLink": "https://rhino.github.io/components/visualarq/deconstructWindowStyle.html"
+    },
+    {
+      "name": "Window",
+      "id": "Window",
+      "library": "VisualARQ",
+      "category": "06.Window",
+      "summary": "Create a window from insert point.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -192px -456px",
+      "helpLink": "https://rhino.github.io/components/visualarq/window.html"
+    },
+    {
+      "name": "Window Frame",
+      "id": "Window Frame",
+      "library": "VisualARQ",
+      "category": "06.Window",
+      "summary": "Create window frame from atomic inputs.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -216px -456px",
+      "helpLink": "https://rhino.github.io/components/visualarq/windowFrame.html"
+    },
+    {
+      "name": "Window Leaf",
+      "id": "Window Leaf",
+      "library": "VisualARQ",
+      "category": "06.Window",
+      "summary": "Create window leaf from atomic inputs.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -24px -480px",
+      "helpLink": "https://rhino.github.io/components/visualarq/windowLeaf.html"
+    },
+    {
+      "name": "Window Leaf Glass",
+      "id": "Window Leaf Glass",
+      "library": "VisualARQ",
+      "category": "06.Window",
+      "summary": "Create window leaf glass from atomic inputs.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -72px -480px",
+      "helpLink": "https://rhino.github.io/components/visualarq/windowLeafGlass.html"
+    },
+    {
+      "name": "Window Options",
+      "id": "Window Options",
+      "library": "VisualARQ",
+      "category": "06.Window",
+      "summary": "Create window options from atomic inputs.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -144px -480px",
+      "helpLink": "https://rhino.github.io/components/visualarq/windowOptions.html"
+    },
+    {
+      "name": "Window Sill",
+      "id": "Window Sill",
+      "library": "VisualARQ",
+      "category": "06.Window",
+      "summary": "Create window sill from atomic inputs.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -168px -480px",
+      "helpLink": "https://rhino.github.io/components/visualarq/windowSill.html"
+    },
+    {
+      "name": "Window Stop",
+      "id": "Window Stop",
+      "library": "VisualARQ",
+      "category": "06.Window",
+      "summary": "Create window stop from atomic inputs.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -216px -480px",
+      "helpLink": "https://rhino.github.io/components/visualarq/windowStop.html"
+    },
+    {
+      "name": "Window Style",
+      "id": "Window Style",
+      "library": "VisualARQ",
+      "category": "06.Window",
+      "summary": "Create window style from atomic inputs.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -24px -504px",
+      "helpLink": "https://rhino.github.io/components/visualarq/windowStyle.html"
+    },
+    {
+      "name": "Deconstruct Opening",
+      "id": "Deconstruct Opening",
+      "library": "VisualARQ",
+      "category": "07.Opening",
+      "summary": "Deconstruct an opening into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -168px -240px",
+      "helpLink": "https://rhino.github.io/components/visualarq/deconstructOpening.html"
+    },
+    {
+      "name": "Deconstruct Opening Frame",
+      "id": "Deconstruct Opening Frame",
+      "library": "VisualARQ",
+      "category": "07.Opening",
+      "summary": "Deconstruct opening frame into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') 0px -264px",
+      "helpLink": "https://rhino.github.io/components/visualarq/deconstructOpeningFrame.html"
+    },
+    {
+      "name": "Deconstruct Opening Options",
+      "id": "Deconstruct Opening Options",
+      "library": "VisualARQ",
+      "category": "07.Opening",
+      "summary": "Deconstruct an opening options into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -24px -264px",
+      "helpLink": "https://rhino.github.io/components/visualarq/deconstructOpeningOptions.html"
+    },
+    {
+      "name": "Deconstruct Opening Style",
+      "id": "Deconstruct Opening Style",
+      "library": "VisualARQ",
+      "category": "07.Opening",
+      "summary": "Deconstruct opening style into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -96px -264px",
+      "helpLink": "https://rhino.github.io/components/visualarq/deconstructOpeningStyle.html"
+    },
+    {
+      "name": "Opening",
+      "id": "Opening",
+      "library": "VisualARQ",
+      "category": "07.Opening",
+      "summary": "Create an opening from insert point.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -192px -240px",
+      "helpLink": "https://rhino.github.io/components/visualarq/opening.html"
+    },
+    {
+      "name": "Opening Frame",
+      "id": "Opening Frame",
+      "library": "VisualARQ",
+      "category": "07.Opening",
+      "summary": "Create opening frame from atomic inputs.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -216px -240px",
+      "helpLink": "https://rhino.github.io/components/visualarq/openingFrame.html"
+    },
+    {
+      "name": "Opening Style",
+      "id": "Opening Style",
+      "library": "VisualARQ",
+      "category": "07.Opening",
+      "summary": "Create opening style from atomic inputs.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -72px -264px",
+      "helpLink": "https://rhino.github.io/components/visualarq/openingStyle.html"
+    },
+    {
+      "name": "Openings Options",
+      "id": "Openings Options",
+      "library": "VisualARQ",
+      "category": "07.Opening",
+      "summary": "Create opening options from atomic inputs.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -48px -264px",
+      "helpLink": "https://rhino.github.io/components/visualarq/openingsOptions.html"
+    },
+    {
+      "name": "Deconstruct Stair",
+      "id": "Deconstruct Stair",
+      "library": "VisualARQ",
+      "category": "08.Stair",
+      "summary": "Deconstruct a stair into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -72px -408px",
+      "helpLink": "https://rhino.github.io/components/visualarq/deconstructStair.html"
+    },
+    {
+      "name": "Deconstruct Stair Options",
+      "id": "Deconstruct Stair Options",
+      "library": "VisualARQ",
+      "category": "08.Stair",
+      "summary": "Deconstruct a stair options into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -120px -408px",
+      "helpLink": "https://rhino.github.io/components/visualarq/deconstructStairOptions.html"
+    },
+    {
+      "name": "Deconstruct Stair Slab",
+      "id": "Deconstruct Stair Slab",
+      "library": "VisualARQ",
+      "category": "08.Stair",
+      "summary": "Deconstruct a stair slab into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -192px -408px",
+      "helpLink": "https://rhino.github.io/components/visualarq/deconstructStairSlab.html"
+    },
+    {
+      "name": "Deconstruct Stair Style",
+      "id": "Deconstruct Stair Style",
+      "library": "VisualARQ",
+      "category": "08.Stair",
+      "summary": "Deconstruct a stair style into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') 0px -432px",
+      "helpLink": "https://rhino.github.io/components/visualarq/deconstructStairStyle.html"
+    },
+    {
+      "name": "Stair",
+      "id": "Stair",
+      "library": "VisualARQ",
+      "category": "08.Stair",
+      "summary": "Create a stair from shape curve.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -96px -408px",
+      "helpLink": "https://rhino.github.io/components/visualarq/stair.html"
+    },
+    {
+      "name": "Stair Options",
+      "id": "Stair Options",
+      "library": "VisualARQ",
+      "category": "08.Stair",
+      "summary": "Create stair options from atomic inputs.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -144px -408px",
+      "helpLink": "https://rhino.github.io/components/visualarq/stairOptions.html"
+    },
+    {
+      "name": "Stair Slab",
+      "id": "Stair Slab",
+      "library": "VisualARQ",
+      "category": "08.Stair",
+      "summary": "Create a stair slab from atomic inputs.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -168px -408px",
+      "helpLink": "https://rhino.github.io/components/visualarq/stairSlab.html"
+    },
+    {
+      "name": "Stair Style",
+      "id": "Stair Style",
+      "library": "VisualARQ",
+      "category": "08.Stair",
+      "summary": "Create stair style from atomic inputs.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -216px -408px",
+      "helpLink": "https://rhino.github.io/components/visualarq/stairStyle.html"
+    },
+    {
+      "name": "Deconstruct Railing",
+      "id": "Deconstruct Railing",
+      "library": "VisualARQ",
+      "category": "09.Railing",
+      "summary": "Deconstruct a railing into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -168px -312px",
+      "helpLink": "https://rhino.github.io/components/visualarq/deconstructRailing.html"
+    },
+    {
+      "name": "Deconstruct Railing Baluster",
+      "id": "Deconstruct Railing Baluster",
+      "library": "VisualARQ",
+      "category": "09.Railing",
+      "summary": "Deconstruct a railing baluster into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -144px -312px",
+      "helpLink": "https://rhino.github.io/components/visualarq/deconstructRailingBaluster.html"
+    },
+    {
+      "name": "Deconstruct Railing Options",
+      "id": "Deconstruct Railing Options",
+      "library": "VisualARQ",
+      "category": "09.Railing",
+      "summary": "Deconstruct a railing options into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -216px -312px",
+      "helpLink": "https://rhino.github.io/components/visualarq/deconstructRailingOptions.html"
+    },
+    {
+      "name": "Deconstruct Railing Post",
+      "id": "Deconstruct Railing Post",
+      "library": "VisualARQ",
+      "category": "09.Railing",
+      "summary": "Deconstruct a railing post into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -48px -336px",
+      "helpLink": "https://rhino.github.io/components/visualarq/deconstructRailingPost.html"
+    },
+    {
+      "name": "Deconstruct Railing Rail",
+      "id": "Deconstruct Railing Rail",
+      "library": "VisualARQ",
+      "category": "09.Railing",
+      "summary": "Deconstruct a railing rail into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -96px -336px",
+      "helpLink": "https://rhino.github.io/components/visualarq/deconstructRailingRail.html"
+    },
+    {
+      "name": "Deconstruct Railing Style",
+      "id": "Deconstruct Railing Style",
+      "library": "VisualARQ",
+      "category": "09.Railing",
+      "summary": "Deconstruct a railing style into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -144px -336px",
+      "helpLink": "https://rhino.github.io/components/visualarq/deconstructRailingStyle.html"
+    },
+    {
+      "name": "Railing",
+      "id": "Railing",
+      "library": "VisualARQ",
+      "category": "09.Railing",
+      "summary": "Create a railing from path curve.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -192px -312px",
+      "helpLink": "https://rhino.github.io/components/visualarq/railing.html"
+    },
+    {
+      "name": "Railing Baluster",
+      "id": "Railing Baluster",
+      "library": "VisualARQ",
+      "category": "09.Railing",
+      "summary": "Create a railing baluster from atomic inputs.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -120px -312px",
+      "helpLink": "https://rhino.github.io/components/visualarq/railingBaluster.html"
+    },
+    {
+      "name": "Railing Options",
+      "id": "Railing Options",
+      "library": "VisualARQ",
+      "category": "09.Railing",
+      "summary": "Create railing options from atomic inputs.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') 0px -336px",
+      "helpLink": "https://rhino.github.io/components/visualarq/railingOptions.html"
+    },
+    {
+      "name": "Railing Post",
+      "id": "Railing Post",
+      "library": "VisualARQ",
+      "category": "09.Railing",
+      "summary": "Create a railing post from atomic inputs.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -24px -336px",
+      "helpLink": "https://rhino.github.io/components/visualarq/railingPost.html"
+    },
+    {
+      "name": "Railing Rail",
+      "id": "Railing Rail",
+      "library": "VisualARQ",
+      "category": "09.Railing",
+      "summary": "Create a railing rail from atomic inputs.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -72px -336px",
+      "helpLink": "https://rhino.github.io/components/visualarq/railingRail.html"
+    },
+    {
+      "name": "Railing Style",
+      "id": "Railing Style",
+      "library": "VisualARQ",
+      "category": "09.Railing",
+      "summary": "Create a railing style from atomic inputs.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -120px -336px",
+      "helpLink": "https://rhino.github.io/components/visualarq/railingStyle.html"
+    },
+    {
+      "name": "Deconstruct Slab",
+      "id": "Deconstruct Slab",
+      "library": "VisualARQ",
+      "category": "10.Slab",
+      "summary": "Deconstruct a slab into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -168px -360px",
+      "helpLink": "https://rhino.github.io/components/visualarq/deconstructSlab.html"
+    },
+    {
+      "name": "Deconstruct Slab Layer",
+      "id": "Deconstruct Slab Layer",
+      "library": "VisualARQ",
+      "category": "10.Slab",
+      "summary": "Deconstruct a slab layer component into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') 0px -384px",
+      "helpLink": "https://rhino.github.io/components/visualarq/deconstructSlabLayer.html"
+    },
+    {
+      "name": "Deconstruct Slab Options",
+      "id": "Deconstruct Slab Options",
+      "library": "VisualARQ",
+      "category": "10.Slab",
+      "summary": "Deconstruct a slab options into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -24px -384px",
+      "helpLink": "https://rhino.github.io/components/visualarq/deconstructSlabOptions.html"
+    },
+    {
+      "name": "Deconstruct Slab Style",
+      "id": "Deconstruct Slab Style",
+      "library": "VisualARQ",
+      "category": "10.Slab",
+      "summary": "Deconstruct a slab style into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -96px -384px",
+      "helpLink": "https://rhino.github.io/components/visualarq/deconstructSlabStyle.html"
+    },
+    {
+      "name": "Slab",
+      "id": "Slab",
+      "library": "VisualARQ",
+      "category": "10.Slab",
+      "summary": "Create a slab from boundary curve or surface.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -192px -360px",
+      "helpLink": "https://rhino.github.io/components/visualarq/slab.html"
+    },
+    {
+      "name": "Slab Add Boundary",
+      "id": "Slab Add Boundary",
+      "library": "VisualARQ",
+      "category": "10.Slab",
+      "summary": "Create a slab adding a closed planar curve to an existing one.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -144px -360px",
+      "helpLink": "https://rhino.github.io/components/visualarq/slabAddBoundary.html"
+    },
+    {
+      "name": "Slab Layer",
+      "id": "Slab Layer",
+      "library": "VisualARQ",
+      "category": "10.Slab",
+      "summary": "Create a slab layer from atomic inputs.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -216px -360px",
+      "helpLink": "https://rhino.github.io/components/visualarq/slabLayer.html"
+    },
+    {
+      "name": "Slab Options",
+      "id": "Slab Options",
+      "library": "VisualARQ",
+      "category": "10.Slab",
+      "summary": "Create slab options from atomic inputs.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -48px -384px",
+      "helpLink": "https://rhino.github.io/components/visualarq/slabOptions.html"
+    },
+    {
+      "name": "Slab Style",
+      "id": "Slab Style",
+      "library": "VisualARQ",
+      "category": "10.Slab",
+      "summary": "Create a slab style from atomic inputs.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -72px -384px",
+      "helpLink": "https://rhino.github.io/components/visualarq/slabStyle.html"
+    },
+    {
+      "name": "Slab Subtract Boundary",
+      "id": "Slab Subtract Boundary",
+      "library": "VisualARQ",
+      "category": "10.Slab",
+      "summary": "Create a slab subtracting a closed planar curve to an existing one.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -120px -384px",
+      "helpLink": "https://rhino.github.io/components/visualarq/slabSubtractBoundary.html"
+    },
+    {
+      "name": "Slab Subtract Stair Clearance",
+      "id": "Slab Subtract Stair Clearance",
+      "library": "VisualARQ",
+      "category": "10.Slab",
+      "summary": "Create a slab subtracting a stair clearance to an existing one.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -144px -384px",
+      "helpLink": "https://rhino.github.io/components/visualarq/slabSubtractStairClearance.html"
+    },
+    {
+      "name": "Deconstruct Roof",
+      "id": "Deconstruct Roof",
+      "library": "VisualARQ",
+      "category": "11.Roof",
+      "summary": "Deconstruct a roof into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -192px -336px",
+      "helpLink": "https://rhino.github.io/components/visualarq/deconstructRoof.html"
+    },
+    {
+      "name": "Deconstruct Roof Options",
+      "id": "Deconstruct Roof Options",
+      "library": "VisualARQ",
+      "category": "11.Roof",
+      "summary": "Deconstruct a roof options into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -24px -360px",
+      "helpLink": "https://rhino.github.io/components/visualarq/deconstructRoofOptions.html"
+    },
+    {
+      "name": "Deconstruct Roof Style",
+      "id": "Deconstruct Roof Style",
+      "library": "VisualARQ",
+      "category": "11.Roof",
+      "summary": "Deconstruct a roof style into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -96px -360px",
+      "helpLink": "https://rhino.github.io/components/visualarq/deconstructRoofStyle.html"
+    },
+    {
+      "name": "Roof",
+      "id": "Roof",
+      "library": "VisualARQ",
+      "category": "11.Roof",
+      "summary": "Create a roof from boundary curve or surface.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -216px -336px",
+      "helpLink": "https://rhino.github.io/components/visualarq/roof.html"
+    },
+    {
+      "name": "Roof Add Boundary",
+      "id": "Roof Add Boundary",
+      "library": "VisualARQ",
+      "category": "11.Roof",
+      "summary": "Create a roof adding a closed planar curve to an existing one.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -168px -336px",
+      "helpLink": "https://rhino.github.io/components/visualarq/roofAddBoundary.html"
+    },
+    {
+      "name": "Roof Explode",
+      "id": "Roof Explode",
+      "library": "VisualARQ",
+      "category": "11.Roof",
+      "summary": "Explode a roof into its constituent slabs.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') 0px -360px",
+      "helpLink": "https://rhino.github.io/components/visualarq/roofExplode.html"
+    },
+    {
+      "name": "Roof Options",
+      "id": "Roof Options",
+      "library": "VisualARQ",
+      "category": "11.Roof",
+      "summary": "Create roof options from atomic inputs.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -48px -360px",
+      "helpLink": "https://rhino.github.io/components/visualarq/roofOptions.html"
+    },
+    {
+      "name": "Roof Style",
+      "id": "Roof Style",
+      "library": "VisualARQ",
+      "category": "11.Roof",
+      "summary": "Create a roof style from atomic inputs.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -72px -360px",
+      "helpLink": "https://rhino.github.io/components/visualarq/roofStyle.html"
+    },
+    {
+      "name": "Roof Subtract Boundary",
+      "id": "Roof Subtract Boundary",
+      "library": "VisualARQ",
+      "category": "11.Roof",
+      "summary": "Create a roof subtracting a closed planar curve to an existing one.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -120px -360px",
+      "helpLink": "https://rhino.github.io/components/visualarq/roofSubtractBoundary.html"
+    },
+    {
+      "name": "Deconstruct Element",
+      "id": "Deconstruct Element",
+      "library": "VisualARQ",
+      "category": "12.Element",
+      "summary": "Deconstruct a element into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -24px -432px",
+      "helpLink": "https://rhino.github.io/components/visualarq/deconstructElement.html"
+    },
+    {
+      "name": "Deconstruct Element Options",
+      "id": "Deconstruct Element Options",
+      "library": "VisualARQ",
+      "category": "12.Element",
+      "summary": "Deconstruct a element options into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -72px -432px",
+      "helpLink": "https://rhino.github.io/components/visualarq/deconstructElementOptions.html"
+    },
+    {
+      "name": "Deconstruct Element Style",
+      "id": "Deconstruct Element Style",
+      "library": "VisualARQ",
+      "category": "12.Element",
+      "summary": "Deconstruct a element style into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -144px -432px",
+      "helpLink": "https://rhino.github.io/components/visualarq/deconstructElementStyle.html"
+    },
+    {
+      "name": "Element",
+      "id": "Element",
+      "library": "VisualARQ",
+      "category": "12.Element",
+      "summary": "Create a element from point.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -48px -432px",
+      "helpLink": "https://rhino.github.io/components/visualarq/element.html"
+    },
+    {
+      "name": "Element Options",
+      "id": "Element Options",
+      "library": "VisualARQ",
+      "category": "12.Element",
+      "summary": "Create element options from atomic inputs.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -96px -432px",
+      "helpLink": "https://rhino.github.io/components/visualarq/elementOptions.html"
+    },
+    {
+      "name": "Element Style",
+      "id": "Element Style",
+      "library": "VisualARQ",
+      "category": "12.Element",
+      "summary": "Create element style from atomic inputs.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -120px -432px",
+      "helpLink": "https://rhino.github.io/components/visualarq/elementStyle.html"
+    },
+    {
+      "name": "Deconstruct Furniture",
+      "id": "Deconstruct Furniture",
+      "library": "VisualARQ",
+      "category": "13.Furniture",
+      "summary": "Deconstruct a furniture into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -192px -192px",
+      "helpLink": "https://rhino.github.io/components/visualarq/deconstructFurniture.html"
+    },
+    {
+      "name": "Deconstruct Furniture Options",
+      "id": "Deconstruct Furniture Options",
+      "library": "VisualARQ",
+      "category": "13.Furniture",
+      "summary": "Deconstruct a furniture options into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') 0px -216px",
+      "helpLink": "https://rhino.github.io/components/visualarq/deconstructFurnitureOptions.html"
+    },
+    {
+      "name": "Deconstruct Furniture Style",
+      "id": "Deconstruct Furniture Style",
+      "library": "VisualARQ",
+      "category": "13.Furniture",
+      "summary": "Deconstruct a furniture style into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -72px -216px",
+      "helpLink": "https://rhino.github.io/components/visualarq/deconstructFurnitureStyle.html"
+    },
+    {
+      "name": "Furniture",
+      "id": "Furniture",
+      "library": "VisualARQ",
+      "category": "13.Furniture",
+      "summary": "Create a furniture from point.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -216px -192px",
+      "helpLink": "https://rhino.github.io/components/visualarq/furniture.html"
+    },
+    {
+      "name": "Furniture Options",
+      "id": "Furniture Options",
+      "library": "VisualARQ",
+      "category": "13.Furniture",
+      "summary": "Create furniture options from atomic inputs.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -24px -216px",
+      "helpLink": "https://rhino.github.io/components/visualarq/furnitureOptions.html"
+    },
+    {
+      "name": "Furniture Style",
+      "id": "Furniture Style",
+      "library": "VisualARQ",
+      "category": "13.Furniture",
+      "summary": "Create furniture style from atomic inputs.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -48px -216px",
+      "helpLink": "https://rhino.github.io/components/visualarq/furnitureStyle.html"
+    },
+    {
+      "name": "Annotation",
+      "id": "Annotation",
+      "library": "VisualARQ",
+      "category": "14.Annotation",
+      "summary": "Create an annotation from point.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') 0px -312px",
+      "helpLink": "https://rhino.github.io/components/visualarq/annotation.html"
+    },
+    {
+      "name": "Annotation Options",
+      "id": "Annotation Options",
+      "library": "VisualARQ",
+      "category": "14.Annotation",
+      "summary": "Create annotation options from atomic inputs.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -48px -312px",
+      "helpLink": "https://rhino.github.io/components/visualarq/annotationOptions.html"
+    },
+    {
+      "name": "Annotation Style",
+      "id": "Annotation Style",
+      "library": "VisualARQ",
+      "category": "14.Annotation",
+      "summary": "Create annotation style from atomic inputs.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -72px -312px",
+      "helpLink": "https://rhino.github.io/components/visualarq/annotationStyle.html"
+    },
+    {
+      "name": "Deconstruct Annotation",
+      "id": "Deconstruct Annotation",
+      "library": "VisualARQ",
+      "category": "14.Annotation",
+      "summary": "Deconstruct an annotation into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -216px -288px",
+      "helpLink": "https://rhino.github.io/components/visualarq/deconstructAnnotation.html"
+    },
+    {
+      "name": "Deconstruct Annotation Options",
+      "id": "Deconstruct Annotation Options",
+      "library": "VisualARQ",
+      "category": "14.Annotation",
+      "summary": "Deconstruct an annotation options into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -24px -312px",
+      "helpLink": "https://rhino.github.io/components/visualarq/deconstructAnnotationOptions.html"
+    },
+    {
+      "name": "Deconstruct Annotation Style",
+      "id": "Deconstruct Annotation Style",
+      "library": "VisualARQ",
+      "category": "14.Annotation",
+      "summary": "Deconstruct an annotation style into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -96px -312px",
+      "helpLink": "https://rhino.github.io/components/visualarq/deconstructAnnotationStyle.html"
+    },
+    {
+      "name": "Deconstruct PlanView",
+      "id": "Deconstruct PlanView",
+      "library": "VisualARQ",
+      "category": "14.Annotation",
+      "summary": "Deconstruct a plan view into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -120px -264px",
+      "helpLink": "https://rhino.github.io/components/visualarq/deconstructPlanView.html"
+    },
+    {
+      "name": "Deconstruct PlanView Options",
+      "id": "Deconstruct PlanView Options",
+      "library": "VisualARQ",
+      "category": "14.Annotation",
+      "summary": "Deconstruct a plan view options into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -168px -264px",
+      "helpLink": "https://rhino.github.io/components/visualarq/deconstructPlanViewOptions.html"
+    },
+    {
+      "name": "Deconstruct Section",
+      "id": "Deconstruct Section",
+      "library": "VisualARQ",
+      "category": "14.Annotation",
+      "summary": "Deconstruct a section into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -216px -264px",
+      "helpLink": "https://rhino.github.io/components/visualarq/deconstructSection.html"
+    },
+    {
+      "name": "Deconstruct Section Options",
+      "id": "Deconstruct Section Options",
+      "library": "VisualARQ",
+      "category": "14.Annotation",
+      "summary": "Deconstruct a section options into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -24px -288px",
+      "helpLink": "https://rhino.github.io/components/visualarq/deconstructSectionOptions.html"
+    },
+    {
+      "name": "Deconstruct Section Style",
+      "id": "Deconstruct Section Style",
+      "library": "VisualARQ",
+      "category": "14.Annotation",
+      "summary": "Deconstruct section style into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -96px -288px",
+      "helpLink": "https://rhino.github.io/components/visualarq/deconstructSectionStyle.html"
+    },
+    {
+      "name": "Deconstruct SectionView",
+      "id": "Deconstruct SectionView",
+      "library": "VisualARQ",
+      "category": "14.Annotation",
+      "summary": "Deconstruct a section view into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -120px -288px",
+      "helpLink": "https://rhino.github.io/components/visualarq/deconstructSectionView.html"
+    },
+    {
+      "name": "Deconstruct SectionView Options",
+      "id": "Deconstruct SectionView Options",
+      "library": "VisualARQ",
+      "category": "14.Annotation",
+      "summary": "Deconstruct a section view options into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -168px -288px",
+      "helpLink": "https://rhino.github.io/components/visualarq/deconstructSectionViewOptions.html"
+    },
+    {
+      "name": "Plan View Options",
+      "id": "Plan View Options",
+      "library": "VisualARQ",
+      "category": "14.Annotation",
+      "summary": "Create plan view options from atomic inputs.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -192px -264px",
+      "helpLink": "https://rhino.github.io/components/visualarq/planViewOptions.html"
+    },
+    {
+      "name": "PlanView",
+      "id": "PlanView",
+      "library": "VisualARQ",
+      "category": "14.Annotation",
+      "summary": "Create a plan view from boundary curve.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -144px -264px",
+      "helpLink": "https://rhino.github.io/components/visualarq/planView.html"
+    },
+    {
+      "name": "Section",
+      "id": "Section",
+      "library": "VisualARQ",
+      "category": "14.Annotation",
+      "summary": "Create a section from planar curve.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') 0px -288px",
+      "helpLink": "https://rhino.github.io/components/visualarq/section.html"
+    },
+    {
+      "name": "Section Options",
+      "id": "Section Options",
+      "library": "VisualARQ",
+      "category": "14.Annotation",
+      "summary": "Create section options from atomic inputs.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -48px -288px",
+      "helpLink": "https://rhino.github.io/components/visualarq/sectionOptions.html"
+    },
+    {
+      "name": "Section Style",
+      "id": "Section Style",
+      "library": "VisualARQ",
+      "category": "14.Annotation",
+      "summary": "Create section style from atomic inputs.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -72px -288px",
+      "helpLink": "https://rhino.github.io/components/visualarq/sectionStyle.html"
+    },
+    {
+      "name": "Section View",
+      "id": "Section View",
+      "library": "VisualARQ",
+      "category": "14.Annotation",
+      "summary": "Create a section view from insert point.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -144px -288px",
+      "helpLink": "https://rhino.github.io/components/visualarq/sectionView.html"
+    },
+    {
+      "name": "Section View Options",
+      "id": "Section View Options",
+      "library": "VisualARQ",
+      "category": "14.Annotation",
+      "summary": "Create section view options from atomic inputs.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -192px -288px",
+      "helpLink": "https://rhino.github.io/components/visualarq/sectionViewOptions.html"
+    },
+    {
+      "name": "Deconstruct Space",
+      "id": "Deconstruct Space",
+      "library": "VisualARQ",
+      "category": "A.Space",
+      "summary": "Deconstruct a space into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -168px -384px",
+      "helpLink": "https://rhino.github.io/components/visualarq/deconstructSpace.html"
+    },
+    {
+      "name": "Deconstruct Space Options",
+      "id": "Deconstruct Space Options",
+      "library": "VisualARQ",
+      "category": "A.Space",
+      "summary": "Deconstruct a space options into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -216px -384px",
+      "helpLink": "https://rhino.github.io/components/visualarq/deconstructSpaceOptions.html"
+    },
+    {
+      "name": "Deconstruct Space Style",
+      "id": "Deconstruct Space Style",
+      "library": "VisualARQ",
+      "category": "A.Space",
+      "summary": "Deconstruct a space style into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -48px -408px",
+      "helpLink": "https://rhino.github.io/components/visualarq/deconstructSpaceStyle.html"
+    },
+    {
+      "name": "Space",
+      "id": "Space",
+      "library": "VisualARQ",
+      "category": "A.Space",
+      "summary": "Create a space from base curve.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -192px -384px",
+      "helpLink": "https://rhino.github.io/components/visualarq/space.html"
+    },
+    {
+      "name": "Space Options",
+      "id": "Space Options",
+      "library": "VisualARQ",
+      "category": "A.Space",
+      "summary": "Create space options from atomic inputs.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') 0px -408px",
+      "helpLink": "https://rhino.github.io/components/visualarq/spaceOptions.html"
+    },
+    {
+      "name": "Space Style",
+      "id": "Space Style",
+      "library": "VisualARQ",
+      "category": "A.Space",
+      "summary": "Create a space style from atomic inputs.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -24px -408px",
+      "helpLink": "https://rhino.github.io/components/visualarq/spaceStyle.html"
+    },
+    {
+      "name": "Building",
+      "id": "Building",
+      "library": "VisualARQ",
+      "category": "B.Levels",
+      "summary": "Create a building.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -216px -72px",
+      "helpLink": "https://rhino.github.io/components/visualarq/building.html"
+    },
+    {
+      "name": "Deconstruct Building",
+      "id": "Deconstruct Building",
+      "library": "VisualARQ",
+      "category": "B.Levels",
+      "summary": "Deconstruct a building into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -192px -72px",
+      "helpLink": "https://rhino.github.io/components/visualarq/deconstructBuilding.html"
+    },
+    {
+      "name": "Deconstruct Level",
+      "id": "Deconstruct Level",
+      "library": "VisualARQ",
+      "category": "B.Levels",
+      "summary": "Deconstruct a level into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -24px -96px",
+      "helpLink": "https://rhino.github.io/components/visualarq/deconstructLevel.html"
+    },
+    {
+      "name": "Get Level",
+      "id": "Get Level",
+      "library": "VisualARQ",
+      "category": "B.Levels",
+      "summary": "Get the levels associated with an object.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') 0px -96px",
+      "helpLink": "https://rhino.github.io/components/visualarq/getLevel.html"
+    },
+    {
+      "name": "Level",
+      "id": "Level",
+      "library": "VisualARQ",
+      "category": "B.Levels",
+      "summary": "Create a level.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -48px -96px",
+      "helpLink": "https://rhino.github.io/components/visualarq/level.html"
+    },
+    {
+      "name": "90º Arc Profile",
+      "id": "90º Arc Profile",
+      "library": "VisualARQ",
+      "category": "C.Profile",
+      "summary": "Create a 90º arc profile.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -144px -216px",
+      "helpLink": "https://rhino.github.io/components/visualarq/90ArcProfile.html"
+    },
+    {
+      "name": "Circular Hollow Profile",
+      "id": "Circular Hollow Profile",
+      "library": "VisualARQ",
+      "category": "C.Profile",
+      "summary": "Create a circular hollow profile.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -192px -216px",
+      "helpLink": "https://rhino.github.io/components/visualarq/circularHollowProfile.html"
+    },
+    {
+      "name": "Circular Profile",
+      "id": "Circular Profile",
+      "library": "VisualARQ",
+      "category": "C.Profile",
+      "summary": "Create a circular profile from radius.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -168px -216px",
+      "helpLink": "https://rhino.github.io/components/visualarq/circularProfile.html"
+    },
+    {
+      "name": "Custom profile",
+      "id": "Custom profile",
+      "library": "VisualARQ",
+      "category": "C.Profile",
+      "summary": "Create a custom profile from curve.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -216px -216px",
+      "helpLink": "https://rhino.github.io/components/visualarq/customProfile.html"
+    },
+    {
+      "name": "Decompose Profile",
+      "id": "Decompose Profile",
+      "library": "VisualARQ",
+      "category": "C.Profile",
+      "summary": "Deconstruct a profile into its constituent curves.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') 0px -240px",
+      "helpLink": "https://rhino.github.io/components/visualarq/decomposeProfile.html"
+    },
+    {
+      "name": "Gothic Profile",
+      "id": "Gothic Profile",
+      "library": "VisualARQ",
+      "category": "C.Profile",
+      "summary": "Create a gothic profile.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -24px -240px",
+      "helpLink": "https://rhino.github.io/components/visualarq/gothicProfile.html"
+    },
+    {
+      "name": "I Profile",
+      "id": "I Profile",
+      "library": "VisualARQ",
+      "category": "C.Profile",
+      "summary": "Create a I profile.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -96px -216px",
+      "helpLink": "https://rhino.github.io/components/visualarq/iProfile.html"
+    },
+    {
+      "name": "L Profile",
+      "id": "L Profile",
+      "library": "VisualARQ",
+      "category": "C.Profile",
+      "summary": "Create a L profile.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -120px -216px",
+      "helpLink": "https://rhino.github.io/components/visualarq/lProfile.html"
+    },
+    {
+      "name": "Rectangular Hollow Profile",
+      "id": "Rectangular Hollow Profile",
+      "library": "VisualARQ",
+      "category": "C.Profile",
+      "summary": "Create a rectangular hollow profile.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -72px -240px",
+      "helpLink": "https://rhino.github.io/components/visualarq/rectangularHollowProfile.html"
+    },
+    {
+      "name": "Rectangular Profile",
+      "id": "Rectangular Profile",
+      "library": "VisualARQ",
+      "category": "C.Profile",
+      "summary": "Create a rectangular profile from width and height.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -48px -240px",
+      "helpLink": "https://rhino.github.io/components/visualarq/rectangularProfile.html"
+    },
+    {
+      "name": "Romanic Profile",
+      "id": "Romanic Profile",
+      "library": "VisualARQ",
+      "category": "C.Profile",
+      "summary": "Create a romanic profile.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -96px -240px",
+      "helpLink": "https://rhino.github.io/components/visualarq/romanicProfile.html"
+    },
+    {
+      "name": "T Profile",
+      "id": "T Profile",
+      "library": "VisualARQ",
+      "category": "C.Profile",
+      "summary": "Create a T profile.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -120px -240px",
+      "helpLink": "https://rhino.github.io/components/visualarq/tProfile.html"
+    },
+    {
+      "name": "U Profile",
+      "id": "U Profile",
+      "library": "VisualARQ",
+      "category": "C.Profile",
+      "summary": "Create a U profile.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -144px -240px",
+      "helpLink": "https://rhino.github.io/components/visualarq/uProfile.html"
+    },
+    {
+      "name": "Add Solids",
+      "id": "Add Solids",
+      "library": "VisualARQ",
+      "category": "D.Generics",
+      "summary": "Creates a VisualARQ object by adding solids to an existing one.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -48px -48px",
+      "helpLink": "https://rhino.github.io/components/visualarq/addSolids.html"
+    },
+    {
+      "name": "Block Decompose",
+      "id": "Block Decompose",
+      "library": "VisualARQ",
+      "category": "D.Generics",
+      "summary": "Breaks a Rhino block definition down into its components.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') 0px 0px",
+      "helpLink": "https://rhino.github.io/components/visualarq/blockDecompose.html"
+    },
+    {
+      "name": "Block Definition",
+      "id": "Block Definition",
+      "library": "VisualARQ",
+      "category": "D.Generics",
+      "summary": "Create a new block definition.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -24px 0px",
+      "helpLink": "https://rhino.github.io/components/visualarq/blockDefinition.html"
+    },
+    {
+      "name": "Block Instance",
+      "id": "Block Instance",
+      "library": "VisualARQ",
+      "category": "D.Generics",
+      "summary": "Create a new block instance.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -72px 0px",
+      "helpLink": "https://rhino.github.io/components/visualarq/blockInstance.html"
+    },
+    {
+      "name": "Create Document Parameter",
+      "id": "Create Document Parameter",
+      "library": "VisualARQ",
+      "category": "D.Generics",
+      "summary": "Create a VisualARQ document parameter.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') 0px -24px",
+      "helpLink": "https://rhino.github.io/components/visualarq/createDocumentParameter.html"
+    },
+    {
+      "name": "Create Hatch",
+      "id": "Create Hatch",
+      "library": "VisualARQ",
+      "category": "D.Generics",
+      "summary": "Create a hatch.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -96px 0px",
+      "helpLink": "https://rhino.github.io/components/visualarq/createHatch.html"
+    },
+    {
+      "name": "Create Object Parameter",
+      "id": "Create Object Parameter",
+      "library": "VisualARQ",
+      "category": "D.Generics",
+      "summary": "Add a new parameter to VisualARQ object.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -216px -48px",
+      "helpLink": "https://rhino.github.io/components/visualarq/createObjectParameter.html"
+    },
+    {
+      "name": "Create Text",
+      "id": "Create Text",
+      "library": "VisualARQ",
+      "category": "D.Generics",
+      "summary": "Create a text.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -216px -24px",
+      "helpLink": "https://rhino.github.io/components/visualarq/createText.html"
+    },
+    {
+      "name": "Deconstruct Block Instance",
+      "id": "Deconstruct Block Instance",
+      "library": "VisualARQ",
+      "category": "D.Generics",
+      "summary": "Deconstruct a block instance into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -48px 0px",
+      "helpLink": "https://rhino.github.io/components/visualarq/deconstructBlockInstance.html"
+    },
+    {
+      "name": "Deconstruct Hatch Options",
+      "id": "Deconstruct Hatch Options",
+      "library": "VisualARQ",
+      "category": "D.Generics",
+      "summary": "Deconstruct a hatch options into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -144px 0px",
+      "helpLink": "https://rhino.github.io/components/visualarq/deconstructHatchOptions.html"
+    },
+    {
+      "name": "Deconstruct Parameter",
+      "id": "Deconstruct Parameter",
+      "library": "VisualARQ",
+      "category": "D.Generics",
+      "summary": "Deconstruct a parameter into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -216px 0px",
+      "helpLink": "https://rhino.github.io/components/visualarq/deconstructParameter.html"
+    },
+    {
+      "name": "Deconstruct Parameter Options",
+      "id": "Deconstruct Parameter Options",
+      "library": "VisualARQ",
+      "category": "D.Generics",
+      "summary": "Deconstruct a parameter options into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -96px -24px",
+      "helpLink": "https://rhino.github.io/components/visualarq/deconstructParameterOptions.html"
+    },
+    {
+      "name": "Deconstruct Text",
+      "id": "Deconstruct Text",
+      "library": "VisualARQ",
+      "category": "D.Generics",
+      "summary": "Deconstruct a text into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -192px -24px",
+      "helpLink": "https://rhino.github.io/components/visualarq/deconstructText.html"
+    },
+    {
+      "name": "Deconstruct Text Style",
+      "id": "Deconstruct Text Style",
+      "library": "VisualARQ",
+      "category": "D.Generics",
+      "summary": "Deconstruct a text style into its constituent parts.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') 0px -48px",
+      "helpLink": "https://rhino.github.io/components/visualarq/deconstructTextStyle.html"
+    },
+    {
+      "name": "Document Parameters",
+      "id": "Document Parameters",
+      "library": "VisualARQ",
+      "category": "D.Generics",
+      "summary": "Get a list of all document parameters.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -48px -24px",
+      "helpLink": "https://rhino.github.io/components/visualarq/documentParameters.html"
+    },
+    {
+      "name": "Extract Solids",
+      "id": "Extract Solids",
+      "library": "VisualARQ",
+      "category": "D.Generics",
+      "summary": "Creates a VisualARQ object by extracting solids from an existing one.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -96px -48px",
+      "helpLink": "https://rhino.github.io/components/visualarq/extractSolids.html"
+    },
+    {
+      "name": "Get Property",
+      "id": "Get Property",
+      "library": "VisualARQ",
+      "category": "D.Generics",
+      "summary": "Gets a property value from object.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -24px -24px",
+      "helpLink": "https://rhino.github.io/components/visualarq/getProperty.html"
+    },
+    {
+      "name": "Hatch Explode",
+      "id": "Hatch Explode",
+      "library": "VisualARQ",
+      "category": "D.Generics",
+      "summary": "Explode a hatch into its constituent geometry.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -120px 0px",
+      "helpLink": "https://rhino.github.io/components/visualarq/hatchExplode.html"
+    },
+    {
+      "name": "Hatch Options",
+      "id": "Hatch Options",
+      "library": "VisualARQ",
+      "category": "D.Generics",
+      "summary": "Create hatch options from atomic inputs.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -168px 0px",
+      "helpLink": "https://rhino.github.io/components/visualarq/hatchOptions.html"
+    },
+    {
+      "name": "Ifc Tag",
+      "id": "Ifc Tag",
+      "library": "VisualARQ",
+      "category": "D.Generics",
+      "summary": "Set IFC Properties to Rhino Object.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -192px 0px",
+      "helpLink": "https://rhino.github.io/components/visualarq/ifcTag.html"
+    },
+    {
+      "name": "Is Kind Of?",
+      "id": "Is Kind Of?",
+      "library": "VisualARQ",
+      "category": "D.Generics",
+      "summary": "Marks the elements of a certain class as true.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -192px -48px",
+      "helpLink": "https://rhino.github.io/components/visualarq/isKindOf.html"
+    },
+    {
+      "name": "Object Parameter",
+      "id": "Object Parameter",
+      "library": "VisualARQ",
+      "category": "D.Generics",
+      "summary": "Get an object parameter by name",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') 0px -72px",
+      "helpLink": "https://rhino.github.io/components/visualarq/objectParameter.html"
+    },
+    {
+      "name": "Parameter Options",
+      "id": "Parameter Options",
+      "library": "VisualARQ",
+      "category": "D.Generics",
+      "summary": "Create parameter options from atomic inputs.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -120px -24px",
+      "helpLink": "https://rhino.github.io/components/visualarq/parameterOptions.html"
+    },
+    {
+      "name": "Property Names",
+      "id": "Property Names",
+      "library": "VisualARQ",
+      "category": "D.Generics",
+      "summary": "Get a list of all object property names.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -72px -24px",
+      "helpLink": "https://rhino.github.io/components/visualarq/propertyNames.html"
+    },
+    {
+      "name": "Set Property",
+      "id": "Set Property",
+      "library": "VisualARQ",
+      "category": "D.Generics",
+      "summary": "Sets a property value to object.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -144px -24px",
+      "helpLink": "https://rhino.github.io/components/visualarq/setProperty.html"
+    },
+    {
+      "name": "Subtract Solids",
+      "id": "Subtract Solids",
+      "library": "VisualARQ",
+      "category": "D.Generics",
+      "summary": "Creates a VisualARQ object by subtracting solids from an existing one.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -24px -72px",
+      "helpLink": "https://rhino.github.io/components/visualarq/subtractSolids.html"
+    },
+    {
+      "name": "Text Style",
+      "id": "Text Style",
+      "library": "VisualARQ",
+      "category": "D.Generics",
+      "summary": "Create text style from atomic inputs.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -24px -48px",
+      "helpLink": "https://rhino.github.io/components/visualarq/textStyle.html"
+    },
+    {
+      "name": "Update Property",
+      "id": "Update Property",
+      "library": "VisualARQ",
+      "category": "D.Generics",
+      "summary": "Update an object property directly in the document.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -168px -24px",
+      "helpLink": "https://rhino.github.io/components/visualarq/updateProperty.html"
+    },
+    {
+      "name": "VisualARQ Area",
+      "id": "VisualARQ Area",
+      "library": "VisualARQ",
+      "category": "D.Generics",
+      "summary": "Calculates the area of a VisualArq object.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -120px -48px",
+      "helpLink": "https://rhino.github.io/components/visualarq/visualARQArea.html"
+    },
+    {
+      "name": "VisualARQ Explode",
+      "id": "VisualARQ Explode",
+      "library": "VisualARQ",
+      "category": "D.Generics",
+      "summary": "Breaks a VisualARQ object down into its components.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -72px -48px",
+      "helpLink": "https://rhino.github.io/components/visualarq/visualARQExplode.html"
+    },
+    {
+      "name": "VisualARQ Thickness",
+      "id": "VisualARQ Thickness",
+      "library": "VisualARQ",
+      "category": "D.Generics",
+      "summary": "Obtain the thickness of a VisualArq object or style.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -144px -48px",
+      "helpLink": "https://rhino.github.io/components/visualarq/visualARQThickness.html"
+    },
+    {
+      "name": "VisualARQ Volume",
+      "id": "VisualARQ Volume",
+      "library": "VisualARQ",
+      "category": "D.Generics",
+      "summary": "Calculates the volume of a VisualARQ object.",
+      "description": null,
+      "iconCss": "background: url('icons/visualARQ.png') -168px -48px",
+      "helpLink": "https://rhino.github.io/components/visualarq/visualARQVolume.html"
     },
     {
       "name": "About",
