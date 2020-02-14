@@ -295,9 +295,9 @@
       "category": "Third Party App Integration",
       "isSystem": false,
       "components": 21,
-      "description": "",
-      "authorName": "Woods Bagot",
-      "authorContact": ""
+      "description": "Doodlebug allows Grasshopper to query and drive Adobe Illustrator.\n\nGeometry from Grasshopper can be streamed directly to illustrator with full control over stroke, fill, and other appearance attributes. Geometry can also be retrieved from Illustrator, manipulated in Grasshopper, and then sent back for a full round-trip.",
+      "authorName": "Andrew Heumann",
+      "authorContact": null
     },
     {
       "name": "Duck",
@@ -521,6 +521,19 @@
       "authorContact": null
     },
     {
+      "name": "Heron",
+      "releaseDate": "2015-Aug-22",
+      "version": "0.2.0.0",
+      "downloadLink": "https://www.food4rhino.com/app/heron",
+      "helpLink": "https://rhino.github.io/addons/heron.html",
+      "category": "Geography & Maps",
+      "isSystem": false,
+      "components": 10,
+      "description": "Heron enables the import of GIS data from various sources into the Rhino/Grasshopper environment, located, scaled and cropped based on an Earth Anchor Point and a clipping polygon.  Sources of GIS data include Shapefiles, USGS IMG/HGT Elevation files and ArcGIS REST Services over the web.",
+      "authorName": "Brian Washburn",
+      "authorContact": null
+    },
+    {
       "name": "Heteroptera",
       "releaseDate": "2019-Oct-28",
       "version": "0.5.1.2",
@@ -677,6 +690,19 @@
       "authorContact": null
     },
     {
+      "name": "Lands Design",
+      "releaseDate": "2019-Nov-4",
+      "version": "RC1",
+      "downloadLink": "https://www.lands-design.com/",
+      "helpLink": "https://rhino.github.io/addons/lands-design.html",
+      "category": "Landscape & Tree Design",
+      "isSystem": false,
+      "components": 45,
+      "description": "Lands Design is a software for Landscape Design and Urban Planning. Professional results from technical planning to photorealistic rendering. \n\nLands includes a variety of tools to distribute plants, trees, shrubs and flower beds, individually, in rows, in forests… To make it easier, Lands has a database with around 1800 plant species. \n\nAll Lands Design elements and vegetation species can be rendered with any render engine supported by Rhino: Rhino render, V-Ray, Flamingo nXt, etc.\n\nLands can be used to easily draw stairs, fences, paths, walls and other structural elements in both 2-D and 3-D.",
+      "authorName": "Lands Design (Asuni)",
+      "authorContact": null
+    },
+    {
       "name": "LunchBox",
       "releaseDate": "2018-Oct-30",
       "version": "2018.10.30",
@@ -794,6 +820,19 @@
       "authorContact": null
     },
     {
+      "name": "Ngon",
+      "releaseDate": "2020-Feb-06",
+      "version": "2.1",
+      "downloadLink": "https://www.food4rhino.com/app/ngon",
+      "helpLink": "https://rhino.github.io/addons/ngon.html",
+      "category": "Geometry & Meshes",
+      "isSystem": false,
+      "components": 41,
+      "description": "Extension methods for easier NGons manipulation in Meshes",
+      "authorName": "Petras Vestartas",
+      "authorContact": "petrasvestartas@gmail.com"
+    },
+    {
       "name": "Nudibranch",
       "releaseDate": "2013-Aug-26",
       "version": "0.028",
@@ -818,6 +857,19 @@
       "description": "Octopus was originally made for Multi-Objective Evolutionary Optimization. It allows the search for many goals at once, producing a range of optimized trade-off solutions between the extremes of each goal. It is used and works similar to David Rutten's Galapagos, but introduces the Pareto-Principle for Multiple Goals.",
       "authorName": "Robert Vierlinger",
       "authorContact": null
+    },
+    {
+      "name": "OpenNest",
+      "releaseDate": "2018-Nov-21",
+      "version": "1.0",
+      "downloadLink": "https://www.food4rhino.com/app/opennest",
+      "helpLink": "https://rhino.github.io/addons/opennest.html",
+      "category": "3D Printing & Fabrication",
+      "isSystem": false,
+      "components": 1,
+      "description": "Nesting",
+      "authorName": "Petras Vestartas",
+      "authorContact": "petrasvestartas@gmail.com"
     },
     {
       "name": "Owl",
@@ -1145,19 +1197,6 @@
       "authorContact": "Henrik Leander Evers heve@kadk.dkMateusz Zwierzycki mzwi@kadk.dk"
     },
     {
-      "name": "Wasp",
-      "releaseDate": "2019-Jul-12",
-      "version": "0.2.08",
-      "downloadLink": "https://www.food4rhino.com/app/wasp",
-      "helpLink": "https://rhino.github.io/addons/wasp.html",
-      "category": "Exotic Geometry",
-      "isSystem": false,
-      "components": 39,
-      "description": "Wasp is a set of Grasshopper components, developed in Python, directed at representing and designing with discrete elements. The description of each individual part includes basic information necessary for the aggregation process (part geometry, connections location and orientation). The set of connections define the topological graph of the part, which is then used to define the possibilities of aggregation with other parts.\n\nThe core of the framework relies on a set of aggregation procedures, allowing generation of specific structures from the combination of different modules. Each of these procedures is composed of strategies for the selection of basic aggregation rules, described as an instruction to orient one module over a selected connection of another module. Currently available procedures include stochastic aggregation and field-driven aggregation.",
-      "authorName": "Andrea Rossi",
-      "authorContact": null
-    },
-    {
       "name": "Wallacei",
       "releaseDate": "2019-Nov-17",
       "version": "2.5",
@@ -1168,6 +1207,19 @@
       "components": 11,
       "description": "Wallacei (which includes Wallacei Analytics and Wallacei X) is an evolutionary multi-objective optimization engine that allows users to run evolutionary simulations in Grasshopper 3D through utilising highly detailed analytic tools coupled with various comprehensive selection methods, including algorithmic clustering, to assist users to better understand their evolutionary runs, and make more informed decisions at all stages of their evolutionary simulations; including setting up the design problem, analysing the outputted results and selecting the desired solution or solutions for the final output. Wallacei also provides users with the ability to select, reconstruct and output any phenotype from the population after completing their simulation. The free plugin is streamlined to give users efficient access to the data outputted by their evolutionary simulations, and enable clear and efficient methods for analysis and selection – The aim is for users (of all degrees of expertise) to better understand their evolutionary simulations, gain a thorough understanding of the outputted numeric values, and seamlessly extract the optimised data; all within one user interface.",
       "authorName": "Milad Showkatbakhsh",
+      "authorContact": null
+    },
+    {
+      "name": "Wasp",
+      "releaseDate": "2019-Jul-12",
+      "version": "0.2.08",
+      "downloadLink": "https://www.food4rhino.com/app/wasp",
+      "helpLink": "https://rhino.github.io/addons/wasp.html",
+      "category": "Exotic Geometry",
+      "isSystem": false,
+      "components": 39,
+      "description": "Wasp is a set of Grasshopper components, developed in Python, directed at representing and designing with discrete elements. The description of each individual part includes basic information necessary for the aggregation process (part geometry, connections location and orientation). The set of connections define the topological graph of the part, which is then used to define the possibilities of aggregation with other parts.\n\nThe core of the framework relies on a set of aggregation procedures, allowing generation of specific structures from the combination of different modules. Each of these procedures is composed of strategies for the selection of basic aggregation rules, described as an instruction to orient one module over a selected connection of another module. Currently available procedures include stochastic aggregation and field-driven aggregation.",
+      "authorName": "Andrea Rossi",
       "authorContact": null
     },
     {
@@ -1194,58 +1246,6 @@
       "components": 43,
       "description": "It allows for novel control of 3D printers, generating G code directly from native Rhino and Grasshopper geometries including solids, surfaces, and curves. It has tools for printers based on FDM filament extrusion, pneumatically-controlled syringes, ink-jet, and DLP Stereolithography.",
       "authorName": "Ryan Hoover",
-      "authorContact": null
-    },
-    {
-      "name": "OpenNest",
-      "releaseDate": "2018-Nov-21",
-      "version": "1.0",
-      "downloadLink": "https://www.food4rhino.com/app/opennest",
-      "helpLink": "https://rhino.github.io/addons/opennest.html",
-      "category": "3D Printing & Fabrication",
-      "isSystem": false,
-      "components": 1,
-      "description": "Nesting",
-      "authorName": "Petras Vestartas",
-      "authorContact": "petrasvestartas@gmail.com"
-    },
-    {
-      "name": "Ngon",
-      "releaseDate": "2020-Feb-06",
-      "version": "2.1",
-      "downloadLink": "https://www.food4rhino.com/app/ngon",
-      "helpLink": "https://rhino.github.io/addons/ngon.html",
-      "category": "Geometry & Meshes",
-      "isSystem": false,
-      "components": 41,
-      "description": "Extension methods for easier NGons manipulation in Meshes",
-      "authorName": "Petras Vestartas",
-      "authorContact": "petrasvestartas@gmail.com"
-    },
-    {
-      "name": "Lands Design",
-      "releaseDate": "2019-Nov-4",
-      "version": "RC1",
-      "downloadLink": "https://www.lands-design.com/",
-      "helpLink": "https://rhino.github.io/addons/lands-design.html",
-      "category": "Landscape & Tree Design",
-      "isSystem": false,
-      "components": 45,
-      "description": "Lands Design is a software for Landscape Design and Urban Planning. Professional results from technical planning to photorealistic rendering. \n\nLands includes a variety of tools to distribute plants, trees, shrubs and flower beds, individually, in rows, in forests… To make it easier, Lands has a database with around 1800 plant species. \n\nAll Lands Design elements and vegetation species can be rendered with any render engine supported by Rhino: Rhino render, V-Ray, Flamingo nXt, etc.\n\nLands can be used to easily draw stairs, fences, paths, walls and other structural elements in both 2-D and 3-D.",
-      "authorName": "Lands Design (Asuni)",
-      "authorContact": null
-    },
-    {
-      "name": "Heron",
-      "releaseDate": "2015-Aug-22",
-      "version": "0.2.0.0",
-      "downloadLink": "https://www.food4rhino.com/app/heron",
-      "helpLink": "https://rhino.github.io/addons/heron.html",
-      "category": "Geography & Maps",
-      "isSystem": false,
-      "components": 10,
-      "description": "Heron enables the import of GIS data from various sources into the Rhino/Grasshopper environment, located, scaled and cropped based on an Earth Anchor Point and a clipping polygon.  Sources of GIS data include Shapefiles, USGS IMG/HGT Elevation files and ArcGIS REST Services over the web.",
-      "authorName": "Brian Washburn",
       "authorContact": null
     },
     {
