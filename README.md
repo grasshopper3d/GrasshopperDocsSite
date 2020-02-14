@@ -39,7 +39,7 @@ We provide JSON feeds containing the metadata of the latest addons and component
 | DIVA             | 4.1.0.12       | 2019        |
 | Dodo             | 0.3            | 2019-Feb-23 |
 | Doodlebug        | CC 2015        | 2016        |
-| Duck             | 0.1            | 2019-Nov-21 |
+| Duck             | 2.0            | 2020-Jan-27 |
 | EdiTree          | 1.0.0.0        | 2016-Mar-03 |
 | Elefront         | 4.2.2          | 2019-Sep-27 |
 | Elk              | 2.2.2          | 2016-Feb-01 |
@@ -49,6 +49,7 @@ We provide JSON feeds containing the metadata of the latest addons and component
 | FlowLines        | 1              | 2011-Jul-25 |
 | Galapagos        | 1.0.0007       | 2019-Dec-15 |
 | GeomGym IFC      | 6              | 2019-Dec-19 |
+| GeomGym Revit    | 6              | 2019-Dec-19 |
 | GhExcel          | 1.2            | 2013-Jun-01 |
 | gHowl            | 0.1.r50.0      | 2014-Nov-21 |
 | Gismo            | 1.0            | 2019-Nov-23 |
@@ -65,7 +66,7 @@ We provide JSON feeds containing the metadata of the latest addons and component
 | Ivy              | 1.02           | 2020-Jan-04 |
 | jSwan            | 1.1.0          | 2019-Nov-11 |
 | Kangaroo 2       | 2.3.3          | 2019-Dec-15 |
-| Karamba          | 1.3.2          | 2019-Sep-18 |
+| Karamba3D        | 1.3.2          | 2019-Sep-18 |
 | Ladybug          | 0.0.65         | 2017-Jul-31 |
 | LunchBox         | 2018.10.30     | 2018-Oct-30 |
 | MeshEdit         | 2.0            | 2017-Jun-25 |
@@ -86,7 +87,7 @@ We provide JSON feeds containing the metadata of the latest addons and component
 | Phyllomachine    | 1              | 2015-May-29 |
 | PhysX GH         | 0.1            | 2019-Jan-08 |
 | Plankton         | 0.4.2          | 2017-May-18 |
-| Pufferfish       | 2.7            | 2019-Oct-05 |
+| Pufferfish       | 2.8            | 2020-Jan-16 |
 | Quelea           | 0.2            | 2015-Jun-16 |
 | Reindeer         | 0.1            | 2019-11-26  |
 | Sandbox Topology | 0.1.000.1      | 2013-Sep-06 |
@@ -101,7 +102,7 @@ We provide JSON feeds containing the metadata of the latest addons and component
 | TreeFrog         | 2017-Feb-08    | 2017-Feb-08 |
 | TSplines         | 4              | 2014-Jan-19 |
 | TT Toolbox       | 1.9            | 2017-May-25 |
-| VisualARQ        | 2.6            | 2019-Dec-12 |
+| VisualARQ        | 2.7            | 2020        |
 | Volvox           | 0.3.0.0        | 2016-Feb-16 |
 | Wasp             | 0.2.08         | 2019-Jul-12 |
 | Wallacei         | 2.5            | 2019-Nov-17 |
@@ -109,6 +110,8 @@ We provide JSON feeds containing the metadata of the latest addons and component
 | Xylinus          | 0.2            | Unknown     |
 | OpenNest         | 1.0            | 2018-Nov-21 |
 | Ngon             | 2.1            | 2020-Feb-06 |
+| Lands Design     | RC1            | 2019-Nov-4  |
+| Heron            | 0.2.0.0        | 2015-Aug-22 |
 
 
 # Want to add or update an addon?
