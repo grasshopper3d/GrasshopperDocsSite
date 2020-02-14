@@ -1,0 +1,382 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+<head data-layout-view="wide">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Brep Environment - Quelea - Grasshopper Component Reference</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+
+<meta name="description" content="A guide to component Brep Environment in Grasshopper 3D." />
+<meta name="title" content="Grasshopper Component Reference" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://rhino.github.io/" />
+<meta property="og:title" content="Brep Environment - Quelea - Grasshopper Component Reference" />
+
+<meta property="wiki-page" content="GH Quelea Brep_Environment.md" />
+
+<link rel="image_src" href="http://rhino.github.io/ning/2985220.jpg" />
+
+<style type="text/css" media="screen,projection">
+#xg_navigation ul div.xg_subtab ul li a {
+    color:#666666;
+    background:#EAFFBD;
+}
+#xg_navigation ul div.xg_subtab ul li a:hover {
+    color:#333333;
+    background:#F2FFD6;
+}
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../../ning/index.css);
+@import url(../../ning/page.css);
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../../ning/1187549422.css);
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(../../ning/1187545030.css);
+</style>
+
+
+<link href="../../style.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+    </head>
+    <body>
+    
+        
+        <div id="xg" class="xg_theme xg_widget_page xg_widget_page_page xg_widget_page_page_show" data-layout-pack="classic">
+            <div id="xg_head">
+                <div id="xg_masthead">
+                    <p id="xg_sitename"><a id="application_name_header_link" href="http://rhino.github.io/">Grasshopper</a></p>
+                    <p id="xg_sitedesc" class="xj_site_desc">algorithmic modeling for Rhino</p>
+                </div>
+                <div id="xg_navigation">
+                    <ul>
+    <li id="xg_tab_main" class="xg_subtab"><a href="http://www.grasshopper3d.com/"><span>Home</span></a></li>
+	<li id="xg_tab_photo" class="xg_subtab"><a href="http://www.grasshopper3d.com/photo"><span>View</span></a></li>
+	<li id="xg_tab_xn0" class="xg_subtab"><a href="http://www.grasshopper3d.com/page/download-1"><span>Download</span></a></li>
+	<li id="xg_tab_forum" class="xg_subtab"><a href="https://discourse.mcneel.com/c/grasshopper"><span>Forums&#47;Support</span></a></li>
+	<li id="xg_tab_xn2" class="xg_subtab this"><a href="http://rhino.github.io/"><span>Learn</span></a></li>
+	<li id="xg_tab_events" class="xg_subtab"><a href="http://www.grasshopper3d.com/events"><span>Attend</span></a></li>
+	<li id="xg_tab_profile" class="xg_subtab"><a href="http://www.grasshopper3d.com/profiles"><span>My Page</span></a></li></ul>
+
+                </div>
+            </div>
+            
+            <div id="xg_body">
+                
+				<div class="page">
+
+<div class="content">
+
+<div class="ghbar ">
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quelea/alignForce.html"><div class="ghsprite" style="background: url('../../icons/quelea.png') -120px -24px" data-toptip="Align Force"></div></a>
+<a href="../../components/quelea/arriveForce.html"><div class="ghsprite" style="background: url('../../icons/quelea.png') -144px -24px" data-downtip="Arrive Force"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quelea/avoidObstacleForce.html"><div class="ghsprite" style="background: url('../../icons/quelea.png') -168px -24px" data-toptip="Avoid Obstacle Force"></div></a>
+<a href="../../components/quelea/avoidUnalignedCollisionForce.html"><div class="ghsprite" style="background: url('../../icons/quelea.png') -192px -24px" data-downtip="Avoid Unaligned Collision Force"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quelea/coheseForce.html"><div class="ghsprite" style="background: url('../../icons/quelea.png') -216px -24px" data-toptip="Cohese Force"></div></a>
+<a href="../../components/quelea/containForce.html"><div class="ghsprite" style="background: url('../../icons/quelea.png') 0px -48px" data-downtip="Contain Force"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quelea/eatBehavior.html"><div class="ghsprite" style="background: url('../../icons/quelea.png') -24px -48px" data-toptip="Eat Behavior"></div></a>
+<a href="../../components/quelea/followPathForce.html"><div class="ghsprite" style="background: url('../../icons/quelea.png') -48px -48px" data-downtip="Follow Path Force"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quelea/seekForce.html"><div class="ghsprite" style="background: url('../../icons/quelea.png') -72px -48px" data-toptip="Seek Force"></div></a>
+<a href="../../components/quelea/separateForce.html"><div class="ghsprite" style="background: url('../../icons/quelea.png') -96px -48px" data-downtip="Separate Force"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quelea/viewForce.html"><div class="ghsprite" style="background: url('../../icons/quelea.png') -120px -48px" data-toptip="View Force"></div></a>
+<a href="../../components/quelea/wanderForce.html"><div class="ghsprite" style="background: url('../../icons/quelea.png') -144px -48px" data-downtip="Wander Force"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="6">
+Agent Rules
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quelea/boxEmitter.html"><div class="ghsprite" style="background: url('../../icons/quelea.png') -192px -72px" data-toptip="Box Emitter"></div></a>
+<a href="../../components/quelea/curveEmitter.html"><div class="ghsprite" style="background: url('../../icons/quelea.png') -216px -72px" data-downtip="Curve Emitter"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quelea/pointEmitter.html"><div class="ghsprite" style="background: url('../../icons/quelea.png') 0px -96px" data-toptip="Point Emitter"></div></a>
+<a href="../../components/quelea/surfaceEmitter.html"><div class="ghsprite" style="background: url('../../icons/quelea.png') -24px -96px" data-downtip="Surface Emitter"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="2">
+Emitters
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quelea/axisAlignedBoxEnvironment.html"><div class="ghsprite" style="background: url('../../icons/quelea.png') -96px -72px" data-toptip="Axis Aligned Box Environment"></div></a>
+<a href="../../components/quelea/brepEnvironment.html"><div class="ghsprite" style="background: url('../../icons/quelea.png') -120px -72px" data-downtip="Brep Environment"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quelea/polysurfaceEnvironment.html"><div class="ghsprite" style="background: url('../../icons/quelea.png') -144px -72px" data-toptip="Polysurface Environment"></div></a>
+<a href="../../components/quelea/surfaceEnvironment.html"><div class="ghsprite" style="background: url('../../icons/quelea.png') -168px -72px" data-downtip="Surface Environment"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="2">
+Environments
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quelea/applyCustomForce.html"><div class="ghsprite" style="background: url('../../icons/quelea.png') -168px -48px" data-toptip="Apply Custom Force"></div></a>
+<a href="../../components/quelea/attractForce.html"><div class="ghsprite" style="background: url('../../icons/quelea.png') -192px -48px" data-downtip="Attract Force"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quelea/bounceContainBehavior.html"><div class="ghsprite" style="background: url('../../icons/quelea.png') -216px -48px" data-toptip="Bounce Contain Behavior"></div></a>
+<a href="../../components/quelea/initialVelocity.html"><div class="ghsprite" style="background: url('../../icons/quelea.png') 0px -72px" data-downtip="Initial Velocity"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quelea/killContainBehavior.html"><div class="ghsprite" style="background: url('../../icons/quelea.png') -24px -72px" data-toptip="Kill Contain Behavior"></div></a>
+<a href="../../components/quelea/setVelocity.html"><div class="ghsprite" style="background: url('../../icons/quelea.png') -48px -72px" data-downtip="Set Velocity"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quelea/surfaceFlowForce.html"><div class="ghsprite" style="background: url('../../icons/quelea.png') -72px -72px" data-toptip="Surface Flow Force"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="4">
+Particle Rules
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quelea/constructAgent.html"><div class="ghsprite" style="background: url('../../icons/quelea.png') -72px 0px" data-toptip="Construct Agent"></div></a>
+<a href="../../components/quelea/deconstructAgent.html"><div class="ghsprite" style="background: url('../../icons/quelea.png') -96px 0px" data-downtip="Deconstruct Agent"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quelea/deconstructParticle.html"><div class="ghsprite" style="background: url('../../icons/quelea.png') -120px 0px" data-toptip="Deconstruct Particle"></div></a>
+<a href="../../components/quelea/deconstructVehicle.html"><div class="ghsprite" style="background: url('../../icons/quelea.png') -144px 0px" data-downtip="Deconstruct Vehicle"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quelea/engine.html"><div class="ghsprite" style="background: url('../../icons/quelea.png') -168px 0px" data-toptip="Engine"></div></a>
+<a href="../../components/quelea/getOrientation.html"><div class="ghsprite" style="background: url('../../icons/quelea.png') -192px 0px" data-downtip="Get Orientation"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quelea/getParticlePosition.html"><div class="ghsprite" style="background: url('../../icons/quelea.png') -216px 0px" data-toptip="Get Particle Position"></div></a>
+<a href="../../components/quelea/getParticlePositionHistory.html"><div class="ghsprite" style="background: url('../../icons/quelea.png') 0px -24px" data-downtip="Get Particle Position History"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quelea/getParticleVelocity.html"><div class="ghsprite" style="background: url('../../icons/quelea.png') -24px -24px" data-toptip="Get Particle Velocity"></div></a>
+<a href="../../components/quelea/constructParticle.html"><div class="ghsprite" style="background: url('../../icons/quelea.png') -48px -24px" data-downtip="Construct Particle"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quelea/system.html"><div class="ghsprite" style="background: url('../../icons/quelea.png') -72px -24px" data-toptip="System"></div></a>
+<a href="../../components/quelea/constructVehicle.html"><div class="ghsprite" style="background: url('../../icons/quelea.png') -96px -24px" data-downtip="Construct Vehicle"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="6">
+Quelea
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quelea/deconstructQueleaNetwork.html"><div class="ghsprite" style="background: url('../../icons/quelea.png') 0px 0px" data-toptip="Deconstruct Quelea Network"></div></a>
+<a href="../../components/quelea/loadImage.html"><div class="ghsprite" style="background: url('../../icons/quelea.png') -24px 0px" data-downtip="Load Image"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quelea/getNeighborsInRadius.html"><div class="ghsprite" style="background: url('../../icons/quelea.png') -48px 0px" data-toptip="Get Neighbors in Radius"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="2">
+Utility
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quelea/senseImageForce.html"><div class="ghsprite" style="background: url('../../icons/quelea.png') -48px -96px" data-toptip="Sense Image Force"></div></a>
+<a href="../../components/quelea/sensePointForce.html"><div class="ghsprite" style="background: url('../../icons/quelea.png') -72px -96px" data-downtip="Sense Point Force"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+Vehicle Rules
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+
+<div class="addon-buttons">
+<a href="https://www.food4rhino.com/app/quelea-agent-based-design-grasshopper">Download</a>
+</div>
+
+<div class="compo-header">
+<h1><div class="ghsprite" style="background: url('../../icons/quelea.png') -120px -72px" ></div> Brep Environment</h1>
+
+<div class="breadcrumb">
+ <a href="../../index.html">Component Index</a>
+  <a href="../../addons/quelea.html">Quelea</a><a href="#" class="breadcrumb-nolink">Environments</a><a href="#" class="breadcrumb-nolink">Brep Environment</a>
+</div>
+
+</div>
+<h3>A closed Brep Environment which the particles will interact with.</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Brep</b></td><td>B</td><td>A closed Brep with normals facing out.</td><td>Brep</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Environment</b></td><td>En</td><td>A geometrical object representing the environment the Quelea will interact with.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+
+  </div>
+
+</div>
+
+            </div>
+            <div id="xg_foot">
+                <p class="left">
+    © 2018-2020  <a href="https://github.com/robinrodricks/">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>. &nbsp;
+    Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a> &nbsp;
+	Rhino & Grasshopper are trademarks of <a href="https://www.rhino3d.com/">Robert McNeel & Associates</a>.
+	</p>
+    <p class="right xg_lightfont">
+                    <a href="http://www.grasshopper3d.com/main/embeddable/list">Badges</a> &nbsp;|&nbsp;
+                        <a href="http://www.grasshopper3d.com/main/index/report" dojotype="PromptToJoinLink" _joinprompttext="Please sign up or sign in to complete this step." _hassignup="true" _signinurl="http://www.grasshopper3d.com/main/authorization/signIn?target=http%3A%2F%2Fwww.grasshopper3d.com%2Fmain%2Findex%2Freport">Report an Issue</a> &nbsp;|&nbsp;
+                        <a href="http://www.grasshopper3d.com/main/authorization/termsOfService?previousUrl=http%3A%2F%2Fwww.grasshopper3d.com%2Fpage%2Fcomponent-reference">Terms of Service</a>
+            </p>
+
+            </div>
+        </div>
+        
+        <div id="xj_baz17246" class="xg_theme"></div>
+<div id="xg_overlay" style="display:none;">
+<!--[if lte IE 6.5]><iframe></iframe><![endif]-->
+</div>
+<!--googleoff: all--><noscript>
+	<style type="text/css" media="screen">
+        #xg { position:relative;top:120px; }
+        #xn_bar { top:120px; }
+	</style>
+	<div class="errordesc noscript">
+		<div>
+            <h3><strong>Hello, you need to enable JavaScript to use Grasshopper.</strong></h3>
+            <p>Please check your browser settings or contact your system administrator.</p>
+			
+		</div>
+	</div>
+</noscript><!--googleon: all-->
+
+<script src="/js/jquery.js"></script>
+<script src="/js/kramed.min.js"></script>
+<script src="/js/component.js"></script>
+<script src="/js/user.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    </body>
+</html>
