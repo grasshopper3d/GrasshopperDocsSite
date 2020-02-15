@@ -1249,6 +1249,45 @@
       "authorContact": null
     },
     {
+      "name": "Kiwi3D",
+      "releaseDate": "2020-01-31",
+      "version": "0.4.0",
+      "downloadLink": "https://www.food4rhino.com/app/kiwi3d",
+      "helpLink": "https://grasshopperdocs.com/addons/kiwi3d.html",
+      "category": "Structural Analysis & FEM",
+      "isSystem": false,
+      "components": 50,
+      "description": "Kiwi!3D enables the integration of Isogeometric Analysis (IGA). The special characteristic of IGA lies in the usage of Non-Uniform Rational B-Splines (NURBS) as basis functions for the Finite Elements. Hence it allows to run simulations directly on NURBS without the need of meshing.\n\nKiwi!3D includes a isogeometric Shell, Membrane, Beam and Cable element. It is able to handle Trimmed Surfaces as well as Coupled Patches (multi-surface models). You can run Linear as well as geometrically Non-linear Structural Analysis problems. Also it includes Form Finding for tensile structures (Updated Reference Strategy).",
+      "authorName": "Kiwi!3D Team",
+      "authorContact": null
+    },
+    {
+      "name": "K2Engineering",
+      "releaseDate": "2019-04-27",
+      "version": "1.0.0",
+      "downloadLink": "https://github.com/CecilieBrandt/K2Engineering/releases",
+      "helpLink": "https://grasshopperdocs.com/addons/k2engineering.html",
+      "category": "Structural Analysis & FEM",
+      "isSystem": false,
+      "components": 36,
+      "description": "This plugin contains a set of customised Kangaroo2 grasshopper components with the scope of calibrating a number of goals with regard to structural properties.\n\nThis is particularly useful for the analysis of form-active structures (including cablenets and gridshells) that are typically characterised by their large deformations when subjected to external loads. The underlying position-based dynamics implemented in the Kangaroo2 solver inherently deals with this non-linear behaviour. This means that both form-finding and analysis can be performed within the Grasshopper environment using K2 and K2Engineering.",
+      "authorName": "Cecilie Brandt",
+      "authorContact": null
+    },
+    {
+      "name": "Bison",
+      "releaseDate": "2020-Jan-02",
+      "version": "0.90",
+      "downloadLink": "https://www.food4rhino.com/app/bison",
+      "helpLink": "https://grasshopperdocs.com/addons/bison.html",
+      "category": "Unknown",
+      "isSystem": false,
+      "components": 0,
+      "description": "",
+      "authorName": "Unknown",
+      "authorContact": null
+    },
+    {
       "name": "Grasshopper Display",
       "releaseDate": "2019-Dec-15",
       "version": "1.0.0007",

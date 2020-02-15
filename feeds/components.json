@@ -23711,6 +23711,366 @@
       "helpLink": "https://grasshopperdocs.com/components/jswan/serializeKeysAndValues.html"
     },
     {
+      "name": "Bar",
+      "id": "Bar",
+      "library": "K2Engineering",
+      "category": "0 Elements",
+      "summary": "A goal that represents a bar element with axial stiffness only. It outputs the extended/shortened line geometry, the axial force and stress value (- compression, + tension)",
+      "description": null,
+      "iconCss": "background: url('icons/k2Engineering.png') -24px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/k2engineering/bar.html"
+    },
+    {
+      "name": "Beam",
+      "id": "Beam",
+      "library": "K2Engineering",
+      "category": "0 Elements",
+      "summary": "A goal that represents a beam element with biaxial bending and torsion behaviour. WORK IN PROGRESS",
+      "description": null,
+      "iconCss": "background: url('icons/k2Engineering.png') -120px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/k2engineering/beam.html"
+    },
+    {
+      "name": "Cable",
+      "id": "Cable",
+      "library": "K2Engineering",
+      "category": "0 Elements",
+      "summary": "A K2 cable element with pre-tension option",
+      "description": null,
+      "iconCss": "background: url('icons/k2Engineering.png') -24px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/k2engineering/cable.html"
+    },
+    {
+      "name": "Rod",
+      "id": "Rod",
+      "library": "K2Engineering",
+      "category": "0 Elements",
+      "summary": "A goal that represents an elastic rod with bending stiffness only. It outputs the bending plane, bending moment [kNm] and the bending stress [MPa]",
+      "description": null,
+      "iconCss": "background: url('icons/k2Engineering.png') -168px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/k2engineering/rod.html"
+    },
+    {
+      "name": "Support",
+      "id": "Support",
+      "library": "K2Engineering",
+      "category": "1 Supports",
+      "summary": "A support with output of reaction force in kN",
+      "description": null,
+      "iconCss": "background: url('icons/k2Engineering.png') -24px -72px",
+      "helpLink": "https://grasshopperdocs.com/components/k2engineering/support.html"
+    },
+    {
+      "name": "Support6DOF",
+      "id": "Support6DOF",
+      "library": "K2Engineering",
+      "category": "1 Supports",
+      "summary": "A 6 DOF support (global coordinate system) with output of reaction force in [kN] and reaction moment in [kNm]",
+      "description": null,
+      "iconCss": "background: url('icons/k2Engineering.png') -48px -72px",
+      "helpLink": "https://grasshopperdocs.com/components/k2engineering/support6DOF.html"
+    },
+    {
+      "name": "Bar Length",
+      "id": "BLength",
+      "library": "K2Engineering",
+      "category": "2 Load",
+      "summary": "Calculate the length of bars coming into a node",
+      "description": null,
+      "iconCss": "background: url('icons/k2Engineering.png') -48px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/k2engineering/barLength.html"
+    },
+    {
+      "name": "Bar Selfweight",
+      "id": "BSelfweight",
+      "library": "K2Engineering",
+      "category": "2 Load",
+      "summary": "Calculate the selfweight of bar elements",
+      "description": null,
+      "iconCss": "background: url('icons/k2Engineering.png') -96px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/k2engineering/barSelfweight.html"
+    },
+    {
+      "name": "Load",
+      "id": "Load",
+      "library": "K2Engineering",
+      "category": "2 Load",
+      "summary": "A K2 nodal load goal",
+      "description": null,
+      "iconCss": "background: url('icons/k2Engineering.png') -120px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/k2engineering/load.html"
+    },
+    {
+      "name": "Mesh Selfweight",
+      "id": "MSelfweight",
+      "library": "K2Engineering",
+      "category": "2 Load",
+      "summary": "Calculate the selfweight of a mesh",
+      "description": null,
+      "iconCss": "background: url('icons/k2Engineering.png') -216px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/k2engineering/meshSelfweight.html"
+    },
+    {
+      "name": "Mesh Snow Load",
+      "id": "MSnow",
+      "library": "K2Engineering",
+      "category": "2 Load",
+      "summary": "Calculate the snow load on a mesh",
+      "description": null,
+      "iconCss": "background: url('icons/k2Engineering.png') 0px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/k2engineering/meshSnowLoad.html"
+    },
+    {
+      "name": "Mesh Vertex Area",
+      "id": "MVArea",
+      "library": "K2Engineering",
+      "category": "2 Load",
+      "summary": "Calculate the voronoi area associated with each vertex of a mesh",
+      "description": null,
+      "iconCss": "background: url('icons/k2Engineering.png') -24px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/k2engineering/meshVertexArea.html"
+    },
+    {
+      "name": "Mesh Wind Load",
+      "id": "MWind",
+      "library": "K2Engineering",
+      "category": "2 Load",
+      "summary": "Calculate wind load on a mesh",
+      "description": null,
+      "iconCss": "background: url('icons/k2Engineering.png') -48px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/k2engineering/meshWindLoad.html"
+    },
+    {
+      "name": "Pressure",
+      "id": "Pressure",
+      "library": "K2Engineering",
+      "category": "2 Load",
+      "summary": "A pressure load goal following the principle of the Ideal Gas Law and with forces perpendicular to the mesh faces",
+      "description": null,
+      "iconCss": "background: url('icons/k2Engineering.png') -72px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/k2engineering/pressure.html"
+    },
+    {
+      "name": "Bar Output",
+      "id": "BarOutput",
+      "library": "K2Engineering",
+      "category": "3 Results",
+      "summary": "Extract the output of the Bar goal",
+      "description": null,
+      "iconCss": "background: url('icons/k2Engineering.png') -72px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/k2engineering/barOutput.html"
+    },
+    {
+      "name": "Beam Output",
+      "id": "BeamOutput",
+      "library": "K2Engineering",
+      "category": "3 Results",
+      "summary": "Extract the output of the Beam goal",
+      "description": null,
+      "iconCss": "background: url('icons/k2Engineering.png') -168px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/k2engineering/beamOutput.html"
+    },
+    {
+      "name": "Buckling Analysis",
+      "id": "Buckling",
+      "library": "K2Engineering",
+      "category": "3 Results",
+      "summary": "Calculate the buckling load factor from a nonlinear load-displacement analysis",
+      "description": null,
+      "iconCss": "background: url('icons/k2Engineering.png') 0px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/k2engineering/bucklingAnalysis.html"
+    },
+    {
+      "name": "Displacements",
+      "id": "Displ",
+      "library": "K2Engineering",
+      "category": "3 Results",
+      "summary": "Calculate the nodal displacements",
+      "description": null,
+      "iconCss": "background: url('icons/k2Engineering.png') -72px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/k2engineering/displacements.html"
+    },
+    {
+      "name": "Load Output",
+      "id": "LoadOutput",
+      "library": "K2Engineering",
+      "category": "3 Results",
+      "summary": "Extract the output of the Load goal",
+      "description": null,
+      "iconCss": "background: url('icons/k2Engineering.png') -144px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/k2engineering/loadOutput.html"
+    },
+    {
+      "name": "Pressure Output",
+      "id": "PressureOutput",
+      "library": "K2Engineering",
+      "category": "3 Results",
+      "summary": "Extract the output of the pressure goal",
+      "description": null,
+      "iconCss": "background: url('icons/k2Engineering.png') -96px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/k2engineering/pressureOutput.html"
+    },
+    {
+      "name": "Rod Output",
+      "id": "RodOutput",
+      "library": "K2Engineering",
+      "category": "3 Results",
+      "summary": "Extract the output of the Rod goal",
+      "description": null,
+      "iconCss": "background: url('icons/k2Engineering.png') -192px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/k2engineering/rodOutput.html"
+    },
+    {
+      "name": "Shear",
+      "id": "Shear",
+      "library": "K2Engineering",
+      "category": "3 Results",
+      "summary": "Calculate the shear values per line segment as the difference in moments at the endpoints [kN]",
+      "description": null,
+      "iconCss": "background: url('icons/k2Engineering.png') -216px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/k2engineering/shear.html"
+    },
+    {
+      "name": "Support Output",
+      "id": "SupportOutput",
+      "library": "K2Engineering",
+      "category": "3 Results",
+      "summary": "Extract the output of the Support goal",
+      "description": null,
+      "iconCss": "background: url('icons/k2Engineering.png') -96px -72px",
+      "helpLink": "https://grasshopperdocs.com/components/k2engineering/supportOutput.html"
+    },
+    {
+      "name": "Support6DOFOutput",
+      "id": "Support6DOFOutput",
+      "library": "K2Engineering",
+      "category": "3 Results",
+      "summary": "Extract the output of the 6 DOF Support goal",
+      "description": null,
+      "iconCss": "background: url('icons/k2Engineering.png') -72px -72px",
+      "helpLink": "https://grasshopperdocs.com/components/k2engineering/support6DOFOutput.html"
+    },
+    {
+      "name": "Axial Visualisation",
+      "id": "AxialDisplay",
+      "library": "K2Engineering",
+      "category": "4 Display",
+      "summary": "Visualise the axial forces with colour and line weight (blue=tension, green=neutral, red=compression)",
+      "description": null,
+      "iconCss": "background: url('icons/k2Engineering.png') 0px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/k2engineering/axialVisualisation.html"
+    },
+    {
+      "name": "Bending Visualisation",
+      "id": "BendingDisplay",
+      "library": "K2Engineering",
+      "category": "4 Display",
+      "summary": "Visualise the bending stress with colour (blue=low, green=medium, red=high)",
+      "description": null,
+      "iconCss": "background: url('icons/k2Engineering.png') -192px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/k2engineering/bendingVisualisation.html"
+    },
+    {
+      "name": "Bending Visualisation6DOF",
+      "id": "BendingDisplay",
+      "library": "K2Engineering",
+      "category": "4 Display",
+      "summary": "Visualise the 6 DOF beam forces/moments",
+      "description": null,
+      "iconCss": "background: url('icons/k2Engineering.png') -216px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/k2engineering/bendingVisualisation6DOF.html"
+    },
+    {
+      "name": "Displacement Visualisation",
+      "id": "DisplVis",
+      "library": "K2Engineering",
+      "category": "4 Display",
+      "summary": "Visualise the nodal displacements by colouring the connected bars",
+      "description": null,
+      "iconCss": "background: url('icons/k2Engineering.png') -96px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/k2engineering/displacementVisualisation.html"
+    },
+    {
+      "name": "Load Visualisation",
+      "id": "LoadDisplay",
+      "library": "K2Engineering",
+      "category": "4 Display",
+      "summary": "Visualise the load on the deformed structure",
+      "description": null,
+      "iconCss": "background: url('icons/k2Engineering.png') -168px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/k2engineering/loadVisualisation.html"
+    },
+    {
+      "name": "Shear Visualisation",
+      "id": "ShearDisplay",
+      "library": "K2Engineering",
+      "category": "4 Display",
+      "summary": "Visualise the shear forces with colour (blue=low, green=medium, red=high)",
+      "description": null,
+      "iconCss": "background: url('icons/k2Engineering.png') 0px -72px",
+      "helpLink": "https://grasshopperdocs.com/components/k2engineering/shearVisualisation.html"
+    },
+    {
+      "name": "Beam Orientation",
+      "id": "BeamOrientation",
+      "library": "K2Engineering",
+      "category": "5 Utility",
+      "summary": "Compute the start and end plane orientation of a beam element",
+      "description": null,
+      "iconCss": "background: url('icons/k2Engineering.png') -144px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/k2engineering/beamOrientation.html"
+    },
+    {
+      "name": "Circular CS",
+      "id": "Circle",
+      "library": "K2Engineering",
+      "category": "5 Utility",
+      "summary": "Calculate the cross section properties of a circular shape",
+      "description": null,
+      "iconCss": "background: url('icons/k2Engineering.png') -48px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/k2engineering/circularCS.html"
+    },
+    {
+      "name": "Materials",
+      "id": "Mat",
+      "library": "K2Engineering",
+      "category": "5 Utility",
+      "summary": "List of predefined material properties (use as guidance only)",
+      "description": null,
+      "iconCss": "background: url('icons/k2Engineering.png') -192px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/k2engineering/materials.html"
+    },
+    {
+      "name": "Pretension",
+      "id": "PT",
+      "library": "K2Engineering",
+      "category": "5 Utility",
+      "summary": "Calculate pretension distribution in a cablenet",
+      "description": null,
+      "iconCss": "background: url('icons/k2Engineering.png') -120px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/k2engineering/pretension.html"
+    },
+    {
+      "name": "Rectangular CS",
+      "id": "Rectangle",
+      "library": "K2Engineering",
+      "category": "5 Utility",
+      "summary": "Calculate the cross section properties of a rectangular shape",
+      "description": null,
+      "iconCss": "background: url('icons/k2Engineering.png') -144px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/k2engineering/rectangularCS.html"
+    },
+    {
+      "name": "Transform Moment",
+      "id": "TransformMoment",
+      "library": "K2Engineering",
+      "category": "5 Utility",
+      "summary": "Transform a moment from one horizontal plane (XY) to another",
+      "description": null,
+      "iconCss": "background: url('icons/k2Engineering.png') -120px -72px",
+      "helpLink": "https://grasshopperdocs.com/components/k2engineering/transformMoment.html"
+    },
+    {
       "name": "Length(Pts)",
       "id": "Length(Pts)",
       "library": "Kangaroo 2",
@@ -25539,6 +25899,506 @@
       "description": null,
       "iconCss": "background: url('icons/karamba3D.png') -216px -120px",
       "helpLink": "https://grasshopperdocs.com/components/karamba3d/license.html"
+    },
+    {
+      "name": "Formfinding",
+      "id": "Formfinding",
+      "library": "Kiwi3D",
+      "category": "Analysis",
+      "summary": "Formfinding Task",
+      "description": null,
+      "iconCss": "background: url('icons/kiwi3D.png') -24px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/kiwi3d/formfinding.html"
+    },
+    {
+      "name": "Linear Analysis",
+      "id": "Linear Analysis",
+      "library": "Kiwi3D",
+      "category": "Analysis",
+      "summary": "Linear Analysis Task",
+      "description": null,
+      "iconCss": "background: url('icons/kiwi3D.png') -48px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/kiwi3d/linearAnalysis.html"
+    },
+    {
+      "name": "Non-Linear Analysis",
+      "id": "Non-Linear Analysis",
+      "library": "Kiwi3D",
+      "category": "Analysis",
+      "summary": "Non-Linear Analysis Task",
+      "description": null,
+      "iconCss": "background: url('icons/kiwi3D.png') 0px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/kiwi3d/nonLinearAnalysis.html"
+    },
+    {
+      "name": "Beam Element",
+      "id": "Beam Element",
+      "library": "Kiwi3D",
+      "category": "Elements",
+      "summary": "Curve to Structural Element Beam",
+      "description": null,
+      "iconCss": "background: url('icons/kiwi3D.png') -216px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/kiwi3d/beamElement.html"
+    },
+    {
+      "name": "Box Section",
+      "id": "Box Section",
+      "library": "Kiwi3D",
+      "category": "Elements",
+      "summary": "Box Section",
+      "description": null,
+      "iconCss": "background: url('icons/kiwi3D.png') -216px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/kiwi3d/boxSection.html"
+    },
+    {
+      "name": "Cable Element",
+      "id": "Cable Element",
+      "library": "Kiwi3D",
+      "category": "Elements",
+      "summary": "Curve to Structural Element Cable",
+      "description": null,
+      "iconCss": "background: url('icons/kiwi3D.png') 0px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/kiwi3d/cableElement.html"
+    },
+    {
+      "name": "Connecting Point",
+      "id": "Connecting Point",
+      "library": "Kiwi3D",
+      "category": "Elements",
+      "summary": "...",
+      "description": null,
+      "iconCss": "background: url('icons/kiwi3D.png') -24px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/kiwi3d/connectingPoint.html"
+    },
+    {
+      "name": "Coupling Features",
+      "id": "Coupling Features",
+      "library": "Kiwi3D",
+      "category": "Elements",
+      "summary": "Coupling Features",
+      "description": null,
+      "iconCss": "background: url('icons/kiwi3D.png') -72px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/kiwi3d/couplingFeatures.html"
+    },
+    {
+      "name": "Coupling Point Axis",
+      "id": "Coupling Point Axis",
+      "library": "Kiwi3D",
+      "category": "Elements",
+      "summary": "...",
+      "description": null,
+      "iconCss": "background: url('icons/kiwi3D.png') -48px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/kiwi3d/couplingPointAxis.html"
+    },
+    {
+      "name": "Curve Refinement",
+      "id": "Curve Refinement",
+      "library": "Kiwi3D",
+      "category": "Elements",
+      "summary": "Refinement of Curve Patches",
+      "description": null,
+      "iconCss": "background: url('icons/kiwi3D.png') -96px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/kiwi3d/curveRefinement.html"
+    },
+    {
+      "name": "Deconstruct Section",
+      "id": "Deconstruct Section",
+      "library": "Kiwi3D",
+      "category": "Elements",
+      "summary": "Deconstruct Section in single values",
+      "description": null,
+      "iconCss": "background: url('icons/kiwi3D.png') -144px -72px",
+      "helpLink": "https://grasshopperdocs.com/components/kiwi3d/deconstructSection.html"
+    },
+    {
+      "name": "Material",
+      "id": "Material",
+      "library": "Kiwi3D",
+      "category": "Elements",
+      "summary": "Material",
+      "description": null,
+      "iconCss": "background: url('icons/kiwi3D.png') -192px -72px",
+      "helpLink": "https://grasshopperdocs.com/components/kiwi3d/material.html"
+    },
+    {
+      "name": "Material Defaults",
+      "id": "Material Defaults",
+      "library": "Kiwi3D",
+      "category": "Elements",
+      "summary": "Material Default Settings",
+      "description": null,
+      "iconCss": "background: url('icons/kiwi3D.png') -72px -72px",
+      "helpLink": "https://grasshopperdocs.com/components/kiwi3d/materialDefaults.html"
+    },
+    {
+      "name": "Membrane Element",
+      "id": "Membrane Element",
+      "library": "Kiwi3D",
+      "category": "Elements",
+      "summary": "Membrane",
+      "description": null,
+      "iconCss": "background: url('icons/kiwi3D.png') -120px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/kiwi3d/membraneElement.html"
+    },
+    {
+      "name": "Membrane Settings",
+      "id": "Membrane Settings",
+      "library": "Kiwi3D",
+      "category": "Elements",
+      "summary": "Advanced Settings for Membrane Element",
+      "description": null,
+      "iconCss": "background: url('icons/kiwi3D.png') -144px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/kiwi3d/membraneSettings.html"
+    },
+    {
+      "name": "Pipe Section",
+      "id": "Pipe Section",
+      "library": "Kiwi3D",
+      "category": "Elements",
+      "summary": "Pipe Section",
+      "description": null,
+      "iconCss": "background: url('icons/kiwi3D.png') 0px -72px",
+      "helpLink": "https://grasshopperdocs.com/components/kiwi3d/pipeSection.html"
+    },
+    {
+      "name": "Prestress Properties Beam",
+      "id": "Prestress Properties Beam",
+      "library": "Kiwi3D",
+      "category": "Elements",
+      "summary": "Prestress Properties for Beam Element",
+      "description": null,
+      "iconCss": "background: url('icons/kiwi3D.png') -168px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/kiwi3d/prestressPropertiesBeam.html"
+    },
+    {
+      "name": "Reference Geometry",
+      "id": "Reference Geometry",
+      "library": "Kiwi3D",
+      "category": "Elements",
+      "summary": "Add a Reference Geometry",
+      "description": null,
+      "iconCss": "background: url('icons/kiwi3D.png') -96px -72px",
+      "helpLink": "https://grasshopperdocs.com/components/kiwi3d/referenceGeometry.html"
+    },
+    {
+      "name": "Section Axis",
+      "id": "Section Axis",
+      "library": "Kiwi3D",
+      "category": "Elements",
+      "summary": "Orientation of Cross Section Axis",
+      "description": null,
+      "iconCss": "background: url('icons/kiwi3D.png') -192px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/kiwi3d/sectionAxis.html"
+    },
+    {
+      "name": "Section by Numbers",
+      "id": "Section by Numbers",
+      "library": "Kiwi3D",
+      "category": "Elements",
+      "summary": "Define Section by Numbers",
+      "description": null,
+      "iconCss": "background: url('icons/kiwi3D.png') -120px -72px",
+      "helpLink": "https://grasshopperdocs.com/components/kiwi3d/sectionByNumbers.html"
+    },
+    {
+      "name": "Section from Profile",
+      "id": "Section from Profile",
+      "library": "Kiwi3D",
+      "category": "Elements",
+      "summary": "Define Section by Profile",
+      "description": null,
+      "iconCss": "background: url('icons/kiwi3D.png') -168px -72px",
+      "helpLink": "https://grasshopperdocs.com/components/kiwi3d/sectionFromProfile.html"
+    },
+    {
+      "name": "Shell Element",
+      "id": "Shell Element",
+      "library": "Kiwi3D",
+      "category": "Elements",
+      "summary": "Shell",
+      "description": null,
+      "iconCss": "background: url('icons/kiwi3D.png') -216px -72px",
+      "helpLink": "https://grasshopperdocs.com/components/kiwi3d/shellElement.html"
+    },
+    {
+      "name": "Sliding Point",
+      "id": "Sliding Point",
+      "library": "Kiwi3D",
+      "category": "Elements",
+      "summary": "...",
+      "description": null,
+      "iconCss": "background: url('icons/kiwi3D.png') -24px -72px",
+      "helpLink": "https://grasshopperdocs.com/components/kiwi3d/slidingPoint.html"
+    },
+    {
+      "name": "Surface Refinement",
+      "id": "Surface Refinement",
+      "library": "Kiwi3D",
+      "category": "Elements",
+      "summary": "Refinement for 2D Nurbs IGA Element",
+      "description": null,
+      "iconCss": "background: url('icons/kiwi3D.png') -48px -72px",
+      "helpLink": "https://grasshopperdocs.com/components/kiwi3d/surfaceRefinement.html"
+    },
+    {
+      "name": "Curve Load",
+      "id": "Curve Load",
+      "library": "Kiwi3D",
+      "category": "Loads",
+      "summary": "Curve Load",
+      "description": null,
+      "iconCss": "background: url('icons/kiwi3D.png') -144px -96px",
+      "helpLink": "https://grasshopperdocs.com/components/kiwi3d/curveLoad.html"
+    },
+    {
+      "name": "Load Case Check",
+      "id": "Load Case Check",
+      "library": "Kiwi3D",
+      "category": "Loads",
+      "summary": "Shows the actual loads for a given time step",
+      "description": null,
+      "iconCss": "background: url('icons/kiwi3D.png') -216px -96px",
+      "helpLink": "https://grasshopperdocs.com/components/kiwi3d/loadCaseCheck.html"
+    },
+    {
+      "name": "Load Displ Curve",
+      "id": "Load Displ Curve",
+      "library": "Kiwi3D",
+      "category": "Loads",
+      "summary": "Load-Displacement Curve",
+      "description": null,
+      "iconCss": "background: url('icons/kiwi3D.png') -120px -96px",
+      "helpLink": "https://grasshopperdocs.com/components/kiwi3d/loadDisplCurve.html"
+    },
+    {
+      "name": "Point Load",
+      "id": "Point Load",
+      "library": "Kiwi3D",
+      "category": "Loads",
+      "summary": "Point Load",
+      "description": null,
+      "iconCss": "background: url('icons/kiwi3D.png') -168px -96px",
+      "helpLink": "https://grasshopperdocs.com/components/kiwi3d/pointLoad.html"
+    },
+    {
+      "name": "Surface Load",
+      "id": "Surface Load",
+      "library": "Kiwi3D",
+      "category": "Loads",
+      "summary": "Surface Load",
+      "description": null,
+      "iconCss": "background: url('icons/kiwi3D.png') -192px -96px",
+      "helpLink": "https://grasshopperdocs.com/components/kiwi3d/surfaceLoad.html"
+    },
+    {
+      "name": "Analysis Model",
+      "id": "Analysis Model",
+      "library": "Kiwi3D",
+      "category": "Model",
+      "summary": "Assemble Isogeometric Analysis Model",
+      "description": null,
+      "iconCss": "background: url('icons/kiwi3D.png') -192px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/kiwi3d/analysisModel.html"
+    },
+    {
+      "name": "Deconstruct Model",
+      "id": "Deconstruct Model",
+      "library": "Kiwi3D",
+      "category": "Model",
+      "summary": "Deconstruct Kiwi Analysis Model",
+      "description": null,
+      "iconCss": "background: url('icons/kiwi3D.png') -168px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/kiwi3d/deconstructModel.html"
+    },
+    {
+      "name": "IGA Solver",
+      "id": "IGA Solver",
+      "library": "Kiwi3D",
+      "category": "Model",
+      "summary": "Solve Isogeometric Analysis Model",
+      "description": null,
+      "iconCss": "background: url('icons/kiwi3D.png') -144px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/kiwi3d/iGASolver.html"
+    },
+    {
+      "name": "Visualize Options",
+      "id": "Visualize Options",
+      "library": "Kiwi3D",
+      "category": "Model",
+      "summary": "Visualize Options for the Analysis Model",
+      "description": null,
+      "iconCss": "background: url('icons/kiwi3D.png') -120px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/kiwi3d/visualizeOptions.html"
+    },
+    {
+      "name": "1D Element Result View",
+      "id": "1D Element Result View",
+      "library": "Kiwi3D",
+      "category": "Results",
+      "summary": "Display of 1D Element Results",
+      "description": null,
+      "iconCss": "background: url('icons/kiwi3D.png') 0px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/kiwi3d/1DElementResultView.html"
+    },
+    {
+      "name": "2D Element Result Colour Plot",
+      "id": "2D Element Result Colour Plot",
+      "library": "Kiwi3D",
+      "category": "Results",
+      "summary": "Display of 2D Element Results with Coloured Plot",
+      "description": null,
+      "iconCss": "background: url('icons/kiwi3D.png') -72px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/kiwi3d/2DElementResultColourPlot.html"
+    },
+    {
+      "name": "2D Element Results",
+      "id": "2D Element Results",
+      "library": "Kiwi3D",
+      "category": "Results",
+      "summary": "Display of Results Values of 2D Element",
+      "description": null,
+      "iconCss": "background: url('icons/kiwi3D.png') -96px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/kiwi3d/2DElementResults.html"
+    },
+    {
+      "name": "Deformed Model",
+      "id": "Deformed Model",
+      "library": "Kiwi3D",
+      "category": "Results",
+      "summary": "Displays Deformed Model",
+      "description": null,
+      "iconCss": "background: url('icons/kiwi3D.png') -24px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/kiwi3d/deformedModel.html"
+    },
+    {
+      "name": "Support Forces",
+      "id": "Support Forces",
+      "library": "Kiwi3D",
+      "category": "Results",
+      "summary": "Support Force Display",
+      "description": null,
+      "iconCss": "background: url('icons/kiwi3D.png') -48px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/kiwi3d/supportForces.html"
+    },
+    {
+      "name": "Curve Displacement",
+      "id": "Curve Displacement",
+      "library": "Kiwi3D",
+      "category": "Supports",
+      "summary": "Forced Displacement of Curve",
+      "description": null,
+      "iconCss": "background: url('icons/kiwi3D.png') 0px -96px",
+      "helpLink": "https://grasshopperdocs.com/components/kiwi3d/curveDisplacement.html"
+    },
+    {
+      "name": "Point Displacement",
+      "id": "Point Displacement",
+      "library": "Kiwi3D",
+      "category": "Supports",
+      "summary": "Forced Displacement of Point",
+      "description": null,
+      "iconCss": "background: url('icons/kiwi3D.png') -24px -96px",
+      "helpLink": "https://grasshopperdocs.com/components/kiwi3d/pointDisplacement.html"
+    },
+    {
+      "name": "Support Curve",
+      "id": "Support Curve",
+      "library": "Kiwi3D",
+      "category": "Supports",
+      "summary": "Curve Support",
+      "description": null,
+      "iconCss": "background: url('icons/kiwi3D.png') -48px -96px",
+      "helpLink": "https://grasshopperdocs.com/components/kiwi3d/supportCurve.html"
+    },
+    {
+      "name": "Support Edge",
+      "id": "Support Edge",
+      "library": "Kiwi3D",
+      "category": "Supports",
+      "summary": "Edge Support",
+      "description": null,
+      "iconCss": "background: url('icons/kiwi3D.png') -72px -96px",
+      "helpLink": "https://grasshopperdocs.com/components/kiwi3d/supportEdge.html"
+    },
+    {
+      "name": "Support Point",
+      "id": "Support Point",
+      "library": "Kiwi3D",
+      "category": "Supports",
+      "summary": "Point Support",
+      "description": null,
+      "iconCss": "background: url('icons/kiwi3D.png') -96px -96px",
+      "helpLink": "https://grasshopperdocs.com/components/kiwi3d/supportPoint.html"
+    },
+    {
+      "name": "Control Polygon",
+      "id": "Control Polygon",
+      "library": "Kiwi3D",
+      "category": "Utilities",
+      "summary": "Displays Control Polygon of NURBS Geometry",
+      "description": null,
+      "iconCss": "background: url('icons/kiwi3D.png') -72px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/kiwi3d/controlPolygon.html"
+    },
+    {
+      "name": "Duplicate Brep",
+      "id": "Duplicate Brep",
+      "library": "Kiwi3D",
+      "category": "Utilities",
+      "summary": "Duplicates breps to use them for several structural elements",
+      "description": null,
+      "iconCss": "background: url('icons/kiwi3D.png') -96px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/kiwi3d/duplicateBrep.html"
+    },
+    {
+      "name": "Duplicate Curve",
+      "id": "Duplicate Curve",
+      "library": "Kiwi3D",
+      "category": "Utilities",
+      "summary": "Duplicates curves to use them for several structural elements",
+      "description": null,
+      "iconCss": "background: url('icons/kiwi3D.png') -120px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/kiwi3d/duplicateCurve.html"
+    },
+    {
+      "name": "Licence",
+      "id": "Licence",
+      "library": "Kiwi3D",
+      "category": "Utilities",
+      "summary": "Licence Information",
+      "description": null,
+      "iconCss": "background: url('icons/kiwi3D.png') -216px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/kiwi3d/licence.html"
+    },
+    {
+      "name": "List Find Line",
+      "id": "List Find Line",
+      "library": "Kiwi3D",
+      "category": "Utilities",
+      "summary": "...",
+      "description": null,
+      "iconCss": "background: url('icons/kiwi3D.png') -144px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/kiwi3d/listFindLine.html"
+    },
+    {
+      "name": "Modify Model",
+      "id": "Modify Model",
+      "library": "Kiwi3D",
+      "category": "Utilities",
+      "summary": "...",
+      "description": null,
+      "iconCss": "background: url('icons/kiwi3D.png') -168px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/kiwi3d/modifyModel.html"
+    },
+    {
+      "name": "Unit Converter",
+      "id": "Unit Converter",
+      "library": "Kiwi3D",
+      "category": "Utilities",
+      "summary": "Converts units",
+      "description": null,
+      "iconCss": "background: url('icons/kiwi3D.png') -192px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/kiwi3d/unitConverter.html"
     },
     {
       "name": "Construct Location",
