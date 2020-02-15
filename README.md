@@ -1,4 +1,4 @@
-# rhino.github.io
+# GrasshopperDocs.com
 Documentation for open source components of Grasshopper, the fantastic visual programming tool built into Rhino.
 
 Created by <a href="https://github.com/robinrodricks">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>.
@@ -9,8 +9,8 @@ Last updated on 12th Feb 2020.
 
 We provide JSON feeds containing the metadata of the latest addons and components that are on the website. You can hard-link to these URLs and feed them into you third party application or process the data in any way you wish!
 
-- List of Addons - [addons.json](http://rhino.github.io/addons.json)
-- List of Components - [components.json](http://rhino.github.io/components.json)
+- List of Addons - [addons.json](http://grasshopperdocs.com/feeds/addons.json)
+- List of Components - [components.json](http://grasshopperdocs.com/feeds/components.json)
 
 # Addon index
 
@@ -115,4 +115,4 @@ We provide JSON feeds containing the metadata of the latest addons and component
 
 
 # Want to add or update an addon?
-Simply add an [Issue](https://github.com/rhino/rhino.github.io/issues) with the name and link of the plugin and I'll look into it.
+Simply add an [Issue](https://github.com/rhino/grasshopperdocs.com/issues) with the name and link of the plugin and I'll look into it.
