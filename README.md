@@ -56,6 +56,7 @@ We provide JSON feeds containing the metadata of the latest addons and component
 | Grasshopper      | 1.0.0007       | 2019-Dec-15 |
 | Grevit           | 1.0            | 2018-Apr-28 |
 | HAL Robotics     | 1.0-beta       | 2020-01-07  |
+| Heron            | 0.2.0.0        | 2015-Aug-22 |
 | Heteroptera      | 0.5.1.2        | 2019-Oct-28 |
 | Honeybee         | 0.0.62         | 2017-Jul-31 |
 | Hoopsnake        | 0.6.7          | 2014-Apr-28 |
@@ -68,6 +69,7 @@ We provide JSON feeds containing the metadata of the latest addons and component
 | Kangaroo 2       | 2.3.3          | 2019-Dec-15 |
 | Karamba3D        | 1.3.2          | 2019-Sep-18 |
 | Ladybug          | 0.0.65         | 2017-Jul-31 |
+| Lands Design     | RC1            | 2019-Nov-4  |
 | LunchBox         | 2018.10.30     | 2018-Oct-30 |
 | MeshEdit         | 2.0            | 2017-Jun-25 |
 | MeshPlus         | 2.1.03         | 2019-Sep-12 |
@@ -77,8 +79,10 @@ We provide JSON feeds containing the metadata of the latest addons and component
 | MinSurf          | 3.0.0.2        | 2013-Apr-04 |
 | Monolith         | 0.3.6415.29557 | 2017-Jul-26 |
 | Mosquito         | 0.4            | 2015-Nov-27 |
+| Ngon             | 2.1            | 2020-Feb-06 |
 | Nudibranch       | 0.028          | 2013-Aug-26 |
 | Octopus          | 0.4            | 2018-Dec-05 |
+| OpenNest         | 1.0            | 2018-Nov-21 |
 | Owl              | 2.1.0.0        | 2019-Jan-31 |
 | Pancake          | 2.1.0.0        | 2019-Dec-25 |
 | Paneling Tools   | 6.18           | 2019-12-19  |
@@ -104,15 +108,11 @@ We provide JSON feeds containing the metadata of the latest addons and component
 | TT Toolbox       | 1.9            | 2017-May-25 |
 | VisualARQ        | 2.7            | 2020        |
 | Volvox           | 0.3.0.0        | 2016-Feb-16 |
-| Wasp             | 0.2.08         | 2019-Jul-12 |
 | Wallacei         | 2.5            | 2019-Nov-17 |
+| Wasp             | 0.2.08         | 2019-Jul-12 |
 | Weaverbird       | 0.9.0.1        | 2009-Aug-31 |
 | Xylinus          | 0.2            | Unknown     |
-| OpenNest         | 1.0            | 2018-Nov-21 |
-| Ngon             | 2.1            | 2020-Feb-06 |
-| Lands Design     | RC1            | 2019-Nov-4  |
-| Heron            | 0.2.0.0        | 2015-Aug-22 |
 
 
 # Want to add or update an addon?
-Simply add an [Issue](https://github.com/rhino/grasshopperdocs.com/issues) with the name and link of the plugin and I'll look into it.
+Simply add an [Issue](https://github.com/rhino/rhino.github.io/issues) with the name and link of the plugin and I'll look into it.
