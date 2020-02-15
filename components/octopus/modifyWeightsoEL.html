@@ -91,11 +91,17 @@
 <td>
 <div class="ghcolumn">
 <a href="../../components/octopus/showNetworkoEL.html"><div class="ghsprite" style="background: url('../../icons/octopus.png') -120px -72px" data-toptip="Show Network (oEL)"></div></a>
+<a href="../../components/octopus/constructNetworkoEL.html"><div class="ghsprite" style="background: url('../../icons/octopus.png') -216px -72px" data-downtip="Construct Network (oEL)"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/octopus/constructNetworkByGeometryoctEvoLearn.html"><div class="ghsprite" style="background: url('../../icons/octopus.png') 0px -96px" data-toptip="Construct Network by Geometry (octEvoLearn)"></div></a>
 </div>
 </td>
 </tr>
 <tr class="ghgroup-title-row">
-<td class="ghgroup-title" colspan="7">
+<td class="ghgroup-title" colspan="8">
 Evolutionary Learning
 </td>
 </tr>
@@ -140,9 +146,14 @@ Evolutionary Learning
 <a href="../../components/octopus/tournamentSelection.html"><div class="ghsprite" style="background: url('../../icons/octopus.png') -144px -24px" data-downtip="Tournament Selection"></div></a>
 </div>
 </td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/octopus/remapObjectives.html"><div class="ghsprite" style="background: url('../../icons/octopus.png') -192px -72px" data-toptip="Remap Objectives"></div></a>
+</div>
+</td>
 </tr>
 <tr class="ghgroup-title-row">
-<td class="ghgroup-title" colspan="6">
+<td class="ghgroup-title" colspan="7">
 Explicit Components
 </td>
 </tr>
@@ -289,6 +300,9 @@ View
 <tr><td><b>Network</b></td><td>N</td><td>Network to modify</td><td>Network oEL</td></tr>
 <tr><td><b>W</b></td><td>W</td><td>New Connection Weights, rescaling is applied assuming normalized weights between -1 and 1 being supplied here; if none supplied the old ones are used.</td><td>Number</td></tr>
 <tr><td><b>T</b></td><td>T</td><td>Threshold for deleting connections with weight between +T and -T, measured against the full range of connectionWeightRange, the remaining weights are re-scaled to the full range from 0 to +-ConnectionWeightRange in the end</td><td>Number</td></tr>
+<tr><td><b>Network</b></td><td>N</td><td>Network to modify</td><td>Any</td></tr>
+<tr><td><b>W</b></td><td>W</td><td>New Connection Weights, rescaling is applied assuming normalized weights between -1 and 1 being supplied here; if none supplied the old ones are used.</td><td>Number</td></tr>
+<tr><td><b>T</b></td><td>T</td><td>Threshold for deleting connections with weight between +T and -T, measured against the full range of connectionWeightRange, the remaining weights are re-scaled to the full range from 0 to +-ConnectionWeightRange in the end</td><td>Number</td></tr>
 </tbody>
 </table>
 
@@ -299,6 +313,7 @@ View
 </thead>
 <tbody>
 <tr><td><b>Network</b></td><td>N</td><td>Modified Network</td><td>Network oEL</td></tr>
+<tr><td><b>Network</b></td><td>N</td><td>Modified Network</td><td>Any</td></tr>
 </tbody>
 </table>
 

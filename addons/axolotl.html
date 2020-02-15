@@ -56,7 +56,7 @@
 
 <div class="addon-header">
 <h1>Axolotl</h1>
-<h5>ADDON, Version <b>1.0</b>, Released on <b>2019-Dec-16</b>, Provides <b>32</b> components, Created by <b>worbit</b></h5>
+<h5>ADDON, Version <b>1.0</b>, Released on <b>2019-Dec-16</b>, Provides <b>48</b> components, Created by <b>worbit</b></h5>
 <h5>AXOLOTL provides a set of components for volumetric modeling in Rhino Grasshopper. They work based on the principle of signed distance functions (SDF). In boundary representations (BRep), objects are defined by vertices connected by edges and faces. In function representations (FRep), objects are defined by a function f that maps any point (x,y,z) to a real value d, the distance to the objects: f(x,y,z)=d
 
 The components are organized in groups. A typical workflow is to choose objects from PRIMITIVES, combine them using e.g. Boolean operations from COMBINATIONS, add further MODIFICATIONS as necessary and finally visualize the distance object using a component from the MESHING tab. Furthermore, there are different kinds of LATTICES, some MATH functions, components to convert Rhino GEOMETRY into an SDF and some utilities to ANALYSE the SDF.</h5>
@@ -75,6 +75,7 @@ The components are organized in groups. A typical workflow is to choose objects 
 <td>
 <div class="ghcolumn">
 <a href="../components/axolotl/evaluatePoints.html"><div class="ghsprite" style="background: url('../icons/axolotl.png') -24px -24px" data-toptip="EvaluatePoints"></div></a>
+<a href="../components/axolotl/gradientVector.html"><div class="ghsprite" style="background: url('../icons/axolotl.png') 0px -96px" data-downtip="Gradient Vector"></div></a>
 </div>
 </td>
 </tr>
@@ -209,9 +210,21 @@ Math
 <a href="../components/axolotl/isosurfaceDistancefunction.html"><div class="ghsprite" style="background: url('../icons/axolotl.png') -72px -24px" data-downtip="Isosurface Distancefunction"></div></a>
 </div>
 </td>
+<td>
+<div class="ghcolumn">
+<a href="../components/axolotl/denseGrid.html"><div class="ghsprite" style="background: url('../icons/axolotl.png') -192px -72px" data-toptip="Dense Grid"></div></a>
+<a href="../components/axolotl/isosurfaceOctree.html"><div class="ghsprite" style="background: url('../icons/axolotl.png') -24px -96px" data-downtip="Isosurface Octree"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/axolotl/slice2D.html"><div class="ghsprite" style="background: url('../icons/axolotl.png') -96px -96px" data-toptip="Slice2D"></div></a>
+<a href="../components/axolotl/voxelSize.html"><div class="ghsprite" style="background: url('../icons/axolotl.png') -168px -96px" data-downtip="Voxel Size"></div></a>
+</div>
+</td>
 </tr>
 <tr class="ghgroup-title-row">
-<td class="ghgroup-title" colspan="1">
+<td class="ghgroup-title" colspan="3">
 Meshing
 </td>
 </tr>
@@ -235,11 +248,23 @@ Meshing
 <td>
 <div class="ghcolumn">
 <a href="../components/axolotl/overlay.html"><div class="ghsprite" style="background: url('../icons/axolotl.png') -72px -48px" data-toptip="Overlay"></div></a>
+<a href="../components/axolotl/array.html"><div class="ghsprite" style="background: url('../icons/axolotl.png') -48px -72px" data-downtip="Array"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/axolotl/transform.html"><div class="ghsprite" style="background: url('../icons/axolotl.png') -144px -72px" data-toptip="Transform"></div></a>
+<a href="../components/axolotl/polarArray.html"><div class="ghsprite" style="background: url('../icons/axolotl.png') -72px -96px" data-downtip="Polar Array"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/axolotl/twist.html"><div class="ghsprite" style="background: url('../icons/axolotl.png') -144px -96px" data-toptip="Twist"></div></a>
 </div>
 </td>
 </tr>
 <tr class="ghgroup-title-row">
-<td class="ghgroup-title" colspan="3">
+<td class="ghgroup-title" colspan="5">
 Modifications
 </td>
 </tr>
@@ -251,11 +276,30 @@ Modifications
 <td>
 <div class="ghcolumn">
 <a href="../components/axolotl/ellipse2D.html"><div class="ghsprite" style="background: url('../icons/axolotl.png') 0px -24px" data-toptip="Ellipse 2D"></div></a>
+<a href="../components/axolotl/box.html"><div class="ghsprite" style="background: url('../icons/axolotl.png') -72px -72px" data-downtip="Box"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/axolotl/capsule.html"><div class="ghsprite" style="background: url('../icons/axolotl.png') -96px -72px" data-toptip="Capsule"></div></a>
+<a href="../components/axolotl/ellipsoid.html"><div class="ghsprite" style="background: url('../icons/axolotl.png') -120px -72px" data-downtip="Ellipsoid"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/axolotl/cylinder.html"><div class="ghsprite" style="background: url('../icons/axolotl.png') -168px -72px" data-toptip="Cylinder"></div></a>
+<a href="../components/axolotl/sphere.html"><div class="ghsprite" style="background: url('../icons/axolotl.png') -216px -72px" data-downtip="Sphere"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/axolotl/plane.html"><div class="ghsprite" style="background: url('../icons/axolotl.png') -48px -96px" data-toptip="Plane"></div></a>
+<a href="../components/axolotl/torus.html"><div class="ghsprite" style="background: url('../icons/axolotl.png') -120px -96px" data-downtip="Torus"></div></a>
 </div>
 </td>
 </tr>
 <tr class="ghgroup-title-row">
-<td class="ghgroup-title" colspan="1">
+<td class="ghgroup-title" colspan="4">
 Primitives
 </td>
 </tr>
@@ -283,6 +327,39 @@ Primitives
 
 </div>
 <div class="cchild">
+<h3>Modifications</h3>
+<table class="addon-compos">
+<tbody>
+<tr><td class="ccol_1"><a href="../components/axolotl/arrayLimited.html"><div class="ghsprite" style="background: url('../icons/axolotl.png') -48px 0px" ></div></a></td><td class="ccol_2"><a href="../components/axolotl/arrayLimited.html">Array Limited</a><br><span class="desc">Array Limited</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/axolotl/blur.html"><div class="ghsprite" style="background: url('../icons/axolotl.png') -72px 0px" ></div></a></td><td class="ccol_2"><a href="../components/axolotl/blur.html">Blur</a><br><span class="desc">Blur description</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/axolotl/shell.html"><div class="ghsprite" style="background: url('../icons/axolotl.png') -168px 0px" ></div></a></td><td class="ccol_2"><a href="../components/axolotl/shell.html">Shell</a><br><span class="desc">Shell</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/axolotl/levelset.html"><div class="ghsprite" style="background: url('../icons/axolotl.png') -120px -24px" ></div></a></td><td class="ccol_2"><a href="../components/axolotl/levelset.html">Levelset</a><br><span class="desc">Levelset</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/axolotl/overlay.html"><div class="ghsprite" style="background: url('../icons/axolotl.png') -72px -48px" ></div></a></td><td class="ccol_2"><a href="../components/axolotl/overlay.html">Overlay</a><br><span class="desc">Overlay</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/axolotl/array.html"><div class="ghsprite" style="background: url('../icons/axolotl.png') -48px -72px" ></div></a></td><td class="ccol_2"><a href="../components/axolotl/array.html">Array</a><br><span class="desc">Array description</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/axolotl/transform.html"><div class="ghsprite" style="background: url('../icons/axolotl.png') -144px -72px" ></div></a></td><td class="ccol_2"><a href="../components/axolotl/transform.html">Transform</a><br><span class="desc">Transform</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/axolotl/polarArray.html"><div class="ghsprite" style="background: url('../icons/axolotl.png') -72px -96px" ></div></a></td><td class="ccol_2"><a href="../components/axolotl/polarArray.html">Polar Array</a><br><span class="desc">Polar Array</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/axolotl/twist.html"><div class="ghsprite" style="background: url('../icons/axolotl.png') -144px -96px" ></div></a></td><td class="ccol_2"><a href="../components/axolotl/twist.html">Twist</a><br><span class="desc">TwistComponent description</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>Primitives</h3>
+<table class="addon-compos">
+<tbody>
+<tr><td class="ccol_1"><a href="../components/axolotl/ellipse2D.html"><div class="ghsprite" style="background: url('../icons/axolotl.png') 0px -24px" ></div></a></td><td class="ccol_2"><a href="../components/axolotl/ellipse2D.html">Ellipse 2D</a><br><span class="desc">Ellipse 2D</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/axolotl/box.html"><div class="ghsprite" style="background: url('../icons/axolotl.png') -72px -72px" ></div></a></td><td class="ccol_2"><a href="../components/axolotl/box.html">Box</a><br><span class="desc">Box</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/axolotl/capsule.html"><div class="ghsprite" style="background: url('../icons/axolotl.png') -96px -72px" ></div></a></td><td class="ccol_2"><a href="../components/axolotl/capsule.html">Capsule</a><br><span class="desc">Capsule</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/axolotl/ellipsoid.html"><div class="ghsprite" style="background: url('../icons/axolotl.png') -120px -72px" ></div></a></td><td class="ccol_2"><a href="../components/axolotl/ellipsoid.html">Ellipsoid</a><br><span class="desc">Ellipsoid</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/axolotl/cylinder.html"><div class="ghsprite" style="background: url('../icons/axolotl.png') -168px -72px" ></div></a></td><td class="ccol_2"><a href="../components/axolotl/cylinder.html">Cylinder</a><br><span class="desc">Cylinder</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/axolotl/sphere.html"><div class="ghsprite" style="background: url('../icons/axolotl.png') -216px -72px" ></div></a></td><td class="ccol_2"><a href="../components/axolotl/sphere.html">Sphere</a><br><span class="desc">Sphere</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/axolotl/plane.html"><div class="ghsprite" style="background: url('../icons/axolotl.png') -48px -96px" ></div></a></td><td class="ccol_2"><a href="../components/axolotl/plane.html">Plane</a><br><span class="desc">Plane</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/axolotl/torus.html"><div class="ghsprite" style="background: url('../icons/axolotl.png') -120px -96px" ></div></a></td><td class="ccol_2"><a href="../components/axolotl/torus.html">Torus</a><br><span class="desc">Torus</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
 <h3>Lattices</h3>
 <table class="addon-compos">
 <tbody>
@@ -297,14 +374,15 @@ Primitives
 
 </div>
 <div class="cchild">
-<h3>Modifications</h3>
+<h3>Meshing</h3>
 <table class="addon-compos">
 <tbody>
-<tr><td class="ccol_1"><a href="../components/axolotl/arrayLimited.html"><div class="ghsprite" style="background: url('../icons/axolotl.png') -48px 0px" ></div></a></td><td class="ccol_2"><a href="../components/axolotl/arrayLimited.html">Array Limited</a><br><span class="desc">Array Limited</span></td></tr>
-<tr><td class="ccol_1"><a href="../components/axolotl/blur.html"><div class="ghsprite" style="background: url('../icons/axolotl.png') -72px 0px" ></div></a></td><td class="ccol_2"><a href="../components/axolotl/blur.html">Blur</a><br><span class="desc">Blur description</span></td></tr>
-<tr><td class="ccol_1"><a href="../components/axolotl/shell.html"><div class="ghsprite" style="background: url('../icons/axolotl.png') -168px 0px" ></div></a></td><td class="ccol_2"><a href="../components/axolotl/shell.html">Shell</a><br><span class="desc">Shell</span></td></tr>
-<tr><td class="ccol_1"><a href="../components/axolotl/levelset.html"><div class="ghsprite" style="background: url('../icons/axolotl.png') -120px -24px" ></div></a></td><td class="ccol_2"><a href="../components/axolotl/levelset.html">Levelset</a><br><span class="desc">Levelset</span></td></tr>
-<tr><td class="ccol_1"><a href="../components/axolotl/overlay.html"><div class="ghsprite" style="background: url('../icons/axolotl.png') -72px -48px" ></div></a></td><td class="ccol_2"><a href="../components/axolotl/overlay.html">Overlay</a><br><span class="desc">Overlay</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/axolotl/isosurfaceDistancefield.html"><div class="ghsprite" style="background: url('../icons/axolotl.png') -48px -24px" ></div></a></td><td class="ccol_2"><a href="../components/axolotl/isosurfaceDistancefield.html">Isosurface Distancefield</a><br><span class="desc">Isosurface Distancefield</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/axolotl/isosurfaceDistancefunction.html"><div class="ghsprite" style="background: url('../icons/axolotl.png') -72px -24px" ></div></a></td><td class="ccol_2"><a href="../components/axolotl/isosurfaceDistancefunction.html">Isosurface Distancefunction</a><br><span class="desc">Isosurface Distancefunction</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/axolotl/denseGrid.html"><div class="ghsprite" style="background: url('../icons/axolotl.png') -192px -72px" ></div></a></td><td class="ccol_2"><a href="../components/axolotl/denseGrid.html">Dense Grid</a><br><span class="desc">Dense Grid</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/axolotl/isosurfaceOctree.html"><div class="ghsprite" style="background: url('../icons/axolotl.png') -24px -96px" ></div></a></td><td class="ccol_2"><a href="../components/axolotl/isosurfaceOctree.html">Isosurface Octree</a><br><span class="desc">Isosurface Octree</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/axolotl/slice2D.html"><div class="ghsprite" style="background: url('../icons/axolotl.png') -96px -96px" ></div></a></td><td class="ccol_2"><a href="../components/axolotl/slice2D.html">Slice2D</a><br><span class="desc">Slice2D</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/axolotl/voxelSize.html"><div class="ghsprite" style="background: url('../icons/axolotl.png') -168px -96px" ></div></a></td><td class="ccol_2"><a href="../components/axolotl/voxelSize.html">Voxel Size</a><br><span class="desc">Voxel Size</span></td></tr>
 </tbody>
 </table>
 
@@ -333,29 +411,11 @@ Primitives
 
 </div>
 <div class="cchild">
-<h3>Meshing</h3>
-<table class="addon-compos">
-<tbody>
-<tr><td class="ccol_1"><a href="../components/axolotl/isosurfaceDistancefield.html"><div class="ghsprite" style="background: url('../icons/axolotl.png') -48px -24px" ></div></a></td><td class="ccol_2"><a href="../components/axolotl/isosurfaceDistancefield.html">Isosurface Distancefield</a><br><span class="desc">Isosurface Distancefield</span></td></tr>
-<tr><td class="ccol_1"><a href="../components/axolotl/isosurfaceDistancefunction.html"><div class="ghsprite" style="background: url('../icons/axolotl.png') -72px -24px" ></div></a></td><td class="ccol_2"><a href="../components/axolotl/isosurfaceDistancefunction.html">Isosurface Distancefunction</a><br><span class="desc">Isosurface Distancefunction</span></td></tr>
-</tbody>
-</table>
-
-</div>
-<div class="cchild">
-<h3>Primitives</h3>
-<table class="addon-compos">
-<tbody>
-<tr><td class="ccol_1"><a href="../components/axolotl/ellipse2D.html"><div class="ghsprite" style="background: url('../icons/axolotl.png') 0px -24px" ></div></a></td><td class="ccol_2"><a href="../components/axolotl/ellipse2D.html">Ellipse 2D</a><br><span class="desc">Ellipse 2D</span></td></tr>
-</tbody>
-</table>
-
-</div>
-<div class="cchild">
 <h3>Analysis</h3>
 <table class="addon-compos">
 <tbody>
 <tr><td class="ccol_1"><a href="../components/axolotl/evaluatePoints.html"><div class="ghsprite" style="background: url('../icons/axolotl.png') -24px -24px" ></div></a></td><td class="ccol_2"><a href="../components/axolotl/evaluatePoints.html">EvaluatePoints</a><br><span class="desc">EvaluatePoints description</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/axolotl/gradientVector.html"><div class="ghsprite" style="background: url('../icons/axolotl.png') 0px -96px" ></div></a></td><td class="ccol_2"><a href="../components/axolotl/gradientVector.html">Gradient Vector</a><br><span class="desc">Gradient Vector</span></td></tr>
 </tbody>
 </table>
 

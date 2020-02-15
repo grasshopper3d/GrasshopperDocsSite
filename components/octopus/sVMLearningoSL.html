@@ -91,11 +91,17 @@
 <td>
 <div class="ghcolumn">
 <a href="../../components/octopus/showNetworkoEL.html"><div class="ghsprite" style="background: url('../../icons/octopus.png') -120px -72px" data-toptip="Show Network (oEL)"></div></a>
+<a href="../../components/octopus/constructNetworkoEL.html"><div class="ghsprite" style="background: url('../../icons/octopus.png') -216px -72px" data-downtip="Construct Network (oEL)"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/octopus/constructNetworkByGeometryoctEvoLearn.html"><div class="ghsprite" style="background: url('../../icons/octopus.png') 0px -96px" data-toptip="Construct Network by Geometry (octEvoLearn)"></div></a>
 </div>
 </td>
 </tr>
 <tr class="ghgroup-title-row">
-<td class="ghgroup-title" colspan="7">
+<td class="ghgroup-title" colspan="8">
 Evolutionary Learning
 </td>
 </tr>
@@ -140,9 +146,14 @@ Evolutionary Learning
 <a href="../../components/octopus/tournamentSelection.html"><div class="ghsprite" style="background: url('../../icons/octopus.png') -144px -24px" data-downtip="Tournament Selection"></div></a>
 </div>
 </td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/octopus/remapObjectives.html"><div class="ghsprite" style="background: url('../../icons/octopus.png') -192px -72px" data-toptip="Remap Objectives"></div></a>
+</div>
+</td>
 </tr>
 <tr class="ghgroup-title-row">
-<td class="ghgroup-title" colspan="6">
+<td class="ghgroup-title" colspan="7">
 Explicit Components
 </td>
 </tr>
@@ -293,6 +304,13 @@ View
 <tr><td><b>Type</b></td><td>Type</td><td>Type of SVM: 0=EPSILON-Regression 1=NU-Regression</td><td>Integer</td></tr>
 <tr><td><b>ParamEstimate</b></td><td>ParEst</td><td>Perform Parameter Estimation using Grid Search, Cross Validation and Parallel Computation - ATTENTION CAN TAKE A LOT OF TIME</td><td>Boolean</td></tr>
 <tr><td><b>TimeLim</b></td><td>TimeLim</td><td>Approximate Time Limit for Parameter Estimation in milliseconds, 0 for no limit</td><td>Number</td></tr>
+<tr><td><b>Input</b></td><td>Input</td><td>Training Sample Vectors, as list of list of numbers</td><td>Number</td></tr>
+<tr><td><b>Output</b></td><td>Output</td><td>Training Objective Values</td><td>Number</td></tr>
+<tr><td><b>C</b></td><td>C</td><td>C Parameter, can be estimated by setting PE input</td><td>Number</td></tr>
+<tr><td><b>G</b></td><td>G</td><td>Gamma Parameter, can be estimated by setting PE input</td><td>Number</td></tr>
+<tr><td><b>Type</b></td><td>Type</td><td>Type of SVM: 0=EPSILON-Regression 1=NU-Regression</td><td>Integer</td></tr>
+<tr><td><b>ParamEstimate</b></td><td>ParEst</td><td>Perform Parameter Estimation using Grid Search, Cross Validation and Parallel Computation - ATTENTION CAN TAKE A LOT OF TIME</td><td>Boolean</td></tr>
+<tr><td><b>TimeLim</b></td><td>TimeLim</td><td>Approximate Time Limit for Parameter Estimation in milliseconds, 0 for no limit</td><td>Number</td></tr>
 </tbody>
 </table>
 
@@ -303,6 +321,9 @@ View
 </thead>
 <tbody>
 <tr><td><b>SVM</b></td><td>SVM</td><td>Trained Support Vector Machine</td><td>SVM</td></tr>
+<tr><td><b>C</b></td><td>C</td><td>Used C Parameter</td><td>Number</td></tr>
+<tr><td><b>G</b></td><td>G</td><td>Used G Parameter</td><td>Number</td></tr>
+<tr><td><b>SVM</b></td><td>SVM</td><td>Trained Support Vector Machine</td><td>Any</td></tr>
 <tr><td><b>C</b></td><td>C</td><td>Used C Parameter</td><td>Number</td></tr>
 <tr><td><b>G</b></td><td>G</td><td>Used G Parameter</td><td>Number</td></tr>
 </tbody>

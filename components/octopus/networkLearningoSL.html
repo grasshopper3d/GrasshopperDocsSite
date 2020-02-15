@@ -91,11 +91,17 @@
 <td>
 <div class="ghcolumn">
 <a href="../../components/octopus/showNetworkoEL.html"><div class="ghsprite" style="background: url('../../icons/octopus.png') -120px -72px" data-toptip="Show Network (oEL)"></div></a>
+<a href="../../components/octopus/constructNetworkoEL.html"><div class="ghsprite" style="background: url('../../icons/octopus.png') -216px -72px" data-downtip="Construct Network (oEL)"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/octopus/constructNetworkByGeometryoctEvoLearn.html"><div class="ghsprite" style="background: url('../../icons/octopus.png') 0px -96px" data-toptip="Construct Network by Geometry (octEvoLearn)"></div></a>
 </div>
 </td>
 </tr>
 <tr class="ghgroup-title-row">
-<td class="ghgroup-title" colspan="7">
+<td class="ghgroup-title" colspan="8">
 Evolutionary Learning
 </td>
 </tr>
@@ -140,9 +146,14 @@ Evolutionary Learning
 <a href="../../components/octopus/tournamentSelection.html"><div class="ghsprite" style="background: url('../../icons/octopus.png') -144px -24px" data-downtip="Tournament Selection"></div></a>
 </div>
 </td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/octopus/remapObjectives.html"><div class="ghsprite" style="background: url('../../icons/octopus.png') -192px -72px" data-toptip="Remap Objectives"></div></a>
+</div>
+</td>
 </tr>
 <tr class="ghgroup-title-row">
-<td class="ghgroup-title" colspan="6">
+<td class="ghgroup-title" colspan="7">
 Explicit Components
 </td>
 </tr>
@@ -294,6 +305,14 @@ View
 <tr><td><b>SeedNet</b></td><td>SeedNet</td><td>Seed Network to continue training on it; a seed model overrides the internal model which is saved between updates of the component if 'reset' is false.</td><td>Network oSL</td></tr>
 <tr><td><b>On</b></td><td>On</td><td>Switch Off to not calculate anything.</td><td>Boolean</td></tr>
 <tr><td><b>Settings</b></td><td>Settings</td><td>Settings for the Learning process</td><td>RPROP Learning Settings</td></tr>
+<tr><td><b>Input</b></td><td>Input</td><td>Input Values [x lists (x = number of training samples) of y numbers (y = dimensionality of sample input); Input and Output can be one or many dimensional, and the number of dimensions can be different]</td><td>Number</td></tr>
+<tr><td><b>Output</b></td><td>Output</td><td>Output Values [x lists (x = number of training samples) of z numbers (z = dimensionality of sample output); Input and Output can be one or many dimensional, and the number of dimensions can be different]</td><td>Number</td></tr>
+<tr><td><b>Layers</b></td><td>Layers</td><td>Hidden Layer Count</td><td>Integer</td></tr>
+<tr><td><b>Nodes</b></td><td>Nodes</td><td>Node Count per Hidden Layer, 0 = Maximum of Input and Output Dimensionality</td><td>Integer</td></tr>
+<tr><td><b>Seed</b></td><td>Seed</td><td>Random Seed</td><td>Integer</td></tr>
+<tr><td><b>SeedNet</b></td><td>SeedNet</td><td>Seed Network to continue training on it; a seed model overrides the internal model which is saved between updates of the component if 'reset' is false.</td><td>Any</td></tr>
+<tr><td><b>On</b></td><td>On</td><td>Switch Off to not calculate anything.</td><td>Boolean</td></tr>
+<tr><td><b>Settings</b></td><td>Settings</td><td>Settings for the Learning process</td><td>Any</td></tr>
 </tbody>
 </table>
 
@@ -306,6 +325,11 @@ View
 <tr><td><b>Network</b></td><td>Network</td><td>Trained Network</td><td>Network oSL</td></tr>
 <tr><td><b>Err</b></td><td>Err</td><td>Error rates during the history of Learning Steps</td><td>Number</td></tr>
 <tr><td><b>Hist</b></td><td>Hist</td><td>History of Networks during Learning</td><td>Network oSL</td></tr>
+<tr><td><b>Iter</b></td><td>Iter</td><td>Iteration Count</td><td>Integer</td></tr>
+<tr><td><b>Time</b></td><td>Time</td><td>Total time spent on learning in milliseconds</td><td>Number</td></tr>
+<tr><td><b>Network</b></td><td>Network</td><td>Trained Network</td><td>Any</td></tr>
+<tr><td><b>Err</b></td><td>Err</td><td>Error rates during the history of Learning Steps</td><td>Number</td></tr>
+<tr><td><b>Hist</b></td><td>Hist</td><td>History of Networks during Learning</td><td>Any</td></tr>
 <tr><td><b>Iter</b></td><td>Iter</td><td>Iteration Count</td><td>Integer</td></tr>
 <tr><td><b>Time</b></td><td>Time</td><td>Total time spent on learning in milliseconds</td><td>Number</td></tr>
 </tbody>

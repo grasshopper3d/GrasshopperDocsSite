@@ -55,6 +55,7 @@
 <td>
 <div class="ghcolumn">
 <a href="../../components/axolotl/evaluatePoints.html"><div class="ghsprite" style="background: url('../../icons/axolotl.png') -24px -24px" data-toptip="EvaluatePoints"></div></a>
+<a href="../../components/axolotl/gradientVector.html"><div class="ghsprite" style="background: url('../../icons/axolotl.png') 0px -96px" data-downtip="Gradient Vector"></div></a>
 </div>
 </td>
 </tr>
@@ -189,9 +190,21 @@ Math
 <a href="../../components/axolotl/isosurfaceDistancefunction.html"><div class="ghsprite" style="background: url('../../icons/axolotl.png') -72px -24px" data-downtip="Isosurface Distancefunction"></div></a>
 </div>
 </td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/axolotl/denseGrid.html"><div class="ghsprite" style="background: url('../../icons/axolotl.png') -192px -72px" data-toptip="Dense Grid"></div></a>
+<a href="../../components/axolotl/isosurfaceOctree.html"><div class="ghsprite" style="background: url('../../icons/axolotl.png') -24px -96px" data-downtip="Isosurface Octree"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/axolotl/slice2D.html"><div class="ghsprite" style="background: url('../../icons/axolotl.png') -96px -96px" data-toptip="Slice2D"></div></a>
+<a href="../../components/axolotl/voxelSize.html"><div class="ghsprite" style="background: url('../../icons/axolotl.png') -168px -96px" data-downtip="Voxel Size"></div></a>
+</div>
+</td>
 </tr>
 <tr class="ghgroup-title-row">
-<td class="ghgroup-title" colspan="1">
+<td class="ghgroup-title" colspan="3">
 Meshing
 </td>
 </tr>
@@ -215,11 +228,23 @@ Meshing
 <td>
 <div class="ghcolumn">
 <a href="../../components/axolotl/overlay.html"><div class="ghsprite" style="background: url('../../icons/axolotl.png') -72px -48px" data-toptip="Overlay"></div></a>
+<a href="../../components/axolotl/array.html"><div class="ghsprite" style="background: url('../../icons/axolotl.png') -48px -72px" data-downtip="Array"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/axolotl/transform.html"><div class="ghsprite" style="background: url('../../icons/axolotl.png') -144px -72px" data-toptip="Transform"></div></a>
+<a href="../../components/axolotl/polarArray.html"><div class="ghsprite" style="background: url('../../icons/axolotl.png') -72px -96px" data-downtip="Polar Array"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/axolotl/twist.html"><div class="ghsprite" style="background: url('../../icons/axolotl.png') -144px -96px" data-toptip="Twist"></div></a>
 </div>
 </td>
 </tr>
 <tr class="ghgroup-title-row">
-<td class="ghgroup-title" colspan="3">
+<td class="ghgroup-title" colspan="5">
 Modifications
 </td>
 </tr>
@@ -231,11 +256,30 @@ Modifications
 <td>
 <div class="ghcolumn">
 <a href="../../components/axolotl/ellipse2D.html"><div class="ghsprite" style="background: url('../../icons/axolotl.png') 0px -24px" data-toptip="Ellipse 2D"></div></a>
+<a href="../../components/axolotl/box.html"><div class="ghsprite" style="background: url('../../icons/axolotl.png') -72px -72px" data-downtip="Box"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/axolotl/capsule.html"><div class="ghsprite" style="background: url('../../icons/axolotl.png') -96px -72px" data-toptip="Capsule"></div></a>
+<a href="../../components/axolotl/ellipsoid.html"><div class="ghsprite" style="background: url('../../icons/axolotl.png') -120px -72px" data-downtip="Ellipsoid"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/axolotl/cylinder.html"><div class="ghsprite" style="background: url('../../icons/axolotl.png') -168px -72px" data-toptip="Cylinder"></div></a>
+<a href="../../components/axolotl/sphere.html"><div class="ghsprite" style="background: url('../../icons/axolotl.png') -216px -72px" data-downtip="Sphere"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/axolotl/plane.html"><div class="ghsprite" style="background: url('../../icons/axolotl.png') -48px -96px" data-toptip="Plane"></div></a>
+<a href="../../components/axolotl/torus.html"><div class="ghsprite" style="background: url('../../icons/axolotl.png') -120px -96px" data-downtip="Torus"></div></a>
 </div>
 </td>
 </tr>
 <tr class="ghgroup-title-row">
-<td class="ghgroup-title" colspan="1">
+<td class="ghgroup-title" colspan="4">
 Primitives
 </td>
 </tr>
@@ -266,6 +310,8 @@ Primitives
 <tbody>
 <tr><td><b>Distance Objects</b></td><td>D</td><td>List of Distance Objects</td><td>Generic Data</td></tr>
 <tr><td><b>Offset</b></td><td>O</td><td>Offset from centers.</td><td>Number</td></tr>
+<tr><td><b>Distance Objects</b></td><td>D</td><td>List of Distance Objects</td><td>Generic</td></tr>
+<tr><td><b>Offset</b></td><td>O</td><td>Offset from centers.</td><td>Number</td></tr>
 </tbody>
 </table>
 
@@ -276,6 +322,7 @@ Primitives
 </thead>
 <tbody>
 <tr><td><b>Distance Object</b></td><td>D</td><td>Distance Object</td><td>Generic Data</td></tr>
+<tr><td><b>Distance Object</b></td><td>D</td><td>Distance Object</td><td>Generic</td></tr>
 </tbody>
 </table>
 

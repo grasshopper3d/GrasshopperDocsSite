@@ -91,11 +91,17 @@
 <td>
 <div class="ghcolumn">
 <a href="../../components/octopus/showNetworkoEL.html"><div class="ghsprite" style="background: url('../../icons/octopus.png') -120px -72px" data-toptip="Show Network (oEL)"></div></a>
+<a href="../../components/octopus/constructNetworkoEL.html"><div class="ghsprite" style="background: url('../../icons/octopus.png') -216px -72px" data-downtip="Construct Network (oEL)"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/octopus/constructNetworkByGeometryoctEvoLearn.html"><div class="ghsprite" style="background: url('../../icons/octopus.png') 0px -96px" data-toptip="Construct Network by Geometry (octEvoLearn)"></div></a>
 </div>
 </td>
 </tr>
 <tr class="ghgroup-title-row">
-<td class="ghgroup-title" colspan="7">
+<td class="ghgroup-title" colspan="8">
 Evolutionary Learning
 </td>
 </tr>
@@ -140,9 +146,14 @@ Evolutionary Learning
 <a href="../../components/octopus/tournamentSelection.html"><div class="ghsprite" style="background: url('../../icons/octopus.png') -144px -24px" data-downtip="Tournament Selection"></div></a>
 </div>
 </td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/octopus/remapObjectives.html"><div class="ghsprite" style="background: url('../../icons/octopus.png') -192px -72px" data-toptip="Remap Objectives"></div></a>
+</div>
+</td>
 </tr>
 <tr class="ghgroup-title-row">
-<td class="ghgroup-title" colspan="6">
+<td class="ghgroup-title" colspan="7">
 Explicit Components
 </td>
 </tr>
@@ -290,6 +301,9 @@ View
 <tr><td><b>Trigger</b></td><td>T</td><td>If you want trigger loop to restart; compares the data to the last trigger input, so do not feed in excessive amounts of data since the code-reflection needed takes some time.</td><td>Generic Data</td></tr>
 <tr><td><b>History Record</b></td><td>R</td><td>True if the history should be given out, false if just the result of the last iteration should be given. Toggling does not cause a recomputation.</td><td>Boolean</td></tr>
 <tr><td><b>D0</b></td><td>D0</td><td>Contains a collection of generic data</td><td>Generic Data</td></tr>
+<tr><td><b>Repeat</b></td><td>N</td><td>Number of repeats; does only calculate increments from the last run. Use the trigger input to refresh everything.</td><td>Integer</td></tr>
+<tr><td><b>Trigger</b></td><td>T</td><td>If you want trigger loop to restart; compares the data to the last trigger input, so do not feed in excessive amounts of data since the code-reflection needed takes some time.</td><td>Generic</td></tr>
+<tr><td><b>History Record</b></td><td>R</td><td>True if the history should be given out, false if just the result of the last iteration should be given. Toggling does not cause a recomputation.</td><td>Boolean</td></tr>
 </tbody>
 </table>
 
@@ -301,6 +315,7 @@ View
 <tbody>
 <tr><td><b>Timer</b></td><td>T</td><td>Execution time per iteration (in ms)</td><td>Integer</td></tr>
 <tr><td><b>D0</b></td><td>D0</td><td>Contains a collection of generic data</td><td>Generic Data</td></tr>
+<tr><td><b>Timer</b></td><td>T</td><td>Execution time per iteration (in ms)</td><td>Integer</td></tr>
 </tbody>
 </table>
 

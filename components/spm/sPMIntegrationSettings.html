@@ -184,6 +184,13 @@ Utilities
 <tr><td><b>Fast Integration</b></td><td>Fast</td><td>Use a faster and less accurate integration method (Velocity-Verlet) instead of the default (Runge-Kutta)</td><td>Boolean</td></tr>
 <tr><td><b>Drag Factor</b></td><td>Drag</td><td>Drag factor of the integration</td><td>Number</td></tr>
 <tr><td><b>Acceleration</b></td><td>Accel</td><td>Integration will contain a componenet of acceleration (the vectors will represent forces)</td><td>Boolean</td></tr>
+<tr><td><b>Tolerance</b></td><td>Tol</td><td>Distance from field where integration will be in effect. 0 will ignore the field entirely</td><td>Double</td></tr>
+<tr><td><b>Interpolation Radius</b></td><td>IntrpR</td><td>Radius to use in vector interpolation method. 0 to use closest vector only</td><td>Double</td></tr>
+<tr><td><b>Winding Stop Angle</b></td><td>StopA</td><td>The winding angle is used to stop the integration if it winds around the set angle (radians). Used to stop the integration at singularities or orbits</td><td>Double</td></tr>
+<tr><td><b>Line Continuity</b></td><td>LCont</td><td>Force lines to follow a straighter path if one is available</td><td>Boolean</td></tr>
+<tr><td><b>Fast Integration</b></td><td>Fast</td><td>Use a faster and less accurate integration method (Velocity-Verlet) instead of the default (Runge-Kutta)</td><td>Boolean</td></tr>
+<tr><td><b>Drag Factor</b></td><td>Drag</td><td>Drag factor of the integration</td><td>Double</td></tr>
+<tr><td><b>Acceleration</b></td><td>Accel</td><td>Integration will contain a componenet of acceleration (the vectors will represent forces)</td><td>Boolean</td></tr>
 </tbody>
 </table>
 
@@ -194,6 +201,7 @@ Utilities
 </thead>
 <tbody>
 <tr><td><b>Settings Output</b></td><td>S</td><td>Settings output to wire to a SPM vector field integration component</td><td>Generic Data</td></tr>
+<tr><td><b>Settings Output</b></td><td>S</td><td>Settings output to wire to a SPM vector field integration component</td><td>Generic</td></tr>
 </tbody>
 </table>
 

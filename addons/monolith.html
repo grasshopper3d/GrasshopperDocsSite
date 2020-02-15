@@ -56,7 +56,7 @@
 
 <div class="addon-header">
 <h1>Monolith</h1>
-<h5>ADDON, Version <b>0.3.6415.29557</b>, Released on <b>2017-Jul-26</b>, Provides <b>39</b> components, Created by <b>Andy Payne</b></h5>
+<h5>ADDON, Version <b>0.3.6415.29557</b>, Released on <b>2017-Jul-26</b>, Provides <b>41</b> components, Created by <b>Andy Payne</b></h5>
 <h5>Monolith is a voxel-based modeling editor. It is an ongoing research project focusing on the development of new digital representations and design workflows that inhabit the space between traditional computer aided design (CAD) and three dimensional voxel based image processing with the aim of allowing a very fine level of control over volumetric material distributions, especially in light of new multi-material 3D printing technologies.
 
 The Monolith plugin for Grasshopper offers a comprehensive suite of tools that give you the ability to quickly construct detailed voxel-based model and visualize them in unique ways using our custom OpenGL rendering pipeline. Check out the video below to see it in action.</h5>
@@ -105,6 +105,7 @@ The Monolith plugin for Grasshopper offers a comprehensive suite of tools that g
 <td>
 <div class="ghcolumn">
 <a href="../components/monolith/multiplySources.html"><div class="ghsprite" style="background: url('../icons/monolith.png') -72px -72px" data-toptip="Multiply Sources"></div></a>
+<a href="../components/monolith/constructBaseVoxels.html"><div class="ghsprite" style="background: url('../icons/monolith.png') 0px -96px" data-downtip="Construct Base Voxels"></div></a>
 </div>
 </td>
 </tr>
@@ -247,6 +248,7 @@ Stream
 <td>
 <div class="ghcolumn">
 <a href="../components/monolith/channelSwap.html"><div class="ghsprite" style="background: url('../icons/monolith.png') -168px -72px" data-toptip="Channel Swap"></div></a>
+<a href="../components/monolith/channelRemap.html"><div class="ghsprite" style="background: url('../icons/monolith.png') -216px -72px" data-downtip="Channel Remap"></div></a>
 </div>
 </td>
 </tr>
@@ -291,6 +293,7 @@ Views
 <tr><td class="ccol_1"><a href="../components/monolith/bitmapBlend.html"><div class="ghsprite" style="background: url('../icons/monolith.png') -24px -72px" ></div></a></td><td class="ccol_2"><a href="../components/monolith/bitmapBlend.html">Bitmap Blend</a><br><span class="desc">Blend one or more bitmap sources together along orthographic axes.</span></td></tr>
 <tr><td class="ccol_1"><a href="../components/monolith/bitmapLoft.html"><div class="ghsprite" style="background: url('../icons/monolith.png') -48px -72px" ></div></a></td><td class="ccol_2"><a href="../components/monolith/bitmapLoft.html">Bitmap Loft</a><br><span class="desc">Loft two or more bitmap sources together along the Z-axis.</span></td></tr>
 <tr><td class="ccol_1"><a href="../components/monolith/multiplySources.html"><div class="ghsprite" style="background: url('../icons/monolith.png') -72px -72px" ></div></a></td><td class="ccol_2"><a href="../components/monolith/multiplySources.html">Multiply Sources</a> <span class="codeword">(Mult Sources)</span><br><span class="desc">Multiply sources to generate a density field for different voxel channels</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/monolith/constructBaseVoxels.html"><div class="ghsprite" style="background: url('../icons/monolith.png') 0px -96px" ></div></a></td><td class="ccol_2"><a href="../components/monolith/constructBaseVoxels.html">Construct Base Voxels</a> <span class="codeword">(Create Voxels)</span><br><span class="desc">Construct a generic voxel class based on bounding box, resolution, and channel designation.</span></td></tr>
 </tbody>
 </table>
 
@@ -313,21 +316,6 @@ Views
 
 </div>
 <div class="cchild">
-<h3>Outputs</h3>
-<table class="addon-compos">
-<tbody>
-<tr><td class="ccol_1"><a href="../components/monolith/colorMeshByRatio.html"><div class="ghsprite" style="background: url('../icons/monolith.png') -24px 0px" ></div></a></td><td class="ccol_2"><a href="../components/monolith/colorMeshByRatio.html">Color Mesh By Ratio</a> <span class="codeword">(Color Mesh)</span><br><span class="desc">Colorize a mesh based on the density values of a single channel.</span></td></tr>
-<tr><td class="ccol_1"><a href="../components/monolith/colorMeshByRGB.html"><div class="ghsprite" style="background: url('../icons/monolith.png') -48px 0px" ></div></a></td><td class="ccol_2"><a href="../components/monolith/colorMeshByRGB.html">Color Mesh By RGB</a> <span class="codeword">(Color Mesh)</span><br><span class="desc">Colorize a mesh based on the density values of the RGB channels.</span></td></tr>
-<tr><td class="ccol_1"><a href="../components/monolith/getChannelNames.html"><div class="ghsprite" style="background: url('../icons/monolith.png') -48px -48px" ></div></a></td><td class="ccol_2"><a href="../components/monolith/getChannelNames.html">Get Channel Names</a> <span class="codeword">(Get Channels)</span><br><span class="desc">Extract the channel names stored in a voxel field</span></td></tr>
-<tr><td class="ccol_1"><a href="../components/monolith/getIsoMesh.html"><div class="ghsprite" style="background: url('../icons/monolith.png') -96px -48px" ></div></a></td><td class="ccol_2"><a href="../components/monolith/getIsoMesh.html">Get Iso Mesh</a> <span class="codeword">(Iso Mesh)</span><br><span class="desc">Extracts a mesh contour of the density field channel</span></td></tr>
-<tr><td class="ccol_1"><a href="../components/monolith/getMeshSlices.html"><div class="ghsprite" style="background: url('../icons/monolith.png') -120px -48px" ></div></a></td><td class="ccol_2"><a href="../components/monolith/getMeshSlices.html">Get Mesh Slices</a> <span class="codeword">(Mesh Slices)</span><br><span class="desc">Get a series of nested slices using two voxel channels.</span></td></tr>
-<tr><td class="ccol_1"><a href="../components/monolith/getSlicePlane.html"><div class="ghsprite" style="background: url('../icons/monolith.png') -168px -48px" ></div></a></td><td class="ccol_2"><a href="../components/monolith/getSlicePlane.html">Get Slice Plane</a> <span class="codeword">(Slice Plane)</span><br><span class="desc">Extract a horizontal slice through a voxel field.</span></td></tr>
-<tr><td class="ccol_1"><a href="../components/monolith/getVoxelPoints.html"><div class="ghsprite" style="background: url('../icons/monolith.png') -192px -48px" ></div></a></td><td class="ccol_2"><a href="../components/monolith/getVoxelPoints.html">Get Voxel Points</a><br><span class="desc">Extract the location points of the voxels stored in a voxel field</span></td></tr>
-</tbody>
-</table>
-
-</div>
-<div class="cchild">
 <h3>Transform Channels</h3>
 <table class="addon-compos">
 <tbody>
@@ -338,6 +326,22 @@ Views
 <tr><td class="ccol_1"><a href="../components/monolith/channelHistogram.html"><div class="ghsprite" style="background: url('../icons/monolith.png') 0px -72px" ></div></a></td><td class="ccol_2"><a href="../components/monolith/channelHistogram.html">Channel Histogram</a> <span class="codeword">(Histogram)</span><br><span class="desc">Compute a histogram for the values in a voxel channel.</span></td></tr>
 <tr><td class="ccol_1"><a href="../components/monolith/setVoxelValues.html"><div class="ghsprite" style="background: url('../icons/monolith.png') -120px -72px" ></div></a></td><td class="ccol_2"><a href="../components/monolith/setVoxelValues.html">Set Voxel Values</a> <span class="codeword">(Set Values)</span><br><span class="desc">Set the values of the voxels in a field</span></td></tr>
 <tr><td class="ccol_1"><a href="../components/monolith/channelSwap.html"><div class="ghsprite" style="background: url('../icons/monolith.png') -168px -72px" ></div></a></td><td class="ccol_2"><a href="../components/monolith/channelSwap.html">Channel Swap</a><br><span class="desc">Swap one voxel channel with another.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/monolith/channelRemap.html"><div class="ghsprite" style="background: url('../icons/monolith.png') -216px -72px" ></div></a></td><td class="ccol_2"><a href="../components/monolith/channelRemap.html">Channel Remap</a> <span class="codeword">(Remap Channel)</span><br><span class="desc">Remap the voxel channel values to a new numeric domain</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>Outputs</h3>
+<table class="addon-compos">
+<tbody>
+<tr><td class="ccol_1"><a href="../components/monolith/colorMeshByRatio.html"><div class="ghsprite" style="background: url('../icons/monolith.png') -24px 0px" ></div></a></td><td class="ccol_2"><a href="../components/monolith/colorMeshByRatio.html">Color Mesh By Ratio</a> <span class="codeword">(Color Mesh)</span><br><span class="desc">Colorize a mesh based on the density values of a single channel.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/monolith/colorMeshByRGB.html"><div class="ghsprite" style="background: url('../icons/monolith.png') -48px 0px" ></div></a></td><td class="ccol_2"><a href="../components/monolith/colorMeshByRGB.html">Color Mesh By RGB</a> <span class="codeword">(Color Mesh)</span><br><span class="desc">Colorize a mesh based on the density values of the RGB channels.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/monolith/getChannelNames.html"><div class="ghsprite" style="background: url('../icons/monolith.png') -48px -48px" ></div></a></td><td class="ccol_2"><a href="../components/monolith/getChannelNames.html">Get Channel Names</a> <span class="codeword">(Get Channels)</span><br><span class="desc">Extract the channel names stored in a voxel field</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/monolith/getIsoMesh.html"><div class="ghsprite" style="background: url('../icons/monolith.png') -96px -48px" ></div></a></td><td class="ccol_2"><a href="../components/monolith/getIsoMesh.html">Get Iso Mesh</a> <span class="codeword">(Iso Mesh)</span><br><span class="desc">Extracts a mesh contour of the density field channel</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/monolith/getMeshSlices.html"><div class="ghsprite" style="background: url('../icons/monolith.png') -120px -48px" ></div></a></td><td class="ccol_2"><a href="../components/monolith/getMeshSlices.html">Get Mesh Slices</a> <span class="codeword">(Mesh Slices)</span><br><span class="desc">Get a series of nested slices using two voxel channels.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/monolith/getSlicePlane.html"><div class="ghsprite" style="background: url('../icons/monolith.png') -168px -48px" ></div></a></td><td class="ccol_2"><a href="../components/monolith/getSlicePlane.html">Get Slice Plane</a> <span class="codeword">(Slice Plane)</span><br><span class="desc">Extract a horizontal slice through a voxel field.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/monolith/getVoxelPoints.html"><div class="ghsprite" style="background: url('../icons/monolith.png') -192px -48px" ></div></a></td><td class="ccol_2"><a href="../components/monolith/getVoxelPoints.html">Get Voxel Points</a><br><span class="desc">Extract the location points of the voxels stored in a voxel field</span></td></tr>
 </tbody>
 </table>
 

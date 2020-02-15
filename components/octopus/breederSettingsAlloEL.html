@@ -91,11 +91,17 @@
 <td>
 <div class="ghcolumn">
 <a href="../../components/octopus/showNetworkoEL.html"><div class="ghsprite" style="background: url('../../icons/octopus.png') -120px -72px" data-toptip="Show Network (oEL)"></div></a>
+<a href="../../components/octopus/constructNetworkoEL.html"><div class="ghsprite" style="background: url('../../icons/octopus.png') -216px -72px" data-downtip="Construct Network (oEL)"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/octopus/constructNetworkByGeometryoctEvoLearn.html"><div class="ghsprite" style="background: url('../../icons/octopus.png') 0px -96px" data-toptip="Construct Network by Geometry (octEvoLearn)"></div></a>
 </div>
 </td>
 </tr>
 <tr class="ghgroup-title-row">
-<td class="ghgroup-title" colspan="7">
+<td class="ghgroup-title" colspan="8">
 Evolutionary Learning
 </td>
 </tr>
@@ -140,9 +146,14 @@ Evolutionary Learning
 <a href="../../components/octopus/tournamentSelection.html"><div class="ghsprite" style="background: url('../../icons/octopus.png') -144px -24px" data-downtip="Tournament Selection"></div></a>
 </div>
 </td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/octopus/remapObjectives.html"><div class="ghsprite" style="background: url('../../icons/octopus.png') -192px -72px" data-toptip="Remap Objectives"></div></a>
+</div>
+</td>
 </tr>
 <tr class="ghgroup-title-row">
-<td class="ghgroup-title" colspan="6">
+<td class="ghgroup-title" colspan="7">
 Explicit Components
 </td>
 </tr>
@@ -305,6 +316,31 @@ View
 4: quantity [how many connections should be mutated], 
 5: perturbation amount [how much will be added/subtracted to/from the connection weight], 
 6: sigma [Standard deviation to randomly sample, sample being added/subtracted to connection weight]</td><td>Number</td></tr>
+<tr><td><b>compatibilityThreshold</b></td><td>compatibilityThreshold</td><td>compatibilityThreshold</td><td>Number</td></tr>
+<tr><td><b>compatibilityDisjointCoeff</b></td><td>compatibilityDisjointCoeff</td><td>compatibilityDisjointCoeff</td><td>Number</td></tr>
+<tr><td><b>compatibilityExcessCoeff</b></td><td>compatibilityExcessCoeff</td><td>compatibilityExcessCoeff</td><td>Number</td></tr>
+<tr><td><b>compatibilityWeightDeltaCoeff</b></td><td>compatibilityWeightDeltaCoeff</td><td>compatibilityWeightDeltaCoeff</td><td>Number</td></tr>
+<tr><td><b>elitismProportion</b></td><td>elitismProportion</td><td>elitismProportion</td><td>Number</td></tr>
+<tr><td><b>selectionProportion</b></td><td>selectionProportion</td><td>selectionProportion</td><td>Number</td></tr>
+<tr><td><b>targetSpeciesCountMinPercent</b></td><td>targetSpeciesCountMinPercent</td><td>targetSpeciesCountMin in Percent of population size</td><td>Number</td></tr>
+<tr><td><b>pruningPhaseBeginComplexityThreshold</b></td><td>pruningPhaseBeginComplexityThreshold</td><td>pruningPhaseBeginComplexityThreshold</td><td>Number</td></tr>
+<tr><td><b>pruningPhaseBeginFitnessStagnationThreshold</b></td><td>pruningPhaseBeginFitnessStagnationThreshold</td><td>pruningPhaseBeginFitnessStagnationThreshold</td><td>Integer</td></tr>
+<tr><td><b>pruningPhaseEndComplexityStagnationThreshold</b></td><td>pruningPhaseEndComplexityStagnationThreshold</td><td>pruningPhaseEndComplexityStagnationThreshold</td><td>Integer</td></tr>
+<tr><td><b>speciesExtinctionAge</b></td><td>speciesExtinctionAge</td><td>speciesExtinctionAge</td><td>Integer</td></tr>
+<tr><td><b>enablePruning</b></td><td>enablePruning</td><td>enablePruning</td><td>Boolean</td></tr>
+<tr><td><b>Eval MutatedReTries</b></td><td>Eval MutatedReTries</td><td>During Breeding, if an evaluation is invalid, how often should evaluation be retried with a mutated version of the initial failed NeatGenome?</td><td>Integer</td></tr>
+<tr><td><b>connectionWeightRange</b></td><td>connectionWeightRange</td><td>connectionWeightRange</td><td>Number</td></tr>
+<tr><td><b>pOffspringAsexual</b></td><td>pOffspringAsexual</td><td>pOffspringAsexual</td><td>Number</td></tr>
+<tr><td><b>pOffspringSexual</b></td><td>pOffspringSexual</td><td>pOffspringSexual</td><td>Number</td></tr>
+<tr><td><b>pInterspeciesMating</b></td><td>pInterspeciesMating</td><td>pInterspeciesMating</td><td>Number</td></tr>
+<tr><td><b>PopInterCon</b></td><td>PopInterCon</td><td>pInitialPopulationInterconnections</td><td>Number</td></tr>
+<tr><td><b>pMutateConnectionWeights</b></td><td>pMutateConnectionWeights</td><td>pMutateConnectionWeights</td><td>Number</td></tr>
+<tr><td><b>pMutateAddNode</b></td><td>pMutateAddNode</td><td>pMutateAddNode</td><td>Number</td></tr>
+<tr><td><b>pMutateAddModule</b></td><td>pMutateAddModule</td><td>pMutateAddModule</td><td>Number</td></tr>
+<tr><td><b>pMutateAddConnection</b></td><td>pMutateAddConnection</td><td>pMutateAddConnection</td><td>Number</td></tr>
+<tr><td><b>pMutateDeleteConnection</b></td><td>pMutateDeleteConnection</td><td>pMutateDeleteConnection</td><td>Number</td></tr>
+<tr><td><b>pMutateDeleteSimpleNeuron</b></td><td>pMutateDeleteSimpleNeuron</td><td>pMutateDeleteSimpleNeuron</td><td>Number</td></tr>
+<tr><td><b>connectionMutationParams</b></td><td>connectionMutationParams</td><td>Each branch holds parameters for a type of mutation; See the template file for a ready-made. \n0: activation proportion [probability of group, 0-1, fraction per total sum approach], \n1: perturbation type [0-JiggleEven, 1-JiggleNormalDistribution, 2-Reset], \n2: selection type [0-Proportional, 1-Fixed Quantity], \n3: proportion [% of connections to be mutated], \n4: quantity [how many connections should be mutated], \n5: perturbation amount [how much will be added/subtracted to/from the connection weight], \n6: sigma [Standard deviation to randomly sample, sample being added/subtracted to connection weight]</td><td>Number</td></tr>
 <tr><td><b>compatibilityThreshold</b></td><td>compatibilityThreshold</td><td>compatibilityThreshold</td><td>Number</td></tr>
 <tr><td><b>compatibilityDisjointCoeff</b></td><td>compatibilityDisjointCoeff</td><td>compatibilityDisjointCoeff</td><td>Number</td></tr>
 <tr><td><b>compatibilityExcessCoeff</b></td><td>compatibilityExcessCoeff</td><td>compatibilityExcessCoeff</td><td>Number</td></tr>

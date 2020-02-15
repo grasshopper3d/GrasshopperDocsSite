@@ -64,9 +64,14 @@
 <a href="../../components/nudibranch/walkers.html"><div class="ghsprite" style="background: url('../../icons/nudibranch.png') -120px -24px" data-downtip="Walkers"></div></a>
 </div>
 </td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nudibranch/slicer.html"><div class="ghsprite" style="background: url('../../icons/nudibranch.png') -192px -24px" data-toptip="Slicer"></div></a>
+</div>
+</td>
 </tr>
 <tr class="ghgroup-title-row">
-<td class="ghgroup-title" colspan="2">
+<td class="ghgroup-title" colspan="3">
 Animators
 </td>
 </tr>
@@ -96,6 +101,7 @@ Animators
 <td>
 <div class="ghcolumn">
 <a href="../../components/nudibranch/pointRavel.html"><div class="ghsprite" style="background: url('../../icons/nudibranch.png') -48px -24px" data-toptip="Point Ravel"></div></a>
+<a href="../../components/nudibranch/twirlAttractor.html"><div class="ghsprite" style="background: url('../../icons/nudibranch.png') -216px -24px" data-downtip="Twirl Attractor"></div></a>
 </div>
 </td>
 </tr>
@@ -134,6 +140,23 @@ Scramblers
 </tr>
 </table>
 </div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nudibranch/box3dGrid.html"><div class="ghsprite" style="background: url('../../icons/nudibranch.png') -144px -24px" data-toptip="Box3d Grid"></div></a>
+<a href="../../components/nudibranch/frameGrid.html"><div class="ghsprite" style="background: url('../../icons/nudibranch.png') -168px -24px" data-downtip="Frame Grid"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+Utilities
+</td>
+</tr>
+</table>
+</div>
 </div>
 
 
@@ -166,6 +189,15 @@ Scramblers
 <tr><td><b>Min/Max</b></td><td>Mi</td><td>Toggle between Minimum/Maximum values</td><td>Boolean</td></tr>
 <tr><td><b>Force</b></td><td>F</td><td>Global force for all the attractors</td><td>Number</td></tr>
 <tr><td><b>Iterations</b></td><td>It</td><td>Number of iterations</td><td>Integer</td></tr>
+<tr><td><b>Points</b></td><td>P</td><td>Point List to affect</td><td>Point</td></tr>
+<tr><td><b>Curves</b></td><td>C</td><td>Curve Attractors</td><td>Curve</td></tr>
+<tr><td><b>Range</b></td><td>R</td><td>Attractor's unique range (Leave one single value for global)</td><td>Number</td></tr>
+<tr><td><b>Distribution</b></td><td>D</td><td>Select a force distribution:(0=Linear,1=parabola,2=sine,3=noise,4=hyperbolic,5=square root,6=power^3) (Leave one single value for global)</td><td>Integer</td></tr>
+<tr><td><b>Attraction/Repulsion</b></td><td>Re</td><td>Toggle between attraction and repulsion (Leave one single value for global)</td><td>Boolean</td></tr>
+<tr><td><b>Asc/Desc</b></td><td>As</td><td>Toggle between Ascending/Descending values</td><td>Boolean</td></tr>
+<tr><td><b>Min/Max</b></td><td>Mi</td><td>Toggle between Minimum/Maximum values</td><td>Boolean</td></tr>
+<tr><td><b>Force</b></td><td>F</td><td>Global force for all the attractors</td><td>Number</td></tr>
+<tr><td><b>Iterations</b></td><td>It</td><td>Number of iterations</td><td>Integer</td></tr>
 </tbody>
 </table>
 
@@ -176,6 +208,9 @@ Scramblers
 </thead>
 <tbody>
 <tr><td><b>Length</b></td><td>L</td><td>The lenght of the vectors sum </td><td>Number</td></tr>
+<tr><td><b>NewPoints</b></td><td>P</td><td>The generated point list per iteration</td><td>Point</td></tr>
+<tr><td><b>NewVectors</b></td><td>V</td><td>The generated vector list per iteration</td><td>Vector</td></tr>
+<tr><td><b>Length</b></td><td>L</td><td>The lenght of the vectors sum</td><td>Number</td></tr>
 <tr><td><b>NewPoints</b></td><td>P</td><td>The generated point list per iteration</td><td>Point</td></tr>
 <tr><td><b>NewVectors</b></td><td>V</td><td>The generated vector list per iteration</td><td>Vector</td></tr>
 </tbody>

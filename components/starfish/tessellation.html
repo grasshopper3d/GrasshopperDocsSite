@@ -118,11 +118,18 @@
 <td>
 <div class="ghcolumn">
 <a href="../../components/starfish/sketch.html"><div class="ghsprite" style="background: url('../../icons/starfish.png') -48px -24px" data-toptip="Sketch"></div></a>
+<a href="../../components/starfish/dualPreview.html"><div class="ghsprite" style="background: url('../../icons/starfish.png') -96px -24px" data-downtip="Dual Preview"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/starfish/lineMidPt.html"><div class="ghsprite" style="background: url('../../icons/starfish.png') -120px -24px" data-toptip="Line Mid Pt"></div></a>
+<a href="../../components/starfish/offsetCurve.html"><div class="ghsprite" style="background: url('../../icons/starfish.png') -144px -24px" data-downtip="Offset Curve"></div></a>
 </div>
 </td>
 </tr>
 <tr class="ghgroup-title-row">
-<td class="ghgroup-title" colspan="3">
+<td class="ghgroup-title" colspan="4">
 2 | Util
 </td>
 </tr>
@@ -155,6 +162,10 @@
 <tr><td><b>Pattern angles</b></td><td>PA</td><td>Optional input of inner angles for each polygon. Each line should contain values for each vertex of a polygon, separated with a dot. Number of lines should be equal to the number of input shapes. If ommited, regular polygons will be generated.</td><td>Text</td></tr>
 <tr><td><b>Edge length</b></td><td>S</td><td>Length of polygons' edges. Default = 10</td><td>Number</td></tr>
 <tr><td><b>Iterations number</b></td><td>i</td><td>Number of code iterations. Default = 10</td><td>Integer</td></tr>
+<tr><td><b>Pattern definition</b></td><td>PT</td><td>Single line of numbers representing the number of edges for each polygon, separated with a dot. Default = '8.4'</td><td>Text</td></tr>
+<tr><td><b>Pattern angles</b></td><td>PA</td><td>Optional input of inner angles for each polygon. Each line should contain values for each vertex of a polygon, separated with a dot. Number of lines should be equal to the number of input shapes. If ommited, regular polygons will be generated.</td><td>Text</td></tr>
+<tr><td><b>Edge length</b></td><td>S</td><td>Length of polygons' edges. Default = 10</td><td>Number</td></tr>
+<tr><td><b>Iterations number</b></td><td>i</td><td>Number of code iterations. Default = 10</td><td>Integer</td></tr>
 </tbody>
 </table>
 
@@ -164,6 +175,10 @@
 <tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
 </thead>
 <tbody>
+<tr><td><b>Log</b></td><td>log</td><td>Component log</td><td>Text</td></tr>
+<tr><td><b>Starfish Curves</b></td><td>SC</td><td>List of resulting polylines</td><td>Curve</td></tr>
+<tr><td><b>Pattern</b></td><td>P</td><td>Indication of initial face tilt direction for each polygon. Used in Starfish_Generate_Solids component.</td><td>Integer</td></tr>
+<tr><td><b>Boundary curve</b></td><td>B</td><td>Outline curve of the pattern</td><td>Curve</td></tr>
 <tr><td><b>Log</b></td><td>log</td><td>Component log</td><td>Text</td></tr>
 <tr><td><b>Starfish Curves</b></td><td>SC</td><td>List of resulting polylines</td><td>Curve</td></tr>
 <tr><td><b>Pattern</b></td><td>P</td><td>Indication of initial face tilt direction for each polygon. Used in Starfish_Generate_Solids component.</td><td>Integer</td></tr>

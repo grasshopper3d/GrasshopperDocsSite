@@ -1,0 +1,509 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+<head data-layout-view="wide">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Vector Tracer - Firefly - Grasshopper Docs</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+
+<meta name="description" content="A guide to component Vector Tracer in Grasshopper 3D." />
+<meta name="title" content="Vector Tracer - Firefly - Grasshopper Docs" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://grasshopperdocs.com/" />
+<meta property="og:title" content="Vector Tracer - Firefly - Grasshopper Docs" />
+
+<meta property="wiki-page" content="GH Firefly Vector_Tracer.md" />
+
+<link rel="image_src" href="http://grasshopperdocs.com/ning/2985220.jpg" />
+
+<link href="../../style.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+
+<div id="docs" class="docs-theme docs-widget_page docs-widget_page_page docs-widget_page_page_show" data-layout-pack="classic">
+<div id="docs-head">
+<div id="docs-masthead">
+<p id="docs-sitename"><a id="application_name_header_link" href="http://grasshopperdocs.com/">Grasshopper Docs</a></p>
+<p id="docs-sitedesc" class="xj_site_desc">algorithmic modeling for Rhino</p>
+</div>
+<div id="docs-navigation">
+<ul>
+<li class="docs-subtab"><a href="http://www.grasshopper3d.com/"><span>Home</span></a></li>
+<li class="docs-subtab"><a href="http://www.grasshopper3d.com/photo"><span>View</span></a></li>
+<li class="docs-subtab"><a href="http://www.grasshopper3d.com/page/download-1"><span>Download</span></a></li>
+<li class="docs-subtab"><a href="https://discourse.mcneel.com/c/grasshopper"><span>Forums&#47;Support</span></a></li>
+<li class="docs-subtab this"><a href="http://grasshopperdocs.com/"><span>Learn</span></a></li>
+<li class="docs-subtab"><a href="http://www.grasshopper3d.com/events"><span>Attend</span></a></li>
+<li class="docs-subtab"><a href="http://www.grasshopper3d.com/profiles"><span>My Page</span></a></li></ul>
+
+</div>
+</div>
+
+<div id="docs-body">
+
+<div class="page">
+
+<div class="content">
+
+<div class="ghbar ">
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/firefly/dueRead.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -48px 0px" data-toptip="Due Read"></div></a>
+<a href="../../components/firefly/dueWrite.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -72px 0px" data-downtip="Due Write"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/firefly/megaRead.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -144px 0px" data-toptip="Mega Read"></div></a>
+<a href="../../components/firefly/megaWrite.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -168px 0px" data-downtip="Mega Write"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/firefly/openClosePort.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -192px 0px" data-toptip="Open/Close Port"></div></a>
+<a href="../../components/firefly/cOMPortsAvailable.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -24px -24px" data-downtip="COM Ports Available"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/firefly/serialReadGeneric.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -72px -24px" data-toptip="Serial Read (Generic)"></div></a>
+<a href="../../components/firefly/serialWriteGeneric.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -96px -24px" data-downtip="Serial Write (Generic)"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/firefly/unoRead.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -144px -24px" data-toptip="Uno Read"></div></a>
+<a href="../../components/firefly/unoWrite.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -168px -24px" data-downtip="Uno Write"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/firefly/wiiNunchuck.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -216px -24px" data-toptip="Wii Nunchuck"></div></a>
+<a href="../../components/firefly/uploadToIOBoard.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -48px -72px" data-downtip="Upload To I/O Board"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/firefly/codeGenerator.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -120px -96px" data-toptip="Code Generator"></div></a>
+<a href="../../components/firefly/convertDegreesToSteps.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -216px -96px" data-downtip="Convert Degrees To Steps"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/firefly/quadStepperMotorStream.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -48px -168px" data-toptip="Quad Stepper Motor Stream"></div></a>
+<a href="../../components/firefly/stepperAngleSetup.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -192px -168px" data-downtip="Stepper Angle Setup"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="8">
+Arduino & I/O Boards
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/firefly/soundCapture.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -72px -72px" data-toptip="Sound Capture"></div></a>
+<a href="../../components/firefly/frequencySpectrum.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -144px -144px" data-downtip="Frequency Spectrum"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/firefly/noteToFrequency.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -168px -144px" data-toptip="Note To Frequency"></div></a>
+<a href="../../components/firefly/toneGenerator.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -72px -192px" data-downtip="Tone Generator"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/firefly/waveformGenerator.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -168px -192px" data-toptip="Waveform Generator"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+Audio
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/firefly/jSONParser.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -216px -120px" data-toptip="JSON Parser"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+JSON
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/firefly/pachubeCosmRead.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -216px 0px" data-toptip="Pachube/Cosm Read"></div></a>
+<a href="../../components/firefly/keyValueSearch.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') 0px -144px" data-downtip="Key/Value Search"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/firefly/oSCListener.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -192px -144px" data-toptip="OSC Listener"></div></a>
+<a href="../../components/firefly/oSCSender.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -216px -144px" data-downtip="OSC Sender"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/firefly/uDPListener.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -96px -192px" data-toptip="UDP Listener"></div></a>
+<a href="../../components/firefly/uDPSender.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -120px -192px" data-downtip="UDP Sender"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/firefly/xMLSearch.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -192px -192px" data-toptip="XML Search"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="4">
+Networking
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/firefly/binaryBlink.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') 0px 0px" data-toptip="Binary Blink"></div></a>
+<a href="../../components/firefly/dataLog.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -24px 0px" data-downtip="Data Log"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/firefly/faderOneWay.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -96px 0px" data-toptip="Fader One Way"></div></a>
+<a href="../../components/firefly/faderTwoWay.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -120px 0px" data-downtip="Fader Two Way"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/firefly/playback.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') 0px -24px" data-toptip="Playback"></div></a>
+<a href="../../components/firefly/smoothingMovingAverage.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -120px -24px" data-downtip="Smoothing Moving Average"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/firefly/waveSculpt.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -192px -24px" data-toptip="Wave Sculpt"></div></a>
+<a href="../../components/firefly/buffer.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') 0px -48px" data-downtip="Buffer"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/firefly/constrain.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -24px -48px" data-toptip="Constrain"></div></a>
+<a href="../../components/firefly/aNDFlipFlop.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -24px -72px" data-downtip="AND Flip Flop"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/firefly/bang.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -96px -72px" data-toptip="Bang"></div></a>
+<a href="../../components/firefly/frameRate.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -72px -120px" data-downtip="Frame Rate"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/firefly/isGeometrySelected.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -168px -120px" data-toptip="Is Geometry Selected"></div></a>
+<a href="../../components/firefly/isKeyPressed.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -192px -120px" data-downtip="Is Key Pressed"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/firefly/nORFlipFlop.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -120px -144px" data-toptip="NOR Flip Flop"></div></a>
+<a href="../../components/firefly/pID.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') 0px -168px" data-downtip="PID"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/firefly/stateDetection.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -168px -168px" data-toptip="State Detection"></div></a>
+<a href="../../components/firefly/stopWatch.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -216px -168px" data-downtip="Stop Watch"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/firefly/smoothingTemporal.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') 0px -192px" data-toptip="Smoothing Temporal"></div></a>
+<a href="../../components/firefly/timeLine.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -48px -192px" data-downtip="Time Line"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/firefly/counter.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -24px -216px" data-toptip="Counter"></div></a>
+<a href="../../components/firefly/signalGenerator.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -192px -216px" data-downtip="Signal Generator"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="11">
+Utility
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/firefly/reacTIVisionListener.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -48px -24px" data-toptip="reacTIVision Listener"></div></a>
+<a href="../../components/firefly/kinectV1DepthToPoint.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -48px -48px" data-downtip="Kinect V1 Depth To Point"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/firefly/kinectV1SkeletalTracker.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -72px -48px" data-toptip="Kinect V1 Skeletal Tracker"></div></a>
+<a href="../../components/firefly/kinectV1ColorStream.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -96px -48px" data-downtip="Kinect V1 Color Stream"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/firefly/kinectV1DepthStream.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -120px -48px" data-toptip="Kinect V1 Depth Stream"></div></a>
+<a href="../../components/firefly/kinectV2SkeletonTracker.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -144px -48px" data-downtip="Kinect V2 Skeleton Tracker"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/firefly/kinectV2MeshReconstruction.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -168px -48px" data-toptip="Kinect V2 Mesh Reconstruction"></div></a>
+<a href="../../components/firefly/kinectV2VideoStream.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -192px -48px" data-downtip="Kinect V2 Video Stream"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/firefly/exposureAccumulative.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -216px -48px" data-toptip="Exposure (Accumulative)"></div></a>
+<a href="../../components/firefly/additiveTimeLapse.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') 0px -72px" data-downtip="Additive Time Lapse"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/firefly/bitmapDecompose.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -120px -72px" data-toptip="Bitmap Decompose"></div></a>
+<a href="../../components/firefly/bitmapInfo.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -144px -72px" data-downtip="Bitmap Info"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/firefly/bitmapLayers.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -168px -72px" data-toptip="Bitmap Layers"></div></a>
+<a href="../../components/firefly/bitmapPainter.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -192px -72px" data-downtip="Bitmap Painter"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/firefly/bitmapRecompose.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -216px -72px" data-toptip="Bitmap Recompose"></div></a>
+<a href="../../components/firefly/bitmapSampler.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') 0px -96px" data-downtip="Bitmap Sampler"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/firefly/snapshot.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -24px -96px" data-toptip="Snapshot"></div></a>
+<a href="../../components/firefly/snapshotSequence.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -48px -96px" data-downtip="Snapshot Sequence"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/firefly/bitmapThreshold.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -72px -96px" data-toptip="Bitmap Threshold"></div></a>
+<a href="../../components/firefly/blur.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -96px -96px" data-downtip="Blur"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/firefly/colorCorrection.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -144px -96px" data-toptip="Color Correction"></div></a>
+<a href="../../components/firefly/contrast.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -168px -96px" data-downtip="Contrast"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/firefly/convolutionFilter.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -192px -96px" data-toptip="Convolution Filter"></div></a>
+<a href="../../components/firefly/edgeDetection.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') 0px -120px" data-downtip="Edge Detection"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/firefly/emboss.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -24px -120px" data-toptip="Emboss"></div></a>
+<a href="../../components/firefly/flipImage.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -48px -120px" data-downtip="Flip Image"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/firefly/gammaCorrection.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -96px -120px" data-toptip="Gamma Correction"></div></a>
+<a href="../../components/firefly/resizeBitmap.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -120px -120px" data-downtip="Resize Bitmap"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/firefly/invert.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -144px -120px" data-toptip="Invert"></div></a>
+<a href="../../components/firefly/laplacian.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -24px -144px" data-downtip="Laplacian"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/firefly/loadBitmap.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -48px -144px" data-toptip="Load Bitmap"></div></a>
+<a href="../../components/firefly/loadVideoFile.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -72px -144px" data-downtip="Load Video File"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/firefly/exposureMovement.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -96px -144px" data-toptip="Exposure (Movement)"></div></a>
+<a href="../../components/firefly/posterize.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -24px -168px" data-downtip="Posterize"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/firefly/replaceColor.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -72px -168px" data-toptip="Replace Color"></div></a>
+<a href="../../components/firefly/brightnessAndSaturation.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -96px -168px" data-downtip="Brightness and Saturation"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/firefly/sharpen.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -120px -168px" data-toptip="Sharpen"></div></a>
+<a href="../../components/firefly/sobel.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -144px -168px" data-downtip="Sobel"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/firefly/testColor.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -24px -192px" data-toptip="Test Color"></div></a>
+<a href="../../components/firefly/videoPlayer.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -144px -192px" data-downtip="Video Player"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/firefly/bitmapTracer.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -216px -192px" data-toptip="Bitmap Tracer"></div></a>
+<a href="../../components/firefly/contourVector.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') 0px -216px" data-downtip="Contour Vector"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/firefly/imageRegion.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -48px -216px" data-toptip="Image Region"></div></a>
+<a href="../../components/firefly/videoAverages.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -72px -216px" data-downtip="Video Averages"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/firefly/gradientVector.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -96px -216px" data-toptip="Gradient Vector"></div></a>
+<a href="../../components/firefly/leapFingerTracker.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -120px -216px" data-downtip="Leap Finger Tracker"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/firefly/meshFromImage.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -144px -216px" data-toptip="Mesh From Image"></div></a>
+<a href="../../components/firefly/opticalFlow.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -168px -216px" data-downtip="Optical Flow"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/firefly/swirlVector.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -216px -216px" data-toptip="Swirl Vector"></div></a>
+<a href="../../components/firefly/vectorTracer.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') 0px -240px" data-downtip="Vector Tracer"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/firefly/webCamVideoStream.html"><div class="ghsprite" style="background: url('../../icons/firefly.png') -24px -240px" data-toptip="WebCam Video Stream"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="26">
+Vision
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+
+<div class="addon-buttons">
+<a href="https://www.food4rhino.com/app/firefly">Download</a>
+</div>
+
+<div class="compo-header">
+<h1><div class="ghsprite" style="background: url('../../icons/firefly.png') 0px -240px" ></div> Vector Tracer</h1>
+
+<div class="breadcrumb">
+ <a href="../../index.html">Component Index</a>
+  <a href="../../addons/firefly.html">Firefly</a><a href="#" class="breadcrumb-nolink">Vision</a><a href="#" class="breadcrumb-nolink">Tracer</a>
+</div>
+
+</div>
+<h3>Trace a vector through a field over time.</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Vector Field</b></td><td>V</td><td>Vector Field to Trace</td><td>Vector</td></tr>
+<tr><td><b>X-Interval for Field Lines</b></td><td>Sx</td><td>Size of gradient field in base-plane X-direction</td><td>Interval</td></tr>
+<tr><td><b>X-Interval for Field Lines</b></td><td>Sy</td><td>Size of gradient field  in base-plane Y-direction</td><td>Interval</td></tr>
+<tr><td><b>Number of Iterations to Trace</b></td><td>I</td><td>Number of Iterations to Trace</td><td>Integer</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Starting Points</b></td><td>P</td><td>Starting Point</td><td>Point</td></tr>
+</tbody>
+</table>
+
+
+</div>
+
+</div>
+
+</div>
+<div id="docs-foot">
+<p class="left">
+© 2018-2020  <a href="https://github.com/robinrodricks/">Robin Rodricks</a> and <a href="http://andrewheumann.com/">Andrew Heumann</a>. &nbsp;
+Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a> &nbsp;
+Rhinoceros and Grasshopper are registered trademarks of <a href="https://www.rhino3d.com/">Robert McNeel & Associates</a>.
+</p>
+<p class="right docs-lightfont">
+
+<a href="https://github.com/rhino/rhino.github.io/issues/new">Report an Issue</a> &nbsp;|&nbsp;
+<a href="/termsOfService.html">Terms of Service</a>
+</p>
+
+</div>
+</div>
+        
+<script src="/js/jquery.js"></script>
+<script src="/js/kramed.min.js"></script>
+<script src="/js/component.js"></script>
+<script src="/js/user.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    </body>
+</html>

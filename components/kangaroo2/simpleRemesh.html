@@ -458,11 +458,17 @@ Main
 <td>
 <div class="ghcolumn">
 <a href="../../components/kangaroo2/warpWeft.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -192px -216px" data-toptip="Warp Weft"></div></a>
+<a href="../../components/kangaroo2/remeshByColour.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') 0px -240px" data-downtip="Remesh By Colour"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kangaroo2/remesher.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -24px -240px" data-toptip="remesher"></div></a>
 </div>
 </td>
 </tr>
 <tr class="ghgroup-title-row">
-<td class="ghgroup-title" colspan="11">
+<td class="ghgroup-title" colspan="12">
 Mesh
 </td>
 </tr>
@@ -525,6 +531,11 @@ Utility
 <tr><td><b>Creases</b></td><td>Creases</td><td>Curves which will be kept sharp during remeshing. Can be boundary or internal curves</td><td>Curve</td></tr>
 <tr><td><b>Corners</b></td><td>Corners</td><td>Points to keep fixed during remeshing, eg sharp corners</td><td>Point</td></tr>
 <tr><td><b>Steps</b></td><td>Steps</td><td>Number of remeshing steps to perform</td><td>Integer</td></tr>
+<tr><td><b>Geometry</b></td><td>Geometry</td><td>Input Surface or Mesh</td><td>Geometry</td></tr>
+<tr><td><b>Length</b></td><td>Length</td><td>Target edge length</td><td>Number</td></tr>
+<tr><td><b>Creases</b></td><td>Creases</td><td>Curves which will be kept sharp during remeshing. Can be boundary or internal curves</td><td>Curve</td></tr>
+<tr><td><b>Corners</b></td><td>Corners</td><td>Points to keep fixed during remeshing, eg sharp corners</td><td>Point</td></tr>
+<tr><td><b>Steps</b></td><td>Steps</td><td>Number of remeshing steps to perform</td><td>Integer</td></tr>
 </tbody>
 </table>
 
@@ -534,6 +545,7 @@ Utility
 <tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
 </thead>
 <tbody>
+<tr><td><b>Mesh</b></td><td>M</td><td>Remeshed result</td><td>Mesh</td></tr>
 <tr><td><b>Mesh</b></td><td>M</td><td>Remeshed result</td><td>Mesh</td></tr>
 </tbody>
 </table>

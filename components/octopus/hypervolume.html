@@ -91,11 +91,17 @@
 <td>
 <div class="ghcolumn">
 <a href="../../components/octopus/showNetworkoEL.html"><div class="ghsprite" style="background: url('../../icons/octopus.png') -120px -72px" data-toptip="Show Network (oEL)"></div></a>
+<a href="../../components/octopus/constructNetworkoEL.html"><div class="ghsprite" style="background: url('../../icons/octopus.png') -216px -72px" data-downtip="Construct Network (oEL)"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/octopus/constructNetworkByGeometryoctEvoLearn.html"><div class="ghsprite" style="background: url('../../icons/octopus.png') 0px -96px" data-toptip="Construct Network by Geometry (octEvoLearn)"></div></a>
 </div>
 </td>
 </tr>
 <tr class="ghgroup-title-row">
-<td class="ghgroup-title" colspan="7">
+<td class="ghgroup-title" colspan="8">
 Evolutionary Learning
 </td>
 </tr>
@@ -140,9 +146,14 @@ Evolutionary Learning
 <a href="../../components/octopus/tournamentSelection.html"><div class="ghsprite" style="background: url('../../icons/octopus.png') -144px -24px" data-downtip="Tournament Selection"></div></a>
 </div>
 </td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/octopus/remapObjectives.html"><div class="ghsprite" style="background: url('../../icons/octopus.png') -192px -72px" data-toptip="Remap Objectives"></div></a>
+</div>
+</td>
 </tr>
 <tr class="ghgroup-title-row">
-<td class="ghgroup-title" colspan="6">
+<td class="ghgroup-title" colspan="7">
 Explicit Components
 </td>
 </tr>
@@ -288,6 +299,8 @@ View
 <tbody>
 <tr><td><b>Octopus Solution</b></td><td>OS</td><td>The solutions to calculate the HV for</td><td>Octopus Solution</td></tr>
 <tr><td><b>Reference Point coordinate</b></td><td>R</td><td>The point in objective space against which the Hypervolume is calculated, given by only one coordinate which is applied to each objective dimension. The coordinate relates to the normalized pareto-front which is between 0 and 1</td><td>Number</td></tr>
+<tr><td><b>Octopus Solution</b></td><td>OS</td><td>The solutions to calculate the HV for</td><td>Any</td></tr>
+<tr><td><b>Reference Point coordinate</b></td><td>R</td><td>The point in objective space against which the Hypervolume is calculated, given by only one coordinate which is applied to each objective dimension. The coordinate relates to the normalized pareto-front which is between 0 and 1</td><td>Number</td></tr>
 </tbody>
 </table>
 
@@ -302,6 +315,11 @@ View
 <tr><td><b>total Bounds</b></td><td>TB</td><td>The bounds of the objectives in the entire set supplied</td><td>Domain</td></tr>
 <tr><td><b>Front Solutions</b></td><td>F</td><td>the pareto front</td><td>Octopus Solution</td></tr>
 <tr><td><b>non-Front Solutions</b></td><td>N</td><td>the solutions not part of the pareto front</td><td>Octopus Solution</td></tr>
+<tr><td><b>HV</b></td><td>HV</td><td>The Hypervolume</td><td>Number</td></tr>
+<tr><td><b>pareto Bounds</b></td><td>PB</td><td>The bounds of the objectives in the pareto-front</td><td>Interval</td></tr>
+<tr><td><b>total Bounds</b></td><td>TB</td><td>The bounds of the objectives in the entire set supplied</td><td>Interval</td></tr>
+<tr><td><b>Front Solutions</b></td><td>F</td><td>the pareto front</td><td>Any</td></tr>
+<tr><td><b>non-Front Solutions</b></td><td>N</td><td>the solutions not part of the pareto front</td><td>Any</td></tr>
 </tbody>
 </table>
 

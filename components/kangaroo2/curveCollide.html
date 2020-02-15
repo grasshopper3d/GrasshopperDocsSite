@@ -458,11 +458,17 @@ Main
 <td>
 <div class="ghcolumn">
 <a href="../../components/kangaroo2/warpWeft.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -192px -216px" data-toptip="Warp Weft"></div></a>
+<a href="../../components/kangaroo2/remeshByColour.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') 0px -240px" data-downtip="Remesh By Colour"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kangaroo2/remesher.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -24px -240px" data-toptip="remesher"></div></a>
 </div>
 </td>
 </tr>
 <tr class="ghgroup-title-row">
-<td class="ghgroup-title" colspan="11">
+<td class="ghgroup-title" colspan="12">
 Mesh
 </td>
 </tr>
@@ -525,6 +531,11 @@ Utility
 <tr><td><b>PassiveCurves</b></td><td>P</td><td>Passive curves (they take part in collisions but are not themselves moved)</td><td>Curve</td></tr>
 <tr><td><b>BasePlane</b></td><td>B</td><td>Plane in which to check for collisions</td><td>Plane</td></tr>
 <tr><td><b>Strength</b></td><td>S</td><td>Strength</td><td>Number</td></tr>
+<tr><td><b>Curves</b></td><td>C</td><td>Closed Curves to collide</td><td>Curve</td></tr>
+<tr><td><b>Frames</b></td><td>F</td><td>The frame of each curve (if none provided, a WorldXY aligned plane at the curve centroid will be used)</td><td>Plane</td></tr>
+<tr><td><b>PassiveCurves</b></td><td>P</td><td>Passive curves (they take part in collisions but are not themselves moved)</td><td>Curve</td></tr>
+<tr><td><b>BasePlane</b></td><td>B</td><td>Plane in which to check for collisions</td><td>Plane</td></tr>
+<tr><td><b>Strength</b></td><td>S</td><td>Strength</td><td>Number</td></tr>
 </tbody>
 </table>
 
@@ -535,6 +546,8 @@ Utility
 </thead>
 <tbody>
 <tr><td><b>Goal</b></td><td>G</td><td>Connect this to the GoalObjects input of a Kangaroo Solver component</td><td>Generic Data</td></tr>
+<tr><td><b>Frames</b></td><td>F</td><td>The planes of each of the curves</td><td>Plane</td></tr>
+<tr><td><b>Goal</b></td><td>G</td><td>Connect this to the GoalObjects input of a Kangaroo Solver component</td><td>Generic</td></tr>
 <tr><td><b>Frames</b></td><td>F</td><td>The planes of each of the curves</td><td>Plane</td></tr>
 </tbody>
 </table>

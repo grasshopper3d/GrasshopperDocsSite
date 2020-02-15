@@ -91,11 +91,17 @@
 <td>
 <div class="ghcolumn">
 <a href="../../components/octopus/showNetworkoEL.html"><div class="ghsprite" style="background: url('../../icons/octopus.png') -120px -72px" data-toptip="Show Network (oEL)"></div></a>
+<a href="../../components/octopus/constructNetworkoEL.html"><div class="ghsprite" style="background: url('../../icons/octopus.png') -216px -72px" data-downtip="Construct Network (oEL)"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/octopus/constructNetworkByGeometryoctEvoLearn.html"><div class="ghsprite" style="background: url('../../icons/octopus.png') 0px -96px" data-toptip="Construct Network by Geometry (octEvoLearn)"></div></a>
 </div>
 </td>
 </tr>
 <tr class="ghgroup-title-row">
-<td class="ghgroup-title" colspan="7">
+<td class="ghgroup-title" colspan="8">
 Evolutionary Learning
 </td>
 </tr>
@@ -140,9 +146,14 @@ Evolutionary Learning
 <a href="../../components/octopus/tournamentSelection.html"><div class="ghsprite" style="background: url('../../icons/octopus.png') -144px -24px" data-downtip="Tournament Selection"></div></a>
 </div>
 </td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/octopus/remapObjectives.html"><div class="ghsprite" style="background: url('../../icons/octopus.png') -192px -72px" data-toptip="Remap Objectives"></div></a>
+</div>
+</td>
 </tr>
 <tr class="ghgroup-title-row">
-<td class="ghgroup-title" colspan="6">
+<td class="ghgroup-title" colspan="7">
 Explicit Components
 </td>
 </tr>
@@ -288,6 +299,8 @@ View
 <tbody>
 <tr><td><b>Data To Evaluate</b></td><td>D</td><td>Tree of data to evaluate, where each list is populated to the connected definition separately</td><td>Generic Data</td></tr>
 <tr><td><b>OData</b></td><td>OD</td><td>Optional data which will be fed into the network for every calculation. Made to bypass the unneccessary calculatino of upstream dependencies</td><td>Generic Data</td></tr>
+<tr><td><b>Data To Evaluate</b></td><td>D</td><td>Tree of data to evaluate, where each list is populated to the connected definition separately</td><td>Generic</td></tr>
+<tr><td><b>OData</b></td><td>OD</td><td>Optional data which will be fed into the network for every calculation. Made to bypass the unneccessary calculatino of upstream dependencies</td><td>Generic</td></tr>
 </tbody>
 </table>
 
@@ -299,6 +312,8 @@ View
 <tbody>
 <tr><td><b>Timer</b></td><td>T</td><td>Execution time per solution (in ms)</td><td>Integer</td></tr>
 <tr><td><b>Results</b></td><td>R</td><td>Results of evaluation</td><td>Generic Data</td></tr>
+<tr><td><b>Timer</b></td><td>T</td><td>Execution time per solution (in ms)</td><td>Integer</td></tr>
+<tr><td><b>Results</b></td><td>R</td><td>Results of evaluation</td><td>Generic</td></tr>
 </tbody>
 </table>
 

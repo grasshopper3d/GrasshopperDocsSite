@@ -1,0 +1,587 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+<head data-layout-view="wide">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>remesher - Kangaroo 2 - Grasshopper Docs</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+
+<meta name="description" content="A guide to component remesher in Grasshopper 3D." />
+<meta name="title" content="remesher - Kangaroo 2 - Grasshopper Docs" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://grasshopperdocs.com/" />
+<meta property="og:title" content="remesher - Kangaroo 2 - Grasshopper Docs" />
+
+<meta property="wiki-page" content="GH Kangaroo2 remesher.md" />
+
+<link rel="image_src" href="http://grasshopperdocs.com/ning/2985220.jpg" />
+
+<link href="../../style.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+
+<div id="docs" class="docs-theme docs-widget_page docs-widget_page_page docs-widget_page_page_show" data-layout-pack="classic">
+<div id="docs-head">
+<div id="docs-masthead">
+<p id="docs-sitename"><a id="application_name_header_link" href="http://grasshopperdocs.com/">Grasshopper Docs</a></p>
+<p id="docs-sitedesc" class="xj_site_desc">algorithmic modeling for Rhino</p>
+</div>
+<div id="docs-navigation">
+<ul>
+<li class="docs-subtab"><a href="http://www.grasshopper3d.com/"><span>Home</span></a></li>
+<li class="docs-subtab"><a href="http://www.grasshopper3d.com/photo"><span>View</span></a></li>
+<li class="docs-subtab"><a href="http://www.grasshopper3d.com/page/download-1"><span>Download</span></a></li>
+<li class="docs-subtab"><a href="https://discourse.mcneel.com/c/grasshopper"><span>Forums&#47;Support</span></a></li>
+<li class="docs-subtab this"><a href="http://grasshopperdocs.com/"><span>Learn</span></a></li>
+<li class="docs-subtab"><a href="http://www.grasshopper3d.com/events"><span>Attend</span></a></li>
+<li class="docs-subtab"><a href="http://www.grasshopper3d.com/profiles"><span>My Page</span></a></li></ul>
+
+</div>
+</div>
+
+<div id="docs-body">
+
+<div class="page">
+
+<div class="content">
+
+<div class="ghbar ">
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kangaroo2/lengthPts.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -120px -192px" data-toptip="Length(Pts)"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+Goals
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kangaroo2/alignFaces.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') 0px 0px" data-toptip="Align Faces"></div></a>
+<a href="../../components/kangaroo2/beam.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -120px 0px" data-downtip="Beam"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kangaroo2/concentric.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -144px -24px" data-toptip="Concentric"></div></a>
+<a href="../../components/kangaroo2/rigidBody.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -48px -168px" data-downtip="Rigid Body"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kangaroo2/rigidPointSet.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -72px -168px" data-toptip="Rigid Point Set"></div></a>
+<a href="../../components/kangaroo2/solidCollide.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -216px -168px" data-downtip="Solid Collide"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kangaroo2/solidPlaneCollide.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') 0px -192px" data-toptip="Solid Plane Collide"></div></a>
+<a href="../../components/kangaroo2/support.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -192px -192px" data-downtip="Support"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="4">
+Goals-6dof
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kangaroo2/angle.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -72px 0px" data-toptip="Angle"></div></a>
+<a href="../../components/kangaroo2/angleSnap.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -96px 0px" data-downtip="Angle Snap"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kangaroo2/clampAngle.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -216px 0px" data-toptip="Clamp Angle"></div></a>
+<a href="../../components/kangaroo2/equalAngle.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') 0px -72px" data-downtip="Equal Angle"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kangaroo2/g2.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -120px -72px" data-toptip="G2"></div></a>
+<a href="../../components/kangaroo2/rod.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -96px -168px" data-downtip="Rod"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+Goals-Angle
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kangaroo2/coCircular.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -24px -24px" data-toptip="Co Circular"></div></a>
+<a href="../../components/kangaroo2/coLinear.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -72px -24px" data-downtip="Co Linear"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kangaroo2/coPlanar.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -216px -24px" data-toptip="Co Planar"></div></a>
+<a href="../../components/kangaroo2/coSpherical.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') 0px -48px" data-downtip="Co Spherical"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="2">
+Goals-Co
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kangaroo2/collide2d.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -96px -24px" data-toptip="Collide2d"></div></a>
+<a href="../../components/kangaroo2/collider.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -120px -24px" data-downtip="Collider"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kangaroo2/curvePointCollide.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -24px -48px" data-toptip="Curve Point Collide"></div></a>
+<a href="../../components/kangaroo2/curveCollide.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -48px -48px" data-downtip="Curve Collide"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kangaroo2/imageCircles.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') 0px -96px" data-toptip="Image Circles"></div></a>
+<a href="../../components/kangaroo2/solidPointCollide.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -24px -192px" data-downtip="Solid Point Collide"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kangaroo2/sphereCollide.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -48px -192px" data-toptip="Sphere Collide"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="4">
+Goals-Col
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kangaroo2/clampLength.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') 0px -24px" data-toptip="Clamp Length"></div></a>
+<a href="../../components/kangaroo2/constantTension.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -192px -24px" data-downtip="Constant Tension"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kangaroo2/direction.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -144px -48px" data-toptip="Direction"></div></a>
+<a href="../../components/kangaroo2/dynamicWeight1d.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -192px -48px" data-downtip="Dynamic Weight1d"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kangaroo2/equalLength.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -24px -72px" data-toptip="Equal Length"></div></a>
+<a href="../../components/kangaroo2/lengthRatio.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -168px -96px" data-downtip="Length Ratio"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kangaroo2/lengthSnap.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -192px -96px" data-toptip="Length Snap"></div></a>
+<a href="../../components/kangaroo2/plasticLength.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -120px -144px" data-downtip="Plastic Length"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kangaroo2/lengthLine.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -96px -192px" data-toptip="Length(Line)"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="5">
+Goals-Lin
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kangaroo2/conicalize.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -168px -24px" data-toptip="Conicalize"></div></a>
+<a href="../../components/kangaroo2/cyclicQuad.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -72px -48px" data-downtip="Cyclic Quad"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kangaroo2/developablize.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -96px -48px" data-toptip="Developablize"></div></a>
+<a href="../../components/kangaroo2/edgeLengths.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -216px -48px" data-downtip="Edge Lengths"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kangaroo2/hinge.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -192px -72px" data-toptip="Hinge"></div></a>
+<a href="../../components/kangaroo2/isothermic.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -48px -96px" data-downtip="Isothermic"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kangaroo2/liveSoap.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -216px -96px" data-toptip="Live Soap"></div></a>
+<a href="../../components/kangaroo2/noFoldThrough.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -192px -120px" data-downtip="No Fold Through"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kangaroo2/planarize.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -48px -144px" data-toptip="Planarize"></div></a>
+<a href="../../components/kangaroo2/plasticHinge.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -96px -144px" data-downtip="Plastic Hinge"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kangaroo2/polygonArea.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -144px -144px" data-toptip="Polygon Area"></div></a>
+<a href="../../components/kangaroo2/pressure.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -168px -144px" data-downtip="Pressure"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kangaroo2/smooth.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -168px -168px" data-toptip="Smooth"></div></a>
+<a href="../../components/kangaroo2/soapFilm.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -192px -168px" data-downtip="Soap Film"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kangaroo2/tangentialSmooth.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') 0px -216px" data-toptip="Tangential Smooth"></div></a>
+<a href="../../components/kangaroo2/tangentIncircles.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -24px -216px" data-downtip="Tangent Incircles"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kangaroo2/vertexLoads.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -120px -216px" data-toptip="Vertex Loads"></div></a>
+<a href="../../components/kangaroo2/volume.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -168px -216px" data-downtip="Volume"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kangaroo2/wind.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -216px -216px" data-toptip="Wind"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="10">
+Goals-Mesh
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kangaroo2/onCurve.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -216px -120px" data-toptip="On Curve"></div></a>
+<a href="../../components/kangaroo2/onMesh.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') 0px -144px" data-downtip="On Mesh"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kangaroo2/onPlane.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -24px -144px" data-toptip="On Plane"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="2">
+Goals-On
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kangaroo2/anchor.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -24px 0px" data-toptip="Anchor"></div></a>
+<a href="../../components/kangaroo2/anchorXYZ.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -48px 0px" data-downtip="Anchor XYZ"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kangaroo2/bomb.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -144px 0px" data-toptip="Bomb"></div></a>
+<a href="../../components/kangaroo2/coincident.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -48px -24px" data-downtip="Coincident"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kangaroo2/floor.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -72px -72px" data-toptip="Floor"></div></a>
+<a href="../../components/kangaroo2/magnetSnap.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') 0px -120px" data-downtip="Magnet Snap"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kangaroo2/plasticAnchor.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -72px -144px" data-toptip="Plastic Anchor"></div></a>
+<a href="../../components/kangaroo2/transform.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -48px -216px" data-downtip="Transform"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kangaroo2/load.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -72px -216px" data-toptip="Load"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="5">
+Goals-Pt
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kangaroo2/show.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -144px -72px" data-toptip="Show"></div></a>
+<a href="../../components/kangaroo2/grab.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -168px -72px" data-downtip="Grab"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kangaroo2/bouncySolver.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -72px -96px" data-toptip="Bouncy Solver"></div></a>
+<a href="../../components/kangaroo2/solver.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -96px -96px" data-downtip="Solver"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kangaroo2/softHardSolver.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -120px -96px" data-toptip="Soft &amp; Hard Solver"></div></a>
+<a href="../../components/kangaroo2/zombieSolver.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -144px -96px" data-downtip="Zombie Solver"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kangaroo2/stepSolver.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -144px -192px" data-toptip="Step Solver"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="4">
+Main
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kangaroo2/byParent.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -168px 0px" data-toptip="By Parent"></div></a>
+<a href="../../components/kangaroo2/checkerboard.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -192px 0px" data-downtip="Checkerboard"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kangaroo2/diagonalize.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -120px -48px" data-toptip="Diagonalize"></div></a>
+<a href="../../components/kangaroo2/faceFaceOffset.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -48px -72px" data-downtip="Face Face Offset"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kangaroo2/foldAngle.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -96px -72px" data-toptip="Fold Angle"></div></a>
+<a href="../../components/kangaroo2/hingePoints.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -216px -72px" data-downtip="Hinge Points"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kangaroo2/combineClean.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -24px -120px" data-toptip="Combine&amp;Clean"></div></a>
+<a href="../../components/kangaroo2/meshCorners.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -48px -120px" data-downtip="Mesh Corners"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kangaroo2/meshDirection.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -72px -120px" data-toptip="Mesh Direction"></div></a>
+<a href="../../components/kangaroo2/meshMap.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -96px -120px" data-downtip="Mesh Map"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kangaroo2/meshTurn.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -120px -120px" data-toptip="Mesh Turn"></div></a>
+<a href="../../components/kangaroo2/nakedVertices.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -168px -120px" data-downtip="Naked Vertices"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kangaroo2/refine.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -192px -144px" data-toptip="Refine"></div></a>
+<a href="../../components/kangaroo2/refineStrips.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -216px -144px" data-downtip="Refine Strips"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kangaroo2/simpleRemesh.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -120px -168px" data-toptip="Simple Remesh"></div></a>
+<a href="../../components/kangaroo2/simple.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -144px -168px" data-downtip="Simple"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kangaroo2/stripper.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -168px -192px" data-toptip="Stripper"></div></a>
+<a href="../../components/kangaroo2/tangentCircles.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -216px -192px" data-downtip="Tangent Circles"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kangaroo2/unroller.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -96px -216px" data-toptip="Unroller"></div></a>
+<a href="../../components/kangaroo2/vertexNeighbours.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -144px -216px" data-downtip="Vertex Neighbours"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kangaroo2/warpWeft.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -192px -216px" data-toptip="Warp Weft"></div></a>
+<a href="../../components/kangaroo2/remeshByColour.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') 0px -240px" data-downtip="Remesh By Colour"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kangaroo2/remesher.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -24px -240px" data-toptip="remesher"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="12">
+Mesh
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kangaroo2/dotDisplay.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -168px -48px" data-toptip="Dot Display"></div></a>
+<a href="../../components/kangaroo2/interconnectPoints.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -24px -96px" data-downtip="interconnect Points"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kangaroo2/mbiusTransformation.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -144px -120px" data-toptip="M\u00f6bius Transformation"></div></a>
+<a href="../../components/kangaroo2/removeDuplicateLines.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') 0px -168px" data-downtip="remove Duplicate Lines"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kangaroo2/removeDuplicatePts.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -24px -168px" data-toptip="remove Duplicate Pts"></div></a>
+<a href="../../components/kangaroo2/splitAtCorners.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -72px -192px" data-downtip="Split At Corners"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+Utility
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+
+<div class="addon-buttons">
+<a href="https://www.rhino3d.com/6/new/grasshopper">Download</a>
+</div>
+
+<div class="compo-header">
+<h1><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -24px -240px" ></div> remesher</h1>
+
+<div class="breadcrumb">
+ <a href="../../index.html">Component Index</a>
+  <a href="../../addons/kangaroo-2.html">Kangaroo 2</a><a href="#" class="breadcrumb-nolink">Mesh</a><a href="#" class="breadcrumb-nolink">remesher</a>
+</div>
+
+</div>
+<h3>Remeshing tool</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Geometry</b></td><td>Geom</td><td>Input Surface or Mesh</td><td>Geometry</td></tr>
+<tr><td><b>TargetLengthFunction</b></td><td>L</td><td>A function determining local edge length</td><td>Generic</td></tr>
+<tr><td><b>FixCurves</b></td><td>FixC</td><td>Curves which will be kept sharp during remeshing. Can be boundary or internal curves</td><td>Curve</td></tr>
+<tr><td><b>FixVertices</b></td><td>FixV</td><td>Points to keep fixed during remeshing</td><td>Point</td></tr>
+<tr><td><b>Flip</b></td><td>Flip</td><td>Criterion used to decide when to flip edges (0 for valence based, 1 for angle based)</td><td>Integer</td></tr>
+<tr><td><b>PullStrength</b></td><td>Pull</td><td>Strength of pull to target geometry (between 0 and 1). Set to 0 for minimal surfaces</td><td>Number</td></tr>
+<tr><td><b>Iterations</b></td><td>Iter</td><td>Number of steps between outputs</td><td>Integer</td></tr>
+<tr><td><b>Reset</b></td><td>Reset</td><td>True to initialize, false to run remeshing. Connect a timer for continuous remeshing</td><td>Boolean</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Mesh</b></td><td>M</td><td>Remeshed result as KPlankton Mesh</td><td>Generic</td></tr>
+</tbody>
+</table>
+
+
+</div>
+
+</div>
+
+</div>
+<div id="docs-foot">
+<p class="left">
+© 2018-2020  <a href="https://github.com/robinrodricks/">Robin Rodricks</a> and <a href="http://andrewheumann.com/">Andrew Heumann</a>. &nbsp;
+Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a> &nbsp;
+Rhinoceros and Grasshopper are registered trademarks of <a href="https://www.rhino3d.com/">Robert McNeel & Associates</a>.
+</p>
+<p class="right docs-lightfont">
+
+<a href="https://github.com/rhino/rhino.github.io/issues/new">Report an Issue</a> &nbsp;|&nbsp;
+<a href="/termsOfService.html">Terms of Service</a>
+</p>
+
+</div>
+</div>
+        
+<script src="/js/jquery.js"></script>
+<script src="/js/kramed.min.js"></script>
+<script src="/js/component.js"></script>
+<script src="/js/user.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    </body>
+</html>

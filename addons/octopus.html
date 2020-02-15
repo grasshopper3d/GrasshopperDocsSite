@@ -56,7 +56,7 @@
 
 <div class="addon-header">
 <h1>Octopus</h1>
-<h5>ADDON, Version <b>0.4</b>, Released on <b>2018-Dec-05</b>, Provides <b>38</b> components, Created by <b>Robert Vierlinger</b></h5>
+<h5>ADDON, Version <b>0.4</b>, Released on <b>2018-Dec-05</b>, Provides <b>41</b> components, Created by <b>Robert Vierlinger</b></h5>
 <h5>Octopus was originally made for Multi-Objective Evolutionary Optimization. It allows the search for many goals at once, producing a range of optimized trade-off solutions between the extremes of each goal. It is used and works similar to David Rutten&#39;s Galapagos, but introduces the Pareto-Principle for Multiple Goals.</h5>
 
 <div class="breadcrumb">
@@ -109,11 +109,17 @@
 <td>
 <div class="ghcolumn">
 <a href="../components/octopus/showNetworkoEL.html"><div class="ghsprite" style="background: url('../icons/octopus.png') -120px -72px" data-toptip="Show Network (oEL)"></div></a>
+<a href="../components/octopus/constructNetworkoEL.html"><div class="ghsprite" style="background: url('../icons/octopus.png') -216px -72px" data-downtip="Construct Network (oEL)"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/octopus/constructNetworkByGeometryoctEvoLearn.html"><div class="ghsprite" style="background: url('../icons/octopus.png') 0px -96px" data-toptip="Construct Network by Geometry (octEvoLearn)"></div></a>
 </div>
 </td>
 </tr>
 <tr class="ghgroup-title-row">
-<td class="ghgroup-title" colspan="7">
+<td class="ghgroup-title" colspan="8">
 Evolutionary Learning
 </td>
 </tr>
@@ -158,9 +164,14 @@ Evolutionary Learning
 <a href="../components/octopus/tournamentSelection.html"><div class="ghsprite" style="background: url('../icons/octopus.png') -144px -24px" data-downtip="Tournament Selection"></div></a>
 </div>
 </td>
+<td>
+<div class="ghcolumn">
+<a href="../components/octopus/remapObjectives.html"><div class="ghsprite" style="background: url('../icons/octopus.png') -192px -72px" data-toptip="Remap Objectives"></div></a>
+</div>
+</td>
 </tr>
 <tr class="ghgroup-title-row">
-<td class="ghgroup-title" colspan="6">
+<td class="ghgroup-title" colspan="7">
 Explicit Components
 </td>
 </tr>
@@ -301,6 +312,8 @@ View
 <tr><td class="ccol_1"><a href="../components/octopus/breederoEL.html"><div class="ghsprite" style="background: url('../icons/octopus.png') 0px -72px" ></div></a></td><td class="ccol_2"><a href="../components/octopus/breederoEL.html">Breeder (oEL)</a> <span class="codeword">(NEAT (octEvoLearn))</span><br><span class="desc">Evolves artificial neural networks with the NEAT algorithm, using SharpNeatLib by Sebastian Risi</span></td></tr>
 <tr><td class="ccol_1"><a href="../components/octopus/randomNetworkoEL.html"><div class="ghsprite" style="background: url('../icons/octopus.png') -96px -72px" ></div></a></td><td class="ccol_2"><a href="../components/octopus/randomNetworkoEL.html">Random Network (oEL)</a> <span class="codeword">(RN (octEvoLearn))</span><br><span class="desc">Generate a random network</span></td></tr>
 <tr><td class="ccol_1"><a href="../components/octopus/showNetworkoEL.html"><div class="ghsprite" style="background: url('../icons/octopus.png') -120px -72px" ></div></a></td><td class="ccol_2"><a href="../components/octopus/showNetworkoEL.html">Show Network (oEL)</a> <span class="codeword">(SN (octEvoLearn))</span><br><span class="desc">Opens a window to show the Network</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/octopus/constructNetworkoEL.html"><div class="ghsprite" style="background: url('../icons/octopus.png') -216px -72px" ></div></a></td><td class="ccol_2"><a href="../components/octopus/constructNetworkoEL.html">Construct Network (oEL)</a> <span class="codeword">(ConsN (octEvoLearn))</span><br><span class="desc">Create a Network by node-points, connection-indices and weights.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/octopus/constructNetworkByGeometryoctEvoLearn.html"><div class="ghsprite" style="background: url('../icons/octopus.png') 0px -96px" ></div></a></td><td class="ccol_2"><a href="../components/octopus/constructNetworkByGeometryoctEvoLearn.html">Construct Network by Geometry (octEvoLearn)</a><br><span class="desc">Create an ANN geometrically</span></td></tr>
 </tbody>
 </table>
 
@@ -321,6 +334,7 @@ View
 <tr><td class="ccol_1"><a href="../components/octopus/mutate.html"><div class="ghsprite" style="background: url('../icons/octopus.png') -96px -24px" ></div></a></td><td class="ccol_2"><a href="../components/octopus/mutate.html">Mutate</a> <span class="codeword">(Mutate an Octopus Solution)</span><br><span class="desc">Mutate a solution's parameter values</span></td></tr>
 <tr><td class="ccol_1"><a href="../components/octopus/crossover.html"><div class="ghsprite" style="background: url('../icons/octopus.png') -120px -24px" ></div></a></td><td class="ccol_2"><a href="../components/octopus/crossover.html">Crossover</a> <span class="codeword">(Simulated Binary Crossover)</span><br><span class="desc">Takes two individuals and exchanges parameters between them - after 'SBX - Simulated Binary Crossover'</span></td></tr>
 <tr><td class="ccol_1"><a href="../components/octopus/tournamentSelection.html"><div class="ghsprite" style="background: url('../icons/octopus.png') -144px -24px" ></div></a></td><td class="ccol_2"><a href="../components/octopus/tournamentSelection.html">Tournament Selection</a> <span class="codeword">(TS)</span><br><span class="desc">Tournament Selection for single or multi objective solutions, assuming a minimization problem.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/octopus/remapObjectives.html"><div class="ghsprite" style="background: url('../icons/octopus.png') -192px -72px" ></div></a></td><td class="ccol_2"><a href="../components/octopus/remapObjectives.html">Remap Objectives</a><br><span class="desc">Remaps the objective values of a set of solutions, assuming a minimization problem when taking the pareto fron as a start domain.</span></td></tr>
 </tbody>
 </table>
 

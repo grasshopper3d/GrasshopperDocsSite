@@ -458,11 +458,17 @@ Main
 <td>
 <div class="ghcolumn">
 <a href="../../components/kangaroo2/warpWeft.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -192px -216px" data-toptip="Warp Weft"></div></a>
+<a href="../../components/kangaroo2/remeshByColour.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') 0px -240px" data-downtip="Remesh By Colour"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kangaroo2/remesher.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -24px -240px" data-toptip="remesher"></div></a>
 </div>
 </td>
 </tr>
 <tr class="ghgroup-title-row">
-<td class="ghgroup-title" colspan="11">
+<td class="ghgroup-title" colspan="12">
 Mesh
 </td>
 </tr>
@@ -529,6 +535,15 @@ Utility
 <tr><td><b>Ix</b></td><td>Ix</td><td>2nd moment of area about X</td><td>Number</td></tr>
 <tr><td><b>Iy</b></td><td>Iy</td><td>2nd moment of area about Y</td><td>Number</td></tr>
 <tr><td><b>GJ</b></td><td>GJ</td><td>Shear modulus * torsional constant</td><td>Number</td></tr>
+<tr><td><b>StartFrame</b></td><td>StartFrame</td><td>The plane at one end of the beam, its Z axis aligned with the beam direction</td><td>Plane</td></tr>
+<tr><td><b>EndFrame</b></td><td>EndFrame</td><td>Should be parallel to StartFrame</td><td>Plane</td></tr>
+<tr><td><b>StartNode</b></td><td>StartNode</td><td>The plane defining the node the start of the beam attaches to. If none supplied this defaults to XY aligned</td><td>Plane</td></tr>
+<tr><td><b>EndNode</b></td><td>EndNode</td><td>The plane defining the node the end of the beam attaches to. If none supplied this defaults to XY aligned</td><td>Plane</td></tr>
+<tr><td><b>E</b></td><td>E</td><td>Young's Modulus</td><td>Number</td></tr>
+<tr><td><b>A</b></td><td>A</td><td>Cross-section area</td><td>Number</td></tr>
+<tr><td><b>Ix</b></td><td>Ix</td><td>2nd moment of area about X</td><td>Number</td></tr>
+<tr><td><b>Iy</b></td><td>Iy</td><td>2nd moment of area about Y</td><td>Number</td></tr>
+<tr><td><b>GJ</b></td><td>GJ</td><td>Shear modulus * torsional constant</td><td>Number</td></tr>
 </tbody>
 </table>
 
@@ -539,6 +554,7 @@ Utility
 </thead>
 <tbody>
 <tr><td><b>Beam</b></td><td>B</td><td>B</td><td>Generic Data</td></tr>
+<tr><td><b>Beam</b></td><td>B</td><td>B</td><td>Generic</td></tr>
 </tbody>
 </table>
 

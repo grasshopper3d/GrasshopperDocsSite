@@ -91,11 +91,17 @@
 <td>
 <div class="ghcolumn">
 <a href="../../components/octopus/showNetworkoEL.html"><div class="ghsprite" style="background: url('../../icons/octopus.png') -120px -72px" data-toptip="Show Network (oEL)"></div></a>
+<a href="../../components/octopus/constructNetworkoEL.html"><div class="ghsprite" style="background: url('../../icons/octopus.png') -216px -72px" data-downtip="Construct Network (oEL)"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/octopus/constructNetworkByGeometryoctEvoLearn.html"><div class="ghsprite" style="background: url('../../icons/octopus.png') 0px -96px" data-toptip="Construct Network by Geometry (octEvoLearn)"></div></a>
 </div>
 </td>
 </tr>
 <tr class="ghgroup-title-row">
-<td class="ghgroup-title" colspan="7">
+<td class="ghgroup-title" colspan="8">
 Evolutionary Learning
 </td>
 </tr>
@@ -140,9 +146,14 @@ Evolutionary Learning
 <a href="../../components/octopus/tournamentSelection.html"><div class="ghsprite" style="background: url('../../icons/octopus.png') -144px -24px" data-downtip="Tournament Selection"></div></a>
 </div>
 </td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/octopus/remapObjectives.html"><div class="ghsprite" style="background: url('../../icons/octopus.png') -192px -72px" data-toptip="Remap Objectives"></div></a>
+</div>
+</td>
 </tr>
 <tr class="ghgroup-title-row">
-<td class="ghgroup-title" colspan="6">
+<td class="ghgroup-title" colspan="7">
 Explicit Components
 </td>
 </tr>
@@ -287,6 +298,7 @@ View
 </thead>
 <tbody>
 <tr><td><b>Network</b></td><td>N</td><td>Network to deconstruct</td><td>Network oEL</td></tr>
+<tr><td><b>Network</b></td><td>N</td><td>Network to deconstruct</td><td>Any</td></tr>
 </tbody>
 </table>
 
@@ -296,6 +308,14 @@ View
 <tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
 </thead>
 <tbody>
+<tr><td><b>InputNodes</b></td><td>I</td><td>The input nodes of the genome's CPPN</td><td>Point</td></tr>
+<tr><td><b>HiddenNodes</b></td><td>H</td><td>The hidden nodes of the genome's CPPN</td><td>Point</td></tr>
+<tr><td><b>OutputNodes</b></td><td>O</td><td>The output nodes of the genome's CPPN</td><td>Point</td></tr>
+<tr><td><b>InputNodeType</b></td><td>IF</td><td>Activation Functions of the input nodes</td><td>Text</td></tr>
+<tr><td><b>HiddenNodeType</b></td><td>HF</td><td>Activation Functions of the hidden nodes</td><td>Text</td></tr>
+<tr><td><b>OutputNodeType</b></td><td>OF</td><td>Activation Functions of the output nodes</td><td>Text</td></tr>
+<tr><td><b>Connections</b></td><td>C</td><td>The connections between the nodes of the genome's CPPN</td><td>Curve</td></tr>
+<tr><td><b>Connection Weights</b></td><td>W</td><td>The connections' weights</td><td>Number</td></tr>
 <tr><td><b>InputNodes</b></td><td>I</td><td>The input nodes of the genome's CPPN</td><td>Point</td></tr>
 <tr><td><b>HiddenNodes</b></td><td>H</td><td>The hidden nodes of the genome's CPPN</td><td>Point</td></tr>
 <tr><td><b>OutputNodes</b></td><td>O</td><td>The output nodes of the genome's CPPN</td><td>Point</td></tr>

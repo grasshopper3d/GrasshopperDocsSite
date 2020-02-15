@@ -118,11 +118,18 @@
 <td>
 <div class="ghcolumn">
 <a href="../../components/starfish/sketch.html"><div class="ghsprite" style="background: url('../../icons/starfish.png') -48px -24px" data-toptip="Sketch"></div></a>
+<a href="../../components/starfish/dualPreview.html"><div class="ghsprite" style="background: url('../../icons/starfish.png') -96px -24px" data-downtip="Dual Preview"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/starfish/lineMidPt.html"><div class="ghsprite" style="background: url('../../icons/starfish.png') -120px -24px" data-toptip="Line Mid Pt"></div></a>
+<a href="../../components/starfish/offsetCurve.html"><div class="ghsprite" style="background: url('../../icons/starfish.png') -144px -24px" data-downtip="Offset Curve"></div></a>
 </div>
 </td>
 </tr>
 <tr class="ghgroup-title-row">
-<td class="ghgroup-title" colspan="3">
+<td class="ghgroup-title" colspan="4">
 2 | Util
 </td>
 </tr>
@@ -155,6 +162,10 @@
 <tr><td><b>Pattern tilt</b></td><td>P</td><td>List of integers that define the initial tilt directions for solids' faces.</td><td>Integer</td></tr>
 <tr><td><b>Face angle</b></td><td>A</td><td>Tilt angle of the breps' faces. Default = 25</td><td>Number</td></tr>
 <tr><td><b>Thickness</b></td><td>T</td><td>Thickness of the structure. Default = 5</td><td>Number</td></tr>
+<tr><td><b>Starfish Curves</b></td><td>SC</td><td>List of curves that define the mid-plane section of the interlocking solids.</td><td>Curve</td></tr>
+<tr><td><b>Pattern tilt</b></td><td>P</td><td>List of integers that define the initial tilt directions for solids' faces.</td><td>Integer</td></tr>
+<tr><td><b>Face angle</b></td><td>A</td><td>Tilt angle of the breps' faces. Default = 25</td><td>Number</td></tr>
+<tr><td><b>Thickness</b></td><td>T</td><td>Thickness of the structure. Default = 5</td><td>Number</td></tr>
 </tbody>
 </table>
 
@@ -164,6 +175,7 @@
 <tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
 </thead>
 <tbody>
+<tr><td><b>TI_Solids</b></td><td>B</td><td>Interlocked solids</td><td>Brep</td></tr>
 <tr><td><b>TI_Solids</b></td><td>B</td><td>Interlocked solids</td><td>Brep</td></tr>
 </tbody>
 </table>

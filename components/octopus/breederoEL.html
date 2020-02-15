@@ -91,11 +91,17 @@
 <td>
 <div class="ghcolumn">
 <a href="../../components/octopus/showNetworkoEL.html"><div class="ghsprite" style="background: url('../../icons/octopus.png') -120px -72px" data-toptip="Show Network (oEL)"></div></a>
+<a href="../../components/octopus/constructNetworkoEL.html"><div class="ghsprite" style="background: url('../../icons/octopus.png') -216px -72px" data-downtip="Construct Network (oEL)"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/octopus/constructNetworkByGeometryoctEvoLearn.html"><div class="ghsprite" style="background: url('../../icons/octopus.png') 0px -96px" data-toptip="Construct Network by Geometry (octEvoLearn)"></div></a>
 </div>
 </td>
 </tr>
 <tr class="ghgroup-title-row">
-<td class="ghgroup-title" colspan="7">
+<td class="ghgroup-title" colspan="8">
 Evolutionary Learning
 </td>
 </tr>
@@ -140,9 +146,14 @@ Evolutionary Learning
 <a href="../../components/octopus/tournamentSelection.html"><div class="ghsprite" style="background: url('../../icons/octopus.png') -144px -24px" data-downtip="Tournament Selection"></div></a>
 </div>
 </td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/octopus/remapObjectives.html"><div class="ghsprite" style="background: url('../../icons/octopus.png') -192px -72px" data-toptip="Remap Objectives"></div></a>
+</div>
+</td>
 </tr>
 <tr class="ghgroup-title-row">
-<td class="ghgroup-title" colspan="6">
+<td class="ghgroup-title" colspan="7">
 Explicit Components
 </td>
 </tr>
@@ -293,6 +304,13 @@ View
 <tr><td><b>Settings</b></td><td>Settings</td><td>Evolution parameters</td><td>CPPN evolution parameters</td></tr>
 <tr><td><b>Seed Networks</b></td><td>Seed Networks</td><td>Seeding Network Solutions; will be duplicated until population size is reached, duplicates will have mutated connection weights with the given neat parameters</td><td>Network oEL</td></tr>
 <tr><td><b>Run</b></td><td>Run</td><td>Run Flag - Set to true to run</td><td>Boolean</td></tr>
+<tr><td><b>#Inputs</b></td><td>#Inputs</td><td>noOfInputNeurons [Bias Neuron does not count; Supply the number of dimensions you want to sample]</td><td>Integer</td></tr>
+<tr><td><b>#Outputs</b></td><td>#Outputs</td><td>noOfOutputNeurons [The number of outputs you get per sample vector]</td><td>Integer</td></tr>
+<tr><td><b>Generations</b></td><td>Generations</td><td>number of generations</td><td>Integer</td></tr>
+<tr><td><b>Functions</b></td><td>Functions</td><td>Functions and their probabilities to use in the network</td><td>Text</td></tr>
+<tr><td><b>Settings</b></td><td>Settings</td><td>Evolution parameters</td><td>Any</td></tr>
+<tr><td><b>Seed Networks</b></td><td>Seed Networks</td><td>Seeding Network Solutions; will be duplicated until population size is reached, duplicates will have mutated connection weights with the given neat parameters</td><td>Any</td></tr>
+<tr><td><b>Run</b></td><td>Run</td><td>Run Flag - Set to true to run</td><td>Boolean</td></tr>
 </tbody>
 </table>
 
@@ -306,6 +324,7 @@ View
 <tr><td><b>Failed Networks</b></td><td>Failed Networks</td><td>Network Solutions which failed evaluation</td><td>Network oEL</td></tr>
 <tr><td><b>Info</b></td><td>Info</td><td>Info</td><td>Text</td></tr>
 <tr><td><b>Saved Networks</b></td><td>Saved Networks</td><td>NeatGenomes which have been stored in the component on intermediate saves during an evolution</td><td>Network oEL</td></tr>
+<tr><td><b>Info</b></td><td>Info</td><td>Info</td><td>String</td></tr>
 </tbody>
 </table>
 

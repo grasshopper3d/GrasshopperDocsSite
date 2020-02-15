@@ -56,7 +56,7 @@
 
 <div class="addon-header">
 <h1>Topologic</h1>
-<h5>ADDON, Version <b>1.3.0</b>, Released on <b>2019-Dec-25</b>, Provides <b>190</b> components, Created by <b>wassimj</b></h5>
+<h5>ADDON, Version <b>1.3.0</b>, Released on <b>2019-Dec-25</b>, Provides <b>192</b> components, Created by <b>wassimj</b></h5>
 <h5>Topologic is a software modelling library enabling hierarchical and topological representations of architectural spaces, buildings and artefacts through non-manifold topology (NMT). Topologic is designed as a core library and additional plugins to visual data flow programming (VDFP) applications and parametric modelling platforms commonly used in architectural design practice. These applications provide workspaces with visual programming nodes and connections for architects to interact with Topologic and perform architectural design and analysis tasks.
 
 Topologic is well-suited to create a lightweight representation of a building as an external envelope and the subdivision of the enclosed space into separate spaces and zones using zero-thickness internal surfaces. Because Topologic maintains topological consistency, a user can query these cellular spaces and surfaces regarding their topological data and thus conduct various analyses. For example, this lightweight and consistent representation was found to be well-matched with the input data requirements for energy analysis simulation software. Because Topologic allows entities with mixed dimensionalities and those that are optionally independent (e.g. a line, a surface, a volume) to co-exist, structural models can be represented in a coherent manner where lines can represent columns and beams, surfaces can represent walls and slabs, and volumes can represent solids. In addition, non-building entities, such as structural loads can be efficiently attached to the structure. This creates a lightweight model that is well-matched with the input data requirements for structural analysis simulation software.</h5>
@@ -250,9 +250,14 @@ CellComplex
 <a href="../components/topologic/cellUtilityVolume.html"><div class="ghsprite" style="background: url('../icons/topologic.png') -120px -72px" data-downtip="CellUtility.Volume"></div></a>
 </div>
 </td>
+<td>
+<div class="ghcolumn">
+<a href="../components/topologic/cellUtilityInternalVertex.html"><div class="ghsprite" style="background: url('../icons/topologic.png') 0px -456px" data-toptip="CellUtility.InternalVertex"></div></a>
+</div>
+</td>
 </tr>
 <tr class="ghgroup-title-row">
-<td class="ghgroup-title" colspan="2">
+<td class="ghgroup-title" colspan="3">
 CellUtility
 </td>
 </tr>
@@ -486,9 +491,14 @@ Face
 <a href="../components/topologic/faceUtilityVertexAtParameters.html"><div class="ghsprite" style="background: url('../icons/topologic.png') -144px -192px" data-downtip="FaceUtility.VertexAtParameters"></div></a>
 </div>
 </td>
+<td>
+<div class="ghcolumn">
+<a href="../components/topologic/faceUtilityInternalVertex.html"><div class="ghsprite" style="background: url('../icons/topologic.png') -24px -456px" data-toptip="FaceUtility.InternalVertex"></div></a>
+</div>
+</td>
 </tr>
 <tr class="ghgroup-title-row">
-<td class="ghgroup-title" colspan="5">
+<td class="ghgroup-title" colspan="6">
 FaceUtility
 </td>
 </tr>
@@ -1070,6 +1080,7 @@ WireUtility
 <tr><td class="ccol_1"><a href="../components/topologic/faceUtilityParametersAtVertex.html"><div class="ghsprite" style="background: url('../icons/topologic.png') -96px -192px" ></div></a></td><td class="ccol_2"><a href="../components/topologic/faceUtilityParametersAtVertex.html">FaceUtility.ParametersAtVertex</a><br><span class="desc">Returns the UV parameters at a given Vertex on a Face.</span></td></tr>
 <tr><td class="ccol_1"><a href="../components/topologic/faceUtilityTrimByWire.html"><div class="ghsprite" style="background: url('../icons/topologic.png') -120px -192px" ></div></a></td><td class="ccol_2"><a href="../components/topologic/faceUtilityTrimByWire.html">FaceUtility.TrimByWire</a><br><span class="desc">Trims a Face with a Wire. The portion of the Face inside the Wire will be returned.</span></td></tr>
 <tr><td class="ccol_1"><a href="../components/topologic/faceUtilityVertexAtParameters.html"><div class="ghsprite" style="background: url('../icons/topologic.png') -144px -192px" ></div></a></td><td class="ccol_2"><a href="../components/topologic/faceUtilityVertexAtParameters.html">FaceUtility.VertexAtParameters</a><br><span class="desc">Returns the Vertex at a given parameter of the Face.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/topologic/faceUtilityInternalVertex.html"><div class="ghsprite" style="background: url('../icons/topologic.png') -24px -456px" ></div></a></td><td class="ccol_2"><a href="../components/topologic/faceUtilityInternalVertex.html">FaceUtility.InternalVertex</a><br><span class="desc">Returns a Vertex inside the Face.</span></td></tr>
 </tbody>
 </table>
 
@@ -1173,6 +1184,7 @@ WireUtility
 <tr><td class="ccol_1"><a href="../components/topologic/cellUtilityContains.html"><div class="ghsprite" style="background: url('../icons/topologic.png') -72px -72px" ></div></a></td><td class="ccol_2"><a href="../components/topologic/cellUtilityContains.html">CellUtility.Contains</a><br><span class="desc">Check if a Vertex is contained in a Cell or not.</span></td></tr>
 <tr><td class="ccol_1"><a href="../components/topologic/cellUtilityInternalVertex.html"><div class="ghsprite" style="background: url('../icons/topologic.png') -96px -72px" ></div></a></td><td class="ccol_2"><a href="../components/topologic/cellUtilityInternalVertex.html">CellUtility.InternalVertex</a><br><span class="desc">Returns a Vertex inside the Cell.</span></td></tr>
 <tr><td class="ccol_1"><a href="../components/topologic/cellUtilityVolume.html"><div class="ghsprite" style="background: url('../icons/topologic.png') -120px -72px" ></div></a></td><td class="ccol_2"><a href="../components/topologic/cellUtilityVolume.html">CellUtility.Volume</a><br><span class="desc">Returns the volume of a Cell.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/topologic/cellUtilityInternalVertex.html"><div class="ghsprite" style="background: url('../icons/topologic.png') 0px -456px" ></div></a></td><td class="ccol_2"><a href="../components/topologic/cellUtilityInternalVertex.html">CellUtility.InternalVertex</a><br><span class="desc">Returns a Vertex inside the Cell.</span></td></tr>
 </tbody>
 </table>
 
