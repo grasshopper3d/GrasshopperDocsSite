@@ -1,0 +1,237 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+<head data-layout-view="wide">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>SQL Create Point Database - Slingshot - Grasshopper Docs</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+
+<meta name="description" content="A guide to component SQL Create Point Database in Grasshopper 3D." />
+<meta name="title" content="SQL Create Point Database - Slingshot - Grasshopper Docs" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://grasshopperdocs.com/" />
+<meta property="og:title" content="SQL Create Point Database - Slingshot - Grasshopper Docs" />
+
+<meta property="wiki-page" content="GH Slingshot SQL_Create_Point_Database.md" />
+
+<link rel="image_src" href="http://grasshopperdocs.com/ning/2985220.jpg" />
+
+<link href="../../style.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+
+<div id="docs" class="docs-theme docs-widget_page docs-widget_page_page docs-widget_page_page_show" data-layout-pack="classic">
+<div id="docs-head">
+<div id="docs-masthead">
+<p id="docs-sitename"><a id="application_name_header_link" href="http://grasshopperdocs.com/">Grasshopper Docs</a></p>
+<p id="docs-sitedesc" class="xj_site_desc">algorithmic modeling for Rhino</p>
+</div>
+<div id="docs-navigation">
+<ul>
+<li class="docs-subtab"><a href="http://www.grasshopper3d.com/"><span>Home</span></a></li>
+<li class="docs-subtab"><a href="http://www.grasshopper3d.com/photo"><span>View</span></a></li>
+<li class="docs-subtab"><a href="http://www.grasshopper3d.com/page/download-1"><span>Download</span></a></li>
+<li class="docs-subtab"><a href="https://discourse.mcneel.com/c/grasshopper"><span>Forums&#47;Support</span></a></li>
+<li class="docs-subtab this"><a href="http://grasshopperdocs.com/"><span>Learn</span></a></li>
+<li class="docs-subtab"><a href="http://www.grasshopper3d.com/events"><span>Attend</span></a></li>
+<li class="docs-subtab"><a href="http://www.grasshopper3d.com/profiles"><span>My Page</span></a></li></ul>
+
+</div>
+</div>
+
+<div id="docs-body">
+
+<div class="page">
+
+<div class="content">
+
+<div class="ghbar ">
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/slingshot/rDBFileCommand.html"><div class="ghsprite" style="background: url('../../icons/slingshot.png') -216px -24px" data-toptip="RDB File Command"></div></a>
+<a href="../../components/slingshot/rDBMSQuery.html"><div class="ghsprite" style="background: url('../../icons/slingshot.png') 0px -48px" data-downtip="RDBMS Query"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/slingshot/rDBFileQuery.html"><div class="ghsprite" style="background: url('../../icons/slingshot.png') -24px -48px" data-toptip="RDB File Query"></div></a>
+<a href="../../components/slingshot/connectionString.html"><div class="ghsprite" style="background: url('../../icons/slingshot.png') -48px -48px" data-downtip="Connection String"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/slingshot/rDBMSCommand.html"><div class="ghsprite" style="background: url('../../icons/slingshot.png') -72px -48px" data-toptip="RDBMS Command"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+RDBMS
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/slingshot/sQLCreateDatabase.html"><div class="ghsprite" style="background: url('../../icons/slingshot.png') 0px 0px" data-toptip="SQL Create Database"></div></a>
+<a href="../../components/slingshot/sQLInsertCommand.html"><div class="ghsprite" style="background: url('../../icons/slingshot.png') -24px 0px" data-downtip="SQL Insert Command"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/slingshot/sQLCreateTable.html"><div class="ghsprite" style="background: url('../../icons/slingshot.png') -48px 0px" data-toptip="SQL Create Table"></div></a>
+<a href="../../components/slingshot/sQLDatabaseList.html"><div class="ghsprite" style="background: url('../../icons/slingshot.png') -72px 0px" data-downtip="SQL Database List"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/slingshot/sQLCreateGenomeDatabase.html"><div class="ghsprite" style="background: url('../../icons/slingshot.png') -96px 0px" data-toptip="SQL Create Genome Database"></div></a>
+<a href="../../components/slingshot/sQLSELECTString.html"><div class="ghsprite" style="background: url('../../icons/slingshot.png') -120px 0px" data-downtip="SQL SELECT String"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/slingshot/sQLTableList.html"><div class="ghsprite" style="background: url('../../icons/slingshot.png') -144px 0px" data-toptip="SQL Table List"></div></a>
+<a href="../../components/slingshot/sQLTruncateTable.html"><div class="ghsprite" style="background: url('../../icons/slingshot.png') -168px 0px" data-downtip="SQL Truncate Table"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/slingshot/sQLCreateLineDatabase.html"><div class="ghsprite" style="background: url('../../icons/slingshot.png') -192px 0px" data-toptip="SQL Create Line Database"></div></a>
+<a href="../../components/slingshot/sQLCreateSensorDatabase.html"><div class="ghsprite" style="background: url('../../icons/slingshot.png') -216px 0px" data-downtip="SQL Create Sensor Database"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/slingshot/sQLColumnList.html"><div class="ghsprite" style="background: url('../../icons/slingshot.png') 0px -24px" data-toptip="SQL Column List"></div></a>
+<a href="../../components/slingshot/sQLCreatePointDatabase.html"><div class="ghsprite" style="background: url('../../icons/slingshot.png') -24px -24px" data-downtip="SQL Create Point Database"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/slingshot/sQLCreateMeshDatabase.html"><div class="ghsprite" style="background: url('../../icons/slingshot.png') -48px -24px" data-toptip="SQL Create Mesh Database"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="7">
+SQL
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/slingshot/sQLFormatRows.html"><div class="ghsprite" style="background: url('../../icons/slingshot.png') -72px -24px" data-toptip="SQL Format Rows"></div></a>
+<a href="../../components/slingshot/rhinoPack.html"><div class="ghsprite" style="background: url('../../icons/slingshot.png') -96px -24px" data-downtip="Rhino Pack"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/slingshot/sQLColumnParameters.html"><div class="ghsprite" style="background: url('../../icons/slingshot.png') -120px -24px" data-toptip="SQL Column Parameters"></div></a>
+<a href="../../components/slingshot/deserializeObject.html"><div class="ghsprite" style="background: url('../../icons/slingshot.png') -144px -24px" data-downtip="Deserialize Object"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/slingshot/rhinoUnpack.html"><div class="ghsprite" style="background: url('../../icons/slingshot.png') -168px -24px" data-toptip="Rhino Unpack"></div></a>
+<a href="../../components/slingshot/serializeObject.html"><div class="ghsprite" style="background: url('../../icons/slingshot.png') -192px -24px" data-downtip="Serialize Object"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+Utility
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+
+<div class="addon-buttons">
+<a href="https://provingground.io/tools/slingshot/">Download</a>
+</div>
+
+<div class="compo-header">
+<h1><div class="ghsprite" style="background: url('../../icons/slingshot.png') -24px -24px" ></div> SQL Create Point Database</h1>
+
+<div class="breadcrumb">
+ <a href="../../index.html">Component Index</a>
+  <a href="../../addons/slingshot.html">Slingshot</a><a href="#" class="breadcrumb-nolink">SQL</a><a href="#" class="breadcrumb-nolink">PtsDB</a>
+</div>
+
+</div>
+<h3>Create a special database for storing point data.</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Database Name</b></td><td>Database</td><td>Name of the mesh database.</td><td>String</td></tr>
+<tr><td><b>Points Table Name</b></td><td>PtsName</td><td>Name of the points table.</td><td>String</td></tr>
+<tr><td><b>Points</b></td><td>Points</td><td>A list of points.</td><td>Point</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>SQL Code</b></td><td>SQL</td><td>SQL Code</td><td>String</td></tr>
+</tbody>
+</table>
+
+
+</div>
+
+</div>
+
+</div>
+<div id="docs-foot">
+<p class="left">
+© 2018-2020  <a href="https://github.com/robinrodricks/">Robin Rodricks</a> and <a href="http://andrewheumann.com/">Andrew Heumann</a>. &nbsp;
+Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a> &nbsp;
+Rhinoceros and Grasshopper are registered trademarks of <a href="https://www.rhino3d.com/">Robert McNeel & Associates</a>.
+</p>
+<p class="right docs-lightfont">
+
+<a href="https://github.com/rhino/rhino.github.io/issues/new">Report an Issue</a> &nbsp;|&nbsp;
+<a href="/termsOfService.html">Terms of Service</a>
+</p>
+
+</div>
+</div>
+        
+<script src="/js/jquery.js"></script>
+<script src="/js/kramed.min.js"></script>
+<script src="/js/component.js"></script>
+<script src="/js/user.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    </body>
+</html>

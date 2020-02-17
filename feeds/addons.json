@@ -118,19 +118,6 @@
       "authorContact": "johnharding@fastmail.fm"
     },
     {
-      "name": "Bison",
-      "releaseDate": "2020-Jan-02",
-      "version": "0.90",
-      "downloadLink": "https://www.food4rhino.com/app/bison",
-      "helpLink": "https://grasshopperdocs.com/addons/bison.html",
-      "category": "Unknown",
-      "isSystem": false,
-      "components": 0,
-      "description": "",
-      "authorName": "Unknown",
-      "authorContact": null
-    },
-    {
       "name": "Bowerbird",
       "releaseDate": "2015-Jan-19",
       "version": "0.6.3",
@@ -193,19 +180,6 @@
       "components": 2,
       "description": "Allows the user to keyframe the animation of multiple objects in Grasshopper along a single slider. New version 0.7b allows you to export animation to 3D Studio Max for rendering.",
       "authorName": "Carson Smuts",
-      "authorContact": null
-    },
-    {
-      "name": "Clipper",
-      "releaseDate": "2015-Feb-04",
-      "version": "0.0.2.1",
-      "downloadLink": "https://www.food4rhino.com/app/clipper-grasshopper-and-rhino",
-      "helpLink": "https://grasshopperdocs.com/addons/clipper.html",
-      "category": "Unknown",
-      "isSystem": false,
-      "components": 0,
-      "description": "",
-      "authorName": "Unknown",
       "authorContact": null
     },
     {
@@ -505,19 +479,6 @@
       "components": 46,
       "description": "Grevit allows you to define BIM Elements in Grasshopper or SketchUp and translate them directly to Autodesk Revit or AutoCad Architecture. Grevit follows a one way process so your design model remains the geometrical source of truth: send geometry and attributes from Rhino/Grassopper or SketchUp to Autodesk Revit or ACA. Don't worry if your design changes, Grevit can even update existing geometries. Grevit supports a lot of BIM elements: like walls, beams, columns, simple components, adaptive components, even topography and many more.",
       "authorName": "Grevit-dev",
-      "authorContact": null
-    },
-    {
-      "name": "HAL Robotics",
-      "releaseDate": "2020-01-07",
-      "version": "1.0-beta",
-      "downloadLink": "https://www.food4rhino.com/app/hal-robotics-framework",
-      "helpLink": "https://grasshopperdocs.com/addons/hal-robotics.html",
-      "category": "Animation & Physics",
-      "isSystem": false,
-      "components": 0,
-      "description": "Over the last couple of years we have written, several times over, a completely new framework for robot programming, simulation, control and monitoring which is:\n\n1. Lightweight and cross-platform - it will run on Windows, macOS and Linux, including embedded systems\n2. Independent of a host software - we will be releasing plugins for a number of CAD packages and, eventually, an API for all the software developers out there\n3. Vendor-agnostic - we have abstracted the instructions machines are capable of executing and designed a new linguistics engine which will allow us to extend the number of compatible machines quickly and easily\n \nThe list of features that are underway in the framework is vast but for this first public beta we have decided to release just the core feature-set. This wasn't an easy decision to make, there is some extremely cool stuff we've temporarily kept to ourselves, but it will allow us to ensure that this base layer is robust so that any extensions to the framework are built on first-rate infrastructure. Similarly, to limit the potential sources of issues to those at the heart of our framework, we are only releasing this version for Grasshopper.",
-      "authorName": "HAL Robotics",
       "authorContact": null
     },
     {
@@ -1041,19 +1002,6 @@
       "authorContact": "contact@shapediver.com"
     },
     {
-      "name": "Slingshot",
-      "releaseDate": "2015-Oct-09",
-      "version": "2015.8.25",
-      "downloadLink": "https://provingground.io/tools/slingshot/",
-      "helpLink": "https://grasshopperdocs.com/addons/slingshot.html",
-      "category": "Unknown",
-      "isSystem": false,
-      "components": 0,
-      "description": "",
-      "authorName": "Unknown",
-      "authorContact": null
-    },
-    {
       "name": "SmartForm",
       "releaseDate": "2016-Feb-08",
       "version": "1",
@@ -1275,16 +1223,55 @@
       "authorContact": null
     },
     {
+      "name": "Slingshot",
+      "releaseDate": "2015-Oct-09",
+      "version": "2015.8.25",
+      "downloadLink": "https://provingground.io/tools/slingshot/",
+      "helpLink": "https://grasshopperdocs.com/addons/slingshot.html",
+      "category": "Database Integration",
+      "isSystem": false,
+      "components": 24,
+      "description": "Slingshot is an open source plug-in for which connects Grasshopper to relational databases such as MySQL.  The components allow you to create and query databases from within the Grasshopper canvas.  Slingshot for Grasshopper has been in development since 2010 and was the first plug-in published by Nathan Miller to enable better interoperability between data sources.",
+      "authorName": "Nathan Miller",
+      "authorContact": null
+    },
+    {
+      "name": "Clipper",
+      "releaseDate": "2019-Oct-09",
+      "version": "0.3.0",
+      "downloadLink": "https://www.food4rhino.com/app/clipper-grasshopper-and-rhino",
+      "helpLink": "https://grasshopperdocs.com/addons/clipper.html",
+      "category": "Geometry & Meshes",
+      "isSystem": false,
+      "components": 5,
+      "description": "Clipper is a 2D polygon Clipper offering polygon boolean operations (clipping): Intersection, Join, Difference, XOR. Offsets for polygons and Minkowski Sum and Differences.",
+      "authorName": "Arend van Waart",
+      "authorContact": null
+    },
+    {
       "name": "Bison",
       "releaseDate": "2020-Jan-02",
       "version": "0.90",
       "downloadLink": "https://www.food4rhino.com/app/bison",
       "helpLink": "https://grasshopperdocs.com/addons/bison.html",
-      "category": "Unknown",
+      "category": "Landscape & Tree Design",
       "isSystem": false,
-      "components": 0,
-      "description": "",
-      "authorName": "Unknown",
+      "components": 38,
+      "description": "Bison is a landscape architecture plugin for Grasshopper + Rhino 6. It features tools for terrain mesh creation, analysis, editing, and annotation.\n\nIt focuses on a continuous workflow from mesh analysis to editing and works to keep components concise and intuitive. The analysis tools include slope and aspect visualization, cut/fill calculations, watershed modeling and more, while the editing components transform the mesh based on curves and points. Bison also includes tools for importing landscape meshes, triangulation, and resampling, as well as components for annotating plans and cutting sections.",
+      "authorName": "bison.la",
+      "authorContact": null
+    },
+    {
+      "name": "Chimpanzee",
+      "releaseDate": "2019-Aug-31",
+      "version": "0.2",
+      "downloadLink": "https://www.food4rhino.com/app/chimpanzee",
+      "helpLink": "https://grasshopperdocs.com/addons/chimpanzee.html",
+      "category": "Fractals & Hyperchaotics",
+      "isSystem": false,
+      "components": 70,
+      "description": "Chimpanzee is suitable for fractal enthusiasts. Chimpanzee focuses on fractal math and chaos theory. Chimpanzee currently includes strange attractors, maps, 4D hyperchaotic systems and iterated function systems.",
+      "authorName": "Matouš Stieber",
       "authorContact": null
     },
     {

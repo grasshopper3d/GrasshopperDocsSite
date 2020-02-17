@@ -1911,6 +1911,386 @@
       "helpLink": "https://grasshopperdocs.com/components/biomorpher/biomorpherReader.html"
     },
     {
+      "name": "Bison",
+      "id": "Bison",
+      "library": "Bison",
+      "category": "About",
+      "summary": "About Bison",
+      "description": null,
+      "iconCss": "background: url('icons/bison.png') -168px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/bison/bison.html"
+    },
+    {
+      "name": "Aspect",
+      "id": "Aspect",
+      "library": "Bison",
+      "category": "Analysis",
+      "summary": "Slope aspect analysis for surface meshes.",
+      "description": null,
+      "iconCss": "background: url('icons/bison.png') -192px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/bison/aspect.html"
+    },
+    {
+      "name": "Concavity",
+      "id": "Concavity",
+      "library": "Bison",
+      "category": "Analysis",
+      "summary": "Relative approximate concavity analysis for surface meshes",
+      "description": null,
+      "iconCss": "background: url('icons/bison.png') 0px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/bison/concavity.html"
+    },
+    {
+      "name": "CutFill",
+      "id": "CutFill",
+      "library": "Bison",
+      "category": "Analysis",
+      "summary": "Calculate cut and fill volumes from proposed and existing mehes.",
+      "description": null,
+      "iconCss": "background: url('icons/bison.png') -48px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/bison/cutFill.html"
+    },
+    {
+      "name": "Elev",
+      "id": "Elev",
+      "library": "Bison",
+      "category": "Analysis",
+      "summary": "Elevation analysis for surface meshes",
+      "description": null,
+      "iconCss": "background: url('icons/bison.png') -168px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/bison/elev.html"
+    },
+    {
+      "name": "Flow",
+      "id": "Flow",
+      "library": "Bison",
+      "category": "Analysis",
+      "summary": "Flow tracing for surface mehes.",
+      "description": null,
+      "iconCss": "background: url('icons/bison.png') -144px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/bison/flow.html"
+    },
+    {
+      "name": "Roughness",
+      "id": "Roughness",
+      "library": "Bison",
+      "category": "Analysis",
+      "summary": "Relative roughness analysis for surface meshes",
+      "description": null,
+      "iconCss": "background: url('icons/bison.png') -216px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/bison/roughness.html"
+    },
+    {
+      "name": "Shade",
+      "id": "Shade",
+      "library": "Bison",
+      "category": "Analysis",
+      "summary": "Shading analysis for surface mesh faces.",
+      "description": null,
+      "iconCss": "background: url('icons/bison.png') -96px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/bison/shade.html"
+    },
+    {
+      "name": "Slope",
+      "id": "Slope",
+      "library": "Bison",
+      "category": "Analysis",
+      "summary": "Slope analysis for surface meshes.",
+      "description": null,
+      "iconCss": "background: url('icons/bison.png') -120px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/bison/slope.html"
+    },
+    {
+      "name": "Viewshed",
+      "id": "Viewshed",
+      "library": "Bison",
+      "category": "Analysis",
+      "summary": "Viewshed analysis for surface mesh faces.",
+      "description": null,
+      "iconCss": "background: url('icons/bison.png') -24px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/bison/viewshed.html"
+    },
+    {
+      "name": "Watershed",
+      "id": "Watershed",
+      "library": "Bison",
+      "category": "Analysis",
+      "summary": "Calculate the watershed for given points on a surface mesh.",
+      "description": null,
+      "iconCss": "background: url('icons/bison.png') -72px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/bison/watershed.html"
+    },
+    {
+      "name": "Contour",
+      "id": "Contour",
+      "library": "Bison",
+      "category": "Anno",
+      "summary": "Draws major and minor contours with elevation tags",
+      "description": null,
+      "iconCss": "background: url('icons/bison.png') 0px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/bison/contour.html"
+    },
+    {
+      "name": "HP LP",
+      "id": "HP LP",
+      "library": "Bison",
+      "category": "Anno",
+      "summary": "Calculate local high and low points on a surface mesh",
+      "description": null,
+      "iconCss": "background: url('icons/bison.png') -144px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/bison/hPLP.html"
+    },
+    {
+      "name": "Slope Grid",
+      "id": "Slope Grid",
+      "library": "Bison",
+      "category": "Anno",
+      "summary": "Calculate local slope percentage for a point grid on a mesh",
+      "description": null,
+      "iconCss": "background: url('icons/bison.png') -120px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/bison/slopeGrid.html"
+    },
+    {
+      "name": "Slope Line",
+      "id": "Slope Line",
+      "library": "Bison",
+      "category": "Anno",
+      "summary": "Calculate slope percentage for the end points of curves",
+      "description": null,
+      "iconCss": "background: url('icons/bison.png') -216px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/bison/slopeLine.html"
+    },
+    {
+      "name": "Slope Path",
+      "id": "Slope Path",
+      "library": "Bison",
+      "category": "Anno",
+      "summary": "Calculate local slope percentage for points along a curve on a mesh",
+      "description": null,
+      "iconCss": "background: url('icons/bison.png') -192px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/bison/slopePath.html"
+    },
+    {
+      "name": "Slope Point",
+      "id": "Slope Point",
+      "library": "Bison",
+      "category": "Anno",
+      "summary": "Calculate local slope percentage for a point on a mesh",
+      "description": null,
+      "iconCss": "background: url('icons/bison.png') -168px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/bison/slopePoint.html"
+    },
+    {
+      "name": "Spot Elevation",
+      "id": "Spot Elevation",
+      "library": "Bison",
+      "category": "Anno",
+      "summary": "Draw elevation tags for points projected to a mesh",
+      "description": null,
+      "iconCss": "background: url('icons/bison.png') -24px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/bison/spotElevation.html"
+    },
+    {
+      "name": "Spot Elevation Grid",
+      "id": "Spot Elevation Grid",
+      "library": "Bison",
+      "category": "Anno",
+      "summary": "Draw elevation tags for a point grid on a mesh",
+      "description": null,
+      "iconCss": "background: url('icons/bison.png') -96px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/bison/spotElevationGrid.html"
+    },
+    {
+      "name": "Spot Elevation Path",
+      "id": "Spot Elevation Path",
+      "library": "Bison",
+      "category": "Anno",
+      "summary": "Draw elevation tags for a points along a curve on a mesh",
+      "description": null,
+      "iconCss": "background: url('icons/bison.png') -72px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/bison/spotElevationPath.html"
+    },
+    {
+      "name": "Spot Elevation Point",
+      "id": "Spot Elevation Point",
+      "library": "Bison",
+      "category": "Anno",
+      "summary": "Draw elevation tags for points",
+      "description": null,
+      "iconCss": "background: url('icons/bison.png') -48px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/bison/spotElevationPoint.html"
+    },
+    {
+      "name": "Remesh Random",
+      "id": "Remesh Random",
+      "library": "Bison",
+      "category": "Mesh",
+      "summary": "Resample a landscape mesh with a random grid",
+      "description": null,
+      "iconCss": "background: url('icons/bison.png') -216px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/bison/remeshRandom.html"
+    },
+    {
+      "name": "Remesh Square",
+      "id": "Remesh Square",
+      "library": "Bison",
+      "category": "Mesh",
+      "summary": "Resample a landscape mesh with a square grid",
+      "description": null,
+      "iconCss": "background: url('icons/bison.png') 0px -72px",
+      "helpLink": "https://grasshopperdocs.com/components/bison/remeshSquare.html"
+    },
+    {
+      "name": "Remesh Triangular",
+      "id": "Remesh Triangular",
+      "library": "Bison",
+      "category": "Mesh",
+      "summary": "Resample a landscap emesh with a triangular grid",
+      "description": null,
+      "iconCss": "background: url('icons/bison.png') -24px -72px",
+      "helpLink": "https://grasshopperdocs.com/components/bison/remeshTriangular.html"
+    },
+    {
+      "name": "Triangulate Mesh",
+      "id": "Triangulate Mesh",
+      "library": "Bison",
+      "category": "Mesh",
+      "summary": "Create a surface mesh from points and/or curves",
+      "description": null,
+      "iconCss": "background: url('icons/bison.png') -192px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/bison/triangulateMesh.html"
+    },
+    {
+      "name": "Mesh Curve",
+      "id": "Mesh Curve",
+      "library": "Bison",
+      "category": "Mesh Edit",
+      "summary": "Edit mesh with an edge curve with a given slope",
+      "description": null,
+      "iconCss": "background: url('icons/bison.png') -72px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/bison/meshCurve.html"
+    },
+    {
+      "name": "Mesh Curve Pull",
+      "id": "Mesh Curve Pull",
+      "library": "Bison",
+      "category": "Mesh Edit",
+      "summary": "Edit mesh with deformations following curves, strength defined by curve elevation",
+      "description": null,
+      "iconCss": "background: url('icons/bison.png') -24px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/bison/meshCurvePull.html"
+    },
+    {
+      "name": "Mesh Flat",
+      "id": "Mesh Flat",
+      "library": "Bison",
+      "category": "Mesh Edit",
+      "summary": "Edit mesh with a flat region defined by a curve",
+      "description": null,
+      "iconCss": "background: url('icons/bison.png') -96px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/bison/meshFlat.html"
+    },
+    {
+      "name": "Mesh Path",
+      "id": "Mesh Path",
+      "library": "Bison",
+      "category": "Mesh Edit",
+      "summary": "Edit mesh with a flattened path along a given curve",
+      "description": null,
+      "iconCss": "background: url('icons/bison.png') -144px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/bison/meshPath.html"
+    },
+    {
+      "name": "Mesh Point",
+      "id": "Mesh Point",
+      "library": "Bison",
+      "category": "Mesh Edit",
+      "summary": "Edit mesh with points and a given slope",
+      "description": null,
+      "iconCss": "background: url('icons/bison.png') -120px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/bison/meshPoint.html"
+    },
+    {
+      "name": "Mesh Point Pull",
+      "id": "Mesh Point Pull",
+      "library": "Bison",
+      "category": "Mesh Edit",
+      "summary": "Edit mesh with deformations at points, strength defined by point elevation",
+      "description": null,
+      "iconCss": "background: url('icons/bison.png') -48px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/bison/meshPointPull.html"
+    },
+    {
+      "name": "Reduce Slope",
+      "id": "Reduce Slope",
+      "library": "Bison",
+      "category": "Mesh Edit",
+      "summary": "Reduce mesh slopes to given limit",
+      "description": null,
+      "iconCss": "background: url('icons/bison.png') 0px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/bison/reduceSlope.html"
+    },
+    {
+      "name": "Import Mesh DEM",
+      "id": "Import Mesh DEM",
+      "library": "Bison",
+      "category": "Mesh Import",
+      "summary": "Import mesh from a Tiff DEM file encoded in single-channel 32 bit floats",
+      "description": null,
+      "iconCss": "background: url('icons/bison.png') -72px -72px",
+      "helpLink": "https://grasshopperdocs.com/components/bison/importMeshDEM.html"
+    },
+    {
+      "name": "Import Mesh LandXML",
+      "id": "Import Mesh LandXML",
+      "library": "Bison",
+      "category": "Mesh Import",
+      "summary": "Import mesh from a LandXML TIN surface",
+      "description": null,
+      "iconCss": "background: url('icons/bison.png') -48px -72px",
+      "helpLink": "https://grasshopperdocs.com/components/bison/importMeshLandXML.html"
+    },
+    {
+      "name": "Section Profile",
+      "id": "Section Profile",
+      "library": "Bison",
+      "category": "Section",
+      "summary": "Cuts a section along an irregular profile curve.",
+      "description": null,
+      "iconCss": "background: url('icons/bison.png') -168px -72px",
+      "helpLink": "https://grasshopperdocs.com/components/bison/sectionProfile.html"
+    },
+    {
+      "name": "Section Serial",
+      "id": "Section Serial",
+      "library": "Bison",
+      "category": "Section",
+      "summary": "Cuts serial sections pependicular to a centerline curve at a given interval",
+      "description": null,
+      "iconCss": "background: url('icons/bison.png') -120px -72px",
+      "helpLink": "https://grasshopperdocs.com/components/bison/sectionSerial.html"
+    },
+    {
+      "name": "Section Serial Dist",
+      "id": "Section Serial Dist",
+      "library": "Bison",
+      "category": "Section",
+      "summary": "Cuts serial sections pependicular to a centerline curve at a given distances along curve",
+      "description": null,
+      "iconCss": "background: url('icons/bison.png') -96px -72px",
+      "helpLink": "https://grasshopperdocs.com/components/bison/sectionSerialDist.html"
+    },
+    {
+      "name": "Section To XY",
+      "id": "Section To XY",
+      "library": "Bison",
+      "category": "Section",
+      "summary": "Cuts serial sections pependicular to a centerline curve at a given interval",
+      "description": null,
+      "iconCss": "background: url('icons/bison.png') -144px -72px",
+      "helpLink": "https://grasshopperdocs.com/components/bison/sectionToXY.html"
+    },
+    {
       "name": "BB Layer",
       "id": "BBLayer",
       "library": "Bowerbird",
@@ -2629,6 +3009,756 @@
       "description": null,
       "iconCss": "background: url('icons/centipede.png') -24px 0px",
       "helpLink": "https://grasshopperdocs.com/components/centipede/export.html"
+    },
+    {
+      "name": "Burning Ship",
+      "id": "Burning Ship",
+      "library": "Chimpanzee",
+      "category": "Fractals",
+      "summary": "Burning Ship",
+      "description": null,
+      "iconCss": "background: url('icons/chimpanzee.png') -216px -144px",
+      "helpLink": "https://grasshopperdocs.com/components/chimpanzee/burningShip.html"
+    },
+    {
+      "name": "Julia Set",
+      "id": "Julia Set",
+      "library": "Chimpanzee",
+      "category": "Fractals",
+      "summary": "Julia Set",
+      "description": null,
+      "iconCss": "background: url('icons/chimpanzee.png') -192px -144px",
+      "helpLink": "https://grasshopperdocs.com/components/chimpanzee/juliaSet.html"
+    },
+    {
+      "name": "Mandelbrot Set",
+      "id": "Mandelbrot Set",
+      "library": "Chimpanzee",
+      "category": "Fractals",
+      "summary": "Mandelbrot Set",
+      "description": null,
+      "iconCss": "background: url('icons/chimpanzee.png') -168px -144px",
+      "helpLink": "https://grasshopperdocs.com/components/chimpanzee/mandelbrotSet.html"
+    },
+    {
+      "name": "4D Bouali System A",
+      "id": "4D Bouali System A",
+      "library": "Chimpanzee",
+      "category": "Hyperchaotic Systems",
+      "summary": "4D Bouali System A",
+      "description": null,
+      "iconCss": "background: url('icons/chimpanzee.png') -168px -120px",
+      "helpLink": "https://grasshopperdocs.com/components/chimpanzee/4DBoualiSystemA.html"
+    },
+    {
+      "name": "4D Bouali System B",
+      "id": "4D Bouali System B",
+      "library": "Chimpanzee",
+      "category": "Hyperchaotic Systems",
+      "summary": "4D Bouali System B",
+      "description": null,
+      "iconCss": "background: url('icons/chimpanzee.png') -120px -120px",
+      "helpLink": "https://grasshopperdocs.com/components/chimpanzee/4DBoualiSystemB.html"
+    },
+    {
+      "name": "4D Jha System",
+      "id": "4D Jha System",
+      "library": "Chimpanzee",
+      "category": "Hyperchaotic Systems",
+      "summary": "4D Jha System",
+      "description": null,
+      "iconCss": "background: url('icons/chimpanzee.png') -24px -120px",
+      "helpLink": "https://grasshopperdocs.com/components/chimpanzee/4DJhaSystem.html"
+    },
+    {
+      "name": "4D Mathieu van der Pol System",
+      "id": "4D Mathieu van der Pol System",
+      "library": "Chimpanzee",
+      "category": "Hyperchaotic Systems",
+      "summary": "4D Mathieu van der Pol System",
+      "description": null,
+      "iconCss": "background: url('icons/chimpanzee.png') 0px -120px",
+      "helpLink": "https://grasshopperdocs.com/components/chimpanzee/4DMathieuVanDerPolSystem.html"
+    },
+    {
+      "name": "4D Qi System",
+      "id": "4D Qi System",
+      "library": "Chimpanzee",
+      "category": "Hyperchaotic Systems",
+      "summary": "4D Qi System",
+      "description": null,
+      "iconCss": "background: url('icons/chimpanzee.png') -144px -120px",
+      "helpLink": "https://grasshopperdocs.com/components/chimpanzee/4DQiSystem.html"
+    },
+    {
+      "name": "4D Rossler System",
+      "id": "4D Rossler System",
+      "library": "Chimpanzee",
+      "category": "Hyperchaotic Systems",
+      "summary": "4D Rossler System",
+      "description": null,
+      "iconCss": "background: url('icons/chimpanzee.png') -96px -120px",
+      "helpLink": "https://grasshopperdocs.com/components/chimpanzee/4DRosslerSystem.html"
+    },
+    {
+      "name": "4D Sprott C System",
+      "id": "4D Sprott C System",
+      "library": "Chimpanzee",
+      "category": "Hyperchaotic Systems",
+      "summary": "4D Sprott C System",
+      "description": null,
+      "iconCss": "background: url('icons/chimpanzee.png') -72px -120px",
+      "helpLink": "https://grasshopperdocs.com/components/chimpanzee/4DSprottCSystem.html"
+    },
+    {
+      "name": "Matsumoto-Chua-Kobayashi System",
+      "id": "MCK",
+      "library": "Chimpanzee",
+      "category": "Hyperchaotic Systems",
+      "summary": "Matsumoto-Chua-Kobayshi System (MCK)",
+      "description": null,
+      "iconCss": "background: url('icons/chimpanzee.png') -48px -120px",
+      "helpLink": "https://grasshopperdocs.com/components/chimpanzee/matsumotoChuaKobayashiSystem.html"
+    },
+    {
+      "name": "Barnsley Fern",
+      "id": "Barnsley Fern",
+      "library": "Chimpanzee",
+      "category": "Iterated Function Systems (IFS)",
+      "summary": "Barnsley Fern",
+      "description": null,
+      "iconCss": "background: url('icons/chimpanzee.png') -192px -120px",
+      "helpLink": "https://grasshopperdocs.com/components/chimpanzee/barnsleyFern.html"
+    },
+    {
+      "name": "Dragon (IFS)",
+      "id": "Dragon (IFS)",
+      "library": "Chimpanzee",
+      "category": "Iterated Function Systems (IFS)",
+      "summary": "Dragon (IFS)",
+      "description": null,
+      "iconCss": "background: url('icons/chimpanzee.png') -120px -144px",
+      "helpLink": "https://grasshopperdocs.com/components/chimpanzee/dragonIFS.html"
+    },
+    {
+      "name": "Harter-Heighway Dragon",
+      "id": "Harter-Heighway Dragon",
+      "library": "Chimpanzee",
+      "category": "Iterated Function Systems (IFS)",
+      "summary": "Harter-Heighway Dragon",
+      "description": null,
+      "iconCss": "background: url('icons/chimpanzee.png') -96px -144px",
+      "helpLink": "https://grasshopperdocs.com/components/chimpanzee/harterHeighwayDragon.html"
+    },
+    {
+      "name": "Levy C Curve",
+      "id": "Levy C Curve",
+      "library": "Chimpanzee",
+      "category": "Iterated Function Systems (IFS)",
+      "summary": "Levy C Curve",
+      "description": null,
+      "iconCss": "background: url('icons/chimpanzee.png') -144px -144px",
+      "helpLink": "https://grasshopperdocs.com/components/chimpanzee/levyCCurve.html"
+    },
+    {
+      "name": "Maple Leaf (IFS)",
+      "id": "Maple Leaf (IFS)",
+      "library": "Chimpanzee",
+      "category": "Iterated Function Systems (IFS)",
+      "summary": "Maple Leaf (IFS)",
+      "description": null,
+      "iconCss": "background: url('icons/chimpanzee.png') -48px -144px",
+      "helpLink": "https://grasshopperdocs.com/components/chimpanzee/mapleLeafIFS.html"
+    },
+    {
+      "name": "Sierpinski Carpet",
+      "id": "Sierpinski Carpet",
+      "library": "Chimpanzee",
+      "category": "Iterated Function Systems (IFS)",
+      "summary": "Sierpinski Carpet (IFS)",
+      "description": null,
+      "iconCss": "background: url('icons/chimpanzee.png') -216px -120px",
+      "helpLink": "https://grasshopperdocs.com/components/chimpanzee/sierpinskiCarpet.html"
+    },
+    {
+      "name": "Sierpinski Triangle",
+      "id": "Sierpinski Triangle",
+      "library": "Chimpanzee",
+      "category": "Iterated Function Systems (IFS)",
+      "summary": "Sierpinski Triangle (IFS)",
+      "description": null,
+      "iconCss": "background: url('icons/chimpanzee.png') -24px -144px",
+      "helpLink": "https://grasshopperdocs.com/components/chimpanzee/sierpinskiTriangle.html"
+    },
+    {
+      "name": "Swirl (IFS)",
+      "id": "Swirl (IFS)",
+      "library": "Chimpanzee",
+      "category": "Iterated Function Systems (IFS)",
+      "summary": "Swirl (IFS)",
+      "description": null,
+      "iconCss": "background: url('icons/chimpanzee.png') -72px -144px",
+      "helpLink": "https://grasshopperdocs.com/components/chimpanzee/swirlIFS.html"
+    },
+    {
+      "name": "Tree (IFS)",
+      "id": "Tree (IFS)",
+      "library": "Chimpanzee",
+      "category": "Iterated Function Systems (IFS)",
+      "summary": "Tree (IFS)",
+      "description": null,
+      "iconCss": "background: url('icons/chimpanzee.png') 0px -144px",
+      "helpLink": "https://grasshopperdocs.com/components/chimpanzee/treeIFS.html"
+    },
+    {
+      "name": "Cubic Henon Map",
+      "id": "Cubic Henon Map",
+      "library": "Chimpanzee",
+      "category": "Maps",
+      "summary": "Cubic Henon Map",
+      "description": null,
+      "iconCss": "background: url('icons/chimpanzee.png') -96px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/chimpanzee/cubicHenonMap.html"
+    },
+    {
+      "name": "Duffing Oscillator",
+      "id": "Duffing Oscillator",
+      "library": "Chimpanzee",
+      "category": "Maps",
+      "summary": "Duffing Oscillator",
+      "description": null,
+      "iconCss": "background: url('icons/chimpanzee.png') -72px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/chimpanzee/duffingOscillator.html"
+    },
+    {
+      "name": "Elhadj-Sprott A Map",
+      "id": "Elhadj-Sprott A Map",
+      "library": "Chimpanzee",
+      "category": "Maps",
+      "summary": "Elhadj-Sprott A Map",
+      "description": null,
+      "iconCss": "background: url('icons/chimpanzee.png') -120px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/chimpanzee/elhadjSprottAMap.html"
+    },
+    {
+      "name": "Folded-Towel Map",
+      "id": "Folded-Towel Map",
+      "library": "Chimpanzee",
+      "category": "Maps",
+      "summary": "Folded-Towel Map",
+      "description": null,
+      "iconCss": "background: url('icons/chimpanzee.png') -24px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/chimpanzee/foldedTowelMap.html"
+    },
+    {
+      "name": "Gingerbread Map",
+      "id": "Gingerbread Map",
+      "library": "Chimpanzee",
+      "category": "Maps",
+      "summary": "Gingerbread Map",
+      "description": null,
+      "iconCss": "background: url('icons/chimpanzee.png') -216px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/chimpanzee/gingerbreadMap.html"
+    },
+    {
+      "name": "Gumowski-Mira Map",
+      "id": "Gumowski-Mira Map",
+      "library": "Chimpanzee",
+      "category": "Maps",
+      "summary": "Gumowski-Mira Map",
+      "description": null,
+      "iconCss": "background: url('icons/chimpanzee.png') -72px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/chimpanzee/gumowskiMiraMap.html"
+    },
+    {
+      "name": "Henon Map",
+      "id": "Henon Map",
+      "library": "Chimpanzee",
+      "category": "Maps",
+      "summary": "Henon Map",
+      "description": null,
+      "iconCss": "background: url('icons/chimpanzee.png') -192px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/chimpanzee/henonMap.html"
+    },
+    {
+      "name": "Hopalong Map",
+      "id": "Hopalong Map",
+      "library": "Chimpanzee",
+      "category": "Maps",
+      "summary": "Hopalong Map",
+      "description": null,
+      "iconCss": "background: url('icons/chimpanzee.png') 0px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/chimpanzee/hopalongMap.html"
+    },
+    {
+      "name": "Ikeda Map",
+      "id": "Ikeda Map",
+      "library": "Chimpanzee",
+      "category": "Maps",
+      "summary": "Ikeda Map",
+      "description": null,
+      "iconCss": "background: url('icons/chimpanzee.png') -96px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/chimpanzee/ikedaMap.html"
+    },
+    {
+      "name": "MacMillan Map",
+      "id": "MacMillan Map",
+      "library": "Chimpanzee",
+      "category": "Maps",
+      "summary": "MacMillan Map",
+      "description": null,
+      "iconCss": "background: url('icons/chimpanzee.png') -144px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/chimpanzee/macMillanMap.html"
+    },
+    {
+      "name": "Mira Map",
+      "id": "Mira Map",
+      "library": "Chimpanzee",
+      "category": "Maps",
+      "summary": "Mira Map",
+      "description": null,
+      "iconCss": "background: url('icons/chimpanzee.png') 0px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/chimpanzee/miraMap.html"
+    },
+    {
+      "name": "Multifold Henon Map",
+      "id": "Multifold Henon Map",
+      "library": "Chimpanzee",
+      "category": "Maps",
+      "summary": "Multifold Henon Map",
+      "description": null,
+      "iconCss": "background: url('icons/chimpanzee.png') -48px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/chimpanzee/multifoldHenonMap.html"
+    },
+    {
+      "name": "Peter de Jong Map",
+      "id": "Peter de Jong Map",
+      "library": "Chimpanzee",
+      "category": "Maps",
+      "summary": "Peter de Jong Map",
+      "description": null,
+      "iconCss": "background: url('icons/chimpanzee.png') -48px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/chimpanzee/peterDeJongMap.html"
+    },
+    {
+      "name": "Tinkerbell Map",
+      "id": "Tinkerbell Map",
+      "library": "Chimpanzee",
+      "category": "Maps",
+      "summary": "Tinkerbell Map",
+      "description": null,
+      "iconCss": "background: url('icons/chimpanzee.png') -24px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/chimpanzee/tinkerbellMap.html"
+    },
+    {
+      "name": "Ueda Oscillator",
+      "id": "Ueda Oscillator",
+      "library": "Chimpanzee",
+      "category": "Maps",
+      "summary": "Ueda Oscillator",
+      "description": null,
+      "iconCss": "background: url('icons/chimpanzee.png') -168px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/chimpanzee/uedaOscillator.html"
+    },
+    {
+      "name": "3-Cells CNN System",
+      "id": "3-Cells CNN System",
+      "library": "Chimpanzee",
+      "category": "Strange Attractors",
+      "summary": "3-Cells CNN System",
+      "description": null,
+      "iconCss": "background: url('icons/chimpanzee.png') -120px -96px",
+      "helpLink": "https://grasshopperdocs.com/components/chimpanzee/3CellsCNNSystem.html"
+    },
+    {
+      "name": "Aguirre-Letellier System",
+      "id": "Aguirre-Letellier System",
+      "library": "Chimpanzee",
+      "category": "Strange Attractors",
+      "summary": "Aguirre-Letellier System",
+      "description": null,
+      "iconCss": "background: url('icons/chimpanzee.png') -216px -72px",
+      "helpLink": "https://grasshopperdocs.com/components/chimpanzee/aguirreLetellierSystem.html"
+    },
+    {
+      "name": "Bouali System 1",
+      "id": "Bouali System 1",
+      "library": "Chimpanzee",
+      "category": "Strange Attractors",
+      "summary": "Bouali System 1",
+      "description": null,
+      "iconCss": "background: url('icons/chimpanzee.png') -48px -96px",
+      "helpLink": "https://grasshopperdocs.com/components/chimpanzee/boualiSystem1.html"
+    },
+    {
+      "name": "Bouali System 2",
+      "id": "Bouali System 2",
+      "library": "Chimpanzee",
+      "category": "Strange Attractors",
+      "summary": "Bouali System 2",
+      "description": null,
+      "iconCss": "background: url('icons/chimpanzee.png') -24px -72px",
+      "helpLink": "https://grasshopperdocs.com/components/chimpanzee/boualiSystem2.html"
+    },
+    {
+      "name": "Bouali System 3",
+      "id": "Bouali System 3",
+      "library": "Chimpanzee",
+      "category": "Strange Attractors",
+      "summary": "Bouali System 3",
+      "description": null,
+      "iconCss": "background: url('icons/chimpanzee.png') -168px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/chimpanzee/boualiSystem3.html"
+    },
+    {
+      "name": "Burke-Shaw System",
+      "id": "Burke-Shaw System",
+      "library": "Chimpanzee",
+      "category": "Strange Attractors",
+      "summary": "Burke-Shaw System",
+      "description": null,
+      "iconCss": "background: url('icons/chimpanzee.png') -72px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/chimpanzee/burkeShawSystem.html"
+    },
+    {
+      "name": "Chen System",
+      "id": "Chen System",
+      "library": "Chimpanzee",
+      "category": "Strange Attractors",
+      "summary": "Chen System",
+      "description": null,
+      "iconCss": "background: url('icons/chimpanzee.png') -96px -72px",
+      "helpLink": "https://grasshopperdocs.com/components/chimpanzee/chenSystem.html"
+    },
+    {
+      "name": "Chen-Lee System",
+      "id": "Chen-Lee System",
+      "library": "Chimpanzee",
+      "category": "Strange Attractors",
+      "summary": "Chen-Lee System",
+      "description": null,
+      "iconCss": "background: url('icons/chimpanzee.png') -144px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/chimpanzee/chenLeeSystem.html"
+    },
+    {
+      "name": "Coupled Lorenz System",
+      "id": "Coupled Lorenz System",
+      "library": "Chimpanzee",
+      "category": "Strange Attractors",
+      "summary": "Coupled Lorenz System",
+      "description": null,
+      "iconCss": "background: url('icons/chimpanzee.png') -96px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/chimpanzee/coupledLorenzSystem.html"
+    },
+    {
+      "name": "Dadras-Momeni System",
+      "id": "Dadras-Momeni System",
+      "library": "Chimpanzee",
+      "category": "Strange Attractors",
+      "summary": "Dadras-Momeni System",
+      "description": null,
+      "iconCss": "background: url('icons/chimpanzee.png') -120px -72px",
+      "helpLink": "https://grasshopperdocs.com/components/chimpanzee/dadrasMomeniSystem.html"
+    },
+    {
+      "name": "Elhadj-Sprott System",
+      "id": "Elhadj-Sprott System",
+      "library": "Chimpanzee",
+      "category": "Strange Attractors",
+      "summary": "Elhadj-Sprott System",
+      "description": null,
+      "iconCss": "background: url('icons/chimpanzee.png') -192px -96px",
+      "helpLink": "https://grasshopperdocs.com/components/chimpanzee/elhadjSprottSystem.html"
+    },
+    {
+      "name": "Finance System",
+      "id": "Finance System",
+      "library": "Chimpanzee",
+      "category": "Strange Attractors",
+      "summary": "Finance System",
+      "description": null,
+      "iconCss": "background: url('icons/chimpanzee.png') -216px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/chimpanzee/financeSystem.html"
+    },
+    {
+      "name": "Hadley System",
+      "id": "Hadley System",
+      "library": "Chimpanzee",
+      "category": "Strange Attractors",
+      "summary": "Hadley System",
+      "description": null,
+      "iconCss": "background: url('icons/chimpanzee.png') -192px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/chimpanzee/hadleySystem.html"
+    },
+    {
+      "name": "Halvorsen System",
+      "id": "Halvorsen System",
+      "library": "Chimpanzee",
+      "category": "Strange Attractors",
+      "summary": "Halvorsen System",
+      "description": null,
+      "iconCss": "background: url('icons/chimpanzee.png') -144px -96px",
+      "helpLink": "https://grasshopperdocs.com/components/chimpanzee/halvorsenSystem.html"
+    },
+    {
+      "name": "Hindmarsh-Rose System",
+      "id": "Hindmarsh-Rose System",
+      "library": "Chimpanzee",
+      "category": "Strange Attractors",
+      "summary": "Hindmarsh-Rose System",
+      "description": null,
+      "iconCss": "background: url('icons/chimpanzee.png') -192px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/chimpanzee/hindmarshRoseSystem.html"
+    },
+    {
+      "name": "Lorenz System",
+      "id": "Lorenz System",
+      "library": "Chimpanzee",
+      "category": "Strange Attractors",
+      "summary": "Lorenz System",
+      "description": null,
+      "iconCss": "background: url('icons/chimpanzee.png') -216px -96px",
+      "helpLink": "https://grasshopperdocs.com/components/chimpanzee/lorenzSystem.html"
+    },
+    {
+      "name": "Moore-Spiegel System",
+      "id": "Moore-Spiegel System",
+      "library": "Chimpanzee",
+      "category": "Strange Attractors",
+      "summary": "Moore-Spiegel System",
+      "description": null,
+      "iconCss": "background: url('icons/chimpanzee.png') -168px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/chimpanzee/mooreSpiegelSystem.html"
+    },
+    {
+      "name": "Newton-Leipnik System",
+      "id": "Newton-Leipnik System",
+      "library": "Chimpanzee",
+      "category": "Strange Attractors",
+      "summary": "Newton-Leipnik System",
+      "description": null,
+      "iconCss": "background: url('icons/chimpanzee.png') 0px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/chimpanzee/newtonLeipnikSystem.html"
+    },
+    {
+      "name": "Nose-Hoover System",
+      "id": "Nose-Hoover System",
+      "library": "Chimpanzee",
+      "category": "Strange Attractors",
+      "summary": "Nose-Hoover System",
+      "description": null,
+      "iconCss": "background: url('icons/chimpanzee.png') -168px -72px",
+      "helpLink": "https://grasshopperdocs.com/components/chimpanzee/noseHooverSystem.html"
+    },
+    {
+      "name": "Qi-Chen System",
+      "id": "Qi-Chen System",
+      "library": "Chimpanzee",
+      "category": "Strange Attractors",
+      "summary": "Qi-Chen System",
+      "description": null,
+      "iconCss": "background: url('icons/chimpanzee.png') -72px -72px",
+      "helpLink": "https://grasshopperdocs.com/components/chimpanzee/qiChenSystem.html"
+    },
+    {
+      "name": "Rabinovich-Fabrikant System",
+      "id": "Rabinovich-Fabrikant System",
+      "library": "Chimpanzee",
+      "category": "Strange Attractors",
+      "summary": "Rabinovich-Fabrikant System",
+      "description": null,
+      "iconCss": "background: url('icons/chimpanzee.png') 0px -72px",
+      "helpLink": "https://grasshopperdocs.com/components/chimpanzee/rabinovichFabrikantSystem.html"
+    },
+    {
+      "name": "Rayleigh-Benard System",
+      "id": "Rayleigh-Benard System",
+      "library": "Chimpanzee",
+      "category": "Strange Attractors",
+      "summary": "Rayleigh-Benard System",
+      "description": null,
+      "iconCss": "background: url('icons/chimpanzee.png') -144px -72px",
+      "helpLink": "https://grasshopperdocs.com/components/chimpanzee/rayleighBenardSystem.html"
+    },
+    {
+      "name": "Rikitake System",
+      "id": "Rikitake Systemt",
+      "library": "Chimpanzee",
+      "category": "Strange Attractors",
+      "summary": "Rikitake System",
+      "description": null,
+      "iconCss": "background: url('icons/chimpanzee.png') -24px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/chimpanzee/rikitakeSystem.html"
+    },
+    {
+      "name": "Rossler System",
+      "id": "Rossler System",
+      "library": "Chimpanzee",
+      "category": "Strange Attractors",
+      "summary": "Rossler System",
+      "description": null,
+      "iconCss": "background: url('icons/chimpanzee.png') -96px -96px",
+      "helpLink": "https://grasshopperdocs.com/components/chimpanzee/rosslerSystem.html"
+    },
+    {
+      "name": "Rucklide System",
+      "id": "Rucklide System",
+      "library": "Chimpanzee",
+      "category": "Strange Attractors",
+      "summary": "Rucklide System",
+      "description": null,
+      "iconCss": "background: url('icons/chimpanzee.png') -120px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/chimpanzee/rucklideSystem.html"
+    },
+    {
+      "name": "Sakarya System",
+      "id": "Sakarya System",
+      "library": "Chimpanzee",
+      "category": "Strange Attractors",
+      "summary": "Sakarya System",
+      "description": null,
+      "iconCss": "background: url('icons/chimpanzee.png') -216px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/chimpanzee/sakaryaSystem.html"
+    },
+    {
+      "name": "Shimizu-Morioka System",
+      "id": "Shimizu-Morioka System",
+      "library": "Chimpanzee",
+      "category": "Strange Attractors",
+      "summary": "Shimizu-Morioka System",
+      "description": null,
+      "iconCss": "background: url('icons/chimpanzee.png') -120px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/chimpanzee/shimizuMoriokaSystem.html"
+    },
+    {
+      "name": "Sprott C System",
+      "id": "Sprott C System",
+      "library": "Chimpanzee",
+      "category": "Strange Attractors",
+      "summary": "Sprott C System",
+      "description": null,
+      "iconCss": "background: url('icons/chimpanzee.png') -144px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/chimpanzee/sprottCSystem.html"
+    },
+    {
+      "name": "Thomas Cyclically Symmetric System",
+      "id": "Thomas Cyclically Symmetric System",
+      "library": "Chimpanzee",
+      "category": "Strange Attractors",
+      "summary": "Thomas Cyclically Symmetric System",
+      "description": null,
+      "iconCss": "background: url('icons/chimpanzee.png') -48px -72px",
+      "helpLink": "https://grasshopperdocs.com/components/chimpanzee/thomasCyclicallySymmetricSystem.html"
+    },
+    {
+      "name": "Three-Scroll Unified Chaotic System (TSUCS 1)",
+      "id": "TSCUS 1",
+      "library": "Chimpanzee",
+      "category": "Strange Attractors",
+      "summary": "Three-Scroll Unified Chaotic System (TSUCS 1)",
+      "description": null,
+      "iconCss": "background: url('icons/chimpanzee.png') -168px -96px",
+      "helpLink": "https://grasshopperdocs.com/components/chimpanzee/threeScrollUnifiedChaoticSystemTSUCS1.html"
+    },
+    {
+      "name": "Three-Scroll Unified Chaotic System (TSUCS 2)",
+      "id": "TSUCS 2",
+      "library": "Chimpanzee",
+      "category": "Strange Attractors",
+      "summary": "Three-Scroll Unified Chaotic System (TSUCS 2)",
+      "description": null,
+      "iconCss": "background: url('icons/chimpanzee.png') -192px -72px",
+      "helpLink": "https://grasshopperdocs.com/components/chimpanzee/threeScrollUnifiedChaoticSystemTSUCS2.html"
+    },
+    {
+      "name": "Willamowski-Rossler System",
+      "id": "Willamowski-Rossler System",
+      "library": "Chimpanzee",
+      "category": "Strange Attractors",
+      "summary": "Willamowski-Rossler System",
+      "description": null,
+      "iconCss": "background: url('icons/chimpanzee.png') -72px -96px",
+      "helpLink": "https://grasshopperdocs.com/components/chimpanzee/willamowskiRosslerSystem.html"
+    },
+    {
+      "name": "Xing-Yun System",
+      "id": "Xing-Yun System",
+      "library": "Chimpanzee",
+      "category": "Strange Attractors",
+      "summary": "Xing-Yun System",
+      "description": null,
+      "iconCss": "background: url('icons/chimpanzee.png') 0px -96px",
+      "helpLink": "https://grasshopperdocs.com/components/chimpanzee/xingYunSystem.html"
+    },
+    {
+      "name": "Yu-Wang System",
+      "id": "Yu-Wang System",
+      "library": "Chimpanzee",
+      "category": "Strange Attractors",
+      "summary": "Yu-Wang System",
+      "description": null,
+      "iconCss": "background: url('icons/chimpanzee.png') -24px -96px",
+      "helpLink": "https://grasshopperdocs.com/components/chimpanzee/yuWangSystem.html"
+    },
+    {
+      "name": "Zhou-Chen System",
+      "id": "Zhou-Chen System",
+      "library": "Chimpanzee",
+      "category": "Strange Attractors",
+      "summary": "Zhou-Chen System",
+      "description": null,
+      "iconCss": "background: url('icons/chimpanzee.png') -48px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/chimpanzee/zhouChenSystem.html"
+    },
+    {
+      "name": "Minkowski Difference",
+      "id": "MinkowskiDiff",
+      "library": "Clipper",
+      "category": "Polyline",
+      "summary": "Calculate the minkowski difference of two Polylines using Clipper",
+      "description": null,
+      "iconCss": "background: url('icons/clipper.png') -72px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/clipper/minkowskiDifference.html"
+    },
+    {
+      "name": "Minkowski Sum",
+      "id": "MinkowskiSum",
+      "library": "Clipper",
+      "category": "Polyline",
+      "summary": "Calculate the minkowski sum of two polygons using Clipper",
+      "description": null,
+      "iconCss": "background: url('icons/clipper.png') -48px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/clipper/minkowskiSum.html"
+    },
+    {
+      "name": "Polyline Boolean",
+      "id": "PolyBoolean",
+      "library": "Clipper",
+      "category": "Polyline",
+      "summary": "Boolean operation between 2 sets of curves using Clipper",
+      "description": null,
+      "iconCss": "background: url('icons/clipper.png') 0px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/clipper/polylineBoolean.html"
+    },
+    {
+      "name": "Polyline Containment",
+      "id": "PolyContain",
+      "library": "Clipper",
+      "category": "Polyline",
+      "summary": "Tests if a point is inside a Polyline using Clipper",
+      "description": null,
+      "iconCss": "background: url('icons/clipper.png') -24px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/clipper/polylineContainment.html"
+    },
+    {
+      "name": "Polyline Offset",
+      "id": "PolyOffset",
+      "library": "Clipper",
+      "category": "Polyline",
+      "summary": "Offset a polyline curve using Clipper",
+      "description": null,
+      "iconCss": "background: url('icons/clipper.png') -96px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/clipper/polylineOffset.html"
     },
     {
       "name": "Brep Charge",
@@ -42309,6 +43439,246 @@
       "description": "Text to curves.Note: Rhino 4 doesn't support paragraph formatting.Doesn't support underlined text.",
       "iconCss": "background: url('icons/shapeDiver.png') -48px -120px",
       "helpLink": "https://grasshopperdocs.com/components/shapediver/textCurves.html"
+    },
+    {
+      "name": "Connection String",
+      "id": "CString",
+      "library": "Slingshot",
+      "category": "RDBMS",
+      "summary": "Formats a connection string. (MySQL, Oracle, PostgreSQL, SQL Server 2012)",
+      "description": null,
+      "iconCss": "background: url('icons/slingshot.png') -48px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/slingshot/connectionString.html"
+    },
+    {
+      "name": "RDB File Command",
+      "id": "Command",
+      "library": "Slingshot",
+      "category": "RDBMS",
+      "summary": "Send a command to a Relational Database File",
+      "description": null,
+      "iconCss": "background: url('icons/slingshot.png') -216px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/slingshot/rDBFileCommand.html"
+    },
+    {
+      "name": "RDB File Query",
+      "id": "Query",
+      "library": "Slingshot",
+      "category": "RDBMS",
+      "summary": "Send a query to a Relational Database File",
+      "description": null,
+      "iconCss": "background: url('icons/slingshot.png') -24px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/slingshot/rDBFileQuery.html"
+    },
+    {
+      "name": "RDBMS Command",
+      "id": "Command",
+      "library": "Slingshot",
+      "category": "RDBMS",
+      "summary": "Send a command to a Relational Database Management System",
+      "description": null,
+      "iconCss": "background: url('icons/slingshot.png') -72px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/slingshot/rDBMSCommand.html"
+    },
+    {
+      "name": "RDBMS Query",
+      "id": "Query",
+      "library": "Slingshot",
+      "category": "RDBMS",
+      "summary": "Send a query to a Relational Database Management System",
+      "description": null,
+      "iconCss": "background: url('icons/slingshot.png') 0px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/slingshot/rDBMSQuery.html"
+    },
+    {
+      "name": "SQL Column List",
+      "id": "ColumnList",
+      "library": "Slingshot",
+      "category": "SQL",
+      "summary": "A SQL query string to get a list of available columns.",
+      "description": null,
+      "iconCss": "background: url('icons/slingshot.png') 0px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/slingshot/sQLColumnList.html"
+    },
+    {
+      "name": "SQL Create Database",
+      "id": "CreateDB",
+      "library": "Slingshot",
+      "category": "SQL",
+      "summary": "A SQL command string used to create a database.",
+      "description": null,
+      "iconCss": "background: url('icons/slingshot.png') 0px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/slingshot/sQLCreateDatabase.html"
+    },
+    {
+      "name": "SQL Create Genome Database",
+      "id": "GeneDB",
+      "library": "Slingshot",
+      "category": "SQL",
+      "summary": "Create a special database for storing design genomes",
+      "description": null,
+      "iconCss": "background: url('icons/slingshot.png') -96px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/slingshot/sQLCreateGenomeDatabase.html"
+    },
+    {
+      "name": "SQL Create Line Database",
+      "id": "LineDB",
+      "library": "Slingshot",
+      "category": "SQL",
+      "summary": "Create a special database for storing line data.",
+      "description": null,
+      "iconCss": "background: url('icons/slingshot.png') -192px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/slingshot/sQLCreateLineDatabase.html"
+    },
+    {
+      "name": "SQL Create Mesh Database",
+      "id": "MeshDB",
+      "library": "Slingshot",
+      "category": "SQL",
+      "summary": "Create a special database for storing mesh data.",
+      "description": null,
+      "iconCss": "background: url('icons/slingshot.png') -48px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/slingshot/sQLCreateMeshDatabase.html"
+    },
+    {
+      "name": "SQL Create Point Database",
+      "id": "PtsDB",
+      "library": "Slingshot",
+      "category": "SQL",
+      "summary": "Create a special database for storing point data.",
+      "description": null,
+      "iconCss": "background: url('icons/slingshot.png') -24px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/slingshot/sQLCreatePointDatabase.html"
+    },
+    {
+      "name": "SQL Create Sensor Database",
+      "id": "SensorDB",
+      "library": "Slingshot",
+      "category": "SQL",
+      "summary": "Create a special database for storing node sensor data.",
+      "description": null,
+      "iconCss": "background: url('icons/slingshot.png') -216px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/slingshot/sQLCreateSensorDatabase.html"
+    },
+    {
+      "name": "SQL Create Table",
+      "id": "CreateTB",
+      "library": "Slingshot",
+      "category": "SQL",
+      "summary": "A SQL command string used to create a table.",
+      "description": null,
+      "iconCss": "background: url('icons/slingshot.png') -48px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/slingshot/sQLCreateTable.html"
+    },
+    {
+      "name": "SQL Database List",
+      "id": "DBList",
+      "library": "Slingshot",
+      "category": "SQL",
+      "summary": "A SQL query string to get a list of available databases.",
+      "description": null,
+      "iconCss": "background: url('icons/slingshot.png') -72px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/slingshot/sQLDatabaseList.html"
+    },
+    {
+      "name": "SQL Insert Command",
+      "id": "Insert",
+      "library": "Slingshot",
+      "category": "SQL",
+      "summary": "A SQL command string to Insert (or Update) data into a SQL table.",
+      "description": null,
+      "iconCss": "background: url('icons/slingshot.png') -24px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/slingshot/sQLInsertCommand.html"
+    },
+    {
+      "name": "SQL SELECT String",
+      "id": "QuerySFW",
+      "library": "Slingshot",
+      "category": "SQL",
+      "summary": "Formats a SQL SELECT FROM WHERE query string.",
+      "description": null,
+      "iconCss": "background: url('icons/slingshot.png') -120px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/slingshot/sQLSELECTString.html"
+    },
+    {
+      "name": "SQL Table List",
+      "id": "TableList",
+      "library": "Slingshot",
+      "category": "SQL",
+      "summary": "A SQL query string to get a list of available tables.",
+      "description": null,
+      "iconCss": "background: url('icons/slingshot.png') -144px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/slingshot/sQLTableList.html"
+    },
+    {
+      "name": "SQL Truncate Table",
+      "id": "TruncTable",
+      "library": "Slingshot",
+      "category": "SQL",
+      "summary": "A SQL command string to truncate (delete) data in a SQL database table",
+      "description": null,
+      "iconCss": "background: url('icons/slingshot.png') -168px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/slingshot/sQLTruncateTable.html"
+    },
+    {
+      "name": "Deserialize Object",
+      "id": "DSerial",
+      "library": "Slingshot",
+      "category": "Utility",
+      "summary": "Deserialize objects such as Points, Curves, Surfaces, BReps, and Meshes from serialized XML strings",
+      "description": null,
+      "iconCss": "background: url('icons/slingshot.png') -144px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/slingshot/deserializeObject.html"
+    },
+    {
+      "name": "Rhino Pack",
+      "id": "Pack",
+      "library": "Slingshot",
+      "category": "Utility",
+      "summary": "Packages serialized Rhino geometry into a SQLite database file.",
+      "description": null,
+      "iconCss": "background: url('icons/slingshot.png') -96px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/slingshot/rhinoPack.html"
+    },
+    {
+      "name": "Rhino Unpack",
+      "id": "UnPack",
+      "library": "Slingshot",
+      "category": "Utility",
+      "summary": "Unpacks serialized Rhino geometry from a SQLite database file.",
+      "description": null,
+      "iconCss": "background: url('icons/slingshot.png') -168px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/slingshot/rhinoUnpack.html"
+    },
+    {
+      "name": "Serialize Object",
+      "id": "Serial",
+      "library": "Slingshot",
+      "category": "Utility",
+      "summary": "Serialize Points, Curves, Surfaces, BReps, and Meshes as XML strings.",
+      "description": null,
+      "iconCss": "background: url('icons/slingshot.png') -192px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/slingshot/serializeObject.html"
+    },
+    {
+      "name": "SQL Column Parameters",
+      "id": "ColumnParam",
+      "library": "Slingshot",
+      "category": "Utility",
+      "summary": "Formats a SQL column parameter string.",
+      "description": null,
+      "iconCss": "background: url('icons/slingshot.png') -120px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/slingshot/sQLColumnParameters.html"
+    },
+    {
+      "name": "SQL Format Rows",
+      "id": "SQLFormatRows",
+      "library": "Slingshot",
+      "category": "Utility",
+      "summary": "Formats data into rows for a SQL table.",
+      "description": null,
+      "iconCss": "background: url('icons/slingshot.png') -72px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/slingshot/sQLFormatRows.html"
     },
     {
       "name": "Lines to SmartMesh",
