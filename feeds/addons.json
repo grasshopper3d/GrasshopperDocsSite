@@ -118,6 +118,19 @@
       "authorContact": "johnharding@fastmail.fm"
     },
     {
+      "name": "Bison",
+      "releaseDate": "2020-Jan-02",
+      "version": "0.90",
+      "downloadLink": "https://www.food4rhino.com/app/bison",
+      "helpLink": "https://grasshopperdocs.com/addons/bison.html",
+      "category": "Landscape & Tree Design",
+      "isSystem": false,
+      "components": 38,
+      "description": "Bison is a landscape architecture plugin for Grasshopper + Rhino 6. It features tools for terrain mesh creation, analysis, editing, and annotation.\n\nIt focuses on a continuous workflow from mesh analysis to editing and works to keep components concise and intuitive. The analysis tools include slope and aspect visualization, cut/fill calculations, watershed modeling and more, while the editing components transform the mesh based on curves and points. Bison also includes tools for importing landscape meshes, triangulation, and resampling, as well as components for annotating plans and cutting sections.",
+      "authorName": "bison.la",
+      "authorContact": null
+    },
+    {
       "name": "Bowerbird",
       "releaseDate": "2015-Jan-19",
       "version": "0.6.3",
@@ -180,6 +193,32 @@
       "components": 2,
       "description": "Allows the user to keyframe the animation of multiple objects in Grasshopper along a single slider. New version 0.7b allows you to export animation to 3D Studio Max for rendering.",
       "authorName": "Carson Smuts",
+      "authorContact": null
+    },
+    {
+      "name": "Chimpanzee",
+      "releaseDate": "2019-Aug-31",
+      "version": "0.2",
+      "downloadLink": "https://www.food4rhino.com/app/chimpanzee",
+      "helpLink": "https://grasshopperdocs.com/addons/chimpanzee.html",
+      "category": "Fractals & Hyperchaotics",
+      "isSystem": false,
+      "components": 70,
+      "description": "Chimpanzee is suitable for fractal enthusiasts. Chimpanzee focuses on fractal math and chaos theory. Chimpanzee currently includes strange attractors, maps, 4D hyperchaotic systems and iterated function systems.",
+      "authorName": "Matous Stieber",
+      "authorContact": null
+    },
+    {
+      "name": "Clipper",
+      "releaseDate": "2019-Oct-09",
+      "version": "0.3.0",
+      "downloadLink": "https://www.food4rhino.com/app/clipper-grasshopper-and-rhino",
+      "helpLink": "https://grasshopperdocs.com/addons/clipper.html",
+      "category": "Geometry & Meshes",
+      "isSystem": false,
+      "components": 5,
+      "description": "Clipper is a 2D polygon Clipper offering polygon boolean operations (clipping): Intersection, Join, Difference, XOR. Offsets for polygons and Minkowski Sum and Differences.",
+      "authorName": "Arend van Waart",
       "authorContact": null
     },
     {
@@ -396,7 +435,7 @@
       "version": "6",
       "downloadLink": "https://www.food4rhino.com/app/bim-geomgym-ifc",
       "helpLink": "https://grasshopperdocs.com/addons/geomgym-ifc.html",
-      "category": "Revit & BIM Integration",
+      "category": "IFC Integration",
       "isSystem": false,
       "components": 378,
       "description": "OpenBIM addon for Rhino and Grasshopper enabling IFC (Industry Foundation Class) model to be generated and exchanged to ArchiCAD, Revit, Bently, Tekla and any other BIM software with IFC capability.",
@@ -409,7 +448,7 @@
       "version": "6",
       "downloadLink": "https://www.food4rhino.com/app/bim-geomgym-ifc",
       "helpLink": "https://grasshopperdocs.com/addons/geomgym-revit.html",
-      "category": "Revit & BIM Integration",
+      "category": "Revit Integration",
       "isSystem": false,
       "components": 68,
       "description": "OpenBIM addon for Rhino and Grasshopper enabling IFC (Industry Foundation Class) model to be generated and exchanged to ArchiCAD, Revit, Bently, Tekla and any other BIM software with IFC capability.",
@@ -474,7 +513,7 @@
       "version": "1.0",
       "downloadLink": "http://grevit-dev.github.io/Grevit/",
       "helpLink": "https://grasshopperdocs.com/addons/grevit.html",
-      "category": "Revit & BIM Integration",
+      "category": "Revit Integration",
       "isSystem": false,
       "components": 46,
       "description": "Grevit allows you to define BIM Elements in Grasshopper or SketchUp and translate them directly to Autodesk Revit or AutoCad Architecture. Grevit follows a one way process so your design model remains the geometrical source of truth: send geometry and attributes from Rhino/Grassopper or SketchUp to Autodesk Revit or ACA. Don't worry if your design changes, Grevit can even update existing geometries. Grevit supports a lot of BIM elements: like walls, beams, columns, simple components, adaptive components, even topography and many more.",
@@ -565,7 +604,7 @@
       "version": "2.3",
       "downloadLink": "https://www.food4rhino.com/app/hummingbird",
       "helpLink": "https://grasshopperdocs.com/addons/hummingbird.html",
-      "category": "Revit & BIM Integration",
+      "category": "Revit Integration",
       "isSystem": false,
       "components": 15,
       "description": "Hummingbird is a set of Grasshopper components that facilitate the creation of Revit native geometry. This process exports basic geometric properties and parameter data to CSV text files which are used to create Revit BIM geometry. The tool also supports importing Revit geometry into Rhino, making a bi-directional workflow possible.",
@@ -612,6 +651,19 @@
       "authorContact": ""
     },
     {
+      "name": "K2Engineering",
+      "releaseDate": "2019-04-27",
+      "version": "1.0.0",
+      "downloadLink": "https://github.com/CecilieBrandt/K2Engineering/releases",
+      "helpLink": "https://grasshopperdocs.com/addons/k2engineering.html",
+      "category": "Structural Analysis & FEM",
+      "isSystem": false,
+      "components": 36,
+      "description": "This plugin contains a set of customised Kangaroo2 grasshopper components with the scope of calibrating a number of goals with regard to structural properties.\n\nThis is particularly useful for the analysis of form-active structures (including cablenets and gridshells) that are typically characterised by their large deformations when subjected to external loads. The underlying position-based dynamics implemented in the Kangaroo2 solver inherently deals with this non-linear behaviour. This means that both form-finding and analysis can be performed within the Grasshopper environment using K2 and K2Engineering.",
+      "authorName": "Cecilie Brandt",
+      "authorContact": null
+    },
+    {
       "name": "Kangaroo 2",
       "releaseDate": "2019-Dec-15",
       "version": "2.3.3",
@@ -635,6 +687,19 @@
       "components": 81,
       "description": "Karamba3D is a parametric structural engineering tool which provides accurate analysis of spatial trusses, frames and shells.\n\nKaramba3D is fully embedded in the parametric design environment of Grasshopper, a plug-in for the 3d modeling tool Rhinoceros. \n\nThis makes it easy to combine parameterized geometric models, finite element calculations and optimization algorithms like Galapagos. It lets you analyze the response of 3-dimensional beam and shell structures under arbitrary loads.",
       "authorName": "Clemens Preisinger",
+      "authorContact": null
+    },
+    {
+      "name": "Kiwi3D",
+      "releaseDate": "2020-01-31",
+      "version": "0.4.0",
+      "downloadLink": "https://www.food4rhino.com/app/kiwi3d",
+      "helpLink": "https://grasshopperdocs.com/addons/kiwi3d.html",
+      "category": "Structural Analysis & FEM",
+      "isSystem": false,
+      "components": 50,
+      "description": "Kiwi!3D enables the integration of Isogeometric Analysis (IGA). The special characteristic of IGA lies in the usage of Non-Uniform Rational B-Splines (NURBS) as basis functions for the Finite Elements. Hence it allows to run simulations directly on NURBS without the need of meshing.\n\nKiwi!3D includes a isogeometric Shell, Membrane, Beam and Cable element. It is able to handle Trimmed Surfaces as well as Coupled Patches (multi-surface models). You can run Linear as well as geometrically Non-linear Structural Analysis problems. Also it includes Form Finding for tensile structures (Updated Reference Strategy).",
+      "authorName": "Kiwi!3D Team",
       "authorContact": null
     },
     {
@@ -1002,6 +1067,19 @@
       "authorContact": "contact@shapediver.com"
     },
     {
+      "name": "Slingshot",
+      "releaseDate": "2015-Oct-09",
+      "version": "2015.8.25",
+      "downloadLink": "https://provingground.io/tools/slingshot/",
+      "helpLink": "https://grasshopperdocs.com/addons/slingshot.html",
+      "category": "Database Integration",
+      "isSystem": false,
+      "components": 24,
+      "description": "Slingshot is an open source plug-in for which connects Grasshopper to relational databases such as MySQL.  The components allow you to create and query databases from within the Grasshopper canvas.  Slingshot for Grasshopper has been in development since 2010 and was the first plug-in published by Nathan Miller to enable better interoperability between data sources.",
+      "authorName": "Nathan Miller",
+      "authorContact": null
+    },
+    {
       "name": "SmartForm",
       "releaseDate": "2016-Feb-08",
       "version": "1",
@@ -1194,84 +1272,6 @@
       "components": 43,
       "description": "It allows for novel control of 3D printers, generating G code directly from native Rhino and Grasshopper geometries including solids, surfaces, and curves. It has tools for printers based on FDM filament extrusion, pneumatically-controlled syringes, ink-jet, and DLP Stereolithography.",
       "authorName": "Ryan Hoover",
-      "authorContact": null
-    },
-    {
-      "name": "Kiwi3D",
-      "releaseDate": "2020-01-31",
-      "version": "0.4.0",
-      "downloadLink": "https://www.food4rhino.com/app/kiwi3d",
-      "helpLink": "https://grasshopperdocs.com/addons/kiwi3d.html",
-      "category": "Structural Analysis & FEM",
-      "isSystem": false,
-      "components": 50,
-      "description": "Kiwi!3D enables the integration of Isogeometric Analysis (IGA). The special characteristic of IGA lies in the usage of Non-Uniform Rational B-Splines (NURBS) as basis functions for the Finite Elements. Hence it allows to run simulations directly on NURBS without the need of meshing.\n\nKiwi!3D includes a isogeometric Shell, Membrane, Beam and Cable element. It is able to handle Trimmed Surfaces as well as Coupled Patches (multi-surface models). You can run Linear as well as geometrically Non-linear Structural Analysis problems. Also it includes Form Finding for tensile structures (Updated Reference Strategy).",
-      "authorName": "Kiwi!3D Team",
-      "authorContact": null
-    },
-    {
-      "name": "K2Engineering",
-      "releaseDate": "2019-04-27",
-      "version": "1.0.0",
-      "downloadLink": "https://github.com/CecilieBrandt/K2Engineering/releases",
-      "helpLink": "https://grasshopperdocs.com/addons/k2engineering.html",
-      "category": "Structural Analysis & FEM",
-      "isSystem": false,
-      "components": 36,
-      "description": "This plugin contains a set of customised Kangaroo2 grasshopper components with the scope of calibrating a number of goals with regard to structural properties.\n\nThis is particularly useful for the analysis of form-active structures (including cablenets and gridshells) that are typically characterised by their large deformations when subjected to external loads. The underlying position-based dynamics implemented in the Kangaroo2 solver inherently deals with this non-linear behaviour. This means that both form-finding and analysis can be performed within the Grasshopper environment using K2 and K2Engineering.",
-      "authorName": "Cecilie Brandt",
-      "authorContact": null
-    },
-    {
-      "name": "Slingshot",
-      "releaseDate": "2015-Oct-09",
-      "version": "2015.8.25",
-      "downloadLink": "https://provingground.io/tools/slingshot/",
-      "helpLink": "https://grasshopperdocs.com/addons/slingshot.html",
-      "category": "Database Integration",
-      "isSystem": false,
-      "components": 24,
-      "description": "Slingshot is an open source plug-in for which connects Grasshopper to relational databases such as MySQL.  The components allow you to create and query databases from within the Grasshopper canvas.  Slingshot for Grasshopper has been in development since 2010 and was the first plug-in published by Nathan Miller to enable better interoperability between data sources.",
-      "authorName": "Nathan Miller",
-      "authorContact": null
-    },
-    {
-      "name": "Clipper",
-      "releaseDate": "2019-Oct-09",
-      "version": "0.3.0",
-      "downloadLink": "https://www.food4rhino.com/app/clipper-grasshopper-and-rhino",
-      "helpLink": "https://grasshopperdocs.com/addons/clipper.html",
-      "category": "Geometry & Meshes",
-      "isSystem": false,
-      "components": 5,
-      "description": "Clipper is a 2D polygon Clipper offering polygon boolean operations (clipping): Intersection, Join, Difference, XOR. Offsets for polygons and Minkowski Sum and Differences.",
-      "authorName": "Arend van Waart",
-      "authorContact": null
-    },
-    {
-      "name": "Bison",
-      "releaseDate": "2020-Jan-02",
-      "version": "0.90",
-      "downloadLink": "https://www.food4rhino.com/app/bison",
-      "helpLink": "https://grasshopperdocs.com/addons/bison.html",
-      "category": "Landscape & Tree Design",
-      "isSystem": false,
-      "components": 38,
-      "description": "Bison is a landscape architecture plugin for Grasshopper + Rhino 6. It features tools for terrain mesh creation, analysis, editing, and annotation.\n\nIt focuses on a continuous workflow from mesh analysis to editing and works to keep components concise and intuitive. The analysis tools include slope and aspect visualization, cut/fill calculations, watershed modeling and more, while the editing components transform the mesh based on curves and points. Bison also includes tools for importing landscape meshes, triangulation, and resampling, as well as components for annotating plans and cutting sections.",
-      "authorName": "bison.la",
-      "authorContact": null
-    },
-    {
-      "name": "Chimpanzee",
-      "releaseDate": "2019-Aug-31",
-      "version": "0.2",
-      "downloadLink": "https://www.food4rhino.com/app/chimpanzee",
-      "helpLink": "https://grasshopperdocs.com/addons/chimpanzee.html",
-      "category": "Fractals & Hyperchaotics",
-      "isSystem": false,
-      "components": 70,
-      "description": "Chimpanzee is suitable for fractal enthusiasts. Chimpanzee focuses on fractal math and chaos theory. Chimpanzee currently includes strange attractors, maps, 4D hyperchaotic systems and iterated function systems.",
-      "authorName": "Matouš Stieber",
       "authorContact": null
     },
     {

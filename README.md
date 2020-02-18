@@ -3,7 +3,7 @@ Documentation for open source components of Grasshopper, the fantastic visual pr
 
 Created by <a href="https://github.com/robinrodricks">Robin Rodricks</a> and <a href="http://www.grasshopper3d.com/profile/AndrewHeumann/">Andrew Heumann</a>.
 
-Last updated on 12th Feb 2020.
+Last updated on 18th Feb 2020.
 
 # API for Integrators
 
@@ -31,7 +31,8 @@ We provide JSON feeds containing the metadata of the latest addons and component
 | BullAnt          | 1.4.04         | 2018-Jun-13 |
 | CarveRhino       | 1              | 2017-Sep-25 |
 | Centipede        | 0.7b           | 2012-Oct-03 |
-| Clipper          | 0.0.2.1        | 2015-Feb-04 |
+| Chimpanzee       | 0.2            | 2019-Aug-31 |
+| Clipper          | 0.3.0          | 2019-Oct-09 |
 | Cocoon           | 1              | 2015-Jul-22 |
 | Crane            | 0.20           | 2019-Oct-14 |
 | Culebra          | 2.0-Beta       | 2017-Dec-11 |
@@ -55,7 +56,6 @@ We provide JSON feeds containing the metadata of the latest addons and component
 | Gismo            | 1.0            | 2019-Nov-23 |
 | Grasshopper      | 1.0.0007       | 2019-Dec-15 |
 | Grevit           | 1.0            | 2018-Apr-28 |
-| HAL Robotics     | 1.0-beta       | 2020-01-07  |
 | Heron            | 0.2.0.0        | 2015-Aug-22 |
 | Heteroptera      | 0.5.1.2        | 2019-Oct-28 |
 | Honeybee         | 0.0.62         | 2017-Jul-31 |
@@ -66,8 +66,10 @@ We provide JSON feeds containing the metadata of the latest addons and component
 | IntraLattice     | 0.7.6          | 2015-Nov-15 |
 | Ivy              | 1.02           | 2020-Jan-04 |
 | jSwan            | 1.1.0          | 2019-Nov-11 |
+| K2Engineering    | 1.0.0          | 2019-04-27  |
 | Kangaroo 2       | 2.3.3          | 2019-Dec-15 |
 | Karamba3D        | 1.3.2          | 2019-Sep-18 |
+| Kiwi3D           | 0.4.0          | 2020-01-31  |
 | Ladybug          | 0.0.65         | 2017-Jul-31 |
 | Lands Design     | RC1            | 2019-Nov-4  |
 | LunchBox         | 2018.10.30     | 2018-Oct-30 |
@@ -79,7 +81,7 @@ We provide JSON feeds containing the metadata of the latest addons and component
 | MinSurf          | 3.0.0.2        | 2013-Apr-04 |
 | Monolith         | 0.3.6415.29557 | 2017-Jul-26 |
 | Mosquito         | 0.4            | 2015-Nov-27 |
-| Ngon             | 2.1            | 2020-Feb-06 |
+| NGon             | 2.1            | 2020-Feb-06 |
 | Nudibranch       | 0.028          | 2013-Aug-26 |
 | Octopus          | 0.4            | 2018-Dec-05 |
 | OpenNest         | 1.0            | 2018-Nov-21 |
@@ -87,7 +89,7 @@ We provide JSON feeds containing the metadata of the latest addons and component
 | Pancake          | 2.1.0.0        | 2019-Dec-25 |
 | Paneling Tools   | 6.18           | 2019-12-19  |
 | Peacock          | 0.99.1         | 2017-Nov-04 |
-| Peregrine        | 2019-Nov-19    | 2019-Nov-19 |
+| Peregrine        | 3.5            | 2019-Nov-19 |
 | Phyllomachine    | 1              | 2015-May-29 |
 | PhysX GH         | 0.1            | 2019-Jan-08 |
 | Plankton         | 0.4.2          | 2017-May-18 |
