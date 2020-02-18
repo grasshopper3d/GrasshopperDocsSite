@@ -1,0 +1,355 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+<head data-layout-view="wide">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>SkinDesigner - Grasshopper Docs</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+
+<meta name="description" content="Complete documentation for the SkinDesigner addon in Grasshopper 3D." />
+<meta name="title" content="SkinDesigner - Grasshopper Docs" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://grasshopperdocs.com/" />
+<meta property="og:title" content="SkinDesigner - Grasshopper Docs" />
+
+<meta property="wiki-page" content="GH SkinDesigner" />
+
+<link rel="image_src" href="http://grasshopperdocs.com/ning/2985220.jpg" />
+
+<link href="../style.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+
+
+</head>
+<body>
+
+
+<div id="docs" class="docs-theme docs-widget_page docs-widget_page_page docs-widget_page_page_show" data-layout-pack="classic">
+<div id="docs-head">
+<div id="docs-masthead">
+<p id="docs-sitename"><a id="application_name_header_link" href="http://grasshopperdocs.com/">Grasshopper Docs</a></p>
+<p id="docs-sitedesc" class="xj_site_desc">algorithmic modeling for Rhino</p>
+</div>
+<div id="docs-navigation">
+<ul>
+<li class="docs-subtab"><a href="http://www.grasshopper3d.com/"><span>Home</span></a></li>
+<li class="docs-subtab"><a href="http://www.grasshopper3d.com/photo"><span>View</span></a></li>
+<li class="docs-subtab"><a href="http://www.grasshopper3d.com/page/download-1"><span>Download</span></a></li>
+<li class="docs-subtab"><a href="https://discourse.mcneel.com/c/grasshopper"><span>Forums&#47;Support</span></a></li>
+<li class="docs-subtab this"><a href="http://grasshopperdocs.com/"><span>Learn</span></a></li>
+<li class="docs-subtab"><a href="http://www.grasshopper3d.com/events"><span>Attend</span></a></li>
+<li class="docs-subtab"><a href="http://www.grasshopper3d.com/profiles"><span>My Page</span></a></li></ul>
+
+</div>
+</div>
+
+<div id="docs-body">
+
+<div class="page">
+
+<div class="content">
+
+<div class="addon-buttons">
+<a href="https://www.food4rhino.com/app/skindesigner">Download</a>
+</div>
+
+<div class="addon-header">
+<h1>SkinDesigner</h1>
+<h5>ADDON, Version <b>0.5.00</b>, Released on <b>2018-Sep-14</b>, Provides <b>35</b> components, Created by <b>Santiago Garay</b></h5>
+<h5>SkinDesigner enables the rapid generation of facade geometries from building massing surfaces and repeating, user-defined panels. SkinDesigner has the geometric freedom to create virtually any facade geometry that is composed of similar repeating elements.</h5>
+
+<div class="breadcrumb">
+  <a href="../index.html">Component Index</a>
+  <a href="#" class="breadcrumb-nolink">SkinDesigner</a>
+</div>
+
+</div>
+
+<div class="ghbar ghbar-addon-page">
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/skindesigner/panelBay.html"><div class="ghsprite" style="background: url('../icons/skinDesigner.png') -168px 0px" data-toptip="Panel Bay"></div></a>
+<a href="../components/skindesigner/skinDesigner.html"><div class="ghsprite" style="background: url('../icons/skinDesigner.png') -120px -24px" data-downtip="Skin Designer"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/skindesigner/skinGenerator.html"><div class="ghsprite" style="background: url('../icons/skinDesigner.png') -168px -24px" data-toptip="Skin Generator"></div></a>
+<a href="../components/skindesigner/skinParameters.html"><div class="ghsprite" style="background: url('../icons/skinDesigner.png') -216px -24px" data-downtip="Skin Parameters"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/skindesigner/skinParametersListV050.html"><div class="ghsprite" style="background: url('../icons/skinDesigner.png') 0px -48px" data-toptip="Skin Parameters List v0.50"></div></a>
+<a href="../components/skindesigner/surfacePanelModeOrientationsV050.html"><div class="ghsprite" style="background: url('../icons/skinDesigner.png') -24px -48px" data-downtip="Surface-Panel Mode Orientations v0.50"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/skindesigner/systemsPanel.html"><div class="ghsprite" style="background: url('../icons/skinDesigner.png') -96px -48px" data-toptip="Systems Panel"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="4">
+01 | Construction
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/skindesigner/customGeometry.html"><div class="ghsprite" style="background: url('../icons/skinDesigner.png') 0px 0px" data-toptip="Custom Geometry"></div></a>
+<a href="../components/skindesigner/shading.html"><div class="ghsprite" style="background: url('../icons/skinDesigner.png') -24px -24px" data-downtip="Shading"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/skindesigner/shadingBox.html"><div class="ghsprite" style="background: url('../icons/skinDesigner.png') -48px -24px" data-toptip="Shading Box"></div></a>
+<a href="../components/skindesigner/shadingLouver.html"><div class="ghsprite" style="background: url('../icons/skinDesigner.png') -72px -24px" data-downtip="Shading Louver"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/skindesigner/systemCurtainWall.html"><div class="ghsprite" style="background: url('../icons/skinDesigner.png') -48px -48px" data-toptip="System-Curtain Wall"></div></a>
+<a href="../components/skindesigner/systemWall.html"><div class="ghsprite" style="background: url('../icons/skinDesigner.png') -72px -48px" data-downtip="System-Wall"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/skindesigner/window.html"><div class="ghsprite" style="background: url('../icons/skinDesigner.png') -216px -48px" data-toptip="Window"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="4">
+02 | Parameters
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/skindesigner/dataGeneratorDistance.html"><div class="ghsprite" style="background: url('../icons/skinDesigner.png') -24px 0px" data-toptip="Data Generator Distance"></div></a>
+<a href="../components/skindesigner/layoutController.html"><div class="ghsprite" style="background: url('../icons/skinDesigner.png') -72px 0px" data-downtip="Layout Controller"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/skindesigner/layoutTypePattern.html"><div class="ghsprite" style="background: url('../icons/skinDesigner.png') -96px 0px" data-toptip="Layout Type Pattern"></div></a>
+<a href="../components/skindesigner/layoutTypePatternByRow.html"><div class="ghsprite" style="background: url('../icons/skinDesigner.png') -120px 0px" data-downtip="Layout Type Pattern By Row"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/skindesigner/layoutTypeRandom.html"><div class="ghsprite" style="background: url('../icons/skinDesigner.png') -144px 0px" data-toptip="Layout Type Random"></div></a>
+<a href="../components/skindesigner/pPLBHBOutput.html"><div class="ghsprite" style="background: url('../icons/skinDesigner.png') 0px -24px" data-downtip="PP-LBHB Output"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/skindesigner/systemsPanelController.html"><div class="ghsprite" style="background: url('../icons/skinDesigner.png') -120px -48px" data-toptip="Systems Panel Controller"></div></a>
+<a href="../components/skindesigner/systemsPanelControllerLegacy.html"><div class="ghsprite" style="background: url('../icons/skinDesigner.png') -144px -48px" data-downtip="Systems Panel Controller Legacy"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/skindesigner/skinDesingerCustomGeometryPanelPanelControllerParametersV0500.html"><div class="ghsprite" style="background: url('../icons/skinDesigner.png') 0px -72px" data-toptip="Skin Desinger Custom Geometry Panel Panel Controller Parameters v0.5.00"></div></a>
+<a href="../components/skindesigner/skinDesingerLouverShadingPanelControllerParametersV0500.html"><div class="ghsprite" style="background: url('../icons/skinDesigner.png') -24px -72px" data-downtip="Skin Desinger Louver Shading Panel Controller Parameters v0.5.00"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/skindesigner/skinDesingerMullionPanelControllerParametersV0500.html"><div class="ghsprite" style="background: url('../icons/skinDesigner.png') -48px -72px" data-toptip="Skin Desinger Mullion Panel Controller Parameters v0.5.00"></div></a>
+<a href="../components/skindesigner/skinDesingerShadingPanelControllerParametersV0500.html"><div class="ghsprite" style="background: url('../icons/skinDesigner.png') -72px -72px" data-downtip="Skin Desinger Shading Panel Controller Parameters v0.5.00"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/skindesigner/skinDesingerWindowPanelControllerParametersV0500.html"><div class="ghsprite" style="background: url('../icons/skinDesigner.png') -96px -72px" data-toptip="Skin Desinger Window Panel Controller Parameters v0.5.00"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="7">
+03 | Design Controllers
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/skindesigner/panelInventory.html"><div class="ghsprite" style="background: url('../icons/skinDesigner.png') -192px 0px" data-toptip="Panel Inventory"></div></a>
+<a href="../components/skindesigner/panelViewer.html"><div class="ghsprite" style="background: url('../icons/skinDesigner.png') -216px 0px" data-downtip="Panel Viewer"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/skindesigner/skinDataViewer.html"><div class="ghsprite" style="background: url('../icons/skinDesigner.png') -96px -24px" data-toptip="Skin Data Viewer"></div></a>
+<a href="../components/skindesigner/skinElementsViewer.html"><div class="ghsprite" style="background: url('../icons/skinDesigner.png') -144px -24px" data-downtip="Skin Elements Viewer"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/skindesigner/skinPanelIndexViewer.html"><div class="ghsprite" style="background: url('../icons/skinDesigner.png') -192px -24px" data-toptip="Skin Panel Index Viewer"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+04 | Display
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/skindesigner/exportSkinDesigner.html"><div class="ghsprite" style="background: url('../icons/skinDesigner.png') -48px 0px" data-toptip="Export Skin Designer"></div></a>
+<a href="../components/skindesigner/updateFile.html"><div class="ghsprite" style="background: url('../icons/skinDesigner.png') -168px -48px" data-downtip="Update File"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/skindesigner/updateSkinDesigner.html"><div class="ghsprite" style="background: url('../icons/skinDesigner.png') -192px -48px" data-toptip="Update Skin Designer"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="2">
+05 | Update
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+
+<div class="cchild">
+<h3>03 | Design Controllers</h3>
+<table class="addon-compos">
+<tbody>
+<tr><td class="ccol_1"><a href="../components/skindesigner/dataGeneratorDistance.html"><div class="ghsprite" style="background: url('../icons/skinDesigner.png') -24px 0px" ></div></a></td><td class="ccol_2"><a href="../components/skindesigner/dataGeneratorDistance.html">Data Generator Distance</a><br><span class="desc">Use this component to generate data through a distance-based algorithm to be used in the Panel Controller Legacy version</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/skindesigner/layoutController.html"><div class="ghsprite" style="background: url('../icons/skinDesigner.png') -72px 0px" ></div></a></td><td class="ccol_2"><a href="../components/skindesigner/layoutController.html">Layout Controller</a><br><span class="desc">Use this component to specify a layout pattern to a skin solution.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/skindesigner/layoutTypePattern.html"><div class="ghsprite" style="background: url('../icons/skinDesigner.png') -96px 0px" ></div></a></td><td class="ccol_2"><a href="../components/skindesigner/layoutTypePattern.html">Layout Type Pattern</a><br><span class="desc">Use this component to apply a specific pattern panel layout algorithm to a Design Function.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/skindesigner/layoutTypePatternByRow.html"><div class="ghsprite" style="background: url('../icons/skinDesigner.png') -120px 0px" ></div></a></td><td class="ccol_2"><a href="../components/skindesigner/layoutTypePatternByRow.html">Layout Type Pattern By Row</a><br><span class="desc">Use this component to apply a specific pattern layout algorithm to a Layout Controller</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/skindesigner/layoutTypeRandom.html"><div class="ghsprite" style="background: url('../icons/skinDesigner.png') -144px 0px" ></div></a></td><td class="ccol_2"><a href="../components/skindesigner/layoutTypeRandom.html">Layout Type Random</a><br><span class="desc">Use this component to apply a random panel layout algorithm to a Layout Controller.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/skindesigner/pPLBHBOutput.html"><div class="ghsprite" style="background: url('../icons/skinDesigner.png') 0px -24px" ></div></a></td><td class="ccol_2"><a href="../components/skindesigner/pPLBHBOutput.html">PP-LBHB Output</a><br><span class="desc">Use this component to apply a post-processing function(representation properties of the skin) to a SkinGenerator component</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/skindesigner/systemsPanelController.html"><div class="ghsprite" style="background: url('../icons/skinDesigner.png') -120px -48px" ></div></a></td><td class="ccol_2"><a href="../components/skindesigner/systemsPanelController.html">Systems Panel Controller</a><br><span class="desc">Use this component to modify panel systems parameters of system panels by assigning numerical values in sequential order to the panels generated by the SkinGenerator component</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/skindesigner/systemsPanelControllerLegacy.html"><div class="ghsprite" style="background: url('../icons/skinDesigner.png') -144px -48px" ></div></a></td><td class="ccol_2"><a href="../components/skindesigner/systemsPanelControllerLegacy.html">Systems Panel Controller Legacy</a><br><span class="desc">Use this component to modify panel systems parameters of specifc system panels (connect to a SkinGenerator component). This is a legacy version, use SystemsPanelController for latest version.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/skindesigner/skinDesingerCustomGeometryPanelPanelControllerParametersV0500.html"><div class="ghsprite" style="background: url('../icons/skinDesigner.png') 0px -72px" ></div></a></td><td class="ccol_2"><a href="../components/skindesigner/skinDesingerCustomGeometryPanelPanelControllerParametersV0500.html">Skin Desinger Custom Geometry Panel Panel Controller Parameters v0.5.00</a> <span class="codeword">(SkinDesinger Custom Geometry Panel Panel Controller Parameters v0.5.00)</span><br><span class="desc">Provides a list of valid DynamiGeometry paramters to use with Panel Controller</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/skindesigner/skinDesingerLouverShadingPanelControllerParametersV0500.html"><div class="ghsprite" style="background: url('../icons/skinDesigner.png') -24px -72px" ></div></a></td><td class="ccol_2"><a href="../components/skindesigner/skinDesingerLouverShadingPanelControllerParametersV0500.html">Skin Desinger Louver Shading Panel Controller Parameters v0.5.00</a> <span class="codeword">(SkinDesinger Louver Shading Panel Controller Parameters v0.5.00)</span><br><span class="desc">Provides a list of valid Louver  Shading Paramters to use with the Panel Contoller Component</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/skindesigner/skinDesingerMullionPanelControllerParametersV0500.html"><div class="ghsprite" style="background: url('../icons/skinDesigner.png') -48px -72px" ></div></a></td><td class="ccol_2"><a href="../components/skindesigner/skinDesingerMullionPanelControllerParametersV0500.html">Skin Desinger Mullion Panel Controller Parameters v0.5.00</a> <span class="codeword">(SkinDesinger Mullion Panel Controller Parameters v0.5.00)</span><br><span class="desc">Provides a list of panel mullion properties to use with the Panel Controller component</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/skindesigner/skinDesingerShadingPanelControllerParametersV0500.html"><div class="ghsprite" style="background: url('../icons/skinDesigner.png') -72px -72px" ></div></a></td><td class="ccol_2"><a href="../components/skindesigner/skinDesingerShadingPanelControllerParametersV0500.html">Skin Desinger Shading Panel Controller Parameters v0.5.00</a> <span class="codeword">(SkinDesinger Shading Panel Controller Parameters v0.5.00)</span><br><span class="desc">Provides a list of panel shading properties to use with the Panel Controller component</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/skindesigner/skinDesingerWindowPanelControllerParametersV0500.html"><div class="ghsprite" style="background: url('../icons/skinDesigner.png') -96px -72px" ></div></a></td><td class="ccol_2"><a href="../components/skindesigner/skinDesingerWindowPanelControllerParametersV0500.html">Skin Desinger Window Panel Controller Parameters v0.5.00</a> <span class="codeword">(SkinDesinger Window Panel Controller Parameters v0.5.00)</span><br><span class="desc">Provides a list of valid Window parameters to use with the Panel Controller component</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>02 | Parameters</h3>
+<table class="addon-compos">
+<tbody>
+<tr><td class="ccol_1"><a href="../components/skindesigner/customGeometry.html"><div class="ghsprite" style="background: url('../icons/skinDesigner.png') 0px 0px" ></div></a></td><td class="ccol_2"><a href="../components/skindesigner/customGeometry.html">Custom Geometry</a><br><span class="desc">Use this component to generate a custom geometry system to plug in Panel component.<br>-</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/skindesigner/shading.html"><div class="ghsprite" style="background: url('../icons/skinDesigner.png') -24px -24px" ></div></a></td><td class="ccol_2"><a href="../components/skindesigner/shading.html">Shading</a><br><span class="desc">Use this component to generate a shade object to be added to a panel</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/skindesigner/shadingBox.html"><div class="ghsprite" style="background: url('../icons/skinDesigner.png') -48px -24px" ></div></a></td><td class="ccol_2"><a href="../components/skindesigner/shadingBox.html">Shading Box</a><br><span class="desc">Use this component to generate four shade objects placed around the window to be added to a panel component.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/skindesigner/shadingLouver.html"><div class="ghsprite" style="background: url('../icons/skinDesigner.png') -72px -24px" ></div></a></td><td class="ccol_2"><a href="../components/skindesigner/shadingLouver.html">Shading Louver</a><br><span class="desc">Use this component to generate a shade louver to be added to a panel</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/skindesigner/systemCurtainWall.html"><div class="ghsprite" style="background: url('../icons/skinDesigner.png') -48px -48px" ></div></a></td><td class="ccol_2"><a href="../components/skindesigner/systemCurtainWall.html">System-Curtain Wall</a><br><span class="desc">Use this component to generate a curtain-wall system to be added to a Panel component</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/skindesigner/systemWall.html"><div class="ghsprite" style="background: url('../icons/skinDesigner.png') -72px -48px" ></div></a></td><td class="ccol_2"><a href="../components/skindesigner/systemWall.html">System-Wall</a><br><span class="desc">Use this component to generate a Wall system to be added to a Panel component.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/skindesigner/window.html"><div class="ghsprite" style="background: url('../icons/skinDesigner.png') -216px -48px" ></div></a></td><td class="ccol_2"><a href="../components/skindesigner/window.html">Window</a><br><span class="desc">Use this component to generate a window to be input to a Panel component.<br>-<br>Refer to PanelLib API for Definition input functions</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>01 | Construction</h3>
+<table class="addon-compos">
+<tbody>
+<tr><td class="ccol_1"><a href="../components/skindesigner/panelBay.html"><div class="ghsprite" style="background: url('../icons/skinDesigner.png') -168px 0px" ></div></a></td><td class="ccol_2"><a href="../components/skindesigner/panelBay.html">Panel Bay</a><br><span class="desc">Panel Bay<br>Use this component to create a panel bay (group of panels)<br>To add more panels in the construction, simply zoom into the component and hit the lowest "+" sign that shows up on the input side</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/skindesigner/skinDesigner.html"><div class="ghsprite" style="background: url('../icons/skinDesigner.png') -120px -24px" ></div></a></td><td class="ccol_2"><a href="../components/skindesigner/skinDesigner.html">Skin Designer</a><br><span class="desc">This is the main SkinDesigner component which contains the Panel, Skin and BaseDesignFunction APIs. <br>-</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/skindesigner/skinGenerator.html"><div class="ghsprite" style="background: url('../icons/skinDesigner.png') -168px -24px" ></div></a></td><td class="ccol_2"><a href="../components/skindesigner/skinGenerator.html">Skin Generator</a><br><span class="desc">Use this component to generate a panelized design solution in the scene</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/skindesigner/skinParameters.html"><div class="ghsprite" style="background: url('../icons/skinDesigner.png') -216px -24px" ></div></a></td><td class="ccol_2"><a href="../components/skindesigner/skinParameters.html">Skin Parameters</a><br><span class="desc">Use this component to load skin-specific parameters to skinGenerator</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/skindesigner/skinParametersListV050.html"><div class="ghsprite" style="background: url('../icons/skinDesigner.png') 0px -48px" ></div></a></td><td class="ccol_2"><a href="../components/skindesigner/skinParametersListV050.html">Skin Parameters List v0.50</a> <span class="codeword">(SkinDesigner Skin Parameters v0.50)</span><br><span class="desc">Provides a list of valid parameters to plug in to the SkinParameters component</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/skindesigner/surfacePanelModeOrientationsV050.html"><div class="ghsprite" style="background: url('../icons/skinDesigner.png') -24px -48px" ></div></a></td><td class="ccol_2"><a href="../components/skindesigner/surfacePanelModeOrientationsV050.html">Surface-Panel Mode Orientations v0.50</a> <span class="codeword">(SkinDesigner Surface-Panel Mode Orientations v0.50)</span><br><span class="desc">Provides a list of valid orientation values to use with the Surface Panel Mode parameter</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/skindesigner/systemsPanel.html"><div class="ghsprite" style="background: url('../icons/skinDesigner.png') -96px -48px" ></div></a></td><td class="ccol_2"><a href="../components/skindesigner/systemsPanel.html">Systems Panel</a><br><span class="desc">Use this component to generate a panel type to be used by the SkinGenerator component to generate a panelized skin.</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>04 | Display</h3>
+<table class="addon-compos">
+<tbody>
+<tr><td class="ccol_1"><a href="../components/skindesigner/panelInventory.html"><div class="ghsprite" style="background: url('../icons/skinDesigner.png') -192px 0px" ></div></a></td><td class="ccol_2"><a href="../components/skindesigner/panelInventory.html">Panel Inventory</a><br><span class="desc">Use this component to display all panel types generated to develop the skin solution with a count of haw many panels are panel<br>On bold are displayed the panels types that have standard dimensiosn (not custom sized)</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/skindesigner/panelViewer.html"><div class="ghsprite" style="background: url('../icons/skinDesigner.png') -216px 0px" ></div></a></td><td class="ccol_2"><a href="../components/skindesigner/panelViewer.html">Panel Viewer</a><br><span class="desc">Use this component to display a panel or panel bay in the scene and/or generate grasshopper breps of the panel elements.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/skindesigner/skinDataViewer.html"><div class="ghsprite" style="background: url('../icons/skinDesigner.png') -96px -24px" ></div></a></td><td class="ccol_2"><a href="../components/skindesigner/skinDataViewer.html">Skin Data Viewer</a><br><span class="desc">Use this component to extract from a SkinGenerator solution overall panel Ids and their locations as well as a range of panel properties as breps.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/skindesigner/skinElementsViewer.html"><div class="ghsprite" style="background: url('../icons/skinDesigner.png') -144px -24px" ></div></a></td><td class="ccol_2"><a href="../components/skindesigner/skinElementsViewer.html">Skin Elements Viewer</a><br><span class="desc">Use this component <br>_<br>_<br>-</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/skindesigner/skinPanelIndexViewer.html"><div class="ghsprite" style="background: url('../icons/skinDesigner.png') -192px -24px" ></div></a></td><td class="ccol_2"><a href="../components/skindesigner/skinPanelIndexViewer.html">Skin Panel Index Viewer</a><br><span class="desc">Use this component to display all panel types used to generate the skin</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>05 | Update</h3>
+<table class="addon-compos">
+<tbody>
+<tr><td class="ccol_1"><a href="../components/skindesigner/exportSkinDesigner.html"><div class="ghsprite" style="background: url('../icons/skinDesigner.png') -48px 0px" ></div></a></td><td class="ccol_2"><a href="../components/skindesigner/exportSkinDesigner.html">Export Skin Designer</a><br><span class="desc">Developers of skin generator can use this to export new userobjects to the master folder.<br>This component was written thanks to Giulio Piacentino a really helpful example.<br>-</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/skindesigner/updateFile.html"><div class="ghsprite" style="background: url('../icons/skinDesigner.png') -168px -48px" ></div></a></td><td class="ccol_2"><a href="../components/skindesigner/updateFile.html">Update File</a><br><span class="desc">Use this component to update SkinDesigner tools components in an old file</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/skindesigner/updateSkinDesigner.html"><div class="ghsprite" style="background: url('../icons/skinDesigner.png') -192px -48px" ></div></a></td><td class="ccol_2"><a href="../components/skindesigner/updateSkinDesigner.html">Update Skin Designer</a><br><span class="desc">Code Developers and Beta Testers of new SkinDesigner components can use this component to remove old SkinDesigner components, add new SkinDesigner components, and update existing SkinDesigner components from a synced Github folder on their computer</span></td></tr>
+</tbody>
+</table>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div id="docs-foot">
+<p class="left">
+© 2018-2020  <a href="https://github.com/robinrodricks/">Robin Rodricks</a> and <a href="http://andrewheumann.com/">Andrew Heumann</a>. &nbsp;
+Hosted by<a href="http://www.github.com/"><img src="../images/github.png" alt="Github" class="poweredbylogo" /></a> &nbsp;
+Rhinoceros and Grasshopper are registered trademarks of <a href="https://www.rhino3d.com/">Robert McNeel & Associates</a>.
+</p>
+<p class="right docs-lightfont">
+
+<a href="https://github.com/rhino/rhino.github.io/issues/new">Report an Issue</a> &nbsp;|&nbsp;
+<a href="/termsOfService.html">Terms of Service</a>
+</p>
+
+</div>
+</div>
+        
+<script src="/js/jquery.js"></script>
+<script src="/js/kramed.min.js"></script>
+<script src="/js/component.js"></script>
+<script src="/js/user.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    </body>
+</html>

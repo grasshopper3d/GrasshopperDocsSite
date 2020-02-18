@@ -1,0 +1,627 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+<head data-layout-view="wide">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>First Search - QuadEdgeDataStructure - Grasshopper Docs</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+
+<meta name="description" content="A guide to component First Search in Grasshopper 3D." />
+<meta name="title" content="First Search - QuadEdgeDataStructure - Grasshopper Docs" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://grasshopperdocs.com/" />
+<meta property="og:title" content="First Search - QuadEdgeDataStructure - Grasshopper Docs" />
+
+<meta property="wiki-page" content="GH QuadEdgeDataStructure First_Search.md" />
+
+<link rel="image_src" href="http://grasshopperdocs.com/ning/2985220.jpg" />
+
+<link href="../../style.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+
+<div id="docs" class="docs-theme docs-widget_page docs-widget_page_page docs-widget_page_page_show" data-layout-pack="classic">
+<div id="docs-head">
+<div id="docs-masthead">
+<p id="docs-sitename"><a id="application_name_header_link" href="http://grasshopperdocs.com/">Grasshopper Docs</a></p>
+<p id="docs-sitedesc" class="xj_site_desc">algorithmic modeling for Rhino</p>
+</div>
+<div id="docs-navigation">
+<ul>
+<li class="docs-subtab"><a href="http://www.grasshopper3d.com/"><span>Home</span></a></li>
+<li class="docs-subtab"><a href="http://www.grasshopper3d.com/photo"><span>View</span></a></li>
+<li class="docs-subtab"><a href="http://www.grasshopper3d.com/page/download-1"><span>Download</span></a></li>
+<li class="docs-subtab"><a href="https://discourse.mcneel.com/c/grasshopper"><span>Forums&#47;Support</span></a></li>
+<li class="docs-subtab this"><a href="http://grasshopperdocs.com/"><span>Learn</span></a></li>
+<li class="docs-subtab"><a href="http://www.grasshopper3d.com/events"><span>Attend</span></a></li>
+<li class="docs-subtab"><a href="http://www.grasshopper3d.com/profiles"><span>My Page</span></a></li></ul>
+
+</div>
+</div>
+
+<div id="docs-body">
+
+<div class="page">
+
+<div class="content">
+
+<div class="ghbar ">
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quadedgedatastructure/fromLines.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -24px -264px" data-toptip="From Lines"></div></a>
+<a href="../../components/quadedgedatastructure/toDataTree.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -48px -264px" data-downtip="To Data Tree"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quadedgedatastructure/toCurves.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -72px -264px" data-toptip="To Curves"></div></a>
+<a href="../../components/quadedgedatastructure/fromObj.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -96px -264px" data-downtip="From Obj"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quadedgedatastructure/toObj.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -120px -264px" data-toptip="To Obj"></div></a>
+<a href="../../components/quadedgedatastructure/fromDataTree.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -144px -264px" data-downtip="From Data Tree"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quadedgedatastructure/fromCurves.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -168px -264px" data-toptip="From Curves"></div></a>
+<a href="../../components/quadedgedatastructure/toMatrix.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -192px -264px" data-downtip="To Matrix"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="4">
+00_Conversion
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quadedgedatastructure/elementkeyvalue.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -48px -168px" data-toptip="element-key-value"></div></a>
+<a href="../../components/quadedgedatastructure/heuristikExpression.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -72px -168px" data-downtip="heuristik Expression"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quadedgedatastructure/deComposeElement.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -96px -168px" data-toptip="De Compose Element"></div></a>
+<a href="../../components/quadedgedatastructure/element.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -120px -168px" data-downtip="element"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quadedgedatastructure/singleSourcePath.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -144px -168px" data-toptip="single Source Path"></div></a>
+<a href="../../components/quadedgedatastructure/nodeExpression.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -168px -168px" data-downtip="node Expression"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quadedgedatastructure/environment.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -192px -168px" data-toptip="Environment"></div></a>
+<a href="../../components/quadedgedatastructure/edgeExpression.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -216px -168px" data-downtip="edge Expression"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quadedgedatastructure/composeElement.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') 0px -192px" data-toptip="Compose Element"></div></a>
+<a href="../../components/quadedgedatastructure/qMesh.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -24px -192px" data-downtip="QMesh"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quadedgedatastructure/allPairsPath.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -48px -192px" data-toptip="all Pairs Path"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="6">
+01_Parameter
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quadedgedatastructure/grids.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') 0px 0px" data-toptip="Grids"></div></a>
+<a href="../../components/quadedgedatastructure/prism.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -24px 0px" data-downtip="Prism"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quadedgedatastructure/superFormula.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -48px 0px" data-toptip="Super Formula"></div></a>
+<a href="../../components/quadedgedatastructure/pipeGrids.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -72px 0px" data-downtip="Pipe Grids"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quadedgedatastructure/platonicSolids.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -96px 0px" data-toptip="Platonic Solids"></div></a>
+<a href="../../components/quadedgedatastructure/box.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -120px 0px" data-downtip="Box"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quadedgedatastructure/polyEdge.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -144px 0px" data-toptip="Poly Edge"></div></a>
+<a href="../../components/quadedgedatastructure/pyramid.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -168px 0px" data-downtip="Pyramid"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quadedgedatastructure/pipe.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -192px 0px" data-toptip="Pipe"></div></a>
+<a href="../../components/quadedgedatastructure/polygon.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -216px 0px" data-downtip="Polygon"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quadedgedatastructure/diPyramid.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') 0px -24px" data-toptip="Di Pyramid"></div></a>
+<a href="../../components/quadedgedatastructure/torus.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -24px -24px" data-downtip="Torus"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quadedgedatastructure/srfGrids.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -48px -24px" data-toptip="Srf Grids"></div></a>
+<a href="../../components/quadedgedatastructure/sphere.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -72px -24px" data-downtip="Sphere"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="7">
+02_Prepared
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quadedgedatastructure/splice.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -96px -24px" data-toptip="Splice"></div></a>
+<a href="../../components/quadedgedatastructure/flip.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -120px -24px" data-downtip="Flip"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quadedgedatastructure/qNode.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -144px -24px" data-toptip="QNode"></div></a>
+<a href="../../components/quadedgedatastructure/truncate.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -168px -24px" data-downtip="Truncate"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quadedgedatastructure/tessellation.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -192px -24px" data-toptip="Tessellation"></div></a>
+<a href="../../components/quadedgedatastructure/makeEdge.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -216px -24px" data-downtip="Make Edge"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quadedgedatastructure/getTopologyChangedResult.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') 0px -48px" data-toptip="Get Topology Changed Result"></div></a>
+<a href="../../components/quadedgedatastructure/removeEdge.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -24px -48px" data-downtip="Remove Edge"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quadedgedatastructure/frame.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -48px -48px" data-toptip="Frame"></div></a>
+<a href="../../components/quadedgedatastructure/qEdge.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -72px -48px" data-downtip="QEdge"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quadedgedatastructure/qJoin.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -96px -48px" data-toptip="QJoin"></div></a>
+<a href="../../components/quadedgedatastructure/removeLeafs.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -120px -48px" data-downtip="Remove Leafs"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quadedgedatastructure/makeEdgeMaster.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -144px -48px" data-toptip="Make Edge Master"></div></a>
+<a href="../../components/quadedgedatastructure/makePolyEdgeMasterSlave.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -168px -48px" data-downtip="Make Poly Edge Master Slave"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quadedgedatastructure/collapseEdge.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -192px -48px" data-toptip="Collapse Edge"></div></a>
+<a href="../../components/quadedgedatastructure/qDisjoint.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -216px -48px" data-downtip="QDisjoint"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quadedgedatastructure/makeEdgeMasterSlave.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') 0px -72px" data-toptip="Make Edge Master Slave"></div></a>
+<a href="../../components/quadedgedatastructure/decomposeTopologyChanged.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -24px -72px" data-downtip="Decompose Topology Changed"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quadedgedatastructure/makePolyEdgeMaster.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -48px -72px" data-toptip="Make Poly Edge Master"></div></a>
+<a href="../../components/quadedgedatastructure/triangulate.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -72px -72px" data-downtip="Triangulate"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quadedgedatastructure/approximate.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -96px -72px" data-toptip="Approximate"></div></a>
+<a href="../../components/quadedgedatastructure/splitNode.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -120px -72px" data-downtip="Split Node"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quadedgedatastructure/subdivide.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -144px -72px" data-toptip="Subdivide"></div></a>
+<a href="../../components/quadedgedatastructure/qMeshInfo.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -168px -72px" data-downtip="QMesh Info"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quadedgedatastructure/extrude.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -192px -72px" data-toptip="Extrude"></div></a>
+<a href="../../components/quadedgedatastructure/splitEdge.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -216px -72px" data-downtip="Split Edge"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quadedgedatastructure/shiftEdge.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') 0px -96px" data-toptip="Shift Edge"></div></a>
+<a href="../../components/quadedgedatastructure/dualSwap.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -24px -96px" data-downtip="Dual Swap"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="14">
+03_Topology
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quadedgedatastructure/worldClear.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -120px -216px" data-toptip="World-Clear"></div></a>
+<a href="../../components/quadedgedatastructure/worldGetter.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -144px -216px" data-downtip="World-Getter"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quadedgedatastructure/nakedEdges.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -168px -216px" data-toptip="Naked-Edges"></div></a>
+<a href="../../components/quadedgedatastructure/setData.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -192px -216px" data-downtip="Set Data"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quadedgedatastructure/clearData.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -216px -216px" data-toptip="Clear Data"></div></a>
+<a href="../../components/quadedgedatastructure/qNodeValue.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') 0px -240px" data-downtip="QNode Value"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quadedgedatastructure/composeSetter.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -24px -240px" data-toptip="Compose Setter"></div></a>
+<a href="../../components/quadedgedatastructure/qEdgeValue.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -48px -240px" data-downtip="QEdge Value"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quadedgedatastructure/worldSetter.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -72px -240px" data-toptip="World-Setter"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="5">
+04_Data
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quadedgedatastructure/smoothing.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -96px -240px" data-toptip="Smoothing"></div></a>
+<a href="../../components/quadedgedatastructure/isPlanar.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -120px -240px" data-downtip="Is Planar"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quadedgedatastructure/transformWithField.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -144px -240px" data-toptip="Transform with Field"></div></a>
+<a href="../../components/quadedgedatastructure/setLocation.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -168px -240px" data-downtip="Set Location"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quadedgedatastructure/getVectorData.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -192px -240px" data-toptip="Get Vector Data"></div></a>
+<a href="../../components/quadedgedatastructure/transformElement.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -216px -240px" data-downtip="Transform Element"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quadedgedatastructure/getLocation.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') 0px -264px" data-toptip="Get Location"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="4">
+05_Euclidean
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quadedgedatastructure/decomposeAgent.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -48px -96px" data-toptip="Decompose Agent"></div></a>
+<a href="../../components/quadedgedatastructure/composeIsovistEnvironment.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -72px -96px" data-downtip="Compose Isovist-Environment"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quadedgedatastructure/centrality.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -96px -96px" data-toptip="Centrality"></div></a>
+<a href="../../components/quadedgedatastructure/composeAgent.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -120px -96px" data-downtip="Compose Agent"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quadedgedatastructure/findCycles.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -144px -96px" data-toptip="Find Cycles"></div></a>
+<a href="../../components/quadedgedatastructure/allPairPathGetPath.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -168px -96px" data-downtip="All Pair Path Get Path"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quadedgedatastructure/stronglyConnected.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -192px -96px" data-toptip="Strongly Connected"></div></a>
+<a href="../../components/quadedgedatastructure/composeTensorAgent.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -216px -96px" data-downtip="Compose Tensor Agent"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quadedgedatastructure/salesmanPath.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') 0px -120px" data-toptip="Salesman Path"></div></a>
+<a href="../../components/quadedgedatastructure/maxFlow.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -24px -120px" data-downtip="Max Flow"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quadedgedatastructure/composePointVisibilityEnvironment.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -48px -120px" data-toptip="Compose Point Visibility-Environment"></div></a>
+<a href="../../components/quadedgedatastructure/composeTensorFieldEnvironment.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -72px -120px" data-downtip="Compose Tensor Field-Environment"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quadedgedatastructure/singleSourcePathTrough.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -96px -120px" data-toptip="Single Source Path Trough"></div></a>
+<a href="../../components/quadedgedatastructure/singleSourcePathSetGoal.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -120px -120px" data-downtip="Single Source Path Set Goal"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quadedgedatastructure/composeAgentOLD.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -144px -120px" data-toptip="Compose Agent OLD"></div></a>
+<a href="../../components/quadedgedatastructure/decomposeEnvironment.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -168px -120px" data-downtip="Decompose Environment"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quadedgedatastructure/pathAgentSearch.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -192px -120px" data-toptip="Path Agent Search"></div></a>
+<a href="../../components/quadedgedatastructure/spanningForest.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -216px -120px" data-downtip="Spanning Forest"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quadedgedatastructure/sourceGoalPath.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') 0px -144px" data-toptip="Source Goal Path"></div></a>
+<a href="../../components/quadedgedatastructure/sourcePath.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -24px -144px" data-downtip="Source Path"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quadedgedatastructure/singleSourcePathDecompose.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -48px -144px" data-toptip="Single Source Path Decompose"></div></a>
+<a href="../../components/quadedgedatastructure/firstSearch.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -72px -144px" data-downtip="First Search"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quadedgedatastructure/composeFunEnvironment.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -96px -144px" data-toptip="Compose Fun-Environment"></div></a>
+<a href="../../components/quadedgedatastructure/groupAgent.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -120px -144px" data-downtip="Group Agent"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quadedgedatastructure/unGroupAgent.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -144px -144px" data-toptip="Un Group Agent"></div></a>
+<a href="../../components/quadedgedatastructure/allPairPath.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -168px -144px" data-downtip="All Pair Path"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quadedgedatastructure/spanningTree.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -192px -144px" data-toptip="Spanning Tree"></div></a>
+<a href="../../components/quadedgedatastructure/composeFieldEnvironment.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -216px -144px" data-downtip="Compose Field-Environment"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quadedgedatastructure/coloring.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') 0px -168px" data-toptip="Coloring"></div></a>
+<a href="../../components/quadedgedatastructure/mergeEnvironments.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -24px -168px" data-downtip="Merge Environments"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="15">
+06_Analysis
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quadedgedatastructure/qMeshPreview.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -72px -192px" data-toptip="QMesh Preview"></div></a>
+<a href="../../components/quadedgedatastructure/qNodePreview.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -96px -192px" data-downtip="QNode Preview"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quadedgedatastructure/qEdgePreview.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -120px -192px" data-toptip="QEdge Preview"></div></a>
+<a href="../../components/quadedgedatastructure/selectableEdges.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -144px -192px" data-downtip="Selectable Edges"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quadedgedatastructure/selectableNodes.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -168px -192px" data-toptip="Selectable Nodes"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+07_Preview
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quadedgedatastructure/qDispatch.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -192px -192px" data-toptip="QDispatch"></div></a>
+<a href="../../components/quadedgedatastructure/firstPerQuad.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -216px -192px" data-downtip="First Per Quad"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quadedgedatastructure/element2EdgeList.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') 0px -216px" data-toptip="Element2Edge-List"></div></a>
+<a href="../../components/quadedgedatastructure/groupNodes.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -24px -216px" data-downtip="Group Nodes"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quadedgedatastructure/qEqual.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -48px -216px" data-toptip="QEqual"></div></a>
+<a href="../../components/quadedgedatastructure/qSet.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -72px -216px" data-downtip="QSet"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quadedgedatastructure/reindex.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -96px -216px" data-toptip="Reindex"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="4">
+08_Util
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quadedgedatastructure/intersectPointChain.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') 0px -288px" data-toptip="Intersect Point Chain"></div></a>
+<a href="../../components/quadedgedatastructure/intersectCurve.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -24px -288px" data-downtip="Intersect Curve"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+09_Geometry
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/quadedgedatastructure/unroll.html"><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -216px -264px" data-toptip="Unroll"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+10_Fabrication
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+
+<div class="addon-buttons">
+<a href="https://markortler.wordpress.com/tooling/gh/qeds/">Download</a>
+</div>
+
+<div class="compo-header">
+<h1><div class="ghsprite" style="background: url('../../icons/quadEdgeDataStructure.png') -72px -144px" ></div> First Search</h1>
+
+<div class="breadcrumb">
+ <a href="../../index.html">Component Index</a>
+  <a href="../../addons/quadedgedatastructure.html">QuadEdgeDataStructure</a><a href="#" class="breadcrumb-nolink">06_Analysis</a><a href="#" class="breadcrumb-nolink">FS</a>
+</div>
+
+</div>
+<h3>FirstSearch-Algorithm to solve Connectivity-Problems</h3>
+<h2>Inputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>QMesh</b></td><td>qm</td><td>reference QMesh</td><td>QEDS.Gh.Library.Goo.QMeshGoo</td></tr>
+<tr><td><b>edge</b></td><td>e</td><td>set of edges to be part of the calculation</td><td>QEDS.Gh.Library.Goo.QMeshElementGoo</td></tr>
+<tr><td><b>Start</b></td><td>s</td><td>Start from</td><td>QEDS.Gh.Library.Goo.QMeshElementGoo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table>
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>singleSourcePath</b></td><td>ssp</td><td>A path from a single source</td><td>QEDS.Gh.Library.Goo.SingleSourcePathGoo</td></tr>
+</tbody>
+</table>
+
+
+</div>
+
+</div>
+
+</div>
+<div id="docs-foot">
+<p class="left">
+© 2018-2020  <a href="https://github.com/robinrodricks/">Robin Rodricks</a> and <a href="http://andrewheumann.com/">Andrew Heumann</a>. &nbsp;
+Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a> &nbsp;
+Rhinoceros and Grasshopper are registered trademarks of <a href="https://www.rhino3d.com/">Robert McNeel & Associates</a>.
+</p>
+<p class="right docs-lightfont">
+
+<a href="https://github.com/rhino/rhino.github.io/issues/new">Report an Issue</a> &nbsp;|&nbsp;
+<a href="/termsOfService.html">Terms of Service</a>
+</p>
+
+</div>
+</div>
+        
+<script src="/js/jquery.js"></script>
+<script src="/js/kramed.min.js"></script>
+<script src="/js/component.js"></script>
+<script src="/js/user.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    </body>
+</html>

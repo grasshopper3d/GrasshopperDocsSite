@@ -1,0 +1,750 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+<head data-layout-view="wide">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Parakeet - Grasshopper Docs</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+
+<meta name="description" content="Complete documentation for the Parakeet addon in Grasshopper 3D." />
+<meta name="title" content="Parakeet - Grasshopper Docs" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://grasshopperdocs.com/" />
+<meta property="og:title" content="Parakeet - Grasshopper Docs" />
+
+<meta property="wiki-page" content="GH Parakeet" />
+
+<link rel="image_src" href="http://grasshopperdocs.com/ning/2985220.jpg" />
+
+<link href="../style.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+
+
+</head>
+<body>
+
+
+<div id="docs" class="docs-theme docs-widget_page docs-widget_page_page docs-widget_page_page_show" data-layout-pack="classic">
+<div id="docs-head">
+<div id="docs-masthead">
+<p id="docs-sitename"><a id="application_name_header_link" href="http://grasshopperdocs.com/">Grasshopper Docs</a></p>
+<p id="docs-sitedesc" class="xj_site_desc">algorithmic modeling for Rhino</p>
+</div>
+<div id="docs-navigation">
+<ul>
+<li class="docs-subtab"><a href="http://www.grasshopper3d.com/"><span>Home</span></a></li>
+<li class="docs-subtab"><a href="http://www.grasshopper3d.com/photo"><span>View</span></a></li>
+<li class="docs-subtab"><a href="http://www.grasshopper3d.com/page/download-1"><span>Download</span></a></li>
+<li class="docs-subtab"><a href="https://discourse.mcneel.com/c/grasshopper"><span>Forums&#47;Support</span></a></li>
+<li class="docs-subtab this"><a href="http://grasshopperdocs.com/"><span>Learn</span></a></li>
+<li class="docs-subtab"><a href="http://www.grasshopper3d.com/events"><span>Attend</span></a></li>
+<li class="docs-subtab"><a href="http://www.grasshopper3d.com/profiles"><span>My Page</span></a></li></ul>
+
+</div>
+</div>
+
+<div id="docs-body">
+
+<div class="page">
+
+<div class="content">
+
+<div class="addon-buttons">
+<a href="https://www.food4rhino.com/app/parakeet">Download</a>
+</div>
+
+<div class="addon-header">
+<h1>Parakeet</h1>
+<h5>ADDON, Version <b>0.6.1</b>, Released on <b>2019-Oct-13</b>, Provides <b>119</b> components, Created by <b>Esmaeil</b></h5>
+<h5>Parakeet is a collection of components focusing in Algorithmic Pattern Generation; it offers a Unique and easy-to-use approach that Generates Geometrical and Natural Patterns/Networks.
+
+For now, Parakeet has 8 Categories: Tilings, Primitives, Pattern Generation, Curve, Mesh, Surface, M.C. Escher and utilities.</h5>
+
+<div class="breadcrumb">
+  <a href="../index.html">Component Index</a>
+  <a href="#" class="breadcrumb-nolink">Parakeet</a>
+</div>
+
+</div>
+
+<div class="ghbar ghbar-addon-page">
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/parakeet/mirroredSubdivideQuad.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -168px -240px" data-toptip="Mirrored Subdivide Quad"></div></a>
+<a href="../components/parakeet/networkTopology.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -192px -240px" data-downtip="Network Topology"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/parakeet/polygonByArea.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -216px -240px" data-toptip="Polygon by Area"></div></a>
+<a href="../components/parakeet/randomSeam.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') 0px -264px" data-downtip="Random Seam"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/parakeet/dualGarph.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -24px -264px" data-toptip="Dual Garph"></div></a>
+<a href="../components/parakeet/alignCurves.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -48px -264px" data-downtip="Align Curves"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/parakeet/divideCurveVariable.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -72px -264px" data-toptip="Divide Curve Variable"></div></a>
+<a href="../components/parakeet/loopTrancate.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -96px -264px" data-downtip="Loop Trancate"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/parakeet/mapCurves.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -120px -264px" data-toptip="Map Curves"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="5">
+Curve
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/parakeet/metaEscherTrilateral.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -192px -72px" data-toptip="Meta Escher Trilateral"></div></a>
+<a href="../components/parakeet/escherHexagonalB.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -216px -72px" data-downtip="Escher Hexagonal B"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/parakeet/metaEscherHexagonalA.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') 0px -96px" data-toptip="Meta Escher Hexagonal A"></div></a>
+<a href="../components/parakeet/escherQuadriladeralA.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -24px -96px" data-downtip="Escher Quadriladeral A"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/parakeet/escherHexagonalA.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -48px -96px" data-toptip="Escher Hexagonal A"></div></a>
+<a href="../components/parakeet/metaEscherQuadriladeral.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -72px -96px" data-downtip="Meta Escher Quadriladeral"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/parakeet/metaEscherHexagonalB.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -96px -96px" data-toptip="Meta Escher Hexagonal B"></div></a>
+<a href="../components/parakeet/escherTrilateralA.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -120px -96px" data-downtip="Escher Trilateral A"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="4">
+M.C.Escher Tilings
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/parakeet/meshCap.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -144px -264px" data-toptip="MeshCap"></div></a>
+<a href="../components/parakeet/meshSurfaceVariable.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -168px -264px" data-downtip="Mesh Surface Variable"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/parakeet/meshTopology.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -192px -264px" data-toptip="Mesh Topology"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="2">
+Mesh
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/parakeet/patternGenotypeE.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -168px -120px" data-toptip="Pattern Genotype E"></div></a>
+<a href="../components/parakeet/tileablePatternp4.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -192px -120px" data-downtip="Tileable Pattern (p4)"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/parakeet/tileablePatternpmg.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -216px -120px" data-toptip="Tileable Pattern (pmg)"></div></a>
+<a href="../components/parakeet/patternGenotypeNTA.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') 0px -144px" data-downtip="Pattern Genotype N (TA)"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/parakeet/2DAggregation.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -24px -144px" data-toptip="2D Aggregation"></div></a>
+<a href="../components/parakeet/cymaticPattern.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -48px -144px" data-downtip="Cymatic Pattern"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/parakeet/patternStatistics.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -72px -144px" data-toptip="Pattern Statistics"></div></a>
+<a href="../components/parakeet/gilbertTesselationC.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -96px -144px" data-downtip="Gilbert Tesselation C"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/parakeet/patternGenotypeG.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -120px -144px" data-toptip="Pattern Genotype G"></div></a>
+<a href="../components/parakeet/patternGenotypeK.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -144px -144px" data-downtip="Pattern Genotype K"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/parakeet/starPatternII.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -168px -144px" data-toptip="Star Pattern II"></div></a>
+<a href="../components/parakeet/patternGenotypeI.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -192px -144px" data-downtip="Pattern Genotype I"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/parakeet/patternGenotypeMPT.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -216px -144px" data-toptip="Pattern Genotype M (PT)"></div></a>
+<a href="../components/parakeet/tileablePatternpmm.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') 0px -168px" data-downtip="Tileable Pattern (pmm)"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/parakeet/patternGenotypeLPT.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -24px -168px" data-toptip="Pattern Genotype L (PT)"></div></a>
+<a href="../components/parakeet/starPatternI.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -48px -168px" data-downtip="Star Pattern I"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/parakeet/patternGenotypeJ.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -72px -168px" data-toptip="Pattern Genotype J"></div></a>
+<a href="../components/parakeet/patternGenotypeC.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -96px -168px" data-downtip="Pattern Genotype C"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/parakeet/tileablePatternp4m.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -120px -168px" data-toptip="Tileable Pattern (p4m)"></div></a>
+<a href="../components/parakeet/patternGenotypeH.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -144px -168px" data-downtip="Pattern Genotype H"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/parakeet/venation.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -168px -168px" data-toptip="Venation"></div></a>
+<a href="../components/parakeet/patternGenotypeB.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -192px -168px" data-downtip="Pattern Genotype B"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/parakeet/patternGenotypeF.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -216px -168px" data-toptip="Pattern Genotype F"></div></a>
+<a href="../components/parakeet/tileablePatternp4g.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') 0px -192px" data-downtip="Tileable Pattern (p4g)"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/parakeet/flowPath.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -24px -192px" data-toptip="Flow Path"></div></a>
+<a href="../components/parakeet/fractalPolyline.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -48px -192px" data-downtip="Fractal Polyline"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/parakeet/growth.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -72px -192px" data-toptip="Growth"></div></a>
+<a href="../components/parakeet/maze.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -96px -192px" data-downtip="Maze"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/parakeet/patternGenotypeA.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -120px -192px" data-toptip="Pattern Genotype A"></div></a>
+<a href="../components/parakeet/gilbertTesselationB.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -144px -192px" data-downtip="Gilbert Tesselation B"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/parakeet/patternGenotypeD.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -168px -192px" data-toptip="Pattern Genotype D"></div></a>
+<a href="../components/parakeet/tileablePatternpgg.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -192px -192px" data-downtip="Tileable Pattern (pgg)"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/parakeet/gilbertTesselationA.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -216px -192px" data-toptip="Gilbert Tesselation A"></div></a>
+<a href="../components/parakeet/knit.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') 0px -216px" data-downtip="Knit"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/parakeet/kelidoscope.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -24px -216px" data-toptip="Kelidoscope"></div></a>
+<a href="../components/parakeet/3DAggregation.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -48px -216px" data-downtip="3D Aggregation"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="18">
+Pattern Generation
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/parakeet/kleinSurface.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -48px -240px" data-toptip="Klein Surface"></div></a>
+<a href="../components/parakeet/kleinBottle.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -72px -240px" data-downtip="Klein Bottle"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/parakeet/geodesicDome.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -96px -240px" data-toptip="Geodesic Dome"></div></a>
+<a href="../components/parakeet/plukerSurface.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -120px -240px" data-downtip="PlukerSurface"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/parakeet/mobiusSurface.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -144px -240px" data-toptip="Mobius Surface"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+Primitive
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/parakeet/removeDuplicateSurface.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -144px -96px" data-toptip="RemoveDuplicateSurface"></div></a>
+<a href="../components/parakeet/mapToSurface.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -168px -96px" data-downtip="Map To Surface"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/parakeet/panelizedSumSurface.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -192px -96px" data-toptip="Panelized Sum Surface"></div></a>
+<a href="../components/parakeet/extendSurface.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -216px -96px" data-downtip="Extend Surface"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/parakeet/voronoiOnSurface.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') 0px -120px" data-toptip="Voronoi On Surface"></div></a>
+<a href="../components/parakeet/offsetBrep.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -24px -120px" data-downtip="Offset Brep"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/parakeet/createSolid.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -48px -120px" data-toptip="CreateSolid"></div></a>
+<a href="../components/parakeet/reverseSurface.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -72px -120px" data-downtip="Reverse Surface"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/parakeet/brepTopology.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -96px -120px" data-toptip="Brep Topology"></div></a>
+<a href="../components/parakeet/brepRemoveHoles.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -120px -120px" data-downtip="Brep Remove Holes"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/parakeet/booleanSplit.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -144px -120px" data-toptip="BooleanSplit"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="6">
+Surface
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/parakeet/pentagonalTiling07.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') 0px 0px" data-toptip="Pentagonal Tiling 07"></div></a>
+<a href="../components/parakeet/pentagonalTiling10.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -24px 0px" data-downtip="Pentagonal Tiling 10"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/parakeet/2UniformTilingE.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -48px 0px" data-toptip="2-Uniform Tiling E"></div></a>
+<a href="../components/parakeet/2UniformTilingA.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -72px 0px" data-downtip="2-Uniform Tiling A"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/parakeet/pentagonalTiling15.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -96px 0px" data-toptip="Pentagonal Tiling 15"></div></a>
+<a href="../components/parakeet/pentagonalTiling02A.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -120px 0px" data-downtip="Pentagonal Tiling 02_A"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/parakeet/snubSquare.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -144px 0px" data-toptip="Snub square"></div></a>
+<a href="../components/parakeet/pentagonalTiling01A.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -168px 0px" data-downtip="Pentagonal Tiling 01_A"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/parakeet/brickTypeH.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -192px 0px" data-toptip="Brick Type H"></div></a>
+<a href="../components/parakeet/trihexagonal.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -216px 0px" data-downtip="Trihexagonal"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/parakeet/pentagonalTiling13.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') 0px -24px" data-toptip="Pentagonal Tiling 13"></div></a>
+<a href="../components/parakeet/brickTypeI.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -24px -24px" data-downtip="Brick Type I"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/parakeet/truncatedHexagonal.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -48px -24px" data-toptip="Truncated hexagonal"></div></a>
+<a href="../components/parakeet/snubTrihexagonal.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -72px -24px" data-downtip="Snub Trihexagonal"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/parakeet/2UniformTilingB.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -96px -24px" data-toptip="2-Uniform Tiling B"></div></a>
+<a href="../components/parakeet/2UniformTilingF.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -120px -24px" data-downtip="2-Uniform Tiling F"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/parakeet/trilateralTilingI.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -144px -24px" data-toptip="Trilateral Tiling I"></div></a>
+<a href="../components/parakeet/trilateralTilingII.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -168px -24px" data-downtip="Trilateral Tiling II"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/parakeet/truncatedSquare.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -192px -24px" data-toptip="Truncated square"></div></a>
+<a href="../components/parakeet/pentagonalTiling06.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -216px -24px" data-downtip="Pentagonal Tiling 06"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/parakeet/quadrilateralTiling.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') 0px -48px" data-toptip="Quadrilateral Tiling"></div></a>
+<a href="../components/parakeet/truncatedTrihexagonal.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -24px -48px" data-downtip="Truncated trihexagonal"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/parakeet/2UniformTilingD.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -48px -48px" data-toptip="2-Uniform Tiling D"></div></a>
+<a href="../components/parakeet/brickTypeG.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -72px -48px" data-downtip="Brick Type G"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/parakeet/pentagonalTiling01B.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -96px -48px" data-toptip="Pentagonal Tiling 01_B"></div></a>
+<a href="../components/parakeet/brickTypeJ.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -120px -48px" data-downtip="Brick Type J"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/parakeet/pentagonalTiling09.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -144px -48px" data-toptip="Pentagonal Tiling 09"></div></a>
+<a href="../components/parakeet/pentagonalTiling02B.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -168px -48px" data-downtip="Pentagonal Tiling 02_B"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/parakeet/brickTypeD.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -192px -48px" data-toptip="Brick Type D"></div></a>
+<a href="../components/parakeet/rhombitrihexagonal.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -216px -48px" data-downtip="Rhombitrihexagonal"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/parakeet/brickTypeC.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') 0px -72px" data-toptip="Brick Type C"></div></a>
+<a href="../components/parakeet/brickTypeB.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -24px -72px" data-downtip="Brick Type B"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/parakeet/elongatedTriangular.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -48px -72px" data-toptip="Elongated triangular"></div></a>
+<a href="../components/parakeet/2UniformTilingC.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -72px -72px" data-downtip="2-Uniform Tiling C"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/parakeet/penrose.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -96px -72px" data-toptip="Penrose"></div></a>
+<a href="../components/parakeet/brickTypeE.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -120px -72px" data-downtip="Brick Type E"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/parakeet/brickTypeA.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -144px -72px" data-toptip="Brick Type A"></div></a>
+<a href="../components/parakeet/brickTypeF.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -168px -72px" data-downtip="Brick Type F"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="19">
+Tiling
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/parakeet/reflectionPoint.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -72px -216px" data-toptip="Reflection Point"></div></a>
+<a href="../components/parakeet/cleanNumber.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -96px -216px" data-downtip="Clean Number"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/parakeet/mouse.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -120px -216px" data-toptip="Mouse"></div></a>
+<a href="../components/parakeet/faceMePlane.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -144px -216px" data-downtip="FaceMe Plane"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/parakeet/goldenPoint.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -168px -216px" data-toptip="Golden Point"></div></a>
+<a href="../components/parakeet/interpolateColor.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -192px -216px" data-downtip="Interpolate Color"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/parakeet/zoomTo.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -216px -216px" data-toptip="Zoom to"></div></a>
+<a href="../components/parakeet/customRound.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') 0px -240px" data-downtip="Custom Round"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/parakeet/scissors.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -24px -240px" data-toptip="Scissors"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="5">
+Util
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+
+<div class="cchild">
+<h3>Tiling</h3>
+<table class="addon-compos">
+<tbody>
+<tr><td class="ccol_1"><a href="../components/parakeet/pentagonalTiling07.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') 0px 0px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/pentagonalTiling07.html">Pentagonal Tiling 07</a> <span class="codeword">(PTiling 07)</span><br><span class="desc">Creates a Euclidean Iregular Pentagonal tiling</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/pentagonalTiling10.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -24px 0px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/pentagonalTiling10.html">Pentagonal Tiling 10</a> <span class="codeword">(PTiling 10)</span><br><span class="desc">Creates a Euclidean Iregular Pentagonal tiling</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/2UniformTilingE.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -48px 0px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/2UniformTilingE.html">2-Uniform Tiling E</a> <span class="codeword">(2TilingE)</span><br><span class="desc">Creates a Euclidean 2-Uniform tiling consisting of convex polygons with vertex configuration of ([4.3.12.3; 12.12.3])</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/2UniformTilingA.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -72px 0px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/2UniformTilingA.html">2-Uniform Tiling A</a> <span class="codeword">(2TilingA)</span><br><span class="desc">Creates a Euclidean 2-Uniform tiling consisting of convex polygons with vertex configuration of ([3.4.6.4 ; 3^2.4.3.4])</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/pentagonalTiling15.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -96px 0px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/pentagonalTiling15.html">Pentagonal Tiling 15</a> <span class="codeword">(PTiling 15)</span><br><span class="desc">Creates a Euclidean Iregular Pentagonal tiling</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/pentagonalTiling02A.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -120px 0px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/pentagonalTiling02A.html">Pentagonal Tiling 02_A</a> <span class="codeword">(PTiling 02A)</span><br><span class="desc">Creates a Euclidean Iregular Pentagonal tiling</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/snubSquare.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -144px 0px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/snubSquare.html">Snub square</a> <span class="codeword">(Tiling B sr)</span><br><span class="desc">Creates a Euclidean semi-regular tiling consisting of convex polygons with vertex configuration of (3.3.4.3.4), also known as Snub square Tiling</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/pentagonalTiling01A.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -168px 0px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/pentagonalTiling01A.html">Pentagonal Tiling 01_A</a> <span class="codeword">(PTiling 01A)</span><br><span class="desc">Creates a Euclidean Iregular Pentagonal tiling</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/brickTypeH.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -192px 0px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/brickTypeH.html">Brick Type H</a> <span class="codeword">(Brick H)</span><br><span class="desc">Creates Bricks as closed polylines (Cell) on a Surface</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/trihexagonal.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -216px 0px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/trihexagonal.html">Trihexagonal</a> <span class="codeword">(Tiling G sr)</span><br><span class="desc">Creates a Euclidean semi-regular tiling consisting of convex polygons with vertex configuration of (3.6.6), also known as Trihexagonal tiling</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/pentagonalTiling13.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') 0px -24px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/pentagonalTiling13.html">Pentagonal Tiling 13</a> <span class="codeword">(PTiling 13)</span><br><span class="desc">Creates a Euclidean Iregular Pentagonal tiling</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/brickTypeI.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -24px -24px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/brickTypeI.html">Brick Type I</a> <span class="codeword">(Brick I)</span><br><span class="desc">Creates Bricks as closed polylines (Cell) on a Surface</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/truncatedHexagonal.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -48px -24px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/truncatedHexagonal.html">Truncated hexagonal</a> <span class="codeword">(Tiling E sr)</span><br><span class="desc">Creates a Euclidean semi-regular tiling consisting of convex polygons with vertex configuration of (3.12.12), also known as Truncated hexagonal tiling</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/snubTrihexagonal.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -72px -24px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/snubTrihexagonal.html">Snub Trihexagonal</a> <span class="codeword">(Tiling A sr)</span><br><span class="desc">Creates a Euclidean semi-regular tiling consisting of convex polygons with vertex configuration of (3.3.3.3.6), also known as Snub Trihexagonal tiling.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/2UniformTilingB.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -96px -24px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/2UniformTilingB.html">2-Uniform Tiling B</a> <span class="codeword">(2TilingB)</span><br><span class="desc">Creates a Euclidean 2-Uniform tiling consisting of convex polygons with vertex configuration of ([4.6.12 ; 3.4.6.4])</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/2UniformTilingF.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -120px -24px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/2UniformTilingF.html">2-Uniform Tiling F</a> <span class="codeword">(2TilingF)</span><br><span class="desc">Creates a Euclidean 2-Uniform tiling consisting of convex polygons with vertex configuration of ([3^6; 3^2.4.12])</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/trilateralTilingI.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -144px -24px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/trilateralTilingI.html">Trilateral Tiling I</a> <span class="codeword">(TriTiling I)</span><br><span class="desc">Generates a Tiling (Grid) based on any irregular/regular Trilateral Curve (any Closed Polyline with 3 points and 3 edges)</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/trilateralTilingII.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -168px -24px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/trilateralTilingII.html">Trilateral Tiling II</a> <span class="codeword">(TriTiling II)</span><br><span class="desc">Generates a Tiling (Grid) based on any irregular/regular Trilateral Curve (any Closed Polyline with 3 points and 3 edges)</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/truncatedSquare.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -192px -24px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/truncatedSquare.html">Truncated square</a> <span class="codeword">(Tiling D sr)</span><br><span class="desc">Creates a Euclidean semi-regular tiling consisting of convex polygons with vertex configuration of (4.8.8), also known as Truncated square tiling</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/pentagonalTiling06.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -216px -24px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/pentagonalTiling06.html">Pentagonal Tiling 06</a> <span class="codeword">(PTiling 06)</span><br><span class="desc">Creates a Euclidean Iregular Pentagonal tiling</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/quadrilateralTiling.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') 0px -48px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/quadrilateralTiling.html">Quadrilateral Tiling</a> <span class="codeword">(QuadTiling)</span><br><span class="desc">Generates a Tiling (Grid) based on any irregular/regular Quadrilateral Curve (any Closed Polyline with 4 points and 4 edges)</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/truncatedTrihexagonal.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -24px -48px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/truncatedTrihexagonal.html">Truncated trihexagonal</a> <span class="codeword">(Tiling F sr)</span><br><span class="desc">Creates a Euclidean semi-regular tiling consisting of convex polygons with vertex configuration of (4.6.12), also known as Truncated trihexagonal tiling</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/2UniformTilingD.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -48px -48px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/2UniformTilingD.html">2-Uniform Tiling D</a> <span class="codeword">(2TilingD)</span><br><span class="desc">Creates a Euclidean 2-Uniform tiling consisting of convex polygons with vertex configuration of ([3.3.4.3.4; 4.4.3.3.3])</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/brickTypeG.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -72px -48px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/brickTypeG.html">Brick Type G</a> <span class="codeword">(Brick G)</span><br><span class="desc">Creates Bricks as closed polylines (Cell) on a Surface</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/pentagonalTiling01B.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -96px -48px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/pentagonalTiling01B.html">Pentagonal Tiling 01_B</a> <span class="codeword">(PTiling 01B)</span><br><span class="desc">Creates a Euclidean Iregular Pentagonal tiling</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/brickTypeJ.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -120px -48px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/brickTypeJ.html">Brick Type J</a> <span class="codeword">(Brick J)</span><br><span class="desc">Creates Bricks as closed polylines (Cell) on a Surface</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/pentagonalTiling09.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -144px -48px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/pentagonalTiling09.html">Pentagonal Tiling 09</a> <span class="codeword">(PTiling 09)</span><br><span class="desc">Creates a Euclidean Iregular Pentagonal tiling</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/pentagonalTiling02B.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -168px -48px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/pentagonalTiling02B.html">Pentagonal Tiling 02_B</a> <span class="codeword">(PTiling 02B)</span><br><span class="desc">Creates a Euclidean Iregular Pentagonal tiling</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/brickTypeD.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -192px -48px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/brickTypeD.html">Brick Type D</a> <span class="codeword">(Brick D)</span><br><span class="desc">Creates Bricks as closed polylines (Cell) on a Surface</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/rhombitrihexagonal.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -216px -48px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/rhombitrihexagonal.html">Rhombitrihexagonal</a> <span class="codeword">(Tiling C sr)</span><br><span class="desc">Creates a Euclidean semi-regular tiling consisting of convex polygons with vertex configuration of (3.4.6.4), also known as Rhombitrihexagonal tiling</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/brickTypeC.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') 0px -72px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/brickTypeC.html">Brick Type C</a> <span class="codeword">(Brick C)</span><br><span class="desc">Creates Bricks as closed polylines (Cell) on a Surface</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/brickTypeB.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -24px -72px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/brickTypeB.html">Brick Type B</a> <span class="codeword">(Brick B)</span><br><span class="desc">Creates Bricks as closed polylines (Cell) on a Surface</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/elongatedTriangular.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -48px -72px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/elongatedTriangular.html">Elongated triangular</a> <span class="codeword">(Tiling H sr)</span><br><span class="desc">Creates a Euclidean semi-regular tiling consisting of convex polygons with vertex configuration of (3.3.3.4.4), also known as Elongated triangular tiling</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/2UniformTilingC.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -72px -72px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/2UniformTilingC.html">2-Uniform Tiling C</a> <span class="codeword">(2TilingC)</span><br><span class="desc">Creates a Euclidean 2-Uniform tiling consisting of convex polygons with vertex configuration of ([3.3.3.4.4; 6.4.3.4])</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/penrose.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -96px -72px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/penrose.html">Penrose</a><br><span class="desc">Creates a Penrose Tiling(Penrose of Type 2) Consisting of Quadrilateral Polygons</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/brickTypeE.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -120px -72px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/brickTypeE.html">Brick Type E</a> <span class="codeword">(Brick E)</span><br><span class="desc">Creates Bricks as closed polylines (Cell) on a Surface</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/brickTypeA.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -144px -72px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/brickTypeA.html">Brick Type A</a> <span class="codeword">(Brick A)</span><br><span class="desc">Creates Bricks as closed polylines (Cell) on a Surface</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/brickTypeF.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -168px -72px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/brickTypeF.html">Brick Type F</a> <span class="codeword">(Brick F)</span><br><span class="desc">Creates Bricks as closed polylines (Cell) on a Surface</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>Pattern Generation</h3>
+<table class="addon-compos">
+<tbody>
+<tr><td class="ccol_1"><a href="../components/parakeet/patternGenotypeE.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -168px -120px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/patternGenotypeE.html">Pattern Genotype E</a> <span class="codeword">(PatternGenE)</span><br><span class="desc">a Method of Generating Patterns on Custom Cells (Hint: Works Best with Cells from Parakeet’s “Tiling” Category)  <br> <br> [Based on Esmaeil Mottaghi’s Dissertation [See https://www</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/tileablePatternp4.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -192px -120px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/tileablePatternp4.html">Tileable Pattern (p4)</a> <span class="codeword">(Tilep4)</span><br><span class="desc">A Method for Generating Tileable Patterns.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/tileablePatternpmg.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -216px -120px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/tileablePatternpmg.html">Tileable Pattern (pmg)</a> <span class="codeword">(Tilepmg)</span><br><span class="desc">A Method for Generating Tileable Patterns.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/patternGenotypeNTA.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') 0px -144px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/patternGenotypeNTA.html">Pattern Genotype N (TA)</a> <span class="codeword">(PatternGenN)</span><br><span class="desc">a Method of Generating Patterns on Custom Cells (Hint: Works Best with Cells from Parakeet’s “Tiling” Category)<br> <br>[Shared under Creative Common License “Attribution-ShareAlike” (CC BY-SA)]</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/2DAggregation.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -24px -144px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/2DAggregation.html">2D Aggregation</a><br><span class="desc">Generates an aggregated system consist of an arbitrary base curve</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/cymaticPattern.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -48px -144px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/cymaticPattern.html">Cymatic Pattern</a> <span class="codeword">(Cymatics)</span><br><span class="desc">[Experimental Component] Creates Cymatic patterns (Also Known as Chladni Plates; https://monoskop.org/Ernst_Chladni)</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/patternStatistics.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -72px -144px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/patternStatistics.html">Pattern Statistics</a> <span class="codeword">(PatternStat)</span><br><span class="desc">Retrieves some statistics regarding a Pattern (Network of Lines/Curves)</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/gilbertTesselationC.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -96px -144px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/gilbertTesselationC.html">Gilbert Tesselation C</a> <span class="codeword">(GilbertC)</span><br><span class="desc">Generates a Pattern Based on a re-envision of Gilbert Tessellation.<br> <br>Shared under Attribution-NonCommercial license (CC BY-NC), Contact Support Email for Commercial use</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/patternGenotypeG.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -120px -144px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/patternGenotypeG.html">Pattern Genotype G</a> <span class="codeword">(PatternGenG)</span><br><span class="desc">a Method of Generating Patterns on Custom Cells (Hint: Works Best with Cells from Parakeet’s “Tiling” Category)</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/patternGenotypeK.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -144px -144px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/patternGenotypeK.html">Pattern Genotype K</a> <span class="codeword">(PatternGenK)</span><br><span class="desc">a Method of Generating Patterns on Custom Cells (Hint: Works Best with Cells from Parakeet’s “Tiling” Category)  <br> <br> [Based on Esmaeil Mottaghi’s Dissertation [See https://www</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/starPatternII.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -168px -144px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/starPatternII.html">Star Pattern II</a> <span class="codeword">(StarPatternII)</span><br><span class="desc">a Geometrical method for designing Islamic Patterns (Based on a method presented by  Hankin Lee & Craig S</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/patternGenotypeI.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -192px -144px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/patternGenotypeI.html">Pattern Genotype I</a> <span class="codeword">(PatternGenI)</span><br><span class="desc">a Method of Generating Patterns on Custom Cells (Hint: Works Best with Cells from Parakeet’s “Tiling” Category)</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/patternGenotypeMPT.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -216px -144px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/patternGenotypeMPT.html">Pattern Genotype M (PT)</a> <span class="codeword">(PatternGenM (PT))</span><br><span class="desc">a Method of Generating Patterns on Custom Cells (Hint: Works Best with Cells from Parakeet’s “Tiling” Category) | This Genotype returens Pentognal Tilings (Known as Pentagonal Tilings of Type 3) <br> <br> [Based on Esmaeil Mottaghi’s Dissertation [See https://www</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/tileablePatternpmm.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') 0px -168px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/tileablePatternpmm.html">Tileable Pattern (pmm)</a> <span class="codeword">(Tilepmm)</span><br><span class="desc">A Method for Generating Tileable Patterns.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/patternGenotypeLPT.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -24px -168px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/patternGenotypeLPT.html">Pattern Genotype L (PT)</a> <span class="codeword">(PatternGenL (PT))</span><br><span class="desc">a Method of Generating Patterns on Custom Cells (Hint: Works Best with Cells from Parakeet’s “Tiling” Category) | This Genotype returens Pentognal Tilings (Known as Pentagonal Tilings of Type 4 and 5)  <br> <br> [Based on Esmaeil Mottaghi’s Dissertation [See https://www</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/starPatternI.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -48px -168px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/starPatternI.html">Star Pattern I</a> <span class="codeword">(StarPatternI)</span><br><span class="desc">a Geometrical method for designing Islamic Patterns (Based on a method presented by Craig S</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/patternGenotypeJ.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -72px -168px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/patternGenotypeJ.html">Pattern Genotype J</a> <span class="codeword">(PatternGenJ)</span><br><span class="desc">a Method of Generating Patterns on Custom Cells (Hint: Works Best with Cells from Parakeet’s “Tiling” Category)</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/patternGenotypeC.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -96px -168px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/patternGenotypeC.html">Pattern Genotype C</a> <span class="codeword">(PatternGenC)</span><br><span class="desc">a Method of Generating Patterns on Custom Cells (Hint: Works Best with Cells from Parakeet’s “Tiling” Category)  <br> <br> [Based on Esmaeil Mottaghi’s Dissertation [See https://www</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/tileablePatternp4m.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -120px -168px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/tileablePatternp4m.html">Tileable Pattern (p4m)</a> <span class="codeword">(Tilep4m)</span><br><span class="desc">A Method for Generating Tileable Patterns.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/patternGenotypeH.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -144px -168px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/patternGenotypeH.html">Pattern Genotype H</a> <span class="codeword">(PatternGenH)</span><br><span class="desc">a Method of Generating Patterns on Custom Cells (Hint: Works Best with Cells from Parakeet’s “Tiling” Category)  <br> <br> [Based on Esmaeil Mottaghi’s Dissertation [See https://www</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/venation.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -168px -168px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/venation.html">Venation</a><br><span class="desc">Generates a Venetaion [Branching] Network of Curves among a List of Points</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/patternGenotypeB.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -192px -168px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/patternGenotypeB.html">Pattern Genotype B</a> <span class="codeword">(PatternGenB)</span><br><span class="desc">a Method of Generating Patterns on Custom Cells (Hint: Works Best with Cells from Parakeet’s “Tiling” Category)  <br> <br> [Based on Esmaeil Mottaghi’s Dissertation [See https://www</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/patternGenotypeF.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -216px -168px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/patternGenotypeF.html">Pattern Genotype F</a> <span class="codeword">(PatternGenF)</span><br><span class="desc">a Method of Generating Patterns on Custom Cells (Hint: Works Best with Cells from Parakeet’s “Tiling” Category)  <br> <br> [Based on Esmaeil Mottaghi’s Dissertation [See https://www</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/tileablePatternp4g.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') 0px -192px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/tileablePatternp4g.html">Tileable Pattern (p4g)</a> <span class="codeword">(Tilep4g)</span><br><span class="desc">A Method for Generating Tileable Patterns.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/flowPath.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -24px -192px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/flowPath.html">Flow Path</a> <span class="codeword">(Flow)</span><br><span class="desc">Generates a [Discrete] Fluid Flow Path on a Mesh</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/fractalPolyline.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -48px -192px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/fractalPolyline.html">Fractal Polyline</a> <span class="codeword">(Fractal)</span><br><span class="desc">Generates a Fractal Polyline</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/growth.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -72px -192px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/growth.html">Growth</a> <span class="codeword">(GrowthA)</span><br><span class="desc">Generates a Single-Polyline Pattern, resembling Natural Growth of Cells and Organs [also Known by name of ‘Differential Growth’] <br>Connect a Grasshopper Timer to refresh the Component</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/maze.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -96px -192px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/maze.html">Maze</a><br><span class="desc">Generates a Perfect Maze (Based on Backtracking Algorithm) Based on a Given Mesh</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/patternGenotypeA.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -120px -192px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/patternGenotypeA.html">Pattern Genotype A</a> <span class="codeword">(PatternGenA)</span><br><span class="desc">a Method of Generating Patterns on Custom Cells (Hint: Works Best with Cells from Parakeet’s “Tiling” Category)  <br> <br> [Based on Esmaeil Mottaghi’s Dissertation [See https://www</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/gilbertTesselationB.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -144px -192px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/gilbertTesselationB.html">Gilbert Tesselation B</a> <span class="codeword">(GilbertB)</span><br><span class="desc">Generates a Pattern Based on a re-envision of Gilbert Tessellation.<br> <br>Shared under Attribution-NonCommercial license (CC BY-NC), Contact Support Email for Commercial use</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/patternGenotypeD.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -168px -192px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/patternGenotypeD.html">Pattern Genotype D</a> <span class="codeword">(PatternGenD)</span><br><span class="desc">a Method of Generating Patterns on Custom Cells (Hint: Works Best with Cells from Parakeet’s “Tiling” Category)  <br> <br> [Based on Esmaeil Mottaghi’s Dissertation [See https://www</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/tileablePatternpgg.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -192px -192px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/tileablePatternpgg.html">Tileable Pattern (pgg)</a> <span class="codeword">(Tilepgg)</span><br><span class="desc">A Method for Generating Tileable Patterns.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/gilbertTesselationA.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -216px -192px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/gilbertTesselationA.html">Gilbert Tesselation A</a> <span class="codeword">(GilbertA)</span><br><span class="desc">Generates a Pattern Based on a re-envision of Gilbert Tessellation.<br> <br>Shared under Attribution-NonCommercial license (CC BY-NC), Contact Support Email for Commercial use</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/knit.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') 0px -216px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/knit.html">Knit</a><br><span class="desc">Generates a Knitted Pattern on a Surface</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/kelidoscope.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -24px -216px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/kelidoscope.html">Kelidoscope</a><br><span class="desc">Generates a Pattern based on ‘kaleidoscope’ Mechanism.<br> <br>Shared under Attribution-NonCommercial license (CC BY-NC), Contact Support Email for Commercial use</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/3DAggregation.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -48px -216px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/3DAggregation.html">3D Aggregation</a><br><span class="desc">Generates an aggregated system consist of an arbitrary base mesh</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>Surface</h3>
+<table class="addon-compos">
+<tbody>
+<tr><td class="ccol_1"><a href="../components/parakeet/removeDuplicateSurface.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -144px -96px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/removeDuplicateSurface.html">RemoveDuplicateSurface</a> <span class="codeword">(RemoveDupSrf)</span><br><span class="desc">Removes identical Surfaces from a List</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/mapToSurface.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -168px -96px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/mapToSurface.html">Map To Surface</a> <span class="codeword">(MapToSrf)</span><br><span class="desc">map a Curve onto a Surface</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/panelizedSumSurface.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -192px -96px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/panelizedSumSurface.html">Panelized Sum Surface</a> <span class="codeword">(PQSumSrf)</span><br><span class="desc">Creates a Planar Quad panelization on a surface, generated by two profile curves(based on a method by Mr.Tang https://geometry.stanford.edu/person.php?id=tangcc)</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/extendSurface.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -216px -96px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/extendSurface.html">Extend Surface</a> <span class="codeword">(ExtendSrf)</span><br><span class="desc">Extends a surface by specified edge and distance</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/voronoiOnSurface.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') 0px -120px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/voronoiOnSurface.html">Voronoi On Surface</a> <span class="codeword">(VoronoiSrf)</span><br><span class="desc">Generates a Voroni pattern on given Nurbs surface</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/offsetBrep.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -24px -120px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/offsetBrep.html">Offset Brep</a> <span class="codeword">(BrepOffset)</span><br><span class="desc">Offset a Brep with variable parameters</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/createSolid.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -48px -120px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/createSolid.html">CreateSolid</a><br><span class="desc">Creates a Solid (Closed Brep) Enclosed by Intersecting Surfaces and PolySurfaces</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/reverseSurface.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -72px -120px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/reverseSurface.html">Reverse Surface</a> <span class="codeword">(ReverseSrf)</span><br><span class="desc">Reverses U and V direction (domain) of a surface</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/brepTopology.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -96px -120px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/brepTopology.html">Brep Topology</a><br><span class="desc">Retrieves full topology of Brep</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/brepRemoveHoles.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -120px -120px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/brepRemoveHoles.html">Brep Remove Holes</a> <span class="codeword">(BrepRemoveHoles)</span><br><span class="desc">Removes Holes of a B-rep (Works with both Trimmed and Untrimmed Nurbs Surface(s))</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/booleanSplit.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -144px -120px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/booleanSplit.html">BooleanSplit</a><br><span class="desc">Splits a Brep with Other Brep(s) [Brep|Brep Split]</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>Util</h3>
+<table class="addon-compos">
+<tbody>
+<tr><td class="ccol_1"><a href="../components/parakeet/reflectionPoint.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -72px -216px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/reflectionPoint.html">Reflection Point</a> <span class="codeword">(ReflectP)</span><br><span class="desc">Returnes Reflection of a [List of] Points from a Plane</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/cleanNumber.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -96px -216px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/cleanNumber.html">Clean Number</a> <span class="codeword">(CleanNumber)</span><br><span class="desc">Converts scientific format (and other numercial formats) to plain numbers</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/mouse.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -120px -216px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/mouse.html">Mouse</a><br><span class="desc">Retrieves cursor coordinates and status of mouse buttons</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/faceMePlane.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -144px -216px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/faceMePlane.html">FaceMe Plane</a> <span class="codeword">(FaceMe)</span><br><span class="desc">Generates a Plane facing the active camera (a 'Timer' Should be connected ro rerun the component)</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/goldenPoint.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -168px -216px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/goldenPoint.html">Golden Point</a> <span class="codeword">(GoldenPt)</span><br><span class="desc">Creates a Point [C] on a Given Line [AB] where AC/BC=φ (Golden Ratio ≈ 2.618)</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/interpolateColor.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -192px -216px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/interpolateColor.html">Interpolate Color</a><br><span class="desc">Interpolates a Collection of Colors</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/zoomTo.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -216px -216px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/zoomTo.html">Zoom to</a> <span class="codeword">(Zoom)</span><br><span class="desc">Sets Camera to a certain Distance Targeting a Point</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/customRound.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') 0px -240px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/customRound.html">Custom Round</a><br><span class="desc">Rounds a Number by custom scope</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/scissors.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -24px -240px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/scissors.html">Scissors</a> <span class="codeword">(Scissor)</span><br><span class="desc">Simulates Deployable Circular Scissor Structure</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>Curve</h3>
+<table class="addon-compos">
+<tbody>
+<tr><td class="ccol_1"><a href="../components/parakeet/mirroredSubdivideQuad.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -168px -240px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/mirroredSubdivideQuad.html">Mirrored Subdivide Quad</a> <span class="codeword">(QuadSubM)</span><br><span class="desc">Subdivides Closed Polygon into Quad Cells and mirrors the pieces alternately (Usefull for Generating Geometrical Patterns)</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/networkTopology.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -192px -240px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/networkTopology.html">Network Topology</a><br><span class="desc">Retrieves full topology of a network of Lines</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/polygonByArea.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -216px -240px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/polygonByArea.html">Polygon by Area</a> <span class="codeword">(Polygon Area)</span><br><span class="desc">Creates a Polygon based on specified area</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/randomSeam.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') 0px -264px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/randomSeam.html">Random Seam</a><br><span class="desc">Randomly adjusts the seam of given curves (and Polylines)</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/dualGarph.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -24px -264px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/dualGarph.html">Dual Garph</a> <span class="codeword">(Dual)</span><br><span class="desc">Generates the Dual graph for a List of Polygons</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/alignCurves.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -48px -264px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/alignCurves.html">Align Curves</a> <span class="codeword">(AlignCrv)</span><br><span class="desc">Aligns a List of Curves Based on a Guide Curve by Adjusting Both Curve Seam and Direction</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/divideCurveVariable.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -72px -264px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/divideCurveVariable.html">Divide Curve Variable</a> <span class="codeword">(DivideVar)</span><br><span class="desc">Divides a curve based on Curvature with variable parameters</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/loopTrancate.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -96px -264px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/loopTrancate.html">Loop Trancate</a> <span class="codeword">(Trancate)</span><br><span class="desc">Truncates a Pattern (2D or 3D Network of Lines/Curves) recursivly</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/mapCurves.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -120px -264px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/mapCurves.html">Map Curves</a> <span class="codeword">(MapCrv2Crv)</span><br><span class="desc">Maps a Collaction of Polylines and Curves from one Polyline to another Polyline. <br> Source and Target Polylines must have same number of Vertices (or Segments).</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>M.C.Escher Tilings</h3>
+<table class="addon-compos">
+<tbody>
+<tr><td class="ccol_1"><a href="../components/parakeet/metaEscherTrilateral.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -192px -72px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/metaEscherTrilateral.html">Meta Escher Trilateral</a> <span class="codeword">(MetaEscherTri)</span><br><span class="desc">Generates a Heterogeneous Tiling (Deformation Parquet) of Custom Curves Based on a Trilateral (Triangular) Grid [Best Known from Drawings of M.C.Escher (1898-1972)]</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/escherHexagonalB.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -216px -72px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/escherHexagonalB.html">Escher Hexagonal B</a> <span class="codeword">(EscherHexB)</span><br><span class="desc">Generates a Tiling of Custom Curves Based on a Square Grid [Best Known from Drawings of M. C. Escher (1898-1972)]</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/metaEscherHexagonalA.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') 0px -96px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/metaEscherHexagonalA.html">Meta Escher Hexagonal A</a> <span class="codeword">(MetaEscherHexA)</span><br><span class="desc">Generates a Heterogeneous Tiling (Deformation Parquet) of Custom Curves Based on a Hexagonal Grid [Best Known from Drawings of M.C.Escher (1898-1972)]</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/escherQuadriladeralA.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -24px -96px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/escherQuadriladeralA.html">Escher Quadriladeral A</a> <span class="codeword">(EscherQuadA)</span><br><span class="desc">Generates a Tiling of Custom Curves Based on a Square Grid [Best Known from Drawings of M. C. Escher (1898-1972)]</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/escherHexagonalA.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -48px -96px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/escherHexagonalA.html">Escher Hexagonal A</a> <span class="codeword">(EscherHexA)</span><br><span class="desc">Generates a Tiling of Custom Curves Based on a Square Grid [Best Known from Drawings of M. C. Escher (1898-1972)]</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/metaEscherQuadriladeral.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -72px -96px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/metaEscherQuadriladeral.html">Meta Escher Quadriladeral</a> <span class="codeword">(MetaEscherQuad)</span><br><span class="desc">Generates a Heterogeneous Tiling (Deformation Parquet) of Custom Curves Based on a Quadriladeral (Square) Grid [Best Known from Drawings of M.C.Escher (1898-1972)]</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/metaEscherHexagonalB.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -96px -96px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/metaEscherHexagonalB.html">Meta Escher Hexagonal B</a> <span class="codeword">(MetaEscherHexB)</span><br><span class="desc">Generates a Heterogeneous Tiling (Deformation Parquet) of Custom Curves Based on a Hexagonal Grid [Best Known from Drawings of M.C.Escher (1898-1972)]</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/escherTrilateralA.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -120px -96px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/escherTrilateralA.html">Escher Trilateral A</a> <span class="codeword">(EscherTriA)</span><br><span class="desc">Generates a Tiling of Custom Curves Based on a Square Grid [Best Known from Drawings of M. C. Escher (1898-1972)]</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>Primitive</h3>
+<table class="addon-compos">
+<tbody>
+<tr><td class="ccol_1"><a href="../components/parakeet/kleinSurface.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -48px -240px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/kleinSurface.html">Klein Surface</a><br><span class="desc">Creates a Klien Nurbs surface</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/kleinBottle.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -72px -240px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/kleinBottle.html">Klein Bottle</a><br><span class="desc">Creates a Klien bottle as a Nurbs surface</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/geodesicDome.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -96px -240px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/geodesicDome.html">Geodesic Dome</a><br><span class="desc">Generates a Geodesic Dome based on a Icosahedron</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/plukerSurface.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -120px -240px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/plukerSurface.html">PlukerSurface</a> <span class="codeword">(PlukerSrf)</span><br><span class="desc">Creates a Plucker surface with variable parameters</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/mobiusSurface.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -144px -240px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/mobiusSurface.html">Mobius Surface</a> <span class="codeword">(Mobius)</span><br><span class="desc">Creates a Mobius surface with variable parameters</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>Mesh</h3>
+<table class="addon-compos">
+<tbody>
+<tr><td class="ccol_1"><a href="../components/parakeet/meshCap.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -144px -264px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/meshCap.html">MeshCap</a><br><span class="desc">Caps all holes by covering Naked Edges</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/meshSurfaceVariable.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -168px -264px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/meshSurfaceVariable.html">Mesh Surface Variable</a> <span class="codeword">(MeshSrfVar)</span><br><span class="desc">Creates a Mesh based on curvature of base surface (Larger mesh faces in flat areas)</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parakeet/meshTopology.html"><div class="ghsprite" style="background: url('../icons/parakeet.png') -192px -264px" ></div></a></td><td class="ccol_2"><a href="../components/parakeet/meshTopology.html">Mesh Topology</a><br><span class="desc">Retrieves full topology of Mesh</span></td></tr>
+</tbody>
+</table>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div id="docs-foot">
+<p class="left">
+© 2018-2020  <a href="https://github.com/robinrodricks/">Robin Rodricks</a> and <a href="http://andrewheumann.com/">Andrew Heumann</a>. &nbsp;
+Hosted by<a href="http://www.github.com/"><img src="../images/github.png" alt="Github" class="poweredbylogo" /></a> &nbsp;
+Rhinoceros and Grasshopper are registered trademarks of <a href="https://www.rhino3d.com/">Robert McNeel & Associates</a>.
+</p>
+<p class="right docs-lightfont">
+
+<a href="https://github.com/rhino/rhino.github.io/issues/new">Report an Issue</a> &nbsp;|&nbsp;
+<a href="/termsOfService.html">Terms of Service</a>
+</p>
+
+</div>
+</div>
+        
+<script src="/js/jquery.js"></script>
+<script src="/js/kramed.min.js"></script>
+<script src="/js/component.js"></script>
+<script src="/js/user.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    </body>
+</html>

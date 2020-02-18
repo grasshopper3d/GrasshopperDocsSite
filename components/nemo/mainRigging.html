@@ -1,0 +1,279 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+<head data-layout-view="wide">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Main Rigging - Nemo - Grasshopper Docs</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+
+<meta name="description" content="A guide to component Main Rigging in Grasshopper 3D." />
+<meta name="title" content="Main Rigging - Nemo - Grasshopper Docs" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://grasshopperdocs.com/" />
+<meta property="og:title" content="Main Rigging - Nemo - Grasshopper Docs" />
+
+<meta property="wiki-page" content="GH Nemo Main_Rigging.md" />
+
+<link rel="image_src" href="http://grasshopperdocs.com/ning/2985220.jpg" />
+
+<link href="../../style.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+
+<div id="docs" class="docs-theme docs-widget_page docs-widget_page_page docs-widget_page_page_show" data-layout-pack="classic">
+<div id="docs-head">
+<div id="docs-masthead">
+<p id="docs-sitename"><a id="application_name_header_link" href="http://grasshopperdocs.com/">Grasshopper Docs</a></p>
+<p id="docs-sitedesc" class="xj_site_desc">algorithmic modeling for Rhino</p>
+</div>
+<div id="docs-navigation">
+<ul>
+<li class="docs-subtab"><a href="http://www.grasshopper3d.com/"><span>Home</span></a></li>
+<li class="docs-subtab"><a href="http://www.grasshopper3d.com/photo"><span>View</span></a></li>
+<li class="docs-subtab"><a href="http://www.grasshopper3d.com/page/download-1"><span>Download</span></a></li>
+<li class="docs-subtab"><a href="https://discourse.mcneel.com/c/grasshopper"><span>Forums&#47;Support</span></a></li>
+<li class="docs-subtab this"><a href="http://grasshopperdocs.com/"><span>Learn</span></a></li>
+<li class="docs-subtab"><a href="http://www.grasshopper3d.com/events"><span>Attend</span></a></li>
+<li class="docs-subtab"><a href="http://www.grasshopper3d.com/profiles"><span>My Page</span></a></li></ul>
+
+</div>
+</div>
+
+<div id="docs-body">
+
+<div class="page">
+
+<div class="content">
+
+<div class="ghbar ">
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nemo/floatPlane.html"><div class="ghsprite" style="background: url('../../icons/nemo.png') -48px 0px" data-toptip="Float Plane"></div></a>
+<a href="../../components/nemo/shipImport.html"><div class="ghsprite" style="background: url('../../icons/nemo.png') -24px -48px" data-downtip="Ship Import"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+0. Setup
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nemo/hullSections.html"><div class="ghsprite" style="background: url('../../icons/nemo.png') -192px 0px" data-toptip="Hull Sections"></div></a>
+<a href="../../components/nemo/offsetTable.html"><div class="ghsprite" style="background: url('../../icons/nemo.png') -144px -24px" data-downtip="Offset Table"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nemo/shipCrossSection.html"><div class="ghsprite" style="background: url('../../icons/nemo.png') -216px -24px" data-toptip="Ship Cross-Section"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="2">
+1. Section
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nemo/hullCoefficients.html"><div class="ghsprite" style="background: url('../../icons/nemo.png') -120px 0px" data-toptip="Hull Coefficients"></div></a>
+<a href="../../components/nemo/hullHydrostatics.html"><div class="ghsprite" style="background: url('../../icons/nemo.png') -144px 0px" data-downtip="Hull Hydrostatics"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nemo/nemoLogfile.html"><div class="ghsprite" style="background: url('../../icons/nemo.png') -96px -24px" data-toptip="Nemo Logfile"></div></a>
+<a href="../../components/nemo/nemoSearch.html"><div class="ghsprite" style="background: url('../../icons/nemo.png') -120px -24px" data-downtip="Nemo Search"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nemo/shipEnds.html"><div class="ghsprite" style="background: url('../../icons/nemo.png') 0px -48px" data-toptip="Ship Ends"></div></a>
+<a href="../../components/nemo/shipSilhouette.html"><div class="ghsprite" style="background: url('../../icons/nemo.png') -48px -48px" data-downtip="Ship Silhouette"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nemo/shipSpeed.html"><div class="ghsprite" style="background: url('../../icons/nemo.png') -72px -48px" data-toptip="Ship Speed"></div></a>
+<a href="../../components/nemo/waterProperties.html"><div class="ghsprite" style="background: url('../../icons/nemo.png') -96px -48px" data-downtip="Water Properties"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="4">
+2. Hydrostatics
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nemo/holtropPrediction.html"><div class="ghsprite" style="background: url('../../icons/nemo.png') -96px 0px" data-toptip="Holtrop Prediction"></div></a>
+<a href="../../components/nemo/navCadExport.html"><div class="ghsprite" style="background: url('../../icons/nemo.png') -48px -24px" data-downtip="NavCad Export"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+3. Resistance
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nemo/hullMesh.html"><div class="ghsprite" style="background: url('../../icons/nemo.png') -168px 0px" data-toptip="Hull Mesh"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+4. Meshing
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nemo/clippingPlanes.html"><div class="ghsprite" style="background: url('../../icons/nemo.png') -24px 0px" data-toptip="Clipping Planes"></div></a>
+<a href="../../components/nemo/layoutArrangement.html"><div class="ghsprite" style="background: url('../../icons/nemo.png') -216px 0px" data-downtip="Layout Arrangement"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nemo/projectionDefaults.html"><div class="ghsprite" style="background: url('../../icons/nemo.png') -168px -24px" data-toptip="Projection Defaults"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="2">
+5. Make2D
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nemo/bladePropeller.html"><div class="ghsprite" style="background: url('../../icons/nemo.png') 0px 0px" data-toptip="Blade Propeller"></div></a>
+<a href="../../components/nemo/foilAppendage.html"><div class="ghsprite" style="background: url('../../icons/nemo.png') -72px 0px" data-downtip="Foil Appendage"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nemo/mainRigging.html"><div class="ghsprite" style="background: url('../../icons/nemo.png') 0px -24px" data-toptip="Main Rigging"></div></a>
+<a href="../../components/nemo/nACASection.html"><div class="ghsprite" style="background: url('../../icons/nemo.png') -24px -24px" data-downtip="NACA Section"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nemo/sailInflate.html"><div class="ghsprite" style="background: url('../../icons/nemo.png') -192px -24px" data-toptip="Sail Inflate"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+D. Design
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nemo/nemoLicense.html"><div class="ghsprite" style="background: url('../../icons/nemo.png') -72px -24px" data-toptip="Nemo License"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+License
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+
+<div class="addon-buttons">
+<a href="https://www.food4rhino.com/app/nemo">Download</a>
+</div>
+
+<div class="compo-header">
+<h1><div class="ghsprite" style="background: url('../../icons/nemo.png') 0px -24px" ></div> Main Rigging</h1>
+
+<div class="breadcrumb">
+ <a href="../../index.html">Component Index</a>
+  <a href="../../addons/nemo.html">Nemo</a><a href="#" class="breadcrumb-nolink">D. Design</a><a href="#" class="breadcrumb-nolink">Main Rigging</a>
+</div>
+
+</div>
+<h3>Main Rigging generator<br>Preview of Mast, Boom, Spreaders Breps, and R point<br>- - -<br>1.1 Beta</h3>
+
+</div>
+
+</div>
+
+</div>
+<div id="docs-foot">
+<p class="left">
+© 2018-2020  <a href="https://github.com/robinrodricks/">Robin Rodricks</a> and <a href="http://andrewheumann.com/">Andrew Heumann</a>. &nbsp;
+Hosted by<a href="http://www.github.com/"><img src="../../images/github.png" alt="Github" class="poweredbylogo" /></a> &nbsp;
+Rhinoceros and Grasshopper are registered trademarks of <a href="https://www.rhino3d.com/">Robert McNeel & Associates</a>.
+</p>
+<p class="right docs-lightfont">
+
+<a href="https://github.com/rhino/rhino.github.io/issues/new">Report an Issue</a> &nbsp;|&nbsp;
+<a href="/termsOfService.html">Terms of Service</a>
+</p>
+
+</div>
+</div>
+        
+<script src="/js/jquery.js"></script>
+<script src="/js/kramed.min.js"></script>
+<script src="/js/component.js"></script>
+<script src="/js/user.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    </body>
+</html>
