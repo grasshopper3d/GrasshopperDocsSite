@@ -53211,6 +53211,206 @@
       "helpLink": "https://grasshopperdocs.com/components/treefrog/pathDescription.html"
     },
     {
+      "name": "First/Last",
+      "id": "First/Last",
+      "library": "TreeSloth",
+      "category": "List",
+      "summary": "Get the first and last values from a list",
+      "description": null,
+      "iconCss": "background: url('icons/treeSloth.png') 0px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/treesloth/firstLast.html"
+    },
+    {
+      "name": "List Compare",
+      "id": "Compare",
+      "library": "TreeSloth",
+      "category": "List",
+      "summary": "Compare each item in a list against all other items",
+      "description": null,
+      "iconCss": "background: url('icons/treeSloth.png') -24px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/treesloth/listCompare.html"
+    },
+    {
+      "name": "Pack Data",
+      "id": "Pack",
+      "library": "TreeSloth",
+      "category": "List",
+      "summary": "Binary data packer",
+      "description": null,
+      "iconCss": "background: url('icons/treeSloth.png') -96px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/treesloth/packData.html"
+    },
+    {
+      "name": "Sort Tree",
+      "id": "Sort",
+      "library": "TreeSloth",
+      "category": "List",
+      "summary": "Sorted renumbering of branches by input value",
+      "description": null,
+      "iconCss": "background: url('icons/treeSloth.png') -120px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/treesloth/sortTree.html"
+    },
+    {
+      "name": "Trim Data Ends",
+      "id": "Trim",
+      "library": "TreeSloth",
+      "category": "List",
+      "summary": "Trim set numbers of leading list items and paths from a data set",
+      "description": null,
+      "iconCss": "background: url('icons/treeSloth.png') -168px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/treesloth/trimDataEnds.html"
+    },
+    {
+      "name": "Unpack Data",
+      "id": "Unpack",
+      "library": "TreeSloth",
+      "category": "List",
+      "summary": "Binary data reader",
+      "description": null,
+      "iconCss": "background: url('icons/treeSloth.png') -120px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/treesloth/unpackData.html"
+    },
+    {
+      "name": "Unweave",
+      "id": "Unweave",
+      "library": "TreeSloth",
+      "category": "List",
+      "summary": "Unweave list into multiple lists using an index pattern",
+      "description": null,
+      "iconCss": "background: url('icons/treeSloth.png') -216px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/treesloth/unweave.html"
+    },
+    {
+      "name": "Cull Multiple",
+      "id": "Cull Multiple",
+      "library": "TreeSloth",
+      "category": "Sequence",
+      "summary": "Cull (remove) elements in multiple lists using a repeating bit mask",
+      "description": null,
+      "iconCss": "background: url('icons/treeSloth.png') -72px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/treesloth/cullMultiple.html"
+    },
+    {
+      "name": "Add Unmatched",
+      "id": "Add Unmatched",
+      "library": "TreeSloth",
+      "category": "Tree",
+      "summary": "Force empty paths into unmatched data trees",
+      "description": null,
+      "iconCss": "background: url('icons/treeSloth.png') 0px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/treesloth/addUnmatched.html"
+    },
+    {
+      "name": "Append Element",
+      "id": "Append Element",
+      "library": "TreeSloth",
+      "category": "Tree",
+      "summary": "Add a new path index to the end of an existing path",
+      "description": null,
+      "iconCss": "background: url('icons/treeSloth.png') -24px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/treesloth/appendElement.html"
+    },
+    {
+      "name": "Clone Structure",
+      "id": "Clone",
+      "library": "TreeSloth",
+      "category": "Tree",
+      "summary": "Attach the structure from one tree onto a flat data set",
+      "description": null,
+      "iconCss": "background: url('icons/treeSloth.png') -48px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/treesloth/cloneStructure.html"
+    },
+    {
+      "name": "Divide Branches",
+      "id": "Divide Branches",
+      "library": "TreeSloth",
+      "category": "Tree",
+      "summary": "Divide branches into multiple data trees using an index pattern",
+      "description": null,
+      "iconCss": "background: url('icons/treeSloth.png') -144px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/treesloth/divideBranches.html"
+    },
+    {
+      "name": "Explode at Index",
+      "id": "Explode",
+      "library": "TreeSloth",
+      "category": "Tree",
+      "summary": "Explode a tree at specified index",
+      "description": null,
+      "iconCss": "background: url('icons/treeSloth.png') -168px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/treesloth/explodeAtIndex.html"
+    },
+    {
+      "name": "Filter Unmatched",
+      "id": "Filter Unmatched",
+      "library": "TreeSloth",
+      "category": "Tree",
+      "summary": "Filter unmatched paths from lists",
+      "description": null,
+      "iconCss": "background: url('icons/treeSloth.png') -192px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/treesloth/filterUnmatched.html"
+    },
+    {
+      "name": "Flip Last",
+      "id": "Flip Last",
+      "library": "TreeSloth",
+      "category": "Tree",
+      "summary": "Flip the last variably valued branch path index with the item indices of its contents",
+      "description": null,
+      "iconCss": "background: url('icons/treeSloth.png') -216px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/treesloth/flipLast.html"
+    },
+    {
+      "name": "Isolate Unique Paths",
+      "id": "Unique Paths",
+      "library": "TreeSloth",
+      "category": "Tree",
+      "summary": "Isolate data for paths unique to each input data set",
+      "description": null,
+      "iconCss": "background: url('icons/treeSloth.png') -192px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/treesloth/isolateUniquePaths.html"
+    },
+    {
+      "name": "Prepend Element",
+      "id": "Prepend Element",
+      "library": "TreeSloth",
+      "category": "Tree",
+      "summary": "Add a new path index to the beginning of an existing path",
+      "description": null,
+      "iconCss": "background: url('icons/treeSloth.png') -48px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/treesloth/prependElement.html"
+    },
+    {
+      "name": "Renumber Paths",
+      "id": "Renumber",
+      "library": "TreeSloth",
+      "category": "Tree",
+      "summary": "Renumber the Paths of a data set",
+      "description": null,
+      "iconCss": "background: url('icons/treeSloth.png') -72px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/treesloth/renumberPaths.html"
+    },
+    {
+      "name": "Shift Paths",
+      "id": "Shift",
+      "library": "TreeSloth",
+      "category": "Tree",
+      "summary": "Shift paths safely...will flatten data trees with fewer elements than shifts specified",
+      "description": null,
+      "iconCss": "background: url('icons/treeSloth.png') -96px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/treesloth/shiftPaths.html"
+    },
+    {
+      "name": "Stack Trees",
+      "id": "Stack",
+      "library": "TreeSloth",
+      "category": "Tree",
+      "summary": "Make data structure for inputs consecutive",
+      "description": null,
+      "iconCss": "background: url('icons/treeSloth.png') -144px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/treesloth/stackTrees.html"
+    },
+    {
       "name": "Constructions Lite",
       "id": "Constructions_Lite",
       "library": "TRNLizard",

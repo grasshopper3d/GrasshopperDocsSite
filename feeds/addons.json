@@ -118,6 +118,19 @@
       "authorContact": null
     },
     {
+      "name": "Blindfold",
+      "releaseDate": "2018-Jun-12",
+      "version": "1.0",
+      "downloadLink": "https://www.food4rhino.com/app/blindfold",
+      "helpLink": "https://grasshopperdocs.com/addons/blindfold.html",
+      "category": "Rhino Integration",
+      "isSystem": false,
+      "components": 1,
+      "description": "Blindfold is a single component which can hide or show geometry in Rhino that is referenced into the Grasshopper document. Blinfold has three modes and an icon which changes depending on the mode it is set to: Off, Hide, or Show. Blindfold by default detects and hides/shows all geometry in Rhino that is referenced into any Grasshopper parameters or component inputs, optionally it can limit the hide/show operation to only the Rhino referenced geometries plugged into or set in the Limited input. When new Rhino geometry is referenced you can refresh the hide/show operation by clicking a button plugged into the Refresh input. Blindfold makes it easy to manage the visibility of your Rhino geometry referenced in Grasshopper so you can quickly avoid those annoying overlap display issues between Rhino and Grasshopper previews.",
+      "authorName": "Ekim Royrp",
+      "authorContact": null
+    },
+    {
       "name": "Bowerbird",
       "releaseDate": "2015-Jan-19",
       "version": "0.6.3",
@@ -142,6 +155,19 @@
       "description": "Box2D is a 2D rigid body simulation tool for Grasshopper. It uses Box2D physics engine and a C# wrapper from colgreen/box2Dx.",
       "authorName": "Mahdiyar",
       "authorContact": "Mahdiyar@outlook.com"
+    },
+    {
+      "name": "Bubalus",
+      "releaseDate": "2019-Aug-23",
+      "version": "2.001",
+      "downloadLink": "https://www.food4rhino.com/app/bubalusgh",
+      "helpLink": "https://grasshopperdocs.com/addons/bubalus.html",
+      "category": "Groups & Arrangement",
+      "isSystem": false,
+      "components": 17,
+      "description": "Use Bubalus to achieve:\n1. Single object distribution (group)\n2. Multiple object distribution (group)\n3. Find the anchor of the original object\n4. Clean up objects in Rhino\n5.Populate two curve region with points\n6. According to the ratio random partition a list into",
+      "authorName": "NARUTO",
+      "authorContact": null
     },
     {
       "name": "BullAnt",
@@ -243,9 +269,9 @@
       "category": "Animation & Physics",
       "isSystem": false,
       "components": 32,
-      "description": "Culebra is a live agent based plugin for Grasshopper.",
+      "description": "Culebra is a 2D & 3D Multi Object Behavior library written in C# (Wrapper around Culebra Java library) focused on hybrid system interactions with custom Visualization, Data, and performance features. It contains a collection of objects and behaviors for creating dynamic multi agent interactions. For more information see the Culebra Java Library.",
       "authorName": "Luis Quinones",
-      "authorContact": "luis@complicitMatter.com"
+      "authorContact": null
     },
     {
       "name": "Dendro",
@@ -261,12 +287,25 @@
       "authorContact": "dev@ecrlabs.com"
     },
     {
+      "name": "Design Space Exploration",
+      "releaseDate": "2019-May-13",
+      "version": "1.4",
+      "downloadLink": "https://www.food4rhino.com/app/design-space-exploration",
+      "helpLink": "https://grasshopperdocs.com/addons/design-space-exploration.html",
+      "category": "Maths & Optimization",
+      "isSystem": false,
+      "components": 15,
+      "description": "Design Space Exploration (DSE) is a suite of open-source Grasshopper tools developed by Digital Structures at MIT.  These tools aim to support visual, performance-based design space exploration and interactive multi-objective optimization (MOO) for conceptual design.  Rather than one single component or user interface, these tools can be used flexibly with other Grasshopper components or plug-ins to take a variety of approaches to DSE and MOO, including a priori, a posteriori, and interactive articulation of performance priorities.  Various DSE components allow the user to sample a parametric design space made from sliders, automatically iterate and capture images and numerical properties, reconstruct previous designs, cluster designs into families, analyze the importance of design variables, approximate computationally-intensive performance evaluations, and find Pareto fronts for multi-objective problems.   Although the components are intended to link together for simple, automated workflows for performance-based design of buildings and other structures, they can be used for any applications that require these functionalities within Grasshopper.",
+      "authorName": "Digital Structures (MIT)",
+      "authorContact": null
+    },
+    {
       "name": "DIVA",
       "releaseDate": "2019",
       "version": "4.1.0.12",
       "downloadLink": "http://www.solemma.net/",
       "helpLink": "https://grasshopperdocs.com/addons/diva.html",
-      "category": "Weather & Environmental",
+      "category": "Energy Analysis & Simulation",
       "isSystem": false,
       "components": 49,
       "description": "Energy modeling components for Grasshopper",
@@ -297,6 +336,19 @@
       "components": 21,
       "description": "Doodlebug allows Grasshopper to query and drive Adobe Illustrator.\n\nGeometry from Grasshopper can be streamed directly to illustrator with full control over stroke, fill, and other appearance attributes. Geometry can also be retrieved from Illustrator, manipulated in Grasshopper, and then sent back for a full round-trip.",
       "authorName": "Andrew Heumann",
+      "authorContact": null
+    },
+    {
+      "name": "Droid",
+      "releaseDate": "2019-May-23",
+      "version": "2.0.5",
+      "downloadLink": "https://www.food4rhino.com/app/droid-3d-print-slicer-and-path-plotter",
+      "helpLink": "https://grasshopperdocs.com/addons/droid.html",
+      "category": "3D Printing & Fabrication",
+      "isSystem": false,
+      "components": 9,
+      "description": "Droid is a 3D printing add-on, with control over model Slicing, Custom paths and Gcode generation. Designed to be used from small desktop 3d Printers, up to large scale Robotic Fabricators using FFF technologies and running from Gcode. Available to be used to prepare and print models in a 'Plug and Play' style with Droid components, or in a more controlled and experimental manner with Custom input and output print paths.\n\nDroid allows control over conventional Slicing features such as infill, shell thickness and caps, within the Rhino and Grasshopper environment. In addition, output and editing of paths is also available once models are sliced into the Rhino and Grasshopper workspace, allowing full control and analysis to the user.\nCustom or edited paths then can be input back into Droid for Gcode preparation and generation.\n\nThis should work with most major firmwares (Marlin, Repetier, RepRap, etc) and Gcode Reader. If you use a firmware and encounter any problems related to Gcode, let me know.\n\nDroid Components are Multi-Thread enabled, and may use all your processors resources during calculations.",
+      "authorName": "ytsebastian",
       "authorContact": null
     },
     {
@@ -352,6 +404,19 @@
       "authorContact": "elkdesigntech@gmail.com"
     },
     {
+      "name": "Emu",
+      "releaseDate": "2019-02-23",
+      "version": "1.1.0",
+      "downloadLink": "https://www.food4rhino.com/app/emu",
+      "helpLink": "https://grasshopperdocs.com/addons/emu.html",
+      "category": "Structural Analysis & FEM",
+      "isSystem": false,
+      "components": 31,
+      "description": "Emu is an interactive structural analysis and form-finding tool based on a 6DOF (6 degrees of freedom) formulation of the dynamic relaxation method allowing engineers and designers to run bi-axial bending and torsion simulations. It is aimed to be used in early design stages but yet giving real structural feedback.\n\nEmu was developed as part of a Master's thesis in Structural Engineering and Building Technology at Chalmers University of Technology, with the aim of simulating the very non-linear process of elastic gridshell erection.",
+      "authorName": "Emil Poulsen",
+      "authorContact": null
+    },
+    {
       "name": "FabTools",
       "releaseDate": "2013-Jul-03",
       "version": "0.92",
@@ -376,6 +441,19 @@
       "description": "Firefly is a set of comprehensive software tools dedicated to bridging the gap between Grasshopper (a free plug-in for Rhino), the Arduino micro-controller, the internet and beyond. It allows near real-time data flow between the digital and physical worlds, and will read/write data to/from internet feeds, remote sensors and more.",
       "authorName": "Andrew Payne (LIFT architects)",
       "authorContact": "http://www.fireflyexperiments.com"
+    },
+    {
+      "name": "Flatworm",
+      "releaseDate": "2018-Sep-07",
+      "version": "0.1a",
+      "downloadLink": "https://www.food4rhino.com/app/flatworm",
+      "helpLink": "https://grasshopperdocs.com/addons/flatworm.html",
+      "category": "Origami",
+      "isSystem": false,
+      "components": 6,
+      "description": "Flatworm is a GHPython implementation of the pure-python module RFQM.py for generating 'rigidly foldable quadrilateral meshes' (RFQM) in Grasshopper, that are flat foldbale! Such meshes may be used to create complex and flexible structures out of rigid materials, as no mesh face is ever deformed in the folding process.\n    \nFlatworm provides basic means of generating custom RFQMs as well as the famous Miura Ori fold pattern. Meshes are generated from four lists of angle arrays, describing the direction angles and fold angles for two sides of the mesh respectivly. The 'direction angle' is the ccw angle between the fold line and x-axis in xy-plane, while the 'fold angle' is the angle between the faces on either side of the crease in the fully folded state of the mesh.",
+      "authorName": "jakobl",
+      "authorContact": null
     },
     {
       "name": "FlexHopper",
@@ -415,6 +493,32 @@
       "description": "Implements the Galapagos Evolutionary Solver within Grasshopper.",
       "authorName": "David Rutten",
       "authorContact": "https://discourse.mcneel.com/"
+    },
+    {
+      "name": "Gear",
+      "releaseDate": "2019-Aug-17",
+      "version": "1.1",
+      "downloadLink": "https://www.food4rhino.com/app/gear",
+      "helpLink": "https://grasshopperdocs.com/addons/gear.html",
+      "category": "Geometry & Meshes",
+      "isSystem": false,
+      "components": 8,
+      "description": "Gear is a simple way to generate involute gear for Grasshopper user.",
+      "authorName": "uwen",
+      "authorContact": null
+    },
+    {
+      "name": "GeoDex",
+      "releaseDate": "2019-Aug-01",
+      "version": "3.0.0",
+      "downloadLink": "https://www.food4rhino.com/app/geodex",
+      "helpLink": "https://grasshopperdocs.com/addons/geodex.html",
+      "category": "Maths & Optimization",
+      "isSystem": false,
+      "components": 13,
+      "description": "GeoDex 3 GH is the Grasshopper 3D implementation of the GeoDex Library, a collection of around 150 curve, surface, and volume equations. Each component takes a consistent unitized input of a numeric T value for curves and point based UV value for surfaces and volumes returning the plotted point of the selected equation at the given parameter. Many of the equations have additional parameters and upon selection of the curves from each component's right-click menu, the inputs for the component may reconfigure to provide inputs for these parameters. The components are added to the Vectors tab in the Grasshopper ribbon under the new Plots category.",
+      "authorName": "David Mans",
+      "authorContact": null
     },
     {
       "name": "GeomGym IFC",
@@ -573,6 +677,32 @@
       "authorContact": null
     },
     {
+      "name": "Impala",
+      "releaseDate": "2018-Aug-30",
+      "version": "1.0",
+      "downloadLink": "https://www.food4rhino.com/app/impala",
+      "helpLink": "https://grasshopperdocs.com/addons/impala.html",
+      "category": "Maths & Optimization",
+      "isSystem": false,
+      "components": 44,
+      "description": "Impala replicates common bottleneck Grasshopper operations with a focus on efficiency, allowing complex scripts and static simulations embedded within Grasshopper to make use of all available computational capacity. This is primarily evident in scripts that deal with thousands of objects or rely heavily on numerical or physically-based computations.\n\nThe primary target audience is experienced design computation practitioners and Grasshopper users who are running into the upper bounds of the tool's native, single-core performance, and are willing to take a finer approach to boosting performance at key points. Impala focuses primarily on replicating existing Grasshopper functionality and developing an environment suitable to seamless integration of performant or multithreaded computation within GH.",
+      "authorName": "Dan Cascaval",
+      "authorContact": null
+    },
+    {
+      "name": "Instance Manager",
+      "releaseDate": "2019-Oct-26",
+      "version": "1.6.2.4",
+      "downloadLink": "https://www.food4rhino.com/app/instance-manager",
+      "helpLink": "https://grasshopperdocs.com/addons/instance-manager.html",
+      "category": "Rhino Integration",
+      "isSystem": false,
+      "components": 14,
+      "description": "Instance Manager is a part of Heteroptera Plugin that is specified to manage Block-Definition and instances in Rhino from Grasshopper. It is an ongoing project orienting to the development of collaborative design. Instance-Manager is a set of tools to Create, manage, and get statistics from files containing blocks. Instead of focusing on Instace_Refrence and Block_Objects, this plugin is focused on just Instance_Definition.",
+      "authorName": "Amin Bahrami",
+      "authorContact": null
+    },
+    {
       "name": "IntraLattice",
       "releaseDate": "2015-Nov-15",
       "version": "0.7.6",
@@ -651,6 +781,19 @@
       "authorContact": null
     },
     {
+      "name": "KarambaIDEA",
+      "releaseDate": "2019-Aug-15",
+      "version": "1.1",
+      "downloadLink": "https://www.food4rhino.com/app/karambaidea",
+      "helpLink": "https://grasshopperdocs.com/addons/karambaidea.html",
+      "category": "IDEA StatiCa Integration",
+      "isSystem": false,
+      "components": 5,
+      "description": "KarambaIDEA is an open-source Grasshopper plug-in that links Karamba3D with IDEA Statica connection. One of the joints from the modeled steel structure in Karamba3D can be imported into IDEA Statica Connection for further analysis, on a detail level.",
+      "authorName": "Bouwenmet Staal",
+      "authorContact": null
+    },
+    {
       "name": "Kiwi3D",
       "releaseDate": "2020-01-31",
       "version": "0.4.0",
@@ -661,6 +804,19 @@
       "components": 50,
       "description": "Kiwi!3D enables the integration of Isogeometric Analysis (IGA). The special characteristic of IGA lies in the usage of Non-Uniform Rational B-Splines (NURBS) as basis functions for the Finite Elements. Hence it allows to run simulations directly on NURBS without the need of meshing.\n\nKiwi!3D includes a isogeometric Shell, Membrane, Beam and Cable element. It is able to handle Trimmed Surfaces as well as Coupled Patches (multi-surface models). You can run Linear as well as geometrically Non-linear Structural Analysis problems. Also it includes Form Finding for tensile structures (Updated Reference Strategy).",
       "authorName": "Kiwi!3D Team",
+      "authorContact": null
+    },
+    {
+      "name": "KUKA Prc",
+      "releaseDate": "2019",
+      "version": "1.1.0",
+      "downloadLink": "https://www.food4rhino.com/app/kukaprc-parametric-robot-control-grasshopper",
+      "helpLink": "https://grasshopperdocs.com/addons/kuka-prc.html",
+      "category": "Electronic Robot Control",
+      "isSystem": false,
+      "components": 56,
+      "description": "KUKA|prc enables you to program industrial robots directly out of the parametric modelling environment, including a full kinematic simulation of the robot. The generated files can be executed at the KUKA robot, without requiring any additional software.\n\nThe free evaluation version allows the full simulation and code generation without. Additional features such as support for SunriseOS, external axes, G-Code import etc. are only available to members of the Association for Robots in Architecture.",
+      "authorName": "Robots in Architecture",
       "authorContact": null
     },
     {
@@ -807,6 +963,32 @@
       "authorContact": null
     },
     {
+      "name": "Mouse",
+      "releaseDate": "2018-Sep-07",
+      "version": "1.0.0.0",
+      "downloadLink": "https://www.food4rhino.com/app/mouse",
+      "helpLink": "https://grasshopperdocs.com/addons/mouse.html",
+      "category": "Pathfinding",
+      "isSystem": false,
+      "components": 2,
+      "description": "The Mouse is a pathfinding plugin for Grasshopper based on Theta* algorithm by Kenny Daniel, Alex Nash, and Sven Koenig. It provides the possibility to find optimize and realistic looking routes between each pair of points in Grasshopper.",
+      "authorName": "Arash Nader",
+      "authorContact": null
+    },
+    {
+      "name": "Nemo",
+      "releaseDate": "2019-Oct-16",
+      "version": "1.1 Beta",
+      "downloadLink": "https://www.food4rhino.com/app/nemo",
+      "helpLink": "https://grasshopperdocs.com/addons/nemo.html",
+      "category": "Ship Design",
+      "isSystem": false,
+      "components": 25,
+      "description": "Naval Efficiency and Marine Optimization. Nemo is a Grasshopper plugin for Ship Design. Nemo Analysis, for automatic analysis of ship geometry (licensed). Nemo Designer, which includes several design tools (free)\nNemo Analysis can perform hydrostatics computation, silhouette extraction, meshing generation and resistance prediction right inside Rhino. Sectioning hull into stations - buttocks - waterlines, generating an offset table, or creating cross-sections curves are also embed features. Interoperability is allowed with external software like NavCad (HydroComp), Mars 2000 (Bureau Veritas) or Excel (Microsoft). Nemo Designer includes specific tools to create NACA sections and appendages such as hydrofoils, keels (with or without bulb), or even blade propellers.",
+      "authorName": "VENOT",
+      "authorContact": null
+    },
+    {
       "name": "NGon",
       "releaseDate": "2020-Feb-06",
       "version": "2.1",
@@ -818,6 +1000,19 @@
       "description": "Extension methods for easier NGons manipulation in Meshes",
       "authorName": "Petras Vestartas",
       "authorContact": "petrasvestartas@gmail.com"
+    },
+    {
+      "name": "NM Optimisation",
+      "releaseDate": "2018-Aug-13",
+      "version": "0.5.2",
+      "downloadLink": "https://www.food4rhino.com/app/nelder-mead-optimisation-eoc",
+      "helpLink": "https://grasshopperdocs.com/addons/nm-optimisation.html",
+      "category": "Maths & Optimization",
+      "isSystem": false,
+      "components": 1,
+      "description": "The Nelder-Mead Optimisation component, produced by the Eckersley O'Callaghan's Digital Design Group, is focused on producing optimised solutions with as few function calls as possible, leading to time-efficient optimisation. In addition we have endeavoured to produce useful live feedback during the optimisation and we have allowed for optimisation constraints to be dealt with in a user-friendly way.",
+      "authorName": "Sam Gregson",
+      "authorContact": null
     },
     {
       "name": "Nudibranch",
@@ -859,6 +1054,19 @@
       "authorContact": "petrasvestartas@gmail.com"
     },
     {
+      "name": "Opossum",
+      "releaseDate": "2019-Sep-07",
+      "version": "2.0.0",
+      "downloadLink": "https://www.food4rhino.com/app/opossum-optimization-solver-surrogate-models",
+      "helpLink": "https://grasshopperdocs.com/addons/opossum.html",
+      "category": "Maths & Optimization",
+      "isSystem": false,
+      "components": 1,
+      "description": "Opossum includes two of the best-performing,single-objective optimization algorithms in Grasshopper: model-based RBFOpt and evolutionary CMA-ES. It also include the multi-objective RBFMOpt and NSGA-II algorithms.\n\nRBFOpt uses advanced machine learning techniques to find good solutions with a small number of function evaluations, i.e. simulations, while CMA-ES reliably finds near-optimal solutions when many function evaluations are possible. (Various papers with benchmark results are availabe here.) RBFMOpt won the “2-Objective Expensive” track of the international Black Box Optimization Competition 2019, surpassing the winner of the previous two years, the commercial algorithm Artelys Nitro.\n\nOpossum's GUI is similar to Galapagos. Opossum has a results table, which makes it easy to revisit all optimization results by double-clicking entries in the table.",
+      "authorName": "Thomas Wortmann",
+      "authorContact": null
+    },
+    {
       "name": "Owl",
       "releaseDate": "2019-Jan-31",
       "version": "2.1.0.0",
@@ -895,6 +1103,19 @@
       "components": 68,
       "description": "PanelingTools plugin by Robert McNeel & Associates is closely integrated with Rhino and Grasshopper, and is widely used by designers, architects, and building prefessionals. It supports intuitive design of paneling concepts as well as help rationalize complex geometry into a format that is suitable for analysis and fabrication. PanelingTools for Grasshopper allows parametric use of attractors to manipulate grids and variable morphing of patterns.",
       "authorName": "Rajaa Issa",
+      "authorContact": null
+    },
+    {
+      "name": "Parakeet",
+      "releaseDate": "2019-Oct-13",
+      "version": "0.6.1",
+      "downloadLink": "https://www.food4rhino.com/app/parakeet",
+      "helpLink": "https://grasshopperdocs.com/addons/parakeet.html",
+      "category": "Pattern Generation",
+      "isSystem": false,
+      "components": 119,
+      "description": "Parakeet is a collection of components focusing in Algorithmic Pattern Generation; it offers a Unique and easy-to-use approach that Generates Geometrical and Natural Patterns/Networks.\n\nFor now, Parakeet has 8 Categories: Tilings, Primitives, Pattern Generation, Curve, Mesh, Surface, M.C. Escher and utilities.",
+      "authorName": "Esmaeil",
       "authorContact": null
     },
     {
@@ -976,6 +1197,19 @@
       "authorContact": "ekimroyrp@gmail.com"
     },
     {
+      "name": "QuadEdgeDataStructure",
+      "releaseDate": "2020-01-09",
+      "version": "3.0",
+      "downloadLink": "https://markortler.wordpress.com/tooling/gh/qeds/",
+      "helpLink": "https://grasshopperdocs.com/addons/quadedgedatastructure.html",
+      "category": "Exotic Geometry",
+      "isSystem": false,
+      "components": 122,
+      "description": "A QuadEdgeDataStructure is used to represent a n-gonal Mesh without making any difference between primal and dual elements. The (relativ) dual-graph is holded in a valid state during any topological operation.\n\nThe implementation used in Grasshopper is embedded into the euclidean space.\n\nThe solvers for the graph-analytic-tools are working with ‚GH_Variant‚ values, which are provided by evaluating a string-expression against the QuadElement of investigation.\n\nThe components use a special zoom-interface. While UI-Elements are practicable to clarify an option, they are not if the value for the option should be set from the computation-tree.\nTherefor almost any UI-Element can be converted to a parameter.",
+      "authorName": "Ortler Mark",
+      "authorContact": null
+    },
+    {
       "name": "Quelea",
       "releaseDate": "2015-Jun-16",
       "version": "0.2",
@@ -1002,6 +1236,45 @@
       "authorContact": ""
     },
     {
+      "name": "RhinoMembrane",
+      "releaseDate": "2018-12-11",
+      "version": "3.0",
+      "downloadLink": "https://www.food4rhino.com/app/rhinomembrane-v-30-rhino-60",
+      "helpLink": "https://grasshopperdocs.com/addons/rhinomembrane.html",
+      "category": "Exotic Geometry",
+      "isSystem": false,
+      "components": 13,
+      "description": "Grasshopper extension updated  with new solver for cable nets. It has in built professional form-finding solvers for any category of tensile and cable net structures. The plugin is also fully compatible with our flagship product ixCube 4-10  so any model generated with RM can be  baked on the fly to ixCube 4-10 for future structural analysis and patterning.",
+      "authorName": "Gerry D'anza",
+      "authorContact": null
+    },
+    {
+      "name": "RoboDK",
+      "releaseDate": "2019-02-05",
+      "version": "1.0.0.0",
+      "downloadLink": "https://www.food4rhino.com/app/robodk",
+      "helpLink": "https://grasshopperdocs.com/addons/robodk.html",
+      "category": "Electronic Robot Control",
+      "isSystem": false,
+      "components": 3,
+      "description": "The RoboDK plugin for Rhino allows you to combine Rhino's CAD modeling software with RoboDK to program industrial robots. RoboDK simulation software allows you to get the most out of your industrial robot. Easily simulate and program industrial robots offline from your Rhino models and deploy robot programs on your robot with just a few clicks. RoboDK’s simulation and offline programming tools allow you to program robots outside the production environment, eliminating production downtime caused by shop floor programming.",
+      "authorName": "RoboDK Team",
+      "authorContact": null
+    },
+    {
+      "name": "Salamander",
+      "releaseDate": "2019-Jan-02",
+      "version": "0.5.0",
+      "downloadLink": "https://www.food4rhino.com/app/salamander-3",
+      "helpLink": "https://grasshopperdocs.com/addons/salamander.html",
+      "category": "Structural Analysis & FEM",
+      "isSystem": false,
+      "components": 72,
+      "description": "Salamander (Structural Analysis Link And MANager for Data Entry & Retrieval) hosts structural nodes, elements, sections and so on within Rhino and allows them to be be created and modified like any other data type.  They can then be exported to several different FEA packages (Robot, GSA and ETABS currently supported) for analysis.",
+      "authorName": "Paul Jeffries",
+      "authorContact": null
+    },
+    {
       "name": "Sandbox Topology",
       "releaseDate": "2013-Sep-06",
       "version": "0.1.000.1",
@@ -1026,6 +1299,19 @@
       "description": "Tune your Grasshopper definition for ShapeDiver",
       "authorName": "ShapeDiver GmbH",
       "authorContact": "contact@shapediver.com"
+    },
+    {
+      "name": "SkinDesigner",
+      "releaseDate": "2018-Sep-14",
+      "version": "0.5.00",
+      "downloadLink": "https://www.food4rhino.com/app/skindesigner",
+      "helpLink": "https://grasshopperdocs.com/addons/skindesigner.html",
+      "category": "Structural Panel Design",
+      "isSystem": false,
+      "components": 35,
+      "description": "SkinDesigner enables the rapid generation of facade geometries from building massing surfaces and repeating, user-defined panels. SkinDesigner has the geometric freedom to create virtually any facade geometry that is composed of similar repeating elements.",
+      "authorName": "Santiago Garay",
+      "authorContact": null
     },
     {
       "name": "Slingshot",
@@ -1106,6 +1392,32 @@
       "authorContact": null
     },
     {
+      "name": "Sunflower",
+      "releaseDate": "2020-Feb-16",
+      "version": "7.61",
+      "downloadLink": "https://www.food4rhino.com/app/sunflower",
+      "helpLink": "https://grasshopperdocs.com/addons/sunflower.html",
+      "category": "Energy Analysis & Simulation",
+      "isSystem": false,
+      "components": 19,
+      "description": "Energy Analysis plugin for Grasshopper.",
+      "authorName": "Rex Wang",
+      "authorContact": null
+    },
+    {
+      "name": "Tarsier",
+      "releaseDate": "2019-Apr-19",
+      "version": "1.0.1.0",
+      "downloadLink": "https://www.food4rhino.com/app/tarsier",
+      "helpLink": "https://grasshopperdocs.com/addons/tarsier.html",
+      "category": "Point Clouds",
+      "isSystem": false,
+      "components": 20,
+      "description": "This library's primary purpose is to add the point cloud functionality already apparent in Rhinoceros 5 to Grasshopper, with the ambition of treating point clouds as another useful data type, rather than an exotic type.\n\nIt's secondary purpose is to provide tools for creation and streaming of point clouds with common scanning techniques (Kinect V1, V2 and OpenNI2). This is made possible due to the speed increases afforded by the use of the point cloud class. For example, a full point cloud from a Kinect V2 is released in approximately 10-20ms on standard machines, which is more than enough for most purposes. A multi-threaded KD-Tree is also implemented to allow very fast spatial searching.",
+      "authorName": "Cameron Newnham",
+      "authorContact": null
+    },
+    {
       "name": "Topologic",
       "releaseDate": "2019-Dec-25",
       "version": "1.3.0",
@@ -1129,6 +1441,32 @@
       "components": 4,
       "description": "",
       "authorName": "Unknown",
+      "authorContact": null
+    },
+    {
+      "name": "TreeSloth",
+      "releaseDate": "2016-Dec-12",
+      "version": "1.0",
+      "downloadLink": "https://www.food4rhino.com/app/treesloth",
+      "helpLink": "https://grasshopperdocs.com/addons/treesloth.html",
+      "category": "Data Structures",
+      "isSystem": false,
+      "components": 20,
+      "description": "As a 3D CAD software suite, Rhino+Grasshopper is, at its core, a means to create, transform and manage data. Grasshopper’s explicit visual scripting interface structures these operations through the use of DataTrees. Treesloth emerged as a series of tools applied in both professional and research practice to help better negotiate the the types of data relationships within (and between) Grasshopper definitions that enable more complex operations.",
+      "authorName": "Dave Stasiuk",
+      "authorContact": null
+    },
+    {
+      "name": "TRNLizard",
+      "releaseDate": "2019-Jun-27",
+      "version": "6.2019",
+      "downloadLink": "https://www.food4rhino.com/app/trnlizard",
+      "helpLink": "https://grasshopperdocs.com/addons/trnlizard.html",
+      "category": "Energy Analysis & Simulation",
+      "isSystem": false,
+      "components": 23,
+      "description": "TRNLizard is a free plug-in for Grasshopper for parametric 3D building simulation developed by TRANSSOLAR. It is a free plug in to the Rhinoceros 5/6 software and Grasshopper. It enables thermal and daylight building simulation with TRNSYS 18 using a variety of artificial lighting, ventilation, heating and cooling concepts based on detailed 3D geometry.\n\nThe parametric architecture and open source Grasshopper components enable TRNSYS 18 users to conduct detailed design studies during the planning phase and respectively individualize the model. Predefined templates and outputs allow quick start simulations and a fast evaluation of simulation results.\n\nThe tool has a modular structure and gives great flexibility. The components are and will be adapted to the development of Trnsys and have a variety of new features. Models are fully defined in Grasshopper and then written as complete TRNSYS-models in the project directory. TRNLizard connects the power of parametric modeling in Grasshopper and the latest building simulation features of Trnsys!",
+      "authorName": "Christian Frenzel",
       "authorContact": null
     },
     {
@@ -1210,266 +1548,6 @@
       "authorContact": null
     },
     {
-      "name": "Xylinus",
-      "releaseDate": "Unknown",
-      "version": "0.2",
-      "downloadLink": "http://www.ryanhoover.org/rd/xylinus.php",
-      "helpLink": "https://grasshopperdocs.com/addons/xylinus.html",
-      "category": "3D Printing & Fabrication",
-      "isSystem": false,
-      "components": 43,
-      "description": "It allows for novel control of 3D printers, generating G code directly from native Rhino and Grasshopper geometries including solids, surfaces, and curves. It has tools for printers based on FDM filament extrusion, pneumatically-controlled syringes, ink-jet, and DLP Stereolithography.",
-      "authorName": "Ryan Hoover",
-      "authorContact": null
-    },
-    {
-      "name": "Blindfold",
-      "releaseDate": "2018-Jun-12",
-      "version": "1.0",
-      "downloadLink": "https://www.food4rhino.com/app/blindfold",
-      "helpLink": "https://grasshopperdocs.com/addons/blindfold.html",
-      "category": "Rhino Integration",
-      "isSystem": false,
-      "components": 1,
-      "description": "Blindfold is a single component which can hide or show geometry in Rhino that is referenced into the Grasshopper document. Blinfold has three modes and an icon which changes depending on the mode it is set to: Off, Hide, or Show. Blindfold by default detects and hides/shows all geometry in Rhino that is referenced into any Grasshopper parameters or component inputs, optionally it can limit the hide/show operation to only the Rhino referenced geometries plugged into or set in the Limited input. When new Rhino geometry is referenced you can refresh the hide/show operation by clicking a button plugged into the Refresh input. Blindfold makes it easy to manage the visibility of your Rhino geometry referenced in Grasshopper so you can quickly avoid those annoying overlap display issues between Rhino and Grasshopper previews.",
-      "authorName": "Ekim Royrp",
-      "authorContact": null
-    },
-    {
-      "name": "Bubalus",
-      "releaseDate": "2019-Aug-23",
-      "version": "2.001",
-      "downloadLink": "https://www.food4rhino.com/app/bubalusgh",
-      "helpLink": "https://grasshopperdocs.com/addons/bubalus.html",
-      "category": "Groups & Arrangement",
-      "isSystem": false,
-      "components": 17,
-      "description": "Use Bubalus to achieve:\n1. Single object distribution (group)\n2. Multiple object distribution (group)\n3. Find the anchor of the original object\n4. Clean up objects in Rhino\n5.Populate two curve region with points\n6. According to the ratio random partition a list into",
-      "authorName": "NARUTO",
-      "authorContact": null
-    },
-    {
-      "name": "Design Space Exploration",
-      "releaseDate": "2019-May-13",
-      "version": "1.4",
-      "downloadLink": "https://www.food4rhino.com/app/design-space-exploration",
-      "helpLink": "https://grasshopperdocs.com/addons/design-space-exploration.html",
-      "category": "Maths & Optimization",
-      "isSystem": false,
-      "components": 15,
-      "description": "Design Space Exploration (DSE) is a suite of open-source Grasshopper tools developed by Digital Structures at MIT.  These tools aim to support visual, performance-based design space exploration and interactive multi-objective optimization (MOO) for conceptual design.  Rather than one single component or user interface, these tools can be used flexibly with other Grasshopper components or plug-ins to take a variety of approaches to DSE and MOO, including a priori, a posteriori, and interactive articulation of performance priorities.  Various DSE components allow the user to sample a parametric design space made from sliders, automatically iterate and capture images and numerical properties, reconstruct previous designs, cluster designs into families, analyze the importance of design variables, approximate computationally-intensive performance evaluations, and find Pareto fronts for multi-objective problems.   Although the components are intended to link together for simple, automated workflows for performance-based design of buildings and other structures, they can be used for any applications that require these functionalities within Grasshopper.",
-      "authorName": "Digital Structures (MIT)",
-      "authorContact": null
-    },
-    {
-      "name": "Droid",
-      "releaseDate": "2019-May-23",
-      "version": "2.0.5",
-      "downloadLink": "https://www.food4rhino.com/app/droid-3d-print-slicer-and-path-plotter",
-      "helpLink": "https://grasshopperdocs.com/addons/droid.html",
-      "category": "3D Printing & Fabrication",
-      "isSystem": false,
-      "components": 9,
-      "description": "Droid is a 3D printing add-on, with control over model Slicing, Custom paths and Gcode generation. Designed to be used from small desktop 3d Printers, up to large scale Robotic Fabricators using FFF technologies and running from Gcode. Available to be used to prepare and print models in a 'Plug and Play' style with Droid components, or in a more controlled and experimental manner with Custom input and output print paths.\n\nDroid allows control over conventional Slicing features such as infill, shell thickness and caps, within the Rhino and Grasshopper environment. In addition, output and editing of paths is also available once models are sliced into the Rhino and Grasshopper workspace, allowing full control and analysis to the user.\nCustom or edited paths then can be input back into Droid for Gcode preparation and generation.\n\nThis should work with most major firmwares (Marlin, Repetier, RepRap, etc) and Gcode Reader. If you use a firmware and encounter any problems related to Gcode, let me know.\n\nDroid Components are Multi-Thread enabled, and may use all your processors resources during calculations.",
-      "authorName": "ytsebastian",
-      "authorContact": null
-    },
-    {
-      "name": "Flatworm",
-      "releaseDate": "2018-Sep-07",
-      "version": "0.1a",
-      "downloadLink": "https://www.food4rhino.com/app/flatworm",
-      "helpLink": "https://grasshopperdocs.com/addons/flatworm.html",
-      "category": "Origami",
-      "isSystem": false,
-      "components": 6,
-      "description": "Flatworm is a GHPython implementation of the pure-python module RFQM.py for generating 'rigidly foldable quadrilateral meshes' (RFQM) in Grasshopper, that are flat foldbale! Such meshes may be used to create complex and flexible structures out of rigid materials, as no mesh face is ever deformed in the folding process.\n    \nFlatworm provides basic means of generating custom RFQMs as well as the famous Miura Ori fold pattern. Meshes are generated from four lists of angle arrays, describing the direction angles and fold angles for two sides of the mesh respectivly. The 'direction angle' is the ccw angle between the fold line and x-axis in xy-plane, while the 'fold angle' is the angle between the faces on either side of the crease in the fully folded state of the mesh.",
-      "authorName": "jakobl",
-      "authorContact": null
-    },
-    {
-      "name": "GeoDex",
-      "releaseDate": "2019-Aug-01",
-      "version": "3.0.0",
-      "downloadLink": "https://www.food4rhino.com/app/geodex",
-      "helpLink": "https://grasshopperdocs.com/addons/geodex.html",
-      "category": "Maths & Optimization",
-      "isSystem": false,
-      "components": 13,
-      "description": "GeoDex 3 GH is the Grasshopper 3D implementation of the GeoDex Library, a collection of around 150 curve, surface, and volume equations. Each component takes a consistent unitized input of a numeric T value for curves and point based UV value for surfaces and volumes returning the plotted point of the selected equation at the given parameter. Many of the equations have additional parameters and upon selection of the curves from each component's right-click menu, the inputs for the component may reconfigure to provide inputs for these parameters. The components are added to the Vectors tab in the Grasshopper ribbon under the new Plots category.",
-      "authorName": "David Mans",
-      "authorContact": null
-    },
-    {
-      "name": "Gear",
-      "releaseDate": "2019-Aug-17",
-      "version": "1.1",
-      "downloadLink": "https://www.food4rhino.com/app/gear",
-      "helpLink": "https://grasshopperdocs.com/addons/gear.html",
-      "category": "Geometry & Meshes",
-      "isSystem": false,
-      "components": 8,
-      "description": "Gear is a simple way to generate involute gear for Grasshopper user.",
-      "authorName": "uwen",
-      "authorContact": null
-    },
-    {
-      "name": "Impala",
-      "releaseDate": "2018-Aug-30",
-      "version": "1.0",
-      "downloadLink": "https://www.food4rhino.com/app/impala",
-      "helpLink": "https://grasshopperdocs.com/addons/impala.html",
-      "category": "Maths & Optimization",
-      "isSystem": false,
-      "components": 44,
-      "description": "Impala replicates common bottleneck Grasshopper operations with a focus on efficiency, allowing complex scripts and static simulations embedded within Grasshopper to make use of all available computational capacity. This is primarily evident in scripts that deal with thousands of objects or rely heavily on numerical or physically-based computations.\n\nThe primary target audience is experienced design computation practitioners and Grasshopper users who are running into the upper bounds of the tool's native, single-core performance, and are willing to take a finer approach to boosting performance at key points. Impala focuses primarily on replicating existing Grasshopper functionality and developing an environment suitable to seamless integration of performant or multithreaded computation within GH.",
-      "authorName": "Dan Cascaval",
-      "authorContact": null
-    },
-    {
-      "name": "Instance Manager",
-      "releaseDate": "2019-Oct-26",
-      "version": "1.6.2.4",
-      "downloadLink": "https://www.food4rhino.com/app/instance-manager",
-      "helpLink": "https://grasshopperdocs.com/addons/instance-manager.html",
-      "category": "Rhino Integration",
-      "isSystem": false,
-      "components": 14,
-      "description": "Instance Manager is a part of Heteroptera Plugin that is specified to manage Block-Definition and instances in Rhino from Grasshopper. It is an ongoing project orienting to the development of collaborative design. Instance-Manager is a set of tools to Create, manage, and get statistics from files containing blocks. Instead of focusing on Instace_Refrence and Block_Objects, this plugin is focused on just Instance_Definition.",
-      "authorName": "Amin Bahrami",
-      "authorContact": null
-    },
-    {
-      "name": "KarambaIDEA",
-      "releaseDate": "2019-Aug-15",
-      "version": "1.1",
-      "downloadLink": "https://www.food4rhino.com/app/karambaidea",
-      "helpLink": "https://grasshopperdocs.com/addons/karambaidea.html",
-      "category": "IDEA StatiCa Integration",
-      "isSystem": false,
-      "components": 5,
-      "description": "KarambaIDEA is an open-source Grasshopper plug-in that links Karamba3D with IDEA Statica connection. One of the joints from the modeled steel structure in Karamba3D can be imported into IDEA Statica Connection for further analysis, on a detail level.",
-      "authorName": "Bouwenmet Staal",
-      "authorContact": null
-    },
-    {
-      "name": "Mouse",
-      "releaseDate": "2018-Sep-07",
-      "version": "1.0.0.0",
-      "downloadLink": "https://www.food4rhino.com/app/mouse",
-      "helpLink": "https://grasshopperdocs.com/addons/mouse.html",
-      "category": "Pathfinding",
-      "isSystem": false,
-      "components": 2,
-      "description": "The Mouse is a pathfinding plugin for Grasshopper based on Theta* algorithm by Kenny Daniel, Alex Nash, and Sven Koenig. It provides the possibility to find optimize and realistic looking routes between each pair of points in Grasshopper.",
-      "authorName": "Arash Nader",
-      "authorContact": null
-    },
-    {
-      "name": "Nemo",
-      "releaseDate": "2019-Oct-16",
-      "version": "1.1 Beta",
-      "downloadLink": "https://www.food4rhino.com/app/nemo",
-      "helpLink": "https://grasshopperdocs.com/addons/nemo.html",
-      "category": "Ship Design",
-      "isSystem": false,
-      "components": 25,
-      "description": "Naval Efficiency and Marine Optimization. Nemo is a Grasshopper plugin for Ship Design. Nemo Analysis, for automatic analysis of ship geometry (licensed). Nemo Designer, which includes several design tools (free)\nNemo Analysis can perform hydrostatics computation, silhouette extraction, meshing generation and resistance prediction right inside Rhino. Sectioning hull into stations - buttocks - waterlines, generating an offset table, or creating cross-sections curves are also embed features. Interoperability is allowed with external software like NavCad (HydroComp), Mars 2000 (Bureau Veritas) or Excel (Microsoft). Nemo Designer includes specific tools to create NACA sections and appendages such as hydrofoils, keels (with or without bulb), or even blade propellers.",
-      "authorName": "VENOT",
-      "authorContact": null
-    },
-    {
-      "name": "NM Optimisation",
-      "releaseDate": "2018-Aug-13",
-      "version": "0.5.2",
-      "downloadLink": "https://www.food4rhino.com/app/nelder-mead-optimisation-eoc",
-      "helpLink": "https://grasshopperdocs.com/addons/nm-optimisation.html",
-      "category": "Maths & Optimization",
-      "isSystem": false,
-      "components": 1,
-      "description": "The Nelder-Mead Optimisation component, produced by the Eckersley O'Callaghan's Digital Design Group, is focused on producing optimised solutions with as few function calls as possible, leading to time-efficient optimisation. In addition we have endeavoured to produce useful live feedback during the optimisation and we have allowed for optimisation constraints to be dealt with in a user-friendly way.",
-      "authorName": "Sam Gregson",
-      "authorContact": null
-    },
-    {
-      "name": "Opossum",
-      "releaseDate": "2019-Sep-07",
-      "version": "2.0.0",
-      "downloadLink": "https://www.food4rhino.com/app/opossum-optimization-solver-surrogate-models",
-      "helpLink": "https://grasshopperdocs.com/addons/opossum.html",
-      "category": "Maths & Optimization",
-      "isSystem": false,
-      "components": 1,
-      "description": "Opossum includes two of the best-performing,single-objective optimization algorithms in Grasshopper: model-based RBFOpt and evolutionary CMA-ES. It also include the multi-objective RBFMOpt and NSGA-II algorithms.\n\nRBFOpt uses advanced machine learning techniques to find good solutions with a small number of function evaluations, i.e. simulations, while CMA-ES reliably finds near-optimal solutions when many function evaluations are possible. (Various papers with benchmark results are availabe here.) RBFMOpt won the “2-Objective Expensive” track of the international Black Box Optimization Competition 2019, surpassing the winner of the previous two years, the commercial algorithm Artelys Nitro.\n\nOpossum's GUI is similar to Galapagos. Opossum has a results table, which makes it easy to revisit all optimization results by double-clicking entries in the table.",
-      "authorName": "Thomas Wortmann",
-      "authorContact": null
-    },
-    {
-      "name": "Parakeet",
-      "releaseDate": "2019-Oct-13",
-      "version": "0.6.1",
-      "downloadLink": "https://www.food4rhino.com/app/parakeet",
-      "helpLink": "https://grasshopperdocs.com/addons/parakeet.html",
-      "category": "Pattern Generation",
-      "isSystem": false,
-      "components": 119,
-      "description": "Parakeet is a collection of components focusing in Algorithmic Pattern Generation; it offers a Unique and easy-to-use approach that Generates Geometrical and Natural Patterns/Networks.\n\nFor now, Parakeet has 8 Categories: Tilings, Primitives, Pattern Generation, Curve, Mesh, Surface, M.C. Escher and utilities.",
-      "authorName": "Esmaeil",
-      "authorContact": null
-    },
-    {
-      "name": "Salamander",
-      "releaseDate": "2019-Jan-02",
-      "version": "0.5.0",
-      "downloadLink": "https://www.food4rhino.com/app/salamander-3",
-      "helpLink": "https://grasshopperdocs.com/addons/salamander.html",
-      "category": "Structural Analysis & FEM",
-      "isSystem": false,
-      "components": 72,
-      "description": "Salamander (Structural Analysis Link And MANager for Data Entry & Retrieval) hosts structural nodes, elements, sections and so on within Rhino and allows them to be be created and modified like any other data type.  They can then be exported to several different FEA packages (Robot, GSA and ETABS currently supported) for analysis.",
-      "authorName": "Paul Jeffries",
-      "authorContact": null
-    },
-    {
-      "name": "SkinDesigner",
-      "releaseDate": "2018-Sep-14",
-      "version": "0.5.00",
-      "downloadLink": "https://www.food4rhino.com/app/skindesigner",
-      "helpLink": "https://grasshopperdocs.com/addons/skindesigner.html",
-      "category": "Structural Panel Design",
-      "isSystem": false,
-      "components": 35,
-      "description": "SkinDesigner enables the rapid generation of facade geometries from building massing surfaces and repeating, user-defined panels. SkinDesigner has the geometric freedom to create virtually any facade geometry that is composed of similar repeating elements.",
-      "authorName": "Santiago Garay",
-      "authorContact": null
-    },
-    {
-      "name": "Tarsier",
-      "releaseDate": "2019-Apr-19",
-      "version": "1.0.1.0",
-      "downloadLink": "https://www.food4rhino.com/app/tarsier",
-      "helpLink": "https://grasshopperdocs.com/addons/tarsier.html",
-      "category": "Point Clouds",
-      "isSystem": false,
-      "components": 20,
-      "description": "This library's primary purpose is to add the point cloud functionality already apparent in Rhinoceros 5 to Grasshopper, with the ambition of treating point clouds as another useful data type, rather than an exotic type.\n\nIt's secondary purpose is to provide tools for creation and streaming of point clouds with common scanning techniques (Kinect V1, V2 and OpenNI2). This is made possible due to the speed increases afforded by the use of the point cloud class. For example, a full point cloud from a Kinect V2 is released in approximately 10-20ms on standard machines, which is more than enough for most purposes. A multi-threaded KD-Tree is also implemented to allow very fast spatial searching.",
-      "authorName": "Cameron Newnham",
-      "authorContact": null
-    },
-    {
-      "name": "TRNLizard",
-      "releaseDate": "2019-Jun-27",
-      "version": "6.2019",
-      "downloadLink": "https://www.food4rhino.com/app/trnlizard",
-      "helpLink": "https://grasshopperdocs.com/addons/trnlizard.html",
-      "category": "Energy Analysis & Simulation",
-      "isSystem": false,
-      "components": 23,
-      "description": "TRNLizard is a free plug-in for Grasshopper for parametric 3D building simulation developed by TRANSSOLAR. It is a free plug in to the Rhinoceros 5/6 software and Grasshopper. It enables thermal and daylight building simulation with TRNSYS 18 using a variety of artificial lighting, ventilation, heating and cooling concepts based on detailed 3D geometry.\n\nThe parametric architecture and open source Grasshopper components enable TRNSYS 18 users to conduct detailed design studies during the planning phase and respectively individualize the model. Predefined templates and outputs allow quick start simulations and a fast evaluation of simulation results.\n\nThe tool has a modular structure and gives great flexibility. The components are and will be adapted to the development of Trnsys and have a variety of new features. Models are fully defined in Grasshopper and then written as complete TRNSYS-models in the project directory. TRNLizard connects the power of parametric modeling in Grasshopper and the latest building simulation features of Trnsys!",
-      "authorName": "Christian Frenzel",
-      "authorContact": null
-    },
-    {
       "name": "WombatGH",
       "releaseDate": "2019-Jul-16",
       "version": "1.3.0",
@@ -1483,6 +1561,19 @@
       "authorContact": null
     },
     {
+      "name": "Xylinus",
+      "releaseDate": "Unknown",
+      "version": "0.2",
+      "downloadLink": "http://www.ryanhoover.org/rd/xylinus.php",
+      "helpLink": "https://grasshopperdocs.com/addons/xylinus.html",
+      "category": "3D Printing & Fabrication",
+      "isSystem": false,
+      "components": 43,
+      "description": "It allows for novel control of 3D printers, generating G code directly from native Rhino and Grasshopper geometries including solids, surfaces, and curves. It has tools for printers based on FDM filament extrusion, pneumatically-controlled syringes, ink-jet, and DLP Stereolithography.",
+      "authorName": "Ryan Hoover",
+      "authorContact": null
+    },
+    {
       "name": "Zebra",
       "releaseDate": "2019-Nov-26",
       "version": "1.1",
@@ -1493,84 +1584,6 @@
       "components": 28,
       "description": "Zebra is an agent based design plugin that can do the following: Optimized plugin to flock at least 100 agents with no performance issues. Combining behaviours with each dynamically and in the same simulation. Very simple interface that can do everything while keeping a high level of controllability for any parameter. Working in conjunction with environmental design. Can contain agents in any brep or mesh form.",
       "authorName": "Youssef Aboualghar (YFA)",
-      "authorContact": null
-    },
-    {
-      "name": "Sunflower",
-      "releaseDate": "2020-Feb-16",
-      "version": "7.61",
-      "downloadLink": "https://www.food4rhino.com/app/sunflower",
-      "helpLink": "https://grasshopperdocs.com/addons/sunflower.html",
-      "category": "Energy Analysis & Simulation",
-      "isSystem": false,
-      "components": 19,
-      "description": "Energy Analysis plugin for Grasshopper.",
-      "authorName": "Rex Wang",
-      "authorContact": null
-    },
-    {
-      "name": "RoboDK",
-      "releaseDate": "2019-02-05",
-      "version": "1.0.0.0",
-      "downloadLink": "https://www.food4rhino.com/app/robodk",
-      "helpLink": "https://grasshopperdocs.com/addons/robodk.html",
-      "category": "Electronic Robot Control",
-      "isSystem": false,
-      "components": 3,
-      "description": "The RoboDK plugin for Rhino allows you to combine Rhino's CAD modeling software with RoboDK to program industrial robots. RoboDK simulation software allows you to get the most out of your industrial robot. Easily simulate and program industrial robots offline from your Rhino models and deploy robot programs on your robot with just a few clicks. RoboDK’s simulation and offline programming tools allow you to program robots outside the production environment, eliminating production downtime caused by shop floor programming.",
-      "authorName": "RoboDK Team",
-      "authorContact": null
-    },
-    {
-      "name": "QuadEdgeDataStructure",
-      "releaseDate": "2020-01-09",
-      "version": "3.0",
-      "downloadLink": "https://markortler.wordpress.com/tooling/gh/qeds/",
-      "helpLink": "https://grasshopperdocs.com/addons/quadedgedatastructure.html",
-      "category": "Exotic Geometry",
-      "isSystem": false,
-      "components": 122,
-      "description": "A QuadEdgeDataStructure is used to represent a n-gonal Mesh without making any difference between primal and dual elements. The (relativ) dual-graph is holded in a valid state during any topological operation.\n\nThe implementation used in Grasshopper is embedded into the euclidean space.\n\nThe solvers for the graph-analytic-tools are working with ‚GH_Variant‚ values, which are provided by evaluating a string-expression against the QuadElement of investigation.\n\nThe components use a special zoom-interface. While UI-Elements are practicable to clarify an option, they are not if the value for the option should be set from the computation-tree.\nTherefor almost any UI-Element can be converted to a parameter.",
-      "authorName": "Ortler Mark",
-      "authorContact": null
-    },
-    {
-      "name": "Emu",
-      "releaseDate": "2019-02-23",
-      "version": "1.1.0",
-      "downloadLink": "https://www.food4rhino.com/app/emu",
-      "helpLink": "https://grasshopperdocs.com/addons/emu.html",
-      "category": "Structural Analysis & FEM",
-      "isSystem": false,
-      "components": 31,
-      "description": "Emu is an interactive structural analysis and form-finding tool based on a 6DOF (6 degrees of freedom) formulation of the dynamic relaxation method allowing engineers and designers to run bi-axial bending and torsion simulations. It is aimed to be used in early design stages but yet giving real structural feedback.\n\nEmu was developed as part of a Master's thesis in Structural Engineering and Building Technology at Chalmers University of Technology, with the aim of simulating the very non-linear process of elastic gridshell erection.",
-      "authorName": "Emil Poulsen",
-      "authorContact": null
-    },
-    {
-      "name": "KUKA Prc",
-      "releaseDate": "2019",
-      "version": "1.1.0",
-      "downloadLink": "https://www.food4rhino.com/app/kukaprc-parametric-robot-control-grasshopper",
-      "helpLink": "https://grasshopperdocs.com/addons/kuka-prc.html",
-      "category": "Electronic Robot Control",
-      "isSystem": false,
-      "components": 56,
-      "description": "KUKA|prc enables you to program industrial robots directly out of the parametric modelling environment, including a full kinematic simulation of the robot. The generated files can be executed at the KUKA robot, without requiring any additional software.\n\nThe free evaluation version allows the full simulation and code generation without. Additional features such as support for SunriseOS, external axes, G-Code import etc. are only available to members of the Association for Robots in Architecture.",
-      "authorName": "Robots in Architecture",
-      "authorContact": null
-    },
-    {
-      "name": "RhinoMembrane",
-      "releaseDate": "2018-12-11",
-      "version": "3.0",
-      "downloadLink": "https://www.food4rhino.com/app/rhinomembrane-v-30-rhino-60",
-      "helpLink": "https://grasshopperdocs.com/addons/rhinomembrane.html",
-      "category": "Exotic Geometry",
-      "isSystem": false,
-      "components": 13,
-      "description": "Grasshopper extension updated  with new solver for cable nets. It has in built professional form-finding solvers for any category of tensile and cable net structures. The plugin is also fully compatible with our flagship product ixCube 4-10  so any model generated with RM can be  baked on the fly to ixCube 4-10 for future structural analysis and patterning.",
-      "authorName": "Gerry D'anza",
       "authorContact": null
     },
     {
