@@ -5491,23 +5491,13 @@
       "helpLink": "https://grasshopperdocs.com/components/diva/zoneConnectivityNetwork.html"
     },
     {
-      "name": "Random Forest",
-      "id": "RandomForest",
-      "library": "Dodo",
-      "category": "Artificial Intelligence",
-      "summary": "Trains using a random forest algorithm",
-      "description": null,
-      "iconCss": "background: url('icons/dodo.png') -48px -72px",
-      "helpLink": "https://grasshopperdocs.com/components/dodo/randomForest.html"
-    },
-    {
       "name": "Run Neural Network",
       "id": "RunNN",
       "library": "Dodo",
       "category": "Artificial Intelligence",
       "summary": "Run data through a trained neural network",
       "description": null,
-      "iconCss": "background: url('icons/dodo.png') -120px -72px",
+      "iconCss": "background: url('icons/dodo.png') -72px -72px",
       "helpLink": "https://grasshopperdocs.com/components/dodo/runNeuralNetwork.html"
     },
     {
@@ -5517,7 +5507,7 @@
       "category": "Artificial Intelligence",
       "summary": "Supervised training",
       "description": null,
-      "iconCss": "background: url('icons/dodo.png') -24px -96px",
+      "iconCss": "background: url('icons/dodo.png') -216px -72px",
       "helpLink": "https://grasshopperdocs.com/components/dodo/supervisedTrainingNN.html"
     },
     {
@@ -5527,7 +5517,7 @@
       "category": "Artificial Intelligence",
       "summary": "Unsupervised training",
       "description": null,
-      "iconCss": "background: url('icons/dodo.png') -48px -96px",
+      "iconCss": "background: url('icons/dodo.png') 0px -96px",
       "helpLink": "https://grasshopperdocs.com/components/dodo/unsupervisedTrainingNN.html"
     },
     {
@@ -5617,18 +5607,8 @@
       "category": "Field",
       "summary": "Integrate Tensor Field on Mesh",
       "description": null,
-      "iconCss": "background: url('icons/dodo.png') -96px -48px",
-      "helpLink": "https://grasshopperdocs.com/components/dodo/integrateTensorField.html"
-    },
-    {
-      "name": "Integrate Vector Field",
-      "id": "IntegrateVectField",
-      "library": "Dodo",
-      "category": "Field",
-      "summary": "Integrate a given vector field",
-      "description": null,
       "iconCss": "background: url('icons/dodo.png') -72px -48px",
-      "helpLink": "https://grasshopperdocs.com/components/dodo/integrateVectorField.html"
+      "helpLink": "https://grasshopperdocs.com/components/dodo/integrateTensorField.html"
     },
     {
       "name": "Iso-Potential Surface",
@@ -5637,7 +5617,7 @@
       "category": "Field",
       "summary": "Calculates the iso-potential surfaces of a field",
       "description": null,
-      "iconCss": "background: url('icons/dodo.png') -192px -72px",
+      "iconCss": "background: url('icons/dodo.png') -144px -72px",
       "helpLink": "https://grasshopperdocs.com/components/dodo/isoPotentialSurface.html"
     },
     {
@@ -5647,7 +5627,7 @@
       "category": "Field",
       "summary": "Integrate a field using an object as a constraint",
       "description": null,
-      "iconCss": "background: url('icons/dodo.png') -120px -48px",
+      "iconCss": "background: url('icons/dodo.png') -96px -48px",
       "helpLink": "https://grasshopperdocs.com/components/dodo/pathOnObject.html"
     },
     {
@@ -5667,7 +5647,7 @@
       "category": "Field",
       "summary": "Description",
       "description": null,
-      "iconCss": "background: url('icons/dodo.png') -72px -72px",
+      "iconCss": "background: url('icons/dodo.png') -24px -72px",
       "helpLink": "https://grasshopperdocs.com/components/dodo/rotateTensorField.html"
     },
     {
@@ -5677,7 +5657,7 @@
       "category": "Field",
       "summary": "See html help in the component",
       "description": null,
-      "iconCss": "background: url('icons/dodo.png') -144px -72px",
+      "iconCss": "background: url('icons/dodo.png') -96px -72px",
       "helpLink": "https://grasshopperdocs.com/components/dodo/smoothenField.html"
     },
     {
@@ -5687,7 +5667,7 @@
       "category": "Field",
       "summary": "Creates a vector field by choosing a component of the Tensor Field. By default it takes the first direction. Right-click on the component to change that.",
       "description": null,
-      "iconCss": "background: url('icons/dodo.png') 0px -96px",
+      "iconCss": "background: url('icons/dodo.png') -192px -72px",
       "helpLink": "https://grasshopperdocs.com/components/dodo/tensorFieldComponent.html"
     },
     {
@@ -5697,7 +5677,7 @@
       "category": "Field",
       "summary": "Calculate a vector field from a tensor field and a single direction The resulting vector will be V(x) = TF(x) * D, where M is the tensor field in a point and D the direction given",
       "description": null,
-      "iconCss": "background: url('icons/dodo.png') -216px -72px",
+      "iconCss": "background: url('icons/dodo.png') -168px -72px",
       "helpLink": "https://grasshopperdocs.com/components/dodo/tensorFieldVector.html"
     },
     {
@@ -5727,7 +5707,7 @@
       "category": "Graph",
       "summary": "Create graph from curves",
       "description": null,
-      "iconCss": "background: url('icons/dodo.png') -24px -72px",
+      "iconCss": "background: url('icons/dodo.png') 0px -72px",
       "helpLink": "https://grasshopperdocs.com/components/dodo/generateNetwork.html"
     },
     {
@@ -5787,7 +5767,7 @@
       "category": "kd-Tree",
       "summary": "Finds kdNode within a certain distance from a given one",
       "description": null,
-      "iconCss": "background: url('icons/dodo.png') -168px -48px",
+      "iconCss": "background: url('icons/dodo.png') -144px -48px",
       "helpLink": "https://grasshopperdocs.com/components/dodo/nearestNeighboursDistance.html"
     },
     {
@@ -5797,7 +5777,7 @@
       "category": "kd-Tree",
       "summary": "Finds kdNodes in a hypercube",
       "description": null,
-      "iconCss": "background: url('icons/dodo.png') -144px -48px",
+      "iconCss": "background: url('icons/dodo.png') -120px -48px",
       "helpLink": "https://grasshopperdocs.com/components/dodo/nearestNeighboursHypercube.html"
     },
     {
@@ -5807,7 +5787,7 @@
       "category": "kd-Tree",
       "summary": "Finds n nearest neighbours to the specified kdNode",
       "description": null,
-      "iconCss": "background: url('icons/dodo.png') -192px -48px",
+      "iconCss": "background: url('icons/dodo.png') -168px -48px",
       "helpLink": "https://grasshopperdocs.com/components/dodo/nearestNeighboursNumber.html"
     },
     {
@@ -5817,7 +5797,7 @@
       "category": "MathNet",
       "summary": "Calculate statistics for a series of numbers",
       "description": null,
-      "iconCss": "background: url('icons/dodo.png') -120px -96px",
+      "iconCss": "background: url('icons/dodo.png') -72px -96px",
       "helpLink": "https://grasshopperdocs.com/components/dodo/statistics.html"
     },
     {
@@ -5857,7 +5837,7 @@
       "category": "Mesh",
       "summary": "Creates and Iso Mesh",
       "description": null,
-      "iconCss": "background: url('icons/dodo.png') -216px -48px",
+      "iconCss": "background: url('icons/dodo.png') -192px -48px",
       "helpLink": "https://grasshopperdocs.com/components/dodo/isoMesh.html"
     },
     {
@@ -5867,7 +5847,7 @@
       "category": "Mesh",
       "summary": "Find the curvature field of a mesh",
       "description": null,
-      "iconCss": "background: url('icons/dodo.png') 0px -72px",
+      "iconCss": "background: url('icons/dodo.png') -216px -48px",
       "helpLink": "https://grasshopperdocs.com/components/dodo/meshCurvature.html"
     },
     {
@@ -5877,7 +5857,7 @@
       "category": "Mesh",
       "summary": "Find umbilc points on a mesh",
       "description": null,
-      "iconCss": "background: url('icons/dodo.png') -72px -96px",
+      "iconCss": "background: url('icons/dodo.png') -24px -96px",
       "helpLink": "https://grasshopperdocs.com/components/dodo/umbilicPoints.html"
     },
     {
@@ -5887,7 +5867,7 @@
       "category": "Mesh",
       "summary": "Samples the field for creating the Voxels",
       "description": null,
-      "iconCss": "background: url('icons/dodo.png') -96px -96px",
+      "iconCss": "background: url('icons/dodo.png') -48px -96px",
       "helpLink": "https://grasshopperdocs.com/components/dodo/voxels.html"
     },
     {
@@ -5917,7 +5897,7 @@
       "category": "Other",
       "summary": "Run an executable with attributes",
       "description": null,
-      "iconCss": "background: url('icons/dodo.png') -96px -72px",
+      "iconCss": "background: url('icons/dodo.png') -48px -72px",
       "helpLink": "https://grasshopperdocs.com/components/dodo/runExecutable.html"
     },
     {
@@ -5937,7 +5917,7 @@
       "category": "Other",
       "summary": "Sort curves along a given curve",
       "description": null,
-      "iconCss": "background: url('icons/dodo.png') -168px -72px",
+      "iconCss": "background: url('icons/dodo.png') -120px -72px",
       "helpLink": "https://grasshopperdocs.com/components/dodo/sortCurves.html"
     },
     {
@@ -6557,7 +6537,7 @@
       "category": "01 Reference",
       "summary": "Reference objects based on Bake Name and User Attributes",
       "description": null,
-      "iconCss": "background: url('icons/elefront.png') -48px -96px",
+      "iconCss": "background: url('icons/elefront.png') -192px -72px",
       "helpLink": "https://grasshopperdocs.com/components/elefront/referenceByBakeName.html"
     },
     {
@@ -6567,7 +6547,7 @@
       "category": "01 Reference",
       "summary": "Reference Rhino Objects by Color. Also from worksessions",
       "description": null,
-      "iconCss": "background: url('icons/elefront.png') -72px -96px",
+      "iconCss": "background: url('icons/elefront.png') -216px -72px",
       "helpLink": "https://grasshopperdocs.com/components/elefront/referenceByColor.html"
     },
     {
@@ -6577,7 +6557,7 @@
       "category": "01 Reference",
       "summary": "Reference Rhino objects by layer. Also from worksessions",
       "description": null,
-      "iconCss": "background: url('icons/elefront.png') -120px -96px",
+      "iconCss": "background: url('icons/elefront.png') -24px -96px",
       "helpLink": "https://grasshopperdocs.com/components/elefront/referenceByLayer.html"
     },
     {
@@ -6587,7 +6567,7 @@
       "category": "01 Reference",
       "summary": "Reference Rhino objects by name. Also from worksessions",
       "description": null,
-      "iconCss": "background: url('icons/elefront.png') -144px -96px",
+      "iconCss": "background: url('icons/elefront.png') -48px -96px",
       "helpLink": "https://grasshopperdocs.com/components/elefront/referenceByName.html"
     },
     {
@@ -6597,7 +6577,7 @@
       "category": "01 Reference",
       "summary": "Reference Rhino Objects by type, also from worksession files",
       "description": null,
-      "iconCss": "background: url('icons/elefront.png') -168px -96px",
+      "iconCss": "background: url('icons/elefront.png') -72px -96px",
       "helpLink": "https://grasshopperdocs.com/components/elefront/referenceByType.html"
     },
     {
@@ -6607,7 +6587,7 @@
       "category": "01 Reference",
       "summary": "Reference objects from Rhino based on Key-Value attributes",
       "description": null,
-      "iconCss": "background: url('icons/elefront.png') -24px -96px",
+      "iconCss": "background: url('icons/elefront.png') -168px -72px",
       "helpLink": "https://grasshopperdocs.com/components/elefront/referenceByUserAtributes.html"
     },
     {
@@ -6617,7 +6597,7 @@
       "category": "02 Filter",
       "summary": "Filter Objects by their Color",
       "description": null,
-      "iconCss": "background: url('icons/elefront.png') -144px -48px",
+      "iconCss": "background: url('icons/elefront.png') -48px -48px",
       "helpLink": "https://grasshopperdocs.com/components/elefront/filterByColor.html"
     },
     {
@@ -6627,7 +6607,7 @@
       "category": "02 Filter",
       "summary": "Filter Objects by their Layer",
       "description": null,
-      "iconCss": "background: url('icons/elefront.png') -168px -48px",
+      "iconCss": "background: url('icons/elefront.png') -72px -48px",
       "helpLink": "https://grasshopperdocs.com/components/elefront/filterByLayer.html"
     },
     {
@@ -6637,7 +6617,7 @@
       "category": "02 Filter",
       "summary": "Filter Objects by their Name",
       "description": null,
-      "iconCss": "background: url('icons/elefront.png') -192px -48px",
+      "iconCss": "background: url('icons/elefront.png') -96px -48px",
       "helpLink": "https://grasshopperdocs.com/components/elefront/filterByName.html"
     },
     {
@@ -6647,7 +6627,7 @@
       "category": "02 Filter",
       "summary": "Filter Objects by their Object Type",
       "description": null,
-      "iconCss": "background: url('icons/elefront.png') -216px -48px",
+      "iconCss": "background: url('icons/elefront.png') -120px -48px",
       "helpLink": "https://grasshopperdocs.com/components/elefront/filterByType.html"
     },
     {
@@ -6657,7 +6637,7 @@
       "category": "02 Filter",
       "summary": "Filter objects by their User Attributes or filter attributes with objects in parallel",
       "description": null,
-      "iconCss": "background: url('icons/elefront.png') -120px -48px",
+      "iconCss": "background: url('icons/elefront.png') -24px -48px",
       "helpLink": "https://grasshopperdocs.com/components/elefront/filterByUserAttributes.html"
     },
     {
@@ -6667,7 +6647,7 @@
       "category": "03 Attributes",
       "summary": "Deconstruct Elefront attributes into its constituent parts",
       "description": null,
-      "iconCss": "background: url('icons/elefront.png') -144px -24px",
+      "iconCss": "background: url('icons/elefront.png') -72px -24px",
       "helpLink": "https://grasshopperdocs.com/components/elefront/deconstructAttributes.html"
     },
     {
@@ -6677,7 +6657,7 @@
       "category": "03 Attributes",
       "summary": "Define Color",
       "description": null,
-      "iconCss": "background: url('icons/elefront.png') -24px -48px",
+      "iconCss": "background: url('icons/elefront.png') -192px -24px",
       "helpLink": "https://grasshopperdocs.com/components/elefront/defineColor.html"
     },
     {
@@ -6687,7 +6667,7 @@
       "category": "03 Attributes",
       "summary": "Define Layer. It can be assigned to Object attributes, or baked with \"Bake Layer\"",
       "description": null,
-      "iconCss": "background: url('icons/elefront.png') -48px -48px",
+      "iconCss": "background: url('icons/elefront.png') -216px -24px",
       "helpLink": "https://grasshopperdocs.com/components/elefront/defineLayer.html"
     },
     {
@@ -6697,18 +6677,8 @@
       "category": "03 Attributes",
       "summary": "Define a set of attributes to bake with objects",
       "description": null,
-      "iconCss": "background: url('icons/elefront.png') 0px -96px",
+      "iconCss": "background: url('icons/elefront.png') -144px -72px",
       "helpLink": "https://grasshopperdocs.com/components/elefront/defineObjectAttributes.html"
-    },
-    {
-      "name": "Filter By Setting",
-      "id": "FilterSetting",
-      "library": "Elefront",
-      "category": "03 Attributes",
-      "summary": "Filter Objects by Setting",
-      "description": null,
-      "iconCss": "background: url('icons/elefront.png') -96px -48px",
-      "helpLink": "https://grasshopperdocs.com/components/elefront/filterBySetting.html"
     },
     {
       "name": "Get Elefront Attributes",
@@ -6717,7 +6687,7 @@
       "category": "03 Attributes",
       "summary": "Extract all Elefront attributes from an object",
       "description": null,
-      "iconCss": "background: url('icons/elefront.png') 0px -72px",
+      "iconCss": "background: url('icons/elefront.png') -144px -48px",
       "helpLink": "https://grasshopperdocs.com/components/elefront/getElefrontAttributes.html"
     },
     {
@@ -6727,7 +6697,7 @@
       "category": "03 Attributes",
       "summary": "Read native Rhino attributes from referenced object",
       "description": null,
-      "iconCss": "background: url('icons/elefront.png') -216px -96px",
+      "iconCss": "background: url('icons/elefront.png') -120px -96px",
       "helpLink": "https://grasshopperdocs.com/components/elefront/getRhinoAttributes.html"
     },
     {
@@ -6737,7 +6707,7 @@
       "category": "03 Attributes",
       "summary": "Returns User Attributes.Works on either referenced geometry or Elefront Attributes",
       "description": null,
-      "iconCss": "background: url('icons/elefront.png') -24px -72px",
+      "iconCss": "background: url('icons/elefront.png') -168px -48px",
       "helpLink": "https://grasshopperdocs.com/components/elefront/getUserAttributes.html"
     },
     {
@@ -6747,7 +6717,7 @@
       "category": "03 Attributes",
       "summary": "Returns a User Attributes value corresponding to a User Attributes key. Works on either referenced geometry or Elefront Attributes",
       "description": null,
-      "iconCss": "background: url('icons/elefront.png') -48px -72px",
+      "iconCss": "background: url('icons/elefront.png') -192px -48px",
       "helpLink": "https://grasshopperdocs.com/components/elefront/getUserValue.html"
     },
     {
@@ -6757,7 +6727,7 @@
       "category": "03 Attributes",
       "summary": "Modify attributes of either Referenced Geometry or Elefront Attributes",
       "description": null,
-      "iconCss": "background: url('icons/elefront.png') -216px -72px",
+      "iconCss": "background: url('icons/elefront.png') -120px -72px",
       "helpLink": "https://grasshopperdocs.com/components/elefront/modifyElefrontAttributes.html"
     },
     {
@@ -6767,7 +6737,7 @@
       "category": "03 Attributes",
       "summary": "Modify Rhino object attributes",
       "description": null,
-      "iconCss": "background: url('icons/elefront.png') -192px -72px",
+      "iconCss": "background: url('icons/elefront.png') -96px -72px",
       "helpLink": "https://grasshopperdocs.com/components/elefront/modifyRhinoObjectAttributes.html"
     },
     {
@@ -6777,7 +6747,7 @@
       "category": "03 Attributes",
       "summary": "Remove all user attributes from Rhino Object",
       "description": null,
-      "iconCss": "background: url('icons/elefront.png') -192px -96px",
+      "iconCss": "background: url('icons/elefront.png') -96px -96px",
       "helpLink": "https://grasshopperdocs.com/components/elefront/removeUserAttributes.html"
     },
     {
@@ -6787,7 +6757,7 @@
       "category": "04 Annotations",
       "summary": "Deconstruct dimension object",
       "description": null,
-      "iconCss": "background: url('icons/elefront.png') -192px -24px",
+      "iconCss": "background: url('icons/elefront.png') -120px -24px",
       "helpLink": "https://grasshopperdocs.com/components/elefront/deconstructDimension.html"
     },
     {
@@ -6797,7 +6767,7 @@
       "category": "04 Annotations",
       "summary": "Deconstruct Hatch Object",
       "description": null,
-      "iconCss": "background: url('icons/elefront.png') -216px -24px",
+      "iconCss": "background: url('icons/elefront.png') -144px -24px",
       "helpLink": "https://grasshopperdocs.com/components/elefront/deconstructHatch.html"
     },
     {
@@ -6807,7 +6777,7 @@
       "category": "04 Annotations",
       "summary": "Deconstruct text object",
       "description": null,
-      "iconCss": "background: url('icons/elefront.png') 0px -48px",
+      "iconCss": "background: url('icons/elefront.png') -168px -24px",
       "helpLink": "https://grasshopperdocs.com/components/elefront/deconstructText.html"
     },
     {
@@ -6887,7 +6857,7 @@
       "category": "04 Annotations",
       "summary": "Export Objects from Rhino. Each tree branch will be output as one file. Objects have to be in the active Rhino model and can not be from a referenced model",
       "description": null,
-      "iconCss": "background: url('icons/elefront.png') -72px -120px",
+      "iconCss": "background: url('icons/elefront.png') -192px -96px",
       "helpLink": "https://grasshopperdocs.com/components/elefront/exportObjects.html"
     },
     {
@@ -6897,7 +6867,7 @@
       "category": "05 Block",
       "summary": "Deconstruct Blocks into constituent parts, plane and block name",
       "description": null,
-      "iconCss": "background: url('icons/elefront.png') -168px -24px",
+      "iconCss": "background: url('icons/elefront.png') -96px -24px",
       "helpLink": "https://grasshopperdocs.com/components/elefront/deconstructBlock.html"
     },
     {
@@ -6907,7 +6877,7 @@
       "category": "05 Block",
       "summary": "Define a Block. Block will be created when baked.",
       "description": null,
-      "iconCss": "background: url('icons/elefront.png') -72px -24px",
+      "iconCss": "background: url('icons/elefront.png') 0px -24px",
       "helpLink": "https://grasshopperdocs.com/components/elefront/defineBlock.html"
     },
     {
@@ -6917,18 +6887,8 @@
       "category": "05 Block",
       "summary": "Define a linked Block. Block will be created when baked.",
       "description": null,
-      "iconCss": "background: url('icons/elefront.png') -96px -24px",
+      "iconCss": "background: url('icons/elefront.png') -24px -24px",
       "helpLink": "https://grasshopperdocs.com/components/elefront/defineLinkedBlock.html"
-    },
-    {
-      "name": "Export as External Block",
-      "id": "ExBlock",
-      "library": "Elefront",
-      "category": "05 Block",
-      "summary": "Export geometry as external linked block",
-      "description": null,
-      "iconCss": "background: url('icons/elefront.png') -216px 0px",
-      "helpLink": "https://grasshopperdocs.com/components/elefront/exportAsExternalBlock.html"
     },
     {
       "name": "Import Linked Block",
@@ -6937,7 +6897,7 @@
       "category": "05 Block",
       "summary": "Import Linked Blocks by File Name. Output can be Tansformed using regular Grasshopper component and baked with Grasshopper Bake operation and Elefront Bake Component.",
       "description": null,
-      "iconCss": "background: url('icons/elefront.png') -96px -72px",
+      "iconCss": "background: url('icons/elefront.png') 0px -72px",
       "helpLink": "https://grasshopperdocs.com/components/elefront/importLinkedBlock.html"
     },
     {
@@ -6947,7 +6907,7 @@
       "category": "05 Block",
       "summary": "Insert Blocks by Block Name. Output can be Tansformed using regular Grasshopper component and baked with Grasshopper Bake operation and Elefront Bake Component.",
       "description": null,
-      "iconCss": "background: url('icons/elefront.png') -120px -72px",
+      "iconCss": "background: url('icons/elefront.png') -24px -72px",
       "helpLink": "https://grasshopperdocs.com/components/elefront/insertBlock.html"
     },
     {
@@ -6957,7 +6917,7 @@
       "category": "05 Block",
       "summary": "List all block names from the rhino document",
       "description": null,
-      "iconCss": "background: url('icons/elefront.png') -168px -72px",
+      "iconCss": "background: url('icons/elefront.png') -72px -72px",
       "helpLink": "https://grasshopperdocs.com/components/elefront/listBlockDocument.html"
     },
     {
@@ -6967,7 +6927,7 @@
       "category": "05 Block",
       "summary": "List all block names from the specified folder",
       "description": null,
-      "iconCss": "background: url('icons/elefront.png') -144px -72px",
+      "iconCss": "background: url('icons/elefront.png') -48px -72px",
       "helpLink": "https://grasshopperdocs.com/components/elefront/listBlockFolder.html"
     },
     {
@@ -6977,7 +6937,7 @@
       "category": "05 Block",
       "summary": "Reference Block Instance by Block Name",
       "description": null,
-      "iconCss": "background: url('icons/elefront.png') -96px -96px",
+      "iconCss": "background: url('icons/elefront.png') 0px -96px",
       "helpLink": "https://grasshopperdocs.com/components/elefront/referenceBlockByName.html"
     },
     {
@@ -6991,23 +6951,13 @@
       "helpLink": "https://grasshopperdocs.com/components/elefront/bakeObjects.html"
     },
     {
-      "name": "Bake to File",
-      "id": "BakeToFile",
-      "library": "Elefront",
-      "category": "06 Bake",
-      "summary": "Bake objects to external Rhino file",
-      "description": null,
-      "iconCss": "background: url('icons/elefront.png') -192px 0px",
-      "helpLink": "https://grasshopperdocs.com/components/elefront/bakeToFile.html"
-    },
-    {
       "name": "Bake/Modify Layer",
       "id": "BakeLayer",
       "library": "Elefront",
       "category": "06 Bake",
       "summary": "Bake or modify Layers to current document",
       "description": null,
-      "iconCss": "background: url('icons/elefront.png') 0px -24px",
+      "iconCss": "background: url('icons/elefront.png') -192px 0px",
       "helpLink": "https://grasshopperdocs.com/components/elefront/bakeModifyLayer.html"
     },
     {
@@ -7017,7 +6967,7 @@
       "category": "07 Data",
       "summary": "Clean the primary data tree and clean all respective secondary trees in parallel",
       "description": null,
-      "iconCss": "background: url('icons/elefront.png') -24px -24px",
+      "iconCss": "background: url('icons/elefront.png') -216px 0px",
       "helpLink": "https://grasshopperdocs.com/components/elefront/cleanParallel.html"
     },
     {
@@ -7027,7 +6977,7 @@
       "category": "07 Data",
       "summary": "Create tree by specifying a branch path for each item",
       "description": null,
-      "iconCss": "background: url('icons/elefront.png') -120px -24px",
+      "iconCss": "background: url('icons/elefront.png') -48px -24px",
       "helpLink": "https://grasshopperdocs.com/components/elefront/createTree.html"
     },
     {
@@ -7037,7 +6987,7 @@
       "category": "07 Data",
       "summary": "Duplicate data based on source data tree",
       "description": null,
-      "iconCss": "background: url('icons/elefront.png') -72px -48px",
+      "iconCss": "background: url('icons/elefront.png') 0px -48px",
       "helpLink": "https://grasshopperdocs.com/components/elefront/duplicateDataMatch.html"
     },
     {
@@ -7047,7 +6997,7 @@
       "category": "07 Data",
       "summary": "Graft the primary data tree and output all respective secondary objects per item",
       "description": null,
-      "iconCss": "background: url('icons/elefront.png') -72px -72px",
+      "iconCss": "background: url('icons/elefront.png') -216px -48px",
       "helpLink": "https://grasshopperdocs.com/components/elefront/graftParallel.html"
     },
     {
@@ -7057,7 +7007,7 @@
       "category": "07 Data",
       "summary": "Shift a data tree to match the structure with a guide tree",
       "description": null,
-      "iconCss": "background: url('icons/elefront.png') 0px -120px",
+      "iconCss": "background: url('icons/elefront.png') -144px -96px",
       "helpLink": "https://grasshopperdocs.com/components/elefront/shiftMatch.html"
     },
     {
@@ -7067,28 +7017,8 @@
       "category": "07 Data",
       "summary": "Shrink a collection of lists to the shortest length amongst them. Empty lists have length 0",
       "description": null,
-      "iconCss": "background: url('icons/elefront.png') -24px -120px",
+      "iconCss": "background: url('icons/elefront.png') -168px -96px",
       "helpLink": "https://grasshopperdocs.com/components/elefront/shortestListClean.html"
-    },
-    {
-      "name": "Workflow(Beta)",
-      "id": "Workflow(Beta)",
-      "library": "Elefront",
-      "category": "08 Params",
-      "summary": "Control the workflow of multiple grasshopper stages.",
-      "description": null,
-      "iconCss": "background: url('icons/elefront.png') -48px -120px",
-      "helpLink": "https://grasshopperdocs.com/components/elefront/workflowBeta.html"
-    },
-    {
-      "name": "Create Attributed Geometry",
-      "id": "AttGeo",
-      "library": "Elefront",
-      "category": "Attributes",
-      "summary": "Create objects with attributes",
-      "description": null,
-      "iconCss": "background: url('icons/elefront.png') -48px -24px",
-      "helpLink": "https://grasshopperdocs.com/components/elefront/createAttributedGeometry.html"
     },
     {
       "name": "Location",
@@ -8051,16 +7981,6 @@
       "helpLink": "https://grasshopperdocs.com/components/firefly/playback.html"
     },
     {
-      "name": "Signal Generator",
-      "id": "Signal Generator",
-      "library": "Firefly",
-      "category": "Utility",
-      "summary": "Generate Different Waveform Signals",
-      "description": null,
-      "iconCss": "background: url('icons/firefly.png') -192px -216px",
-      "helpLink": "https://grasshopperdocs.com/components/firefly/signalGenerator.html"
-    },
-    {
       "name": "Smoothing Moving Average",
       "id": "Smooth",
       "library": "Firefly",
@@ -8577,7 +8497,7 @@
       "category": "Vision",
       "summary": "Generate a Swirl Vector for a Firefly Bitmap.",
       "description": null,
-      "iconCss": "background: url('icons/firefly.png') -216px -216px",
+      "iconCss": "background: url('icons/firefly.png') -192px -216px",
       "helpLink": "https://grasshopperdocs.com/components/firefly/swirlVector.html"
     },
     {
@@ -8589,16 +8509,6 @@
       "description": null,
       "iconCss": "background: url('icons/firefly.png') -24px -192px",
       "helpLink": "https://grasshopperdocs.com/components/firefly/testColor.html"
-    },
-    {
-      "name": "Vector Tracer",
-      "id": "Tracer",
-      "library": "Firefly",
-      "category": "Vision",
-      "summary": "Trace a vector through a field over time.",
-      "description": null,
-      "iconCss": "background: url('icons/firefly.png') 0px -240px",
-      "helpLink": "https://grasshopperdocs.com/components/firefly/vectorTracer.html"
     },
     {
       "name": "Video Averages",
@@ -8627,7 +8537,7 @@
       "category": "Vision",
       "summary": "WebCam Video Stream",
       "description": null,
-      "iconCss": "background: url('icons/firefly.png') -24px -240px",
+      "iconCss": "background: url('icons/firefly.png') -216px -216px",
       "helpLink": "https://grasshopperdocs.com/components/firefly/webCamVideoStream.html"
     },
     {
@@ -23657,7 +23567,7 @@
       "category": "Creation",
       "summary": "Create Object Attributes",
       "description": null,
-      "iconCss": "background: url('icons/human.png') -168px 0px",
+      "iconCss": "background: url('icons/human.png') -144px 0px",
       "helpLink": "https://grasshopperdocs.com/components/human/createAttributes.html"
     },
     {
@@ -23667,7 +23577,7 @@
       "category": "Creation",
       "summary": "Create Hatch Objects with specified pattern, scale, rotation, and attributes",
       "description": null,
-      "iconCss": "background: url('icons/human.png') -192px 0px",
+      "iconCss": "background: url('icons/human.png') -168px 0px",
       "helpLink": "https://grasshopperdocs.com/components/human/createHatch.html"
     },
     {
@@ -23677,7 +23587,7 @@
       "category": "Creation",
       "summary": "Create Light Object. So far works well for point lights and directional lights",
       "description": null,
-      "iconCss": "background: url('icons/human.png') -216px 0px",
+      "iconCss": "background: url('icons/human.png') -192px 0px",
       "helpLink": "https://grasshopperdocs.com/components/human/createLight.html"
     },
     {
@@ -23687,7 +23597,7 @@
       "category": "Creation",
       "summary": "This component allows you to define or replace a block definition.",
       "description": null,
-      "iconCss": "background: url('icons/human.png') -168px -24px",
+      "iconCss": "background: url('icons/human.png') -144px -24px",
       "helpLink": "https://grasshopperdocs.com/components/human/defineBlock.html"
     },
     {
@@ -23697,7 +23607,7 @@
       "category": "Creation",
       "summary": "Creates 3d Text objects with specified size, location, alignment, and font.",
       "description": null,
-      "iconCss": "background: url('icons/human.png') -144px -48px",
+      "iconCss": "background: url('icons/human.png') -120px -48px",
       "helpLink": "https://grasshopperdocs.com/components/human/justifiedText3d.html"
     },
     {
@@ -23707,7 +23617,7 @@
       "category": "Creation",
       "summary": "Places a specified block with the desired transform",
       "description": null,
-      "iconCss": "background: url('icons/human.png') -216px -72px",
+      "iconCss": "background: url('icons/human.png') -144px -72px",
       "helpLink": "https://grasshopperdocs.com/components/human/placeBlock.html"
     },
     {
@@ -23717,7 +23627,7 @@
       "category": "Display",
       "summary": "Custom Preview with Lineweights",
       "description": null,
-      "iconCss": "background: url('icons/human.png') -96px -24px",
+      "iconCss": "background: url('icons/human.png') -72px -24px",
       "helpLink": "https://grasshopperdocs.com/components/human/customPreviewLineweights.html"
     },
     {
@@ -23727,7 +23637,7 @@
       "category": "Display",
       "summary": "Custom Preview with Materials",
       "description": null,
-      "iconCss": "background: url('icons/human.png') -120px -24px",
+      "iconCss": "background: url('icons/human.png') -96px -24px",
       "helpLink": "https://grasshopperdocs.com/components/human/customPreviewMaterials.html"
     },
     {
@@ -23737,7 +23647,7 @@
       "category": "Display",
       "summary": "Displays a Curve object in a fixed position on screen",
       "description": null,
-      "iconCss": "background: url('icons/human.png') -48px -24px",
+      "iconCss": "background: url('icons/human.png') -24px -24px",
       "helpLink": "https://grasshopperdocs.com/components/human/renderCurveToScreen.html"
     },
     {
@@ -23747,7 +23657,7 @@
       "category": "Display",
       "summary": "Displays a Mesh object in a fixed position on screen",
       "description": null,
-      "iconCss": "background: url('icons/human.png') -24px -72px",
+      "iconCss": "background: url('icons/human.png') 0px -72px",
       "helpLink": "https://grasshopperdocs.com/components/human/renderMeshToScreen.html"
     },
     {
@@ -23757,7 +23667,7 @@
       "category": "Display",
       "summary": "Displays a Point object in a fixed position on screen",
       "description": null,
-      "iconCss": "background: url('icons/human.png') -24px -96px",
+      "iconCss": "background: url('icons/human.png') -192px -72px",
       "helpLink": "https://grasshopperdocs.com/components/human/renderPointToScreen.html"
     },
     {
@@ -23767,7 +23677,7 @@
       "category": "Display",
       "summary": "Displays a text object in a fixed position on screen",
       "description": null,
-      "iconCss": "background: url('icons/human.png') -96px -120px",
+      "iconCss": "background: url('icons/human.png') -24px -120px",
       "helpLink": "https://grasshopperdocs.com/components/human/renderTextToScreen.html"
     },
     {
@@ -23777,7 +23687,7 @@
       "category": "Display",
       "summary": "Displays a Mesh object that remains consistently oriented relative to the screen",
       "description": null,
-      "iconCss": "background: url('icons/human.png') -120px -96px",
+      "iconCss": "background: url('icons/human.png') -48px -96px",
       "helpLink": "https://grasshopperdocs.com/components/human/screenOrientedMesh.html"
     },
     {
@@ -23787,7 +23697,7 @@
       "category": "Display",
       "summary": "Displays text that remains consistently oriented relative to the screen",
       "description": null,
-      "iconCss": "background: url('icons/human.png') -144px -96px",
+      "iconCss": "background: url('icons/human.png') -72px -96px",
       "helpLink": "https://grasshopperdocs.com/components/human/screenOrientedText.html"
     },
     {
@@ -23797,7 +23707,7 @@
       "category": "Display",
       "summary": "Creates a special display tag anchored to a location on screen and a location in your model.",
       "description": null,
-      "iconCss": "background: url('icons/human.png') -168px -96px",
+      "iconCss": "background: url('icons/human.png') -96px -96px",
       "helpLink": "https://grasshopperdocs.com/components/human/screenToWorldTag.html"
     },
     {
@@ -23807,7 +23717,7 @@
       "category": "Document Info",
       "summary": "Retrieves the list of system fonts.",
       "description": null,
-      "iconCss": "background: url('icons/human.png') -72px -48px",
+      "iconCss": "background: url('icons/human.png') -48px -48px",
       "helpLink": "https://grasshopperdocs.com/components/human/fontTable.html"
     },
     {
@@ -23817,7 +23727,7 @@
       "category": "Document Info",
       "summary": "Gets the hatches from the active Rhino Document",
       "description": null,
-      "iconCss": "background: url('icons/human.png') -120px -48px",
+      "iconCss": "background: url('icons/human.png') -96px -48px",
       "helpLink": "https://grasshopperdocs.com/components/human/hatchTable.html"
     },
     {
@@ -23827,7 +23737,7 @@
       "category": "Document Info",
       "summary": "Gets the list of layers in the active document",
       "description": null,
-      "iconCss": "background: url('icons/human.png') -168px -48px",
+      "iconCss": "background: url('icons/human.png') -144px -48px",
       "helpLink": "https://grasshopperdocs.com/components/human/layerTable.html"
     },
     {
@@ -23837,7 +23747,7 @@
       "category": "Document Info",
       "summary": "Gets the linetypes from the active Rhino Document",
       "description": null,
-      "iconCss": "background: url('icons/human.png') -216px -48px",
+      "iconCss": "background: url('icons/human.png') -192px -48px",
       "helpLink": "https://grasshopperdocs.com/components/human/linetypeTable.html"
     },
     {
@@ -23847,7 +23757,7 @@
       "category": "Document Info",
       "summary": "Accesses the render materials in the document",
       "description": null,
-      "iconCss": "background: url('icons/human.png') 0px -72px",
+      "iconCss": "background: url('icons/human.png') -216px -48px",
       "helpLink": "https://grasshopperdocs.com/components/human/materialTable.html"
     },
     {
@@ -23857,7 +23767,7 @@
       "category": "Document Info",
       "summary": "Gets a list of the Named Views and Display Modes in this document",
       "description": null,
-      "iconCss": "background: url('icons/human.png') -120px -72px",
+      "iconCss": "background: url('icons/human.png') -96px -72px",
       "helpLink": "https://grasshopperdocs.com/components/human/namedViewsAndDisplayModes.html"
     },
     {
@@ -23867,7 +23777,7 @@
       "category": "Document Info",
       "summary": "Get a list of viewports and their properties",
       "description": null,
-      "iconCss": "background: url('icons/human.png') -120px -120px",
+      "iconCss": "background: url('icons/human.png') -48px -120px",
       "helpLink": "https://grasshopperdocs.com/components/human/viewportProperties.html"
     },
     {
@@ -23877,7 +23787,7 @@
       "category": "Document Modifications",
       "summary": "Create and Modify Rhino Layers",
       "description": null,
-      "iconCss": "background: url('icons/human.png') 0px -24px",
+      "iconCss": "background: url('icons/human.png') -216px 0px",
       "helpLink": "https://grasshopperdocs.com/components/human/createModifyLayers.html"
     },
     {
@@ -23887,7 +23797,7 @@
       "category": "Document Modifications",
       "summary": "Create or Edit document Render Materials.",
       "description": "Create or Edit document Render Materials. Note: Component can only modify materials created by the component earlier - it will not recognize materials that were added manually to the Rhino document.",
-      "iconCss": "background: url('icons/human.png') -24px -24px",
+      "iconCss": "background: url('icons/human.png') 0px -24px",
       "helpLink": "https://grasshopperdocs.com/components/human/createModifyMaterials.html"
     },
     {
@@ -23897,7 +23807,7 @@
       "category": "Document Modifications",
       "summary": "Use this component to modify the object attributes of geometry in Rhino.",
       "description": null,
-      "iconCss": "background: url('icons/human.png') -48px -72px",
+      "iconCss": "background: url('icons/human.png') -24px -72px",
       "helpLink": "https://grasshopperdocs.com/components/human/modifyObjectAttributes.html"
     },
     {
@@ -23907,18 +23817,8 @@
       "category": "Document Modifications",
       "summary": "Use this component to restore a named view in a viewport, set its display mode, or set its camera.",
       "description": null,
-      "iconCss": "background: url('icons/human.png') -72px -72px",
+      "iconCss": "background: url('icons/human.png') -48px -72px",
       "helpLink": "https://grasshopperdocs.com/components/human/modifyViewport.html"
-    },
-    {
-      "name": "Box2BoxXform",
-      "id": "Box2Box",
-      "library": "Human",
-      "category": "Misc",
-      "summary": "Creates a Transform that maps from one box to another. DEPRECATED - use built in Box Mapping component.",
-      "description": null,
-      "iconCss": "background: url('icons/human.png') -72px 0px",
-      "helpLink": "https://grasshopperdocs.com/components/human/box2BoxXform.html"
     },
     {
       "name": "Clickable Mesh",
@@ -23927,7 +23827,7 @@
       "category": "Misc",
       "summary": "Allows you to click in the Rhino Viewport to select from a list of meshes. WARNING! This will harvest ALL Rhino mouse clicks - while enabled you will not be able to use Rhinoas normal.",
       "description": null,
-      "iconCss": "background: url('icons/human.png') -120px 0px",
+      "iconCss": "background: url('icons/human.png') -96px 0px",
       "helpLink": "https://grasshopperdocs.com/components/human/clickableMesh.html"
     },
     {
@@ -23937,7 +23837,7 @@
       "category": "Misc",
       "summary": "Parses a formatted distance string (like 5'-10\") and converts it to numerical format in the active document units.",
       "description": null,
-      "iconCss": "background: url('icons/human.png') -144px 0px",
+      "iconCss": "background: url('icons/human.png') -120px 0px",
       "helpLink": "https://grasshopperdocs.com/components/human/convertToDocumentUnits.html"
     },
     {
@@ -23947,7 +23847,7 @@
       "category": "Misc",
       "summary": "Deletes all objects on specified Layers, then passes true.  Useful for appearing to change an object directly in a Rhino document,  in order to take advantage of advanced display capabilities.",
       "description": "Deletes all objects on specified Layers, then passes true.  Useful for appearing to change an object directly in a Rhino document,  in order to take advantage of advanced display capabilities.  WARNING: Make sure that no items on the specified layers are  referenced by any portion of your definition. This includes  both reference through standard parameters and reference  with the Human components.  IF YOU DO NOT ABIDE BY THIS WARNING YOU MAY CRASH GRASSHOPPER!",
-      "iconCss": "background: url('icons/human.png') -192px -24px",
+      "iconCss": "background: url('icons/human.png') -168px -24px",
       "helpLink": "https://grasshopperdocs.com/components/human/deleteOnLayer.html"
     },
     {
@@ -23957,7 +23857,7 @@
       "category": "Misc",
       "summary": "Converts a Base-64 encoded string representing an image to a temp image file and returns the path.",
       "description": null,
-      "iconCss": "background: url('icons/human.png') -216px -24px",
+      "iconCss": "background: url('icons/human.png') -192px -24px",
       "helpLink": "https://grasshopperdocs.com/components/human/deserializeImageFromString.html"
     },
     {
@@ -23967,7 +23867,7 @@
       "category": "Misc",
       "summary": "Lists the files in a specified directory.",
       "description": null,
-      "iconCss": "background: url('icons/human.png') 0px -48px",
+      "iconCss": "background: url('icons/human.png') -216px -24px",
       "helpLink": "https://grasshopperdocs.com/components/human/directoryContents.html"
     },
     {
@@ -23977,7 +23877,7 @@
       "category": "Misc",
       "summary": "Dispatch multiple lists at a time. Only retrieves true values - use invert to get the others.",
       "description": null,
-      "iconCss": "background: url('icons/human.png') -96px -72px",
+      "iconCss": "background: url('icons/human.png') -72px -72px",
       "helpLink": "https://grasshopperdocs.com/components/human/dispatchMultiple.html"
     },
     {
@@ -23987,18 +23887,8 @@
       "category": "Misc",
       "summary": "Filter a list or lists by a guide list and a subset of that guide list.",
       "description": null,
-      "iconCss": "background: url('icons/human.png') -48px -48px",
+      "iconCss": "background: url('icons/human.png') -24px -48px",
       "helpLink": "https://grasshopperdocs.com/components/human/filterByItem.html"
-    },
-    {
-      "name": "PassSequentially",
-      "id": "PassSeq",
-      "library": "Human",
-      "category": "Misc",
-      "summary": "Outputs a list of data one member at a time. Useful for driving a Kangaroo simulation in a single go",
-      "description": null,
-      "iconCss": "background: url('icons/human.png') -192px -72px",
-      "helpLink": "https://grasshopperdocs.com/components/human/passSequentially.html"
     },
     {
       "name": "Read 3dm File",
@@ -24007,7 +23897,7 @@
       "category": "Misc",
       "summary": "Reads objects from an external .3dm file",
       "description": null,
-      "iconCss": "background: url('icons/human.png') -48px -96px",
+      "iconCss": "background: url('icons/human.png') -216px -72px",
       "helpLink": "https://grasshopperdocs.com/components/human/read3dmFile.html"
     },
     {
@@ -24017,7 +23907,7 @@
       "category": "Misc",
       "summary": "Saves a viewport screenshot or render to a specified filepath.",
       "description": null,
-      "iconCss": "background: url('icons/human.png') -96px -96px",
+      "iconCss": "background: url('icons/human.png') -24px -96px",
       "helpLink": "https://grasshopperdocs.com/components/human/saveViewportToFile.html"
     },
     {
@@ -24027,7 +23917,7 @@
       "category": "Misc",
       "summary": "Converts an image file into a text string that can be embedded in your file. Don't use it for large images!",
       "description": null,
-      "iconCss": "background: url('icons/human.png') -216px -96px",
+      "iconCss": "background: url('icons/human.png') -144px -96px",
       "helpLink": "https://grasshopperdocs.com/components/human/serializeImageToString.html"
     },
     {
@@ -24037,7 +23927,7 @@
       "category": "Reference",
       "summary": "Defines a Geometry Pipeline from Rhino to Grasshopper, with variable filters for name, object type, and layer.",
       "description": null,
-      "iconCss": "background: url('icons/human.png') -24px -48px",
+      "iconCss": "background: url('icons/human.png') 0px -48px",
       "helpLink": "https://grasshopperdocs.com/components/human/dynamicGeometryPipeline.html"
     },
     {
@@ -24067,7 +23957,7 @@
       "category": "Reference",
       "summary": "Gets the geometry and properties of a referenced hatch object",
       "description": null,
-      "iconCss": "background: url('icons/human.png') -96px -48px",
+      "iconCss": "background: url('icons/human.png') -72px -48px",
       "helpLink": "https://grasshopperdocs.com/components/human/hatchExplode.html"
     },
     {
@@ -24077,7 +23967,7 @@
       "category": "Reference",
       "summary": "Reads Light Properties from a Rhino.DocObjects.LightObject",
       "description": null,
-      "iconCss": "background: url('icons/human.png') -192px -48px",
+      "iconCss": "background: url('icons/human.png') -168px -48px",
       "helpLink": "https://grasshopperdocs.com/components/human/lightProperties.html"
     },
     {
@@ -24087,18 +23977,8 @@
       "category": "Reference",
       "summary": "Access the individual attributes of a RhinoObject or an ObjectAttributes type.",
       "description": null,
-      "iconCss": "background: url('icons/human.png') -144px -72px",
+      "iconCss": "background: url('icons/human.png') -120px -72px",
       "helpLink": "https://grasshopperdocs.com/components/human/objectAttributes.html"
-    },
-    {
-      "name": "Objects By Layer",
-      "id": "ObjsByLayer",
-      "library": "Human",
-      "category": "Reference",
-      "summary": "Get the Rhino Objects on a specified layer. - DEPRECATED - use Dynamic Pipeline",
-      "description": null,
-      "iconCss": "background: url('icons/human.png') -168px -72px",
-      "helpLink": "https://grasshopperdocs.com/components/human/objectsByLayer.html"
     },
     {
       "name": "Objects By Selection",
@@ -24107,7 +23987,7 @@
       "category": "Reference",
       "summary": "Gets the currently selected objects in Rhino",
       "description": null,
-      "iconCss": "background: url('icons/human.png') -192px -96px",
+      "iconCss": "background: url('icons/human.png') -120px -96px",
       "helpLink": "https://grasshopperdocs.com/components/human/objectsBySelection.html"
     },
     {
@@ -24117,7 +23997,7 @@
       "category": "Reference",
       "summary": "This component works to bring back data tree structure for referenced geometry that has been baked with \"Bake Geometry\" with the \"Preserve Trees\" option enabled.",
       "description": null,
-      "iconCss": "background: url('icons/human.png') -72px -96px",
+      "iconCss": "background: url('icons/human.png') 0px -96px",
       "helpLink": "https://grasshopperdocs.com/components/human/reinstateTree.html"
     },
     {
@@ -24127,7 +24007,7 @@
       "category": "Reference",
       "summary": "Sorts a set of Rhino Objects by type and extracts the Geometry for types that already exist in Grasshopper.",
       "description": null,
-      "iconCss": "background: url('icons/human.png') 0px -120px",
+      "iconCss": "background: url('icons/human.png') -168px -96px",
       "helpLink": "https://grasshopperdocs.com/components/human/sortObjectsByType.html"
     },
     {
@@ -24137,7 +24017,7 @@
       "category": "Reference",
       "summary": "Gets the location, orientation plane, alignment, and text from a referenced text object.",
       "description": null,
-      "iconCss": "background: url('icons/human.png') -72px -120px",
+      "iconCss": "background: url('icons/human.png') 0px -120px",
       "helpLink": "https://grasshopperdocs.com/components/human/textObjectInfo.html"
     },
     {
@@ -24147,7 +24027,7 @@
       "category": "Texture Mapping",
       "summary": "Applies a box texture mapping to a mesh.",
       "description": null,
-      "iconCss": "background: url('icons/human.png') -96px 0px",
+      "iconCss": "background: url('icons/human.png') -72px 0px",
       "helpLink": "https://grasshopperdocs.com/components/human/boxMapping.html"
     },
     {
@@ -24157,7 +24037,7 @@
       "category": "Texture Mapping",
       "summary": "Applies per-vertex mesh texture coordinates to a mesh",
       "description": null,
-      "iconCss": "background: url('icons/human.png') -72px -24px",
+      "iconCss": "background: url('icons/human.png') -48px -24px",
       "helpLink": "https://grasshopperdocs.com/components/human/customMapping.html"
     },
     {
@@ -24167,7 +24047,7 @@
       "category": "Texture Mapping",
       "summary": "Applies a cylindrical texture mapping to a mesh.",
       "description": null,
-      "iconCss": "background: url('icons/human.png') -144px -24px",
+      "iconCss": "background: url('icons/human.png') -120px -24px",
       "helpLink": "https://grasshopperdocs.com/components/human/cylinderMapping.html"
     },
     {
@@ -24177,7 +24057,7 @@
       "category": "Texture Mapping",
       "summary": "Applies a planar texture mapping to a mesh.",
       "description": null,
-      "iconCss": "background: url('icons/human.png') 0px -96px",
+      "iconCss": "background: url('icons/human.png') -168px -72px",
       "helpLink": "https://grasshopperdocs.com/components/human/planarMapping.html"
     },
     {
@@ -24187,7 +24067,7 @@
       "category": "Texture Mapping",
       "summary": "Applies a spherical texture mapping to a mesh.",
       "description": null,
-      "iconCss": "background: url('icons/human.png') -24px -120px",
+      "iconCss": "background: url('icons/human.png') -192px -96px",
       "helpLink": "https://grasshopperdocs.com/components/human/sphericalMapping.html"
     },
     {
@@ -24197,7 +24077,7 @@
       "category": "Texture Mapping",
       "summary": "Applies a surface UV texture mapping to a mesh.",
       "description": null,
-      "iconCss": "background: url('icons/human.png') -48px -120px",
+      "iconCss": "background: url('icons/human.png') -216px -96px",
       "helpLink": "https://grasshopperdocs.com/components/human/surfaceMapping.html"
     },
     {
@@ -27659,16 +27539,6 @@
       "description": null,
       "iconCss": "background: url('icons/kangaroo2.png') 0px -240px",
       "helpLink": "https://grasshopperdocs.com/components/kangaroo2/remeshByColour.html"
-    },
-    {
-      "name": "remesher",
-      "id": "remesher",
-      "library": "Kangaroo 2",
-      "category": "Mesh",
-      "summary": "Remeshing tool",
-      "description": null,
-      "iconCss": "background: url('icons/kangaroo2.png') -24px -240px",
-      "helpLink": "https://grasshopperdocs.com/components/kangaroo2/remesher.html"
     },
     {
       "name": "Simple",
@@ -37311,16 +37181,6 @@
       "helpLink": "https://grasshopperdocs.com/components/octopus/constructNetworkoEL.html"
     },
     {
-      "name": "Construct Network by Geometry (octEvoLearn)",
-      "id": "Construct Network by Geometry (octEvoLearn)",
-      "library": "Octopus",
-      "category": "Evolutionary Learning",
-      "summary": "Create an ANN geometrically",
-      "description": null,
-      "iconCss": "background: url('icons/octopus.png') 0px -96px",
-      "helpLink": "https://grasshopperdocs.com/components/octopus/constructNetworkByGeometryoctEvoLearn.html"
-    },
-    {
       "name": "Crossover (oEL)",
       "id": "MutW (octEvoLearn)",
       "library": "Octopus",
@@ -38547,7 +38407,7 @@
       "category": "Data",
       "summary": "Decompose an associative array into items",
       "description": null,
-      "iconCss": "background: url('icons/pancake.png') -48px -72px",
+      "iconCss": "background: url('icons/pancake.png') -216px -48px",
       "helpLink": "https://grasshopperdocs.com/components/pancake/deconstructAssociativeArray.html"
     },
     {
@@ -38567,7 +38427,7 @@
       "category": "Data",
       "summary": "Retrieve metadata from geometry",
       "description": null,
-      "iconCss": "background: url('icons/pancake.png') -168px -48px",
+      "iconCss": "background: url('icons/pancake.png') -120px -48px",
       "helpLink": "https://grasshopperdocs.com/components/pancake/extractMetadata.html"
     },
     {
@@ -38577,18 +38437,8 @@
       "category": "Data",
       "summary": "Merge two or more associative arrays",
       "description": null,
-      "iconCss": "background: url('icons/pancake.png') -72px -72px",
+      "iconCss": "background: url('icons/pancake.png') 0px -72px",
       "helpLink": "https://grasshopperdocs.com/components/pancake/mergeAssociativeArray.html"
-    },
-    {
-      "name": "Remove Metadata",
-      "id": "pcRemoveData",
-      "library": "Pancake",
-      "category": "Data",
-      "summary": "Appended metadata will be preserved if you bake the geometry into Rhino and can be further read.This component is used to remove metadata from geometry.",
-      "description": null,
-      "iconCss": "background: url('icons/pancake.png') -192px -72px",
-      "helpLink": "https://grasshopperdocs.com/components/pancake/removeMetadata.html"
     },
     {
       "name": "Set Principle Value",
@@ -38597,7 +38447,7 @@
       "category": "Data",
       "summary": "Set the principle value of an associative array",
       "description": "Set the principle value of an associative array. An assoc will behave like its principal value if the processing component doesn't support associative array. If unset, an assoc will take the first item as its principle value, unless the first item is a String/Text. If unset and the first item is a String/Text, an assoc will not have a principle value. See example for more information.",
-      "iconCss": "background: url('icons/pancake.png') -24px -96px",
+      "iconCss": "background: url('icons/pancake.png') -120px -72px",
       "helpLink": "https://grasshopperdocs.com/components/pancake/setPrincipleValue.html"
     },
     {
@@ -38607,7 +38457,7 @@
       "category": "Data",
       "summary": "Unwrapped an atom list to its original content",
       "description": null,
-      "iconCss": "background: url('icons/pancake.png') -120px -96px",
+      "iconCss": "background: url('icons/pancake.png') -216px -72px",
       "helpLink": "https://grasshopperdocs.com/components/pancake/unwrapList.html"
     },
     {
@@ -38617,7 +38467,7 @@
       "category": "Data",
       "summary": "Wrap a list to an atom list, which is a list but being treated as one single element",
       "description": null,
-      "iconCss": "background: url('icons/pancake.png') -168px -96px",
+      "iconCss": "background: url('icons/pancake.png') -24px -96px",
       "helpLink": "https://grasshopperdocs.com/components/pancake/wrapList.html"
     },
     {
@@ -38627,7 +38477,7 @@
       "category": "I/O",
       "summary": "Export options of AutoCAD",
       "description": null,
-      "iconCss": "background: url('icons/pancake.png') -144px -24px",
+      "iconCss": "background: url('icons/pancake.png') -120px -24px",
       "helpLink": "https://grasshopperdocs.com/components/pancake/autoCADExportOption.html"
     },
     {
@@ -38637,7 +38487,7 @@
       "category": "I/O",
       "summary": "Get the path of current Grasshopper definition/file, so that you can reference files wherever they are.",
       "description": null,
-      "iconCss": "background: url('icons/pancake.png') 0px -72px",
+      "iconCss": "background: url('icons/pancake.png') -192px -48px",
       "helpLink": "https://grasshopperdocs.com/components/pancake/definitionPath.html"
     },
     {
@@ -38647,7 +38497,7 @@
       "category": "I/O",
       "summary": "Export options of DXF",
       "description": null,
-      "iconCss": "background: url('icons/pancake.png') -168px -24px",
+      "iconCss": "background: url('icons/pancake.png') -144px -24px",
       "helpLink": "https://grasshopperdocs.com/components/pancake/dXFExportOption.html"
     },
     {
@@ -38657,7 +38507,7 @@
       "category": "I/O",
       "summary": "This component exports geometries from GH to .  file directlyThis component doesn't rely on Export command.",
       "description": null,
-      "iconCss": "background: url('icons/pancake.png') -96px -72px",
+      "iconCss": "background: url('icons/pancake.png') -24px -72px",
       "helpLink": "https://grasshopperdocs.com/components/pancake/export.html"
     },
     {
@@ -38667,7 +38517,7 @@
       "category": "I/O",
       "summary": "This component exports geometries from GH to 3DM file directlyThis component doesn't rely on any user interface operation in Rhino.",
       "description": null,
-      "iconCss": "background: url('icons/pancake.png') -96px -48px",
+      "iconCss": "background: url('icons/pancake.png') -48px -48px",
       "helpLink": "https://grasshopperdocs.com/components/pancake/export3DM.html"
     },
     {
@@ -38677,7 +38527,7 @@
       "category": "I/O",
       "summary": "This component exports geometries from GH to various formats with attributes and layer information (if the target format allows)",
       "description": "This component exports geometries from GH to various formats with attributes and layer information (if the target format allows).This component uses Rhino's Export from interactive environment. Therefore it would be blocked by another ongoing command.Remember to save your definiton before first export, as sometimes the operation will freeze Grasshopper. If such an issue occurs, try using compatible mode by right-clicking the component.",
-      "iconCss": "background: url('icons/pancake.png') -216px -48px",
+      "iconCss": "background: url('icons/pancake.png') -168px -48px",
       "helpLink": "https://grasshopperdocs.com/components/pancake/exportAs.html"
     },
     {
@@ -38687,7 +38537,7 @@
       "category": "I/O",
       "summary": "This component exports geometries from GH to STL file directlyThis component doesn't rely on any user interface operation in Rhino.",
       "description": null,
-      "iconCss": "background: url('icons/pancake.png') -120px -48px",
+      "iconCss": "background: url('icons/pancake.png') -72px -48px",
       "helpLink": "https://grasshopperdocs.com/components/pancake/exportSTL.html"
     },
     {
@@ -38697,7 +38547,7 @@
       "category": "I/O",
       "summary": "This component exports text to a file.",
       "description": null,
-      "iconCss": "background: url('icons/pancake.png') -144px -48px",
+      "iconCss": "background: url('icons/pancake.png') -96px -48px",
       "helpLink": "https://grasshopperdocs.com/components/pancake/exportTXT.html"
     },
     {
@@ -38707,7 +38557,7 @@
       "category": "I/O",
       "summary": "Export options of FBX",
       "description": null,
-      "iconCss": "background: url('icons/pancake.png') -192px -24px",
+      "iconCss": "background: url('icons/pancake.png') -168px -24px",
       "helpLink": "https://grasshopperdocs.com/components/pancake/fBXExportOption.html"
     },
     {
@@ -38717,7 +38567,7 @@
       "category": "I/O",
       "summary": "Calculate the next filename in a filepath series",
       "description": null,
-      "iconCss": "background: url('icons/pancake.png') -192px -48px",
+      "iconCss": "background: url('icons/pancake.png') -144px -48px",
       "helpLink": "https://grasshopperdocs.com/components/pancake/filepathSeries.html"
     },
     {
@@ -38727,38 +38577,8 @@
       "category": "I/O",
       "summary": "Export options of IGES format",
       "description": null,
-      "iconCss": "background: url('icons/pancake.png') -216px -24px",
+      "iconCss": "background: url('icons/pancake.png') -192px -24px",
       "helpLink": "https://grasshopperdocs.com/components/pancake/iGESExportOption.html"
-    },
-    {
-      "name": "Illustrator Export Option",
-      "id": "pcecAI",
-      "library": "Pancake",
-      "category": "I/O",
-      "summary": "Export options of Illustrator format",
-      "description": null,
-      "iconCss": "background: url('icons/pancake.png') -120px -24px",
-      "helpLink": "https://grasshopperdocs.com/components/pancake/illustratorExportOption.html"
-    },
-    {
-      "name": "Internalize",
-      "id": "pcInternalize",
-      "library": "Pancake",
-      "category": "I/O",
-      "summary": "This component wraps the 'Internalize' feature for automated workflow. This component should be used as a termination component.",
-      "description": null,
-      "iconCss": "background: url('icons/pancake.png') -24px -72px",
-      "helpLink": "https://grasshopperdocs.com/components/pancake/internalize.html"
-    },
-    {
-      "name": "OBJ Export Option",
-      "id": "pcecSKP",
-      "library": "Pancake",
-      "category": "I/O",
-      "summary": "Export options of OBJ",
-      "description": null,
-      "iconCss": "background: url('icons/pancake.png') 0px -48px",
-      "helpLink": "https://grasshopperdocs.com/components/pancake/oBJExportOption.html"
     },
     {
       "name": "Parse String",
@@ -38767,7 +38587,7 @@
       "category": "I/O",
       "summary": "Parse formatted string to its correct type",
       "description": "Parse formatted string to its correct type. Currently this component supports Integer, Number, Boolean, Guid, Length Quantity, Datetime, Point, Domain(1/2D), Colour and Json. See examples or manual for more information.",
-      "iconCss": "background: url('icons/pancake.png') -144px -72px",
+      "iconCss": "background: url('icons/pancake.png') -72px -72px",
       "helpLink": "https://grasshopperdocs.com/components/pancake/parseString.html"
     },
     {
@@ -38787,7 +38607,7 @@
       "category": "I/O",
       "summary": "Export options of SAT format",
       "description": null,
-      "iconCss": "background: url('icons/pancake.png') -24px -48px",
+      "iconCss": "background: url('icons/pancake.png') -216px -24px",
       "helpLink": "https://grasshopperdocs.com/components/pancake/sATExportOption.html"
     },
     {
@@ -38797,7 +38617,7 @@
       "category": "I/O",
       "summary": "Export options of SketchUp",
       "description": null,
-      "iconCss": "background: url('icons/pancake.png') -48px -48px",
+      "iconCss": "background: url('icons/pancake.png') 0px -48px",
       "helpLink": "https://grasshopperdocs.com/components/pancake/sketchUpExportOption.html"
     },
     {
@@ -38807,28 +38627,8 @@
       "category": "I/O",
       "summary": "Export options of STEP",
       "description": null,
-      "iconCss": "background: url('icons/pancake.png') -72px -48px",
+      "iconCss": "background: url('icons/pancake.png') -24px -48px",
       "helpLink": "https://grasshopperdocs.com/components/pancake/sTEPExportOption.html"
-    },
-    {
-      "name": "Pancake Routine Status",
-      "id": "pcRoutineStatus",
-      "library": "Pancake",
-      "category": "Internal",
-      "summary": "Check status of internal routine",
-      "description": null,
-      "iconCss": "background: url('icons/pancake.png') 0px -96px",
-      "helpLink": "https://grasshopperdocs.com/components/pancake/pancakeRoutineStatus.html"
-    },
-    {
-      "name": "Restore Config",
-      "id": "pcRestoreConfig",
-      "library": "Pancake",
-      "category": "Internal",
-      "summary": "Restore a packedcfg from file location.",
-      "description": null,
-      "iconCss": "background: url('icons/pancake.png') -216px -72px",
-      "helpLink": "https://grasshopperdocs.com/components/pancake/restoreConfig.html"
     },
     {
       "name": "Default Value",
@@ -38847,7 +38647,7 @@
       "category": "Logic",
       "summary": "Postpone data until signal is received",
       "description": null,
-      "iconCss": "background: url('icons/pancake.png') -144px -96px",
+      "iconCss": "background: url('icons/pancake.png') 0px -96px",
       "helpLink": "https://grasshopperdocs.com/components/pancake/waitUntil.html"
     },
     {
@@ -38877,7 +38677,7 @@
       "category": "Quantity",
       "summary": "Provide special values such as null, NaN, +/-Infinity",
       "description": null,
-      "iconCss": "background: url('icons/pancake.png') -120px -72px",
+      "iconCss": "background: url('icons/pancake.png') -48px -72px",
       "helpLink": "https://grasshopperdocs.com/components/pancake/nullValues.html"
     },
     {
@@ -38887,7 +38687,7 @@
       "category": "Quantity",
       "summary": "Fulfill arithmetic operator on quantities and numbers",
       "description": "Fulfill arithmetic operator on quantities and numbers. Rhino 6 user may also use the built-in Add, Sub, Multiply and Mass Addition component to process quantities.For detailed information, see manual or examples.",
-      "iconCss": "background: url('icons/pancake.png') -168px -72px",
+      "iconCss": "background: url('icons/pancake.png') -96px -72px",
       "helpLink": "https://grasshopperdocs.com/components/pancake/quantityOperator.html"
     },
     {
@@ -38897,7 +38697,7 @@
       "category": "Quantity",
       "summary": "Set the precision of a quantity. Precision may have different meanings on different quantities. See manual or example for more information.",
       "description": null,
-      "iconCss": "background: url('icons/pancake.png') -48px -96px",
+      "iconCss": "background: url('icons/pancake.png') -144px -72px",
       "helpLink": "https://grasshopperdocs.com/components/pancake/setPrecision.html"
     },
     {
@@ -38907,7 +38707,7 @@
       "category": "Quantity",
       "summary": "Convert a quantity to a decimal length with designated unit.",
       "description": null,
-      "iconCss": "background: url('icons/pancake.png') -72px -96px",
+      "iconCss": "background: url('icons/pancake.png') -168px -72px",
       "helpLink": "https://grasshopperdocs.com/components/pancake/toDecimalLength.html"
     },
     {
@@ -38917,7 +38717,7 @@
       "category": "Quantity",
       "summary": "Convert a quantity to a feet-inch length with designated unit.",
       "description": null,
-      "iconCss": "background: url('icons/pancake.png') -96px -96px",
+      "iconCss": "background: url('icons/pancake.png') -192px -72px",
       "helpLink": "https://grasshopperdocs.com/components/pancake/toFeetInchLength.html"
     },
     {
@@ -42471,16 +42271,6 @@
       "helpLink": "https://grasshopperdocs.com/components/physxgh/pXSimulate.html"
     },
     {
-      "name": "Create Plankton",
-      "id": "CreatePlankton",
-      "library": "Plankton",
-      "category": "Triangulation",
-      "summary": "Create a new Plankton halfedge mesh from a Grasshopper Mesh",
-      "description": null,
-      "iconCss": "background: url('icons/plankton.png') -24px 0px",
-      "helpLink": "https://grasshopperdocs.com/components/plankton/createPlankton.html"
-    },
-    {
       "name": "Deconstruct Plankton",
       "id": "DeconstructPlankton",
       "library": "Plankton",
@@ -42497,7 +42287,7 @@
       "category": "Triangulation",
       "summary": "Create a new Plankton mesh from an existing Plankton mesh and a list of points",
       "description": null,
-      "iconCss": "background: url('icons/plankton.png') -48px 0px",
+      "iconCss": "background: url('icons/plankton.png') -24px 0px",
       "helpLink": "https://grasshopperdocs.com/components/plankton/planktonFromPoints.html"
     },
     {
@@ -47347,7 +47137,7 @@
       "category": "Reindeer",
       "summary": "Deconstructs an assembly into elements, nodes and details",
       "description": null,
-      "iconCss": "background: url('icons/reindeer.png') -48px -72px",
+      "iconCss": "background: url('icons/reindeer.png') -24px -72px",
       "helpLink": "https://grasshopperdocs.com/components/reindeer/deconstructAssembly.html"
     },
     {
@@ -47357,7 +47147,7 @@
       "category": "Reindeer",
       "summary": "Deconstruct an element into its properties",
       "description": null,
-      "iconCss": "background: url('icons/reindeer.png') -72px -72px",
+      "iconCss": "background: url('icons/reindeer.png') -48px -72px",
       "helpLink": "https://grasshopperdocs.com/components/reindeer/deconstructElement.html"
     },
     {
@@ -47367,7 +47157,7 @@
       "category": "Reindeer",
       "summary": "Deconstructs a node into its properties. 0.5 Version has limited options",
       "description": null,
-      "iconCss": "background: url('icons/reindeer.png') -96px -72px",
+      "iconCss": "background: url('icons/reindeer.png') -72px -72px",
       "helpLink": "https://grasshopperdocs.com/components/reindeer/deconstructNode.html"
     },
     {
@@ -47451,16 +47241,6 @@
       "helpLink": "https://grasshopperdocs.com/components/reindeer/detailTypology.html"
     },
     {
-      "name": "Detailing Group Definition",
-      "id": "DG",
-      "library": "Reindeer",
-      "category": "Reindeer",
-      "summary": "Define the detailing groups by adding true and false properties",
-      "description": null,
-      "iconCss": "background: url('icons/reindeer.png') 0px -72px",
-      "helpLink": "https://grasshopperdocs.com/components/reindeer/detailingGroupDefinition.html"
-    },
-    {
       "name": "Drill",
       "id": "D",
       "library": "Reindeer",
@@ -47477,7 +47257,7 @@
       "category": "Reindeer",
       "summary": "creates a beam element.",
       "description": null,
-      "iconCss": "background: url('icons/reindeer.png') -24px -72px",
+      "iconCss": "background: url('icons/reindeer.png') 0px -72px",
       "helpLink": "https://grasshopperdocs.com/components/reindeer/element.html"
     },
     {
@@ -47487,7 +47267,7 @@
       "category": "Reindeer",
       "summary": "Detail search based on amount of elements at the detail",
       "description": null,
-      "iconCss": "background: url('icons/reindeer.png') -216px -72px",
+      "iconCss": "background: url('icons/reindeer.png') -192px -72px",
       "helpLink": "https://grasshopperdocs.com/components/reindeer/elementAmountRule.html"
     },
     {
@@ -47507,7 +47287,7 @@
       "category": "Reindeer",
       "summary": "Detail search based on the length of the elements",
       "description": null,
-      "iconCss": "background: url('icons/reindeer.png') 0px -96px",
+      "iconCss": "background: url('icons/reindeer.png') -216px -72px",
       "helpLink": "https://grasshopperdocs.com/components/reindeer/elementLengthRule.html"
     },
     {
@@ -47527,7 +47307,7 @@
       "category": "Reindeer",
       "summary": "Loads structural material properties.",
       "description": null,
-      "iconCss": "background: url('icons/reindeer.png') -120px -72px",
+      "iconCss": "background: url('icons/reindeer.png') -96px -72px",
       "helpLink": "https://grasshopperdocs.com/components/reindeer/loadStructuralMaterialProp.html"
     },
     {
@@ -47537,7 +47317,7 @@
       "category": "Reindeer",
       "summary": "LocalAlignment of crossSection.",
       "description": null,
-      "iconCss": "background: url('icons/reindeer.png') -72px -96px",
+      "iconCss": "background: url('icons/reindeer.png') -24px -96px",
       "helpLink": "https://grasshopperdocs.com/components/reindeer/localAlignment.html"
     },
     {
@@ -47547,7 +47327,7 @@
       "category": "Reindeer",
       "summary": "Creates a Material",
       "description": null,
-      "iconCss": "background: url('icons/reindeer.png') -144px -72px",
+      "iconCss": "background: url('icons/reindeer.png') -120px -72px",
       "helpLink": "https://grasshopperdocs.com/components/reindeer/material.html"
     },
     {
@@ -47557,7 +47337,7 @@
       "category": "Reindeer",
       "summary": "Creates Structural Material Properties",
       "description": null,
-      "iconCss": "background: url('icons/reindeer.png') -96px -96px",
+      "iconCss": "background: url('icons/reindeer.png') -48px -96px",
       "helpLink": "https://grasshopperdocs.com/components/reindeer/materialStructuralProp.html"
     },
     {
@@ -47577,7 +47357,7 @@
       "category": "Reindeer",
       "summary": "Detail search checking if the details node is within one of the regions.",
       "description": null,
-      "iconCss": "background: url('icons/reindeer.png') -24px -96px",
+      "iconCss": "background: url('icons/reindeer.png') 0px -96px",
       "helpLink": "https://grasshopperdocs.com/components/reindeer/nodeInRegion.html"
     },
     {
@@ -47607,7 +47387,7 @@
       "category": "Reindeer",
       "summary": "Preview Element",
       "description": null,
-      "iconCss": "background: url('icons/reindeer.png') -168px -72px",
+      "iconCss": "background: url('icons/reindeer.png') -144px -72px",
       "helpLink": "https://grasshopperdocs.com/components/reindeer/previewElement.html"
     },
     {
@@ -47627,7 +47407,7 @@
       "category": "Reindeer",
       "summary": "CrossSection is being generated based on width, height, alignment and height-direction. GL26 as default material.",
       "description": null,
-      "iconCss": "background: url('icons/reindeer.png') -192px -72px",
+      "iconCss": "background: url('icons/reindeer.png') -168px -72px",
       "helpLink": "https://grasshopperdocs.com/components/reindeer/rectangularCrossSection.html"
     },
     {
@@ -47639,16 +47419,6 @@
       "description": null,
       "iconCss": "background: url('icons/reindeer.png') -144px -48px",
       "helpLink": "https://grasshopperdocs.com/components/reindeer/reindeerAssembly.html"
-    },
-    {
-      "name": "Select Detailing Group",
-      "id": "DG",
-      "library": "Reindeer",
-      "category": "Reindeer",
-      "summary": "Use the group name to select a detailing group",
-      "description": null,
-      "iconCss": "background: url('icons/reindeer.png') -48px -96px",
-      "helpLink": "https://grasshopperdocs.com/components/reindeer/selectDetailingGroup.html"
     },
     {
       "name": "Tenon",

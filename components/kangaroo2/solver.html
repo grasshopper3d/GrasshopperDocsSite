@@ -461,14 +461,9 @@ Main
 <a href="../../components/kangaroo2/remeshByColour.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') 0px -240px" data-downtip="Remesh By Colour"></div></a>
 </div>
 </td>
-<td>
-<div class="ghcolumn">
-<a href="../../components/kangaroo2/remesher.html"><div class="ghsprite" style="background: url('../../icons/kangaroo2.png') -24px -240px" data-toptip="remesher"></div></a>
-</div>
-</td>
 </tr>
 <tr class="ghgroup-title-row">
-<td class="ghgroup-title" colspan="12">
+<td class="ghgroup-title" colspan="11">
 Mesh
 </td>
 </tr>
@@ -546,20 +541,6 @@ Utility
 <tr><td><b>Tolerance</b></td><td>Tolerance</td><td>Points closer than this distance will be combined into a single particle</td><td>Number</td></tr>
 <tr><td><b>On</b></td><td>On</td><td>If true, Kangaroo will continue to iterate until reaching the given threshold value</td><td>Boolean</td></tr>
 <tr><td><b>GoalObjects</b></td><td>GoalObjects</td><td>GoalObjects</td><td>Generic</td></tr>
-<tr><td><b>Points</b></td><td>Points</td><td>Initial particle positions (only needed when giving Goals by index)</td><td>Point</td></tr>
-<tr><td><b>Reset</b></td><td>Reset</td><td>Hard Reset (completely rebuild the particle list and indexing)</td><td>Boolean</td></tr>
-<tr><td><b>Restart</b></td><td>Restart</td><td>Soft Reset (move particles back to initial positions, but without changing topology)</td><td>Boolean</td></tr>
-<tr><td><b>Parallel</b></td><td>Parallel</td><td>Whether to use multi-threading (This can speed calculation when you have very complex or numerous Goals, but may be slower for simple setups)</td><td>Boolean</td></tr>
-<tr><td><b>Threshold</b></td><td>Threshold</td><td>Stop when average movement is less than this (default is 1e-15)</td><td>Number</td></tr>
-<tr><td><b>Tolerance</b></td><td>Tolerance</td><td>Points closer than this distance will be combined into a single particle</td><td>Number</td></tr>
-<tr><td><b>AddCurrent</b></td><td>AddCurrent</td><td>If true, new GoalObjects given by position will combine vertices with current particle positions, and if false, based on initial positions</td><td>Boolean</td></tr>
-<tr><td><b>On</b></td><td>On</td><td>If true, Kangaroo will continue to iterate until reaching the given threshold value</td><td>Boolean</td></tr>
-<tr><td><b>GoalObjects</b></td><td>GoalObjects</td><td>GoalObjects</td><td>Generic</td></tr>
-<tr><td><b>Reset</b></td><td>Reset</td><td>Hard Reset (completely rebuild the particle list and indexing)</td><td>Boolean</td></tr>
-<tr><td><b>Threshold</b></td><td>Threshold</td><td>Stop when average movement is less than this (default is 1e-15)</td><td>Number</td></tr>
-<tr><td><b>Tolerance</b></td><td>Tolerance</td><td>Points closer than this distance will be combined into a single particle</td><td>Number</td></tr>
-<tr><td><b>On</b></td><td>On</td><td>If true, Kangaroo will continue to iterate until reaching the given threshold value</td><td>Boolean</td></tr>
-<tr><td><b>GoalObjects</b></td><td>GoalObjects</td><td>GoalObjects</td><td>Generic</td></tr>
 <tr><td><b>Reset</b></td><td>Reset</td><td>Hard Reset (completely rebuild the particle list and indexing)</td><td>Boolean</td></tr>
 <tr><td><b>Threshold</b></td><td>Threshold</td><td>Stop when average movement is less than this (default is 1e-15)</td><td>Number</td></tr>
 <tr><td><b>Tolerance</b></td><td>Tolerance</td><td>Points closer than this distance will be combined into a single particle</td><td>Number</td></tr>
@@ -581,11 +562,6 @@ Utility
 <tr><td><b>I</b></td><td>I</td><td>Iterations</td><td>Integer</td></tr>
 <tr><td><b>V</b></td><td>V</td><td>V</td><td>Point</td></tr>
 <tr><td><b>O</b></td><td>O</td><td>GoalFunction Output tree</td><td>Generic Data</td></tr>
-<tr><td><b>V</b></td><td>V</td><td>V</td><td>Point</td></tr>
-<tr><td><b>O</b></td><td>O</td><td>GoalFunction Outputs</td><td>Generic</td></tr>
-<tr><td><b>I</b></td><td>I</td><td>Iterations</td><td>Integer</td></tr>
-<tr><td><b>V</b></td><td>V</td><td>V</td><td>Point</td></tr>
-<tr><td><b>O</b></td><td>O</td><td>GoalFunction Outputs</td><td>Generic</td></tr>
 <tr><td><b>I</b></td><td>I</td><td>Iterations</td><td>Integer</td></tr>
 <tr><td><b>V</b></td><td>V</td><td>V</td><td>Point</td></tr>
 <tr><td><b>O</b></td><td>O</td><td>GoalFunction Output tree</td><td>Generic</td></tr>
