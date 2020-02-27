@@ -38447,7 +38447,7 @@
       "category": "Data",
       "summary": "Set the principle value of an associative array",
       "description": "Set the principle value of an associative array. An assoc will behave like its principal value if the processing component doesn't support associative array. If unset, an assoc will take the first item as its principle value, unless the first item is a String/Text. If unset and the first item is a String/Text, an assoc will not have a principle value. See example for more information.",
-      "iconCss": "background: url('icons/pancake.png') -120px -72px",
+      "iconCss": "background: url('icons/pancake.png') -96px -72px",
       "helpLink": "https://grasshopperdocs.com/components/pancake/setPrincipleValue.html"
     },
     {
@@ -38457,7 +38457,7 @@
       "category": "Data",
       "summary": "Unwrapped an atom list to its original content",
       "description": null,
-      "iconCss": "background: url('icons/pancake.png') -216px -72px",
+      "iconCss": "background: url('icons/pancake.png') -192px -72px",
       "helpLink": "https://grasshopperdocs.com/components/pancake/unwrapList.html"
     },
     {
@@ -38467,7 +38467,7 @@
       "category": "Data",
       "summary": "Wrap a list to an atom list, which is a list but being treated as one single element",
       "description": null,
-      "iconCss": "background: url('icons/pancake.png') -24px -96px",
+      "iconCss": "background: url('icons/pancake.png') 0px -96px",
       "helpLink": "https://grasshopperdocs.com/components/pancake/wrapList.html"
     },
     {
@@ -38499,16 +38499,6 @@
       "description": null,
       "iconCss": "background: url('icons/pancake.png') -144px -24px",
       "helpLink": "https://grasshopperdocs.com/components/pancake/dXFExportOption.html"
-    },
-    {
-      "name": "Export",
-      "id": "pcExport",
-      "library": "Pancake",
-      "category": "I/O",
-      "summary": "This component exports geometries from GH to .  file directlyThis component doesn't rely on Export command.",
-      "description": null,
-      "iconCss": "background: url('icons/pancake.png') -24px -72px",
-      "helpLink": "https://grasshopperdocs.com/components/pancake/export.html"
     },
     {
       "name": "Export 3DM",
@@ -38587,7 +38577,7 @@
       "category": "I/O",
       "summary": "Parse formatted string to its correct type",
       "description": "Parse formatted string to its correct type. Currently this component supports Integer, Number, Boolean, Guid, Length Quantity, Datetime, Point, Domain(1/2D), Colour and Json. See examples or manual for more information.",
-      "iconCss": "background: url('icons/pancake.png') -72px -72px",
+      "iconCss": "background: url('icons/pancake.png') -48px -72px",
       "helpLink": "https://grasshopperdocs.com/components/pancake/parseString.html"
     },
     {
@@ -38647,7 +38637,7 @@
       "category": "Logic",
       "summary": "Postpone data until signal is received",
       "description": null,
-      "iconCss": "background: url('icons/pancake.png') 0px -96px",
+      "iconCss": "background: url('icons/pancake.png') -216px -72px",
       "helpLink": "https://grasshopperdocs.com/components/pancake/waitUntil.html"
     },
     {
@@ -38677,7 +38667,7 @@
       "category": "Quantity",
       "summary": "Provide special values such as null, NaN, +/-Infinity",
       "description": null,
-      "iconCss": "background: url('icons/pancake.png') -48px -72px",
+      "iconCss": "background: url('icons/pancake.png') -24px -72px",
       "helpLink": "https://grasshopperdocs.com/components/pancake/nullValues.html"
     },
     {
@@ -38687,7 +38677,7 @@
       "category": "Quantity",
       "summary": "Fulfill arithmetic operator on quantities and numbers",
       "description": "Fulfill arithmetic operator on quantities and numbers. Rhino 6 user may also use the built-in Add, Sub, Multiply and Mass Addition component to process quantities.For detailed information, see manual or examples.",
-      "iconCss": "background: url('icons/pancake.png') -96px -72px",
+      "iconCss": "background: url('icons/pancake.png') -72px -72px",
       "helpLink": "https://grasshopperdocs.com/components/pancake/quantityOperator.html"
     },
     {
@@ -38697,7 +38687,7 @@
       "category": "Quantity",
       "summary": "Set the precision of a quantity. Precision may have different meanings on different quantities. See manual or example for more information.",
       "description": null,
-      "iconCss": "background: url('icons/pancake.png') -144px -72px",
+      "iconCss": "background: url('icons/pancake.png') -120px -72px",
       "helpLink": "https://grasshopperdocs.com/components/pancake/setPrecision.html"
     },
     {
@@ -38707,7 +38697,7 @@
       "category": "Quantity",
       "summary": "Convert a quantity to a decimal length with designated unit.",
       "description": null,
-      "iconCss": "background: url('icons/pancake.png') -168px -72px",
+      "iconCss": "background: url('icons/pancake.png') -144px -72px",
       "helpLink": "https://grasshopperdocs.com/components/pancake/toDecimalLength.html"
     },
     {
@@ -38717,7 +38707,7 @@
       "category": "Quantity",
       "summary": "Convert a quantity to a feet-inch length with designated unit.",
       "description": null,
-      "iconCss": "background: url('icons/pancake.png') -192px -72px",
+      "iconCss": "background: url('icons/pancake.png') -168px -72px",
       "helpLink": "https://grasshopperdocs.com/components/pancake/toFeetInchLength.html"
     },
     {
