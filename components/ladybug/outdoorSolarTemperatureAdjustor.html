@@ -2,17 +2,16 @@
 <html lang="en" xmlns:og="http://ogp.me/ns#">
 <head data-layout-view="wide">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Outdoor Solar Temperature Adjustor - Ladybug - Grasshopper Docs</title>
+<title>Outdoor Solar Temperature Adjustor - Ladybug - Component for Grasshopper | Grasshopper Docs</title>
 <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 <link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
 
-<meta name="description" content="A guide to component Outdoor Solar Temperature Adjustor in Grasshopper 3D." />
-<meta name="title" content="Outdoor Solar Temperature Adjustor - Ladybug - Grasshopper Docs" />
+<meta name="description" content="Use this component to adjust an existing Mean Radiant Temperature for shortwave solar radiation.  This adjusted mean radiant temperature can then be used in comfort studies.&lt;br&gt;Note that this component assumes that you have already accounted for longwave radiation in the form of the _baseTemperature input.  If you do not hook up a _baseTemperature, this component will assume that the surrounding radiant temperature is the same as the air temperature, which is a decent assumption for someone standing in an unobstructed field.  However, the more obstacles that surround the person (and the more &quot;context&quot; that you add), the more important it is to derive a starting mean radiant temperature from a Honeybee Energy simulation.  Also note that this component is not meant to account for shortwave radiation passing through glass.&lt;br&gt;This component uses Radiance functions in order to determine the amount of direct and diffuse solar radiation falling on a comfort mannequin.  The portion reflected off of the ground to the comfort mannequin is derived from these values of direct and diffuse radiation.&lt;br&gt;Lastly, the formulas to translate this radiation into an effective radiant field and into a solar-adjusted mean radiant temperature come from this paper:&lt;br&gt;Arens, Edward; Huang, Li; Hoyt, Tyler; Zhou, Xin; Shiavon, Stefano. (2014). Modeling the comfort effects of short-wave solar radiation indoors.  Indoor Environmental Quality (IEQ).&lt;br&gt;http://escholarship.org/uc/item/89m1h2dg#page-4&lt;br&gt;" />
+<meta name="title" content="Outdoor Solar Temperature Adjustor - Ladybug - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:title" content="Outdoor Solar Temperature Adjustor - Ladybug - Component for Grasshopper | Grasshopper Docs" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="http://grasshopperdocs.com/" />
-<meta property="og:title" content="Outdoor Solar Temperature Adjustor - Ladybug - Grasshopper Docs" />
-
-<link rel="image_src" href="http://grasshopperdocs.com/ning/2985220.jpg" />
+<meta property="og:url" content="https://grasshopperdocs.com/components/ladybug/outdoorSolarTemperatureAdjustor.html" />
+<meta property="og:site_name" content="Grasshopper Docs" />
 
 <link href="../../style.css" rel="stylesheet" type="text/css" />
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>

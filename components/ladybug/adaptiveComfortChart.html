@@ -2,17 +2,16 @@
 <html lang="en" xmlns:og="http://ogp.me/ns#">
 <head data-layout-view="wide">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Adaptive Comfort Chart - Ladybug - Grasshopper Docs</title>
+<title>Adaptive Comfort Chart - Ladybug - Component for Grasshopper | Grasshopper Docs</title>
 <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 <link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
 
-<meta name="description" content="A guide to component Adaptive Comfort Chart in Grasshopper 3D." />
-<meta name="title" content="Adaptive Comfort Chart - Ladybug - Grasshopper Docs" />
+<meta name="description" content="Use this component to calculate the adaptive comfort for a given set of input conditions.&lt;br&gt;This component will output a stream of 0&#39;s and 1&#39;s indicating whether certain conditions are comfortable given the prevailing mean monthly temperature that ocuppants tend to adapt themselves to.&lt;br&gt;This component will also output a series of interger numbers that indicate the following: -1 = The average monthly temperature is too extreme for the adaptive model. 0 = The input conditions are too cold for occupants. 1 = The input conditions are comfortable for occupants. 2 = The input conditions are too hot for occupants.&lt;br&gt;Lastly, this component outputs the percent of time comfortable, hot, cold and monthly extreme as well as a lit of numbers indicating the upper temperature of comfort and lower temperature of comfort.&lt;br&gt;The adaptive comfort model was created in response to the shortcomings of the PMV model that became apparent when it was applied to buildings without air conditioning.  Namely, the PMV model was over-estimating the discomfort of occupants in warm conditions of nautrally ventilated buildings.&lt;br&gt;Accordingly, the adaptive comfort model was built on the work of hundreds of field studies in which people in naturally ventilated buildings were asked asked about how comfortable they were.&lt;br&gt;Results showed that users tended to adapt themselves to the monthly mean temperature and would be comfortable in buildings so long as the building temperature remained around a value close to that monthly mean.  This situation held true so long as the monthly mean temperature remained above 10 C and below 33.5 C.&lt;br&gt;The comfort models that make this component possible were translated to python from a series of validated javascript comfort models coded at the Berkely Center for the Built Environment (CBE).  The Adaptive model used by both the CBE Tool and this component was originally published in ASHARAE 55.&lt;br&gt;Special thanks goes to the authors of the online CBE Thermal Comfort Tool who first coded the javascript: Hoyt Tyler, Schiavon Stefano, Piccioli Alberto, Moon Dustin, and Steinfeld Kyle. http://cbe.berkeley.edu/comforttool/&lt;br&gt;" />
+<meta name="title" content="Adaptive Comfort Chart - Ladybug - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:title" content="Adaptive Comfort Chart - Ladybug - Component for Grasshopper | Grasshopper Docs" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="http://grasshopperdocs.com/" />
-<meta property="og:title" content="Adaptive Comfort Chart - Ladybug - Grasshopper Docs" />
-
-<link rel="image_src" href="http://grasshopperdocs.com/ning/2985220.jpg" />
+<meta property="og:url" content="https://grasshopperdocs.com/components/ladybug/adaptiveComfortChart.html" />
+<meta property="og:site_name" content="Grasshopper Docs" />
 
 <link href="../../style.css" rel="stylesheet" type="text/css" />
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>

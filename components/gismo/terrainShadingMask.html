@@ -2,17 +2,16 @@
 <html lang="en" xmlns:og="http://ogp.me/ns#">
 <head data-layout-view="wide">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Terrain Shading Mask - Gismo - Grasshopper Docs</title>
+<title>Terrain Shading Mask - Gismo - Component for Grasshopper | Grasshopper Docs</title>
 <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 <link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
 
-<meta name="description" content="A guide to component Terrain Shading Mask in Grasshopper 3D." />
-<meta name="title" content="Terrain Shading Mask - Gismo - Grasshopper Docs" />
+<meta name="description" content="Use this component to create a 3D Terrain shading mask for a particular location.&lt;br&gt;It&#39;s a diagram which maps the silhouette of the surrounding terrain (hills, valleys, mountains, tree tops...) in 360 degrees directions seen from above the astronomical horizon.&lt;br&gt;It can be used as a &quot;context_&quot; input in mountainous or higher latitude regions for any kind of sun related analysis: sunlight hours analysis, solar radiation analysis, view analysis, photovoltaics/solar water heating sunpath shading ...&lt;br&gt;-&lt;br&gt;!!! ATTENTION !!!   This component may crash Rhino 5 application due to requirement to generate large topography data! To prevent this, it is suggested to own a 64 bit version of Rhino 5 and have strong enough PC configuration. If you do not have either of these two, it is recommended to keep the maxVisibilityRadius_ value to default value of 100 to prevent the crash of Rhino.&lt;br&gt;Also try saving your .gh definition before running this component!&lt;br&gt;-&lt;br&gt;Component requires that you are connected to the Internet, as it has to download the topography data.&lt;br&gt;It also requires MapWinGIS application to be installed.&lt;br&gt;Download and install either 32 bit or 64 bit (depending on your Rhino 5 version) version of MapWinGIS from here:&lt;br&gt;https://github.com/MapWindow/MapWinGIS/releases&lt;br&gt;-&lt;br&gt;Component mainly based on:&lt;br&gt;&quot;Mathematical cartography&quot;, V. Jovanovic, VGI 1983.&lt;br&gt;&quot;Surveying and Levelling Second Edition&quot;, Tata McGraw-Hill Education Pvt. Ltd., 5.7 Corrections to be applied, N.N. Basak, 2004&lt;br&gt;&quot;Vincenty solutions of geodesics on the ellipsoid&quot; article by Chris Veness&lt;br&gt;https://books.google.rs/books/about/Matemati%C4%8Dka_kartografija.html?id=GcXEMgEACAAJ&amp;redir_esc=y&lt;br&gt;https://books.google.rs/books?id=fIvvAwAAQBAJ&amp;printsec=frontcover#v=onepage&amp;q&amp;f=false&lt;br&gt;http://www.movable-type.co.uk/scripts/latlong-vincenty.html&lt;br&gt;-&lt;br&gt;Provided by Gismo 0.0.3" />
+<meta name="title" content="Terrain Shading Mask - Gismo - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:title" content="Terrain Shading Mask - Gismo - Component for Grasshopper | Grasshopper Docs" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="http://grasshopperdocs.com/" />
-<meta property="og:title" content="Terrain Shading Mask - Gismo - Grasshopper Docs" />
-
-<link rel="image_src" href="http://grasshopperdocs.com/ning/2985220.jpg" />
+<meta property="og:url" content="https://grasshopperdocs.com/components/gismo/terrainShadingMask.html" />
+<meta property="og:site_name" content="Grasshopper Docs" />
 
 <link href="../../style.css" rel="stylesheet" type="text/css" />
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>

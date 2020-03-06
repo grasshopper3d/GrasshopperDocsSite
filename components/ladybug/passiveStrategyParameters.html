@@ -2,17 +2,16 @@
 <html lang="en" xmlns:og="http://ogp.me/ns#">
 <head data-layout-view="wide">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Passive Strategy Parameters - Ladybug - Grasshopper Docs</title>
+<title>Passive Strategy Parameters - Ladybug - Component for Grasshopper | Grasshopper Docs</title>
 <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 <link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
 
-<meta name="description" content="A guide to component Passive Strategy Parameters in Grasshopper 3D." />
-<meta name="title" content="Passive Strategy Parameters - Ladybug - Grasshopper Docs" />
+<meta name="description" content="Use this component to adjust the assumptions of the passive strategies that can be overalid on the Ladybug the Psychrometric Chart. The default assumptions of each of the strategies are as follows: &lt;br&gt;Evaporative Cooling - This polygon represents the conditions under which direct evaporative cooling would be helpful.  As such, it takes as its upper limit the line of constant enthalpy from the edge of the comfort polygon and includes all warm temperatures below it.  If the user has set a minimum humidity tolerance, the polygon will also include the points beneath the comfort polygon as it is assumed that the evaporation of water will both humidify and cool the air.  Nothe that this direct evaporative cooling polygon is slightly different than 2-stage evaporative cooling.&lt;br&gt;Thermal Mass + Night Flush - The polygon represents the conditions under which shaded, night-flushed thermal mass can keep occupants cool. By default, this polygon assumes that temperatures can get as high as 16.7 C above the max temperature of the comfort polygon as long temperatures 12 hours before the hot period are 2.8 C lower than the max temperture of the comfort polygon.  This parameter component can be used to adjust these two numbers. The thermal mass polygon is limited in terms of humidity in that it obeys any limits on absolute humidity that the comfort polygon dies.&lt;br&gt;Occupant Use of Fans - This polygon is made by assuming that a wind speed of 1.5 m/s is the maximum speed tolerable before it starts blowing papers and becomes annoying to occupants.  This strategy parameters component can be used to adjust this maximum acceptable wind speed. As such, the polygon is determined by running a PMV model with this wind speed and the input rad temp, met rate and clo level of the psych chart.  This component obeys any limits on humidity that the comfort polygon does.  Note that this polygon assumes that you are already naturally ventilating and that your natural ventilation period is defined by your comfort polygon.&lt;br&gt;Internal Heat Gain - The component assumes a minimum building balance point of 12.8 C and any conditions that are warmer than that (up to the comfort polygon) will keep occupants comfortable.  It is assumed that, above this outdoor temperature, the building is free-running and occupants are able to open windows as they wish.  Note that this balance temperature of 12.8 is fairly low and assumes a large number of inside heat sources or people as well as in insulated envelope.  This balance temperature can be adjusted with this strategyPar component.&lt;br&gt;Dessicant Dehumidification - This polygon represents the conditions under which dessicant dehumidification would be helpful.  As such, it takes as its upper limit the line of constant enthalpy from the edge of the comfort polygon and includes all humid conditions below it.  Note that this polygon does not appear if there is no upper humidity limit on the comfort polygon.&lt;br&gt;" />
+<meta name="title" content="Passive Strategy Parameters - Ladybug - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:title" content="Passive Strategy Parameters - Ladybug - Component for Grasshopper | Grasshopper Docs" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="http://grasshopperdocs.com/" />
-<meta property="og:title" content="Passive Strategy Parameters - Ladybug - Grasshopper Docs" />
-
-<link rel="image_src" href="http://grasshopperdocs.com/ning/2985220.jpg" />
+<meta property="og:url" content="https://grasshopperdocs.com/components/ladybug/passiveStrategyParameters.html" />
+<meta property="og:site_name" content="Grasshopper Docs" />
 
 <link href="../../style.css" rel="stylesheet" type="text/css" />
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>

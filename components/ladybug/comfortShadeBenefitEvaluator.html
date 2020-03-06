@@ -2,17 +2,16 @@
 <html lang="en" xmlns:og="http://ogp.me/ns#">
 <head data-layout-view="wide">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Comfort Shade Benefit Evaluator - Ladybug - Grasshopper Docs</title>
+<title>Comfort Shade Benefit Evaluator - Ladybug - Component for Grasshopper | Grasshopper Docs</title>
 <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 <link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
 
-<meta name="description" content="A guide to component Comfort Shade Benefit Evaluator in Grasshopper 3D." />
-<meta name="title" content="Comfort Shade Benefit Evaluator - Ladybug - Grasshopper Docs" />
+<meta name="description" content="This is a component for visualizing the desirability of shade in terms of comfort temperature by using solar vectors, a series of hourly temperatures (usually outdoor temperatures), and an assumed balance temperature.  The balance temperature represents the median temperture that people find comfortable, which can vary from climate to climate but is usually somewhere around 20C.&lt;br&gt;Solar vectors for hours when the temperature is above the balance point contribute positively to shade desirability while solar vectors for hours when the temperature is below the balance point contribute negatively.&lt;br&gt;The component outputs a colored mesh of the shade illustrating the net effect of shading each mesh face.  A higher saturation of blue indicates that shading the cell is very desirable.  A higher saturation of red indicates that shading the cell is harmful (blocking more winter sun than summer sun). Desaturated cells indicate that shading the cell will have relatively little effect on outdoor comfort or building performance.&lt;br&gt;The units for shade desirability are net temperture degree-days helped per unit area of shade if the test cell is blue.  If the test cell is red, the units are net heating degree-days harmed per unit area of shade.&lt;br&gt;The method used by this component is based off of the Shaderade method developed by Christoph Reinhart, Jon Sargent, Jeffrey Niemasz.  This component uses Shaderade&#39;s method for evaluating shade and window geometry in terms of solar vectors but substitutes Shaderade&#39;s energy simulation for an evaluation of heating and temperture degree-days about a balance temperature. &lt;br&gt;A special thanks goes to them and their research.  A paper detailing the Shaderade method is available at:&lt;br&gt;http://web.mit.edu/tito_/www/Publications/BS2011_Shaderade.pdf&lt;br&gt;The heating/temperture degree-day calculation used here works by first getting the percentage of sun blocked by the test cell for each hour of the year using the Shaderade method.  Next, this percentage for each hour is multiplied by the temperature above or below the balance point for each hour to get a &quot;degree-hour&quot; for each hour of the year for a cell.  Then, all the temperture-degree hours (above the balance point) and heating degree-hours (below the balance point) are summed to give the total heating or temperture degree-hours helped or harmed respectively.  This number is divided by 24 hours of a day to give degree-days.  These degree days are normalized by the area of the cell to make the metric consistent across cells of different area.  Lastly, the negative heating degree-days are added to the positive temperture degree-days to give a net effect for the cell.&lt;br&gt;" />
+<meta name="title" content="Comfort Shade Benefit Evaluator - Ladybug - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:title" content="Comfort Shade Benefit Evaluator - Ladybug - Component for Grasshopper | Grasshopper Docs" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="http://grasshopperdocs.com/" />
-<meta property="og:title" content="Comfort Shade Benefit Evaluator - Ladybug - Grasshopper Docs" />
-
-<link rel="image_src" href="http://grasshopperdocs.com/ning/2985220.jpg" />
+<meta property="og:url" content="https://grasshopperdocs.com/components/ladybug/comfortShadeBenefitEvaluator.html" />
+<meta property="og:site_name" content="Grasshopper Docs" />
 
 <link href="../../style.css" rel="stylesheet" type="text/css" />
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>

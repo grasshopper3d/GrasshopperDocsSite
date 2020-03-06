@@ -2,17 +2,16 @@
 <html lang="en" xmlns:og="http://ogp.me/ns#">
 <head data-layout-view="wide">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Split Floor2Thermal Zones - Honeybee - Grasshopper Docs</title>
+<title>Split Floor2Thermal Zones - Honeybee - Component for Grasshopper | Grasshopper Docs</title>
 <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 <link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
 
-<meta name="description" content="A guide to component Split Floor2Thermal Zones in Grasshopper 3D." />
-<meta name="title" content="Split Floor2Thermal Zones - Honeybee - Grasshopper Docs" />
+<meta name="description" content="Use this component to divide up a brep (polysurface) representative of a building floor into smaller volumes that roughly correspond to how a generic EnergyPlus model should be zoned.&lt;br&gt;This zoning divide up each floor into a core and perimeter zones, which helps account for the different microclimates you would get on each of the different orientations of a building.&lt;br&gt;Note: Currently in this WIP convex only convex geometry can be handled. Most concave geometries will fail, and any shapes with holes in them will fail.&lt;br&gt;If you have a single mass representing two towers off of a podium, the two towers are not a continuous mass and you should therefore send each tower and the podium in as a separate Brep into this component.&lt;br&gt;Core and perimeter zoneing should work for almost all masses where all walls are planar.  &lt;br&gt;While this component can usually get you the most of the way there, it is still recommended that you bake the output and check the geometry in Rhino before turning the breps into HBZones.&lt;br&gt;The assumption about an E+ zone is that the air is well mixed and all at the same temperature.&lt;br&gt;Therefore, it is usually customary to break up a building depending on the areas where you would expect different building microclimates to exist.&lt;br&gt;This includes breaking up the building into floors (since each floor can have a different microclimate) and breaking up each floor into a core zone and perimeter zones (since each side of the buidling gets a different amount of solar gains and losses/gains through the envelope).&lt;br&gt;This component helps break up building masses in such a manner.&lt;br&gt;" />
+<meta name="title" content="Split Floor2Thermal Zones - Honeybee - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:title" content="Split Floor2Thermal Zones - Honeybee - Component for Grasshopper | Grasshopper Docs" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="http://grasshopperdocs.com/" />
-<meta property="og:title" content="Split Floor2Thermal Zones - Honeybee - Grasshopper Docs" />
-
-<link rel="image_src" href="http://grasshopperdocs.com/ning/2985220.jpg" />
+<meta property="og:url" content="https://grasshopperdocs.com/components/honeybee/splitFloor2ThermalZones.html" />
+<meta property="og:site_name" content="Grasshopper Docs" />
 
 <link href="../../style.css" rel="stylesheet" type="text/css" />
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>

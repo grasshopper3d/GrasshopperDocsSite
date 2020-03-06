@@ -2,17 +2,16 @@
 <html lang="en" xmlns:og="http://ogp.me/ns#">
 <head data-layout-view="wide">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Set EP Air Flow - Honeybee - Grasshopper Docs</title>
+<title>Set EP Air Flow - Honeybee - Component for Grasshopper | Grasshopper Docs</title>
 <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 <link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
 
-<meta name="description" content="A guide to component Set EP Air Flow in Grasshopper 3D." />
-<meta name="title" content="Set EP Air Flow - Honeybee - Grasshopper Docs" />
+<meta name="description" content="Use this component to edit the airflow between your zones&#39;s air walls and/or set natural ventilation.  The natural ventilation that this component models is mostly meant for single zones and cases where there is not much airflow between zones. Specifically, this component can model a few common types of natural ventilation:&lt;br&gt;    1 - Single-sided Ventilation - ventilation driven by the height difference across individual windows on a single side of a building.&lt;br&gt;    2 - Cross Ventilation - ventilation driven by the pressure difference across windows on two opposite sides of a building.&lt;br&gt;    3 - Chimney Ventilation - ventilation driven by a chimney/stack that is attached to a zone.&lt;br&gt;    4 - Cowl Ventilation - ventilation driven by wind through a cowl attached to a zone.&lt;br&gt;    5 - Fan-driven Ventilation - ventilation at a constant flow rate driven by a fan.&lt;br&gt;The component can model &quot;multi-zone&quot; natural ventilation so long as there are no major vertical differences in height over multiple zones and the user understands that &quot;mixing objects&quot; of constant air flow are used to dsitribute incoming air between zones that are connected by an air wall.  As such, this method is not meant to model atriums or any method relying on inter-zone buoyancy-driven flow.&lt;br&gt;Natural ventilation (that i nt fan-driven) is computed using the following formulas:&lt;br&gt;Ventilation Wind = Wind Coefficient * Opening Area * Schedule * WindSpd &lt;br&gt;Ventilation Stack = Stack Discharge Coefficient * Opening Area * Schedule * SQRT(2 * Gravity * Operable Height * (|(Temp Zone - Temp Outdoors)| / Temp Zone)) &lt;br&gt;Total Ventilation = SQRT((Ventilation Wind)^2 + (Ventilation Stack)^2)&lt;br&gt;" />
+<meta name="title" content="Set EP Air Flow - Honeybee - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:title" content="Set EP Air Flow - Honeybee - Component for Grasshopper | Grasshopper Docs" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="http://grasshopperdocs.com/" />
-<meta property="og:title" content="Set EP Air Flow - Honeybee - Grasshopper Docs" />
-
-<link rel="image_src" href="http://grasshopperdocs.com/ning/2985220.jpg" />
+<meta property="og:url" content="https://grasshopperdocs.com/components/honeybee/setEPAirFlow.html" />
+<meta property="og:site_name" content="Grasshopper Docs" />
 
 <link href="../../style.css" rel="stylesheet" type="text/css" />
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>

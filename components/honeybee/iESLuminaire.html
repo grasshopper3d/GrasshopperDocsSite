@@ -2,17 +2,16 @@
 <html lang="en" xmlns:og="http://ogp.me/ns#">
 <head data-layout-view="wide">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>IES Luminaire - Honeybee - Grasshopper Docs</title>
+<title>IES Luminaire - Honeybee - Component for Grasshopper | Grasshopper Docs</title>
 <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 <link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
 
-<meta name="description" content="A guide to component IES Luminaire in Grasshopper 3D." />
-<meta name="title" content="IES Luminaire - Honeybee - Grasshopper Docs" />
+<meta name="description" content="This is the core component for adding photometric data into a lighting simulation. &lt;br&gt;It parses an IES photometric file to create a geometric representation of the photometric data on the Rhino viewport. &lt;br&gt;It also calls xform and ies2rad, two programs within RADIANCE, to create a RADIANCE representation of the photometric data.&lt;br&gt;In case _writeRad is set to True and all the other input requirements are satisfied a .rad file containing photometric information will be created.&lt;br&gt;This file, accessible through radFilePath should be connected to the additionalRadFiles_ input in the Honeybee Run Daylight Simulation component.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;Technical Notes:&lt;br&gt;----------------------&lt;br&gt;The parsing of IES files is based on IES LM-63-2002. &lt;br&gt;.&lt;br&gt;This component is only compatible with Type C photometry. &lt;br&gt;However, if Type B photometry is to be used, external programs such as the Photometric Toolbox can be used to convert Type B photometry to Type C.&lt;br&gt;.&lt;br&gt;The luminous shapes, as defined by LM-63-2002 currently compatible with this component are rectangular, circular and rectangular with luminous openings.&lt;br&gt;.&lt;br&gt;The curves drawn for creating the luminaire web is not based on interpolation. So it is possible that the curve may look irregular in case the number of vertical angles are less.&lt;br&gt;.&lt;br&gt;Suggested practices/workflow:&lt;br&gt;------------------------------------------&lt;br&gt;The _writeRad option should only be set to True once the amiming and positioning of luminaires has been confirmed.&lt;br&gt;.&lt;br&gt;In case the photometric distribution of the luminaire is not quadrilaterally symmetric, the _drawLuminaireWeb_ option should be set to True.&lt;br&gt;This will help in aiming and locating the luminaire properly.&lt;br&gt;.&lt;br&gt;In case the customLamp_ option is being used, the lumen depreciation factor of the custom lamp should be properly set for illuminance or luminance calculations." />
+<meta name="title" content="IES Luminaire - Honeybee - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:title" content="IES Luminaire - Honeybee - Component for Grasshopper | Grasshopper Docs" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="http://grasshopperdocs.com/" />
-<meta property="og:title" content="IES Luminaire - Honeybee - Grasshopper Docs" />
-
-<link rel="image_src" href="http://grasshopperdocs.com/ning/2985220.jpg" />
+<meta property="og:url" content="https://grasshopperdocs.com/components/honeybee/iESLuminaire.html" />
+<meta property="og:site_name" content="Grasshopper Docs" />
 
 <link href="../../style.css" rel="stylesheet" type="text/css" />
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
