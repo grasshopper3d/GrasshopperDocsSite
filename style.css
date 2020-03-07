@@ -5,6 +5,7 @@ body {
 	padding: 0 !important;
 	margin: 0 !important;
 	line-height: 1.3;
+	background-color: #767e80;
 }
 
 div,
@@ -291,7 +292,7 @@ hr {
 	border: 1px solid #ddd;
 	max-width: 200px;
 	max-height: 200px;
-	height: auto
+	height: auto;
 }
 
 #docs-profiles_chatterwall_list dl.comment dd.item_approval {
@@ -323,12 +324,6 @@ dl.vcard:after {
 	margin: auto;
 	text-align: left
 }
-
-#docs-head {
-	clear: left;
-	z-index: 2
-}
-
 #docs-navigation {
 	height: 1%;
 	margin-top: 1.5em
@@ -362,31 +357,27 @@ dl.vcard:after {
 	text-decoration: none
 }
 
-#docs-masthead p#docs-sitename {
-	margin: 0;
-	padding: .2em 0 0 15px;
-	font-size: 3em
-}
-
-#docs-masthead p#docs-sitedesc {
-	margin: 0;
-	font-size: 1.4em;
-	padding: 0 0 .5em 15px
-}
-
 #docs-foot {
-	color: #fff;
+	background-color: #242829;
 	font-size: .95em;
-	padding: 10px
+	padding: 10px;
+	color: #a0aab3;
+	height: 50px;
+	line-height: 25px;
 }
-
 #docs-foot a {
-	color: #fff
+	color: #e5ebf0;
+	text-decoration: none;
+}
+#docs-foot a:hover {
+	color: #fff;
+	text-decoration: none;
 }
 
 #docs-foot .right {
 	padding-left: 10px;
-	white-space: nowrap
+	margin-right: 10px;
+	white-space: nowrap;
 }
 
 #docs-overlay,
@@ -599,11 +590,6 @@ ul.backlink li a {
 	text-decoration: underline
 }
 
-#docs-foot,
-#docs-foot a {
-	color: #333
-}
-
 #docs-sitename,
 .docs-theme-heading-f,
 h1,
@@ -615,18 +601,6 @@ h6 {
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif
 }
 
-#docs-navigation li.this a,
-.docs-theme-body-t,
-body {
-	color: #333
-}
-
-#docs-head,
-#docs-head a,
-.docs-theme-header-c {
-	color: #498802
-}
-
 #docs,
 .docs-headerbg {
 	background-color: #fff;
@@ -634,11 +608,8 @@ body {
 	background-repeat: no-repeat
 }
 
-#docs-body,
-.docs-floating_container {
-	background-color: #f2ffd6;
-	background-image: none;
-	background-repeat: no-repeat
+#docs-body {
+	background-color: #fffce1;
 }
 
 #docs-navigation ul li.this a,
@@ -646,47 +617,60 @@ ul.page_tabs li.this {
 	background-color: #f2ffd6
 }
 
-#docs-foot,
-.docs-theme-footer-bc {
-	background-color: #93cf47!important
-}
 
 #docs {
 	margin: 0;
 	width: auto
 }
 
+#docs-body {
+	margin-top: 50px;
+}
+
 #docs-head {
 	left: 0;
 	top: 0;
 	width: 100%;
-	background: #4c8504 url(images/ghbanner.jpg) no-repeat;
-	border-bottom: 5px solid #70ae27;
-	background-repeat: no-repeat
+	clear: left;
+	z-index: 2;
+	background-color: #fafafb;
+	height: 60px;
+	box-sizing: border-box;
+	border-top: 3px solid #4fc67b;
+	position: fixed;
+	min-width: auto;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05),0 1px 4px rgba(0,0,0,0.05),0 2px 8px rgba(0,0,0,0.05);
 }
 
-#docs-foot {
-	height: 1.5em
+#docs-head img {
+	margin-top: 3px;
 }
 
-#docs-masthead p#docs-sitename {
+#docs-sitename {
+	display: inline-block;
+}
+
+#docs-sitename a {
 	font-weight: 700;
-	line-height: 1.1em;
-	padding: 5px 0 0 15px;
 	text-align: left;
-	color: #1c570d
+	color: #242829;
+	margin-top: 20px;
+	font-size: 30px;
+	padding: 15px;
 }
 
-#docs-masthead p#docs-sitedesc {
-	height: 1.1em;
-	text-align: left;
-	color: #969021;
-	text-transform: uppercase;
-	font-size: smaller
+#docs-sitedesc {
+	display: block;
+	color: #575757;
+	margin-left: 370px;
+	left: 0;
+	top: 25px;
+	position: fixed;
+	white-space: nowrap;
 }
 
 #docs-navigation {
-	margin-top: 0
+	margin-top: 0;
 }
 
 #docs-navigation ul li a {
@@ -935,11 +919,6 @@ a {
 }
 
 
-
-body {
-	background-color: #F2FFD6;
-}
-
 .page {
   position: relative;
   margin: 0px;
@@ -1013,7 +992,7 @@ table td {
 
 table th {
   color: #fff;
-  background-color: #8DC64F;
+  background-color: #54b377;
   padding: 2px 13px;
   text-align: left;
 }
@@ -1108,6 +1087,9 @@ a:hover {
   font-size: 9pt;
   color: #888;
 }
+.libheader .codeword {
+  color: inherit;
+}
 
 .desc {
   font-size: 9pt;
@@ -1137,14 +1119,20 @@ h3 {
 	top: 0px;
 	height: 60px;
 	width: 100%;
-	background: #4C8504 url("images/ghbanner.jpg") no-repeat scroll 0% 0%;
+    color: #fff;
+	background: #2f9756;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), 0 1px 4px rgba(0,0,0,0.05), 0 2px 8px rgba(0,0,0,0.05);
 	margin-top: 50px;
 	padding-top: 0px;
 	padding-left: 20px;
 }
 
 .libheader a {
-  color: #000;
+  color: #fff;
+    transition: color 100ms;
+}
+.libheader a:hover {
+  color: #98ffbe;
 }
 
 .lib-buttons {
@@ -1157,13 +1145,14 @@ h3 {
     padding: 6px 20px 6px 20px;
     margin: 10px 10px 10px 10px;
     color: #4c8504;
-    background-color: #bbf548;
+    background-color: #fff;
     font-size: 16px;
     text-decoration: none;
     transition: background-color 100ms;
 }
 .lib-buttons a:hover, .lib-buttons a:focus {
-	background-color: #e4ffad;
+	background-color: #4fc67b;
+	color: #fff;
     text-decoration: none;
 }
 
@@ -1200,7 +1189,7 @@ h3 {
     left: 0px;
     height: 100%;
     position: fixed;
-    background: #284A00;
+    background: #242829;
     box-shadow: inset -5px 0 5px 0px #112000;
     width: 140px;
     color: #fff;
@@ -1209,6 +1198,7 @@ h3 {
 
 #toc ul {
     margin: 0;
+	margin-top: 40px;
     padding-top: 20px;
     padding-bottom: 20px;
     list-style: none;
@@ -1233,11 +1223,10 @@ h3 {
 }
 
 #toc .toc-active {
-    background: #99E600;
+    background: #216c3d;
     box-shadow: inset -5px 0px 10px -5px #000;
 }
 #toc .toc-active a {
-	color: #000;
 }
 
 
@@ -1271,7 +1260,7 @@ h3 {
 	background: none;
 }
 .libtable tr:nth-child(2n) {
-	background-color: #e2f0c2 !important;
+	background-color: #f3eec1 !important;
 }
 
 .libtabcell {
@@ -1284,6 +1273,10 @@ h3 {
     display: block;
     height: 100%;
 	padding: 10px 10px;
+    transition: background-color 100ms, color 100ms;
+}
+.libheadercell .codeword {
+    transition: background-color 100ms, color 100ms;
 }
 .libheadercell a, .libheadercell a:hover, .libheadercell a:focus {
     text-decoration: none;
@@ -1303,18 +1296,18 @@ h3 {
 }
 .addon-buttons a {
 	display: inline-block;
-	border: 5px solid #3B7400;
+	border: 5px solid #2f9756;
 	padding: 10px 20px 5px 20px;
 	margin: 10px 10px 10px 10px;
 	color: #FFF;
-	background-color: #61A717;
+	background-color: #4cb673;
 	height: 35px;
 	font-size: 16px;
     text-decoration: none;
-	transition: background-color 100ms;
+    transition: background-color 100ms;
 }
 .addon-buttons a:hover, .addon-buttons a:focus {
-	background-color: #3B7400;
+	background-color: #2f9756;
     text-decoration: none;
 }
 h6 {
@@ -1403,6 +1396,7 @@ img.ghicon {
     content: attr(data-toptip);
     position: absolute;
 	display: none;
+	z-index: 3;
     
     /* customizable */
     background-color: #111;
@@ -1426,6 +1420,7 @@ img.ghicon {
     content: attr(data-downtip);
     position: absolute;
 	display: none;
+	z-index: 3;
     
     /* customizable */
     background-color: #111;
@@ -1512,6 +1507,7 @@ img.ghicon {
 .breadcrumb a, .breadcrumb a:after {
 	background: #fff;
 	color: black;
+    transition: background-color 100ms, color 100ms;
 }
 /* hover/active styles */
 .breadcrumb a:hover, .breadcrumb a.active, 
@@ -1597,4 +1593,7 @@ img.ghicon {
 }
 #html5gallery-elem-video-0 {
 	background: #000 !important;
+}
+.html5gallery-container-0 {
+	background-color: #fffce1 !important;
 }
