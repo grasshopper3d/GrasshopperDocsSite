@@ -1035,6 +1035,8 @@ img.ghicon {
 	background-color: #fffce1 !important;
 }
 
+
+
 /* MOBILE FRIENDLY - LANDSCAPE */
 @media screen and (max-width: 1000px) and (min-width: 601px) {
 	
@@ -1042,6 +1044,12 @@ img.ghicon {
 	.compo-page .ghbar {
 		visibility: hidden;
 		display: none;
+	}
+	
+	/* SMALL BUTTONS ON COMPO PAGE */
+	.addon-buttons a {
+		padding: 5px 20px 0px 20px;
+		margin: 5px;
 	}
 	
 }
@@ -1082,6 +1090,12 @@ img.ghicon {
 		display: block;
 	}
 	
+	/* SMALL BUTTONS ON COMPO PAGE */
+	.addon-buttons a {
+		padding: 5px 20px 0px 20px;
+		margin: 5px;
+	}
+	
 	/* HIDE RIBBON ON COMPO PAGE */
 	.compo-page .ghbar {
 		visibility: hidden;
@@ -1092,8 +1106,11 @@ img.ghicon {
 	.params-table  {
 		width: 100%;
 	}
-	.params-table>thead>tr>th, .params-table>tbody>tr>td  {
-		display: block;
+	.params-table>thead>tr>th  {
+		padding: 2px 4px;
+	}
+	.params-table>tbody>tr>td  {
+		padding: 6px 4px;
 	}
 	
 	/* MOBILE DISPLAY OF BREADCRUMBS */
