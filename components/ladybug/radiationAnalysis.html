@@ -1,7 +1,8 @@
 ﻿<!DOCTYPE html>
 <html lang="en" xmlns:og="http://ogp.me/ns#">
-<head data-layout-view="wide">
+<head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Radiation Analysis - Ladybug - Component for Grasshopper | Grasshopper Docs</title>
 <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 <link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
@@ -23,10 +24,10 @@
 <body>
 
 
-<div id="docs" class="docs-theme docs-widget_page docs-widget_page_page docs-widget_page_page_show" data-layout-pack="classic">
+<div id="docs">
 <div id="docs-head">
 <div id="docs-masthead">
-<p id="docs-sitename"><a href="http://grasshopperdocs.com/"><img src="../../images/logo.png" alt="Grasshopper Docs"></img></a></p>
+<p id="docs-sitename"><a href="http://grasshopperdocs.com/"><img src="../../images/logo.png" alt="Grasshopper Docs" onerror="this.style.display='none'"></img></a></p>
 <p id="docs-sitedesc">Community documentation for Grasshopper add-ons &amp; plugins</p>
 </div>
 </div>
@@ -35,7 +36,7 @@
 
 <div class="page">
 
-<div class="content">
+<div class="content compo-page">
 
 <div class="ghbar ">
 <div class="ghgroup">
@@ -592,7 +593,7 @@
 </div>
 <h3>This component allows you to calculate the radiation fallin on input _geometry using a sky matrix from the selectSkyMxt component.<br>This type of radiation sutdy is useful for building surfaces such as windows, where you might be interested in solar heat gain, or solar panels, where you might be interested in the energy that can be collected.<br>This component is also good for surfaces representing outdoor spaces (such as parks or seating areas) where radiation could affect thermal comfort or vegetation growth.<br>No reflection of sunlight is included in the radiation analysis with this component and it should therefore be used<br>neither for interior daylight studies nor for complex geometries nor for surfaces with high a reflectivity.<br>For these situations where the relfection of light is important, the Honeybee daylight components should be used instead of this one.<br></h3>
 <h2>Inputs</h2>
-<table>
+<table class="params-table input-params">
 <thead>
 <tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
 </thead>
@@ -618,7 +619,7 @@
 </table>
 
 <h2>Outputs</h2>
-<table>
+<table class="params-table output-params">
 <thead>
 <tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
 </thead>

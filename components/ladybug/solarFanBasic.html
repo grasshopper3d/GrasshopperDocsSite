@@ -1,7 +1,8 @@
 ﻿<!DOCTYPE html>
 <html lang="en" xmlns:og="http://ogp.me/ns#">
-<head data-layout-view="wide">
+<head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Solar Fan Basic - Ladybug - Component for Grasshopper | Grasshopper Docs</title>
 <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 <link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
@@ -23,10 +24,10 @@
 <body>
 
 
-<div id="docs" class="docs-theme docs-widget_page docs-widget_page_page docs-widget_page_page_show" data-layout-pack="classic">
+<div id="docs">
 <div id="docs-head">
 <div id="docs-masthead">
-<p id="docs-sitename"><a href="http://grasshopperdocs.com/"><img src="../../images/logo.png" alt="Grasshopper Docs"></img></a></p>
+<p id="docs-sitename"><a href="http://grasshopperdocs.com/"><img src="../../images/logo.png" alt="Grasshopper Docs" onerror="this.style.display='none'"></img></a></p>
 <p id="docs-sitedesc">Community documentation for Grasshopper add-ons &amp; plugins</p>
 </div>
 </div>
@@ -35,7 +36,7 @@
 
 <div class="page">
 
-<div class="content">
+<div class="content compo-page">
 
 <div class="ghbar ">
 <div class="ghgroup">
@@ -592,7 +593,7 @@
 </div>
 <h3>Use this component to generate a solar fan with minimumal input data. This component predefines monthly and hourly ranges in order to simplify the creation of useful fan geometry.    <br>The solar fan is used to ensure that a given property within a boundary curve is guarenteed a specified minimum hours of direct solar access for each day in a specified month range of the year.<br>Thus, context geometries surrounding this boundary curve that do not penetrate the solar fan will not cast shadows onto the boundary area for the specified hour and month range.<br>The start and end dates that determine the month range for solar access can be chosen from the following options:<br>0) Mar 21 - Jun 21<br>1) Mar 21 - Sep 21<br>2) Mar 21 - Dec 21<br>3) Jun 21 - Sep 21<br>4) Jun 21 - Dec 21<br>5) Sep 21 - Dec 21<br>The default set to 3) June 21 to September 21.<br>Note that extremely complicated concave shapes will take a long time to calculate a solar fan for.<br></h3>
 <h2>Inputs</h2>
-<table>
+<table class="params-table input-params">
 <thead>
 <tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
 </thead>
@@ -621,7 +622,7 @@ Dec 21 = Winter/Summer Solstice</td><td>Goo</td></tr>
 </table>
 
 <h2>Outputs</h2>
-<table>
+<table class="params-table output-params">
 <thead>
 <tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
 </thead>

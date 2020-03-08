@@ -1,7 +1,8 @@
 ﻿<!DOCTYPE html>
 <html lang="en" xmlns:og="http://ogp.me/ns#">
-<head data-layout-view="wide">
+<head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Shadow Study - Ladybug - Component for Grasshopper | Grasshopper Docs</title>
 <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 <link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
@@ -23,10 +24,10 @@
 <body>
 
 
-<div id="docs" class="docs-theme docs-widget_page docs-widget_page_page docs-widget_page_page_show" data-layout-pack="classic">
+<div id="docs">
 <div id="docs-head">
 <div id="docs-masthead">
-<p id="docs-sitename"><a href="http://grasshopperdocs.com/"><img src="../../images/logo.png" alt="Grasshopper Docs"></img></a></p>
+<p id="docs-sitename"><a href="http://grasshopperdocs.com/"><img src="../../images/logo.png" alt="Grasshopper Docs" onerror="this.style.display='none'"></img></a></p>
 <p id="docs-sitedesc">Community documentation for Grasshopper add-ons &amp; plugins</p>
 </div>
 </div>
@@ -35,7 +36,7 @@
 
 <div class="page">
 
-<div class="content">
+<div class="content compo-page">
 
 <div class="ghbar ">
 <div class="ghgroup">
@@ -592,7 +593,7 @@
 </div>
 <h3>Use this component to generate outline curves representing shadows cast by input _geometry for a given _sunVector.<br>Note that, to see shadows cast onto a ground, a surface representing the ground plane must be included in the input _geometry.<br>Connect output of Ladybug_Analysis period component to analysisPeriod_ on Ladybug_SunPath component. This will let you use a range of sunvectors. Using these range of sunvectors, you can turn this shadow study into a shadow range study.<br>Also, please note that, for a list of input _geometry that is larger than 4 or 5 breps, the calculation time of this component can be very long.  Please keep the input geometry to small lists or be prepared to wait a long time.<br>WARNING: This component is a proof of concept that will not work in every situation.  It is not ideal for analyzing curved surfaces and it is not able to calculate shadows for geometries that are intersecting each other.<br></h3>
 <h2>Inputs</h2>
-<table>
+<table class="params-table input-params">
 <thead>
 <tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
 </thead>
@@ -603,7 +604,7 @@
 </table>
 
 <h2>Outputs</h2>
-<table>
+<table class="params-table output-params">
 <thead>
 <tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
 </thead>

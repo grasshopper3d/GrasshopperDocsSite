@@ -1,7 +1,8 @@
 ﻿<!DOCTYPE html>
 <html lang="en" xmlns:og="http://ogp.me/ns#">
-<head data-layout-view="wide">
+<head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Adaptive Comfort Parameters - Ladybug - Component for Grasshopper | Grasshopper Docs</title>
 <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 <link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
@@ -23,10 +24,10 @@
 <body>
 
 
-<div id="docs" class="docs-theme docs-widget_page docs-widget_page_page docs-widget_page_page_show" data-layout-pack="classic">
+<div id="docs">
 <div id="docs-head">
 <div id="docs-masthead">
-<p id="docs-sitename"><a href="http://grasshopperdocs.com/"><img src="../../images/logo.png" alt="Grasshopper Docs"></img></a></p>
+<p id="docs-sitename"><a href="http://grasshopperdocs.com/"><img src="../../images/logo.png" alt="Grasshopper Docs" onerror="this.style.display='none'"></img></a></p>
 <p id="docs-sitedesc">Community documentation for Grasshopper add-ons &amp; plugins</p>
 </div>
 </div>
@@ -35,7 +36,7 @@
 
 <div class="page">
 
-<div class="content">
+<div class="content compo-page">
 
 <div class="ghbar ">
 <div class="ghgroup">
@@ -592,7 +593,7 @@
 </div>
 <h3>Use this component to set Adaptive comfort parameters for the Adaptive Comfort Calculator or the Adaptive Comfort Chart.  <br>Parameters include the ability to use either US (ASHRAE) or European (EN) standards as well as set the acceptability threshold for the percent of the occupants that are comfortable (which varies for different building types between the two standards).<br>This component also includes the ability to set a custom correlation between outdoor temperature and indoor desired temperature using a 'levelOfConditioning' variable and research that is not an official part of the ASHRAE or EN standards but is endorsed by many of the scientists who helped create these standards.<br>Detailed information on all of these parameters is described in this book:<br>Fergus Nicol, Michael Humphreys, Susan Roaf. Adaptive Thermal Comfort: Principles and Practice. Routledge, 2012. (https://books.google.com/books?id=vE7FBQAAQBAJ&dq=adaptive+thermal+comfort)<br>Users are also encouraged to use the 'Ladybug_Adaptive Comfort Chart' component or the Center for the Built Environment's (CBE) comfort tool to help visualize the differences between these parameters:<br>Special thanks goes to the authors of the online CBE Thermal Comfort Tool who first coded the javascript: Hoyt Tyler, Schiavon Stefano, Piccioli Alberto, Moon Dustin, and Steinfeld Kyle. http://cbe.berkeley.edu/comforttool/<br></h3>
 <h2>Inputs</h2>
-<table>
+<table class="params-table input-params">
 <thead>
 <tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
 </thead>
@@ -610,7 +611,7 @@ CIBSE (2006) Environmental Criteria for Design, Chapter 1: Environmental Design:
 </table>
 
 <h2>Outputs</h2>
-<table>
+<table class="params-table output-params">
 <thead>
 <tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
 </thead>

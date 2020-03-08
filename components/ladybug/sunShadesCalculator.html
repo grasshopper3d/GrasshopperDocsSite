@@ -1,7 +1,8 @@
 ﻿<!DOCTYPE html>
 <html lang="en" xmlns:og="http://ogp.me/ns#">
-<head data-layout-view="wide">
+<head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Sun Shades Calculator - Ladybug - Component for Grasshopper | Grasshopper Docs</title>
 <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 <link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
@@ -23,10 +24,10 @@
 <body>
 
 
-<div id="docs" class="docs-theme docs-widget_page docs-widget_page_page docs-widget_page_page_show" data-layout-pack="classic">
+<div id="docs">
 <div id="docs-head">
 <div id="docs-masthead">
-<p id="docs-sitename"><a href="http://grasshopperdocs.com/"><img src="../../images/logo.png" alt="Grasshopper Docs"></img></a></p>
+<p id="docs-sitename"><a href="http://grasshopperdocs.com/"><img src="../../images/logo.png" alt="Grasshopper Docs" onerror="this.style.display='none'"></img></a></p>
 <p id="docs-sitedesc">Community documentation for Grasshopper add-ons &amp; plugins</p>
 </div>
 </div>
@@ -35,7 +36,7 @@
 
 <div class="page">
 
-<div class="content">
+<div class="content compo-page">
 
 <div class="ghbar ">
 <div class="ghgroup">
@@ -592,7 +593,7 @@
 </div>
 <h3>Use this component to generate shading devices, either surface or pergola, for any glazed surface or list of glazed surfaces.  <br>The component first culls all sun vectors obstructed by the context, if provided.<br>By default it calculates the device as a "new brand" one but it also can calculate the cut profile for a given surface.<br>The default it will generate an overhang over the window (or multiple overhangs if the _numOfShds is increased).  <br>References:<br>Shaviv E., 1975. "A Method for the Design of Fixed External Sun-Shades". "Build International"  (8), Applied Science Publishers LTD, England, (pp.121-150).<br>Shaviv E., 1984. "A Design Tool for Determining the Form of Fixed & Movable Sun-Shades".  "ASHRAE Trans." Vol. 90, AT-84-18 No. 4, Atlanta (pp.1-14).<br></h3>
 <h2>Inputs</h2>
-<table>
+<table class="params-table input-params">
 <thead>
 <tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
 </thead>
@@ -617,7 +618,7 @@
 </table>
 
 <h2>Outputs</h2>
-<table>
+<table class="params-table output-params">
 <thead>
 <tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
 </thead>
