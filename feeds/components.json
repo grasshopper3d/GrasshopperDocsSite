@@ -31511,6 +31511,136 @@
       "helpLink": "https://grasshopperdocs.com/components/landsdesign/sprinklerOptions.html"
     },
     {
+      "name": "Window Frame",
+      "id": "L WindowFrame",
+      "library": "Leopard",
+      "category": "Editing",
+      "summary": "WindowFrame",
+      "description": null,
+      "iconCss": "background: url('icons/leopard.png') -48px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/leopard/windowFrame.html"
+    },
+    {
+      "name": "Select Geometry",
+      "id": "LSelGeo",
+      "library": "Leopard",
+      "category": "Select",
+      "summary": "Select Geometry, Selectable Preview",
+      "description": null,
+      "iconCss": "background: url('icons/leopard.png') -192px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/leopard/selectGeometry.html"
+    },
+    {
+      "name": "Select Mesh Edges",
+      "id": "L SelEdges",
+      "library": "Leopard",
+      "category": "Select",
+      "summary": "Select Mesh Edges",
+      "description": null,
+      "iconCss": "background: url('icons/leopard.png') -144px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/leopard/selectMeshEdges.html"
+    },
+    {
+      "name": "Select Mesh Faces",
+      "id": "L SelFaces",
+      "library": "Leopard",
+      "category": "Select",
+      "summary": "Select Mesh Faces",
+      "description": null,
+      "iconCss": "background: url('icons/leopard.png') -168px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/leopard/selectMeshFaces.html"
+    },
+    {
+      "name": "Select Mesh Vertices",
+      "id": "L SelVertices",
+      "library": "Leopard",
+      "category": "Select",
+      "summary": "Select Mesh Vertices",
+      "description": null,
+      "iconCss": "background: url('icons/leopard.png') -216px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/leopard/selectMeshVertices.html"
+    },
+    {
+      "name": "Catmull Clark Subdivision",
+      "id": "L CatmullClark",
+      "library": "Leopard",
+      "category": "SubD",
+      "summary": "Catmull Clark Subdivision",
+      "description": null,
+      "iconCss": "background: url('icons/leopard.png') 0px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/leopard/catmullClarkSubdivision.html"
+    },
+    {
+      "name": "Dual Mesh",
+      "id": "L DualMesh",
+      "library": "Leopard",
+      "category": "Topology",
+      "summary": "Dual Mesh",
+      "description": null,
+      "iconCss": "background: url('icons/leopard.png') -24px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/leopard/dualMesh.html"
+    },
+    {
+      "name": "Edge Neighbours",
+      "id": "L EdgeNB",
+      "library": "Leopard",
+      "category": "Topology",
+      "summary": "Getting Edge Neighbours Data, including face-edge-vertices",
+      "description": null,
+      "iconCss": "background: url('icons/leopard.png') -48px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/leopard/edgeNeighbours.html"
+    },
+    {
+      "name": "Edges",
+      "id": "L Edges",
+      "library": "Leopard",
+      "category": "Topology",
+      "summary": "Edges",
+      "description": null,
+      "iconCss": "background: url('icons/leopard.png') -72px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/leopard/edges.html"
+    },
+    {
+      "name": "Face Neighbours",
+      "id": "L FaceNB",
+      "library": "Leopard",
+      "category": "Topology",
+      "summary": "getting face neighbours information",
+      "description": null,
+      "iconCss": "background: url('icons/leopard.png') -96px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/leopard/faceNeighbours.html"
+    },
+    {
+      "name": "Faces",
+      "id": "L Faces",
+      "library": "Leopard",
+      "category": "Topology",
+      "summary": "get faces data in plankton sequence",
+      "description": null,
+      "iconCss": "background: url('icons/leopard.png') -120px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/leopard/faces.html"
+    },
+    {
+      "name": "Vertices",
+      "id": "L Vertices",
+      "library": "Leopard",
+      "category": "Topology",
+      "summary": "get vertices in plankton sequence",
+      "description": null,
+      "iconCss": "background: url('icons/leopard.png') -24px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/leopard/vertices.html"
+    },
+    {
+      "name": "Vertices Neighbours",
+      "id": "L VerticesN",
+      "library": "Leopard",
+      "category": "Topology",
+      "summary": "Getting Vertex Neighbours Data, including face-edge-vertices",
+      "description": null,
+      "iconCss": "background: url('icons/leopard.png') 0px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/leopard/verticesNeighbours.html"
+    },
+    {
       "name": "Convert JSON to XML",
       "id": "JSON-XML",
       "library": "LunchBox",
@@ -50219,6 +50349,256 @@
       "description": null,
       "iconCss": "background: url('icons/sPM.png') -48px -48px",
       "helpLink": "https://grasshopperdocs.com/components/spm/vectorFieldCreator.html"
+    },
+    {
+      "name": "Fill Linear",
+      "id": "FillL",
+      "library": "Squid",
+      "category": "Drawing palette",
+      "summary": "Create a linear gradient fill",
+      "description": null,
+      "iconCss": "background: url('icons/squid.png') -120px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/squid/fillLinear.html"
+    },
+    {
+      "name": "Fill Path",
+      "id": "FillP",
+      "library": "Squid",
+      "category": "Drawing palette",
+      "summary": "Create a gradient fill based on a curve",
+      "description": null,
+      "iconCss": "background: url('icons/squid.png') -144px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/squid/fillPath.html"
+    },
+    {
+      "name": "Fill Radial",
+      "id": "FillR",
+      "library": "Squid",
+      "category": "Drawing palette",
+      "summary": "Create a radial gradient fill",
+      "description": null,
+      "iconCss": "background: url('icons/squid.png') -168px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/squid/fillRadial.html"
+    },
+    {
+      "name": "Fill Solid",
+      "id": "FillS",
+      "library": "Squid",
+      "category": "Drawing palette",
+      "summary": "Create a solid fill",
+      "description": null,
+      "iconCss": "background: url('icons/squid.png') -96px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/squid/fillSolid.html"
+    },
+    {
+      "name": "Fill Texture",
+      "id": "FillT",
+      "library": "Squid",
+      "category": "Drawing palette",
+      "summary": "Create a texture fill",
+      "description": null,
+      "iconCss": "background: url('icons/squid.png') -24px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/squid/fillTexture.html"
+    },
+    {
+      "name": "Font",
+      "id": "Font",
+      "library": "Squid",
+      "category": "Drawing palette",
+      "summary": "Create font",
+      "description": null,
+      "iconCss": "background: url('icons/squid.png') -216px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/squid/font.html"
+    },
+    {
+      "name": "Outline",
+      "id": "Outline",
+      "library": "Squid",
+      "category": "Drawing palette",
+      "summary": "Create an outline",
+      "description": null,
+      "iconCss": "background: url('icons/squid.png') -24px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/squid/outline.html"
+    },
+    {
+      "name": "OutlineEx",
+      "id": "OutlineEx",
+      "library": "Squid",
+      "category": "Drawing palette",
+      "summary": "Create a complex outline",
+      "description": null,
+      "iconCss": "background: url('icons/squid.png') -48px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/squid/outlineEx.html"
+    },
+    {
+      "name": "Paragraph",
+      "id": "Paragraph",
+      "library": "Squid",
+      "category": "Drawing palette",
+      "summary": "Define paragraph formatting",
+      "description": null,
+      "iconCss": "background: url('icons/squid.png') -96px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/squid/paragraph.html"
+    },
+    {
+      "name": "Alpha",
+      "id": "Alpha",
+      "library": "Squid",
+      "category": "Instructions",
+      "summary": "Alters the alpha channel of the underlying image.White=opaque, black=transparent.",
+      "description": null,
+      "iconCss": "background: url('icons/squid.png') 0px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/squid/alpha.html"
+    },
+    {
+      "name": "Clear",
+      "id": "Clear",
+      "library": "Squid",
+      "category": "Instructions",
+      "summary": "Fill the picture using one color",
+      "description": null,
+      "iconCss": "background: url('icons/squid.png') 0px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/squid/clear.html"
+    },
+    {
+      "name": "Draw",
+      "id": "Draw",
+      "library": "Squid",
+      "category": "Instructions",
+      "summary": "Draw any type of curve using fill and/or outline",
+      "description": null,
+      "iconCss": "background: url('icons/squid.png') -48px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/squid/draw.html"
+    },
+    {
+      "name": "DrawEx",
+      "id": "DrawEx",
+      "library": "Squid",
+      "category": "Instructions",
+      "summary": "Draw complex shapes using fill and/or outline",
+      "description": null,
+      "iconCss": "background: url('icons/squid.png') -72px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/squid/drawEx.html"
+    },
+    {
+      "name": "Image",
+      "id": "Image",
+      "library": "Squid",
+      "category": "Instructions",
+      "summary": "Draw an image",
+      "description": null,
+      "iconCss": "background: url('icons/squid.png') -48px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/squid/image.html"
+    },
+    {
+      "name": "Save",
+      "id": "Save",
+      "library": "Squid",
+      "category": "Instructions",
+      "summary": "Create a Save File instruction",
+      "description": null,
+      "iconCss": "background: url('icons/squid.png') -168px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/squid/save.html"
+    },
+    {
+      "name": "Text",
+      "id": "Text",
+      "library": "Squid",
+      "category": "Instructions",
+      "summary": "Draw text",
+      "description": null,
+      "iconCss": "background: url('icons/squid.png') -216px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/squid/text.html"
+    },
+    {
+      "name": "Flip Order",
+      "id": "Flip",
+      "library": "Squid",
+      "category": "Modifiers",
+      "summary": "Draw fill over outline",
+      "description": null,
+      "iconCss": "background: url('icons/squid.png') -192px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/squid/flipOrder.html"
+    },
+    {
+      "name": "Overwrite",
+      "id": "Over",
+      "library": "Squid",
+      "category": "Modifiers",
+      "summary": "Overwrites color",
+      "description": null,
+      "iconCss": "background: url('icons/squid.png') -72px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/squid/overwrite.html"
+    },
+    {
+      "name": "Squid",
+      "id": "Squid",
+      "library": "Squid",
+      "category": "Squid",
+      "summary": "Draws the picture",
+      "description": null,
+      "iconCss": "background: url('icons/squid.png') -72px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/squid/squid.html"
+    },
+    {
+      "name": "Divide Curve",
+      "id": "Divide",
+      "library": "Squid",
+      "category": "Util",
+      "summary": "Use this component as an alternative to the default Draw and DrawEx curve division.",
+      "description": null,
+      "iconCss": "background: url('icons/squid.png') -24px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/squid/divideCurve.html"
+    },
+    {
+      "name": "Font List",
+      "id": "FontList",
+      "library": "Squid",
+      "category": "Util",
+      "summary": "Lists all installed fonts",
+      "description": null,
+      "iconCss": "background: url('icons/squid.png') 0px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/squid/fontList.html"
+    },
+    {
+      "name": "Quick Preview",
+      "id": "QPreview",
+      "library": "Squid",
+      "category": "Util",
+      "summary": "Quick bitmap preview",
+      "description": null,
+      "iconCss": "background: url('icons/squid.png') -120px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/squid/quickPreview.html"
+    },
+    {
+      "name": "Read",
+      "id": "Read",
+      "library": "Squid",
+      "category": "Util",
+      "summary": "Read a bitmap from file, then use it as Squid bitmap.",
+      "description": null,
+      "iconCss": "background: url('icons/squid.png') -144px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/squid/read.html"
+    },
+    {
+      "name": "Screen Map",
+      "id": "Map",
+      "library": "Squid",
+      "category": "Util",
+      "summary": "Maps the points to an active viewport coordinates.<br>Update by double clicking OR boolean input change OR the timer.",
+      "description": null,
+      "iconCss": "background: url('icons/squid.png') -192px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/squid/screenMap.html"
+    },
+    {
+      "name": "Text Curves",
+      "id": "TextC",
+      "library": "Squid",
+      "category": "Util",
+      "summary": "Text to curves.",
+      "description": "Text to curves.Note: Rhino 4 doesn't support paragraph formatting.Doesn't support underlined text.",
+      "iconCss": "background: url('icons/squid.png') -96px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/squid/textCurves.html"
     },
     {
       "name": "Curved Block",

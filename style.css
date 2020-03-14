@@ -1102,6 +1102,12 @@ img.ghicon {
 		display: none;
 	}
 	
+	/* HIDE VIDEO TUTORIALS ON ADDON PAGE */
+	.ghtutorials {
+		visibility: hidden;
+		display: none;
+	}
+	
 	/* IMPROVED TABLE ON COMPO PAGE */
 	.params-table  {
 		width: 100%;
@@ -1157,4 +1163,16 @@ img.ghicon {
 	.libtable td {
 		padding: 0;
 	}
+}
+
+
+/* VERIFIED */
+.verified-tick {
+	display: inline-block;
+	background: transparent url("images/tick.png") no-repeat scroll center;
+}
+.addon-header .verified-tick {
+	margin-left: 5px;
+	width: 22px;
+	height: 22px;
 }

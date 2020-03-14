@@ -11,7 +11,7 @@
       "components": 1,
       "description": "",
       "authorName": "Nikolay Anisimov",
-      "authorContact": null
+      "authorContact": ""
     },
     {
       "name": "Alba",
@@ -24,7 +24,7 @@
       "components": 49,
       "description": "Alba is a suite of tools in Rhino/Grasshopper that allows a user to visualize molecular biology and to perform genetic engineering in silico. These tools help to open the discipline of synthetic biology to creative artists, designers, and architects, allowing them to bring the insight of their respective disciplines into this powerful and rapidly-developing field.",
       "authorName": "Ryan Hoover",
-      "authorContact": null
+      "authorContact": "ryan@ryanhoover.org"
     },
     {
       "name": "Anemone",
@@ -49,8 +49,8 @@
       "isSystem": false,
       "components": 7,
       "description": "Plugin for making Animation in Grasshopper",
-      "authorName": "Yue\nZongzi",
-      "authorContact": "dbddqy@gmail.com\nzhongruqing.sun.zongzi@gmail.com"
+      "authorName": "Yue Zongzi",
+      "authorContact": "dbddqy@gmail.comzhongruqing.sun.zongzi@gmail.com"
     },
     {
       "name": "Aviary",
@@ -63,7 +63,7 @@
       "components": 58,
       "description": "Aviary is a multifaceted graphic toolkit operating on top of Grasshopper 3D. The goal of the project is the extension of Grasshopper’s incredible production capacity to the realm of presentation by providing a suite of tools for the parametric definition of formatting of content from interface and layouts though data and geometry. Leveraging and composing a wide array of open-source libraries, Aviary extends grasshoppers parameter-based model to the real-time creation and capturing of presentation content.",
       "authorName": "David Mans",
-      "authorContact": null
+      "authorContact": ""
     },
     {
       "name": "Axolotl",
@@ -75,8 +75,8 @@
       "isSystem": false,
       "components": 48,
       "description": "AXOLOTL provides a set of components for volumetric modeling in Rhino Grasshopper. They work based on the principle of signed distance functions (SDF). In boundary representations (BRep), objects are defined by vertices connected by edges and faces. In function representations (FRep), objects are defined by a function f that maps any point (x,y,z) to a real value d, the distance to the objects: f(x,y,z)=d\n\nThe components are organized in groups. A typical workflow is to choose objects from PRIMITIVES, combine them using e.g. Boolean operations from COMBINATIONS, add further MODIFICATIONS as necessary and finally visualize the distance object using a component from the MESHING tab. Furthermore, there are different kinds of LATTICES, some MATH functions, components to convert Rhino GEOMETRY into an SDF and some utilities to ANALYSE the SDF.",
-      "authorName": "worbit",
-      "authorContact": null
+      "authorName": "Mathias Bernhard",
+      "authorContact": ""
     },
     {
       "name": "Bengesht",
@@ -89,7 +89,7 @@
       "components": 16,
       "description": "These components of Bengesht can handle (send/receive) communication with a server over WebSocket protocol. Using these modules, Grasshopper can be plugged into a ROS based network of parallel processes (Nodes). RosBridge is a ROS package which serves as a WebSocket server on the ROS side. To make the communication between web applications and Grasshopper possible, I developed HTTP server components. HTTP is a bidirectional protocol for serving web contents. Parameters can be passed from web application for Grasshopper script, and the outcome can be sent back. The curves related components of Bengesht are initially created to simplify the process of modeling Muqarnas.\nLater, the Divide On Intersects components was used by our structural engineers during ITECH research pavilion to prepare models for structural analysis.",
       "authorName": "Behrooz Tahanzadeh",
-      "authorContact": null
+      "authorContact": ""
     },
     {
       "name": "Biomorpher",
@@ -115,7 +115,7 @@
       "components": 38,
       "description": "Bison is a landscape architecture plugin for Grasshopper + Rhino 6. It features tools for terrain mesh creation, analysis, editing, and annotation.\n\nIt focuses on a continuous workflow from mesh analysis to editing and works to keep components concise and intuitive. The analysis tools include slope and aspect visualization, cut/fill calculations, watershed modeling and more, while the editing components transform the mesh based on curves and points. Bison also includes tools for importing landscape meshes, triangulation, and resampling, as well as components for annotating plans and cutting sections.",
       "authorName": "bison.la",
-      "authorContact": null
+      "authorContact": "plugin@bison.la"
     },
     {
       "name": "Blindfold",
@@ -128,7 +128,7 @@
       "components": 1,
       "description": "Blindfold is a single component which can hide or show geometry in Rhino that is referenced into the Grasshopper document. Blinfold has three modes and an icon which changes depending on the mode it is set to: Off, Hide, or Show. Blindfold by default detects and hides/shows all geometry in Rhino that is referenced into any Grasshopper parameters or component inputs, optionally it can limit the hide/show operation to only the Rhino referenced geometries plugged into or set in the Limited input. When new Rhino geometry is referenced you can refresh the hide/show operation by clicking a button plugged into the Refresh input. Blindfold makes it easy to manage the visibility of your Rhino geometry referenced in Grasshopper so you can quickly avoid those annoying overlap display issues between Rhino and Grasshopper previews.",
       "authorName": "Ekim Royrp",
-      "authorContact": null
+      "authorContact": "ekimroyrp@gmail.com"
     },
     {
       "name": "Bowerbird",
@@ -153,7 +153,7 @@
       "isSystem": false,
       "components": 8,
       "description": "Box2D is a 2D rigid body simulation tool for Grasshopper. It uses Box2D physics engine and a C# wrapper from colgreen/box2Dx.",
-      "authorName": "Mahdiyar",
+      "authorName": "Mahdiyar Esmail Beigi",
       "authorContact": "Mahdiyar@outlook.com"
     },
     {
@@ -167,7 +167,7 @@
       "components": 17,
       "description": "Use Bubalus to achieve:\n1. Single object distribution (group)\n2. Multiple object distribution (group)\n3. Find the anchor of the original object\n4. Clean up objects in Rhino\n5.Populate two curve region with points\n6. According to the ratio random partition a list into",
       "authorName": "NARUTO",
-      "authorContact": null
+      "authorContact": ""
     },
     {
       "name": "BullAnt",
@@ -180,7 +180,7 @@
       "components": 50,
       "description": "BullAnt is a Rhino3d/Grasshopper plug-in primarily for Architects and Engineers (but also other Rhino/Grasshopper users) featuring computational design tools to enhance and extend the parent program and other 3rd party plug-ins. \n\nBullAnt features commands including mesh relaxation (minimal surfaces), mesh inflation (ETFE cushions), symmetry automation, tessellation (polygon packing), structural modelling/sketching (including parametric generation in Grasshopper), geodesic domes and curve network processing. \n\nAlso included are commands to model members such as steel beams. International standard profiles are included in the plug-in library, which can be easily extended with custom user profiles. Parametric profile from a property table can be applied to a document layer (swept along all curves within layer) or discrete curves. Profile table may be exchanged with external software. Swept profiles are updated automatically if rail curve is altered by user.",
       "authorName": "Jon Mirtschin",
-      "authorContact": null
+      "authorContact": "support@geometrygym.com"
     },
     {
       "name": "CarveRhino",
@@ -192,7 +192,7 @@
       "isSystem": false,
       "components": 1,
       "description": "",
-      "authorName": "KADK",
+      "authorName": "Tom Svilans",
       "authorContact": ""
     },
     {
@@ -206,7 +206,7 @@
       "components": 2,
       "description": "Allows the user to keyframe the animation of multiple objects in Grasshopper along a single slider. New version 0.7b allows you to export animation to 3D Studio Max for rendering.",
       "authorName": "Carson Smuts",
-      "authorContact": null
+      "authorContact": ""
     },
     {
       "name": "Chimpanzee",
@@ -219,7 +219,7 @@
       "components": 70,
       "description": "Chimpanzee is suitable for fractal enthusiasts. Chimpanzee focuses on fractal math and chaos theory. Chimpanzee currently includes strange attractors, maps, 4D hyperchaotic systems and iterated function systems.",
       "authorName": "Matous Stieber",
-      "authorContact": null
+      "authorContact": "matous.stieber@outlook.com"
     },
     {
       "name": "Clipper",
@@ -232,7 +232,7 @@
       "components": 5,
       "description": "Clipper is a 2D polygon Clipper offering polygon boolean operations (clipping): Intersection, Join, Difference, XOR. Offsets for polygons and Minkowski Sum and Differences.",
       "authorName": "Arend van Waart",
-      "authorContact": null
+      "authorContact": "arend@studioavw.nl"
     },
     {
       "name": "Cocoon",
@@ -245,7 +245,7 @@
       "components": 6,
       "description": "Cocoon is a fairly straightforward implementation of the Marching Cubes algorithm for turning iso-surfaces into polygonal meshes. It is geared specifically toward wrapping existing geometric elements, and works with combinations of points, breps and curves, allowing users to vary a number of parameters that enhance sculptural potentials. It is still rough (and there are definitely a number of other approaches to level sets and isosurfacing that are faster, more robust, more elegant, and/or have more potential) but due to time constraints related to other work I am doing – now and into the near future – I thought it effective and fun enough that it was worth it to make this available to the community. As such, though, general caveats apply: it’s probably easy to break, and it will definitely generate some artifacts. But please download and have a play, and feedback on the grasshopper forum is welcome. There’s a longer description after the break.",
       "authorName": "David Stasiuk",
-      "authorContact": null
+      "authorContact": "dave@provingground.io"
     },
     {
       "name": "Crane",
@@ -258,7 +258,7 @@
       "components": 39,
       "description": "Crane is a Grasshopper plugin to design origami products. Designing of foldable products with rigid folding motion is difficult for designers, architects, and researchers who are not origami experts. Crane is a powerful tool for not only such people but also origami experts. This software focuses on design, rigid folding simulation, form-finding, and fabrication for origami. Because Crane Solver is a hard constraint solver, it can precisely simulate a rigid folding motion and form-finding with geometrical constraints like Freeform Origami.",
       "authorName": "Suto Kai",
-      "authorContact": null
+      "authorContact": ""
     },
     {
       "name": "Culebra",
@@ -271,7 +271,7 @@
       "components": 32,
       "description": "Culebra is a 2D & 3D Multi Object Behavior library written in C# (Wrapper around Culebra Java library) focused on hybrid system interactions with custom Visualization, Data, and performance features. It contains a collection of objects and behaviors for creating dynamic multi agent interactions. For more information see the Culebra Java Library.",
       "authorName": "Luis Quinones",
-      "authorContact": null
+      "authorContact": "luis@complicitMatter.com"
     },
     {
       "name": "Dendro",
@@ -284,7 +284,7 @@
       "components": 14,
       "description": "Dendro is a volumetric modeling plug-in for Grasshopper built on top of the OpenVDB library. It provides multiple ways to wrap points, curves, and meshes as a volumetric data type, allowing you to then perform various operations on those volumes. Dendro includes components for boolean, smoothing, offsets, and morphing operations. \n\nWhen working with meshes or Breps, these types of operations are often computationally heavy, prone to failures, or cannot handle complex geometry. OpenVDB's volume data structures allow for quicker computation with higher repeatability, enabling you to leverage more complex operations within Grasshopper. \n\nThe goal was to make Dendro integrate into Grasshopper as seamlessly as possible. Whereas many voxel solutions require you to think of geometry as living with a bounding box, Dendro makes working with volumes no different than handling any other geometry in Grasshopper. Dendro works with many native Grasshopper components, avoiding the 'blocking' found in other plugins, and allowing you to move in and out of volume operations very quickly.",
       "authorName": "ecr labs",
-      "authorContact": null
+      "authorContact": "dev@ecrlabs.com"
     },
     {
       "name": "Design Space Exploration",
@@ -297,7 +297,7 @@
       "components": 15,
       "description": "Design Space Exploration (DSE) is a suite of open-source Grasshopper tools developed by Digital Structures at MIT.  These tools aim to support visual, performance-based design space exploration and interactive multi-objective optimization (MOO) for conceptual design.  Rather than one single component or user interface, these tools can be used flexibly with other Grasshopper components or plug-ins to take a variety of approaches to DSE and MOO, including a priori, a posteriori, and interactive articulation of performance priorities.  Various DSE components allow the user to sample a parametric design space made from sliders, automatically iterate and capture images and numerical properties, reconstruct previous designs, cluster designs into families, analyze the importance of design variables, approximate computationally-intensive performance evaluations, and find Pareto fronts for multi-objective problems.   Although the components are intended to link together for simple, automated workflows for performance-based design of buildings and other structures, they can be used for any applications that require these functionalities within Grasshopper.",
       "authorName": "Digital Structures (MIT)",
-      "authorContact": null
+      "authorContact": ""
     },
     {
       "name": "DIVA",
@@ -309,8 +309,8 @@
       "isSystem": false,
       "components": 49,
       "description": "Energy modeling components for Grasshopper",
-      "authorName": "Timur Dogan",
-      "authorContact": ""
+      "authorName": "Solemma",
+      "authorContact": "http://www.solemma.net"
     },
     {
       "name": "Dodo",
@@ -323,7 +323,7 @@
       "components": 44,
       "description": "Dodo is a collection of tools for machine learning, optimization, and geometry manipulation. Regarding AI, it features neural networks, gradient descent, stochastic gradient descent and swarm optimization. Dodo has tools for scalar, vector and tensor fields manipulation which can be visualized using isosurfaces. Some components are implementations of papers, you can find more info and reference in their html description.",
       "authorName": "Lorenzo Greco",
-      "authorContact": null
+      "authorContact": "lorenzogreco@parametricism.co.uk"
     },
     {
       "name": "Doodlebug",
@@ -336,7 +336,7 @@
       "components": 21,
       "description": "Doodlebug allows Grasshopper to query and drive Adobe Illustrator.\n\nGeometry from Grasshopper can be streamed directly to illustrator with full control over stroke, fill, and other appearance attributes. Geometry can also be retrieved from Illustrator, manipulated in Grasshopper, and then sent back for a full round-trip.",
       "authorName": "Andrew Heumann",
-      "authorContact": null
+      "authorContact": ""
     },
     {
       "name": "Droid",
@@ -349,7 +349,7 @@
       "components": 9,
       "description": "Droid is a 3D printing add-on, with control over model Slicing, Custom paths and Gcode generation. Designed to be used from small desktop 3d Printers, up to large scale Robotic Fabricators using FFF technologies and running from Gcode. Available to be used to prepare and print models in a 'Plug and Play' style with Droid components, or in a more controlled and experimental manner with Custom input and output print paths.\n\nDroid allows control over conventional Slicing features such as infill, shell thickness and caps, within the Rhino and Grasshopper environment. In addition, output and editing of paths is also available once models are sliced into the Rhino and Grasshopper workspace, allowing full control and analysis to the user.\nCustom or edited paths then can be input back into Droid for Gcode preparation and generation.\n\nThis should work with most major firmwares (Marlin, Repetier, RepRap, etc) and Gcode Reader. If you use a firmware and encounter any problems related to Gcode, let me know.\n\nDroid Components are Multi-Thread enabled, and may use all your processors resources during calculations.",
       "authorName": "ytsebastian",
-      "authorContact": null
+      "authorContact": "www.ytsproject.com"
     },
     {
       "name": "Duck",
@@ -362,7 +362,7 @@
       "components": 26,
       "description": "Duck executes the sorting function on various types of geometries (points, curves,breps, meshes...etc). Also, a new function is added that the geometries can be sorted flexible by assigning a reference point. Plus, it provides an application that reorganises sub-divided surfaces with a correct and customised data structure.",
       "authorName": "Wayne Yeh",
-      "authorContact": null
+      "authorContact": ""
     },
     {
       "name": "EdiTree",
@@ -414,7 +414,7 @@
       "components": 31,
       "description": "Emu is an interactive structural analysis and form-finding tool based on a 6DOF (6 degrees of freedom) formulation of the dynamic relaxation method allowing engineers and designers to run bi-axial bending and torsion simulations. It is aimed to be used in early design stages but yet giving real structural feedback.\n\nEmu was developed as part of a Master's thesis in Structural Engineering and Building Technology at Chalmers University of Technology, with the aim of simulating the very non-linear process of elastic gridshell erection.",
       "authorName": "Emil Poulsen",
-      "authorContact": null
+      "authorContact": ""
     },
     {
       "name": "FabTools",
@@ -427,7 +427,7 @@
       "components": 18,
       "description": "FabTools is a set of Clusters, that enhances the ability of Grasshopper. The Tools are for fabrication purposes in Grasshopper and improve your workflow and accelerate your scripting tasks.",
       "authorName": "Florian Frank",
-      "authorContact": null
+      "authorContact": ""
     },
     {
       "name": "Firefly",
@@ -453,7 +453,7 @@
       "components": 6,
       "description": "Flatworm is a GHPython implementation of the pure-python module RFQM.py for generating 'rigidly foldable quadrilateral meshes' (RFQM) in Grasshopper, that are flat foldbale! Such meshes may be used to create complex and flexible structures out of rigid materials, as no mesh face is ever deformed in the folding process.\n    \nFlatworm provides basic means of generating custom RFQMs as well as the famous Miura Ori fold pattern. Meshes are generated from four lists of angle arrays, describing the direction angles and fold angles for two sides of the mesh respectivly. The 'direction angle' is the ccw angle between the fold line and x-axis in xy-plane, while the 'fold angle' is the angle between the faces on either side of the crease in the fully folded state of the mesh.",
       "authorName": "jakobl",
-      "authorContact": null
+      "authorContact": ""
     },
     {
       "name": "FlexHopper",
@@ -505,7 +505,7 @@
       "components": 8,
       "description": "Gear is a simple way to generate involute gear for Grasshopper user.",
       "authorName": "uwen",
-      "authorContact": null
+      "authorContact": "ohisyouwen.ji@gmail.com, github: github.com/uwenji"
     },
     {
       "name": "GeoDex",
@@ -518,7 +518,7 @@
       "components": 13,
       "description": "GeoDex 3 GH is the Grasshopper 3D implementation of the GeoDex Library, a collection of around 150 curve, surface, and volume equations. Each component takes a consistent unitized input of a numeric T value for curves and point based UV value for surfaces and volumes returning the plotted point of the selected equation at the given parameter. Many of the equations have additional parameters and upon selection of the curves from each component's right-click menu, the inputs for the component may reconfigure to provide inputs for these parameters. The components are added to the Vectors tab in the Grasshopper ribbon under the new Plots category.",
       "authorName": "David Mans",
-      "authorContact": null
+      "authorContact": ""
     },
     {
       "name": "GeomGym IFC",
@@ -531,7 +531,7 @@
       "components": 378,
       "description": "OpenBIM addon for Rhino and Grasshopper enabling IFC (Industry Foundation Class) model to be generated and exchanged to ArchiCAD, Revit, Bently, Tekla and any other BIM software with IFC capability.",
       "authorName": "Jon Mirtschin",
-      "authorContact": null
+      "authorContact": "support@geometrygym.com"
     },
     {
       "name": "GeomGym Revit",
@@ -544,7 +544,7 @@
       "components": 68,
       "description": "OpenBIM addon for Rhino and Grasshopper enabling IFC (Industry Foundation Class) model to be generated and exchanged to ArchiCAD, Revit, Bently, Tekla and any other BIM software with IFC capability.",
       "authorName": "Jon Mirtschin",
-      "authorContact": null
+      "authorContact": "support@geometrygym.com"
     },
     {
       "name": "GhExcel",
@@ -557,7 +557,7 @@
       "components": 3,
       "description": "GhExcel is a plug-in for Grasshopper to exchange data with Excel. Multiple sheets are supported with ZUI(Zoomable User Interface).",
       "authorName": "Xiaoming",
-      "authorContact": null
+      "authorContact": ""
     },
     {
       "name": "gHowl",
@@ -583,7 +583,7 @@
       "components": 33,
       "description": "Gismo enables automatic generation of urban environment and terrain geometry based on location's latitude-longitude coordinates and radius. This includes connection with openstreetmap website and generation of buildings, trees, roads, rivers and other map elements. 3d building elements can also be used as a context for further analysis types: isovist (visibility), solar radiation, thermal/wind comfort, cfd analysis.",
       "authorName": "Djordje Spasic",
-      "authorContact": null
+      "authorContact": ""
     },
     {
       "name": "Grevit",
@@ -596,7 +596,7 @@
       "components": 46,
       "description": "Grevit allows you to define BIM Elements in Grasshopper or SketchUp and translate them directly to Autodesk Revit or AutoCad Architecture. Grevit follows a one way process so your design model remains the geometrical source of truth: send geometry and attributes from Rhino/Grassopper or SketchUp to Autodesk Revit or ACA. Don't worry if your design changes, Grevit can even update existing geometries. Grevit supports a lot of BIM elements: like walls, beams, columns, simple components, adaptive components, even topography and many more.",
       "authorName": "Grevit-dev",
-      "authorContact": null
+      "authorContact": ""
     },
     {
       "name": "Heron",
@@ -609,7 +609,7 @@
       "components": 10,
       "description": "Heron enables the import of GIS data from various sources into the Rhino/Grasshopper environment, located, scaled and cropped based on an Earth Anchor Point and a clipping polygon.  Sources of GIS data include Shapefiles, USGS IMG/HGT Elevation files and ArcGIS REST Services over the web.",
       "authorName": "Brian Washburn",
-      "authorContact": null
+      "authorContact": "blueheronGIS@gmail.com"
     },
     {
       "name": "Honeybee",
@@ -622,7 +622,7 @@
       "components": 219,
       "description": "Honeybee connects Grasshopper3D to validated simulation engines such as EnergyPlus, Radiance, Daysim and OpenStudio for building energy, comfort, daylighting and lighting simulation.",
       "authorName": "Mostapha Sadeghipour Roudsari",
-      "authorContact": null
+      "authorContact": ""
     },
     {
       "name": "Hoopsnake",
@@ -635,7 +635,7 @@
       "components": 1,
       "description": "Hoopsnake is a component that enables feedback loops within Grasshopper. What it does in principle is to create a copy of the data it receives at it's input upon user request and store it locally. This duplicate is made available through a standard Grasshopper parameter output. The input of the component includes some custom programming to escape Grasshopper's recursive loop avoidance check. What this means in practice is that it is possible through the use of HoopSnake to send the output of a set of components back to it's input in a looping fashion. With the help of a little bit of Data Tree / Data List manipulation, this should open up some new possibilities for iterative process modeling.",
       "authorName": "yconst",
-      "authorContact": null
+      "authorContact": ""
     },
     {
       "name": "Human",
@@ -648,7 +648,7 @@
       "components": 53,
       "description": "Extends Grasshopper's ability to create and reference geometry including lights, blocks, and text objects. Also enables access to information about the active Rhino document, pertaining to materials, layers, linetypes, and other settings.",
       "authorName": "Andrew Heumann",
-      "authorContact": null
+      "authorContact": "https://discourse.mcneel.com/c/grasshopper/human"
     },
     {
       "name": "Human UI",
@@ -674,7 +674,7 @@
       "components": 15,
       "description": "Hummingbird is a set of Grasshopper components that facilitate the creation of Revit native geometry. This process exports basic geometric properties and parameter data to CSV text files which are used to create Revit BIM geometry. The tool also supports importing Revit geometry into Rhino, making a bi-directional workflow possible.",
       "authorName": "Mario Guttman",
-      "authorContact": null
+      "authorContact": ""
     },
     {
       "name": "Impala",
@@ -687,7 +687,7 @@
       "components": 44,
       "description": "Impala replicates common bottleneck Grasshopper operations with a focus on efficiency, allowing complex scripts and static simulations embedded within Grasshopper to make use of all available computational capacity. This is primarily evident in scripts that deal with thousands of objects or rely heavily on numerical or physically-based computations.\n\nThe primary target audience is experienced design computation practitioners and Grasshopper users who are running into the upper bounds of the tool's native, single-core performance, and are willing to take a finer approach to boosting performance at key points. Impala focuses primarily on replicating existing Grasshopper functionality and developing an environment suitable to seamless integration of performant or multithreaded computation within GH.",
       "authorName": "Dan Cascaval",
-      "authorContact": null
+      "authorContact": "cascaval@cmu.edu"
     },
     {
       "name": "Instance Manager",
@@ -700,7 +700,7 @@
       "components": 14,
       "description": "Instance Manager is a part of Heteroptera Plugin that is specified to manage Block-Definition and instances in Rhino from Grasshopper. It is an ongoing project orienting to the development of collaborative design. Instance-Manager is a set of tools to Create, manage, and get statistics from files containing blocks. Instead of focusing on Instace_Refrence and Block_Objects, this plugin is focused on just Instance_Definition.",
       "authorName": "Amin Bahrami",
-      "authorContact": null
+      "authorContact": "Amin.Bahrami@Helioripple.com"
     },
     {
       "name": "IntraLattice",
@@ -713,7 +713,7 @@
       "components": 16,
       "description": "This is the beta release of Intralattice, a plug-in for Grasshopper used to generate solid lattice structures within a design space. It was developed as an extensible, open-source alternative to current commercial solutions, such as Within. As an ongoing project developed at McGill’s Additive Design & Manufacturing Laboratory (ADML), it has been a valuable research tool, serving as a platform for breakthroughs in multiscale design and optimization.",
       "authorName": "Aidan Kurtz",
-      "authorContact": null
+      "authorContact": "aidan.kurtz@mail.mcgill.ca"
     },
     {
       "name": "Ivy",
@@ -752,7 +752,7 @@
       "components": 36,
       "description": "This plugin contains a set of customised Kangaroo2 grasshopper components with the scope of calibrating a number of goals with regard to structural properties.\n\nThis is particularly useful for the analysis of form-active structures (including cablenets and gridshells) that are typically characterised by their large deformations when subjected to external loads. The underlying position-based dynamics implemented in the Kangaroo2 solver inherently deals with this non-linear behaviour. This means that both form-finding and analysis can be performed within the Grasshopper environment using K2 and K2Engineering.",
       "authorName": "Cecilie Brandt",
-      "authorContact": null
+      "authorContact": ""
     },
     {
       "name": "Kangaroo 2",
@@ -778,7 +778,7 @@
       "components": 81,
       "description": "Karamba3D is a parametric structural engineering tool which provides accurate analysis of spatial trusses, frames and shells.\n\nKaramba3D is fully embedded in the parametric design environment of Grasshopper, a plug-in for the 3d modeling tool Rhinoceros. \n\nThis makes it easy to combine parameterized geometric models, finite element calculations and optimization algorithms like Galapagos. It lets you analyze the response of 3-dimensional beam and shell structures under arbitrary loads.",
       "authorName": "Clemens Preisinger",
-      "authorContact": null
+      "authorContact": ""
     },
     {
       "name": "KarambaIDEA",
@@ -791,7 +791,7 @@
       "components": 5,
       "description": "KarambaIDEA is an open-source Grasshopper plug-in that links Karamba3D with IDEA Statica connection. One of the joints from the modeled steel structure in Karamba3D can be imported into IDEA Statica Connection for further analysis, on a detail level.",
       "authorName": "Bouwenmet Staal",
-      "authorContact": null
+      "authorContact": ""
     },
     {
       "name": "Kiwi3D",
@@ -804,7 +804,7 @@
       "components": 50,
       "description": "Kiwi!3D enables the integration of Isogeometric Analysis (IGA). The special characteristic of IGA lies in the usage of Non-Uniform Rational B-Splines (NURBS) as basis functions for the Finite Elements. Hence it allows to run simulations directly on NURBS without the need of meshing.\n\nKiwi!3D includes a isogeometric Shell, Membrane, Beam and Cable element. It is able to handle Trimmed Surfaces as well as Coupled Patches (multi-surface models). You can run Linear as well as geometrically Non-linear Structural Analysis problems. Also it includes Form Finding for tensile structures (Updated Reference Strategy).",
       "authorName": "Kiwi!3D Team",
-      "authorContact": null
+      "authorContact": ""
     },
     {
       "name": "KUKA Prc",
@@ -817,7 +817,7 @@
       "components": 56,
       "description": "KUKA|prc enables you to program industrial robots directly out of the parametric modelling environment, including a full kinematic simulation of the robot. The generated files can be executed at the KUKA robot, without requiring any additional software.\n\nThe free evaluation version allows the full simulation and code generation without. Additional features such as support for SunriseOS, external axes, G-Code import etc. are only available to members of the Association for Robots in Architecture.",
       "authorName": "Robots in Architecture",
-      "authorContact": null
+      "authorContact": ""
     },
     {
       "name": "Ladybug",
@@ -830,7 +830,7 @@
       "components": 147,
       "description": "Ladybug allows you to import and analyze standard weather data in Grasshopper; draw diagrams like Sun-path, wind-rose, radiation-rose, etc; customize the diagrams in several ways; run radiation analysis, shadow studies, and view analysis.",
       "authorName": "Mostapha Sadeghipour Roudsari",
-      "authorContact": null
+      "authorContact": ""
     },
     {
       "name": "Lands Design",
@@ -843,7 +843,7 @@
       "components": 45,
       "description": "Lands Design is a software for Landscape Design and Urban Planning. Professional results from technical planning to photorealistic rendering. \n\nLands includes a variety of tools to distribute plants, trees, shrubs and flower beds, individually, in rows, in forests… To make it easier, Lands has a database with around 1800 plant species. \n\nAll Lands Design elements and vegetation species can be rendered with any render engine supported by Rhino: Rhino render, V-Ray, Flamingo nXt, etc.\n\nLands can be used to easily draw stairs, fences, paths, walls and other structural elements in both 2-D and 3-D.",
       "authorName": "Lands Design (Asuni)",
-      "authorContact": null
+      "authorContact": ""
     },
     {
       "name": "LunchBox",
@@ -856,7 +856,20 @@
       "components": 86,
       "description": "LunchBox is a plug-in for Grasshopper for exploring mathematical shapes, paneling, structures, and workflow.  We have also introduced new components for general machine learning implementations such as regression analysis, clustering, and networks.",
       "authorName": "Nathan Miller",
-      "authorContact": null
+      "authorContact": ""
+    },
+    {
+      "name": "Leopard",
+      "releaseDate": "2017-Jan-08",
+      "version": "0.0.01",
+      "downloadLink": "https://www.food4rhino.com/app/leopard",
+      "helpLink": "https://grasshopperdocs.com/addons/leopard.html",
+      "category": "Geometry & Meshes",
+      "isSystem": false,
+      "components": 13,
+      "description": "Leopard is an open source mesh processing solution for grasshopper that allows users to interact with rhino geometry and create customised mesh shapes. By selecting Mesh vertices, edges and faces, users have more freedom to edit meshes intuitively and use different subdivision schemes to selectively choose multiple areas to fix.\n\nMesh data using \"Plankton\" for internal processing.",
+      "authorName": "Gene Kao",
+      "authorContact": "kao.gene@gmail.com"
     },
     {
       "name": "MeshEdit",
@@ -882,7 +895,7 @@
       "components": 136,
       "description": "Mesh+ is a set of user objects which enable a wide range of mesh editing, creation, interaction, and topology modification within Grasshopper 3d.",
       "authorName": "David Mans",
-      "authorContact": null
+      "authorContact": "david@neoarchaic.net"
     },
     {
       "name": "MeshTools",
@@ -895,7 +908,7 @@
       "components": 2,
       "description": "Just an usual mesh pipe and mesh sweep. Find both in Mesh->Primitive panel.",
       "authorName": "Mateusz Zwierzycki",
-      "authorContact": null
+      "authorContact": "mateuszzwierzycki@gmail.com"
     },
     {
       "name": "MetaHopper",
@@ -921,7 +934,7 @@
       "components": 73,
       "description": "Millipede is a structural analysis and optimization component for grasshopper. It allows for very fast linear elastic analysis of frame and shell elements in 3d, 2d plate elements for in plane forces, and 3d volumetric elements. All systems can be optimized using built in topology optimization methods and have their results extracted and visualized in a variety of ways.\n\nIn addition millipede implements a few basic geometric features [extraction of iso surface meshes from volumetric scalar fields or and extraction of curved contours over any mesh] and a few numerical analysis tools [Fast fourier transforms in 1 and 2 dimensions, sparse linear system solver and eigenvalue calculation for large matrices using functionality from the intel math kernel library]\n\nThe new version of millipede includes the surface reparameterization module that enables the generation of vector field aligned patterns over any mesh. This functionality is particularly useful for the creation of principal stress aligned grid shells and reinforcement patterns.",
       "authorName": "Panagiotis Michalatos",
-      "authorContact": null
+      "authorContact": ""
     },
     {
       "name": "MinSurf",
@@ -934,7 +947,7 @@
       "components": 3,
       "description": "Generate Minimal Surfaces from boundary curves or do a minimal relaxation on a mesh.",
       "authorName": "Cerver",
-      "authorContact": null
+      "authorContact": ""
     },
     {
       "name": "Monolith",
@@ -947,7 +960,7 @@
       "components": 41,
       "description": "Monolith is a voxel-based modeling editor. It is an ongoing research project focusing on the development of new digital representations and design workflows that inhabit the space between traditional computer aided design (CAD) and three dimensional voxel based image processing with the aim of allowing a very fine level of control over volumetric material distributions, especially in light of new multi-material 3D printing technologies.\n\nThe Monolith plugin for Grasshopper offers a comprehensive suite of tools that give you the ability to quickly construct detailed voxel-based model and visualize them in unique ways using our custom OpenGL rendering pipeline. Check out the video below to see it in action.",
       "authorName": "Andy Payne",
-      "authorContact": null
+      "authorContact": ""
     },
     {
       "name": "Mosquito",
@@ -960,7 +973,7 @@
       "components": 28,
       "description": "Mosquito is a plugin suite developed for Rhino and Grasshopper. The plugin allows us to tap into social , financial and popular media. Extracting location, profiles, images and messages from Facebook,Twitter, Topsy etc….\n\nAs architects part of our responsibility is the consideration of the public realm. Today however , people tend to hang in the digital equivalent, namely, social media space. While this space becomes ever more permanent, the physical realm is fleeting, an evanescent space.\n\nWe are utilizing the tools in this component suite to bridge the gap between geometrics and information. Driving geometry with data and vice-versa. The ability to extract user Geo-coordinates, language, thoughts, profile and image enables architects to paint a picture. It is this  4-dimensional picture, which we refer to as “spatial condition”, that allows us to explore what happened yesterday, now and hypothesize about tomorrow. True 4-dimensional modeling.",
       "authorName": "Carson Smuts",
-      "authorContact": null
+      "authorContact": ""
     },
     {
       "name": "Mouse",
@@ -973,7 +986,7 @@
       "components": 2,
       "description": "The Mouse is a pathfinding plugin for Grasshopper based on Theta* algorithm by Kenny Daniel, Alex Nash, and Sven Koenig. It provides the possibility to find optimize and realistic looking routes between each pair of points in Grasshopper.",
       "authorName": "Arash Nader",
-      "authorContact": null
+      "authorContact": ""
     },
     {
       "name": "Nemo",
@@ -986,7 +999,7 @@
       "components": 25,
       "description": "Naval Efficiency and Marine Optimization. Nemo is a Grasshopper plugin for Ship Design. Nemo Analysis, for automatic analysis of ship geometry (licensed). Nemo Designer, which includes several design tools (free)\nNemo Analysis can perform hydrostatics computation, silhouette extraction, meshing generation and resistance prediction right inside Rhino. Sectioning hull into stations - buttocks - waterlines, generating an offset table, or creating cross-sections curves are also embed features. Interoperability is allowed with external software like NavCad (HydroComp), Mars 2000 (Bureau Veritas) or Excel (Microsoft). Nemo Designer includes specific tools to create NACA sections and appendages such as hydrofoils, keels (with or without bulb), or even blade propellers.",
       "authorName": "VENOT",
-      "authorContact": null
+      "authorContact": ""
     },
     {
       "name": "NGon",
@@ -1012,7 +1025,7 @@
       "components": 1,
       "description": "The Nelder-Mead Optimisation component, produced by the Eckersley O'Callaghan's Digital Design Group, is focused on producing optimised solutions with as few function calls as possible, leading to time-efficient optimisation. In addition we have endeavoured to produce useful live feedback during the optimisation and we have allowed for optimisation constraints to be dealt with in a user-friendly way.",
       "authorName": "Sam Gregson",
-      "authorContact": null
+      "authorContact": ""
     },
     {
       "name": "Nudibranch",
@@ -1038,7 +1051,7 @@
       "components": 40,
       "description": "Octopus was originally made for Multi-Objective Evolutionary Optimization. It allows the search for many goals at once, producing a range of optimized trade-off solutions between the extremes of each goal. It is used and works similar to David Rutten's Galapagos, but introduces the Pareto-Principle for Multiple Goals.",
       "authorName": "Robert Vierlinger",
-      "authorContact": null
+      "authorContact": "robert.vierlinger@gmail.com"
     },
     {
       "name": "OpenNest",
@@ -1064,7 +1077,7 @@
       "components": 1,
       "description": "Opossum includes two of the best-performing,single-objective optimization algorithms in Grasshopper: model-based RBFOpt and evolutionary CMA-ES. It also include the multi-objective RBFMOpt and NSGA-II algorithms.\n\nRBFOpt uses advanced machine learning techniques to find good solutions with a small number of function evaluations, i.e. simulations, while CMA-ES reliably finds near-optimal solutions when many function evaluations are possible. (Various papers with benchmark results are availabe here.) RBFMOpt won the “2-Objective Expensive” track of the international Black Box Optimization Competition 2019, surpassing the winner of the previous two years, the commercial algorithm Artelys Nitro.\n\nOpossum's GUI is similar to Galapagos. Opossum has a results table, which makes it easy to revisit all optimization results by double-clicking entries in the table.",
       "authorName": "Thomas Wortmann",
-      "authorContact": null
+      "authorContact": ""
     },
     {
       "name": "Owl",
@@ -1077,7 +1090,7 @@
       "components": 74,
       "description": "Owl is a library written for machine learning-oriented data processing.",
       "authorName": "Mateusz Zwierzycki",
-      "authorContact": null
+      "authorContact": "mateuszzwierzycki@gmail.com"
     },
     {
       "name": "Pancake",
@@ -1103,7 +1116,7 @@
       "components": 68,
       "description": "PanelingTools plugin by Robert McNeel & Associates is closely integrated with Rhino and Grasshopper, and is widely used by designers, architects, and building prefessionals. It supports intuitive design of paneling concepts as well as help rationalize complex geometry into a format that is suitable for analysis and fabrication. PanelingTools for Grasshopper allows parametric use of attractors to manipulate grids and variable morphing of patterns.",
       "authorName": "Rajaa Issa",
-      "authorContact": null
+      "authorContact": ""
     },
     {
       "name": "Parakeet",
@@ -1116,7 +1129,7 @@
       "components": 119,
       "description": "Parakeet is a collection of components focusing in Algorithmic Pattern Generation; it offers a Unique and easy-to-use approach that Generates Geometrical and Natural Patterns/Networks.\n\nFor now, Parakeet has 8 Categories: Tilings, Primitives, Pattern Generation, Curve, Mesh, Surface, M.C. Escher and utilities.",
       "authorName": "Esmaeil",
-      "authorContact": null
+      "authorContact": ""
     },
     {
       "name": "Peacock",
@@ -1129,7 +1142,7 @@
       "components": 119,
       "description": "Peacock is a free-culture project for the development of the algorithmic jewelry modeling in the Grasshopper/Rhinoceros 3d environment. It allows to create parametric jewels, generative collections, automated productions, customized tools, optimize costs, and explore new aesthetics and advanced solutions for jewelry design.",
       "authorName": "Daniel Gonzalez Abalde",
-      "authorContact": null
+      "authorContact": ""
     },
     {
       "name": "Peregrine",
@@ -1142,7 +1155,7 @@
       "components": 27,
       "description": "Peregrine is a LimitState:FORM powered optimization plugin for Grasshopper. Quickly define and optimize your designs within Grasshopper, while making use of a wide array of powerful editing and rationalization functions based on LimitState:FORM technology.",
       "authorName": "LimitState 3D",
-      "authorContact": null
+      "authorContact": ""
     },
     {
       "name": "Phyllomachine",
@@ -1155,7 +1168,7 @@
       "components": 16,
       "description": "PhylloMachine can be used to model plants using some properties of phyllotaxis. The basic idea is that a mesh with phyllotaxis proportions has a topology described by two Fibonacci numbers, and its topology (indices of vertices of faces, parastichies spirals, cycles and topological neighbors) is described by simple number sequences without geometric calculation. Thanks to these, it can be modeled parametrically plant organs such as branches, leaves or petals, with very nature-like results.",
       "authorName": "Daniel Gonzalez Abalde",
-      "authorContact": null
+      "authorContact": ""
     },
     {
       "name": "PhysX GH",
@@ -1207,7 +1220,7 @@
       "components": 122,
       "description": "A QuadEdgeDataStructure is used to represent a n-gonal Mesh without making any difference between primal and dual elements. The (relativ) dual-graph is holded in a valid state during any topological operation.\n\nThe implementation used in Grasshopper is embedded into the euclidean space.\n\nThe solvers for the graph-analytic-tools are working with ‚GH_Variant‚ values, which are provided by evaluating a string-expression against the QuadElement of investigation.\n\nThe components use a special zoom-interface. While UI-Elements are practicable to clarify an option, they are not if the value for the option should be set from the computation-tree.\nTherefor almost any UI-Element can be converted to a parameter.",
       "authorName": "Ortler Mark",
-      "authorContact": null
+      "authorContact": ""
     },
     {
       "name": "Quelea",
@@ -1220,7 +1233,7 @@
       "components": 44,
       "description": "Agent-Based Modeling for Designers\n+ A new paradigm for 3D modeling utilizing agents.\n+ Assign forces and behaviors to systems of agents to create interactions.\n+ Utilize any data to drive the system.\n+ Easily debug your system by displaying individual force vectors.\n+ High performance, parallel algorithms, spatial data-structures.\n+ Write your own custom forces, no coding required.\n+ Open source framework for others to build custom behaviors.\n+ Boid forces: Cohese, Separate, Align, & View.\n+ Contain Agents within Brep, Box, Surface, and Polysurface environments.\n+ Forces: Path Follow, Attract, Contain, Surface Flow, Seek, Arrive, Avoid Obstacle, Avoid Unaligned Collision, Sense Image, Sense Point, & more to come.\n+ Behaviors: Bounce Contain, Kill Contain, Initial Velocity, Eat, Set Velocity, & more to come.",
       "authorName": "Alex Fischer",
-      "authorContact": null
+      "authorContact": ""
     },
     {
       "name": "Reindeer",
@@ -1246,7 +1259,7 @@
       "components": 13,
       "description": "Grasshopper extension updated  with new solver for cable nets. It has in built professional form-finding solvers for any category of tensile and cable net structures. The plugin is also fully compatible with our flagship product ixCube 4-10  so any model generated with RM can be  baked on the fly to ixCube 4-10 for future structural analysis and patterning.",
       "authorName": "Gerry D'anza",
-      "authorContact": null
+      "authorContact": ""
     },
     {
       "name": "RoboDK",
@@ -1259,7 +1272,7 @@
       "components": 3,
       "description": "The RoboDK plugin for Rhino allows you to combine Rhino's CAD modeling software with RoboDK to program industrial robots. RoboDK simulation software allows you to get the most out of your industrial robot. Easily simulate and program industrial robots offline from your Rhino models and deploy robot programs on your robot with just a few clicks. RoboDK’s simulation and offline programming tools allow you to program robots outside the production environment, eliminating production downtime caused by shop floor programming.",
       "authorName": "RoboDK Team",
-      "authorContact": null
+      "authorContact": ""
     },
     {
       "name": "Salamander",
@@ -1272,7 +1285,7 @@
       "components": 72,
       "description": "Salamander (Structural Analysis Link And MANager for Data Entry & Retrieval) hosts structural nodes, elements, sections and so on within Rhino and allows them to be be created and modified like any other data type.  They can then be exported to several different FEA packages (Robot, GSA and ETABS currently supported) for analysis.",
       "authorName": "Paul Jeffries",
-      "authorContact": null
+      "authorContact": ""
     },
     {
       "name": "Sandbox Topology",
@@ -1298,7 +1311,7 @@
       "components": 53,
       "description": "Tune your Grasshopper definition for ShapeDiver",
       "authorName": "ShapeDiver GmbH",
-      "authorContact": "contact@shapediver.com"
+      "authorContact": "mateuszzwierzycki@gmail.com and contact@shapediver.com"
     },
     {
       "name": "SkinDesigner",
@@ -1311,7 +1324,7 @@
       "components": 35,
       "description": "SkinDesigner enables the rapid generation of facade geometries from building massing surfaces and repeating, user-defined panels. SkinDesigner has the geometric freedom to create virtually any facade geometry that is composed of similar repeating elements.",
       "authorName": "Santiago Garay",
-      "authorContact": null
+      "authorContact": ""
     },
     {
       "name": "Slingshot",
@@ -1324,7 +1337,7 @@
       "components": 24,
       "description": "Slingshot is an open source plug-in for which connects Grasshopper to relational databases such as MySQL.  The components allow you to create and query databases from within the Grasshopper canvas.  Slingshot for Grasshopper has been in development since 2010 and was the first plug-in published by Nathan Miller to enable better interoperability between data sources.",
       "authorName": "Nathan Miller",
-      "authorContact": null
+      "authorContact": ""
     },
     {
       "name": "SmartForm",
@@ -1337,7 +1350,7 @@
       "components": 11,
       "description": "SmartForm is a suite of tools that allow you to rapidly model, analyse and optimise complex freeform shapes found in modern architecture.",
       "authorName": "Smart Space",
-      "authorContact": null
+      "authorContact": ""
     },
     {
       "name": "SpiderWeb",
@@ -1350,7 +1363,7 @@
       "components": 31,
       "description": "SpiderWeb provides functionality for preforming calculations on graphs. The library is created with a special focuse on the integration of graphs and graph related theroies (e.g. SpaceSyntax) in parametric design envoirnments.",
       "authorName": "Richard Schaffranek",
-      "authorContact": null
+      "authorContact": "http://www.gbl.tuwien.ac.at/Archiv/digital.html?name=Spider_Web"
     },
     {
       "name": "SPM",
@@ -1363,7 +1376,7 @@
       "components": 24,
       "description": "SPM Vector Components is a collection of tools for integrating and manipulating vector fields.",
       "authorName": "Daniel Hambleton",
-      "authorContact": null
+      "authorContact": ""
     },
     {
       "name": "Starfish",
@@ -1389,7 +1402,20 @@
       "components": 23,
       "description": "Starling mesh tools. These components enable mesh parametrization, so it behaves like a surface - you can evaluate points at any place etc. Is it accurate ? - not at all, but give it just a minute and you'll probably fall in love. Mesh morphing, remeshing, smooth curves evaluation (see group image), 3d convex hull and last but not least - slFastMesh - which will enable you to stop thinking about meshing parameters and start playing.",
       "authorName": "Mateusz Zwierzycki",
-      "authorContact": null
+      "authorContact": "mateuszzwierzycki@gmail.com"
+    },
+    {
+      "name": "Squid",
+      "releaseDate": "2015-Jan-22",
+      "version": "0.110",
+      "downloadLink": "https://www.food4rhino.com/app/squid",
+      "helpLink": "https://grasshopperdocs.com/addons/squid.html",
+      "category": "Image Processing",
+      "isSystem": false,
+      "components": 25,
+      "description": "This is the first release of my plug-in to draw bitmaps with Grasshopper.\n\nThis utility for Grasshopper exposes a bunch of components in the Squid tab.",
+      "authorName": "Mateusz Zwierzycki",
+      "authorContact": "mateuszzwierzycki@gmail.com"
     },
     {
       "name": "Sunflower",
@@ -1402,7 +1428,7 @@
       "components": 19,
       "description": "Energy Analysis plugin for Grasshopper.",
       "authorName": "Rex Wang",
-      "authorContact": null
+      "authorContact": ""
     },
     {
       "name": "Tarsier",
@@ -1415,7 +1441,7 @@
       "components": 20,
       "description": "This library's primary purpose is to add the point cloud functionality already apparent in Rhinoceros 5 to Grasshopper, with the ambition of treating point clouds as another useful data type, rather than an exotic type.\n\nIt's secondary purpose is to provide tools for creation and streaming of point clouds with common scanning techniques (Kinect V1, V2 and OpenNI2). This is made possible due to the speed increases afforded by the use of the point cloud class. For example, a full point cloud from a Kinect V2 is released in approximately 10-20ms on standard machines, which is more than enough for most purposes. A multi-threaded KD-Tree is also implemented to allow very fast spatial searching.",
       "authorName": "Cameron Newnham",
-      "authorContact": null
+      "authorContact": ""
     },
     {
       "name": "Topologic",
@@ -1428,7 +1454,7 @@
       "components": 192,
       "description": "Topologic is a software modelling library enabling hierarchical and topological representations of architectural spaces, buildings and artefacts through non-manifold topology (NMT). Topologic is designed as a core library and additional plugins to visual data flow programming (VDFP) applications and parametric modelling platforms commonly used in architectural design practice. These applications provide workspaces with visual programming nodes and connections for architects to interact with Topologic and perform architectural design and analysis tasks.\n\nTopologic is well-suited to create a lightweight representation of a building as an external envelope and the subdivision of the enclosed space into separate spaces and zones using zero-thickness internal surfaces. Because Topologic maintains topological consistency, a user can query these cellular spaces and surfaces regarding their topological data and thus conduct various analyses. For example, this lightweight and consistent representation was found to be well-matched with the input data requirements for energy analysis simulation software. Because Topologic allows entities with mixed dimensionalities and those that are optionally independent (e.g. a line, a surface, a volume) to co-exist, structural models can be represented in a coherent manner where lines can represent columns and beams, surfaces can represent walls and slabs, and volumes can represent solids. In addition, non-building entities, such as structural loads can be efficiently attached to the structure. This creates a lightweight model that is well-matched with the input data requirements for structural analysis simulation software.",
       "authorName": "wassimj",
-      "authorContact": null
+      "authorContact": ""
     },
     {
       "name": "TreeFrog",
@@ -1441,7 +1467,7 @@
       "components": 4,
       "description": "",
       "authorName": "Unknown",
-      "authorContact": null
+      "authorContact": ""
     },
     {
       "name": "TreeSloth",
@@ -1454,7 +1480,7 @@
       "components": 20,
       "description": "As a 3D CAD software suite, Rhino+Grasshopper is, at its core, a means to create, transform and manage data. Grasshopper’s explicit visual scripting interface structures these operations through the use of DataTrees. Treesloth emerged as a series of tools applied in both professional and research practice to help better negotiate the the types of data relationships within (and between) Grasshopper definitions that enable more complex operations.",
       "authorName": "Dave Stasiuk",
-      "authorContact": null
+      "authorContact": ""
     },
     {
       "name": "TRNLizard",
@@ -1467,7 +1493,7 @@
       "components": 23,
       "description": "TRNLizard is a free plug-in for Grasshopper for parametric 3D building simulation developed by TRANSSOLAR. It is a free plug in to the Rhinoceros 5/6 software and Grasshopper. It enables thermal and daylight building simulation with TRNSYS 18 using a variety of artificial lighting, ventilation, heating and cooling concepts based on detailed 3D geometry.\n\nThe parametric architecture and open source Grasshopper components enable TRNSYS 18 users to conduct detailed design studies during the planning phase and respectively individualize the model. Predefined templates and outputs allow quick start simulations and a fast evaluation of simulation results.\n\nThe tool has a modular structure and gives great flexibility. The components are and will be adapted to the development of Trnsys and have a variety of new features. Models are fully defined in Grasshopper and then written as complete TRNSYS-models in the project directory. TRNLizard connects the power of parametric modeling in Grasshopper and the latest building simulation features of Trnsys!",
       "authorName": "Christian Frenzel",
-      "authorContact": null
+      "authorContact": ""
     },
     {
       "name": "TT Toolbox",
@@ -1493,7 +1519,7 @@
       "components": 213,
       "description": "VisualARQ is an architectural design software which enhances Rhino by adding powerful architectural object styling and dynamic documentation tools which adapt to fit your workflow.",
       "authorName": "VisualARQ (Asuni)",
-      "authorContact": null
+      "authorContact": ""
     },
     {
       "name": "Volvox",
@@ -1519,7 +1545,7 @@
       "components": 16,
       "description": "Wallacei (which includes Wallacei Analytics and Wallacei X) is an evolutionary multi-objective optimization engine that allows users to run evolutionary simulations in Grasshopper 3D through utilising highly detailed analytic tools coupled with various comprehensive selection methods, including algorithmic clustering, to assist users to better understand their evolutionary runs, and make more informed decisions at all stages of their evolutionary simulations; including setting up the design problem, analysing the outputted results and selecting the desired solution or solutions for the final output. Wallacei also provides users with the ability to select, reconstruct and output any phenotype from the population after completing their simulation. The free plugin is streamlined to give users efficient access to the data outputted by their evolutionary simulations, and enable clear and efficient methods for analysis and selection – The aim is for users (of all degrees of expertise) to better understand their evolutionary simulations, gain a thorough understanding of the outputted numeric values, and seamlessly extract the optimised data; all within one user interface.",
       "authorName": "Milad Showkatbakhsh",
-      "authorContact": null
+      "authorContact": ""
     },
     {
       "name": "Wasp",
@@ -1532,7 +1558,7 @@
       "components": 39,
       "description": "Wasp is a set of Grasshopper components, developed in Python, directed at representing and designing with discrete elements. The description of each individual part includes basic information necessary for the aggregation process (part geometry, connections location and orientation). The set of connections define the topological graph of the part, which is then used to define the possibilities of aggregation with other parts.\n\nThe core of the framework relies on a set of aggregation procedures, allowing generation of specific structures from the combination of different modules. Each of these procedures is composed of strategies for the selection of basic aggregation rules, described as an instruction to orient one module over a selected connection of another module. Currently available procedures include stochastic aggregation and field-driven aggregation.",
       "authorName": "Andrea Rossi",
-      "authorContact": null
+      "authorContact": ""
     },
     {
       "name": "Weaverbird",
@@ -1545,7 +1571,7 @@
       "components": 36,
       "description": "Weaverbird is a topological modeler that contains many of the known subdivision and transformation operators, readily usable by designers. Instead of doing the work repeatedly, or sometimes using complicated scripts, this plug-in reconstructs the shape, subdivides any mesh, even made by polylines, and helps preparing for fabrication.",
       "authorName": "Giulio Piacentino",
-      "authorContact": null
+      "authorContact": ""
     },
     {
       "name": "WombatGH",
@@ -1558,7 +1584,7 @@
       "components": 59,
       "description": "Wombat for GH is a series of miscellaneous utilities aimed at improving modeling processes by streamlining common tasks. It includes components for operating on geometry, lists, files and folders, and visualizing the geometric properties of surfaces and meshes. Created by Andrew Heumann and Brian Ringley while members of the Woods Bagot Design Technology team.",
       "authorName": "Woods Bagot",
-      "authorContact": null
+      "authorContact": "Brian.Ringley@woodsbagot.co"
     },
     {
       "name": "Xylinus",
@@ -1571,7 +1597,7 @@
       "components": 43,
       "description": "It allows for novel control of 3D printers, generating G code directly from native Rhino and Grasshopper geometries including solids, surfaces, and curves. It has tools for printers based on FDM filament extrusion, pneumatically-controlled syringes, ink-jet, and DLP Stereolithography.",
       "authorName": "Ryan Hoover",
-      "authorContact": null
+      "authorContact": "ryan@ryanhoover.org"
     },
     {
       "name": "Zebra",
@@ -1584,7 +1610,7 @@
       "components": 28,
       "description": "Zebra is an agent based design plugin that can do the following: Optimized plugin to flock at least 100 agents with no performance issues. Combining behaviours with each dynamically and in the same simulation. Very simple interface that can do everything while keeping a high level of controllability for any parameter. Working in conjunction with environmental design. Can contain agents in any brep or mesh form.",
       "authorName": "Youssef Aboualghar (YFA)",
-      "authorContact": null
+      "authorContact": ""
     },
     {
       "name": "Grasshopper Display",
