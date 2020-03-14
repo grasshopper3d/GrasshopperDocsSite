@@ -307,7 +307,7 @@
       "helpLink": "https://grasshopperdocs.com/addons/diva.html",
       "category": "Energy Analysis & Simulation",
       "isSystem": false,
-      "components": 49,
+      "components": 46,
       "description": "Energy modeling components for Grasshopper",
       "authorName": "Solemma",
       "authorContact": "http://www.solemma.net"
@@ -437,7 +437,7 @@
       "helpLink": "https://grasshopperdocs.com/addons/firefly.html",
       "category": "Electronics & Computer Vision",
       "isSystem": false,
-      "components": 100,
+      "components": 88,
       "description": "Firefly is a set of comprehensive software tools dedicated to bridging the gap between Grasshopper (a free plug-in for Rhino), the Arduino micro-controller, the internet and beyond. It allows near real-time data flow between the digital and physical worlds, and will read/write data to/from internet feeds, remote sensors and more.",
       "authorName": "Andrew Payne (LIFT architects)",
       "authorContact": "http://www.fireflyexperiments.com"
@@ -515,7 +515,7 @@
       "helpLink": "https://grasshopperdocs.com/addons/geodex.html",
       "category": "Maths & Optimization",
       "isSystem": false,
-      "components": 13,
+      "components": 12,
       "description": "GeoDex 3 GH is the Grasshopper 3D implementation of the GeoDex Library, a collection of around 150 curve, surface, and volume equations. Each component takes a consistent unitized input of a numeric T value for curves and point based UV value for surfaces and volumes returning the plotted point of the selected equation at the given parameter. Many of the equations have additional parameters and upon selection of the curves from each component's right-click menu, the inputs for the component may reconfigure to provide inputs for these parameters. The components are added to the Vectors tab in the Grasshopper ribbon under the new Plots category.",
       "authorName": "David Mans",
       "authorContact": ""
@@ -658,7 +658,7 @@
       "helpLink": "https://grasshopperdocs.com/addons/human-ui.html",
       "category": "User Interface Design",
       "isSystem": false,
-      "components": 84,
+      "components": 81,
       "description": "",
       "authorName": "Andrew Heumann",
       "authorContact": "andrew@heumann.com"
@@ -684,7 +684,7 @@
       "helpLink": "https://grasshopperdocs.com/addons/impala.html",
       "category": "Maths & Optimization",
       "isSystem": false,
-      "components": 44,
+      "components": 41,
       "description": "Impala replicates common bottleneck Grasshopper operations with a focus on efficiency, allowing complex scripts and static simulations embedded within Grasshopper to make use of all available computational capacity. This is primarily evident in scripts that deal with thousands of objects or rely heavily on numerical or physically-based computations.\n\nThe primary target audience is experienced design computation practitioners and Grasshopper users who are running into the upper bounds of the tool's native, single-core performance, and are willing to take a finer approach to boosting performance at key points. Impala focuses primarily on replicating existing Grasshopper functionality and developing an environment suitable to seamless integration of performant or multithreaded computation within GH.",
       "authorName": "Dan Cascaval",
       "authorContact": "cascaval@cmu.edu"
@@ -762,7 +762,7 @@
       "helpLink": "https://grasshopperdocs.com/addons/kangaroo-2.html",
       "category": "Animation & Physics",
       "isSystem": false,
-      "components": 101,
+      "components": 98,
       "description": "Components for form-finding, physics simulation, geometric constraint solving and optimization",
       "authorName": "Daniel Piker",
       "authorContact": "https://discourse.mcneel.com/c/grasshopper/kangaroo"
@@ -931,7 +931,7 @@
       "helpLink": "https://grasshopperdocs.com/addons/millipede.html",
       "category": "Structural Analysis & FEM",
       "isSystem": false,
-      "components": 73,
+      "components": 69,
       "description": "Millipede is a structural analysis and optimization component for grasshopper. It allows for very fast linear elastic analysis of frame and shell elements in 3d, 2d plate elements for in plane forces, and 3d volumetric elements. All systems can be optimized using built in topology optimization methods and have their results extracted and visualized in a variety of ways.\n\nIn addition millipede implements a few basic geometric features [extraction of iso surface meshes from volumetric scalar fields or and extraction of curved contours over any mesh] and a few numerical analysis tools [Fast fourier transforms in 1 and 2 dimensions, sparse linear system solver and eigenvalue calculation for large matrices using functionality from the intel math kernel library]\n\nThe new version of millipede includes the surface reparameterization module that enables the generation of vector field aligned patterns over any mesh. This functionality is particularly useful for the creation of principal stress aligned grid shells and reinforcement patterns.",
       "authorName": "Panagiotis Michalatos",
       "authorContact": ""
@@ -957,7 +957,7 @@
       "helpLink": "https://grasshopperdocs.com/addons/monolith.html",
       "category": "Point Clouds",
       "isSystem": false,
-      "components": 41,
+      "components": 38,
       "description": "Monolith is a voxel-based modeling editor. It is an ongoing research project focusing on the development of new digital representations and design workflows that inhabit the space between traditional computer aided design (CAD) and three dimensional voxel based image processing with the aim of allowing a very fine level of control over volumetric material distributions, especially in light of new multi-material 3D printing technologies.\n\nThe Monolith plugin for Grasshopper offers a comprehensive suite of tools that give you the ability to quickly construct detailed voxel-based model and visualize them in unique ways using our custom OpenGL rendering pipeline. Check out the video below to see it in action.",
       "authorName": "Andy Payne",
       "authorContact": ""
@@ -1048,7 +1048,7 @@
       "helpLink": "https://grasshopperdocs.com/addons/octopus.html",
       "category": "AI Evolutionary Algorithms",
       "isSystem": false,
-      "components": 40,
+      "components": 35,
       "description": "Octopus was originally made for Multi-Objective Evolutionary Optimization. It allows the search for many goals at once, producing a range of optimized trade-off solutions between the extremes of each goal. It is used and works similar to David Rutten's Galapagos, but introduces the Pareto-Principle for Multiple Goals.",
       "authorName": "Robert Vierlinger",
       "authorContact": "robert.vierlinger@gmail.com"
@@ -1087,7 +1087,7 @@
       "helpLink": "https://grasshopperdocs.com/addons/owl.html",
       "category": "AI Machine Learning",
       "isSystem": false,
-      "components": 74,
+      "components": 73,
       "description": "Owl is a library written for machine learning-oriented data processing.",
       "authorName": "Mateusz Zwierzycki",
       "authorContact": "mateuszzwierzycki@gmail.com"
@@ -1308,7 +1308,7 @@
       "helpLink": "https://grasshopperdocs.com/addons/shapediver.html",
       "category": "Third Party App Integration",
       "isSystem": false,
-      "components": 53,
+      "components": 50,
       "description": "Tune your Grasshopper definition for ShapeDiver",
       "authorName": "ShapeDiver GmbH",
       "authorContact": "mateuszzwierzycki@gmail.com and contact@shapediver.com"
@@ -1503,7 +1503,7 @@
       "helpLink": "https://grasshopperdocs.com/addons/tt-toolbox.html",
       "category": "Core Collections",
       "isSystem": false,
-      "components": 61,
+      "components": 43,
       "description": "Stream data between Grasshopper and the web.",
       "authorName": "CORE studio | Thornton Tomasetti",
       "authorContact": "ttcorestudio@gmail.com"
@@ -1620,7 +1620,7 @@
       "helpLink": "https://grasshopperdocs.com/addons/grasshopper-display.html",
       "category": null,
       "isSystem": true,
-      "components": 39,
+      "components": 25,
       "description": null,
       "authorName": "David Rutten",
       "authorContact": null
@@ -1633,7 +1633,7 @@
       "helpLink": "https://grasshopperdocs.com/addons/grasshopper-curve.html",
       "category": null,
       "isSystem": true,
-      "components": 115,
+      "components": 107,
       "description": null,
       "authorName": "David Rutten",
       "authorContact": null
@@ -1646,7 +1646,7 @@
       "helpLink": "https://grasshopperdocs.com/addons/grasshopper-surface.html",
       "category": null,
       "isSystem": true,
-      "components": 83,
+      "components": 80,
       "description": null,
       "authorName": "David Rutten",
       "authorContact": null
@@ -1672,7 +1672,7 @@
       "helpLink": "https://grasshopperdocs.com/addons/grasshopper-vector.html",
       "category": null,
       "isSystem": true,
-      "components": 73,
+      "components": 68,
       "description": null,
       "authorName": "David Rutten",
       "authorContact": null
@@ -1685,7 +1685,7 @@
       "helpLink": "https://grasshopperdocs.com/addons/grasshopper-maths.html",
       "category": null,
       "isSystem": true,
-      "components": 104,
+      "components": 10,
       "description": null,
       "authorName": "David Rutten",
       "authorContact": null
@@ -1698,7 +1698,7 @@
       "helpLink": "https://grasshopperdocs.com/addons/grasshopper-sets.html",
       "category": null,
       "isSystem": true,
-      "components": 88,
+      "components": 15,
       "description": null,
       "authorName": "David Rutten",
       "authorContact": null
@@ -1711,7 +1711,7 @@
       "helpLink": "https://grasshopperdocs.com/addons/grasshopper-params.html",
       "category": null,
       "isSystem": true,
-      "components": 13,
+      "components": 11,
       "description": null,
       "authorName": "David Rutten",
       "authorContact": null
@@ -1724,7 +1724,7 @@
       "helpLink": "https://grasshopperdocs.com/addons/grasshopper-transform.html",
       "category": null,
       "isSystem": true,
-      "components": 53,
+      "components": 52,
       "description": null,
       "authorName": "David Rutten",
       "authorContact": null
@@ -1737,7 +1737,7 @@
       "helpLink": "https://grasshopperdocs.com/addons/grasshopper-mesh.html",
       "category": null,
       "isSystem": true,
-      "components": 58,
+      "components": 57,
       "description": null,
       "authorName": "David Rutten",
       "authorContact": null
