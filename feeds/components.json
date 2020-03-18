@@ -20421,6 +20421,946 @@
       "helpLink": "https://grasshopperdocs.com/components/heron/xYToDecimalDegrees.html"
     },
     {
+      "name": "Attractor",
+      "id": "Attractor",
+      "library": "Heteroptera",
+      "category": "Geometry",
+      "summary": "Quick multi-attractor to return a congestive value between 0~1 by curves or points",
+      "description": null,
+      "iconCss": "background: url('icons/heteroptera.png') -72px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/attractor.html"
+    },
+    {
+      "name": "Bio Attractor",
+      "id": "Biottractor",
+      "library": "Heteroptera",
+      "category": "Geometry",
+      "summary": "Advanced multi-attraction system for finding a Congestive value",
+      "description": null,
+      "iconCss": "background: url('icons/heteroptera.png') -96px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/bioAttractor.html"
+    },
+    {
+      "name": "Bulger",
+      "id": "Bulger",
+      "library": "Heteroptera",
+      "category": "Geometry",
+      "summary": "Bulge set of points by some Bulger points<br>Transforming Vectors are generated in 3 dimensional space by default, but you can Right click on the component and choose \"Planar\" mode to generate them in xy plane",
+      "description": "Bulge set of points by some Bulger points<br>Transforming Vectors are generated in 3 dimensional space by default, but you can Right click on the component and choose \"Planar\" mode to generate them in xy plane.",
+      "iconCss": "background: url('icons/heteroptera.png') -144px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/bulger.html"
+    },
+    {
+      "name": "Center",
+      "id": "Center",
+      "library": "Heteroptera",
+      "category": "Geometry",
+      "summary": "Returns the center of a geometry and the Diameter of it's bounding box as the Dimention <br>You can Right Click on the component's icon  and choose \"ForAll\" option to have center point of a group of geometries",
+      "description": "Returns the center of a geometry and the Diameter of it's bounding box as the Dimention <br>You can Right Click on the component's icon  and choose \"ForAll\" option to have center point of a group of geometries.<br>Besides You can Right click on the component's icon and choose one of three provided options (Spacial/ Planar/ Basement ) to have Desired type of center.",
+      "iconCss": "background: url('icons/heteroptera.png') -192px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/center.html"
+    },
+    {
+      "name": "Curve Planarizer",
+      "id": "CPL",
+      "library": "Heteroptera",
+      "category": "Geometry",
+      "summary": "Planarizing a curve<br>Once working with multiple Curves: you can Right click on the component's icon and choose \"ForAll\" option to Planarize all curves Based on the same Plane",
+      "description": "Planarizing a curve<br>Once working with multiple Curves: you can Right click on the component's icon and choose \"ForAll\" option to Planarize all curves Based on the same Plane.<br>Below it, You can find two different options to define this single plane ( Base on first/ Average)",
+      "iconCss": "background: url('icons/heteroptera.png') -96px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/curvePlanarizer.html"
+    },
+    {
+      "name": "Evaluate Rect",
+      "id": "EvalRect",
+      "library": "Heteroptera",
+      "category": "Geometry",
+      "summary": "Evaluate a rectangle at normalized{uv} parameter",
+      "description": null,
+      "iconCss": "background: url('icons/heteroptera.png') -120px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/evaluateRect.html"
+    },
+    {
+      "name": "Fast Sweep",
+      "id": "FastSweep",
+      "library": "Heteroptera",
+      "category": "Geometry",
+      "summary": "Quick single section sweep<br>You can Right click on the component's icon and either impose \"RoadLike\" mode, or use \"Horizontal\" balancing",
+      "description": null,
+      "iconCss": "background: url('icons/heteroptera.png') -168px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/fastSweep.html"
+    },
+    {
+      "name": "Geometric Region",
+      "id": "GeoRegion",
+      "library": "Heteroptera",
+      "category": "Geometry",
+      "summary": "Create Regions from a list of curves",
+      "description": null,
+      "iconCss": "background: url('icons/heteroptera.png') -120px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/geometricRegion.html"
+    },
+    {
+      "name": "Hetrosweep",
+      "id": "Hetrosweep",
+      "library": "Heteroptera",
+      "category": "Geometry",
+      "summary": "Quick single section sweep<br>You can Right click on the component's icon and either impose \"RoadLike\" mode, or use \"Horizontal\" balancing",
+      "description": null,
+      "iconCss": "background: url('icons/heteroptera.png') -48px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/hetrosweep.html"
+    },
+    {
+      "name": "Modularpoints",
+      "id": "Modular",
+      "library": "Heteroptera",
+      "category": "Geometry",
+      "summary": "Modularize(digitize) a point by specific Scope size<br>Right click on ModularPoints icon to choose Which Directions (X/Y/Z) are affected by Modularpoints",
+      "description": null,
+      "iconCss": "background: url('icons/heteroptera.png') -216px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/modularpoints.html"
+    },
+    {
+      "name": "Number Grid",
+      "id": "Gridizer",
+      "library": "Heteroptera",
+      "category": "Geometry",
+      "summary": "Put number in a grid with a specified max column number and return the row number and the column number",
+      "description": null,
+      "iconCss": "background: url('icons/heteroptera.png') 0px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/numberGrid.html"
+    },
+    {
+      "name": "Project Vector",
+      "id": "PVector",
+      "library": "Heteroptera",
+      "category": "Geometry",
+      "summary": "Project a vector on another vector(direction).",
+      "description": null,
+      "iconCss": "background: url('icons/heteroptera.png') -24px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/projectVector.html"
+    },
+    {
+      "name": "Rectangle Grid",
+      "id": "Grid",
+      "library": "Heteroptera",
+      "category": "Geometry",
+      "summary": "Create a grid of points using a rectangle<br>If you're not satisfied using Exact Size of the cells, you can Right click on the component and choose \"FitSize\" to Fit the grid in the Base Rectangle",
+      "description": null,
+      "iconCss": "background: url('icons/heteroptera.png') -168px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/rectangleGrid.html"
+    },
+    {
+      "name": "Shell From Grid",
+      "id": "Shell",
+      "library": "Heteroptera",
+      "category": "Geometry",
+      "summary": "Create Surface,Mesh or net from a Tree of points",
+      "description": null,
+      "iconCss": "background: url('icons/heteroptera.png') -144px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/shellFromGrid.html"
+    },
+    {
+      "name": "Closest Numbers",
+      "id": "CN",
+      "library": "Heteroptera",
+      "category": "Maths",
+      "summary": "Find a set of closest Numbers to a specific number (The closest numbers in set D to number S)",
+      "description": null,
+      "iconCss": "background: url('icons/heteroptera.png') -192px -144px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/closestNumbers.html"
+    },
+    {
+      "name": "Hetero Mapper",
+      "id": "CurveMapper",
+      "library": "Heteroptera",
+      "category": "Maths",
+      "summary": "External Graph mapper<br>You can Right click on the Heteromapper's icon and choose \"AutoDomain\" mode to define Output domain based on input domain interval; otherwise it'll be set to 0-1 in \"Normalized\" mode",
+      "description": "External Graph mapper<br>You can Right click on the Heteromapper's icon and choose \"AutoDomain\" mode to define Output domain based on input domain interval; otherwise it'll be set to 0-1 in \"Normalized\" mode.",
+      "iconCss": "background: url('icons/heteroptera.png') -96px -144px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/heteroMapper.html"
+    },
+    {
+      "name": "InCommon Numbers",
+      "id": "LCM/GMD",
+      "library": "Heteroptera",
+      "category": "Maths",
+      "summary": "Retrieve 'Greatest common divisor' and 'Least common multiple' from a set of integers",
+      "description": null,
+      "iconCss": "background: url('icons/heteroptera.png') -24px -168px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/inCommonNumbers.html"
+    },
+    {
+      "name": "Intersect Domain",
+      "id": "IntersectDomains",
+      "library": "Heteroptera",
+      "category": "Maths",
+      "summary": "Calculate an interval by intersecting two intervals",
+      "description": null,
+      "iconCss": "background: url('icons/heteroptera.png') -168px -144px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/intersectDomain.html"
+    },
+    {
+      "name": "Interval Expand",
+      "id": "ExpandDomains",
+      "library": "Heteroptera",
+      "category": "Maths",
+      "summary": "Expand or shrink a domain",
+      "description": null,
+      "iconCss": "background: url('icons/heteroptera.png') -72px -168px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/intervalExpand.html"
+    },
+    {
+      "name": "Intervals Subtract",
+      "id": "SubtractDomains",
+      "library": "Heteroptera",
+      "category": "Maths",
+      "summary": "Calculate the result of subtraction from a set of domains by another set of domains",
+      "description": null,
+      "iconCss": "background: url('icons/heteroptera.png') 0px -168px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/intervalsSubtract.html"
+    },
+    {
+      "name": "Intervals Union",
+      "id": "UnionDomains",
+      "library": "Heteroptera",
+      "category": "Maths",
+      "summary": "Merge and union a set of domains",
+      "description": null,
+      "iconCss": "background: url('icons/heteroptera.png') -72px -144px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/intervalsUnion.html"
+    },
+    {
+      "name": "List Normalizer",
+      "id": "Normal",
+      "library": "Heteroptera",
+      "category": "Maths",
+      "summary": "Normalize a list of numbers",
+      "description": null,
+      "iconCss": "background: url('icons/heteroptera.png') -120px -144px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/listNormalizer.html"
+    },
+    {
+      "name": "Min/Max",
+      "id": "Extremums",
+      "library": "Heteroptera",
+      "category": "Maths",
+      "summary": "Extract the minimum and the maximum value of a list of numbers",
+      "description": null,
+      "iconCss": "background: url('icons/heteroptera.png') -216px -144px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/minMax.html"
+    },
+    {
+      "name": "Number Digitizer",
+      "id": "Digitizer",
+      "library": "Heteroptera",
+      "category": "Maths",
+      "summary": "modularize(digitize) a number by specific Scope size",
+      "description": null,
+      "iconCss": "background: url('icons/heteroptera.png') -24px -144px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/numberDigitizer.html"
+    },
+    {
+      "name": "Number Limiter",
+      "id": "Boundary",
+      "library": "Heteroptera",
+      "category": "Maths",
+      "summary": "Limit a number within a specific domain",
+      "description": null,
+      "iconCss": "background: url('icons/heteroptera.png') -144px -144px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/numberLimiter.html"
+    },
+    {
+      "name": "Numbers Biaser",
+      "id": "Biaser",
+      "library": "Heteroptera",
+      "category": "Maths",
+      "summary": "Bias a set of numbers by conic function<br>Right click on the component's icon and use \"Bipolar\" mode to bias numbers based on Bipolar Conic Function instead of Conic Function.",
+      "description": null,
+      "iconCss": "background: url('icons/heteroptera.png') -48px -168px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/numbersBiaser.html"
+    },
+    {
+      "name": "Symmetrical Domain",
+      "id": "SymDom",
+      "library": "Heteroptera",
+      "category": "Maths",
+      "summary": "Generate the symmetrical domain based on 'O' and length of 'X'",
+      "description": null,
+      "iconCss": "background: url('icons/heteroptera.png') -96px -168px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/symmetricalDomain.html"
+    },
+    {
+      "name": "Symmetrical Extend",
+      "id": "Nickname",
+      "library": "Heteroptera",
+      "category": "Maths",
+      "summary": "BiExtend or shrink a domain with symmetrical value",
+      "description": null,
+      "iconCss": "background: url('icons/heteroptera.png') -48px -144px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/symmetricalExtend.html"
+    },
+    {
+      "name": "Construct HyperIndex",
+      "id": "HyperIndex",
+      "library": "Heteroptera",
+      "category": "Network",
+      "summary": "Constructs a hyperIndex",
+      "description": null,
+      "iconCss": "background: url('icons/heteroptera.png') 0px -120px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/constructHyperIndex.html"
+    },
+    {
+      "name": "Incestuous Network",
+      "id": "Network",
+      "library": "Heteroptera",
+      "category": "Network",
+      "summary": "Create a simple Incestuous Network between adjacent points by giving preference to closest proximity",
+      "description": null,
+      "iconCss": "background: url('icons/heteroptera.png') -72px -120px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/incestuousNetwork.html"
+    },
+    {
+      "name": "Inter Topology",
+      "id": "InterTopology",
+      "library": "Heteroptera",
+      "category": "Network",
+      "summary": "Topology of connected nodes of different branches",
+      "description": null,
+      "iconCss": "background: url('icons/heteroptera.png') -216px -96px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/interTopology.html"
+    },
+    {
+      "name": "InterTopDraw",
+      "id": "InterTopDraw",
+      "library": "Heteroptera",
+      "category": "Network",
+      "summary": "Draw inter-topology along curves",
+      "description": null,
+      "iconCss": "background: url('icons/heteroptera.png') -96px -120px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/interTopDraw.html"
+    },
+    {
+      "name": "Network Editor",
+      "id": "NetworkEditor",
+      "library": "Heteroptera",
+      "category": "Network",
+      "summary": "Edit the topology of a network or create a network by topology",
+      "description": null,
+      "iconCss": "background: url('icons/heteroptera.png') -216px -120px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/networkEditor.html"
+    },
+    {
+      "name": "Network From Lines",
+      "id": "L-Net",
+      "library": "Heteroptera",
+      "category": "Network",
+      "summary": "Create a network from a set of crossing lines",
+      "description": null,
+      "iconCss": "background: url('icons/heteroptera.png') -48px -120px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/networkFromLines.html"
+    },
+    {
+      "name": "Network Path Finder",
+      "id": "PathFinder",
+      "library": "Heteroptera",
+      "category": "Network",
+      "summary": "Find the closest path in network to the given curve",
+      "description": null,
+      "iconCss": "background: url('icons/heteroptera.png') -24px -120px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/networkPathFinder.html"
+    },
+    {
+      "name": "Network Region",
+      "id": "NetRegion",
+      "library": "Heteroptera",
+      "category": "Network",
+      "summary": "Create Regions from network topology",
+      "description": null,
+      "iconCss": "background: url('icons/heteroptera.png') -168px -120px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/networkRegion.html"
+    },
+    {
+      "name": "Non-incestuous Network",
+      "id": "N-Net",
+      "library": "Heteroptera",
+      "category": "Network",
+      "summary": "Create a Non-incestuous-Network between adjacent points",
+      "description": null,
+      "iconCss": "background: url('icons/heteroptera.png') -192px -120px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/nonincestuousNetwork.html"
+    },
+    {
+      "name": "Point Enumerator",
+      "id": "PEnum",
+      "library": "Heteroptera",
+      "category": "Network",
+      "summary": "Enumerate  lists of points",
+      "description": null,
+      "iconCss": "background: url('icons/heteroptera.png') -120px -120px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/pointEnumerator.html"
+    },
+    {
+      "name": "Rebuild Network",
+      "id": "R-Net",
+      "library": "Heteroptera",
+      "category": "Network",
+      "summary": "Recreate Line from topology or convert different type of network topology",
+      "description": null,
+      "iconCss": "background: url('icons/heteroptera.png') -192px -96px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/rebuildNetwork.html"
+    },
+    {
+      "name": "Topologic Region",
+      "id": "TopoRegion",
+      "library": "Heteroptera",
+      "category": "Network",
+      "summary": "Create Regions from network topology",
+      "description": null,
+      "iconCss": "background: url('icons/heteroptera.png') -144px -120px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/topologicRegion.html"
+    },
+    {
+      "name": "Topology Graph Display",
+      "id": "TopoDisp",
+      "library": "Heteroptera",
+      "category": "Network",
+      "summary": "Display a network connection topology",
+      "description": null,
+      "iconCss": "background: url('icons/heteroptera.png') 0px -144px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/topologyGraphDisplay.html"
+    },
+    {
+      "name": "Attractor Geometrical Possibility",
+      "id": "AttraPossibility",
+      "library": "Heteroptera",
+      "category": "Random",
+      "summary": "Calculates the possibility of existing points by their adjacency to set of attractors",
+      "description": null,
+      "iconCss": "background: url('icons/heteroptera.png') -72px -216px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/attractorGeometricalPossibility.html"
+    },
+    {
+      "name": "Biased Distributer",
+      "id": "Distributer",
+      "library": "Heteroptera",
+      "category": "Random",
+      "summary": "Distributing a set of input points to different branches of a Point-Tree as an output, based on some attractor points called Jellum",
+      "description": "Distributing a set of input points to different branches of a Point-Tree as an output, based on some attractor points called Jellum. This way, the points tend to belong to the branch related to the nearest Jellum.<br>Double click on component to change the preview colors",
+      "iconCss": "background: url('icons/heteroptera.png') -96px -192px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/biasedDistributer.html"
+    },
+    {
+      "name": "Careless Range",
+      "id": "CRange",
+      "library": "Heteroptera",
+      "category": "Random",
+      "summary": "Divide a domain into careless equivalent parts and return the numbers",
+      "description": null,
+      "iconCss": "background: url('icons/heteroptera.png') -24px -192px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/carelessRange.html"
+    },
+    {
+      "name": "Chancy Allocator",
+      "id": "Chance",
+      "library": "Heteroptera",
+      "category": "Random",
+      "summary": "Randomly Allocates Items to different branches by defining the chance of each branch. so each item tends to belong to the branch with higher chance",
+      "description": null,
+      "iconCss": "background: url('icons/heteroptera.png') -120px -168px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/chancyAllocator.html"
+    },
+    {
+      "name": "Cheater Dice",
+      "id": "CheaterDice",
+      "library": "Heteroptera",
+      "category": "Random",
+      "summary": "Dice with unequal chances for items",
+      "description": null,
+      "iconCss": "background: url('icons/heteroptera.png') -144px -168px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/cheaterDice.html"
+    },
+    {
+      "name": "Curve Emitter",
+      "id": "C-Emitter",
+      "library": "Heteroptera",
+      "category": "Random",
+      "summary": "Emit a bunch of point from each curve source   (You can also use F5 key or Grasshopper Timer to refresh the component)",
+      "description": null,
+      "iconCss": "background: url('icons/heteroptera.png') -216px -192px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/curveEmitter.html"
+    },
+    {
+      "name": "Dice",
+      "id": "Dice",
+      "library": "Heteroptera",
+      "category": "Random",
+      "summary": "Rolling a Dice containing possible Data, for N times and extract N random items (You can also use F5 key or Grasshopper Timer to refresh the component)<br>Normally, there's a chance of having repeated data, but you can Right click on Dice icon and choose \"Just Once\" option to select each item just once",
+      "description": null,
+      "iconCss": "background: url('icons/heteroptera.png') -72px -192px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/dice.html"
+    },
+    {
+      "name": "Geometrical Possibility",
+      "id": "Possibility",
+      "library": "Heteroptera",
+      "category": "Random",
+      "summary": "Calculates the possibility of existing points by assigning a value to each point",
+      "description": null,
+      "iconCss": "background: url('icons/heteroptera.png') 0px -192px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/geometricalPossibility.html"
+    },
+    {
+      "name": "Noise Oscillator",
+      "id": "Noise",
+      "library": "Heteroptera",
+      "category": "Random",
+      "summary": "Noise Oscillator(streaming noise)<br>Right Click on the component's icon to choose internal timer (with three options), or turn-off the self-engine and use a grasshopper timer instead.",
+      "description": null,
+      "iconCss": "background: url('icons/heteroptera.png') -144px -192px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/noiseOscillator.html"
+    },
+    {
+      "name": "Point Emitter",
+      "id": "Emitter",
+      "library": "Heteroptera",
+      "category": "Random",
+      "summary": "Emit a bunch of points from each source point (You can also use F5 key or Grasshopper Timer to refresh the component)<br>You can Right click on Point Emitter icon and use \"Planar\" mode to generate points in xy Plane, instead of 3dimensional space",
+      "description": null,
+      "iconCss": "background: url('icons/heteroptera.png') -192px -168px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/pointEmitter.html"
+    },
+    {
+      "name": "Random",
+      "id": "RND",
+      "library": "Heteroptera",
+      "category": "Random",
+      "summary": "Generate random numbers (You can also use F5 key or Grasshopper Timer to refresh the component)<br>Normally Random numbers are generated in a range of (0,1), but you can Right click on component's icon and choose \"Bipolar\" mode to generate them in a range from -1 to 1",
+      "description": null,
+      "iconCss": "background: url('icons/heteroptera.png') -120px -192px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/random.html"
+    },
+    {
+      "name": "Random Direction",
+      "id": "RND Direction",
+      "library": "Heteroptera",
+      "category": "Random",
+      "summary": "Create random unit vectors(You can also use F5 key or Grasshopper Timer to refresh the component)",
+      "description": null,
+      "iconCss": "background: url('icons/heteroptera.png') -24px -216px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/randomDirection.html"
+    },
+    {
+      "name": "Random Plane",
+      "id": "RandomPlane",
+      "library": "Heteroptera",
+      "category": "Random",
+      "summary": "Create a random plane on a point",
+      "description": null,
+      "iconCss": "background: url('icons/heteroptera.png') -168px -168px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/randomPlane.html"
+    },
+    {
+      "name": "Random Position",
+      "id": "RND POS",
+      "library": "Heteroptera",
+      "category": "Random",
+      "summary": "Generate Random positions bounded by a rectangle, Z value Defines Maximum possible distance for positions along rectangle's normal direction",
+      "description": null,
+      "iconCss": "background: url('icons/heteroptera.png') -48px -192px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/randomPosition.html"
+    },
+    {
+      "name": "Random Vector",
+      "id": "RND Vector",
+      "library": "Heteroptera",
+      "category": "Random",
+      "summary": "Create random vectors in random directions with diverse lengths in a specific domain (You can also use F5 key or Grasshopper Timer to refresh the component)<br>To create Random Vectors in xy plane instead of 3dimensional space, you can Right click on component's icon and choose \"Planar\" mode",
+      "description": null,
+      "iconCss": "background: url('icons/heteroptera.png') -192px -192px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/randomVector.html"
+    },
+    {
+      "name": "Randomize Numbers",
+      "id": "Randomize",
+      "library": "Heteroptera",
+      "category": "Random",
+      "summary": "Randomize Numbers by percentage",
+      "description": null,
+      "iconCss": "background: url('icons/heteroptera.png') -168px -192px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/randomizeNumbers.html"
+    },
+    {
+      "name": "Seed Generator",
+      "id": "Seed",
+      "library": "Heteroptera",
+      "category": "Random",
+      "summary": "Generate a unique seed number each time it's recalled (You can also use F5 key or Grasshopper Timer to refresh the component)",
+      "description": null,
+      "iconCss": "background: url('icons/heteroptera.png') 0px -216px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/seedGenerator.html"
+    },
+    {
+      "name": "Slingshot Allocator",
+      "id": "Slingshot",
+      "library": "Heteroptera",
+      "category": "Random",
+      "summary": "Allocate each item of one list to random branches, it can make it by three different algorithm for distribution items",
+      "description": "Allocate each item of one list to random branches, it can make it by three different algorithm for distribution items. The number of branches is determined by N.<br> -Arbitrary Distribution: with different branch size.<br> -Homogeneous Distribution: with same branch size as far as possible.<br> -Equal Distribution: with the exact same branch size, it culls overload items randomly.",
+      "iconCss": "background: url('icons/heteroptera.png') -216px -168px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/slingshotAllocator.html"
+    },
+    {
+      "name": "Wandering Vector",
+      "id": "Wandering",
+      "library": "Heteroptera",
+      "category": "Random",
+      "summary": "Generating multiple live wandering vectors<br>Right Click on the component's icon to choose internal timer (with three options), or turn-off the self-engine and use a grasshopper timer instead",
+      "description": "Generating multiple live wandering vectors<br>Right Click on the component's icon to choose internal timer (with three options), or turn-off the self-engine and use a grasshopper timer instead.<br>To create Wandering Vectors in xy plane instead of 3dimensional space, Right click on component's icon and choose \"Planar\" mode",
+      "iconCss": "background: url('icons/heteroptera.png') -48px -216px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/wanderingVector.html"
+    },
+    {
+      "name": "Agent Display",
+      "id": "AgentDisplay",
+      "library": "Heteroptera",
+      "category": "Streaming",
+      "summary": "Generate a set of lines from each point of current list to their peers from previous list of points <br>(if N>1 output is  represented in Tree-Structure)",
+      "description": null,
+      "iconCss": "background: url('icons/heteroptera.png') -144px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/agentDisplay.html"
+    },
+    {
+      "name": "Agent Trailer",
+      "id": "Trailer",
+      "library": "Heteroptera",
+      "category": "Streaming",
+      "summary": "Generate a set of lines from each point of current list to their peers from previous list of points",
+      "description": null,
+      "iconCss": "background: url('icons/heteroptera.png') -24px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/agentTrailer.html"
+    },
+    {
+      "name": "Capacitor",
+      "id": "Capacitor",
+      "library": "Heteroptera",
+      "category": "Streaming",
+      "summary": "Multi-Step Buffer",
+      "description": null,
+      "iconCss": "background: url('icons/heteroptera.png') -216px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/capacitor.html"
+    },
+    {
+      "name": "Ease",
+      "id": "Ease",
+      "library": "Heteroptera",
+      "category": "Streaming",
+      "summary": "Change numbers Smoothly during the lapses",
+      "description": null,
+      "iconCss": "background: url('icons/heteroptera.png') -24px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/ease.html"
+    },
+    {
+      "name": "Event Gate",
+      "id": "EventSwitch",
+      "library": "Heteroptera",
+      "category": "Streaming",
+      "summary": "This component is aware of receiving new data. It means that as the new single data receives, it responses as various aspects in kicking and outputs.",
+      "description": null,
+      "iconCss": "background: url('icons/heteroptera.png') -72px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/eventGate.html"
+    },
+    {
+      "name": "Event Switch",
+      "id": "EventToggle",
+      "library": "Heteroptera",
+      "category": "Streaming",
+      "summary": "Boolean toggle responding to the first True value after a False. It can prevent downstream kicks by the menu option.",
+      "description": null,
+      "iconCss": "background: url('icons/heteroptera.png') -120px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/eventSwitch.html"
+    },
+    {
+      "name": "GlitchReduction",
+      "id": "GlitchReduction",
+      "library": "Heteroptera",
+      "category": "Streaming",
+      "summary": "De-Glitching/Smoothing streaming numbers (replacing irrelevant number with the previous relevant one)",
+      "description": null,
+      "iconCss": "background: url('icons/heteroptera.png') 0px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/glitchReduction.html"
+    },
+    {
+      "name": "Mass Additive Numbers Buffer",
+      "id": "NBMA",
+      "library": "Heteroptera",
+      "category": "Streaming",
+      "summary": "Once recalled, it adds the input number to the previous stack of inputted numbers",
+      "description": null,
+      "iconCss": "background: url('icons/heteroptera.png') 0px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/massAdditiveNumbersBuffer.html"
+    },
+    {
+      "name": "Mass Additive Vectors Buffer",
+      "id": "VBMA",
+      "library": "Heteroptera",
+      "category": "Streaming",
+      "summary": "Once recalled, it adds the input vector to the previous stack of inputted vectors",
+      "description": null,
+      "iconCss": "background: url('icons/heteroptera.png') -48px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/massAdditiveVectorsBuffer.html"
+    },
+    {
+      "name": "Mesh Traveler",
+      "id": "MeshTraveler",
+      "library": "Heteroptera",
+      "category": "Streaming",
+      "summary": "Mass additive Vector buffer, considering a mesh as a constraint",
+      "description": null,
+      "iconCss": "background: url('icons/heteroptera.png') -168px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/meshTraveler.html"
+    },
+    {
+      "name": "Oil.Can",
+      "id": "Can",
+      "library": "Heteroptera",
+      "category": "Streaming",
+      "summary": "Create a List-Tap, each time you call the component it will drop next item of the list (You can also use F5 key or Grasshopper Timer to refresh the component)<br>You can Right click on \"Drop Mode\"(M) and choose desired Mode among four possible options",
+      "description": null,
+      "iconCss": "background: url('icons/heteroptera.png') -72px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/oilCan.html"
+    },
+    {
+      "name": "Stream Freeze/Gate",
+      "id": "Freeze/Gate",
+      "library": "Heteroptera",
+      "category": "Streaming",
+      "summary": "Allows streaming data or don't, controlling by Gate parameter",
+      "description": "Allows streaming data or don't, controlling by Gate parameter.<br>This component can control data down-streaming and prevent unwanted ticks through solution<br>Right click on component's icon and choose \"Hold Data\" option to maintain latest received data until new data is arrived",
+      "iconCss": "background: url('icons/heteroptera.png') -48px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/streamFreezeGate.html"
+    },
+    {
+      "name": "TapBuffer",
+      "id": "Tap",
+      "library": "Heteroptera",
+      "category": "Streaming",
+      "summary": "Return an increasing number, each time that the component is called (You can also use Internal timer , trigger button , F5 key or Grasshopper Timer to refresh the component)",
+      "description": null,
+      "iconCss": "background: url('icons/heteroptera.png') -192px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/tapBuffer.html"
+    },
+    {
+      "name": "TimeShifter",
+      "id": "TimeShift",
+      "library": "Heteroptera",
+      "category": "Streaming",
+      "summary": "shift a list of changing data to n step before in its history",
+      "description": null,
+      "iconCss": "background: url('icons/heteroptera.png') -96px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/timeShifter.html"
+    },
+    {
+      "name": "Android UDP listener",
+      "id": "Androlistener",
+      "library": "Heteroptera",
+      "category": "Utilities",
+      "summary": "Android UDP Listener via 'Grasshopper Controller :<br> https://play",
+      "description": "Android UDP Listener via 'Grasshopper Controller :<br> https://play.google.com/store/apps/details?id=be.bernaerdt.grasshoppercontroller . <br>(You need to use Internal Timer or Gh_Timer to run the component)<br>Right Click on the component's icon to choose internal timer (with three options), or turn-off the self-engine and use a grasshopper timer instead.",
+      "iconCss": "background: url('icons/heteroptera.png') 0px -72px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/androidUDPListener.html"
+    },
+    {
+      "name": "Camera Crane",
+      "id": "Camera",
+      "library": "Heteroptera",
+      "category": "Utilities",
+      "summary": "Adjusting the active or the specified viewport camera",
+      "description": null,
+      "iconCss": "background: url('icons/heteroptera.png') -96px -72px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/cameraCrane.html"
+    },
+    {
+      "name": "Camera Story",
+      "id": "Cam Story",
+      "library": "Heteroptera",
+      "category": "Utilities",
+      "summary": "Create a storyline for camera<br>Right click on the component's icon to choose proper 'Interpolation mode' among five possible options (CatmullRom/ Cosine Smooth/ cubic Smooth/ LinearChange/ NearestNeighbour) and set 'Value Mode' to Normalized if needed<br>and aslo it's able to use double click on component in order to call Reset",
+      "description": null,
+      "iconCss": "background: url('icons/heteroptera.png') -48px -72px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/cameraStory.html"
+    },
+    {
+      "name": "Capture",
+      "id": "Capture",
+      "library": "Heteroptera",
+      "category": "Utilities",
+      "summary": "Auto-naming Viewport Capture (You can also use F5 key or Grasshopper Timer to refresh the component)<br>You can Right click on Capture's icon and choose CounterOff option to turn autonaming off.",
+      "description": null,
+      "iconCss": "background: url('icons/heteroptera.png') -192px -72px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/capture.html"
+    },
+    {
+      "name": "Capture Baked",
+      "id": "Baking-capture",
+      "library": "Heteroptera",
+      "category": "Utilities",
+      "summary": "Bake objects and capture auto-naming shots from them, it's useful for creating animation, using viewport's graphical-style",
+      "description": null,
+      "iconCss": "background: url('icons/heteroptera.png') -72px -72px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/captureBaked.html"
+    },
+    {
+      "name": "Dispatch / Unweave",
+      "id": "Dispatch",
+      "library": "Heteroptera",
+      "category": "Utilities",
+      "summary": "Dispatch the items in a list into multiple target lists based on a pattern of indexes<br>Right click on HeteroDispatch icon and Choose \"Purge Outputs\" option to remove useless Output parameters",
+      "description": null,
+      "iconCss": "background: url('icons/heteroptera.png') -144px -96px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/dispatchUnweave.html"
+    },
+    {
+      "name": "Domain Allocator",
+      "id": "Domain-Allocator",
+      "library": "Heteroptera",
+      "category": "Utilities",
+      "summary": "Allocate each item to specific branches by the position of its value within the range<br>Right click on branch allocator icon and choose \"Preserve Structure\" if you want to maintain data's structure and just add Sub Branches to the main Branches",
+      "description": null,
+      "iconCss": "background: url('icons/heteroptera.png') -120px -72px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/domainAllocator.html"
+    },
+    {
+      "name": "Encryption/Decryption",
+      "id": "CodeMachine",
+      "library": "Heteroptera",
+      "category": "Utilities",
+      "summary": "Encrypt and Decrypt a string with a password (key string)<br>Right click on component's icon to choose either \"Encryption\" or \"Decryption\" options",
+      "description": "Encrypt and Decrypt a string with a password (key string)<br>Right click on component's icon to choose either \"Encryption\" or \"Decryption\" options.<br>Besides by Right clicking you can choose one of three methods provided as encryption/decryption type ( Global/Local/NTS)",
+      "iconCss": "background: url('icons/heteroptera.png') -120px -96px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/encryptionDecryption.html"
+    },
+    {
+      "name": "GenePool Controller",
+      "id": "GNC",
+      "library": "Heteroptera",
+      "category": "Utilities",
+      "summary": "Controlling Interval ,Decimal-Number and the number of sliders in a GenePool",
+      "description": null,
+      "iconCss": "background: url('icons/heteroptera.png') -216px -72px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/genePoolController.html"
+    },
+    {
+      "name": "Group",
+      "id": "Group",
+      "library": "Heteroptera",
+      "category": "Utilities",
+      "summary": "Group reference geometries in rhino scene<br>Either click on component's group button to activate it for once, or set (A)Constant Activation True to group all geometries immediately when they're defined as (G) inputs<br>and aslo it's able to use double click on component in order to call Reset",
+      "description": null,
+      "iconCss": "background: url('icons/heteroptera.png') 0px -96px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/group.html"
+    },
+    {
+      "name": "Index Allocator",
+      "id": "i-Allocator",
+      "library": "Heteroptera",
+      "category": "Utilities",
+      "summary": "Allocate each item to specific index of branches<br>Right click on branch allocator icon and choose \"Preserve Structure\" if you want to maintain data's structure and just add Sub Branches to the main Branches",
+      "description": null,
+      "iconCss": "background: url('icons/heteroptera.png') -168px -72px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/indexAllocator.html"
+    },
+    {
+      "name": "Item Picker",
+      "id": "PickItem",
+      "library": "Heteroptera",
+      "category": "Utilities",
+      "summary": "Select Items in Data-Tree a checklist by a checklist form",
+      "description": null,
+      "iconCss": "background: url('icons/heteroptera.png') -144px -72px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/itemPicker.html"
+    },
+    {
+      "name": "Key Allocator",
+      "id": "Key-Allocator",
+      "library": "Heteroptera",
+      "category": "Utilities",
+      "summary": "Allocate each item to a specific string for each branch<br>Right click on branch allocator icon and choose \"Preserve Structure\" if you want to maintain data's structure and just add Sub Branches to the main Branches",
+      "description": null,
+      "iconCss": "background: url('icons/heteroptera.png') -168px -96px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/keyAllocator.html"
+    },
+    {
+      "name": "Ovulate",
+      "id": "Ovulate",
+      "library": "Heteroptera",
+      "category": "Utilities",
+      "summary": "Bake separate items ordered in a grid ,you can use a button to ovulate new ones (You can also use F5 key or Grasshopper Timer to refresh the component)<br>You can Right click on the Ovulate icon and choose \"Grouping\" mode to group baked geometries in each step, or choose both \"Grouping\" & \"Layer\" modes to group baked objects having the same layer<br>and aslo it's able to use double click on component in order to call Reset",
+      "description": null,
+      "iconCss": "background: url('icons/heteroptera.png') -24px -72px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/ovulate.html"
+    },
+    {
+      "name": "Pick Selection",
+      "id": "Selection",
+      "library": "Heteroptera",
+      "category": "Utilities",
+      "summary": "Pick selected objects in rhino<br>and aslo it's able to use double click on component in order to call Reset",
+      "description": null,
+      "iconCss": "background: url('icons/heteroptera.png') -96px -96px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/pickSelection.html"
+    },
+    {
+      "name": "Quick Baker",
+      "id": "QB",
+      "library": "Heteroptera",
+      "category": "Utilities",
+      "summary": "Just Bake it!<br>and aslo it's able to use double click on component in order to call Reset",
+      "description": null,
+      "iconCss": "background: url('icons/heteroptera.png') -24px -96px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/quickBaker.html"
+    },
+    {
+      "name": "Replace Objects",
+      "id": "Replace",
+      "library": "Heteroptera",
+      "category": "Utilities",
+      "summary": "Click on Replace Button to Replace a Rhino-object with another geometry<br>and aslo it's able to use double click on component in order to call Reset",
+      "description": null,
+      "iconCss": "background: url('icons/heteroptera.png') -192px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/replaceObjects.html"
+    },
+    {
+      "name": "Text Baker",
+      "id": "Textbaker",
+      "library": "Heteroptera",
+      "category": "Utilities",
+      "summary": "Bake a String<br>You can Right click on Text Baker icon and choose to bake the string as a \"3D Text\" or as a \"Text Dot\"",
+      "description": null,
+      "iconCss": "background: url('icons/heteroptera.png') -48px -96px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/textBaker.html"
+    },
+    {
+      "name": "Transform",
+      "id": "Xform",
+      "library": "Heteroptera",
+      "category": "Utilities",
+      "summary": "Click on Xform Button to Transform a geometry in rhino by a transform information<br>and aslo it's able to use double click on component in order to call Reset",
+      "description": null,
+      "iconCss": "background: url('icons/heteroptera.png') -72px -96px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/transform.html"
+    },
+    {
+      "name": "Unicode",
+      "id": "Unicode",
+      "library": "Heteroptera",
+      "category": "Utilities",
+      "summary": "Generating Unicode Character",
+      "description": null,
+      "iconCss": "background: url('icons/heteroptera.png') -216px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/heteroptera/unicode.html"
+    },
+    {
       "name": "add HBGlz",
       "id": "add HBGlz",
       "library": "Honeybee",

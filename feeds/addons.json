@@ -413,8 +413,8 @@
       "isSystem": false,
       "components": 4,
       "description": "EdiTree is a set of useful open source components developed by EDIT Collective to provide easier\r\nmanipulation of data structure and data management.",
-      "authorName": "EDIT Collective",
-      "authorContact": "info@editcollective.io"
+      "authorName": "John Ju Hyung Chun",
+      "authorContact": "j.chun@editcollective.io, info@editcollective.io"
     },
     {
       "name": "Elefront",
@@ -425,8 +425,8 @@
       "category": "Rhino Integration",
       "isSystem": false,
       "components": 49,
-      "description": "Provides components for baking modifying and referencing Rhino objects with user defined attributes",
-      "authorName": "Front Inc.",
+      "description": "The Elefront plug-in is all about managing model data and interaction with Rhino Objects. Elefront allows users to bake geometry to the Rhino model with the option of specifying attributes, including an unlimited amount of user defined attributes by means of key-value pairs. This way it is possible to treat a 3d Rhino model as a data base, where each object \"knows\" what it is, what it belongs to, which other object it relates to and in what way, what its size is, when it needs to be fabricated etc. Instead of trying to store geometry in a database, Elefront stores data in an \"Geometrybase\", hereby turning your Rhino model into a \"Building Information Model\" or BIM, for short. This data can be used for analysis, but also for referencing objects back into Grasshopper, based on one or more filters defined by key-value pairs that were defined upon baking, or that were added to the geometry with the \"modify Rhino attributes\" component. Storing all data inside Rhino geometry, will enable you to split up your Grasshopper process into manageable portions that multiple users can now use as input for further Grasshopper development.",
+      "authorName": "Ramon van der Heijden & Alan Tai",
       "authorContact": "elefront@frontinc.com"
     },
     {
@@ -438,9 +438,9 @@
       "category": "Geography & Maps",
       "isSystem": false,
       "components": 3,
-      "description": "OpenStreetMap and USGS Data Importers",
+      "description": "Elk is a set of tools to generate map and topographical surfaces using open source data from OpenStreetMap.org and USGS. OpenStretMap.org is an open/crowd sourced website of mapping data. It allows you to export XML formatted data of a selected area and then Elk will organize and construct collections of point and tag data so that you can begin creating curves and other Rhino/Grasshopper geometry. USGS is a science organization that provides access to a large range of scientific data pertaining to the earth.  Elk uses data that originates from the Shuttle Radar Topography Mission (SRTM) of 2000.  This was a shuttle mission where most of the earth was scanned for elevation and packaged in 1°x1° tiles.",
       "authorName": "Timothy Logan",
-      "authorContact": "elkdesigntech@gmail.com"
+      "authorContact": "timothy.b.logan@gmail.com, elkdesigntech@gmail.com"
     },
     {
       "name": "Emu",
@@ -503,8 +503,8 @@
       "category": "Animation & Physics",
       "isSystem": false,
       "components": 21,
-      "description": "Fast GPU-based physics simulation.",
-      "authorName": "Benjamin Felbrich",
+      "description": "FlexHopper offers very fast, particle-based physics simulation within Grasshopper. It let's you simulate unconstraint particles, fluids, rigid and soft bodies, textile and spring system, inflatables and a combination of all these materials in one scene at unparalleled speed. You can add collision geometry, define custom constraints and emit new particles during runtime. FlexHopper is based on FlexCLI, an open-source C++/CLI interface to access the physics engine NVidia Flex from within the .Net environment. FlexCLI and FlexHopper were developed by myself. It is built against NVidia Flex release 1.1.0 which is patented property of NVidia.",
+      "authorName": "Heinz Benjamin",
       "authorContact": "flexhopper@felbrich.com"
     },
     {
@@ -516,7 +516,7 @@
       "category": "Exotic Geometry",
       "isSystem": false,
       "components": 4,
-      "description": "Provides additional components for FlowLines creation",
+      "description": "flowL is a plug-in to visualize a vector field, generated trough positive and negative point charges.\nThe path lines are calculated with the \"Runge-Kutta 4th Order Method\" short \"RK4\", developed by the German mathematicians C. Runge and M.W. Kutta. around 1900.",
       "authorName": "[uto]",
       "authorContact": "to.from.uto@gmail.com"
     },
@@ -607,8 +607,8 @@
       "category": "Geography & Maps",
       "isSystem": false,
       "components": 15,
-      "description": "gHowl is a set of interoperability components which extends the ability of Grasshopper to communicate with other applications.",
-      "authorName": "Damien Alomar, Luis Fraguada and Giulio Piacentino, in alphabetical order",
+      "description": "gHowl is a set of components which extend Grasshopper's ability to communicate and exchange information with other applications and physical devices.",
+      "authorName": "Damien Alomar, Luis E. Fraguada and Giulio Piacentino",
       "authorContact": "gHowlcomponents@gmail.com"
     },
     {
@@ -649,6 +649,19 @@
       "description": "Heron enables the import of GIS data from various sources into the Rhino/Grasshopper environment, located, scaled and cropped based on an Earth Anchor Point and a clipping polygon.  Sources of GIS data include Shapefiles, USGS IMG/HGT Elevation files and ArcGIS REST Services over the web.",
       "authorName": "Brian Washburn",
       "authorContact": "blueherongis@gmail.com"
+    },
+    {
+      "name": "Heteroptera",
+      "releaseDate": "2019-Oct-28",
+      "version": "0.5.1.2",
+      "downloadLink": "https://www.food4rhino.com/app/heteroptera",
+      "helpLink": "https://grasshopperdocs.com/addons/heteroptera.html",
+      "category": "Core Collections",
+      "isSystem": false,
+      "components": 94,
+      "description": "Heteroptera is a plug-in for grasshopper comprised of a variety of tools in different categories that can be used as a toolbox, but it mostly focuses on Uncertainty and Generation.",
+      "authorName": "Amin Bahrami (Helioripple Studio)",
+      "authorContact": "amin.bahrami@helioripple.com"
     },
     {
       "name": "Honeybee",
@@ -763,7 +776,7 @@
       "category": "Exotic Geometry",
       "isSystem": false,
       "components": 45,
-      "description": "Set of tools for working with meshes using graph theory",
+      "description": "Ivy is a plug-in for mesh analysis, segmentation and unrolling inside the Grasshopper environment. Ivy uses notions and algorithms from Graph Theory and applies them towards mesh geometry exploration. In order to enable the use of graph theory specific algorithms, a new custom data type was created. The MeshGraph is an abstract construct that combines the geometric characteristics of the mesh with sets of linked data containers. The data containers that can be visualized as the mesh faces are the nodes of the graph and the links between them are the graph edges. The graph edges can be visualized as the mesh topological edges.",
       "authorName": "Andrei Nejur",
       "authorContact": "dea.arh@gmail.com"
     },
@@ -791,7 +804,7 @@
       "components": 36,
       "description": "This plugin contains a set of customised Kangaroo2 grasshopper components with the scope of calibrating a number of goals with regard to structural properties.\n\nThis is particularly useful for the analysis of form-active structures (including cablenets and gridshells) that are typically characterised by their large deformations when subjected to external loads. The underlying position-based dynamics implemented in the Kangaroo2 solver inherently deals with this non-linear behaviour. This means that both form-finding and analysis can be performed within the Grasshopper environment using K2 and K2Engineering.",
       "authorName": "Cecilie Brandt",
-      "authorContact": ""
+      "authorContact": "cecilie@ceciliebrandt.com"
     },
     {
       "name": "Kangaroo 2",
@@ -906,9 +919,9 @@
       "category": "Core Collections",
       "isSystem": false,
       "components": 86,
-      "description": "LunchBox is a plug-in for Grasshopper for exploring mathematical shapes, paneling, structures, and workflow.  We have also introduced new components for general machine learning implementations such as regression analysis, clustering, and networks.",
+      "description": "LunchBox is a collection of computational design tools for Grasshopper and Dynamo.  The plugins include new component nodes for managing data and geometry for activities such as generative form making, paneling, rationalization, and interoperability. LunchBox also includes new general-purpose Machine Learning components built on the Accord.NET framework.",
       "authorName": "Nathan Miller",
-      "authorContact": "lunchbox@provingground.io"
+      "authorContact": "nate@provingground.io, lunchbox@provingground.io"
     },
     {
       "name": "MeshEdit",
@@ -1218,8 +1231,8 @@
       "category": "Animation & Physics",
       "isSystem": false,
       "components": 6,
-      "description": "PhysX rigid body simulation in Grasshopper",
-      "authorName": "Gene Ting-Chun Kao & Long Nguyen, The Asian Coders",
+      "description": "PhysX.GH is an open source rigid body simulation tool for Grasshopper. It uses open source real-time physics engine NVIDIA PhysX and a C# wrapper from stilldesign/PhysX.Net. It runs with GPU and provides users with fast simulation results.",
+      "authorName": "The Asian Coders (Gene Ting-Chun Kao & Long Nguyen)",
       "authorContact": "kao.gene@gmail.com"
     },
     {
@@ -1231,7 +1244,7 @@
       "category": "Geometry & Meshes",
       "isSystem": false,
       "components": 2,
-      "description": "",
+      "description": "Plankton is a flexible and efficient library for handling n-gonal meshes. Plankton is written in C# and implements the halfedge data structure. The structure of the library is loosely based on Rhinocommon's mesh classes and was originally created for use within C#/VB scripting components in Grasshopper.",
       "authorName": "Daniel Piker and Will Pearson",
       "authorContact": "http://www.grasshopper3d.com/group/plankton"
     },
@@ -1259,7 +1272,7 @@
       "components": 122,
       "description": "A QuadEdgeDataStructure is used to represent a n-gonal Mesh without making any difference between primal and dual elements. The (relativ) dual-graph is holded in a valid state during any topological operation.\n\nThe implementation used in Grasshopper is embedded into the euclidean space.\n\nThe solvers for the graph-analytic-tools are working with ‚GH_Variant‚ values, which are provided by evaluating a string-expression against the QuadElement of investigation.\n\nThe components use a special zoom-interface. While UI-Elements are practicable to clarify an option, they are not if the value for the option should be set from the computation-tree.\nTherefor almost any UI-Element can be converted to a parameter.",
       "authorName": "Ortler Mark",
-      "authorContact": ""
+      "authorContact": "ortlermark@gmail.com"
     },
     {
       "name": "Quelea",
@@ -1280,11 +1293,11 @@
       "version": "0.1",
       "downloadLink": "https://www.food4rhino.com/app/reindeer",
       "helpLink": "https://grasshopperdocs.com/addons/reindeer.html",
-      "category": "Biology & DNA",
+      "category": "Wooden Structure Design",
       "isSystem": false,
       "components": 43,
-      "description": "Components to be optimized",
-      "authorName": "NIKKEN DDL",
+      "description": "Reindeer is an open-source, work in progress plugin for Grasshopper. It aims to simplify the process of designing, detailing and fabricating timber structures parametrically. The plugin includes tools for defining a timber element, search for details, analyze a structure according to Eurocode 5 and detail a structure using timber processing. The reindeer is an animal that lives around the polar circle. Through harsh and ever-changing climates and landscape topologies, he searches for food by sniffing out lichen beneath the snow. Similarly, the reindeer toolkit searches for parametric details using geometric properties. Search, don’t sort: No matter if the topology and typology changes, the toolkit will still find valid details.",
+      "authorName": "John Haddal Mork",
       "authorContact": "john.h.mork@ntnu.no"
     },
     {
@@ -1337,7 +1350,7 @@
       "components": 14,
       "description": "Tools for experiments in computational architecture",
       "authorName": "Tobias Schwinn",
-      "authorContact": "sandbox@tobesch.de"
+      "authorContact": "tobias.schwinn@icd.uni-stuttgart.de"
     },
     {
       "name": "ShapeDiver",
@@ -1376,7 +1389,7 @@
       "components": 24,
       "description": "Slingshot is an open source plug-in for which connects Grasshopper to relational databases such as MySQL.  The components allow you to create and query databases from within the Grasshopper canvas.  Slingshot for Grasshopper has been in development since 2010 and was the first plug-in published by Nathan Miller to enable better interoperability between data sources.",
       "authorName": "Nathan Miller",
-      "authorContact": ""
+      "authorContact": "nate@provingground.io"
     },
     {
       "name": "SmartForm",
@@ -1414,8 +1427,8 @@
       "isSystem": false,
       "components": 24,
       "description": "SPM Vector Components is a collection of tools for integrating and manipulating vector fields.",
-      "authorName": "Daniel Hambleton",
-      "authorContact": ""
+      "authorName": "Daniel Hambleton and Chris Walsh",
+      "authorContact": "daniel.hambleton@meshconsultants.ca"
     },
     {
       "name": "Squid",
@@ -1439,7 +1452,7 @@
       "category": "Pattern Generation",
       "isSystem": false,
       "components": 17,
-      "description": "Starfish is a plugin for parametric generation of various patterns. It focuses on 2d tessellations that allow creating structural systems based on topological interlocking principle.",
+      "description": "Starfish that allows parametric generation of various patterns. It focuses on 2d tessellations that can be used to create structural systems based on topological interlocking principle.",
       "authorName": "Michael Weizmann",
       "authorContact": "starfish.wm@gmail.com"
     },
@@ -1505,8 +1518,8 @@
       "isSystem": false,
       "components": 4,
       "description": "",
-      "authorName": "Unknown",
-      "authorContact": ""
+      "authorName": "Andrew Heumann",
+      "authorContact": "andheum@gmail.com"
     },
     {
       "name": "TreeSloth",
@@ -1538,14 +1551,14 @@
       "name": "TT Toolbox",
       "releaseDate": "2017-May-25",
       "version": "1.9",
-      "downloadLink": "https://www.food4rhino.com/app/tttoolbox",
+      "downloadLink": "https://www.food4rhino.com/app/tt-toolbox",
       "helpLink": "https://grasshopperdocs.com/addons/tt-toolbox.html",
       "category": "Core Collections",
       "isSystem": false,
       "components": 43,
-      "description": "Stream data between Grasshopper and the web.",
-      "authorName": "CORE studio | Thornton Tomasetti",
-      "authorContact": "ttcorestudio@gmail.com"
+      "description": "TT Toolbox features a range of different tools that we from the Core Studio at Thornton Tomasetti (former Advanced Computational Modeling Group) use on a regular basis, and we thought some of you might appreciate these.",
+      "authorName": "Thornton Tomasetti (CORE studio)",
+      "authorContact": "epoulsen@thorntontomasetti.com"
     },
     {
       "name": "VisualARQ",
@@ -1569,9 +1582,9 @@
       "category": "Point Clouds",
       "isSystem": false,
       "components": 57,
-      "description": "Volvox - Point Cloud editing plugin.\" + \"\" + \"The plugin is developed in the frame of the DURAARK project: http://duraark.eu/\" + \"\" + \"\" + \"DURAARK (Durable Architectural Knowledge) is a collaborative project \" + \"developing methods and tools for the semantic enrichment and long-term \" + \"preservation of architectural knowledge and data. It focuses on establishing working \" + \"practices and links between semantically rich BIM models and unstructured Point Cloud data. It is funded through the \" + \"European Commision's FP7 Programme and is running between 02/2013 - 01/2016.\" + \" (Grant Agreement no: 600908)",
-      "authorName": "CITA",
-      "authorContact": "mzwi@kadk.dk"
+      "description": "Volvox - Point Cloud editing plugin. The plugin is developed in the frame of the DURAARK project. It focuses on establishing working practices and links between semantically rich BIM models and unstructured Point Cloud data. It is funded through the European Commision's FP7 Programme.",
+      "authorName": "Stefan Dietze and Jakob Beetz",
+      "authorContact": "mzwi@kadk.dk, contact@duraark.eu"
     },
     {
       "name": "Wallacei",
