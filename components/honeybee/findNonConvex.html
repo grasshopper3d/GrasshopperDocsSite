@@ -1,0 +1,1008 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Find Non-Convex - Honeybee - Component for Grasshopper | Grasshopper Docs</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+
+<meta name="description" content="In EnergyPlus, Solar distribution determines how EnergyPlus treats the beam solar radiation and reflectances from exterior surfaces that strike the building, and ultimately, enter the zone. There are five choices: MinimalShadowing, FullExterior and FullInteriorAndExterior, FullExteriorWithReflections, FullInteriorAndExteriorWithReflections. If you intend to use either of FullInteriorAndExterior, FullExteriorWithReflections, FullInteriorAndExteriorWithReflections, you must make sure that all your zones are convex.&lt;br&gt;If you encounter a severe error saying, &quot;DetermineShadowingCombinations: There are # surfaces which are casting surfaces and are non-convex,&quot; you should find those non-convex surface in your model and turn them into convex surfaces by splitting them.&lt;br&gt;Spotting a non-convex surface is quite easy. While this component is here to quickly help you detect non-convex surfaces in your model, having conceptual understanding about what it means to have a no-convex surface will make you aware of such surfaces while you are creating zones. &lt;br&gt;Following are a couple ways to eyeball a non-convex surface.&lt;br&gt;1. Imagine you&#8217;re drawing lines from one vertice of a surface to all other vertices of the same surface and you&#8217;re doing this for all the vertices of the surface. Now if all those lines fall totally inside the surface then it&#8217;s a convex surface. If any of the lines, or even a part of it falls outside of the surface then it&#8217;s a non-convex surface.&lt;br&gt;2. Imagine you are walking from one vertice of a surface to the next verice of the same surface, and you are travelling to all the vertices of the surface like that. While making this journey, you&#39;ll make turns. If all those turns that you took at vertices, are either clockwise or counter-clockwise, then the surface is convex. If at least one of the turns was in the opposite direction, meaning, if total number of turns you took were 6, and out of those, 5 times you turned clockwise (or counter-clockwise) and one time you turned counter-clockwise (or clockwise), then it is a non-convex surface.&lt;br&gt;3. EnergyPlus displays severe error for non-convex zones. So if any of the face of the zone is made of more than one planar surfaces, and none of those surfaces are non-convex, however, if the resultant zone is not convex then EnergyPlus will still announce a severe error. To address this, in addition to providing your breps as input to this component, please also pass your breps through the native grasshopper Merge Faces (FMerge) component. And then provide the output of FMerge component (Simplified Brep) to the input of this component.&lt;br&gt;Please visit the following link to know why EnegyPlus does not like non-convex surfaces.&lt;br&gt;http://bigladdersoftware.com/epx/docs/8-2/input-output-reference/group-simulation-parameters.html#field-solar-distribution&lt;br&gt;" />
+<meta name="title" content="Find Non-Convex - Honeybee - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:title" content="Find Non-Convex - Honeybee - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://grasshopperdocs.com/components/honeybee/findNonConvex.html" />
+<meta property="og:site_name" content="Grasshopper Docs" />
+
+<link href="../../style.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+<script type="text/javascript" src="../../html5gallery/jquery.js"></script>
+<script type="text/javascript" src="../../html5gallery/html5gallery.js"></script>
+
+</head>
+<body>
+
+
+<div id="docs">
+<div id="docs-head">
+<div id="docs-masthead">
+<p id="docs-sitename"><a href="http://grasshopperdocs.com/"><img src="../../images/logo.png" alt="Grasshopper Docs" onerror="this.style.display='none'"></img></a></p>
+<p id="docs-sitedesc">Community documentation for Grasshopper add-ons &amp; plugins</p>
+</div>
+</div>
+
+<div id="docs-body">
+
+<div class="page">
+
+<div class="content compo-page">
+
+<div class="ghbar ">
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/moveHoneybee.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -216px -192px" data-toptip="Move Honeybee"></div></a>
+<a href="../../components/honeybee/honeybee.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') 0px -216px" data-downtip="Honeybee"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/separateZonesByOrientation.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -24px -216px" data-toptip="Separate Zones By Orientation"></div></a>
+<a href="../../components/honeybee/separateConditionedAndUnconditionedZones.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -48px -216px" data-downtip="Separate conditioned and unconditioned zones"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/decomposeBasedOnType.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -72px -216px" data-toptip="Decompose Based On Type"></div></a>
+<a href="../../components/honeybee/separateZonesByProgram.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -96px -216px" data-downtip="Separate Zones By Program"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/itemSelector.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -120px -216px" data-toptip="Item Selector"></div></a>
+<a href="../../components/honeybee/intersectMasses.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -144px -216px" data-downtip="Intersect Masses"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/createHBSrfs.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -168px -216px" data-toptip="create HBSrfs"></div></a>
+<a href="../../components/honeybee/changeHBObjName.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -192px -216px" data-downtip="Change HBObj Name"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/decomposeBasedOnBoundaryCondition.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -216px -216px" data-toptip="Decompose Based On Boundary Condition"></div></a>
+<a href="../../components/honeybee/askMe.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') 0px -240px" data-downtip="Ask Me"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/dumpHoneybeeObjects.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -24px -240px" data-toptip="Dump Honeybee Objects"></div></a>
+<a href="../../components/honeybee/findNonConvex.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -48px -240px" data-downtip="Find Non-Convex"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/skylightBasedOnRatio.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -72px -240px" data-toptip="Skylight Based on Ratio"></div></a>
+<a href="../../components/honeybee/masses2Zones.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -96px -240px" data-downtip="Masses2Zones"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/splitFloor2ThermalZones.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -120px -240px" data-toptip="Split Floor2Thermal Zones"></div></a>
+<a href="../../components/honeybee/extrudeWindows.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -144px -240px" data-downtip="Extrude Windows"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/orientHBGlz.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -168px -240px" data-toptip="orient HBGlz"></div></a>
+<a href="../../components/honeybee/zoneAttributeList.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -192px -240px" data-downtip="Zone Attribute List"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/surfaceAttributeList.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -216px -240px" data-toptip="Surface Attribute List"></div></a>
+<a href="../../components/honeybee/perimeterCoreZoning.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') 0px -264px" data-downtip="Perimeter Core Zoning"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/openFileDirectory.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -24px -264px" data-toptip="Open File Directory"></div></a>
+<a href="../../components/honeybee/createHBZones.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -48px -264px" data-downtip="create HBZones"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/labelZones.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -72px -264px" data-toptip="Label Zones"></div></a>
+<a href="../../components/honeybee/mirrorHoneybee.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -96px -264px" data-downtip="Mirror Honeybee"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/addHBGlz.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -120px -264px" data-toptip="add HBGlz"></div></a>
+<a href="../../components/honeybee/scaleHoneybee.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -144px -264px" data-downtip="Scale Honeybee"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/solveAdjacencies.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -168px -264px" data-toptip="Solve Adjacencies"></div></a>
+<a href="../../components/honeybee/decomposeHBZone.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -192px -264px" data-downtip="Decompose HBZone"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/glazingParametersList.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -216px -264px" data-toptip="Glazing Parameters List"></div></a>
+<a href="../../components/honeybee/selectByType.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') 0px -288px" data-downtip="Select by Type"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/getOrSetHBObjectName.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -24px -288px" data-toptip="Get or Set HB Object Name"></div></a>
+<a href="../../components/honeybee/removeGlazing.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -48px -288px" data-downtip="Remove Glazing"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/labelZoneSurfaces.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -72px -288px" data-toptip="Label Zone Surfaces"></div></a>
+<a href="../../components/honeybee/separateZonesByFloor.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -96px -288px" data-downtip="Separate Zones By Floor"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/rotateHoneybee.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -120px -288px" data-toptip="Rotate Honeybee"></div></a>
+<a href="../../components/honeybee/splitBuildingMass2Floors.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -144px -288px" data-downtip="Split Building Mass2Floors"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/loadHoneybeeObjects.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -168px -288px" data-toptip="Load Honeybee Objects"></div></a>
+<a href="../../components/honeybee/glazingBasedOnRatio.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -192px -288px" data-downtip="Glazing based on ratio"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="20">
+00 | Honeybee
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/radianceTransMaterialByColor.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -48px -360px" data-toptip="Radiance Trans Material By Color"></div></a>
+<a href="../../components/honeybee/radianceMirrorMaterialByColor.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -72px -360px" data-downtip="Radiance Mirror Material By Color"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/radianceMirrorMaterial.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -96px -360px" data-toptip="Radiance Mirror Material"></div></a>
+<a href="../../components/honeybee/setRadianceMaterials.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -120px -360px" data-downtip="Set Radiance Materials"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/radianceMetalMaterialByColor.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -144px -360px" data-toptip="Radiance Metal Material By Color"></div></a>
+<a href="../../components/honeybee/radianceTransMaterial.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -168px -360px" data-downtip="Radiance Trans Material"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/radianceOpaqueMaterial.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -192px -360px" data-toptip="Radiance Opaque Material"></div></a>
+<a href="../../components/honeybee/radianceBSDFMaterial.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -216px -360px" data-downtip="Radiance BSDF Material"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/radianceMaterialsInfo.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') 0px -384px" data-toptip="Radiance Materials Info"></div></a>
+<a href="../../components/honeybee/radianceGlassMaterial.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -24px -384px" data-downtip="Radiance Glass Material"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/radianceGlassMaterialByColor.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -48px -384px" data-toptip="Radiance Glass Material By Color"></div></a>
+<a href="../../components/honeybee/radianceMetalMaterial.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -72px -384px" data-downtip="Radiance Metal Material"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/radianceOpaqueMaterialByColor.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -96px -384px" data-toptip="Radiance Opaque Material By Color"></div></a>
+<a href="../../components/honeybee/callFromRadianceLibrary.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -120px -384px" data-downtip="Call from Radiance Library"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/addToRadianceLibrary.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -144px -384px" data-toptip="Add to Radiance Library"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="8">
+01 | Daylight | Material
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/generateSkyWithCertainIlluminanceLevel.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -192px -456px" data-toptip="Generate Sky With Certain Illuminance level"></div></a>
+<a href="../../components/honeybee/generateDarkSky.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -216px -456px" data-downtip="Generate Dark Sky"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/iESLuminaire.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') 0px -480px" data-toptip="IES Luminaire"></div></a>
+<a href="../../components/honeybee/generateAverageSky.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -24px -480px" data-downtip="Generate Average Sky"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/iESLuminaireZone.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -48px -480px" data-toptip="IES Luminaire Zone"></div></a>
+<a href="../../components/honeybee/generateCumulativeSky.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -72px -480px" data-downtip="Generate Cumulative Sky"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/generateCustomSky.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -96px -480px" data-toptip="Generate Custom Sky"></div></a>
+<a href="../../components/honeybee/generateStandardCIESky.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -120px -480px" data-downtip="Generate Standard CIE Sky"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/generateClimateBasedSky.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -144px -480px" data-toptip="Generate Climate Based Sky"></div></a>
+<a href="../../components/honeybee/iESCustomLamp.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -168px -480px" data-downtip="IES Custom Lamp"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/iESProject.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -192px -480px" data-toptip="IES Project"></div></a>
+<a href="../../components/honeybee/watchTheSky.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -216px -480px" data-downtip="Watch The Sky"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="6">
+02 | Daylight | Light Source
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/advancedDynamicShadingRecipe.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -216px -288px" data-toptip="Advanced Dynamic Shading Recipe"></div></a>
+<a href="../../components/honeybee/conceptualDynamicShadingRecipe.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') 0px -312px" data-downtip="Conceptual Dynamic Shading Recipe"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/imageBasedSimulation.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -24px -312px" data-toptip="Image Based Simulation"></div></a>
+<a href="../../components/honeybee/generateZoneTestPoints.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -48px -312px" data-downtip="Generate Zone Test Points"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/verticalSkyComponent.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -72px -312px" data-toptip="Vertical Sky Component"></div></a>
+<a href="../../components/honeybee/dSParameters.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -96px -312px" data-downtip="DSParameters"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/annualDaylightSimulation.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -120px -312px" data-toptip="Annual Daylight Simulation"></div></a>
+<a href="../../components/honeybee/rADParameters.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -144px -312px" data-downtip="RADParameters"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/daylightFactorSimulation.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -168px -312px" data-toptip="Daylight Factor Simulation"></div></a>
+<a href="../../components/honeybee/ambientResolution.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -192px -312px" data-downtip="Ambient Resolution"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/generateTestPoints.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -216px -312px" data-toptip="Generate Test Points"></div></a>
+<a href="../../components/honeybee/daysimGlareControlRecipe.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') 0px -336px" data-downtip="Daysim Glare Control Recipe"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/daysimShadingState.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -24px -336px" data-toptip="Daysim Shading State"></div></a>
+<a href="../../components/honeybee/gridBasedSimulation.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -48px -336px" data-downtip="Grid Based Simulation"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="7">
+03 | Daylight | Recipes
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/falseColor.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -168px -384px" data-toptip="False Color"></div></a>
+<a href="../../components/honeybee/daysimOccupancyGeneratorBasedOnList.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -192px -384px" data-downtip="Daysim Occupancy Generator Based On List"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/readAllTheHourlyResultsFromAnnualDaylightStudy.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -216px -384px" data-toptip="Read All the Hourly Results from Annual Daylight Study"></div></a>
+<a href="../../components/honeybee/daysimOccupancyGenerator.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') 0px -408px" data-downtip="Daysim Occupancy Generator"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/lightingControlRecipe.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -24px -408px" data-toptip="Lighting control Recipe"></div></a>
+<a href="../../components/honeybee/convertTIFToHDR.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -48px -408px" data-downtip="Convert TIF to HDR"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/setExposureForHDR.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -72px -408px" data-toptip="Set Exposure for HDR"></div></a>
+<a href="../../components/honeybee/convertHDRToGIF.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -96px -408px" data-downtip="Convert HDR to GIF"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/convertIMG.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -120px -408px" data-toptip="Convert IMG"></div></a>
+<a href="../../components/honeybee/convertHDRToTIF.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -144px -408px" data-downtip="Convert HDR to TIF"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/readAnnualResultI.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -168px -408px" data-toptip="Read Annual Result I"></div></a>
+<a href="../../components/honeybee/readAnnualResultII.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -192px -408px" data-downtip="Read Annual Result II"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/lookupDaylightingFolder.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -216px -408px" data-toptip="Lookup Daylighting Folder"></div></a>
+<a href="../../components/honeybee/glareAnalysis.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') 0px -432px" data-downtip="Glare Analysis"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/readHourlyResultsFromAnnualDaylightStudy.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -24px -432px" data-toptip="Read Hourly Results from Annual Daylight Study"></div></a>
+<a href="../../components/honeybee/readRADResult.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -48px -432px" data-downtip="Read RAD Result"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/readDSResultForAPoint.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -72px -432px" data-toptip="Read DS Result for a point"></div></a>
+<a href="../../components/honeybee/importRad.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -96px -432px" data-downtip="Import rad"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/mSH2RAD.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -120px -432px" data-toptip="MSH2RAD"></div></a>
+<a href="../../components/honeybee/importDgpFile.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -144px -432px" data-downtip="Import dgp File"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/importPtsFile.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -168px -432px" data-toptip="Import Pts File"></div></a>
+<a href="../../components/honeybee/runDaylightSimulation.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -192px -432px" data-downtip="Run Daylight Simulation"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/refineDaylightSimulation.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -216px -432px" data-toptip="Refine Daylight Simulation"></div></a>
+<a href="../../components/honeybee/daysimElectricalLightingUse.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') 0px -456px" data-downtip="Daysim Electrical Lighting Use"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/daysimShadingGroupSensors.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -24px -456px" data-toptip="Daysim shading group sensors"></div></a>
+<a href="../../components/honeybee/daysimAnnualProfiles.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -48px -456px" data-downtip="Daysim Annual Profiles"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="13">
+04 | Daylight | Daylight
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/listZonePrograms.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') 0px 0px" data-toptip="List Zone Programs"></div></a>
+<a href="../../components/honeybee/getZoneEnergyPlusLoads.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -24px 0px" data-downtip="Get Zone Energy Plus Loads"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/getEnergyPlusLoads.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -48px 0px" data-toptip="Get Energy Plus Loads"></div></a>
+<a href="../../components/honeybee/bldgPrograms.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -72px 0px" data-downtip="bldg Programs"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/getEnergyPlusSchedules.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -96px 0px" data-toptip="Get Energy Plus Schedules"></div></a>
+<a href="../../components/honeybee/getZoneEnergyPlusSchedules.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -120px 0px" data-downtip="Get Zone Energy Plus Schedules"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+05 | Energy | Building Program
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/energyPlusGlassMaterial.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -144px -168px" data-toptip="Energy Plus Glass Material"></div></a>
+<a href="../../components/honeybee/searchEPConstruction.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -168px -168px" data-downtip="Search EP Construction"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/energyPlusShadeMaterial.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -192px -168px" data-toptip="Energy Plus Shade Material"></div></a>
+<a href="../../components/honeybee/energyPlusNoMassOpaqueMaterial.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -216px -168px" data-downtip="Energy Plus No Mass Opaque Material"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/energyPlusConstruction.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') 0px -192px" data-toptip="Energy Plus Construction"></div></a>
+<a href="../../components/honeybee/energyPlusWindowMaterial.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -24px -192px" data-downtip="Energy Plus Window Material"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/rValueWithAirFilms.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -48px -192px" data-toptip="R-Value With Air Films"></div></a>
+<a href="../../components/honeybee/addToEnergyPlusLibrary.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -72px -192px" data-downtip="Add to Energy Plus Library"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/energyPlusOpaqueMaterial.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -96px -192px" data-toptip="Energy Plus Opaque Material"></div></a>
+<a href="../../components/honeybee/decomposeEPConstruction.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -120px -192px" data-downtip="Decompose EP Construction"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/decomposeEPMaterial.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -144px -192px" data-toptip="Decompose EP Material"></div></a>
+<a href="../../components/honeybee/callFromEPConstructionLibrary.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -168px -192px" data-downtip="Call from EP Construction Library"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/energyPlusWindowAirGap.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -192px -192px" data-toptip="Energy Plus Window Air Gap"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="7">
+06 | Energy | Material | Construction
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/dailySchedule.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') 0px -504px" data-toptip="Daily Schedule"></div></a>
+<a href="../../components/honeybee/createCSVSchedule.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -24px -504px" data-downtip="Create CSV Schedule"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/seasonalSchedule.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -48px -504px" data-toptip="Seasonal Schedule"></div></a>
+<a href="../../components/honeybee/constantSchedule.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -72px -504px" data-downtip="Constant Schedule"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/searchEPScheduleLibrary.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -96px -504px" data-toptip="Search EP Schedule Library"></div></a>
+<a href="../../components/honeybee/annualSchedule.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -120px -504px" data-downtip="Annual Schedule"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/decomposeEnergyPlusSchedule.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -144px -504px" data-toptip="Decompose Energy Plus Schedule"></div></a>
+<a href="../../components/honeybee/callFromEPScheduleLibrary.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -168px -504px" data-downtip="Call from EP Schedule Library"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/convertEnergyPlusScheduleToValues.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -192px -504px" data-toptip="Convert Energy Plus Schedule to Values"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="5">
+07 | Energy | Schedule
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/setEnergyPlusZoneLoads.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -192px -24px" data-toptip="Set Energy Plus Zone Loads"></div></a>
+<a href="../../components/honeybee/createEPGround.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -216px -24px" data-downtip="Create EP Ground"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/setEPZoneInteriorConstruction.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') 0px -48px" data-toptip="Set EP Zone Interior Construction"></div></a>
+<a href="../../components/honeybee/infORventPerAreaCalculator.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -24px -48px" data-downtip="inf ORvent Per Area Calculator"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/setEnergyPlusZoneSchedules.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -48px -48px" data-toptip="Set Energy Plus Zone Schedules"></div></a>
+<a href="../../components/honeybee/lightingDensityCalculator.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -72px -48px" data-downtip="Lighting Density Calculator"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/setEPAirFlow.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -96px -48px" data-toptip="Set EP Air Flow"></div></a>
+<a href="../../components/honeybee/setLoadsAndSchedules.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -120px -48px" data-downtip="Set Loads And Schedules"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/setEPSurfaceConstruction.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -144px -48px" data-toptip="Set EP Surface Construction"></div></a>
+<a href="../../components/honeybee/setEPZoneUndergroundConstruction.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -168px -48px" data-downtip="Set EP Zone Underground Construction"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/setZoneProperties.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -192px -48px" data-toptip="Set Zone Properties"></div></a>
+<a href="../../components/honeybee/setEnergyPlusZoneThresholds.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -216px -48px" data-downtip="Set Energy Plus Zone Thresholds"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/addEarthtube.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') 0px -72px" data-toptip="Add Earthtube"></div></a>
+<a href="../../components/honeybee/setEPZoneConstruction.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -24px -72px" data-downtip="Set EP Zone Construction"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/createEPPlenum.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -48px -72px" data-toptip="Create EP Plenum"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="8">
+08 | Energy | Set Zone Properties
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/generationsystem.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -72px -336px" data-toptip="generationsystem"></div></a>
+<a href="../../components/honeybee/loadOpenStudioMeasure.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -96px -336px" data-downtip="Load Open Studio Measure"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/simpleInverter.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -120px -336px" data-toptip="simple Inverter"></div></a>
+<a href="../../components/honeybee/hVACSystemsList.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -144px -336px" data-downtip="HVACSystems List"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/assignHVACSystem.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -168px -336px" data-toptip="Assign HVAC System"></div></a>
+<a href="../../components/honeybee/hVACCoolingDetails.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -192px -336px" data-downtip="HVAC Cooling Details"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/hVACAirDetails.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -216px -336px" data-toptip="HVAC Air Details"></div></a>
+<a href="../../components/honeybee/hVACHeatingDetails.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') 0px -360px" data-downtip="HVAC Heating Details"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/generatorPV.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -24px -360px" data-toptip="Generator PV"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="5">
+09 | Energy | HVACSystems
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/surfaceDataBasedOnType.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -72px -72px" data-toptip="Surface Data Based On Type"></div></a>
+<a href="../../components/honeybee/readMicroclimateMatrix.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -96px -72px" data-downtip="Read Microclimate Matrix"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/energyShadeBenefitEvaluator.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -120px -72px" data-toptip="Energy Shade Benefit Evaluator"></div></a>
+<a href="../../components/honeybee/makeAdiabatic.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -144px -72px" data-downtip="Make Adiabatic"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/visualizeMicroclimateMap.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -168px -72px" data-toptip="Visualize Microclimate Map"></div></a>
+<a href="../../components/honeybee/readGenerationSystemResults.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -192px -72px" data-downtip="Read generation system results"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/openStudioToGbXML.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -216px -72px" data-toptip="Open Studio to gb XML"></div></a>
+<a href="../../components/honeybee/pMVComfortAnalysisRecipe.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') 0px -96px" data-downtip="PMV Comfort Analysis Recipe"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/exportToOpenStudio.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -24px -96px" data-toptip="Export To Open Studio"></div></a>
+<a href="../../components/honeybee/runEnergySimulation.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -48px -96px" data-downtip="Run Energy Simulation"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/shadowPar.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -72px -96px" data-toptip="Shadow Par"></div></a>
+<a href="../../components/honeybee/readHVACSizing.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -96px -96px" data-downtip="Read HVAC Sizing"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/gbXMLToHoneybee.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -120px -96px" data-toptip="gb XML to Honeybee"></div></a>
+<a href="../../components/honeybee/simulationControl.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -144px -96px" data-downtip="Simulation Control"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/readEPResult.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -168px -96px" data-toptip="Read EP Result"></div></a>
+<a href="../../components/honeybee/colorSurfacesByEPResult.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -192px -96px" data-downtip="Color Surfaces by EP Result"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/thermalAutonomyAnalysis.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -216px -96px" data-toptip="Thermal Autonomy Analysis"></div></a>
+<a href="../../components/honeybee/generateEPOutput.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') 0px -120px" data-downtip="Generate EP Output"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/makeAdiabaticByName.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -24px -120px" data-toptip="Make Adiabatic by Name"></div></a>
+<a href="../../components/honeybee/constructEnergyBalance.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -48px -120px" data-downtip="Construct Energy Balance"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/normalizeDataByFloorArea.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -72px -120px" data-toptip="Normalize Data by Floor Area"></div></a>
+<a href="../../components/honeybee/applyOpenStudioMeasure.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -96px -120px" data-downtip="Apply Open Studio Measure"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/adaptiveComfortAnalysisRecipe.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -120px -120px" data-toptip="Adaptive Comfort Analysis Recipe"></div></a>
+<a href="../../components/honeybee/colorZonesByEPResult.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -144px -120px" data-downtip="Color Zones by EP Result"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/ePContextSurfaces.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -168px -120px" data-toptip="EP context Surfaces"></div></a>
+<a href="../../components/honeybee/balanceTemperatureCalculator.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -192px -120px" data-downtip="Balance Temperature Calculator"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/readResultDictionary.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -216px -120px" data-toptip="Read Result Dictionary"></div></a>
+<a href="../../components/honeybee/indoorViewFactorCalculator.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') 0px -144px" data-downtip="Indoor View Factor Calculator"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/rerunIDF.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -24px -144px" data-toptip="Re-run IDF"></div></a>
+<a href="../../components/honeybee/pETAnalysisRecipe.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -48px -144px" data-downtip="PET Analysis Recipe"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/rerunOSM.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -72px -144px" data-toptip="Re-run OSM"></div></a>
+<a href="../../components/honeybee/energySimulationPar.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -96px -144px" data-downtip="Energy Simulation Par"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/readEPCustomResult.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -120px -144px" data-toptip="Read EP Custom Result"></div></a>
+<a href="../../components/honeybee/readEPSurfaceResult.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -144px -144px" data-downtip="Read EP Surface Result"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/lookupEnergyPlusFolder.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -168px -144px" data-toptip="Lookup Energy Plus Folder"></div></a>
+<a href="../../components/honeybee/readEPHVACResult.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -192px -144px" data-downtip="Read EP HVAC Result"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/microclimateMapAnalysis.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -216px -144px" data-toptip="Microclimate Map Analysis"></div></a>
+<a href="../../components/honeybee/matrixToDataTree.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') 0px -168px" data-downtip="Matrix to Data Tree"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/surfaceDataBasedOnTypeDetailed.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -24px -168px" data-toptip="Surface Data Based On Type Detailed"></div></a>
+<a href="../../components/honeybee/outdoorComfortAnalysisRecipe.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -48px -168px" data-downtip="Outdoor Comfort Analysis Recipe"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/energyPlusWindowShadeGenerator.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -72px -168px" data-toptip="Energy Plus Window Shade Generator"></div></a>
+<a href="../../components/honeybee/addInternalMassToZone.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -96px -168px" data-downtip="Add Internal Mass to Zone"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/makeAdiabaticByType.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -120px -168px" data-toptip="Make Adiabatic By Type"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="22">
+10 | Energy | Energy
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/createThermBoundaries.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -144px 0px" data-toptip="Create Therm Boundaries"></div></a>
+<a href="../../components/honeybee/importTHERMXML.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -168px 0px" data-downtip="Import THERM XML"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/importWINDOWGlzSystem.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -192px 0px" data-toptip="Import WINDOW Glz System"></div></a>
+<a href="../../components/honeybee/readTHERMResult.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -216px 0px" data-downtip="Read THERM Result"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/assemblyUvalue.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') 0px -24px" data-toptip="Assembly Uvalue"></div></a>
+<a href="../../components/honeybee/thermMaterialToEnergyPlusMaterial.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -24px -24px" data-downtip="Therm Material to Energy Plus Material"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/thermMaterial.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -48px -24px" data-toptip="Therm Material"></div></a>
+<a href="../../components/honeybee/importWINDOWIDFReport.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -72px -24px" data-downtip="Import WINDOW IDF Report"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/createThermPolygons.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -96px -24px" data-toptip="Create Therm Polygons"></div></a>
+<a href="../../components/honeybee/customRadiantEnvironment.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -120px -24px" data-downtip="Custom Radiant Environment"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/thermallyBridgedEPConstruction.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -144px -24px" data-toptip="Thermally Bridged EP Construction"></div></a>
+<a href="../../components/honeybee/writeTHERMFile.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -168px -24px" data-downtip="Write THERM File"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="6">
+11 | THERM
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/updateHoneybee.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -216px -504px" data-toptip="Update Honeybee"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+12 | Developers
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/importIdf.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -72px -456px" data-toptip="Import idf"></div></a>
+<a href="../../components/honeybee/visualiseHoneybeegenerationCashflow.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -96px -456px" data-downtip="Visualise Honeybeegeneration cashflow"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/condensationCalculator.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -120px -456px" data-toptip="Condensation calculator"></div></a>
+<a href="../../components/honeybee/customizeEnergyPlusObjects.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -144px -456px" data-downtip="Customize Energy Plus Objects"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/honeybee/exportEPC.html"><div class="ghsprite" style="background: url('../../icons/honeybee.png') -168px -456px" data-toptip="Export EPC"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+13 | WIP
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+
+<div class="addon-buttons">
+<a href="#tutorials">Video Tutorials</a>
+<a href="https://github.com/ladybug-tools/honeybee-legacy">Source Code</a>
+<a href="https://www.food4rhino.com/app/ladybug-tools">Download</a>
+
+</div>
+
+<div class="compo-header">
+<h1><div class="ghsprite" style="background: url('../../icons/honeybee.png') -48px -240px" ></div> Find Non-Convex</h1>
+
+<div class="breadcrumb">
+ <a href="../../index.html">Component Index</a>
+  <a href="../../addons/honeybee.html">Honeybee</a><a href="#" class="breadcrumb-nolink">00 | Honeybee</a><a href="#" class="breadcrumb-nolink">Find Non-Convex</a>
+</div>
+
+</div>
+<h3>In EnergyPlus, Solar distribution determines how EnergyPlus treats the beam solar radiation and reflectances from exterior surfaces that strike the building, and ultimately, enter the zone. There are five choices: MinimalShadowing, FullExterior and FullInteriorAndExterior, FullExteriorWithReflections, FullInteriorAndExteriorWithReflections. If you intend to use either of FullInteriorAndExterior, FullExteriorWithReflections, FullInteriorAndExteriorWithReflections, you must make sure that all your zones are convex.<br>If you encounter a severe error saying, "DetermineShadowingCombinations: There are # surfaces which are casting surfaces and are non-convex," you should find those non-convex surface in your model and turn them into convex surfaces by splitting them.<br>Spotting a non-convex surface is quite easy. While this component is here to quickly help you detect non-convex surfaces in your model, having conceptual understanding about what it means to have a no-convex surface will make you aware of such surfaces while you are creating zones. <br>Following are a couple ways to eyeball a non-convex surface.<br>1. Imagine you’re drawing lines from one vertice of a surface to all other vertices of the same surface and you’re doing this for all the vertices of the surface. Now if all those lines fall totally inside the surface then it’s a convex surface. If any of the lines, or even a part of it falls outside of the surface then it’s a non-convex surface.<br>2. Imagine you are walking from one vertice of a surface to the next verice of the same surface, and you are travelling to all the vertices of the surface like that. While making this journey, you'll make turns. If all those turns that you took at vertices, are either clockwise or counter-clockwise, then the surface is convex. If at least one of the turns was in the opposite direction, meaning, if total number of turns you took were 6, and out of those, 5 times you turned clockwise (or counter-clockwise) and one time you turned counter-clockwise (or clockwise), then it is a non-convex surface.<br>3. EnergyPlus displays severe error for non-convex zones. So if any of the face of the zone is made of more than one planar surfaces, and none of those surfaces are non-convex, however, if the resultant zone is not convex then EnergyPlus will still announce a severe error. To address this, in addition to providing your breps as input to this component,  please also pass your breps through the native grasshopper Merge Faces (FMerge) component. And then provide the output of FMerge component (Simplified Brep) to the input of this component.<br>Please visit the following link to know why EnegyPlus does not like non-convex surfaces.<br>http://bigladdersoftware.com/epx/docs/8-2/input-output-reference/group-simulation-parameters.html#field-solar-distribution<br></h3>
+<h2>Inputs</h2>
+<table class="params-table input-params">
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Breps</b></td><td>_breps</td><td>A list of breps that you wish to scan for non-convex surfaces</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table class="params-table output-params">
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Out</b></td><td>readMe!</td><td>Messages</td><td>String</td></tr>
+<tr><td><b>Non Convex</b></td><td>nonConvex</td><td>A list of non-convex surfaces, if found in breps provided.</td><td>Goo</td></tr>
+<tr><td><b>Faulty Geometry</b></td><td>faultyGeometry</td><td>A list of faultyGeometry if found in breps provided. Typically these are surfaces with more edge curves than the visibale edges of the surface. If such surfaces are found in your model, please use native  grasshopper Deconstruct Brep component to analyze the faultyGeometry.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<div class="ghtutorials">
+<a name="tutorials"></a>
+<h2>Video Tutorials</h2>
+<div style="display:none;" class="html5gallery" data-skin="verticallight" data-width="1000" data-height="600" data-thumbwidth="280" data-thumbheight="70" data-thumbgap="5">
+
+<a href="http://www.youtube.com/embed/t3JfC35CGYs"><img src="http://img.youtube.com/vi/t3JfC35CGYs/1.jpg" alt="Build A Wufi Passive Model In  With Honeybee"></a>
+<a href="http://www.youtube.com/embed/ubkHdERn8a8"><img src="http://img.youtube.com/vi/ubkHdERn8a8/1.jpg" alt="01 Honeybee Quickstart - Getting Started"></a>
+<a href="http://www.youtube.com/embed/BTs4wqBYA_o"><img src="http://img.youtube.com/vi/BTs4wqBYA_o/1.jpg" alt="02 Honeybee Quickstart - Defining Zones And Running A Simulation"></a>
+<a href="http://www.youtube.com/embed/xjJ79qHgYIE"><img src="http://img.youtube.com/vi/xjJ79qHgYIE/1.jpg" alt="03 Honeybee Quickstart - Visualizing Results"></a>
+<a href="http://www.youtube.com/embed/j9d6ldaDox8"><img src="http://img.youtube.com/vi/j9d6ldaDox8/1.jpg" alt="04 Honeybee Quickstart - Zone Attributes And Materials"></a>
+<a href="http://www.youtube.com/embed/vUS9YupN4hc"><img src="http://img.youtube.com/vi/vUS9YupN4hc/1.jpg" alt="05 Honeybee Quickstart - Internal Mass, Loads, Schedules"></a>
+<a href="http://www.youtube.com/embed/39rZVOWgLiE"><img src="http://img.youtube.com/vi/39rZVOWgLiE/1.jpg" alt="06 Honeybee Quickstart - Natural Ventilation And Hvac Systems"></a>
+<a href="http://www.youtube.com/embed/lFypBmp-VsQ"><img src="http://img.youtube.com/vi/lFypBmp-VsQ/1.jpg" alt="Shade Analysis Using Honeybee: Shading Masks"></a>
+<a href="http://www.youtube.com/embed/i7YCLfqJA7Y"><img src="http://img.youtube.com/vi/i7YCLfqJA7Y/1.jpg" alt="Shade Analysis Using Honeybee: Solar Access"></a>
+<a href="http://www.youtube.com/embed/KAWFogHxIjs"><img src="http://img.youtube.com/vi/KAWFogHxIjs/1.jpg" alt="01 Daylight Simulation Using Honeybee: Input Basics"></a>
+<a href="http://www.youtube.com/embed/57XaOzFU0TY"><img src="http://img.youtube.com/vi/57XaOzFU0TY/1.jpg" alt="02 Daylight Simulation Using Honeybee: Processing Simulation Results"></a>
+<a href="http://www.youtube.com/embed/4Ze2pAC0gGs"><img src="http://img.youtube.com/vi/4Ze2pAC0gGs/1.jpg" alt="03 Daylight Simulation Using Honeybee: Material Definitions"></a>
+<a href="http://www.youtube.com/embed/kln2uRLHPbg"><img src="http://img.youtube.com/vi/kln2uRLHPbg/1.jpg" alt="04 Daylight Simulation Using Honeybee: Electric Lighting"></a>
+<a href="http://www.youtube.com/embed/M4MA82_CPPA"><img src="http://img.youtube.com/vi/M4MA82_CPPA/1.jpg" alt="Honeybee Workshop Part 1/7: What Is Honeybee, Introduction To Daylighting Simulation"></a>
+<a href="http://www.youtube.com/embed/nI8pkTBeye0"><img src="http://img.youtube.com/vi/nI8pkTBeye0/1.jpg" alt="Honeybee Workshop Part 2/7: Getting Started With Honeybee For Daylighting Simulation"></a>
+<a href="http://www.youtube.com/embed/Fegs8XGhgpk"><img src="http://img.youtube.com/vi/Fegs8XGhgpk/1.jpg" alt="Honeybee Workshop Part 3/7: Radiance's Skies And Materials"></a>
+<a href="http://www.youtube.com/embed/BqbCkjMYxdk"><img src="http://img.youtube.com/vi/BqbCkjMYxdk/1.jpg" alt="Honeybee Workshop Part 4/7: Set Up Daylighting Analysis Fo A Single Room"></a>
+<a href="http://www.youtube.com/embed/L6p1aSNWcIY"><img src="http://img.youtube.com/vi/L6p1aSNWcIY/1.jpg" alt="Honeybee Workshop Part 5/7: Iterative Runs Using Honeybee"></a>
+<a href="http://www.youtube.com/embed/nC1x8lBD6g4"><img src="http://img.youtube.com/vi/nC1x8lBD6g4/1.jpg" alt="Honeybee Workshop Part 6/7: Rsults Visualization For Daylight Simulation"></a>
+<a href="http://www.youtube.com/embed/nuOcbyxgUF0"><img src="http://img.youtube.com/vi/nuOcbyxgUF0/1.jpg" alt="Honeybee Workshop Part 7/7: Annual Daylight Simulation"></a>
+<a href="http://www.youtube.com/embed/wW0l1PFx7Bg"><img src="http://img.youtube.com/vi/wW0l1PFx7Bg/1.jpg" alt="Air Cavity Temperature - Ladybug + Honeybee"></a>
+<a href="http://www.youtube.com/embed/x9Q86d0-paU"><img src="http://img.youtube.com/vi/x9Q86d0-paU/1.jpg" alt="Ladybug + Honeybee Solar Parti"></a>
+<a href="http://www.youtube.com/embed/KI6t2oJ6rus"><img src="http://img.youtube.com/vi/KI6t2oJ6rus/1.jpg" alt="Honeybee Indoor Mrt Map - Clip"></a>
+<a href="http://www.youtube.com/embed/m8ncENwXpek"><img src="http://img.youtube.com/vi/m8ncENwXpek/1.jpg" alt="0 - Honeybee Energy Modeling - Introduction"></a>
+<a href="http://www.youtube.com/embed/s3RbnWlsLmI"><img src="http://img.youtube.com/vi/s3RbnWlsLmI/1.jpg" alt="1 - Honeybee Energy Modeling - Installation"></a>
+<a href="http://www.youtube.com/embed/QHiVcV-gokM"><img src="http://img.youtube.com/vi/QHiVcV-gokM/1.jpg" alt="2 - Honeybee Energy Modeling- Hb Zones From Masses Part1: Mass2zones"></a>
+<a href="http://www.youtube.com/embed/jMmBso9bL14"><img src="http://img.youtube.com/vi/jMmBso9bL14/1.jpg" alt="3 - Honeybee Energy Modeling - Hbzones From Masses Part 2: Label Zone Attributes"></a>
+<a href="http://www.youtube.com/embed/zl-9Eyo7bPo"><img src="http://img.youtube.com/vi/zl-9Eyo7bPo/1.jpg" alt="6 - Honeybee Energy Modeling - Running A Basic Energy Simulation"></a>
+<a href="http://www.youtube.com/embed/92cyBvHPSDs"><img src="http://img.youtube.com/vi/92cyBvHPSDs/1.jpg" alt="8 - Honeybee Energy Modeling - Importing And Visualizing Surface Level Results"></a>
+<a href="http://www.youtube.com/embed/xqR4UJX5Ly8"><img src="http://img.youtube.com/vi/xqR4UJX5Ly8/1.jpg" alt="4 - Honeybee Energy Modeling - Hbzones From Masses Part 3: Solve Adjacencies"></a>
+<a href="http://www.youtube.com/embed/6r6TovMcQfM"><img src="http://img.youtube.com/vi/6r6TovMcQfM/1.jpg" alt="7 - Honeybee Energy Modeling - Importing And Visualizing Zone Level Results"></a>
+<a href="http://www.youtube.com/embed/3rCgP0zSiPY"><img src="http://img.youtube.com/vi/3rCgP0zSiPY/1.jpg" alt="5 - Honeybee Energy Modeling - Hbzones From Masses Part 4: Glazing By Ratio"></a>
+<a href="http://www.youtube.com/embed/cDvBWDA0aF0"><img src="http://img.youtube.com/vi/cDvBWDA0aF0/1.jpg" alt="9 - Honeybee Energy Modeling - The Laws Of Geometry In E+ Part 1: Adjacent Surfaces"></a>
+<a href="http://www.youtube.com/embed/DClON71RuuA"><img src="http://img.youtube.com/vi/DClON71RuuA/1.jpg" alt="10 - Honeybee Energy Modeling - The Laws Of Geometry In E+ Part 2: Core+perimeter Zoning"></a>
+<a href="http://www.youtube.com/embed/TpqzxnuwhAs"><img src="http://img.youtube.com/vi/TpqzxnuwhAs/1.jpg" alt="12 - Honeybee Energy Modeling - Creating Zones From Surfaces Part 1: Createhbsrfs"></a>
+<a href="http://www.youtube.com/embed/nMQ2Pau4q6c"><img src="http://img.youtube.com/vi/nMQ2Pau4q6c/1.jpg" alt="11 - Honeybee Energy Modeling - The Laws Of Geometry In E+ Part 3: Curved Geometry"></a>
+<a href="http://www.youtube.com/embed/Md6LFS6cwc0"><img src="http://img.youtube.com/vi/Md6LFS6cwc0/1.jpg" alt="13 - Honeybee Energy Modeling - Creating Zones From Surfaces Part 2: Addhbglz"></a>
+<a href="http://www.youtube.com/embed/aEC62LY094A"><img src="http://img.youtube.com/vi/aEC62LY094A/1.jpg" alt="14 - Honeybee Energy Modeling - Creating Zones From Surfaces Part 3: Createhbzones"></a>
+<a href="http://www.youtube.com/embed/vVOB-0oGQzI"><img src="http://img.youtube.com/vi/vVOB-0oGQzI/1.jpg" alt="15 - Honeybee Energy Modeling - Constructions Part 1: How To Change Constructions"></a>
+<a href="http://www.youtube.com/embed/-vIcoCgNT-o"><img src="http://img.youtube.com/vi/-vIcoCgNT-o/1.jpg" alt="16 - Honeybee Energy Modeling - Constructions Part 2: Dissecting/decomposing Constructions"></a>
+<a href="http://www.youtube.com/embed/OWeoXlQyPxg"><img src="http://img.youtube.com/vi/OWeoXlQyPxg/1.jpg" alt="17 - Honeybee Energy Modeling - Constructions Part 3: Making Custom Constructions"></a>
+<a href="http://www.youtube.com/embed/cy0B4vvRDgI"><img src="http://img.youtube.com/vi/cy0B4vvRDgI/1.jpg" alt="19 - Honeybee Energy Modeling - Changing Zone Loads (lighting/equip/people/etc)"></a>
+<a href="http://www.youtube.com/embed/GTnwMuadjyE"><img src="http://img.youtube.com/vi/GTnwMuadjyE/1.jpg" alt="18 - Honeybee Energy Modeling - Constructions Part 4: Making Custom Materials"></a>
+<a href="http://www.youtube.com/embed/_MRK_RxvD3o"><img src="http://img.youtube.com/vi/_MRK_RxvD3o/1.jpg" alt="20 - Honeybee Energy Modeling - Schedules Part 1: How To Visualize Schedules"></a>
+<a href="http://www.youtube.com/embed/b7ZQ5sazwrU"><img src="http://img.youtube.com/vi/b7ZQ5sazwrU/1.jpg" alt="21 - Honeybee Energy Modeling - Schedules Part 2: Making Custom Schedules"></a>
+<a href="http://www.youtube.com/embed/9EZpwp3X2DI"><img src="http://img.youtube.com/vi/9EZpwp3X2DI/1.jpg" alt="22 - Honeybee Energy Modeling - Changing Zone Setpoints /setbacks"></a>
+<a href="http://www.youtube.com/embed/D7pN7nWj-4o"><img src="http://img.youtube.com/vi/D7pN7nWj-4o/1.jpg" alt="23 - Honeybee Energy Modeling - Adding Context Shading With Transparency Schedules"></a>
+<a href="http://www.youtube.com/embed/Kcj71L3CgUk"><img src="http://img.youtube.com/vi/Kcj71L3CgUk/1.jpg" alt="Apply Openstudio Measure To Honeybee Energy Model"></a>
+<a href="http://www.youtube.com/embed/10yxTR7foUQ"><img src="http://img.youtube.com/vi/10yxTR7foUQ/1.jpg" alt="Setting Up Daylight Analysis From Rhino Using Honeybee And Human Ui"></a>
+<a href="http://www.youtube.com/embed/ZNDEbVHdsxk"><img src="http://img.youtube.com/vi/ZNDEbVHdsxk/1.jpg" alt="Setting Up Daylight Analysis From Rhino Using Honeybee And Human Ui"></a>
+
+
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div id="docs-foot">
+<p class="left">
+Site design © <a href="https://github.com/robinrodricks/">Robin Rodricks</a>. &nbsp;
+Co-created by <a href="http://andrewheumann.com/">Andrew Heumann</a>. &nbsp;
+Honeybee and associated data © 2020  <a href="https://www.food4rhino.com/app/ladybug-tools">Mostapha Sadeghipour Roudsari</a>. &nbsp;
+<br>
+Rhinoceros and Grasshopper are registered trademarks of <a href="https://www.rhino3d.com/">Robert McNeel & Associates</a>.&nbsp;
+Hosted by <a href="http://www.github.com/">GitHub</a> 
+</p>
+<p class="right docs-lightfont">
+
+<a href="https://github.com/grasshopper3d/GrasshopperDocsSite/issues/new">Report an Issue</a> &nbsp;|&nbsp;
+<a href="/termsOfService.html">Terms of Service</a>
+</p>
+
+</div>
+</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    </body>
+</html>

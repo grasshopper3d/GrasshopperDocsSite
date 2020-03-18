@@ -1,0 +1,194 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Curt Grids - Hummingbird - Component for Grasshopper | Grasshopper Docs</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+
+<meta name="description" content="Create Grids/Mullions for input to CurtWall component" />
+<meta name="title" content="Curt Grids - Hummingbird - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:title" content="Curt Grids - Hummingbird - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://grasshopperdocs.com/components/hummingbird/curtGrids.html" />
+<meta property="og:site_name" content="Grasshopper Docs" />
+
+<link href="../../style.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+<script type="text/javascript" src="../../html5gallery/jquery.js"></script>
+<script type="text/javascript" src="../../html5gallery/html5gallery.js"></script>
+
+</head>
+<body>
+
+
+<div id="docs">
+<div id="docs-head">
+<div id="docs-masthead">
+<p id="docs-sitename"><a href="http://grasshopperdocs.com/"><img src="../../images/logo.png" alt="Grasshopper Docs" onerror="this.style.display='none'"></img></a></p>
+<p id="docs-sitedesc">Community documentation for Grasshopper add-ons &amp; plugins</p>
+</div>
+</div>
+
+<div id="docs-body">
+
+<div class="page">
+
+<div class="content compo-page">
+
+<div class="ghbar ">
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/hummingbird/adapComps.html"><div class="ghsprite" style="background: url('../../icons/hummingbird.png') 0px 0px" data-toptip="Adap Comps"></div></a>
+<a href="../../components/hummingbird/beams.html"><div class="ghsprite" style="background: url('../../icons/hummingbird.png') -24px 0px" data-downtip="Beams"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/hummingbird/columns.html"><div class="ghsprite" style="background: url('../../icons/hummingbird.png') -48px 0px" data-toptip="Columns"></div></a>
+<a href="../../components/hummingbird/curtGrids.html"><div class="ghsprite" style="background: url('../../icons/hummingbird.png') -72px 0px" data-downtip="Curt Grids"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/hummingbird/curtWalls.html"><div class="ghsprite" style="background: url('../../icons/hummingbird.png') -96px 0px" data-toptip="Curt Walls"></div></a>
+<a href="../../components/hummingbird/families.html"><div class="ghsprite" style="background: url('../../icons/hummingbird.png') -120px 0px" data-downtip="Families"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/hummingbird/filledRegions.html"><div class="ghsprite" style="background: url('../../icons/hummingbird.png') -144px 0px" data-toptip="Filled Regions"></div></a>
+<a href="../../components/hummingbird/floors.html"><div class="ghsprite" style="background: url('../../icons/hummingbird.png') -168px 0px" data-downtip="Floors"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/hummingbird/grids.html"><div class="ghsprite" style="background: url('../../icons/hummingbird.png') -192px 0px" data-toptip="Grids"></div></a>
+<a href="../../components/hummingbird/input.html"><div class="ghsprite" style="background: url('../../icons/hummingbird.png') -216px 0px" data-downtip="Input"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/hummingbird/levels.html"><div class="ghsprite" style="background: url('../../icons/hummingbird.png') 0px -24px" data-toptip="Levels"></div></a>
+<a href="../../components/hummingbird/lines.html"><div class="ghsprite" style="background: url('../../icons/hummingbird.png') -24px -24px" data-downtip="Lines"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/hummingbird/loftForms.html"><div class="ghsprite" style="background: url('../../icons/hummingbird.png') -48px -24px" data-toptip="Loft Forms"></div></a>
+<a href="../../components/hummingbird/massFamilies.html"><div class="ghsprite" style="background: url('../../icons/hummingbird.png') -72px -24px" data-downtip="Mass Families"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/hummingbird/roomsAreas.html"><div class="ghsprite" style="background: url('../../icons/hummingbird.png') -96px -24px" data-toptip="Rooms/Areas"></div></a>
+<a href="../../components/hummingbird/topoSurface.html"><div class="ghsprite" style="background: url('../../icons/hummingbird.png') -120px -24px" data-downtip="Topo Surface"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/hummingbird/walls.html"><div class="ghsprite" style="background: url('../../icons/hummingbird.png') -144px -24px" data-toptip="Walls"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="9">
+Hummingbird
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+
+<div class="addon-buttons">
+<a href="#tutorials">Video Tutorials</a>
+<a href="https://github.com/marioguttman/hummingbird">Source Code</a>
+<a href="https://www.food4rhino.com/app/hummingbird">Download</a>
+
+</div>
+
+<div class="compo-header">
+<h1><div class="ghsprite" style="background: url('../../icons/hummingbird.png') -72px 0px" ></div> Curt Grids</h1>
+
+<div class="breadcrumb">
+ <a href="../../index.html">Component Index</a>
+  <a href="../../addons/hummingbird.html">Hummingbird</a><a href="#" class="breadcrumb-nolink">Hummingbird</a><a href="#" class="breadcrumb-nolink">CurtGrids</a>
+</div>
+
+</div>
+<h3>Create Grids/Mullions for input to CurtWall component</h3>
+<h2>Inputs</h2>
+<table class="params-table input-params">
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Primary Offset</b></td><td>Primary</td><td>Primary Offset proportion of side (0 < x < 1).</td><td>Number</td></tr>
+<tr><td><b>Secondary Offset</b></td><td>Secondary</td><td>Secondary Offset proportion of grid (0 < x < 1).</td><td>Number</td></tr>
+<tr><td><b>MullionFamilyName</b></td><td>Family</td><td>Revit Mullion Family Name</td><td>Text</td></tr>
+<tr><td><b>MullionTypeName</b></td><td>Type</td><td>Revit Mullion Family Type Name</td><td>Text</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table class="params-table output-params">
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Mullions</b></td><td>M</td><td>Mullion definition strings.</td><td>Text</td></tr>
+</tbody>
+</table>
+
+<div class="ghtutorials">
+<a name="tutorials"></a>
+<h2>Video Tutorials</h2>
+<div style="display:none;" class="html5gallery" data-skin="verticallight" data-width="1000" data-height="600" data-thumbwidth="280" data-thumbheight="70" data-thumbgap="5">
+
+<a href="http://www.youtube.com/embed/TRp8MmU6kbI"><img src="http://img.youtube.com/vi/TRp8MmU6kbI/1.jpg" alt="Hummingbird Workflow 01"></a>
+
+
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div id="docs-foot">
+<p class="left">
+Site design © <a href="https://github.com/robinrodricks/">Robin Rodricks</a>. &nbsp;
+
+Hummingbird and associated data © 2020  <a href="https://www.food4rhino.com/app/hummingbird">Mario Guttman</a>. &nbsp;
+<br>
+Rhinoceros and Grasshopper are registered trademarks of <a href="https://www.rhino3d.com/">Robert McNeel & Associates</a>.&nbsp;
+Hosted by <a href="http://www.github.com/">GitHub</a> 
+</p>
+<p class="right docs-lightfont">
+
+<a href="https://github.com/grasshopper3d/GrasshopperDocsSite/issues/new">Report an Issue</a> &nbsp;|&nbsp;
+<a href="/termsOfService.html">Terms of Service</a>
+</p>
+
+</div>
+</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    </body>
+</html>

@@ -1,0 +1,418 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Solution Parameters - Butterfly - Component for Grasshopper | Grasshopper Docs</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+
+<meta name="description" content="Solution Parameters." />
+<meta name="title" content="Solution Parameters - Butterfly - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:title" content="Solution Parameters - Butterfly - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://grasshopperdocs.com/components/butterfly/solutionParameters.html" />
+<meta property="og:site_name" content="Grasshopper Docs" />
+
+<link href="../../style.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+<script type="text/javascript" src="../../html5gallery/jquery.js"></script>
+<script type="text/javascript" src="../../html5gallery/html5gallery.js"></script>
+
+</head>
+<body>
+
+
+<div id="docs">
+<div id="docs-head">
+<div id="docs-masthead">
+<p id="docs-sitename"><a href="http://grasshopperdocs.com/"><img src="../../images/logo.png" alt="Grasshopper Docs" onerror="this.style.display='none'"></img></a></p>
+<p id="docs-sitedesc">Community documentation for Grasshopper add-ons &amp; plugins</p>
+</div>
+</div>
+
+<div id="docs-body">
+
+<div class="page">
+
+<div class="content compo-page">
+
+<div class="ghbar ">
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/butterfly/refinementRegion.html"><div class="ghsprite" style="background: url('../../icons/butterfly.png') -168px -48px" data-toptip="Refinement Region"></div></a>
+<a href="../../components/butterfly/createCaseFromGeometries.html"><div class="ghsprite" style="background: url('../../icons/butterfly.png') -192px -48px" data-downtip="Create Case from Geometries"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/butterfly/windTunnelParameters.html"><div class="ghsprite" style="background: url('../../icons/butterfly.png') -216px -48px" data-toptip="Wind Tunnel Parameters"></div></a>
+<a href="../../components/butterfly/updateBlockMeshDict.html"><div class="ghsprite" style="background: url('../../icons/butterfly.png') 0px -72px" data-downtip="Update block Mesh Dict"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/butterfly/createCaseFromTunnel.html"><div class="ghsprite" style="background: url('../../icons/butterfly.png') -24px -72px" data-toptip="Create Case from Tunnel"></div></a>
+<a href="../../components/butterfly/meshingParameters.html"><div class="ghsprite" style="background: url('../../icons/butterfly.png') -48px -72px" data-downtip="Meshing Parameters"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/butterfly/locationRefinementMode.html"><div class="ghsprite" style="background: url('../../icons/butterfly.png') -72px -72px" data-toptip="Location Refinement Mode"></div></a>
+<a href="../../components/butterfly/butterfly.html"><div class="ghsprite" style="background: url('../../icons/butterfly.png') -96px -72px" data-downtip="Butterfly"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/butterfly/createButterflyGeometry.html"><div class="ghsprite" style="background: url('../../icons/butterfly.png') -120px -72px" data-toptip="Create Butterfly Geometry"></div></a>
+<a href="../../components/butterfly/distanceRefinementMode.html"><div class="ghsprite" style="background: url('../../icons/butterfly.png') -144px -72px" data-downtip="Distance Refinement Mode"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/butterfly/make2dParameters.html"><div class="ghsprite" style="background: url('../../icons/butterfly.png') -168px -72px" data-toptip="Make2d Parameters"></div></a>
+<a href="../../components/butterfly/createCaseFromFolder.html"><div class="ghsprite" style="background: url('../../icons/butterfly.png') -192px -72px" data-downtip="Create Case from Folder"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/butterfly/windVector.html"><div class="ghsprite" style="background: url('../../icons/butterfly.png') -216px -72px" data-toptip="Wind Vector"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="7">
+00::Create
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/butterfly/outletBoundary.html"><div class="ghsprite" style="background: url('../../icons/butterfly.png') 0px -24px" data-toptip="Outlet Boundary"></div></a>
+<a href="../../components/butterfly/wallBoundary.html"><div class="ghsprite" style="background: url('../../icons/butterfly.png') -24px -24px" data-downtip="Wall Boundary"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/butterfly/boundary.html"><div class="ghsprite" style="background: url('../../icons/butterfly.png') -48px -24px" data-toptip="Boundary"></div></a>
+<a href="../../components/butterfly/inletFlowRateBoundary.html"><div class="ghsprite" style="background: url('../../icons/butterfly.png') -72px -24px" data-downtip="Inlet Flow-Rate Boundary"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/butterfly/inletBoundary.html"><div class="ghsprite" style="background: url('../../icons/butterfly.png') -96px -24px" data-toptip="Inlet Boundary"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+01::Boundary
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/butterfly/epsilonWallFunction.html"><div class="ghsprite" style="background: url('../../icons/butterfly.png') -120px -24px" data-toptip="epsilon Wall Function"></div></a>
+<a href="../../components/butterfly/kqRWallFunction.html"><div class="ghsprite" style="background: url('../../icons/butterfly.png') -144px -24px" data-downtip="kq RWall Function"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/butterfly/nutkWallFunction.html"><div class="ghsprite" style="background: url('../../icons/butterfly.png') -168px -24px" data-toptip="nutk Wall Function"></div></a>
+<a href="../../components/butterfly/fixedValue.html"><div class="ghsprite" style="background: url('../../icons/butterfly.png') -192px -24px" data-downtip="fixed Value"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/butterfly/zeroGradient.html"><div class="ghsprite" style="background: url('../../icons/butterfly.png') -216px -24px" data-toptip="zero Gradient"></div></a>
+<a href="../../components/butterfly/calculated.html"><div class="ghsprite" style="background: url('../../icons/butterfly.png') 0px -48px" data-downtip="calculated"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+02::BoundaryCondition
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/butterfly/segmentGrading.html"><div class="ghsprite" style="background: url('../../icons/butterfly.png') 0px 0px" data-toptip="Segment Grading"></div></a>
+<a href="../../components/butterfly/loadPoints.html"><div class="ghsprite" style="background: url('../../icons/butterfly.png') -24px 0px" data-downtip="Load Points"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/butterfly/chekMesh.html"><div class="ghsprite" style="background: url('../../icons/butterfly.png') -48px 0px" data-toptip="chek Mesh"></div></a>
+<a href="../../components/butterfly/gradingXYZ.html"><div class="ghsprite" style="background: url('../../icons/butterfly.png') -72px 0px" data-downtip="Grading XYZ"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/butterfly/windTunnelGrading.html"><div class="ghsprite" style="background: url('../../icons/butterfly.png') -96px 0px" data-toptip="wind Tunnel Grading"></div></a>
+<a href="../../components/butterfly/snappyHexMeshDict.html"><div class="ghsprite" style="background: url('../../icons/butterfly.png') -120px 0px" data-downtip="snappy Hex Mesh Dict"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/butterfly/multiGrading.html"><div class="ghsprite" style="background: url('../../icons/butterfly.png') -144px 0px" data-toptip="Multi Grading"></div></a>
+<a href="../../components/butterfly/snappyHexMesh.html"><div class="ghsprite" style="background: url('../../icons/butterfly.png') -168px 0px" data-downtip="snappy Hex Mesh"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/butterfly/loadMesh.html"><div class="ghsprite" style="background: url('../../icons/butterfly.png') -192px 0px" data-toptip="Load Mesh"></div></a>
+<a href="../../components/butterfly/blockMesh.html"><div class="ghsprite" style="background: url('../../icons/butterfly.png') -216px 0px" data-downtip="block Mesh"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="5">
+03::Mesh
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/butterfly/laminarTurbulenceModel.html"><div class="ghsprite" style="background: url('../../icons/butterfly.png') -144px -120px" data-toptip="Laminar Turbulence Model"></div></a>
+<a href="../../components/butterfly/rASTurbulenceModel.html"><div class="ghsprite" style="background: url('../../icons/butterfly.png') -168px -120px" data-downtip="RAS Turbulence Model"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/butterfly/lESTurbulenceModel.html"><div class="ghsprite" style="background: url('../../icons/butterfly.png') -192px -120px" data-toptip="LES Turbulence Model"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="2">
+04::Turbulence
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/butterfly/residualControl.html"><div class="ghsprite" style="background: url('../../icons/butterfly.png') -120px -96px" data-toptip="residual Control"></div></a>
+<a href="../../components/butterfly/steadyIncompressibleRecipe.html"><div class="ghsprite" style="background: url('../../icons/butterfly.png') -144px -96px" data-downtip="Steady Incompressible Recipe"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/butterfly/relaxtionFactors.html"><div class="ghsprite" style="background: url('../../icons/butterfly.png') -168px -96px" data-toptip="relaxtion Factors"></div></a>
+<a href="../../components/butterfly/heatTransferRecipe.html"><div class="ghsprite" style="background: url('../../icons/butterfly.png') -192px -96px" data-downtip="Heat Transfer Recipe"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="2">
+05::Recipe
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/butterfly/solution.html"><div class="ghsprite" style="background: url('../../icons/butterfly.png') -24px -48px" data-toptip="Solution"></div></a>
+<a href="../../components/butterfly/solutionParameter.html"><div class="ghsprite" style="background: url('../../icons/butterfly.png') -48px -48px" data-downtip="Solution Parameter"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/butterfly/controlDict.html"><div class="ghsprite" style="background: url('../../icons/butterfly.png') -72px -48px" data-toptip="control Dict"></div></a>
+<a href="../../components/butterfly/functionObject.html"><div class="ghsprite" style="background: url('../../icons/butterfly.png') -96px -48px" data-downtip="Function Object"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/butterfly/probes.html"><div class="ghsprite" style="background: url('../../icons/butterfly.png') -120px -48px" data-toptip="probes"></div></a>
+<a href="../../components/butterfly/solutionParameters.html"><div class="ghsprite" style="background: url('../../icons/butterfly.png') -144px -48px" data-downtip="Solution Parameters"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+06::Solution
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/butterfly/loadProbes.html"><div class="ghsprite" style="background: url('../../icons/butterfly.png') 0px -96px" data-toptip="Load Probes"></div></a>
+<a href="../../components/butterfly/loadProbesValue.html"><div class="ghsprite" style="background: url('../../icons/butterfly.png') -24px -96px" data-downtip="Load Probes Value"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/butterfly/sampleCase.html"><div class="ghsprite" style="background: url('../../icons/butterfly.png') -48px -96px" data-toptip="Sample Case"></div></a>
+<a href="../../components/butterfly/plotResiduals.html"><div class="ghsprite" style="background: url('../../icons/butterfly.png') -72px -96px" data-downtip="Plot Residuals"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/butterfly/loadSkippedProbes.html"><div class="ghsprite" style="background: url('../../icons/butterfly.png') -96px -96px" data-toptip="Load Skipped Probes"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+07::PostProcess
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/butterfly/decomposeParDictSimple.html"><div class="ghsprite" style="background: url('../../icons/butterfly.png') -216px -96px" data-toptip="decompose Par Dict simple"></div></a>
+<a href="../../components/butterfly/getGeometry.html"><div class="ghsprite" style="background: url('../../icons/butterfly.png') 0px -120px" data-downtip="Get Geometry"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/butterfly/divSchemesLibrary.html"><div class="ghsprite" style="background: url('../../icons/butterfly.png') -24px -120px" data-toptip="div Schemes library"></div></a>
+<a href="../../components/butterfly/fvSchemesFromNonorthogonality.html"><div class="ghsprite" style="background: url('../../icons/butterfly.png') -48px -120px" data-downtip="Fv Schemes from Non-orthogonality"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/butterfly/decomposeParDictScotch.html"><div class="ghsprite" style="background: url('../../icons/butterfly.png') -72px -120px" data-toptip="decompose Par Dict scotch"></div></a>
+<a href="../../components/butterfly/lookUpCaseFolder.html"><div class="ghsprite" style="background: url('../../icons/butterfly.png') -96px -120px" data-downtip="Look Up Case Folder"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/butterfly/purgeCase.html"><div class="ghsprite" style="background: url('../../icons/butterfly.png') -120px -120px" data-toptip="purge Case"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="4">
+08::Etc
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+
+<div class="addon-buttons">
+<a href="#tutorials">Video Tutorials</a>
+<a href="https://github.com/ladybug-tools/butterfly">Source Code</a>
+<a href="https://www.food4rhino.com/app/ladybug-tools">Download</a>
+
+</div>
+
+<div class="compo-header">
+<h1><div class="ghsprite" style="background: url('../../icons/butterfly.png') -144px -48px" ></div> Solution Parameters</h1>
+
+<div class="breadcrumb">
+ <a href="../../index.html">Component Index</a>
+  <a href="../../addons/butterfly.html">Butterfly</a><a href="#" class="breadcrumb-nolink">06::Solution</a><a href="#" class="breadcrumb-nolink">Solution Parameters</a>
+</div>
+
+</div>
+<h3>Solution Parameters.</h3>
+<h2>Inputs</h2>
+<table class="params-table input-params">
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>control_dict</b></td><td>control_dict_</td><td>controlDict.</td><td>Goo</td></tr>
+<tr><td><b>probes</b></td><td>probes_</td><td>probes.</td><td>Goo</td></tr>
+<tr><td><b>additional_par</b></td><td>additional_par_</td><td>List of solution parameters. Use solutionParameter
+component to create solution_par.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table class="params-table output-params">
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>solution_par</b></td><td>solution_par</td><td>A list of solution parameters.</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<div class="ghtutorials">
+<a name="tutorials"></a>
+<h2>Video Tutorials</h2>
+<div style="display:none;" class="html5gallery" data-skin="verticallight" data-width="1000" data-height="600" data-thumbwidth="280" data-thumbheight="70" data-thumbgap="5">
+
+<a href="http://www.youtube.com/embed/4KGeJokLeL8"><img src="http://img.youtube.com/vi/4KGeJokLeL8/1.jpg" alt="03: How to install Butterfly for Grasshopper"></a>
+<a href="http://www.youtube.com/embed/0auA5exoL9M"><img src="http://img.youtube.com/vi/0auA5exoL9M/1.jpg" alt="04: Outdoor Airflow Modeling With Butterfly in Grasshopper"></a>
+<a href="http://www.youtube.com/embed/fYuESbOVyp4"><img src="http://img.youtube.com/vi/fYuESbOVyp4/1.jpg" alt="05: Indoor Airflow Modeling With Butterfly in Grasshopper"></a>
+
+
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div id="docs-foot">
+<p class="left">
+Site design © <a href="https://github.com/robinrodricks/">Robin Rodricks</a>. &nbsp;
+Co-created by <a href="http://andrewheumann.com/">Andrew Heumann</a>. &nbsp;
+Butterfly and associated data © 2020  <a href="https://www.food4rhino.com/app/ladybug-tools">Mostapha Sadeghipour Roudsari</a>. &nbsp;
+<br>
+Rhinoceros and Grasshopper are registered trademarks of <a href="https://www.rhino3d.com/">Robert McNeel & Associates</a>.&nbsp;
+Hosted by <a href="http://www.github.com/">GitHub</a> 
+</p>
+<p class="right docs-lightfont">
+
+<a href="https://github.com/grasshopper3d/GrasshopperDocsSite/issues/new">Report an Issue</a> &nbsp;|&nbsp;
+<a href="/termsOfService.html">Terms of Service</a>
+</p>
+
+</div>
+</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    </body>
+</html>

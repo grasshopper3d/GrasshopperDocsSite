@@ -1,0 +1,338 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Edit Building Materials - Dragonfly - Component for Grasshopper | Grasshopper Docs</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+
+<meta name="description" content="Use this component to edit building materials. You can use it to generate windows.&lt;br&gt;You need to use both Curve and Shapes inputs for windows. Check where the points are using&quot;DFvisualizeBuildings&quot;" />
+<meta name="title" content="Edit Building Materials - Dragonfly - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:title" content="Edit Building Materials - Dragonfly - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://grasshopperdocs.com/components/dragonfly/editBuildingMaterials.html" />
+<meta property="og:site_name" content="Grasshopper Docs" />
+
+<link href="../../style.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+
+
+</head>
+<body>
+
+
+<div id="docs">
+<div id="docs-head">
+<div id="docs-masthead">
+<p id="docs-sitename"><a href="http://grasshopperdocs.com/"><img src="../../images/logo.png" alt="Grasshopper Docs" onerror="this.style.display='none'"></img></a></p>
+<p id="docs-sitedesc">Community documentation for Grasshopper add-ons &amp; plugins</p>
+</div>
+</div>
+
+<div id="docs-body">
+
+<div class="page">
+
+<div class="content compo-page">
+
+<div class="ghbar ">
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/dragonfly/dragonfly.html"><div class="ghsprite" style="background: url('../../icons/dragonfly.png') 0px -120px" data-toptip="Dragonfly"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+0 | Dragonfly
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/dragonfly/dragonflyBldgAge.html"><div class="ghsprite" style="background: url('../../icons/dragonfly.png') -96px -72px" data-toptip="Dragonfly_Bldg Age"></div></a>
+<a href="../../components/dragonfly/typologyFromParams.html"><div class="ghsprite" style="background: url('../../icons/dragonfly.png') -120px -72px" data-downtip="Typology From Params"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/dragonfly/city.html"><div class="ghsprite" style="background: url('../../icons/dragonfly.png') -144px -72px" data-toptip="City"></div></a>
+<a href="../../components/dragonfly/cityFromParameters.html"><div class="ghsprite" style="background: url('../../icons/dragonfly.png') -168px -72px" data-downtip="City From Parameters"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/dragonfly/typologyFromFootprints.html"><div class="ghsprite" style="background: url('../../icons/dragonfly.png') -192px -72px" data-toptip="Typology from Footprints"></div></a>
+<a href="../../components/dragonfly/dragonflyBldgProgram.html"><div class="ghsprite" style="background: url('../../icons/dragonfly.png') -216px -72px" data-downtip="Dragonfly_Bldg Program"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/dragonfly/boundaryLayerParameters.html"><div class="ghsprite" style="background: url('../../icons/dragonfly.png') 0px -96px" data-toptip="Boundary Layer Parameters"></div></a>
+<a href="../../components/dragonfly/vegetationParameters.html"><div class="ghsprite" style="background: url('../../icons/dragonfly.png') -24px -96px" data-downtip="Vegetation Parameters"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/dragonfly/buildingTypology.html"><div class="ghsprite" style="background: url('../../icons/dragonfly.png') -48px -96px" data-toptip="Building Typology"></div></a>
+<a href="../../components/dragonfly/pavementParameters.html"><div class="ghsprite" style="background: url('../../icons/dragonfly.png') -72px -96px" data-downtip="Pavement Parameters"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/dragonfly/referenceEPWParameters.html"><div class="ghsprite" style="background: url('../../icons/dragonfly.png') -96px -96px" data-toptip="Reference EPW Parameters"></div></a>
+<a href="../../components/dragonfly/editTypologyEnvelope.html"><div class="ghsprite" style="background: url('../../icons/dragonfly.png') -120px -96px" data-downtip="Edit Typology Envelope"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/dragonfly/trafficParameters.html"><div class="ghsprite" style="background: url('../../icons/dragonfly.png') -144px -96px" data-toptip="Traffic Parameters"></div></a>
+<a href="../../components/dragonfly/runUrbanWeatherGenerator.html"><div class="ghsprite" style="background: url('../../icons/dragonfly.png') -168px -96px" data-downtip="Run Urban Weather Generator"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="7">
+1 | Urban Weather
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/dragonfly/importLANDSATImage.html"><div class="ghsprite" style="background: url('../../icons/dragonfly.png') -24px -120px" data-toptip="Import LANDSAT Image"></div></a>
+<a href="../../components/dragonfly/aMYFromNCDCData.html"><div class="ghsprite" style="background: url('../../icons/dragonfly.png') -48px -120px" data-downtip="AMY from NCDC Data"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+2 | Alternative Climate Data
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/dragonfly/envimetSource.html"><div class="ghsprite" style="background: url('../../icons/dragonfly.png') 0px 0px" data-toptip="Envimet Source"></div></a>
+<a href="../../components/dragonfly/envimetReadBuildingAvgResults.html"><div class="ghsprite" style="background: url('../../icons/dragonfly.png') -24px 0px" data-downtip="Envimet Read Building Avg Results"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/dragonfly/envimetConfig.html"><div class="ghsprite" style="background: url('../../icons/dragonfly.png') -48px 0px" data-toptip="Envimet Config"></div></a>
+<a href="../../components/dragonfly/envimetConfigMainSettings.html"><div class="ghsprite" style="background: url('../../icons/dragonfly.png') -72px 0px" data-downtip="Envimet Config MainSettings"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/dragonfly/envimet2dPlant.html"><div class="ghsprite" style="background: url('../../icons/dragonfly.png') -96px 0px" data-toptip="Envimet 2d Plant"></div></a>
+<a href="../../components/dragonfly/envimetInformation.html"><div class="ghsprite" style="background: url('../../icons/dragonfly.png') -120px 0px" data-downtip="Envimet Information"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/dragonfly/envimetSpaces.html"><div class="ghsprite" style="background: url('../../icons/dragonfly.png') -144px 0px" data-toptip="Envimet Spaces"></div></a>
+<a href="../../components/dragonfly/envimetReceptorFolder.html"><div class="ghsprite" style="background: url('../../icons/dragonfly.png') -168px 0px" data-downtip="Envimet Receptor Folder"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/dragonfly/envimet3dPlant.html"><div class="ghsprite" style="background: url('../../icons/dragonfly.png') -192px 0px" data-toptip="Envimet 3d Plant"></div></a>
+<a href="../../components/dragonfly/envimetTimestepsSettings.html"><div class="ghsprite" style="background: url('../../icons/dragonfly.png') -216px 0px" data-downtip="Envimet Timesteps Settings"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/dragonfly/envimetRunSimulation.html"><div class="ghsprite" style="background: url('../../icons/dragonfly.png') 0px -24px" data-toptip="Envimet Run Simulation"></div></a>
+<a href="../../components/dragonfly/envimetBuildingTemp.html"><div class="ghsprite" style="background: url('../../icons/dragonfly.png') -24px -24px" data-downtip="Envimet Building Temp"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/dragonfly/envimetGrid.html"><div class="ghsprite" style="background: url('../../icons/dragonfly.png') -48px -24px" data-toptip="Envimet Grid"></div></a>
+<a href="../../components/dragonfly/envimetReceptor.html"><div class="ghsprite" style="background: url('../../icons/dragonfly.png') -72px -24px" data-downtip="Envimet Receptor"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/dragonfly/envimetOutputIntervalSettings.html"><div class="ghsprite" style="background: url('../../icons/dragonfly.png') -96px -24px" data-toptip="Envimet Output interval Settings"></div></a>
+<a href="../../components/dragonfly/envimetSoil.html"><div class="ghsprite" style="background: url('../../icons/dragonfly.png') -120px -24px" data-downtip="Envimet Soil"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/dragonfly/visualizeBuildings.html"><div class="ghsprite" style="background: url('../../icons/dragonfly.png') -144px -24px" data-toptip="Visualize Buildings"></div></a>
+<a href="../../components/dragonfly/envimetInstallationDirectory.html"><div class="ghsprite" style="background: url('../../icons/dragonfly.png') -168px -24px" data-downtip="Envimet Installation Directory"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/dragonfly/envimetSimpleForceByEPW.html"><div class="ghsprite" style="background: url('../../icons/dragonfly.png') -192px -24px" data-toptip="Envimet Simple Force by EPW"></div></a>
+<a href="../../components/dragonfly/envimetBuildingFiles.html"><div class="ghsprite" style="background: url('../../icons/dragonfly.png') -216px -24px" data-downtip="Envimet Building Files"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/dragonfly/editBuildingMaterials.html"><div class="ghsprite" style="background: url('../../icons/dragonfly.png') 0px -48px" data-toptip="Edit Building Materials"></div></a>
+<a href="../../components/dragonfly/envimetBuildings.html"><div class="ghsprite" style="background: url('../../icons/dragonfly.png') -24px -48px" data-downtip="Envimet Buildings"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/dragonfly/envimetSoilSettings.html"><div class="ghsprite" style="background: url('../../icons/dragonfly.png') -48px -48px" data-toptip="Envimet Soil settings"></div></a>
+<a href="../../components/dragonfly/envimetConfigSimpleForcing.html"><div class="ghsprite" style="background: url('../../icons/dragonfly.png') -72px -48px" data-downtip="Envimet Config SimpleForcing"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/dragonfly/envimetNestingGrid.html"><div class="ghsprite" style="background: url('../../icons/dragonfly.png') -96px -48px" data-toptip="Envimet Nesting Grid"></div></a>
+<a href="../../components/dragonfly/envimetReadReceptorResults.html"><div class="ghsprite" style="background: url('../../icons/dragonfly.png') -120px -48px" data-downtip="Envimet Read Receptor Results"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/dragonfly/horizontalOverhang.html"><div class="ghsprite" style="background: url('../../icons/dragonfly.png') -144px -48px" data-toptip="Horizontal Overhang"></div></a>
+<a href="../../components/dragonfly/envimetReadLibrary.html"><div class="ghsprite" style="background: url('../../icons/dragonfly.png') -168px -48px" data-downtip="Envimet Read Library"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/dragonfly/envimetTerrain.html"><div class="ghsprite" style="background: url('../../icons/dragonfly.png') -192px -48px" data-toptip="Envimet Terrain"></div></a>
+<a href="../../components/dragonfly/envimetManageWorkspace.html"><div class="ghsprite" style="background: url('../../icons/dragonfly.png') -216px -48px" data-downtip="Envimet Manage Workspace"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/dragonfly/envimetRunINX.html"><div class="ghsprite" style="background: url('../../icons/dragonfly.png') 0px -72px" data-toptip="Envimet Run INX"></div></a>
+<a href="../../components/dragonfly/xMLReader.html"><div class="ghsprite" style="background: url('../../icons/dragonfly.png') -24px -72px" data-downtip="XML Reader"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/dragonfly/envimetDefaultMaterial.html"><div class="ghsprite" style="background: url('../../icons/dragonfly.png') -48px -72px" data-toptip="Envimet Default Material"></div></a>
+<a href="../../components/dragonfly/envimetLocation.html"><div class="ghsprite" style="background: url('../../icons/dragonfly.png') -72px -72px" data-downtip="Envimet Location"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="17">
+3 | Envimet
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/dragonfly/exportDragonfly.html"><div class="ghsprite" style="background: url('../../icons/dragonfly.png') -192px -96px" data-toptip="Export Dragonfly"></div></a>
+<a href="../../components/dragonfly/update.html"><div class="ghsprite" style="background: url('../../icons/dragonfly.png') -216px -96px" data-downtip="Update"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+4 | Developers
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+
+<div class="addon-buttons">
+<a href="https://github.com/chriswmackey/Dragonfly">Source Code</a>
+<a href="https://github.com/chriswmackey/Dragonfly/wiki">Download</a>
+
+</div>
+
+<div class="compo-header">
+<h1><div class="ghsprite" style="background: url('../../icons/dragonfly.png') 0px -48px" ></div> Edit Building Materials</h1>
+
+<div class="breadcrumb">
+ <a href="../../index.html">Component Index</a>
+  <a href="../../addons/dragonfly.html">Dragonfly</a><a href="#" class="breadcrumb-nolink">3 | Envimet</a><a href="#" class="breadcrumb-nolink">DFeditBuildingMaterials</a>
+</div>
+
+</div>
+<h3>Use this component to edit building materials. You can use it to generate windows.<br>You need to use both Curve and Shapes inputs for windows. Check where the points are using"DFvisualizeBuildings"</h3>
+<h2>Inputs</h2>
+<table class="params-table input-params">
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>INXfileAddress</b></td><td>_INXfileAddress</td><td>Output of "DF Envimet Spaces".</td><td>String</td></tr>
+<tr><td><b>envimentGrid</b></td><td>_envimentGrid</td><td>Connect the output of "Dragonfly Envimet Grid".</td><td>Goo</td></tr>
+<tr><td><b>selectorCurve</b></td><td>_selectorCurve</td><td>A closed curve on Plane World XY. Use it to select parts you want to change.</td><td>Curve</td></tr>
+<tr><td><b>selectorShape</b></td><td>selectorShape_</td><td>A list of solid to select parts to edit. If point is inside it will be modified.</td><td>Mesh</td></tr>
+<tr><td><b>materialX</b></td><td>materialX_</td><td>Material in X direction. Default is 000000.</td><td>String</td></tr>
+<tr><td><b>materialY</b></td><td>materialY_</td><td>Material in Y direction. Default is 000000.</td><td>String</td></tr>
+<tr><td><b>materialZ</b></td><td>materialZ_</td><td>Material in Z direction. Default is 000000.</td><td>String</td></tr>
+<tr><td><b>runIt</b></td><td>_runIt</td><td>Set it to True to save the modified.</td><td>Boolean</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table class="params-table output-params">
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>INXfileAddress</b></td><td>INXfileAddress</td><td>The file path of the inx result file that has been generated on your machine.</td><td>String</td></tr>
+</tbody>
+</table>
+
+
+</div>
+
+</div>
+
+</div>
+<div id="docs-foot">
+<p class="left">
+Site design © <a href="https://github.com/robinrodricks/">Robin Rodricks</a>. &nbsp;
+Co-created by <a href="http://andrewheumann.com/">Andrew Heumann</a>. &nbsp;
+Dragonfly and associated data © 2020  <a href="https://github.com/chriswmackey/Dragonfly/wiki">Chris Mackey</a>. &nbsp;
+<br>
+Rhinoceros and Grasshopper are registered trademarks of <a href="https://www.rhino3d.com/">Robert McNeel & Associates</a>.&nbsp;
+Hosted by <a href="http://www.github.com/">GitHub</a> 
+</p>
+<p class="right docs-lightfont">
+
+<a href="https://github.com/grasshopper3d/GrasshopperDocsSite/issues/new">Report an Issue</a> &nbsp;|&nbsp;
+<a href="/termsOfService.html">Terms of Service</a>
+</p>
+
+</div>
+</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    </body>
+</html>

@@ -1,0 +1,719 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Separate By Normal - Ladybug - Component for Grasshopper | Grasshopper Docs</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+
+<meta name="description" content="Select surfaces based on orientation.&lt;br&gt;" />
+<meta name="title" content="Separate By Normal - Ladybug - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:title" content="Separate By Normal - Ladybug - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://grasshopperdocs.com/components/ladybug/separateByNormal.html" />
+<meta property="og:site_name" content="Grasshopper Docs" />
+
+<link href="../../style.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+<script type="text/javascript" src="../../html5gallery/jquery.js"></script>
+<script type="text/javascript" src="../../html5gallery/html5gallery.js"></script>
+
+</head>
+<body>
+
+
+<div id="docs">
+<div id="docs-head">
+<div id="docs-masthead">
+<p id="docs-sitename"><a href="http://grasshopperdocs.com/"><img src="../../images/logo.png" alt="Grasshopper Docs" onerror="this.style.display='none'"></img></a></p>
+<p id="docs-sitedesc">Community documentation for Grasshopper add-ons &amp; plugins</p>
+</div>
+</div>
+
+<div id="docs-body">
+
+<div class="page">
+
+<div class="content compo-page">
+
+<div class="ghbar ">
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ladybug/downloadEPWWeatherFile.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') 0px -48px" data-toptip="download EPW Weather File"></div></a>
+<a href="../../components/ladybug/constructLocation.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -24px -48px" data-downtip="Construct Location"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ladybug/updateFile.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -48px -48px" data-toptip="Update File"></div></a>
+<a href="../../components/ladybug/openSTATFile.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -72px -48px" data-downtip="Open STAT File"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ladybug/importLocation.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -96px -48px" data-toptip="Import Location"></div></a>
+<a href="../../components/ladybug/decomposeLocation.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -120px -48px" data-downtip="Decompose Location"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ladybug/createLBHeader.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -144px -48px" data-toptip="Create LB Header"></div></a>
+<a href="../../components/ladybug/importStat.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -168px -48px" data-downtip="Import stat"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ladybug/openEPWAndSTATWeatherFiles.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -192px -48px" data-toptip="Open EPW And STAT Weather Files"></div></a>
+<a href="../../components/ladybug/importEpw.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -216px -48px" data-downtip="Import epw"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ladybug/ladybug.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') 0px -72px" data-toptip="Ladybug"></div></a>
+<a href="../../components/ladybug/openEPWWeatherFile.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -24px -72px" data-downtip="Open EPW Weather File"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="6">
+0 | Ladybug
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ladybug/cDHHDH.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -72px -312px" data-toptip="CDH HDH"></div></a>
+<a href="../../components/ladybug/pMVComfortCalculator.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -96px -312px" data-downtip="PMV Comfort Calculator"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ladybug/thermalComfortIndices.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -120px -312px" data-toptip="Thermal Comfort Indices"></div></a>
+<a href="../../components/ladybug/windSpeedCalculator.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -144px -312px" data-downtip="Wind Speed Calculator"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ladybug/outdoorComfortCalculator.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -168px -312px" data-toptip="Outdoor Comfort Calculator"></div></a>
+<a href="../../components/ladybug/wetBulbTemp.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -192px -312px" data-downtip="Wet Bulb Temp"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ladybug/sunriseSunset.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -216px -312px" data-toptip="Sunrise Sunset"></div></a>
+<a href="../../components/ladybug/clothingFunction.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') 0px -336px" data-downtip="Clothing Function"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ladybug/averageData.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -24px -336px" data-toptip="Average Data"></div></a>
+<a href="../../components/ladybug/branchData.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -48px -336px" data-downtip="Branch Data"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ladybug/separateData.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -72px -336px" data-toptip="Separate data"></div></a>
+<a href="../../components/ladybug/adaptiveComfortCalculator.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -96px -336px" data-downtip="Adaptive Comfort Calculator"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ladybug/ankleDraftDiscomfort.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -120px -336px" data-toptip="Ankle Draft Discomfort"></div></a>
+<a href="../../components/ladybug/analysisPeriod.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -144px -336px" data-downtip="Analysis Period"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ladybug/cDDHDD.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -168px -336px" data-toptip="CDD HDD"></div></a>
+<a href="../../components/ladybug/radiantAsymmetryDiscomfort.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -192px -336px" data-downtip="Radiant Asymmetry Discomfort"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ladybug/draftDiscomfort.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -216px -336px" data-toptip="Draft Discomfort"></div></a>
+<a href="../../components/ladybug/humidityRatioCalculator.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') 0px -360px" data-downtip="Humidity Ratio Calculator"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="9">
+1 | AnalyzeWeatherData
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ladybug/genCumulativeSkyMtx.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -192px -216px" data-toptip="Gen Cumulative Sky Mtx"></div></a>
+<a href="../../components/ladybug/designDaySkyModel.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -216px -216px" data-downtip="Design Day Sky Model"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ladybug/selectSkyMtx.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') 0px -240px" data-toptip="select Sky Mtx"></div></a>
+<a href="../../components/ladybug/3DChart.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -24px -240px" data-downtip="3D Chart"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ladybug/coloredSkyVisualizer.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -48px -240px" data-toptip="Colored Sky Visualizer"></div></a>
+<a href="../../components/ladybug/skyDome.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -72px -240px" data-downtip="Sky Dome"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ladybug/psychrometricChart.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -96px -240px" data-toptip="Psychrometric Chart"></div></a>
+<a href="../../components/ladybug/outdoorSolarTemperatureAdjustor.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -120px -240px" data-downtip="Outdoor Solar Temperature Adjustor"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ladybug/windBoundaryProfile.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -144px -240px" data-toptip="Wind Boundary Profile"></div></a>
+<a href="../../components/ladybug/lineChart.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -168px -240px" data-downtip="Line Chart"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ladybug/importGroundTemp.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -192px -240px" data-toptip="Import Ground Temp"></div></a>
+<a href="../../components/ladybug/surfaceHourlySolar.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -216px -240px" data-downtip="Surface Hourly Solar"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ladybug/monthlyBarChart.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') 0px -264px" data-toptip="Monthly Bar Chart"></div></a>
+<a href="../../components/ladybug/radiationRose.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -24px -264px" data-downtip="Radiation Rose"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ladybug/bioclimaticChart.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -48px -264px" data-toptip="Bioclimatic Chart"></div></a>
+<a href="../../components/ladybug/radiationCallaDome.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -72px -264px" data-downtip="Radiation Calla Dome"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ladybug/sunPath.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -96px -264px" data-toptip="Sun Path"></div></a>
+<a href="../../components/ladybug/windRose.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -120px -264px" data-downtip="Wind Rose"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ladybug/adaptiveComfortChart.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -144px -264px" data-toptip="Adaptive Comfort Chart"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="10">
+2 | VisualizeWeatherData
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ladybug/steadyStateSurfaceTemperature.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') 0px 0px" data-toptip="Steady State Surface Temperature"></div></a>
+<a href="../../components/ladybug/solarFanBasic.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -24px 0px" data-downtip="Solar Fan Basic"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ladybug/sunShadesCalculator.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -48px 0px" data-toptip="Sun Shades Calculator"></div></a>
+<a href="../../components/ladybug/coneOfVision.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -72px 0px" data-downtip="Cone Of Vision"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ladybug/radiationAnalysis.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -96px 0px" data-toptip="Radiation Analysis"></div></a>
+<a href="../../components/ladybug/solarEnvelopeBasic.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -120px 0px" data-downtip="Solar Envelope Basic"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ladybug/windowDowndraft.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -144px 0px" data-toptip="Window Downdraft"></div></a>
+<a href="../../components/ladybug/solarEnvelope.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -168px 0px" data-downtip="Solar Envelope"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ladybug/shadingMask.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -192px 0px" data-toptip="Shading Mask"></div></a>
+<a href="../../components/ladybug/surfaceViewAnalysis.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -216px 0px" data-downtip="Surface View Analysis"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ladybug/viewAnalysis.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') 0px -24px" data-toptip="View Analysis"></div></a>
+<a href="../../components/ladybug/viewRose.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -24px -24px" data-downtip="view Rose"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ladybug/viewFromSun.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -48px -24px" data-toptip="View From Sun"></div></a>
+<a href="../../components/ladybug/solarFan.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -72px -24px" data-downtip="Solar Fan"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ladybug/shadingDesigner.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -96px -24px" data-toptip="Shading Designer"></div></a>
+<a href="../../components/ladybug/setRhinoSun.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -120px -24px" data-downtip="Set Rhino Sun"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ladybug/forwardRaytracing.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -144px -24px" data-toptip="Forward Raytracing"></div></a>
+<a href="../../components/ladybug/sunlightHoursAnalysis.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -168px -24px" data-downtip="Sunlight Hours Analysis"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ladybug/comfortShadeBenefitEvaluator.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -192px -24px" data-toptip="Comfort Shade Benefit Evaluator"></div></a>
+<a href="../../components/ladybug/bounceFromSurface.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -216px -24px" data-downtip="Bounce from Surface"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="10">
+3 | EnvironmentalAnalysis
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ladybug/importSandiaPhotovoltaicsModule.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -168px -264px" data-toptip="Import Sandia Photovoltaics Module"></div></a>
+<a href="../../components/ladybug/solarWaterHeatingSystem.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -192px -264px" data-downtip="Solar Water Heating System"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ladybug/sunpathShading.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -216px -264px" data-toptip="Sunpath Shading"></div></a>
+<a href="../../components/ladybug/photovoltaicsPerformanceMetrics.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') 0px -288px" data-downtip="Photovoltaics Performance Metrics"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ladybug/solarWaterHeatingSurface.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -24px -288px" data-toptip="Solar Water Heating Surface"></div></a>
+<a href="../../components/ladybug/solarWaterHeatingSystemDetailed.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -48px -288px" data-downtip="Solar Water Heating System Detailed"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ladybug/solarWaterHeatingPerformanceMetrics.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -72px -288px" data-toptip="Solar Water Heating Performance Metrics"></div></a>
+<a href="../../components/ladybug/residentialHotWater.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -96px -288px" data-downtip="Residential Hot Water"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ladybug/photovoltaicsSurface.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -120px -288px" data-toptip="Photovoltaics Surface"></div></a>
+<a href="../../components/ladybug/simplifiedPhotovoltaicsModule.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -144px -288px" data-downtip="Simplified Photovoltaics Module"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ladybug/coldWaterTemperature.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -168px -288px" data-toptip="Cold Water Temperature"></div></a>
+<a href="../../components/ladybug/commercialPublicApartmentHotWater.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -192px -288px" data-downtip="Commercial Public Apartment Hot Water"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ladybug/pVSWHSystemSize.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -216px -288px" data-toptip="PV SWH System Size"></div></a>
+<a href="../../components/ladybug/importCECPhotovoltaicsModule.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') 0px -312px" data-downtip="Import CEC Photovoltaics Module"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ladybug/tiltAndOrientationFactor.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -24px -312px" data-toptip="Tilt And Orientation Factor"></div></a>
+<a href="../../components/ladybug/dCToACDerateFactor.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -48px -312px" data-downtip="DC to AC derate factor"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="8">
+4 | Renewables
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ladybug/bodyCharacteristics.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -48px -72px" data-toptip="Body Characteristics"></div></a>
+<a href="../../components/ladybug/bTU2Wh.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -72px -72px" data-downtip="BTU2Wh"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ladybug/trueNorth.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -96px -72px" data-toptip="True North"></div></a>
+<a href="../../components/ladybug/dOYHOY.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -120px -72px" data-downtip="DOY HOY"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ladybug/setTheView.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -144px -72px" data-toptip="Set the View"></div></a>
+<a href="../../components/ladybug/cfm2M3s.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -168px -72px" data-downtip="Cfm2M3s"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ladybug/orientationStudyParameters.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -192px -72px" data-toptip="Orientation Study Parameters"></div></a>
+<a href="../../components/ladybug/ms2mph.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -216px -72px" data-downtip="ms2mph"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ladybug/activitiesMetList.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') 0px -96px" data-toptip="Activities Met List"></div></a>
+<a href="../../components/ladybug/passiveStrategyList.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -24px -96px" data-downtip="Passive Strategy List"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ladybug/l2G.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -48px -96px" data-toptip="L2G"></div></a>
+<a href="../../components/ladybug/renderView.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -72px -96px" data-downtip="Render View"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ladybug/north.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -96px -96px" data-toptip="North"></div></a>
+<a href="../../components/ladybug/fly.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -120px -96px" data-downtip="fly"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ladybug/separateByNormal.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -144px -96px" data-toptip="Separate By Normal"></div></a>
+<a href="../../components/ladybug/textureMaker.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -168px -96px" data-downtip="Texture Maker"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ladybug/constructTime.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -192px -96px" data-toptip="Construct Time"></div></a>
+<a href="../../components/ladybug/orientToCamera.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -216px -96px" data-downtip="Orient to Camera"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ladybug/combineSolarEnvelopes.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') 0px -120px" data-toptip="Combine Solar Envelopes"></div></a>
+<a href="../../components/ladybug/generateMesh.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -24px -120px" data-downtip="Generate Mesh"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ladybug/beaufortRanges.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -48px -120px" data-toptip="Beaufort Ranges"></div></a>
+<a href="../../components/ladybug/clothingList.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -72px -120px" data-downtip="Clothing List"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ladybug/f2C.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -96px -120px" data-toptip="F2C"></div></a>
+<a href="../../components/ladybug/shadingParametersList.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -120px -120px" data-downtip="Shading Parameters List"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ladybug/uIP2uSI.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -144px -120px" data-toptip="u IP2u SI"></div></a>
+<a href="../../components/ladybug/c2F.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -168px -120px" data-downtip="C2F"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ladybug/realTimeRadiationAnalysis.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -192px -120px" data-toptip="Real Time Radiation Analysis"></div></a>
+<a href="../../components/ladybug/createLegend.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -216px -120px" data-downtip="Create Legend"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ladybug/lux2ftcd.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') 0px -144px" data-toptip="lux2ft-cd"></div></a>
+<a href="../../components/ladybug/captureView.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -24px -144px" data-downtip="Capture View"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ladybug/passiveStrategyParameters.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -48px -144px" data-toptip="Passive Strategy Parameters"></div></a>
+<a href="../../components/ladybug/meshToHatch.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -72px -144px" data-downtip="Mesh-To-Hatch"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ladybug/imageViewer.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -96px -144px" data-toptip="Image Viewer"></div></a>
+<a href="../../components/ladybug/dayMonthHour.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -120px -144px" data-downtip="Day Month Hour"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ladybug/recolorMesh.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -144px -144px" data-toptip="Recolor Mesh"></div></a>
+<a href="../../components/ladybug/bTUft2Whm.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -168px -144px" data-downtip="BTUft2Whm"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ladybug/meshThresholdSelector.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -192px -144px" data-toptip="Mesh Threshold Selector"></div></a>
+<a href="../../components/ladybug/comfortMannequin.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -216px -144px" data-downtip="Comfort Mannequin"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ladybug/adaptiveComfortParameters.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') 0px -168px" data-toptip="Adaptive Comfort Parameters"></div></a>
+<a href="../../components/ladybug/falseStartToggle.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -24px -168px" data-downtip="False Start Toggle"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ladybug/legendParameters.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -48px -168px" data-toptip="Legend Parameters"></div></a>
+<a href="../../components/ladybug/wh2BTU.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -72px -168px" data-downtip="Wh2BTU"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ladybug/mRTCalculator.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -96px -168px" data-toptip="MRT Calculator"></div></a>
+<a href="../../components/ladybug/m3s2Cfm.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -120px -168px" data-downtip="M3s2Cfm"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ladybug/rIP2rSI.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -144px -168px" data-toptip="r IP2r SI"></div></a>
+<a href="../../components/ladybug/whm2BTUft.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -168px -168px" data-downtip="Whm2BTUft"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ladybug/gradientLibrary.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -192px -168px" data-toptip="Gradient Library"></div></a>
+<a href="../../components/ladybug/pMVComfortParameters.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -216px -168px" data-downtip="PMV Comfort Parameters"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ladybug/uSI2uIP.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') 0px -192px" data-toptip="u SI2u IP"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="25">
+5 | Extra
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ladybug/updateLadybug.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -24px -360px" data-toptip="Update Ladybug"></div></a>
+<a href="../../components/ladybug/exportLadybug.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -48px -360px" data-downtip="Export Ladybug"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+6 | Developers
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ladybug/eNVIMetGrid.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -24px -192px" data-toptip="ENVI-Met Grid"></div></a>
+<a href="../../components/ladybug/eNVIMetFindOutputFolder.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -48px -192px" data-downtip="ENVI-Met Find Output Folder"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ladybug/terrainGenerator.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -72px -192px" data-toptip="Terrain Generator"></div></a>
+<a href="../../components/ladybug/countourMesh.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -96px -192px" data-downtip="Countour Mesh"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ladybug/locationFinder.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -120px -192px" data-toptip="Location Finder"></div></a>
+<a href="../../components/ladybug/shadingMaskII.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -144px -192px" data-downtip="Shading Mask II"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ladybug/kmzGenerator.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -168px -192px" data-toptip="Kmz Generator"></div></a>
+<a href="../../components/ladybug/eNVIMetSoilPlantSource.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -192px -192px" data-downtip="ENVI-Met Soil Plant Source"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ladybug/eNVIMetBuildingTerrain.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -216px -192px" data-toptip="ENVI-Met Building Terrain"></div></a>
+<a href="../../components/ladybug/shadowStudy.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') 0px -216px" data-downtip="Shadow Study"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ladybug/eNVIMetDisplay.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -24px -216px" data-toptip="ENVI-Met Display"></div></a>
+<a href="../../components/ladybug/pedestrianWindComfort.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -48px -216px" data-downtip="Pedestrian Wind Comfort"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ladybug/eNVIMetManageWorkspace.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -72px -216px" data-toptip="ENVI-Met Manage Workspace"></div></a>
+<a href="../../components/ladybug/eNVIMetResultsReader.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -96px -216px" data-downtip="ENVI-Met Results Reader"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ladybug/eNVIMetSpaces.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -120px -216px" data-toptip="ENVI-Met Spaces"></div></a>
+<a href="../../components/ladybug/search.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -144px -216px" data-downtip="Search"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ladybug/eNVIMetReadLibrary.html"><div class="ghsprite" style="background: url('../../icons/ladybug.png') -168px -216px" data-toptip="ENVI-Met Read Library"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="9">
+7 | WIP
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+
+<div class="addon-buttons">
+<a href="#tutorials">Video Tutorials</a>
+<a href="https://github.com/ladybug-tools/ladybug-legacy">Source Code</a>
+<a href="https://www.food4rhino.com/app/ladybug-tools">Download</a>
+
+</div>
+
+<div class="compo-header">
+<h1><div class="ghsprite" style="background: url('../../icons/ladybug.png') -144px -96px" ></div> Separate By Normal</h1>
+
+<div class="breadcrumb">
+ <a href="../../index.html">Component Index</a>
+  <a href="../../addons/ladybug.html">Ladybug</a><a href="#" class="breadcrumb-nolink">5 | Extra</a><a href="#" class="breadcrumb-nolink">Separate By Normal</a>
+</div>
+
+</div>
+<h3>Select surfaces based on orientation.<br></h3>
+<h2>Inputs</h2>
+<table class="params-table input-params">
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Geometry</b></td><td>_geometry</td><td>Geometry for which facades will be selected.  Geometry must be either a Brep, a Mesh or a list of Breps or Meshes.</td><td>Goo</td></tr>
+<tr><td><b>Max Up Dec Angle</b></td><td>_maxUpDecAngle_</td><td>Maximum normal declination angle from ZAxis that should be still considerd up</td><td>Goo</td></tr>
+<tr><td><b>Max Down Dec Angle</b></td><td>_maxDownDecAngle_</td><td>Maximum normal declination angle from ZAxis that should be still considerd down</td><td>Goo</td></tr>
+<tr><td><b>Orientation</b></td><td>_orientation_</td><td>A number between 0 and 8 for desired orientation. 0 = North, 1 = NE, 2 = East, ... 7 = NW, 8 = Roof. Default is South.</td><td>Goo</td></tr>
+<tr><td><b>Plus Deg</b></td><td>_plusDeg_</td><td>Angle in degrees for deviation from _orientation. Default = 23. For selecting all vertical orientations give 359 for this input and 0 for the _minusDeg_ (or viceversa)</td><td>Goo</td></tr>
+<tr><td><b>Minus Deg</b></td><td>_minusDeg_</td><td>Angle in degrees for deviation from _orientation. Default = 23. For selecting all vertical orientations give 359 for this input and 0 for the _plusDeg_ (or viceversa)</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table class="params-table output-params">
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Out</b></td><td>readMe!</td><td>...</td><td>String</td></tr>
+<tr><td><b>Sel Faces</b></td><td>selFaces</td><td>Selected faces/surfaces</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+<div class="ghtutorials">
+<a name="tutorials"></a>
+<h2>Video Tutorials</h2>
+<div style="display:none;" class="html5gallery" data-skin="verticallight" data-width="1000" data-height="600" data-thumbwidth="280" data-thumbheight="70" data-thumbgap="5">
+
+<a href="http://www.youtube.com/embed/PfBv2N_oUtk"><img src="http://img.youtube.com/vi/PfBv2N_oUtk/1.jpg" alt="Ladybug Radiation Optimization"></a>
+<a href="http://www.youtube.com/embed/XaNSy9-LEpc"><img src="http://img.youtube.com/vi/XaNSy9-LEpc/1.jpg" alt="Ladybug  Tutorial"></a>
+<a href="http://www.youtube.com/embed/x_azNMWaIlU"><img src="http://img.youtube.com/vi/x_azNMWaIlU/1.jpg" alt="Create A Set Of Parametric Shading Devices And Simulate Their Form Using Ladybug And Galapagos"></a>
+<a href="http://www.youtube.com/embed/DHiRCOynzbc"><img src="http://img.youtube.com/vi/DHiRCOynzbc/1.jpg" alt="Simulate The Form Of A Skyscraper For Minimum Heat Gain Using Ladybug And Galapagos"></a>
+<a href="http://www.youtube.com/embed/vcsV4knp9Ec"><img src="http://img.youtube.com/vi/vcsV4knp9Ec/1.jpg" alt="Weather Data Analysis Made Quick And Easy In Ladybug - Customize Weather Data Any Way You Want"></a>
+<a href="http://www.youtube.com/embed/wW0l1PFx7Bg"><img src="http://img.youtube.com/vi/wW0l1PFx7Bg/1.jpg" alt="Air Cavity Temperature - Ladybug + Honeybee"></a>
+<a href="http://www.youtube.com/embed/D_bLn0x41h8"><img src="http://img.youtube.com/vi/D_bLn0x41h8/1.jpg" alt="Import Weather And Sunpath - Clip"></a>
+<a href="http://www.youtube.com/embed/X1HS6cQ3Jk8"><img src="http://img.youtube.com/vi/X1HS6cQ3Jk8/1.jpg" alt="Editing The Code In Ladybug"></a>
+<a href="http://www.youtube.com/embed/oY-Iq9YJO5U"><img src="http://img.youtube.com/vi/oY-Iq9YJO5U/1.jpg" alt="Ladybug Radiation Dome - Clip"></a>
+<a href="http://www.youtube.com/embed/o3xa2DiFuhk"><img src="http://img.youtube.com/vi/o3xa2DiFuhk/1.jpg" alt="Ladybug Pmv Comfort Slider Clip"></a>
+<a href="http://www.youtube.com/embed/eEpOCuiDcLM"><img src="http://img.youtube.com/vi/eEpOCuiDcLM/1.jpg" alt="Ladybug Radiation Study - Clip"></a>
+<a href="http://www.youtube.com/embed/63ZBzeYCln4"><img src="http://img.youtube.com/vi/63ZBzeYCln4/1.jpg" alt="Ladybug Solar Fan - Clip"></a>
+<a href="http://www.youtube.com/embed/6jtMO22oPYY"><img src="http://img.youtube.com/vi/6jtMO22oPYY/1.jpg" alt="Ladybug Ray Tracing - Clip"></a>
+<a href="http://www.youtube.com/embed/x9Q86d0-paU"><img src="http://img.youtube.com/vi/x9Q86d0-paU/1.jpg" alt="Ladybug + Honeybee Solar Parti"></a>
+<a href="http://www.youtube.com/embed/zX4Dd3ezKMY"><img src="http://img.youtube.com/vi/zX4Dd3ezKMY/1.jpg" alt="Ladybug Community -  Page And Ghpython"></a>
+<a href="http://www.youtube.com/embed/0Tt118yBVDs"><img src="http://img.youtube.com/vi/0Tt118yBVDs/1.jpg" alt="Ladybug Psychrometric Chart - Clip"></a>
+<a href="http://www.youtube.com/embed/TSipm7BXOKU"><img src="http://img.youtube.com/vi/TSipm7BXOKU/1.jpg" alt="0 - Ladybug Comfort Tutorials - Intro"></a>
+<a href="http://www.youtube.com/embed/T-jwfoopWaI"><img src="http://img.youtube.com/vi/T-jwfoopWaI/1.jpg" alt="4 - Ladybug Comfort Tutorials - Outdoor Standard Effective Temperature"></a>
+<a href="http://www.youtube.com/embed/dT5sqAQFZRo"><img src="http://img.youtube.com/vi/dT5sqAQFZRo/1.jpg" alt="3 - Ladybug Comfort Tutorials -  Indoor Comfort: Adaptive"></a>
+<a href="http://www.youtube.com/embed/dBp0OdBnOq0"><img src="http://img.youtube.com/vi/dBp0OdBnOq0/1.jpg" alt="6  - Ladybug Comfort Tutorials - Psych Chart Part 2"></a>
+<a href="http://www.youtube.com/embed/0DK6_9qzq3w"><img src="http://img.youtube.com/vi/0DK6_9qzq3w/1.jpg" alt="7   - Ladybug Comfort Tutorials - Psych Chart Part 3"></a>
+<a href="http://www.youtube.com/embed/o9tLm2etL-0"><img src="http://img.youtube.com/vi/o9tLm2etL-0/1.jpg" alt="5  - Ladybug Comfort Tutorials - Psych Chart Part 1"></a>
+<a href="http://www.youtube.com/embed/hwErNMWeQVw"><img src="http://img.youtube.com/vi/hwErNMWeQVw/1.jpg" alt="1 - Ladybug Comfort Tutorials - Outdoor Comfort: Utci"></a>
+<a href="http://www.youtube.com/embed/FDnKc6JudCY"><img src="http://img.youtube.com/vi/FDnKc6JudCY/1.jpg" alt="2 - Ladybug Comfort Tutorials - Indoor Comfort: Pmv"></a>
+<a href="http://www.youtube.com/embed/yIl2XhOfGUw"><img src="http://img.youtube.com/vi/yIl2XhOfGUw/1.jpg" alt="9 - Ladybug Comfort Tutorials - Comfort Shade Benefit Evaluation"></a>
+<a href="http://www.youtube.com/embed/5nK-rGfPEBk"><img src="http://img.youtube.com/vi/5nK-rGfPEBk/1.jpg" alt="8 - Ladybug Comfort Tutorials -  Solar Adjusted Radiant Temperature"></a>
+<a href="http://www.youtube.com/embed/8UFkJL-aZy8"><img src="http://img.youtube.com/vi/8UFkJL-aZy8/1.jpg" alt="0 - Getting Started With Ladybug - Installing Ladybug"></a>
+<a href="http://www.youtube.com/embed/AZL2lJroaNE"><img src="http://img.youtube.com/vi/AZL2lJroaNE/1.jpg" alt="1 - Getting Started With Ladybug -  Importing Weather Data"></a>
+<a href="http://www.youtube.com/embed/sRfd4K3b9ew"><img src="http://img.youtube.com/vi/sRfd4K3b9ew/1.jpg" alt="2 - Getting Started With Ladybug - Visualizing Data On The Colored Chart"></a>
+<a href="http://www.youtube.com/embed/Fwe9ZJnTSH0"><img src="http://img.youtube.com/vi/Fwe9ZJnTSH0/1.jpg" alt="3 - Getting Started With Ladybug - Sunpath Basics"></a>
+<a href="http://www.youtube.com/embed/MxDlXI3OJfI"><img src="http://img.youtube.com/vi/MxDlXI3OJfI/1.jpg" alt="5 - Getting Started With Ladybug - Psychrometric Chart Basics"></a>
+<a href="http://www.youtube.com/embed/G27WWkqlKxA"><img src="http://img.youtube.com/vi/G27WWkqlKxA/1.jpg" alt="4 - Getting Started With Ladybug - Wind Rose Basics"></a>
+<a href="http://www.youtube.com/embed/J0RjO46wKcs"><img src="http://img.youtube.com/vi/J0RjO46wKcs/1.jpg" alt="Tutorial: Changing Facade Depending On Sun (with Ladybug)"></a>
+<a href="http://www.youtube.com/embed/SY2VUBE6SgA"><img src="http://img.youtube.com/vi/SY2VUBE6SgA/1.jpg" alt="Parametric Environmental Facade With Ladybug And Skindesigner"></a>
+
+
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div id="docs-foot">
+<p class="left">
+Site design © <a href="https://github.com/robinrodricks/">Robin Rodricks</a>. &nbsp;
+Co-created by <a href="http://andrewheumann.com/">Andrew Heumann</a>. &nbsp;
+Ladybug and associated data © 2020  <a href="https://www.food4rhino.com/app/ladybug-tools">Mostapha Sadeghipour Roudsari</a>. &nbsp;
+<br>
+Rhinoceros and Grasshopper are registered trademarks of <a href="https://www.rhino3d.com/">Robert McNeel & Associates</a>.&nbsp;
+Hosted by <a href="http://www.github.com/">GitHub</a> 
+</p>
+<p class="right docs-lightfont">
+
+<a href="https://github.com/grasshopper3d/GrasshopperDocsSite/issues/new">Report an Issue</a> &nbsp;|&nbsp;
+<a href="/termsOfService.html">Terms of Service</a>
+</p>
+
+</div>
+</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    </body>
+</html>
