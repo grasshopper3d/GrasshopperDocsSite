@@ -704,7 +704,7 @@ h3 {
 	overflow-x: auto;
 }
 .libheadercell {
-	width: 160px;
+	width: 180px;
 }
 .libheadercell a {
     display: block;
@@ -1170,9 +1170,19 @@ img.ghicon {
 .verified-tick {
 	display: inline-block;
 	background: transparent url("images/tick.png") no-repeat scroll center;
+	text-wrap: none;
 }
 .addon-header .verified-tick {
 	margin-left: 5px;
 	width: 22px;
 	height: 22px;
+}
+.libheadercell .verified-tick {
+	margin-left: 5px;
+	width: 16px;
+	height: 16px;
+	background-size: contain;
+}
+.libheadercell a:hover .verified-tick {
+    filter: brightness(1000%);
 }
