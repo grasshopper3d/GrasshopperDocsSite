@@ -183,6 +183,19 @@
       "authorContact": "support@geometrygym.com"
     },
     {
+      "name": "Butterfly",
+      "releaseDate": "2019-Feb-23",
+      "version": "0.0.05",
+      "downloadLink": "https://www.food4rhino.com/app/ladybug-tools",
+      "helpLink": "https://grasshopperdocs.com/addons/butterfly.html",
+      "category": "Climate Analysis & Simulation",
+      "isSystem": false,
+      "components": 59,
+      "description": "A light python API for creating and running OpenFoam cases for CFD simulation.",
+      "authorName": "Mostapha Sadeghipour Roudsari",
+      "authorContact": ""
+    },
+    {
       "name": "CarveRhino",
       "releaseDate": "2017-Sep-25",
       "version": "1",
@@ -194,6 +207,19 @@
       "description": "",
       "authorName": "Tom Svilans",
       "authorContact": "info@tomsvilans.com"
+    },
+    {
+      "name": "Caterpillar",
+      "releaseDate": "2019-Jul-18",
+      "version": "R6",
+      "downloadLink": "https://www.food4rhino.com/app/caterpillar",
+      "helpLink": "https://grasshopperdocs.com/addons/caterpillar.html",
+      "category": "Unit Conversion",
+      "isSystem": false,
+      "components": 11,
+      "description": "Caterpillar GH is the Grasshopper 3D implementation of the Caterpillar Library which allows for the conversion between different systems of measurement. Designed for simplicity of use, the primary conversion all takes place in a single component per unit of measure in which three inputs convert a “value” from a source unit of measure to a target unit of measure resulting in an output from the component whose value has been converted from the specified input system of measurement to the output system. The result is a fast simple conversion between common systems of measurement covering, Angle, Area, Energy, Force, Length, Mass, Pressure, Speed, Temperature, Time, and Volume. The components are added to the Math's tab in the Grasshopper ribbon under the Units Category.",
+      "authorName": "David Mans",
+      "authorContact": ""
     },
     {
       "name": "Centipede",
@@ -337,6 +363,19 @@
       "description": "Doodlebug allows Grasshopper to query and drive Adobe Illustrator.\n\nGeometry from Grasshopper can be streamed directly to illustrator with full control over stroke, fill, and other appearance attributes. Geometry can also be retrieved from Illustrator, manipulated in Grasshopper, and then sent back for a full round-trip.",
       "authorName": "Andrew Heumann",
       "authorContact": "andheum@gmail.com"
+    },
+    {
+      "name": "Dragonfly",
+      "releaseDate": "2020",
+      "version": "1.0.0",
+      "downloadLink": "https://github.com/chriswmackey/Dragonfly/wiki",
+      "helpLink": "https://grasshopperdocs.com/addons/dragonfly.html",
+      "category": "Climate Analysis & Simulation",
+      "isSystem": false,
+      "components": 53,
+      "description": "Dragonfly allows users to model large-scale climate phenomena such as urban heat island. Dragonfly intends to make many large-scale climate variables accessible to CAD interfaces and the other insects of Ladybug Tools.",
+      "authorName": "Chris Mackey",
+      "authorContact": "chris@ladybug.tools"
     },
     {
       "name": "Droid",
@@ -846,19 +885,6 @@
       "authorContact": ""
     },
     {
-      "name": "LunchBox",
-      "releaseDate": "2018-Oct-30",
-      "version": "2018.10.30",
-      "downloadLink": "https://www.food4rhino.com/app/lunchbox",
-      "helpLink": "https://grasshopperdocs.com/addons/lunchbox.html",
-      "category": "Core Collections",
-      "isSystem": false,
-      "components": 86,
-      "description": "LunchBox is a plug-in for Grasshopper for exploring mathematical shapes, paneling, structures, and workflow.  We have also introduced new components for general machine learning implementations such as regression analysis, clustering, and networks.",
-      "authorName": "Nathan Miller",
-      "authorContact": "lunchbox@provingground.io"
-    },
-    {
       "name": "Leopard",
       "releaseDate": "2017-Jan-08",
       "version": "0.0.01",
@@ -870,6 +896,19 @@
       "description": "Leopard is an open source mesh processing solution for grasshopper that allows users to interact with rhino geometry and create customised mesh shapes. By selecting Mesh vertices, edges and faces, users have more freedom to edit meshes intuitively and use different subdivision schemes to selectively choose multiple areas to fix.\n\nMesh data using \"Plankton\" for internal processing.",
       "authorName": "Gene Kao",
       "authorContact": "kao.gene@gmail.com"
+    },
+    {
+      "name": "LunchBox",
+      "releaseDate": "2018-Oct-30",
+      "version": "2018.10.30",
+      "downloadLink": "https://www.food4rhino.com/app/lunchbox",
+      "helpLink": "https://grasshopperdocs.com/addons/lunchbox.html",
+      "category": "Core Collections",
+      "isSystem": false,
+      "components": 86,
+      "description": "LunchBox is a plug-in for Grasshopper for exploring mathematical shapes, paneling, structures, and workflow.  We have also introduced new components for general machine learning implementations such as regression analysis, clustering, and networks.",
+      "authorName": "Nathan Miller",
+      "authorContact": "lunchbox@provingground.io"
     },
     {
       "name": "MeshEdit",
@@ -1379,6 +1418,19 @@
       "authorContact": ""
     },
     {
+      "name": "Squid",
+      "releaseDate": "2015-Jan-22",
+      "version": "0.110",
+      "downloadLink": "https://www.food4rhino.com/app/squid",
+      "helpLink": "https://grasshopperdocs.com/addons/squid.html",
+      "category": "Image Processing",
+      "isSystem": false,
+      "components": 25,
+      "description": "This is the first release of my plug-in to draw bitmaps with Grasshopper.\n\nThis utility for Grasshopper exposes a bunch of components in the Squid tab.",
+      "authorName": "Mateusz Zwierzycki",
+      "authorContact": "mateuszzwierzycki@gmail.com"
+    },
+    {
       "name": "Starfish",
       "releaseDate": "2017-Sep-18",
       "version": "0.2",
@@ -1401,19 +1453,6 @@
       "isSystem": false,
       "components": 23,
       "description": "Starling mesh tools. These components enable mesh parametrization, so it behaves like a surface - you can evaluate points at any place etc. Is it accurate ? - not at all, but give it just a minute and you'll probably fall in love. Mesh morphing, remeshing, smooth curves evaluation (see group image), 3d convex hull and last but not least - slFastMesh - which will enable you to stop thinking about meshing parameters and start playing.",
-      "authorName": "Mateusz Zwierzycki",
-      "authorContact": "mateuszzwierzycki@gmail.com"
-    },
-    {
-      "name": "Squid",
-      "releaseDate": "2015-Jan-22",
-      "version": "0.110",
-      "downloadLink": "https://www.food4rhino.com/app/squid",
-      "helpLink": "https://grasshopperdocs.com/addons/squid.html",
-      "category": "Image Processing",
-      "isSystem": false,
-      "components": 25,
-      "description": "This is the first release of my plug-in to draw bitmaps with Grasshopper.\n\nThis utility for Grasshopper exposes a bunch of components in the Squid tab.",
       "authorName": "Mateusz Zwierzycki",
       "authorContact": "mateuszzwierzycki@gmail.com"
     },
@@ -1611,45 +1650,6 @@
       "description": "Zebra is an agent based design plugin that can do the following: Optimized plugin to flock at least 100 agents with no performance issues. Combining behaviours with each dynamically and in the same simulation. Very simple interface that can do everything while keeping a high level of controllability for any parameter. Working in conjunction with environmental design. Can contain agents in any brep or mesh form.",
       "authorName": "Youssef Aboualghar (YFA)",
       "authorContact": "it@yusuf-fahmy.com"
-    },
-    {
-      "name": "Dragonfly",
-      "releaseDate": "2020",
-      "version": "1.0.0",
-      "downloadLink": "https://github.com/chriswmackey/Dragonfly/wiki",
-      "helpLink": "https://grasshopperdocs.com/addons/dragonfly.html",
-      "category": "Climate Analysis & Simulation",
-      "isSystem": false,
-      "components": 53,
-      "description": "Dragonfly allows users to model large-scale climate phenomena such as urban heat island. Dragonfly intends to make many large-scale climate variables accessible to CAD interfaces and the other insects of Ladybug Tools.",
-      "authorName": "Chris Mackey",
-      "authorContact": "chris@ladybug.tools"
-    },
-    {
-      "name": "Butterfly",
-      "releaseDate": "2019-Feb-23",
-      "version": "0.0.05",
-      "downloadLink": "https://www.food4rhino.com/app/ladybug-tools",
-      "helpLink": "https://grasshopperdocs.com/addons/butterfly.html",
-      "category": "Climate Analysis & Simulation",
-      "isSystem": false,
-      "components": 59,
-      "description": "A light python API for creating and running OpenFoam cases for CFD simulation.",
-      "authorName": "Mostapha Sadeghipour Roudsari",
-      "authorContact": ""
-    },
-    {
-      "name": "Caterpillar",
-      "releaseDate": "2019-Jul-18",
-      "version": "R6",
-      "downloadLink": "https://www.food4rhino.com/app/caterpillar",
-      "helpLink": "https://grasshopperdocs.com/addons/caterpillar.html",
-      "category": "Unit Conversion",
-      "isSystem": false,
-      "components": 11,
-      "description": "Caterpillar GH is the Grasshopper 3D implementation of the Caterpillar Library which allows for the conversion between different systems of measurement. Designed for simplicity of use, the primary conversion all takes place in a single component per unit of measure in which three inputs convert a “value” from a source unit of measure to a target unit of measure resulting in an output from the component whose value has been converted from the specified input system of measurement to the output system. The result is a fast simple conversion between common systems of measurement covering, Angle, Area, Energy, Force, Length, Mass, Pressure, Speed, Temperature, Time, and Volume. The components are added to the Math's tab in the Grasshopper ribbon under the Units Category.",
-      "authorName": "David Mans",
-      "authorContact": ""
     },
     {
       "name": "Grasshopper Display",
