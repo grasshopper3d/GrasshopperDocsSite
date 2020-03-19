@@ -219,7 +219,7 @@
       "components": 11,
       "description": "Caterpillar GH is the Grasshopper 3D implementation of the Caterpillar Library which allows for the conversion between different systems of measurement. Designed for simplicity of use, the primary conversion all takes place in a single component per unit of measure in which three inputs convert a “value” from a source unit of measure to a target unit of measure resulting in an output from the component whose value has been converted from the specified input system of measurement to the output system. The result is a fast simple conversion between common systems of measurement covering, Angle, Area, Energy, Force, Length, Mass, Pressure, Speed, Temperature, Time, and Volume. The components are added to the Math's tab in the Grasshopper ribbon under the Units Category.",
       "authorName": "David Mans",
-      "authorContact": ""
+      "authorContact": "david@neoarchaic.net"
     },
     {
       "name": "Centipede",
@@ -375,7 +375,7 @@
       "components": 53,
       "description": "Dragonfly allows users to model large-scale climate phenomena such as urban heat island. Dragonfly intends to make many large-scale climate variables accessible to CAD interfaces and the other insects of Ladybug Tools.",
       "authorName": "Chris Mackey",
-      "authorContact": "chris@ladybug.tools"
+      "authorContact": "chris@ladybug.tools, Chris@MackeyArchitecture.com"
     },
     {
       "name": "Droid",
@@ -479,7 +479,7 @@
       "components": 88,
       "description": "Firefly is a set of comprehensive software tools dedicated to bridging the gap between Grasshopper (a free plug-in for Rhino), the Arduino micro-controller, the internet and beyond. It allows near real-time data flow between the digital and physical worlds, and will read/write data to/from internet feeds, remote sensors and more.",
       "authorName": "Andrew Payne (LIFT architects)",
-      "authorContact": "info@fireflyexperiments.com"
+      "authorContact": "andy@liftarchitects.com, eddy.mankim@gmail.com, info@fireflyexperiments.com"
     },
     {
       "name": "Flatworm",
@@ -518,7 +518,7 @@
       "components": 4,
       "description": "flowL is a plug-in to visualize a vector field, generated trough positive and negative point charges.\nThe path lines are calculated with the \"Runge-Kutta 4th Order Method\" short \"RK4\", developed by the German mathematicians C. Runge and M.W. Kutta. around 1900.",
       "authorName": "[uto]",
-      "authorContact": "to.from.uto@gmail.com"
+      "authorContact": "geco.from.uto@gmail.com, ursula@uto-lab.com, thomas@uto-lab.com"
     },
     {
       "name": "Galapagos",
@@ -622,7 +622,7 @@
       "components": 33,
       "description": "Gismo enables automatic generation of urban environment and terrain geometry based on location's latitude-longitude coordinates and radius. This includes connection with openstreetmap website and generation of buildings, trees, roads, rivers and other map elements. 3d building elements can also be used as a context for further analysis types: isovist (visibility), solar radiation, thermal/wind comfort, cfd analysis.",
       "authorName": "Djordje Spasic",
-      "authorContact": ""
+      "authorContact": "djordjedspasic@gmail.com"
     },
     {
       "name": "Grevit",
@@ -932,9 +932,9 @@
       "category": "Geometry & Meshes",
       "isSystem": false,
       "components": 18,
-      "description": "Provides additional components for mesh-editing and analysis",
+      "description": "MeshEdit is a set of components which extend Grasshopper's ability to work with meshes.",
       "authorName": "[uto]",
-      "authorContact": "Ursula Frick/Thomas Grabner\" + Environment.NewLine + \"http://www.uto-lab.com\" + Environment.NewLine + \"http://sites.google.com/site/utotoolswiki/home\" + Environment.NewLine + \"u.from.uto@gmail.com\" + Environment.NewLine + \"to.from.uto@gmail.com"
+      "authorContact": "geco.from.uto@gmail.com, ursula@uto-lab.com, thomas@uto-lab.com"
     },
     {
       "name": "MeshPlus",
@@ -986,7 +986,7 @@
       "components": 69,
       "description": "Millipede is a structural analysis and optimization component for grasshopper. It allows for very fast linear elastic analysis of frame and shell elements in 3d, 2d plate elements for in plane forces, and 3d volumetric elements. All systems can be optimized using built in topology optimization methods and have their results extracted and visualized in a variety of ways.\n\nIn addition millipede implements a few basic geometric features [extraction of iso surface meshes from volumetric scalar fields or and extraction of curved contours over any mesh] and a few numerical analysis tools [Fast fourier transforms in 1 and 2 dimensions, sparse linear system solver and eigenvalue calculation for large matrices using functionality from the intel math kernel library]\n\nThe new version of millipede includes the surface reparameterization module that enables the generation of vector field aligned patterns over any mesh. This functionality is particularly useful for the creation of principal stress aligned grid shells and reinforcement patterns.",
       "authorName": "Panagiotis Michalatos",
-      "authorContact": ""
+      "authorContact": "pan@sawapan.eu"
     },
     {
       "name": "MinSurf",
@@ -1090,7 +1090,7 @@
       "components": 20,
       "description": "Nudibranch is a set of components enabling automated distance-based data manipulation and interaction",
       "authorName": "Marios Tsiliakos",
-      "authorContact": "dgtlsubstance@gmail.com"
+      "authorContact": "m.tsiliakos@gmail.com, dgtlsubstance@gmail.com"
     },
     {
       "name": "Octopus",
@@ -1153,9 +1153,9 @@
       "category": "Third Party App Integration",
       "isSystem": false,
       "components": 41,
-      "description": "Add several useful features to Grasshopper.",
+      "description": "Pancake can prepare your file for exchange and tweak Grasshopper for better workflow. Features include Quantity, Json, Hang Protection, File Exchange Preparation, Internalize All at Once, Version Tracking, Cluster Manipulation, Directly Export GH Geometry to Exchange Format.",
       "authorName": "Keyu Gan",
-      "authorContact": "pancake@gankeyu.com"
+      "authorContact": "i@gankeyu.com, pancake@gankeyu.com"
     },
     {
       "name": "Paneling Tools",
@@ -1246,7 +1246,7 @@
       "components": 2,
       "description": "Plankton is a flexible and efficient library for handling n-gonal meshes. Plankton is written in C# and implements the halfedge data structure. The structure of the library is loosely based on Rhinocommon's mesh classes and was originally created for use within C#/VB scripting components in Grasshopper.",
       "authorName": "Daniel Piker and Will Pearson",
-      "authorContact": "http://www.grasshopper3d.com/group/plankton"
+      "authorContact": "danielpiker@gmail.com"
     },
     {
       "name": "Pufferfish",
@@ -1623,7 +1623,7 @@
       "components": 36,
       "description": "Weaverbird is a topological modeler that contains many of the known subdivision and transformation operators, readily usable by designers. Instead of doing the work repeatedly, or sometimes using complicated scripts, this plug-in reconstructs the shape, subdivides any mesh, even made by polylines, and helps preparing for fabrication.",
       "authorName": "Giulio Piacentino",
-      "authorContact": ""
+      "authorContact": "giulio@mcneel.com"
     },
     {
       "name": "WombatGH",
