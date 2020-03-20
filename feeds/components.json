@@ -28981,34 +28981,34 @@
       "helpLink": "https://grasshopperdocs.com/components/kiwi3d/unitConverter.html"
     },
     {
-      "name": "AXIS Movement - KUKA|prc",
+      "name": "AXIS Movement",
       "id": "AXIS MOVE",
       "library": "KUKA Prc",
       "category": "01 | Core",
       "summary": "Robot movement defined through axis values. The robot will move to the given axis position in the most efficient manner.",
       "description": null,
       "iconCss": "background: url('icons/kUKAPrc.png') -144px -72px",
-      "helpLink": "https://grasshopperdocs.com/components/kukaprc/aXISMovementKUKAprc.html"
+      "helpLink": "https://grasshopperdocs.com/components/kukaprc/aXISMovement.html"
     },
     {
-      "name": "CIRcular Movement - KUKA|prc",
+      "name": "CIRcular Movement",
       "id": "CIR MOVE",
       "library": "KUKA Prc",
       "category": "01 | Core",
       "summary": "Robot movement defined through an arc. The robot will move along the arc.",
       "description": null,
       "iconCss": "background: url('icons/kUKAPrc.png') -192px -72px",
-      "helpLink": "https://grasshopperdocs.com/components/kukaprc/cIRcularMovementKUKAprc.html"
+      "helpLink": "https://grasshopperdocs.com/components/kukaprc/cIRcularMovement.html"
     },
     {
-      "name": "KRL Code - KUKA|prc",
+      "name": "KRL Code",
       "id": "KRL CODE",
       "library": "KUKA Prc",
       "category": "01 | Core",
       "summary": "The KRL Code component will take the provided text and write it at the according position into the KRL file",
       "description": "The KRL Code component will take the provided text and write it at the according position into the KRL file. Only provide valid KUKA code, as the entire file will otherwise fail to execute at the robot. For more details on KRL refer e.g. to the KUKA Expert Programming Manual (PDF via Google).",
       "iconCss": "background: url('icons/kUKAPrc.png') -96px -72px",
-      "helpLink": "https://grasshopperdocs.com/components/kukaprc/kRLCodeKUKAprc.html"
+      "helpLink": "https://grasshopperdocs.com/components/kukaprc/kRLCode.html"
     },
     {
       "name": "KUKA|prc CORE",
@@ -29021,34 +29021,34 @@
       "helpLink": "https://grasshopperdocs.com/components/kukaprc/kUKAprcCORE.html"
     },
     {
-      "name": "LINear Movement - KUKA|prc",
+      "name": "LINear Movement",
       "id": "LIN MOVE",
       "library": "KUKA Prc",
       "category": "01 | Core",
       "summary": "Robot target defined through a plane. The robot will move in a straight line to the provided plane.",
       "description": null,
       "iconCss": "background: url('icons/kUKAPrc.png') 0px -96px",
-      "helpLink": "https://grasshopperdocs.com/components/kukaprc/lINearMovementKUKAprc.html"
+      "helpLink": "https://grasshopperdocs.com/components/kukaprc/lINearMovement.html"
     },
     {
-      "name": "PTP Movement - KUKA|prc",
+      "name": "PTP Movement",
       "id": "PTP MOVE",
       "library": "KUKA Prc",
       "category": "01 | Core",
       "summary": "Robot target defined through a plane. The robot will in the most efficient manner to the provided plane.",
       "description": null,
       "iconCss": "background: url('icons/kUKAPrc.png') -168px -72px",
-      "helpLink": "https://grasshopperdocs.com/components/kukaprc/pTPMovementKUKAprc.html"
+      "helpLink": "https://grasshopperdocs.com/components/kukaprc/pTPMovement.html"
     },
     {
-      "name": "SPLine Movement - KUKA|prc",
+      "name": "SPLine Movement",
       "id": "SPL MOVE",
       "library": "KUKA Prc",
       "category": "01 | Core",
       "summary": "Robot path interpolated as a spline through a list of planes. The robot will move along the smooth spline.",
       "description": null,
       "iconCss": "background: url('icons/kUKAPrc.png') -120px -72px",
-      "helpLink": "https://grasshopperdocs.com/components/kukaprc/sPLineMovementKUKAprc.html"
+      "helpLink": "https://grasshopperdocs.com/components/kukaprc/sPLineMovement.html"
     },
     {
       "name": "Agilus KR3 R540 Robot",
@@ -29331,214 +29331,1104 @@
       "helpLink": "https://grasshopperdocs.com/components/kukaprc/quantecKR90KR270R3100Robot.html"
     },
     {
-      "name": "Change Tool - KUKA|prc",
+      "name": "Change Tool",
       "id": "CHANGE TOOL",
       "library": "KUKA Prc",
       "category": "03 | Virtual Tool",
       "summary": "Changes the currently used tool at the robot. This component will not e.g. intialize a physical toolchange, but instructs the robot to use a different tool number.",
       "description": null,
       "iconCss": "background: url('icons/kUKAPrc.png') -216px -96px",
-      "helpLink": "https://grasshopperdocs.com/components/kukaprc/changeToolKUKAprc.html"
+      "helpLink": "https://grasshopperdocs.com/components/kukaprc/changeTool.html"
     },
     {
-      "name": "Custom Tool - KUKA|prc",
+      "name": "Custom Tool",
       "id": "CUSTOM TOOL",
       "library": "KUKA Prc",
       "category": "03 | Virtual Tool",
       "summary": "Defines a custom tool",
       "description": "Defines a custom tool. Plugin a single mesh and then double-click the component to set the XYZABC values of the tool as well as its number. You can get the actual tool number and XYZABC values after you have calibrated the tool at the physical robot.",
       "iconCss": "background: url('icons/kUKAPrc.png') -120px -120px",
-      "helpLink": "https://grasshopperdocs.com/components/kukaprc/customToolKUKAprc.html"
+      "helpLink": "https://grasshopperdocs.com/components/kukaprc/customTool.html"
     },
     {
-      "name": "Custom Tool: Plane - KUKA|prc",
+      "name": "Custom Tool: Plane",
       "id": "CUSTOM TOOL: PLN",
       "library": "KUKA Prc",
       "category": "03 | Virtual Tool",
       "summary": "Custom tool defined by a mesh and the tool frame. Either set the tool number and plane (with the plane's Z-vector defining the tool axis) or right-click and switch to direct frame input.",
       "description": null,
       "iconCss": "background: url('icons/kUKAPrc.png') -48px -120px",
-      "helpLink": "https://grasshopperdocs.com/components/kukaprc/customToolPlaneKUKAprc.html"
+      "helpLink": "https://grasshopperdocs.com/components/kukaprc/customToolPlane.html"
     },
     {
-      "name": "Elte Spindle - KUKA|prc",
+      "name": "Elte Spindle",
       "id": "ELTE",
       "library": "KUKA Prc",
       "category": "03 | Virtual Tool",
       "summary": "Tool definition of the Elte spindle with custom mount as used at the University for Applied Arts (www.roboticwoodcraft.com).",
       "description": null,
       "iconCss": "background: url('icons/kUKAPrc.png') -72px -120px",
-      "helpLink": "https://grasshopperdocs.com/components/kukaprc/elteSpindleKUKAprc.html"
+      "helpLink": "https://grasshopperdocs.com/components/kukaprc/elteSpindle.html"
     },
     {
-      "name": "Generic Spindle - KUKA|prc",
+      "name": "Generic Spindle",
       "id": "SPINDLE",
       "library": "KUKA Prc",
       "category": "03 | Virtual Tool",
       "summary": "Tool definition of the standard KUKA spindle by HSD.",
       "description": null,
       "iconCss": "background: url('icons/kUKAPrc.png') 0px -120px",
-      "helpLink": "https://grasshopperdocs.com/components/kukaprc/genericSpindleKUKAprc.html"
+      "helpLink": "https://grasshopperdocs.com/components/kukaprc/genericSpindle.html"
     },
     {
-      "name": "Kress 1050 Spindle - KUKA|prc",
+      "name": "Kress 1050 Spindle",
       "id": "KRESS SPINDLE",
       "library": "KUKA Prc",
       "category": "03 | Virtual Tool",
       "summary": "Tool definition of a Kress 1050 compact milling spindle with custom mount.",
       "description": null,
       "iconCss": "background: url('icons/kUKAPrc.png') -96px -120px",
-      "helpLink": "https://grasshopperdocs.com/components/kukaprc/kress1050SpindleKUKAprc.html"
+      "helpLink": "https://grasshopperdocs.com/components/kukaprc/kress1050Spindle.html"
     },
     {
-      "name": "Multi-State Tool - KUKA|prc",
+      "name": "Multi-State Tool",
       "id": "MS TOOL",
       "library": "KUKA Prc",
       "category": "03 | Virtual Tool",
       "summary": "Creates a tool with multiple states, e.g. open and closed gripper. Will take XYZABC values from first tool.",
       "description": null,
       "iconCss": "background: url('icons/kUKAPrc.png') -24px -120px",
-      "helpLink": "https://grasshopperdocs.com/components/kukaprc/multiStateToolKUKAprc.html"
+      "helpLink": "https://grasshopperdocs.com/components/kukaprc/multiStateTool.html"
     },
     {
-      "name": "Cartesian Offset - KUKA|prc",
+      "name": "Cartesian Offset",
       "id": "CARTESIAN OFFSET",
       "library": "KUKA Prc",
       "category": "04 | Toolpath Utilities",
       "summary": "Adds an additional LIN movement at the beginning and/or at the end of a list of robot movement commands. The LIN movement will be offset according to the cartesian XYZ values.",
       "description": null,
       "iconCss": "background: url('icons/kUKAPrc.png') -48px -72px",
-      "helpLink": "https://grasshopperdocs.com/components/kukaprc/cartesianOffsetKUKAprc.html"
+      "helpLink": "https://grasshopperdocs.com/components/kukaprc/cartesianOffset.html"
     },
     {
-      "name": "Orient Plane - KUKA|prc",
+      "name": "Orient Plane",
       "id": "ORIENT PLN",
       "library": "KUKA Prc",
       "category": "04 | Toolpath Utilities",
       "summary": "Orients the -X axis of a plane to a given point.",
       "description": null,
       "iconCss": "background: url('icons/kUKAPrc.png') -72px -72px",
-      "helpLink": "https://grasshopperdocs.com/components/kukaprc/orientPlaneKUKAprc.html"
+      "helpLink": "https://grasshopperdocs.com/components/kukaprc/orientPlane.html"
     },
     {
-      "name": "Reduce Toolpath - KUKA|prc",
+      "name": "Reduce Toolpath",
       "id": "REDUCE PATH",
       "library": "KUKA Prc",
       "category": "04 | Toolpath Utilities",
       "summary": "Reduces a list of LINear movements, similar to 'Reduce Polyline' but also respecting the changing angle values. Only input LINear movements.",
       "description": null,
       "iconCss": "background: url('icons/kUKAPrc.png') 0px -72px",
-      "helpLink": "https://grasshopperdocs.com/components/kukaprc/reduceToolpathKUKAprc.html"
+      "helpLink": "https://grasshopperdocs.com/components/kukaprc/reduceToolpath.html"
     },
     {
-      "name": "Safe Plane - KUKA|prc",
+      "name": "Safe Plane",
       "id": "SAFE PLANE",
       "library": "KUKA Prc",
       "category": "04 | Toolpath Utilities",
       "summary": "Adds an additional LIN movement at the beginning and/or at the end of a list of robot movement commands. The origin of the LINear movement will be projected onto a plane.",
       "description": null,
       "iconCss": "background: url('icons/kUKAPrc.png') -192px -48px",
-      "helpLink": "https://grasshopperdocs.com/components/kukaprc/safePlaneKUKAprc.html"
+      "helpLink": "https://grasshopperdocs.com/components/kukaprc/safePlane.html"
     },
     {
-      "name": "Tangential Offset - KUKA|prc",
+      "name": "Tangential Offset",
       "id": "TANGENTIAL OFFSET",
       "library": "KUKA Prc",
       "category": "04 | Toolpath Utilities",
       "summary": "Adds an additional LIN movement at the beginning and/or at the end of a list of robot movement commands. The LIN movement will be offset tangentially, e.g. to start a toolpath outside of the material.",
       "description": null,
       "iconCss": "background: url('icons/kUKAPrc.png') -216px -48px",
-      "helpLink": "https://grasshopperdocs.com/components/kukaprc/tangentialOffsetKUKAprc.html"
+      "helpLink": "https://grasshopperdocs.com/components/kukaprc/tangentialOffset.html"
     },
     {
-      "name": "Tool Axis Offset - KUKA|prc",
+      "name": "Tool Axis Offset",
       "id": "TOOL AXIS OFFSET",
       "library": "KUKA Prc",
       "category": "04 | Toolpath Utilities",
       "summary": "Adds an additional LIN movement at the beginning and/or at the end of a list of robot movement commands. The LIN movement will be offset along the tool axis, e.g. for approach movements.",
       "description": null,
       "iconCss": "background: url('icons/kUKAPrc.png') -24px -72px",
-      "helpLink": "https://grasshopperdocs.com/components/kukaprc/toolAxisOffsetKUKAprc.html"
+      "helpLink": "https://grasshopperdocs.com/components/kukaprc/toolAxisOffset.html"
     },
     {
-      "name": "3 Points to Plane - KUKA|prc",
+      "name": "3 Points to Plane",
       "id": "3PTS TO PLN",
       "library": "KUKA Prc",
       "category": "05 | Utilities",
       "summary": "Turns a set of three points into a plane, to be used in a KUKA|prc movement command",
       "description": null,
       "iconCss": "background: url('icons/kUKAPrc.png') -48px -96px",
-      "helpLink": "https://grasshopperdocs.com/components/kukaprc/3PointsToPlaneKUKAprc.html"
+      "helpLink": "https://grasshopperdocs.com/components/kukaprc/3PointsToPlane.html"
     },
     {
-      "name": "Analog Output - KUKA|prc",
+      "name": "Analog Output",
       "id": "ANALOG OUT",
       "library": "KUKA Prc",
       "category": "05 | Utilities",
       "summary": "Changes the state of an analogue output.",
       "description": null,
       "iconCss": "background: url('icons/kUKAPrc.png') -168px -96px",
-      "helpLink": "https://grasshopperdocs.com/components/kukaprc/analogOutputKUKAprc.html"
+      "helpLink": "https://grasshopperdocs.com/components/kukaprc/analogOutput.html"
     },
     {
-      "name": "Command Weaver - KUKA|prc",
+      "name": "Command Weaver",
       "id": "CMD WEAVE",
       "library": "KUKA Prc",
       "category": "05 | Utilities",
       "summary": "This component will weave together KUKA|prc commands",
       "description": "This component will weave together KUKA|prc commands. You may require a certain sequence of events, e.g. move PTP, open gripper, move LIN down, close gripper, move LIN up... When using the Command Weaver, put in all move PTP commands in the first input, all open gripper commands in the second input etc. The command weaver will then take the first item from the first input, then the first item from the second input... weaving together the command structure. If you enable the tree option, weaving will take place according to tree branches, instead of individual items.",
       "iconCss": "background: url('icons/kUKAPrc.png') -144px -96px",
-      "helpLink": "https://grasshopperdocs.com/components/kukaprc/commandWeaverKUKAprc.html"
+      "helpLink": "https://grasshopperdocs.com/components/kukaprc/commandWeaver.html"
     },
     {
-      "name": "Digital Output - KUKA|prc",
+      "name": "Digital Output",
       "id": "DIGITAL OUT",
       "library": "KUKA Prc",
       "category": "05 | Utilities",
       "summary": "Changes the state of a digital output.",
       "description": null,
       "iconCss": "background: url('icons/kUKAPrc.png') -24px -96px",
-      "helpLink": "https://grasshopperdocs.com/components/kukaprc/digitalOutputKUKAprc.html"
+      "helpLink": "https://grasshopperdocs.com/components/kukaprc/digitalOutput.html"
     },
     {
-      "name": "Frame - KUKA|prc",
+      "name": "Frame",
       "id": "FRAME",
       "library": "KUKA Prc",
       "category": "05 | Utilities",
       "summary": "Defines a frame, used e.g. for setting the base system without going through the GUI.",
       "description": null,
       "iconCss": "background: url('icons/kUKAPrc.png') -192px -96px",
-      "helpLink": "https://grasshopperdocs.com/components/kukaprc/frameKUKAprc.html"
+      "helpLink": "https://grasshopperdocs.com/components/kukaprc/frame.html"
     },
     {
-      "name": "Group/Ungroup Commands - KUKA|prc",
+      "name": "Group/Ungroup Commands",
       "id": "GROUP",
       "library": "KUKA Prc",
       "category": "05 | Utilities",
       "summary": "Groups and ungroups commands.",
       "description": null,
       "iconCss": "background: url('icons/kUKAPrc.png') -72px -96px",
-      "helpLink": "https://grasshopperdocs.com/components/kukaprc/groupUngroupCommandsKUKAprc.html"
+      "helpLink": "https://grasshopperdocs.com/components/kukaprc/groupUngroupCommands.html"
     },
     {
-      "name": "Wait - KUKA|prc",
+      "name": "Wait",
       "id": "WAIT",
       "library": "KUKA Prc",
       "category": "05 | Utilities",
       "summary": "Stops the robot for a time provided in seconds.",
       "description": null,
       "iconCss": "background: url('icons/kUKAPrc.png') -120px -96px",
-      "helpLink": "https://grasshopperdocs.com/components/kukaprc/waitKUKAprc.html"
+      "helpLink": "https://grasshopperdocs.com/components/kukaprc/wait.html"
     },
     {
-      "name": "Wait For Digital Input - KUKA|prc",
+      "name": "Wait For Digital Input",
       "id": "WAIT FOR",
       "library": "KUKA Prc",
       "category": "05 | Utilities",
       "summary": "Stops the robot until a digital input is triggered.",
       "description": null,
       "iconCss": "background: url('icons/kUKAPrc.png') -96px -96px",
-      "helpLink": "https://grasshopperdocs.com/components/kukaprc/waitForDigitalInputKUKAprc.html"
+      "helpLink": "https://grasshopperdocs.com/components/kukaprc/waitForDigitalInput.html"
+    },
+    {
+      "name": "AXIS Movement",
+      "id": "AXIS MOVE",
+      "library": "KUKA Prc Pro",
+      "category": "01 | Core",
+      "summary": "Robot movement defined through axis values. The robot will move to the given axis position in the most efficient manner.",
+      "description": null,
+      "iconCss": "background: url('icons/kUKAPrcPro.png') -168px -168px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/aXISMovement.html"
+    },
+    {
+      "name": "CIRcular Movement",
+      "id": "CIR MOVE",
+      "library": "KUKA Prc Pro",
+      "category": "01 | Core",
+      "summary": "Robot movement defined through an arc. The robot will move along the arc.",
+      "description": null,
+      "iconCss": "background: url('icons/kUKAPrcPro.png') -216px -168px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/cIRcularMovement.html"
+    },
+    {
+      "name": "KRL Code",
+      "id": "KRL CODE",
+      "library": "KUKA Prc Pro",
+      "category": "01 | Core",
+      "summary": "The KRL Code component will take the provided text and write it at the according position into the KRL file",
+      "description": "The KRL Code component will take the provided text and write it at the according position into the KRL file. Only provide valid KUKA code, as the entire file will otherwise fail to execute at the robot. For more details on KRL refer e.g. to the KUKA Expert Programming Manual (PDF via Google).",
+      "iconCss": "background: url('icons/kUKAPrcPro.png') -120px -168px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/kRLCode.html"
+    },
+    {
+      "name": "KUKA|prc CORE",
+      "id": "KUKA|prc",
+      "library": "KUKA Prc Pro",
+      "category": "01 | Core",
+      "summary": "KUKA|prc core component containing all core functionality such as simulation and code generation",
+      "description": "KUKA|prc core component containing all core functionality such as simulation and code generation. Provide a slider from 0.0-1.0 for controlling the simulation, a series of robot commands as well as a robot definition. Optionally provide a tool definition and geometry for collision checking. Access the settings by right-clicking the component.",
+      "iconCss": "background: url('icons/kUKAPrcPro.png') 0px -192px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/kUKAprcCORE.html"
+    },
+    {
+      "name": "LINear Movement",
+      "id": "LIN MOVE",
+      "library": "KUKA Prc Pro",
+      "category": "01 | Core",
+      "summary": "Robot target defined through a plane. The robot will move in a straight line to the provided plane.",
+      "description": null,
+      "iconCss": "background: url('icons/kUKAPrcPro.png') -24px -192px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/lINearMovement.html"
+    },
+    {
+      "name": "PTP Movement",
+      "id": "PTP MOVE",
+      "library": "KUKA Prc Pro",
+      "category": "01 | Core",
+      "summary": "Robot target defined through a plane. The robot will in the most efficient manner to the provided plane.",
+      "description": null,
+      "iconCss": "background: url('icons/kUKAPrcPro.png') -192px -168px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/pTPMovement.html"
+    },
+    {
+      "name": "SPLine Movement",
+      "id": "SPL MOVE",
+      "library": "KUKA Prc Pro",
+      "category": "01 | Core",
+      "summary": "Robot path interpolated as a spline through a list of planes. The robot will move along the smooth spline.",
+      "description": null,
+      "iconCss": "background: url('icons/kUKAPrcPro.png') -144px -168px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/sPLineMovement.html"
+    },
+    {
+      "name": "Agilus KR3 R540 Robot",
+      "id": "KR3 R540",
+      "library": "KUKA Prc Pro",
+      "category": "02 | Virtual Robot",
+      "summary": "Kinematic robot model for the KUKA Agilus KR3 R540 robot.",
+      "description": null,
+      "iconCss": "background: url('icons/kUKAPrcPro.png') -72px -96px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/agilusKR3R540Robot.html"
+    },
+    {
+      "name": "Agilus KR6 R700 Robot",
+      "id": "KR6 R700",
+      "library": "KUKA Prc Pro",
+      "category": "02 | Virtual Robot",
+      "summary": "Kinematic robot model for the KUKA Agilus KR6 R700 robot.",
+      "description": null,
+      "iconCss": "background: url('icons/kUKAPrcPro.png') -144px -96px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/agilusKR6R700Robot.html"
+    },
+    {
+      "name": "Agilus KR6-10 R1100 Robot",
+      "id": "KR6-10 R1100",
+      "library": "KUKA Prc Pro",
+      "category": "02 | Virtual Robot",
+      "summary": "Kinematic robot model for the KUKA Agilus KR6-KR10 R1100 robot.",
+      "description": null,
+      "iconCss": "background: url('icons/kUKAPrcPro.png') -48px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/agilusKR610R1100Robot.html"
+    },
+    {
+      "name": "Agilus KR6-10 R1100-2 Robot",
+      "id": "KR6-10 R1100-2",
+      "library": "KUKA Prc Pro",
+      "category": "02 | Virtual Robot",
+      "summary": "Kinematic robot model for the KUKA Agilus KR6-KR10 R1100-2 robot.",
+      "description": null,
+      "iconCss": "background: url('icons/kUKAPrcPro.png') 0px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/agilusKR610R11002Robot.html"
+    },
+    {
+      "name": "Agilus KR6-10 R1100-2 w/ AirSkin Robot",
+      "id": "KR6-10 R1100-2 AS",
+      "library": "KUKA Prc Pro",
+      "category": "02 | Virtual Robot",
+      "summary": "Kinematic robot model for the KUKA Agilus KR6-KR10 R1100-2 robot with AirSkin.",
+      "description": null,
+      "iconCss": "background: url('icons/kUKAPrcPro.png') -192px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/agilusKR610R11002WAirSkinRobot.html"
+    },
+    {
+      "name": "Agilus KR6-10 R900 Robot",
+      "id": "KR6-10 R900",
+      "library": "KUKA Prc Pro",
+      "category": "02 | Virtual Robot",
+      "summary": "Kinematic robot model for the KUKA Agilus KR6-KR10 R900 robot.",
+      "description": null,
+      "iconCss": "background: url('icons/kUKAPrcPro.png') -24px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/agilusKR610R900Robot.html"
+    },
+    {
+      "name": "Agilus KR6-10 R900-2 Robot",
+      "id": "KR6-10 R900-2",
+      "library": "KUKA Prc Pro",
+      "category": "02 | Virtual Robot",
+      "summary": "Kinematic robot model for the KUKA Agilus KR6-KR10 R900-2 robot.",
+      "description": null,
+      "iconCss": "background: url('icons/kUKAPrcPro.png') 0px -72px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/agilusKR610R9002Robot.html"
+    },
+    {
+      "name": "Custom Linear Axis",
+      "id": "CUSTOM RAIL",
+      "library": "KUKA Prc Pro",
+      "category": "02 | Virtual Robot",
+      "summary": "Customizable geometric and kinematic definition of a linear rail",
+      "description": null,
+      "iconCss": "background: url('icons/kUKAPrcPro.png') -48px -96px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/customLinearAxis.html"
+    },
+    {
+      "name": "Custom Robot",
+      "id": "CUSTOM ROBOT",
+      "library": "KUKA Prc Pro",
+      "category": "02 | Virtual Robot",
+      "summary": "Defines the kinematic and geometric properties of a robot to be used in KUKA|prc",
+      "description": null,
+      "iconCss": "background: url('icons/kUKAPrcPro.png') -168px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/customRobot.html"
+    },
+    {
+      "name": "Custom Turntable",
+      "id": "CUSTOM TT",
+      "library": "KUKA Prc Pro",
+      "category": "02 | Virtual Robot",
+      "summary": "Customizable, vertical turntable.",
+      "description": null,
+      "iconCss": "background: url('icons/kUKAPrcPro.png') -24px -96px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/customTurntable.html"
+    },
+    {
+      "name": "Cybertech KR12-KR20 R1810 Robot",
+      "id": "KR12-KR20 R1810",
+      "library": "KUKA Prc Pro",
+      "category": "02 | Virtual Robot",
+      "summary": "Kinematic robot model for the KUKA Cybertech KR12 and KR20 R1810 robot.",
+      "description": null,
+      "iconCss": "background: url('icons/kUKAPrcPro.png') -168px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/cybertechKR12KR20R1810Robot.html"
+    },
+    {
+      "name": "Cybertech KR22 R1610 Robot",
+      "id": "KR22 R1610",
+      "library": "KUKA Prc Pro",
+      "category": "02 | Virtual Robot",
+      "summary": "Kinematic robot model for the KUKA Cybertech KR22 R1610 robot.",
+      "description": null,
+      "iconCss": "background: url('icons/kUKAPrcPro.png') 0px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/cybertechKR22R1610Robot.html"
+    },
+    {
+      "name": "Cybertech nano KR10 R1420 Robot",
+      "id": "KR10 R1420",
+      "library": "KUKA Prc Pro",
+      "category": "02 | Virtual Robot",
+      "summary": "Kinematic robot model for the KUKA Cybertech nano KR10 R1420 robot.",
+      "description": null,
+      "iconCss": "background: url('icons/kUKAPrcPro.png') -144px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/cybertechNanoKR10R1420Robot.html"
+    },
+    {
+      "name": "DKP 400",
+      "id": "DKP400",
+      "library": "KUKA Prc Pro",
+      "category": "02 | Virtual Robot",
+      "summary": "Geometric and kinematic definition of the KUKA DKP400 two-axis positioner",
+      "description": null,
+      "iconCss": "background: url('icons/kUKAPrcPro.png') -168px -72px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/dKP400.html"
+    },
+    {
+      "name": "Dummy Axis",
+      "id": "AXIS",
+      "library": "KUKA Prc Pro",
+      "category": "02 | Virtual Robot",
+      "summary": "Kinematically not linked or simulated axis.",
+      "description": null,
+      "iconCss": "background: url('icons/kUKAPrcPro.png') -24px -72px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/dummyAxis.html"
+    },
+    {
+      "name": "Fortec KR480 R3330 MT Robot",
+      "id": "KR480 R3330",
+      "library": "KUKA Prc Pro",
+      "category": "02 | Virtual Robot",
+      "summary": "Kinematic robot model for the Fortec KR480 R3330 MT robot.",
+      "description": null,
+      "iconCss": "background: url('icons/kUKAPrcPro.png') -96px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/fortecKR480R3330MTRobot.html"
+    },
+    {
+      "name": "Fortec KR600 R2830 Robot",
+      "id": "KR600 R2830",
+      "library": "KUKA Prc Pro",
+      "category": "02 | Virtual Robot",
+      "summary": "Kinematic robot model for the Fortec KR600 R2830 robot.",
+      "description": null,
+      "iconCss": "background: url('icons/kUKAPrcPro.png') -72px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/fortecKR600R2830Robot.html"
+    },
+    {
+      "name": "iiwa LBR14 R820 Robot",
+      "id": "LBR14 R820",
+      "library": "KUKA Prc Pro",
+      "category": "02 | Virtual Robot",
+      "summary": "Kinematic robot model for the KUKA iiwa LBR14 R820.",
+      "description": null,
+      "iconCss": "background: url('icons/kUKAPrcPro.png') -120px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/iiwaLBR14R820Robot.html"
+    },
+    {
+      "name": "iiwa LBR7 R800 Robot",
+      "id": "LBR7 R800 Robot",
+      "library": "KUKA Prc Pro",
+      "category": "02 | Virtual Robot",
+      "summary": "Kinematic robot model for the KUKA iiwa LBR7 R800 Robot.",
+      "description": null,
+      "iconCss": "background: url('icons/kUKAPrcPro.png') -168px -96px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/iiwaLBR7R800Robot.html"
+    },
+    {
+      "name": "KL1500-3 Linear Axis",
+      "id": "KL1500-3 RAIL",
+      "library": "KUKA Prc Pro",
+      "category": "02 | Virtual Robot",
+      "summary": "Parametric geometric and kinematic definition of the KUKA KL1500-3 linear rail",
+      "description": null,
+      "iconCss": "background: url('icons/kUKAPrcPro.png') -192px -72px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/kL15003LinearAxis.html"
+    },
+    {
+      "name": "KMP 200 mobile platform",
+      "id": "KMP 200",
+      "library": "KUKA Prc Pro",
+      "category": "02 | Virtual Robot",
+      "summary": "KMP 200 mobile platform.",
+      "description": null,
+      "iconCss": "background: url('icons/kUKAPrcPro.png') -24px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/kMP200MobilePlatform.html"
+    },
+    {
+      "name": "KR1000 Titan Robot",
+      "id": "KR1000",
+      "library": "KUKA Prc Pro",
+      "category": "02 | Virtual Robot",
+      "summary": "Kinematic robot model for the KUKA KR1000 Titan robot.",
+      "description": null,
+      "iconCss": "background: url('icons/kUKAPrcPro.png') -72px -72px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/kR1000TitanRobot.html"
+    },
+    {
+      "name": "KR125/2-200/2 Robot",
+      "id": "KR125-200",
+      "library": "KUKA Prc Pro",
+      "category": "02 | Virtual Robot",
+      "summary": "Kinematic robot model for the for KUKA KR125/2, KR150/2, KR200/2 variants.",
+      "description": null,
+      "iconCss": "background: url('icons/kUKAPrcPro.png') -120px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/kR12522002Robot.html"
+    },
+    {
+      "name": "KR150-240 - 2 L110/180 Robot",
+      "id": "KR150-240 L110-180",
+      "library": "KUKA Prc Pro",
+      "category": "02 | Virtual Robot",
+      "summary": "Kinematic robot model for the KUKA KUKA KR150-2 L110, KR180-2 L130, KR210-2 L150 and KR240-2 L180 robot variants.",
+      "description": null,
+      "iconCss": "background: url('icons/kUKAPrcPro.png') -96px -72px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/kR1502402L110180Robot.html"
+    },
+    {
+      "name": "KR150-240 - 2 L130/210 Robot",
+      "id": "KR150-240 L130-210",
+      "library": "KUKA Prc Pro",
+      "category": "02 | Virtual Robot",
+      "summary": "Kinematic robot model for the KUKA R150-2 L130, KR180-2 L150, KR210-2 L180 and KR240-2 L210 robot variants.",
+      "description": null,
+      "iconCss": "background: url('icons/kUKAPrcPro.png') -120px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/kR1502402L130210Robot.html"
+    },
+    {
+      "name": "KR150-240-2 Robot",
+      "id": "KR150-240-2",
+      "library": "KUKA Prc Pro",
+      "category": "02 | Virtual Robot",
+      "summary": "Kinematic robot model for the KUKA KR150-2 to 240-2 robot variants.",
+      "description": null,
+      "iconCss": "background: url('icons/kUKAPrcPro.png') -120px -96px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/kR1502402Robot.html"
+    },
+    {
+      "name": "KR200 comp Robot",
+      "id": "KR200 comp",
+      "library": "KUKA Prc Pro",
+      "category": "02 | Virtual Robot",
+      "summary": "Kinematic robot model for the KUKA KR200 comp robot.",
+      "description": null,
+      "iconCss": "background: url('icons/kUKAPrcPro.png') -216px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/kR200CompRobot.html"
+    },
+    {
+      "name": "KR30/60/HA Robot",
+      "id": "KR30-60",
+      "library": "KUKA Prc Pro",
+      "category": "02 | Virtual Robot",
+      "summary": "Kinematic robot model for the KUKA KR30, KR60, and HA variants.",
+      "description": null,
+      "iconCss": "background: url('icons/kUKAPrcPro.png') -192px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/kR3060HARobot.html"
+    },
+    {
+      "name": "KR30L16 Robot",
+      "id": "KR30L16",
+      "library": "KUKA Prc Pro",
+      "category": "02 | Virtual Robot",
+      "summary": "Kinematic robot model for the KUKA KR30L16 robot.",
+      "description": null,
+      "iconCss": "background: url('icons/kUKAPrcPro.png') -144px -72px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/kR30L16Robot.html"
+    },
+    {
+      "name": "KR360-500-2 Robot",
+      "id": "KR360-500-2",
+      "library": "KUKA Prc Pro",
+      "category": "02 | Virtual Robot",
+      "summary": "Kinematic robot model for the KUKA KR360-500-2 robot variants.",
+      "description": null,
+      "iconCss": "background: url('icons/kUKAPrcPro.png') 0px -96px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/kR3605002Robot.html"
+    },
+    {
+      "name": "KR5 arc HW Robot",
+      "id": "KR5 arc HW",
+      "library": "KUKA Prc Pro",
+      "category": "02 | Virtual Robot",
+      "summary": "Kinematic robot model for the KR5 arc HW robot.",
+      "description": null,
+      "iconCss": "background: url('icons/kUKAPrcPro.png') -168px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/kR5ArcHWRobot.html"
+    },
+    {
+      "name": "KR6/16 Arc Robot",
+      "id": "KR6-16 Arc",
+      "library": "KUKA Prc Pro",
+      "category": "02 | Virtual Robot",
+      "summary": "Kinematic robot model for the KR6/16 Arc robot.",
+      "description": null,
+      "iconCss": "background: url('icons/kUKAPrcPro.png') -120px -72px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/kR616ArcRobot.html"
+    },
+    {
+      "name": "KR6/16/20-3 Robot",
+      "id": "KR6-16-20",
+      "library": "KUKA Prc Pro",
+      "category": "02 | Virtual Robot",
+      "summary": "Kinematic robot model for the robot models KR6, KR16, and KR20-3.",
+      "description": null,
+      "iconCss": "background: url('icons/kUKAPrcPro.png') -216px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/kR616203Robot.html"
+    },
+    {
+      "name": "KR60L30/HA Robot",
+      "id": "KR60L30",
+      "library": "KUKA Prc Pro",
+      "category": "02 | Virtual Robot",
+      "summary": "Kinematic robot model for the KUKA KR60L30 and KR60L30 HA variant.",
+      "description": null,
+      "iconCss": "background: url('icons/kUKAPrcPro.png') -48px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/kR60L30HARobot.html"
+    },
+    {
+      "name": "Quantec KR120 R1800 nano Robot",
+      "id": "KR120 R1800",
+      "library": "KUKA Prc Pro",
+      "category": "02 | Virtual Robot",
+      "summary": "Kinematic robot model for the KUKA KR120 R1800 nano robot.",
+      "description": null,
+      "iconCss": "background: url('icons/kUKAPrcPro.png') -96px -96px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/quantecKR120R1800NanoRobot.html"
+    },
+    {
+      "name": "Quantec KR120 R3900K Robot",
+      "id": "KR120 R3900K",
+      "library": "KUKA Prc Pro",
+      "category": "02 | Virtual Robot",
+      "summary": "Kinematic robot model for the shelf-mounted KUKA KR120 R3900K robot.",
+      "description": null,
+      "iconCss": "background: url('icons/kUKAPrcPro.png') -192px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/quantecKR120R3900KRobot.html"
+    },
+    {
+      "name": "Quantec KR90-KR120 R2900 Robot",
+      "id": "KR90-KR120 R2900",
+      "library": "KUKA Prc Pro",
+      "category": "02 | Virtual Robot",
+      "summary": "Kinematic robot model for KUKA Quantec robots with 2900mm reach, such as KR90 R2900, KR120 R2900.",
+      "description": null,
+      "iconCss": "background: url('icons/kUKAPrcPro.png') -72px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/quantecKR90KR120R2900Robot.html"
+    },
+    {
+      "name": "Quantec KR90-KR150 R3700K Robot",
+      "id": "KR90-KR150 R3700K",
+      "library": "KUKA Prc Pro",
+      "category": "02 | Virtual Robot",
+      "summary": "Kinematic robot model for shelf-mounted KUKA Quantec robots with 3700mm reach, such as KR90 R3700K, KR150 R3700K.",
+      "description": null,
+      "iconCss": "background: url('icons/kUKAPrcPro.png') 0px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/quantecKR90KR150R3700KRobot.html"
+    },
+    {
+      "name": "Quantec KR90-KR270 R2500 Robot",
+      "id": "KR90-KR270 R2500",
+      "library": "KUKA Prc Pro",
+      "category": "02 | Virtual Robot",
+      "summary": "Kinematic robot model for KUKA Quantec robots with 2500mm reach, such as KR90 R2500, KR120 R2500, KR150 R2500, KR210 R2500, KR270 R2500.",
+      "description": null,
+      "iconCss": "background: url('icons/kUKAPrcPro.png') -48px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/quantecKR90KR270R2500Robot.html"
+    },
+    {
+      "name": "Quantec KR90-KR270 R2700 Robot",
+      "id": "KR90-KR270 R2700",
+      "library": "KUKA Prc Pro",
+      "category": "02 | Virtual Robot",
+      "summary": "Kinematic robot model for KUKA Quantec robots with 2700mm reach, such as KR90 R2700, KR120 R2700, KR150 R2700, KR210 R2700, KR270 R2700.",
+      "description": null,
+      "iconCss": "background: url('icons/kUKAPrcPro.png') -72px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/quantecKR90KR270R2700Robot.html"
+    },
+    {
+      "name": "Quantec KR90-KR270 R3100 Robot",
+      "id": "KR90-KR270 R3100",
+      "library": "KUKA Prc Pro",
+      "category": "02 | Virtual Robot",
+      "summary": "Kinematic robot model for KUKA Quantec robots with 3100mm reach, such as KR90 R3100, KR120 R3100, KR150 R3100, KR210 R3100, KR270 R3100.",
+      "description": null,
+      "iconCss": "background: url('icons/kUKAPrcPro.png') -96px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/quantecKR90KR270R3100Robot.html"
+    },
+    {
+      "name": "Quantec-2 KR120-KR150 R3100 Robot",
+      "id": "KR120-KR150 R3100-2",
+      "library": "KUKA Prc Pro",
+      "category": "02 | Virtual Robot",
+      "summary": "Kinematic robot model for KUKA Quantec-2 robots with 3100mm reach, such as KR120 R3100, KR150 R3100.",
+      "description": null,
+      "iconCss": "background: url('icons/kUKAPrcPro.png') -216px -72px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/quantec2KR120KR150R3100Robot.html"
+    },
+    {
+      "name": "Quantec-2 KR120-KR210 R2700 Robot",
+      "id": "KR120-KR210 R2700-2",
+      "library": "KUKA Prc Pro",
+      "category": "02 | Virtual Robot",
+      "summary": "Kinematic robot model for KUKA Quantec-2 robots with 2700mm reach, such as KR120 R2700, KR150 R2700, KR210 R2700.",
+      "description": null,
+      "iconCss": "background: url('icons/kUKAPrcPro.png') -144px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/quantec2KR120KR210R2700Robot.html"
+    },
+    {
+      "name": "Quantec-2 KR180-KR240 R2900 Robot",
+      "id": "KR180-KR240 R2900-2",
+      "library": "KUKA Prc Pro",
+      "category": "02 | Virtual Robot",
+      "summary": "Kinematic robot model for KUKA Quantec-2 robots with 2900mm reach with the larger flange, such as KR180 R2900, KR240 R2900.",
+      "description": null,
+      "iconCss": "background: url('icons/kUKAPrcPro.png') -48px -72px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/quantec2KR180KR240R2900Robot.html"
+    },
+    {
+      "name": "Quantec-2 KR210 R3100 Robot",
+      "id": "KR210 R3100-2",
+      "library": "KUKA Prc Pro",
+      "category": "02 | Virtual Robot",
+      "summary": "Kinematic robot model for KUKA Quantec-2 KR 210-R3100 with 3100mm reach.",
+      "description": null,
+      "iconCss": "background: url('icons/kUKAPrcPro.png') -216px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/quantec2KR210R3100Robot.html"
+    },
+    {
+      "name": "Quantec-2 KR250-KR300 R2700 Robot",
+      "id": "KR250-KR300 R2700-2",
+      "library": "KUKA Prc Pro",
+      "category": "02 | Virtual Robot",
+      "summary": "Kinematic robot model for KUKA Quantec-2 robots with 2700mm reach with the larger flange, such as KR250 R2700, KR300 R2700.",
+      "description": null,
+      "iconCss": "background: url('icons/kUKAPrcPro.png') -144px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/quantec2KR250KR300R2700Robot.html"
+    },
+    {
+      "name": "Robot Cell",
+      "id": "ROBOT CELL",
+      "library": "KUKA Prc Pro",
+      "category": "02 | Virtual Robot",
+      "summary": "Defines a robot cell, where the robot is placed at the global origin. Can also be used just to restrict the robot's preset axis limits.",
+      "description": null,
+      "iconCss": "background: url('icons/kUKAPrcPro.png') -24px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/robotCell.html"
+    },
+    {
+      "name": "Turntable by Global Robots",
+      "id": "GLOBAL TT",
+      "library": "KUKA Prc Pro",
+      "category": "02 | Virtual Robot",
+      "summary": "Custom turntable by Global Robots based on used KUKA motors. www.globalrobots.com",
+      "description": null,
+      "iconCss": "background: url('icons/kUKAPrcPro.png') -96px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/turntableByGlobalRobots.html"
+    },
+    {
+      "name": "Change Tool",
+      "id": "CHANGE TOOL",
+      "library": "KUKA Prc Pro",
+      "category": "03 | Virtual Tool",
+      "summary": "Changes the currently used tool at the robot. This component will not e.g. intialize a physical toolchange, but instructs the robot to use a different tool number.",
+      "description": null,
+      "iconCss": "background: url('icons/kUKAPrcPro.png') -48px -192px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/changeTool.html"
+    },
+    {
+      "name": "Custom Tool",
+      "id": "CUSTOM TOOL",
+      "library": "KUKA Prc Pro",
+      "category": "03 | Virtual Tool",
+      "summary": "Defines a custom tool",
+      "description": "Defines a custom tool. Plugin a single mesh and then double-click the component to set the XYZABC values of the tool as well as its number. You can get the actual tool number and XYZABC values after you have calibrated the tool at the physical robot.",
+      "iconCss": "background: url('icons/kUKAPrcPro.png') -192px -192px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/customTool.html"
+    },
+    {
+      "name": "Custom Tool: Plane",
+      "id": "CUSTOM TOOL: PLN",
+      "library": "KUKA Prc Pro",
+      "category": "03 | Virtual Tool",
+      "summary": "Custom tool defined by a mesh and the tool frame. Either set the tool number and plane (with the plane's Z-vector defining the tool axis) or right-click and switch to direct frame input.",
+      "description": null,
+      "iconCss": "background: url('icons/kUKAPrcPro.png') -120px -192px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/customToolPlane.html"
+    },
+    {
+      "name": "Elte Spindle",
+      "id": "ELTE",
+      "library": "KUKA Prc Pro",
+      "category": "03 | Virtual Tool",
+      "summary": "Tool definition of the Elte spindle with custom mount as used at the University for Applied Arts (www.roboticwoodcraft.com).",
+      "description": null,
+      "iconCss": "background: url('icons/kUKAPrcPro.png') -144px -192px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/elteSpindle.html"
+    },
+    {
+      "name": "Generic Spindle",
+      "id": "SPINDLE",
+      "library": "KUKA Prc Pro",
+      "category": "03 | Virtual Tool",
+      "summary": "Tool definition of the standard KUKA spindle by HSD.",
+      "description": null,
+      "iconCss": "background: url('icons/kUKAPrcPro.png') -72px -192px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/genericSpindle.html"
+    },
+    {
+      "name": "Kress 1050 Spindle",
+      "id": "KRESS SPINDLE",
+      "library": "KUKA Prc Pro",
+      "category": "03 | Virtual Tool",
+      "summary": "Tool definition of a Kress 1050 compact milling spindle with custom mount.",
+      "description": null,
+      "iconCss": "background: url('icons/kUKAPrcPro.png') -168px -192px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/kress1050Spindle.html"
+    },
+    {
+      "name": "Multi-State Tool",
+      "id": "MS TOOL",
+      "library": "KUKA Prc Pro",
+      "category": "03 | Virtual Tool",
+      "summary": "Creates a tool with multiple states, e.g. open and closed gripper. Will take XYZABC values from first tool.",
+      "description": null,
+      "iconCss": "background: url('icons/kUKAPrcPro.png') -96px -192px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/multiStateTool.html"
+    },
+    {
+      "name": "Cartesian Offset",
+      "id": "CARTESIAN OFFSET",
+      "library": "KUKA Prc Pro",
+      "category": "04 | Toolpath Utilities",
+      "summary": "Adds an additional LIN movement at the beginning and/or at the end of a list of robot movement commands. The LIN movement will be offset according to the cartesian XYZ values.",
+      "description": null,
+      "iconCss": "background: url('icons/kUKAPrcPro.png') 0px -168px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/cartesianOffset.html"
+    },
+    {
+      "name": "Fusion 360 NC Import",
+      "id": "IMPORT FUSION CAM",
+      "library": "KUKA Prc Pro",
+      "category": "04 | Toolpath Utilities",
+      "summary": "Imports 5-Axis NC code from Fusion 360. Get the postprocessor by right-clicking the component and choosing the relevant option.",
+      "description": null,
+      "iconCss": "background: url('icons/kUKAPrcPro.png') -144px -144px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/fusion360NCImport.html"
+    },
+    {
+      "name": "G-Code Import for 3D Printing",
+      "id": "IMPORT G-CODE",
+      "library": "KUKA Prc Pro",
+      "category": "04 | Toolpath Utilities",
+      "summary": "Imports g-code for 3D Printing. Tested with Netfabb, but should work with most slicers.",
+      "description": null,
+      "iconCss": "background: url('icons/kUKAPrcPro.png') -96px -144px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/gCodeImportFor3DPrinting.html"
+    },
+    {
+      "name": "Generic NC Import",
+      "id": "IMPORT CAM",
+      "library": "KUKA Prc Pro",
+      "category": "04 | Toolpath Utilities",
+      "summary": "Imports 5-Axis NC code.",
+      "description": null,
+      "iconCss": "background: url('icons/kUKAPrcPro.png') -72px -144px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/genericNCImport.html"
+    },
+    {
+      "name": "KRL Import",
+      "id": "IMPORT KRL",
+      "library": "KUKA Prc Pro",
+      "category": "04 | Toolpath Utilities",
+      "summary": "Reads a KRL file (either",
+      "description": "Reads a KRL file (either .SRC or .DAT) and turns the code into KUKA|prc movement commands. Supports LIN, PTP and AXIS commands at the moment. Use the Extract Command component if you want to get e.g. the plane from a LIN command.",
+      "iconCss": "background: url('icons/kUKAPrcPro.png') -192px -144px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/kRLImport.html"
+    },
+    {
+      "name": "Orient Plane",
+      "id": "ORIENT PLN",
+      "library": "KUKA Prc Pro",
+      "category": "04 | Toolpath Utilities",
+      "summary": "Orients the -X axis of a plane to a given point.",
+      "description": null,
+      "iconCss": "background: url('icons/kUKAPrcPro.png') -24px -168px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/orientPlane.html"
+    },
+    {
+      "name": "Reduce Toolpath",
+      "id": "REDUCE PATH",
+      "library": "KUKA Prc Pro",
+      "category": "04 | Toolpath Utilities",
+      "summary": "Reduces a list of LINear movements, similar to 'Reduce Polyline' but also respecting the changing angle values. Only input LINear movements.",
+      "description": null,
+      "iconCss": "background: url('icons/kUKAPrcPro.png') -120px -144px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/reduceToolpath.html"
+    },
+    {
+      "name": "Safe Plane",
+      "id": "SAFE PLANE",
+      "library": "KUKA Prc Pro",
+      "category": "04 | Toolpath Utilities",
+      "summary": "Adds an additional LIN movement at the beginning and/or at the end of a list of robot movement commands. The origin of the LINear movement will be projected onto a plane.",
+      "description": null,
+      "iconCss": "background: url('icons/kUKAPrcPro.png') -24px -144px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/safePlane.html"
+    },
+    {
+      "name": "Sunrise Set Compliance",
+      "id": "SR COMP",
+      "library": "KUKA Prc Pro",
+      "category": "04 | Toolpath Utilities",
+      "summary": "Experimental: Sets compliant/'soft' mode for robots running Sunrise. Does not yet support all movement commands.",
+      "description": null,
+      "iconCss": "background: url('icons/kUKAPrcPro.png') -168px -144px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/sunriseSetCompliance.html"
+    },
+    {
+      "name": "Tangential Offset",
+      "id": "TANGENTIAL OFFSET",
+      "library": "KUKA Prc Pro",
+      "category": "04 | Toolpath Utilities",
+      "summary": "Adds an additional LIN movement at the beginning and/or at the end of a list of robot movement commands. The LIN movement will be offset tangentially, e.g. to start a toolpath outside of the material.",
+      "description": null,
+      "iconCss": "background: url('icons/kUKAPrcPro.png') -48px -144px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/tangentialOffset.html"
+    },
+    {
+      "name": "Tool Axis Offset",
+      "id": "TOOL AXIS OFFSET",
+      "library": "KUKA Prc Pro",
+      "category": "04 | Toolpath Utilities",
+      "summary": "Adds an additional LIN movement at the beginning and/or at the end of a list of robot movement commands. The LIN movement will be offset along the tool axis, e.g. for approach movements.",
+      "description": null,
+      "iconCss": "background: url('icons/kUKAPrcPro.png') -216px -144px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/toolAxisOffset.html"
+    },
+    {
+      "name": "3 Points to Plane",
+      "id": "3PTS TO PLN",
+      "library": "KUKA Prc Pro",
+      "category": "05 | Utilities",
+      "summary": "Turns a set of three points into a plane, to be used in a KUKA|prc movement command",
+      "description": null,
+      "iconCss": "background: url('icons/kUKAPrcPro.png') 0px -120px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/3PointsToPlane.html"
+    },
+    {
+      "name": "Analog Output",
+      "id": "ANALOG OUT",
+      "library": "KUKA Prc Pro",
+      "category": "05 | Utilities",
+      "summary": "Changes the state of an analogue output.",
+      "description": null,
+      "iconCss": "background: url('icons/kUKAPrcPro.png') -192px -120px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/analogOutput.html"
+    },
+    {
+      "name": "Analysis",
+      "id": "ANALYSIS",
+      "library": "KUKA Prc Pro",
+      "category": "05 | Utilities",
+      "summary": "Analysis data that exposes axis values and other data e.g. for automatic optimization.",
+      "description": null,
+      "iconCss": "background: url('icons/kUKAPrcPro.png') -192px -96px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/analysis.html"
+    },
+    {
+      "name": "Command Weaver",
+      "id": "CMD WEAVE",
+      "library": "KUKA Prc Pro",
+      "category": "05 | Utilities",
+      "summary": "This component will weave together KUKA|prc commands",
+      "description": "This component will weave together KUKA|prc commands. You may require a certain sequence of events, e.g. move PTP, open gripper, move LIN down, close gripper, move LIN up... When using the Command Weaver, put in all move PTP commands in the first input, all open gripper commands in the second input etc. The command weaver will then take the first item from the first input, then the first item from the second input... weaving together the command structure. If you enable the tree option, weaving will take place according to tree branches, instead of individual items.",
+      "iconCss": "background: url('icons/kUKAPrcPro.png') -120px -120px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/commandWeaver.html"
+    },
+    {
+      "name": "Digital Output",
+      "id": "DIGITAL OUT",
+      "library": "KUKA Prc Pro",
+      "category": "05 | Utilities",
+      "summary": "Changes the state of a digital output.",
+      "description": null,
+      "iconCss": "background: url('icons/kUKAPrcPro.png') -216px -96px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/digitalOutput.html"
+    },
+    {
+      "name": "Extract Command - KUKA|prc",
+      "id": "EXTRACT CMD",
+      "library": "KUKA Prc Pro",
+      "category": "05 | Utilities",
+      "summary": "Extracts planes and axis values from KUKA|prc command components.",
+      "description": null,
+      "iconCss": "background: url('icons/kUKAPrcPro.png') -24px -120px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/extractCommandKUKAprc.html"
+    },
+    {
+      "name": "Frame",
+      "id": "FRAME",
+      "library": "KUKA Prc Pro",
+      "category": "05 | Utilities",
+      "summary": "Defines a frame, used e.g. for setting the base system without going through the GUI.",
+      "description": null,
+      "iconCss": "background: url('icons/kUKAPrcPro.png') -216px -120px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/frame.html"
+    },
+    {
+      "name": "Group/Ungroup Commands",
+      "id": "GROUP",
+      "library": "KUKA Prc Pro",
+      "category": "05 | Utilities",
+      "summary": "Groups and ungroups commands.",
+      "description": null,
+      "iconCss": "background: url('icons/kUKAPrcPro.png') -168px -120px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/groupUngroupCommands.html"
+    },
+    {
+      "name": "Synchronize Robots",
+      "id": "SYNC",
+      "library": "KUKA Prc Pro",
+      "category": "05 | Utilities",
+      "summary": "Synchronizes multiple robots.",
+      "description": null,
+      "iconCss": "background: url('icons/kUKAPrcPro.png') 0px -144px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/synchronizeRobots.html"
+    },
+    {
+      "name": "Tag",
+      "id": "TAG",
+      "library": "KUKA Prc Pro",
+      "category": "05 | Utilities",
+      "summary": "Tags a movement component so that you can identify it in the Analysis component, use e.g. for automatic optimization.",
+      "description": null,
+      "iconCss": "background: url('icons/kUKAPrcPro.png') -48px -120px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/tag.html"
+    },
+    {
+      "name": "Transform Command - KUKA|prc",
+      "id": "XFORM CMD",
+      "library": "KUKA Prc Pro",
+      "category": "05 | Utilities",
+      "summary": "Transforms Cartesian movement commands.",
+      "description": null,
+      "iconCss": "background: url('icons/kUKAPrcPro.png') -144px -120px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/transformCommandKUKAprc.html"
+    },
+    {
+      "name": "Wait",
+      "id": "WAIT",
+      "library": "KUKA Prc Pro",
+      "category": "05 | Utilities",
+      "summary": "Stops the robot for a time provided in seconds.",
+      "description": null,
+      "iconCss": "background: url('icons/kUKAPrcPro.png') -96px -120px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/wait.html"
+    },
+    {
+      "name": "Wait For Digital Input",
+      "id": "WAIT FOR",
+      "library": "KUKA Prc Pro",
+      "category": "05 | Utilities",
+      "summary": "Stops the robot until a digital input is triggered.",
+      "description": null,
+      "iconCss": "background: url('icons/kUKAPrcPro.png') -72px -120px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/waitForDigitalInput.html"
+    },
+    {
+      "name": "mxA Display",
+      "id": "mxA DISPLAY",
+      "library": "KUKA Prc Pro",
+      "category": "06 | Online",
+      "summary": "Links the visualization to a mxAutomation component. Can be disconnected afterwards to avoid 'circular' definitions - i.e. the feedback can inform the path planning.",
+      "description": null,
+      "iconCss": "background: url('icons/kUKAPrcPro.png') -72px -168px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/mxADisplay.html"
+    },
+    {
+      "name": "mxA Setup",
+      "id": "mxA SETUP",
+      "library": "KUKA Prc Pro",
+      "category": "06 | Online",
+      "summary": "Setup component for direct robot control via KUKA mxAutomation",
+      "description": null,
+      "iconCss": "background: url('icons/kUKAPrcPro.png') -48px -168px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/mxASetup.html"
+    },
+    {
+      "name": "Sunrise Communicator",
+      "id": "SUNRISE",
+      "library": "KUKA Prc Pro",
+      "category": "06 | Online",
+      "summary": "Experimental: Exchange data with robots running the KUKA Sunrise platform",
+      "description": "Experimental: Exchange data with robots running the KUKA Sunrise platform. The robot has to be listening for UDP datagrams at port 30000. Use a Grasshopper Timer to refresh the output. Does not support all movement types yet.",
+      "iconCss": "background: url('icons/kUKAPrcPro.png') -96px -168px",
+      "helpLink": "https://grasshopperdocs.com/components/kukaprcpro/sunriseCommunicator.html"
     },
     {
       "name": "Construct Location",

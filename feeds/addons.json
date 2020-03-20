@@ -868,7 +868,20 @@
       "isSystem": false,
       "components": 56,
       "description": "KUKA|prc enables you to program industrial robots directly out of the parametric modelling environment, including a full kinematic simulation of the robot. The generated files can be executed at the KUKA robot, without requiring any additional software.\n\nThe free evaluation version allows the full simulation and code generation without. Additional features such as support for SunriseOS, external axes, G-Code import etc. are only available to members of the Association for Robots in Architecture.",
-      "authorName": "Robots in Architecture",
+      "authorName": "Johannes Braumann (Robots in Architecture)",
+      "authorContact": "johannes@robotsinarchitecture.org"
+    },
+    {
+      "name": "KUKA Prc Pro",
+      "releaseDate": "2019",
+      "version": "1.1.0",
+      "downloadLink": "https://www.robotsinarchitecture.org/kuka-prc",
+      "helpLink": "https://grasshopperdocs.com/addons/kuka-prc-pro.html",
+      "category": "Electronic Robot Control",
+      "isSystem": false,
+      "components": 89,
+      "description": "KUKA|prc enables you to program industrial robots directly out of the parametric modelling environment, including a full kinematic simulation of the robot. The generated files can be executed at the KUKA robot, without requiring any additional software.\n\nThe Pro version includes: Support for external axes, G-Code-import from Fusion 360, KRL import, 3D-printing Slic3r import, Full access to Simulation analysis output for automated optimization/evaluation, Support for 7-axes KUKA iiwa robot, CAMRob/Sunrise/KUKA.CNC code output, RoboTeam support, Remote control through mxAutomation.",
+      "authorName": "Johannes Braumann (Robots in Architecture)",
       "authorContact": "johannes@robotsinarchitecture.org"
     },
     {

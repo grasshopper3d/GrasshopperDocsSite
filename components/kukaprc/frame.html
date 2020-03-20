@@ -1,0 +1,371 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Frame - KUKA Prc - Component for Grasshopper | Grasshopper Docs</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+
+<meta name="description" content="Defines a frame, used e.g. for setting the base system without going through the GUI." />
+<meta name="title" content="Frame - KUKA Prc - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:title" content="Frame - KUKA Prc - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://grasshopperdocs.com/components/kukaprc/frame.html" />
+<meta property="og:site_name" content="Grasshopper Docs" />
+
+<link href="../../style.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+<script type="text/javascript" src="../../html5gallery/jquery.js"></script>
+<script type="text/javascript" src="../../html5gallery/html5gallery.js"></script>
+
+</head>
+<body>
+
+
+<div id="docs">
+<div id="docs-head">
+<div id="docs-masthead">
+<p id="docs-sitename"><a href="http://grasshopperdocs.com/"><img src="../../images/logo.png" alt="Grasshopper Docs" onerror="this.style.display='none'"></img></a></p>
+<p id="docs-sitedesc">Community documentation for Grasshopper add-ons &amp; plugins</p>
+</div>
+</div>
+
+<div id="docs-body">
+
+<div class="page">
+
+<div class="content compo-page">
+
+<div class="ghbar ">
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kukaprc/kRLCode.html"><div class="ghsprite" style="background: url('../../icons/kUKAPrc.png') -96px -72px" data-toptip="KRL Code"></div></a>
+<a href="../../components/kukaprc/sPLineMovement.html"><div class="ghsprite" style="background: url('../../icons/kUKAPrc.png') -120px -72px" data-downtip="SPLine Movement"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kukaprc/aXISMovement.html"><div class="ghsprite" style="background: url('../../icons/kUKAPrc.png') -144px -72px" data-toptip="AXIS Movement"></div></a>
+<a href="../../components/kukaprc/pTPMovement.html"><div class="ghsprite" style="background: url('../../icons/kUKAPrc.png') -168px -72px" data-downtip="PTP Movement"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kukaprc/cIRcularMovement.html"><div class="ghsprite" style="background: url('../../icons/kUKAPrc.png') -192px -72px" data-toptip="CIRcular Movement"></div></a>
+<a href="../../components/kukaprc/kUKAprcCORE.html"><div class="ghsprite" style="background: url('../../icons/kUKAPrc.png') -216px -72px" data-downtip="KUKA|prc CORE"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kukaprc/lINearMovement.html"><div class="ghsprite" style="background: url('../../icons/kUKAPrc.png') 0px -96px" data-toptip="LINear Movement"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="4">
+01 | Core
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kukaprc/cybertechKR22R1610Robot.html"><div class="ghsprite" style="background: url('../../icons/kUKAPrc.png') 0px 0px" data-toptip="Cybertech KR22 R1610 Robot"></div></a>
+<a href="../../components/kukaprc/quantecKR90KR120R2900Robot.html"><div class="ghsprite" style="background: url('../../icons/kUKAPrc.png') -24px 0px" data-downtip="Quantec KR90-KR120 R2900 Robot"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kukaprc/fortecKR480R3330MTRobot.html"><div class="ghsprite" style="background: url('../../icons/kUKAPrc.png') -48px 0px" data-toptip="Fortec KR480 R3330 MT Robot"></div></a>
+<a href="../../components/kukaprc/cybertechNanoKR10R1420Robot.html"><div class="ghsprite" style="background: url('../../icons/kUKAPrc.png') -72px 0px" data-downtip="Cybertech nano KR10 R1420 Robot"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kukaprc/quantecKR120R3900KRobot.html"><div class="ghsprite" style="background: url('../../icons/kUKAPrc.png') -96px 0px" data-toptip="Quantec KR120 R3900K Robot"></div></a>
+<a href="../../components/kukaprc/kR200CompRobot.html"><div class="ghsprite" style="background: url('../../icons/kUKAPrc.png') -120px 0px" data-downtip="KR200 comp Robot"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kukaprc/agilusKR610R11002Robot.html"><div class="ghsprite" style="background: url('../../icons/kUKAPrc.png') -144px 0px" data-toptip="Agilus KR6-10 R1100-2 Robot"></div></a>
+<a href="../../components/kukaprc/agilusKR610R900Robot.html"><div class="ghsprite" style="background: url('../../icons/kUKAPrc.png') -168px 0px" data-downtip="Agilus KR6-10 R900 Robot"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kukaprc/quantecKR90KR270R2500Robot.html"><div class="ghsprite" style="background: url('../../icons/kUKAPrc.png') -192px 0px" data-toptip="Quantec KR90-KR270 R2500 Robot"></div></a>
+<a href="../../components/kukaprc/quantecKR90KR270R2700Robot.html"><div class="ghsprite" style="background: url('../../icons/kUKAPrc.png') -216px 0px" data-downtip="Quantec KR90-KR270 R2700 Robot"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kukaprc/quantecKR90KR270R3100Robot.html"><div class="ghsprite" style="background: url('../../icons/kUKAPrc.png') 0px -24px" data-toptip="Quantec KR90-KR270 R3100 Robot"></div></a>
+<a href="../../components/kukaprc/kR1502402L130210Robot.html"><div class="ghsprite" style="background: url('../../icons/kUKAPrc.png') -24px -24px" data-downtip="KR150-240 - 2 L130/210 Robot"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kukaprc/kR5ArcHWRobot.html"><div class="ghsprite" style="background: url('../../icons/kUKAPrc.png') -48px -24px" data-toptip="KR5 arc HW Robot"></div></a>
+<a href="../../components/kukaprc/kR3060HARobot.html"><div class="ghsprite" style="background: url('../../icons/kUKAPrc.png') -72px -24px" data-downtip="KR30/60/HA Robot"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kukaprc/kR616203Robot.html"><div class="ghsprite" style="background: url('../../icons/kUKAPrc.png') -96px -24px" data-toptip="KR6/16/20-3 Robot"></div></a>
+<a href="../../components/kukaprc/quantecKR90KR150R3700KRobot.html"><div class="ghsprite" style="background: url('../../icons/kUKAPrc.png') -120px -24px" data-downtip="Quantec KR90-KR150 R3700K Robot"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kukaprc/agilusKR610R1100Robot.html"><div class="ghsprite" style="background: url('../../icons/kUKAPrc.png') -144px -24px" data-toptip="Agilus KR6-10 R1100 Robot"></div></a>
+<a href="../../components/kukaprc/fortecKR600R2830Robot.html"><div class="ghsprite" style="background: url('../../icons/kUKAPrc.png') -168px -24px" data-downtip="Fortec KR600 R2830 Robot"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kukaprc/kR12522002Robot.html"><div class="ghsprite" style="background: url('../../icons/kUKAPrc.png') -192px -24px" data-toptip="KR125/2-200/2 Robot"></div></a>
+<a href="../../components/kukaprc/kR1000TitanRobot.html"><div class="ghsprite" style="background: url('../../icons/kUKAPrc.png') -216px -24px" data-downtip="KR1000 Titan Robot"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kukaprc/kR1502402L110180Robot.html"><div class="ghsprite" style="background: url('../../icons/kUKAPrc.png') 0px -48px" data-toptip="KR150-240 - 2 L110/180 Robot"></div></a>
+<a href="../../components/kukaprc/agilusKR6R700Robot.html"><div class="ghsprite" style="background: url('../../icons/kUKAPrc.png') -24px -48px" data-downtip="Agilus KR6 R700 Robot"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kukaprc/kR616ArcRobot.html"><div class="ghsprite" style="background: url('../../icons/kUKAPrc.png') -48px -48px" data-toptip="KR6/16 Arc Robot"></div></a>
+<a href="../../components/kukaprc/kR30L16Robot.html"><div class="ghsprite" style="background: url('../../icons/kUKAPrc.png') -72px -48px" data-downtip="KR30L16 Robot"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kukaprc/kR3605002Robot.html"><div class="ghsprite" style="background: url('../../icons/kUKAPrc.png') -96px -48px" data-toptip="KR360-500-2 Robot"></div></a>
+<a href="../../components/kukaprc/agilusKR3R540Robot.html"><div class="ghsprite" style="background: url('../../icons/kUKAPrc.png') -120px -48px" data-downtip="Agilus KR3 R540 Robot"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kukaprc/quantecKR120R1800NanoRobot.html"><div class="ghsprite" style="background: url('../../icons/kUKAPrc.png') -144px -48px" data-toptip="Quantec KR120 R1800 nano Robot"></div></a>
+<a href="../../components/kukaprc/kR1502402Robot.html"><div class="ghsprite" style="background: url('../../icons/kUKAPrc.png') -168px -48px" data-downtip="KR150-240-2 Robot"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="14">
+02 | Virtual Robot
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kukaprc/changeTool.html"><div class="ghsprite" style="background: url('../../icons/kUKAPrc.png') -216px -96px" data-toptip="Change Tool"></div></a>
+<a href="../../components/kukaprc/genericSpindle.html"><div class="ghsprite" style="background: url('../../icons/kUKAPrc.png') 0px -120px" data-downtip="Generic Spindle"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kukaprc/multiStateTool.html"><div class="ghsprite" style="background: url('../../icons/kUKAPrc.png') -24px -120px" data-toptip="Multi-State Tool"></div></a>
+<a href="../../components/kukaprc/customToolPlane.html"><div class="ghsprite" style="background: url('../../icons/kUKAPrc.png') -48px -120px" data-downtip="Custom Tool: Plane"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kukaprc/elteSpindle.html"><div class="ghsprite" style="background: url('../../icons/kUKAPrc.png') -72px -120px" data-toptip="Elte Spindle"></div></a>
+<a href="../../components/kukaprc/kress1050Spindle.html"><div class="ghsprite" style="background: url('../../icons/kUKAPrc.png') -96px -120px" data-downtip="Kress 1050 Spindle"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kukaprc/customTool.html"><div class="ghsprite" style="background: url('../../icons/kUKAPrc.png') -120px -120px" data-toptip="Custom Tool"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="4">
+03 | Virtual Tool
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kukaprc/safePlane.html"><div class="ghsprite" style="background: url('../../icons/kUKAPrc.png') -192px -48px" data-toptip="Safe Plane"></div></a>
+<a href="../../components/kukaprc/tangentialOffset.html"><div class="ghsprite" style="background: url('../../icons/kUKAPrc.png') -216px -48px" data-downtip="Tangential Offset"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kukaprc/reduceToolpath.html"><div class="ghsprite" style="background: url('../../icons/kUKAPrc.png') 0px -72px" data-toptip="Reduce Toolpath"></div></a>
+<a href="../../components/kukaprc/toolAxisOffset.html"><div class="ghsprite" style="background: url('../../icons/kUKAPrc.png') -24px -72px" data-downtip="Tool Axis Offset"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kukaprc/cartesianOffset.html"><div class="ghsprite" style="background: url('../../icons/kUKAPrc.png') -48px -72px" data-toptip="Cartesian Offset"></div></a>
+<a href="../../components/kukaprc/orientPlane.html"><div class="ghsprite" style="background: url('../../icons/kUKAPrc.png') -72px -72px" data-downtip="Orient Plane"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+04 | Toolpath Utilities
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kukaprc/digitalOutput.html"><div class="ghsprite" style="background: url('../../icons/kUKAPrc.png') -24px -96px" data-toptip="Digital Output"></div></a>
+<a href="../../components/kukaprc/3PointsToPlane.html"><div class="ghsprite" style="background: url('../../icons/kUKAPrc.png') -48px -96px" data-downtip="3 Points to Plane"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kukaprc/groupUngroupCommands.html"><div class="ghsprite" style="background: url('../../icons/kUKAPrc.png') -72px -96px" data-toptip="Group/Ungroup Commands"></div></a>
+<a href="../../components/kukaprc/waitForDigitalInput.html"><div class="ghsprite" style="background: url('../../icons/kUKAPrc.png') -96px -96px" data-downtip="Wait For Digital Input"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kukaprc/wait.html"><div class="ghsprite" style="background: url('../../icons/kUKAPrc.png') -120px -96px" data-toptip="Wait"></div></a>
+<a href="../../components/kukaprc/commandWeaver.html"><div class="ghsprite" style="background: url('../../icons/kUKAPrc.png') -144px -96px" data-downtip="Command Weaver"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/kukaprc/analogOutput.html"><div class="ghsprite" style="background: url('../../icons/kUKAPrc.png') -168px -96px" data-toptip="Analog Output"></div></a>
+<a href="../../components/kukaprc/frame.html"><div class="ghsprite" style="background: url('../../icons/kUKAPrc.png') -192px -96px" data-downtip="Frame"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="4">
+05 | Utilities
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+
+<div class="addon-buttons">
+<a href="#tutorials">Video Tutorials</a>
+<a href="https://www.food4rhino.com/app/kukaprc-parametric-robot-control-grasshopper">Download</a>
+
+</div>
+
+<div class="compo-header">
+<h1><div class="ghsprite" style="background: url('../../icons/kUKAPrc.png') -192px -96px" ></div> Frame</h1>
+
+<div class="breadcrumb">
+ <a href="../../index.html">Component Index</a>
+  <a href="../../addons/kuka-prc.html">KUKA Prc</a><a href="#" class="breadcrumb-nolink">05 | Utilities</a><a href="#" class="breadcrumb-nolink">FRAME</a>
+</div>
+
+</div>
+<h3>Defines a frame, used e.g. for setting the base system without going through the GUI.</h3>
+<h2>Inputs</h2>
+<table class="params-table input-params">
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Frame Number</b></td><td>NUM</td><td>Frame number.</td><td>Integer</td></tr>
+<tr><td><b>X Value</b></td><td>X</td><td>X coordinate.</td><td>Number</td></tr>
+<tr><td><b>Y Value</b></td><td>Y</td><td>Y coordinate.</td><td>Number</td></tr>
+<tr><td><b>Z Value</b></td><td>Z</td><td>Z coordinate.</td><td>Number</td></tr>
+<tr><td><b>A Value</b></td><td>A</td><td>A coordinate.</td><td>Number</td></tr>
+<tr><td><b>B Value</b></td><td>B</td><td>B coordinate.</td><td>Number</td></tr>
+<tr><td><b>C Value</b></td><td>C</td><td>C coordinate.</td><td>Number</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table class="params-table output-params">
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>KUKA|prc Frame</b></td><td>FRAME</td><td>KUKA|prc XYZABC Frame.</td><td>FrameData</td></tr>
+<tr><td><b>XYZABC as Plane</b></td><td>PLN</td><td>XYZABC as a plane. When importing an e.g. base frame, keep the tool axis set to Z. If you are importing geometry that was generated for tool axis X, right-click the component and switch tool axes.</td><td>Plane</td></tr>
+</tbody>
+</table>
+
+<div class="ghtutorials">
+<a name="tutorials"></a>
+<h2>Video Tutorials</h2>
+<div style="display:none;" class="html5gallery" data-skin="verticallight" data-width="1000" data-height="600" data-thumbwidth="280" data-thumbheight="70" data-thumbgap="5">
+
+<a href="http://www.youtube.com/embed/vPFhKel503A"><img src="http://img.youtube.com/vi/vPFhKel503A/1.jpg" alt="Kuka|prc Robots In Architecture"></a>
+<a href="http://www.youtube.com/embed/G6_HsRAYEIs"><img src="http://img.youtube.com/vi/G6_HsRAYEIs/1.jpg" alt="How To Stream Data To And From  Tutorial"></a>
+<a href="http://www.youtube.com/embed/_mI_8AOTGZg"><img src="http://img.youtube.com/vi/_mI_8AOTGZg/1.jpg" alt="How To Install KUKA Prc,KUKA Prc Pro For"></a>
+<a href="http://www.youtube.com/embed/BvgKW-CPLTg"><img src="http://img.youtube.com/vi/BvgKW-CPLTg/1.jpg" alt="Learn 5 Axis Milling On A Kuka With  Tutorial"></a>
+<a href="http://www.youtube.com/embed/nDP3_86EMcg"><img src="http://img.youtube.com/vi/nDP3_86EMcg/1.jpg" alt="Multi-Robot Setup With KUKA Prc,KUKA Prc Pro And  - Tutorial"></a>
+<a href="http://www.youtube.com/embed/2ZTyospKniQ"><img src="http://img.youtube.com/vi/2ZTyospKniQ/1.jpg" alt="Hot-Wire Cutter With  And Kuka Tutorial"></a>
+<a href="http://www.youtube.com/embed/LImgOPV1tgk"><img src="http://img.youtube.com/vi/LImgOPV1tgk/1.jpg" alt="Setting Up A Turntable With  And Kuka - Part 2"></a>
+<a href="http://www.youtube.com/embed/0gF4Lkhtumc"><img src="http://img.youtube.com/vi/0gF4Lkhtumc/1.jpg" alt="Setting Up A Turntable With  And Kuka - Part 1"></a>
+<a href="http://www.youtube.com/embed/vyYAmu00xMg"><img src="http://img.youtube.com/vi/vyYAmu00xMg/1.jpg" alt="How To Draw Or Engrave With  And Kuka - Tutorial"></a>
+<a href="http://www.youtube.com/embed/DBqRD7s2IIU"><img src="http://img.youtube.com/vi/DBqRD7s2IIU/1.jpg" alt="Pick And Place With Kuka Robot And"></a>
+<a href="http://www.youtube.com/embed/AmRVhGqMUdE"><img src="http://img.youtube.com/vi/AmRVhGqMUdE/1.jpg" alt="And Kuka Drawing Demonstrations"></a>
+<a href="http://www.youtube.com/embed/FNZ5U-2MdMU"><img src="http://img.youtube.com/vi/FNZ5U-2MdMU/1.jpg" alt="Kuka Performing Pick And Place Via  And Prc"></a>
+
+
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div id="docs-foot">
+<p class="left">
+Site design © <a href="https://github.com/robinrodricks/">Robin Rodricks</a>. &nbsp;
+Co-created by <a href="http://andrewheumann.com/">Andrew Heumann</a>. &nbsp;
+KUKA Prc and associated data © 2020  <a href="https://www.food4rhino.com/app/kukaprc-parametric-robot-control-grasshopper">Johannes Braumann (Robots in Architecture)</a>. &nbsp;
+<br>
+Rhinoceros and Grasshopper are registered trademarks of <a href="https://www.rhino3d.com/">Robert McNeel & Associates</a>.&nbsp;
+Hosted by <a href="http://www.github.com/">GitHub</a> 
+</p>
+<p class="right docs-lightfont">
+
+<a href="https://github.com/grasshopper3d/GrasshopperDocsSite/issues/new">Report an Issue</a> &nbsp;|&nbsp;
+<a href="/termsOfService.html">Terms of Service</a>
+</p>
+
+</div>
+</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    </body>
+</html>
