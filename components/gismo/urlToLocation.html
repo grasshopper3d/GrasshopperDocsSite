@@ -3,15 +3,15 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Support Gismo - Gismo - Component for Grasshopper | Grasshopper Docs</title>
+<title>Url To Location - Gismo - Component for Grasshopper | Grasshopper Docs</title>
 <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 <link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
 
-<meta name="description" content="If you like Gismo, use this component to see in which ways you can contribute and support it.&lt;br&gt;-&lt;br&gt;Provided by Gismo 0.0.3" />
-<meta name="title" content="Support Gismo - Gismo - Component for Grasshopper | Grasshopper Docs" />
-<meta property="og:title" content="Support Gismo - Gismo - Component for Grasshopper | Grasshopper Docs" />
+<meta name="description" content="Use this component to find coordinates of a specific location using an url from openstreetmap, google maps, bing maps, wego.here and waze.&lt;br&gt;-&lt;br&gt;Provided by Gismo 0.0.3" />
+<meta name="title" content="Url To Location - Gismo - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:title" content="Url To Location - Gismo - Component for Grasshopper | Grasshopper Docs" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://grasshopperdocs.com/components/gismo/supportGismo.html" />
+<meta property="og:url" content="https://grasshopperdocs.com/components/gismo/urlToLocation.html" />
 <meta property="og:site_name" content="Grasshopper Docs" />
 
 <link href="../../style.css" rel="stylesheet" type="text/css" />
@@ -197,22 +197,25 @@
 </div>
 
 <div class="compo-header">
-<h1><div class="ghsprite" style="background: url('../../icons/gismo.png') -168px -48px" ></div> Support Gismo</h1>
+<h1><div class="ghsprite" style="background: url('../../icons/gismo.png') -24px -72px" ></div> Url To Location</h1>
 
 <div class="breadcrumb">
  <a href="../../index.html">Component Index</a>
-  <a href="../../addons/gismo.html">Gismo</a><a href="#" class="breadcrumb-nolink">3 | More</a><a href="#" class="breadcrumb-nolink">SupportGismo</a>
+  <a href="../../addons/gismo.html">Gismo</a><a href="#" class="breadcrumb-nolink">0 | Gismo</a><a href="#" class="breadcrumb-nolink">UrlToLocation</a>
 </div>
 
 </div>
-<h3>If you like Gismo, use this component to see in which ways you can contribute and support it.<br>-<br>Provided by Gismo 0.0.3</h3>
+<h3>Use this component to find coordinates of a specific location using an url from openstreetmap, google maps, bing maps, wego.here and waze.<br>-<br>Provided by Gismo 0.0.3</h3>
 <h2>Inputs</h2>
 <table class="params-table input-params">
 <thead>
 <tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
 </thead>
 <tbody>
-<tr><td><b>Support Index</b></td><td>_supportIndex</td><td>Add a number from 0 to 3, to see in which ways you can support Gismo plugin.</td><td>Goo</td></tr>
+<tr><td><b>Url</b></td><td>_url</td><td>Openstreetmap, google maps, bing maps, wego.here, waze link from which address will be extracted.</td><td>Goo</td></tr>
+<tr><td><b>Openweb</b></td><td>openweb_</td><td>if True open the link in web browser.
+-
+If nothing added to this input, it is set to False by the default.</td><td>Goo</td></tr>
 </tbody>
 </table>
 
@@ -222,7 +225,8 @@
 <tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
 </thead>
 <tbody>
-<tr><td><b>Out</b></td><td>readMe!</td><td>This output shows support text for chosen _supportIndex input.</td><td>String</td></tr>
+<tr><td><b>Out</b></td><td>readMe!</td><td>...</td><td>String</td></tr>
+<tr><td><b>Location</b></td><td>location</td><td>Location (latitude, longitude coordinates) of the _point input.</td><td>Goo</td></tr>
 </tbody>
 </table>
 

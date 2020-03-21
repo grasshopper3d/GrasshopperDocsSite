@@ -14851,13 +14851,23 @@
       "helpLink": "https://grasshopperdocs.com/components/gismo/locationToXY.html"
     },
     {
+      "name": "Url To Location",
+      "id": "UrlToLocation",
+      "library": "Gismo",
+      "category": "0 | Gismo",
+      "summary": "Use this component to find coordinates of a specific location using an url from openstreetmap, google maps, bing maps, wego.here and waze.<br>-<br>Provided by Gismo 0.0.3",
+      "description": null,
+      "iconCss": "background: url('icons/gismo.png') -24px -72px",
+      "helpLink": "https://grasshopperdocs.com/components/gismo/urlToLocation.html"
+    },
+    {
       "name": "XY To Location",
       "id": "XYtoLocation",
       "library": "Gismo",
       "category": "0 | Gismo",
       "summary": "Use this component to calculate latitude and longitude coordinates of the _point in Rhino scene",
       "description": "Use this component to calculate latitude and longitude coordinates of the _point in Rhino scene.<br>For example: you created some building shapes with Gismo \"OSM Shapes\" component, and now you would like to check what are the latitude and longtitude coordinates of particular part of the building.<br>-<br>Provided by Gismo 0.0.3",
-      "iconCss": "background: url('icons/gismo.png') -24px -72px",
+      "iconCss": "background: url('icons/gismo.png') -48px -72px",
       "helpLink": "https://grasshopperdocs.com/components/gismo/xYToLocation.html"
     },
     {
@@ -14867,7 +14877,7 @@
       "category": "0 | Gismo",
       "summary": "Use this component to calculate the elevation height of particular point",
       "description": "Use this component to calculate the elevation height of particular point.<br>For example: you have a terrain made by Gismo or Ladybug \"Terrain Generator\" component, and you would like to know what is the elevation height of particular point on the terrain.<br>-<br>Provided by Gismo 0.0.3",
-      "iconCss": "background: url('icons/gismo.png') -48px -72px",
+      "iconCss": "background: url('icons/gismo.png') -72px -72px",
       "helpLink": "https://grasshopperdocs.com/components/gismo/zToElevation.html"
     },
     {
