@@ -3,15 +3,15 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sort Mesh Y - Duck - Component for Grasshopper | Grasshopper Docs</title>
+<title>Sort Curves Z (3.0) - Duck - Component for Grasshopper | Grasshopper Docs</title>
 <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 <link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
 
-<meta name="description" content="Sorting a list of meshes according to the Y coordinate of the center points" />
-<meta name="title" content="Sort Mesh Y - Duck - Component for Grasshopper | Grasshopper Docs" />
-<meta property="og:title" content="Sort Mesh Y - Duck - Component for Grasshopper | Grasshopper Docs" />
+<meta name="description" content="Sorting a list curves according to the Z coordinates of the evaluated point" />
+<meta name="title" content="Sort Curves Z (3.0) - Duck - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:title" content="Sort Curves Z (3.0) - Duck - Component for Grasshopper | Grasshopper Docs" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://grasshopperdocs.com/components/duck/sortMeshY.html" />
+<meta property="og:url" content="https://grasshopperdocs.com/components/duck/sortCurvesZ30.html" />
 <meta property="og:site_name" content="Grasshopper Docs" />
 
 <link href="../../style.css" rel="stylesheet" type="text/css" />
@@ -204,25 +204,26 @@ Surface
 </div>
 
 <div class="compo-header">
-<h1><div class="ghsprite" style="background: url('../../icons/duck.png') -96px -24px" ></div> Sort Mesh Y</h1>
+<h1><div class="ghsprite" style="background: url('../../icons/duck.png') 0px -24px" ></div> Sort Curves Z (3.0)</h1>
 
 <div class="breadcrumb">
  <a href="../../index.html">Component Index</a>
-  <a href="../../addons/duck.html">Duck</a><a href="#" class="breadcrumb-nolink">Mesh</a><a href="#" class="breadcrumb-nolink">Sort Mesh Y</a>
+  <a href="../../addons/duck.html">Duck</a><a href="#" class="breadcrumb-nolink">Curve</a><a href="#" class="breadcrumb-nolink">Sort Curves Z</a>
 </div>
 
 </div>
-<h3>Sorting a list of meshes according to the Y coordinate of the center points</h3>
+<h3>Sorting a list curves according to the Z coordinates of the evaluated point</h3>
 <h2>Inputs</h2>
 <table class="params-table input-params">
 <thead>
 <tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
 </thead>
 <tbody>
-<tr><td><b>Geo</b></td><td>geo</td><td>The goemetry to be sorted</td><td>Goo</td></tr>
+<tr><td><b>Crvs</b></td><td>crvs</td><td>The curves to be sorted</td><td>Goo</td></tr>
 <tr><td><b>Toggle</b></td><td>Toggle</td><td>"True" to see the sequences</td><td>Goo</td></tr>
 <tr><td><b>Font</b></td><td>font</td><td>Script variable Python</td><td>Goo</td></tr>
-<tr><td><b>Height</b></td><td>height</td><td>The text size</td><td>Goo</td></tr>
+<tr><td><b>Height</b></td><td>height</td><td>The text height (10 by default)</td><td>Goo</td></tr>
+<tr><td><b>T</b></td><td>t</td><td>Evaluated point on the curve(0 to 1),(0.5 by default)</td><td>Goo</td></tr>
 </tbody>
 </table>
 
@@ -232,9 +233,9 @@ Surface
 <tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
 </thead>
 <tbody>
-<tr><td><b>Sortedgeo</b></td><td>sortedgeo</td><td>The sorted geometries</td><td>Goo</td></tr>
-<tr><td><b>Pts</b></td><td>pts</td><td>The center points of the sorted geometries</td><td>Goo</td></tr>
-<tr><td><b>Num</b></td><td>num</td><td>The sequences of the sorted geometries</td><td>Goo</td></tr>
+<tr><td><b>Sortedcrvs</b></td><td>sortedcrvs</td><td>Sorted curves</td><td>Goo</td></tr>
+<tr><td><b>Pts</b></td><td>pts</td><td>Evaluated points</td><td>Goo</td></tr>
+<tr><td><b>Num</b></td><td>num</td><td>Sequences of the sorted curves</td><td>Goo</td></tr>
 </tbody>
 </table>
 

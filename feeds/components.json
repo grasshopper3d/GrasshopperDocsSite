@@ -7447,7 +7447,7 @@
       "category": "Brep",
       "summary": "Sorting a list of Breps according to the X coordinate of the center points",
       "description": null,
-      "iconCss": "background: url('icons/duck.png') 0px 0px",
+      "iconCss": "background: url('icons/duck.png') -24px 0px",
       "helpLink": "https://grasshopperdocs.com/components/duck/sortBrepX.html"
     },
     {
@@ -7457,7 +7457,7 @@
       "category": "Brep",
       "summary": "Sorting a list of breps according to the distance  from the reference point to the center points of the closed brpes",
       "description": null,
-      "iconCss": "background: url('icons/duck.png') -24px 0px",
+      "iconCss": "background: url('icons/duck.png') -48px 0px",
       "helpLink": "https://grasshopperdocs.com/components/duck/sortBrepsPoint.html"
     },
     {
@@ -7467,7 +7467,7 @@
       "category": "Brep",
       "summary": "Sorting a list of breps according to the volumes",
       "description": null,
-      "iconCss": "background: url('icons/duck.png') -48px 0px",
+      "iconCss": "background: url('icons/duck.png') -72px 0px",
       "helpLink": "https://grasshopperdocs.com/components/duck/sortBrepsVolume.html"
     },
     {
@@ -7477,7 +7477,7 @@
       "category": "Brep",
       "summary": "Sorting a list of Breps according to the Y coordinate of the center points",
       "description": null,
-      "iconCss": "background: url('icons/duck.png') -72px 0px",
+      "iconCss": "background: url('icons/duck.png') -96px 0px",
       "helpLink": "https://grasshopperdocs.com/components/duck/sortBrepsY.html"
     },
     {
@@ -7487,7 +7487,7 @@
       "category": "Brep",
       "summary": "Sorting a list of Breps according to the Z coordinate of the center points",
       "description": null,
-      "iconCss": "background: url('icons/duck.png') -96px 0px",
+      "iconCss": "background: url('icons/duck.png') -120px 0px",
       "helpLink": "https://grasshopperdocs.com/components/duck/sortBrepsZ.html"
     },
     {
@@ -7497,7 +7497,7 @@
       "category": "Curve",
       "summary": "Sorting a list of curves according to the length",
       "description": null,
-      "iconCss": "background: url('icons/duck.png') -120px 0px",
+      "iconCss": "background: url('icons/duck.png') -144px 0px",
       "helpLink": "https://grasshopperdocs.com/components/duck/sortCurvesLength.html"
     },
     {
@@ -7507,7 +7507,7 @@
       "category": "Curve",
       "summary": "Sorting a list of curves according to the distance from the reference point to the evaluated point",
       "description": null,
-      "iconCss": "background: url('icons/duck.png') -144px 0px",
+      "iconCss": "background: url('icons/duck.png') -168px 0px",
       "helpLink": "https://grasshopperdocs.com/components/duck/sortCurvesPoint.html"
     },
     {
@@ -7517,7 +7517,7 @@
       "category": "Curve",
       "summary": "Sorting a list of curves according to the X coordinates of the evaluated points.",
       "description": null,
-      "iconCss": "background: url('icons/duck.png') -168px 0px",
+      "iconCss": "background: url('icons/duck.png') -192px 0px",
       "helpLink": "https://grasshopperdocs.com/components/duck/sortCurvesX.html"
     },
     {
@@ -7527,18 +7527,28 @@
       "category": "Curve",
       "summary": "Sorting a list curves according to the Y coordinates of the evaluated points",
       "description": null,
-      "iconCss": "background: url('icons/duck.png') -192px 0px",
+      "iconCss": "background: url('icons/duck.png') -216px 0px",
       "helpLink": "https://grasshopperdocs.com/components/duck/sortCurvesY.html"
     },
     {
-      "name": "Sort Curves Z",
+      "name": "Sort Curves Z (3.0)",
       "id": "Sort Curves Z",
       "library": "Duck",
       "category": "Curve",
       "summary": "Sorting a list curves according to the Z coordinates of the evaluated point",
       "description": null,
-      "iconCss": "background: url('icons/duck.png') -216px 0px",
-      "helpLink": "https://grasshopperdocs.com/components/duck/sortCurvesZ.html"
+      "iconCss": "background: url('icons/duck.png') 0px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/duck/sortCurvesZ30.html"
+    },
+    {
+      "name": "DUCK Font",
+      "id": "DF",
+      "library": "Duck",
+      "category": "Font",
+      "summary": "A list of font opsions in rhino system which can be determined by assigning index number.",
+      "description": null,
+      "iconCss": "background: url('icons/duck.png') 0px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/duck/dUCKFont.html"
     },
     {
       "name": "Sort Mesh Area",
@@ -7547,7 +7557,7 @@
       "category": "Mesh",
       "summary": "Sorting a list of meshes according to the area",
       "description": null,
-      "iconCss": "background: url('icons/duck.png') 0px -24px",
+      "iconCss": "background: url('icons/duck.png') -24px -24px",
       "helpLink": "https://grasshopperdocs.com/components/duck/sortMeshArea.html"
     },
     {
@@ -7557,7 +7567,7 @@
       "category": "Mesh",
       "summary": "Sorting a list of meshes according to the distance from the reference point to the center points of the meshes.",
       "description": null,
-      "iconCss": "background: url('icons/duck.png') -24px -24px",
+      "iconCss": "background: url('icons/duck.png') -48px -24px",
       "helpLink": "https://grasshopperdocs.com/components/duck/sortMeshPoint.html"
     },
     {
@@ -7567,7 +7577,7 @@
       "category": "Mesh",
       "summary": "Sorting a list of meshes according to the X coordinate of the center points",
       "description": null,
-      "iconCss": "background: url('icons/duck.png') -48px -24px",
+      "iconCss": "background: url('icons/duck.png') -72px -24px",
       "helpLink": "https://grasshopperdocs.com/components/duck/sortMeshX.html"
     },
     {
@@ -7577,7 +7587,7 @@
       "category": "Mesh",
       "summary": "Sorting a list of meshes according to the Y coordinate of the center points",
       "description": null,
-      "iconCss": "background: url('icons/duck.png') -72px -24px",
+      "iconCss": "background: url('icons/duck.png') -96px -24px",
       "helpLink": "https://grasshopperdocs.com/components/duck/sortMeshY.html"
     },
     {
@@ -7587,7 +7597,7 @@
       "category": "Mesh",
       "summary": "Sorting a list of meshes according to the Z coordinate of the center points",
       "description": null,
-      "iconCss": "background: url('icons/duck.png') -96px -24px",
+      "iconCss": "background: url('icons/duck.png') -120px -24px",
       "helpLink": "https://grasshopperdocs.com/components/duck/sortMeshZ.html"
     },
     {
@@ -7597,7 +7607,7 @@
       "category": "Point",
       "summary": "Sorting a list of points according to the X coordinate of the poins",
       "description": null,
-      "iconCss": "background: url('icons/duck.png') -120px -24px",
+      "iconCss": "background: url('icons/duck.png') -144px -24px",
       "helpLink": "https://grasshopperdocs.com/components/duck/sortPointsX.html"
     },
     {
@@ -7607,7 +7617,7 @@
       "category": "Point",
       "summary": "Sorting a list of points according to the Y coordinate of the points",
       "description": null,
-      "iconCss": "background: url('icons/duck.png') -144px -24px",
+      "iconCss": "background: url('icons/duck.png') -168px -24px",
       "helpLink": "https://grasshopperdocs.com/components/duck/sortPointsY.html"
     },
     {
@@ -7617,7 +7627,7 @@
       "category": "Point",
       "summary": "Sorting a list of points according to the Z coordinate of the points",
       "description": null,
-      "iconCss": "background: url('icons/duck.png') -168px -24px",
+      "iconCss": "background: url('icons/duck.png') -192px -24px",
       "helpLink": "https://grasshopperdocs.com/components/duck/sortPointsZ.html"
     },
     {
@@ -7627,7 +7637,7 @@
       "category": "Point",
       "summary": "Sorting a list of points according to the distance  from the reference point",
       "description": null,
-      "iconCss": "background: url('icons/duck.png') -96px -48px",
+      "iconCss": "background: url('icons/duck.png') -120px -48px",
       "helpLink": "https://grasshopperdocs.com/components/duck/sortPointsPoint.html"
     },
     {
@@ -7637,7 +7647,7 @@
       "category": "Surface",
       "summary": "Sorting a list of surfaces according to the surface area",
       "description": null,
-      "iconCss": "background: url('icons/duck.png') -192px -24px",
+      "iconCss": "background: url('icons/duck.png') -216px -24px",
       "helpLink": "https://grasshopperdocs.com/components/duck/sortSurfaceArea.html"
     },
     {
@@ -7647,7 +7657,7 @@
       "category": "Surface",
       "summary": "Sorting a list of surfaces according to the distance from the reference point to the point on the surfaces by assigning UV parameters",
       "description": null,
-      "iconCss": "background: url('icons/duck.png') -216px -24px",
+      "iconCss": "background: url('icons/duck.png') 0px -48px",
       "helpLink": "https://grasshopperdocs.com/components/duck/sortSurfaceUV.html"
     },
     {
@@ -7657,7 +7667,7 @@
       "category": "Surface",
       "summary": "Sorting a list of surfaces according to the X coordinate sequences of the center points <br>",
       "description": null,
-      "iconCss": "background: url('icons/duck.png') 0px -48px",
+      "iconCss": "background: url('icons/duck.png') -24px -48px",
       "helpLink": "https://grasshopperdocs.com/components/duck/sortSurfaceX.html"
     },
     {
@@ -7667,7 +7677,7 @@
       "category": "Surface",
       "summary": "Sorting a list of surfaces according to the Y coordinate sequences of the center points",
       "description": null,
-      "iconCss": "background: url('icons/duck.png') -24px -48px",
+      "iconCss": "background: url('icons/duck.png') -48px -48px",
       "helpLink": "https://grasshopperdocs.com/components/duck/sortSurfaceY.html"
     },
     {
@@ -7677,7 +7687,7 @@
       "category": "Surface",
       "summary": "Sorting a list of surfaces according to the Z coordinate sequences of the center points",
       "description": null,
-      "iconCss": "background: url('icons/duck.png') -48px -48px",
+      "iconCss": "background: url('icons/duck.png') -72px -48px",
       "helpLink": "https://grasshopperdocs.com/components/duck/sortSurfaceZ.html"
     },
     {
@@ -7687,7 +7697,7 @@
       "category": "Surface",
       "summary": "Sorting a list of surfaces according to the distance to the reference point",
       "description": null,
-      "iconCss": "background: url('icons/duck.png') -72px -48px",
+      "iconCss": "background: url('icons/duck.png') -96px -48px",
       "helpLink": "https://grasshopperdocs.com/components/duck/sortSurfacesPoint.html"
     },
     {
@@ -7697,7 +7707,7 @@
       "category": "Surface",
       "summary": "Sorting a list of sub-surfaces in a correct order by UV<br>srf: the original untrimmed surface<br>srfs : the messed up sub-surfaces waiting to be sorted<br>u: number of branches( int required)<br>v: number of items in one branch( int required)",
       "description": null,
-      "iconCss": "background: url('icons/duck.png') -120px -48px",
+      "iconCss": "background: url('icons/duck.png') -144px -48px",
       "helpLink": "https://grasshopperdocs.com/components/duck/sSUV.html"
     },
     {
