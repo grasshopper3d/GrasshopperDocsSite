@@ -67,13 +67,13 @@
     },
     {
       "name": "Axolotl",
-      "releaseDate": "2020-Feb-21",
+      "releaseDate": "2020-Apr-28",
       "version": "1.0",
       "downloadLink": "https://www.food4rhino.com/app/axolotl",
       "helpLink": "https://grasshopperdocs.com/addons/axolotl.html",
       "category": "Geometry & Meshes",
       "isSystem": false,
-      "components": 49,
+      "components": 57,
       "description": "AXOLOTL provides a set of components for volumetric modeling in Rhino Grasshopper. They work based on the principle of signed distance functions (SDF). In boundary representations (BRep), objects are defined by vertices connected by edges and faces. In function representations (FRep), objects are defined by a function f that maps any point (x,y,z) to a real value d, the distance to the objects: f(x,y,z)=d\n\nThe components are organized in groups. A typical workflow is to choose objects from PRIMITIVES, combine them using e.g. Boolean operations from COMBINATIONS, add further MODIFICATIONS as necessary and finally visualize the distance object using a component from the MESHING tab. Furthermore, there are different kinds of LATTICES, some MATH functions, components to convert Rhino GEOMETRY into an SDF and some utilities to ANALYSE the SDF.",
       "authorName": "Mathias Bernhard",
       "authorContact": "bernhard@arch.ethz.ch"

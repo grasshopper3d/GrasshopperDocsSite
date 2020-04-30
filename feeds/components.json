@@ -1257,7 +1257,7 @@
       "category": "1 Primitives",
       "summary": "Box",
       "description": null,
-      "iconCss": "background: url('icons/axolotl.png') -96px -72px",
+      "iconCss": "background: url('icons/axolotl.png') 0px -96px",
       "helpLink": "https://grasshopperdocs.com/components/axolotl/box.html"
     },
     {
@@ -1267,8 +1267,18 @@
       "category": "1 Primitives",
       "summary": "Capsule",
       "description": null,
-      "iconCss": "background: url('icons/axolotl.png') -120px -72px",
+      "iconCss": "background: url('icons/axolotl.png') -24px -96px",
       "helpLink": "https://grasshopperdocs.com/components/axolotl/capsule.html"
+    },
+    {
+      "name": "Cone",
+      "id": "Cone",
+      "library": "Axolotl",
+      "category": "1 Primitives",
+      "summary": "Cone",
+      "description": null,
+      "iconCss": "background: url('icons/axolotl.png') -96px -96px",
+      "helpLink": "https://grasshopperdocs.com/components/axolotl/cone.html"
     },
     {
       "name": "Cylinder",
@@ -1277,8 +1287,18 @@
       "category": "1 Primitives",
       "summary": "Cylinder",
       "description": null,
-      "iconCss": "background: url('icons/axolotl.png') -192px -72px",
+      "iconCss": "background: url('icons/axolotl.png') -120px -96px",
       "helpLink": "https://grasshopperdocs.com/components/axolotl/cylinder.html"
+    },
+    {
+      "name": "Egg",
+      "id": "Egg",
+      "library": "Axolotl",
+      "category": "1 Primitives",
+      "summary": "Egg",
+      "description": null,
+      "iconCss": "background: url('icons/axolotl.png') -192px -96px",
+      "helpLink": "https://grasshopperdocs.com/components/axolotl/egg.html"
     },
     {
       "name": "Ellipse 2D",
@@ -1287,7 +1307,7 @@
       "category": "1 Primitives",
       "summary": "Ellipse 2D",
       "description": null,
-      "iconCss": "background: url('icons/axolotl.png') 0px -24px",
+      "iconCss": "background: url('icons/axolotl.png') -48px -24px",
       "helpLink": "https://grasshopperdocs.com/components/axolotl/ellipse2D.html"
     },
     {
@@ -1297,7 +1317,7 @@
       "category": "1 Primitives",
       "summary": "Ellipsoid",
       "description": null,
-      "iconCss": "background: url('icons/axolotl.png') -144px -72px",
+      "iconCss": "background: url('icons/axolotl.png') -48px -96px",
       "helpLink": "https://grasshopperdocs.com/components/axolotl/ellipsoid.html"
     },
     {
@@ -1307,7 +1327,7 @@
       "category": "1 Primitives",
       "summary": "Plane",
       "description": null,
-      "iconCss": "background: url('icons/axolotl.png') -72px -96px",
+      "iconCss": "background: url('icons/axolotl.png') -24px -120px",
       "helpLink": "https://grasshopperdocs.com/components/axolotl/plane.html"
     },
     {
@@ -1317,7 +1337,7 @@
       "category": "1 Primitives",
       "summary": "Sphere",
       "description": null,
-      "iconCss": "background: url('icons/axolotl.png') 0px -96px",
+      "iconCss": "background: url('icons/axolotl.png') -168px -96px",
       "helpLink": "https://grasshopperdocs.com/components/axolotl/sphere.html"
     },
     {
@@ -1327,7 +1347,7 @@
       "category": "1 Primitives",
       "summary": "Torus",
       "description": null,
-      "iconCss": "background: url('icons/axolotl.png') -144px -96px",
+      "iconCss": "background: url('icons/axolotl.png') -96px -120px",
       "helpLink": "https://grasshopperdocs.com/components/axolotl/torus.html"
     },
     {
@@ -1337,7 +1357,7 @@
       "category": "2 Geometry",
       "summary": "Distance Wrapper",
       "description": null,
-      "iconCss": "background: url('icons/axolotl.png') -48px -72px",
+      "iconCss": "background: url('icons/axolotl.png') -192px -72px",
       "helpLink": "https://grasshopperdocs.com/components/axolotl/distanceWrapper.html"
     },
     {
@@ -1347,7 +1367,7 @@
       "category": "2 Geometry",
       "summary": "Pipe description",
       "description": null,
-      "iconCss": "background: url('icons/axolotl.png') -96px -48px",
+      "iconCss": "background: url('icons/axolotl.png') -168px -48px",
       "helpLink": "https://grasshopperdocs.com/components/axolotl/pipe.html"
     },
     {
@@ -1357,7 +1377,7 @@
       "category": "2 Geometry",
       "summary": "Sweep description",
       "description": null,
-      "iconCss": "background: url('icons/axolotl.png') -192px -48px",
+      "iconCss": "background: url('icons/axolotl.png') -24px -72px",
       "helpLink": "https://grasshopperdocs.com/components/axolotl/sweep.html"
     },
     {
@@ -1367,7 +1387,7 @@
       "category": "3 Lattices",
       "summary": "Lattice",
       "description": null,
-      "iconCss": "background: url('icons/axolotl.png') -96px -24px",
+      "iconCss": "background: url('icons/axolotl.png') -144px -24px",
       "helpLink": "https://grasshopperdocs.com/components/axolotl/lattice.html"
     },
     {
@@ -1377,7 +1397,7 @@
       "category": "3 Lattices",
       "summary": "Noise description",
       "description": null,
-      "iconCss": "background: url('icons/axolotl.png') -48px -48px",
+      "iconCss": "background: url('icons/axolotl.png') -120px -48px",
       "helpLink": "https://grasshopperdocs.com/components/axolotl/noise.html"
     },
     {
@@ -1387,7 +1407,7 @@
       "category": "3 Lattices",
       "summary": "Sine",
       "description": null,
-      "iconCss": "background: url('icons/axolotl.png') -192px 0px",
+      "iconCss": "background: url('icons/axolotl.png') -216px 0px",
       "helpLink": "https://grasshopperdocs.com/components/axolotl/sine.html"
     },
     {
@@ -1397,7 +1417,7 @@
       "category": "3 Lattices",
       "summary": "Sine 3D",
       "description": null,
-      "iconCss": "background: url('icons/axolotl.png') -120px -48px",
+      "iconCss": "background: url('icons/axolotl.png') -192px -48px",
       "helpLink": "https://grasshopperdocs.com/components/axolotl/sine3D.html"
     },
     {
@@ -1407,18 +1427,38 @@
       "category": "3 Lattices",
       "summary": "TPMS",
       "description": null,
-      "iconCss": "background: url('icons/axolotl.png') 0px -72px",
+      "iconCss": "background: url('icons/axolotl.png') -72px -72px",
       "helpLink": "https://grasshopperdocs.com/components/axolotl/tPMS.html"
     },
     {
-      "name": "TPMS_D",
-      "id": "TPMS_D",
+      "name": "TPMS D",
+      "id": "TPMS Distance Object Modifier",
       "library": "Axolotl",
       "category": "3 Lattices",
-      "summary": "TPMS_D",
+      "summary": "TPMS D",
       "description": null,
-      "iconCss": "background: url('icons/axolotl.png') -24px -72px",
+      "iconCss": "background: url('icons/axolotl.png') -96px -72px",
       "helpLink": "https://grasshopperdocs.com/components/axolotl/tPMSD.html"
+    },
+    {
+      "name": "TPMS P",
+      "id": "TPMS Polar",
+      "library": "Axolotl",
+      "category": "3 Lattices",
+      "summary": "TPMS P",
+      "description": null,
+      "iconCss": "background: url('icons/axolotl.png') -120px -72px",
+      "helpLink": "https://grasshopperdocs.com/components/axolotl/tPMSP.html"
+    },
+    {
+      "name": "TPMS S",
+      "id": "TPMS Spherical",
+      "library": "Axolotl",
+      "category": "3 Lattices",
+      "summary": "TPMS S",
+      "description": null,
+      "iconCss": "background: url('icons/axolotl.png') -144px -72px",
+      "helpLink": "https://grasshopperdocs.com/components/axolotl/tPMSS.html"
     },
     {
       "name": "Voronoi",
@@ -1427,7 +1467,7 @@
       "category": "3 Lattices",
       "summary": "Voronoi",
       "description": null,
-      "iconCss": "background: url('icons/axolotl.png') -144px -24px",
+      "iconCss": "background: url('icons/axolotl.png') -192px -24px",
       "helpLink": "https://grasshopperdocs.com/components/axolotl/voronoi.html"
     },
     {
@@ -1437,7 +1477,7 @@
       "category": "4 Combinations",
       "summary": "Boolean Intersect",
       "description": null,
-      "iconCss": "background: url('icons/axolotl.png') -96px 0px",
+      "iconCss": "background: url('icons/axolotl.png') -120px 0px",
       "helpLink": "https://grasshopperdocs.com/components/axolotl/booleanIntersect.html"
     },
     {
@@ -1447,7 +1487,7 @@
       "category": "4 Combinations",
       "summary": "Boolean Subtract",
       "description": null,
-      "iconCss": "background: url('icons/axolotl.png') -120px 0px",
+      "iconCss": "background: url('icons/axolotl.png') -144px 0px",
       "helpLink": "https://grasshopperdocs.com/components/axolotl/booleanSubtract.html"
     },
     {
@@ -1457,8 +1497,18 @@
       "category": "4 Combinations",
       "summary": "Boolean Union",
       "description": null,
-      "iconCss": "background: url('icons/axolotl.png') -144px 0px",
+      "iconCss": "background: url('icons/axolotl.png') -168px 0px",
       "helpLink": "https://grasshopperdocs.com/components/axolotl/booleanUnion.html"
+    },
+    {
+      "name": "DivComponent",
+      "id": "Division",
+      "library": "Axolotl",
+      "category": "4 Combinations",
+      "summary": "Division",
+      "description": null,
+      "iconCss": "background: url('icons/axolotl.png') -24px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/axolotl/divComponent.html"
     },
     {
       "name": "Mercury",
@@ -1467,7 +1517,7 @@
       "category": "4 Combinations",
       "summary": "Based on hg_sdf by the demogroup MERCURY (http://mercury.sexy/hg_sdf/)",
       "description": null,
-      "iconCss": "background: url('icons/axolotl.png') -168px -24px",
+      "iconCss": "background: url('icons/axolotl.png') -216px -24px",
       "helpLink": "https://grasshopperdocs.com/components/axolotl/mercury.html"
     },
     {
@@ -1477,7 +1527,7 @@
       "category": "4 Combinations",
       "summary": "Metaball",
       "description": null,
-      "iconCss": "background: url('icons/axolotl.png') -192px -24px",
+      "iconCss": "background: url('icons/axolotl.png') 0px -48px",
       "helpLink": "https://grasshopperdocs.com/components/axolotl/metaball.html"
     },
     {
@@ -1487,8 +1537,18 @@
       "category": "4 Combinations",
       "summary": "Morph",
       "description": null,
-      "iconCss": "background: url('icons/axolotl.png') -216px -24px",
+      "iconCss": "background: url('icons/axolotl.png') -24px -48px",
       "helpLink": "https://grasshopperdocs.com/components/axolotl/morph.html"
+    },
+    {
+      "name": "MultComponent",
+      "id": "Multiplication",
+      "library": "Axolotl",
+      "category": "4 Combinations",
+      "summary": "Multiplication",
+      "description": null,
+      "iconCss": "background: url('icons/axolotl.png') -48px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/axolotl/multComponent.html"
     },
     {
       "name": "SmoothIntersection",
@@ -1497,7 +1557,7 @@
       "category": "4 Combinations",
       "summary": "Smooth intersection between two objects",
       "description": null,
-      "iconCss": "background: url('icons/axolotl.png') -24px -48px",
+      "iconCss": "background: url('icons/axolotl.png') -96px -48px",
       "helpLink": "https://grasshopperdocs.com/components/axolotl/smoothIntersection.html"
     },
     {
@@ -1507,7 +1567,7 @@
       "category": "4 Combinations",
       "summary": "SmoothSubtraction description",
       "description": null,
-      "iconCss": "background: url('icons/axolotl.png') -144px -48px",
+      "iconCss": "background: url('icons/axolotl.png') -216px -48px",
       "helpLink": "https://grasshopperdocs.com/components/axolotl/smoothSubtraction.html"
     },
     {
@@ -1517,7 +1577,7 @@
       "category": "4 Combinations",
       "summary": "SmoothUnion",
       "description": null,
-      "iconCss": "background: url('icons/axolotl.png') -168px -48px",
+      "iconCss": "background: url('icons/axolotl.png') 0px -72px",
       "helpLink": "https://grasshopperdocs.com/components/axolotl/smoothUnion.html"
     },
     {
@@ -1527,8 +1587,18 @@
       "category": "4 Combinations",
       "summary": "Sum",
       "description": null,
-      "iconCss": "background: url('icons/axolotl.png') -216px 0px",
+      "iconCss": "background: url('icons/axolotl.png') 0px -24px",
       "helpLink": "https://grasshopperdocs.com/components/axolotl/sum.html"
+    },
+    {
+      "name": "WaveComponent",
+      "id": "Wave",
+      "library": "Axolotl",
+      "category": "4 Combinations",
+      "summary": "Wave",
+      "description": null,
+      "iconCss": "background: url('icons/axolotl.png') -168px -72px",
+      "helpLink": "https://grasshopperdocs.com/components/axolotl/waveComponent.html"
     },
     {
       "name": "Array",
@@ -1537,7 +1607,7 @@
       "category": "5 Modifications",
       "summary": "Array description",
       "description": null,
-      "iconCss": "background: url('icons/axolotl.png') -72px -72px",
+      "iconCss": "background: url('icons/axolotl.png') -216px -72px",
       "helpLink": "https://grasshopperdocs.com/components/axolotl/array.html"
     },
     {
@@ -1551,13 +1621,23 @@
       "helpLink": "https://grasshopperdocs.com/components/axolotl/arrayLimited.html"
     },
     {
+      "name": "Blend",
+      "id": "Blend",
+      "library": "Axolotl",
+      "category": "5 Modifications",
+      "summary": "Blend",
+      "description": null,
+      "iconCss": "background: url('icons/axolotl.png') -72px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/axolotl/blend.html"
+    },
+    {
       "name": "Blur",
       "id": "Blur",
       "library": "Axolotl",
       "category": "5 Modifications",
       "summary": "Blur description",
       "description": null,
-      "iconCss": "background: url('icons/axolotl.png') -72px 0px",
+      "iconCss": "background: url('icons/axolotl.png') -96px 0px",
       "helpLink": "https://grasshopperdocs.com/components/axolotl/blur.html"
     },
     {
@@ -1567,7 +1647,7 @@
       "category": "5 Modifications",
       "summary": "Levelset",
       "description": null,
-      "iconCss": "background: url('icons/axolotl.png') -120px -24px",
+      "iconCss": "background: url('icons/axolotl.png') -168px -24px",
       "helpLink": "https://grasshopperdocs.com/components/axolotl/levelset.html"
     },
     {
@@ -1577,7 +1657,7 @@
       "category": "5 Modifications",
       "summary": "Overlay",
       "description": null,
-      "iconCss": "background: url('icons/axolotl.png') -72px -48px",
+      "iconCss": "background: url('icons/axolotl.png') -144px -48px",
       "helpLink": "https://grasshopperdocs.com/components/axolotl/overlay.html"
     },
     {
@@ -1587,7 +1667,7 @@
       "category": "5 Modifications",
       "summary": "Polar Array",
       "description": null,
-      "iconCss": "background: url('icons/axolotl.png') -96px -96px",
+      "iconCss": "background: url('icons/axolotl.png') -48px -120px",
       "helpLink": "https://grasshopperdocs.com/components/axolotl/polarArray.html"
     },
     {
@@ -1597,7 +1677,7 @@
       "category": "5 Modifications",
       "summary": "Shell",
       "description": null,
-      "iconCss": "background: url('icons/axolotl.png') -168px 0px",
+      "iconCss": "background: url('icons/axolotl.png') -192px 0px",
       "helpLink": "https://grasshopperdocs.com/components/axolotl/shell.html"
     },
     {
@@ -1607,7 +1687,7 @@
       "category": "5 Modifications",
       "summary": "Transform",
       "description": null,
-      "iconCss": "background: url('icons/axolotl.png') -168px -72px",
+      "iconCss": "background: url('icons/axolotl.png') -72px -96px",
       "helpLink": "https://grasshopperdocs.com/components/axolotl/transform.html"
     },
     {
@@ -1617,7 +1697,7 @@
       "category": "5 Modifications",
       "summary": "TwistComponent description",
       "description": null,
-      "iconCss": "background: url('icons/axolotl.png') -168px -96px",
+      "iconCss": "background: url('icons/axolotl.png') -120px -120px",
       "helpLink": "https://grasshopperdocs.com/components/axolotl/twist.html"
     },
     {
@@ -1627,7 +1707,7 @@
       "category": "6 Math",
       "summary": "Absolute value",
       "description": null,
-      "iconCss": "background: url('icons/axolotl.png') -216px -48px",
+      "iconCss": "background: url('icons/axolotl.png') -48px -72px",
       "helpLink": "https://grasshopperdocs.com/components/axolotl/abs.html"
     },
     {
@@ -1647,7 +1727,7 @@
       "category": "6 Math",
       "summary": "Multiplication with value",
       "description": null,
-      "iconCss": "background: url('icons/axolotl.png') 0px -48px",
+      "iconCss": "background: url('icons/axolotl.png') -72px -48px",
       "helpLink": "https://grasshopperdocs.com/components/axolotl/mult.html"
     },
     {
@@ -1667,7 +1747,7 @@
       "category": "7 Meshing",
       "summary": "Dense Grid",
       "description": null,
-      "iconCss": "background: url('icons/axolotl.png') -216px -72px",
+      "iconCss": "background: url('icons/axolotl.png') -144px -96px",
       "helpLink": "https://grasshopperdocs.com/components/axolotl/denseGrid.html"
     },
     {
@@ -1677,7 +1757,7 @@
       "category": "7 Meshing",
       "summary": "Isosurface Distancefield",
       "description": null,
-      "iconCss": "background: url('icons/axolotl.png') -48px -24px",
+      "iconCss": "background: url('icons/axolotl.png') -96px -24px",
       "helpLink": "https://grasshopperdocs.com/components/axolotl/isosurfaceDistancefield.html"
     },
     {
@@ -1687,7 +1767,7 @@
       "category": "7 Meshing",
       "summary": "Isosurface Distancefunction",
       "description": null,
-      "iconCss": "background: url('icons/axolotl.png') -72px -24px",
+      "iconCss": "background: url('icons/axolotl.png') -120px -24px",
       "helpLink": "https://grasshopperdocs.com/components/axolotl/isosurfaceDistancefunction.html"
     },
     {
@@ -1697,7 +1777,7 @@
       "category": "7 Meshing",
       "summary": "Isosurface Octree",
       "description": null,
-      "iconCss": "background: url('icons/axolotl.png') -48px -96px",
+      "iconCss": "background: url('icons/axolotl.png') 0px -120px",
       "helpLink": "https://grasshopperdocs.com/components/axolotl/isosurfaceOctree.html"
     },
     {
@@ -1707,7 +1787,7 @@
       "category": "7 Meshing",
       "summary": "Voxel Size",
       "description": null,
-      "iconCss": "background: url('icons/axolotl.png') -192px -96px",
+      "iconCss": "background: url('icons/axolotl.png') -144px -120px",
       "helpLink": "https://grasshopperdocs.com/components/axolotl/voxelSize.html"
     },
     {
@@ -1717,7 +1797,7 @@
       "category": "8 Analysis",
       "summary": "EvaluatePoints description",
       "description": null,
-      "iconCss": "background: url('icons/axolotl.png') -24px -24px",
+      "iconCss": "background: url('icons/axolotl.png') -72px -24px",
       "helpLink": "https://grasshopperdocs.com/components/axolotl/evaluatePoints.html"
     },
     {
@@ -1727,7 +1807,7 @@
       "category": "8 Analysis",
       "summary": "Gradient Vector",
       "description": null,
-      "iconCss": "background: url('icons/axolotl.png') -24px -96px",
+      "iconCss": "background: url('icons/axolotl.png') -216px -96px",
       "helpLink": "https://grasshopperdocs.com/components/axolotl/gradientVector.html"
     },
     {
@@ -1737,7 +1817,7 @@
       "category": "8 Analysis",
       "summary": "Slice2D",
       "description": null,
-      "iconCss": "background: url('icons/axolotl.png') -120px -96px",
+      "iconCss": "background: url('icons/axolotl.png') -72px -120px",
       "helpLink": "https://grasshopperdocs.com/components/axolotl/slice2D.html"
     },
     {
