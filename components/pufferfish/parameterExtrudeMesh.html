@@ -1204,18 +1204,6 @@ For best results {v} parameters should be between 0 and 1, in numerical order, a
 <tr><td><b>Angle V</b></td><td>vA</td><td>If Angle is not 0.0, extrusion direction curves mesh face divisions are defined by angle accuracy in degrees instead of the {v} parameters if a curve is used for the extrusion direction
 
 (useful for conforming mesh face divisions to the curvature of the extrusion direction curve)</td><td>Number</td></tr>
-<tr><td><b>Profile</b></td><td>P</td><td>Profile curve to extrude as mesh</td><td>Curve</td></tr>
-<tr><td><b>Direction</b></td><td>D</td><td>Extrusion direction vector, curve, or point</td><td>Generic</td></tr>
-<tr><td><b>Parameters U</b></td><td>u</td><td>Division parameters along profile curve {u} domain for mesh faces ({u}0.0 = Profile start, {u}1.0 = Profile end)</td><td>Number</td></tr>
-<tr><td><b>Parameters V</b></td><td>v</td><td>Division parameters along extrusion direction {v} domain for mesh faces ({v}0.0 = Extrusion start, {v}1.0 = Extrusion end)</td><td>Number</td></tr>
-<tr><td><b>Weighted</b></td><td>W</td><td>If True, parameters {u} distribution is weighted by the profile curves curvature</td><td>Boolean</td></tr>
-<tr><td><b>Lengths</b></td><td>L</td><td>If True, profile curves mesh face divisions are defined by the lengths between its control points instead of the {u} parameters</td><td>Boolean</td></tr>
-<tr><td><b>Angle</b></td><td>A</td><td>If Angle is not 0.0, profile curves mesh face divisions are defined by angle accuracy in degrees instead of the {u} parameters</td><td>Number</td></tr>
-<tr><td><b>Cap</b></td><td>C</td><td>Cap the open ends of a closed profile curve mesh extrusion</td><td>Boolean</td></tr>
-<tr><td><b>Triangulate</b></td><td>T</td><td>Triangulate the mesh faces</td><td>Boolean</td></tr>
-<tr><td><b>Weighted V</b></td><td>vW</td><td>If True, parameters {v} distribution is weighted by the extrusion direction curves curvature if a curve is used for the extrusion direction</td><td>Boolean</td></tr>
-<tr><td><b>Lengths V</b></td><td>vL</td><td>If True, extrusion direction curves mesh face divisions are defined by the lengths between its control points instead of the {v} parameters if a curve is used for the extrusion direction</td><td>Boolean</td></tr>
-<tr><td><b>Angle V</b></td><td>vA</td><td>If Angle is not 0.0, extrusion direction curves mesh face divisions are defined by angle accuracy in degrees instead of the {v} parameters if a curve is used for the extrusion direction</td><td>Number</td></tr>
 </tbody>
 </table>
 
@@ -1225,7 +1213,6 @@ For best results {v} parameters should be between 0 and 1, in numerical order, a
 <tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
 </thead>
 <tbody>
-<tr><td><b>Extruded</b></td><td>E</td><td>Resulting extrude mesh</td><td>Mesh</td></tr>
 <tr><td><b>Extruded</b></td><td>E</td><td>Resulting extrude mesh</td><td>Mesh</td></tr>
 </tbody>
 </table>

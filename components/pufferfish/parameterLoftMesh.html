@@ -1193,16 +1193,6 @@ For best results {v} parameters should be between 0 and 1, in numerical order, a
 <tr><td><b>Triangulate</b></td><td>T</td><td>Triangulate the mesh faces</td><td>Boolean</td></tr>
 <tr><td><b>Point Start</b></td><td>sP</td><td>Optional start point of the mesh loft (can also be used to cap the start of a mesh loft which has a closed start section curve)</td><td>Point</td></tr>
 <tr><td><b>Point End</b></td><td>eP</td><td>Optional end point of the mesh loft (can also be used to cap the end of a mesh loft which has a closed end section curve)</td><td>Point</td></tr>
-<tr><td><b>Sections</b></td><td>S</td><td>Set of section curves to loft through as mesh</td><td>Curve</td></tr>
-<tr><td><b>Parameters U</b></td><td>u</td><td>Division parameters along section curves {u} domain for mesh faces ({u}0.0 = Section start, {u}1.0 = Section end)</td><td>Number</td></tr>
-<tr><td><b>Parameters V</b></td><td>v</td><td>Division parameters between each section curve {v} domain for mesh faces ({v}0.0 = Section at S, {v}1.0 = Section at S +1)</td><td>Number</td></tr>
-<tr><td><b>Weighted</b></td><td>W</td><td>If True, parameters {u} distribution is weighted by the section curves curvatures</td><td>Boolean</td></tr>
-<tr><td><b>Lengths</b></td><td>L</td><td>If True, section curves mesh face divisions are defined by the lengths between their control points instead of the {u} parameters</td><td>Boolean</td></tr>
-<tr><td><b>Angle</b></td><td>A</td><td>If Angle is not 0.0, section curves mesh face divisions are defined by their angle accuracy in degrees instead of the {u} parameters</td><td>Number</td></tr>
-<tr><td><b>Closed</b></td><td>C</td><td>Closed loft, if true the last section curve will loft back to the first section curve (or to the optional start or end point)</td><td>Boolean</td></tr>
-<tr><td><b>Triangulate</b></td><td>T</td><td>Triangulate the mesh faces</td><td>Boolean</td></tr>
-<tr><td><b>Point Start</b></td><td>sP</td><td>Optional start point of the mesh loft (can also be used to cap the start of a mesh loft which has a closed start section curve)</td><td>Point</td></tr>
-<tr><td><b>Point End</b></td><td>eP</td><td>Optional end point of the mesh loft (can also be used to cap the end of a mesh loft which has a closed end section curve)</td><td>Point</td></tr>
 </tbody>
 </table>
 
@@ -1212,7 +1202,6 @@ For best results {v} parameters should be between 0 and 1, in numerical order, a
 <tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
 </thead>
 <tbody>
-<tr><td><b>Lofted</b></td><td>L</td><td>Resulting loft mesh</td><td>Mesh</td></tr>
 <tr><td><b>Lofted</b></td><td>L</td><td>Resulting loft mesh</td><td>Mesh</td></tr>
 </tbody>
 </table>

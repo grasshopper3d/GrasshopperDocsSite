@@ -1183,9 +1183,6 @@ Vector
 2 = Tight
 3 = Uniform
 4 = Straight</td><td>Integer</td></tr>
-<tr><td><b>Sections</b></td><td>S</td><td>Set of section curves or surfaces to loft through</td><td>Curve</td></tr>
-<tr><td><b>Closed</b></td><td>C</td><td>Closed loft, if true the last section curve will loft back to the first section curve</td><td>Boolean</td></tr>
-<tr><td><b>Loft Type</b></td><td>T</td><td>Determines how the section curves are lofted</td><td>Integer</td></tr>
 </tbody>
 </table>
 
@@ -1198,7 +1195,6 @@ Vector
 <tr><td><b>Unsplit</b></td><td>U</td><td>Resulting untrimmed single unsplit lofted surface
 
 When you bake this surface into Rhino it will become a usual polysurface(Brep) which is split at its kinks if it has kinks, unless you first run the command CreaseSplitting in Rhino's command line and turn it off by switching it to No. If this surface has kinks you can turn it into a polysurface(Brep) using Pufferfish's Split Kinky Surface component.</td><td>Surface</td></tr>
-<tr><td><b>Unsplit</b></td><td>U</td><td>Resulting untrimmed single unsplit lofted surface</td><td>Surface</td></tr>
 </tbody>
 </table>
 

@@ -1189,15 +1189,6 @@ Vector
 3 = Tight
 4 = None</td><td>Integer</td></tr>
 <tr><td><b>Bulge</b></td><td>B</td><td>Bulge factor for the mirror cut polysurface(Brep) or surface connections (-B = Negative Bulge, 0.0 = No Bulge, +B = Positive Bulge)</td><td>Number</td></tr>
-<tr><td><b>Polysurface</b></td><td>Ps</td><td>Polysurface(Brep) or surface to mirror cut</td><td>Brep</td></tr>
-<tr><td><b>Mirror Plane</b></td><td>MP</td><td>Plane that the kept side of the polysurface(Brep) or surface cut gets mirrored across</td><td>Plane</td></tr>
-<tr><td><b>Reach</b></td><td>R</td><td>Parts of the polysurface(Brep) or surface within this distance from the mirror plane will be additionally cut away</td><td>Number</td></tr>
-<tr><td><b>Offset</b></td><td>O</td><td>Distance to offset the kept parts of the polysurface(Brep) or surface from the mirror plane (or offset from the reach if reach in not zero)</td><td>Number</td></tr>
-<tr><td><b>Flip</b></td><td>F</td><td>Flip the mirror direction</td><td>Boolean</td></tr>
-<tr><td><b>Join</b></td><td>J</td><td>Join the mirror cut polysurface(Brep) or surface</td><td>Boolean</td></tr>
-<tr><td><b>Keep</b></td><td>K</td><td>Keep the polysurface(Brep) or surface and mirror it normally if it is mirror cut into non-existence</td><td>Boolean</td></tr>
-<tr><td><b>Connection Type</b></td><td>T</td><td>Determines how the mirror cut polysurfaces(Breps) or surfaces are connected</td><td>Integer</td></tr>
-<tr><td><b>Bulge</b></td><td>B</td><td>Bulge factor for the mirror cut polysurface(Brep) or surface connections (-B = Negative Bulge, 0.0 = No Bulge, +B = Positive Bulge)</td><td>Number</td></tr>
 </tbody>
 </table>
 
@@ -1211,11 +1202,6 @@ Vector
 <tr><td><b>Split Index</b></td><td>i</td><td>The splitting index (only if Join is false)
 
 To split the mirror cut polysurface(Brep) or surface set at the mirror use this as the index input on Grasshopper's Split List component.</td><td>Integer</td></tr>
-<tr><td><b>Reach Plane</b></td><td>RP</td><td>The plane at the reach distance</td><td>Plane</td></tr>
-<tr><td><b>Offset Plane</b></td><td>OP</td><td>The plane at the offset distance</td><td>Plane</td></tr>
-<tr><td><b>Intersected</b></td><td>I</td><td>True if the polysurface(Brep) or surface was intersected by the mirror cut, False if the polysurface(Brep) or surface was not intersected by the mirror cut</td><td>Boolean</td></tr>
-<tr><td><b>Mirror Cut</b></td><td>M</td><td>Resulting mirror cut polysurfaces(Breps) or surfaces</td><td>Brep</td></tr>
-<tr><td><b>Split Index</b></td><td>i</td><td>The splitting index (only if Join is false)</td><td>Integer</td></tr>
 <tr><td><b>Reach Plane</b></td><td>RP</td><td>The plane at the reach distance</td><td>Plane</td></tr>
 <tr><td><b>Offset Plane</b></td><td>OP</td><td>The plane at the offset distance</td><td>Plane</td></tr>
 <tr><td><b>Intersected</b></td><td>I</td><td>True if the polysurface(Brep) or surface was intersected by the mirror cut, False if the polysurface(Brep) or surface was not intersected by the mirror cut</td><td>Boolean</td></tr>

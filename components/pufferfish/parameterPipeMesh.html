@@ -1190,22 +1190,11 @@ For best results {v} parameters should be between 0 and 1, in numerical order, a
 <tr><td><b>Angle</b></td><td>A</td><td>If Angle is not 0.0, the curves mesh face divisions are defined by angle accuracy in degrees instead of the {u} parameters
 
 (useful for conforming mesh face divisions to the curvature of the curve)</td><td>Number</td></tr>
-<tr><td><b>Rotation</b></td><td>R</td><td>Rotation of the pipe mesh radius around the curve, in degrees</td><td>Number</td></tr>
 <tr><td><b>End Type</b></td><td>E</td><td>Determines how to end the pipe mesh
 
 0 = None
 1 = Flat
 2 = Round</td><td>Integer</td></tr>
-<tr><td><b>Triangulate</b></td><td>T</td><td>Triangulate the mesh faces</td><td>Boolean</td></tr>
-<tr><td><b>Curve</b></td><td>C</td><td>Curve to create pipe along as mesh</td><td>Curve</td></tr>
-<tr><td><b>Radius</b></td><td>R</td><td>Radius of the pipe mesh</td><td>Number</td></tr>
-<tr><td><b>Parameters U</b></td><td>u</td><td>Division parameters along the curves {u} domain for mesh faces ({u}0.0 = Curve start, {u}1.0 = Curve end)</td><td>Number</td></tr>
-<tr><td><b>Parameters V</b></td><td>v</td><td>Division parameters around the curve {v} domain for mesh faces ({v}0.0 = Revolve min, {v}1.0 = Revolve max)</td><td>Number</td></tr>
-<tr><td><b>Weighted</b></td><td>W</td><td>If True, parameters {u} distribution is weighted by the curves curvatures</td><td>Boolean</td></tr>
-<tr><td><b>Lengths</b></td><td>L</td><td>If True, the curves mesh face divisions are defined by the lengths between its control points instead of the {u} parameters</td><td>Boolean</td></tr>
-<tr><td><b>Angle</b></td><td>A</td><td>If Angle is not 0.0, the curves mesh face divisions are defined by angle accuracy in degrees instead of the {u} parameters</td><td>Number</td></tr>
-<tr><td><b>Rotation</b></td><td>R</td><td>Rotation of the pipe mesh radius around the curve, in degrees</td><td>Number</td></tr>
-<tr><td><b>End Type</b></td><td>E</td><td>Determines how to end the pipe mesh</td><td>Integer</td></tr>
 <tr><td><b>Triangulate</b></td><td>T</td><td>Triangulate the mesh faces</td><td>Boolean</td></tr>
 </tbody>
 </table>
@@ -1216,7 +1205,6 @@ For best results {v} parameters should be between 0 and 1, in numerical order, a
 <tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
 </thead>
 <tbody>
-<tr><td><b>Piped</b></td><td>P</td><td>Resulting pipe mesh</td><td>Mesh</td></tr>
 <tr><td><b>Piped</b></td><td>P</td><td>Resulting pipe mesh</td><td>Mesh</td></tr>
 </tbody>
 </table>

@@ -1200,15 +1200,6 @@ If an integer greater than zero, Refit match method is used if possible. When in
 (No Integer or 0 = Off, Integer greater than 0 = On and amount of sample points) 
 
 If an integer greater than zero, Point Sample match method is used. When input surfaces are sampled their control points are recreated by equally dividing the surface by the input integer point count. Point Sample results in looser shaped tweens, with uniform control point distribution.</td><td>Integer</td></tr>
-<tr><td><b>Surfaces</b></td><td>S</td><td>Set of surfaces to tween through</td><td>Surface</td></tr>
-<tr><td><b>Factor</b></td><td>F</td><td>Tween factor (0.0 = Surface at S start, 1.0 = Surface at S end), unless Normalized is False</td><td>Number</td></tr>
-<tr><td><b>Normalized</b></td><td>N</td><td>If False, the rules for factor are (0.0 = Surface at index 0, Index number of last surface = Surface at last index)</td><td>Boolean</td></tr>
-<tr><td><b>Equalized</b></td><td>E</td><td>If True, tween distribution is evaluated along the tween path without considering the locations of the input surface set</td><td>Boolean</td></tr>
-<tr><td><b>Weighted</b></td><td>W</td><td>If True, tween distribution is weighted by the input surface set and the tween path curvature</td><td>Boolean</td></tr>
-<tr><td><b>Degree</b></td><td>D</td><td>Curvature degree of the tween path, degree should be a positive odd number</td><td>Integer</td></tr>
-<tr><td><b>Interpolation Type</b></td><td>I</td><td>Determines how the tween path is interpolated</td><td>Integer</td></tr>
-<tr><td><b>Refit</b></td><td>R</td><td>Optional Refit match method.</td><td>Integer</td></tr>
-<tr><td><b>Point Sample</b></td><td>P</td><td>Optional Point Sample match method.</td><td>Integer</td></tr>
 </tbody>
 </table>
 
@@ -1218,7 +1209,6 @@ If an integer greater than zero, Point Sample match method is used. When input s
 <tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
 </thead>
 <tbody>
-<tr><td><b>Tween</b></td><td>T</td><td>Resulting tween surface</td><td>Surface</td></tr>
 <tr><td><b>Tween</b></td><td>T</td><td>Resulting tween surface</td><td>Surface</td></tr>
 </tbody>
 </table>

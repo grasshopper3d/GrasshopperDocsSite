@@ -1193,17 +1193,6 @@ Vector
 <tr><td><b>Divisions</b></td><td>D</td><td>Number of mesh faces per side of the mesh connection</td><td>Integer</td></tr>
 <tr><td><b>Weld Vertices</b></td><td>W</td><td>Weld mesh vertices that are within a specified proximity of eachother
 (0.0 = No weld, Number greater than 0 = Weld vertices within proximity of the number)</td><td>Number</td></tr>
-<tr><td><b>Mesh</b></td><td>M</td><td>Mesh to mirror cut</td><td>Mesh</td></tr>
-<tr><td><b>Mirror Plane</b></td><td>MP</td><td>Plane that the kept side of the mesh cut gets mirrored across</td><td>Plane</td></tr>
-<tr><td><b>Reach</b></td><td>R</td><td>Parts of the mesh within this distance from the mirror plane will be additionally cut away</td><td>Number</td></tr>
-<tr><td><b>Offset</b></td><td>O</td><td>Distance to offset the kept parts of the mesh from the mirror plane (or offset from the reach if reach in not zero)</td><td>Number</td></tr>
-<tr><td><b>Flip</b></td><td>F</td><td>Flip the mirror direction</td><td>Boolean</td></tr>
-<tr><td><b>Join</b></td><td>J</td><td>Join the mirror cut mesh</td><td>Boolean</td></tr>
-<tr><td><b>Keep</b></td><td>K</td><td>Keep the mesh and mirror it normally if it is mirror cut into non-existence</td><td>Boolean</td></tr>
-<tr><td><b>Connection Type</b></td><td>T</td><td>Determines how the mirror cut meshes are connected</td><td>Integer</td></tr>
-<tr><td><b>Bulge</b></td><td>B</td><td>Bulge factor for the mirror cut mesh connections (-B = Negative Bulge, 0.0 = No Bulge, +B = Positive Bulge)</td><td>Number</td></tr>
-<tr><td><b>Divisions</b></td><td>D</td><td>Number of mesh faces per side of the mesh connection</td><td>Integer</td></tr>
-<tr><td><b>Weld Vertices</b></td><td>W</td><td>Weld mesh vertices that are within a specified proximity of eachother</td><td>Number</td></tr>
 </tbody>
 </table>
 
@@ -1217,11 +1206,6 @@ Vector
 <tr><td><b>Split Index</b></td><td>i</td><td>The splitting index (only if Join is false)
 
 To split the mirror cut mesh set at the mirror use this as the index input on Grasshopper's Split List component.</td><td>Integer</td></tr>
-<tr><td><b>Reach Plane</b></td><td>RP</td><td>The plane at the reach distance</td><td>Plane</td></tr>
-<tr><td><b>Offset Plane</b></td><td>OP</td><td>The plane at the offset distance</td><td>Plane</td></tr>
-<tr><td><b>Intersected</b></td><td>I</td><td>True if the mesh was intersected by the mirror cut, False if the mesh was not intersected by the mirror cut</td><td>Boolean</td></tr>
-<tr><td><b>Mirror Cut</b></td><td>M</td><td>Resulting mirror cut meshes</td><td>Mesh</td></tr>
-<tr><td><b>Split Index</b></td><td>i</td><td>The splitting index (only if Join is false)</td><td>Integer</td></tr>
 <tr><td><b>Reach Plane</b></td><td>RP</td><td>The plane at the reach distance</td><td>Plane</td></tr>
 <tr><td><b>Offset Plane</b></td><td>OP</td><td>The plane at the offset distance</td><td>Plane</td></tr>
 <tr><td><b>Intersected</b></td><td>I</td><td>True if the mesh was intersected by the mirror cut, False if the mesh was not intersected by the mirror cut</td><td>Boolean</td></tr>
