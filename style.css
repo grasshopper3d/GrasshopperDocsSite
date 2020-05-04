@@ -1037,6 +1037,45 @@ img.ghicon {
 
 
 
+/* VERIFIED */
+.verified-tick {
+	display: inline-block;
+	background: transparent url("images/tick.png") no-repeat scroll center;
+	text-wrap: none;
+}
+.addon-header .verified-tick {
+	margin-left: 5px;
+	width: 22px;
+	height: 22px;
+}
+.libheadercell .verified-tick {
+	margin-left: 5px;
+	width: 16px;
+	height: 16px;
+	background-size: contain;
+}
+.libheadercell a:hover .verified-tick {
+    filter: brightness(1000%);
+}
+
+
+/* ADS */
+.google-ad-sidebar {
+	float: right;
+	display: block;
+	width: 300px;
+	height: 600px;
+	background-color: #efeccd;
+	margin-left: 50px;
+	margin-top: 30px;
+	clear: right;
+}
+
+
+
+
+
+
 /* MOBILE FRIENDLY - LANDSCAPE */
 @media screen and (max-width: 1000px) and (min-width: 601px) {
 	
@@ -1052,6 +1091,10 @@ img.ghicon {
 		margin: 5px;
 	}
 	
+	/* MOBILE DISPLAY OF ADS */
+	.google-ad-sidebar {
+		height: 300px;
+	}
 }
 
 /* MOBILE FRIENDLY - PORTRAIT */
@@ -1163,26 +1206,9 @@ img.ghicon {
 	.libtable td {
 		padding: 0;
 	}
-}
-
-
-/* VERIFIED */
-.verified-tick {
-	display: inline-block;
-	background: transparent url("images/tick.png") no-repeat scroll center;
-	text-wrap: none;
-}
-.addon-header .verified-tick {
-	margin-left: 5px;
-	width: 22px;
-	height: 22px;
-}
-.libheadercell .verified-tick {
-	margin-left: 5px;
-	width: 16px;
-	height: 16px;
-	background-size: contain;
-}
-.libheadercell a:hover .verified-tick {
-    filter: brightness(1000%);
+	
+	/* MOBILE DISPLAY OF ADS */
+	.google-ad-sidebar {
+		display: none;
+	}
 }
