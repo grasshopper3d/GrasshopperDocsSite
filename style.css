@@ -1061,14 +1061,15 @@ img.ghicon {
 
 /* ADS */
 .google-ad-sidebar {
-	float: right;
+	display: hidden;
+	/*float: right;
 	display: block;
 	width: 300px;
 	height: 300px;
 	background-color: #efeccd;
 	margin-left: 50px;
 	margin-top: 30px;
-	clear: right;
+	clear: right;*/
 }
 
 
@@ -1092,9 +1093,9 @@ img.ghicon {
 	}
 	
 	/* MOBILE DISPLAY OF ADS */
-	.google-ad-sidebar {
+	/*.google-ad-sidebar {
 		height: 300px;
-	}
+	}*/
 }
 
 /* MOBILE FRIENDLY - PORTRAIT */
@@ -1208,7 +1209,7 @@ img.ghicon {
 	}
 	
 	/* MOBILE DISPLAY OF ADS */
-	.google-ad-sidebar {
+	/*.google-ad-sidebar {
 		display: none;
-	}
+	}*/
 }
