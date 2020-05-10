@@ -1,0 +1,342 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Show Assoc - Pancake - Component for Grasshopper | Grasshopper Docs</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+
+<meta name="description" content="When clicked, the button object only raises recomputation one time." />
+<meta name="title" content="Show Assoc - Pancake - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:title" content="Show Assoc - Pancake - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://grasshopperdocs.com/components/pancake/showAssoc.html" />
+<meta property="og:site_name" content="Grasshopper Docs" />
+
+<link href="../../style.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+
+
+</head>
+<body>
+
+
+<div id="docs">
+<div id="docs-head">
+<div id="docs-masthead">
+<p id="docs-sitename"><a href="http://grasshopperdocs.com/"><img src="../../images/logo.png" alt="Grasshopper Docs" onerror="this.style.display='none'"></img></a></p>
+<p id="docs-sitedesc">Community documentation for Grasshopper add-ons &amp; plugins</p>
+</div>
+</div>
+
+<div id="docs-body">
+
+<div class="page">
+
+<div class="content compo-page">
+
+<div class="ghbar ">
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pancake/importAMF.html"><div class="ghsprite" style="background: url('../../icons/pancake.png') -192px -24px" data-toptip="Import AMF"></div></a>
+<a href="../../components/pancake/importSVG.html"><div class="ghsprite" style="background: url('../../icons/pancake.png') -216px -24px" data-downtip="Import SVG"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pancake/deserialize.html"><div class="ghsprite" style="background: url('../../icons/pancake.png') 0px -48px" data-toptip="Deserialize"></div></a>
+<a href="../../components/pancake/importTXT.html"><div class="ghsprite" style="background: url('../../icons/pancake.png') -24px -48px" data-downtip="Import TXT"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pancake/parseString.html"><div class="ghsprite" style="background: url('../../icons/pancake.png') -48px -48px" data-toptip="Parse String"></div></a>
+<a href="../../components/pancake/importOBJ.html"><div class="ghsprite" style="background: url('../../icons/pancake.png') -72px -48px" data-downtip="Import OBJ"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pancake/importFrom.html"><div class="ghsprite" style="background: url('../../icons/pancake.png') -96px -48px" data-toptip="Import From"></div></a>
+<a href="../../components/pancake/importToDocument.html"><div class="ghsprite" style="background: url('../../icons/pancake.png') -120px -48px" data-downtip="Import To Document"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="4">
+01 | Input
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pancake/export3DM.html"><div class="ghsprite" style="background: url('../../icons/pancake.png') 0px 0px" data-toptip="Export 3DM"></div></a>
+<a href="../../components/pancake/exportTXT.html"><div class="ghsprite" style="background: url('../../icons/pancake.png') -24px 0px" data-downtip="Export TXT"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pancake/exportIGES.html"><div class="ghsprite" style="background: url('../../icons/pancake.png') -48px 0px" data-toptip="Export IGES"></div></a>
+<a href="../../components/pancake/definitionPath.html"><div class="ghsprite" style="background: url('../../icons/pancake.png') -72px 0px" data-downtip="Definition Path"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pancake/fBXExportOption.html"><div class="ghsprite" style="background: url('../../icons/pancake.png') -96px 0px" data-toptip="FBX Export Option"></div></a>
+<a href="../../components/pancake/exportSTL.html"><div class="ghsprite" style="background: url('../../icons/pancake.png') -120px 0px" data-downtip="Export STL"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pancake/iGESExportOption.html"><div class="ghsprite" style="background: url('../../icons/pancake.png') -144px 0px" data-toptip="IGES Export Option"></div></a>
+<a href="../../components/pancake/autoCADExportOption.html"><div class="ghsprite" style="background: url('../../icons/pancake.png') -168px 0px" data-downtip="AutoCAD Export Option"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pancake/serialize.html"><div class="ghsprite" style="background: url('../../icons/pancake.png') -192px 0px" data-toptip="Serialize"></div></a>
+<a href="../../components/pancake/exportKMZ.html"><div class="ghsprite" style="background: url('../../icons/pancake.png') -216px 0px" data-downtip="Export KMZ"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pancake/exportDAE.html"><div class="ghsprite" style="background: url('../../icons/pancake.png') 0px -24px" data-toptip="Export DAE"></div></a>
+<a href="../../components/pancake/dXFExportOption.html"><div class="ghsprite" style="background: url('../../icons/pancake.png') -24px -24px" data-downtip="DXF Export Option"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pancake/rhinoExportOption.html"><div class="ghsprite" style="background: url('../../icons/pancake.png') -48px -24px" data-toptip="Rhino Export Option"></div></a>
+<a href="../../components/pancake/sketchUpExportOption.html"><div class="ghsprite" style="background: url('../../icons/pancake.png') -72px -24px" data-downtip="SketchUp Export Option"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pancake/sATExportOption.html"><div class="ghsprite" style="background: url('../../icons/pancake.png') -96px -24px" data-toptip="SAT Export Option"></div></a>
+<a href="../../components/pancake/exportAs.html"><div class="ghsprite" style="background: url('../../icons/pancake.png') -120px -24px" data-downtip="Export As"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pancake/sTEPExportOption.html"><div class="ghsprite" style="background: url('../../icons/pancake.png') -144px -24px" data-toptip="STEP Export Option"></div></a>
+<a href="../../components/pancake/filepathSeries.html"><div class="ghsprite" style="background: url('../../icons/pancake.png') -168px -24px" data-downtip="Filepath Series"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="9">
+02 | Output
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pancake/toDecimalLength.html"><div class="ghsprite" style="background: url('../../icons/pancake.png') -192px -96px" data-toptip="To Decimal Length"></div></a>
+<a href="../../components/pancake/constructQuantity.html"><div class="ghsprite" style="background: url('../../icons/pancake.png') -216px -96px" data-downtip="Construct Quantity"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pancake/quantityOperator.html"><div class="ghsprite" style="background: url('../../icons/pancake.png') 0px -120px" data-toptip="Quantity Operator"></div></a>
+<a href="../../components/pancake/nullValues.html"><div class="ghsprite" style="background: url('../../icons/pancake.png') -24px -120px" data-downtip="Null Values"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pancake/toFeetInchLength.html"><div class="ghsprite" style="background: url('../../icons/pancake.png') -48px -120px" data-toptip="To Feet &amp; Inch Length"></div></a>
+<a href="../../components/pancake/quantity.html"><div class="ghsprite" style="background: url('../../icons/pancake.png') -72px -120px" data-downtip="Quantity"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pancake/deconstructQuantity.html"><div class="ghsprite" style="background: url('../../icons/pancake.png') -96px -120px" data-toptip="Deconstruct Quantity"></div></a>
+<a href="../../components/pancake/deconstructFeetInchLength.html"><div class="ghsprite" style="background: url('../../icons/pancake.png') -120px -120px" data-downtip="Deconstruct Feet-Inch Length"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pancake/setPrecision.html"><div class="ghsprite" style="background: url('../../icons/pancake.png') -144px -120px" data-toptip="Set Precision"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="5">
+03 | Quantity
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pancake/unwrapList.html"><div class="ghsprite" style="background: url('../../icons/pancake.png') -144px -48px" data-toptip="Unwrap List"></div></a>
+<a href="../../components/pancake/multiSort.html"><div class="ghsprite" style="background: url('../../icons/pancake.png') -168px -48px" data-downtip="Multi Sort"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pancake/keyvaluesToAssoc.html"><div class="ghsprite" style="background: url('../../icons/pancake.png') -192px -48px" data-toptip="Key-values to Assoc"></div></a>
+<a href="../../components/pancake/deconstructAssoc.html"><div class="ghsprite" style="background: url('../../icons/pancake.png') -216px -48px" data-downtip="Deconstruct Assoc"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pancake/wrapList.html"><div class="ghsprite" style="background: url('../../icons/pancake.png') 0px -72px" data-toptip="Wrap List"></div></a>
+<a href="../../components/pancake/assocToKeyvalues.html"><div class="ghsprite" style="background: url('../../icons/pancake.png') -24px -72px" data-downtip="Assoc to Key-values"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pancake/mergeAssoc.html"><div class="ghsprite" style="background: url('../../icons/pancake.png') -48px -72px" data-toptip="Merge Assoc"></div></a>
+<a href="../../components/pancake/constructAssoc.html"><div class="ghsprite" style="background: url('../../icons/pancake.png') -72px -72px" data-downtip="Construct Assoc"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pancake/assocToXML.html"><div class="ghsprite" style="background: url('../../icons/pancake.png') -96px -72px" data-toptip="Assoc to XML"></div></a>
+<a href="../../components/pancake/assocToString.html"><div class="ghsprite" style="background: url('../../icons/pancake.png') -120px -72px" data-downtip="Assoc to String"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pancake/getMetadata.html"><div class="ghsprite" style="background: url('../../icons/pancake.png') -144px -72px" data-toptip="Get Metadata"></div></a>
+<a href="../../components/pancake/shuffle.html"><div class="ghsprite" style="background: url('../../icons/pancake.png') -168px -72px" data-downtip="Shuffle"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pancake/categorizeByIndex.html"><div class="ghsprite" style="background: url('../../icons/pancake.png') -192px -72px" data-toptip="Categorize By Index"></div></a>
+<a href="../../components/pancake/categorize.html"><div class="ghsprite" style="background: url('../../icons/pancake.png') -216px -72px" data-downtip="Categorize"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pancake/countUnique.html"><div class="ghsprite" style="background: url('../../icons/pancake.png') 0px -96px" data-toptip="Count Unique"></div></a>
+<a href="../../components/pancake/cSVToAssoc.html"><div class="ghsprite" style="background: url('../../icons/pancake.png') -24px -96px" data-downtip="CSV to Assoc"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pancake/setMetadata.html"><div class="ghsprite" style="background: url('../../icons/pancake.png') -48px -96px" data-toptip="Set Metadata"></div></a>
+<a href="../../components/pancake/setPrincipleValue.html"><div class="ghsprite" style="background: url('../../icons/pancake.png') -72px -96px" data-downtip="Set Principle Value"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pancake/extractFromAssoc.html"><div class="ghsprite" style="background: url('../../icons/pancake.png') -96px -96px" data-toptip="Extract from Assoc"></div></a>
+<a href="../../components/pancake/assocToDatatable.html"><div class="ghsprite" style="background: url('../../icons/pancake.png') -120px -96px" data-downtip="Assoc to Datatable"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pancake/assocToCSV.html"><div class="ghsprite" style="background: url('../../icons/pancake.png') -144px -96px" data-toptip="Assoc To CSV"></div></a>
+<a href="../../components/pancake/xMLToAssoc.html"><div class="ghsprite" style="background: url('../../icons/pancake.png') -168px -96px" data-downtip="XML to Assoc"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="11">
+04 | Data Organization
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pancake/waitUntil.html"><div class="ghsprite" style="background: url('../../icons/pancake.png') -168px -120px" data-toptip="Wait Until"></div></a>
+<a href="../../components/pancake/maintainVisualAppearance.html"><div class="ghsprite" style="background: url('../../icons/pancake.png') -192px -120px" data-downtip="Maintain Visual Appearance"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pancake/showAssoc.html"><div class="ghsprite" style="background: url('../../icons/pancake.png') -216px -120px" data-toptip="Show Assoc"></div></a>
+<a href="../../components/pancake/defaultValue.html"><div class="ghsprite" style="background: url('../../icons/pancake.png') 0px -144px" data-downtip="Default Value"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/pancake/trueOnlyButton.html"><div class="ghsprite" style="background: url('../../icons/pancake.png') -24px -144px" data-toptip="True Only Button"></div></a>
+<a href="../../components/pancake/currentLayer.html"><div class="ghsprite" style="background: url('../../icons/pancake.png') -48px -144px" data-downtip="Current Layer"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+05 | Flow
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+
+<div class="addon-buttons">
+<a href="https://www.food4rhino.com/app/pancake">Download</a>
+
+</div>
+
+
+
+<div class="compo-header">
+<h1><div class="ghsprite" style="background: url('../../icons/pancake.png') -216px -120px" ></div> Show Assoc</h1>
+
+<div class="breadcrumb">
+ <a href="../../index.html">Component Index</a>
+  <a href="../../addons/pancake.html">Pancake</a><a href="#" class="breadcrumb-nolink">05 | Flow</a><a href="#" class="breadcrumb-nolink">ShowAssoc</a>
+</div>
+
+</div>
+<h3>When clicked, the button object only raises recomputation one time.</h3>
+
+</div>
+
+</div>
+
+</div>
+<div id="docs-foot">
+<p class="left">
+Site design © <a href="https://github.com/robinrodricks/">Robin Rodricks</a>. &nbsp;
+Co-created by <a href="http://andrewheumann.com/">Andrew Heumann</a>. &nbsp;
+Pancake and associated data © 2020  <a href="https://www.food4rhino.com/app/pancake">Keyu Gan</a>. &nbsp;
+<br>
+Rhinoceros and Grasshopper are registered trademarks of <a href="https://www.rhino3d.com/">Robert McNeel & Associates</a>.&nbsp;
+Hosted by <a href="http://www.github.com/">GitHub</a> 
+</p>
+<p class="right docs-lightfont">
+
+<a href="https://github.com/grasshopper3d/GrasshopperDocsSite/issues/new">Report an Issue</a> &nbsp;|&nbsp;
+<a href="/termsOfService.html">Terms of Service</a>
+</p>
+
+</div>
+</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    </body>
+</html>
