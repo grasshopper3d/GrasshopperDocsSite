@@ -50291,6 +50291,96 @@
       "helpLink": "https://grasshopperdocs.com/components/shapediver/textCurves.html"
     },
     {
+      "name": "Curve",
+      "id": "shrimp_curve",
+      "library": "ShrimpGIS",
+      "category": "0 || Settings",
+      "summary": "Construct a ShrimpGIS Curve.",
+      "description": null,
+      "iconCss": "background: url('icons/shrimpGIS.png') -48px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/shrimpgis/curve.html"
+    },
+    {
+      "name": "Field",
+      "id": "shrimp_field",
+      "library": "ShrimpGIS",
+      "category": "0 || Settings",
+      "summary": "Construct a ShrimpGIS Field.<br>-<br>Try to export data from other plugin, such as Ladybug and Gismo!",
+      "description": null,
+      "iconCss": "background: url('icons/shrimpGIS.png') -24px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/shrimpgis/field.html"
+    },
+    {
+      "name": "Location",
+      "id": "shrimp_location",
+      "library": "ShrimpGIS",
+      "category": "0 || Settings",
+      "summary": "Construct a ShrimpGIS Location.",
+      "description": null,
+      "iconCss": "background: url('icons/shrimpGIS.png') -96px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/shrimpgis/location.html"
+    },
+    {
+      "name": "Mesh",
+      "id": "shrimp_mesh",
+      "library": "ShrimpGIS",
+      "category": "0 || Settings",
+      "summary": "Construct a ShrimpGIS Mesh.<br>-<br>If you connect complex meshes exportation will look not really perfect.",
+      "description": null,
+      "iconCss": "background: url('icons/shrimpGIS.png') -120px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/shrimpgis/mesh.html"
+    },
+    {
+      "name": "Point",
+      "id": "shrimp_point",
+      "library": "ShrimpGIS",
+      "category": "0 || Settings",
+      "summary": "Construct a ShrimpGIS Point.",
+      "description": null,
+      "iconCss": "background: url('icons/shrimpGIS.png') -72px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/shrimpgis/point.html"
+    },
+    {
+      "name": "Polygon",
+      "id": "shrimp_polygon",
+      "library": "ShrimpGIS",
+      "category": "0 || Settings",
+      "summary": "Construct a ShrimpGIS Polygon.",
+      "description": null,
+      "iconCss": "background: url('icons/shrimpGIS.png') 0px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/shrimpgis/polygon.html"
+    },
+    {
+      "name": "Decompose Field",
+      "id": "shrimp_dec_field",
+      "library": "ShrimpGIS",
+      "category": "1 || IO",
+      "summary": "Use this component to decompose ShrimpGIS Field and extract values.",
+      "description": null,
+      "iconCss": "background: url('icons/shrimpGIS.png') -168px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/shrimpgis/decomposeField.html"
+    },
+    {
+      "name": "Read Shp",
+      "id": "shrimp_read_shp",
+      "library": "ShrimpGIS",
+      "category": "1 || IO",
+      "summary": "Use this component to read shapefiles",
+      "description": "Use this component to read shapefiles.<br>-<br>Supported shapefile types are:<br>    1) POINT<br>    2) POLYLINE<br>    3) POLYGON<br>    4) POINTZ (without z values)<br>    5) POLYLINEZ (without z values)<br>    6) POLYGONZ (without z values)<br>-<br>Remark: Only WGS84 (EPSG:4326) reference system is supported.<br>If your shp use another coordinate system you have to reproject it using a GIS software (e.g. QGIS).",
+      "iconCss": "background: url('icons/shrimpGIS.png') -144px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/shrimpgis/readShp.html"
+    },
+    {
+      "name": "Write Shp",
+      "id": "shrimp_write_shp",
+      "library": "ShrimpGIS",
+      "category": "1 || IO",
+      "summary": "It writes ESRI Shapefiles WGS84.",
+      "description": null,
+      "iconCss": "background: url('icons/shrimpGIS.png') -192px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/shrimpgis/writeShp.html"
+    },
+    {
       "name": "Panel Bay",
       "id": "Panel Bay",
       "library": "SkinDesigner",
