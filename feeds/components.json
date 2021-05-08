@@ -36251,6 +36251,326 @@
       "helpLink": "https://grasshopperdocs.com/components/minsurf/minimalSurfaceMesh.html"
     },
     {
+      "name": "Monoceros WFC Solver",
+      "id": "WFC",
+      "library": "Monoceros",
+      "category": "Main",
+      "summary": "Monoceros Solver for the Wave Function Collapse",
+      "description": null,
+      "iconCss": "background: url('icons/monoceros.png') 0px -72px",
+      "helpLink": "https://grasshopperdocs.com/components/monoceros/monocerosWFCSolver.html"
+    },
+    {
+      "name": "Construct Empty Module",
+      "id": "ModuleEmpty",
+      "library": "Monoceros",
+      "category": "Module",
+      "summary": "Construct an empty Monoceros Module.",
+      "description": null,
+      "iconCss": "background: url('icons/monoceros.png') -144px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/monoceros/constructEmptyModule.html"
+    },
+    {
+      "name": "Construct Module",
+      "id": "ConstModule",
+      "library": "Monoceros",
+      "category": "Module",
+      "summary": "Construct a Monoceros Module from Slot centers. The specified production geometry will be used in Monoceros Solver result.",
+      "description": null,
+      "iconCss": "background: url('icons/monoceros.png') -96px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/monoceros/constructModule.html"
+    },
+    {
+      "name": "Deconstruct Module",
+      "id": "DeconModule",
+      "library": "Monoceros",
+      "category": "Module",
+      "summary": "Deconstruct Monoceros Module into name, base plane, Connector planes, Connector numbers and properties.",
+      "description": null,
+      "iconCss": "background: url('icons/monoceros.png') -120px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/monoceros/deconstructModule.html"
+    },
+    {
+      "name": "Assemble Rule",
+      "id": "AssembleRule",
+      "library": "Monoceros",
+      "category": "Postprocess",
+      "summary": "Materialize Monoceros Rule.",
+      "description": null,
+      "iconCss": "background: url('icons/monoceros.png') -48px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/monoceros/assembleRule.html"
+    },
+    {
+      "name": "Materialize Slots",
+      "id": "Materialize",
+      "library": "Monoceros",
+      "category": "Postprocess",
+      "summary": "Materialize Monoceros Modules into Monoceros Slots.",
+      "description": null,
+      "iconCss": "background: url('icons/monoceros.png') -96px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/monoceros/materializeSlots.html"
+    },
+    {
+      "name": "Preview Rules",
+      "id": "RulePreview",
+      "library": "Monoceros",
+      "category": "Postprocess",
+      "summary": "Preview Monoceros Rules as lines connecting individual Connectors of Monoceros Modules.",
+      "description": null,
+      "iconCss": "background: url('icons/monoceros.png') -192px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/monoceros/previewRules.html"
+    },
+    {
+      "name": "Slice Geometry",
+      "id": "Slice",
+      "library": "Monoceros",
+      "category": "Postprocess",
+      "summary": "Populate geometry with points ready to be used as Monoceros Slot and Monoceros Module centers. Supports Point, Curve, Brep, Mesh.",
+      "description": null,
+      "iconCss": "background: url('icons/monoceros.png') -168px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/monoceros/sliceGeometry.html"
+    },
+    {
+      "name": "Collect Rules",
+      "id": "CollectRules",
+      "library": "Monoceros",
+      "category": "Rule",
+      "summary": "Collect, convert to Explicit, deduplicate, sort and remove disallowed Monoceros Rules. Automatically generates an Out Module and its Rules.",
+      "description": null,
+      "iconCss": "background: url('icons/monoceros.png') -72px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/monoceros/collectRules.html"
+    },
+    {
+      "name": "Construct Explicit Rule",
+      "id": "RuleExp",
+      "library": "Monoceros",
+      "category": "Rule",
+      "summary": "Construct a Monoceros Explicit Rule (connector-to-connector) from Monoceros Module name and connector number",
+      "description": "Construct a Monoceros Explicit Rule (connector-to-connector) from Monoceros Module name and connector number. The existence of the Module and the Connector as well as whether the Connectors are opposite is not being checked. Use Collect Rules component to remove the invalid Rules.",
+      "iconCss": "background: url('icons/monoceros.png') -120px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/monoceros/constructExplicitRule.html"
+    },
+    {
+      "name": "Construct Explicit Rule between 2 Lists",
+      "id": "RuleExp2Lists",
+      "library": "Monoceros",
+      "category": "Rule",
+      "summary": "Construct a Monoceros Explicit Rule (connector-to-connector) between all listed Connectors of all listed Modules of two lists",
+      "description": "Construct a Monoceros Explicit Rule (connector-to-connector) between all listed Connectors of all listed Modules of two lists. The existence of the Module and the Connector as well as whether the Connectors are opposite is checked only if the optional list of all Modules is provided. Otherwise use Collect Rules component to remove the invalid Rules.",
+      "iconCss": "background: url('icons/monoceros.png') -216px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/monoceros/constructExplicitRuleBetween2Lists.html"
+    },
+    {
+      "name": "Construct Indifferent Rule",
+      "id": "RuleIndiff",
+      "library": "Monoceros",
+      "category": "Rule",
+      "summary": "Selected Connectors of a Monoceros Module connect to any opposite indifferent connector of any Monoceros Module.",
+      "description": null,
+      "iconCss": "background: url('icons/monoceros.png') -48px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/monoceros/constructIndifferentRule.html"
+    },
+    {
+      "name": "Construct Rule At Boundary",
+      "id": "RuleBound",
+      "library": "Monoceros",
+      "category": "Rule",
+      "summary": "Rule allowing the Monoceros Module to touch the boundary of the Envelope with a Connector of the given index. All connectors with an Indifferent Rule can automatically touch the boundary.",
+      "description": null,
+      "iconCss": "background: url('icons/monoceros.png') -120px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/monoceros/constructRuleAtBoundary.html"
+    },
+    {
+      "name": "Construct Typed Rule",
+      "id": "RuleTyp",
+      "library": "Monoceros",
+      "category": "Rule",
+      "summary": "Construct a Monoceros Typed Rule (connector-to-all-same-type-connectors) from Monoceros Module name, Connector index and Connector Type",
+      "description": "Construct a Monoceros Typed Rule (connector-to-all-same-type-connectors) from Monoceros Module name, Connector index and Connector Type. The existence of the Module and Connector is not being checked. The Connector Type will be converted to lowercase.",
+      "iconCss": "background: url('icons/monoceros.png') -144px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/monoceros/constructTypedRule.html"
+    },
+    {
+      "name": "Deconstruct Explicit Rule",
+      "id": "DeconRuleExp",
+      "library": "Monoceros",
+      "category": "Rule",
+      "summary": "Deconstruct an Monoceros Explicit Rule (connector-to-connector) into Module names and Connector indices.",
+      "description": null,
+      "iconCss": "background: url('icons/monoceros.png') -216px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/monoceros/deconstructExplicitRule.html"
+    },
+    {
+      "name": "Deconstruct Typed Rule",
+      "id": "DeconRuleTyp",
+      "library": "Monoceros",
+      "category": "Rule",
+      "summary": "Deconstruct a Monoceros Typed Rule (connector-to-all-same-type-connectors) into Module name, Connector index and Connector type.",
+      "description": null,
+      "iconCss": "background: url('icons/monoceros.png') 0px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/monoceros/deconstructTypedRule.html"
+    },
+    {
+      "name": "Explicit Rule from Curve",
+      "id": "RuleExpCrv",
+      "library": "Monoceros",
+      "category": "Rule",
+      "summary": "Create an Monoceros Explicit Rule (connector-to-connector) from a curve connecting two opposite connectors.",
+      "description": null,
+      "iconCss": "background: url('icons/monoceros.png') 0px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/monoceros/explicitRuleFromCurve.html"
+    },
+    {
+      "name": "Indifferent Rule from Point",
+      "id": "RuleIndiffPt",
+      "library": "Monoceros",
+      "category": "Rule",
+      "summary": "Connectors of a Monoceros Module marked with a Point connect to any opposite indifferent connector of any Monoceros Module.",
+      "description": null,
+      "iconCss": "background: url('icons/monoceros.png') -72px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/monoceros/indifferentRuleFromPoint.html"
+    },
+    {
+      "name": "Indifferent Rules for unused Connectors",
+      "id": "RuleIndiffUnused",
+      "library": "Monoceros",
+      "category": "Rule",
+      "summary": "Unused connectors of Monoceros Modules connect to any opposite indifferent connector of any Monoceros Module.",
+      "description": null,
+      "iconCss": "background: url('icons/monoceros.png') -96px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/monoceros/indifferentRulesForUnusedConnectors.html"
+    },
+    {
+      "name": "Is Rule Explicit",
+      "id": "IsRuleExp",
+      "library": "Monoceros",
+      "category": "Rule",
+      "summary": "Returns true if the provided Monoceros Rule is Explicit (connector-to-connector).",
+      "description": null,
+      "iconCss": "background: url('icons/monoceros.png') -48px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/monoceros/isRuleExplicit.html"
+    },
+    {
+      "name": "Is Rule Typed",
+      "id": "IsRuleTyp",
+      "library": "Monoceros",
+      "category": "Rule",
+      "summary": "Returns true if the Monoceros Rule is Typed (connector-to-all-same-type-connectors).",
+      "description": null,
+      "iconCss": "background: url('icons/monoceros.png') -72px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/monoceros/isRuleTyped.html"
+    },
+    {
+      "name": "Rule at Boundary from Point",
+      "id": "RuleBoundPt",
+      "library": "Monoceros",
+      "category": "Rule",
+      "summary": "Rule allowing the Monoceros Module to touch the boundary of the Envelope with a Connector marked with a Point. All connectors with an Indifferent Rule can automatically touch the boundary.",
+      "description": null,
+      "iconCss": "background: url('icons/monoceros.png') -144px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/monoceros/ruleAtBoundaryFromPoint.html"
+    },
+    {
+      "name": "Scan Slots for Rules",
+      "id": "RulesScan",
+      "library": "Monoceros",
+      "category": "Rule",
+      "summary": "Scan solved Slots and extract applied Rules.",
+      "description": null,
+      "iconCss": "background: url('icons/monoceros.png') -192px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/monoceros/scanSlotsForRules.html"
+    },
+    {
+      "name": "Suggest Rules from Geometry",
+      "id": "RuleSuggest",
+      "library": "Monoceros",
+      "category": "Rule",
+      "summary": "Suggest Rules based on naked geometry at connectors. The two Modules described by the generated Rule can be joined or welded. Supports Curves, BReps and Meshes.",
+      "description": null,
+      "iconCss": "background: url('icons/monoceros.png') -24px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/monoceros/suggestRulesFromGeometry.html"
+    },
+    {
+      "name": "Typed Rule from Point",
+      "id": "RuleTypPt",
+      "library": "Monoceros",
+      "category": "Rule",
+      "summary": "Create a Monoceros Typed Rule (connector-to-all-same-type-connectors) from a Point tag. The connector Type will be converted to lowercase.",
+      "description": null,
+      "iconCss": "background: url('icons/monoceros.png') -168px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/monoceros/typedRuleFromPoint.html"
+    },
+    {
+      "name": "Unwrap Typed Rules",
+      "id": "UnwrapRules",
+      "library": "Monoceros",
+      "category": "Rule",
+      "summary": "Convert Monoceros Typed Rules into Monoceros Explicit Rules and deduplicate.",
+      "description": null,
+      "iconCss": "background: url('icons/monoceros.png') -24px -72px",
+      "helpLink": "https://grasshopperdocs.com/components/monoceros/unwrapTypedRules.html"
+    },
+    {
+      "name": "Add Boundary Layer",
+      "id": "AddSlotBound",
+      "library": "Monoceros",
+      "category": "Slot",
+      "summary": "Add one layer of Monoceros Slots around the existing boundaries.",
+      "description": null,
+      "iconCss": "background: url('icons/monoceros.png') 0px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/monoceros/addBoundaryLayer.html"
+    },
+    {
+      "name": "Are Slots Boundary",
+      "id": "AreSlotsBound",
+      "library": "Monoceros",
+      "category": "Slot",
+      "summary": "Are Monoceros Slots on the boundary of the world?",
+      "description": null,
+      "iconCss": "background: url('icons/monoceros.png') -24px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/monoceros/areSlotsBoundary.html"
+    },
+    {
+      "name": "Construct Slot with All Modules Allowed",
+      "id": "SlotAll",
+      "library": "Monoceros",
+      "category": "Slot",
+      "summary": "Construct a Monoceros Slot with all Monoceros Modules allowed.",
+      "description": null,
+      "iconCss": "background: url('icons/monoceros.png') -168px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/monoceros/constructSlotWithAllModulesAllowed.html"
+    },
+    {
+      "name": "Construct Slot with Listed Modules Allowed",
+      "id": "SlotModules",
+      "library": "Monoceros",
+      "category": "Slot",
+      "summary": "Construct a Monoceros Slot with allowed Monoceros Module names.",
+      "description": null,
+      "iconCss": "background: url('icons/monoceros.png') -192px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/monoceros/constructSlotWithListedModulesAllowed.html"
+    },
+    {
+      "name": "Deconstruct Slot",
+      "id": "DeconSlot",
+      "library": "Monoceros",
+      "category": "Slot",
+      "summary": "Deconstruct a Monoceros Slot into its center point, base plane, diagonal and list of allowed Monoceros Modules.",
+      "description": null,
+      "iconCss": "background: url('icons/monoceros.png') -24px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/monoceros/deconstructSlot.html"
+    },
+    {
+      "name": "Slots from Geometry",
+      "id": "SlotsFromGeometry",
+      "library": "Monoceros",
+      "category": "Slot",
+      "summary": "Identify Module geometry and construct Slots containing it. Ignores connection to boundary.",
+      "description": null,
+      "iconCss": "background: url('icons/monoceros.png') -216px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/monoceros/slotsFromGeometry.html"
+    },
+    {
       "name": "Add Sources",
       "id": "Add Sources",
       "library": "Monolith",

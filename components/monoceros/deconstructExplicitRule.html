@@ -1,0 +1,275 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Deconstruct Explicit Rule - Monoceros - Component for Grasshopper | Grasshopper Docs</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+
+<meta name="description" content="Deconstruct an Monoceros Explicit Rule (connector-to-connector) into Module names and Connector indices." />
+<meta name="title" content="Deconstruct Explicit Rule - Monoceros - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:title" content="Deconstruct Explicit Rule - Monoceros - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://grasshopperdocs.com/components/monoceros/deconstructExplicitRule.html" />
+<meta property="og:site_name" content="Grasshopper Docs" />
+
+<link href="../../style.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+
+
+</head>
+<body>
+
+
+<div id="docs">
+<div id="docs-head">
+<div id="docs-masthead">
+<p id="docs-sitename"><a href="http://grasshopperdocs.com/"><img src="../../images/logo.png" alt="Grasshopper Docs" onerror="this.style.display='none'"></img></a></p>
+<p id="docs-sitedesc">Community documentation for Grasshopper add-ons &amp; plugins</p>
+</div>
+</div>
+
+<div id="docs-body">
+
+<div class="page">
+
+<div class="content compo-page">
+
+<div class="ghbar ">
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/monoceros/monocerosWFCSolver.html"><div class="ghsprite" style="background: url('../../icons/monoceros.png') 0px -72px" data-toptip="Monoceros WFC Solver"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+Main
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/monoceros/constructModule.html"><div class="ghsprite" style="background: url('../../icons/monoceros.png') -96px 0px" data-toptip="Construct Module"></div></a>
+<a href="../../components/monoceros/deconstructModule.html"><div class="ghsprite" style="background: url('../../icons/monoceros.png') -120px -24px" data-downtip="Deconstruct Module"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/monoceros/constructEmptyModule.html"><div class="ghsprite" style="background: url('../../icons/monoceros.png') -144px -24px" data-toptip="Construct Empty Module"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="2">
+Module
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/monoceros/assembleRule.html"><div class="ghsprite" style="background: url('../../icons/monoceros.png') -48px 0px" data-toptip="Assemble Rule"></div></a>
+<a href="../../components/monoceros/materializeSlots.html"><div class="ghsprite" style="background: url('../../icons/monoceros.png') -96px -24px" data-downtip="Materialize Slots"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/monoceros/sliceGeometry.html"><div class="ghsprite" style="background: url('../../icons/monoceros.png') -168px -24px" data-toptip="Slice Geometry"></div></a>
+<a href="../../components/monoceros/previewRules.html"><div class="ghsprite" style="background: url('../../icons/monoceros.png') -192px -24px" data-downtip="Preview Rules"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="2">
+Postprocess
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/monoceros/collectRules.html"><div class="ghsprite" style="background: url('../../icons/monoceros.png') -72px 0px" data-toptip="Collect Rules"></div></a>
+<a href="../../components/monoceros/constructExplicitRule.html"><div class="ghsprite" style="background: url('../../icons/monoceros.png') -120px 0px" data-downtip="Construct Explicit Rule"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/monoceros/constructTypedRule.html"><div class="ghsprite" style="background: url('../../icons/monoceros.png') -144px 0px" data-toptip="Construct Typed Rule"></div></a>
+<a href="../../components/monoceros/deconstructExplicitRule.html"><div class="ghsprite" style="background: url('../../icons/monoceros.png') -216px 0px" data-downtip="Deconstruct Explicit Rule"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/monoceros/deconstructTypedRule.html"><div class="ghsprite" style="background: url('../../icons/monoceros.png') 0px -24px" data-toptip="Deconstruct Typed Rule"></div></a>
+<a href="../../components/monoceros/isRuleExplicit.html"><div class="ghsprite" style="background: url('../../icons/monoceros.png') -48px -24px" data-downtip="Is Rule Explicit"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/monoceros/isRuleTyped.html"><div class="ghsprite" style="background: url('../../icons/monoceros.png') -72px -24px" data-toptip="Is Rule Typed"></div></a>
+<a href="../../components/monoceros/constructExplicitRuleBetween2Lists.html"><div class="ghsprite" style="background: url('../../icons/monoceros.png') -216px -24px" data-downtip="Construct Explicit Rule between 2 Lists"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/monoceros/explicitRuleFromCurve.html"><div class="ghsprite" style="background: url('../../icons/monoceros.png') 0px -48px" data-toptip="Explicit Rule from Curve"></div></a>
+<a href="../../components/monoceros/suggestRulesFromGeometry.html"><div class="ghsprite" style="background: url('../../icons/monoceros.png') -24px -48px" data-downtip="Suggest Rules from Geometry"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/monoceros/constructIndifferentRule.html"><div class="ghsprite" style="background: url('../../icons/monoceros.png') -48px -48px" data-toptip="Construct Indifferent Rule"></div></a>
+<a href="../../components/monoceros/indifferentRuleFromPoint.html"><div class="ghsprite" style="background: url('../../icons/monoceros.png') -72px -48px" data-downtip="Indifferent Rule from Point"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/monoceros/indifferentRulesForUnusedConnectors.html"><div class="ghsprite" style="background: url('../../icons/monoceros.png') -96px -48px" data-toptip="Indifferent Rules for unused Connectors"></div></a>
+<a href="../../components/monoceros/constructRuleAtBoundary.html"><div class="ghsprite" style="background: url('../../icons/monoceros.png') -120px -48px" data-downtip="Construct Rule At Boundary"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/monoceros/ruleAtBoundaryFromPoint.html"><div class="ghsprite" style="background: url('../../icons/monoceros.png') -144px -48px" data-toptip="Rule at Boundary from Point"></div></a>
+<a href="../../components/monoceros/typedRuleFromPoint.html"><div class="ghsprite" style="background: url('../../icons/monoceros.png') -168px -48px" data-downtip="Typed Rule from Point"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/monoceros/scanSlotsForRules.html"><div class="ghsprite" style="background: url('../../icons/monoceros.png') -192px -48px" data-toptip="Scan Slots for Rules"></div></a>
+<a href="../../components/monoceros/unwrapTypedRules.html"><div class="ghsprite" style="background: url('../../icons/monoceros.png') -24px -72px" data-downtip="Unwrap Typed Rules"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="9">
+Rule
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/monoceros/addBoundaryLayer.html"><div class="ghsprite" style="background: url('../../icons/monoceros.png') 0px 0px" data-toptip="Add Boundary Layer"></div></a>
+<a href="../../components/monoceros/areSlotsBoundary.html"><div class="ghsprite" style="background: url('../../icons/monoceros.png') -24px 0px" data-downtip="Are Slots Boundary"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/monoceros/constructSlotWithAllModulesAllowed.html"><div class="ghsprite" style="background: url('../../icons/monoceros.png') -168px 0px" data-toptip="Construct Slot with All Modules Allowed"></div></a>
+<a href="../../components/monoceros/constructSlotWithListedModulesAllowed.html"><div class="ghsprite" style="background: url('../../icons/monoceros.png') -192px 0px" data-downtip="Construct Slot with Listed Modules Allowed"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/monoceros/deconstructSlot.html"><div class="ghsprite" style="background: url('../../icons/monoceros.png') -24px -24px" data-toptip="Deconstruct Slot"></div></a>
+<a href="../../components/monoceros/slotsFromGeometry.html"><div class="ghsprite" style="background: url('../../icons/monoceros.png') -216px -48px" data-downtip="Slots from Geometry"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+Slot
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+
+<div class="addon-buttons">
+<a href="https://github.com/subdgtl/Monoceros">Source Code</a>
+<a href="https://monoceros.sub.digital/">Download</a>
+
+</div>
+
+
+
+<div class="compo-header">
+<h1><div class="ghsprite" style="background: url('../../icons/monoceros.png') -216px 0px" ></div> Deconstruct Explicit Rule</h1>
+
+<div class="breadcrumb">
+ <a href="../../index.html">Component Index</a>
+  <a href="../../addons/monoceros.html">Monoceros</a><a href="#" class="breadcrumb-nolink">Rule</a><a href="#" class="breadcrumb-nolink">DeconRuleExp</a>
+</div>
+
+</div>
+<h3>Deconstruct an Monoceros Explicit Rule (connector-to-connector) into Module names and Connector indices.</h3>
+<h2>Inputs</h2>
+<table class="params-table input-params">
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Rule</b></td><td>R</td><td>Monoceros Rule (Explicit)</td><td>Any</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table class="params-table output-params">
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Source Module Name</b></td><td>SMN</td><td>Source module name</td><td>Any</td></tr>
+<tr><td><b>Source Connector Index</b></td><td>SC</td><td>Source connector number</td><td>Integer</td></tr>
+<tr><td><b>Target Module Name</b></td><td>TMN</td><td>Target module name</td><td>Any</td></tr>
+<tr><td><b>Target Connector Index</b></td><td>TC</td><td>Target connector index</td><td>Integer</td></tr>
+</tbody>
+</table>
+
+
+</div>
+
+</div>
+
+</div>
+<div id="docs-foot">
+<p class="left">
+Site design © <a href="https://github.com/robinrodricks/">Robin Rodricks</a>. &nbsp;
+
+Monoceros and associated data © 2021  <a href="https://monoceros.sub.digital/">Jan Pernecky Subdigital</a>. &nbsp;
+<br>
+Rhinoceros and Grasshopper are registered trademarks of <a href="https://www.rhino3d.com/">Robert McNeel & Associates</a>.&nbsp;
+Hosted by <a href="http://www.github.com/">GitHub</a> 
+</p>
+<p class="right docs-lightfont">
+
+<a href="https://github.com/grasshopper3d/GrasshopperDocsSite/issues/new">Report an Issue</a> &nbsp;|&nbsp;
+<a href="/termsOfService.html">Terms of Service</a>
+</p>
+
+</div>
+</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    </body>
+</html>

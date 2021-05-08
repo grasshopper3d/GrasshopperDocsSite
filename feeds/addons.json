@@ -1691,6 +1691,19 @@
       "authorContact": ""
     },
     {
+      "name": "Monoceros",
+      "releaseDate": "2021-Apr-18",
+      "version": "1.2.3.5",
+      "downloadLink": "https://monoceros.sub.digital/",
+      "helpLink": "https://grasshopperdocs.com/addons/monoceros.html",
+      "category": "Geometry & Meshes",
+      "isSystem": false,
+      "components": 32,
+      "description": "Monoceros is a suite of tools for optimally occupying an Envelope with discrete Modules, where the spatial relationship between those Modules can be constrained by a set of user-defined Rules. By using the Wave Function Collapse algorithm, it provides an innovative and fast solution to the emerging architectural problem of Discrete aggregation for purposes of design, architecture and urban planning.\n\nMonoceros is an implementation of the Wave Function Collapse (WFC) algorithm developed for game design by Maxim Gumin and extended and promoted by Oskar Stålberg with his game Townscaper. WFC is an algorithm that fills an entire spatial envelope with Modules in a meaningful way. The envelope is divided into discrete box-like Slots. The algorithm selects and places Modules into the Slots, making sure any two placed Modules can become neighbors (do have a common connector) according to specified Rules.\n\nDiscrete aggregation is one of the hottest approaches of computational design, along with the emergent swarm intelligence and AI. It recognizes small distinct parts that can be assembled into larger aggregates according to certain requirements. The parts are often represented by material components assembled using connectors. Most prominent discrete approaches are voxelization, discrete growth and constraint modeling, such as Wave Function Collapse.",
+      "authorName": "Jan Pernecky Subdigital",
+      "authorContact": "monoceros@sub.digital"
+    },
+    {
       "name": "Grasshopper Display",
       "releaseDate": "2019-Dec-15",
       "version": "1.0.0007",
