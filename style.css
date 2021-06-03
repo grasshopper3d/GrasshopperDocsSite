@@ -18,7 +18,7 @@ hr,fieldset,img,button {
 	border: 0 none;
 }
 
-hr {
+#docs-body hr {
 	height: 1px;
 	color: #ccc;
 	background-color: #ccc;
@@ -169,50 +169,50 @@ small {
 }
 
 
-table,
-th,
-td {
+#docs-body table,
+#docs-body th,
+#docs-body td {
 	border-collapse: collapse;
 	border-spacing: 0;
 	border: none;
 }
 
-table th {
+#docs-body table th {
 	font-family: inherit!important;
 	font-weight: bold;
 }
 
-table {
+#docs-body table {
 	margin: 0 0 0.5em 0;
 }
 
-table tr.alt {
+#docs-body table tr.alt {
 	_background: none;
 	background: rgba(200, 200, 200, .25);
 }
 
-th,
-td {
+#docs-body th,
+#docs-body td {
 	padding: 3px 5px;
 	font-size: 1.1em;
 }
 
-caption,
-th {
+#docs-body caption,
+#docs-body th {
 	text-align: left;
 }
 
-table th.sortable {
+#docs-body table th.sortable {
 	padding: 0;
 }
 
-table th.sortable a {
+#docs-body table th.sortable a {
 	padding: 3px 5px;
 	display: block;
 }
 
-table th.sorted,
-table th.sortable a:hover {
+#docs-body table th.sorted,
+#docs-body table th.sortable a:hover {
 	_background: none;
 }
 
@@ -292,13 +292,10 @@ ul.backlink li a {
 	background-repeat: no-repeat
 }
 
-#docs-body {
-	background-color: #fffce1;
-}
-
 #docs {
 	margin: 0;
-	width: auto
+	width: auto;
+	background-color: #fffce1;
 }
 
 #docs-body {
@@ -335,21 +332,26 @@ ul.backlink li a {
 	margin-top: 20px;
 	font-size: 30px;
 	padding: 15px;
-  font-family: "Open Sans", Verdana, Arial, sans-serif;
-  font-size: 25pt;
-  font-weight: 400;
+	font-family: "Open Sans", Verdana, Arial, sans-serif;
+	font-size: 25pt;
+	font-weight: 400;
 }
 
 #docs-sitedesc {
-	display: block;
+	display: inline-block;
 	color: #575757;
-	margin-left: 370px;
-	left: 0;
-	top: 25px;
-	position: fixed;
 	white-space: nowrap;
-  font-family: "Open Sans", Verdana, Arial, sans-serif;
-  font-size: 10pt;
+	font-family: "Open Sans", Verdana, Arial, sans-serif;
+	font-size: 10pt;
+	height: 55px;
+	vertical-align: middle;
+}
+
+#docs-sitesearch {
+	display: inline-block;
+	width: 300px;
+	float: right;
+	margin: 12px;
 }
 
 .page {
@@ -412,28 +414,28 @@ div.cols .end {
   overflow: hidden;
 }
 
-table {
+#docs-body table {
   border-collapse: collapse;
   margin: 15px 0;
 }
 
-table th,
-table td {
+#docs-body table th,
+#docs-body table td {
   border: 1px solid #ddd;
   padding: 6px 13px;
 }
 
-table th {
+#docs-body table th {
   color: #fff;
   background-color: #54b377;
   padding: 2px 13px;
   text-align: left;
 }
 
-table tr {
+#docs-body table tr {
   background-color: #FFF;
 }
-table tr:nth-child(2n) {
+#docs-body table tr:nth-child(2n) {
   background-color: #F5F5F5;
 }
 
@@ -680,46 +682,46 @@ h3 {
 
 /* INDEX PAGE - ADDON LISTING */
 
-.libtable {
+#docs-body .libtable {
 	margin: 15px 0;
 	width: 100%;
 }
 
-.libtable th {
+#docs-body .libtable th {
 	border: none;
     padding: 0px 0px;
 }
-.libtable td {
+#docs-body .libtable td {
 	border: none;
     padding: 10px 10px;
 }
-.libtable tr {
+#docs-body .libtable tr {
 	background: none;
 }
-.libtable tr:nth-child(2n) {
+#docs-body .libtable tr:nth-child(2n) {
 	background-color: #f3eec1 !important;
 }
 
-.libtabcell {
+#docs-body .libtabcell {
 	overflow-x: auto;
 }
-.libheadercell {
+#docs-body .libheadercell {
 	width: 180px;
 }
-.libheadercell a {
+#docs-body .libheadercell a {
     display: block;
     height: 100%;
 	padding: 10px 10px;
     transition: background-color 100ms, color 100ms;
 }
-.libheadercell .codeword {
+#docs-body .libheadercell .codeword {
     transition: background-color 100ms, color 100ms;
 }
-.libheadercell a, .libheadercell a:hover, .libheadercell a:focus {
+#docs-body .libheadercell a, .libheadercell a:hover, .libheadercell a:focus {
     text-decoration: none;
 	color: #9d0000;
 }
-.libheadercell a:hover, .libheadercell a:focus, .libheadercell a:hover .codeword, .libheadercell a:focus .codeword {
+#docs-body .libheadercell a:hover, .libheadercell a:focus, .libheadercell a:hover .codeword, .libheadercell a:focus .codeword {
     background-color: #d44200;
 	color: #fff;
 }
@@ -793,14 +795,14 @@ h6 {
 .ghcolumn {
 	width: 25px;
 }
-.ghgroup-table {
+#docs-body .ghgroup-table {
 	padding: 0px;
 	margin: 0px;
 }
-.ghgroup-table tr {
+#docs-body .ghgroup-table tr {
 	height: 70px;
 }
-.ghgroup-table td {
+#docs-body .ghgroup-table td {
 	padding: 0px 2px 0px 2px;
 	border: 0 none;
 	vertical-align: top;
@@ -1064,13 +1066,22 @@ img.ghicon {
 	float: right;
 	display: block;
 	width: 250px;
-	height: 250px;
-	background-color: #efeccd;
+	height: 1000px;
+	background-color: #f3eec1;
 	margin-left: 50px;
 	margin-top: 30px;
 	clear: right;
+	padding: 10px;
 }
-
+#docs-foot-ad {
+	background-color: #f3eec1;
+	margin: 50px;
+}
+.google-ad-footer {
+	margin: 20px auto;
+	width: 1000px;
+	height: 100px;
+}
 
 
 
