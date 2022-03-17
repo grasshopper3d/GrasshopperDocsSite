@@ -1,0 +1,259 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Expire Dam - Bengesht - Component for Grasshopper | Grasshopper Docs</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+
+<meta name="description" content="Expire down stream object only if the gate is open" />
+<meta name="title" content="Expire Dam - Bengesht - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:title" content="Expire Dam - Bengesht - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://grasshopperdocs.com/components/bengesht/expireDam.html" />
+<meta property="og:site_name" content="Grasshopper Docs" />
+
+<link href="../../style.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+
+
+</head>
+<body>
+
+
+<div id="docs">
+<div id="docs-head">
+<div id="docs-masthead">
+<p id="docs-sitename"><a href="http://grasshopperdocs.com/"><img src="../../images/logo.png" alt="Grasshopper Docs" onerror="this.style.display='none'"></img></a></p>
+<p id="docs-sitedesc">Community documentation for Grasshopper add-ons &amp; plugins</p>
+<div id="docs-sitesearch">
+	<script async src="https://cse.google.com/cse.js?cx=feb9de3d53b3dd2ce"></script>
+	<div class="gcse-searchbox-only"></div>
+</div>
+</div>
+</div>
+
+<div id="docs-body">
+
+<div class="page">
+
+<div class="content compo-page">
+
+<div class="ghbar ">
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/bengesht/flipCurveTowardAPoint.html"><div class="ghsprite" style="background: url('../../icons/bengesht.png') -120px -24px" data-toptip="Flip curve toward a point"></div></a>
+<a href="../../components/bengesht/solarCalculations.html"><div class="ghsprite" style="background: url('../../icons/bengesht.png') -144px -24px" data-downtip="Solar Calculations"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+Bengesht
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/bengesht/alignCurveStartEnd.html"><div class="ghsprite" style="background: url('../../icons/bengesht.png') 0px 0px" data-toptip="Align Curve Start/End"></div></a>
+<a href="../../components/bengesht/assembleCurves.html"><div class="ghsprite" style="background: url('../../icons/bengesht.png') -24px 0px" data-downtip="Assemble Curves"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/bengesht/classifyCurves.html"><div class="ghsprite" style="background: url('../../icons/bengesht.png') -48px 0px" data-toptip="Classify Curves"></div></a>
+<a href="../../components/bengesht/curveToLineStartEnd.html"><div class="ghsprite" style="background: url('../../icons/bengesht.png') -72px 0px" data-downtip="Curve To Line Start/End"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/bengesht/divideCurvesOnIntersects.html"><div class="ghsprite" style="background: url('../../icons/bengesht.png') -96px 0px" data-toptip="Divide Curves on Intersects"></div></a>
+<a href="../../components/bengesht/starLines.html"><div class="ghsprite" style="background: url('../../icons/bengesht.png') -192px 0px" data-downtip="Star Lines"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+Curve
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/bengesht/expireDam.html"><div class="ghsprite" style="background: url('../../icons/bengesht.png') -120px 0px" data-toptip="Expire Dam"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+FlowControl
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/bengesht/httpInput.html"><div class="ghsprite" style="background: url('../../icons/bengesht.png') -144px 0px" data-toptip="Http Input"></div></a>
+<a href="../../components/bengesht/httpOutput.html"><div class="ghsprite" style="background: url('../../icons/bengesht.png') -168px 0px" data-downtip="Http Output"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+HTTP
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/bengesht/websocketClientReceiver.html"><div class="ghsprite" style="background: url('../../icons/bengesht.png') -48px -24px" data-toptip="Websocket Client Receiver"></div></a>
+<a href="../../components/bengesht/websocketClientSender.html"><div class="ghsprite" style="background: url('../../icons/bengesht.png') -72px -24px" data-downtip="Websocket Client Sender"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/bengesht/websocketClientStart.html"><div class="ghsprite" style="background: url('../../icons/bengesht.png') -96px -24px" data-toptip="Websocket Client Start"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="2">
+WebSocket
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/bengesht/wiiIn.html"><div class="ghsprite" style="background: url('../../icons/bengesht.png') -216px 0px" data-toptip="WiiIn"></div></a>
+<a href="../../components/bengesht/wiiOut.html"><div class="ghsprite" style="background: url('../../icons/bengesht.png') 0px -24px" data-downtip="WiiOut"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/bengesht/wiiStart.html"><div class="ghsprite" style="background: url('../../icons/bengesht.png') -24px -24px" data-toptip="Wii Start"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="2">
+Wii
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+
+<div class="addon-buttons">
+<a href="https://github.com/behrooz-tahanzadeh/bengesht">Source Code</a>
+<a href="https://www.food4rhino.com/app/bengesht">Download</a>
+
+</div>
+
+
+<div class="google-ad-sidebar">
+
+<!-- Carbon Ads -->
+<script async type="text/javascript" src="https://cdn.carbonads.com/carbon.js?serve=CK7IC27L&placement=grasshopperdocscom" id="_carbonads_js"></script>
+
+</div>
+
+<div class="compo-header">
+<h1><div class="ghsprite" style="background: url('../../icons/bengesht.png') -120px 0px" ></div> Expire Dam</h1>
+
+<div class="breadcrumb">
+ <a href="../../index.html">Component Index</a>
+  <a href="../../addons/bengesht.html">Bengesht</a><a href="#" class="breadcrumb-nolink">FlowControl</a><a href="#" class="breadcrumb-nolink"><></a>
+</div>
+
+</div>
+<h3>Expire down stream object only if the gate is open</h3>
+<h2>Inputs</h2>
+<table class="params-table input-params">
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>expire</b></td><td>Exp</td><td>Expire</td><td>Boolean</td></tr>
+<tr><td><b>input value</b></td><td>Val</td><td>InputValue</td><td>Generic Data</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table class="params-table output-params">
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Output value</b></td><td>Val</td><td>OutputValue</td><td>Generic Data</td></tr>
+</tbody>
+</table>
+
+
+</div>
+
+</div>
+
+</div>
+
+<div id="docs-foot" class="docs-footindex">
+<div id="docs-foot-inner">
+<p class="left">
+Site design © <a href="https://github.com/robinrodricks/">Robin Rodricks</a>. &nbsp;
+
+Bengesht and associated data © 2022  <a href="https://www.food4rhino.com/app/bengesht">Behrooz Tahanzadeh</a>. &nbsp;
+<br>
+Rhinoceros and Grasshopper are registered trademarks of <a href="https://www.rhino3d.com/">Robert McNeel & Associates</a>.&nbsp;
+Hosted by <a href="http://www.github.com/">GitHub</a> 
+</p>
+<p class="right docs-lightfont">
+
+<a href="https://github.com/grasshopper3d/GrasshopperDocsSite/issues/new">Report an Issue</a> &nbsp;|&nbsp;
+<a href="/termsOfService.html">Terms of Service</a>
+</p>
+
+</div>
+
+
+
+</div>
+</div>
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    </body>
+</html>

@@ -1,0 +1,398 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DisCo IO Settings - Wasp - Component for Grasshopper | Grasshopper Docs</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+
+<meta name="description" content="DisCo placement settings&lt;br&gt;-&lt;br&gt;Provided by Wasp 0.5" />
+<meta name="title" content="DisCo IO Settings - Wasp - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:title" content="DisCo IO Settings - Wasp - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://grasshopperdocs.com/components/wasp/disCoIOSettings.html" />
+<meta property="og:site_name" content="Grasshopper Docs" />
+
+<link href="../../style.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+<script type="text/javascript" src="../../html5gallery/jquery.js"></script>
+<script type="text/javascript" src="../../html5gallery/html5gallery.js"></script>
+
+</head>
+<body>
+
+
+<div id="docs">
+<div id="docs-head">
+<div id="docs-masthead">
+<p id="docs-sitename"><a href="http://grasshopperdocs.com/"><img src="../../images/logo.png" alt="Grasshopper Docs" onerror="this.style.display='none'"></img></a></p>
+<p id="docs-sitedesc">Community documentation for Grasshopper add-ons &amp; plugins</p>
+<div id="docs-sitesearch">
+	<script async src="https://cse.google.com/cse.js?cx=feb9de3d53b3dd2ce"></script>
+	<div class="gcse-searchbox-only"></div>
+</div>
+</div>
+</div>
+
+<div id="docs-body">
+
+<div class="page">
+
+<div class="content compo-page">
+
+<div class="ghbar ">
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/wasp/attribute.html"><div class="ghsprite" style="background: url('../../icons/wasp.png') -120px 0px" data-toptip="Attribute"></div></a>
+<a href="../../components/wasp/collider.html"><div class="ghsprite" style="background: url('../../icons/wasp.png') -168px 0px" data-downtip="Collider"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/wasp/connectionFromDirection.html"><div class="ghsprite" style="background: url('../../icons/wasp.png') -192px 0px" data-toptip="Connection From Direction"></div></a>
+<a href="../../components/wasp/connectionFromPlane.html"><div class="ghsprite" style="background: url('../../icons/wasp.png') -216px 0px" data-downtip="Connection From Plane"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/wasp/deconstructAttribute.html"><div class="ghsprite" style="background: url('../../icons/wasp.png') 0px -24px" data-toptip="Deconstruct Attribute"></div></a>
+<a href="../../components/wasp/deconstructCollider.html"><div class="ghsprite" style="background: url('../../icons/wasp.png') -24px -24px" data-downtip="Deconstruct Collider"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/wasp/deconstructConnection.html"><div class="ghsprite" style="background: url('../../icons/wasp.png') -48px -24px" data-toptip="Deconstruct Connection"></div></a>
+<a href="../../components/wasp/getAttributeByName.html"><div class="ghsprite" style="background: url('../../icons/wasp.png') 0px -72px" data-downtip="Get Attribute by Name"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/wasp/getValidSmartAttributes.html"><div class="ghsprite" style="background: url('../../icons/wasp.png') -72px -72px" data-toptip="Get Valid Smart Attributes"></div></a>
+<a href="../../components/wasp/smartAttribute.html"><div class="ghsprite" style="background: url('../../icons/wasp.png') -96px -120px" data-downtip="Smart Attribute"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="5">
+1 | Elements
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/wasp/advancedPart.html"><div class="ghsprite" style="background: url('../../icons/wasp.png') -48px 0px" data-toptip="Advanced Part"></div></a>
+<a href="../../components/wasp/basicPart.html"><div class="ghsprite" style="background: url('../../icons/wasp.png') -144px 0px" data-downtip="Basic Part"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/wasp/deconstructPart.html"><div class="ghsprite" style="background: url('../../icons/wasp.png') -96px -24px" data-toptip="Deconstruct Part"></div></a>
+<a href="../../components/wasp/filterPartsByName.html"><div class="ghsprite" style="background: url('../../icons/wasp.png') -216px -48px" data-downtip="Filter Parts by Name"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/wasp/getPartGeometry.html"><div class="ghsprite" style="background: url('../../icons/wasp.png') -24px -72px" data-toptip="Get Part Geometry"></div></a>
+<a href="../../components/wasp/partsCatalog.html"><div class="ghsprite" style="background: url('../../icons/wasp.png') -24px -96px" data-downtip="Parts Catalog"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/wasp/transformPart.html"><div class="ghsprite" style="background: url('../../icons/wasp.png') -168px -120px" data-toptip="Transform Part"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="4">
+2 | Parts
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/wasp/deconstructRule.html"><div class="ghsprite" style="background: url('../../icons/wasp.png') -120px -24px" data-toptip="Deconstruct Rule"></div></a>
+<a href="../../components/wasp/ruleFromText.html"><div class="ghsprite" style="background: url('../../icons/wasp.png') -96px -96px" data-downtip="Rule From Text"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/wasp/rule.html"><div class="ghsprite" style="background: url('../../icons/wasp.png') -120px -96px" data-toptip="Rule"></div></a>
+<a href="../../components/wasp/rulesFromAggregation.html"><div class="ghsprite" style="background: url('../../icons/wasp.png') -144px -96px" data-downtip="Rules from Aggregation"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/wasp/rulesGenerator.html"><div class="ghsprite" style="background: url('../../icons/wasp.png') -168px -96px" data-toptip="Rules Generator"></div></a>
+<a href="../../components/wasp/rulesVisualizer.html"><div class="ghsprite" style="background: url('../../icons/wasp.png') -192px -96px" data-downtip="Rules Visualizer"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+3 | Rules
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/wasp/adjacencyExclusionConstraint.html"><div class="ghsprite" style="background: url('../../icons/wasp.png') -24px 0px" data-toptip="Adjacency Exclusion Constraint"></div></a>
+<a href="../../components/wasp/meshConstraint.html"><div class="ghsprite" style="background: url('../../icons/wasp.png') -192px -72px" data-downtip="Mesh Constraint"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/wasp/orientationConstraint.html"><div class="ghsprite" style="background: url('../../icons/wasp.png') 0px -96px" data-toptip="Orientation Constraint"></div></a>
+<a href="../../components/wasp/planeConstraint.html"><div class="ghsprite" style="background: url('../../icons/wasp.png') -48px -96px" data-downtip="Plane Constraint"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/wasp/support.html"><div class="ghsprite" style="background: url('../../icons/wasp.png') -144px -120px" data-toptip="Support"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+4 | Constraints
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/wasp/deconstructField.html"><div class="ghsprite" style="background: url('../../icons/wasp.png') -72px -24px" data-toptip="Deconstruct Field"></div></a>
+<a href="../../components/wasp/fieldIsoVoxels.html"><div class="ghsprite" style="background: url('../../icons/wasp.png') -96px -48px" data-downtip="Field Iso Voxels"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/wasp/fieldIsolines.html"><div class="ghsprite" style="background: url('../../icons/wasp.png') -120px -48px" data-toptip="Field Isolines"></div></a>
+<a href="../../components/wasp/fieldPoints.html"><div class="ghsprite" style="background: url('../../icons/wasp.png') -144px -48px" data-downtip="Field Points"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/wasp/field.html"><div class="ghsprite" style="background: url('../../icons/wasp.png') -192px -48px" data-toptip="Field"></div></a>
+<a href="../../components/wasp/loadFieldFromFile.html"><div class="ghsprite" style="background: url('../../icons/wasp.png') -144px -72px" data-downtip="Load Field from File"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/wasp/orientField.html"><div class="ghsprite" style="background: url('../../icons/wasp.png') -216px -72px" data-toptip="Orient Field"></div></a>
+<a href="../../components/wasp/saveFieldToFile.html"><div class="ghsprite" style="background: url('../../icons/wasp.png') 0px -120px" data-downtip="Save Field to File"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="4">
+5 | Fields
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/wasp/aggregationGraph.html"><div class="ghsprite" style="background: url('../../icons/wasp.png') -72px 0px" data-toptip="Aggregation Graph"></div></a>
+<a href="../../components/wasp/fielddrivenAggregation.html"><div class="ghsprite" style="background: url('../../icons/wasp.png') -168px -48px" data-downtip="Field-driven Aggregation"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/wasp/graphGrammarAggregation.html"><div class="ghsprite" style="background: url('../../icons/wasp.png') -96px -72px" data-toptip="Graph-Grammar Aggregation"></div></a>
+<a href="../../components/wasp/loadAggregationFromFile.html"><div class="ghsprite" style="background: url('../../icons/wasp.png') -120px -72px" data-downtip="Load Aggregation from File"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/wasp/saveAggregationToFile.html"><div class="ghsprite" style="background: url('../../icons/wasp.png') -216px -96px" data-toptip="Save Aggregation to File"></div></a>
+<a href="../../components/wasp/saveGraphToFile.html"><div class="ghsprite" style="background: url('../../icons/wasp.png') -24px -120px" data-downtip="Save Graph to File"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/wasp/stochasticAggregation.html"><div class="ghsprite" style="background: url('../../icons/wasp.png') -120px -120px" data-toptip="Stochastic Aggregation"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="4">
+6 | Aggregation
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/wasp/disCoAggregationSetup.html"><div class="ghsprite" style="background: url('../../icons/wasp.png') -144px -24px" data-toptip="DisCo Aggregation Setup"></div></a>
+<a href="../../components/wasp/disCoEnvironment.html"><div class="ghsprite" style="background: url('../../icons/wasp.png') -168px -24px" data-downtip="DisCo Environment"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/wasp/disCoIOSettings.html"><div class="ghsprite" style="background: url('../../icons/wasp.png') -192px -24px" data-toptip="DisCo IO Settings"></div></a>
+<a href="../../components/wasp/disCoPlacementSettings.html"><div class="ghsprite" style="background: url('../../icons/wasp.png') -216px -24px" data-downtip="DisCo Placement Settings"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/wasp/disCoPlayer.html"><div class="ghsprite" style="background: url('../../icons/wasp.png') 0px -48px" data-toptip="DisCo Player"></div></a>
+<a href="../../components/wasp/disCoRuleGroup.html"><div class="ghsprite" style="background: url('../../icons/wasp.png') -24px -48px" data-downtip="DisCo Rule Group"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/wasp/disCoToolSettings.html"><div class="ghsprite" style="background: url('../../icons/wasp.png') -48px -48px" data-toptip="DisCo Tool Settings"></div></a>
+<a href="../../components/wasp/exportToDisCo.html"><div class="ghsprite" style="background: url('../../icons/wasp.png') -72px -48px" data-downtip="Export to DisCo"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/wasp/loadFromDisCo.html"><div class="ghsprite" style="background: url('../../icons/wasp.png') -168px -72px" data-toptip="Load From DisCo"></div></a>
+<a href="../../components/wasp/saveToDisCo.html"><div class="ghsprite" style="background: url('../../icons/wasp.png') -48px -120px" data-downtip="Save to DisCo"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="5">
+7 | DisCo VR
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/wasp/addParts.html"><div class="ghsprite" style="background: url('../../icons/wasp.png') 0px 0px" data-toptip="Add Parts"></div></a>
+<a href="../../components/wasp/assemblePartHierarchy.html"><div class="ghsprite" style="background: url('../../icons/wasp.png') -96px 0px" data-downtip="Assemble Part Hierarchy"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/wasp/getPartsHierarchy.html"><div class="ghsprite" style="background: url('../../icons/wasp.png') -48px -72px" data-toptip="Get Parts Hierarchy"></div></a>
+<a href="../../components/wasp/removeParts.html"><div class="ghsprite" style="background: url('../../icons/wasp.png') -72px -96px" data-downtip="Remove Parts"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/wasp/serializeObjectToFile.html"><div class="ghsprite" style="background: url('../../icons/wasp.png') -72px -120px" data-toptip="Serialize Object to File"></div></a>
+<a href="../../components/wasp/updateFile.html"><div class="ghsprite" style="background: url('../../icons/wasp.png') -192px -120px" data-downtip="Update File"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+X | Experimental
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+
+<div class="addon-buttons">
+<a href="#tutorials">Video Tutorials</a>
+<a href="https://github.com/ar0551/Wasp/">Source Code</a>
+<a href="https://www.food4rhino.com/app/wasp">Download</a>
+
+</div>
+
+
+<div class="google-ad-sidebar">
+
+<!-- Carbon Ads -->
+<script async type="text/javascript" src="https://cdn.carbonads.com/carbon.js?serve=CK7IC27L&placement=grasshopperdocscom" id="_carbonads_js"></script>
+
+</div>
+
+<div class="compo-header">
+<h1><div class="ghsprite" style="background: url('../../icons/wasp.png') -192px -24px" ></div> DisCo IO Settings</h1>
+
+<div class="breadcrumb">
+ <a href="../../index.html">Component Index</a>
+  <a href="../../addons/wasp.html">Wasp</a><a href="#" class="breadcrumb-nolink">7 | DisCo VR</a><a href="#" class="breadcrumb-nolink">DisCo IO Settings</a>
+</div>
+
+</div>
+<h3>DisCo placement settings<br>-<br>Provided by Wasp 0.5</h3>
+<div class="ghtutorials">
+<a name="tutorials"></a>
+<h2>Video Tutorials</h2>
+<div style="display:none;" class="html5gallery" data-skin="verticallight" data-width="1000" data-height="600" data-thumbwidth="280" data-thumbheight="70" data-thumbgap="5">
+
+<a href="http://www.youtube.com/embed/dBkMWQs9RRg"><img src="http://img.youtube.com/vi/dBkMWQs9RRg/1.jpg" alt="Tutorial Rhino 6 Wasp"></a>
+
+
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div id="docs-foot" class="docs-footindex">
+<div id="docs-foot-inner">
+<p class="left">
+Site design © <a href="https://github.com/robinrodricks/">Robin Rodricks</a>. &nbsp;
+
+Wasp and associated data © 2022  <a href="https://www.food4rhino.com/app/wasp">Andrea Rossi</a>. &nbsp;
+<br>
+Rhinoceros and Grasshopper are registered trademarks of <a href="https://www.rhino3d.com/">Robert McNeel & Associates</a>.&nbsp;
+Hosted by <a href="http://www.github.com/">GitHub</a> 
+</p>
+<p class="right docs-lightfont">
+
+<a href="https://github.com/grasshopper3d/GrasshopperDocsSite/issues/new">Report an Issue</a> &nbsp;|&nbsp;
+<a href="/termsOfService.html">Terms of Service</a>
+</p>
+
+</div>
+
+
+
+</div>
+</div>
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    </body>
+</html>
