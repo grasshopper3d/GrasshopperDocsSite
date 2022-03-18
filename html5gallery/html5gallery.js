@@ -4,11 +4,6 @@
  * Version 9.5 
  */
  
-// if any HTML5 galleries on the page, start the script
-if ($(".html5gallery").length > 0){
-	loadHtml5Gallery();
-}
-
 function loadHtml5Gallery(u) {
 	jQuery.easing.jswing = jQuery.easing.swing;
 	jQuery.extend(jQuery.easing, {
@@ -3743,3 +3738,9 @@ if ("undefined" === typeof ASYouTubeIframeAPIReady) var ASYouTubeIframeAPIReady 
 		ASYouTubeIframeAPIReady = !0
 	};
 var ASVimeoTimeout = 0;
+
+
+// if any HTML5 galleries on the page, start the script
+if ($(".html5gallery").length > 0){
+	loadHtml5Gallery();
+}
