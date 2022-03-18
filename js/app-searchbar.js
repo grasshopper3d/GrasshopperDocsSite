@@ -8,6 +8,8 @@ $("#docs-sitesearch-inputbox").tinyAutocomplete({
 	// fetch latest JSON on daily basis
 	url: "/feeds/searchBar.json?cache=" + datePostfix(),
 	
+	maxItems: 100,
+	maxItemsOnMobile: 20,
 	showNoResults: true,
 	queryWithSearchTerm: false,
 	externalItemsProp: "index",
