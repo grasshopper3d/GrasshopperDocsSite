@@ -1100,7 +1100,9 @@ img.ghicon {
 	/* REDUCE LOGO TEXT SIZE */
 	#site-logo-text {
 		width: 140px;
-		margin-top: -9px;
+		position: relative;	
+		top: -11px;
+		left: -10px;
 	}
 	
 	/* HIDE RIBBON ON COMPO PAGE */
