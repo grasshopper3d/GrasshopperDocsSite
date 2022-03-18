@@ -1,6 +1,12 @@
+var datePostfix = function(){
+	var d = new Date();
+	return d.getFullYear() + "-" + d.getMonth() + "-" + d.getDate();
+}
+
 $("#docs-sitesearch-inputbox").tinyAutocomplete({
 	
-	url: "/feeds/searchBar.json",
+	// fetch latest JSON on daily basis
+	url: "/feeds/searchBar.json?cache=" + datePostfix(),
 	
 	showNoResults: true,
 	queryWithSearchTerm: false,
