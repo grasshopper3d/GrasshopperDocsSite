@@ -3740,7 +3740,14 @@ if ("undefined" === typeof ASYouTubeIframeAPIReady) var ASYouTubeIframeAPIReady 
 var ASVimeoTimeout = 0;
 
 
-// if any HTML5 galleries on the page, start the script
-if ($(".html5gallery").length > 0){
-	loadHtml5Gallery();
-}
+// when document loaded
+$( document ).ready(function() {
+	
+	// if any HTML5 galleries found on the page
+	if ($(".html5gallery").length > 0){
+		
+		// activate the video gallery
+		loadHtml5Gallery();
+	}
+});
+
