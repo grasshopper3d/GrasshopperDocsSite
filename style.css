@@ -1102,8 +1102,7 @@ img.ghicon {
 	
 	/* HIDE LOGO TEXT ON MOBILE */
 	#site-logo-text {
-		visibility: hidden;
-		display: none;
+		width: 140px;
 	}
 	
 	/* HIDE RIBBON ON COMPO PAGE */
@@ -1126,6 +1125,12 @@ img.ghicon {
 
 /* MOBILE FRIENDLY - PORTRAIT */
 @media screen and (max-width: 600px) and (min-width: 100px) {
+	
+	/* HIDE LOGO TEXT ON MOBILE */
+	#site-logo-text {
+		visibility: hidden;
+		display: none;
+	}
 	
 	/* NO HORIZONTAL SCROLL */
 	body {
