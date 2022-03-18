@@ -312,7 +312,7 @@ var factory = function($, window) {
      * @return {number}   Item's id in array
      */
     clickedItemAt: function(o) {
-      for (var i = 0; i < this.items.length; i++) {
+      for (var i = 0; i < this.displayedItems.length; i++) {
         if (
           o ==
           this.el
@@ -350,8 +350,8 @@ var factory = function($, window) {
       this.selectedItem++;
 
       var l = this.settings.lastItemTemplate
-        ? this.items.length
-        : this.items.length - 1;
+        ? this.displayedItems.length
+        : this.displayedItems.length - 1;
       if (this.selectedItem >= l) {
         this.selectedItem = l;
       }
@@ -406,11 +406,11 @@ var factory = function($, window) {
     renderGroups: function() {
       this.list.remove();
       this.list = $('<ul class="autocomplete-list" />');
-      for (var i in this.json) {
+      for (var i in this.displayedItems) {
         this.list.append(
           this.settings.templateMethod(
             this.settings.groupTemplate,
-            this.json[i]
+            this.displayedItems[i]
           )
         );
       }
@@ -425,21 +425,21 @@ var factory = function($, window) {
      */
     renderItemsInGroups: function() {
       var v = this.field.val();
-      for (var i = 0; i < this.json.length; i++) {
+      for (var i = 0; i < this.displayedItems.length; i++) {
         var group = this.el.find(this.settings.groupContentName).eq(i);
         for (
           var j = 0;
-          j < this.json[i].data.length && j < this.settings.maxItems;
+          j < this.displayedItems[i].data.length && j < this.settings.maxItems;
           j++
         ) {
-          var jsonData = $.extend({}, this.json[i].data[j]);
+          var jsonData = $.extend({}, this.displayedItems[i].data[j]);
           // Strongify hits
           if (this.settings.markAsBold) {
             jsonData = this.markHitText(jsonData, v);
           }
           group.append(
             this.settings.templateMethod(
-              this.json[i].template || this.settings.itemTemplate,
+              this.displayedItems[i].template || this.settings.itemTemplate,
               jsonData
             )
           );
@@ -455,15 +455,15 @@ var factory = function($, window) {
       this.list.remove();
       this.list = $('<ul class="autocomplete-list" />');
       var v = this.field.val();
-      for (var i = 0; i < this.json.length && i < this.settings.maxItems; i++) {
-        var jsonData = $.extend({}, this.json[i]);
+      for (var i = 0; i < this.displayedItems.length && i < this.settings.maxItems; i++) {
+        var jsonData = $.extend({}, this.displayedItems[i]);
         // Strongify hits
         if (this.settings.markAsBold) {
           jsonData = this.markHitText(jsonData, v);
         }
         this.list.append(
           this.settings.templateMethod(
-            this.json[i].template || this.settings.itemTemplate,
+            this.displayedItems[i].template || this.settings.itemTemplate,
             jsonData
           )
         );
@@ -509,15 +509,15 @@ var factory = function($, window) {
 
     /**
      * Since groups aren't selectable, we need to fetch the actual
-     * selectable items and keep them around in our this.items list.
+     * selectable items and keep them around in our this.displayedItems list.
      * @return {array} List of selectable items
      */
     getItemsFromGroups: function() {
       var r = [];
-      for (var i in this.json) {
-        for (var j = 0; j < this.json[i].data.length; j++) {
+      for (var i in this.displayedItems) {
+        for (var j = 0; j < this.displayedItems[i].data.length; j++) {
           if (j < this.settings.maxItems) {
-            r.push(this.json[i].data[j]);
+            r.push(this.displayedItems[i].data[j]);
           }
         }
       }
@@ -562,12 +562,15 @@ var factory = function($, window) {
 	  // extract items from specific prop of JSON file
 	  var items = data[this.settings.externalItemsProp];
 		
+	  
+      this.json = items;
+	  
 	  // cache search data for next time
 	  if (!this.settings.queryWithSearchTerm){
 		this.cachedData = items;
+		this.jsonLower = this.lowercaseAll(items);
 	  }
 	  
-      this.json = items;
       this.field.trigger("receivedata", [this, items, xhr]);
       this.onReceiveData();
     },
@@ -585,15 +588,19 @@ var factory = function($, window) {
         this.renderGroups();
 
         // Then, render the selectable items
-        this.items = this.getItemsFromGroups();
+        this.displayedItems = this.getItemsFromGroups();
         this.renderItemsInGroups();
       } else {
-        this.items = this.json;
+		if (this.settings.queryWithSearchTerm){
+			this.displayedItems = this.json;
+		}else{
+			this.displayedItems = this.filterItemsBySearchTerm(this.json, this.jsonLower);
+		}
         this.renderItemsFlat();
       }
 
       // If no results, render no results message, if applicable
-      if (!this.items.length) {
+      if (!this.displayedItems.length) {
         if (this.settings.showNoResults) {
           this.renderNoResults();
         }
@@ -661,7 +668,7 @@ var factory = function($, window) {
      */
     onClickItem: function(e) {
       var i = this.clickedItemAt(e.currentTarget);
-      this.onSelect(e.currentTarget, this.items[i]);
+      this.onSelect(e.currentTarget, this.displayedItems[i]);
     },
 
     /**
@@ -678,7 +685,7 @@ var factory = function($, window) {
       e.preventDefault();
       this.onSelect(
         this.itemAt(this.selectedItem),
-        this.items[this.selectedItem]
+        this.displayedItems[this.selectedItem]
       );
     },
 
@@ -697,6 +704,38 @@ var factory = function($, window) {
       if (this.settings.closeOnSelect) {
         this.closeList();
       }
+    },
+
+    /**
+     * Converts all the given items to lowercase for fast searching
+     */
+    lowercaseAll: function(items) {
+      var result = [];
+	  for (var i=0; i<items.length; i++){
+		  item = items[i];
+		  
+		  // clone and lowercase
+		  var itemLower = {...item};
+		  itemLower.title = itemLower.title.toLowerCase();
+		  result.push(itemLower);
+	  }
+	  return result;
+    },
+
+    /**
+     * Filter the given items by the search term active
+     */
+    filterItemsBySearchTerm: function(items, itemsLower) {
+      var term = this.field.val();
+      var result = [];
+	  for (var i=0; i<items.length; i++){
+		  itemLower = itemsLower[i];
+		  if (itemLower.title.indexOf(term) > -1){
+			item = items[i];
+			result.push(item);
+		  }
+	  }
+	  return result;
     }
   };
 
