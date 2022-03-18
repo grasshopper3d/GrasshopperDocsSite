@@ -209,8 +209,9 @@ var factory = function($, window) {
 	  }else{
 	    // load cached data if loaded before
 		if (this.cachedData != null){
-			this.json = this.cachedData
-			this.onReceiveData()
+			this.json = this.cachedData;
+			this.onReceiveData();
+			return;
 		}
 	  }
 	  
@@ -562,7 +563,7 @@ var factory = function($, window) {
 	  var items = data[this.settings.externalItemsProp];
 		
 	  // cache search data for next time
-	  if (!this.settings.queryWithSearchTerm && !this.cachedData){
+	  if (!this.settings.queryWithSearchTerm){
 		this.cachedData = items;
 	  }
 	  
