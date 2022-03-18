@@ -1100,6 +1100,12 @@ img.ghicon {
 		display: none;
 	}
 	
+	/* HIDE LOGO TEXT ON MOBILE */
+	#site-logo-text {
+		visibility: hidden;
+		display: none;
+	}
+	
 	/* HIDE RIBBON ON COMPO PAGE */
 	.compo-page .ghbar {
 		visibility: hidden;
@@ -1120,12 +1126,6 @@ img.ghicon {
 
 /* MOBILE FRIENDLY - PORTRAIT */
 @media screen and (max-width: 600px) and (min-width: 100px) {
-	
-	/* HIDE LOGO TEXT ON MOBILE */
-	#site-logo-text {
-		visibility: hidden;
-		display: none;
-	}
 	
 	/* NO HORIZONTAL SCROLL */
 	body {
