@@ -1,0 +1,30 @@
+html, body {
+  padding:0;
+  margin:0;
+  font-family:"Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  background-color:#f0f0f0;
+}
+body {
+  padding:20px;
+}
+h1 {
+  font-weight:300;  
+}
+input {
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  appearance:none;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+  padding:10px;
+  font-size:16px;
+  font-family:"Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  border:1px solid #ddd;
+  width:100%;
+  margin-top:20px;
+}
+.results {
+  width:100%;
+  min-height:600px;
+}

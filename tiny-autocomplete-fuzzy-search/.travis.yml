@@ -1,0 +1,9 @@
+language: node_js
+node_js: node
+cache: npm
+addons:
+  apt:
+    packages:
+    - libgconf-2-4
+      # required in the latest Travis version:
+      # https://github.com/cypress-io/cypress/issues/4069
