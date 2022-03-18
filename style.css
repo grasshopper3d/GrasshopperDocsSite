@@ -1094,6 +1094,12 @@ img.ghicon {
 /* MOBILE FRIENDLY - LANDSCAPE */
 @media screen and (max-width: 1000px) and (min-width: 601px) {
 	
+	/* HIDE DESC ON MENUBAR */
+	#docs-sitedesc {
+		visibility: hidden;
+		display: none;
+	}
+	
 	/* HIDE RIBBON ON COMPO PAGE */
 	.compo-page .ghbar {
 		visibility: hidden;
@@ -1114,6 +1120,12 @@ img.ghicon {
 
 /* MOBILE FRIENDLY - PORTRAIT */
 @media screen and (max-width: 600px) and (min-width: 100px) {
+	
+	/* HIDE LOGO TEXT ON MOBILE */
+	#site-logo-text {
+		visibility: hidden;
+		display: none;
+	}
 	
 	/* NO HORIZONTAL SCROLL */
 	body {
@@ -1303,7 +1315,7 @@ img.ghicon {
 
 
 
-/* SEARCH BAR */
+/* SEARCH BAR JQUERY COMPONENT */
 
 .autocomplete {
   position:relative;
