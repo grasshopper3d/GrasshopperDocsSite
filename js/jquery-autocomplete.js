@@ -27,6 +27,8 @@ var factory = function($, window) {
       minChars: 2,
       markAsBold: true,
       grouped: false,
+      externalItemsProp: "items",
+      queryWithSearchTerm: true,
       queryProperty: "q",
       queryParameters: {},
       method: "get",
@@ -201,7 +203,17 @@ var factory = function($, window) {
       this.field.trigger("beforerequest", [this, val]);
       var data = {};
       $.extend(data, this.settings.queryParameters);
-      data[this.settings.queryProperty] = val;
+	  
+	  if (this.settings.queryWithSearchTerm){
+		data[this.settings.queryProperty] = val;
+	  }else{
+	    // load cached data if loaded before
+		if (this.cachedData != null){
+			this.json = this.cachedData
+			this.onReceiveData()
+		}
+	  }
+	  
       $.ajax({
         method: this.settings.method,
         url: this.settings.url,
@@ -545,18 +557,27 @@ var factory = function($, window) {
      * @return {null}
      */
     beforeReceiveData: function(data, xhr) {
-      this.json = data;
-      this.field.trigger("receivedata", [this, data, xhr]);
-      this.onReceiveData(this.json);
+		
+	  // extract items from specific prop of JSON file
+	  var items = data[this.settings.externalItemsProp];
+		
+	  // cache search data for next time
+	  if (!this.settings.queryWithSearchTerm && !this.cachedData){
+		this.cachedData = items;
+	  }
+	  
+      this.json = items;
+      this.field.trigger("receivedata", [this, items, xhr]);
+      this.onReceiveData();
     },
 
     /**
      * Data received from server, determine what to do with it and
      * render everything.
-     * @param  {object} data JSON from server
      * @return {null}
      */
-    onReceiveData: function(data) {
+    onReceiveData: function() {
+	  
       this.selectedItem = null;
       if (this.settings.grouped) {
         // First, render groups

@@ -3,6 +3,8 @@ $("#docs-sitesearch-inputbox").tinyAutocomplete({
 	url: "/feeds/searchBar.json",
 	
 	showNoResults: true,
+	queryWithSearchTerm: false,
+	externalItemsProp: "index",
 	
 	lastItemTemplate:
 
