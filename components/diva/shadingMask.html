@@ -1,0 +1,472 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shading Mask - DIVA - Component for Grasshopper | Grasshopper Docs</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+
+<meta name="description" content="Shading Mask" />
+<meta name="title" content="Shading Mask - DIVA - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:title" content="Shading Mask - DIVA - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://grasshopperdocs.com/components/diva/shadingMask.html" />
+<meta property="og:site_name" content="Grasshopper Docs" />
+
+<link href="../../style.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+
+<div id="docs">
+
+<div id="docs-head">
+<div id="docs-masthead">
+<p id="docs-sitename"><a href="http://grasshopperdocs.com/">
+	<img id="site-logo-icon" src="/images/logo-icon.png" alt=""></img>
+	<img id="site-logo-text" src="/images/logo-text.png" alt="Grasshopper Docs"></img>
+</a></p>
+<p id="docs-sitedesc">Community documentation for Grasshopper add-ons &amp; plugins</p>
+<div id="docs-sitesearch">
+	<input id="docs-sitesearch-inputbox" type="text" name="docs-sitesearch-inputbox" />
+	<img id="docs-searchicon" src="/images/search.png"/>
+</div>
+</div>
+</div>
+
+<div id="docs-body">
+
+<div class="page">
+
+<div class="content compo-page">
+
+<div class="ghbar ">
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/diva/light.html"><div class="ghsprite" style="background: url('../../icons/dIVA.png') -120px -96px" data-toptip="Light"></div></a>
+<a href="../../components/diva/sensor.html"><div class="ghsprite" style="background: url('../../icons/dIVA.png') 0px -120px" data-downtip="Sensor"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+.Setup
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/diva/batchRunner.html"><div class="ghsprite" style="background: url('../../icons/dIVA.png') -48px -96px" data-toptip="BatchRunner"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+.Simulation
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/diva/integrateIndicators.html"><div class="ghsprite" style="background: url('../../icons/dIVA.png') -48px -24px" data-toptip="IntegrateIndicators"></div></a>
+<a href="../../components/diva/loadResultFile.html"><div class="ghsprite" style="background: url('../../icons/dIVA.png') -120px -24px" data-downtip="Load result file"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/diva/loadZoneResults.html"><div class="ghsprite" style="background: url('../../icons/dIVA.png') -168px -24px" data-toptip="Load Zone Results"></div></a>
+<a href="../../components/diva/surfaceAnalysis.html"><div class="ghsprite" style="background: url('../../icons/dIVA.png') -96px -48px" data-downtip="SurfaceAnalysis"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/diva/uTCI.html"><div class="ghsprite" style="background: url('../../icons/dIVA.png') -144px -48px" data-toptip="UTCI"></div></a>
+<a href="../../components/diva/weather.html"><div class="ghsprite" style="background: url('../../icons/dIVA.png') -168px -48px" data-downtip="Weather"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/diva/xYPlot.html"><div class="ghsprite" style="background: url('../../icons/dIVA.png') -24px -72px" data-toptip="XYPlot"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="4">
+Analysis
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/diva/gridViewer.html"><div class="ghsprite" style="background: url('../../icons/dIVA.png') -72px -96px" data-toptip="Grid Viewer"></div></a>
+<a href="../../components/diva/imageViewer.html"><div class="ghsprite" style="background: url('../../icons/dIVA.png') -96px -96px" data-downtip="Image Viewer"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/diva/deconstructZone.html"><div class="ghsprite" style="background: url('../../icons/dIVA.png') -192px -96px" data-toptip="Deconstruct Zone"></div></a>
+<a href="../../components/diva/windowViewer.html"><div class="ghsprite" style="background: url('../../icons/dIVA.png') -216px -96px" data-downtip="Window Viewer"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/diva/hourOfYear.html"><div class="ghsprite" style="background: url('../../icons/dIVA.png') -24px -120px" data-toptip="Hour Of Year"></div></a>
+<a href="../../components/diva/monthDayHour.html"><div class="ghsprite" style="background: url('../../icons/dIVA.png') -48px -120px" data-downtip="MonthDayHour"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+Data
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/diva/floorCutter.html"><div class="ghsprite" style="background: url('../../icons/dIVA.png') -168px 0px" data-toptip="Floor cutter"></div></a>
+<a href="../../components/diva/geometryFilter.html"><div class="ghsprite" style="background: url('../../icons/dIVA.png') 0px -24px" data-downtip="GeometryFilter"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/diva/aSGetObjNameLayer.html"><div class="ghsprite" style="background: url('../../icons/dIVA.png') -24px -24px" data-toptip="AS_GetObjNameLayer"></div></a>
+<a href="../../components/diva/fromRhinoDoc.html"><div class="ghsprite" style="background: url('../../icons/dIVA.png') -144px -24px" data-downtip="FromRhinoDoc"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/diva/shadingMask.html"><div class="ghsprite" style="background: url('../../icons/dIVA.png') -24px -48px" data-toptip="Shading Mask"></div></a>
+<a href="../../components/diva/intersector.html"><div class="ghsprite" style="background: url('../../icons/dIVA.png') -24px -96px" data-downtip="Intersector"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+Geometry
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/diva/applyIndicators.html"><div class="ghsprite" style="background: url('../../icons/dIVA.png') 0px 0px" data-toptip="Apply indicators"></div></a>
+<a href="../../components/diva/construction.html"><div class="ghsprite" style="background: url('../../icons/dIVA.png') -72px 0px" data-downtip="Construction"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/diva/gasMaterial.html"><div class="ghsprite" style="background: url('../../icons/dIVA.png') -192px 0px" data-toptip="Gas material"></div></a>
+<a href="../../components/diva/glazingMaterial.html"><div class="ghsprite" style="background: url('../../icons/dIVA.png') -216px 0px" data-downtip="Glazing Material"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/diva/layer.html"><div class="ghsprite" style="background: url('../../icons/dIVA.png') -72px -24px" data-toptip="Layer"></div></a>
+<a href="../../components/diva/library.html"><div class="ghsprite" style="background: url('../../icons/dIVA.png') -96px -24px" data-downtip="Library"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/diva/opaqueMaterial.html"><div class="ghsprite" style="background: url('../../icons/dIVA.png') -192px -24px" data-toptip="Opaque Material"></div></a>
+<a href="../../components/diva/simpleWindow.html"><div class="ghsprite" style="background: url('../../icons/dIVA.png') -72px -48px" data-downtip="Simple Window"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/diva/thermalBridge.html"><div class="ghsprite" style="background: url('../../icons/dIVA.png') -120px -48px" data-toptip="Thermal Bridge"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="5">
+Materials
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/diva/takesSurfacesGeneratesPVPanels.html"><div class="ghsprite" style="background: url('../../icons/dIVA.png') -216px -72px" data-toptip="Takes surfaces, generates PV panels"></div></a>
+<a href="../../components/diva/runsAPVSimulation.html"><div class="ghsprite" style="background: url('../../icons/dIVA.png') 0px -96px" data-downtip="Runs a PV simulation"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+PV
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/diva/arraySchedule.html"><div class="ghsprite" style="background: url('../../icons/dIVA.png') -24px 0px" data-toptip="Array Schedule"></div></a>
+<a href="../../components/diva/daySchedule.html"><div class="ghsprite" style="background: url('../../icons/dIVA.png') -96px 0px" data-downtip="Day Schedule"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/diva/weekSchedule.html"><div class="ghsprite" style="background: url('../../icons/dIVA.png') -192px -48px" data-toptip="Week Schedule"></div></a>
+<a href="../../components/diva/yearSchedule.html"><div class="ghsprite" style="background: url('../../icons/dIVA.png') -48px -72px" data-downtip="Year Schedule"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="2">
+Schedules
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/diva/zoneDomesticHotWater.html"><div class="ghsprite" style="background: url('../../icons/dIVA.png') -120px 0px" data-toptip="Zone domestic hot water"></div></a>
+<a href="../../components/diva/windowSettings.html"><div class="ghsprite" style="background: url('../../icons/dIVA.png') 0px -72px" data-downtip="Window settings"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/diva/zoneConditioning.html"><div class="ghsprite" style="background: url('../../icons/dIVA.png') -72px -72px" data-toptip="Zone conditioning"></div></a>
+<a href="../../components/diva/zoneConstructions.html"><div class="ghsprite" style="background: url('../../icons/dIVA.png') -96px -72px" data-downtip="Zone constructions"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/diva/zoneLoads.html"><div class="ghsprite" style="background: url('../../icons/dIVA.png') -120px -72px" data-toptip="Zone loads"></div></a>
+<a href="../../components/diva/zoneSettings.html"><div class="ghsprite" style="background: url('../../icons/dIVA.png') -168px -72px" data-downtip="Zone settings"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/diva/zoneVentilation.html"><div class="ghsprite" style="background: url('../../icons/dIVA.png') -192px -72px" data-toptip="Zone ventilation"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="4">
+Settings
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/diva/solarEnvelope.html"><div class="ghsprite" style="background: url('../../icons/dIVA.png') -144px -96px" data-toptip="Solar Envelope"></div></a>
+<a href="../../components/diva/solarFan.html"><div class="ghsprite" style="background: url('../../icons/dIVA.png') -168px -96px" data-downtip="Solar Fan"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+Sun
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/diva/boundaryConditionObject.html"><div class="ghsprite" style="background: url('../../icons/dIVA.png') -48px 0px" data-toptip="Boundary condition object"></div></a>
+<a href="../../components/diva/face.html"><div class="ghsprite" style="background: url('../../icons/dIVA.png') -144px 0px" data-downtip="Face"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/diva/zoneConnectivityNetwork.html"><div class="ghsprite" style="background: url('../../icons/dIVA.png') -216px -24px" data-toptip="Zone Connectivity Network"></div></a>
+<a href="../../components/diva/simulationEngine.html"><div class="ghsprite" style="background: url('../../icons/dIVA.png') 0px -48px" data-downtip="Simulation Engine"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/diva/shadingSurface.html"><div class="ghsprite" style="background: url('../../icons/dIVA.png') -48px -48px" data-toptip="Shading Surface"></div></a>
+<a href="../../components/diva/window.html"><div class="ghsprite" style="background: url('../../icons/dIVA.png') -216px -48px" data-downtip="Window"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/diva/thermalZone.html"><div class="ghsprite" style="background: url('../../icons/dIVA.png') -144px -72px" data-toptip="Thermal Zone"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="4">
+Thermal Model
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+
+<div class="addon-buttons">
+<a href="#tutorials">Video Tutorials</a>
+<a href="http://www.solemma.net/">Download</a>
+
+</div>
+
+
+<div class="google-ad-sidebar">
+
+<!-- Carbon Ads -->
+<script async type="text/javascript" src="https://cdn.carbonads.com/carbon.js?serve=CK7IC27L&placement=grasshopperdocscom" id="_carbonads_js"></script>
+
+</div>
+
+<div class="compo-header">
+<h1><div class="ghsprite" style="background: url('../../icons/dIVA.png') -24px -48px" ></div> Shading Mask</h1>
+
+<div class="breadcrumb">
+ <a href="../../index.html">Component Index</a>
+  <a href="../../addons/diva.html">DIVA</a><a href="#" class="breadcrumb-nolink">Geometry</a><a href="#" class="breadcrumb-nolink">Shading Mask</a>
+</div>
+
+</div>
+<h3>Shading Mask</h3>
+<h2>Inputs</h2>
+<table class="params-table input-params">
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Pt</b></td><td>Pt</td><td>Center Point</td><td>Point</td></tr>
+<tr><td><b>Dir</b></td><td>Dir</td><td>Direction</td><td>Vector</td></tr>
+<tr><td><b>Radius</b></td><td>Radius</td><td>Radius</td><td>Number</td></tr>
+<tr><td><b>hAng</b></td><td>hAng</td><td>Horizontal Angle</td><td>Number</td></tr>
+<tr><td><b>vAng</b></td><td>vAng</td><td>Vertical Angle</td><td>Number</td></tr>
+<tr><td><b>Scene</b></td><td>Scene</td><td>Scene</td><td>Brep</td></tr>
+<tr><td><b>Full</b></td><td>Full</td><td>Full</td><td>Boolean</td></tr>
+<tr><td><b>Mode</b></td><td>Mode</td><td>Mode</td><td>Integer</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table class="params-table output-params">
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Mask</b></td><td>Mask</td><td>Mask</td><td>Generic Data</td></tr>
+</tbody>
+</table>
+
+<div class="ghtutorials">
+<a name="tutorials"></a>
+<h2>Video Tutorials</h2>
+<div style="display:none;" class="html5gallery" data-skin="verticallight" data-width="1000" data-height="600" data-thumbwidth="280" data-thumbheight="70" data-thumbgap="5">
+
+<a href="http://www.youtube.com/embed/Rq5gETiEDXM"><img src="http://img.youtube.com/vi/Rq5gETiEDXM/1.jpg" alt="Diva  14 Divaschedtoarchsim"></a>
+<a href="http://www.youtube.com/embed/9y9SEz-2-mo"><img src="http://img.youtube.com/vi/9y9SEz-2-mo/1.jpg" alt="Diva  12 Matscons"></a>
+<a href="http://www.youtube.com/embed/OpMHNxTofOA"><img src="http://img.youtube.com/vi/OpMHNxTofOA/1.jpg" alt="Diva  11 Archsimnatvent"></a>
+<a href="http://www.youtube.com/embed/1Z9xWB1bjR8"><img src="http://img.youtube.com/vi/1Z9xWB1bjR8/1.jpg" alt="Diva  09 Archsimhourly"></a>
+<a href="http://www.youtube.com/embed/I0sN1HTOjQU"><img src="http://img.youtube.com/vi/I0sN1HTOjQU/1.jpg" alt="Diva  08 Archsim"></a>
+<a href="http://www.youtube.com/embed/73JsHtKxVp4"><img src="http://img.youtube.com/vi/73JsHtKxVp4/1.jpg" alt="Diva  04 Daylightautonomycalculations"></a>
+<a href="http://www.youtube.com/embed/C-90PHpFMhk"><img src="http://img.youtube.com/vi/C-90PHpFMhk/1.jpg" alt="Diva  10 Archsimmultizone"></a>
+<a href="http://www.youtube.com/embed/Kmm4E3rH7SM"><img src="http://img.youtube.com/vi/Kmm4E3rH7SM/1.jpg" alt="Diva  05 Dynamicshading"></a>
+<a href="http://www.youtube.com/embed/uTEhgBLuci8"><img src="http://img.youtube.com/vi/uTEhgBLuci8/1.jpg" alt="Diva  03 Camerasettings"></a>
+<a href="http://www.youtube.com/embed/1BUrj14B_a0"><img src="http://img.youtube.com/vi/1BUrj14B_a0/1.jpg" alt="Diva  07 Pv"></a>
+<a href="http://www.youtube.com/embed/C-LtJkMAIz4"><img src="http://img.youtube.com/vi/C-LtJkMAIz4/1.jpg" alt="Diva  06 Hourlydata"></a>
+<a href="http://www.youtube.com/embed/hlHamUJ-suk"><img src="http://img.youtube.com/vi/hlHamUJ-suk/1.jpg" alt="Diva  02 Sun Path Diagrams"></a>
+<a href="http://www.youtube.com/embed/y_d8nKzW6I0"><img src="http://img.youtube.com/vi/y_d8nKzW6I0/1.jpg" alt="Diva  13 Scheds"></a>
+<a href="http://www.youtube.com/embed/fpJRxYTgeq4"><img src="http://img.youtube.com/vi/fpJRxYTgeq4/1.jpg" alt="Diva Tutorial 07 - Integrated Thermal And Lighting Analysis"></a>
+<a href="http://www.youtube.com/embed/cT2meCERpCQ"><img src="http://img.youtube.com/vi/cT2meCERpCQ/1.jpg" alt="Diva Tutorial 06 - Lighting Controls"></a>
+<a href="http://www.youtube.com/embed/W42ZSmCftkw"><img src="http://img.youtube.com/vi/W42ZSmCftkw/1.jpg" alt="Diva Tutorial 05 - Electric Lighting"></a>
+<a href="http://www.youtube.com/embed/qebIY9BgD3U"><img src="http://img.youtube.com/vi/qebIY9BgD3U/1.jpg" alt="Diva Tutorial 04 - Dynamic Shading"></a>
+<a href="http://www.youtube.com/embed/B1Pzf7x7x-o"><img src="http://img.youtube.com/vi/B1Pzf7x7x-o/1.jpg" alt="Diva Tutorial 03 - Annual Glare"></a>
+<a href="http://www.youtube.com/embed/4KDNmbCdPoQ"><img src="http://img.youtube.com/vi/4KDNmbCdPoQ/1.jpg" alt="Diva Tutorial 02 - Daylight Autonomy"></a>
+<a href="http://www.youtube.com/embed/02g3AQ5NOXA"><img src="http://img.youtube.com/vi/02g3AQ5NOXA/1.jpg" alt="Diva Tutorial 01 - Visualizations"></a>
+
+
+</div>
+</div>
+
+<script type="text/javascript" src="/html5gallery/jquery.js"></script>
+<script type="text/javascript" src="/html5gallery/html5gallery.js"></script>
+
+
+</div>
+
+</div>
+
+</div>
+
+<div id="docs-foot" class="docs-footindex">
+<div id="docs-foot-inner">
+<p class="left">
+Site design © <a href="https://github.com/robinrodricks/">Robin Rodricks</a>. &nbsp;
+
+DIVA and associated data © 2022  <a href="http://www.solemma.net/">Solemma</a>. &nbsp;
+<br>
+Rhinoceros and Grasshopper are registered trademarks of <a href="https://www.rhino3d.com/">Robert McNeel & Associates</a>.&nbsp;
+Hosted by <a href="http://www.github.com/">GitHub</a> 
+</p>
+<p class="right docs-lightfont">
+
+<a href="https://github.com/grasshopper3d/GrasshopperDocsSite/issues/new">Report an Issue</a> &nbsp;|&nbsp;
+<a href="/termsOfService.html">Terms of Service</a>
+</p>
+
+</div>
+
+
+
+</div>
+</div>
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/jquery-autocomplete.min.js"></script>
+<script type="text/javascript" src="/js/app-searchbar.js"></script>
+
+    </body>
+</html>

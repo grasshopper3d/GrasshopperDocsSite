@@ -1,0 +1,448 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Image Sampler - ShapeDiver - Component for Grasshopper | Grasshopper Docs</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+
+<meta name="description" content="Samples a bitmap image created with the ShapeDiver image input component or Squid." />
+<meta name="title" content="Image Sampler - ShapeDiver - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:title" content="Image Sampler - ShapeDiver - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://grasshopperdocs.com/components/shapediver/imageSampler.html" />
+<meta property="og:site_name" content="Grasshopper Docs" />
+
+<link href="../../style.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+
+<div id="docs">
+
+<div id="docs-head">
+<div id="docs-masthead">
+<p id="docs-sitename"><a href="http://grasshopperdocs.com/">
+	<img id="site-logo-icon" src="/images/logo-icon.png" alt=""></img>
+	<img id="site-logo-text" src="/images/logo-text.png" alt="Grasshopper Docs"></img>
+</a></p>
+<p id="docs-sitedesc">Community documentation for Grasshopper add-ons &amp; plugins</p>
+<div id="docs-sitesearch">
+	<input id="docs-sitesearch-inputbox" type="text" name="docs-sitesearch-inputbox" />
+	<img id="docs-searchicon" src="/images/search.png"/>
+</div>
+</div>
+</div>
+
+<div id="docs-body">
+
+<div class="page">
+
+<div class="content compo-page">
+
+<div class="ghbar ">
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/shapediver/ShapeDiverMaterial.html"><div class="ghsprite" style="background: url('../../icons/shapeDiver.png') -48px -24px" data-toptip="Shape Diver Material"></div></a>
+<a href="../../components/shapediver/ShapeDiverSimpleMaterial.html"><div class="ghsprite" style="background: url('../../icons/shapeDiver.png') 0px -48px" data-downtip="Shape Diver Simple Material"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+​​​​​​​Display
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/shapediver/fillSolid.html"><div class="ghsprite" style="background: url('../../icons/shapeDiver.png') -192px -48px" data-toptip="Fill Solid"></div></a>
+<a href="../../components/shapediver/fillLinear.html"><div class="ghsprite" style="background: url('../../icons/shapeDiver.png') -216px -48px" data-downtip="Fill Linear"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/shapediver/fillPath.html"><div class="ghsprite" style="background: url('../../icons/shapeDiver.png') 0px -72px" data-toptip="Fill Path"></div></a>
+<a href="../../components/shapediver/fillRadial.html"><div class="ghsprite" style="background: url('../../icons/shapeDiver.png') -24px -72px" data-downtip="Fill Radial"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/shapediver/fillTexture.html"><div class="ghsprite" style="background: url('../../icons/shapeDiver.png') -48px -72px" data-toptip="Fill Texture"></div></a>
+<a href="../../components/shapediver/font.html"><div class="ghsprite" style="background: url('../../icons/shapeDiver.png') -96px -72px" data-downtip="Font"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/shapediver/outline.html"><div class="ghsprite" style="background: url('../../icons/shapeDiver.png') -168px -72px" data-toptip="Outline"></div></a>
+<a href="../../components/shapediver/outlineEx.html"><div class="ghsprite" style="background: url('../../icons/shapeDiver.png') -192px -72px" data-downtip="Outline Ex"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/shapediver/paragraph.html"><div class="ghsprite" style="background: url('../../icons/shapeDiver.png') 0px -96px" data-toptip="Paragraph"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="5">
+Drawing palette
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/shapediver/imageSampler.html"><div class="ghsprite" style="background: url('../../icons/shapeDiver.png') -144px 0px" data-toptip="Image Sampler"></div></a>
+<a href="../../components/shapediver/imageToMesh.html"><div class="ghsprite" style="background: url('../../icons/shapeDiver.png') -168px 0px" data-downtip="Image To Mesh"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+​​​​​Images
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/shapediver/textInput.html"><div class="ghsprite" style="background: url('../../icons/shapeDiver.png') -24px -48px" data-toptip="Text Input"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+​​​​​​​​​Inputs
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/shapediver/alpha.html"><div class="ghsprite" style="background: url('../../icons/shapeDiver.png') -72px -48px" data-toptip="Alpha"></div></a>
+<a href="../../components/shapediver/clear.html"><div class="ghsprite" style="background: url('../../icons/shapeDiver.png') -96px -48px" data-downtip="Clear"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/shapediver/draw.html"><div class="ghsprite" style="background: url('../../icons/shapeDiver.png') -144px -48px" data-toptip="Draw"></div></a>
+<a href="../../components/shapediver/drawEx.html"><div class="ghsprite" style="background: url('../../icons/shapeDiver.png') -168px -48px" data-downtip="Draw Ex"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/shapediver/image.html"><div class="ghsprite" style="background: url('../../icons/shapeDiver.png') -144px -72px" data-toptip="Image"></div></a>
+<a href="../../components/shapediver/save.html"><div class="ghsprite" style="background: url('../../icons/shapeDiver.png') -72px -96px" data-downtip="Save"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/shapediver/text.html"><div class="ghsprite" style="background: url('../../icons/shapeDiver.png') -144px -96px" data-toptip="Text"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="4">
+Instructions
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/shapediver/jSONAccess.html"><div class="ghsprite" style="background: url('../../icons/shapeDiver.png') -192px 0px" data-toptip="JSONAccess"></div></a>
+<a href="../../components/shapediver/jSONConstruct.html"><div class="ghsprite" style="background: url('../../icons/shapeDiver.png') -216px 0px" data-downtip="JSONConstruct"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/shapediver/jSONConvert.html"><div class="ghsprite" style="background: url('../../icons/shapeDiver.png') 0px -24px" data-toptip="JSONConvert"></div></a>
+<a href="../../components/shapediver/jSONParse.html"><div class="ghsprite" style="background: url('../../icons/shapeDiver.png') -24px -24px" data-downtip="JSONParse"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="2">
+​​​​JSON
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/shapediver/flipOrder.html"><div class="ghsprite" style="background: url('../../icons/shapeDiver.png') -72px -72px" data-toptip="Flip Order"></div></a>
+<a href="../../components/shapediver/overwrite.html"><div class="ghsprite" style="background: url('../../icons/shapeDiver.png') -216px -72px" data-downtip="Overwrite"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+Modifiers
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/shapediver/dataOutput.html"><div class="ghsprite" style="background: url('../../icons/shapeDiver.png') -24px 0px" data-toptip="Data Output"></div></a>
+<a href="../../components/shapediver/exportDownload.html"><div class="ghsprite" style="background: url('../../icons/shapeDiver.png') -48px 0px" data-downtip="Export Download"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/shapediver/exportEmail.html"><div class="ghsprite" style="background: url('../../icons/shapeDiver.png') -72px 0px" data-toptip="Export Email"></div></a>
+<a href="../../components/shapediver/propertiesExport.html"><div class="ghsprite" style="background: url('../../icons/shapeDiver.png') -72px -24px" data-downtip="Properties Export"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/shapediver/setProperties.html"><div class="ghsprite" style="background: url('../../icons/shapeDiver.png') -96px -24px" data-toptip="Set Properties"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+​​​​​​​​Outputs
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/shapediver/exportShapeWays.html"><div class="ghsprite" style="background: url('../../icons/shapeDiver.png') -96px 0px" data-toptip="Export Shape Ways"></div></a>
+<a href="../../components/shapediver/shapeWaysCategories.html"><div class="ghsprite" style="background: url('../../icons/shapeDiver.png') -120px -24px" data-downtip="Shape Ways Categories"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/shapediver/shapeWaysCredentialsExt.html"><div class="ghsprite" style="background: url('../../icons/shapeDiver.png') -144px -24px" data-toptip="Shape Ways Credentials Ext"></div></a>
+<a href="../../components/shapediver/shapeWaysMaterials.html"><div class="ghsprite" style="background: url('../../icons/shapeDiver.png') -168px -24px" data-downtip="Shape Ways Materials"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/shapediver/shapeWaysPrice.html"><div class="ghsprite" style="background: url('../../icons/shapeDiver.png') -192px -24px" data-toptip="Shape Ways Price"></div></a>
+<a href="../../components/shapediver/shapeWaysPrinters.html"><div class="ghsprite" style="background: url('../../icons/shapeDiver.png') -216px -24px" data-downtip="Shape Ways Printers"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+​​​Shapeways
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/shapediver/squid.html"><div class="ghsprite" style="background: url('../../icons/shapeDiver.png') -120px -96px" data-toptip="Squid"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+Squid
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/shapediver/brepOrMeshSplit.html"><div class="ghsprite" style="background: url('../../icons/shapeDiver.png') 0px 0px" data-toptip="Brep Or Mesh Split"></div></a>
+<a href="../../components/shapediver/extractMeshUVs.html"><div class="ghsprite" style="background: url('../../icons/shapeDiver.png') -120px 0px" data-downtip="Extract Mesh UVs"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/shapediver/textureTransform.html"><div class="ghsprite" style="background: url('../../icons/shapeDiver.png') -48px -48px" data-toptip="Texture Transform"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="2">
+​​​​​​Textures
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/shapediver/divideCurve.html"><div class="ghsprite" style="background: url('../../icons/shapeDiver.png') -120px -48px" data-toptip="Divide Curve"></div></a>
+<a href="../../components/shapediver/fontList.html"><div class="ghsprite" style="background: url('../../icons/shapeDiver.png') -120px -72px" data-downtip="Font List"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/shapediver/quickPreview.html"><div class="ghsprite" style="background: url('../../icons/shapeDiver.png') -24px -96px" data-toptip="Quick Preview"></div></a>
+<a href="../../components/shapediver/read.html"><div class="ghsprite" style="background: url('../../icons/shapeDiver.png') -48px -96px" data-downtip="Read"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/shapediver/screenMap.html"><div class="ghsprite" style="background: url('../../icons/shapeDiver.png') -96px -96px" data-toptip="Screen Map"></div></a>
+<a href="../../components/shapediver/textCurves.html"><div class="ghsprite" style="background: url('../../icons/shapeDiver.png') -168px -96px" data-downtip="Text Curves"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+Util
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+
+<div class="addon-buttons">
+<a href="#tutorials">Video Tutorials</a>
+<a href="https://www.food4rhino.com/app/shapediver">Download</a>
+
+</div>
+
+
+<div class="google-ad-sidebar">
+
+<!-- Carbon Ads -->
+<script async type="text/javascript" src="https://cdn.carbonads.com/carbon.js?serve=CK7IC27L&placement=grasshopperdocscom" id="_carbonads_js"></script>
+
+</div>
+
+<div class="compo-header">
+<h1><div class="ghsprite" style="background: url('../../icons/shapeDiver.png') -144px 0px" ></div> Image Sampler</h1>
+
+<div class="breadcrumb">
+ <a href="../../index.html">Component Index</a>
+  <a href="../../addons/shapediver.html">ShapeDiver</a><a href="#" class="breadcrumb-nolink">​​​​​Images</a><a href="#" class="breadcrumb-nolink">SDImageSampler</a>
+</div>
+
+</div>
+<h3>Samples a bitmap image created with the ShapeDiver image input component or Squid.</h3>
+<h2>Inputs</h2>
+<table class="params-table input-params">
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Bitmap</b></td><td>B</td><td>Grasshopper Bitmap</td><td>GrasshopperBitmap</td></tr>
+<tr><td><b>Coordinates</b></td><td>C</td><td>Pixel coordinates in X (width) and Y (height) direction</td><td>Point</td></tr>
+<tr><td><b>Domain</b></td><td>D</td><td>Domain to use for sampling the image, defaults to [1,pixel width] x [1,pixel height] of the image.
+Set this to [0,1] x [0,1] if you want to use coordinates between 0 and 1.</td><td>Domain²</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table class="params-table output-params">
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Colour</b></td><td>C</td><td>Pixel colour at the (X,Y) location.</td><td>Colour</td></tr>
+</tbody>
+</table>
+
+<div class="ghtutorials">
+<a name="tutorials"></a>
+<h2>Video Tutorials</h2>
+<div style="display:none;" class="html5gallery" data-skin="verticallight" data-width="1000" data-height="600" data-thumbwidth="280" data-thumbheight="70" data-thumbgap="5">
+
+<a href="http://www.youtube.com/embed/o_2J4VyqVA8"><img src="http://img.youtube.com/vi/o_2J4VyqVA8/1.jpg" alt="Introducing Shapediver (parametric 3d Web Configurator)"></a>
+<a href="http://www.youtube.com/embed/jD4jGEwb97o"><img src="http://img.youtube.com/vi/jD4jGEwb97o/1.jpg" alt="Create A Ring Configurator In Less Than Five Minutes"></a>
+
+
+</div>
+</div>
+
+<script type="text/javascript" src="/html5gallery/jquery.js"></script>
+<script type="text/javascript" src="/html5gallery/html5gallery.js"></script>
+
+
+</div>
+
+</div>
+
+</div>
+
+<div id="docs-foot" class="docs-footindex">
+<div id="docs-foot-inner">
+<p class="left">
+Site design © <a href="https://github.com/robinrodricks/">Robin Rodricks</a>. &nbsp;
+
+ShapeDiver and associated data © 2022  <a href="https://www.food4rhino.com/app/shapediver">ShapeDiver GmbH</a>. &nbsp;
+<br>
+Rhinoceros and Grasshopper are registered trademarks of <a href="https://www.rhino3d.com/">Robert McNeel & Associates</a>.&nbsp;
+Hosted by <a href="http://www.github.com/">GitHub</a> 
+</p>
+<p class="right docs-lightfont">
+
+<a href="https://github.com/grasshopper3d/GrasshopperDocsSite/issues/new">Report an Issue</a> &nbsp;|&nbsp;
+<a href="/termsOfService.html">Terms of Service</a>
+</p>
+
+</div>
+
+
+
+</div>
+</div>
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/jquery-autocomplete.min.js"></script>
+<script type="text/javascript" src="/js/app-searchbar.js"></script>
+
+    </body>
+</html>

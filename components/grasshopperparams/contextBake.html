@@ -1,0 +1,193 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Context Bake - Grasshopper Params - Component for Grasshopper | Grasshopper Docs</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+
+<meta name="description" content="Geometry for baking at the end of the GrasshopperPlayer command." />
+<meta name="title" content="Context Bake - Grasshopper Params - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:title" content="Context Bake - Grasshopper Params - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://grasshopperdocs.com/components/grasshopperparams/contextBake.html" />
+<meta property="og:site_name" content="Grasshopper Docs" />
+
+<link href="../../style.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+
+<div id="docs">
+
+<div id="docs-head">
+<div id="docs-masthead">
+<p id="docs-sitename"><a href="http://grasshopperdocs.com/">
+	<img id="site-logo-icon" src="/images/logo-icon.png" alt=""></img>
+	<img id="site-logo-text" src="/images/logo-text.png" alt="Grasshopper Docs"></img>
+</a></p>
+<p id="docs-sitedesc">Community documentation for Grasshopper add-ons &amp; plugins</p>
+<div id="docs-sitesearch">
+	<input id="docs-sitesearch-inputbox" type="text" name="docs-sitesearch-inputbox" />
+	<img id="docs-searchicon" src="/images/search.png"/>
+</div>
+</div>
+</div>
+
+<div id="docs-body">
+
+<div class="page">
+
+<div class="content compo-page">
+
+<div class="ghbar ">
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperparams/atomData.html"><div class="ghsprite" style="background: url('../../icons/grasshopperParams.png') -72px 0px" data-toptip="Atom Data"></div></a>
+<a href="../../components/grasshopperparams/importImage.html"><div class="ghsprite" style="background: url('../../icons/grasshopperParams.png') -144px 0px" data-downtip="Import Image"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperparams/import3DM.html"><div class="ghsprite" style="background: url('../../icons/grasshopperParams.png') -168px 0px" data-toptip="Import 3DM"></div></a>
+<a href="../../components/grasshopperparams/importPDB.html"><div class="ghsprite" style="background: url('../../icons/grasshopperParams.png') -192px 0px" data-downtip="Import PDB"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperparams/importCoordinates.html"><div class="ghsprite" style="background: url('../../icons/grasshopperParams.png') -216px 0px" data-toptip="Import Coordinates"></div></a>
+<a href="../../components/grasshopperparams/objectDetails.html"><div class="ghsprite" style="background: url('../../icons/grasshopperParams.png') 0px -24px" data-downtip="Object Details"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperparams/importSHP.html"><div class="ghsprite" style="background: url('../../icons/grasshopperParams.png') -24px -24px" data-toptip="Import SHP"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="4">
+Input
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperparams/contextBake.html"><div class="ghsprite" style="background: url('../../icons/grasshopperParams.png') 0px 0px" data-toptip="Context Bake"></div></a>
+<a href="../../components/grasshopperparams/contextPrint.html"><div class="ghsprite" style="background: url('../../icons/grasshopperParams.png') -24px 0px" data-downtip="Context Print"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperparams/fitnessLandscape.html"><div class="ghsprite" style="background: url('../../icons/grasshopperParams.png') -48px 0px" data-toptip="Fitness Landscape"></div></a>
+<a href="../../components/grasshopperparams/dataInput.html"><div class="ghsprite" style="background: url('../../icons/grasshopperParams.png') -96px 0px" data-downtip="Data Input"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperparams/dataOutput.html"><div class="ghsprite" style="background: url('../../icons/grasshopperParams.png') -120px 0px" data-toptip="Data Output"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+Util
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+
+<div class="addon-buttons">
+<a href="https://www.rhino3d.com/6/new/grasshopper">Download</a>
+
+</div>
+
+
+<div class="google-ad-sidebar">
+
+<!-- Carbon Ads -->
+<script async type="text/javascript" src="https://cdn.carbonads.com/carbon.js?serve=CK7IC27L&placement=grasshopperdocscom" id="_carbonads_js"></script>
+
+</div>
+
+<div class="compo-header">
+<h1><div class="ghsprite" style="background: url('../../icons/grasshopperParams.png') 0px 0px" ></div> Context Bake</h1>
+
+<div class="breadcrumb">
+ <a href="../../index.html">Component Index</a>
+  <a href="../../addons/grasshopper-params.html">Grasshopper Params</a><a href="#" class="breadcrumb-nolink">Util</a><a href="#" class="breadcrumb-nolink">Context Bake</a>
+</div>
+
+</div>
+<h3>Geometry for baking at the end of the GrasshopperPlayer command.</h3>
+<h2>Inputs</h2>
+<table class="params-table input-params">
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Geometry</b></td><td>Geometry</td><td>Geometry to collect for baking</td><td>Generic Data</td></tr>
+</tbody>
+</table>
+
+
+</div>
+
+</div>
+
+</div>
+
+<div id="docs-foot" class="docs-footindex">
+<div id="docs-foot-inner">
+<p class="left">
+Site design © <a href="https://github.com/robinrodricks/">Robin Rodricks</a>. &nbsp;
+
+Grasshopper Params and associated data © 2022  <a href="https://www.rhino3d.com/6/new/grasshopper">Robert McNeel &amp; Associates</a>. &nbsp;
+<br>
+Rhinoceros and Grasshopper are registered trademarks of <a href="https://www.rhino3d.com/">Robert McNeel & Associates</a>.&nbsp;
+Hosted by <a href="http://www.github.com/">GitHub</a> 
+</p>
+<p class="right docs-lightfont">
+
+<a href="https://github.com/grasshopper3d/GrasshopperDocsSite/issues/new">Report an Issue</a> &nbsp;|&nbsp;
+<a href="/termsOfService.html">Terms of Service</a>
+</p>
+
+</div>
+
+
+
+</div>
+</div>
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/jquery-autocomplete.min.js"></script>
+<script type="text/javascript" src="/js/app-searchbar.js"></script>
+
+    </body>
+</html>
