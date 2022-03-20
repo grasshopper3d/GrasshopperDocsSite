@@ -1,0 +1,362 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Synapse - Addon for Grasshopper | Grasshopper Docs</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+
+<meta name="description" content="Grasshopper plugin that makes graphic user interfaces with the help of Eto.Forms. Currently compiled on a Windows machine. This plugin is meant to help not only build more intuitive GUIs with Grasshopper components, but also share scripts between Windows and Mac OS as Eto is a cross-platform tool. At the moment, this is a weekend project for fun so only core functionalities are added incrementally. However any questions and suggestions are welcome." />
+<meta name="title" content="Synapse - Addon for Grasshopper | Grasshopper Docs" />
+<meta property="og:title" content="Synapse - Addon for Grasshopper | Grasshopper Docs" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://grasshopperdocs.com/addons/synapse.html" />
+<meta property="og:site_name" content="Grasshopper Docs" />
+
+<link href="../style.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+
+<div id="docs">
+
+<div id="docs-head">
+<div id="docs-masthead">
+<p id="docs-sitename"><a href="http://grasshopperdocs.com/">
+	<img id="site-logo-icon" src="/images/logo-icon.png" alt=""></img>
+	<img id="site-logo-text" src="/images/logo-text.png" alt="Grasshopper Docs"></img>
+</a></p>
+<p id="docs-sitedesc">Community documentation for Grasshopper add-ons &amp; plugins</p>
+<div id="docs-sitesearch">
+	<input id="docs-sitesearch-inputbox" type="text" name="docs-sitesearch-inputbox" />
+	<img id="docs-searchicon" src="/images/search.png"/>
+</div>
+</div>
+</div>
+
+<div id="docs-body">
+
+<div class="page">
+
+<div class="content addon-page">
+
+<div class="addon-buttons">
+<a href="https://github.com/visualizor/GH_Eto">Source Code</a>
+<a href="https://www.food4rhino.com/en/app/synapse">Download</a>
+
+</div>
+
+
+<div class="google-ad-sidebar">
+
+<!-- Carbon Ads -->
+<script async type="text/javascript" src="https://cdn.carbonads.com/carbon.js?serve=CK7IC27L&placement=grasshopperdocscom" id="_carbonads_js"></script>
+
+</div>
+
+<div class="addon-header">
+<h1>Synapse</h1>
+<h5>
+<span>ADDON. Version <b>0.4.0</b>.</span>
+<span>Released on <b>2021-Aug-06</b>.</span>
+<span>Provides <b>38</b> components.</span>
+<span>Created by <b>Will Wang</b>.</span>
+<span>Features <b>0</b> video tutorials.</span>
+</h5>
+<h5>Grasshopper plugin that makes graphic user interfaces with the help of Eto.Forms. Currently compiled on a Windows machine. This plugin is meant to help not only build more intuitive GUIs with Grasshopper components, but also share scripts between Windows and Mac OS as Eto is a cross-platform tool. At the moment, this is a weekend project for fun so only core functionalities are added incrementally. However any questions and suggestions are welcome.</h5>
+
+<div class="breadcrumb">
+  <a href="../index.html">Component Index</a>
+  <a href="#" class="breadcrumb-nolink">Synapse</a>
+</div>
+
+</div>
+
+<div class="ghbar ghbar-addon-page">
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/synapse/snpDynaLayout.html"><div class="ghsprite" style="background: url('../icons/synapse.png') -168px 0px" data-toptip="SnpDynaLayout"></div></a>
+<a href="../components/synapse/snpExpander.html"><div class="ghsprite" style="background: url('../icons/synapse.png') -192px 0px" data-downtip="SnpExpander"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/synapse/snpGroup.html"><div class="ghsprite" style="background: url('../icons/synapse.png') -24px -24px" data-toptip="SnpGroup"></div></a>
+<a href="../components/synapse/snpScroll.html"><div class="ghsprite" style="background: url('../icons/synapse.png') -48px -48px" data-downtip="SnpScroll"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/synapse/snpStack.html"><div class="ghsprite" style="background: url('../icons/synapse.png') -120px -48px" data-toptip="SnpStack"></div></a>
+<a href="../components/synapse/snpTableLayout.html"><div class="ghsprite" style="background: url('../icons/synapse.png') -144px -48px" data-downtip="SnpTableLayout"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/synapse/snpTabbedView.html"><div class="ghsprite" style="background: url('../icons/synapse.png') -192px -48px" data-toptip="SnpTabbedView"></div></a>
+<a href="../components/synapse/snpWindow.html"><div class="ghsprite" style="background: url('../icons/synapse.png') -24px -72px" data-downtip="SnpWindow"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/synapse/remotePanel.html"><div class="ghsprite" style="background: url('../icons/synapse.png') -96px -72px" data-toptip="RemotePanel"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="5">
+Containers
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/synapse/snpDomSlider.html"><div class="ghsprite" style="background: url('../icons/synapse.png') 0px 0px" data-toptip="SnpDomSlider"></div></a>
+<a href="../components/synapse/snpButton.html"><div class="ghsprite" style="background: url('../icons/synapse.png') -48px 0px" data-downtip="SnpButton"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/synapse/snpCheckBox.html"><div class="ghsprite" style="background: url('../icons/synapse.png') -72px 0px" data-toptip="SnpCheckBox"></div></a>
+<a href="../components/synapse/snpComboBox.html"><div class="ghsprite" style="background: url('../icons/synapse.png') -120px 0px" data-downtip="SnpComboBox"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/synapse/snpDropMenu.html"><div class="ghsprite" style="background: url('../icons/synapse.png') -144px 0px" data-toptip="SnpDropMenu"></div></a>
+<a href="../components/synapse/snpTextLabel.html"><div class="ghsprite" style="background: url('../icons/synapse.png') -72px -24px" data-downtip="SnpTextLabel"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/synapse/snpListBox.html"><div class="ghsprite" style="background: url('../icons/synapse.png') -120px -24px" data-toptip="SnpListBox"></div></a>
+<a href="../components/synapse/snpMaskedTxtBox.html"><div class="ghsprite" style="background: url('../icons/synapse.png') -144px -24px" data-downtip="SnpMaskedTxtBox"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/synapse/snpMultiTxts.html"><div class="ghsprite" style="background: url('../icons/synapse.png') -168px -24px" data-toptip="SnpMultiTxts"></div></a>
+<a href="../components/synapse/snpNumUpDn.html"><div class="ghsprite" style="background: url('../icons/synapse.png') -192px -24px" data-downtip="SnpNumUpDn"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/synapse/snpSingleSelect.html"><div class="ghsprite" style="background: url('../icons/synapse.png') 0px -48px" data-toptip="SnpSingleSelect"></div></a>
+<a href="../components/synapse/snpIntSlider.html"><div class="ghsprite" style="background: url('../icons/synapse.png') -96px -48px" data-downtip="SnpIntSlider"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/synapse/snpTextBox.html"><div class="ghsprite" style="background: url('../icons/synapse.png') -216px -48px" data-toptip="SnpTextBox"></div></a>
+<a href="../components/synapse/snpSlider.html"><div class="ghsprite" style="background: url('../icons/synapse.png') -48px -72px" data-downtip="SnpSlider"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/synapse/snpNumUpDnGH.html"><div class="ghsprite" style="background: url('../icons/synapse.png') -72px -72px" data-toptip="SnpNumUpDnGH"></div></a>
+<a href="../components/synapse/snpeSliderGH.html"><div class="ghsprite" style="background: url('../icons/synapse.png') -120px -72px" data-downtip="SnpeSliderGH"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="8">
+Controls
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/synapse/snpHistogram.html"><div class="ghsprite" style="background: url('../icons/synapse.png') -24px 0px" data-toptip="SnpHistogram"></div></a>
+<a href="../components/synapse/snpLegend.html"><div class="ghsprite" style="background: url('../icons/synapse.png') -96px -24px" data-downtip="SnpLegend"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/synapse/snpPieChart.html"><div class="ghsprite" style="background: url('../icons/synapse.png') -216px -24px" data-toptip="SnpPieChart"></div></a>
+<a href="../components/synapse/snpHierarchy.html"><div class="ghsprite" style="background: url('../icons/synapse.png') -24px -48px" data-downtip="SnpHierarchy"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/synapse/snpTrends.html"><div class="ghsprite" style="background: url('../icons/synapse.png') 0px -72px" data-toptip="SnpTrends"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+Graphs
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/synapse/snpColor.html"><div class="ghsprite" style="background: url('../icons/synapse.png') -96px 0px" data-toptip="SnpColor"></div></a>
+<a href="../components/synapse/snpFont.html"><div class="ghsprite" style="background: url('../icons/synapse.png') -216px 0px" data-downtip="SnpFont"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/synapse/snpWinStyle.html"><div class="ghsprite" style="background: url('../icons/synapse.png') 0px -24px" data-toptip="SnpWinStyle"></div></a>
+<a href="../components/synapse/snpIcon.html"><div class="ghsprite" style="background: url('../icons/synapse.png') -48px -24px" data-downtip="SnpIcon"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/synapse/snpSize.html"><div class="ghsprite" style="background: url('../icons/synapse.png') -72px -48px" data-toptip="SnpSize"></div></a>
+<a href="../components/synapse/snpTableXY.html"><div class="ghsprite" style="background: url('../icons/synapse.png') -168px -48px" data-downtip="SnpTableXY"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/synapse/snpOverride.html"><div class="ghsprite" style="background: url('../icons/synapse.png') -144px -72px" data-toptip="SnpOverride"></div></a>
+<a href="../components/synapse/snpValueQuery.html"><div class="ghsprite" style="background: url('../icons/synapse.png') -168px -72px" data-downtip="SnpValueQuery"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="4">
+Parameters
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+
+<div class="cchild">
+<h3>Controls</h3>
+<table class="addon-compos">
+<tbody>
+<tr><td class="ccol_1"><a href="../components/synapse/snpDomSlider.html"><div class="ghsprite" style="background: url('../icons/synapse.png') 0px 0px" ></div></a></td><td class="ccol_2"><a href="../components/synapse/snpDomSlider.html">SnpDomSlider</a> <span class="codeword">(SDomSl)</span><br><span class="desc">domain slider</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/synapse/snpButton.html"><div class="ghsprite" style="background: url('../icons/synapse.png') -48px 0px" ></div></a></td><td class="ccol_2"><a href="../components/synapse/snpButton.html">SnpButton</a> <span class="codeword">(SBtn)</span><br><span class="desc">button</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/synapse/snpCheckBox.html"><div class="ghsprite" style="background: url('../icons/synapse.png') -72px 0px" ></div></a></td><td class="ccol_2"><a href="../components/synapse/snpCheckBox.html">SnpCheckBox</a> <span class="codeword">(SCB)</span><br><span class="desc">checkbox object</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/synapse/snpComboBox.html"><div class="ghsprite" style="background: url('../icons/synapse.png') -120px 0px" ></div></a></td><td class="ccol_2"><a href="../components/synapse/snpComboBox.html">SnpComboBox</a> <span class="codeword">(SCombo)</span><br><span class="desc">combo box allows text input or select from drop down</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/synapse/snpDropMenu.html"><div class="ghsprite" style="background: url('../icons/synapse.png') -144px 0px" ></div></a></td><td class="ccol_2"><a href="../components/synapse/snpDropMenu.html">SnpDropMenu</a> <span class="codeword">(SDM)</span><br><span class="desc">dropdown menu</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/synapse/snpTextLabel.html"><div class="ghsprite" style="background: url('../icons/synapse.png') -72px -24px" ></div></a></td><td class="ccol_2"><a href="../components/synapse/snpTextLabel.html">SnpTextLabel</a> <span class="codeword">(SLabel)</span><br><span class="desc">label object, just a plain text tag</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/synapse/snpListBox.html"><div class="ghsprite" style="background: url('../icons/synapse.png') -120px -24px" ></div></a></td><td class="ccol_2"><a href="../components/synapse/snpListBox.html">SnpListBox</a> <span class="codeword">(SLB)</span><br><span class="desc">list of items to choose from</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/synapse/snpMaskedTxtBox.html"><div class="ghsprite" style="background: url('../icons/synapse.png') -144px -24px" ></div></a></td><td class="ccol_2"><a href="../components/synapse/snpMaskedTxtBox.html">SnpMaskedTxtBox</a> <span class="codeword">(STBm)</span><br><span class="desc">masked text box</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/synapse/snpMultiTxts.html"><div class="ghsprite" style="background: url('../icons/synapse.png') -168px -24px" ></div></a></td><td class="ccol_2"><a href="../components/synapse/snpMultiTxts.html">SnpMultiTxts</a> <span class="codeword">(SMT)</span><br><span class="desc">text area to input multiple lines of text</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/synapse/snpNumUpDn.html"><div class="ghsprite" style="background: url('../icons/synapse.png') -192px -24px" ></div></a></td><td class="ccol_2"><a href="../components/synapse/snpNumUpDn.html">SnpNumUpDn</a> <span class="codeword">(STicker)</span><br><span class="desc">numeric up-down control</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/synapse/snpSingleSelect.html"><div class="ghsprite" style="background: url('../icons/synapse.png') 0px -48px" ></div></a></td><td class="ccol_2"><a href="../components/synapse/snpSingleSelect.html">SnpSingleSelect</a> <span class="codeword">(SOne)</span><br><span class="desc">radio buttons</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/synapse/snpIntSlider.html"><div class="ghsprite" style="background: url('../icons/synapse.png') -96px -48px" ></div></a></td><td class="ccol_2"><a href="../components/synapse/snpIntSlider.html">SnpIntSlider</a> <span class="codeword">(SIntSl)</span><br><span class="desc">simple integer slider</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/synapse/snpTextBox.html"><div class="ghsprite" style="background: url('../icons/synapse.png') -216px -48px" ></div></a></td><td class="ccol_2"><a href="../components/synapse/snpTextBox.html">SnpTextBox</a> <span class="codeword">(STB)</span><br><span class="desc">text box</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/synapse/snpSlider.html"><div class="ghsprite" style="background: url('../icons/synapse.png') -48px -72px" ></div></a></td><td class="ccol_2"><a href="../components/synapse/snpSlider.html">SnpSlider</a> <span class="codeword">(SSl)</span><br><span class="desc">slider with label</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/synapse/snpNumUpDnGH.html"><div class="ghsprite" style="background: url('../icons/synapse.png') -72px -72px" ></div></a></td><td class="ccol_2"><a href="../components/synapse/snpNumUpDnGH.html">SnpNumUpDnGH</a> <span class="codeword">(SUDGH)</span><br><span class="desc">numeric up down control from a Grasshopper slider</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/synapse/snpeSliderGH.html"><div class="ghsprite" style="background: url('../icons/synapse.png') -120px -72px" ></div></a></td><td class="ccol_2"><a href="../components/synapse/snpeSliderGH.html">SnpeSliderGH</a> <span class="codeword">(SSlGH)</span><br><span class="desc">Synapse slider from a Grasshopper slider</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>Containers</h3>
+<table class="addon-compos">
+<tbody>
+<tr><td class="ccol_1"><a href="../components/synapse/snpDynaLayout.html"><div class="ghsprite" style="background: url('../icons/synapse.png') -168px 0px" ></div></a></td><td class="ccol_2"><a href="../components/synapse/snpDynaLayout.html">SnpDynaLayout</a> <span class="codeword">(SDyLO)</span><br><span class="desc">dynamic layout, somewhat autosized to controls</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/synapse/snpExpander.html"><div class="ghsprite" style="background: url('../icons/synapse.png') -192px 0px" ></div></a></td><td class="ccol_2"><a href="../components/synapse/snpExpander.html">SnpExpander</a> <span class="codeword">(SXpdr)</span><br><span class="desc">expand/collapse controls</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/synapse/snpGroup.html"><div class="ghsprite" style="background: url('../icons/synapse.png') -24px -24px" ></div></a></td><td class="ccol_2"><a href="../components/synapse/snpGroup.html">SnpGroup</a> <span class="codeword">(SGr)</span><br><span class="desc">group box container</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/synapse/snpScroll.html"><div class="ghsprite" style="background: url('../icons/synapse.png') -48px -48px" ></div></a></td><td class="ccol_2"><a href="../components/synapse/snpScroll.html">SnpScroll</a> <span class="codeword">(SScroll)</span><br><span class="desc">scrollable container</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/synapse/snpStack.html"><div class="ghsprite" style="background: url('../icons/synapse.png') -120px -48px" ></div></a></td><td class="ccol_2"><a href="../components/synapse/snpStack.html">SnpStack</a> <span class="codeword">(SStack)</span><br><span class="desc">stack layout</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/synapse/snpTableLayout.html"><div class="ghsprite" style="background: url('../icons/synapse.png') -144px -48px" ></div></a></td><td class="ccol_2"><a href="../components/synapse/snpTableLayout.html">SnpTableLayout</a> <span class="codeword">(STable)</span><br><span class="desc">table layout of synapse controls</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/synapse/snpTabbedView.html"><div class="ghsprite" style="background: url('../icons/synapse.png') -192px -48px" ></div></a></td><td class="ccol_2"><a href="../components/synapse/snpTabbedView.html">SnpTabbedView</a> <span class="codeword">(STabs)</span><br><span class="desc">tabbed view</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/synapse/snpWindow.html"><div class="ghsprite" style="background: url('../icons/synapse.png') -24px -72px" ></div></a></td><td class="ccol_2"><a href="../components/synapse/snpWindow.html">SnpWindow</a> <span class="codeword">(SWin)</span><br><span class="desc">main window</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/synapse/remotePanel.html"><div class="ghsprite" style="background: url('../icons/synapse.png') -96px -72px" ></div></a></td><td class="ccol_2"><a href="../components/synapse/remotePanel.html">RemotePanel</a> <span class="codeword">(RCP)</span><br><span class="desc">Rhino remote control panel for Synapse elements</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>Parameters</h3>
+<table class="addon-compos">
+<tbody>
+<tr><td class="ccol_1"><a href="../components/synapse/snpColor.html"><div class="ghsprite" style="background: url('../icons/synapse.png') -96px 0px" ></div></a></td><td class="ccol_2"><a href="../components/synapse/snpColor.html">SnpColor</a> <span class="codeword">(SClr)</span><br><span class="desc">color object for synapse controls</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/synapse/snpFont.html"><div class="ghsprite" style="background: url('../icons/synapse.png') -216px 0px" ></div></a></td><td class="ccol_2"><a href="../components/synapse/snpFont.html">SnpFont</a> <span class="codeword">(SFont)</span><br><span class="desc">font object for Synapse controls</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/synapse/snpWinStyle.html"><div class="ghsprite" style="background: url('../icons/synapse.png') 0px -24px" ></div></a></td><td class="ccol_2"><a href="../components/synapse/snpWinStyle.html">SnpWinStyle</a> <span class="codeword">(WS)</span><br><span class="desc">windows style</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/synapse/snpIcon.html"><div class="ghsprite" style="background: url('../icons/synapse.png') -48px -24px" ></div></a></td><td class="ccol_2"><a href="../components/synapse/snpIcon.html">SnpIcon</a> <span class="codeword">(SIcon)</span><br><span class="desc">image icon that can be used by Synapse controls</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/synapse/snpSize.html"><div class="ghsprite" style="background: url('../icons/synapse.png') -72px -48px" ></div></a></td><td class="ccol_2"><a href="../components/synapse/snpSize.html">SnpSize</a> <span class="codeword">(SSize)</span><br><span class="desc">size object (width and height)</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/synapse/snpTableXY.html"><div class="ghsprite" style="background: url('../icons/synapse.png') -168px -48px" ></div></a></td><td class="ccol_2"><a href="../components/synapse/snpTableXY.html">SnpTableXY</a> <span class="codeword">(STxy)</span><br><span class="desc">arrange controls into a TableLayout and produces coordinates text strings<br>controls are placed from top to bottom, left to right</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/synapse/snpOverride.html"><div class="ghsprite" style="background: url('../icons/synapse.png') -144px -72px" ></div></a></td><td class="ccol_2"><a href="../components/synapse/snpOverride.html">SnpOverride</a> <span class="codeword">(SSetVal)</span><br><span class="desc">override control values<br>this lets you set the primary value of a control without re-instantiating the entire window</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/synapse/snpValueQuery.html"><div class="ghsprite" style="background: url('../icons/synapse.png') -168px -72px" ></div></a></td><td class="ccol_2"><a href="../components/synapse/snpValueQuery.html">SnpValueQuery</a> <span class="codeword">(SValQ)</span><br><span class="desc">queries a Synapse component for its value</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>Graphs</h3>
+<table class="addon-compos">
+<tbody>
+<tr><td class="ccol_1"><a href="../components/synapse/snpHistogram.html"><div class="ghsprite" style="background: url('../icons/synapse.png') -24px 0px" ></div></a></td><td class="ccol_2"><a href="../components/synapse/snpHistogram.html">SnpHistogram</a> <span class="codeword">(SHisto)</span><br><span class="desc">histograms/bar chart</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/synapse/snpLegend.html"><div class="ghsprite" style="background: url('../icons/synapse.png') -96px -24px" ></div></a></td><td class="ccol_2"><a href="../components/synapse/snpLegend.html">SnpLegend</a> <span class="codeword">(SLegend)</span><br><span class="desc">chart legend</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/synapse/snpPieChart.html"><div class="ghsprite" style="background: url('../icons/synapse.png') -216px -24px" ></div></a></td><td class="ccol_2"><a href="../components/synapse/snpPieChart.html">SnpPieChart</a> <span class="codeword">(SPie)</span><br><span class="desc">pie chart</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/synapse/snpHierarchy.html"><div class="ghsprite" style="background: url('../icons/synapse.png') -24px -48px" ></div></a></td><td class="ccol_2"><a href="../components/synapse/snpHierarchy.html">SnpHierarchy</a> <span class="codeword">(SHrch)</span><br><span class="desc">rectangular areas showing proportions</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/synapse/snpTrends.html"><div class="ghsprite" style="background: url('../icons/synapse.png') 0px -72px" ></div></a></td><td class="ccol_2"><a href="../components/synapse/snpTrends.html">SnpTrends</a> <span class="codeword">(STrends)</span><br><span class="desc">line graph</span></td></tr>
+</tbody>
+</table>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div id="docs-foot" class="docs-footindex">
+<div id="docs-foot-inner">
+<p class="left">
+Site design © <a href="https://github.com/robinrodricks/">Robin Rodricks</a>. &nbsp;
+
+Synapse and associated data © 2022  <a href="https://www.food4rhino.com/en/app/synapse">Will Wang</a>. &nbsp;
+<br>
+Rhinoceros and Grasshopper are registered trademarks of <a href="https://www.rhino3d.com/">Robert McNeel & Associates</a>.&nbsp;
+Hosted by <a href="http://www.github.com/">GitHub</a> 
+</p>
+<p class="right docs-lightfont">
+
+<a href="https://github.com/grasshopper3d/GrasshopperDocsSite/issues/new">Report an Issue</a> &nbsp;|&nbsp;
+<a href="/termsOfService.html">Terms of Service</a>
+</p>
+
+</div>
+
+
+
+</div>
+</div>
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/jquery-autocomplete.min.js"></script>
+<script type="text/javascript" src="/js/app-searchbar.js"></script>
+
+    </body>
+</html>

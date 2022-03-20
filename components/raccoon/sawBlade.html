@@ -1,0 +1,218 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SawBlade - Raccoon - Component for Grasshopper | Grasshopper Docs</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+
+<meta name="description" content="SawBlade" />
+<meta name="title" content="SawBlade - Raccoon - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:title" content="SawBlade - Raccoon - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://grasshopperdocs.com/components/raccoon/sawBlade.html" />
+<meta property="og:site_name" content="Grasshopper Docs" />
+
+<link href="../../style.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+
+<div id="docs">
+
+<div id="docs-head">
+<div id="docs-masthead">
+<p id="docs-sitename"><a href="http://grasshopperdocs.com/">
+	<img id="site-logo-icon" src="/images/logo-icon.png" alt=""></img>
+	<img id="site-logo-text" src="/images/logo-text.png" alt="Grasshopper Docs"></img>
+</a></p>
+<p id="docs-sitedesc">Community documentation for Grasshopper add-ons &amp; plugins</p>
+<div id="docs-sitesearch">
+	<input id="docs-sitesearch-inputbox" type="text" name="docs-sitesearch-inputbox" />
+	<img id="docs-searchicon" src="/images/search.png"/>
+</div>
+</div>
+</div>
+
+<div id="docs-body">
+
+<div class="page">
+
+<div class="content compo-page">
+
+<div class="ghbar ">
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/raccoon/circleHoles.html"><div class="ghsprite" style="background: url('../../icons/raccoon.png') 0px 0px" data-toptip="Circle Holes"></div></a>
+<a href="../../components/raccoon/twoPolys.html"><div class="ghsprite" style="background: url('../../icons/raccoon.png') -24px 0px" data-downtip="Two Polys"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/raccoon/drilling.html"><div class="ghsprite" style="background: url('../../icons/raccoon.png') -48px 0px" data-toptip="Drilling"></div></a>
+<a href="../../components/raccoon/cut.html"><div class="ghsprite" style="background: url('../../icons/raccoon.png') -120px 0px" data-downtip="Cut"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/raccoon/milling.html"><div class="ghsprite" style="background: url('../../icons/raccoon.png') -144px 0px" data-toptip="Milling"></div></a>
+<a href="../../components/raccoon/sawBlade.html"><div class="ghsprite" style="background: url('../../icons/raccoon.png') -168px 0px" data-downtip="SawBlade"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+Robot/CNC
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/raccoon/merge.html"><div class="ghsprite" style="background: url('../../icons/raccoon.png') -72px 0px" data-toptip="Merge"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+Util
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/raccoon/simulate.html"><div class="ghsprite" style="background: url('../../icons/raccoon.png') -96px 0px" data-toptip="Simulate"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+View
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+
+<div class="addon-buttons">
+<a href="https://www.rhino3d.com/features/package-manager/">Download</a>
+
+</div>
+
+
+<div class="google-ad-sidebar">
+
+<!-- Carbon Ads -->
+<script async type="text/javascript" src="https://cdn.carbonads.com/carbon.js?serve=CK7IC27L&placement=grasshopperdocscom" id="_carbonads_js"></script>
+
+</div>
+
+<div class="compo-header">
+<h1><div class="ghsprite" style="background: url('../../icons/raccoon.png') -168px 0px" ></div> SawBlade</h1>
+
+<div class="breadcrumb">
+ <a href="../../index.html">Component Index</a>
+  <a href="../../addons/raccoon.html">Raccoon</a><a href="#" class="breadcrumb-nolink">Robot/CNC</a><a href="#" class="breadcrumb-nolink">SawBlade</a>
+</div>
+
+</div>
+<h3>SawBlade</h3>
+<h2>Inputs</h2>
+<table class="params-table input-params">
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>cut_polyline</b></td><td>cut_polyline</td><td>cut_polyline</td><td>Curve</td></tr>
+<tr><td><b>dir_polyline</b></td><td>dir_polyline</td><td>dir_polyline</td><td>Curve</td></tr>
+<tr><td><b>cut_type</b></td><td>cut_type</td><td>Cut = 0, Mill = 1, Drill = 2, SawBlade = 3,  \n SawBladeBisector = 4, Engrave = 5, MillPath = 6, MillCircular = 7,  \n SawCircular = 8, SawEnd = 9, Slice = 10, SawBladeSlice = 11,  OpenCut = 12</td><td>Number</td></tr>
+<tr><td><b>Radius</b></td><td>Radius</td><td>Milling radius</td><td>Number</td></tr>
+<tr><td><b>DivisionsU</b></td><td>DivisionsU</td><td>Height divisions</td><td>Number</td></tr>
+<tr><td><b>DivisionsV</b></td><td>DivisionsV</td><td>Thickness Divisions</td><td>Number</td></tr>
+<tr><td><b>cut90Degrees</b></td><td>cut90Degrees</td><td>cut90Degrees</td><td>Number</td></tr>
+<tr><td><b>RetreateO</b></td><td>RetreateO</td><td>Retreate Distance</td><td>Number</td></tr>
+<tr><td><b>RetreateZ</b></td><td>RetreateZ</td><td>Retreate Z coordinated</td><td>Number</td></tr>
+<tr><td><b>Extend</b></td><td>Extend</td><td>Extend Sideways of toolR</td><td>Number</td></tr>
+<tr><td><b>ToolID</b></td><td>ToolID</td><td>Tool ID Number in the CNC machine</td><td>Number</td></tr>
+<tr><td><b>Speed</b></td><td>Speed</td><td>velocity of horizontal cutting in mm/min</td><td>Number</td></tr>
+<tr><td><b>Zsec</b></td><td>Zsec</td><td>Safe Plane over workpiece.Program begins and starts at this Z-height</td><td>Number</td></tr>
+<tr><td><b>Retreate</b></td><td>Retreate</td><td>Height of the XY Plane for tool retreat</td><td>Number</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table class="params-table output-params">
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>C0</b></td><td>C0</td><td>Polylines connecting planes</td><td>Curve</td></tr>
+<tr><td><b>C1</b></td><td>C1</td><td>Polylines connecting planes</td><td>Curve</td></tr>
+<tr><td><b>P</b></td><td>Planes</td><td>Planes</td><td>Plane</td></tr>
+<tr><td><b>GCode</b></td><td>GCode</td><td>GCode</td><td>Text</td></tr>
+</tbody>
+</table>
+
+
+</div>
+
+</div>
+
+</div>
+
+<div id="docs-foot" class="docs-footindex">
+<div id="docs-foot-inner">
+<p class="left">
+Site design © <a href="https://github.com/robinrodricks/">Robin Rodricks</a>. &nbsp;
+
+Raccoon and associated data © 2022  <a href="https://www.rhino3d.com/features/package-manager/">Petras Vestartas</a>. &nbsp;
+<br>
+Rhinoceros and Grasshopper are registered trademarks of <a href="https://www.rhino3d.com/">Robert McNeel & Associates</a>.&nbsp;
+Hosted by <a href="http://www.github.com/">GitHub</a> 
+</p>
+<p class="right docs-lightfont">
+
+<a href="https://github.com/grasshopper3d/GrasshopperDocsSite/issues/new">Report an Issue</a> &nbsp;|&nbsp;
+<a href="/termsOfService.html">Terms of Service</a>
+</p>
+
+</div>
+
+
+
+</div>
+</div>
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/jquery-autocomplete.min.js"></script>
+<script type="text/javascript" src="/js/app-searchbar.js"></script>
+
+    </body>
+</html>

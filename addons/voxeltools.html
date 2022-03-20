@@ -1,0 +1,309 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VoxelTools - Addon for Grasshopper | Grasshopper Docs</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+
+<meta name="description" content="The voxel tools offer ligthweight voxel geometry for Rhino. It allows you to quickly generate and manipulate voxelated geometry from meshes, breps, curves and points, and offers boolean operation between voxelgrids. It can convert voxelgrids to solid mesh hulls." />
+<meta name="title" content="VoxelTools - Addon for Grasshopper | Grasshopper Docs" />
+<meta property="og:title" content="VoxelTools - Addon for Grasshopper | Grasshopper Docs" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://grasshopperdocs.com/addons/voxeltools.html" />
+<meta property="og:site_name" content="Grasshopper Docs" />
+
+<link href="../style.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+
+<div id="docs">
+
+<div id="docs-head">
+<div id="docs-masthead">
+<p id="docs-sitename"><a href="http://grasshopperdocs.com/">
+	<img id="site-logo-icon" src="/images/logo-icon.png" alt=""></img>
+	<img id="site-logo-text" src="/images/logo-text.png" alt="Grasshopper Docs"></img>
+</a></p>
+<p id="docs-sitedesc">Community documentation for Grasshopper add-ons &amp; plugins</p>
+<div id="docs-sitesearch">
+	<input id="docs-sitesearch-inputbox" type="text" name="docs-sitesearch-inputbox" />
+	<img id="docs-searchicon" src="/images/search.png"/>
+</div>
+</div>
+</div>
+
+<div id="docs-body">
+
+<div class="page">
+
+<div class="content addon-page">
+
+<div class="addon-buttons">
+<a href="https://github.com/arendvw/VoxelTools">Source Code</a>
+<a href="https://github.com/arendvw/VoxelTools">Download</a>
+
+</div>
+
+
+<div class="google-ad-sidebar">
+
+<!-- Carbon Ads -->
+<script async type="text/javascript" src="https://cdn.carbonads.com/carbon.js?serve=CK7IC27L&placement=grasshopperdocscom" id="_carbonads_js"></script>
+
+</div>
+
+<div class="addon-header">
+<h1>VoxelTools</h1>
+<h5>
+<span>ADDON. Version <b>1.0.2</b>.</span>
+<span>Released on <b>2020-Jun-23</b>.</span>
+<span>Provides <b>20</b> components.</span>
+<span>Created by <b>Arend van Waart</b>.</span>
+<span>Features <b>0</b> video tutorials.</span>
+</h5>
+<h5>The voxel tools offer ligthweight voxel geometry for Rhino. It allows you to quickly generate and manipulate voxelated geometry from meshes, breps, curves and points, and offers boolean operation between voxelgrids. It can convert voxelgrids to solid mesh hulls.</h5>
+
+<div class="breadcrumb">
+  <a href="../index.html">Component Index</a>
+  <a href="#" class="breadcrumb-nolink">VoxelTools</a>
+</div>
+
+</div>
+
+<div class="ghbar ghbar-addon-page">
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/voxeltools/voxelGridToBoxes.html"><div class="ghsprite" style="background: url('../icons/voxelTools.png') -96px 0px" data-toptip="VoxelGrid To Boxes"></div></a>
+<a href="../components/voxeltools/voxelGridDimensions.html"><div class="ghsprite" style="background: url('../icons/voxelTools.png') -144px 0px" data-downtip="VoxelGrid Dimensions"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/voxeltools/hullFromMarchingCubes.html"><div class="ghsprite" style="background: url('../icons/voxelTools.png') -72px -24px" data-toptip="Hull from Marching Cubes"></div></a>
+<a href="../components/voxeltools/voxelGridToMeshHull.html"><div class="ghsprite" style="background: url('../icons/voxelTools.png') -96px -24px" data-downtip="VoxelGrid To Mesh Hull"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/voxeltools/voxelGridStatistics.html"><div class="ghsprite" style="background: url('../icons/voxelTools.png') -120px -24px" data-toptip="VoxelGrid Statistics"></div></a>
+<a href="../components/voxeltools/voxelGridToList.html"><div class="ghsprite" style="background: url('../icons/voxelTools.png') -168px -24px" data-downtip="VoxelGrid To List"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+Analysis
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/voxeltools/voxelGridBooleanExclusive.html"><div class="ghsprite" style="background: url('../icons/voxelTools.png') -168px 0px" data-toptip="VoxelGrid Boolean Exclusive"></div></a>
+<a href="../components/voxeltools/voxelGridBooleanIntersect.html"><div class="ghsprite" style="background: url('../icons/voxelTools.png') -24px -24px" data-downtip="VoxelGrid Boolean Intersect"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/voxeltools/voxelGridBooleanInvert.html"><div class="ghsprite" style="background: url('../icons/voxelTools.png') -48px -24px" data-toptip="VoxelGrid Boolean Invert"></div></a>
+<a href="../components/voxeltools/voxelGridBooleanSubtract.html"><div class="ghsprite" style="background: url('../icons/voxelTools.png') -144px -24px" data-downtip="VoxelGrid Boolean Subtract"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/voxeltools/voxelGridBooleanUnion.html"><div class="ghsprite" style="background: url('../icons/voxelTools.png') -192px -24px" data-toptip="VoxelGrid Boolean Union"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+Boolean
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/voxeltools/createVoxelGrid.html"><div class="ghsprite" style="background: url('../icons/voxelTools.png') -120px 0px" data-toptip="Create VoxelGrid"></div></a>
+<a href="../components/voxeltools/voxelGridFromList.html"><div class="ghsprite" style="background: url('../icons/voxelTools.png') -216px 0px" data-downtip="VoxelGrid From List"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/voxeltools/voxelateGeometry.html"><div class="ghsprite" style="background: url('../icons/voxelTools.png') -216px -24px" data-toptip="VoxelateGeometry"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="2">
+Create
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/voxeltools/voxelGridFromHexString.html"><div class="ghsprite" style="background: url('../icons/voxelTools.png') -192px 0px" data-toptip="VoxelGrid From Hex String"></div></a>
+<a href="../components/voxeltools/voxelGridToHexString.html"><div class="ghsprite" style="background: url('../icons/voxelTools.png') 0px -24px" data-downtip="VoxelGrid To Hex String"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+Input/Output
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/voxeltools/createScalarGrid.html"><div class="ghsprite" style="background: url('../icons/voxelTools.png') 0px 0px" data-toptip="Create Scalar Grid"></div></a>
+<a href="../components/voxeltools/marchingCubesHullScalar.html"><div class="ghsprite" style="background: url('../icons/voxelTools.png') -24px 0px" data-downtip="Marching Cubes Hull (Scalar)"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/voxeltools/visualizeScalarGrid.html"><div class="ghsprite" style="background: url('../icons/voxelTools.png') -48px 0px" data-toptip="Visualize Scalar Grid"></div></a>
+<a href="../components/voxeltools/voxelateGeometryIntoScalarGrid.html"><div class="ghsprite" style="background: url('../icons/voxelTools.png') -72px 0px" data-downtip="Voxelate Geometry into Scalar Grid"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="2">
+Scalar
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+
+<div class="cchild">
+<h3>Analysis</h3>
+<table class="addon-compos">
+<tbody>
+<tr><td class="ccol_1"><a href="../components/voxeltools/voxelGridToBoxes.html"><div class="ghsprite" style="background: url('../icons/voxelTools.png') -96px 0px" ></div></a></td><td class="ccol_2"><a href="../components/voxeltools/voxelGridToBoxes.html">VoxelGrid To Boxes</a> <span class="codeword">(VoxBox)</span><br><span class="desc">Get a list of boxes from a voxelgrid.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/voxeltools/voxelGridDimensions.html"><div class="ghsprite" style="background: url('../icons/voxelTools.png') -144px 0px" ></div></a></td><td class="ccol_2"><a href="../components/voxeltools/voxelGridDimensions.html">VoxelGrid Dimensions</a> <span class="codeword">(VGDimensions)</span><br><span class="desc">Get the dimensions of a voxelgrid</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/voxeltools/hullFromMarchingCubes.html"><div class="ghsprite" style="background: url('../icons/voxelTools.png') -72px -24px" ></div></a></td><td class="ccol_2"><a href="../components/voxeltools/hullFromMarchingCubes.html">Hull from Marching Cubes</a> <span class="codeword">(MarchingCubes)</span><br><span class="desc">Generate hull using the marching cubes algorithm</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/voxeltools/voxelGridToMeshHull.html"><div class="ghsprite" style="background: url('../icons/voxelTools.png') -96px -24px" ></div></a></td><td class="ccol_2"><a href="../components/voxeltools/voxelGridToMeshHull.html">VoxelGrid To Mesh Hull</a> <span class="codeword">(VoxMeshHull)</span><br><span class="desc">Generate a mesh of a Voxelgrid</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/voxeltools/voxelGridStatistics.html"><div class="ghsprite" style="background: url('../icons/voxelTools.png') -120px -24px" ></div></a></td><td class="ccol_2"><a href="../components/voxeltools/voxelGridStatistics.html">VoxelGrid Statistics</a> <span class="codeword">(VoxGridStat)</span><br><span class="desc">Get numerical statistics of a voxelgrid</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/voxeltools/voxelGridToList.html"><div class="ghsprite" style="background: url('../icons/voxelTools.png') -168px -24px" ></div></a></td><td class="ccol_2"><a href="../components/voxeltools/voxelGridToList.html">VoxelGrid To List</a> <span class="codeword">(VGList)</span><br><span class="desc">Decompose a Voxel Grid to a Boolean List</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>Boolean</h3>
+<table class="addon-compos">
+<tbody>
+<tr><td class="ccol_1"><a href="../components/voxeltools/voxelGridBooleanExclusive.html"><div class="ghsprite" style="background: url('../icons/voxelTools.png') -168px 0px" ></div></a></td><td class="ccol_2"><a href="../components/voxeltools/voxelGridBooleanExclusive.html">VoxelGrid Boolean Exclusive</a> <span class="codeword">(VGExclusive)</span><br><span class="desc">Join multiple grids: remove overlapping boxes; keep the boxes that are unique to all grids</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/voxeltools/voxelGridBooleanIntersect.html"><div class="ghsprite" style="background: url('../icons/voxelTools.png') -24px -24px" ></div></a></td><td class="ccol_2"><a href="../components/voxeltools/voxelGridBooleanIntersect.html">VoxelGrid Boolean Intersect</a> <span class="codeword">(VGIntersect)</span><br><span class="desc">Intersection result of two grids</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/voxeltools/voxelGridBooleanInvert.html"><div class="ghsprite" style="background: url('../icons/voxelTools.png') -48px -24px" ></div></a></td><td class="ccol_2"><a href="../components/voxeltools/voxelGridBooleanInvert.html">VoxelGrid Boolean Invert</a> <span class="codeword">(VGInvert)</span><br><span class="desc">Invert a voxel grid</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/voxeltools/voxelGridBooleanSubtract.html"><div class="ghsprite" style="background: url('../icons/voxelTools.png') -144px -24px" ></div></a></td><td class="ccol_2"><a href="../components/voxeltools/voxelGridBooleanSubtract.html">VoxelGrid Boolean Subtract</a> <span class="codeword">(VGSubtract)</span><br><span class="desc">Subtract grid 1..n from the first grid</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/voxeltools/voxelGridBooleanUnion.html"><div class="ghsprite" style="background: url('../icons/voxelTools.png') -192px -24px" ></div></a></td><td class="ccol_2"><a href="../components/voxeltools/voxelGridBooleanUnion.html">VoxelGrid Boolean Union</a> <span class="codeword">(VGUnion)</span><br><span class="desc">Join multiple grids</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>Scalar</h3>
+<table class="addon-compos">
+<tbody>
+<tr><td class="ccol_1"><a href="../components/voxeltools/createScalarGrid.html"><div class="ghsprite" style="background: url('../icons/voxelTools.png') 0px 0px" ></div></a></td><td class="ccol_2"><a href="../components/voxeltools/createScalarGrid.html">Create Scalar Grid</a> <span class="codeword">(ScaVoxCreate)</span><br><span class="desc">Create an empty scalarlgrid</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/voxeltools/marchingCubesHullScalar.html"><div class="ghsprite" style="background: url('../icons/voxelTools.png') -24px 0px" ></div></a></td><td class="ccol_2"><a href="../components/voxeltools/marchingCubesHullScalar.html">Marching Cubes Hull (Scalar)</a> <span class="codeword">(ScalarMarchCubes)</span><br><span class="desc">Create a mesh hull using the marching cubes algorithm</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/voxeltools/visualizeScalarGrid.html"><div class="ghsprite" style="background: url('../icons/voxelTools.png') -48px 0px" ></div></a></td><td class="ccol_2"><a href="../components/voxeltools/visualizeScalarGrid.html">Visualize Scalar Grid</a> <span class="codeword">(ScalarGridVis)</span><br><span class="desc">Show the values of a scalar grid in 3d</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/voxeltools/voxelateGeometryIntoScalarGrid.html"><div class="ghsprite" style="background: url('../icons/voxelTools.png') -72px 0px" ></div></a></td><td class="ccol_2"><a href="../components/voxeltools/voxelateGeometryIntoScalarGrid.html">Voxelate Geometry into Scalar Grid</a> <span class="codeword">(VoxGeoScalar)</span><br><span class="desc">Adds any geometry to a Scalar Grid</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>Create</h3>
+<table class="addon-compos">
+<tbody>
+<tr><td class="ccol_1"><a href="../components/voxeltools/createVoxelGrid.html"><div class="ghsprite" style="background: url('../icons/voxelTools.png') -120px 0px" ></div></a></td><td class="ccol_2"><a href="../components/voxeltools/createVoxelGrid.html">Create VoxelGrid</a> <span class="codeword">(VoxCreate)</span><br><span class="desc">Create an empty voxelgrid</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/voxeltools/voxelGridFromList.html"><div class="ghsprite" style="background: url('../icons/voxelTools.png') -216px 0px" ></div></a></td><td class="ccol_2"><a href="../components/voxeltools/voxelGridFromList.html">VoxelGrid From List</a> <span class="codeword">(VGList)</span><br><span class="desc">Set the voxel values from a list of booleans</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/voxeltools/voxelateGeometry.html"><div class="ghsprite" style="background: url('../icons/voxelTools.png') -216px -24px" ></div></a></td><td class="ccol_2"><a href="../components/voxeltools/voxelateGeometry.html">VoxelateGeometry</a> <span class="codeword">(VoxGeo)</span><br><span class="desc">Adds any geometry to a voxelgrid</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>Input/Output</h3>
+<table class="addon-compos">
+<tbody>
+<tr><td class="ccol_1"><a href="../components/voxeltools/voxelGridFromHexString.html"><div class="ghsprite" style="background: url('../icons/voxelTools.png') -192px 0px" ></div></a></td><td class="ccol_2"><a href="../components/voxeltools/voxelGridFromHexString.html">VoxelGrid From Hex String</a> <span class="codeword">(VGFromHex)</span><br><span class="desc">Convert a voxelgrid from a hexadecimal string</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/voxeltools/voxelGridToHexString.html"><div class="ghsprite" style="background: url('../icons/voxelTools.png') 0px -24px" ></div></a></td><td class="ccol_2"><a href="../components/voxeltools/voxelGridToHexString.html">VoxelGrid To Hex String</a> <span class="codeword">(VGToHex)</span><br><span class="desc">Convert a voxelgrid to a hexadecimal string</span></td></tr>
+</tbody>
+</table>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div id="docs-foot" class="docs-footindex">
+<div id="docs-foot-inner">
+<p class="left">
+Site design © <a href="https://github.com/robinrodricks/">Robin Rodricks</a>. &nbsp;
+
+VoxelTools and associated data © 2022  <a href="https://github.com/arendvw/VoxelTools">Arend van Waart</a>. &nbsp;
+<br>
+Rhinoceros and Grasshopper are registered trademarks of <a href="https://www.rhino3d.com/">Robert McNeel & Associates</a>.&nbsp;
+Hosted by <a href="http://www.github.com/">GitHub</a> 
+</p>
+<p class="right docs-lightfont">
+
+<a href="https://github.com/grasshopper3d/GrasshopperDocsSite/issues/new">Report an Issue</a> &nbsp;|&nbsp;
+<a href="/termsOfService.html">Terms of Service</a>
+</p>
+
+</div>
+
+
+
+</div>
+</div>
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/jquery-autocomplete.min.js"></script>
+<script type="text/javascript" src="/js/app-searchbar.js"></script>
+
+    </body>
+</html>

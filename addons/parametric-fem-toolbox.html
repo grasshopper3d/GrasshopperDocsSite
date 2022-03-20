@@ -1,0 +1,196 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Parametric FEM Toolbox - Addon for Grasshopper | Grasshopper Docs</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+
+<meta name="description" content="This Plug-In enables a functional interoperability between the FEM software RFEM and Grasshopper. Thus, the full potential of Grasshopper can be used to manipulate existing RFEM-Models and get data from them." />
+<meta name="title" content="Parametric FEM Toolbox - Addon for Grasshopper | Grasshopper Docs" />
+<meta property="og:title" content="Parametric FEM Toolbox - Addon for Grasshopper | Grasshopper Docs" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://grasshopperdocs.com/addons/parametric-fem-toolbox.html" />
+<meta property="og:site_name" content="Grasshopper Docs" />
+
+<link href="../style.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+
+<div id="docs">
+
+<div id="docs-head">
+<div id="docs-masthead">
+<p id="docs-sitename"><a href="http://grasshopperdocs.com/">
+	<img id="site-logo-icon" src="/images/logo-icon.png" alt=""></img>
+	<img id="site-logo-text" src="/images/logo-text.png" alt="Grasshopper Docs"></img>
+</a></p>
+<p id="docs-sitedesc">Community documentation for Grasshopper add-ons &amp; plugins</p>
+<div id="docs-sitesearch">
+	<input id="docs-sitesearch-inputbox" type="text" name="docs-sitesearch-inputbox" />
+	<img id="docs-searchicon" src="/images/search.png"/>
+</div>
+</div>
+</div>
+
+<div id="docs-body">
+
+<div class="page">
+
+<div class="content addon-page">
+
+<div class="addon-buttons">
+<a href="https://www.rhino3d.com/features/package-manager/">Download</a>
+
+</div>
+
+
+<div class="google-ad-sidebar">
+
+<!-- Carbon Ads -->
+<script async type="text/javascript" src="https://cdn.carbonads.com/carbon.js?serve=CK7IC27L&placement=grasshopperdocscom" id="_carbonads_js"></script>
+
+</div>
+
+<div class="addon-header">
+<h1>Parametric FEM Toolbox</h1>
+<h5>
+<span>ADDON. Version <b>1.4.1</b>.</span>
+<span>Released on <b>2021-Nov-23</b>.</span>
+<span>Provides <b>12</b> components.</span>
+<span>Created by <b>Diego Apell&#225;niz</b>.</span>
+<span>Features <b>0</b> video tutorials.</span>
+</h5>
+<h5>This Plug-In enables a functional interoperability between the FEM software RFEM and Grasshopper. Thus, the full potential of Grasshopper can be used to manipulate existing RFEM-Models and get data from them.</h5>
+
+<div class="breadcrumb">
+  <a href="../index.html">Component Index</a>
+  <a href="#" class="breadcrumb-nolink">Parametric FEM Toolbox</a>
+</div>
+
+</div>
+
+<div class="ghbar ghbar-addon-page">
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/parametricfemtoolbox/calculateModel.html"><div class="ghsprite" style="background: url('../icons/parametricFEMToolbox.png') 0px 0px" data-toptip="Calculate Model"></div></a>
+<a href="../components/parametricfemtoolbox/extrudeMembers.html"><div class="ghsprite" style="background: url('../icons/parametricFEMToolbox.png') -24px 0px" data-downtip="Extrude Members"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/parametricfemtoolbox/getData.html"><div class="ghsprite" style="background: url('../icons/parametricFEMToolbox.png') -48px 0px" data-toptip="Get Data"></div></a>
+<a href="../components/parametricfemtoolbox/getResults.html"><div class="ghsprite" style="background: url('../icons/parametricFEMToolbox.png') -72px 0px" data-downtip="Get Results"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/parametricfemtoolbox/inputForLCA.html"><div class="ghsprite" style="background: url('../icons/parametricFEMToolbox.png') -96px 0px" data-toptip="Input for LCA"></div></a>
+<a href="../components/parametricfemtoolbox/listData.html"><div class="ghsprite" style="background: url('../icons/parametricFEMToolbox.png') -120px 0px" data-downtip="List Data"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/parametricfemtoolbox/optimizeCrossSections.html"><div class="ghsprite" style="background: url('../icons/parametricFEMToolbox.png') -144px 0px" data-toptip="Optimize Cross Sections"></div></a>
+<a href="../components/parametricfemtoolbox/lineSupportForces.html"><div class="ghsprite" style="background: url('../icons/parametricFEMToolbox.png') -168px 0px" data-downtip="Line Support Forces"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/parametricfemtoolbox/memberForces.html"><div class="ghsprite" style="background: url('../icons/parametricFEMToolbox.png') -192px 0px" data-toptip="Member Forces"></div></a>
+<a href="../components/parametricfemtoolbox/nodalSupportForces.html"><div class="ghsprite" style="background: url('../icons/parametricFEMToolbox.png') -216px 0px" data-downtip="Nodal Support Forces"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/parametricfemtoolbox/surfaceForces.html"><div class="ghsprite" style="background: url('../icons/parametricFEMToolbox.png') 0px -24px" data-toptip="Surface Forces"></div></a>
+<a href="../components/parametricfemtoolbox/setData.html"><div class="ghsprite" style="background: url('../icons/parametricFEMToolbox.png') -24px -24px" data-downtip="Set Data"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="6">
+RFEM
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+
+<div class="cchild">
+<h3>RFEM</h3>
+<table class="addon-compos">
+<tbody>
+<tr><td class="ccol_1"><a href="../components/parametricfemtoolbox/calculateModel.html"><div class="ghsprite" style="background: url('../icons/parametricFEMToolbox.png') 0px 0px" ></div></a></td><td class="ccol_2"><a href="../components/parametricfemtoolbox/calculateModel.html">Calculate Model</a> <span class="codeword">(Calculate)</span><br><span class="desc">Calculate RFEM Model.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parametricfemtoolbox/extrudeMembers.html"><div class="ghsprite" style="background: url('../icons/parametricFEMToolbox.png') -24px 0px" ></div></a></td><td class="ccol_2"><a href="../components/parametricfemtoolbox/extrudeMembers.html">Extrude Members</a> <span class="codeword">(Extrude)</span><br><span class="desc">Extrude members using the geometry of the cross sections assigned to them.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parametricfemtoolbox/getData.html"><div class="ghsprite" style="background: url('../icons/parametricFEMToolbox.png') -48px 0px" ></div></a></td><td class="ccol_2"><a href="../components/parametricfemtoolbox/getData.html">Get Data</a><br><span class="desc">Gets Data from the RFEM Model.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parametricfemtoolbox/getResults.html"><div class="ghsprite" style="background: url('../icons/parametricFEMToolbox.png') -72px 0px" ></div></a></td><td class="ccol_2"><a href="../components/parametricfemtoolbox/getResults.html">Get Results</a><br><span class="desc">Gets Results from the RFEM Model.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parametricfemtoolbox/inputForLCA.html"><div class="ghsprite" style="background: url('../icons/parametricFEMToolbox.png') -96px 0px" ></div></a></td><td class="ccol_2"><a href="../components/parametricfemtoolbox/inputForLCA.html">Input for LCA</a> <span class="codeword">(LCA)</span><br><span class="desc">Get Model masses groupes by material for Life Cycle Analysis</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parametricfemtoolbox/listData.html"><div class="ghsprite" style="background: url('../icons/parametricFEMToolbox.png') -120px 0px" ></div></a></td><td class="ccol_2"><a href="../components/parametricfemtoolbox/listData.html">List Data</a><br><span class="desc">Converts a string-format RF-List into an integer list</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parametricfemtoolbox/optimizeCrossSections.html"><div class="ghsprite" style="background: url('../icons/parametricFEMToolbox.png') -144px 0px" ></div></a></td><td class="ccol_2"><a href="../components/parametricfemtoolbox/optimizeCrossSections.html">Optimize Cross Sections</a> <span class="codeword">(Optimize CroSec)</span><br><span class="desc">Performs a Cross Section Optimization with the EC3 Module.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parametricfemtoolbox/lineSupportForces.html"><div class="ghsprite" style="background: url('../icons/parametricFEMToolbox.png') -168px 0px" ></div></a></td><td class="ccol_2"><a href="../components/parametricfemtoolbox/lineSupportForces.html">Line Support Forces</a> <span class="codeword">(LSForces)</span><br><span class="desc">Get Line Support Forces from Calculation Results.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parametricfemtoolbox/memberForces.html"><div class="ghsprite" style="background: url('../icons/parametricFEMToolbox.png') -192px 0px" ></div></a></td><td class="ccol_2"><a href="../components/parametricfemtoolbox/memberForces.html">Member Forces</a> <span class="codeword">(MForces)</span><br><span class="desc">Get Member Forces from Calculation Results.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parametricfemtoolbox/nodalSupportForces.html"><div class="ghsprite" style="background: url('../icons/parametricFEMToolbox.png') -216px 0px" ></div></a></td><td class="ccol_2"><a href="../components/parametricfemtoolbox/nodalSupportForces.html">Nodal Support Forces</a> <span class="codeword">(NSForces)</span><br><span class="desc">Get Nodal Support Forces from Calculation Results.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parametricfemtoolbox/surfaceForces.html"><div class="ghsprite" style="background: url('../icons/parametricFEMToolbox.png') 0px -24px" ></div></a></td><td class="ccol_2"><a href="../components/parametricfemtoolbox/surfaceForces.html">Surface Forces</a> <span class="codeword">(SForces)</span><br><span class="desc">Get Surface Forces from Calculation Results.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/parametricfemtoolbox/setData.html"><div class="ghsprite" style="background: url('../icons/parametricFEMToolbox.png') -24px -24px" ></div></a></td><td class="ccol_2"><a href="../components/parametricfemtoolbox/setData.html">Set Data</a><br><span class="desc">Sets Data in the RFEM Model.</span></td></tr>
+</tbody>
+</table>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div id="docs-foot" class="docs-footindex">
+<div id="docs-foot-inner">
+<p class="left">
+Site design © <a href="https://github.com/robinrodricks/">Robin Rodricks</a>. &nbsp;
+
+Parametric FEM Toolbox and associated data © 2022  <a href="https://www.rhino3d.com/features/package-manager/">Diego Apell&#225;niz</a>. &nbsp;
+<br>
+Rhinoceros and Grasshopper are registered trademarks of <a href="https://www.rhino3d.com/">Robert McNeel & Associates</a>.&nbsp;
+Hosted by <a href="http://www.github.com/">GitHub</a> 
+</p>
+<p class="right docs-lightfont">
+
+<a href="https://github.com/grasshopper3d/GrasshopperDocsSite/issues/new">Report an Issue</a> &nbsp;|&nbsp;
+<a href="/termsOfService.html">Terms of Service</a>
+</p>
+
+</div>
+
+
+
+</div>
+</div>
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/jquery-autocomplete.min.js"></script>
+<script type="text/javascript" src="/js/app-searchbar.js"></script>
+
+    </body>
+</html>
