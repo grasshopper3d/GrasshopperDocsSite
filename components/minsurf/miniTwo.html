@@ -1,0 +1,185 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MiniTwo - MinSurf - Component for Grasshopper | Grasshopper Docs</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+
+<meta name="description" content="Computes an approximate minimal surface (soap film) inside two closed curves." />
+<meta name="title" content="MiniTwo - MinSurf - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:title" content="MiniTwo - MinSurf - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://grasshopperdocs.com/components/minsurf/miniTwo.html" />
+<meta property="og:site_name" content="Grasshopper Docs" />
+
+<link href="../../style.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+
+<div id="docs">
+
+<div id="docs-head">
+<div id="docs-masthead">
+<p id="docs-sitename"><a href="http://grasshopperdocs.com/">
+	<img id="site-logo-icon" src="/images/logo-icon.png" alt=""></img>
+	<img id="site-logo-text" src="/images/logo-text.png" alt="Grasshopper Docs"></img>
+</a></p>
+<p id="docs-sitedesc">Community documentation for Grasshopper add-ons &amp; plugins</p>
+<div id="docs-sitesearch">
+	<input id="docs-sitesearch-inputbox" type="text" name="docs-sitesearch-inputbox" />
+	<img id="docs-searchicon" src="/images/search.png"/>
+</div>
+</div>
+</div>
+
+<div id="docs-body">
+
+<div class="page">
+
+<div class="content compo-page">
+
+<div class="ghbar ">
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/minsurf/miniTwo.html"><div class="ghsprite" style="background: url('../../icons/minSurf.png') -72px 0px" data-toptip="MiniTwo"></div></a>
+<a href="../../components/minsurf/miniOne.html"><div class="ghsprite" style="background: url('../../icons/minSurf.png') -96px 0px" data-downtip="MiniOne"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+Geometry
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/minsurf/minimalSurface.html"><div class="ghsprite" style="background: url('../../icons/minSurf.png') 0px 0px" data-toptip="Minimal Surface"></div></a>
+<a href="../../components/minsurf/minimalSurfaceMesh.html"><div class="ghsprite" style="background: url('../../icons/minSurf.png') -24px 0px" data-downtip="Minimal Surface Mesh"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/minsurf/meshRelax.html"><div class="ghsprite" style="background: url('../../icons/minSurf.png') -48px 0px" data-toptip="Mesh Relax"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="2">
+MinSurf
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+
+<div class="addon-buttons">
+<a href="https://www.food4rhino.com/app/minimal-surface-creator">Download</a>
+
+</div>
+
+
+<div class="google-ad-sidebar">
+
+<!-- Carbon Ads -->
+<script async type="text/javascript" src="https://cdn.carbonads.com/carbon.js?serve=CK7IC27L&placement=grasshopperdocscom" id="_carbonads_js"></script>
+
+</div>
+
+<div class="compo-header">
+<h1><div class="ghsprite" style="background: url('../../icons/minSurf.png') -72px 0px" ></div> MiniTwo</h1>
+
+<div class="breadcrumb">
+ <a href="../../index.html">Component Index</a>
+  <a href="../../addons/minsurf.html">MinSurf</a><a href="#" class="breadcrumb-nolink">Geometry</a><a href="#" class="breadcrumb-nolink">minitwo</a>
+</div>
+
+</div>
+<h3>Computes an approximate minimal surface (soap film) inside two closed curves.</h3>
+<h2>Inputs</h2>
+<table class="params-table input-params">
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Input curve (required)</b></td><td>inputCurve</td><td>The first closed input curve.The curve can either be smooth, or be a polyline, or a mixture. The only requirement is that it be closed. This parameter is required.</td><td>Curve</td></tr>
+<tr><td><b>nrVerticesVertical (optional)</b></td><td>nrVerticesVertical</td><td>number of vertices in vertical direction.</td><td>Integer</td></tr>
+<tr><td><b>nrVerticesAround (optional)</b></td><td>nrVerticesAround</td><td>number of vertices around the cylinder.</td><td>Integer</td></tr>
+<tr><td><b>Degree (optional)</b></td><td>degree</td><td>degree of the surface.</td><td>Integer</td></tr>
+<tr><td><b>Rotation angle of one of the curves around itself (optional)</b></td><td>rotationAngle</td><td>rotation angle of the curves around itself</td><td>Number</td></tr>
+<tr><td><b>Flip one curve (optional)</b></td><td>flip</td><td>flip one curve? try this to prevent self-intersection.</td><td>Boolean</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table class="params-table output-params">
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Output mesh</b></td><td>outputMesh</td><td>The output mesh, an approximate minimal surface.</td><td>Mesh</td></tr>
+</tbody>
+</table>
+
+
+</div>
+
+</div>
+
+</div>
+
+<div id="docs-foot" class="docs-footindex">
+<div id="docs-foot-inner">
+<p class="left">
+Site design © <a href="https://github.com/robinrodricks/">Robin Rodricks</a>. &nbsp;
+
+MinSurf and associated data © 2022  <a href="https://www.food4rhino.com/app/minimal-surface-creator">Cerver</a>. &nbsp;
+<br>
+Rhinoceros and Grasshopper are registered trademarks of <a href="https://www.rhino3d.com/">Robert McNeel & Associates</a>.&nbsp;
+Hosted by <a href="http://www.github.com/">GitHub</a> 
+</p>
+<p class="right docs-lightfont">
+
+<a href="https://github.com/grasshopper3d/GrasshopperDocsSite/issues/new">Report an Issue</a> &nbsp;|&nbsp;
+<a href="/termsOfService.html">Terms of Service</a>
+</p>
+
+</div>
+
+
+
+</div>
+</div>
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/jquery-autocomplete.min.js"></script>
+<script type="text/javascript" src="/js/app-searchbar.js"></script>
+
+    </body>
+</html>

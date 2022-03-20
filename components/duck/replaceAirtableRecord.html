@@ -1,0 +1,182 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Replace Airtable Record - Duck - Component for Grasshopper | Grasshopper Docs</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+
+<meta name="description" content="Replace a record with a specific ID in a specific table using provided information" />
+<meta name="title" content="Replace Airtable Record - Duck - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:title" content="Replace Airtable Record - Duck - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://grasshopperdocs.com/components/duck/replaceAirtableRecord.html" />
+<meta property="og:site_name" content="Grasshopper Docs" />
+
+<link href="../../style.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+
+<div id="docs">
+
+<div id="docs-head">
+<div id="docs-masthead">
+<p id="docs-sitename"><a href="http://grasshopperdocs.com/">
+	<img id="site-logo-icon" src="/images/logo-icon.png" alt=""></img>
+	<img id="site-logo-text" src="/images/logo-text.png" alt="Grasshopper Docs"></img>
+</a></p>
+<p id="docs-sitedesc">Community documentation for Grasshopper add-ons &amp; plugins</p>
+<div id="docs-sitesearch">
+	<input id="docs-sitesearch-inputbox" type="text" name="docs-sitesearch-inputbox" />
+	<img id="docs-searchicon" src="/images/search.png"/>
+</div>
+</div>
+</div>
+
+<div id="docs-body">
+
+<div class="page">
+
+<div class="content compo-page">
+
+<div class="ghbar ">
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/duck/airtableRecordFields.html"><div class="ghsprite" style="background: url('../../icons/duck.png') 0px 0px" data-toptip="Airtable Record Fields"></div></a>
+<a href="../../components/duck/createAirtableRecord.html"><div class="ghsprite" style="background: url('../../icons/duck.png') -24px 0px" data-downtip="Create Airtable Record"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/duck/deleteAirtableRecord.html"><div class="ghsprite" style="background: url('../../icons/duck.png') -48px 0px" data-toptip="Delete Airtable Record"></div></a>
+<a href="../../components/duck/getAirtableRecord.html"><div class="ghsprite" style="background: url('../../icons/duck.png') -72px 0px" data-downtip="Get Airtable Record"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/duck/listAirtableRecords.html"><div class="ghsprite" style="background: url('../../icons/duck.png') -96px 0px" data-toptip="List Airtable Records"></div></a>
+<a href="../../components/duck/replaceAirtableRecord.html"><div class="ghsprite" style="background: url('../../icons/duck.png') -120px 0px" data-downtip="Replace Airtable Record"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/duck/updateAirtableRecord.html"><div class="ghsprite" style="background: url('../../icons/duck.png') -144px 0px" data-toptip="Update Airtable Record"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="4">
+Database
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+
+<div class="addon-buttons">
+<a href="https://www.food4rhino.com/app/duck">Download</a>
+
+</div>
+
+
+<div class="google-ad-sidebar">
+
+<!-- Carbon Ads -->
+<script async type="text/javascript" src="https://cdn.carbonads.com/carbon.js?serve=CK7IC27L&placement=grasshopperdocscom" id="_carbonads_js"></script>
+
+</div>
+
+<div class="compo-header">
+<h1><div class="ghsprite" style="background: url('../../icons/duck.png') -120px 0px" ></div> Replace Airtable Record</h1>
+
+<div class="breadcrumb">
+ <a href="../../index.html">Component Index</a>
+  <a href="../../addons/duck.html">Duck</a><a href="#" class="breadcrumb-nolink">Database</a><a href="#" class="breadcrumb-nolink">Replace</a>
+</div>
+
+</div>
+<h3>Replace a record with a specific ID in a specific table using provided information</h3>
+<h2>Inputs</h2>
+<table class="params-table input-params">
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Refresh?</b></td><td>B</td><td>Boolean button to refresh solution</td><td>Boolean</td></tr>
+<tr><td><b>Base ID</b></td><td>ID</td><td>ID of Airtable Base</td><td>Text</td></tr>
+<tr><td><b>App Key</b></td><td>K</td><td>App Key for Airtable Base</td><td>Text</td></tr>
+<tr><td><b>Table Name</b></td><td>T</td><td>Name of table in Airtable Base</td><td>Generic Data</td></tr>
+<tr><td><b>Field Name</b></td><td>FN</td><td>Field Name of Field in Airtable Record</td><td>Generic Data</td></tr>
+<tr><td><b>Fields</b></td><td>F</td><td>New Fields of Airtable Record to update</td><td>Generic Data</td></tr>
+<tr><td><b>Records</b></td><td>R</td><td>Airtable Records to Update</td><td>Generic Data</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table class="params-table output-params">
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Error Message</b></td><td>E</td><td>Error Message string</td><td>Text</td></tr>
+<tr><td><b>Out Record</b></td><td>O</td><td>Out Record Result string</td><td>Generic Data</td></tr>
+</tbody>
+</table>
+
+
+</div>
+
+</div>
+
+</div>
+
+<div id="docs-foot" class="docs-footindex">
+<div id="docs-foot-inner">
+<p class="left">
+Site design © <a href="https://github.com/robinrodricks/">Robin Rodricks</a>. &nbsp;
+
+Duck and associated data © 2022  <a href="https://www.food4rhino.com/app/duck">Wayne Yeh</a>. &nbsp;
+<br>
+Rhinoceros and Grasshopper are registered trademarks of <a href="https://www.rhino3d.com/">Robert McNeel & Associates</a>.&nbsp;
+Hosted by <a href="http://www.github.com/">GitHub</a> 
+</p>
+<p class="right docs-lightfont">
+
+<a href="https://github.com/grasshopper3d/GrasshopperDocsSite/issues/new">Report an Issue</a> &nbsp;|&nbsp;
+<a href="/termsOfService.html">Terms of Service</a>
+</p>
+
+</div>
+
+
+
+</div>
+</div>
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/jquery-autocomplete.min.js"></script>
+<script type="text/javascript" src="/js/app-searchbar.js"></script>
+
+    </body>
+</html>

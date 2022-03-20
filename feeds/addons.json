@@ -138,9 +138,9 @@
       "helpLink": "https://grasshopperdocs.com/addons/bowerbird.html",
       "category": "Geometry & Meshes",
       "isSystem": false,
-      "components": 11,
-      "description": "Bowerbird Tools for Grasshopper",
-      "authorName": "Thomas J. Oberbichler",
+      "components": 25,
+      "description": "",
+      "authorName": "Thomas Oberbichler",
       "authorContact": "thomas.oberbichler@gmail.com"
     },
     {
@@ -931,10 +931,23 @@
       "helpLink": "https://grasshopperdocs.com/addons/lunchbox.html",
       "category": "Core Collections",
       "isSystem": false,
-      "components": 93,
+      "components": 94,
       "description": "LunchBox is a collection of computational design tools for Grasshopper and Dynamo.  The plugins include new component nodes for managing data and geometry for activities such as generative form making, paneling, rationalization, and interoperability. LunchBox also includes new general-purpose Machine Learning components built on the Accord.NET framework.",
       "authorName": "Nathan Miller",
       "authorContact": "nate@provingground.io, lunchbox@provingground.io"
+    },
+    {
+      "name": "Mallard",
+      "releaseDate": "2019-Nov-16",
+      "version": "1.0.0",
+      "downloadLink": "https://www.food4rhino.com/app/mallard",
+      "helpLink": "https://grasshopperdocs.com/addons/mallard.html",
+      "category": "Database Integration",
+      "isSystem": false,
+      "components": 7,
+      "description": "Mallad is a grasshopper plugin to interface with the user-friendly \"human-readable\" Database tool called Airtable. It facilitates the usage of Airtable APIs without having to worry about interfacing with raw HTTP, the low-level concepts like HTTP status codes and records paging. Users can integrate with Airtable by consuming Airtable public APIs such as List Records, Create Record, Retrieve Record, Update Record, Replace Record, Delete Record.",
+      "authorName": "Nicholas Cassab-Gheta & Susan Wu",
+      "authorContact": "nickcassab.com"
     },
     {
       "name": "MeshEdit",
@@ -1009,7 +1022,7 @@
       "helpLink": "https://grasshopperdocs.com/addons/minsurf.html",
       "category": "Geometry & Meshes",
       "isSystem": false,
-      "components": 3,
+      "components": 5,
       "description": "Generate Minimal Surfaces from boundary curves or do a minimal relaxation on a mesh.",
       "authorName": "Cerver",
       "authorContact": "info@cerver.org"
@@ -1061,7 +1074,7 @@
       "helpLink": "https://grasshopperdocs.com/addons/monoceros.html",
       "category": "Geometry & Meshes",
       "isSystem": false,
-      "components": 32,
+      "components": 34,
       "description": "Monoceros is a suite of tools for optimally occupying an Envelope with discrete Modules, where the spatial relationship between those Modules can be constrained by a set of user-defined Rules. By using the Wave Function Collapse algorithm, it provides an innovative and fast solution to the emerging architectural problem of Discrete aggregation for purposes of design, architecture and urban planning.\n\nMonoceros is an implementation of the Wave Function Collapse (WFC) algorithm developed for game design by Maxim Gumin and extended and promoted by Oskar Stålberg with his game Townscaper. WFC is an algorithm that fills an entire spatial envelope with Modules in a meaningful way. The envelope is divided into discrete box-like Slots. The algorithm selects and places Modules into the Slots, making sure any two placed Modules can become neighbors (do have a common connector) according to specified Rules.\n\nDiscrete aggregation is one of the hottest approaches of computational design, along with the emergent swarm intelligence and AI. It recognizes small distinct parts that can be assembled into larger aggregates according to certain requirements. The parts are often represented by material components assembled using connectors. Most prominent discrete approaches are voxelization, discrete growth and constraint modeling, such as Wave Function Collapse.",
       "authorName": "Jan Pernecky Subdigital",
       "authorContact": "monoceros@sub.digital"
@@ -1152,7 +1165,7 @@
       "helpLink": "https://grasshopperdocs.com/addons/opossum.html",
       "category": "Maths & Optimization",
       "isSystem": false,
-      "components": 1,
+      "components": 2,
       "description": "Opossum includes two of the best-performing,single-objective optimization algorithms in Grasshopper: model-based RBFOpt and evolutionary CMA-ES. It also include the multi-objective RBFMOpt and NSGA-II algorithms.\n\nRBFOpt uses advanced machine learning techniques to find good solutions with a small number of function evaluations, i.e. simulations, while CMA-ES reliably finds near-optimal solutions when many function evaluations are possible. (Various papers with benchmark results are availabe here.) RBFMOpt won the “2-Objective Expensive” track of the international Black Box Optimization Competition 2019, surpassing the winner of the previous two years, the commercial algorithm Artelys Nitro.\n\nOpossum's GUI is similar to Galapagos. Opossum has a results table, which makes it easy to revisit all optimization results by double-clicking entries in the table.",
       "authorName": "Thomas Wortmann",
       "authorContact": "opossum@sutd.edu.sg"
@@ -1542,7 +1555,7 @@
       "helpLink": "https://grasshopperdocs.com/addons/topologic.html",
       "category": "Exotic Geometry",
       "isSystem": false,
-      "components": 193,
+      "components": 197,
       "description": "Topologic is a software modelling library enabling hierarchical and topological representations of architectural spaces, buildings and artefacts through non-manifold topology (NMT). Topologic is designed as a core library and additional plugins to visual data flow programming (VDFP) applications and parametric modelling platforms commonly used in architectural design practice. These applications provide workspaces with visual programming nodes and connections for architects to interact with Topologic and perform architectural design and analysis tasks.\n\nTopologic is well-suited to create a lightweight representation of a building as an external envelope and the subdivision of the enclosed space into separate spaces and zones using zero-thickness internal surfaces. Because Topologic maintains topological consistency, a user can query these cellular spaces and surfaces regarding their topological data and thus conduct various analyses. For example, this lightweight and consistent representation was found to be well-matched with the input data requirements for energy analysis simulation software. Because Topologic allows entities with mixed dimensionalities and those that are optionally independent (e.g. a line, a surface, a volume) to co-exist, structural models can be represented in a coherent manner where lines can represent columns and beams, surfaces can represent walls and slabs, and volumes can represent solids. In addition, non-building entities, such as structural loads can be efficiently attached to the structure. This creates a lightweight model that is well-matched with the input data requirements for structural analysis simulation software.",
       "authorName": "wassimj",
       "authorContact": "info@topologic.app"
@@ -1712,9 +1725,9 @@
       "category": null,
       "isSystem": true,
       "components": 36,
-      "description": null,
+      "description": "",
       "authorName": "David Rutten",
-      "authorContact": null
+      "authorContact": ""
     },
     {
       "name": "Grasshopper Curve",
@@ -1725,9 +1738,9 @@
       "category": null,
       "isSystem": true,
       "components": 106,
-      "description": null,
+      "description": "",
       "authorName": "David Rutten",
-      "authorContact": null
+      "authorContact": ""
     },
     {
       "name": "Grasshopper Surface",
@@ -1738,9 +1751,9 @@
       "category": null,
       "isSystem": true,
       "components": 87,
-      "description": null,
+      "description": "",
       "authorName": "David Rutten",
-      "authorContact": null
+      "authorContact": ""
     },
     {
       "name": "Grasshopper Intersect",
@@ -1751,9 +1764,9 @@
       "category": null,
       "isSystem": true,
       "components": 50,
-      "description": null,
+      "description": "",
       "authorName": "David Rutten",
-      "authorContact": null
+      "authorContact": ""
     },
     {
       "name": "Grasshopper Params",
@@ -1764,9 +1777,9 @@
       "category": null,
       "isSystem": true,
       "components": 12,
-      "description": null,
+      "description": "",
       "authorName": "David Rutten",
-      "authorContact": null
+      "authorContact": ""
     },
     {
       "name": "Grasshopper Vector",
@@ -1777,9 +1790,9 @@
       "category": null,
       "isSystem": true,
       "components": 68,
-      "description": null,
+      "description": "",
       "authorName": "David Rutten",
-      "authorContact": null
+      "authorContact": ""
     },
     {
       "name": "Grasshopper Sets",
@@ -1790,9 +1803,9 @@
       "category": null,
       "isSystem": true,
       "components": 66,
-      "description": null,
+      "description": "",
       "authorName": "David Rutten",
-      "authorContact": null
+      "authorContact": ""
     },
     {
       "name": "Grasshopper Maths",
@@ -1803,9 +1816,9 @@
       "category": null,
       "isSystem": true,
       "components": 102,
-      "description": null,
+      "description": "",
       "authorName": "David Rutten",
-      "authorContact": null
+      "authorContact": ""
     },
     {
       "name": "Grasshopper Mesh",
@@ -1816,9 +1829,9 @@
       "category": null,
       "isSystem": true,
       "components": 56,
-      "description": null,
+      "description": "",
       "authorName": "David Rutten",
-      "authorContact": null
+      "authorContact": ""
     },
     {
       "name": "Grasshopper Transform",
@@ -1829,9 +1842,9 @@
       "category": null,
       "isSystem": true,
       "components": 48,
-      "description": null,
+      "description": "",
       "authorName": "David Rutten",
-      "authorContact": null
+      "authorContact": ""
     }
   ]
 }

@@ -2517,8 +2517,148 @@
       "category": "Crafting",
       "summary": "Create a waffle structure from a mesh<br>",
       "description": null,
-      "iconCss": "background: url('icons/bowerbird.png') -216px 0px",
+      "iconCss": "background: url('icons/bowerbird.png') -192px 0px",
       "helpLink": "https://grasshopperdocs.com/components/bowerbird/bBWaffle.html"
+    },
+    {
+      "name": "BB Closest Point CurveOnSurface",
+      "id": "CP",
+      "library": "Bowerbird",
+      "category": "Curve on Surface",
+      "summary": "Find the closest point on an embedded curve",
+      "description": "Find the closest point on an embedded curve.",
+      "iconCss": "background: url('icons/bowerbird.png') 0px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/bowerbird/bBClosestPointCurveOnSurface.html"
+    },
+    {
+      "name": "BB Construct CurveOnSurface",
+      "id": "CrvOnSrf",
+      "library": "Bowerbird",
+      "category": "Curve on Surface",
+      "summary": "Embed a curve on a surface",
+      "description": "Embed a curve on a surface.",
+      "iconCss": "background: url('icons/bowerbird.png') -48px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/bowerbird/bBConstructCurveOnSurface.html"
+    },
+    {
+      "name": "BB Curvature CurveOnSurface",
+      "id": "κ",
+      "library": "Bowerbird",
+      "category": "Curve on Surface",
+      "summary": "Evaluate the curvature of an embedded curve at a specified parameter",
+      "description": "Evaluate the curvature of an embedded curve at a specified parameter.",
+      "iconCss": "background: url('icons/bowerbird.png') -168px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/bowerbird/bBCurvatureCurveOnSurface.html"
+    },
+    {
+      "name": "BB Deconstruct CurveOnSurface",
+      "id": "Deconstruct",
+      "library": "Bowerbird",
+      "category": "Curve on Surface",
+      "summary": "Deconstruct an embedded curve into its components",
+      "description": "Deconstruct an embedded curve into its components.",
+      "iconCss": "background: url('icons/bowerbird.png') -192px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/bowerbird/bBDeconstructCurveOnSurface.html"
+    },
+    {
+      "name": "BB Evaluate CurveOnSurface",
+      "id": "BBEval",
+      "library": "Bowerbird",
+      "category": "Curve on Surface",
+      "summary": "Evaluate an embedded curve at a specified parameter",
+      "description": "Evaluate an embedded curve at a specified parameter.",
+      "iconCss": "background: url('icons/bowerbird.png') -216px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/bowerbird/bBEvaluateCurveOnSurface.html"
+    },
+    {
+      "name": "BB Extrude CurveOnSurface",
+      "id": "Extrude",
+      "library": "Bowerbird",
+      "category": "Curve on Surface",
+      "summary": "Extrude an embedded curve in direction of its normal vector",
+      "description": "Extrude an embedded curve in direction of its normal vector.",
+      "iconCss": "background: url('icons/bowerbird.png') 0px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/bowerbird/bBExtrudeCurveOnSurface.html"
+    },
+    {
+      "name": "BB Geodesic Curvature CurveOnSurface",
+      "id": "κg",
+      "library": "Bowerbird",
+      "category": "Curve on Surface",
+      "summary": "Evaluate the geodesic curvature of an embedded curve at a specified parameter",
+      "description": "Evaluate the geodesic curvature of an embedded curve at a specified parameter.",
+      "iconCss": "background: url('icons/bowerbird.png') -24px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/bowerbird/bBGeodesicCurvatureCurveOnSurface.html"
+    },
+    {
+      "name": "BB Geodesic Torsion CurveOnSurface",
+      "id": "τg",
+      "library": "Bowerbird",
+      "category": "Curve on Surface",
+      "summary": "Evaluate the geodesic torsion of an embedded curve at a specified parameter",
+      "description": "Evaluate the geodesic torsion of an embedded curve at a specified parameter.",
+      "iconCss": "background: url('icons/bowerbird.png') -48px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/bowerbird/bBGeodesicTorsionCurveOnSurface.html"
+    },
+    {
+      "name": "BB Integrate CurveOnSurface",
+      "id": "BBIntegrate",
+      "library": "Bowerbird",
+      "category": "Curve on Surface",
+      "summary": "Integrate the curvature of an embedded curve over a specified domain",
+      "description": "Integrate the curvature of an embedded curve over a specified domain.",
+      "iconCss": "background: url('icons/bowerbird.png') -72px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/bowerbird/bBIntegrateCurveOnSurface.html"
+    },
+    {
+      "name": "BB Normal Curvature CurveOnSurface",
+      "id": "κn",
+      "library": "Bowerbird",
+      "category": "Curve on Surface",
+      "summary": "Evaluate the normal curvature of an embedded curve at a specified parameter",
+      "description": "Evaluate the normal curvature of an embedded curve at a specified parameter.",
+      "iconCss": "background: url('icons/bowerbird.png') -96px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/bowerbird/bBNormalCurvatureCurveOnSurface.html"
+    },
+    {
+      "name": "BB Curvature Field",
+      "id": "Field",
+      "library": "Bowerbird",
+      "category": "Paths",
+      "summary": "Show the direction field to a given path type",
+      "description": "Show the direction field to a given path type. The field can be displayed in the geometry or parameter space (see context menu).",
+      "iconCss": "background: url('icons/bowerbird.png') -24px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/bowerbird/bBCurvatureField.html"
+    },
+    {
+      "name": "BB Geodesic Torsion Path",
+      "id": "BBτg",
+      "library": "Bowerbird",
+      "category": "Paths",
+      "summary": "Follow the surface along a specified geodesic torsion",
+      "description": "Follow the surface along a specified geodesic torsion. Connect this component to a Pathfinder.",
+      "iconCss": "background: url('icons/bowerbird.png') -72px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/bowerbird/bBGeodesicTorsionPath.html"
+    },
+    {
+      "name": "BB Normal Curvature Path",
+      "id": "BBκn",
+      "library": "Bowerbird",
+      "category": "Paths",
+      "summary": "Follow the surface along a specified normal curvature",
+      "description": "Follow the surface along a specified normal curvature. Connect this component to a Pathfinder.",
+      "iconCss": "background: url('icons/bowerbird.png') -96px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/bowerbird/bBNormalCurvaturePath.html"
+    },
+    {
+      "name": "BB Pathfinder",
+      "id": "BBPathfinder",
+      "library": "Bowerbird",
+      "category": "Paths",
+      "summary": "Find a specified path type on a surface or Brep",
+      "description": "Find a specified path type on a surface or Brep.",
+      "iconCss": "background: url('icons/bowerbird.png') -120px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/bowerbird/bBPathfinder.html"
     },
     {
       "name": "BB Boolean",
@@ -2567,7 +2707,7 @@
       "category": "Polyline",
       "summary": "Union of a set of planar closed polylines<br>",
       "description": null,
-      "iconCss": "background: url('icons/bowerbird.png') -192px 0px",
+      "iconCss": "background: url('icons/bowerbird.png') -168px 0px",
       "helpLink": "https://grasshopperdocs.com/components/bowerbird/bBUnion.html"
     },
     {
@@ -2577,7 +2717,7 @@
       "category": "Polyline",
       "summary": "XOR of a set of planar closed polylines<br>",
       "description": null,
-      "iconCss": "background: url('icons/bowerbird.png') 0px -24px",
+      "iconCss": "background: url('icons/bowerbird.png') -216px 0px",
       "helpLink": "https://grasshopperdocs.com/components/bowerbird/bBXOR.html"
     },
     {
@@ -2587,7 +2727,7 @@
       "category": "Text",
       "summary": "Create a single line text<br>",
       "description": null,
-      "iconCss": "background: url('icons/bowerbird.png') -168px 0px",
+      "iconCss": "background: url('icons/bowerbird.png') -144px -24px",
       "helpLink": "https://grasshopperdocs.com/components/bowerbird/bBText.html"
     },
     {
@@ -35171,6 +35311,16 @@
       "helpLink": "https://grasshopperdocs.com/components/lunchbox/neuralNetworkTester.html"
     },
     {
+      "name": "Neural Network Testing",
+      "id": "Neural Network Tester",
+      "library": "LunchBox",
+      "category": "Machine Learning",
+      "summary": "Test a solution using a trained neural network solver.",
+      "description": null,
+      "iconCss": "background: url('icons/lunchBox.png') -72px -216px",
+      "helpLink": "https://grasshopperdocs.com/components/lunchbox/neuralNetworkTesting.html"
+    },
+    {
       "name": "Neural Network Trainer",
       "id": "Neural Network Trainer",
       "library": "LunchBox",
@@ -35789,6 +35939,76 @@
       "description": null,
       "iconCss": "background: url('icons/lunchBox.png') -144px -144px",
       "helpLink": "https://grasshopperdocs.com/components/lunchbox/rhinoCommand.html"
+    },
+    {
+      "name": "Airtable Record Fields",
+      "id": "Airtable Record Fields",
+      "library": "Mallard",
+      "category": "Database",
+      "summary": "Retrieve a list of Fields of given Airtable Records",
+      "description": null,
+      "iconCss": "background: url('icons/mallard.png') 0px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/mallard/airtableRecordFields.html"
+    },
+    {
+      "name": "Create Airtable Record",
+      "id": "Create",
+      "library": "Mallard",
+      "category": "Database",
+      "summary": "Create an Airtable Record in a specified table in a specific base",
+      "description": null,
+      "iconCss": "background: url('icons/mallard.png') -24px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/mallard/createAirtableRecord.html"
+    },
+    {
+      "name": "Delete Airtable Record",
+      "id": "Delete",
+      "library": "Mallard",
+      "category": "Database",
+      "summary": "This is a Delete component that Deletes a record with a specific ID in a specific table",
+      "description": null,
+      "iconCss": "background: url('icons/mallard.png') -48px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/mallard/deleteAirtableRecord.html"
+    },
+    {
+      "name": "Get Airtable Record",
+      "id": "Get",
+      "library": "Mallard",
+      "category": "Database",
+      "summary": "This is a Get component that retrieves a specific Airtable Record from a specific Baseand a specific Table",
+      "description": null,
+      "iconCss": "background: url('icons/mallard.png') -72px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/mallard/getAirtableRecord.html"
+    },
+    {
+      "name": "List Airtable Records",
+      "id": "List",
+      "library": "Mallard",
+      "category": "Database",
+      "summary": "Retrieve a list of Airtable Records from a specific Airtable Base",
+      "description": null,
+      "iconCss": "background: url('icons/mallard.png') -96px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/mallard/listAirtableRecords.html"
+    },
+    {
+      "name": "Replace Airtable Record",
+      "id": "Replace",
+      "library": "Mallard",
+      "category": "Database",
+      "summary": "Replace a record with a specific ID in a specific table using provided information",
+      "description": null,
+      "iconCss": "background: url('icons/mallard.png') -120px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/mallard/replaceAirtableRecord.html"
+    },
+    {
+      "name": "Update Airtable Record",
+      "id": "Update",
+      "library": "Mallard",
+      "category": "Database",
+      "summary": "Update an Airtable Record in a specified table in a specific base",
+      "description": null,
+      "iconCss": "background: url('icons/mallard.png') -144px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/mallard/updateAirtableRecord.html"
     },
     {
       "name": "Mesh Area",
@@ -38431,6 +38651,26 @@
       "helpLink": "https://grasshopperdocs.com/components/millipede/symmetricEigenSystem.html"
     },
     {
+      "name": "MiniOne",
+      "id": "miniOne",
+      "library": "MinSurf",
+      "category": "Geometry",
+      "summary": "Computes an approximate minimal surface (soap film) inside a closed curve.",
+      "description": null,
+      "iconCss": "background: url('icons/minSurf.png') -96px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/minsurf/miniOne.html"
+    },
+    {
+      "name": "MiniTwo",
+      "id": "minitwo",
+      "library": "MinSurf",
+      "category": "Geometry",
+      "summary": "Computes an approximate minimal surface (soap film) inside two closed curves.",
+      "description": null,
+      "iconCss": "background: url('icons/minSurf.png') -72px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/minsurf/miniTwo.html"
+    },
+    {
       "name": "Mesh Relax",
       "id": "Mesh Relax",
       "library": "MinSurf",
@@ -38539,6 +38779,16 @@
       "description": null,
       "iconCss": "background: url('icons/monoceros.png') -168px -24px",
       "helpLink": "https://grasshopperdocs.com/components/monoceros/sliceGeometry.html"
+    },
+    {
+      "name": "Are Rules Equal",
+      "id": "AreRulesEq",
+      "library": "Monoceros",
+      "category": "Rule",
+      "summary": "Returns true if the provided Monoceros Rules are equal.",
+      "description": null,
+      "iconCss": "background: url('icons/monoceros.png') -48px -72px",
+      "helpLink": "https://grasshopperdocs.com/components/monoceros/areRulesEqual.html"
     },
     {
       "name": "Collect Rules",
@@ -38739,6 +38989,16 @@
       "description": null,
       "iconCss": "background: url('icons/monoceros.png') -24px 0px",
       "helpLink": "https://grasshopperdocs.com/components/monoceros/areSlotsBoundary.html"
+    },
+    {
+      "name": "Assemble Rule into Slots",
+      "id": "AssembleRule",
+      "library": "Monoceros",
+      "category": "Slot",
+      "summary": "Create deterministic Slots that contain Monoceros Modules assembled according to the given Monoceros Rule.",
+      "description": null,
+      "iconCss": "background: url('icons/monoceros.png') -72px -72px",
+      "helpLink": "https://grasshopperdocs.com/components/monoceros/assembleRuleIntoSlots.html"
     },
     {
       "name": "Construct Slot with All Modules Allowed",
@@ -41119,6 +41379,16 @@
       "description": "Opossum provides model-based, gradient-free, and global optimization. Its GUI is based on Galapagos; the optimization back-end it relies on the RBFOpt library (https://projects.coin-or.org/RBFOpt/wiki).",
       "iconCss": "background: url('icons/opossum.png') 0px 0px",
       "helpLink": "https://grasshopperdocs.com/components/opossum/opossum20.html"
+    },
+    {
+      "name": "Optimization Solver with Surrogate Models",
+      "id": "Optimization Solver with Surrogate Models",
+      "library": "Opossum",
+      "category": "Util",
+      "summary": "Params",
+      "description": null,
+      "iconCss": "background: url('icons/opossum.png') -24px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/opossum/optimizationSolverWithSurrogateModels.html"
     },
     {
       "name": "Backpropagation",
@@ -55721,6 +55991,26 @@
       "helpLink": "https://grasshopperdocs.com/components/topologic/cellUtilityInternalVertex.html"
     },
     {
+      "name": "CellUtility.InternalVertex",
+      "id": "CellUtility.InternalVertex",
+      "library": "Topologic",
+      "category": "CellUtility",
+      "summary": "Returns a Vertex inside the Cell.",
+      "description": null,
+      "iconCss": "background: url('icons/topologic.png') -72px -456px",
+      "helpLink": "https://grasshopperdocs.com/components/topologic/cellUtilityInternalVertex.html"
+    },
+    {
+      "name": "CellUtility.InternalVertex",
+      "id": "CellUtility.InternalVertex",
+      "library": "Topologic",
+      "category": "CellUtility",
+      "summary": "Returns a Vertex inside the Cell.",
+      "description": null,
+      "iconCss": "background: url('icons/topologic.png') -120px -456px",
+      "helpLink": "https://grasshopperdocs.com/components/topologic/cellUtilityInternalVertex.html"
+    },
+    {
       "name": "CellUtility.Volume",
       "id": "CellUtility.Volume",
       "library": "Topologic",
@@ -56198,6 +56488,26 @@
       "summary": "Returns a Vertex inside the Face.",
       "description": null,
       "iconCss": "background: url('icons/topologic.png') -48px -456px",
+      "helpLink": "https://grasshopperdocs.com/components/topologic/faceUtilityInternalVertex.html"
+    },
+    {
+      "name": "FaceUtility.InternalVertex",
+      "id": "FaceUtility.InternalVertex",
+      "library": "Topologic",
+      "category": "FaceUtility",
+      "summary": "Returns a Vertex inside the Face.",
+      "description": null,
+      "iconCss": "background: url('icons/topologic.png') -96px -456px",
+      "helpLink": "https://grasshopperdocs.com/components/topologic/faceUtilityInternalVertex.html"
+    },
+    {
+      "name": "FaceUtility.InternalVertex",
+      "id": "FaceUtility.InternalVertex",
+      "library": "Topologic",
+      "category": "FaceUtility",
+      "summary": "Returns a Vertex inside the Face.",
+      "description": null,
+      "iconCss": "background: url('icons/topologic.png') -144px -456px",
       "helpLink": "https://grasshopperdocs.com/components/topologic/faceUtilityInternalVertex.html"
     },
     {
