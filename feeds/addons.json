@@ -53,6 +53,19 @@
       "authorContact": "dbddqy@gmail.com, zhongruqing.sun.zongzi@gmail.com"
     },
     {
+      "name": "ArqiShap3D",
+      "releaseDate": "2022-Jan-30",
+      "version": "0.1.0",
+      "downloadLink": "https://www.food4rhino.com/en/app/arqishap3d",
+      "helpLink": "https://grasshopperdocs.com/addons/arqishap3d.html",
+      "category": "Structural & BIM",
+      "isSystem": false,
+      "components": 22,
+      "description": "ArqiShap3D is a set of modelling and drafting tools for architecture workflows and is developed for Grasshopper. It includes components for modelling walls, stairs and railings and many flexible tools that allow the user to model different objects (such as windows and doors) on the XY plane and then orient them to position. The built-in \"material system\" also allows the user to bake objects to different layers and assign different named Rhino materials to each object easily, to make it easier to export the geometries inside Grasshopper to different rendering applications. Plan and section components are intended to make it easier to produce final drawings from the Grasshopper model.",
+      "authorName": "Ofkurt",
+      "authorContact": "arch.ofkurt@gmail.com"
+    },
+    {
       "name": "Aviary",
       "releaseDate": "2019-Nov-18",
       "version": "1.02.0002",
@@ -132,8 +145,8 @@
     },
     {
       "name": "Bowerbird",
-      "releaseDate": "2015-Jan-19",
-      "version": "0.6.3",
+      "releaseDate": "2021-Apr-28",
+      "version": "2.8.0",
       "downloadLink": "http://www.grasshopper3d.com/group/bowerbird",
       "helpLink": "https://grasshopperdocs.com/addons/bowerbird.html",
       "category": "Geometry & Meshes",
@@ -171,13 +184,13 @@
     },
     {
       "name": "BullAnt",
-      "releaseDate": "2018-Jun-13",
-      "version": "1.4.04",
+      "releaseDate": "2022-Jan-17",
+      "version": "1.5.12.0",
       "downloadLink": "https://www.food4rhino.com/app/bullant",
       "helpLink": "https://grasshopperdocs.com/addons/bullant.html",
       "category": "Structural & BIM",
       "isSystem": false,
-      "components": 50,
+      "components": 59,
       "description": "BullAnt is a Rhino3d/Grasshopper plug-in primarily for Architects and Engineers (but also other Rhino/Grasshopper users) featuring computational design tools to enhance and extend the parent program and other 3rd party plug-ins. \n\nBullAnt features commands including mesh relaxation (minimal surfaces), mesh inflation (ETFE cushions), symmetry automation, tessellation (polygon packing), structural modelling/sketching (including parametric generation in Grasshopper), geodesic domes and curve network processing. \n\nAlso included are commands to model members such as steel beams. International standard profiles are included in the plug-in library, which can be easily extended with custom user profiles. Parametric profile from a property table can be applied to a document layer (swept along all curves within layer) or discrete curves. Profile table may be exchanged with external software. Swept profiles are updated automatically if rail curve is altered by user.",
       "authorName": "Jon Mirtschin",
       "authorContact": "support@geometrygym.com"
@@ -274,9 +287,22 @@
       "authorContact": "dave@provingground.io"
     },
     {
+      "name": "Conduit",
+      "releaseDate": "2020-Jun-30",
+      "version": "v.2018.11.19",
+      "downloadLink": "https://provingground.io/tools/conduit-for-grasshopper/",
+      "helpLink": "https://grasshopperdocs.com/addons/conduit.html",
+      "category": "User Interface Design",
+      "isSystem": false,
+      "components": 19,
+      "description": "Conduit is an open source plug-in authored by Proving Ground. Conduit enables designers to create custom data visualizations, dashboards, and heads up displays (HUDs) that update with their computational design tools and parametric models.",
+      "authorName": "Nathan Miller",
+      "authorContact": "nate@provingground.io"
+    },
+    {
       "name": "Crane",
-      "releaseDate": "2019-Oct-14",
-      "version": "0.20",
+      "releaseDate": "2021-May-21",
+      "version": "0.2.5",
       "downloadLink": "https://www.food4rhino.com/app/crane",
       "helpLink": "https://grasshopperdocs.com/addons/crane.html",
       "category": "Origami",
@@ -418,7 +444,7 @@
     },
     {
       "name": "Elefront",
-      "releaseDate": "2019-Sep-27",
+      "releaseDate": "2021-Jan-31",
       "version": "4.2.2",
       "downloadLink": "https://www.food4rhino.com/app/elefront",
       "helpLink": "https://grasshopperdocs.com/addons/elefront.html",
@@ -652,13 +678,13 @@
     },
     {
       "name": "Heteroptera",
-      "releaseDate": "2019-Oct-28",
-      "version": "0.5.1.2",
+      "releaseDate": "2022-Jan-13",
+      "version": "0.7.2.8",
       "downloadLink": "https://www.food4rhino.com/app/heteroptera",
       "helpLink": "https://grasshopperdocs.com/addons/heteroptera.html",
       "category": "Core Collections",
       "isSystem": false,
-      "components": 94,
+      "components": 167,
       "description": "Heteroptera is a plug-in for grasshopper comprised of a variety of tools in different categories that can be used as a toolbox, but it mostly focuses on Uncertainty and Generation.",
       "authorName": "Amin Bahrami (Helioripple Studio)",
       "authorContact": "amin.bahrami@helioripple.com"
@@ -704,8 +730,8 @@
     },
     {
       "name": "Human UI",
-      "releaseDate": "2019-Nov-10",
-      "version": "0.8.1.3",
+      "releaseDate": "2021-Apr-20",
+      "version": "0.8.8",
       "downloadLink": "https://www.food4rhino.com/app/human-ui",
       "helpLink": "https://grasshopperdocs.com/addons/human-ui.html",
       "category": "User Interface Design",
@@ -808,7 +834,7 @@
     },
     {
       "name": "Kangaroo 2",
-      "releaseDate": "2019-Dec-15",
+      "releaseDate": "2022-Mar-08",
       "version": "2.3.3",
       "downloadLink": "https://www.rhino3d.com/6/new/grasshopper",
       "helpLink": "https://grasshopperdocs.com/addons/kangaroo-2.html",
@@ -925,8 +951,8 @@
     },
     {
       "name": "LunchBox",
-      "releaseDate": "2018-Oct-30",
-      "version": "2018.10.30",
+      "releaseDate": "2020-Jun-30",
+      "version": "2020.6.30.1",
       "downloadLink": "https://www.food4rhino.com/app/lunchbox",
       "helpLink": "https://grasshopperdocs.com/addons/lunchbox.html",
       "category": "Core Collections",
@@ -1016,8 +1042,8 @@
     },
     {
       "name": "MinSurf",
-      "releaseDate": "2013-Apr-04",
-      "version": "3.0.0.2",
+      "releaseDate": "2021-Dec-29",
+      "version": "0.1.3.7",
       "downloadLink": "https://www.food4rhino.com/app/minimal-surface-creator",
       "helpLink": "https://grasshopperdocs.com/addons/minsurf.html",
       "category": "Geometry & Meshes",
@@ -1159,8 +1185,8 @@
     },
     {
       "name": "Opossum",
-      "releaseDate": "2019-Sep-07",
-      "version": "2.0.0",
+      "releaseDate": "2021-Apr-07",
+      "version": "2.2.4",
       "downloadLink": "https://www.food4rhino.com/app/opossum-optimization-solver-surrogate-models",
       "helpLink": "https://grasshopperdocs.com/addons/opossum.html",
       "category": "Maths & Optimization",
@@ -1198,8 +1224,8 @@
     },
     {
       "name": "Paneling Tools",
-      "releaseDate": "2019-12-19",
-      "version": "6.18",
+      "releaseDate": "2021-Mar-02",
+      "version": "2021.3.2.3446",
       "downloadLink": "https://www.food4rhino.com/app/panelingtools-rhino-and-grasshopper",
       "helpLink": "https://grasshopperdocs.com/addons/paneling-tools.html",
       "category": "Structural Panel Design",
