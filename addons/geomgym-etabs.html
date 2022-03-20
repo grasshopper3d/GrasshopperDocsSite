@@ -1,0 +1,962 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GeomGym ETABS - Addon for Grasshopper | Grasshopper Docs</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+
+<meta name="description" content="Rhino plugin and Grasshopper Components to generate Etabs Structural Analysis Data. Compatible with versions ETABS 18 and newer." />
+<meta name="title" content="GeomGym ETABS - Addon for Grasshopper | Grasshopper Docs" />
+<meta property="og:title" content="GeomGym ETABS - Addon for Grasshopper | Grasshopper Docs" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://grasshopperdocs.com/addons/geomgym-etabs.html" />
+<meta property="og:site_name" content="Grasshopper Docs" />
+
+<link href="../style.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+
+<div id="docs">
+
+<div id="docs-head">
+<div id="docs-masthead">
+<p id="docs-sitename"><a href="http://grasshopperdocs.com/">
+	<img id="site-logo-icon" src="/images/logo-icon.png" alt=""></img>
+	<img id="site-logo-text" src="/images/logo-text.png" alt="Grasshopper Docs"></img>
+</a></p>
+<p id="docs-sitedesc">Community documentation for Grasshopper add-ons &amp; plugins</p>
+<div id="docs-sitesearch">
+	<input id="docs-sitesearch-inputbox" type="text" name="docs-sitesearch-inputbox" />
+	<img id="docs-searchicon" src="/images/search.png"/>
+</div>
+</div>
+</div>
+
+<div id="docs-body">
+
+<div class="page">
+
+<div class="content addon-page">
+
+<div class="addon-buttons">
+<a href="https://technical.geometrygym.com/rhino-grasshopper/structuralanalysis/etabs">Download</a>
+
+</div>
+
+
+<div class="google-ad-sidebar">
+
+<!-- Carbon Ads -->
+<script async type="text/javascript" src="https://cdn.carbonads.com/carbon.js?serve=CK7IC27L&placement=grasshopperdocscom" id="_carbonads_js"></script>
+
+</div>
+
+<div class="addon-header">
+<h1>GeomGym ETABS</h1>
+<h5>
+<span>ADDON. Version <b>0.3.29.0</b>.</span>
+<span>Released on <b>2022-Feb-07</b>.</span>
+<span>Provides <b>174</b> components.</span>
+<span>Created by <b>Geometry Gym Pty Ltd</b>.</span>
+<span>Features <b>0</b> video tutorials.</span>
+</h5>
+<h5>Rhino plugin and Grasshopper Components to generate Etabs Structural Analysis Data. Compatible with versions ETABS 18 and newer.</h5>
+
+<div class="breadcrumb">
+  <a href="../index.html">Component Index</a>
+  <a href="#" class="breadcrumb-nolink">GeomGym ETABS</a>
+</div>
+
+</div>
+
+<div class="ghbar ghbar-addon-page">
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/aBlank.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -48px -72px" data-toptip="ABlank"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+A
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/convertIfcFilter.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -192px 0px" data-toptip="Convert Ifc Filter"></div></a>
+<a href="../components/geomgymetabs/modelDecompose.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -216px -264px" data-downtip="Model Decompose"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/modelOptions.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') 0px -288px" data-toptip="Model Options"></div></a>
+<a href="../components/geomgymetabs/modelPDeltaOptions.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -24px -288px" data-downtip="Model P-Delta Options"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="2">
+ETABS
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/areaSpring.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -72px 0px" data-toptip="Area Spring"></div></a>
+<a href="../components/geomgymetabs/frameRelease.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -96px 0px" data-downtip="Frame Release"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/frameReleaseStiffness.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -120px 0px" data-toptip="Frame Release Stiffness"></div></a>
+<a href="../components/geomgymetabs/materialCreateElasticIsotropic.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -216px 0px" data-downtip="Material Create-Elastic Isotropic"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/createLinkPropGAP.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') 0px -24px" data-toptip="Create Link Prop GAP"></div></a>
+<a href="../components/geomgymetabs/createLinkPropMultiLinear.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -24px -24px" data-downtip="Create Link Prop Multi Linear"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/createLinkPropLinear.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -48px -24px" data-toptip="Create Link Prop Linear"></div></a>
+<a href="../components/geomgymetabs/createElasticOrthotropicMaterial.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -72px -24px" data-downtip="Create Elastic Orthotropic Material"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/createPierLabel.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -96px -24px" data-toptip="Create Pier Label"></div></a>
+<a href="../components/geomgymetabs/createPropDeck.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -120px -24px" data-downtip="Create Prop Deck"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/createPropFrame.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -144px -24px" data-toptip="Create Prop Frame"></div></a>
+<a href="../components/geomgymetabs/createFramePropGeneral.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -168px -24px" data-downtip="Create Frame Prop General"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/createFramePropNonPrismatic.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -192px -24px" data-toptip="Create Frame Prop Non Prismatic"></div></a>
+<a href="../components/geomgymetabs/createSlabProp.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -216px -24px" data-downtip="Create Slab Prop"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/createSpandrelLabel.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') 0px -48px" data-toptip="Create Spandrel Label"></div></a>
+<a href="../components/geomgymetabs/createStageOpAdd.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -24px -48px" data-downtip="Create Stage Op Add"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/createStageOpChangeFrameProp.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -48px -48px" data-toptip="Create Stage Op Change Frame Prop"></div></a>
+<a href="../components/geomgymetabs/createStageOpLoad.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -72px -48px" data-downtip="Create Stage Op Load"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/createStageOpRemove.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -96px -48px" data-toptip="Create Stage Op Remove"></div></a>
+<a href="../components/geomgymetabs/voidProp.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -120px -48px" data-downtip="Void Prop"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/createWallProp.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -144px -48px" data-toptip="Create Wall Prop"></div></a>
+<a href="../components/geomgymetabs/findFrameProp.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -216px -48px" data-downtip="Find Frame Prop"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/frameAutoMesh.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') 0px -72px" data-toptip="Frame Auto Mesh"></div></a>
+<a href="../components/geomgymetabs/generateC.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -24px -72px" data-downtip="Generate C"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/groupOptions.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -72px -72px" data-toptip="Group Options"></div></a>
+<a href="../components/geomgymetabs/linkPropDirParamsGap.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -96px -72px" data-downtip="Link Prop Dir Params Gap"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/linkPropDirParamsMultiLinear.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -120px -72px" data-toptip="Link Prop Dir Params Multi Linear"></div></a>
+<a href="../components/geomgymetabs/materialParamsConcrete.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -216px -96px" data-downtip="Material Params Concrete"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/materialConcreteTimeEC2.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') 0px -120px" data-toptip="Material Concrete Time EC2"></div></a>
+<a href="../components/geomgymetabs/materialParamsRebar.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -24px -120px" data-downtip="Material Params Rebar"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/materialParamsSteel.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -48px -120px" data-toptip="Material Params Steel"></div></a>
+<a href="../components/geomgymetabs/pointAtts.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -72px -120px" data-downtip="Point Atts"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/pointRestraint.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -96px -120px" data-toptip="Point Restraint"></div></a>
+<a href="../components/geomgymetabs/pointSpringProp.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -120px -120px" data-downtip="Point Spring Prop"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/pointSupportLink.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -144px -120px" data-toptip="Point Support Link"></div></a>
+<a href="../components/geomgymetabs/framePropAutoSelectionSet.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -96px -216px" data-downtip="Frame Prop Auto Selection Set"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/frameHingeAssign.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -24px -264px" data-toptip="Frame Hinge Assign"></div></a>
+<a href="../components/geomgymetabs/materialByRef.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -120px -264px" data-downtip="Material By Ref"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/createPointMass.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -192px -288px" data-toptip="Create Point Mass"></div></a>
+<a href="../components/geomgymetabs/propFrameByRef.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -216px -288px" data-downtip="Prop Frame By Ref"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/propHingeByRef.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') 0px -312px" data-toptip="Prop Hinge By Ref"></div></a>
+<a href="../components/geomgymetabs/hingeAcceptanceCriteria.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -24px -312px" data-downtip="Hinge Acceptance Criteria"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/createPropHingeUserNonInteracting.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -48px -312px" data-toptip="Create Prop Hinge User Non Interacting"></div></a>
+<a href="../components/geomgymetabs/hingeNonInteractingControlDeform.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -72px -312px" data-downtip="Hinge Non Interacting Control Deform"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/hingeNonInteractingControlForce.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -96px -312px" data-toptip="Hinge Non Interacting Control Force"></div></a>
+<a href="../components/geomgymetabs/hingeDeformationPoints.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -120px -312px" data-downtip="Hinge Deformation Points"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/hingeNonInteractingDeformScaleFacParams.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -144px -312px" data-toptip="Hinge Non Interacting Deform Scale Fac Params"></div></a>
+<a href="../components/geomgymetabs/framePropModifier.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -168px -312px" data-downtip="Frame Prop Modifier"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/propShellByRef.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -192px -312px" data-toptip="Prop Shell By Ref"></div></a>
+<a href="../components/geomgymetabs/shellPropertyModifier.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -168px -384px" data-downtip="Shell Property Modifier"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/slabAtts.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -216px -384px" data-toptip="Slab Atts"></div></a>
+<a href="../components/geomgymetabs/wallAtts.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -24px -408px" data-downtip="Wall Atts"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="26">
+ETABSAtt
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/appliedLoadModal.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -24px 0px" data-toptip="Applied Load Modal"></div></a>
+<a href="../components/geomgymetabs/appliedLoadResponseSpectrum.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -48px 0px" data-downtip="Applied Load Response Spectrum"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/decomposeCombo.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -168px -48px" data-toptip="Decompose Combo"></div></a>
+<a href="../components/geomgymetabs/decomposeLoadPattern.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -192px -48px" data-downtip="Decompose Load Pattern"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/loadAreaUniform.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -144px -72px" data-toptip="Load Area Uniform"></div></a>
+<a href="../components/geomgymetabs/loadCrvPatch.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -168px -72px" data-downtip="Load Crv Patch"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/loadCrvPoint.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -192px -72px" data-toptip="Load Crv Point"></div></a>
+<a href="../components/geomgymetabs/loadCrvTemp.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -216px -72px" data-downtip="Load Crv Temp"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/caseCombination.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') 0px -96px" data-toptip="Case Combination"></div></a>
+<a href="../components/geomgymetabs/loadPointDisplacment.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -24px -96px" data-downtip="Load Point Displacment"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/loadPatternAutoSeismicNZ1170.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -48px -96px" data-toptip="Load Pattern Auto Seismic NZ1170"></div></a>
+<a href="../components/geomgymetabs/loadPatternAutoSeismicUser.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -72px -96px" data-downtip="Load Pattern Auto Seismic User"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/loadPatternAutoSeismicUserCoeff.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -96px -96px" data-toptip="Load Pattern Auto Seismic User Coeff"></div></a>
+<a href="../components/geomgymetabs/loadPatternAutoSeismicUserLoadset.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -120px -96px" data-downtip="Load Pattern Auto Seismic User Loadset"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/loadPatternAutoWindUser.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -144px -96px" data-toptip="Load Pattern Auto Wind User"></div></a>
+<a href="../components/geomgymetabs/loadPatternAutoWindUserLoadset.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -168px -96px" data-downtip="Load Pattern Auto Wind User Loadset"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/massSource.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -192px -96px" data-toptip="Mass Source"></div></a>
+<a href="../components/geomgymetabs/functionResponseSpectrumEuroCode8.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -48px -168px" data-downtip="Function Response Spectrum Euro Code8"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/functionResponseSpectrumNZ1170.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -72px -168px" data-toptip="Function Response Spectrum NZ1170"></div></a>
+<a href="../components/geomgymetabs/functionResponseSpectrumUser.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -96px -168px" data-downtip="Function Response Spectrum User"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/autoSeismicEccOverwrite.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -72px -216px" data-toptip="Auto Seismic Ecc Overwrite"></div></a>
+<a href="../components/geomgymetabs/loadPattern.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -48px -264px" data-downtip="Load Pattern"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/loadPatternByRef.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -96px -264px" data-toptip="Load Pattern By Ref"></div></a>
+<a href="../components/geomgymetabs/shellUniformLoadSet.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -192px -384px" data-downtip="Shell Uniform Load Set"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="12">
+ETABSLoads
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/modifyFrameElementDelete.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -120px -216px" data-toptip="Modify Frame Element Delete"></div></a>
+<a href="../components/geomgymetabs/modifyBake.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -48px -288px" data-downtip="Modify Bake"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/modifyDesignSectionInline.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -72px -288px" data-toptip="Modify Design Section Inline"></div></a>
+<a href="../components/geomgymetabs/modifyInline.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -96px -288px" data-downtip="Modify Inline"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/nominateFrameSection.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -120px -288px" data-toptip="Nominate Frame Section"></div></a>
+<a href="../components/geomgymetabs/nominateFrameSectionGroup.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -144px -288px" data-downtip="Nominate Frame Section Group"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/relocatePoint.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -216px -336px" data-toptip="Relocate Point"></div></a>
+<a href="../components/geomgymetabs/modifyConcFrameDesignSection.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -120px -384px" data-downtip="Modify Conc Frame Design Section"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/modifySteelFrameDesignSection.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -144px -384px" data-toptip="Modify Steel Frame Design Section"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="5">
+ETABSModify
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/loadCaseStatic.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') 0px 0px" data-toptip="Load Case Static"></div></a>
+<a href="../components/geomgymetabs/queryFrameForce.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -168px -120px" data-downtip="Query Frame Force"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/queryFrameForces.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -192px -120px" data-toptip="Query Frame Forces"></div></a>
+<a href="../components/geomgymetabs/queryGlobalReaction.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -48px -144px" data-downtip="Query Global Reaction"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/queryModalFrequencies.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -72px -144px" data-toptip="Query Modal Frequencies"></div></a>
+<a href="../components/geomgymetabs/queryNodeAcceleration.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -96px -144px" data-downtip="Query Node Acceleration"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/queryNodeDisplacements.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -120px -144px" data-toptip="Query Node Displacements"></div></a>
+<a href="../components/geomgymetabs/queryNodeReactionForce.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -144px -144px" data-downtip="Query Node Reaction Force"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/queryNodeReactionMoment.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -168px -144px" data-toptip="Query Node Reaction Moment"></div></a>
+<a href="../components/geomgymetabs/queryNodeVelocity.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -192px -144px" data-downtip="Query Node Velocity"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/query2dPrincipalStress.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -216px -144px" data-toptip="Query2d Principal Stress"></div></a>
+<a href="../components/geomgymetabs/decomposeResultSetFrameForce.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -120px -168px" data-downtip="Decompose Result Set Frame Force"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/decomposeResultSetBeamForces.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -144px -168px" data-toptip="Decompose Result Set Beam Forces"></div></a>
+<a href="../components/geomgymetabs/decomposeResultSet2d.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -168px -168px" data-downtip="Decompose Result Set2d"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/decomposeResultSet2dPrincipalStress.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -192px -168px" data-toptip="Decompose Result Set2d Principal Stress"></div></a>
+<a href="../components/geomgymetabs/decomposeResultSetModalFreq.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -216px -168px" data-downtip="Decompose Result Set Modal Freq"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/decomposeResultSetNode.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') 0px -192px" data-toptip="Decompose Result Set Node"></div></a>
+<a href="../components/geomgymetabs/loadCaseModalEigen.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -192px -192px" data-downtip="Load Case Modal Eigen"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/loadCaseModalRitz.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -216px -192px" data-toptip="Load Case Modal Ritz"></div></a>
+<a href="../components/geomgymetabs/loadCaseNonLinearStatic.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') 0px -216px" data-downtip="Load Case Non Linear Static"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/loadCaseNonLinearStaged.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -24px -216px" data-toptip="Load Case Non Linear Staged"></div></a>
+<a href="../components/geomgymetabs/loadCaseResponseSpectrum.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -48px -216px" data-downtip="Load Case Response Spectrum"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/loadCaseByRef.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -72px -264px" data-toptip="Load Case By Ref"></div></a>
+<a href="../components/geomgymetabs/decomposeMaterialListBySection.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -144px -264px" data-downtip="Decompose Material List By Section"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/decomposeMaterialListByStory.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -168px -264px" data-toptip="Decompose Material List By Story"></div></a>
+<a href="../components/geomgymetabs/decomposeMaterialList.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -192px -264px" data-downtip="Decompose Material List"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/nonLinearSolutionControl.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -168px -288px" data-toptip="Non Linear Solution Control"></div></a>
+<a href="../components/geomgymetabs/queryDatabaseTable.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -216px -312px" data-downtip="Query Database Table"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/queryMassByDiaphragm.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') 0px -336px" data-toptip="Query Mass By Diaphragm"></div></a>
+<a href="../components/geomgymetabs/queryMassByStory.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -24px -336px" data-downtip="Query Mass By Story"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/queryMaterialListByObjectType.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -48px -336px" data-toptip="Query Material List By Object Type"></div></a>
+<a href="../components/geomgymetabs/queryMaterialListBySection.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -72px -336px" data-downtip="Query Material List By Section"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/queryMaterialListByStory.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -96px -336px" data-toptip="Query Material List By Story"></div></a>
+<a href="../components/geomgymetabs/query.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -120px -336px" data-downtip="Query"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/queryStoreyForces.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -144px -336px" data-toptip="Query Storey Forces"></div></a>
+<a href="../components/geomgymetabs/queryStoreyMoments.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -168px -336px" data-downtip="Query Storey Moments"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/queryStoryDrifts.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -192px -336px" data-toptip="Query Story Drifts"></div></a>
+<a href="../components/geomgymetabs/query2dDerivedForces.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') 0px -360px" data-downtip="Query2d Derived Forces"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/query2dDerivedStrains.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -24px -360px" data-toptip="Query2d Derived Strains"></div></a>
+<a href="../components/geomgymetabs/query2dDerivedStress.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -48px -360px" data-downtip="Query2d Derived Stress"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/queryResult2dOptions.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -72px -360px" data-toptip="Query Result2d Options"></div></a>
+<a href="../components/geomgymetabs/query2dProjectedStrains.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -96px -360px" data-downtip="Query2d Projected Strains"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/query2dProjectedForces.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -120px -360px" data-toptip="Query2d Projected Forces"></div></a>
+<a href="../components/geomgymetabs/query2dProjectedStress.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -144px -360px" data-downtip="Query2d Projected Stress"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/decomposeResultDatabaseTable.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -168px -360px" data-toptip="Decompose Result Database Table"></div></a>
+<a href="../components/geomgymetabs/decomposeResultSetDiaphragm.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -192px -360px" data-downtip="Decompose Result Set Diaphragm"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/decomposeResultGlobalReaction.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -216px -360px" data-toptip="Decompose Result Global Reaction"></div></a>
+<a href="../components/geomgymetabs/resultsSavedOptions.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') 0px -384px" data-downtip="Results Saved Options"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/decomposeResultSetStorey.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -24px -384px" data-toptip="Decompose Result Set Storey"></div></a>
+<a href="../components/geomgymetabs/solver.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -48px -384px" data-downtip="Solver"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/solverOptions.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -72px -384px" data-toptip="Solver Options"></div></a>
+<a href="../components/geomgymetabs/targetForceOptions.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -96px -384px" data-downtip="Target Force Options"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/displacementLoadApplicationControl.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -48px -408px" data-toptip="Displacement Load Application Control"></div></a>
+<a href="../components/geomgymetabs/fullLoadApplicationControl.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -72px -408px" data-downtip="Full Load Application Control"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="27">
+ETABSSolver
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/compositeBeamDesign.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -144px 0px" data-toptip="Composite Beam Design"></div></a>
+<a href="../components/geomgymetabs/concreteFrameDesign.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -168px 0px" data-downtip="Concrete Frame Design"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/queryCompositeBeamDesignSummary.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -216px -120px" data-toptip="Query Composite Beam Design Summary"></div></a>
+<a href="../components/geomgymetabs/queryConcreteBeamDesignSummary.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') 0px -144px" data-downtip="Query Concrete Beam Design Summary"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/queryConceteColumnDesignSummary.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -24px -144px" data-toptip="Query Concete Column Design Summary"></div></a>
+<a href="../components/geomgymetabs/queryShearWallDesignPierSummary.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') 0px -168px" data-downtip="Query Shear Wall Design Pier Summary"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/querySteelDesignSummary.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -24px -168px" data-toptip="Query Steel Design Summary"></div></a>
+<a href="../components/geomgymetabs/decomposeResultCompositeBeamDesignSummary.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -24px -192px" data-downtip="Decompose Result Composite Beam Design Summary"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/decomposeResultSetConcBeamDesignSummary.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -48px -192px" data-toptip="Decompose Result Set Conc Beam Design Summary"></div></a>
+<a href="../components/geomgymetabs/decomposeResultSetConcColumnDesignSummary.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -72px -192px" data-downtip="Decompose Result Set Conc Column Design Summary"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/decomposeResultPierStoryDesignReoSummary.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -96px -192px" data-toptip="Decompose Result Pier Story Design Reo Summary"></div></a>
+<a href="../components/geomgymetabs/decomposeResultPierStoryDesignSummary.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -120px -192px" data-downtip="Decompose Result Pier Story Design Summary"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/decomposeResultShearWallDesignPierSummary.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -144px -192px" data-toptip="Decompose Result Shear Wall Design Pier Summary"></div></a>
+<a href="../components/geomgymetabs/decomposeResultSetSteelDesignSummary.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -168px -192px" data-downtip="Decompose Result Set Steel Design Summary"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/designCodeByRef.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -144px -216px" data-toptip="Design Code By Ref"></div></a>
+<a href="../components/geomgymetabs/concreteDesignACI318.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -168px -216px" data-downtip="Concrete Design ACI318"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/steelDesignACI318OverWrite.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -192px -216px" data-toptip="Steel Design ACI318Over Write"></div></a>
+<a href="../components/geomgymetabs/concreteDesignEurocode2.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -216px -216px" data-downtip="Concrete Design Eurocode2"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/concreteDesignEurocode2OverWrite.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') 0px -240px" data-toptip="Concrete Design Eurocode2Over Write"></div></a>
+<a href="../components/geomgymetabs/steelDesignAISC360.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -24px -240px" data-downtip="Steel Design AISC360"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/steelDesignAISC360OverWrite.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -48px -240px" data-toptip="Steel Design AISC360Over Write"></div></a>
+<a href="../components/geomgymetabs/steelDesignAS4100.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -72px -240px" data-downtip="Steel Design AS4100"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/steelDesignAS4100OverWrite.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -96px -240px" data-toptip="Steel Design AS4100Over Write"></div></a>
+<a href="../components/geomgymetabs/steelDesignCSA.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -120px -240px" data-downtip="Steel Design CSA"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/steelDesignCSAOverWrite.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -144px -240px" data-toptip="Steel Design CSAOver Write"></div></a>
+<a href="../components/geomgymetabs/steelDesignEurocode3.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -168px -240px" data-downtip="Steel Design Eurocode3"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/steelDesignEurocode3OverWrite.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -192px -240px" data-toptip="Steel Design Eurocode3Over Write"></div></a>
+<a href="../components/geomgymetabs/steelDesignNZ3403OverWrite.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -216px -240px" data-downtip="Steel Design NZ3403Over Write"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/geomgymetabs/steelDesignNZ3404.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') 0px -264px" data-toptip="Steel Design NZ3404"></div></a>
+<a href="../components/geomgymetabs/steelFrameDesign.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') 0px -408px" data-downtip="Steel Frame Design"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="15">
+ETABSVerify
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+
+<div class="cchild">
+<h3>ETABSSolver</h3>
+<table class="addon-compos">
+<tbody>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/loadCaseStatic.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') 0px 0px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/loadCaseStatic.html">Load Case Static</a> <span class="codeword">(ggSLC)</span><br><span class="desc">Create Static Load Case</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/queryFrameForce.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -168px -120px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/queryFrameForce.html">Query Frame Force</a> <span class="codeword">(ggQueryFrameFor)</span><br><span class="desc">Query Frame Element Forces</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/queryFrameForces.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -192px -120px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/queryFrameForces.html">Query Frame Forces</a> <span class="codeword">(ggQueryFrameFor)</span><br><span class="desc">Query Frame Element Forces</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/queryGlobalReaction.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -48px -144px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/queryGlobalReaction.html">Query Global Reaction</a> <span class="codeword">(ggQGlobalReact)</span><br><span class="desc">Query Global Reaction</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/queryModalFrequencies.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -72px -144px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/queryModalFrequencies.html">Query Modal Frequencies</a> <span class="codeword">(ggQMF)</span><br><span class="desc">Query Modal Frequencies</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/queryNodeAcceleration.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -96px -144px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/queryNodeAcceleration.html">Query Node Acceleration</a> <span class="codeword">(ggQNodeAcc)</span><br><span class="desc">Query node accelearations from response spectrum or time history analysis</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/queryNodeDisplacements.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -120px -144px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/queryNodeDisplacements.html">Query Node Displacements</a> <span class="codeword">(ggQNodeDisp)</span><br><span class="desc">Query Node Displacements</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/queryNodeReactionForce.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -144px -144px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/queryNodeReactionForce.html">Query Node Reaction Force</a> <span class="codeword">(ggQNodeReactF)</span><br><span class="desc">Query Node Reaction Force</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/queryNodeReactionMoment.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -168px -144px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/queryNodeReactionMoment.html">Query Node Reaction Moment</a> <span class="codeword">(ggQNodeReactM)</span><br><span class="desc">Query Node Reaction Moment</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/queryNodeVelocity.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -192px -144px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/queryNodeVelocity.html">Query Node Velocity</a> <span class="codeword">(ggQueryNodeVel)</span><br><span class="desc">Query node velocities from response spectrum or time history analysis</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/query2dPrincipalStress.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -216px -144px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/query2dPrincipalStress.html">Query2d Principal Stress</a> <span class="codeword">(ggQPS)</span><br><span class="desc">Query Principal Stress, derived from averaged point values so will not match precisely SAP results</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/decomposeResultSetFrameForce.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -120px -168px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/decomposeResultSetFrameForce.html">Decompose Result Set Frame Force</a> <span class="codeword">(ggRD1dSet)</span><br><span class="desc">Decomposes 1d Element Result Set</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/decomposeResultSetBeamForces.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -144px -168px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/decomposeResultSetBeamForces.html">Decompose Result Set Beam Forces</a> <span class="codeword">(ggRDBFSet)</span><br><span class="desc">Decomposes Beam Forces (1d Forces) Result Set</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/decomposeResultSet2d.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -168px -168px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/decomposeResultSet2d.html">Decompose Result Set2d</a> <span class="codeword">(ggRD2dSet)</span><br><span class="desc">Decompose 2d Elemnt Result Set</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/decomposeResultSet2dPrincipalStress.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -192px -168px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/decomposeResultSet2dPrincipalStress.html">Decompose Result Set2d Principal Stress</a> <span class="codeword">(ggRDPrinStress)</span><br><span class="desc">Decompose 2d Principal Stress Result</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/decomposeResultSetModalFreq.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -216px -168px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/decomposeResultSetModalFreq.html">Decompose Result Set Modal Freq</a> <span class="codeword">(ggRDMF)</span><br><span class="desc">Decompose Modal Frequency Result Set</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/decomposeResultSetNode.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') 0px -192px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/decomposeResultSetNode.html">Decompose Result Set Node</a> <span class="codeword">(ggRDN)</span><br><span class="desc">Decompose Node Set Result</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/loadCaseModalEigen.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -192px -192px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/loadCaseModalEigen.html">Load Case Modal Eigen</a> <span class="codeword">(ggMLC)</span><br><span class="desc">Create Modal Eigen Load Case</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/loadCaseModalRitz.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -216px -192px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/loadCaseModalRitz.html">Load Case Modal Ritz</a> <span class="codeword">(ggMRLC)</span><br><span class="desc">Create Ritz Modal Load Case</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/loadCaseNonLinearStatic.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') 0px -216px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/loadCaseNonLinearStatic.html">Load Case Non Linear Static</a> <span class="codeword">(ggNLS)</span><br><span class="desc">Create NonLineaer Static Load Case</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/loadCaseNonLinearStaged.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -24px -216px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/loadCaseNonLinearStaged.html">Load Case Non Linear Staged</a> <span class="codeword">(ggNLSt)</span><br><span class="desc">Create NonLineaer Staged Construction Load Case. Works with SAP2000 V19 and above.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/loadCaseResponseSpectrum.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -48px -216px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/loadCaseResponseSpectrum.html">Load Case Response Spectrum</a> <span class="codeword">(ggLCRS)</span><br><span class="desc">Create Response Spectrum Load Case</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/loadCaseByRef.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -72px -264px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/loadCaseByRef.html">Load Case By Ref</a> <span class="codeword">(ggLCR)</span><br><span class="desc">Reference a Load Case in an Existing Model by a String</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/decomposeMaterialListBySection.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -144px -264px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/decomposeMaterialListBySection.html">Decompose Material List By Section</a> <span class="codeword">(ggRDMLS)</span><br><span class="desc">Decompose a Material List by Section</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/decomposeMaterialListByStory.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -168px -264px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/decomposeMaterialListByStory.html">Decompose Material List By Story</a> <span class="codeword">(ggRDMLSt)</span><br><span class="desc">Decompose a Material List by Story</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/decomposeMaterialList.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -192px -264px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/decomposeMaterialList.html">Decompose Material List</a> <span class="codeword">(ggRDML)</span><br><span class="desc">Decompose a Material List by Object Type</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/nonLinearSolutionControl.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -168px -288px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/nonLinearSolutionControl.html">Non Linear Solution Control</a> <span class="codeword">(ggNLSC)</span><br><span class="desc">Non Linear Solution Control</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/queryDatabaseTable.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -216px -312px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/queryDatabaseTable.html">Query Database Table</a> <span class="codeword">(ggQDBT)</span><br><span class="desc">This will enable you to query any database table within Etabs. XXX Database Tables are accessible in versions ETABS18 and SAP23 and newer</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/queryMassByDiaphragm.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') 0px -336px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/queryMassByDiaphragm.html">Query Mass By Diaphragm</a> <span class="codeword">(ggQMassDiaphragm)</span><br><span class="desc">Query Etabs Diaphragm Mass</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/queryMassByStory.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -24px -336px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/queryMassByStory.html">Query Mass By Story</a> <span class="codeword">(ggQMassStorey)</span><br><span class="desc">Query Etabs Storey Mass</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/queryMaterialListByObjectType.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -48px -336px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/queryMaterialListByObjectType.html">Query Material List By Object Type</a> <span class="codeword">(ggQMatO)</span><br><span class="desc">Query Material List by Object Type. This query does not require analysis to run</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/queryMaterialListBySection.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -72px -336px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/queryMaterialListBySection.html">Query Material List By Section</a> <span class="codeword">(ggQMatS)</span><br><span class="desc">Query Material List by Section Property Type. This query does not require analysis to run</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/queryMaterialListByStory.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -96px -336px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/queryMaterialListByStory.html">Query Material List By Story</a> <span class="codeword">(ggQMatSt)</span><br><span class="desc">Query Material List by Story. This query does not require analysis to run</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/query.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -120px -336px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/query.html">Query</a> <span class="codeword">(ggQ)</span><br><span class="desc">This component will extract results from SAP/Etabs Application, most applicable to existing models so use Solve component for GH generated.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/queryStoreyForces.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -144px -336px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/queryStoreyForces.html">Query Storey Forces</a> <span class="codeword">(ggQStoreyF)</span><br><span class="desc">Query Etabs storey forces from load cases and combinations</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/queryStoreyMoments.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -168px -336px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/queryStoreyMoments.html">Query Storey Moments</a> <span class="codeword">(ggQStoreyM)</span><br><span class="desc">Query Etabs storey moments from load cases and combinations</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/queryStoryDrifts.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -192px -336px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/queryStoryDrifts.html">Query Story Drifts</a> <span class="codeword">(ggQStoreyD)</span><br><span class="desc">Query Etabs Storey Drifts</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/query2dDerivedForces.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') 0px -360px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/query2dDerivedForces.html">Query2d Derived Forces</a> <span class="codeword">(ggQ2dElemDerivedForces)</span><br><span class="desc">Query 2d Element Derived (Principle) Forces</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/query2dDerivedStrains.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -24px -360px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/query2dDerivedStrains.html">Query2d Derived Strains</a> <span class="codeword">(ggQ2dDerivedStrains)</span><br><span class="desc">Query 2d Area Element Derived Strains</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/query2dDerivedStress.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -48px -360px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/query2dDerivedStress.html">Query2d Derived Stress</a> <span class="codeword">(ggQ2dDerStrss)</span><br><span class="desc">Query 2d Element Derived Stress</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/queryResult2dOptions.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -72px -360px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/queryResult2dOptions.html">Query Result2d Options</a> <span class="codeword">(ggQueryResult2dOpt)</span><br><span class="desc">Query Result 2d option</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/query2dProjectedStrains.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -96px -360px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/query2dProjectedStrains.html">Query2d Projected Strains</a> <span class="codeword">(ggQ2dProjectedStrains)</span><br><span class="desc">Query 2d Area Element Projected Strains</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/query2dProjectedForces.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -120px -360px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/query2dProjectedForces.html">Query2d Projected Forces</a> <span class="codeword">(ggQ2dProjectedForces)</span><br><span class="desc">Query 2d Element Projected (Direct) Forces</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/query2dProjectedStress.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -144px -360px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/query2dProjectedStress.html">Query2d Projected Stress</a> <span class="codeword">(ggQ2dProjectedStress)</span><br><span class="desc">Query 2d Element Projected (Direct) Stress</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/decomposeResultDatabaseTable.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -168px -360px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/decomposeResultDatabaseTable.html">Decompose Result Database Table</a> <span class="codeword">(ggRDDBT)</span><br><span class="desc">Decompose a Database Table Query Result into Rows of Data</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/decomposeResultSetDiaphragm.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -192px -360px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/decomposeResultSetDiaphragm.html">Decompose Result Set Diaphragm</a> <span class="codeword">(ggRDMD)</span><br><span class="desc">Decompose Diaphragm Result</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/decomposeResultGlobalReaction.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -216px -360px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/decomposeResultGlobalReaction.html">Decompose Result Global Reaction</a> <span class="codeword">(ggRDGlobReact)</span><br><span class="desc">Decompose Global Reaction Result</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/resultsSavedOptions.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') 0px -384px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/resultsSavedOptions.html">Results Saved Options</a> <span class="codeword">(ggRSO)</span><br><span class="desc">Results Saved Options</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/decomposeResultSetStorey.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -24px -384px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/decomposeResultSetStorey.html">Decompose Result Set Storey</a> <span class="codeword">(ggRDStoreyR)</span><br><span class="desc">Decompose a Storey Force/Moment/Drift Resultant</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/solver.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -48px -384px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/solver.html">Solver</a> <span class="codeword">(ggS)</span><br><span class="desc">This component will execute Structural Analysis solution process and query results</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/solverOptions.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -72px -384px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/solverOptions.html">Solver Options</a> <span class="codeword">(ggSO)</span><br><span class="desc">Solver Options</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/targetForceOptions.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -96px -384px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/targetForceOptions.html">Target Force Options</a> <span class="codeword">(ggTFO)</span><br><span class="desc">Target Force Options</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/displacementLoadApplicationControl.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -48px -408px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/displacementLoadApplicationControl.html">Displacement Load Application Control</a> <span class="codeword">(ggDLAC)</span><br><span class="desc">Displacement Load Application Control</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/fullLoadApplicationControl.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -72px -408px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/fullLoadApplicationControl.html">Full Load Application Control</a> <span class="codeword">(ggFLAC)</span><br><span class="desc">Full Load Application Control</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>ETABSAtt</h3>
+<table class="addon-compos">
+<tbody>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/areaSpring.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -72px 0px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/areaSpring.html">Area Spring</a> <span class="codeword">(ggAS)</span><br><span class="desc">Create a Area Spring Support to Apply to an Area Element</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/frameRelease.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -96px 0px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/frameRelease.html">Frame Release</a> <span class="codeword">(R)</span><br><span class="desc">Frame Release</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/frameReleaseStiffness.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -120px 0px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/frameReleaseStiffness.html">Frame Release Stiffness</a> <span class="codeword">(RS)</span><br><span class="desc">Frame Release</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/materialCreateElasticIsotropic.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -216px 0px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/materialCreateElasticIsotropic.html">Material Create-Elastic Isotropic</a> <span class="codeword">(ggEIM)</span><br><span class="desc">Create Elastic Isotropic Material</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/createLinkPropGAP.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') 0px -24px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/createLinkPropGAP.html">Create Link Prop GAP</a> <span class="codeword">(ggLP)</span><br><span class="desc">Create Structural Link Gap Property.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/createLinkPropMultiLinear.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -24px -24px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/createLinkPropMultiLinear.html">Create Link Prop Multi Linear</a> <span class="codeword">(ggLML)</span><br><span class="desc">Create Structural Link Multi-Linear Elastic or Plastic Property.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/createLinkPropLinear.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -48px -24px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/createLinkPropLinear.html">Create Link Prop Linear</a> <span class="codeword">(ggLP)</span><br><span class="desc">Create Linear Link Property</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/createElasticOrthotropicMaterial.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -72px -24px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/createElasticOrthotropicMaterial.html">Create Elastic Orthotropic Material</a> <span class="codeword">(ggEOM)</span><br><span class="desc">Create Elastic Orthotropic Material</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/createPierLabel.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -96px -24px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/createPierLabel.html">Create Pier Label</a> <span class="codeword">(ggP)</span><br><span class="desc">Create an Etabs Pier Label to be applied to Walls and Frame elements</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/createPropDeck.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -120px -24px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/createPropDeck.html">Create Prop Deck</a> <span class="codeword">(ggDP)</span><br><span class="desc">Create Deck Prop</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/createPropFrame.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -144px -24px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/createPropFrame.html">Create Prop Frame</a> <span class="codeword">(ggFP)</span><br><span class="desc">Create Frame Property</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/createFramePropGeneral.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -168px -24px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/createFramePropGeneral.html">Create Frame Prop General</a> <span class="codeword">(ggFPG)</span><br><span class="desc">Create General Frame Property, all values must be derived from rhino document units (ie mm, inches, metres etc)</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/createFramePropNonPrismatic.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -192px -24px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/createFramePropNonPrismatic.html">Create Frame Prop Non Prismatic</a> <span class="codeword">(ggNPFP)</span><br><span class="desc">Create Non Prismatic Frame Element Section Property</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/createSlabProp.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -216px -24px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/createSlabProp.html">Create Slab Prop</a> <span class="codeword">(ggSP)</span><br><span class="desc">Create Slab Prop</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/createSpandrelLabel.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') 0px -48px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/createSpandrelLabel.html">Create Spandrel Label</a> <span class="codeword">(ggSP)</span><br><span class="desc">Create an Etabs Spandrel Label to be applied to Walls and Frame elements</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/createStageOpAdd.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -24px -48px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/createStageOpAdd.html">Create Stage Op Add</a> <span class="codeword">(ggStOpAdd)</span><br><span class="desc">Create a Stage Operation which adds objects for a Staged Construction Load Case Stage</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/createStageOpChangeFrameProp.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -48px -48px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/createStageOpChangeFrameProp.html">Create Stage Op Change Frame Prop</a> <span class="codeword">(ggStOpFP)</span><br><span class="desc">Create a Stage Operation which adds or removes objects from a for a Staged Construction Load Case Stage</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/createStageOpLoad.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -72px -48px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/createStageOpLoad.html">Create Stage Op Load</a> <span class="codeword">(ggStOpLoad)</span><br><span class="desc">Create a Stage Operation which adds load patterns to a Staged Construction Load Case Stage</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/createStageOpRemove.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -96px -48px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/createStageOpRemove.html">Create Stage Op Remove</a> <span class="codeword">(ggStOpRem)</span><br><span class="desc">Create a Stage Operation which removes objects from a Staged Construction Load Case Stage</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/voidProp.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -120px -48px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/voidProp.html">Void Prop</a> <span class="codeword">(ggVAP)</span><br><span class="desc">Create Void Area Prop</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/createWallProp.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -144px -48px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/createWallProp.html">Create Wall Prop</a> <span class="codeword">(ggWP)</span><br><span class="desc">Create Wall Prop</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/findFrameProp.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -216px -48px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/findFrameProp.html">Find Frame Prop</a> <span class="codeword">(ggFFP)</span><br><span class="desc">Find Frame Property</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/frameAutoMesh.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') 0px -72px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/frameAutoMesh.html">Frame Auto Mesh</a> <span class="codeword">(ggFAM)</span><br><span class="desc">Create Frame AutoMesh</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/generateC.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -24px -72px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/generateC.html">Generate C</a> <span class="codeword">(ggC)</span><br><span class="desc">Generates a ColdFormed C Section</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/groupOptions.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -72px -72px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/groupOptions.html">Group Options</a> <span class="codeword">(ggGO)</span><br><span class="desc">Group Options</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/linkPropDirParamsGap.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -96px -72px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/linkPropDirParamsGap.html">Link Prop Dir Params Gap</a> <span class="codeword">(ggLPP)</span><br><span class="desc">Directional and rotational values for creating a Linear link in SAP2000</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/linkPropDirParamsMultiLinear.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -120px -72px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/linkPropDirParamsMultiLinear.html">Link Prop Dir Params Multi Linear</a> <span class="codeword">(ggLPP)</span><br><span class="desc">Directional and rotational values for creating a Multi Linear (Elastic/Plasctic) link in SAP2000</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/materialParamsConcrete.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -216px -96px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/materialParamsConcrete.html">Material Params Concrete</a> <span class="codeword">(ggMPC)</span><br><span class="desc">Generate Concrete Material Parameters for input into the user defined Material Component.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/materialConcreteTimeEC2.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') 0px -120px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/materialConcreteTimeEC2.html">Material Concrete Time EC2</a> <span class="codeword">(ggMCTDEC2)</span><br><span class="desc">Generate Concrete Material Time Dependent Parameters for EC2.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/materialParamsRebar.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -24px -120px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/materialParamsRebar.html">Material Params Rebar</a> <span class="codeword">(ggMPRB)</span><br><span class="desc">Generate Rebar Material Parameters for input into the user defined Material Component.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/materialParamsSteel.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -48px -120px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/materialParamsSteel.html">Material Params Steel</a> <span class="codeword">(ggMPSteel)</span><br><span class="desc">Generate Steel Material Parameters for input into the user defined Material Component.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/pointAtts.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -72px -120px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/pointAtts.html">Point Atts</a> <span class="codeword">(ggPA)</span><br><span class="desc">Create Structural Point Attributes</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/pointRestraint.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -96px -120px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/pointRestraint.html">Point Restraint</a> <span class="codeword">(ggPR)</span><br><span class="desc">Create PointRestraint</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/pointSpringProp.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -120px -120px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/pointSpringProp.html">Point Spring Prop</a> <span class="codeword">(ggPS)</span><br><span class="desc">Create Point Spring Property, units consistent with ETABS application</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/pointSupportLink.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -144px -120px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/pointSupportLink.html">Point Support Link</a> <span class="codeword">(ggPSL)</span><br><span class="desc">Create Point Support Spring by Link, units consistent with ETABS application</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/framePropAutoSelectionSet.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -96px -216px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/framePropAutoSelectionSet.html">Frame Prop Auto Selection Set</a> <span class="codeword">(ggFPAS)</span><br><span class="desc">Create Frame Property Auto Selection Set. Set a list of section properties to that can applied to a SAP Frame Element in design</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/frameHingeAssign.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -24px -264px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/frameHingeAssign.html">Frame Hinge Assign</a> <span class="codeword">(ggFHA)</span><br><span class="desc">Create Frame Hinge Assignment</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/materialByRef.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -120px -264px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/materialByRef.html">Material By Ref</a> <span class="codeword">(ggMR)</span><br><span class="desc">Reference a Material in an Existing Model by a String</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/createPointMass.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -192px -288px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/createPointMass.html">Create Point Mass</a> <span class="codeword">(ggPointMass)</span><br><span class="desc">Create Point Mass Data</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/propFrameByRef.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -216px -288px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/propFrameByRef.html">Prop Frame By Ref</a> <span class="codeword">(ggFPR)</span><br><span class="desc">Reference a Frame Property in an Existing Model by a String</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/propHingeByRef.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') 0px -312px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/propHingeByRef.html">Prop Hinge By Ref</a> <span class="codeword">(ggHPR)</span><br><span class="desc">Reference a Hinge Property in an Existing Model by a String</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/hingeAcceptanceCriteria.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -24px -312px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/hingeAcceptanceCriteria.html">Hinge Acceptance Criteria</a> <span class="codeword">(ggHAC)</span><br><span class="desc">Non-Interacting User Defined Deformation Hinge Property</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/createPropHingeUserNonInteracting.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -48px -312px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/createPropHingeUserNonInteracting.html">Create Prop Hinge User Non Interacting</a> <span class="codeword">(ggHPUNI)</span><br><span class="desc">Create a User Defined Non-Interacting Hinge Property</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/hingeNonInteractingControlDeform.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -72px -312px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/hingeNonInteractingControlDeform.html">Hinge Non Interacting Control Deform</a> <span class="codeword">(ggHUNIFC)</span><br><span class="desc">Specify Force Control Properties for a Non-Interacting User Defined Hinge Property</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/hingeNonInteractingControlForce.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -96px -312px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/hingeNonInteractingControlForce.html">Hinge Non Interacting Control Force</a> <span class="codeword">(ggHUNIFC)</span><br><span class="desc">Specify Force Control Properties for a Non-Interacting User Defined Hinge Property</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/hingeDeformationPoints.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -120px -312px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/hingeDeformationPoints.html">Hinge Deformation Points</a> <span class="codeword">(ggHDP)</span><br><span class="desc">Deformation Points for a Non-Interacting User Defined Deformation Hinge Property. Inputs are Point3d where the z value is ignored</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/hingeNonInteractingDeformScaleFacParams.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -144px -312px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/hingeNonInteractingDeformScaleFacParams.html">Hinge Non Interacting Deform Scale Fac Params</a> <span class="codeword">(ggHNIS)</span><br><span class="desc">Scaling Factor Parameters for Non-Interacting User Defined Deformation Hinge Property</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/framePropModifier.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -168px -312px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/framePropModifier.html">Frame Prop Modifier</a> <span class="codeword">(ggSPM)</span><br><span class="desc">Create Frame Section Property Modifier</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/propShellByRef.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -192px -312px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/propShellByRef.html">Prop Shell By Ref</a> <span class="codeword">(ggSPR)</span><br><span class="desc">Reference a Shell Property in an Existing Model by a String</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/shellPropertyModifier.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -168px -384px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/shellPropertyModifier.html">Shell Property Modifier</a> <span class="codeword">(ggSPM)</span><br><span class="desc">Create Shell Property Modifier</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/slabAtts.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -216px -384px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/slabAtts.html">Slab Atts</a> <span class="codeword">(ggSA)</span><br><span class="desc">Create Slab Attributes</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/wallAtts.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -24px -408px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/wallAtts.html">Wall Atts</a> <span class="codeword">(ggWA)</span><br><span class="desc">Create Wall Attributes</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>ETABSVerify</h3>
+<table class="addon-compos">
+<tbody>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/compositeBeamDesign.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -144px 0px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/compositeBeamDesign.html">Composite Beam Design</a> <span class="codeword">(ggCSD)</span><br><span class="desc">This component will execute the Composite Steel Design Process.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/concreteFrameDesign.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -168px 0px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/concreteFrameDesign.html">Concrete Frame Design</a> <span class="codeword">(ggCD)</span><br><span class="desc">This component will execute Structural Analysis Solution and Concrete Frame Design process. XXX THIS COMPONENT WILL ONLY WORK WITH ETABSv18 AND LATER</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/queryCompositeBeamDesignSummary.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -216px -120px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/queryCompositeBeamDesignSummary.html">Query Composite Beam Design Summary</a> <span class="codeword">(ggQCompBDS)</span><br><span class="desc">Query Frame Element Summary Utilisations</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/queryConcreteBeamDesignSummary.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') 0px -144px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/queryConcreteBeamDesignSummary.html">Query Concrete Beam Design Summary</a> <span class="codeword">(ggQCBDS)</span><br><span class="desc">Query Frame Element Summary Utilisations</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/queryConceteColumnDesignSummary.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -24px -144px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/queryConceteColumnDesignSummary.html">Query Concete Column Design Summary</a> <span class="codeword">(ggQCCDS)</span><br><span class="desc">Query Frame Element Summary Utilisations</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/queryShearWallDesignPierSummary.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') 0px -168px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/queryShearWallDesignPierSummary.html">Query Shear Wall Design Pier Summary</a> <span class="codeword">(ggQSWDPS)</span><br><span class="desc">Query Shear Wall Design Summary Utilisations</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/querySteelDesignSummary.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -24px -168px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/querySteelDesignSummary.html">Query Steel Design Summary</a> <span class="codeword">(ggQueryFrameFor)</span><br><span class="desc">Query Frame Element Summary Utilisations</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/decomposeResultCompositeBeamDesignSummary.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -24px -192px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/decomposeResultCompositeBeamDesignSummary.html">Decompose Result Composite Beam Design Summary</a> <span class="codeword">(ggRDCompB)</span><br><span class="desc">Decompose Composite Beam Design Utilisation Summary Set Results</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/decomposeResultSetConcBeamDesignSummary.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -48px -192px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/decomposeResultSetConcBeamDesignSummary.html">Decompose Result Set Conc Beam Design Summary</a> <span class="codeword">(ggRDCB)</span><br><span class="desc">Decompose Concrete Beam Design Utilisation Summary set results</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/decomposeResultSetConcColumnDesignSummary.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -72px -192px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/decomposeResultSetConcColumnDesignSummary.html">Decompose Result Set Conc Column Design Summary</a> <span class="codeword">(ggRDCC)</span><br><span class="desc">Decompose Concrete Column Design Utilisation Summary Set Results</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/decomposeResultPierStoryDesignReoSummary.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -96px -192px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/decomposeResultPierStoryDesignReoSummary.html">Decompose Result Pier Story Design Reo Summary</a> <span class="codeword">(ggRDSPS)</span><br><span class="desc">Decompose a Story Pier Design Reo Result</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/decomposeResultPierStoryDesignSummary.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -120px -192px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/decomposeResultPierStoryDesignSummary.html">Decompose Result Pier Story Design Summary</a> <span class="codeword">(ggRDSPS)</span><br><span class="desc">Decompose a Story Pier Design Result</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/decomposeResultShearWallDesignPierSummary.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -144px -192px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/decomposeResultShearWallDesignPierSummary.html">Decompose Result Shear Wall Design Pier Summary</a> <span class="codeword">(ggRDSWP)</span><br><span class="desc">Decompose Concrete Column Design Utilisation Summary Set Results</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/decomposeResultSetSteelDesignSummary.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -168px -192px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/decomposeResultSetSteelDesignSummary.html">Decompose Result Set Steel Design Summary</a> <span class="codeword">(ggRUSD)</span><br><span class="desc">Decompose SAP Steel Design Utilisation Summary set results</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/designCodeByRef.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -144px -216px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/designCodeByRef.html">Design Code By Ref</a> <span class="codeword">(ggDCR)</span><br><span class="desc">Reference a Design Code in an Existing Model by a String. Use already preset default values as per the file</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/concreteDesignACI318.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -168px -216px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/concreteDesignACI318.html">Concrete Design ACI318</a> <span class="codeword">(ggCDACI318)</span><br><span class="desc">Concrete Fram Design ACI318</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/steelDesignACI318OverWrite.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -192px -216px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/steelDesignACI318OverWrite.html">Steel Design ACI318Over Write</a> <span class="codeword">(ggSDCSAOW)</span><br><span class="desc">Steel Design ACI318 OverWrite</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/concreteDesignEurocode2.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -216px -216px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/concreteDesignEurocode2.html">Concrete Design Eurocode2</a> <span class="codeword">(ggCDEC2)</span><br><span class="desc">Concrete Fram Design Eurocode</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/concreteDesignEurocode2OverWrite.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') 0px -240px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/concreteDesignEurocode2OverWrite.html">Concrete Design Eurocode2Over Write</a> <span class="codeword">(ggSDCSAOW)</span><br><span class="desc">Steel Design Eurocode2 OverWrite</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/steelDesignAISC360.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -24px -240px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/steelDesignAISC360.html">Steel Design AISC360</a> <span class="codeword">(ggSDAISC360)</span><br><span class="desc">Steel Design Code AISC360</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/steelDesignAISC360OverWrite.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -48px -240px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/steelDesignAISC360OverWrite.html">Steel Design AISC360Over Write</a> <span class="codeword">(ggSDAISCOW)</span><br><span class="desc">Steel Design AISC360 OverWrite</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/steelDesignAS4100.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -72px -240px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/steelDesignAS4100.html">Steel Design AS4100</a> <span class="codeword">(ggSDAS4100)</span><br><span class="desc">Steel Design AS 4100-1998</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/steelDesignAS4100OverWrite.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -96px -240px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/steelDesignAS4100OverWrite.html">Steel Design AS4100Over Write</a> <span class="codeword">(ggSDAS4100OW)</span><br><span class="desc">Steel Design AS4100 OverWrite</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/steelDesignCSA.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -120px -240px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/steelDesignCSA.html">Steel Design CSA</a> <span class="codeword">(ggSDCSA)</span><br><span class="desc">Steel Design CSA</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/steelDesignCSAOverWrite.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -144px -240px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/steelDesignCSAOverWrite.html">Steel Design CSAOver Write</a> <span class="codeword">(ggSDCSAOW)</span><br><span class="desc">Steel Design CSA OverWrite</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/steelDesignEurocode3.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -168px -240px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/steelDesignEurocode3.html">Steel Design Eurocode3</a> <span class="codeword">(ggSDEC)</span><br><span class="desc">Steel Design Eurocode3</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/steelDesignEurocode3OverWrite.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -192px -240px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/steelDesignEurocode3OverWrite.html">Steel Design Eurocode3Over Write</a> <span class="codeword">(ggSDCSAOW)</span><br><span class="desc">Steel Design Eurocode OverWrite</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/steelDesignNZ3403OverWrite.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -216px -240px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/steelDesignNZ3403OverWrite.html">Steel Design NZ3403Over Write</a> <span class="codeword">(ggSDNZ3403OW)</span><br><span class="desc">Steel Design NZ3403 OverWrite</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/steelDesignNZ3404.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') 0px -264px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/steelDesignNZ3404.html">Steel Design NZ3404</a> <span class="codeword">(ggSDNZ3404)</span><br><span class="desc">Steel Design NZ 3404-1997</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/steelFrameDesign.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') 0px -408px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/steelFrameDesign.html">Steel Frame Design</a> <span class="codeword">(ggSD)</span><br><span class="desc">This component will execute Structural Analysis solution and Steel Design process.</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>ETABSLoads</h3>
+<table class="addon-compos">
+<tbody>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/appliedLoadModal.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -24px 0px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/appliedLoadModal.html">Applied Load Modal</a> <span class="codeword">(ggMAL)</span><br><span class="desc">Create a Load Applied for a Modal Eigin or Modal Ritz Load Case</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/appliedLoadResponseSpectrum.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -48px 0px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/appliedLoadResponseSpectrum.html">Applied Load Response Spectrum</a> <span class="codeword">(ggSPL)</span><br><span class="desc">Create a Load Applied for a Response Spectrum Load Case Direction</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/decomposeCombo.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -168px -48px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/decomposeCombo.html">Decompose Combo</a> <span class="codeword">(ggDecomposeCombo)</span><br><span class="desc">Decompose Combo</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/decomposeLoadPattern.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -192px -48px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/decomposeLoadPattern.html">Decompose Load Pattern</a> <span class="codeword">(ggDecomposeLP)</span><br><span class="desc">Decompose a Pattern and retrieve all associated loading</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/loadAreaUniform.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -144px -72px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/loadAreaUniform.html">Load Area Uniform</a> <span class="codeword">(ggFL)</span><br><span class="desc">Create Uniform Loads for Area Elements</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/loadCrvPatch.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -168px -72px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/loadCrvPatch.html">Load Crv Patch</a> <span class="codeword">(ggCP)</span><br><span class="desc">Create Patch Loads for Curve Elements</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/loadCrvPoint.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -192px -72px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/loadCrvPoint.html">Load Crv Point</a> <span class="codeword">(ggCLP)</span><br><span class="desc">Create Point Loads for Curve Elements</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/loadCrvTemp.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -216px -72px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/loadCrvTemp.html">Load Crv Temp</a> <span class="codeword">(ggLCT)</span><br><span class="desc">Create Temperature Load for Curve Elements</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/caseCombination.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') 0px -96px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/caseCombination.html">Case Combination</a> <span class="codeword">(ggCC)</span><br><span class="desc">Create Case Combination</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/loadPointDisplacment.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -24px -96px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/loadPointDisplacment.html">Load Point Displacment</a> <span class="codeword">(ggPDL)</span><br><span class="desc">Create Point Displacement Load, use settlement if node has restraint in applied direction</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/loadPatternAutoSeismicNZ1170.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -48px -96px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/loadPatternAutoSeismicNZ1170.html">Load Pattern Auto Seismic NZ1170</a> <span class="codeword">(ggLPASNZ)</span><br><span class="desc">Create Load Pattern AutoSeismic NZ1170.5</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/loadPatternAutoSeismicUser.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -72px -96px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/loadPatternAutoSeismicUser.html">Load Pattern Auto Seismic User</a> <span class="codeword">(ggLPASUser)</span><br><span class="desc">Create Load Pattern AutoSeismic Based on User Load Input Loadsets</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/loadPatternAutoSeismicUserCoeff.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -96px -96px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/loadPatternAutoSeismicUserCoeff.html">Load Pattern Auto Seismic User Coeff</a> <span class="codeword">(ggLPASUC)</span><br><span class="desc">Create Load Pattern AutoSeismic User Coefficient</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/loadPatternAutoSeismicUserLoadset.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -120px -96px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/loadPatternAutoSeismicUserLoadset.html">Load Pattern Auto Seismic User Loadset</a> <span class="codeword">(ggLPASUS)</span><br><span class="desc">Create User Load Input Loadsets to be provided inputed into Load Pattern AutoSeismic</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/loadPatternAutoWindUser.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -144px -96px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/loadPatternAutoWindUser.html">Load Pattern Auto Wind User</a> <span class="codeword">(ggLPASUser)</span><br><span class="desc">Create Load Pattern AutoWind Based on User Load Input Loadsets</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/loadPatternAutoWindUserLoadset.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -168px -96px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/loadPatternAutoWindUserLoadset.html">Load Pattern Auto Wind User Loadset</a> <span class="codeword">(ggLPASUS)</span><br><span class="desc">Create User Load Input Loadsets to be inputed into Load Pattern AutoWind</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/massSource.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -192px -96px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/massSource.html">Mass Source</a> <span class="codeword">(ggMS)</span><br><span class="desc">Create Mass Source</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/functionResponseSpectrumEuroCode8.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -48px -168px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/functionResponseSpectrumEuroCode8.html">Function Response Spectrum Euro Code8</a> <span class="codeword">(ggRSEC)</span><br><span class="desc">Create a response spectrum function based on Eurocode8</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/functionResponseSpectrumNZ1170.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -72px -168px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/functionResponseSpectrumNZ1170.html">Function Response Spectrum NZ1170</a> <span class="codeword">(ggRSNZ)</span><br><span class="desc">Create a response spectrum function based on NZ1170</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/functionResponseSpectrumUser.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -96px -168px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/functionResponseSpectrumUser.html">Function Response Spectrum User</a> <span class="codeword">(ggRSUD)</span><br><span class="desc">Create a User Defined response spectrum function from a list of Periods and Values</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/autoSeismicEccOverwrite.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -72px -216px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/autoSeismicEccOverwrite.html">Auto Seismic Ecc Overwrite</a> <span class="codeword">(ggASEO)</span><br><span class="desc">Create a Eccentricity Override to be applied to a Auto Seismic Load Pattern</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/loadPattern.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -48px -264px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/loadPattern.html">Load Pattern</a> <span class="codeword">(ggLP)</span><br><span class="desc">Create Load Pattern</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/loadPatternByRef.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -96px -264px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/loadPatternByRef.html">Load Pattern By Ref</a> <span class="codeword">(ggLP)</span><br><span class="desc">Reference a Load Case in an Existing Model by a String</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/shellUniformLoadSet.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -192px -384px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/shellUniformLoadSet.html">Shell Uniform Load Set</a> <span class="codeword">(ggLP)</span><br><span class="desc">Create Shell Uniform Load Set to Apply to Area Object</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>ETABSModify</h3>
+<table class="addon-compos">
+<tbody>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/modifyFrameElementDelete.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -120px -216px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/modifyFrameElementDelete.html">Modify Frame Element Delete</a> <span class="codeword">(ggNFS)</span><br><span class="desc">Nominate Frame Element to Delete from Existing Model</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/modifyBake.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -48px -288px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/modifyBake.html">Modify Bake</a> <span class="codeword">(ggMB)</span><br><span class="desc">This component will open existing model, and then Perform the Modifactions Provided.  Advisable to have only One Bake Component on the Canvas</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/modifyDesignSectionInline.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -72px -288px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/modifyDesignSectionInline.html">Modify Design Section Inline</a> <span class="codeword">(ggMDSI)</span><br><span class="desc">This component will can change the Design Section of a Designed model AFTER the bake, analysis and design process has occured</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/modifyInline.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -96px -288px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/modifyInline.html">Modify Inline</a> <span class="codeword">(ggMI)</span><br><span class="desc">This component will modify a model AFTER the bake process has occured</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/nominateFrameSection.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -120px -288px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/nominateFrameSection.html">Nominate Frame Section</a> <span class="codeword">(ggNFS)</span><br><span class="desc">Nominate Section name to assign to frame</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/nominateFrameSectionGroup.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -144px -288px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/nominateFrameSectionGroup.html">Nominate Frame Section Group</a> <span class="codeword">(ggNFSG)</span><br><span class="desc">Nominate Section name to assign to group of frames</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/relocatePoint.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -216px -336px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/relocatePoint.html">Relocate Point</a> <span class="codeword">(ggPR)</span><br><span class="desc">Relocate Point in an Existing Model by providing an updated Point3d Location</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/modifyConcFrameDesignSection.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -120px -384px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/modifyConcFrameDesignSection.html">Modify Conc Frame Design Section</a> <span class="codeword">(ggNFS)</span><br><span class="desc">Modify the Concrete Frame Design Section after the Design Process. Use this component with the Inline Modify component to test different sections after performing analysis and design</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/modifySteelFrameDesignSection.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -144px -384px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/modifySteelFrameDesignSection.html">Modify Steel Frame Design Section</a> <span class="codeword">(ggNFS)</span><br><span class="desc">Modify the Steel Frame Design Section after the Design Process. Use this component with the Inline Modify component to test different sections after performing analysis and design</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>ETABS</h3>
+<table class="addon-compos">
+<tbody>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/convertIfcFilter.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -192px 0px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/convertIfcFilter.html">Convert Ifc Filter</a> <span class="codeword">(F)</span><br><span class="desc">IFC Elemnt filter for converting from IFC to Structural Analysis</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/modelDecompose.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -216px -264px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/modelDecompose.html">Model Decompose</a> <span class="codeword">(ggMD)</span><br><span class="desc">Decompose Existing Model, WARNING WORK IN PROGRESS NOT ALL FIELDS BEING POPULATED</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/modelOptions.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') 0px -288px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/modelOptions.html">Model Options</a> <span class="codeword">(ggFO)</span><br><span class="desc">Additional analysis option that can be set to the associated ggETABSModel File.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/modelPDeltaOptions.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -24px -288px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/modelPDeltaOptions.html">Model P-Delta Options</a> <span class="codeword">(ggPDO)</span><br><span class="desc">Model P-Delta Options. P-Delta Options are specified into the Model File Options of the Bake Component.</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>A</h3>
+<table class="addon-compos">
+<tbody>
+<tr><td class="ccol_1"><a href="../components/geomgymetabs/aBlank.html"><div class="ghsprite" style="background: url('../icons/geomGymETABS.png') -48px -72px" ></div></a></td><td class="ccol_2"><a href="../components/geomgymetabs/aBlank.html">ABlank</a> <span class="codeword">(Agg)</span><br><span class="desc">ANot to be used</span></td></tr>
+</tbody>
+</table>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div id="docs-foot" class="docs-footindex">
+<div id="docs-foot-inner">
+<p class="left">
+Site design © <a href="https://github.com/robinrodricks/">Robin Rodricks</a>. &nbsp;
+
+GeomGym ETABS and associated data © 2022  <a href="https://technical.geometrygym.com/rhino-grasshopper/structuralanalysis/etabs">Geometry Gym Pty Ltd</a>. &nbsp;
+<br>
+Rhinoceros and Grasshopper are registered trademarks of <a href="https://www.rhino3d.com/">Robert McNeel & Associates</a>.&nbsp;
+Hosted by <a href="http://www.github.com/">GitHub</a> 
+</p>
+<p class="right docs-lightfont">
+
+<a href="https://github.com/grasshopper3d/GrasshopperDocsSite/issues/new">Report an Issue</a> &nbsp;|&nbsp;
+<a href="/termsOfService.html">Terms of Service</a>
+</p>
+
+</div>
+
+
+
+</div>
+</div>
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/jquery-autocomplete.min.js"></script>
+<script type="text/javascript" src="/js/app-searchbar.js"></script>
+
+    </body>
+</html>

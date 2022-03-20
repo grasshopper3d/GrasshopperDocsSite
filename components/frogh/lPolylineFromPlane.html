@@ -1,0 +1,491 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>L Polyline From Plane - FroGH - Component for Grasshopper | Grasshopper Docs</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+
+<meta name="description" content="Generates an L shaped polyline (X-O-Y order) from a Plane" />
+<meta name="title" content="L Polyline From Plane - FroGH - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:title" content="L Polyline From Plane - FroGH - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://grasshopperdocs.com/components/frogh/lPolylineFromPlane.html" />
+<meta property="og:site_name" content="Grasshopper Docs" />
+
+<link href="../../style.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+
+<div id="docs">
+
+<div id="docs-head">
+<div id="docs-masthead">
+<p id="docs-sitename"><a href="http://grasshopperdocs.com/">
+	<img id="site-logo-icon" src="/images/logo-icon.png" alt=""></img>
+	<img id="site-logo-text" src="/images/logo-text.png" alt="Grasshopper Docs"></img>
+</a></p>
+<p id="docs-sitedesc">Community documentation for Grasshopper add-ons &amp; plugins</p>
+<div id="docs-sitesearch">
+	<input id="docs-sitesearch-inputbox" type="text" name="docs-sitesearch-inputbox" />
+	<img id="docs-searchicon" src="/images/search.png"/>
+</div>
+</div>
+</div>
+
+<div id="docs-body">
+
+<div class="page">
+
+<div class="content compo-page">
+
+<div class="ghbar ">
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/frogh/bakeAttributesEnhanced.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') -24px 0px" data-toptip="Bake Attributes Enhanced"></div></a>
+<a href="../../components/frogh/centeredDomain.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') -96px 0px" data-downtip="Centered Domain"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/frogh/createRTree.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') -192px 0px" data-toptip="Create RTree"></div></a>
+<a href="../../components/frogh/dataTreeGraph.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') 0px -24px" data-downtip="DataTreeGraph"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/frogh/deconstructBlockFromID.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') -24px -24px" data-toptip="Deconstruct Block From ID"></div></a>
+<a href="../../components/frogh/deconstructDot.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') -48px -24px" data-downtip="Deconstruct Dot"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/frogh/doubleShift.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') -120px -24px" data-toptip="Double Shift"></div></a>
+<a href="../../components/frogh/fontList.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') -24px -48px" data-downtip="Font List"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/frogh/indexesFromList.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') -96px -48px" data-toptip="Indexes From List"></div></a>
+<a href="../../components/frogh/indexesFromNumber.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') -120px -48px" data-downtip="IndexesFromNumber"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/frogh/massBoolean.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') -216px -48px" data-toptip="Mass Boolean"></div></a>
+<a href="../../components/frogh/objectLayer.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') -96px -120px" data-downtip="ObjectLayer"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/frogh/serialBranchPath.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') -168px -144px" data-toptip="Serial Branch Path"></div></a>
+<a href="../../components/frogh/symmetricDomain.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') -120px -168px" data-downtip="Symmetric Domain"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/frogh/toggleAutostop.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') -168px -168px" data-toptip="Toggle Autostop"></div></a>
+<a href="../../components/frogh/weightedRandomChoice.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') -72px -192px" data-downtip="Weighted Random Choice"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="8">
+Data
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/frogh/cOMPortWriter.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') -168px 0px" data-toptip="COM Port Writer"></div></a>
+<a href="../../components/frogh/directoryReader.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') -72px -24px" data-downtip="Directory Reader"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/frogh/exportCurvesToAI.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') -144px -24px" data-toptip="Export Curves to AI"></div></a>
+<a href="../../components/frogh/gHFilePathInfo.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') -72px -48px" data-downtip="GH File Path Info"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/frogh/loadSTLBinaryFile.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') -168px -48px" data-toptip="Load STL Binary File"></div></a>
+<a href="../../components/frogh/pathGenerator.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') -144px -120px" data-downtip="Path Generator"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/frogh/readFileFromURL.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') -48px -144px" data-toptip="Read File From URL"></div></a>
+<a href="../../components/frogh/saveGHFile.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') -120px -144px" data-downtip="Save GH File"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/frogh/saveStringToFile.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') -144px -144px" data-toptip="Save String To File"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="5">
+File I-O
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/frogh/adaptiveFillet.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') 0px 0px" data-toptip="Adaptive Fillet"></div></a>
+<a href="../../components/frogh/clusterizePointsByDistance.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') -120px 0px" data-downtip="Clusterize Points By Distance"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/frogh/divideCurveByTangentAngle.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') -96px -24px" data-toptip="Divide Curve By Tangent Angle"></div></a>
+<a href="../../components/frogh/flapper.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') 0px -48px" data-downtip="Flapper"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/frogh/frenetSerretFrame.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') -48px -48px" data-toptip="Frenet Serret Frame"></div></a>
+<a href="../../components/frogh/isPolylineClockwise.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') -144px -48px" data-downtip="Is Polyline Clockwise"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/frogh/lPolylineFromPlane.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') -192px -48px" data-toptip="L Polyline From Plane"></div></a>
+<a href="../../components/frogh/planeFromLPolyline.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') -168px -120px" data-downtip="Plane From L Polyline"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/frogh/pointsInSphere.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') -216px -120px" data-toptip="Points In Sphere"></div></a>
+<a href="../../components/frogh/pointsInSphereRTree.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') 0px -144px" data-downtip="Points In Sphere (RTree)"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/frogh/rTreeClosestPoint.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') -96px -144px" data-toptip="RTree Closest Point"></div></a>
+<a href="../../components/frogh/signedVectorAngle.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') -192px -144px" data-downtip="Signed Vector Angle"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/frogh/smallestEnclosingCircle.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') 0px -168px" data-toptip="Smallest Enclosing Circle"></div></a>
+<a href="../../components/frogh/sortPointsByAngle.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') -24px -168px" data-downtip="Sort Points By Angle"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/frogh/surfaceQuadTreeByCurvature.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') -72px -168px" data-toptip="Surface QuadTree By Curvature"></div></a>
+<a href="../../components/frogh/surfaceQuadTreeByCurve.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') -96px -168px" data-downtip="Surface QuadTree By Curve"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/frogh/textToGeometry.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') -144px -168px" data-toptip="Text To Geometry"></div></a>
+<a href="../../components/frogh/trilateration.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') 0px -192px" data-downtip="Trilateration"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="9">
+Geometry
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/frogh/extractMeshEdges.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') -168px -24px" data-toptip="Extract Mesh Edges"></div></a>
+<a href="../../components/frogh/extractMeshFaces.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') -192px -24px" data-downtip="Extract Mesh Faces"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/frogh/meshConnectivityEdgeProximityMap.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') 0px -72px" data-toptip="Mesh Connectivity - Edge Proximity Map"></div></a>
+<a href="../../components/frogh/meshConnectivityEdgeProximitySingle.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') -24px -72px" data-downtip="Mesh Connectivity - Edge Proximity Single"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/frogh/meshConnectivityFaceProximityMap.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') -48px -72px" data-toptip="Mesh Connectivity - Face Proximity Map"></div></a>
+<a href="../../components/frogh/meshConnectivityFaceProximitySingle.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') -72px -72px" data-downtip="Mesh Connectivity - Face Proximity Single"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/frogh/meshConnectivityVertexProximityMap.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') -96px -72px" data-toptip="Mesh Connectivity - Vertex Proximity Map"></div></a>
+<a href="../../components/frogh/meshConnectivityVertexProximitySingle.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') -120px -72px" data-downtip="Mesh Connectivity - Vertex Proximity Single"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/frogh/meshClosestVertexIndex.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') -168px -72px" data-toptip="Mesh Closest Vertex Index"></div></a>
+<a href="../../components/frogh/meshDeNoising.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') -192px -72px" data-downtip="Mesh De-Noising"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/frogh/meshesExtractEdgesWithToleranceAngle.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') -216px -72px" data-toptip="Meshes Extract Edges with tolerance angle"></div></a>
+<a href="../../components/frogh/meshExtractEdgesWithToleranceAngle.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') 0px -96px" data-downtip="Mesh Extract Edges with tolerance angle"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/frogh/meshFacesToVerticesValues.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') -24px -96px" data-toptip="Mesh Faces To Vertices Values"></div></a>
+<a href="../../components/frogh/meshIsocurves.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') -48px -96px" data-downtip="Mesh Isocurves"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/frogh/meshPointOrientation.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') -96px -96px" data-toptip="Mesh Point Orientation"></div></a>
+<a href="../../components/frogh/meshPseudoCurvature.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') -120px -96px" data-downtip="Mesh Pseudo-Curvature"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/frogh/meshRebuildNormals.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') -144px -96px" data-toptip="Mesh Rebuild Normals"></div></a>
+<a href="../../components/frogh/meshReport.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') -168px -96px" data-downtip="Mesh Report"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/frogh/meshSubdivideQuadFaces.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') -192px -96px" data-toptip="Mesh Subdivide Quad Faces"></div></a>
+<a href="../../components/frogh/meshToCSnippet.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') -216px -96px" data-downtip="Mesh To C# Snippet"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/frogh/meshUnlooper.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') 0px -120px" data-toptip="Mesh Unlooper"></div></a>
+<a href="../../components/frogh/meshVerticesToFacesValues.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') -24px -120px" data-downtip="Mesh Vertices To Faces Values"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/frogh/reduceMesh.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') -72px -144px" data-toptip="Reduce Mesh"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="12">
+Mesh
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/frogh/fastMeshFromPolyline.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') -216px -24px" data-toptip="Fast Mesh From Polyline"></div></a>
+<a href="../../components/frogh/meshBridge.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') -144px -72px" data-downtip="Mesh Bridge"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/frogh/meshOffsetWeighted.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') -72px -96px" data-toptip="Mesh Offset Weighted"></div></a>
+<a href="../../components/frogh/polylinesMeshLoft.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') -24px -144px" data-downtip="Polylines Mesh Loft"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/frogh/spaceFillingPolyhedraGenerator.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') -48px -168px" data-toptip="Space-Filling Polyhedra Generator"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+Mesh-Create
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/frogh/clusterizer.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') -144px 0px" data-toptip="Clusterizer"></div></a>
+<a href="../../components/frogh/topologizer.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') -192px -168px" data-downtip="Topologizer"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/frogh/topologyInverter.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') -216px -168px" data-toptip="Topology Inverter"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="2">
+Topology
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/frogh/cameraControl.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') -48px 0px" data-toptip="Camera Control"></div></a>
+<a href="../../components/frogh/cameraReport.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') -72px 0px" data-downtip="Camera Report"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/frogh/customMaterial.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') -216px 0px" data-toptip="Custom Material"></div></a>
+<a href="../../components/frogh/customMeshWiresDisplay.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') -48px -120px" data-downtip="Custom Mesh Wires Display"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/frogh/namedViewsToCinema4D.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') -72px -120px" data-toptip="Named Views To Cinema 4D"></div></a>
+<a href="../../components/frogh/orientToCamera.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') -120px -120px" data-downtip="Orient To Camera"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/frogh/pointCloudDisplay.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') -192px -120px" data-toptip="PointCloud Display"></div></a>
+<a href="../../components/frogh/sliderValueDisplay.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') -216px -144px" data-downtip="Slider Value display"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/frogh/turntable.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') -24px -192px" data-toptip="Turntable"></div></a>
+<a href="../../components/frogh/viewCaptureToFile.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') -48px -192px" data-downtip="View Capture To File"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/frogh/zoomToObject.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') -96px -192px" data-toptip="Zoom To Object"></div></a>
+<a href="../../components/frogh/customMeshVerticesDisplay.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') -120px -192px" data-downtip="Custom Mesh Vertices Display"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/frogh/weightedSpheresCloudDisplay.html"><div class="ghsprite" style="background: url('../../icons/froGH.png') -144px -192px" data-toptip="Weighted Spheres Cloud Display"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="7">
+View/Display
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+
+<div class="addon-buttons">
+<a href="https://github.com/Co-de-iT/froGH">Source Code</a>
+<a href="https://www.food4rhino.com/en/app/frogh">Download</a>
+
+</div>
+
+
+<div class="google-ad-sidebar">
+
+<!-- Carbon Ads -->
+<script async type="text/javascript" src="https://cdn.carbonads.com/carbon.js?serve=CK7IC27L&placement=grasshopperdocscom" id="_carbonads_js"></script>
+
+</div>
+
+<div class="compo-header">
+<h1><div class="ghsprite" style="background: url('../../icons/froGH.png') -192px -48px" ></div> L Polyline From Plane</h1>
+
+<div class="breadcrumb">
+ <a href="../../index.html">Component Index</a>
+  <a href="../../addons/frogh.html">FroGH</a><a href="#" class="breadcrumb-nolink">Geometry</a><a href="#" class="breadcrumb-nolink">f_LPP</a>
+</div>
+
+</div>
+<h3>Generates an L shaped polyline (X-O-Y order) from a Plane</h3>
+<h2>Inputs</h2>
+<table class="params-table input-params">
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Plane</b></td><td>P</td><td>Input Plane</td><td>Plane</td></tr>
+<tr><td><b>Length</b></td><td>l</td><td>Length of polyline segments</td><td>Number</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table class="params-table output-params">
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Polyline</b></td><td>P</td><td>The L-shaped Polyline</td><td>Curve</td></tr>
+</tbody>
+</table>
+
+
+</div>
+
+</div>
+
+</div>
+
+<div id="docs-foot" class="docs-footindex">
+<div id="docs-foot-inner">
+<p class="left">
+Site design © <a href="https://github.com/robinrodricks/">Robin Rodricks</a>. &nbsp;
+
+FroGH and associated data © 2022  <a href="https://www.food4rhino.com/en/app/frogh">Co-de-iT (Computational Design Italy)</a>. &nbsp;
+<br>
+Rhinoceros and Grasshopper are registered trademarks of <a href="https://www.rhino3d.com/">Robert McNeel & Associates</a>.&nbsp;
+Hosted by <a href="http://www.github.com/">GitHub</a> 
+</p>
+<p class="right docs-lightfont">
+
+<a href="https://github.com/grasshopper3d/GrasshopperDocsSite/issues/new">Report an Issue</a> &nbsp;|&nbsp;
+<a href="/termsOfService.html">Terms of Service</a>
+</p>
+
+</div>
+
+
+
+</div>
+</div>
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/jquery-autocomplete.min.js"></script>
+<script type="text/javascript" src="/js/app-searchbar.js"></script>
+
+    </body>
+</html>

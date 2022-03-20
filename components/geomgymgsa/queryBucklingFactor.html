@@ -1,0 +1,589 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Query Buckling Factor - GeomGym GSA - Component for Grasshopper | Grasshopper Docs</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+
+<meta name="description" content="Query Buckling Factor" />
+<meta name="title" content="Query Buckling Factor - GeomGym GSA - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:title" content="Query Buckling Factor - GeomGym GSA - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://grasshopperdocs.com/components/geomgymgsa/queryBucklingFactor.html" />
+<meta property="og:site_name" content="Grasshopper Docs" />
+
+<link href="../../style.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+
+<div id="docs">
+
+<div id="docs-head">
+<div id="docs-masthead">
+<p id="docs-sitename"><a href="http://grasshopperdocs.com/">
+	<img id="site-logo-icon" src="/images/logo-icon.png" alt=""></img>
+	<img id="site-logo-text" src="/images/logo-text.png" alt="Grasshopper Docs"></img>
+</a></p>
+<p id="docs-sitedesc">Community documentation for Grasshopper add-ons &amp; plugins</p>
+<div id="docs-sitesearch">
+	<input id="docs-sitesearch-inputbox" type="text" name="docs-sitesearch-inputbox" />
+	<img id="docs-searchicon" src="/images/search.png"/>
+</div>
+</div>
+</div>
+
+<div id="docs-body">
+
+<div class="page">
+
+<div class="content compo-page">
+
+<div class="ghbar ">
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymgsa/convertIfcFilter.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -96px -24px" data-toptip="Convert Ifc Filter"></div></a>
+<a href="../../components/geomgymgsa/projectSettings.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -192px -144px" data-downtip="Project Settings"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymgsa/sID.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -48px -168px" data-toptip="s ID"></div></a>
+<a href="../../components/geomgymgsa/importData.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -144px -168px" data-downtip="Import Data"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymgsa/modelDecompose.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -216px -192px" data-toptip="Model Decompose"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+GSA
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymgsa/beamRelease.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -48px -24px" data-toptip="Beam Release"></div></a>
+<a href="../../components/geomgymgsa/beamReleaseStiffness.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -72px -24px" data-downtip="Beam Release Stiffness"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymgsa/createElasticIsotropicMaterial.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -120px -24px" data-toptip="Create Elastic Isotropic Material"></div></a>
+<a href="../../components/geomgymgsa/createFabricMaterial.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -144px -24px" data-downtip="Create Fabric Material"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymgsa/createMaterial.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -168px -24px" data-toptip="Create Material"></div></a>
+<a href="../../components/geomgymgsa/createElasticOrthotropicMaterial.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -192px -24px" data-downtip="Create Elastic Orthotropic Material"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymgsa/createSectionProp.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -216px -24px" data-toptip="Create Section Prop"></div></a>
+<a href="../../components/geomgymgsa/findSectionProp.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -48px -48px" data-downtip="Find Section Prop"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymgsa/finiteElemAtts.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -72px -48px" data-toptip="Finite Elem Atts"></div></a>
+<a href="../../components/geomgymgsa/areaAtts.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -120px -48px" data-downtip="Area Atts"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymgsa/beamAtts.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -144px -48px" data-toptip="Beam Atts"></div></a>
+<a href="../../components/geomgymgsa/concreteMatDesignParams.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -168px -48px" data-downtip="Concrete Mat Design Params"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymgsa/create2DProfileDecking.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -216px -48px" data-toptip="Create2DProfile Decking"></div></a>
+<a href="../../components/geomgymgsa/materialCreateConcrete.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') 0px -72px" data-downtip="Material Create Concrete"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymgsa/createForceDensity1D.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -24px -72px" data-toptip="Create Force Density1D"></div></a>
+<a href="../../components/geomgymgsa/createLineSegSectionProp.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -48px -72px" data-downtip="Create Line Seg Section Prop"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymgsa/create2DProp.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -96px -72px" data-toptip="Create2DProp"></div></a>
+<a href="../../components/geomgymgsa/create2dLoadPanelProp.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -120px -72px" data-downtip="Create 2d Load Panel Prop"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymgsa/createPropSpringAxial.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -144px -72px" data-toptip="Create Prop Spring Axial"></div></a>
+<a href="../../components/geomgymgsa/createPropFabric.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -168px -72px" data-downtip="Create Prop Fabric"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymgsa/createPropLink.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -192px -72px" data-toptip="Create Prop Link"></div></a>
+<a href="../../components/geomgymgsa/createPropSpringLockUp.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -216px -72px" data-downtip="Create Prop Spring Lock Up"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymgsa/createPropMass.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') 0px -96px" data-toptip="Create Prop Mass"></div></a>
+<a href="../../components/geomgymgsa/createPropSpringMatrix.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -24px -96px" data-downtip="Create Prop Spring Matrix"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymgsa/createPropSpacer.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -48px -96px" data-toptip="Create Prop Spacer"></div></a>
+<a href="../../components/geomgymgsa/createPropSpringGeneral.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -72px -96px" data-downtip="Create Prop Spring General"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymgsa/materialCreateRebar.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -96px -96px" data-toptip="Material Create Rebar"></div></a>
+<a href="../../components/geomgymgsa/materialCreateRebarAtts.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -120px -96px" data-downtip="Material Create Rebar Atts"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymgsa/createSoapStress1D.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -144px -96px" data-toptip="Create Soap Stress1D"></div></a>
+<a href="../../components/geomgymgsa/createSoapStress2D.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -168px -96px" data-downtip="Create Soap Stress2D"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymgsa/createSpringMatrix.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -192px -96px" data-toptip="Create Spring Matrix"></div></a>
+<a href="../../components/geomgymgsa/createStage.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -216px -96px" data-downtip="Create Stage"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymgsa/createStageProp.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') 0px -120px" data-toptip="Create Stage Prop"></div></a>
+<a href="../../components/geomgymgsa/materialCreateSteel.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -24px -120px" data-downtip="Material Create Steel"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymgsa/materialCreateTimber.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -48px -120px" data-toptip="Material Create Timber"></div></a>
+<a href="../../components/geomgymgsa/member1DAtts.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -24px -144px" data-downtip="Member1DAtts"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymgsa/member2DAtts.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -48px -144px" data-toptip="Member2DAtts"></div></a>
+<a href="../../components/geomgymgsa/memberFireParams.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -72px -144px" data-downtip="Member Fire Params"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymgsa/memberMeshParams.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -96px -144px" data-toptip="Member Mesh Params"></div></a>
+<a href="../../components/geomgymgsa/memberTimeExpParams.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -120px -144px" data-downtip="Member Time Exp Params"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymgsa/nodeAtts.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -144px -144px" data-toptip="Node Atts"></div></a>
+<a href="../../components/geomgymgsa/profileIBeamCellular.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -168px -144px" data-downtip="Profile IBeam Cellular"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymgsa/prop2dParams.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -216px -144px" data-toptip="Prop2d Params"></div></a>
+<a href="../../components/geomgymgsa/beamPropModifier.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') 0px -168px" data-downtip="Beam Prop Modifier"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymgsa/meshQuadBuild.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -192px -192px" data-toptip="Mesh Quad Build"></div></a>
+<a href="../../components/geomgymgsa/nodeRestraint.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') 0px -216px" data-downtip="Node Restraint"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="23">
+GSAAtt
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymgsa/decomposeCombo.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') 0px -48px" data-toptip="Decompose Combo"></div></a>
+<a href="../../components/geomgymgsa/decomposeLoadCase.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -24px -48px" data-downtip="Decompose Load Case"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymgsa/load2dPrestress.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -72px -120px" data-toptip="Load2d Prestress"></div></a>
+<a href="../../components/geomgymgsa/load2dStrain.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -96px -120px" data-downtip="Load2d Strain"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymgsa/loadCrvPoint.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -120px -120px" data-toptip="Load Crv Point"></div></a>
+<a href="../../components/geomgymgsa/loadDirection.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -144px -120px" data-downtip="Load Direction"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymgsa/loadGridLinear.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -168px -120px" data-toptip="Load Grid Linear"></div></a>
+<a href="../../components/geomgymgsa/loadNodeDisplacmentVector.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -192px -120px" data-downtip="Load Node Displacment Vector"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymgsa/loadNodeDisplacment.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -216px -120px" data-toptip="Load Node Displacment"></div></a>
+<a href="../../components/geomgymgsa/loadNodeSettlement.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') 0px -144px" data-downtip="Load Node Settlement"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymgsa/responseSpectraEuroCode8.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -24px -168px" data-toptip="Response Spectra Euro Code8"></div></a>
+<a href="../../components/geomgymgsa/load2dFace.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -168px -168px" data-downtip="Load2d Face"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymgsa/load2dFaceVar.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -192px -168px" data-toptip="Load2d Face Var"></div></a>
+<a href="../../components/geomgymgsa/load2DTemp.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -216px -168px" data-downtip="Load2DTemp"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymgsa/loadCrvPatch.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') 0px -192px" data-toptip="Load Crv Patch"></div></a>
+<a href="../../components/geomgymgsa/loadCrvPrestress.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -24px -192px" data-downtip="Load Crv Prestress"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymgsa/loadCrvStrain.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -48px -192px" data-toptip="Load Crv Strain"></div></a>
+<a href="../../components/geomgymgsa/loadCrvTemp.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -72px -192px" data-downtip="Load Crv Temp"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymgsa/loadCase.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -96px -192px" data-toptip="Load Case"></div></a>
+<a href="../../components/geomgymgsa/caseCombination.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -120px -192px" data-downtip="Case Combination"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymgsa/loadGravity.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -144px -192px" data-toptip="Load Gravity"></div></a>
+<a href="../../components/geomgymgsa/loadCrvLackOfFit.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -192px -288px" data-downtip="Load Crv Lack Of Fit"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="11">
+GSALoads
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymgsa/analysisBridge.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') 0px 0px" data-toptip="Analysis Bridge"></div></a>
+<a href="../../components/geomgymgsa/analysisCase.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -24px 0px" data-downtip="Analysis Case"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymgsa/analysisFootfall.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -48px 0px" data-toptip="Analysis Footfall"></div></a>
+<a href="../../components/geomgymgsa/analysisFormFind.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -72px 0px" data-downtip="Analysis Form Find"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymgsa/analysisModal.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -96px 0px" data-toptip="Analysis Modal"></div></a>
+<a href="../../components/geomgymgsa/analysisModalBuckling.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -120px 0px" data-downtip="Analysis Modal Buckling"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymgsa/analysisModalOptions.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -144px 0px" data-toptip="Analysis Modal Options"></div></a>
+<a href="../../components/geomgymgsa/analysisNonLinearStatic.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -168px 0px" data-downtip="Analysis Non Linear Static"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymgsa/analysisPDelta.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -192px 0px" data-toptip="Analysis PDelta"></div></a>
+<a href="../../components/geomgymgsa/analysisResponseSpectrum.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -216px 0px" data-downtip="Analysis Response Spectrum"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymgsa/analysisSolverParam.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') 0px -24px" data-toptip="Analysis Solver Param"></div></a>
+<a href="../../components/geomgymgsa/analysisStatic.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -24px -24px" data-downtip="Analysis Static"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymgsa/formFinding.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -96px -48px" data-toptip="Form Finding"></div></a>
+<a href="../../components/geomgymgsa/decomposeResultSetMemberUtilization.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -168px -192px" data-downtip="Decompose Result Set Member Utilization"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymgsa/query.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -24px -216px" data-toptip="Query"></div></a>
+<a href="../../components/geomgymgsa/queryBeamForce.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -48px -216px" data-downtip="Query Beam Force"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymgsa/queryBeamForces.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -72px -216px" data-toptip="Query Beam Forces"></div></a>
+<a href="../../components/geomgymgsa/queryBucklingFactor.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -96px -216px" data-downtip="Query Buckling Factor"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymgsa/queryFootfallSummaryResults.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -120px -216px" data-toptip="Query Footfall Summary Results"></div></a>
+<a href="../../components/geomgymgsa/queryFrequency.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -144px -216px" data-downtip="Query Frequency"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymgsa/queryNodeDisplacements.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -168px -216px" data-toptip="Query Node Displacements"></div></a>
+<a href="../../components/geomgymgsa/queryNodeMass.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -192px -216px" data-downtip="Query Node Mass"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymgsa/queryNodeReactionForce.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -216px -216px" data-toptip="Query Node Reaction Force"></div></a>
+<a href="../../components/geomgymgsa/queryNodeReactionMoment.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') 0px -240px" data-downtip="Query Node Reaction Moment"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymgsa/query2dPrincipalStress.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -24px -240px" data-toptip="Query2d Principal Stress"></div></a>
+<a href="../../components/geomgymgsa/queryMemberUtilization.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -48px -240px" data-downtip="Query Member Utilization"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymgsa/queryWeight.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -72px -240px" data-toptip="Query Weight"></div></a>
+<a href="../../components/geomgymgsa/decomposeResultSetBeamForce.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -96px -240px" data-downtip="Decompose Result Set Beam Force"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymgsa/decomposeResultSetBeamForces.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -120px -240px" data-toptip="Decompose Result Set Beam Forces"></div></a>
+<a href="../../components/geomgymgsa/queryResult1dOptions.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -144px -240px" data-downtip="Query Result1d Options"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymgsa/query1dElementStrain.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -168px -240px" data-toptip="Query1d Element Strain"></div></a>
+<a href="../../components/geomgymgsa/query1dElementStrainEnergy.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -192px -240px" data-downtip="Query1d Element Strain Energy"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymgsa/query1dElementStress.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -216px -240px" data-toptip="Query1d Element Stress"></div></a>
+<a href="../../components/geomgymgsa/decomposeResultSet2d.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') 0px -264px" data-downtip="Decompose Result Set2d"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymgsa/query2dDerivedForces.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -24px -264px" data-toptip="Query2d Derived Forces"></div></a>
+<a href="../../components/geomgymgsa/query2dDerivedStress.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -48px -264px" data-downtip="Query2d Derived Stress"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymgsa/queryResult2dOptions.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -72px -264px" data-toptip="Query Result2d Options"></div></a>
+<a href="../../components/geomgymgsa/decomposeResultSet2dPrincipalStress.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -96px -264px" data-downtip="Decompose Result Set2d Principal Stress"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymgsa/query2dProjectedForces.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -120px -264px" data-toptip="Query2d Projected Forces"></div></a>
+<a href="../../components/geomgymgsa/query2dProjectedMoments.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -144px -264px" data-downtip="Query2d Projected Moments"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymgsa/decomposeResultSetFootfallSummary.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -168px -264px" data-toptip="Decompose Result Set Footfall Summary"></div></a>
+<a href="../../components/geomgymgsa/queryMeshDerivedStress.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -192px -264px" data-downtip="Query Mesh Derived Stress"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymgsa/queryMeshProjectedForces.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -216px -264px" data-toptip="Query Mesh Projected Forces"></div></a>
+<a href="../../components/geomgymgsa/queryMeshProjectedMoments.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') 0px -288px" data-downtip="Query Mesh Projected Moments"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymgsa/decomposeResultSetNode.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -24px -288px" data-toptip="Decompose Result Set Node"></div></a>
+<a href="../../components/geomgymgsa/decomposeResultSetNodeMass.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -48px -288px" data-downtip="Decompose Result Set Node Mass"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymgsa/resultStore.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -72px -288px" data-toptip="Result Store"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="24">
+GSASolver
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymgsa/concreteSlabPropertyCalcOptions.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -192px -48px" data-toptip="Concrete Slab Property Calc Options"></div></a>
+<a href="../../components/geomgymgsa/createMemberEffectiveLength.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -72px -72px" data-downtip="Create Member Effective Length"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymgsa/codeConcreteDesign.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -72px -168px" data-toptip="Code Concrete Design"></div></a>
+<a href="../../components/geomgymgsa/codeLoading.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -96px -168px" data-downtip="Code Loading"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymgsa/codeSteelDesign.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -120px -168px" data-toptip="Code Steel Design"></div></a>
+<a href="../../components/geomgymgsa/createSteelBeamDesign.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -96px -288px" data-downtip="Create Steel Beam Design"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymgsa/commonSteelRestraintProperty.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -120px -288px" data-toptip="Common Steel Restraint Property"></div></a>
+<a href="../../components/geomgymgsa/createSteelRestraint.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -144px -288px" data-downtip="Create Steel Restraint"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymgsa/createSteelRestraintProperty.html"><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -168px -288px" data-toptip="Create Steel Restraint Property"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="5">
+GSAVerify
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+
+<div class="addon-buttons">
+<a href="https://technical.geometrygym.com/rhino-grasshopper/structuralanalysis/gsa">Download</a>
+
+</div>
+
+
+<div class="google-ad-sidebar">
+
+<!-- Carbon Ads -->
+<script async type="text/javascript" src="https://cdn.carbonads.com/carbon.js?serve=CK7IC27L&placement=grasshopperdocscom" id="_carbonads_js"></script>
+
+</div>
+
+<div class="compo-header">
+<h1><div class="ghsprite" style="background: url('../../icons/geomGymGSA.png') -96px -216px" ></div> Query Buckling Factor</h1>
+
+<div class="breadcrumb">
+ <a href="../../index.html">Component Index</a>
+  <a href="../../addons/geomgym-gsa.html">GeomGym GSA</a><a href="#" class="breadcrumb-nolink">GSASolver</a><a href="#" class="breadcrumb-nolink">ggQueryBucklingFactor</a>
+</div>
+
+</div>
+<h3>Query Buckling Factor</h3>
+<h2>Inputs</h2>
+<table class="params-table input-params">
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Case</b></td><td>C</td><td>Analysis Case</td><td>Generic Data</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table class="params-table output-params">
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Result Query</b></td><td>Q</td><td>Result Query</td><td>Generic Data</td></tr>
+</tbody>
+</table>
+
+
+</div>
+
+</div>
+
+</div>
+
+<div id="docs-foot" class="docs-footindex">
+<div id="docs-foot-inner">
+<p class="left">
+Site design © <a href="https://github.com/robinrodricks/">Robin Rodricks</a>. &nbsp;
+
+GeomGym GSA and associated data © 2022  <a href="https://technical.geometrygym.com/rhino-grasshopper/structuralanalysis/gsa">Geometry Gym Pty Ltd</a>. &nbsp;
+<br>
+Rhinoceros and Grasshopper are registered trademarks of <a href="https://www.rhino3d.com/">Robert McNeel & Associates</a>.&nbsp;
+Hosted by <a href="http://www.github.com/">GitHub</a> 
+</p>
+<p class="right docs-lightfont">
+
+<a href="https://github.com/grasshopper3d/GrasshopperDocsSite/issues/new">Report an Issue</a> &nbsp;|&nbsp;
+<a href="/termsOfService.html">Terms of Service</a>
+</p>
+
+</div>
+
+
+
+</div>
+</div>
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/jquery-autocomplete.min.js"></script>
+<script type="text/javascript" src="/js/app-searchbar.js"></script>
+
+    </body>
+</html>
