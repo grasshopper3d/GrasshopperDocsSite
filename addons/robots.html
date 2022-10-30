@@ -1,0 +1,318 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Robots - Addon for Grasshopper | Grasshopper Docs</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+
+<meta name="description" content="Robots is a Grasshopper plugin for programming and simulating ABB, KUKA, UR and Staubli robots. Special care is taken to have feature parity between all manufacturers and have them behave as similar as possible. The plugin can also be used as a .NET library to create robot programs through scripting inside Rhino (using Python, C# or VB.NET). Advanced functionality is only exposed through scripting." />
+<meta name="title" content="Robots - Addon for Grasshopper | Grasshopper Docs" />
+<meta property="og:title" content="Robots - Addon for Grasshopper | Grasshopper Docs" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://grasshopperdocs.com/addons/robots.html" />
+<meta property="og:site_name" content="Grasshopper Docs" />
+
+<link href="../style.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+
+<div id="docs">
+
+<div id="docs-head">
+<div id="docs-masthead">
+<p id="docs-sitename"><a href="http://grasshopperdocs.com/">
+	<img id="site-logo-icon" src="/images/logo-icon.png" alt=""></img>
+	<img id="site-logo-text" src="/images/logo-text.png" alt="Grasshopper Docs"></img>
+</a></p>
+<p id="docs-sitedesc">Community documentation for Grasshopper add-ons &amp; plugins</p>
+<div id="docs-sitesearch">
+	<input id="docs-sitesearch-inputbox" type="text" name="docs-sitesearch-inputbox" />
+	<img id="docs-searchicon" src="/images/search.png"/>
+</div>
+</div>
+</div>
+
+<div id="docs-body">
+
+<div class="page">
+
+<div class="content addon-page">
+
+<div class="addon-buttons">
+<a href="https://github.com/visose/robots">Source Code</a>
+<a href="https://www.food4rhino.com/en/app/robots">Download</a>
+
+</div>
+
+
+<div class="google-ad-sidebar">
+
+<!-- Carbon Ads -->
+<script async type="text/javascript" src="https://cdn.carbonads.com/carbon.js?serve=CK7IC27L&placement=grasshopperdocscom" id="_carbonads_js"></script>
+
+</div>
+
+<div class="addon-header">
+<h1>Robots</h1>
+<h5>
+<span>ADDON. Version <b>1.5.2</b>.</span>
+<span>Released on <b>2022-Jul-28</b>.</span>
+<span>Provides <b>29</b> components.</span>
+<span>Created by <b>Robots Authors</b>.</span>
+<span>Features <b>0</b> video tutorials.</span>
+</h5>
+<h5>Robots is a Grasshopper plugin for programming and simulating ABB, KUKA, UR and Staubli robots. Special care is taken to have feature parity between all manufacturers and have them behave as similar as possible. The plugin can also be used as a .NET library to create robot programs through scripting inside Rhino (using Python, C# or VB.NET). Advanced functionality is only exposed through scripting.</h5>
+
+<div class="breadcrumb">
+  <a href="../index.html">Component Index</a>
+  <a href="#" class="breadcrumb-nolink">Robots</a>
+</div>
+
+</div>
+
+<div class="ghbar ghbar-addon-page">
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/robots/customCommand.html"><div class="ghsprite" style="background: url('../icons/robots.png') -168px 0px" data-toptip="Custom command"></div></a>
+<a href="../components/robots/groupCommand.html"><div class="ghsprite" style="background: url('../icons/robots.png') -96px -24px" data-downtip="Group command"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/robots/message.html"><div class="ghsprite" style="background: url('../icons/robots.png') -216px -24px" data-toptip="Message"></div></a>
+<a href="../components/robots/pulseDO.html"><div class="ghsprite" style="background: url('../icons/robots.png') 0px -48px" data-downtip="Pulse DO"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/robots/setAO.html"><div class="ghsprite" style="background: url('../icons/robots.png') -72px -48px" data-toptip="Set AO"></div></a>
+<a href="../components/robots/setDO.html"><div class="ghsprite" style="background: url('../icons/robots.png') -96px -48px" data-downtip="Set DO"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/robots/stopProgram.html"><div class="ghsprite" style="background: url('../icons/robots.png') -144px -48px" data-toptip="Stop program"></div></a>
+<a href="../components/robots/wait.html"><div class="ghsprite" style="background: url('../icons/robots.png') -168px -48px" data-downtip="Wait"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/robots/waitDI.html"><div class="ghsprite" style="background: url('../icons/robots.png') -192px -48px" data-toptip="Wait DI"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="5">
+Commands
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/robots/checkCollisions.html"><div class="ghsprite" style="background: url('../icons/robots.png') 0px 0px" data-toptip="Check collisions"></div></a>
+<a href="../components/robots/createFrame.html"><div class="ghsprite" style="background: url('../icons/robots.png') -24px 0px" data-downtip="Create frame"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/robots/createProgram.html"><div class="ghsprite" style="background: url('../icons/robots.png') -48px 0px" data-toptip="Create program"></div></a>
+<a href="../components/robots/createSpeed.html"><div class="ghsprite" style="background: url('../icons/robots.png') -72px 0px" data-downtip="Create speed"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/robots/createTarget.html"><div class="ghsprite" style="background: url('../icons/robots.png') -96px 0px" data-toptip="Create target"></div></a>
+<a href="../components/robots/createTool.html"><div class="ghsprite" style="background: url('../icons/robots.png') -120px 0px" data-downtip="Create tool"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/robots/customCode.html"><div class="ghsprite" style="background: url('../icons/robots.png') -144px 0px" data-toptip="Custom code"></div></a>
+<a href="../components/robots/deconstructTarget.html"><div class="ghsprite" style="background: url('../icons/robots.png') -216px 0px" data-downtip="Deconstruct target"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/robots/kinematics.html"><div class="ghsprite" style="background: url('../icons/robots.png') -120px -24px" data-toptip="Kinematics"></div></a>
+<a href="../components/robots/loadFrame.html"><div class="ghsprite" style="background: url('../icons/robots.png') -144px -24px" data-downtip="Load frame"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/robots/loadRobotSystem.html"><div class="ghsprite" style="background: url('../icons/robots.png') -168px -24px" data-toptip="Load robot system"></div></a>
+<a href="../components/robots/loadTool.html"><div class="ghsprite" style="background: url('../icons/robots.png') -192px -24px" data-downtip="Load tool"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/robots/remoteConnection.html"><div class="ghsprite" style="background: url('../icons/robots.png') -24px -48px" data-toptip="Remote connection"></div></a>
+<a href="../components/robots/saveProgram.html"><div class="ghsprite" style="background: url('../icons/robots.png') -48px -48px" data-downtip="Save program"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/robots/programSimulation.html"><div class="ghsprite" style="background: url('../icons/robots.png') -120px -48px" data-toptip="Program simulation"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="8">
+Components
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/robots/deconstructProgramTargets.html"><div class="ghsprite" style="background: url('../icons/robots.png') -192px 0px" data-toptip="Deconstruct program targets"></div></a>
+<a href="../components/robots/degreesToRadians.html"><div class="ghsprite" style="background: url('../icons/robots.png') 0px -24px" data-downtip="Degrees to radians"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/robots/simpleTrail.html"><div class="ghsprite" style="background: url('../icons/robots.png') -24px -24px" data-toptip="Simple trail"></div></a>
+<a href="../components/robots/fromPlane.html"><div class="ghsprite" style="background: url('../icons/robots.png') -48px -24px" data-downtip="From plane"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/robots/getPlane.html"><div class="ghsprite" style="background: url('../icons/robots.png') -72px -24px" data-toptip="Get plane"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+Utility
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+
+<div class="cchild">
+<h3>Components</h3>
+<table class="addon-compos">
+<tbody>
+<tr><td class="ccol_1"><a href="../components/robots/checkCollisions.html"><div class="ghsprite" style="background: url('../icons/robots.png') 0px 0px" ></div></a></td><td class="ccol_2"><a href="../components/robots/checkCollisions.html">Check collisions</a> <span class="codeword">(Collisions)</span><br><span class="desc">Checks for possible collisions. Will test if any object from group A collide with any objects from group B.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/robots/createFrame.html"><div class="ghsprite" style="background: url('../icons/robots.png') -24px 0px" ></div></a></td><td class="ccol_2"><a href="../components/robots/createFrame.html">Create frame</a> <span class="codeword">(Frame)</span><br><span class="desc">Creates a frame or work plane.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/robots/createProgram.html"><div class="ghsprite" style="background: url('../icons/robots.png') -48px 0px" ></div></a></td><td class="ccol_2"><a href="../components/robots/createProgram.html">Create program</a> <span class="codeword">(Program)</span><br><span class="desc">Creates a program, checks for possible issues and fixes common mistakes.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/robots/createSpeed.html"><div class="ghsprite" style="background: url('../icons/robots.png') -72px 0px" ></div></a></td><td class="ccol_2"><a href="../components/robots/createSpeed.html">Create speed</a> <span class="codeword">(Speed)</span><br><span class="desc">Creates a target speed.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/robots/createTarget.html"><div class="ghsprite" style="background: url('../icons/robots.png') -96px 0px" ></div></a></td><td class="ccol_2"><a href="../components/robots/createTarget.html">Create target</a> <span class="codeword">(Target)</span><br><span class="desc">Creates or modifies a target. Right click for additional inputs.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/robots/createTool.html"><div class="ghsprite" style="background: url('../icons/robots.png') -120px 0px" ></div></a></td><td class="ccol_2"><a href="../components/robots/createTool.html">Create tool</a> <span class="codeword">(Tool)</span><br><span class="desc">Creates a tool or end effector.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/robots/customCode.html"><div class="ghsprite" style="background: url('../icons/robots.png') -144px 0px" ></div></a></td><td class="ccol_2"><a href="../components/robots/customCode.html">Custom code</a> <span class="codeword">(Custom)</span><br><span class="desc">Creates a program using manufacturer specific custom code. This program cannot be simulated</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/robots/deconstructTarget.html"><div class="ghsprite" style="background: url('../icons/robots.png') -216px 0px" ></div></a></td><td class="ccol_2"><a href="../components/robots/deconstructTarget.html">Deconstruct target</a> <span class="codeword">(DeTarget)</span><br><span class="desc">Deconstructs a target. Right click for additional outputs.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/robots/kinematics.html"><div class="ghsprite" style="background: url('../icons/robots.png') -120px -24px" ></div></a></td><td class="ccol_2"><a href="../components/robots/kinematics.html">Kinematics</a> <span class="codeword">(K)</span><br><span class="desc">Inverse and forward kinematics for a single target, or list of targets when using a robot cell with coordinated robots.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/robots/loadFrame.html"><div class="ghsprite" style="background: url('../icons/robots.png') -144px -24px" ></div></a></td><td class="ccol_2"><a href="../components/robots/loadFrame.html">Load frame</a> <span class="codeword">(LoadFrame)</span><br><span class="desc">Loads a frame from the library.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/robots/loadRobotSystem.html"><div class="ghsprite" style="background: url('../icons/robots.png') -168px -24px" ></div></a></td><td class="ccol_2"><a href="../components/robots/loadRobotSystem.html">Load robot system</a> <span class="codeword">(LoadRobot)</span><br><span class="desc">Loads a robot system from the library.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/robots/loadTool.html"><div class="ghsprite" style="background: url('../icons/robots.png') -192px -24px" ></div></a></td><td class="ccol_2"><a href="../components/robots/loadTool.html">Load tool</a> <span class="codeword">(LoadTool)</span><br><span class="desc">Loads a tool from the library.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/robots/remoteConnection.html"><div class="ghsprite" style="background: url('../icons/robots.png') -24px -48px" ></div></a></td><td class="ccol_2"><a href="../components/robots/remoteConnection.html">Remote connection</a> <span class="codeword">(Remote)</span><br><span class="desc">Upload and run programs to UR or ABB controllers through a network. For ABB controllers you must install the 'ABB Robot Communication Runtime'.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/robots/saveProgram.html"><div class="ghsprite" style="background: url('../icons/robots.png') -48px -48px" ></div></a></td><td class="ccol_2"><a href="../components/robots/saveProgram.html">Save program</a> <span class="codeword">(SaveProg)</span><br><span class="desc">Saves a program to a text file.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/robots/programSimulation.html"><div class="ghsprite" style="background: url('../icons/robots.png') -120px -48px" ></div></a></td><td class="ccol_2"><a href="../components/robots/programSimulation.html">Program simulation</a> <span class="codeword">(Sim)</span><br><span class="desc">Rough simulation of the robot program, right click for playback controls</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>Commands</h3>
+<table class="addon-compos">
+<tbody>
+<tr><td class="ccol_1"><a href="../components/robots/customCommand.html"><div class="ghsprite" style="background: url('../icons/robots.png') -168px 0px" ></div></a></td><td class="ccol_2"><a href="../components/robots/customCommand.html">Custom command</a> <span class="codeword">(CustomCmd)</span><br><span class="desc">Custom command written in the manufacturer specific language</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/robots/groupCommand.html"><div class="ghsprite" style="background: url('../icons/robots.png') -96px -24px" ></div></a></td><td class="ccol_2"><a href="../components/robots/groupCommand.html">Group command</a> <span class="codeword">(GroupCmd)</span><br><span class="desc">Group of commands</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/robots/message.html"><div class="ghsprite" style="background: url('../icons/robots.png') -216px -24px" ></div></a></td><td class="ccol_2"><a href="../components/robots/message.html">Message</a><br><span class="desc">Sends a text message to the teach pendant</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/robots/pulseDO.html"><div class="ghsprite" style="background: url('../icons/robots.png') 0px -48px" ></div></a></td><td class="ccol_2"><a href="../components/robots/pulseDO.html">Pulse DO</a> <span class="codeword">(PulseDO)</span><br><span class="desc">Send a pulse to a digital output</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/robots/setAO.html"><div class="ghsprite" style="background: url('../icons/robots.png') -72px -48px" ></div></a></td><td class="ccol_2"><a href="../components/robots/setAO.html">Set AO</a> <span class="codeword">(SetAO)</span><br><span class="desc">Set analog output</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/robots/setDO.html"><div class="ghsprite" style="background: url('../icons/robots.png') -96px -48px" ></div></a></td><td class="ccol_2"><a href="../components/robots/setDO.html">Set DO</a> <span class="codeword">(SetDO)</span><br><span class="desc">Set digital output</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/robots/stopProgram.html"><div class="ghsprite" style="background: url('../icons/robots.png') -144px -48px" ></div></a></td><td class="ccol_2"><a href="../components/robots/stopProgram.html">Stop program</a> <span class="codeword">(Stop)</span><br><span class="desc">Stops the program until an operator starts it again</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/robots/wait.html"><div class="ghsprite" style="background: url('../icons/robots.png') -168px -48px" ></div></a></td><td class="ccol_2"><a href="../components/robots/wait.html">Wait</a><br><span class="desc">Stops the program for a specific amount of time</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/robots/waitDI.html"><div class="ghsprite" style="background: url('../icons/robots.png') -192px -48px" ></div></a></td><td class="ccol_2"><a href="../components/robots/waitDI.html">Wait DI</a> <span class="codeword">(WaitDI)</span><br><span class="desc">Stops the program until a digital input is turned on</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>Utility</h3>
+<table class="addon-compos">
+<tbody>
+<tr><td class="ccol_1"><a href="../components/robots/deconstructProgramTargets.html"><div class="ghsprite" style="background: url('../icons/robots.png') -192px 0px" ></div></a></td><td class="ccol_2"><a href="../components/robots/deconstructProgramTargets.html">Deconstruct program targets</a> <span class="codeword">(DecProgTarg)</span><br><span class="desc">Exposes the calculated simulation data for all targets.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/robots/degreesToRadians.html"><div class="ghsprite" style="background: url('../icons/robots.png') 0px -24px" ></div></a></td><td class="ccol_2"><a href="../components/robots/degreesToRadians.html">Degrees to radians</a> <span class="codeword">(DegToRad)</span><br><span class="desc">Manufacturer dependent degrees to radians conversion.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/robots/simpleTrail.html"><div class="ghsprite" style="background: url('../icons/robots.png') -24px -24px" ></div></a></td><td class="ccol_2"><a href="../components/robots/simpleTrail.html">Simple trail</a> <span class="codeword">(Trail)</span><br><span class="desc">Draws a trail behind the TCP. To be used with the simulation component.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/robots/fromPlane.html"><div class="ghsprite" style="background: url('../icons/robots.png') -48px -24px" ></div></a></td><td class="ccol_2"><a href="../components/robots/fromPlane.html">From plane</a> <span class="codeword">(FromPlane)</span><br><span class="desc">Returns a list of numbers from a plane</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/robots/getPlane.html"><div class="ghsprite" style="background: url('../icons/robots.png') -72px -24px" ></div></a></td><td class="ccol_2"><a href="../components/robots/getPlane.html">Get plane</a> <span class="codeword">(GetPlane)</span><br><span class="desc">Get a plane from a point in space and a 3D rotation. The input has to be a list of 6 or 7 numbers.</span></td></tr>
+</tbody>
+</table>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div id="docs-foot" class="docs-footindex">
+<div id="docs-foot-inner">
+<p class="left">
+Site design © <a href="https://github.com/robinrodricks/">Robin Rodricks</a>. &nbsp;
+
+Robots and associated data © 2022  <a href="https://www.food4rhino.com/en/app/robots">Robots Authors</a>. &nbsp;
+<br>
+Rhinoceros and Grasshopper are registered trademarks of <a href="https://www.rhino3d.com/">Robert McNeel & Associates</a>.&nbsp;
+Hosted by <a href="http://www.github.com/">GitHub</a> 
+</p>
+<p class="right docs-lightfont">
+
+<a href="https://github.com/grasshopper3d/GrasshopperDocsSite/issues/new">Report an Issue</a> &nbsp;|&nbsp;
+<a href="/termsOfService.html">Terms of Service</a>
+</p>
+
+</div>
+
+
+
+</div>
+</div>
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DX6TG16YN7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DX6TG16YN7');
+</script>
+
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/jquery-autocomplete.min.js"></script>
+<script type="text/javascript" src="/js/app-searchbar.js"></script>
+
+    </body>
+</html>

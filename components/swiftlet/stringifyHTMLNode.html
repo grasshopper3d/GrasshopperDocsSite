@@ -1,0 +1,346 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stringify HTML Node - Swiftlet - Component for Grasshopper | Grasshopper Docs</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+
+<meta name="description" content="Convert an HTML Node to cleartext" />
+<meta name="title" content="Stringify HTML Node - Swiftlet - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:title" content="Stringify HTML Node - Swiftlet - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://grasshopperdocs.com/components/swiftlet/stringifyHTMLNode.html" />
+<meta property="og:site_name" content="Grasshopper Docs" />
+
+<link href="../../style.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+
+<div id="docs">
+
+<div id="docs-head">
+<div id="docs-masthead">
+<p id="docs-sitename"><a href="http://grasshopperdocs.com/">
+	<img id="site-logo-icon" src="/images/logo-icon.png" alt=""></img>
+	<img id="site-logo-text" src="/images/logo-text.png" alt="Grasshopper Docs"></img>
+</a></p>
+<p id="docs-sitedesc">Community documentation for Grasshopper add-ons &amp; plugins</p>
+<div id="docs-sitesearch">
+	<input id="docs-sitesearch-inputbox" type="text" name="docs-sitesearch-inputbox" />
+	<img id="docs-searchicon" src="/images/search.png"/>
+</div>
+</div>
+</div>
+
+<div id="docs-body">
+
+<div class="page">
+
+<div class="content compo-page">
+
+<div class="ghbar ">
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/swiftlet/aPIKey.html"><div class="ghsprite" style="background: url('../../icons/swiftlet.png') 0px 0px" data-toptip="API Key"></div></a>
+<a href="../../components/swiftlet/basicAuth.html"><div class="ghsprite" style="background: url('../../icons/swiftlet.png') -24px 0px" data-downtip="Basic Auth"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/swiftlet/bearerTokenAuth.html"><div class="ghsprite" style="background: url('../../icons/swiftlet.png') -48px 0px" data-toptip="Bearer Token Auth"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="2">
+1. Auth
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/swiftlet/createByteArrayBody.html"><div class="ghsprite" style="background: url('../../icons/swiftlet.png') -72px 0px" data-toptip="Create Byte Array Body"></div></a>
+<a href="../../components/swiftlet/createHttpHeader.html"><div class="ghsprite" style="background: url('../../icons/swiftlet.png') -120px 0px" data-downtip="Create Http Header"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/swiftlet/createJSONArray.html"><div class="ghsprite" style="background: url('../../icons/swiftlet.png') -144px 0px" data-toptip="Create JSON Array"></div></a>
+<a href="../../components/swiftlet/createJSONObject.html"><div class="ghsprite" style="background: url('../../icons/swiftlet.png') -168px 0px" data-downtip="Create JSON Object"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/swiftlet/createJSONValue.html"><div class="ghsprite" style="background: url('../../icons/swiftlet.png') -192px 0px" data-toptip="Create JSON Value"></div></a>
+<a href="../../components/swiftlet/createQueryParam.html"><div class="ghsprite" style="background: url('../../icons/swiftlet.png') -216px 0px" data-downtip="Create Query Param"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/swiftlet/createTextBody.html"><div class="ghsprite" style="background: url('../../icons/swiftlet.png') 0px -24px" data-toptip="Create Text Body"></div></a>
+<a href="../../components/swiftlet/createTextBodyCustom.html"><div class="ghsprite" style="background: url('../../icons/swiftlet.png') -24px -24px" data-downtip="Create Text Body Custom"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/swiftlet/removeJSONKey.html"><div class="ghsprite" style="background: url('../../icons/swiftlet.png') -96px -72px" data-toptip="Remove JSON Key"></div></a>
+<a href="../../components/swiftlet/setJSONKey.html"><div class="ghsprite" style="background: url('../../icons/swiftlet.png') -216px -72px" data-downtip="Set JSON Key"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="5">
+2. Request
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/swiftlet/deconstructResponse.html"><div class="ghsprite" style="background: url('../../icons/swiftlet.png') -48px -24px" data-toptip="Deconstruct Response"></div></a>
+<a href="../../components/swiftlet/dELETERequest.html"><div class="ghsprite" style="background: url('../../icons/swiftlet.png') -72px -24px" data-downtip="DELETE Request"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/swiftlet/gETRequest.html"><div class="ghsprite" style="background: url('../../icons/swiftlet.png') -120px -48px" data-toptip="GET Request"></div></a>
+<a href="../../components/swiftlet/pATCHRequest.html"><div class="ghsprite" style="background: url('../../icons/swiftlet.png') -168px -48px" data-downtip="PATCH Request"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/swiftlet/pOSTRequest.html"><div class="ghsprite" style="background: url('../../icons/swiftlet.png') -192px -48px" data-toptip="POST Request"></div></a>
+<a href="../../components/swiftlet/pUTRequest.html"><div class="ghsprite" style="background: url('../../icons/swiftlet.png') -216px -48px" data-downtip="PUT Request"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+3. Send
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/swiftlet/formatJsonString.html"><div class="ghsprite" style="background: url('../../icons/swiftlet.png') -96px -24px" data-toptip="Format Json String"></div></a>
+<a href="../../components/swiftlet/getJSONObjectKey.html"><div class="ghsprite" style="background: url('../../icons/swiftlet.png') -96px -48px" data-downtip="Get JSON Object Key"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/swiftlet/parseJSONString.html"><div class="ghsprite" style="background: url('../../icons/swiftlet.png') -144px -48px" data-toptip="Parse JSON String"></div></a>
+<a href="../../components/swiftlet/readJSONArray.html"><div class="ghsprite" style="background: url('../../icons/swiftlet.png') -24px -72px" data-downtip="Read JSON Array"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/swiftlet/readJSONObject.html"><div class="ghsprite" style="background: url('../../icons/swiftlet.png') -48px -72px" data-toptip="Read JSON Object"></div></a>
+<a href="../../components/swiftlet/readJSONValue.html"><div class="ghsprite" style="background: url('../../icons/swiftlet.png') -72px -72px" data-downtip="Read JSON Value"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/swiftlet/separateJSONTokens.html"><div class="ghsprite" style="background: url('../../icons/swiftlet.png') -192px -72px" data-toptip="Separate JSON Tokens"></div></a>
+<a href="../../components/swiftlet/stringifyJSONToken.html"><div class="ghsprite" style="background: url('../../icons/swiftlet.png') -24px -96px" data-downtip="Stringify JSON Token"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="4">
+4. Read JSON
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/swiftlet/getAttributeValue.html"><div class="ghsprite" style="background: url('../../icons/swiftlet.png') -120px -24px" data-toptip="Get Attribute Value"></div></a>
+<a href="../../components/swiftlet/getElementById.html"><div class="ghsprite" style="background: url('../../icons/swiftlet.png') -144px -24px" data-downtip="Get Element By Id"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/swiftlet/getElementsByAttributeValue.html"><div class="ghsprite" style="background: url('../../icons/swiftlet.png') -168px -24px" data-toptip="Get Elements By Attribute Value"></div></a>
+<a href="../../components/swiftlet/getElementsByClassName.html"><div class="ghsprite" style="background: url('../../icons/swiftlet.png') -192px -24px" data-downtip="Get Elements By Class Name"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/swiftlet/getElementsByTagName.html"><div class="ghsprite" style="background: url('../../icons/swiftlet.png') -216px -24px" data-toptip="Get Elements By Tag Name"></div></a>
+<a href="../../components/swiftlet/getElementsByXPATH.html"><div class="ghsprite" style="background: url('../../icons/swiftlet.png') 0px -48px" data-downtip="Get Elements By XPATH"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/swiftlet/getHtmlAttributes.html"><div class="ghsprite" style="background: url('../../icons/swiftlet.png') -24px -48px" data-toptip="Get Html Attributes"></div></a>
+<a href="../../components/swiftlet/getChildNodes.html"><div class="ghsprite" style="background: url('../../icons/swiftlet.png') -48px -48px" data-downtip="Get Child Nodes"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/swiftlet/getInnerHTML.html"><div class="ghsprite" style="background: url('../../icons/swiftlet.png') -72px -48px" data-toptip="Get Inner HTML"></div></a>
+<a href="../../components/swiftlet/readHTML.html"><div class="ghsprite" style="background: url('../../icons/swiftlet.png') 0px -72px" data-downtip="Read HTML"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/swiftlet/stringifyHTMLNode.html"><div class="ghsprite" style="background: url('../../icons/swiftlet.png') 0px -96px" data-toptip="Stringify HTML Node"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="6">
+5. Read HTML
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/swiftlet/createCSVLine.html"><div class="ghsprite" style="background: url('../../icons/swiftlet.png') -96px 0px" data-toptip="Create CSV Line"></div></a>
+<a href="../../components/swiftlet/saveCSV.html"><div class="ghsprite" style="background: url('../../icons/swiftlet.png') -120px -72px" data-downtip="Save CSV"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/swiftlet/saveText.html"><div class="ghsprite" style="background: url('../../icons/swiftlet.png') -144px -72px" data-toptip="Save Text"></div></a>
+<a href="../../components/swiftlet/saveWebResponse.html"><div class="ghsprite" style="background: url('../../icons/swiftlet.png') -168px -72px" data-downtip="Save Web Response"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="2">
+6. Save
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+
+<div class="addon-buttons">
+<a href="https://www.food4rhino.com/en/app/swiftlet?lang=en">Download</a>
+
+</div>
+
+
+<div class="google-ad-sidebar">
+
+<!-- Carbon Ads -->
+<script async type="text/javascript" src="https://cdn.carbonads.com/carbon.js?serve=CK7IC27L&placement=grasshopperdocscom" id="_carbonads_js"></script>
+
+</div>
+
+<div class="compo-header">
+<h1><div class="ghsprite" style="background: url('../../icons/swiftlet.png') 0px -96px" ></div> Stringify HTML Node</h1>
+
+<div class="breadcrumb">
+ <a href="../../index.html">Component Index</a>
+  <a href="../../addons/swiftlet.html">Swiftlet</a><a href="#" class="breadcrumb-nolink">5. Read HTML</a><a href="#" class="breadcrumb-nolink">SHTML</a>
+</div>
+
+</div>
+<h3>Convert an HTML Node to cleartext</h3>
+<h2>Inputs</h2>
+<table class="params-table input-params">
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>HTML Node</b></td><td>N</td><td>HTML Node object</td><td>Html Node</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table class="params-table output-params">
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>HTML</b></td><td>H</td><td>HTML Markup as text</td><td>Text</td></tr>
+</tbody>
+</table>
+
+
+</div>
+
+</div>
+
+</div>
+
+<div id="docs-foot" class="docs-footindex">
+<div id="docs-foot-inner">
+<p class="left">
+Site design © <a href="https://github.com/robinrodricks/">Robin Rodricks</a>. &nbsp;
+
+Swiftlet and associated data © 2022  <a href="https://www.food4rhino.com/en/app/swiftlet?lang=en">Sergey Pigach</a>. &nbsp;
+<br>
+Rhinoceros and Grasshopper are registered trademarks of <a href="https://www.rhino3d.com/">Robert McNeel & Associates</a>.&nbsp;
+Hosted by <a href="http://www.github.com/">GitHub</a> 
+</p>
+<p class="right docs-lightfont">
+
+<a href="https://github.com/grasshopper3d/GrasshopperDocsSite/issues/new">Report an Issue</a> &nbsp;|&nbsp;
+<a href="/termsOfService.html">Terms of Service</a>
+</p>
+
+</div>
+
+
+
+</div>
+</div>
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DX6TG16YN7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DX6TG16YN7');
+</script>
+
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/jquery-autocomplete.min.js"></script>
+<script type="text/javascript" src="/js/app-searchbar.js"></script>
+
+    </body>
+</html>

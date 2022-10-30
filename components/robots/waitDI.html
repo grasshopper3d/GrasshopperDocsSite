@@ -1,0 +1,277 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wait DI - Robots - Component for Grasshopper | Grasshopper Docs</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+
+<meta name="description" content="Stops the program until a digital input is turned on" />
+<meta name="title" content="Wait DI - Robots - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:title" content="Wait DI - Robots - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://grasshopperdocs.com/components/robots/waitDI.html" />
+<meta property="og:site_name" content="Grasshopper Docs" />
+
+<link href="../../style.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+
+<div id="docs">
+
+<div id="docs-head">
+<div id="docs-masthead">
+<p id="docs-sitename"><a href="http://grasshopperdocs.com/">
+	<img id="site-logo-icon" src="/images/logo-icon.png" alt=""></img>
+	<img id="site-logo-text" src="/images/logo-text.png" alt="Grasshopper Docs"></img>
+</a></p>
+<p id="docs-sitedesc">Community documentation for Grasshopper add-ons &amp; plugins</p>
+<div id="docs-sitesearch">
+	<input id="docs-sitesearch-inputbox" type="text" name="docs-sitesearch-inputbox" />
+	<img id="docs-searchicon" src="/images/search.png"/>
+</div>
+</div>
+</div>
+
+<div id="docs-body">
+
+<div class="page">
+
+<div class="content compo-page">
+
+<div class="ghbar ">
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/robots/customCommand.html"><div class="ghsprite" style="background: url('../../icons/robots.png') -168px 0px" data-toptip="Custom command"></div></a>
+<a href="../../components/robots/groupCommand.html"><div class="ghsprite" style="background: url('../../icons/robots.png') -96px -24px" data-downtip="Group command"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/robots/message.html"><div class="ghsprite" style="background: url('../../icons/robots.png') -216px -24px" data-toptip="Message"></div></a>
+<a href="../../components/robots/pulseDO.html"><div class="ghsprite" style="background: url('../../icons/robots.png') 0px -48px" data-downtip="Pulse DO"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/robots/setAO.html"><div class="ghsprite" style="background: url('../../icons/robots.png') -72px -48px" data-toptip="Set AO"></div></a>
+<a href="../../components/robots/setDO.html"><div class="ghsprite" style="background: url('../../icons/robots.png') -96px -48px" data-downtip="Set DO"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/robots/stopProgram.html"><div class="ghsprite" style="background: url('../../icons/robots.png') -144px -48px" data-toptip="Stop program"></div></a>
+<a href="../../components/robots/wait.html"><div class="ghsprite" style="background: url('../../icons/robots.png') -168px -48px" data-downtip="Wait"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/robots/waitDI.html"><div class="ghsprite" style="background: url('../../icons/robots.png') -192px -48px" data-toptip="Wait DI"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="5">
+Commands
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/robots/checkCollisions.html"><div class="ghsprite" style="background: url('../../icons/robots.png') 0px 0px" data-toptip="Check collisions"></div></a>
+<a href="../../components/robots/createFrame.html"><div class="ghsprite" style="background: url('../../icons/robots.png') -24px 0px" data-downtip="Create frame"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/robots/createProgram.html"><div class="ghsprite" style="background: url('../../icons/robots.png') -48px 0px" data-toptip="Create program"></div></a>
+<a href="../../components/robots/createSpeed.html"><div class="ghsprite" style="background: url('../../icons/robots.png') -72px 0px" data-downtip="Create speed"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/robots/createTarget.html"><div class="ghsprite" style="background: url('../../icons/robots.png') -96px 0px" data-toptip="Create target"></div></a>
+<a href="../../components/robots/createTool.html"><div class="ghsprite" style="background: url('../../icons/robots.png') -120px 0px" data-downtip="Create tool"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/robots/customCode.html"><div class="ghsprite" style="background: url('../../icons/robots.png') -144px 0px" data-toptip="Custom code"></div></a>
+<a href="../../components/robots/deconstructTarget.html"><div class="ghsprite" style="background: url('../../icons/robots.png') -216px 0px" data-downtip="Deconstruct target"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/robots/kinematics.html"><div class="ghsprite" style="background: url('../../icons/robots.png') -120px -24px" data-toptip="Kinematics"></div></a>
+<a href="../../components/robots/loadFrame.html"><div class="ghsprite" style="background: url('../../icons/robots.png') -144px -24px" data-downtip="Load frame"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/robots/loadRobotSystem.html"><div class="ghsprite" style="background: url('../../icons/robots.png') -168px -24px" data-toptip="Load robot system"></div></a>
+<a href="../../components/robots/loadTool.html"><div class="ghsprite" style="background: url('../../icons/robots.png') -192px -24px" data-downtip="Load tool"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/robots/remoteConnection.html"><div class="ghsprite" style="background: url('../../icons/robots.png') -24px -48px" data-toptip="Remote connection"></div></a>
+<a href="../../components/robots/saveProgram.html"><div class="ghsprite" style="background: url('../../icons/robots.png') -48px -48px" data-downtip="Save program"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/robots/programSimulation.html"><div class="ghsprite" style="background: url('../../icons/robots.png') -120px -48px" data-toptip="Program simulation"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="8">
+Components
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/robots/deconstructProgramTargets.html"><div class="ghsprite" style="background: url('../../icons/robots.png') -192px 0px" data-toptip="Deconstruct program targets"></div></a>
+<a href="../../components/robots/degreesToRadians.html"><div class="ghsprite" style="background: url('../../icons/robots.png') 0px -24px" data-downtip="Degrees to radians"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/robots/simpleTrail.html"><div class="ghsprite" style="background: url('../../icons/robots.png') -24px -24px" data-toptip="Simple trail"></div></a>
+<a href="../../components/robots/fromPlane.html"><div class="ghsprite" style="background: url('../../icons/robots.png') -48px -24px" data-downtip="From plane"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/robots/getPlane.html"><div class="ghsprite" style="background: url('../../icons/robots.png') -72px -24px" data-toptip="Get plane"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+Utility
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+
+<div class="addon-buttons">
+<a href="https://github.com/visose/robots">Source Code</a>
+<a href="https://www.food4rhino.com/en/app/robots">Download</a>
+
+</div>
+
+
+<div class="google-ad-sidebar">
+
+<!-- Carbon Ads -->
+<script async type="text/javascript" src="https://cdn.carbonads.com/carbon.js?serve=CK7IC27L&placement=grasshopperdocscom" id="_carbonads_js"></script>
+
+</div>
+
+<div class="compo-header">
+<h1><div class="ghsprite" style="background: url('../../icons/robots.png') -192px -48px" ></div> Wait DI</h1>
+
+<div class="breadcrumb">
+ <a href="../../index.html">Component Index</a>
+  <a href="../../addons/robots.html">Robots</a><a href="#" class="breadcrumb-nolink">Commands</a><a href="#" class="breadcrumb-nolink">WaitDI</a>
+</div>
+
+</div>
+<h3>Stops the program until a digital input is turned on</h3>
+<h2>Inputs</h2>
+<table class="params-table input-params">
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>DI</b></td><td>D</td><td>Digital input number</td><td>Integer</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table class="params-table output-params">
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Command</b></td><td>C</td><td>Command</td><td>Command</td></tr>
+</tbody>
+</table>
+
+
+</div>
+
+</div>
+
+</div>
+
+<div id="docs-foot" class="docs-footindex">
+<div id="docs-foot-inner">
+<p class="left">
+Site design © <a href="https://github.com/robinrodricks/">Robin Rodricks</a>. &nbsp;
+
+Robots and associated data © 2022  <a href="https://www.food4rhino.com/en/app/robots">Robots Authors</a>. &nbsp;
+<br>
+Rhinoceros and Grasshopper are registered trademarks of <a href="https://www.rhino3d.com/">Robert McNeel & Associates</a>.&nbsp;
+Hosted by <a href="http://www.github.com/">GitHub</a> 
+</p>
+<p class="right docs-lightfont">
+
+<a href="https://github.com/grasshopper3d/GrasshopperDocsSite/issues/new">Report an Issue</a> &nbsp;|&nbsp;
+<a href="/termsOfService.html">Terms of Service</a>
+</p>
+
+</div>
+
+
+
+</div>
+</div>
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DX6TG16YN7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DX6TG16YN7');
+</script>
+
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/jquery-autocomplete.min.js"></script>
+<script type="text/javascript" src="/js/app-searchbar.js"></script>
+
+    </body>
+</html>
