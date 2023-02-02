@@ -1,0 +1,449 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Edit Node - Oasys GSA - Component for Grasshopper | Grasshopper Docs</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+
+<meta name="description" content="Modify GSA Node" />
+<meta name="title" content="Edit Node - Oasys GSA - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:title" content="Edit Node - Oasys GSA - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://grasshopperdocs.com/components/oasysgsa/editNode.html" />
+<meta property="og:site_name" content="Grasshopper Docs" />
+
+<link href="../../style.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+
+<div id="docs">
+
+<div id="docs-head">
+<div id="docs-masthead">
+<p id="docs-sitename"><a href="http://grasshopperdocs.com/">
+	<img id="site-logo-icon" src="/images/logo-icon.png" alt=""></img>
+	<img id="site-logo-text" src="/images/logo-text.png" alt="Grasshopper Docs"></img>
+</a></p>
+<p id="docs-sitedesc">Community documentation for Grasshopper add-ons &amp; plugins</p>
+<div id="docs-sitesearch">
+	<input id="docs-sitesearch-inputbox" type="text" name="docs-sitesearch-inputbox" />
+	<img id="docs-searchicon" src="/images/search.png"/>
+</div>
+</div>
+</div>
+
+<div id="docs-body">
+
+<div class="page">
+
+<div class="content compo-page">
+
+<div class="ghbar ">
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/oasysgsa/create.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') -96px 0px" data-toptip="Create"></div></a>
+<a href="../../components/oasysgsa/create.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') -120px 0px" data-downtip="Create"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/oasysgsa/create.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') -168px 0px" data-toptip="Create"></div></a>
+<a href="../../components/oasysgsa/create.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') -192px 0px" data-downtip="Create"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="2">
+Create a
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/oasysgsa/analysisCaseInfo.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') 0px 0px" data-toptip="Analysis Case Info"></div></a>
+<a href="../../components/oasysgsa/beamDisplacements.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') -24px 0px" data-downtip="Beam Displacements"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/oasysgsa/beamForcesAndMoments.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') -48px 0px" data-toptip="Beam Forces and Moments"></div></a>
+<a href="../../components/oasysgsa/beamStrainEnergyDensity.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') -72px 0px" data-downtip="Beam Strain Energy Density"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/oasysgsa/createBeamLoad.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') -144px 0px" data-toptip="Create Beam Load"></div></a>
+<a href="../../components/oasysgsa/createCombinationCase.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') -216px 0px" data-downtip="Create Combination Case"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/oasysgsa/customMaterial.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') 0px -24px" data-toptip="Custom Material"></div></a>
+<a href="../../components/oasysgsa/create1DElement.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') -24px -24px" data-downtip="Create 1D Element"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/oasysgsa/create2DElement.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') -48px -24px" data-toptip="Create 2D Element"></div></a>
+<a href="../../components/oasysgsa/createFaceLoad.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') -72px -24px" data-downtip="Create Face Load"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/oasysgsa/createGravityLoad.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') -96px -24px" data-toptip="Create Gravity Load"></div></a>
+<a href="../../components/oasysgsa/createGridAreaLoad.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') -120px -24px" data-downtip="Create Grid Area Load"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/oasysgsa/createGridLineLoad.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') -144px -24px" data-toptip="Create Grid Line Load"></div></a>
+<a href="../../components/oasysgsa/createGridPlane.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') -168px -24px" data-downtip="Create Grid Plane"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/oasysgsa/createGridPointLoad.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') -192px -24px" data-toptip="Create Grid Point Load"></div></a>
+<a href="../../components/oasysgsa/createGridSurface.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') -216px -24px" data-downtip="Create Grid Surface"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/oasysgsa/create1DMember.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') 0px -48px" data-toptip="Create 1D Member"></div></a>
+<a href="../../components/oasysgsa/create2DMember.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') -24px -48px" data-downtip="Create 2D Member"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/oasysgsa/create3DMember.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') -48px -48px" data-toptip="Create 3D Member"></div></a>
+<a href="../../components/oasysgsa/createModel.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') -72px -48px" data-downtip="Create Model"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/oasysgsa/createNodeLoad.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') -96px -48px" data-toptip="Create Node Load"></div></a>
+<a href="../../components/oasysgsa/createOffset.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') -120px -48px" data-downtip="Create Offset"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/oasysgsa/createProfile.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') -144px -48px" data-toptip="Create Profile"></div></a>
+<a href="../../components/oasysgsa/create2DProperty.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') -168px -48px" data-downtip="Create 2D Property"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/oasysgsa/create3DProperty.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') -192px -48px" data-toptip="Create 3D Property"></div></a>
+<a href="../../components/oasysgsa/createSection.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') -216px -48px" data-downtip="Create Section"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/oasysgsa/createSectionModifier.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') 0px -72px" data-toptip="Create Section Modifier"></div></a>
+<a href="../../components/oasysgsa/createSupport.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') -24px -72px" data-downtip="Create Support"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/oasysgsa/editAnalysisTask.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') -48px -72px" data-toptip="Edit Analysis Task"></div></a>
+<a href="../../components/oasysgsa/editBool6.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') -72px -72px" data-downtip="Edit Bool6"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/oasysgsa/edit.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') -96px -72px" data-toptip="Edit"></div></a>
+<a href="../../components/oasysgsa/edit1DElement.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') -120px -72px" data-downtip="Edit 1D Element"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/oasysgsa/edit2DElement.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') -144px -72px" data-toptip="Edit 2D Element"></div></a>
+<a href="../../components/oasysgsa/edit3DElement.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') -168px -72px" data-downtip="Edit 3D Element"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/oasysgsa/editMaterial.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') -192px -72px" data-toptip="Edit Material"></div></a>
+<a href="../../components/oasysgsa/edit1DMember.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') -216px -72px" data-downtip="Edit 1D Member"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/oasysgsa/edit2DMember.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') 0px -96px" data-toptip="Edit 2D Member"></div></a>
+<a href="../../components/oasysgsa/edit3DMember.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') -24px -96px" data-downtip="Edit 3D Member"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/oasysgsa/editNode.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') -48px -96px" data-toptip="Edit Node"></div></a>
+<a href="../../components/oasysgsa/editOffset.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') -72px -96px" data-downtip="Edit Offset"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/oasysgsa/edit2DProperty.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') -96px -96px" data-toptip="Edit 2D Property"></div></a>
+<a href="../../components/oasysgsa/edit3DProperty.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') -120px -96px" data-downtip="Edit 3D Property"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/oasysgsa/editSection.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') -144px -96px" data-toptip="Edit Section"></div></a>
+<a href="../../components/oasysgsa/editSectionModifier.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') -168px -96px" data-downtip="Edit Section Modifier"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/oasysgsa/1DContourResults.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') -192px -96px" data-toptip="1D Contour Results"></div></a>
+<a href="../../components/oasysgsa/2DContourResults.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') -216px -96px" data-downtip="2D Contour Results"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/oasysgsa/2DDisplacements.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') 0px -120px" data-toptip="2D Displacements"></div></a>
+<a href="../../components/oasysgsa/2DForcesAndMoments.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') -24px -120px" data-downtip="2D Forces and Moments"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/oasysgsa/element2dFromBrep.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') -48px -120px" data-toptip="Element2d from Brep"></div></a>
+<a href="../../components/oasysgsa/2DStresses.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') -72px -120px" data-downtip="2D Stresses"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/oasysgsa/3DContourResults.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') -96px -120px" data-toptip="3D Contour Results"></div></a>
+<a href="../../components/oasysgsa/3DDisplacements.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') -120px -120px" data-downtip="3D Displacements"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/oasysgsa/3DStresses.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') -144px -120px" data-toptip="3D Stresses"></div></a>
+<a href="../../components/oasysgsa/elementsFromMembers.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') -168px -120px" data-downtip="Elements from Members"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/oasysgsa/footfallResult.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') -192px -120px" data-toptip="Footfall Result"></div></a>
+<a href="../../components/oasysgsa/getModelAnalysisTasks.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') -216px -120px" data-downtip="Get Model Analysis Tasks"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/oasysgsa/lineResultInfo.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') 0px -144px" data-toptip="LineResultInfo"></div></a>
+<a href="../../components/oasysgsa/getModelLoads.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') -24px -144px" data-downtip="Get Model Loads"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/oasysgsa/materialProperties.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') -48px -144px" data-toptip="Material Properties"></div></a>
+<a href="../../components/oasysgsa/meshResultInfo.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') -72px -144px" data-downtip="MeshResultInfo"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/oasysgsa/pointResultsInfo.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') -96px -144px" data-toptip="PointResultsInfo"></div></a>
+<a href="../../components/oasysgsa/getModelProperties.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') -120px -144px" data-downtip="Get Model Properties"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/oasysgsa/getResults.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') -144px -144px" data-toptip="Get Results"></div></a>
+<a href="../../components/oasysgsa/sectionDimensions.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') -168px -144px" data-downtip="Section Dimensions"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/oasysgsa/sectionProperties.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') -192px -144px" data-toptip="Section Properties"></div></a>
+<a href="../../components/oasysgsa/analyseModel.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') -216px -144px" data-downtip="Analyse Model"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/oasysgsa/globalPerformanceResults.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') 0px -168px" data-toptip="Global Performance Results"></div></a>
+<a href="../../components/oasysgsa/gridPlaneSurfaceProperties.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') -24px -168px" data-downtip="Grid Plane Surface Properties"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/oasysgsa/gWACommand.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') -48px -168px" data-toptip="GWA Command"></div></a>
+<a href="../../components/oasysgsa/loadProperties.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') -72px -168px" data-downtip="Load Properties"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/oasysgsa/localAxis.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') -96px -168px" data-toptip="Local Axis"></div></a>
+<a href="../../components/oasysgsa/nodeContourResults.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') -120px -168px" data-downtip="Node Contour Results"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/oasysgsa/nodeDisplacements.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') -144px -168px" data-toptip="Node Displacements"></div></a>
+<a href="../../components/oasysgsa/openModel.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') -168px -168px" data-downtip="Open Model"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/oasysgsa/reactionForces.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') -192px -168px" data-toptip="Reaction Forces"></div></a>
+<a href="../../components/oasysgsa/getResultCases.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') -216px -168px" data-downtip="Get Result Cases"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/oasysgsa/saveGSAModel.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') 0px -192px" data-toptip="Save GSA Model"></div></a>
+<a href="../../components/oasysgsa/sectionAlignment.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') -24px -192px" data-downtip="Section Alignment"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/oasysgsa/selectResults.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') -48px -192px" data-toptip="Select Results"></div></a>
+<a href="../../components/oasysgsa/springForces.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') -72px -192px" data-downtip="Spring Forces"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/oasysgsa/taperProfile.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') -96px -192px" data-toptip="Taper Profile"></div></a>
+<a href="../../components/oasysgsa/totalLoadsReactions.html"><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') -120px -192px" data-downtip="Total Loads &amp; Reactions"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="41">
+Oasys GSA
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+
+<div class="addon-buttons">
+<a href="https://github.com/arup-group/GSA-Grasshopper">Source Code</a>
+<a href="https://www.food4rhino.com/en/app/gsa">Download</a>
+
+</div>
+
+
+<div class="google-ad-sidebar">
+
+<!-- Carbon Ads -->
+<script async type="text/javascript" src="https://cdn.carbonads.com/carbon.js?serve=CK7IC27L&placement=grasshopperdocscom" id="_carbonads_js"></script>
+
+</div>
+
+<div class="compo-header">
+<h1><div class="ghsprite" style="background: url('../../icons/oasysGSA.png') -48px -96px" ></div> Edit Node</h1>
+
+<div class="breadcrumb">
+ <a href="../../index.html">Component Index</a>
+  <a href="../../addons/oasys-gsa.html">Oasys GSA</a><a href="#" class="breadcrumb-nolink">Oasys GSA</a><a href="#" class="breadcrumb-nolink">NodeEdit</a>
+</div>
+
+</div>
+<h3>Modify GSA Node</h3>
+<h2>Inputs</h2>
+<table class="params-table input-params">
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Node number</b></td><td>ID</td><td>Set Node number (ID) - if Node ID is set it will replace any existing nodes in the model</td><td>Integer</td></tr>
+<tr><td><b>Node Position</b></td><td>Pt</td><td>Set new Position (x, y, z) of Node</td><td>Point</td></tr>
+<tr><td><b>Node local axis</b></td><td>Pl</td><td>Set Local axis (Plane) of Node</td><td>Plane</td></tr>
+<tr><td><b>Node Restraints</b></td><td>B6</td><td>Set Restraints (Bool6) of Node</td><td>Any</td></tr>
+<tr><td><b>Damper Property</b></td><td>DP</td><td>Set Damper Property by reference</td><td>Integer</td></tr>
+<tr><td><b>Mass Property</b></td><td>MP</td><td>Set Mass Property by reference</td><td>Integer</td></tr>
+<tr><td><b>Spring Property</b></td><td>SP</td><td>Set Spring Property by reference</td><td>Integer</td></tr>
+<tr><td><b>Node Name</b></td><td>Na</td><td>Set Name of Node</td><td>Text</td></tr>
+<tr><td><b>Node Colour</b></td><td>Co</td><td>Set colour of node</td><td>Colour</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table class="params-table output-params">
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Node number</b></td><td>ID</td><td>Original Node number (ID) if Node ever belonged to a GSA Model</td><td>Integer</td></tr>
+<tr><td><b>Node Position</b></td><td>Pt</td><td>Position (x, y, z) of Node. Setting a new position will clear any existing ID</td><td>Point</td></tr>
+<tr><td><b>Node local axis</b></td><td>Pl</td><td>Local axis (Plane) of Node</td><td>Plane</td></tr>
+<tr><td><b>Node Restraints</b></td><td>B6</td><td>Restraints (Bool6) of Node</td><td>Any</td></tr>
+<tr><td><b>Damper Property</b></td><td>DP</td><td>Get Damper Property reference</td><td>Integer</td></tr>
+<tr><td><b>Mass Property</b></td><td>MP</td><td>Get Mass Property reference</td><td>Integer</td></tr>
+<tr><td><b>Spring Property</b></td><td>SP</td><td>Get Spring Property reference</td><td>Integer</td></tr>
+<tr><td><b>Node Name</b></td><td>Na</td><td>Name of Node</td><td>Text</td></tr>
+<tr><td><b>Node Colour</b></td><td>Co</td><td>Get colour of node</td><td>Colour</td></tr>
+<tr><td><b>Connected Elements</b></td><td>El</td><td>Connected Element IDs in Model that Node once belonged to</td><td>Integer</td></tr>
+<tr><td><b>Connected Members</b></td><td>Me</td><td>Connected Member IDs in Model that Node once belonged to</td><td>Integer</td></tr>
+</tbody>
+</table>
+
+
+</div>
+
+</div>
+
+</div>
+
+<div id="docs-foot" class="docs-footindex">
+<div id="docs-foot-inner">
+<p class="left">
+Site design © <a href="https://github.com/robinrodricks/">Robin Rodricks</a>. &nbsp;
+
+Oasys GSA and associated data © 2023  <a href="https://www.food4rhino.com/en/app/gsa">Oasys Software, ARUP Group</a>. &nbsp;
+<br>
+Rhinoceros and Grasshopper are registered trademarks of <a href="https://www.rhino3d.com/">Robert McNeel & Associates</a>.&nbsp;
+Hosted by <a href="http://www.github.com/">GitHub</a> 
+</p>
+<p class="right docs-lightfont">
+
+<a href="https://github.com/grasshopper3d/GrasshopperDocsSite/issues/new">Report an Issue</a> &nbsp;|&nbsp;
+<a href="/termsOfService.html">Terms of Service</a>
+</p>
+
+</div>
+
+
+
+</div>
+</div>
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DX6TG16YN7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DX6TG16YN7');
+</script>
+
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/jquery-autocomplete.min.js"></script>
+<script type="text/javascript" src="/js/app-searchbar.js"></script>
+
+    </body>
+</html>

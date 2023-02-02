@@ -1,0 +1,307 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Load TriMesh - IG-Mesh - Component for Grasshopper | Grasshopper Docs</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+
+<meta name="description" content="Load a triangle mesh directly from disk. Format supported: obj, off, stl, wrl, ply, mesh." />
+<meta name="title" content="Load TriMesh - IG-Mesh - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:title" content="Load TriMesh - IG-Mesh - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://grasshopperdocs.com/components/ig-mesh/loadTriMesh.html" />
+<meta property="og:site_name" content="Grasshopper Docs" />
+
+<link href="../../style.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+
+<div id="docs">
+
+<div id="docs-head">
+<div id="docs-masthead">
+<p id="docs-sitename"><a href="http://grasshopperdocs.com/">
+	<img id="site-logo-icon" src="/images/logo-icon.png" alt=""></img>
+	<img id="site-logo-text" src="/images/logo-text.png" alt="Grasshopper Docs"></img>
+</a></p>
+<p id="docs-sitedesc">Community documentation for Grasshopper add-ons &amp; plugins</p>
+<div id="docs-sitesearch">
+	<input id="docs-sitesearch-inputbox" type="text" name="docs-sitesearch-inputbox" />
+	<img id="docs-searchicon" src="/images/search.png"/>
+</div>
+</div>
+</div>
+
+<div id="docs-body">
+
+<div class="page">
+
+<div class="content compo-page">
+
+<div class="ghbar ">
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ig-mesh/meshInfo.html"><div class="ghsprite" style="background: url('../../icons/iG-Mesh.png') -216px 0px" data-toptip="Mesh Info"></div></a>
+<a href="../../components/ig-mesh/loadTriMesh.html"><div class="ghsprite" style="background: url('../../icons/iG-Mesh.png') -168px -24px" data-downtip="Load TriMesh"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ig-mesh/saveTriMesh.html"><div class="ghsprite" style="background: url('../../icons/iG-Mesh.png') -120px -48px" data-toptip="Save TriMesh"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="2">
+01::Info+IO
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ig-mesh/edgeNormal.html"><div class="ghsprite" style="background: url('../../icons/iG-Mesh.png') 0px 0px" data-toptip="Edge Normal"></div></a>
+<a href="../../components/ig-mesh/barycenter.html"><div class="ghsprite" style="background: url('../../icons/iG-Mesh.png') -24px 0px" data-downtip="Barycenter"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ig-mesh/cornerNormal.html"><div class="ghsprite" style="background: url('../../icons/iG-Mesh.png') 0px -24px" data-toptip="Corner Normal"></div></a>
+<a href="../../components/ig-mesh/faceNormal.html"><div class="ghsprite" style="background: url('../../icons/iG-Mesh.png') -24px -24px" data-downtip="Face Normal"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ig-mesh/vertexNormal.html"><div class="ghsprite" style="background: url('../../icons/iG-Mesh.png') -48px -24px" data-toptip="Vertex Normal"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+02::Properties
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ig-mesh/boundaryEdge.html"><div class="ghsprite" style="background: url('../../icons/iG-Mesh.png') -48px 0px" data-toptip="Boundary Edge"></div></a>
+<a href="../../components/ig-mesh/boundaryLoopPoints.html"><div class="ghsprite" style="background: url('../../icons/iG-Mesh.png') -72px 0px" data-downtip="Boundary Loop Points"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ig-mesh/triangleTriangleAdjacency.html"><div class="ghsprite" style="background: url('../../icons/iG-Mesh.png') -24px -48px" data-toptip="Triangle-Triangle Adjacency"></div></a>
+<a href="../../components/ig-mesh/vertexTriangleAdjacency.html"><div class="ghsprite" style="background: url('../../icons/iG-Mesh.png') -48px -48px" data-downtip="Vertex-Triangle Adjacency"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ig-mesh/vertexVertexAdjacency.html"><div class="ghsprite" style="background: url('../../icons/iG-Mesh.png') -72px -48px" data-toptip="Vertex-Vertex Adjacency"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+03::Adjacency+Bound
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ig-mesh/meshColoursFace.html"><div class="ghsprite" style="background: url('../../icons/iG-Mesh.png') -192px 0px" data-toptip="Mesh Colours ~ Face"></div></a>
+<a href="../../components/ig-mesh/remapFacesToVertices.html"><div class="ghsprite" style="background: url('../../icons/iG-Mesh.png') -192px -24px" data-downtip="Remap Faces To Vertices"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ig-mesh/remapVerticesToFaces.html"><div class="ghsprite" style="background: url('../../icons/iG-Mesh.png') -216px -24px" data-toptip="Remap Vertices To Faces"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="2">
+04::Mapping
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ig-mesh/gaussianCurvature.html"><div class="ghsprite" style="background: url('../../icons/iG-Mesh.png') -120px 0px" data-toptip="Gaussian Curvature"></div></a>
+<a href="../../components/ig-mesh/heatGeoDistance.html"><div class="ghsprite" style="background: url('../../icons/iG-Mesh.png') -144px 0px" data-downtip="HeatGeo Distance"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ig-mesh/principalCurvature.html"><div class="ghsprite" style="background: url('../../icons/iG-Mesh.png') -72px -24px" data-toptip="Principal Curvature"></div></a>
+<a href="../../components/ig-mesh/signedDistance.html"><div class="ghsprite" style="background: url('../../icons/iG-Mesh.png') 0px -48px" data-downtip="Signed Distance"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ig-mesh/windingNumber.html"><div class="ghsprite" style="background: url('../../icons/iG-Mesh.png') -96px -48px" data-toptip="Winding Number"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+05::Measure
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ig-mesh/constrainedScalar.html"><div class="ghsprite" style="background: url('../../icons/iG-Mesh.png') -96px 0px" data-toptip="Constrained Scalar"></div></a>
+<a href="../../components/ig-mesh/isoline.html"><div class="ghsprite" style="background: url('../../icons/iG-Mesh.png') -168px 0px" data-downtip="Isoline"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ig-mesh/quadMeshPlanarity.html"><div class="ghsprite" style="background: url('../../icons/iG-Mesh.png') -96px -24px" data-toptip="Quad Mesh Planarity"></div></a>
+<a href="../../components/ig-mesh/quadMeshPlanarize.html"><div class="ghsprite" style="background: url('../../icons/iG-Mesh.png') -120px -24px" data-downtip="Quad Mesh Planarize"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/ig-mesh/randomPtOnMesh.html"><div class="ghsprite" style="background: url('../../icons/iG-Mesh.png') -144px -24px" data-toptip="Random Pt On Mesh"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+06::Utils
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+
+<div class="addon-buttons">
+<a href="https://github.com/xarthurx/IG-Mesh">Source Code</a>
+<a href="https://www.rhino3d.com/features/package-manager/">Download</a>
+
+</div>
+
+
+<div class="google-ad-sidebar">
+
+<!-- Carbon Ads -->
+<script async type="text/javascript" src="https://cdn.carbonads.com/carbon.js?serve=CK7IC27L&placement=grasshopperdocscom" id="_carbonads_js"></script>
+
+</div>
+
+<div class="compo-header">
+<h1><div class="ghsprite" style="background: url('../../icons/iG-Mesh.png') -168px -24px" ></div> Load TriMesh</h1>
+
+<div class="breadcrumb">
+ <a href="../../index.html">Component Index</a>
+  <a href="../../addons/ig-mesh.html">IG-Mesh</a><a href="#" class="breadcrumb-nolink">01::Info+IO</a><a href="#" class="breadcrumb-nolink">igLoadMsh</a>
+</div>
+
+</div>
+<h3>Load a triangle mesh directly from disk. Format supported: obj, off, stl, wrl, ply, mesh.</h3>
+<h2>Inputs</h2>
+<table class="params-table input-params">
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>File Location</b></td><td>file</td><td>Mesh file location from disk.</td><td>Text</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table class="params-table output-params">
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Mesh</b></td><td>M</td><td>Mesh geometry if loaded successfully.</td><td>Mesh</td></tr>
+</tbody>
+</table>
+
+
+</div>
+
+</div>
+
+</div>
+
+<div id="docs-foot" class="docs-footindex">
+<div id="docs-foot-inner">
+<p class="left">
+Site design © <a href="https://github.com/robinrodricks/">Robin Rodricks</a>. &nbsp;
+
+IG-Mesh and associated data © 2023  <a href="https://www.rhino3d.com/features/package-manager/">Zhao Ma</a>. &nbsp;
+<br>
+Rhinoceros and Grasshopper are registered trademarks of <a href="https://www.rhino3d.com/">Robert McNeel & Associates</a>.&nbsp;
+Hosted by <a href="http://www.github.com/">GitHub</a> 
+</p>
+<p class="right docs-lightfont">
+
+<a href="https://github.com/grasshopper3d/GrasshopperDocsSite/issues/new">Report an Issue</a> &nbsp;|&nbsp;
+<a href="/termsOfService.html">Terms of Service</a>
+</p>
+
+</div>
+
+
+
+</div>
+</div>
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DX6TG16YN7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DX6TG16YN7');
+</script>
+
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/jquery-autocomplete.min.js"></script>
+<script type="text/javascript" src="/js/app-searchbar.js"></script>
+
+    </body>
+</html>

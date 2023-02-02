@@ -1,0 +1,328 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Libra - Addon for Grasshopper | Grasshopper Docs</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+
+<meta name="description" content="Libra is a Grasshopper plug-in which implements a topology grammar for generating structural topologies. Starting from an incomplete network, namely (a) the geometric boundaries that a network grows into and (b) the applied external forces, Libra operates an incremental transformative process that allows the transition to a complete network. In other words, the incremental elimination of interim forces in the network. At every intermediate step the network is in static equilibrium (interim when interim forces are still present, or global when no interim forces exist)." />
+<meta name="title" content="Libra - Addon for Grasshopper | Grasshopper Docs" />
+<meta property="og:title" content="Libra - Addon for Grasshopper | Grasshopper Docs" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://grasshopperdocs.com/addons/libra.html" />
+<meta property="og:site_name" content="Grasshopper Docs" />
+
+<link href="../style.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+
+<div id="docs">
+
+<div id="docs-head">
+<div id="docs-masthead">
+<p id="docs-sitename"><a href="http://grasshopperdocs.com/">
+	<img id="site-logo-icon" src="/images/logo-icon.png" alt=""></img>
+	<img id="site-logo-text" src="/images/logo-text.png" alt="Grasshopper Docs"></img>
+</a></p>
+<p id="docs-sitedesc">Community documentation for Grasshopper add-ons &amp; plugins</p>
+<div id="docs-sitesearch">
+	<input id="docs-sitesearch-inputbox" type="text" name="docs-sitesearch-inputbox" />
+	<img id="docs-searchicon" src="/images/search.png"/>
+</div>
+</div>
+</div>
+
+<div id="docs-body">
+
+<div class="page">
+
+<div class="content addon-page">
+
+<div class="addon-buttons">
+<a href="https://github.com/StructuralXplorationLab/Libra">Source Code</a>
+<a href="https://www.food4rhino.com/en/app/libra">Download</a>
+
+</div>
+
+
+<div class="google-ad-sidebar">
+
+<!-- Carbon Ads -->
+<script async type="text/javascript" src="https://cdn.carbonads.com/carbon.js?serve=CK7IC27L&placement=grasshopperdocscom" id="_carbonads_js"></script>
+
+</div>
+
+<div class="addon-header">
+<h1>Libra</h1>
+<h5>
+<span>ADDON. Version <b>1.0.7</b>.</span>
+<span>Released on <b>2022-Dec-23</b>.</span>
+<span>Provides <b>23</b> components.</span>
+<span>Created by <b>Ioannis Mirtsopoulos</b>.</span>
+<span>Features <b>0</b> video tutorials.</span>
+</h5>
+<h5>Libra is a Grasshopper plug-in which implements a topology grammar for generating structural topologies. Starting from an incomplete network, namely (a) the geometric boundaries that a network grows into and (b) the applied external forces, Libra operates an incremental transformative process that allows the transition to a complete network. In other words, the incremental elimination of interim forces in the network. At every intermediate step the network is in static equilibrium (interim when interim forces are still present, or global when no interim forces exist).</h5>
+
+<div class="breadcrumb">
+  <a href="../index.html">Component Index</a>
+  <a href="#" class="breadcrumb-nolink">Libra</a>
+</div>
+
+</div>
+
+<div class="ghbar ghbar-addon-page">
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/libra/constructDomain.html"><div class="ghsprite" style="background: url('../icons/libra.png') -24px 0px" data-toptip="Construct Domain"></div></a>
+<a href="../components/libra/deconstructDomain.html"><div class="ghsprite" style="background: url('../icons/libra.png') -192px 0px" data-downtip="Deconstruct Domain"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/libra/visualizeDomain.html"><div class="ghsprite" style="background: url('../icons/libra.png') -24px -48px" data-toptip="Visualize Domain"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="2">
+Domain
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/libra/constructForceSet.html"><div class="ghsprite" style="background: url('../icons/libra.png') -48px 0px" data-toptip="Construct Force Set"></div></a>
+<a href="../components/libra/deconstructForceSet.html"><div class="ghsprite" style="background: url('../icons/libra.png') -216px 0px" data-downtip="Deconstruct Force Set"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/libra/forceSetDomains.html"><div class="ghsprite" style="background: url('../icons/libra.png') -72px -24px" data-toptip="Force Set Domains"></div></a>
+<a href="../components/libra/visualizeForceSet.html"><div class="ghsprite" style="background: url('../icons/libra.png') -48px -48px" data-downtip="Visualize Force Set"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="2">
+Forces
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/libra/constructModel.html"><div class="ghsprite" style="background: url('../icons/libra.png') -72px 0px" data-toptip="Construct Model"></div></a>
+<a href="../components/libra/modelExportToIllustrator.html"><div class="ghsprite" style="background: url('../icons/libra.png') -96px -24px" data-downtip="Model Export to Illustrator"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/libra/modelGeometry.html"><div class="ghsprite" style="background: url('../icons/libra.png') -120px -24px" data-toptip="Model Geometry"></div></a>
+<a href="../components/libra/modelHistory.html"><div class="ghsprite" style="background: url('../icons/libra.png') -144px -24px" data-downtip="Model History"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/libra/modelMetricstext.html"><div class="ghsprite" style="background: url('../icons/libra.png') -168px -24px" data-toptip="Model Metrics (text)"></div></a>
+<a href="../components/libra/modelMetricsspiderGraph.html"><div class="ghsprite" style="background: url('../icons/libra.png') -192px -24px" data-downtip="Model Metrics (spider graph)"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/libra/modelUndo.html"><div class="ghsprite" style="background: url('../icons/libra.png') -216px -24px" data-toptip="Model Undo"></div></a>
+<a href="../components/libra/selectForce.html"><div class="ghsprite" style="background: url('../icons/libra.png') 0px -48px" data-downtip="Select Force"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="4">
+Model
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/libra/applyTransformationPolicy.html"><div class="ghsprite" style="background: url('../icons/libra.png') 0px 0px" data-toptip="Apply Transformation Policy"></div></a>
+<a href="../components/libra/constructNodePlacementRule.html"><div class="ghsprite" style="background: url('../icons/libra.png') -96px 0px" data-downtip="Construct Node Placement Rule"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/libra/constructTransformationPolicy.html"><div class="ghsprite" style="background: url('../icons/libra.png') -120px 0px" data-toptip="Construct Transformation Policy"></div></a>
+<a href="../components/libra/constructForceIndeterminaciesRule.html"><div class="ghsprite" style="background: url('../icons/libra.png') -144px 0px" data-downtip="Construct Force Indeterminacies Rule"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/libra/constructForceSelectionRule.html"><div class="ghsprite" style="background: url('../icons/libra.png') -168px 0px" data-toptip="Construct Force Selection Rule"></div></a>
+<a href="../components/libra/constructTransformationPolicyfast.html"><div class="ghsprite" style="background: url('../icons/libra.png') -48px -24px" data-downtip="Construct Transformation Policy (fast)"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+Transform
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/libra/designSpaceExploration.html"><div class="ghsprite" style="background: url('../icons/libra.png') 0px -24px" data-toptip="Design Space Exploration"></div></a>
+<a href="../components/libra/designSpaceExplorationReader.html"><div class="ghsprite" style="background: url('../icons/libra.png') -24px -24px" data-downtip="Design Space Exploration Reader"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+Xploration
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+
+<div class="cchild">
+<h3>Model</h3>
+<table class="addon-compos">
+<tbody>
+<tr><td class="ccol_1"><a href="../components/libra/constructModel.html"><div class="ghsprite" style="background: url('../icons/libra.png') -72px 0px" ></div></a></td><td class="ccol_2"><a href="../components/libra/constructModel.html">Construct Model</a> <span class="codeword">(ConstructModel)</span><br><span class="desc">Construct an interim model with domain (geometric boundaries)</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/libra/modelExportToIllustrator.html"><div class="ghsprite" style="background: url('../icons/libra.png') -96px -24px" ></div></a></td><td class="ccol_2"><a href="../components/libra/modelExportToIllustrator.html">Model Export to Illustrator</a> <span class="codeword">(ModelExport)</span><br><span class="desc">Model export to Adobe Illustrator</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/libra/modelGeometry.html"><div class="ghsprite" style="background: url('../icons/libra.png') -120px -24px" ></div></a></td><td class="ccol_2"><a href="../components/libra/modelGeometry.html">Model Geometry</a> <span class="codeword">(ModelGeometry)</span><br><span class="desc">Extract the model geometry</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/libra/modelHistory.html"><div class="ghsprite" style="background: url('../icons/libra.png') -144px -24px" ></div></a></td><td class="ccol_2"><a href="../components/libra/modelHistory.html">Model History</a> <span class="codeword">(ModelHistory)</span><br><span class="desc">Extract transformation history</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/libra/modelMetricstext.html"><div class="ghsprite" style="background: url('../icons/libra.png') -168px -24px" ></div></a></td><td class="ccol_2"><a href="../components/libra/modelMetricstext.html">Model Metrics (text)</a> <span class="codeword">(ModelMetrics)</span><br><span class="desc">The model metrics as text</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/libra/modelMetricsspiderGraph.html"><div class="ghsprite" style="background: url('../icons/libra.png') -192px -24px" ></div></a></td><td class="ccol_2"><a href="../components/libra/modelMetricsspiderGraph.html">Model Metrics (spider graph)</a> <span class="codeword">(ModelSpiderGraph)</span><br><span class="desc">The model metrics represented as spider graph</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/libra/modelUndo.html"><div class="ghsprite" style="background: url('../icons/libra.png') -216px -24px" ></div></a></td><td class="ccol_2"><a href="../components/libra/modelUndo.html">Model Undo</a> <span class="codeword">(UndoModel)</span><br><span class="desc">Undo transformations on model</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/libra/selectForce.html"><div class="ghsprite" style="background: url('../icons/libra.png') 0px -48px" ></div></a></td><td class="ccol_2"><a href="../components/libra/selectForce.html">Select Force</a> <span class="codeword">(SelectForce)</span><br><span class="desc">Retrieves a force from the Form Diagram</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>Transform</h3>
+<table class="addon-compos">
+<tbody>
+<tr><td class="ccol_1"><a href="../components/libra/applyTransformationPolicy.html"><div class="ghsprite" style="background: url('../icons/libra.png') 0px 0px" ></div></a></td><td class="ccol_2"><a href="../components/libra/applyTransformationPolicy.html">Apply Transformation Policy</a> <span class="codeword">(Transform)</span><br><span class="desc">Apply transformation policy onto an interim model</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/libra/constructNodePlacementRule.html"><div class="ghsprite" style="background: url('../icons/libra.png') -96px 0px" ></div></a></td><td class="ccol_2"><a href="../components/libra/constructNodePlacementRule.html">Construct Node Placement Rule</a> <span class="codeword">(NodePRule)</span><br><span class="desc">Construct a node placement rule</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/libra/constructTransformationPolicy.html"><div class="ghsprite" style="background: url('../icons/libra.png') -120px 0px" ></div></a></td><td class="ccol_2"><a href="../components/libra/constructTransformationPolicy.html">Construct Transformation Policy</a> <span class="codeword">(Policy)</span><br><span class="desc">Construct a transformation policy</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/libra/constructForceIndeterminaciesRule.html"><div class="ghsprite" style="background: url('../icons/libra.png') -144px 0px" ></div></a></td><td class="ccol_2"><a href="../components/libra/constructForceIndeterminaciesRule.html">Construct Force Indeterminacies Rule</a> <span class="codeword">(ForceIRule)</span><br><span class="desc">Construct a force indeterminacies rule</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/libra/constructForceSelectionRule.html"><div class="ghsprite" style="background: url('../icons/libra.png') -168px 0px" ></div></a></td><td class="ccol_2"><a href="../components/libra/constructForceSelectionRule.html">Construct Force Selection Rule</a> <span class="codeword">(ForceSRule)</span><br><span class="desc">Construct a force selection rule</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/libra/constructTransformationPolicyfast.html"><div class="ghsprite" style="background: url('../icons/libra.png') -48px -24px" ></div></a></td><td class="ccol_2"><a href="../components/libra/constructTransformationPolicyfast.html">Construct Transformation Policy (fast)</a> <span class="codeword">(PolicyFast)</span><br><span class="desc">Construct a fast transformation policy</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>Forces</h3>
+<table class="addon-compos">
+<tbody>
+<tr><td class="ccol_1"><a href="../components/libra/constructForceSet.html"><div class="ghsprite" style="background: url('../icons/libra.png') -48px 0px" ></div></a></td><td class="ccol_2"><a href="../components/libra/constructForceSet.html">Construct Force Set</a> <span class="codeword">(ConstructForceSet)</span><br><span class="desc">Select forces and construct a Monomial/Binomial/Trinomial</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/libra/deconstructForceSet.html"><div class="ghsprite" style="background: url('../icons/libra.png') -216px 0px" ></div></a></td><td class="ccol_2"><a href="../components/libra/deconstructForceSet.html">Deconstruct Force Set</a> <span class="codeword">(DeconstructForceSet)</span><br><span class="desc">Deconstruct force set</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/libra/forceSetDomains.html"><div class="ghsprite" style="background: url('../icons/libra.png') -72px -24px" ></div></a></td><td class="ccol_2"><a href="../components/libra/forceSetDomains.html">Force Set Domains</a> <span class="codeword">(ForceSetDomains)</span><br><span class="desc">Get the domains of a force set</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/libra/visualizeForceSet.html"><div class="ghsprite" style="background: url('../icons/libra.png') -48px -48px" ></div></a></td><td class="ccol_2"><a href="../components/libra/visualizeForceSet.html">Visualize Force Set</a> <span class="codeword">(VisualizeForceSet)</span><br><span class="desc">Visualize a force set by highlighting its forces</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>Domain</h3>
+<table class="addon-compos">
+<tbody>
+<tr><td class="ccol_1"><a href="../components/libra/constructDomain.html"><div class="ghsprite" style="background: url('../icons/libra.png') -24px 0px" ></div></a></td><td class="ccol_2"><a href="../components/libra/constructDomain.html">Construct Domain</a> <span class="codeword">(ConstructDomain)</span><br><span class="desc">Construct a domain of any type</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/libra/deconstructDomain.html"><div class="ghsprite" style="background: url('../icons/libra.png') -192px 0px" ></div></a></td><td class="ccol_2"><a href="../components/libra/deconstructDomain.html">Deconstruct Domain</a> <span class="codeword">(DeconstructDomain)</span><br><span class="desc">Deconstruct a domain of any type</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/libra/visualizeDomain.html"><div class="ghsprite" style="background: url('../icons/libra.png') -24px -48px" ></div></a></td><td class="ccol_2"><a href="../components/libra/visualizeDomain.html">Visualize Domain</a> <span class="codeword">(VisualizeDomain)</span><br><span class="desc">Visualize a domain</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>Xploration</h3>
+<table class="addon-compos">
+<tbody>
+<tr><td class="ccol_1"><a href="../components/libra/designSpaceExploration.html"><div class="ghsprite" style="background: url('../icons/libra.png') 0px -24px" ></div></a></td><td class="ccol_2"><a href="../components/libra/designSpaceExploration.html">Design Space Exploration</a> <span class="codeword">(DSE+IGA)</span><br><span class="desc">Equilibrium-based Design Space Exploration (DSE) through policies, rules and interactive genetic algorithms(IGA)</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/libra/designSpaceExplorationReader.html"><div class="ghsprite" style="background: url('../icons/libra.png') -24px -24px" ></div></a></td><td class="ccol_2"><a href="../components/libra/designSpaceExplorationReader.html">Design Space Exploration Reader</a> <span class="codeword">(DSEReader)</span><br><span class="desc">Design Space Exploration (DSE) Reader component to retrieve every single design candidate that was generated</span></td></tr>
+</tbody>
+</table>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div id="docs-foot" class="docs-footindex">
+<div id="docs-foot-inner">
+<p class="left">
+Site design © <a href="https://github.com/robinrodricks/">Robin Rodricks</a>. &nbsp;
+
+Libra and associated data © 2023  <a href="https://www.food4rhino.com/en/app/libra">Ioannis Mirtsopoulos</a>. &nbsp;
+<br>
+Rhinoceros and Grasshopper are registered trademarks of <a href="https://www.rhino3d.com/">Robert McNeel & Associates</a>.&nbsp;
+Hosted by <a href="http://www.github.com/">GitHub</a> 
+</p>
+<p class="right docs-lightfont">
+
+<a href="https://github.com/grasshopper3d/GrasshopperDocsSite/issues/new">Report an Issue</a> &nbsp;|&nbsp;
+<a href="/termsOfService.html">Terms of Service</a>
+</p>
+
+</div>
+
+
+
+</div>
+</div>
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DX6TG16YN7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DX6TG16YN7');
+</script>
+
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/jquery-autocomplete.min.js"></script>
+<script type="text/javascript" src="/js/app-searchbar.js"></script>
+
+    </body>
+</html>

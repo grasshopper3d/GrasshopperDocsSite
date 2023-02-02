@@ -1,0 +1,730 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rhino Surface from Points - Fenix - Component for Grasshopper | Grasshopper Docs</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+
+<meta name="description" content="Creates a surface from a list of points (3 or 4 long)" />
+<meta name="title" content="Rhino Surface from Points - Fenix - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:title" content="Rhino Surface from Points - Fenix - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://grasshopperdocs.com/components/fenix/rhinoSurfaceFromPoints.html" />
+<meta property="og:site_name" content="Grasshopper Docs" />
+
+<link href="../../style.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+
+<div id="docs">
+
+<div id="docs-head">
+<div id="docs-masthead">
+<p id="docs-sitename"><a href="http://grasshopperdocs.com/">
+	<img id="site-logo-icon" src="/images/logo-icon.png" alt=""></img>
+	<img id="site-logo-text" src="/images/logo-text.png" alt="Grasshopper Docs"></img>
+</a></p>
+<p id="docs-sitedesc">Community documentation for Grasshopper add-ons &amp; plugins</p>
+<div id="docs-sitesearch">
+	<input id="docs-sitesearch-inputbox" type="text" name="docs-sitesearch-inputbox" />
+	<img id="docs-searchicon" src="/images/search.png"/>
+</div>
+</div>
+</div>
+
+<div id="docs-body">
+
+<div class="page">
+
+<div class="content compo-page">
+
+<div class="ghbar ">
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fenix/allDesignAreas.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -72px 0px" data-toptip="All Design Areas"></div></a>
+<a href="../../components/fenix/averageShellForce.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -144px -24px" data-downtip="Average Shell Force"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fenix/averageShellStress.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -168px -24px" data-toptip="Average Shell Stress"></div></a>
+<a href="../../components/fenix/averageShellStressEnvelope.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -192px -24px" data-downtip="Average Shell Stress Envelope"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fenix/createDesignAreaElement.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -72px -48px" data-toptip="Create Design Area Element"></div></a>
+<a href="../../components/fenix/createDesignAreaElementFromMesh.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -96px -48px" data-downtip="Create Design Area Element from Mesh"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fenix/createDesignAreaElementFromSurface.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -120px -48px" data-toptip="Create Design Area Element From Surface"></div></a>
+<a href="../../components/fenix/createDesignCLTElement.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -168px -48px" data-downtip="Create Design CLT Element"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fenix/createOffsetAreaElement.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -192px -72px" data-toptip="Create Offset Area Element"></div></a>
+<a href="../../components/fenix/meshFromSurface.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') 0px -120px" data-downtip="Mesh From Surface"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fenix/createShellElement.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -96px -120px" data-toptip="Create Shell Element"></div></a>
+<a href="../../components/fenix/deconstructShell.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') 0px -144px" data-downtip="Deconstruct Shell"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fenix/deconstructDesignArea.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -48px -144px" data-toptip="Deconstruct Design Area"></div></a>
+<a href="../../components/fenix/deconstructShellModifiers.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -24px -192px" data-downtip="Deconstruct Shell Modifiers"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fenix/deconstructShellStress.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -48px -192px" data-toptip="Deconstruct Shell Stress"></div></a>
+<a href="../../components/fenix/rhinoMeshFromShells.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -48px -312px" data-downtip="Rhino Mesh from Shells"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fenix/rhinoSurfaceFromPoints.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -72px -312px" data-toptip="Rhino Surface from Points"></div></a>
+<a href="../../components/fenix/shellNodalStresses.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -24px -336px" data-downtip="Shell Nodal Stresses"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fenix/shellDisplacement.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -48px -336px" data-toptip="Shell Displacement"></div></a>
+<a href="../../components/fenix/allAnalyticalShells.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -72px -336px" data-downtip="All Analytical Shells"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fenix/shellStressToString.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -96px -336px" data-toptip="Shell Stress to String"></div></a>
+<a href="../../components/fenix/splitBrepFaces.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -168px -336px" data-downtip="Split Brep Faces"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fenix/surfaceHoles.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -216px -336px" data-toptip="Surface Holes"></div></a>
+<a href="../../components/fenix/surfaceOuterEdge.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') 0px -360px" data-downtip="Surface Outer Edge"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="12">
+Areas
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fenix/designEquations.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -96px -288px" data-toptip="DesignEquations"></div></a>
+<a href="../../components/fenix/printSummaryReport.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -120px -288px" data-downtip="Print Summary Report"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fenix/printElementDesigns.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -144px -288px" data-toptip="Print Element Designs"></div></a>
+<a href="../../components/fenix/requiredSteelArea.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -168px -288px" data-downtip="Required Steel Area"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fenix/runDesignChecks.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -96px -312px" data-toptip="Run Design Checks"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+Design
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fenix/addXSBoundary.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') 0px 0px" data-toptip="Add XS Boundary"></div></a>
+<a href="../../components/fenix/allDesignFrames.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -96px 0px" data-downtip="All Design Frames"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fenix/assignFrameLoad.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -72px -24px" data-toptip="Assign Frame Load"></div></a>
+<a href="../../components/fenix/createXSBoundary.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -48px -48px" data-downtip="Create XS Boundary"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fenix/createDesignFrameElement.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -192px -48px" data-toptip="Create Design Frame Element"></div></a>
+<a href="../../components/fenix/createOffsetFrameElement.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -216px -72px" data-downtip="Create Offset Frame Element"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fenix/createFrameBracing.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -144px -96px" data-toptip="Create Frame Bracing"></div></a>
+<a href="../../components/fenix/xSFromName.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -192px -120px" data-downtip="XS from Name"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fenix/deconstructCrossSection.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -24px -144px" data-toptip="Deconstruct Cross Section"></div></a>
+<a href="../../components/fenix/deconstructDesignFrame.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -72px -144px" data-downtip="Deconstruct Design Frame"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fenix/deconstructEndRelease.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -192px -144px" data-toptip="Deconstruct End Release"></div></a>
+<a href="../../components/fenix/deconstructForceOrdinate.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -216px -144px" data-downtip="Deconstruct Force Ordinate"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fenix/deconstructFrameDisplacementDiagram.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') 0px -168px" data-toptip="Deconstruct Frame Displacement Diagram"></div></a>
+<a href="../../components/fenix/deconstructFrameModifiers.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -24px -168px" data-downtip="Deconstruct Frame Modifiers"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fenix/deconstructRigidEndZone.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -168px -168px" data-toptip="Deconstruct Rigid End Zone"></div></a>
+<a href="../../components/fenix/frameForceDiagram.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') 0px -216px" data-downtip="Frame Force Diagram"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fenix/frameDisplacementDiagram.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -24px -216px" data-toptip="Frame Displacement Diagram"></div></a>
+<a href="../../components/fenix/frameFromGUID.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -48px -216px" data-downtip="Frame from GUID"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fenix/allAnalyticalFrames.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -72px -216px" data-toptip="All Analytical Frames"></div></a>
+<a href="../../components/fenix/globalToLocalDispDiagram.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') 0px -240px" data-downtip="Global to Local Disp Diagram"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fenix/localFrameDisplacementDiagram.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -24px -264px" data-toptip="Local Frame Displacement Diagram"></div></a>
+<a href="../../components/fenix/maxAbsFrameForce.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -48px -264px" data-downtip="Max Abs Frame Force"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fenix/minMaxFrameForce.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -216px -264px" data-toptip="Min/Max Frame Force"></div></a>
+<a href="../../components/fenix/assignFrameSection.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') 0px -288px" data-downtip="Assign Frame Section"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fenix/assignEndRelease.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -24px -288px" data-toptip="Assign End Release"></div></a>
+<a href="../../components/fenix/assignFrameRotation.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -48px -288px" data-downtip="Assign Frame Rotation"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fenix/assignRBS.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -72px -288px" data-toptip="Assign RBS"></div></a>
+<a href="../../components/fenix/selectSteelSectionFromCatalog.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -192px -312px" data-downtip="Select Steel Section from Catalog"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fenix/assignRigidEndZone.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') 0px -336px" data-toptip="Assign Rigid End Zone"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="15">
+Frames
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fenix/allAnalyticalElements.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -120px 0px" data-toptip="All Analytical Elements"></div></a>
+<a href="../../components/fenix/analyzeModel.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -24px -24px" data-downtip="Analyze Model"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fenix/assignToGroup.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -48px -24px" data-toptip="Assign to Group"></div></a>
+<a href="../../components/fenix/automateDesign.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -120px -24px" data-downtip="Automate Design"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fenix/baseReaction.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -216px -24px" data-toptip="Base Reaction"></div></a>
+<a href="../../components/fenix/createElementGroup.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -120px -96px" data-downtip="Create Element Group"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fenix/createGenericDesignModel.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -168px -96px" data-toptip="Create Generic Design Model"></div></a>
+<a href="../../components/fenix/matFromName.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -168px -120px" data-downtip="Mat from Name"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fenix/deconstructMaterial.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -120px -144px" data-toptip="Deconstruct Material"></div></a>
+<a href="../../components/fenix/deconstructLocalAxes.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -96px -168px" data-downtip="Deconstruct Local Axes"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fenix/zeroK.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -72px -192px" data-toptip="Zero K"></div></a>
+<a href="../../components/fenix/elementLocalAxes.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -120px -192px" data-downtip="Element Local Axes"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fenix/exportE2K.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -168px -192px" data-toptip="Export E2K"></div></a>
+<a href="../../components/fenix/exportShellConnectivity.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -192px -192px" data-downtip="Export Shell Connectivity"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fenix/modeShape.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -216px -192px" data-toptip="Mode Shape"></div></a>
+<a href="../../components/fenix/loadGenericDesignModel.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') 0px -264px" data-downtip="Load Generic Design Model"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fenix/modeInformation.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -216px -288px" data-toptip="Mode Information"></div></a>
+<a href="../../components/fenix/saveGenericDesignModel.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -120px -312px" data-downtip="Save Generic Design Model"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fenix/setDisplayUnits.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -216px -312px" data-toptip="Set Display Units"></div></a>
+<a href="../../components/fenix/sumOfReactions.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -192px -336px" data-downtip="Sum of Reactions"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fenix/modelDefinitions.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -48px -360px" data-toptip="ModelDefinitions"></div></a>
+<a href="../../components/fenix/previewAnalysisModel.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -72px -360px" data-downtip="Preview Analysis Model"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="11">
+General
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fenix/createGlobalLinkElement.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -72px -72px" data-toptip="Create Global Link Element"></div></a>
+<a href="../../components/fenix/createLocalLinkElement.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -120px -72px" data-downtip="Create Local Link Element"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fenix/deconstructDesignLink.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -96px -144px" data-toptip="Deconstruct Design Link"></div></a>
+<a href="../../components/fenix/deconstructLinkForces.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -48px -168px" data-downtip="Deconstruct Link Forces"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fenix/linkFromGUID.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -96px -240px" data-toptip="Link from GUID"></div></a>
+<a href="../../components/fenix/allLinkElements.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -120px -240px" data-downtip="All Link Elements"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fenix/linkForces.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -144px -240px" data-toptip="Link Forces"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="4">
+Links
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fenix/loadCombinations.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -144px 0px" data-toptip="Load Combinations"></div></a>
+<a href="../../components/fenix/createAreaLoad.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -144px -48px" data-downtip="Create Area Load"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fenix/createDesignFrameLineLoad.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -216px -48px" data-toptip="Create Design Frame Line Load"></div></a>
+<a href="../../components/fenix/createPercentWeightLineLoad.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') 0px -72px" data-downtip="Create Percent Weight Line Load"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fenix/createDesignFramePointLoad.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -24px -72px" data-toptip="Create Design Frame Point Load"></div></a>
+<a href="../../components/fenix/createDesignFrameThermalLoad.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -48px -72px" data-downtip="Create Design Frame Thermal Load"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fenix/createDesignNodalDisplacement.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -144px -72px" data-toptip="Create Design Nodal Displacement"></div></a>
+<a href="../../components/fenix/createDesignNodalForce.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -168px -72px" data-downtip="Create Design Nodal Force"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fenix/createSolidLoad.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -72px -96px" data-toptip="Create Solid Load"></div></a>
+<a href="../../components/fenix/createVaryingAreaLoad.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -192px -96px" data-downtip="Create Varying Area Load"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fenix/createWindParameters.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -144px -120px" data-toptip="Create Wind Parameters"></div></a>
+<a href="../../components/fenix/deconstructLoadCombo.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -72px -168px" data-downtip="Deconstruct Load Combo"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fenix/loadComboFromName.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -192px -240px" data-toptip="Load Combo From Name"></div></a>
+<a href="../../components/fenix/loadComboFromIndex.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -216px -240px" data-downtip="Load Combo From Index"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="7">
+Loads
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fenix/allNodes.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -168px 0px" data-toptip="All Nodes"></div></a>
+<a href="../../components/fenix/allVertices.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') 0px -24px" data-downtip="All Vertices"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fenix/assignToDriftGroup.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -96px -24px" data-toptip="Assign to Drift Group"></div></a>
+<a href="../../components/fenix/createAreaSupport.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -24px -48px" data-downtip="Create Area Support"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fenix/createDesignPointElement.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -24px -96px" data-toptip="Create Design Point Element"></div></a>
+<a href="../../components/fenix/createDriftGroup.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -96px -96px" data-downtip="Create Drift Group"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fenix/createLineSupport.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -216px -96px" data-toptip="Create Line Support"></div></a>
+<a href="../../components/fenix/createSpringProperties.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -120px -120px" data-downtip="Create Spring Properties"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fenix/deconstructAnalysisNode.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -216px -120px" data-toptip="Deconstruct Analysis Node"></div></a>
+<a href="../../components/fenix/deconstructDesignPointElement.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -144px -144px" data-downtip="Deconstruct Design Point Element"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fenix/deconstructDriftStack.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -168px -144px" data-toptip="Deconstruct Drift Stack"></div></a>
+<a href="../../components/fenix/deconstructNodalDisplacement.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -120px -168px" data-downtip="Deconstruct Nodal Displacement"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fenix/deconstructReaction.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -144px -168px" data-toptip="Deconstruct Reaction"></div></a>
+<a href="../../components/fenix/elementVertices.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -144px -192px" data-downtip="Element Vertices"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fenix/connectedElements.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -96px -216px" data-toptip="Connected Elements"></div></a>
+<a href="../../components/fenix/connectedFrames.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -120px -216px" data-downtip="Connected Frames"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fenix/nodeReaction.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -144px -216px" data-toptip="Node Reaction"></div></a>
+<a href="../../components/fenix/delayedSupportNodes.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -168px -216px" data-downtip="Delayed Support Nodes"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fenix/pointReaction.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -192px -216px" data-toptip="Point Reaction"></div></a>
+<a href="../../components/fenix/maximumDisplacement.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -72px -264px" data-downtip="Maximum Displacement"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fenix/maximumDrift.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -96px -264px" data-toptip="Maximum Drift"></div></a>
+<a href="../../components/fenix/minimumDisplacement.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -168px -264px" data-downtip="Minimum Displacement"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fenix/retrieveDriftStack.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -192px -288px" data-toptip="Retrieve Drift Stack"></div></a>
+<a href="../../components/fenix/retrieveNodalDisplacement.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') 0px -312px" data-downtip="Retrieve Nodal Displacement"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="12">
+Points
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fenix/addSectionCuts.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -24px 0px" data-toptip="Add Section Cuts"></div></a>
+<a href="../../components/fenix/addSectionStrips.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -48px 0px" data-downtip="Add Section Strips"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fenix/allSectionCuts.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -192px 0px" data-toptip="All Section Cuts"></div></a>
+<a href="../../components/fenix/allSectionStrips.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -216px 0px" data-downtip="All Section Strips"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fenix/createSectionCut.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -24px -120px" data-toptip="Create Section Cut"></div></a>
+<a href="../../components/fenix/createSurfaceSectionCut.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -48px -120px" data-downtip="Create Surface Section Cut"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fenix/createSectionStrip.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -72px -120px" data-toptip="Create Section Strip"></div></a>
+<a href="../../components/fenix/deconstructSectionCut.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -192px -168px" data-downtip="Deconstruct Section Cut"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fenix/deconstructSectionStrip.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -216px -168px" data-toptip="Deconstruct Section Strip"></div></a>
+<a href="../../components/fenix/deconstructStripForce.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') 0px -192px" data-downtip="Deconstruct Strip Force"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fenix/cutForcesAtCombo.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -144px -312px" data-toptip="Cut Forces at Combo"></div></a>
+<a href="../../components/fenix/stripForcesAtCombo.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -168px -312px" data-downtip="Strip Forces at Combo"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="6">
+Section Cuts
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fenix/createDesignHexahedron.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -96px -72px" data-toptip="Create Design Hexahedron"></div></a>
+<a href="../../components/fenix/createDesignPentahedron.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') 0px -96px" data-downtip="Create Design Pentahedron"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fenix/createSolidExtrusion.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -48px -96px" data-toptip="Create Solid Extrusion"></div></a>
+<a href="../../components/fenix/allAnalyticalSolids.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -120px -336px" data-downtip="All Analytical Solids"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fenix/solidSurfaces.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -144px -336px" data-toptip="Solid Surfaces"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+Solids
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fenix/compareText.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') 0px -48px" data-toptip="Compare Text"></div></a>
+<a href="../../components/fenix/discoverPhysicalCores.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -96px -192px" data-downtip="Discover Physical Cores"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fenix/uniqueValues.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -216px -216px" data-toptip="Unique Values"></div></a>
+<a href="../../components/fenix/growList.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -24px -240px" data-downtip="Grow List"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fenix/ifGate.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -48px -240px" data-toptip="If Gate"></div></a>
+<a href="../../components/fenix/interpolateXY.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -72px -240px" data-downtip="InterpolateXY"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fenix/listToString.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -168px -240px" data-toptip="List To String"></div></a>
+<a href="../../components/fenix/maxOfList.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -120px -264px" data-downtip="Max of List"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fenix/maxOfListIndeces.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -144px -264px" data-toptip="Max of List Indeces"></div></a>
+<a href="../../components/fenix/minOfList.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -192px -264px" data-downtip="Min of List"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fenix/getAttribute.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -24px -312px" data-toptip="Get Attribute"></div></a>
+<a href="../../components/fenix/toFile.html"><div class="ghsprite" style="background: url('../../icons/fenix.png') -24px -360px" data-downtip="To File"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="6">
+Utility
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+
+<div class="addon-buttons">
+<a href="https://www.protogensoftware.com/fenix">Download</a>
+
+</div>
+
+
+<div class="google-ad-sidebar">
+
+<!-- Carbon Ads -->
+<script async type="text/javascript" src="https://cdn.carbonads.com/carbon.js?serve=CK7IC27L&placement=grasshopperdocscom" id="_carbonads_js"></script>
+
+</div>
+
+<div class="compo-header">
+<h1><div class="ghsprite" style="background: url('../../icons/fenix.png') -72px -312px" ></div> Rhino Surface from Points</h1>
+
+<div class="breadcrumb">
+ <a href="../../index.html">Component Index</a>
+  <a href="../../addons/fenix.html">Fenix</a><a href="#" class="breadcrumb-nolink">Areas</a><a href="#" class="breadcrumb-nolink">SP</a>
+</div>
+
+</div>
+<h3>Creates a surface from a list of points (3 or 4 long)</h3>
+<h2>Inputs</h2>
+<table class="params-table input-params">
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Points</b></td><td>P</td><td>List of points</td><td>Generic Data</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table class="params-table output-params">
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Surface</b></td><td>S</td><td>Surface</td><td>Generic Data</td></tr>
+</tbody>
+</table>
+
+
+</div>
+
+</div>
+
+</div>
+
+<div id="docs-foot" class="docs-footindex">
+<div id="docs-foot-inner">
+<p class="left">
+Site design © <a href="https://github.com/robinrodricks/">Robin Rodricks</a>. &nbsp;
+
+Fenix and associated data © 2023  <a href="https://www.protogensoftware.com/fenix">protoGen Software</a>. &nbsp;
+<br>
+Rhinoceros and Grasshopper are registered trademarks of <a href="https://www.rhino3d.com/">Robert McNeel & Associates</a>.&nbsp;
+Hosted by <a href="http://www.github.com/">GitHub</a> 
+</p>
+<p class="right docs-lightfont">
+
+<a href="https://github.com/grasshopper3d/GrasshopperDocsSite/issues/new">Report an Issue</a> &nbsp;|&nbsp;
+<a href="/termsOfService.html">Terms of Service</a>
+</p>
+
+</div>
+
+
+
+</div>
+</div>
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DX6TG16YN7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DX6TG16YN7');
+</script>
+
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/jquery-autocomplete.min.js"></script>
+<script type="text/javascript" src="/js/app-searchbar.js"></script>
+
+    </body>
+</html>
