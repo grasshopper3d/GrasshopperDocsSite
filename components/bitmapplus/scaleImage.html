@@ -1,0 +1,401 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Scale Image - BitmapPlus - Component for Grasshopper | Grasshopper Docs</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+
+<meta name="description" content="Scale an Image&lt;br&gt;Built on the Accord Imaging Library&lt;br&gt;http://accord-framework.net/" />
+<meta name="title" content="Scale Image - BitmapPlus - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:title" content="Scale Image - BitmapPlus - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://grasshopperdocs.com/components/bitmapplus/scaleImage.html" />
+<meta property="og:site_name" content="Grasshopper Docs" />
+
+<link href="../../style.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+
+<div id="docs">
+
+<div id="docs-head">
+<div id="docs-masthead">
+<p id="docs-sitename"><a href="http://grasshopperdocs.com/">
+	<img id="site-logo-icon" src="/images/logo-icon.png" alt=""></img>
+	<img id="site-logo-text" src="/images/logo-text.png" alt="Grasshopper Docs"></img>
+</a></p>
+<p id="docs-sitedesc">Community documentation for Grasshopper add-ons &amp; plugins</p>
+<div id="docs-sitesearch">
+	<input id="docs-sitesearch-inputbox" type="text" name="docs-sitesearch-inputbox" />
+	<img id="docs-searchicon" src="/images/search.png"/>
+</div>
+</div>
+</div>
+
+<div id="docs-body">
+
+<div class="page">
+
+<div class="content compo-page">
+
+<div class="ghbar ">
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/bitmapplus/bitmapProperties.html"><div class="ghsprite" style="background: url('../../icons/bitmapPlus.png') -48px 0px" data-toptip="Bitmap Properties"></div></a>
+<a href="../../components/bitmapplus/deconstructBitmap.html"><div class="ghsprite" style="background: url('../../icons/bitmapPlus.png') 0px -24px" data-downtip="Deconstruct Bitmap"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/bitmapplus/evaluateBitmap.html"><div class="ghsprite" style="background: url('../../icons/bitmapPlus.png') -120px -24px" data-toptip="Evaluate Bitmap"></div></a>
+<a href="../../components/bitmapplus/getPixel.html"><div class="ghsprite" style="background: url('../../icons/bitmapPlus.png') -24px -48px" data-downtip="Get Pixel"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="2">
+Analysis
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/bitmapplus/buildBitmap.html"><div class="ghsprite" style="background: url('../../icons/bitmapPlus.png') -120px 0px" data-toptip="Build Bitmap"></div></a>
+<a href="../../components/bitmapplus/proceduralCellular.html"><div class="ghsprite" style="background: url('../../icons/bitmapPlus.png') -144px 0px" data-downtip="Procedural Cellular"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/bitmapplus/proceduralFractalPass.html"><div class="ghsprite" style="background: url('../../icons/bitmapPlus.png') -168px 0px" data-toptip="Procedural Fractal Pass"></div></a>
+<a href="../../components/bitmapplus/proceduralNoise.html"><div class="ghsprite" style="background: url('../../icons/bitmapPlus.png') -192px 0px" data-downtip="Procedural Noise"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/bitmapplus/imageToBitmap.html"><div class="ghsprite" style="background: url('../../icons/bitmapPlus.png') -96px -48px" data-toptip="Image to Bitmap"></div></a>
+<a href="../../components/bitmapplus/reactionDiffusion.html"><div class="ghsprite" style="background: url('../../icons/bitmapPlus.png') -72px -72px" data-downtip="Reaction Diffusion"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+Create
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/bitmapplus/swap2Channels.html"><div class="ghsprite" style="background: url('../../icons/bitmapPlus.png') -96px -96px" data-toptip="Swap 2 Channels"></div></a>
+<a href="../../components/bitmapplus/replaceChannels.html"><div class="ghsprite" style="background: url('../../icons/bitmapPlus.png') -120px -96px" data-downtip="Replace Channels"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+Edit
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/bitmapplus/openBitmap.html"><div class="ghsprite" style="background: url('../../icons/bitmapPlus.png') 0px -72px" data-toptip="Open Bitmap"></div></a>
+<a href="../../components/bitmapplus/saveBitmap.html"><div class="ghsprite" style="background: url('../../icons/bitmapPlus.png') -168px -72px" data-downtip="Save Bitmap"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+File
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/bitmapplus/convolutionFilter.html"><div class="ghsprite" style="background: url('../../icons/bitmapPlus.png') 0px 0px" data-toptip="Convolution Filter"></div></a>
+<a href="../../components/bitmapplus/adjustmentFilter.html"><div class="ghsprite" style="background: url('../../icons/bitmapPlus.png') -24px 0px" data-downtip="Adjustment Filter"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/bitmapplus/blobFilter.html"><div class="ghsprite" style="background: url('../../icons/bitmapPlus.png') -72px 0px" data-toptip="Blob Filter"></div></a>
+<a href="../../components/bitmapplus/cannyEdgesFilter.html"><div class="ghsprite" style="background: url('../../icons/bitmapPlus.png') -96px 0px" data-downtip="Canny Edges Filter"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/bitmapplus/differenceFilter.html"><div class="ghsprite" style="background: url('../../icons/bitmapPlus.png') -24px -24px" data-toptip="Difference Filter"></div></a>
+<a href="../../components/bitmapplus/ditheringFilter.html"><div class="ghsprite" style="background: url('../../icons/bitmapPlus.png') -48px -24px" data-downtip="Dithering Filter"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/bitmapplus/edgesFilter.html"><div class="ghsprite" style="background: url('../../icons/bitmapPlus.png') -72px -24px" data-toptip="Edges Filter"></div></a>
+<a href="../../components/bitmapplus/effectsFilter.html"><div class="ghsprite" style="background: url('../../icons/bitmapPlus.png') -96px -24px" data-downtip="Effects Filter"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/bitmapplus/extractFilter.html"><div class="ghsprite" style="background: url('../../icons/bitmapPlus.png') -144px -24px" data-toptip="Extract Filter"></div></a>
+<a href="../../components/bitmapplus/figureFilter.html"><div class="ghsprite" style="background: url('../../icons/bitmapPlus.png') -168px -24px" data-downtip="Figure Filter"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/bitmapplus/filteringFilter.html"><div class="ghsprite" style="background: url('../../icons/bitmapPlus.png') -192px -24px" data-toptip="Filtering Filter"></div></a>
+<a href="../../components/bitmapplus/grayscaleFilter.html"><div class="ghsprite" style="background: url('../../icons/bitmapPlus.png') -72px -48px" data-downtip="Grayscale Filter"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/bitmapplus/levelsFilter.html"><div class="ghsprite" style="background: url('../../icons/bitmapPlus.png') -120px -48px" data-toptip="Levels Filter"></div></a>
+<a href="../../components/bitmapplus/iterateFilter.html"><div class="ghsprite" style="background: url('../../icons/bitmapPlus.png') -96px -72px" data-downtip="Iterate Filter"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/bitmapplus/sharpenFilter.html"><div class="ghsprite" style="background: url('../../icons/bitmapPlus.png') 0px -96px" data-toptip="Sharpen Filter"></div></a>
+<a href="../../components/bitmapplus/smoothFilter.html"><div class="ghsprite" style="background: url('../../icons/bitmapPlus.png') -48px -96px" data-downtip="Smooth Filter"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/bitmapplus/streakFilter.html"><div class="ghsprite" style="background: url('../../icons/bitmapPlus.png') -72px -96px" data-toptip="Streak Filter"></div></a>
+<a href="../../components/bitmapplus/thresholdFilter.html"><div class="ghsprite" style="background: url('../../icons/bitmapPlus.png') -144px -96px" data-downtip="Threshold Filter"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="9">
+Filter
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/bitmapplus/mergeImages.html"><div class="ghsprite" style="background: url('../../icons/bitmapPlus.png') -144px -48px" data-toptip="Merge Images"></div></a>
+<a href="../../components/bitmapplus/modifyLayer.html"><div class="ghsprite" style="background: url('../../icons/bitmapPlus.png') -192px -48px" data-downtip="Modify Layer"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/bitmapplus/setLayer.html"><div class="ghsprite" style="background: url('../../icons/bitmapPlus.png') -216px -72px" data-toptip="Set Layer"></div></a>
+<a href="../../components/bitmapplus/transformLayers.html"><div class="ghsprite" style="background: url('../../icons/bitmapPlus.png') -192px -96px" data-downtip="Transform Layers"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="2">
+Layers
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/bitmapplus/cropImage.html"><div class="ghsprite" style="background: url('../../icons/bitmapPlus.png') -216px 0px" data-toptip="Crop Image"></div></a>
+<a href="../../components/bitmapplus/mirrorImage.html"><div class="ghsprite" style="background: url('../../icons/bitmapPlus.png') -168px -48px" data-downtip="Mirror Image"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/bitmapplus/moveImage.html"><div class="ghsprite" style="background: url('../../icons/bitmapPlus.png') -216px -48px" data-toptip="Move Image"></div></a>
+<a href="../../components/bitmapplus/polarImage.html"><div class="ghsprite" style="background: url('../../icons/bitmapPlus.png') -24px -72px" data-downtip="Polar Image"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/bitmapplus/resizeImage.html"><div class="ghsprite" style="background: url('../../icons/bitmapPlus.png') -120px -72px" data-toptip="Resize Image"></div></a>
+<a href="../../components/bitmapplus/rotateImage.html"><div class="ghsprite" style="background: url('../../icons/bitmapPlus.png') -144px -72px" data-downtip="Rotate Image"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/bitmapplus/scaleImage.html"><div class="ghsprite" style="background: url('../../icons/bitmapPlus.png') -192px -72px" data-toptip="Scale Image"></div></a>
+<a href="../../components/bitmapplus/shrinkImage.html"><div class="ghsprite" style="background: url('../../icons/bitmapPlus.png') -24px -96px" data-downtip="Shrink Image"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="4">
+Transform
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/bitmapplus/bitmapBlobs.html"><div class="ghsprite" style="background: url('../../icons/bitmapPlus.png') -216px -24px" data-toptip="Bitmap Blobs"></div></a>
+<a href="../../components/bitmapplus/bitmapCorners.html"><div class="ghsprite" style="background: url('../../icons/bitmapPlus.png') 0px -48px" data-downtip="Bitmap Corners"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/bitmapplus/bitmapShapes.html"><div class="ghsprite" style="background: url('../../icons/bitmapPlus.png') -48px -48px" data-toptip="Bitmap Shapes"></div></a>
+<a href="../../components/bitmapplus/traceBitmap.html"><div class="ghsprite" style="background: url('../../icons/bitmapPlus.png') -168px -96px" data-downtip="Trace Bitmap"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="2">
+Vectorize
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/bitmapplus/prevImage.html"><div class="ghsprite" style="background: url('../../icons/bitmapPlus.png') -48px -72px" data-toptip="Prev Image"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+Visualize
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+
+<div class="addon-buttons">
+<a href="https://github.com/interopxyz/BitmapPlus">Source Code</a>
+<a href="https://www.food4rhino.com/en/app/bitmap">Download</a>
+
+</div>
+
+
+<div class="google-ad-sidebar">
+
+<!-- Carbon Ads -->
+<script async type="text/javascript" src="https://cdn.carbonads.com/carbon.js?serve=CK7IC27L&placement=grasshopperdocscom" id="_carbonads_js"></script>
+
+</div>
+
+<div class="compo-header">
+<h1><div class="ghsprite" style="background: url('../../icons/bitmapPlus.png') -192px -72px" ></div> Scale Image</h1>
+
+<div class="breadcrumb">
+ <a href="../../index.html">Component Index</a>
+  <a href="../../addons/bitmapplus.html">BitmapPlus</a><a href="#" class="breadcrumb-nolink">Transform</a><a href="#" class="breadcrumb-nolink">ScaleImg</a>
+</div>
+
+</div>
+<h3>Scale an Image<br>Built on the Accord Imaging Library<br>http://accord-framework.net/</h3>
+<h2>Inputs</h2>
+<table class="params-table input-params">
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Image</b></td><td>I</td><td>A Bitmap Plus Image or Bitmap</td><td>Generic Data</td></tr>
+<tr><td><b>Mode</b></td><td>M</td><td>Sampling Mode</td><td>Integer</td></tr>
+<tr><td><b>Scale</b></td><td>S</td><td>Scale</td><td>Number</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table class="params-table output-params">
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Image</b></td><td>I</td><td>An Image object</td><td>Generic Data</td></tr>
+</tbody>
+</table>
+
+
+</div>
+
+</div>
+
+</div>
+
+<div id="docs-foot" class="docs-footindex">
+<div id="docs-foot-inner">
+<p class="left">
+Site design © <a href="https://github.com/robinrodricks/">Robin Rodricks</a>. &nbsp;
+
+BitmapPlus and associated data © 2023  <a href="https://www.food4rhino.com/en/app/bitmap">David Mans</a>. &nbsp;
+<br>
+Rhinoceros and Grasshopper are registered trademarks of <a href="https://www.rhino3d.com/">Robert McNeel & Associates</a>.&nbsp;
+Hosted by <a href="http://www.github.com/">GitHub</a> 
+</p>
+<p class="right docs-lightfont">
+
+<a href="https://github.com/grasshopper3d/GrasshopperDocsSite/issues/new">Report an Issue</a> &nbsp;|&nbsp;
+<a href="/termsOfService.html">Terms of Service</a>
+</p>
+
+</div>
+
+
+
+</div>
+</div>
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DX6TG16YN7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DX6TG16YN7');
+</script>
+
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/jquery-autocomplete.min.js"></script>
+<script type="text/javascript" src="/js/app-searchbar.js"></script>
+
+    </body>
+</html>

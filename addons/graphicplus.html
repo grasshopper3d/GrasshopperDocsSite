@@ -1,0 +1,236 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GraphicPlus - Addon for Grasshopper | Grasshopper Docs</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+
+<meta name="description" content="This plugin for Grasshopper makes it incredibly easy to create graphically rich SVG files, bitmaps, and canvas previews from simple geometry inputs. Just plug geometry Curves, Breps, and Meshes into the drawing component to render them to a frame. Then preview this frame in canvas, export to an SVG file or bitmap with variable resolution. Pass geometry through graphic components to add strokes, solid fills, gradient fills, and effects to layer graphics onto the geometry. Drawings are automatically centered unless a custom frame is applied and geometry can be scaled independently of stroke and fill properties for better control of the final vector or raster visualizations." />
+<meta name="title" content="GraphicPlus - Addon for Grasshopper | Grasshopper Docs" />
+<meta property="og:title" content="GraphicPlus - Addon for Grasshopper | Grasshopper Docs" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://grasshopperdocs.com/addons/graphicplus.html" />
+<meta property="og:site_name" content="Grasshopper Docs" />
+
+<link href="../style.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+
+<div id="docs">
+
+<div id="docs-head">
+<div id="docs-masthead">
+<p id="docs-sitename"><a href="http://grasshopperdocs.com/">
+	<img id="site-logo-icon" src="/images/logo-icon.png" alt=""></img>
+	<img id="site-logo-text" src="/images/logo-text.png" alt="Grasshopper Docs"></img>
+</a></p>
+<p id="docs-sitedesc">Community documentation for Grasshopper add-ons &amp; plugins</p>
+<div id="docs-sitesearch">
+	<input id="docs-sitesearch-inputbox" type="text" name="docs-sitesearch-inputbox" />
+	<img id="docs-searchicon" src="/images/search.png"/>
+</div>
+</div>
+</div>
+
+<div id="docs-body">
+
+<div class="page">
+
+<div class="content addon-page">
+
+<div class="addon-buttons">
+<a href="https://github.com/interopxyz/GraphicPlus">Source Code</a>
+<a href="https://www.food4rhino.com/en/app/graphic">Download</a>
+
+</div>
+
+
+<div class="google-ad-sidebar">
+
+<!-- Carbon Ads -->
+<script async type="text/javascript" src="https://cdn.carbonads.com/carbon.js?serve=CK7IC27L&placement=grasshopperdocscom" id="_carbonads_js"></script>
+
+</div>
+
+<div class="addon-header">
+<h1>GraphicPlus</h1>
+<h5>
+<span>ADDON. Version <b>1.8.11</b>.</span>
+<span>Released on <b>2023-Dec</b>.</span>
+<span>Provides <b>19</b> components.</span>
+<span>Created by <b>David Mans</b>.</span>
+<span>Features <b>0</b> video tutorials.</span>
+</h5>
+<h5>This plugin for Grasshopper makes it incredibly easy to create graphically rich SVG files, bitmaps, and canvas previews from simple geometry inputs. Just plug geometry Curves, Breps, and Meshes into the drawing component to render them to a frame. Then preview this frame in canvas, export to an SVG file or bitmap with variable resolution. Pass geometry through graphic components to add strokes, solid fills, gradient fills, and effects to layer graphics onto the geometry. Drawings are automatically centered unless a custom frame is applied and geometry can be scaled independently of stroke and fill properties for better control of the final vector or raster visualizations.</h5>
+
+<div class="breadcrumb">
+  <a href="../index.html">Component Index</a>
+  <a href="#" class="breadcrumb-nolink">GraphicPlus</a>
+</div>
+
+</div>
+
+<div class="ghbar ghbar-addon-page">
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/graphicplus/constructDrawing.html"><div class="ghsprite" style="background: url('../icons/graphicPlus.png') 0px 0px" data-toptip="Construct Drawing"></div></a>
+<a href="../components/graphicplus/sVGText.html"><div class="ghsprite" style="background: url('../icons/graphicPlus.png') -24px 0px" data-downtip="SVG Text"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/graphicplus/shapePreviewBeta.html"><div class="ghsprite" style="background: url('../icons/graphicPlus.png') -48px 0px" data-toptip="Shape Preview Beta"></div></a>
+<a href="../components/graphicplus/saveBitmap.html"><div class="ghsprite" style="background: url('../icons/graphicPlus.png') -72px 0px" data-downtip="Save Bitmap"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/graphicplus/saveSvg.html"><div class="ghsprite" style="background: url('../icons/graphicPlus.png') -96px 0px" data-toptip="Save Svg"></div></a>
+<a href="../components/graphicplus/blur.html"><div class="ghsprite" style="background: url('../icons/graphicPlus.png') -120px 0px" data-downtip="Blur"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/graphicplus/glow.html"><div class="ghsprite" style="background: url('../icons/graphicPlus.png') -144px 0px" data-toptip="Glow"></div></a>
+<a href="../components/graphicplus/dropShadow.html"><div class="ghsprite" style="background: url('../icons/graphicPlus.png') -168px 0px" data-downtip="Drop Shadow"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/graphicplus/gradientLinearFill.html"><div class="ghsprite" style="background: url('../icons/graphicPlus.png') -192px 0px" data-toptip="Gradient Linear Fill"></div></a>
+<a href="../components/graphicplus/gradientRadialFill.html"><div class="ghsprite" style="background: url('../icons/graphicPlus.png') -216px 0px" data-downtip="Gradient Radial Fill"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/graphicplus/solidFill.html"><div class="ghsprite" style="background: url('../icons/graphicPlus.png') 0px -24px" data-toptip="Solid Fill"></div></a>
+<a href="../components/graphicplus/font.html"><div class="ghsprite" style="background: url('../icons/graphicPlus.png') -24px -24px" data-downtip="Font"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/graphicplus/stroke.html"><div class="ghsprite" style="background: url('../icons/graphicPlus.png') -48px -24px" data-toptip="Stroke"></div></a>
+<a href="../components/graphicplus/shapeData.html"><div class="ghsprite" style="background: url('../icons/graphicPlus.png') -72px -24px" data-downtip="Shape Data"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/graphicplus/shapeLink.html"><div class="ghsprite" style="background: url('../icons/graphicPlus.png') -96px -24px" data-toptip="Shape Link"></div></a>
+<a href="../components/graphicplus/shapeSettings.html"><div class="ghsprite" style="background: url('../icons/graphicPlus.png') -120px -24px" data-downtip="Shape Settings"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/graphicplus/shapeTooltip.html"><div class="ghsprite" style="background: url('../icons/graphicPlus.png') -144px -24px" data-toptip="Shape Tooltip"></div></a>
+<a href="../components/graphicplus/textShape.html"><div class="ghsprite" style="background: url('../icons/graphicPlus.png') -168px -24px" data-downtip="Text Shape"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/graphicplus/drawingToBitmap.html"><div class="ghsprite" style="background: url('../icons/graphicPlus.png') -192px -24px" data-toptip="Drawing to Bitmap"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="10">
+Graphics
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+
+<div class="cchild">
+<h3>Graphics</h3>
+<table class="addon-compos">
+<tbody>
+<tr><td class="ccol_1"><a href="../components/graphicplus/constructDrawing.html"><div class="ghsprite" style="background: url('../icons/graphicPlus.png') 0px 0px" ></div></a></td><td class="ccol_2"><a href="../components/graphicplus/constructDrawing.html">Construct Drawing</a> <span class="codeword">(Drawing)</span><br><span class="desc">Constructs a Drawing from a list of Shapes</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/graphicplus/sVGText.html"><div class="ghsprite" style="background: url('../icons/graphicPlus.png') -24px 0px" ></div></a></td><td class="ccol_2"><a href="../components/graphicplus/sVGText.html">SVG Text</a> <span class="codeword">(SVGtxt)</span><br><span class="desc">Converts a Drawing to SVG txt<br>(</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/graphicplus/shapePreviewBeta.html"><div class="ghsprite" style="background: url('../icons/graphicPlus.png') -48px 0px" ></div></a></td><td class="ccol_2"><a href="../components/graphicplus/shapePreviewBeta.html">Shape Preview Beta</a> <span class="codeword">(ShpPrev)</span><br><span class="desc">A beta fill and stroke preview in Rhino.<br></span></td></tr>
+<tr><td class="ccol_1"><a href="../components/graphicplus/saveBitmap.html"><div class="ghsprite" style="background: url('../icons/graphicPlus.png') -72px 0px" ></div></a></td><td class="ccol_2"><a href="../components/graphicplus/saveBitmap.html">Save Bitmap</a> <span class="codeword">(SaveBmp)</span><br><span class="desc">Save a Bitmap file of a Drawing.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/graphicplus/saveSvg.html"><div class="ghsprite" style="background: url('../icons/graphicPlus.png') -96px 0px" ></div></a></td><td class="ccol_2"><a href="../components/graphicplus/saveSvg.html">Save Svg</a> <span class="codeword">(SaveSvg)</span><br><span class="desc">Save a SVG file of a Drawing.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/graphicplus/blur.html"><div class="ghsprite" style="background: url('../icons/graphicPlus.png') -120px 0px" ></div></a></td><td class="ccol_2"><a href="../components/graphicplus/blur.html">Blur</a><br><span class="desc">Applies a Blur Effect to a Shape</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/graphicplus/glow.html"><div class="ghsprite" style="background: url('../icons/graphicPlus.png') -144px 0px" ></div></a></td><td class="ccol_2"><a href="../components/graphicplus/glow.html">Glow</a><br><span class="desc">Applies an Inner or Outer Glow Effect to a Shape</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/graphicplus/dropShadow.html"><div class="ghsprite" style="background: url('../icons/graphicPlus.png') -168px 0px" ></div></a></td><td class="ccol_2"><a href="../components/graphicplus/dropShadow.html">Drop Shadow</a> <span class="codeword">(Shadow)</span><br><span class="desc">Applies a Drop Shadow Effect to a Shape</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/graphicplus/gradientLinearFill.html"><div class="ghsprite" style="background: url('../icons/graphicPlus.png') -192px 0px" ></div></a></td><td class="ccol_2"><a href="../components/graphicplus/gradientLinearFill.html">Gradient Linear Fill</a> <span class="codeword">(Linear Gradient)</span><br><span class="desc">Applies a Linear Gradient Fill to a Shape</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/graphicplus/gradientRadialFill.html"><div class="ghsprite" style="background: url('../icons/graphicPlus.png') -216px 0px" ></div></a></td><td class="ccol_2"><a href="../components/graphicplus/gradientRadialFill.html">Gradient Radial Fill</a> <span class="codeword">(Radial Gradient)</span><br><span class="desc">Applies a Radial Gradient Fill to a Shape</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/graphicplus/solidFill.html"><div class="ghsprite" style="background: url('../icons/graphicPlus.png') 0px -24px" ></div></a></td><td class="ccol_2"><a href="../components/graphicplus/solidFill.html">Solid Fill</a> <span class="codeword">(Solid)</span><br><span class="desc">Applies a Solid Fill color to a Shape</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/graphicplus/font.html"><div class="ghsprite" style="background: url('../icons/graphicPlus.png') -24px -24px" ></div></a></td><td class="ccol_2"><a href="../components/graphicplus/font.html">Font</a><br><span class="desc">Applies a Font to a Text Shape</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/graphicplus/stroke.html"><div class="ghsprite" style="background: url('../icons/graphicPlus.png') -48px -24px" ></div></a></td><td class="ccol_2"><a href="../components/graphicplus/stroke.html">Stroke</a><br><span class="desc">Applies Stroke properties to a Shape</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/graphicplus/shapeData.html"><div class="ghsprite" style="background: url('../icons/graphicPlus.png') -72px -24px" ></div></a></td><td class="ccol_2"><a href="../components/graphicplus/shapeData.html">Shape Data</a> <span class="codeword">(Data)</span><br><span class="desc">Optionally override Id and add a series of data items to a Shape.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/graphicplus/shapeLink.html"><div class="ghsprite" style="background: url('../icons/graphicPlus.png') -96px -24px" ></div></a></td><td class="ccol_2"><a href="../components/graphicplus/shapeLink.html">Shape Link</a> <span class="codeword">(Link)</span><br><span class="desc">A hyperlink to open when the element is clicked.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/graphicplus/shapeSettings.html"><div class="ghsprite" style="background: url('../icons/graphicPlus.png') -120px -24px" ></div></a></td><td class="ccol_2"><a href="../components/graphicplus/shapeSettings.html">Shape Settings</a> <span class="codeword">(Settings)</span><br><span class="desc">Optionally override Id and set a group / layer.</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/graphicplus/shapeTooltip.html"><div class="ghsprite" style="background: url('../icons/graphicPlus.png') -144px -24px" ></div></a></td><td class="ccol_2"><a href="../components/graphicplus/shapeTooltip.html">Shape Tooltip</a> <span class="codeword">(Tooltip)</span><br><span class="desc">Add a tooltip description to a shape</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/graphicplus/textShape.html"><div class="ghsprite" style="background: url('../icons/graphicPlus.png') -168px -24px" ></div></a></td><td class="ccol_2"><a href="../components/graphicplus/textShape.html">Text Shape</a> <span class="codeword">(Text)</span><br><span class="desc">Construct a Text Shape</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/graphicplus/drawingToBitmap.html"><div class="ghsprite" style="background: url('../icons/graphicPlus.png') -192px -24px" ></div></a></td><td class="ccol_2"><a href="../components/graphicplus/drawingToBitmap.html">Drawing to Bitmap</a> <span class="codeword">(DrawingToBmp)</span><br><span class="desc">Create a Bitmap file of a Drawing.</span></td></tr>
+</tbody>
+</table>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div id="docs-foot" class="docs-footindex">
+<div id="docs-foot-inner">
+<p class="left">
+Site design © <a href="https://github.com/robinrodricks/">Robin Rodricks</a>. &nbsp;
+
+GraphicPlus and associated data © 2023  <a href="https://www.food4rhino.com/en/app/graphic">David Mans</a>. &nbsp;
+<br>
+Rhinoceros and Grasshopper are registered trademarks of <a href="https://www.rhino3d.com/">Robert McNeel & Associates</a>.&nbsp;
+Hosted by <a href="http://www.github.com/">GitHub</a> 
+</p>
+<p class="right docs-lightfont">
+
+<a href="https://github.com/grasshopper3d/GrasshopperDocsSite/issues/new">Report an Issue</a> &nbsp;|&nbsp;
+<a href="/termsOfService.html">Terms of Service</a>
+</p>
+
+</div>
+
+
+
+</div>
+</div>
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DX6TG16YN7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DX6TG16YN7');
+</script>
+
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/jquery-autocomplete.min.js"></script>
+<script type="text/javascript" src="/js/app-searchbar.js"></script>
+
+    </body>
+</html>

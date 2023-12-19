@@ -59,9 +59,9 @@
 <div class="addon-header">
 <h1>Quadri</h1>
 <h5>
-<span>ADDON. Version <b>0.0.20</b>.</span>
-<span>Released on <b>2022-Feb-18</b>.</span>
-<span>Provides <b>21</b> components.</span>
+<span>ADDON. Version <b>0.0.22</b>.</span>
+<span>Released on <b>2023-Dec</b>.</span>
+<span>Provides <b>22</b> components.</span>
 <span>Created by <b>Trimble Solutions Norway</b>.</span>
 <span>Features <b>0</b> video tutorials.</span>
 </h5>
@@ -80,25 +80,26 @@
 <tr>
 <td>
 <div class="ghcolumn">
-<a href="../components/quadri/quadriFeatureSelector.html"><div class="ghsprite" style="background: url('../icons/quadri.png') -24px -24px" data-toptip="Quadri Feature Selector"></div></a>
-<a href="../components/quadri/quadriAlignmentSelector.html"><div class="ghsprite" style="background: url('../icons/quadri.png') -48px -24px" data-downtip="Quadri Alignment Selector"></div></a>
+<a href="../components/quadri/quadriModelInfo.html"><div class="ghsprite" style="background: url('../icons/quadri.png') -24px -24px" data-toptip="Quadri Model Info"></div></a>
+<a href="../components/quadri/quadriFeatureSelector.html"><div class="ghsprite" style="background: url('../icons/quadri.png') -48px -24px" data-downtip="Quadri Feature Selector"></div></a>
 </div>
 </td>
 <td>
 <div class="ghcolumn">
-<a href="../components/quadri/quadriLineSelector.html"><div class="ghsprite" style="background: url('../icons/quadri.png') -72px -24px" data-toptip="Quadri Line Selector"></div></a>
-<a href="../components/quadri/quadriMultipointSelector.html"><div class="ghsprite" style="background: url('../icons/quadri.png') -96px -24px" data-downtip="Quadri Multipoint Selector"></div></a>
+<a href="../components/quadri/quadriAlignmentSelector.html"><div class="ghsprite" style="background: url('../icons/quadri.png') -72px -24px" data-toptip="Quadri Alignment Selector"></div></a>
+<a href="../components/quadri/quadriLineSelector.html"><div class="ghsprite" style="background: url('../icons/quadri.png') -96px -24px" data-downtip="Quadri Line Selector"></div></a>
 </div>
 </td>
 <td>
 <div class="ghcolumn">
-<a href="../components/quadri/quadriPointSelector.html"><div class="ghsprite" style="background: url('../icons/quadri.png') -120px -24px" data-toptip="Quadri Point Selector"></div></a>
-<a href="../components/quadri/quadriSolidSelector.html"><div class="ghsprite" style="background: url('../icons/quadri.png') -144px -24px" data-downtip="Quadri Solid Selector"></div></a>
+<a href="../components/quadri/quadriMultipointSelector.html"><div class="ghsprite" style="background: url('../icons/quadri.png') -120px -24px" data-toptip="Quadri Multipoint Selector"></div></a>
+<a href="../components/quadri/quadriPointSelector.html"><div class="ghsprite" style="background: url('../icons/quadri.png') -144px -24px" data-downtip="Quadri Point Selector"></div></a>
 </div>
 </td>
 <td>
 <div class="ghcolumn">
-<a href="../components/quadri/quadriDesignTaskSelector.html"><div class="ghsprite" style="background: url('../icons/quadri.png') -168px -24px" data-toptip="Quadri Design Task Selector"></div></a>
+<a href="../components/quadri/quadriSolidSelector.html"><div class="ghsprite" style="background: url('../icons/quadri.png') -168px -24px" data-toptip="Quadri Solid Selector"></div></a>
+<a href="../components/quadri/quadriDesignTaskSelector.html"><div class="ghsprite" style="background: url('../icons/quadri.png') -192px -24px" data-downtip="Quadri Design Task Selector"></div></a>
 </div>
 </td>
 </tr>
@@ -127,12 +128,12 @@
 <td>
 <div class="ghcolumn">
 <a href="../components/quadri/constructQuadriTexture.html"><div class="ghsprite" style="background: url('../icons/quadri.png') 0px -24px" data-toptip="Construct Quadri Texture"></div></a>
-<a href="../components/quadri/quadriChainageQuery.html"><div class="ghsprite" style="background: url('../icons/quadri.png') -192px -24px" data-downtip="Quadri Chainage Query"></div></a>
+<a href="../components/quadri/quadriChainageQuery.html"><div class="ghsprite" style="background: url('../icons/quadri.png') -216px -24px" data-downtip="Quadri Chainage Query"></div></a>
 </div>
 </td>
 <td>
 <div class="ghcolumn">
-<a href="../components/quadri/quadriChainageInterval.html"><div class="ghsprite" style="background: url('../icons/quadri.png') -216px -24px" data-toptip="Quadri Chainage Interval"></div></a>
+<a href="../components/quadri/quadriChainageInterval.html"><div class="ghsprite" style="background: url('../icons/quadri.png') 0px -48px" data-toptip="Quadri Chainage Interval"></div></a>
 </div>
 </td>
 </tr>
@@ -166,7 +167,7 @@
 </td>
 <td>
 <div class="ghcolumn">
-<a href="../components/quadri/exportQuadriGeometry.html"><div class="ghsprite" style="background: url('../icons/quadri.png') 0px -48px" data-toptip="Export Quadri Geometry"></div></a>
+<a href="../components/quadri/exportQuadriGeometry.html"><div class="ghsprite" style="background: url('../icons/quadri.png') -24px -48px" data-toptip="Export Quadri Geometry"></div></a>
 </div>
 </td>
 </tr>
@@ -181,16 +182,32 @@
 
 
 <div class="cchild">
+<h3>1. Features</h3>
+<table class="addon-compos">
+<tbody>
+<tr><td class="ccol_1"><a href="../components/quadri/quadriModelInfo.html"><div class="ghsprite" style="background: url('../icons/quadri.png') -24px -24px" ></div></a></td><td class="ccol_2"><a href="../components/quadri/quadriModelInfo.html">Quadri Model Info</a><br><span class="desc">Gets model info from the current active Quadri model.<br>v0.0.22</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/quadri/quadriFeatureSelector.html"><div class="ghsprite" style="background: url('../icons/quadri.png') -48px -24px" ></div></a></td><td class="ccol_2"><a href="../components/quadri/quadriFeatureSelector.html">Quadri Feature Selector</a><br><span class="desc">Gets Quadri Features from the input Quadri Design Task.<br>v0.0.22</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/quadri/quadriAlignmentSelector.html"><div class="ghsprite" style="background: url('../icons/quadri.png') -72px -24px" ></div></a></td><td class="ccol_2"><a href="../components/quadri/quadriAlignmentSelector.html">Quadri Alignment Selector</a><br><span class="desc">Deconstructs Quadri Alignments.<br>v0.0.22</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/quadri/quadriLineSelector.html"><div class="ghsprite" style="background: url('../icons/quadri.png') -96px -24px" ></div></a></td><td class="ccol_2"><a href="../components/quadri/quadriLineSelector.html">Quadri Line Selector</a><br><span class="desc">Deconstructs Quadri Lines into its vertices.<br>v0.0.22</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/quadri/quadriMultipointSelector.html"><div class="ghsprite" style="background: url('../icons/quadri.png') -120px -24px" ></div></a></td><td class="ccol_2"><a href="../components/quadri/quadriMultipointSelector.html">Quadri Multipoint Selector</a><br><span class="desc">Converts Quadri Multipoints to Rhino points.<br>v0.0.22</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/quadri/quadriPointSelector.html"><div class="ghsprite" style="background: url('../icons/quadri.png') -144px -24px" ></div></a></td><td class="ccol_2"><a href="../components/quadri/quadriPointSelector.html">Quadri Point Selector</a><br><span class="desc">Converts Quadri Points to Rhino points.<br>v0.0.22</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/quadri/quadriSolidSelector.html"><div class="ghsprite" style="background: url('../icons/quadri.png') -168px -24px" ></div></a></td><td class="ccol_2"><a href="../components/quadri/quadriSolidSelector.html">Quadri Solid Selector</a><br><span class="desc">Converts Quadri Solid geometry to Rhino mesh.<br>v0.0.22</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/quadri/quadriDesignTaskSelector.html"><div class="ghsprite" style="background: url('../icons/quadri.png') -192px -24px" ></div></a></td><td class="ccol_2"><a href="../components/quadri/quadriDesignTaskSelector.html">Quadri Design Task Selector</a><br><span class="desc">Gets valid Design Tasks from an open Quadri model</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
 <h3>2. Utilities</h3>
 <table class="addon-compos">
 <tbody>
-<tr><td class="ccol_1"><a href="../components/quadri/quadriComputeChainage.html"><div class="ghsprite" style="background: url('../icons/quadri.png') 0px 0px" ></div></a></td><td class="ccol_2"><a href="../components/quadri/quadriComputeChainage.html">Quadri Compute Chainage</a><br><span class="desc">Computes the chainage of the input points projected onto the input alignment.<br>v0.0.20</span></td></tr>
-<tr><td class="ccol_1"><a href="../components/quadri/quadriElevationTask.html"><div class="ghsprite" style="background: url('../icons/quadri.png') -24px 0px" ></div></a></td><td class="ccol_2"><a href="../components/quadri/quadriElevationTask.html">Quadri Elevation Task</a><br><span class="desc">Returns the top most elevation resulting from the computation. Returns -99999 if no elevation is found.<br>v0.0.20</span></td></tr>
-<tr><td class="ccol_1"><a href="../components/quadri/quadriExtrusion.html"><div class="ghsprite" style="background: url('../icons/quadri.png') -96px 0px" ></div></a></td><td class="ccol_2"><a href="../components/quadri/quadriExtrusion.html">Quadri Extrusion</a><br><span class="desc">Creates a Solid Quadri Extrusion from an input cross section. Local section coordinate system is equal to the global XY plane.<br>v0.0.20</span></td></tr>
-<tr><td class="ccol_1"><a href="../components/quadri/quadriHollowExtrusion.html"><div class="ghsprite" style="background: url('../icons/quadri.png') -120px 0px" ></div></a></td><td class="ccol_2"><a href="../components/quadri/quadriHollowExtrusion.html">Quadri Hollow Extrusion</a><br><span class="desc">Creates a Hollow Quadri Extrusion from two input cross sections. Local section coordinate system is equal to the global XY plane.<br>v0.0.20</span></td></tr>
-<tr><td class="ccol_1"><a href="../components/quadri/constructQuadriTexture.html"><div class="ghsprite" style="background: url('../icons/quadri.png') 0px -24px" ></div></a></td><td class="ccol_2"><a href="../components/quadri/constructQuadriTexture.html">Construct Quadri Texture</a><br><span class="desc">Creates a texture which is possible to render in Rhino and transfer to the Quadri model<br>v0.0.20</span></td></tr>
-<tr><td class="ccol_1"><a href="../components/quadri/quadriChainageQuery.html"><div class="ghsprite" style="background: url('../icons/quadri.png') -192px -24px" ></div></a></td><td class="ccol_2"><a href="../components/quadri/quadriChainageQuery.html">Quadri Chainage Query</a><br><span class="desc">Gets 3d points and corresponding tangents from the input Chainage Point List and chainage values.<br>v0.0.20</span></td></tr>
-<tr><td class="ccol_1"><a href="../components/quadri/quadriChainageInterval.html"><div class="ghsprite" style="background: url('../icons/quadri.png') -216px -24px" ></div></a></td><td class="ccol_2"><a href="../components/quadri/quadriChainageInterval.html">Quadri Chainage Interval</a><br><span class="desc">Gets the 3d points of the corresponding chainage interval input.<br>v0.0.20</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/quadri/quadriComputeChainage.html"><div class="ghsprite" style="background: url('../icons/quadri.png') 0px 0px" ></div></a></td><td class="ccol_2"><a href="../components/quadri/quadriComputeChainage.html">Quadri Compute Chainage</a><br><span class="desc">Computes the chainage of the input points projected onto the input alignment.<br>v0.0.22</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/quadri/quadriElevationTask.html"><div class="ghsprite" style="background: url('../icons/quadri.png') -24px 0px" ></div></a></td><td class="ccol_2"><a href="../components/quadri/quadriElevationTask.html">Quadri Elevation Task</a><br><span class="desc">Returns the top most elevation resulting from the computation. Returns -99999 if no elevation is found.<br>v0.0.22</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/quadri/quadriExtrusion.html"><div class="ghsprite" style="background: url('../icons/quadri.png') -96px 0px" ></div></a></td><td class="ccol_2"><a href="../components/quadri/quadriExtrusion.html">Quadri Extrusion</a><br><span class="desc">Creates a Solid Quadri Extrusion from an input cross section. Local section coordinate system is equal to the global XY plane.<br>v0.0.22</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/quadri/quadriHollowExtrusion.html"><div class="ghsprite" style="background: url('../icons/quadri.png') -120px 0px" ></div></a></td><td class="ccol_2"><a href="../components/quadri/quadriHollowExtrusion.html">Quadri Hollow Extrusion</a><br><span class="desc">Creates a Hollow Quadri Extrusion from two input cross sections. Local section coordinate system is equal to the global XY plane.<br>v0.0.22</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/quadri/constructQuadriTexture.html"><div class="ghsprite" style="background: url('../icons/quadri.png') 0px -24px" ></div></a></td><td class="ccol_2"><a href="../components/quadri/constructQuadriTexture.html">Construct Quadri Texture</a><br><span class="desc">Creates a texture which is possible to render in Rhino and transfer to the Quadri model<br>v0.0.22</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/quadri/quadriChainageQuery.html"><div class="ghsprite" style="background: url('../icons/quadri.png') -216px -24px" ></div></a></td><td class="ccol_2"><a href="../components/quadri/quadriChainageQuery.html">Quadri Chainage Query</a><br><span class="desc">Gets 3d points and corresponding tangents from the input Chainage Point List and chainage values.<br>v0.0.22</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/quadri/quadriChainageInterval.html"><div class="ghsprite" style="background: url('../icons/quadri.png') 0px -48px" ></div></a></td><td class="ccol_2"><a href="../components/quadri/quadriChainageInterval.html">Quadri Chainage Interval</a><br><span class="desc">Gets the 3d points of the corresponding chainage interval input.<br>v0.0.22</span></td></tr>
 </tbody>
 </table>
 
@@ -199,28 +216,13 @@
 <h3>3. Export</h3>
 <table class="addon-compos">
 <tbody>
-<tr><td class="ccol_1"><a href="../components/quadri/constructQuadriExportProperties.html"><div class="ghsprite" style="background: url('../icons/quadri.png') -48px 0px" ></div></a></td><td class="ccol_2"><a href="../components/quadri/constructQuadriExportProperties.html">Construct Quadri Export Properties</a><br><span class="desc">Constructs Quadri export properties. <br>Additional properties can be added as two separate lists of corresponding name-value pairs, which this component will merge together.<br>v0.0.20</span></td></tr>
-<tr><td class="ccol_1"><a href="../components/quadri/constructQuadriSolid.html"><div class="ghsprite" style="background: url('../icons/quadri.png') -72px 0px" ></div></a></td><td class="ccol_2"><a href="../components/quadri/constructQuadriSolid.html">Construct Quadri Solid</a><br><span class="desc">Constructs a Quadri Solid ready for export to a Quadri Model based on input mesh or brep.<br>v0.0.20</span></td></tr>
-<tr><td class="ccol_1"><a href="../components/quadri/constructQuadriLine.html"><div class="ghsprite" style="background: url('../icons/quadri.png') -144px 0px" ></div></a></td><td class="ccol_2"><a href="../components/quadri/constructQuadriLine.html">Construct Quadri Line</a><br><span class="desc">Constructs a Quadri Line ready for export to a Quadri Model based on input vertices.<br>v0.0.20</span></td></tr>
-<tr><td class="ccol_1"><a href="../components/quadri/constructQuadriMultipoint.html"><div class="ghsprite" style="background: url('../icons/quadri.png') -168px 0px" ></div></a></td><td class="ccol_2"><a href="../components/quadri/constructQuadriMultipoint.html">Construct Quadri Multipoint</a><br><span class="desc">Constructs Quadri Multipoint ready for export to a Quadri Model based on input list of 3d points.<br>v0.0.20</span></td></tr>
-<tr><td class="ccol_1"><a href="../components/quadri/constructQuadriPoint.html"><div class="ghsprite" style="background: url('../icons/quadri.png') -192px 0px" ></div></a></td><td class="ccol_2"><a href="../components/quadri/constructQuadriPoint.html">Construct Quadri Point</a><br><span class="desc">Constructs a Quadri Surface ready for export to a Quadri Model based on input point.<br>v0.0.20</span></td></tr>
-<tr><td class="ccol_1"><a href="../components/quadri/constructQuadriSurface.html"><div class="ghsprite" style="background: url('../icons/quadri.png') -216px 0px" ></div></a></td><td class="ccol_2"><a href="../components/quadri/constructQuadriSurface.html">Construct Quadri Surface</a><br><span class="desc">Constructs a Quadri Surface ready for export to a Quadri Model based on input mesh or brep.<br>v0.0.20</span></td></tr>
-<tr><td class="ccol_1"><a href="../components/quadri/exportQuadriGeometry.html"><div class="ghsprite" style="background: url('../icons/quadri.png') 0px -48px" ></div></a></td><td class="ccol_2"><a href="../components/quadri/exportQuadriGeometry.html">Export Quadri Geometry</a><br><span class="desc">Exports input Quadri geometry to the input Design Task.<br>v0.0.20</span></td></tr>
-</tbody>
-</table>
-
-</div>
-<div class="cchild">
-<h3>1. Features</h3>
-<table class="addon-compos">
-<tbody>
-<tr><td class="ccol_1"><a href="../components/quadri/quadriFeatureSelector.html"><div class="ghsprite" style="background: url('../icons/quadri.png') -24px -24px" ></div></a></td><td class="ccol_2"><a href="../components/quadri/quadriFeatureSelector.html">Quadri Feature Selector</a><br><span class="desc">Gets Quadri Features from the input Quadri Design Task.<br>v0.0.20</span></td></tr>
-<tr><td class="ccol_1"><a href="../components/quadri/quadriAlignmentSelector.html"><div class="ghsprite" style="background: url('../icons/quadri.png') -48px -24px" ></div></a></td><td class="ccol_2"><a href="../components/quadri/quadriAlignmentSelector.html">Quadri Alignment Selector</a><br><span class="desc">Deconstructs Quadri Alignments.<br>v0.0.20</span></td></tr>
-<tr><td class="ccol_1"><a href="../components/quadri/quadriLineSelector.html"><div class="ghsprite" style="background: url('../icons/quadri.png') -72px -24px" ></div></a></td><td class="ccol_2"><a href="../components/quadri/quadriLineSelector.html">Quadri Line Selector</a><br><span class="desc">Deconstructs Quadri Lines into its vertices.<br>v0.0.20</span></td></tr>
-<tr><td class="ccol_1"><a href="../components/quadri/quadriMultipointSelector.html"><div class="ghsprite" style="background: url('../icons/quadri.png') -96px -24px" ></div></a></td><td class="ccol_2"><a href="../components/quadri/quadriMultipointSelector.html">Quadri Multipoint Selector</a><br><span class="desc">Converts Quadri Multipoints to Rhino points.<br>v0.0.20</span></td></tr>
-<tr><td class="ccol_1"><a href="../components/quadri/quadriPointSelector.html"><div class="ghsprite" style="background: url('../icons/quadri.png') -120px -24px" ></div></a></td><td class="ccol_2"><a href="../components/quadri/quadriPointSelector.html">Quadri Point Selector</a><br><span class="desc">Converts Quadri Points to Rhino points.<br>v0.0.20</span></td></tr>
-<tr><td class="ccol_1"><a href="../components/quadri/quadriSolidSelector.html"><div class="ghsprite" style="background: url('../icons/quadri.png') -144px -24px" ></div></a></td><td class="ccol_2"><a href="../components/quadri/quadriSolidSelector.html">Quadri Solid Selector</a><br><span class="desc">Converts Quadri Solid geometry to Rhino mesh.<br>v0.0.20</span></td></tr>
-<tr><td class="ccol_1"><a href="../components/quadri/quadriDesignTaskSelector.html"><div class="ghsprite" style="background: url('../icons/quadri.png') -168px -24px" ></div></a></td><td class="ccol_2"><a href="../components/quadri/quadriDesignTaskSelector.html">Quadri Design Task Selector</a><br><span class="desc">Gets valid Design Tasks from an open Quadri model. <br>Release notes v0.0.20 using TaskConnector <br>* Fixed bug where Quadri Chainage Interval did not return every point in interval.<br></span></td></tr>
+<tr><td class="ccol_1"><a href="../components/quadri/constructQuadriExportProperties.html"><div class="ghsprite" style="background: url('../icons/quadri.png') -48px 0px" ></div></a></td><td class="ccol_2"><a href="../components/quadri/constructQuadriExportProperties.html">Construct Quadri Export Properties</a><br><span class="desc">Constructs Quadri export properties. <br>Additional properties can be added as two separate lists of corresponding name-value pairs, which this component will merge together.<br>v0.0.22</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/quadri/constructQuadriSolid.html"><div class="ghsprite" style="background: url('../icons/quadri.png') -72px 0px" ></div></a></td><td class="ccol_2"><a href="../components/quadri/constructQuadriSolid.html">Construct Quadri Solid</a><br><span class="desc">Constructs a Quadri Solid ready for export to a Quadri Model based on input mesh or brep.<br>v0.0.22</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/quadri/constructQuadriLine.html"><div class="ghsprite" style="background: url('../icons/quadri.png') -144px 0px" ></div></a></td><td class="ccol_2"><a href="../components/quadri/constructQuadriLine.html">Construct Quadri Line</a><br><span class="desc">Constructs a Quadri Line ready for export to a Quadri Model based on input vertices.<br>v0.0.22</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/quadri/constructQuadriMultipoint.html"><div class="ghsprite" style="background: url('../icons/quadri.png') -168px 0px" ></div></a></td><td class="ccol_2"><a href="../components/quadri/constructQuadriMultipoint.html">Construct Quadri Multipoint</a><br><span class="desc">Constructs Quadri Multipoint ready for export to a Quadri Model based on input list of 3d points.<br>v0.0.22</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/quadri/constructQuadriPoint.html"><div class="ghsprite" style="background: url('../icons/quadri.png') -192px 0px" ></div></a></td><td class="ccol_2"><a href="../components/quadri/constructQuadriPoint.html">Construct Quadri Point</a><br><span class="desc">Constructs a Quadri Surface ready for export to a Quadri Model based on input point.<br>v0.0.22</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/quadri/constructQuadriSurface.html"><div class="ghsprite" style="background: url('../icons/quadri.png') -216px 0px" ></div></a></td><td class="ccol_2"><a href="../components/quadri/constructQuadriSurface.html">Construct Quadri Surface</a><br><span class="desc">Constructs a Quadri Surface ready for export to a Quadri Model based on input mesh or brep.<br>v0.0.22</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/quadri/exportQuadriGeometry.html"><div class="ghsprite" style="background: url('../icons/quadri.png') -24px -48px" ></div></a></td><td class="ccol_2"><a href="../components/quadri/exportQuadriGeometry.html">Export Quadri Geometry</a><br><span class="desc">Exports input Quadri geometry to the input Design Task.<br>v0.0.22</span></td></tr>
 </tbody>
 </table>
 

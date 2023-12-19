@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tweener - Addon for Grasshopper | Grasshopper Docs</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+
+<meta name="description" content="Smooth curve interpolation on surfaces with isoline and texture export. To &quot;tween&quot; means to generate curves that interpolate between given input curves. Often the problem is that the resulting curves overlap. Tweener solves that problem. This Grasshopper/Rhino plugin generates curves that interpolate between: - either any number of closed planar curves, one of which is the outer one and emcompasses all others (This part of Tweener is called the &quot;planar Tweener&quot; even though there are also functions for extruding the curves to 3D), or between: - two arbitrary, not necessarily closed input curves, on any constraint surface given by an input surface brep or surface mesh. The resulting output curves are guaranteed not to cross each other or the input curves, no matter how complex your input is. Moreover, they are guaranteed to be smooth and parametrization-independent. The output is either the curves, or a mesh textured according to the tween gradient. Tweener curves are manipulated by their input curves, just the way usual curves are manipulated by their control points. Thus, Tweener can be thought of as introducing another modeling paradigm for curves. Both the in-built Rhino and Grasshopper tweeners as well as a certain popular Grasshopper plugin don&#39;t leave the control-point paradigm for generating tween curves. As a result, the tween curves start to overlap quickly, as soon as the input becomes somewhat complex. In contrast, this package provides a tweening functionality whose emphasis on the mere curves&#39; shapes is entirely independent on how the curve is controlled or parametrized. Since the tween curves don&#39;t cut each other or the input curves, Tweener lends itself specifically to applications such as general illustration, typography, 3d printing, layer design, CNC, landscape architecture etc - typically in landscapes, you don&#39;t want overhanging cliffs; likewise, a concrete printer usually has difficulties with excessive overhangs. There is a TweenerTopo component that allows to extrude planar tween curves to 3D in order to generate quality landscape isolines, allowing the user to provide an additional &quot;shape&quot; parameter that controls the convexity/concavity of the landscape. Apart from landscape design, the planar Tweener lends itself for interior design where smooth guard curves steer people along the design language of your given interior - think Ikea, or think of the space between facade and core of a high-rise building. Tweener is not limited to planar curves or simple extrusions of planar curves: it can tween between any two arbitrary, not necessarily closed curves, if there is a constraint surface as additional input. Tweener pulls the input curves back to the constraint surface and then generates curves between them, on the surface. Again, overlaps are guaranteed not to occur. Moreover, there is a powerful interactive TweenCurve editing environment that can be reached from the Rhino command line, including a &quot;Fish Eye effect&quot;, and a way to drag the curves without disrupting the aesthetic and visual quality! Please watch the &quot;monkey face&quot; video on food4rhino to see what it does, and type &quot;TweenStartExample&quot; command to start an example editing environment." />
+<meta name="title" content="Tweener - Addon for Grasshopper | Grasshopper Docs" />
+<meta property="og:title" content="Tweener - Addon for Grasshopper | Grasshopper Docs" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://grasshopperdocs.com/addons/tweener.html" />
+<meta property="og:site_name" content="Grasshopper Docs" />
+
+<link href="../style.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+
+<div id="docs">
+
+<div id="docs-head">
+<div id="docs-masthead">
+<p id="docs-sitename"><a href="http://grasshopperdocs.com/">
+	<img id="site-logo-icon" src="/images/logo-icon.png" alt=""></img>
+	<img id="site-logo-text" src="/images/logo-text.png" alt="Grasshopper Docs"></img>
+</a></p>
+<p id="docs-sitedesc">Community documentation for Grasshopper add-ons &amp; plugins</p>
+<div id="docs-sitesearch">
+	<input id="docs-sitesearch-inputbox" type="text" name="docs-sitesearch-inputbox" />
+	<img id="docs-searchicon" src="/images/search.png"/>
+</div>
+</div>
+</div>
+
+<div id="docs-body">
+
+<div class="page">
+
+<div class="content addon-page">
+
+<div class="addon-buttons">
+<a href="https://mathiasfuchs.com/Tweeners.html">Download</a>
+
+</div>
+
+
+<div class="google-ad-sidebar">
+
+<!-- Carbon Ads -->
+<script async type="text/javascript" src="https://cdn.carbonads.com/carbon.js?serve=CK7IC27L&placement=grasshopperdocscom" id="_carbonads_js"></script>
+
+</div>
+
+<div class="addon-header">
+<h1>Tweener</h1>
+<h5>
+<span>ADDON. Version <b>0.7.2182.2398</b>.</span>
+<span>Released on <b>2023-Dec</b>.</span>
+<span>Provides <b>0</b> components.</span>
+<span>Created by <b>Mathias Fuchs</b>.</span>
+<span>Features <b>0</b> video tutorials.</span>
+</h5>
+<h5>Smooth curve interpolation on surfaces with isoline and texture export. To &quot;tween&quot; means to generate curves that interpolate between given input curves. Often the problem is that the resulting curves overlap. Tweener solves that problem. This Grasshopper/Rhino plugin generates curves that interpolate between: - either any number of closed planar curves, one of which is the outer one and emcompasses all others (This part of Tweener is called the &quot;planar Tweener&quot; even though there are also functions for extruding the curves to 3D), or between: - two arbitrary, not necessarily closed input curves, on any constraint surface given by an input surface brep or surface mesh. The resulting output curves are guaranteed not to cross each other or the input curves, no matter how complex your input is. Moreover, they are guaranteed to be smooth and parametrization-independent. The output is either the curves, or a mesh textured according to the tween gradient. Tweener curves are manipulated by their input curves, just the way usual curves are manipulated by their control points. Thus, Tweener can be thought of as introducing another modeling paradigm for curves. Both the in-built Rhino and Grasshopper tweeners as well as a certain popular Grasshopper plugin don&#39;t leave the control-point paradigm for generating tween curves. As a result, the tween curves start to overlap quickly, as soon as the input becomes somewhat complex. In contrast, this package provides a tweening functionality whose emphasis on the mere curves&#39; shapes is entirely independent on how the curve is controlled or parametrized. Since the tween curves don&#39;t cut each other or the input curves, Tweener lends itself specifically to applications such as general illustration, typography, 3d printing, layer design, CNC, landscape architecture etc - typically in landscapes, you don&#39;t want overhanging cliffs; likewise, a concrete printer usually has difficulties with excessive overhangs. There is a TweenerTopo component that allows to extrude planar tween curves to 3D in order to generate quality landscape isolines, allowing the user to provide an additional &quot;shape&quot; parameter that controls the convexity/concavity of the landscape. Apart from landscape design, the planar Tweener lends itself for interior design where smooth guard curves steer people along the design language of your given interior - think Ikea, or think of the space between facade and core of a high-rise building. Tweener is not limited to planar curves or simple extrusions of planar curves: it can tween between any two arbitrary, not necessarily closed curves, if there is a constraint surface as additional input. Tweener pulls the input curves back to the constraint surface and then generates curves between them, on the surface. Again, overlaps are guaranteed not to occur. Moreover, there is a powerful interactive TweenCurve editing environment that can be reached from the Rhino command line, including a &quot;Fish Eye effect&quot;, and a way to drag the curves without disrupting the aesthetic and visual quality! Please watch the &quot;monkey face&quot; video on food4rhino to see what it does, and type &quot;TweenStartExample&quot; command to start an example editing environment.</h5>
+
+<div class="breadcrumb">
+  <a href="../index.html">Component Index</a>
+  <a href="#" class="breadcrumb-nolink">Tweener</a>
+</div>
+
+</div>
+
+<div class="ghbar ghbar-addon-page">
+</div>
+
+
+
+</div>
+
+</div>
+
+</div>
+
+<div id="docs-foot" class="docs-footindex">
+<div id="docs-foot-inner">
+<p class="left">
+Site design © <a href="https://github.com/robinrodricks/">Robin Rodricks</a>. &nbsp;
+Co-created by <a href="http://andrewheumann.com/">Andrew Heumann</a>. &nbsp;
+Tweener and associated data © 2023  <a href="https://mathiasfuchs.com/Tweeners.html">Mathias Fuchs</a>. &nbsp;
+<br>
+Rhinoceros and Grasshopper are registered trademarks of <a href="https://www.rhino3d.com/">Robert McNeel & Associates</a>.&nbsp;
+Hosted by <a href="http://www.github.com/">GitHub</a> 
+</p>
+<p class="right docs-lightfont">
+
+<a href="https://github.com/grasshopper3d/GrasshopperDocsSite/issues/new">Report an Issue</a> &nbsp;|&nbsp;
+<a href="/termsOfService.html">Terms of Service</a>
+</p>
+
+</div>
+
+
+
+</div>
+</div>
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DX6TG16YN7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DX6TG16YN7');
+</script>
+
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/jquery-autocomplete.min.js"></script>
+<script type="text/javascript" src="/js/app-searchbar.js"></script>
+
+    </body>
+</html>

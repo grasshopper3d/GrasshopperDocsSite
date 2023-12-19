@@ -7,7 +7,7 @@
 <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 <link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
 
-<meta name="description" content="Gets valid Design Tasks from an open Quadri model. &lt;br&gt;Release notes v0.0.20 using TaskConnector &lt;br&gt;* Fixed bug where Quadri Chainage Interval did not return every point in interval.&lt;br&gt;" />
+<meta name="description" content="Gets valid Design Tasks from an open Quadri model. &lt;br&gt;Release notes v0.0.22 using TaskConnector &lt;br&gt;* Added output node to Select Quadri Feature component, separating features and tasks.&lt;br&gt;* Added refresh toggle on Select Quadri Task to facilitate workflow where tasks needs to be updated from outside the script.&lt;br&gt;* Added new component Quadri Model Info which presents info available about the current active model." />
 <meta name="title" content="Quadri Design Task Selector - Quadri - Component for Grasshopper | Grasshopper Docs" />
 <meta property="og:title" content="Quadri Design Task Selector - Quadri - Component for Grasshopper | Grasshopper Docs" />
 <meta property="og:type" content="website" />
@@ -49,25 +49,26 @@
 <tr>
 <td>
 <div class="ghcolumn">
-<a href="../../components/quadri/quadriFeatureSelector.html"><div class="ghsprite" style="background: url('../../icons/quadri.png') -24px -24px" data-toptip="Quadri Feature Selector"></div></a>
-<a href="../../components/quadri/quadriAlignmentSelector.html"><div class="ghsprite" style="background: url('../../icons/quadri.png') -48px -24px" data-downtip="Quadri Alignment Selector"></div></a>
+<a href="../../components/quadri/quadriModelInfo.html"><div class="ghsprite" style="background: url('../../icons/quadri.png') -24px -24px" data-toptip="Quadri Model Info"></div></a>
+<a href="../../components/quadri/quadriFeatureSelector.html"><div class="ghsprite" style="background: url('../../icons/quadri.png') -48px -24px" data-downtip="Quadri Feature Selector"></div></a>
 </div>
 </td>
 <td>
 <div class="ghcolumn">
-<a href="../../components/quadri/quadriLineSelector.html"><div class="ghsprite" style="background: url('../../icons/quadri.png') -72px -24px" data-toptip="Quadri Line Selector"></div></a>
-<a href="../../components/quadri/quadriMultipointSelector.html"><div class="ghsprite" style="background: url('../../icons/quadri.png') -96px -24px" data-downtip="Quadri Multipoint Selector"></div></a>
+<a href="../../components/quadri/quadriAlignmentSelector.html"><div class="ghsprite" style="background: url('../../icons/quadri.png') -72px -24px" data-toptip="Quadri Alignment Selector"></div></a>
+<a href="../../components/quadri/quadriLineSelector.html"><div class="ghsprite" style="background: url('../../icons/quadri.png') -96px -24px" data-downtip="Quadri Line Selector"></div></a>
 </div>
 </td>
 <td>
 <div class="ghcolumn">
-<a href="../../components/quadri/quadriPointSelector.html"><div class="ghsprite" style="background: url('../../icons/quadri.png') -120px -24px" data-toptip="Quadri Point Selector"></div></a>
-<a href="../../components/quadri/quadriSolidSelector.html"><div class="ghsprite" style="background: url('../../icons/quadri.png') -144px -24px" data-downtip="Quadri Solid Selector"></div></a>
+<a href="../../components/quadri/quadriMultipointSelector.html"><div class="ghsprite" style="background: url('../../icons/quadri.png') -120px -24px" data-toptip="Quadri Multipoint Selector"></div></a>
+<a href="../../components/quadri/quadriPointSelector.html"><div class="ghsprite" style="background: url('../../icons/quadri.png') -144px -24px" data-downtip="Quadri Point Selector"></div></a>
 </div>
 </td>
 <td>
 <div class="ghcolumn">
-<a href="../../components/quadri/quadriDesignTaskSelector.html"><div class="ghsprite" style="background: url('../../icons/quadri.png') -168px -24px" data-toptip="Quadri Design Task Selector"></div></a>
+<a href="../../components/quadri/quadriSolidSelector.html"><div class="ghsprite" style="background: url('../../icons/quadri.png') -168px -24px" data-toptip="Quadri Solid Selector"></div></a>
+<a href="../../components/quadri/quadriDesignTaskSelector.html"><div class="ghsprite" style="background: url('../../icons/quadri.png') -192px -24px" data-downtip="Quadri Design Task Selector"></div></a>
 </div>
 </td>
 </tr>
@@ -96,12 +97,12 @@
 <td>
 <div class="ghcolumn">
 <a href="../../components/quadri/constructQuadriTexture.html"><div class="ghsprite" style="background: url('../../icons/quadri.png') 0px -24px" data-toptip="Construct Quadri Texture"></div></a>
-<a href="../../components/quadri/quadriChainageQuery.html"><div class="ghsprite" style="background: url('../../icons/quadri.png') -192px -24px" data-downtip="Quadri Chainage Query"></div></a>
+<a href="../../components/quadri/quadriChainageQuery.html"><div class="ghsprite" style="background: url('../../icons/quadri.png') -216px -24px" data-downtip="Quadri Chainage Query"></div></a>
 </div>
 </td>
 <td>
 <div class="ghcolumn">
-<a href="../../components/quadri/quadriChainageInterval.html"><div class="ghsprite" style="background: url('../../icons/quadri.png') -216px -24px" data-toptip="Quadri Chainage Interval"></div></a>
+<a href="../../components/quadri/quadriChainageInterval.html"><div class="ghsprite" style="background: url('../../icons/quadri.png') 0px -48px" data-toptip="Quadri Chainage Interval"></div></a>
 </div>
 </td>
 </tr>
@@ -135,7 +136,7 @@
 </td>
 <td>
 <div class="ghcolumn">
-<a href="../../components/quadri/exportQuadriGeometry.html"><div class="ghsprite" style="background: url('../../icons/quadri.png') 0px -48px" data-toptip="Export Quadri Geometry"></div></a>
+<a href="../../components/quadri/exportQuadriGeometry.html"><div class="ghsprite" style="background: url('../../icons/quadri.png') -24px -48px" data-toptip="Export Quadri Geometry"></div></a>
 </div>
 </td>
 </tr>
@@ -163,7 +164,7 @@
 </div>
 
 <div class="compo-header">
-<h1><div class="ghsprite" style="background: url('../../icons/quadri.png') -168px -24px" ></div> Quadri Design Task Selector</h1>
+<h1><div class="ghsprite" style="background: url('../../icons/quadri.png') -192px -24px" ></div> Quadri Design Task Selector</h1>
 
 <div class="breadcrumb">
  <a href="../../index.html">Component Index</a>
@@ -171,7 +172,17 @@
 </div>
 
 </div>
-<h3>Gets valid Design Tasks from an open Quadri model. <br>Release notes v0.0.20 using TaskConnector <br>* Fixed bug where Quadri Chainage Interval did not return every point in interval.<br></h3>
+<h3>Gets valid Design Tasks from an open Quadri model. <br>Release notes v0.0.22 using TaskConnector <br>* Added output node to Select Quadri Feature component, separating features and tasks.<br>* Added refresh toggle on Select Quadri Task to facilitate workflow where tasks needs to be updated from outside the script.<br>* Added new component Quadri Model Info which presents info available about the current active model.</h3>
+<h2>Inputs</h2>
+<table class="params-table input-params">
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Refresh</b></td><td>R</td><td>Change or reset this boolean value to make component refresh content.</td><td>Boolean</td></tr>
+</tbody>
+</table>
+
 <h2>Outputs</h2>
 <table class="params-table output-params">
 <thead>

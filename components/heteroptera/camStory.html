@@ -1,0 +1,946 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cam Story - Heteroptera - Component for Grasshopper | Grasshopper Docs</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+
+<meta name="description" content="Add Frame" />
+<meta name="title" content="Cam Story - Heteroptera - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:title" content="Cam Story - Heteroptera - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://grasshopperdocs.com/components/heteroptera/camStory.html" />
+<meta property="og:site_name" content="Grasshopper Docs" />
+
+<link href="../../style.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+
+<div id="docs">
+
+<div id="docs-head">
+<div id="docs-masthead">
+<p id="docs-sitename"><a href="http://grasshopperdocs.com/">
+	<img id="site-logo-icon" src="/images/logo-icon.png" alt=""></img>
+	<img id="site-logo-text" src="/images/logo-text.png" alt="Grasshopper Docs"></img>
+</a></p>
+<p id="docs-sitedesc">Community documentation for Grasshopper add-ons &amp; plugins</p>
+<div id="docs-sitesearch">
+	<input id="docs-sitesearch-inputbox" type="text" name="docs-sitesearch-inputbox" />
+	<img id="docs-searchicon" src="/images/search.png"/>
+</div>
+</div>
+</div>
+
+<div id="docs-body">
+
+<div class="page">
+
+<div class="content compo-page">
+
+<div class="ghbar ">
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/anchorSweep.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -96px 0px" data-toptip="Anchor Sweep"></div></a>
+<a href="../../components/heteroptera/center.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -96px -24px" data-downtip="Center"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/directionalCurve.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -96px -48px" data-toptip="Directional Curve"></div></a>
+<a href="../../components/heteroptera/evaluateRectangle.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -120px -72px" data-downtip="Evaluate Rectangle"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/fastSweep.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -216px -72px" data-toptip="Fast Sweep"></div></a>
+<a href="../../components/heteroptera/findRegions.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -96px -96px" data-downtip="Find Regions"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/gridInRectangle.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -48px -120px" data-toptip="Grid In Rectangle"></div></a>
+<a href="../../components/heteroptera/groupByAxis.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -72px -120px" data-downtip="Group By Axis"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/modularPoints.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -144px -144px" data-toptip="Modular Points"></div></a>
+<a href="../../components/heteroptera/overlay.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -216px -168px" data-downtip="Overlay"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/planarizeCurve.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -24px -192px" data-toptip="Planarize Curve"></div></a>
+<a href="../../components/heteroptera/shellFromGrid.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -168px -216px" data-downtip="Shell From Grid"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/bioAttractor.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -96px -336px" data-toptip="Bio Attractor"></div></a>
+<a href="../../components/heteroptera/geometricRegion.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -120px -336px" data-downtip="Geometric Region"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/modularpoints.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -144px -336px" data-toptip="Modularpoints"></div></a>
+<a href="../../components/heteroptera/numberGrid.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -168px -336px" data-downtip="Number Grid"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/projectVector.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -192px -336px" data-toptip="Project Vector"></div></a>
+<a href="../../components/heteroptera/hetrosweep.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -216px -336px" data-downtip="Hetrosweep"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/curvePlanarizer.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') 0px -360px" data-toptip="Curve Planarizer"></div></a>
+<a href="../../components/heteroptera/evaluateRect.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -24px -360px" data-downtip="Evaluate Rect"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/bulger.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -48px -360px" data-toptip="Bulger"></div></a>
+<a href="../../components/heteroptera/rectangleGrid.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -72px -360px" data-downtip="Rectangle Grid"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="11">
+Geometry
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/poolController.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -216px -288px" data-toptip="Pool Controller"></div></a>
+<a href="../../components/heteroptera/httpRequest.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -24px -312px" data-downtip="Http_Request"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+Heteroptera
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/selection.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -48px -312px" data-toptip="Selection"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+interactively update with selection change
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/closestNumbers.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -144px -24px" data-toptip="Closest Numbers"></div></a>
+<a href="../../components/heteroptera/expandDomain.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -192px -72px" data-downtip="Expand Domain"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/graphMapper.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') 0px -120px" data-toptip="Graph-Mapper +"></div></a>
+<a href="../../components/heteroptera/inCommonNumbers.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -120px -120px" data-downtip="In-Common Numbers"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/inclineValue.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -144px -120px" data-toptip="Incline Value"></div></a>
+<a href="../../components/heteroptera/interpolate.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -192px -120px" data-downtip="Interpolate +"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/intersectDomains.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -216px -120px" data-toptip="Intersect Domains"></div></a>
+<a href="../../components/heteroptera/intervalConnection.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') 0px -144px" data-downtip="Interval Connection"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/minMax.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -48px -144px" data-toptip="Min / Max"></div></a>
+<a href="../../components/heteroptera/normalizer.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -48px -168px" data-downtip="Normalizer"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/numberDigitizer.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -96px -168px" data-toptip="Number Digitizer"></div></a>
+<a href="../../components/heteroptera/numberLimiter.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -120px -168px" data-downtip="Number Limiter"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/numbersOnGrid.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -144px -168px" data-toptip="Numbers On Grid"></div></a>
+<a href="../../components/heteroptera/subtractDomains.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -72px -240px" data-downtip="Subtract Domains"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/symmetricDomain.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -120px -240px" data-toptip="Symmetric Domain"></div></a>
+<a href="../../components/heteroptera/symmetricDomainExpand.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -144px -240px" data-downtip="Symmetric Domain Expand"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/unionIntervals.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -24px -288px" data-toptip="Union Intervals"></div></a>
+<a href="../../components/heteroptera/weightedAverage.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -120px -288px" data-downtip="Weighted Average +"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/symmetricalExtend.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -120px -432px" data-toptip="Symmetrical Extend"></div></a>
+<a href="../../components/heteroptera/intervalsUnion.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -144px -432px" data-downtip="Intervals Union"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/heteroMapper.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -168px -432px" data-toptip="Hetero Mapper"></div></a>
+<a href="../../components/heteroptera/listNormalizer.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -192px -432px" data-downtip="List Normalizer"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/intersectDomain.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -216px -432px" data-toptip="Intersect Domain"></div></a>
+<a href="../../components/heteroptera/minMax.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') 0px -456px" data-downtip="Min/Max"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/intervalsSubtract.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -24px -456px" data-toptip="Intervals Subtract"></div></a>
+<a href="../../components/heteroptera/inCommonNumbers.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -48px -456px" data-downtip="InCommon Numbers"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/numbersBiaser.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -72px -456px" data-toptip="Numbers Biaser"></div></a>
+<a href="../../components/heteroptera/intervalExpand.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -96px -456px" data-downtip="Interval Expand"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/symmetricalDomain.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -120px -456px" data-toptip="Symmetrical Domain"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="15">
+Maths
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/rebuildNetwork.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -72px -408px" data-toptip="Rebuild Network"></div></a>
+<a href="../../components/heteroptera/interTopology.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -96px -408px" data-downtip="Inter Topology"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/constructHyperIndex.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -120px -408px" data-toptip="Construct HyperIndex"></div></a>
+<a href="../../components/heteroptera/networkPathFinder.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -144px -408px" data-downtip="Network Path Finder"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/incestuousNetwork.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -168px -408px" data-toptip="Incestuous Network"></div></a>
+<a href="../../components/heteroptera/interTopDraw.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -192px -408px" data-downtip="InterTopDraw"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/pointEnumerator.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -216px -408px" data-toptip="Point Enumerator"></div></a>
+<a href="../../components/heteroptera/topologicRegion.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') 0px -432px" data-downtip="Topologic Region"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/networkRegion.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -24px -432px" data-toptip="Network Region"></div></a>
+<a href="../../components/heteroptera/nonincestuousNetwork.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -48px -432px" data-downtip="Non-incestuous Network"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/networkEditor.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -72px -432px" data-toptip="Network Editor"></div></a>
+<a href="../../components/heteroptera/topologyGraphDisplay.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -96px -432px" data-downtip="Topology Graph Display"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="6">
+Network
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/adjacentItemsMatcher.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') 0px 0px" data-toptip="Adjacent Items Matcher"></div></a>
+<a href="../../components/heteroptera/booleanTopology.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -192px 0px" data-downtip="Boolean Topology"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/cellFromCoordinatedNetwork.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -48px -24px" data-toptip="Cell from Coordinated Network"></div></a>
+<a href="../../components/heteroptera/cellFromTopology.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -72px -24px" data-downtip="Cell from Topology"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/constructHyperIndex.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -168px -24px" data-toptip="Construct Hyper-Index"></div></a>
+<a href="../../components/heteroptera/containerItemsMatcher.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -216px -24px" data-downtip="Container Items Matcher"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/decomposeDualNetwork.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -72px -48px" data-toptip="Decompose Dual-Network"></div></a>
+<a href="../../components/heteroptera/displayArrowLines.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -120px -48px" data-downtip="Display ArrowLines"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/displayTopology.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -216px -48px" data-toptip="Display Topology"></div></a>
+<a href="../../components/heteroptera/enumerator.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -72px -72px" data-downtip="Enumerator"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/flattenInterNetwork.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -120px -96px" data-toptip="Flatten Inter-Network"></div></a>
+<a href="../../components/heteroptera/interNetwortTopology.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -168px -120px" data-downtip="Inter-Networt Topology"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/minimumSpanningTree.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -72px -144px" data-toptip="Minimum Spanning Tree"></div></a>
+<a href="../../components/heteroptera/modifyInterNetwork.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -96px -144px" data-downtip="Modify Inter-Network"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/modifyTopology.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -120px -144px" data-toptip="Modify Topology"></div></a>
+<a href="../../components/heteroptera/networkFromGeometry.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -192px -144px" data-downtip="Network From Geometry"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/networkFromLines.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -216px -144px" data-toptip="Network From Lines"></div></a>
+<a href="../../components/heteroptera/networtMatchingPath.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') 0px -168px" data-downtip="Networt Matching Path"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/proximityInterNetwork.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -168px -192px" data-toptip="Proximity Inter-Network"></div></a>
+<a href="../../components/heteroptera/proximityNetwork.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -192px -192px" data-downtip="Proximity Network"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/reconstructTopology.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -120px -216px" data-toptip="Reconstruct Topology"></div></a>
+<a href="../../components/heteroptera/shortestRoute.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -192px -216px" data-downtip="Shortest Route"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/spaceSyntax.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -24px -240px" data-toptip="Space Syntax"></div></a>
+<a href="../../components/heteroptera/topologyEmbody.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -72px -264px" data-downtip="Topology Embody"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/topologyOfAdjacencies.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -96px -264px" data-toptip="Topology Of Adjacencies"></div></a>
+<a href="../../components/heteroptera/travellingSalesmanProblem.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -192px -264px" data-downtip="Travelling Salesman Problem"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/unflattenInterNetwork.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') 0px -288px" data-toptip="Unflatten Inter-Network"></div></a>
+<a href="../../components/heteroptera/weightedMinSpanTree.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -144px -288px" data-downtip="Weighted MinSpanTree"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="14">
+Networks
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/shadow.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') 0px -312px" data-toptip="Shadow"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+put it into interactive computation mode
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/camStory.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -168px -288px" data-toptip="Cam Story"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+put this on auto sequenced mode or choose different available 'Interpolation modes'
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/chancyAllocator.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -144px -456px" data-toptip="Chancy Allocator"></div></a>
+<a href="../../components/heteroptera/geometricalPossibility.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -168px -456px" data-downtip="Geometrical Possibility"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/dice.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -192px -456px" data-toptip="Dice"></div></a>
+<a href="../../components/heteroptera/biasedDistributer.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -216px -456px" data-downtip="Biased Distributer"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/random.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') 0px -480px" data-toptip="Random"></div></a>
+<a href="../../components/heteroptera/noiseOscillator.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -24px -480px" data-downtip="Noise Oscillator"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/randomVector.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -48px -480px" data-toptip="Random Vector"></div></a>
+<a href="../../components/heteroptera/curveEmitter.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -72px -480px" data-downtip="Curve Emitter"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/seedGenerator.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -96px -480px" data-toptip="Seed Generator"></div></a>
+<a href="../../components/heteroptera/wanderingVector.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -120px -480px" data-downtip="Wandering Vector"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/attractorGeometricalPossibility.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -144px -480px" data-toptip="Attractor Geometrical Possibility"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="6">
+Random
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/capacitor.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') 0px -24px" data-toptip="Capacitor"></div></a>
+<a href="../../components/heteroptera/displayParticles.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -168px -48px" data-downtip="Display Particles"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/easeChanges.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -24px -72px" data-toptip="Ease Changes"></div></a>
+<a href="../../components/heteroptera/eventGate.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -144px -72px" data-downtip="Event Gate"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/eventToggle.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -168px -72px" data-toptip="Event Toggle"></div></a>
+<a href="../../components/heteroptera/glitchReduction.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -216px -96px" data-downtip="Glitch Reduction"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/holdingGate.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -96px -120px" data-toptip="Holding Gate"></div></a>
+<a href="../../components/heteroptera/meshTraveler.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -24px -144px" data-downtip="Mesh Traveler"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/numberBuffer.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -72px -168px" data-toptip="Number Buffer"></div></a>
+<a href="../../components/heteroptera/oilCan.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -168px -168px" data-downtip="Oil-Can"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/particleTrailer.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') 0px -192px" data-toptip="Particle Trailer"></div></a>
+<a href="../../components/heteroptera/streamFreezeGate.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -48px -240px" data-downtip="Stream Freeze / Gate"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/tapBuffer.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -168px -240px" data-toptip="Tap Buffer"></div></a>
+<a href="../../components/heteroptera/timeShifter.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -192px -240px" data-downtip="Time-Shifter"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/vectorBuffer.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -48px -288px" data-toptip="Vector Buffer"></div></a>
+<a href="../../components/heteroptera/massAdditiveNumbersBuffer.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -72px -312px" data-downtip="Mass Additive Numbers Buffer"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/ease.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -96px -312px" data-toptip="Ease"></div></a>
+<a href="../../components/heteroptera/massAdditiveVectorsBuffer.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -120px -312px" data-downtip="Mass Additive Vectors Buffer"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/oilCan.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -144px -312px" data-toptip="Oil.Can"></div></a>
+<a href="../../components/heteroptera/timeShifter.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -168px -312px" data-downtip="TimeShifter"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/eventSwitch.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -192px -312px" data-toptip="Event Switch"></div></a>
+<a href="../../components/heteroptera/agentDisplay.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -216px -312px" data-downtip="Agent Display"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/tapBuffer.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') 0px -336px" data-toptip="TapBuffer"></div></a>
+<a href="../../components/heteroptera/glitchReduction.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -24px -336px" data-downtip="GlitchReduction"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/agentTrailer.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -48px -336px" data-toptip="Agent Trailer"></div></a>
+<a href="../../components/heteroptera/streamFreezeGate.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -72px -336px" data-downtip="Stream Freeze/Gate"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="13">
+Streaming
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/capture.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -192px -288px" data-toptip="Capture"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+to automatic mode or choose the other options
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/biasedDistribution.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -144px 0px" data-toptip="Biased Distribution"></div></a>
+<a href="../../components/heteroptera/carelessRange.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -24px -24px" data-downtip="Careless Range"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/cheaterDice.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -120px -24px" data-toptip="Cheater Dice"></div></a>
+<a href="../../components/heteroptera/curvyPointEmiter.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -48px -48px" data-downtip="Curvy Point-Emiter"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/gaussianRandom.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -192px -96px" data-toptip="Gaussian Random"></div></a>
+<a href="../../components/heteroptera/noiseOscilator.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -24px -168px" data-downtip="Noise Oscilator"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/pointEmitter.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -72px -192px" data-toptip="Point Emitter"></div></a>
+<a href="../../components/heteroptera/positionalPossibility.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -96px -192px" data-downtip="Positional Possibility"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/possibilityByAttractor.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -120px -192px" data-toptip="Possibility By Attractor"></div></a>
+<a href="../../components/heteroptera/randomDirection.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -24px -216px" data-downtip="Random Direction"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/randomPlane.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -48px -216px" data-toptip="Random Plane"></div></a>
+<a href="../../components/heteroptera/randomPosition.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -72px -216px" data-downtip="Random Position"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/randomizeNumbers.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -96px -216px" data-toptip="Randomize Numbers"></div></a>
+<a href="../../components/heteroptera/slingshotAllocator.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') 0px -240px" data-downtip="Slingshot Allocator"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/wanderingVectors.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -72px -288px" data-toptip="Wandering Vectors"></div></a>
+<a href="../../components/heteroptera/weightedAllocator.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -96px -288px" data-downtip="Weighted Allocator"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="8">
+Uncertainty
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/allocateByIndex.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -24px 0px" data-toptip="Allocate By Index"></div></a>
+<a href="../../components/heteroptera/allocateByKey.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -48px 0px" data-downtip="Allocate By Key"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/allocateByValue.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -72px 0px" data-toptip="Allocate By Value"></div></a>
+<a href="../../components/heteroptera/encryptDecrypt.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -48px -72px" data-downtip="Encrypt / Decrypt"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/graphMapperController.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -24px -120px" data-toptip="GraphMapper Controller"></div></a>
+<a href="../../components/heteroptera/toolsEmptyStructure.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -216px -240px" data-downtip="Tools EmptyStructure"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/toolsExtendBranch.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') 0px -264px" data-toptip="Tools ExtendBranch"></div></a>
+<a href="../../components/heteroptera/toolsHeteroDispatch.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -24px -264px" data-downtip="ToolsHeteroDispatch"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/toolsUnicode.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -48px -264px" data-toptip="ToolsUnicode"></div></a>
+<a href="../../components/heteroptera/replaceObjects.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -96px -360px" data-downtip="Replace Objects"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/unicode.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -120px -360px" data-toptip="Unicode"></div></a>
+<a href="../../components/heteroptera/androidUDPListener.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -144px -360px" data-downtip="Android UDP listener"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/ovulate.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -168px -360px" data-toptip="Ovulate"></div></a>
+<a href="../../components/heteroptera/cameraStory.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -192px -360px" data-downtip="Camera Story"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/captureBaked.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -216px -360px" data-toptip="Capture Baked"></div></a>
+<a href="../../components/heteroptera/cameraCrane.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') 0px -384px" data-downtip="Camera Crane"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/domainAllocator.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -24px -384px" data-toptip="Domain Allocator"></div></a>
+<a href="../../components/heteroptera/itemPicker.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -48px -384px" data-downtip="Item Picker"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/indexAllocator.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -72px -384px" data-toptip="Index Allocator"></div></a>
+<a href="../../components/heteroptera/genePoolController.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -96px -384px" data-downtip="GenePool Controller"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/group.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -120px -384px" data-toptip="Group"></div></a>
+<a href="../../components/heteroptera/quickBaker.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -144px -384px" data-downtip="Quick Baker"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/textBaker.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -168px -384px" data-toptip="Text Baker"></div></a>
+<a href="../../components/heteroptera/transform.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -192px -384px" data-downtip="Transform"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/pickSelection.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -216px -384px" data-toptip="Pick Selection"></div></a>
+<a href="../../components/heteroptera/encryptionDecryption.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') 0px -408px" data-downtip="Encryption/Decryption"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/dispatchUnweave.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -24px -408px" data-toptip="Dispatch / Unweave"></div></a>
+<a href="../../components/heteroptera/keyAllocator.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -48px -408px" data-downtip="Key Allocator"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="14">
+Utilities
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/attractor.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -120px 0px" data-toptip="Attractor"></div></a>
+<a href="../../components/heteroptera/bionicAttractor.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -168px 0px" data-downtip="Bionic Attractor"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/bulge.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -216px 0px" data-toptip="Bulge"></div></a>
+<a href="../../components/heteroptera/constructMetaVector.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -192px -24px" data-downtip="Construct Meta-Vector"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/curvatureField.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') 0px -48px" data-toptip="Curvature Field"></div></a>
+<a href="../../components/heteroptera/curveAlongField.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -24px -48px" data-downtip="Curve Along Field"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/displayFied.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -144px -48px" data-toptip="Display Fied"></div></a>
+<a href="../../components/heteroptera/displayTensors.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -192px -48px" data-downtip="Display Tensors"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/dragField.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') 0px -72px" data-toptip="Drag Field"></div></a>
+<a href="../../components/heteroptera/eponentialEffectiveVectors.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -96px -72px" data-downtip="Eponential Effective Vectors"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/fieldBooster.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') 0px -96px" data-toptip="Field Booster"></div></a>
+<a href="../../components/heteroptera/fieldContour.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -24px -96px" data-downtip="Field Contour"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/fieldProjector.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -48px -96px" data-toptip="Field Projector"></div></a>
+<a href="../../components/heteroptera/fieldWiper.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -72px -96px" data-downtip="Field Wiper"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/gaussianEffectField.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -144px -96px" data-toptip="Gaussian Effect Field"></div></a>
+<a href="../../components/heteroptera/gaussianEffectiveVectors.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -168px -96px" data-downtip="Gaussian Effective Vectors"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/monotoneField.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -168px -144px" data-toptip="Monotone Field"></div></a>
+<a href="../../components/heteroptera/onCurveField.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -192px -168px" data-downtip="On-Curve Field"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/planeByLine.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -48px -192px" data-toptip="Plane By Line"></div></a>
+<a href="../../components/heteroptera/projectOnVector.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -144px -192px" data-downtip="Project On Vector"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/radarVector.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -216px -192px" data-toptip="Radar Vector"></div></a>
+<a href="../../components/heteroptera/radioField.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') 0px -216px" data-downtip="Radio Field"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/rotateField.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -144px -216px" data-toptip="Rotate Field"></div></a>
+<a href="../../components/heteroptera/similarVectors.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -216px -216px" data-downtip="Similar Vectors"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/surfaceCurvatureField.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -96px -240px" data-toptip="Surface Curvature Field"></div></a>
+<a href="../../components/heteroptera/transformByField.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -120px -264px" data-downtip="Transform By Field"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/translatedPlane.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -144px -264px" data-toptip="Translated Plane"></div></a>
+<a href="../../components/heteroptera/trapField.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -168px -264px" data-downtip="Trap Field"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heteroptera/traverseOnField.html"><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -216px -264px" data-toptip="Traverse On Field"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="15">
+Vectors
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+
+<div class="addon-buttons">
+<a href="#tutorials">Video Tutorials</a>
+<a href="https://www.food4rhino.com/app/heteroptera">Download</a>
+
+</div>
+
+
+<div class="google-ad-sidebar">
+
+<!-- Carbon Ads -->
+<script async type="text/javascript" src="https://cdn.carbonads.com/carbon.js?serve=CK7IC27L&placement=grasshopperdocscom" id="_carbonads_js"></script>
+
+</div>
+
+<div class="compo-header">
+<h1><div class="ghsprite" style="background: url('../../icons/heteroptera.png') -168px -288px" ></div> Cam Story</h1>
+
+<div class="breadcrumb">
+ <a href="../../index.html">Component Index</a>
+  <a href="../../addons/heteroptera.html">Heteroptera</a><a href="#" class="breadcrumb-nolink">put this on auto sequenced mode or choose different available 'Interpolation modes'</a><a href="#" class="breadcrumb-nolink">Create a storyline for camera.</a>
+</div>
+
+</div>
+<h3>Add Frame</h3>
+<h2>Inputs</h2>
+<table class="params-table input-params">
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Time</b></td><td>T</td><td>The value in the timeline must be 0~1 in Normalized mode and not larger than the last frame's index in Frame-Index mode</td><td>Number</td></tr>
+<tr><td><b>Control</b></td><td>C</td><td>Control Parameter which could be used for  reset or holding  add key..\n   0: Edge State → Ready to add frame via Add_Frame button \n   1: Reset → Clearing all saved key frames from memory\n   2: Hold → Adding frame in each iteration\n</td><td>Integer</td></tr>
+</tbody>
+</table>
+
+<div class="ghtutorials">
+<a name="tutorials"></a>
+<h2>Video Tutorials</h2>
+<div style="display:none;" class="html5gallery" data-skin="verticallight" data-width="1000" data-height="600" data-thumbwidth="280" data-thumbheight="70" data-thumbgap="5">
+
+<a href="http://www.youtube.com/embed/xsFEczM2OHc"><img src="http://img.youtube.com/vi/xsFEczM2OHc/1.jpg" alt="Tower Tutorial Heteroptera"></a>
+<a href="http://www.youtube.com/embed/-Yfnpm_vzjk"><img src="http://img.youtube.com/vi/-Yfnpm_vzjk/1.jpg" alt="Animation Tutorial 2 - Youtube"></a>
+
+
+</div>
+</div>
+
+<script type="text/javascript" src="/html5gallery/jquery.js"></script>
+<script type="text/javascript" src="/html5gallery/html5gallery.js"></script>
+
+
+</div>
+
+</div>
+
+</div>
+
+<div id="docs-foot" class="docs-footindex">
+<div id="docs-foot-inner">
+<p class="left">
+Site design © <a href="https://github.com/robinrodricks/">Robin Rodricks</a>. &nbsp;
+
+Heteroptera and associated data © 2023  <a href="https://www.food4rhino.com/app/heteroptera">Amin Bahrami (Helioripple Studio)</a>. &nbsp;
+<br>
+Rhinoceros and Grasshopper are registered trademarks of <a href="https://www.rhino3d.com/">Robert McNeel & Associates</a>.&nbsp;
+Hosted by <a href="http://www.github.com/">GitHub</a> 
+</p>
+<p class="right docs-lightfont">
+
+<a href="https://github.com/grasshopper3d/GrasshopperDocsSite/issues/new">Report an Issue</a> &nbsp;|&nbsp;
+<a href="/termsOfService.html">Terms of Service</a>
+</p>
+
+</div>
+
+
+
+</div>
+</div>
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DX6TG16YN7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DX6TG16YN7');
+</script>
+
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/jquery-autocomplete.min.js"></script>
+<script type="text/javascript" src="/js/app-searchbar.js"></script>
+
+    </body>
+</html>

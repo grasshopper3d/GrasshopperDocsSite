@@ -1,0 +1,816 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Select Columns - LunchBox - Component for Grasshopper | Grasshopper Docs</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+
+<meta name="description" content="Select columns from a data set." />
+<meta name="title" content="Select Columns - LunchBox - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:title" content="Select Columns - LunchBox - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://grasshopperdocs.com/components/lunchbox/selectColumns.html" />
+<meta property="og:site_name" content="Grasshopper Docs" />
+
+<link href="../../style.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+
+<div id="docs">
+
+<div id="docs-head">
+<div id="docs-masthead">
+<p id="docs-sitename"><a href="http://grasshopperdocs.com/">
+	<img id="site-logo-icon" src="/images/logo-icon.png" alt=""></img>
+	<img id="site-logo-text" src="/images/logo-text.png" alt="Grasshopper Docs"></img>
+</a></p>
+<p id="docs-sitedesc">Community documentation for Grasshopper add-ons &amp; plugins</p>
+<div id="docs-sitesearch">
+	<input id="docs-sitesearch-inputbox" type="text" name="docs-sitesearch-inputbox" />
+	<img id="docs-searchicon" src="/images/search.png"/>
+</div>
+</div>
+</div>
+
+<div id="docs-body">
+
+<div class="page">
+
+<div class="content compo-page">
+
+<div class="ghbar ">
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/lunchbox/createChart.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') 0px 0px" data-toptip="Create Chart"></div></a>
+<a href="../../components/lunchbox/createDataGrid.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -24px 0px" data-downtip="Create Data Grid"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/lunchbox/createDataSet.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -48px 0px" data-toptip="Create DataSet"></div></a>
+<a href="../../components/lunchbox/createDataTable.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -72px 0px" data-downtip="Create DataTable"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/lunchbox/createCSV.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -96px 0px" data-toptip="Create CSV"></div></a>
+<a href="../../components/lunchbox/readCSV.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -120px 0px" data-downtip="Read CSV"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/lunchbox/convertJSONToXML.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -144px 0px" data-toptip="Convert JSON to XML"></div></a>
+<a href="../../components/lunchbox/createXML.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -168px 0px" data-downtip="Create XML"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/lunchbox/readXMLByTag.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -192px 0px" data-toptip="Read XML by Tag"></div></a>
+<a href="../../components/lunchbox/convertXMLToJSON.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -216px 0px" data-downtip="Convert XML to JSON"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/lunchbox/createJSON.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') 0px -24px" data-toptip="Create JSON"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="6">
+Data
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/lunchbox/createDataSet.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -168px -240px" data-toptip="Create Data Set"></div></a>
+<a href="../../components/lunchbox/textLoaderOptions.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -192px -240px" data-downtip="Text Loader Options"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/lunchbox/featurizeText.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -216px -240px" data-toptip="Featurize Text"></div></a>
+<a href="../../components/lunchbox/filterData.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') 0px -264px" data-downtip="Filter Data"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/lunchbox/getColumnLabel.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -24px -264px" data-toptip="Get Column Label"></div></a>
+<a href="../../components/lunchbox/loadDataFromTextFile.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -48px -264px" data-downtip="Load Data From Text File"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/lunchbox/normalizeData.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -96px -264px" data-toptip="Normalize Data"></div></a>
+<a href="../../components/lunchbox/oneHotEncoding.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -120px -264px" data-downtip="One Hot Encoding"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/lunchbox/peekAtData.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -168px -264px" data-toptip="Peek At Data"></div></a>
+<a href="../../components/lunchbox/removeColumns.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -192px -264px" data-downtip="Remove Columns"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/lunchbox/replaceMissingData.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -216px -264px" data-toptip="Replace Missing Data"></div></a>
+<a href="../../components/lunchbox/selectColumns.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') 0px -288px" data-downtip="Select Columns"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/lunchbox/splitData.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -24px -288px" data-toptip="Split Data"></div></a>
+<a href="../../components/lunchbox/tokenizeIntoWords.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -120px -288px" data-downtip="Tokenize Into Words"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="7">
+Data Sets
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/lunchbox/attractor.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -24px -24px" data-toptip="Attractor"></div></a>
+<a href="../../components/lunchbox/attractorWave.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -48px -24px" data-downtip="Attractor Wave"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/lunchbox/constantQuadSubdivide.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -72px -24px" data-toptip="Constant Quad Subdivide"></div></a>
+<a href="../../components/lunchbox/panelFrame.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -96px -24px" data-downtip="Panel Frame"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/lunchbox/subdivideQuad.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -120px -24px" data-toptip="Subdivide Quad"></div></a>
+<a href="../../components/lunchbox/subdivideTriangle.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -144px -24px" data-downtip="Subdivide Triangle"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+Generate
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/lunchbox/codifyData.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -72px -168px" data-toptip="Codify Data"></div></a>
+<a href="../../components/lunchbox/loadModel.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -96px -168px" data-downtip="Load Model"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/lunchbox/gaussianMixture.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -120px -168px" data-toptip="Gaussian Mixture"></div></a>
+<a href="../../components/lunchbox/confusionMatrixProperties.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -144px -168px" data-downtip="Confusion Matrix Properties"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/lunchbox/hiddenMarkovModel.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -168px -168px" data-toptip="Hidden Markov Model"></div></a>
+<a href="../../components/lunchbox/kMeansClustering.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -192px -168px" data-downtip="K-Means Clustering"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/lunchbox/linearRegression.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -216px -168px" data-toptip="Linear Regression"></div></a>
+<a href="../../components/lunchbox/logisticRegression.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') 0px -192px" data-downtip="Logistic Regression"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/lunchbox/multivariateLinearRegression.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -24px -192px" data-toptip="Multivariate Linear Regression"></div></a>
+<a href="../../components/lunchbox/naiveBayesClassificationTester.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -48px -192px" data-downtip="Naive Bayes Classification Tester"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/lunchbox/naiveBayesClassificationTrainer.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -72px -192px" data-toptip="Naive Bayes Classification Trainer"></div></a>
+<a href="../../components/lunchbox/neuralNetworkTester.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -96px -192px" data-downtip="Neural Network Tester"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/lunchbox/neuralNetworkTrainer.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -120px -192px" data-toptip="Neural Network Trainer"></div></a>
+<a href="../../components/lunchbox/restrictedBoltzmannMachine.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -144px -192px" data-downtip="Restricted Boltzmann Machine"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/lunchbox/nonlinearRegression.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') 0px -216px" data-toptip="Nonlinear Regression"></div></a>
+<a href="../../components/lunchbox/kernelSVMTester.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -24px -216px" data-downtip="Kernel SVM Tester"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/lunchbox/kernelSVMTrainer.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -48px -216px" data-toptip="Kernel SVM Trainer"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="9">
+Machine Learning
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/lunchbox/enneperSurface.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -168px -24px" data-toptip="Enneper Surface"></div></a>
+<a href="../../components/lunchbox/helicoidSurface.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -192px -24px" data-downtip="Helicoid Surface"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/lunchbox/kleinSurface.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -216px -24px" data-toptip="Klein Surface"></div></a>
+<a href="../../components/lunchbox/mobiusSurface.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') 0px -48px" data-downtip="Mobius Surface"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/lunchbox/hyperbolicParaboloid.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -24px -48px" data-toptip="Hyperbolic Paraboloid"></div></a>
+<a href="../../components/lunchbox/conoidSurface.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -48px -48px" data-downtip="Conoid Surface"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/lunchbox/3DSupershape.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -72px -48px" data-toptip="3D Supershape"></div></a>
+<a href="../../components/lunchbox/torusSurface.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -96px -48px" data-downtip="Torus Surface"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/lunchbox/platonicCube.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -192px -144px" data-toptip="Platonic Cube"></div></a>
+<a href="../../components/lunchbox/platonicDodecahedron.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -216px -144px" data-downtip="Platonic Dodecahedron"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/lunchbox/platonicIcosahedron.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') 0px -168px" data-toptip="Platonic Icosahedron"></div></a>
+<a href="../../components/lunchbox/platonicOctahedron.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -24px -168px" data-downtip="Platonic Octahedron"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/lunchbox/platonicTetrahedron.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -48px -168px" data-toptip="Platonic Tetrahedron"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="7">
+Math
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/lunchbox/meshExtrude.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') 0px -240px" data-toptip="Mesh Extrude"></div></a>
+<a href="../../components/lunchbox/meshOffset.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -24px -240px" data-downtip="Mesh Offset"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/lunchbox/meshToNurbs.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -48px -240px" data-toptip="Mesh to Nurbs"></div></a>
+<a href="../../components/lunchbox/quadRemesh.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -72px -240px" data-downtip="Quad Remesh"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/lunchbox/quadRemeshParameters.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -96px -240px" data-toptip="Quad Remesh Parameters"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+Mesh
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/lunchbox/loadSavedModel.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -72px -264px" data-toptip="Load Saved Model"></div></a>
+<a href="../../components/lunchbox/objectDetectionUsingONNXFile.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -144px -264px" data-downtip="Object Detection Using ONNX File"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/lunchbox/multiclassClassifierTester.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -48px -288px" data-toptip="Multiclass Classifier Tester"></div></a>
+<a href="../../components/lunchbox/binaryClassifierTester.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -72px -288px" data-downtip="Binary Classifier Tester"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/lunchbox/regressionTester.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -96px -288px" data-toptip="Regression Tester"></div></a>
+<a href="../../components/lunchbox/multiclassClassifierTrainer.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -144px -288px" data-downtip="Multiclass Classifier Trainer"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/lunchbox/binaryClassifierTrainer.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -168px -288px" data-toptip="Binary Classifier Trainer"></div></a>
+<a href="../../components/lunchbox/regressionTrainer.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -192px -288px" data-downtip="Regression Trainer"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="4">
+Models
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/lunchbox/diamondPanels.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -120px -48px" data-toptip="Diamond Panels"></div></a>
+<a href="../../components/lunchbox/diamondGrid.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -144px -48px" data-downtip="Diamond Grid"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/lunchbox/hexagonCells.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -168px -48px" data-toptip="Hexagon Cells"></div></a>
+<a href="../../components/lunchbox/quadPanels.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -192px -48px" data-downtip="Quad Panels"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/lunchbox/quadGrid.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -216px -48px" data-toptip="Quad Grid"></div></a>
+<a href="../../components/lunchbox/randomQuadPanels.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') 0px -72px" data-downtip="Random Quad Panels"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/lunchbox/staggeredQuadPanels.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -24px -72px" data-toptip="Staggered Quad Panels"></div></a>
+<a href="../../components/lunchbox/skewedQuads.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -48px -72px" data-downtip="Skewed Quads"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/lunchbox/triangularPanelsA.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -72px -72px" data-toptip="Triangular Panels A"></div></a>
+<a href="../../components/lunchbox/trianglePanelsB.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -96px -72px" data-downtip="Triangle Panels B"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/lunchbox/trianglePanelsC.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -120px -72px" data-toptip="Triangle Panels C"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="6">
+Panels
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/lunchbox/hashObjects.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -120px -216px" data-toptip="Hash Objects"></div></a>
+<a href="../../components/lunchbox/createGUID.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -144px -216px" data-downtip="Create GUID"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/lunchbox/decryptText.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -168px -216px" data-toptip="Decrypt Text"></div></a>
+<a href="../../components/lunchbox/deserializeGeometry.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -192px -216px" data-downtip="Deserialize Geometry"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/lunchbox/encryptText.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -216px -216px" data-toptip="Encrypt Text"></div></a>
+<a href="../../components/lunchbox/serializeGeometry.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -120px -240px" data-downtip="Serialize Geometry"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+Serialization
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/lunchbox/bracedGrid1DStructure.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -144px -72px" data-toptip="Braced Grid 1-D Structure"></div></a>
+<a href="../../components/lunchbox/bracedGrid2DStructure.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -168px -72px" data-downtip="Braced Grid 2-D Structure"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/lunchbox/diagridStructure.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -192px -72px" data-toptip="Diagrid Structure"></div></a>
+<a href="../../components/lunchbox/gridStructure.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -216px -72px" data-downtip="Grid Structure"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/lunchbox/hexagonalStructure.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') 0px -96px" data-toptip="Hexagonal Structure"></div></a>
+<a href="../../components/lunchbox/spaceTrussStructure1.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -24px -96px" data-downtip="Space Truss Structure 1"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/lunchbox/spaceTrussStructure2.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -48px -96px" data-toptip="Space Truss Structure 2"></div></a>
+<a href="../../components/lunchbox/2DTruss.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -72px -96px" data-downtip="2D Truss"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="4">
+Structure
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/lunchbox/averagePerceptronBinaryClassifier.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -216px -288px" data-toptip="Average Perceptron Binary Classifier"></div></a>
+<a href="../../components/lunchbox/fastForestBinaryClassifier.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') 0px -312px" data-downtip="Fast Forest Binary Classifier"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/lunchbox/fastForestRegression.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -24px -312px" data-toptip="Fast Forest Regression"></div></a>
+<a href="../../components/lunchbox/fastTreeBinaryClassifier.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -48px -312px" data-downtip="Fast Tree Binary Classifier"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/lunchbox/fastTreeRegression.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -72px -312px" data-toptip="Fast Tree Regression"></div></a>
+<a href="../../components/lunchbox/fastTreeTweedieRegression.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -96px -312px" data-downtip="Fast Tree Tweedie Regression"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/lunchbox/fieldAwareFactorizationMachineBinaryClassifier.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -120px -312px" data-toptip="Field Aware Factorization Machine Binary Classifier"></div></a>
+<a href="../../components/lunchbox/generalizedAdditiveModelsBinaryClassifier.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -144px -312px" data-downtip="Generalized Additive Models Binary Classifier"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/lunchbox/generalizedAdditiveModelsRegression.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -168px -312px" data-toptip="Generalized Additive Models Regression"></div></a>
+<a href="../../components/lunchbox/lbfgsLogisticRegressionBinaryClassifier.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -192px -312px" data-downtip="Lbfgs Logistic Regression Binary Classifier"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/lunchbox/lbfgsMaximumEntropyMulticlassClassifier.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -216px -312px" data-toptip="Lbfgs Maximum Entropy Multiclass Classifier"></div></a>
+<a href="../../components/lunchbox/lbfgsPoissonRegression.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') 0px -336px" data-downtip="Lbfgs Poisson Regression"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/lunchbox/localDeepSVMBinaryClassifier.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -24px -336px" data-toptip="Local Deep SVM Binary Classifier"></div></a>
+<a href="../../components/lunchbox/lightGBMBinaryClassifier.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -48px -336px" data-downtip="Light GBM Binary Classifier"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/lunchbox/lightGbmMulticlassClassifier.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -72px -336px" data-toptip="Light Gbm Multiclass Classifier"></div></a>
+<a href="../../components/lunchbox/lightGBMRegression.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -96px -336px" data-downtip="Light GBM Regression"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/lunchbox/linearSVMBinaryClassifier.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -120px -336px" data-toptip="Linear SVM Binary Classifier"></div></a>
+<a href="../../components/lunchbox/naiveBayesMulticlassClassifier.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -144px -336px" data-downtip="Naive Bayes Multiclass Classifier"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/lunchbox/ordinaryLeastSquaresRegression.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -168px -336px" data-toptip="Ordinary Least Squares Regression"></div></a>
+<a href="../../components/lunchbox/onlineGradientDescentRegression.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -192px -336px" data-downtip="Online Gradient Descent Regression"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/lunchbox/sDCALogisticRegressionBinaryClassifier.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -216px -336px" data-toptip="SDCA Logistic Regression Binary Classifier"></div></a>
+<a href="../../components/lunchbox/sdcaMaximumEntropyMulticlassClassifier.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') 0px -360px" data-downtip="Sdca Maximum Entropy Multiclass Classifier"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/lunchbox/sDCANoncalibratedBinaryClassifier.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -24px -360px" data-toptip="SDCA Noncalibrated Binary Classifier"></div></a>
+<a href="../../components/lunchbox/sdcaNoncalibratedMulticlassClassifier.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -48px -360px" data-downtip="Sdca Noncalibrated Multiclass Classifier"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/lunchbox/sdcaRegression.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -72px -360px" data-toptip="Sdca Regression"></div></a>
+<a href="../../components/lunchbox/sGDCalibratedBinaryClassifier.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -96px -360px" data-downtip="SGD Calibrated Binary Classifier"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/lunchbox/sGDNoncalibratedBinaryClassifier.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -120px -360px" data-toptip="SGD Noncalibrated Binary Classifier"></div></a>
+<a href="../../components/lunchbox/symbolicSGDLogisticRegressionBinaryClassifier.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -144px -360px" data-downtip="Symbolic SGD Logistic Regression Binary Classifier"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="14">
+Trainer Types
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/lunchbox/arcDivide.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -96px -96px" data-toptip="Arc Divide"></div></a>
+<a href="../../components/lunchbox/deconstructWireframe.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -120px -96px" data-downtip="Deconstruct Wireframe"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/lunchbox/flatnessCheck.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -144px -96px" data-toptip="Flatness Check"></div></a>
+<a href="../../components/lunchbox/meshEdgeswithTolerance.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -168px -96px" data-downtip="Mesh Edges (with Tolerance)"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/lunchbox/meshReduce.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -192px -96px" data-toptip="Mesh Reduce"></div></a>
+<a href="../../components/lunchbox/patchSurface.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -216px -96px" data-downtip="Patch Surface"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/lunchbox/randomSplitList.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') 0px -120px" data-toptip="Random Split List"></div></a>
+<a href="../../components/lunchbox/rebuildSurface.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -24px -120px" data-downtip="Rebuild Surface"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/lunchbox/relativeCoordinates.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -48px -120px" data-toptip="Relative Coordinates"></div></a>
+<a href="../../components/lunchbox/reverseSurfaceDirection.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -72px -120px" data-downtip="Reverse Surface Direction"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/lunchbox/sortDuplicateBreps.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -96px -120px" data-toptip="Sort Duplicate Breps"></div></a>
+<a href="../../components/lunchbox/sortDuplicateCurves.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -120px -120px" data-downtip="Sort Duplicate Curves"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/lunchbox/sortDuplicatePoints.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -144px -120px" data-toptip="Sort Duplicate Points"></div></a>
+<a href="../../components/lunchbox/sortDuplicateValues.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -168px -120px" data-downtip="Sort Duplicate Values"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/lunchbox/unrollBrep.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -192px -120px" data-toptip="Unroll Brep"></div></a>
+<a href="../../components/lunchbox/rTreeClosestPoint.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -168px -192px" data-downtip="RTree Closest Point"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/lunchbox/createRTree.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -192px -192px" data-toptip="Create RTree"></div></a>
+<a href="../../components/lunchbox/rTreePointsInRange.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -216px -192px" data-downtip="RTree Points in Range"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/lunchbox/brepJoinWithTolerance.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -72px -216px" data-toptip="Brep Join with Tolerance"></div></a>
+<a href="../../components/lunchbox/brepJoinProgression.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -96px -216px" data-downtip="Brep Join Progression"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/lunchbox/sortAdjacentBrepFaces.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -144px -240px" data-toptip="Sort Adjacent Brep Faces"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="11">
+Util
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/lunchbox/objectBake.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -216px -120px" data-toptip="Object Bake"></div></a>
+<a href="../../components/lunchbox/createLayers.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') 0px -144px" data-downtip="Create Layers"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/lunchbox/excelReader.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -24px -144px" data-toptip="Excel Reader"></div></a>
+<a href="../../components/lunchbox/excelWrite.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -48px -144px" data-downtip="Excel Write"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/lunchbox/launchApplication.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -72px -144px" data-toptip="Launch Application"></div></a>
+<a href="../../components/lunchbox/layerInformation.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -96px -144px" data-downtip="Layer Information"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/lunchbox/layerReference.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -120px -144px" data-toptip="Layer Reference"></div></a>
+<a href="../../components/lunchbox/rhinoCommand.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -144px -144px" data-downtip="Rhino Command"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/lunchbox/objectSave.html"><div class="ghsprite" style="background: url('../../icons/lunchBox.png') -168px -144px" data-toptip="Object Save"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="5">
+Workflow
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+
+<div class="addon-buttons">
+<a href="#tutorials">Video Tutorials</a>
+<a href="https://www.food4rhino.com/app/lunchbox">Download</a>
+
+</div>
+
+
+<div class="google-ad-sidebar">
+
+<!-- Carbon Ads -->
+<script async type="text/javascript" src="https://cdn.carbonads.com/carbon.js?serve=CK7IC27L&placement=grasshopperdocscom" id="_carbonads_js"></script>
+
+</div>
+
+<div class="compo-header">
+<h1><div class="ghsprite" style="background: url('../../icons/lunchBox.png') 0px -288px" ></div> Select Columns</h1>
+
+<div class="breadcrumb">
+ <a href="../../index.html">Component Index</a>
+  <a href="../../addons/lunchbox.html">LunchBox</a><a href="#" class="breadcrumb-nolink">Data Sets</a><a href="#" class="breadcrumb-nolink">Select Columns</a>
+</div>
+
+</div>
+<h3>Select columns from a data set.</h3>
+<h2>Inputs</h2>
+<table class="params-table input-params">
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Data</b></td><td>Data</td><td>The data set to change.</td><td>Generic</td></tr>
+<tr><td><b>Columns</b></td><td>Columns</td><td>The names of the columns in the data set to select.</td><td>Text</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table class="params-table output-params">
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Data</b></td><td>Data</td><td>The modified data set.</td><td>Generic</td></tr>
+</tbody>
+</table>
+
+<div class="ghtutorials">
+<a name="tutorials"></a>
+<h2>Video Tutorials</h2>
+<div style="display:none;" class="html5gallery" data-skin="verticallight" data-width="1000" data-height="600" data-thumbwidth="280" data-thumbheight="70" data-thumbgap="5">
+
+<a href="http://www.youtube.com/embed/Bi98ZMYZ7RE"><img src="http://img.youtube.com/vi/Bi98ZMYZ7RE/1.jpg" alt="Lunchbox  (space Frame)"></a>
+<a href="http://www.youtube.com/embed/rYPX21luZ0k"><img src="http://img.youtube.com/vi/rYPX21luZ0k/1.jpg" alt="Tutorial (lunchbox)"></a>
+<a href="http://www.youtube.com/embed/qa9Sz54zWZk"><img src="http://img.youtube.com/vi/qa9Sz54zWZk/1.jpg" alt="Lunchbox  Tutorial (diamond Panels)"></a>
+<a href="http://www.youtube.com/embed/MgEpyiUO-T0"><img src="http://img.youtube.com/vi/MgEpyiUO-T0/1.jpg" alt="Lunchbox  - Space Truss"></a>
+<a href="http://www.youtube.com/embed/DgdgeRakXec"><img src="http://img.youtube.com/vi/DgdgeRakXec/1.jpg" alt="Lunchbox Tutorial - Hexagon Cells (double Curvature)"></a>
+<a href="http://www.youtube.com/embed/jr2zAyLXhRc"><img src="http://img.youtube.com/vi/jr2zAyLXhRc/1.jpg" alt="Lunchbox Tutorial"></a>
+<a href="http://www.youtube.com/embed/gOb9N6XP8b4"><img src="http://img.youtube.com/vi/gOb9N6XP8b4/1.jpg" alt="Surface Paneling Lunchbox Tutorial The Beatles Abbey Road"></a>
+<a href="http://www.youtube.com/embed/AT9zyAKvB2A"><img src="http://img.youtube.com/vi/AT9zyAKvB2A/1.jpg" alt="Lunchbox Tutorial"></a>
+<a href="http://www.youtube.com/embed/GxNmSBEg7CA"><img src="http://img.youtube.com/vi/GxNmSBEg7CA/1.jpg" alt="Lunchbox Tutorial"></a>
+<a href="http://www.youtube.com/embed/4Y8f_-xE2Y0"><img src="http://img.youtube.com/vi/4Y8f_-xE2Y0/1.jpg" alt="Lunchbox Tutorial"></a>
+<a href="http://www.youtube.com/embed/3z7mefk6ZhI"><img src="http://img.youtube.com/vi/3z7mefk6ZhI/1.jpg" alt="Lunchbox Tutorial"></a>
+<a href="http://www.youtube.com/embed/Iasrel-YHoQ"><img src="http://img.youtube.com/vi/Iasrel-YHoQ/1.jpg" alt="Lunchbox Loft Tutorial"></a>
+<a href="http://www.youtube.com/embed/5u9cF25EiD4"><img src="http://img.youtube.com/vi/5u9cF25EiD4/1.jpg" alt="Lunchbox Tutorial"></a>
+<a href="http://www.youtube.com/embed/yNhSrZeOR4A"><img src="http://img.youtube.com/vi/yNhSrZeOR4A/1.jpg" alt="Lunchbox Tutorial"></a>
+<a href="http://www.youtube.com/embed/vnOqW-JjLz4"><img src="http://img.youtube.com/vi/vnOqW-JjLz4/1.jpg" alt="Lunchbox Tutorial"></a>
+<a href="http://www.youtube.com/embed/Y0PekbC-Lgs"><img src="http://img.youtube.com/vi/Y0PekbC-Lgs/1.jpg" alt="Rhino Luchbox Tutorial"></a>
+<a href="http://www.youtube.com/embed/klXiOM4LNV0"><img src="http://img.youtube.com/vi/klXiOM4LNV0/1.jpg" alt="Lunch Box Tutorial"></a>
+<a href="http://www.youtube.com/embed/M4Z603zFDf8"><img src="http://img.youtube.com/vi/M4Z603zFDf8/1.jpg" alt="Paneling Using Lunchbox In  In Rhino | Architutors"></a>
+<a href="http://www.youtube.com/embed/mcoOZi7CkVc"><img src="http://img.youtube.com/vi/mcoOZi7CkVc/1.jpg" alt="Create A Parametric Spiral Wall Using Attractor Points, Lunchbox, And Anemone"></a>
+<a href="http://www.youtube.com/embed/Ma9Wd9DFD3k"><img src="http://img.youtube.com/vi/Ma9Wd9DFD3k/1.jpg" alt="Create A Detailed Parametric Space Frame Truss - Dome Shaped - Using The Lunchbox Plugin"></a>
+<a href="http://www.youtube.com/embed/1AZAkz0u8BY"><img src="http://img.youtube.com/vi/1AZAkz0u8BY/1.jpg" alt="Tutorial: Pattern Creation With Attractor Point And Lunchbox"></a>
+<a href="http://www.youtube.com/embed/6PCUxeuwgyo"><img src="http://img.youtube.com/vi/6PCUxeuwgyo/1.jpg" alt="009 - Triangular Folding Structure With Lunchbox"></a>
+<a href="http://www.youtube.com/embed/nZYrXk7mgQc"><img src="http://img.youtube.com/vi/nZYrXk7mgQc/1.jpg" alt="008 - Triangular Folding Structure Without Lunchbox (no Sounds)"></a>
+
+
+</div>
+</div>
+
+<script type="text/javascript" src="/html5gallery/jquery.js"></script>
+<script type="text/javascript" src="/html5gallery/html5gallery.js"></script>
+
+
+</div>
+
+</div>
+
+</div>
+
+<div id="docs-foot" class="docs-footindex">
+<div id="docs-foot-inner">
+<p class="left">
+Site design © <a href="https://github.com/robinrodricks/">Robin Rodricks</a>. &nbsp;
+
+LunchBox and associated data © 2023  <a href="https://www.food4rhino.com/app/lunchbox">Nathan Miller</a>. &nbsp;
+<br>
+Rhinoceros and Grasshopper are registered trademarks of <a href="https://www.rhino3d.com/">Robert McNeel & Associates</a>.&nbsp;
+Hosted by <a href="http://www.github.com/">GitHub</a> 
+</p>
+<p class="right docs-lightfont">
+
+<a href="https://github.com/grasshopper3d/GrasshopperDocsSite/issues/new">Report an Issue</a> &nbsp;|&nbsp;
+<a href="/termsOfService.html">Terms of Service</a>
+</p>
+
+</div>
+
+
+
+</div>
+</div>
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DX6TG16YN7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DX6TG16YN7');
+</script>
+
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/jquery-autocomplete.min.js"></script>
+<script type="text/javascript" src="/js/app-searchbar.js"></script>
+
+    </body>
+</html>

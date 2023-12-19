@@ -1,0 +1,662 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alpaca4d - Addon for Grasshopper | Grasshopper Docs</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+
+<meta name="description" content="Alpaca4d is a Grasshopper plugin which has been developed on top of OpenSees. It lets you analyse beam, shell and brick elements through Static, Modal and Ground Motion Analysis. Alpaca4d facilitates the interaction with OpenSees making it possible to model complex geometries within your parametric workflow and reducing the time spent in the modelling. The main idea is to provide an efficient and easy way to use OpenSees without writing any line of code." />
+<meta name="title" content="Alpaca4d - Addon for Grasshopper | Grasshopper Docs" />
+<meta property="og:title" content="Alpaca4d - Addon for Grasshopper | Grasshopper Docs" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://grasshopperdocs.com/addons/alpaca4d.html" />
+<meta property="og:site_name" content="Grasshopper Docs" />
+
+<link href="../style.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+
+<div id="docs">
+
+<div id="docs-head">
+<div id="docs-masthead">
+<p id="docs-sitename"><a href="http://grasshopperdocs.com/">
+	<img id="site-logo-icon" src="/images/logo-icon.png" alt=""></img>
+	<img id="site-logo-text" src="/images/logo-text.png" alt="Grasshopper Docs"></img>
+</a></p>
+<p id="docs-sitedesc">Community documentation for Grasshopper add-ons &amp; plugins</p>
+<div id="docs-sitesearch">
+	<input id="docs-sitesearch-inputbox" type="text" name="docs-sitesearch-inputbox" />
+	<img id="docs-searchicon" src="/images/search.png"/>
+</div>
+</div>
+</div>
+
+<div id="docs-body">
+
+<div class="page">
+
+<div class="content addon-page">
+
+<div class="addon-buttons">
+<a href="https://github.com/Alpaca4d/Alpaca4d">Source Code</a>
+<a href="https://alpaca4d.github.io/download.html">Download</a>
+
+</div>
+
+
+<div class="google-ad-sidebar">
+
+<!-- Carbon Ads -->
+<script async type="text/javascript" src="https://cdn.carbonads.com/carbon.js?serve=CK7IC27L&placement=grasshopperdocscom" id="_carbonads_js"></script>
+
+</div>
+
+<div class="addon-header">
+<h1>Alpaca4d</h1>
+<h5>
+<span>ADDON. Version <b>0.7.1</b>.</span>
+<span>Released on <b>2023-Dec</b>.</span>
+<span>Provides <b>64</b> components.</span>
+<span>Created by <b>Marco Pellegrino</b>.</span>
+<span>Features <b>0</b> video tutorials.</span>
+</h5>
+<h5>Alpaca4d is a Grasshopper plugin which has been developed on top of OpenSees. It lets you analyse beam, shell and brick elements through Static, Modal and Ground Motion Analysis. Alpaca4d facilitates the interaction with OpenSees making it possible to model complex geometries within your parametric workflow and reducing the time spent in the modelling. The main idea is to provide an efficient and easy way to use OpenSees without writing any line of code.</h5>
+
+<div class="breadcrumb">
+  <a href="../index.html">Component Index</a>
+  <a href="#" class="breadcrumb-nolink">Alpaca4d</a>
+</div>
+
+</div>
+
+<div class="ghbar ghbar-addon-page">
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/alpaca4d/elasticIsotropicMaterial.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -144px -24px" data-toptip="Elastic Isotropic Material"></div></a>
+<a href="../components/alpaca4d/elasticOrthotropicMaterial.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -168px -24px" data-downtip="Elastic Orthotropic Material"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/alpaca4d/uniaxialMaterialElastic.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -72px -144px" data-toptip="Uniaxial Material Elastic"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="2">
+00_Material
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/alpaca4d/circleCS.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -192px 0px" data-toptip="CircleCS"></div></a>
+<a href="../components/alpaca4d/genericSection.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -192px -24px" data-downtip="Generic Section"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/alpaca4d/iSection.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -120px -48px" data-toptip="I Section"></div></a>
+<a href="../components/alpaca4d/plateFiberSection.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -120px -96px" data-downtip="Plate Fiber Section"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/alpaca4d/rectangleCS.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') 0px -120px" data-toptip="RectangleCS"></div></a>
+<a href="../components/alpaca4d/rectangleHollow.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -24px -120px" data-downtip="RectangleHollow"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+01_Section
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/alpaca4d/aSDShellQ4.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -48px 0px" data-toptip="ASD ShellQ4"></div></a>
+<a href="../components/alpaca4d/forceBeamColumn.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -24px -48px" data-downtip="Force Beam Column"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/alpaca4d/fourNodeTetrahedron.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -48px -48px" data-toptip="FourNodeTetrahedron"></div></a>
+<a href="../components/alpaca4d/sSPBrick.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -192px -120px" data-downtip="SSP Brick"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/alpaca4d/support.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') 0px -144px" data-toptip="Support"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+02_Element
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/alpaca4d/rigidDiaphragm.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -72px -120px" data-toptip="Rigid Diaphragm"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+03_Constraint
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/alpaca4d/constantTimeSeries.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') 0px -24px" data-toptip="Constant Time Series"></div></a>
+<a href="../components/alpaca4d/linearTimeSeries.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -216px -48px" data-downtip="Linear Time Series"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/alpaca4d/pathTimeSeries.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -48px -96px" data-toptip="Path Time Series"></div></a>
+<a href="../components/alpaca4d/readTimeSeries.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -216px -96px" data-downtip="Read Time Series"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/alpaca4d/trigonometricTimeSeries.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -48px -144px" data-toptip="Trigonometric Time Series"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+04_Time Series
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/alpaca4d/gravityLoad.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -96px -48px" data-toptip="Gravity Load"></div></a>
+<a href="../components/alpaca4d/linearLoad.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -192px -48px" data-downtip="Linear Load"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/alpaca4d/massPoint.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -24px -72px" data-toptip="Mass Point"></div></a>
+<a href="../components/alpaca4d/meshLoad.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -48px -72px" data-downtip="Mesh Load"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/alpaca4d/pointLoad.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -168px -96px" data-toptip="Point Load"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+05_Load
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/alpaca4d/assembleModel.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -72px 0px" data-toptip="AssembleModel"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+06_Assemble
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/alpaca4d/analysisSettings.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') 0px 0px" data-toptip="Analysis Settings"></div></a>
+<a href="../components/alpaca4d/analysisStep.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -24px 0px" data-downtip="Analysis Step"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/alpaca4d/integratorCentralDifference.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -168px 0px" data-toptip="Integrator Central Difference"></div></a>
+<a href="../components/alpaca4d/damping.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -48px -24px" data-downtip="Damping"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/alpaca4d/integratorLoadControl.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') 0px -72px" data-toptip="Integrator Load Control"></div></a>
+<a href="../components/alpaca4d/naturalVibrationAnalysis.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -192px -72px" data-downtip="Natural Vibration Analysis"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/alpaca4d/integratorNewmark.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -216px -72px" data-toptip="Integrator Newmark"></div></a>
+<a href="../components/alpaca4d/runAnalysis.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -96px -120px" data-downtip="Run Analysis"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/alpaca4d/test.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -24px -144px" data-toptip="Test"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="5">
+07_Analysis
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/alpaca4d/beamForces.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -96px 0px" data-toptip="Beam Forces"></div></a>
+<a href="../components/alpaca4d/brickStresses.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -144px 0px" data-downtip="Brick Stresses"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/alpaca4d/modalAnalysisReport.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -120px -72px" data-toptip="Modal Analysis Report"></div></a>
+<a href="../components/alpaca4d/nodalDisplacements.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') 0px -96px" data-downtip="Nodal Displacements"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/alpaca4d/reactionForces.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -192px -96px" data-toptip="Reaction Forces"></div></a>
+<a href="../components/alpaca4d/shellForces.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -144px -120px" data-downtip="Shell Forces"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/alpaca4d/shellStresses.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -168px -120px" data-toptip="Shell Stresses"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="4">
+08_NumericalOutput
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/alpaca4d/deformedModelView.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -96px -24px" data-toptip="Deformed Model View"></div></a>
+<a href="../components/alpaca4d/modelView.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -144px -72px" data-downtip="Model View"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+09_Visualisation
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/alpaca4d/customCode.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -24px -24px" data-toptip="Custom code"></div></a>
+<a href="../components/alpaca4d/deconstruct.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -72px -24px" data-downtip="Deconstruct"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/alpaca4d/deserialise.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -120px -24px" data-toptip="Deserialise"></div></a>
+<a href="../components/alpaca4d/colors.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -72px -48px" data-downtip="Colors"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/alpaca4d/meshLoft.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -72px -72px" data-toptip="MeshLoft"></div></a>
+<a href="../components/alpaca4d/meshSeriesToBrick.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -96px -72px" data-downtip="MeshSeriesToBrick"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/alpaca4d/serialize.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -120px -120px" data-toptip="Serialize"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="4">
+10_Utility
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/alpaca4d/benchmark.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -120px 0px" data-toptip="Benchmark"></div></a>
+<a href="../components/alpaca4d/license.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -168px -48px" data-downtip="License"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/alpaca4d/sponsor.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -72px -96px" data-toptip="Sponsor"></div></a>
+<a href="../components/alpaca4d/donation.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -96px -96px" data-downtip="Donation"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="2">
+Info
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../components/alpaca4d/concrete01.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -216px 0px" data-toptip="Concrete01"></div></a>
+<a href="../components/alpaca4d/fiberSection.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -216px -24px" data-downtip="Fiber Section"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/alpaca4d/fiberStressStrain.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') 0px -48px" data-toptip="Fiber Stress Strain"></div></a>
+<a href="../components/alpaca4d/layerFiber.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -144px -48px" data-downtip="Layer Fiber"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/alpaca4d/momentCurvature.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -168px -72px" data-toptip="MomentCurvature"></div></a>
+<a href="../components/alpaca4d/patch.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -24px -96px" data-downtip="Patch"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/alpaca4d/fiberPoint.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -144px -96px" data-toptip="Fiber Point"></div></a>
+<a href="../components/alpaca4d/reinforcingSteel.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -48px -120px" data-downtip="ReinforcingSteel"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../components/alpaca4d/steel01.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -216px -120px" data-toptip="Steel01"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="5">
+MomentCurvature
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+
+<div class="cchild">
+<h3>07_Analysis</h3>
+<table class="addon-compos">
+<tbody>
+<tr><td class="ccol_1"><a href="../components/alpaca4d/analysisSettings.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') 0px 0px" ></div></a></td><td class="ccol_2"><a href="../components/alpaca4d/analysisSettings.html">Analysis Settings</a> <span class="codeword">(AnalysisSettings)</span><br><span class="desc"></span></td></tr>
+<tr><td class="ccol_1"><a href="../components/alpaca4d/analysisStep.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -24px 0px" ></div></a></td><td class="ccol_2"><a href="../components/alpaca4d/analysisStep.html">Analysis Step</a> <span class="codeword">(AnalysisStep)</span><br><span class="desc"></span></td></tr>
+<tr><td class="ccol_1"><a href="../components/alpaca4d/integratorCentralDifference.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -168px 0px" ></div></a></td><td class="ccol_2"><a href="../components/alpaca4d/integratorCentralDifference.html">Integrator Central Difference</a> <span class="codeword">(CD)</span><br><span class="desc"></span></td></tr>
+<tr><td class="ccol_1"><a href="../components/alpaca4d/damping.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -48px -24px" ></div></a></td><td class="ccol_2"><a href="../components/alpaca4d/damping.html">Damping</a><br><span class="desc">This command is used to assign damping to all previously-defined elements and nodes</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/alpaca4d/integratorLoadControl.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') 0px -72px" ></div></a></td><td class="ccol_2"><a href="../components/alpaca4d/integratorLoadControl.html">Integrator Load Control</a> <span class="codeword">(LC)</span><br><span class="desc"></span></td></tr>
+<tr><td class="ccol_1"><a href="../components/alpaca4d/naturalVibrationAnalysis.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -192px -72px" ></div></a></td><td class="ccol_2"><a href="../components/alpaca4d/naturalVibrationAnalysis.html">Natural Vibration Analysis</a> <span class="codeword">(NV)</span><br><span class="desc"></span></td></tr>
+<tr><td class="ccol_1"><a href="../components/alpaca4d/integratorNewmark.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -216px -72px" ></div></a></td><td class="ccol_2"><a href="../components/alpaca4d/integratorNewmark.html">Integrator Newmark</a> <span class="codeword">(NM)</span><br><span class="desc"></span></td></tr>
+<tr><td class="ccol_1"><a href="../components/alpaca4d/runAnalysis.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -96px -120px" ></div></a></td><td class="ccol_2"><a href="../components/alpaca4d/runAnalysis.html">Run Analysis</a> <span class="codeword">(RA)</span><br><span class="desc"></span></td></tr>
+<tr><td class="ccol_1"><a href="../components/alpaca4d/test.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -24px -144px" ></div></a></td><td class="ccol_2"><a href="../components/alpaca4d/test.html">Test</a><br><span class="desc"></span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>MomentCurvature</h3>
+<table class="addon-compos">
+<tbody>
+<tr><td class="ccol_1"><a href="../components/alpaca4d/concrete01.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -216px 0px" ></div></a></td><td class="ccol_2"><a href="../components/alpaca4d/concrete01.html">Concrete01</a> <span class="codeword">(Concrete)</span><br><span class="desc">Construct a concrete material with Zero Tensile Strength (Conrete01)</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/alpaca4d/fiberSection.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -216px -24px" ></div></a></td><td class="ccol_2"><a href="../components/alpaca4d/fiberSection.html">Fiber Section</a> <span class="codeword">(FiberSection)</span><br><span class="desc">Construct a FiberSection</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/alpaca4d/fiberStressStrain.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') 0px -48px" ></div></a></td><td class="ccol_2"><a href="../components/alpaca4d/fiberStressStrain.html">Fiber Stress Strain</a> <span class="codeword">(FBS)</span><br><span class="desc">Read the stress strain in a fiber</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/alpaca4d/layerFiber.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -144px -48px" ></div></a></td><td class="ccol_2"><a href="../components/alpaca4d/layerFiber.html">Layer Fiber</a><br><span class="desc">Construct a LayerFiber</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/alpaca4d/momentCurvature.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -168px -72px" ></div></a></td><td class="ccol_2"><a href="../components/alpaca4d/momentCurvature.html">MomentCurvature</a> <span class="codeword">(MC)</span><br><span class="desc"></span></td></tr>
+<tr><td class="ccol_1"><a href="../components/alpaca4d/patch.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -24px -96px" ></div></a></td><td class="ccol_2"><a href="../components/alpaca4d/patch.html">Patch</a><br><span class="desc">Construct a Patch</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/alpaca4d/fiberPoint.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -144px -96px" ></div></a></td><td class="ccol_2"><a href="../components/alpaca4d/fiberPoint.html">Fiber Point</a><br><span class="desc">Construct a FiberPoint</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/alpaca4d/reinforcingSteel.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -48px -120px" ></div></a></td><td class="ccol_2"><a href="../components/alpaca4d/reinforcingSteel.html">ReinforcingSteel</a><br><span class="desc">Construct an ReinforcingSteel</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/alpaca4d/steel01.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -216px -120px" ></div></a></td><td class="ccol_2"><a href="../components/alpaca4d/steel01.html">Steel01</a><br><span class="desc">Construct a Steel01</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>08_NumericalOutput</h3>
+<table class="addon-compos">
+<tbody>
+<tr><td class="ccol_1"><a href="../components/alpaca4d/beamForces.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -96px 0px" ></div></a></td><td class="ccol_2"><a href="../components/alpaca4d/beamForces.html">Beam Forces</a> <span class="codeword">(BF)</span><br><span class="desc">Read the Beam Forces</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/alpaca4d/brickStresses.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -144px 0px" ></div></a></td><td class="ccol_2"><a href="../components/alpaca4d/brickStresses.html">Brick Stresses</a> <span class="codeword">(BS)</span><br><span class="desc">Read the Brick Stresses</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/alpaca4d/modalAnalysisReport.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -120px -72px" ></div></a></td><td class="ccol_2"><a href="../components/alpaca4d/modalAnalysisReport.html">Modal Analysis Report</a> <span class="codeword">(MAR)</span><br><span class="desc">Read the Modal Analysis Report</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/alpaca4d/nodalDisplacements.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') 0px -96px" ></div></a></td><td class="ccol_2"><a href="../components/alpaca4d/nodalDisplacements.html">Nodal Displacements</a> <span class="codeword">(ND)</span><br><span class="desc">Read Nodal Displacements</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/alpaca4d/reactionForces.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -192px -96px" ></div></a></td><td class="ccol_2"><a href="../components/alpaca4d/reactionForces.html">Reaction Forces</a> <span class="codeword">(RF)</span><br><span class="desc">Read Reaction Forces</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/alpaca4d/shellForces.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -144px -120px" ></div></a></td><td class="ccol_2"><a href="../components/alpaca4d/shellForces.html">Shell Forces</a> <span class="codeword">(SF)</span><br><span class="desc">Read the Shell Forces</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/alpaca4d/shellStresses.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -168px -120px" ></div></a></td><td class="ccol_2"><a href="../components/alpaca4d/shellStresses.html">Shell Stresses</a> <span class="codeword">(SS)</span><br><span class="desc">Read the Shell Stresses</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>10_Utility</h3>
+<table class="addon-compos">
+<tbody>
+<tr><td class="ccol_1"><a href="../components/alpaca4d/customCode.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -24px -24px" ></div></a></td><td class="ccol_2"><a href="../components/alpaca4d/customCode.html">Custom code</a> <span class="codeword">(CC)</span><br><span class="desc">Add a custom OpenSees code</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/alpaca4d/deconstruct.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -72px -24px" ></div></a></td><td class="ccol_2"><a href="../components/alpaca4d/deconstruct.html">Deconstruct</a><br><span class="desc">Deconstruct any object</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/alpaca4d/deserialise.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -120px -24px" ></div></a></td><td class="ccol_2"><a href="../components/alpaca4d/deserialise.html">Deserialise</a> <span class="codeword">(DSLRZ)</span><br><span class="desc">Geometry representation of an OpenSeesFile. Not all the elements have been implemented!</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/alpaca4d/colors.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -72px -48px" ></div></a></td><td class="ccol_2"><a href="../components/alpaca4d/colors.html">Colors</a> <span class="codeword">(CLR)</span><br><span class="desc">Preset of gradient colors perfect for Data Visualisation</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/alpaca4d/meshLoft.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -72px -72px" ></div></a></td><td class="ccol_2"><a href="../components/alpaca4d/meshLoft.html">MeshLoft</a> <span class="codeword">(ML)</span><br><span class="desc">Mesh Loft</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/alpaca4d/meshSeriesToBrick.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -96px -72px" ></div></a></td><td class="ccol_2"><a href="../components/alpaca4d/meshSeriesToBrick.html">MeshSeriesToBrick</a> <span class="codeword">(MSTB)</span><br><span class="desc">MeshSeriesToBrick</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/alpaca4d/serialize.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -120px -120px" ></div></a></td><td class="ccol_2"><a href="../components/alpaca4d/serialize.html">Serialize</a> <span class="codeword">(SLRZ)</span><br><span class="desc">Serialize a model and write the content to a file</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>01_Section</h3>
+<table class="addon-compos">
+<tbody>
+<tr><td class="ccol_1"><a href="../components/alpaca4d/circleCS.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -192px 0px" ></div></a></td><td class="ccol_2"><a href="../components/alpaca4d/circleCS.html">CircleCS</a><br><span class="desc">Construct an Circle Cross Section</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/alpaca4d/genericSection.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -192px -24px" ></div></a></td><td class="ccol_2"><a href="../components/alpaca4d/genericSection.html">Generic Section</a><br><span class="desc">Construct an Generic Section</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/alpaca4d/iSection.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -120px -48px" ></div></a></td><td class="ccol_2"><a href="../components/alpaca4d/iSection.html">I Section</a><br><span class="desc">Construct an I Cross Section</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/alpaca4d/plateFiberSection.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -120px -96px" ></div></a></td><td class="ccol_2"><a href="../components/alpaca4d/plateFiberSection.html">Plate Fiber Section</a> <span class="codeword">(PFS)</span><br><span class="desc">Construct an Plate Fiber Section</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/alpaca4d/rectangleCS.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') 0px -120px" ></div></a></td><td class="ccol_2"><a href="../components/alpaca4d/rectangleCS.html">RectangleCS</a><br><span class="desc">Construct an Rectangle Cross Section</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/alpaca4d/rectangleHollow.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -24px -120px" ></div></a></td><td class="ccol_2"><a href="../components/alpaca4d/rectangleHollow.html">RectangleHollow</a> <span class="codeword">(RectangleHollowCS)</span><br><span class="desc">Construct an Rectangle Hollow Section Cross Section</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>02_Element</h3>
+<table class="addon-compos">
+<tbody>
+<tr><td class="ccol_1"><a href="../components/alpaca4d/aSDShellQ4.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -48px 0px" ></div></a></td><td class="ccol_2"><a href="../components/alpaca4d/aSDShellQ4.html">ASD ShellQ4</a> <span class="codeword">(ASDQ4/DKGT)</span><br><span class="desc">Construct a ASDShellQ4 element or DKGT Shell</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/alpaca4d/forceBeamColumn.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -24px -48px" ></div></a></td><td class="ccol_2"><a href="../components/alpaca4d/forceBeamColumn.html">Force Beam Column</a><br><span class="desc">Construct a ForceBeamColumn</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/alpaca4d/fourNodeTetrahedron.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -48px -48px" ></div></a></td><td class="ccol_2"><a href="../components/alpaca4d/fourNodeTetrahedron.html">FourNodeTetrahedron</a> <span class="codeword">(FNT)</span><br><span class="desc">Construct a FourNodeTetrahedron element</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/alpaca4d/sSPBrick.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -192px -120px" ></div></a></td><td class="ccol_2"><a href="../components/alpaca4d/sSPBrick.html">SSP Brick</a> <span class="codeword">(SSP)</span><br><span class="desc">Construct a SSP (Stabilized Single Point) Brick element</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/alpaca4d/support.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') 0px -144px" ></div></a></td><td class="ccol_2"><a href="../components/alpaca4d/support.html">Support</a><br><span class="desc">Construct a Support</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>04_Time Series</h3>
+<table class="addon-compos">
+<tbody>
+<tr><td class="ccol_1"><a href="../components/alpaca4d/constantTimeSeries.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') 0px -24px" ></div></a></td><td class="ccol_2"><a href="../components/alpaca4d/constantTimeSeries.html">Constant Time Series</a><br><span class="desc">Construct a Constant Time Series</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/alpaca4d/linearTimeSeries.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -216px -48px" ></div></a></td><td class="ccol_2"><a href="../components/alpaca4d/linearTimeSeries.html">Linear Time Series</a><br><span class="desc">Construct a Linear Time Series</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/alpaca4d/pathTimeSeries.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -48px -96px" ></div></a></td><td class="ccol_2"><a href="../components/alpaca4d/pathTimeSeries.html">Path Time Series</a> <span class="codeword">(PTS)</span><br><span class="desc">Construct a Path Time Series</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/alpaca4d/readTimeSeries.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -216px -96px" ></div></a></td><td class="ccol_2"><a href="../components/alpaca4d/readTimeSeries.html">Read Time Series</a> <span class="codeword">(RTS)</span><br><span class="desc">Read a Path Time Series</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/alpaca4d/trigonometricTimeSeries.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -48px -144px" ></div></a></td><td class="ccol_2"><a href="../components/alpaca4d/trigonometricTimeSeries.html">Trigonometric Time Series</a> <span class="codeword">(TTS)</span><br><span class="desc">Construct a Trigonometric Time Series</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>05_Load</h3>
+<table class="addon-compos">
+<tbody>
+<tr><td class="ccol_1"><a href="../components/alpaca4d/gravityLoad.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -96px -48px" ></div></a></td><td class="ccol_2"><a href="../components/alpaca4d/gravityLoad.html">Gravity Load</a><br><span class="desc">Construct a Gravity Load</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/alpaca4d/linearLoad.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -192px -48px" ></div></a></td><td class="ccol_2"><a href="../components/alpaca4d/linearLoad.html">Linear Load</a> <span class="codeword">(LinearLoad)</span><br><span class="desc">Construct a LinearLoad</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/alpaca4d/massPoint.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -24px -72px" ></div></a></td><td class="ccol_2"><a href="../components/alpaca4d/massPoint.html">Mass Point</a> <span class="codeword">(MP)</span><br><span class="desc">Construct a PointLoad</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/alpaca4d/meshLoad.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -48px -72px" ></div></a></td><td class="ccol_2"><a href="../components/alpaca4d/meshLoad.html">Mesh Load</a> <span class="codeword">(MeshLoad)</span><br><span class="desc">Construct a MeshLoad</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/alpaca4d/pointLoad.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -168px -96px" ></div></a></td><td class="ccol_2"><a href="../components/alpaca4d/pointLoad.html">Point Load</a><br><span class="desc">Construct a PointLoad</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>Info</h3>
+<table class="addon-compos">
+<tbody>
+<tr><td class="ccol_1"><a href="../components/alpaca4d/benchmark.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -120px 0px" ></div></a></td><td class="ccol_2"><a href="../components/alpaca4d/benchmark.html">Benchmark</a><br><span class="desc">Get website with Alpaca4d/OpenSees Benchmark</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/alpaca4d/license.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -168px -48px" ></div></a></td><td class="ccol_2"><a href="../components/alpaca4d/license.html">License</a><br><span class="desc">License</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/alpaca4d/sponsor.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -72px -96px" ></div></a></td><td class="ccol_2"><a href="../components/alpaca4d/sponsor.html">Sponsor</a><br><span class="desc">Sponsor</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/alpaca4d/donation.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -96px -96px" ></div></a></td><td class="ccol_2"><a href="../components/alpaca4d/donation.html">Donation</a><br><span class="desc">Donation</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>00_Material</h3>
+<table class="addon-compos">
+<tbody>
+<tr><td class="ccol_1"><a href="../components/alpaca4d/elasticIsotropicMaterial.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -144px -24px" ></div></a></td><td class="ccol_2"><a href="../components/alpaca4d/elasticIsotropicMaterial.html">Elastic Isotropic Material</a> <span class="codeword">(EIM)</span><br><span class="desc">Construct an ElasticIsotropicMaterial</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/alpaca4d/elasticOrthotropicMaterial.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -168px -24px" ></div></a></td><td class="ccol_2"><a href="../components/alpaca4d/elasticOrthotropicMaterial.html">Elastic Orthotropic Material</a> <span class="codeword">(EOM)</span><br><span class="desc">Construct an ElasticOrthotropicMaterial</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/alpaca4d/uniaxialMaterialElastic.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -72px -144px" ></div></a></td><td class="ccol_2"><a href="../components/alpaca4d/uniaxialMaterialElastic.html">Uniaxial Material Elastic</a><br><span class="desc">Construct an UniaxialMaterialElastic</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>09_Visualisation</h3>
+<table class="addon-compos">
+<tbody>
+<tr><td class="ccol_1"><a href="../components/alpaca4d/deformedModelView.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -96px -24px" ></div></a></td><td class="ccol_2"><a href="../components/alpaca4d/deformedModelView.html">Deformed Model View</a><br><span class="desc">Deformed Model View</span></td></tr>
+<tr><td class="ccol_1"><a href="../components/alpaca4d/modelView.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -144px -72px" ></div></a></td><td class="ccol_2"><a href="../components/alpaca4d/modelView.html">Model View</a> <span class="codeword">(ModelView)</span><br><span class="desc">ModelView</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>06_Assemble</h3>
+<table class="addon-compos">
+<tbody>
+<tr><td class="ccol_1"><a href="../components/alpaca4d/assembleModel.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -72px 0px" ></div></a></td><td class="ccol_2"><a href="../components/alpaca4d/assembleModel.html">AssembleModel</a> <span class="codeword">(Assemble Model)</span><br><span class="desc">Assemble a Model</span></td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="cchild">
+<h3>03_Constraint</h3>
+<table class="addon-compos">
+<tbody>
+<tr><td class="ccol_1"><a href="../components/alpaca4d/rigidDiaphragm.html"><div class="ghsprite" style="background: url('../icons/alpaca4d.png') -72px -120px" ></div></a></td><td class="ccol_2"><a href="../components/alpaca4d/rigidDiaphragm.html">Rigid Diaphragm</a><br><span class="desc">Construct a Rigid Diaphgram</span></td></tr>
+</tbody>
+</table>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div id="docs-foot" class="docs-footindex">
+<div id="docs-foot-inner">
+<p class="left">
+Site design © <a href="https://github.com/robinrodricks/">Robin Rodricks</a>. &nbsp;
+
+Alpaca4d and associated data © 2023  <a href="https://alpaca4d.github.io/download.html">Marco Pellegrino</a>. &nbsp;
+<br>
+Rhinoceros and Grasshopper are registered trademarks of <a href="https://www.rhino3d.com/">Robert McNeel & Associates</a>.&nbsp;
+Hosted by <a href="http://www.github.com/">GitHub</a> 
+</p>
+<p class="right docs-lightfont">
+
+<a href="https://github.com/grasshopper3d/GrasshopperDocsSite/issues/new">Report an Issue</a> &nbsp;|&nbsp;
+<a href="/termsOfService.html">Terms of Service</a>
+</p>
+
+</div>
+
+
+
+</div>
+</div>
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DX6TG16YN7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DX6TG16YN7');
+</script>
+
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/jquery-autocomplete.min.js"></script>
+<script type="text/javascript" src="/js/app-searchbar.js"></script>
+
+    </body>
+</html>

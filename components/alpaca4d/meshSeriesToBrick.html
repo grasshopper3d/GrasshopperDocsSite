@@ -1,0 +1,507 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MeshSeriesToBrick - Alpaca4d - Component for Grasshopper | Grasshopper Docs</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+
+<meta name="description" content="MeshSeriesToBrick" />
+<meta name="title" content="MeshSeriesToBrick - Alpaca4d - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:title" content="MeshSeriesToBrick - Alpaca4d - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://grasshopperdocs.com/components/alpaca4d/meshSeriesToBrick.html" />
+<meta property="og:site_name" content="Grasshopper Docs" />
+
+<link href="../../style.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+
+<div id="docs">
+
+<div id="docs-head">
+<div id="docs-masthead">
+<p id="docs-sitename"><a href="http://grasshopperdocs.com/">
+	<img id="site-logo-icon" src="/images/logo-icon.png" alt=""></img>
+	<img id="site-logo-text" src="/images/logo-text.png" alt="Grasshopper Docs"></img>
+</a></p>
+<p id="docs-sitedesc">Community documentation for Grasshopper add-ons &amp; plugins</p>
+<div id="docs-sitesearch">
+	<input id="docs-sitesearch-inputbox" type="text" name="docs-sitesearch-inputbox" />
+	<img id="docs-searchicon" src="/images/search.png"/>
+</div>
+</div>
+</div>
+
+<div id="docs-body">
+
+<div class="page">
+
+<div class="content compo-page">
+
+<div class="ghbar ">
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/alpaca4d/elasticIsotropicMaterial.html"><div class="ghsprite" style="background: url('../../icons/alpaca4d.png') -144px -24px" data-toptip="Elastic Isotropic Material"></div></a>
+<a href="../../components/alpaca4d/elasticOrthotropicMaterial.html"><div class="ghsprite" style="background: url('../../icons/alpaca4d.png') -168px -24px" data-downtip="Elastic Orthotropic Material"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/alpaca4d/uniaxialMaterialElastic.html"><div class="ghsprite" style="background: url('../../icons/alpaca4d.png') -72px -144px" data-toptip="Uniaxial Material Elastic"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="2">
+00_Material
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/alpaca4d/circleCS.html"><div class="ghsprite" style="background: url('../../icons/alpaca4d.png') -192px 0px" data-toptip="CircleCS"></div></a>
+<a href="../../components/alpaca4d/genericSection.html"><div class="ghsprite" style="background: url('../../icons/alpaca4d.png') -192px -24px" data-downtip="Generic Section"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/alpaca4d/iSection.html"><div class="ghsprite" style="background: url('../../icons/alpaca4d.png') -120px -48px" data-toptip="I Section"></div></a>
+<a href="../../components/alpaca4d/plateFiberSection.html"><div class="ghsprite" style="background: url('../../icons/alpaca4d.png') -120px -96px" data-downtip="Plate Fiber Section"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/alpaca4d/rectangleCS.html"><div class="ghsprite" style="background: url('../../icons/alpaca4d.png') 0px -120px" data-toptip="RectangleCS"></div></a>
+<a href="../../components/alpaca4d/rectangleHollow.html"><div class="ghsprite" style="background: url('../../icons/alpaca4d.png') -24px -120px" data-downtip="RectangleHollow"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+01_Section
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/alpaca4d/aSDShellQ4.html"><div class="ghsprite" style="background: url('../../icons/alpaca4d.png') -48px 0px" data-toptip="ASD ShellQ4"></div></a>
+<a href="../../components/alpaca4d/forceBeamColumn.html"><div class="ghsprite" style="background: url('../../icons/alpaca4d.png') -24px -48px" data-downtip="Force Beam Column"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/alpaca4d/fourNodeTetrahedron.html"><div class="ghsprite" style="background: url('../../icons/alpaca4d.png') -48px -48px" data-toptip="FourNodeTetrahedron"></div></a>
+<a href="../../components/alpaca4d/sSPBrick.html"><div class="ghsprite" style="background: url('../../icons/alpaca4d.png') -192px -120px" data-downtip="SSP Brick"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/alpaca4d/support.html"><div class="ghsprite" style="background: url('../../icons/alpaca4d.png') 0px -144px" data-toptip="Support"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+02_Element
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/alpaca4d/rigidDiaphragm.html"><div class="ghsprite" style="background: url('../../icons/alpaca4d.png') -72px -120px" data-toptip="Rigid Diaphragm"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+03_Constraint
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/alpaca4d/constantTimeSeries.html"><div class="ghsprite" style="background: url('../../icons/alpaca4d.png') 0px -24px" data-toptip="Constant Time Series"></div></a>
+<a href="../../components/alpaca4d/linearTimeSeries.html"><div class="ghsprite" style="background: url('../../icons/alpaca4d.png') -216px -48px" data-downtip="Linear Time Series"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/alpaca4d/pathTimeSeries.html"><div class="ghsprite" style="background: url('../../icons/alpaca4d.png') -48px -96px" data-toptip="Path Time Series"></div></a>
+<a href="../../components/alpaca4d/readTimeSeries.html"><div class="ghsprite" style="background: url('../../icons/alpaca4d.png') -216px -96px" data-downtip="Read Time Series"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/alpaca4d/trigonometricTimeSeries.html"><div class="ghsprite" style="background: url('../../icons/alpaca4d.png') -48px -144px" data-toptip="Trigonometric Time Series"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+04_Time Series
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/alpaca4d/gravityLoad.html"><div class="ghsprite" style="background: url('../../icons/alpaca4d.png') -96px -48px" data-toptip="Gravity Load"></div></a>
+<a href="../../components/alpaca4d/linearLoad.html"><div class="ghsprite" style="background: url('../../icons/alpaca4d.png') -192px -48px" data-downtip="Linear Load"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/alpaca4d/massPoint.html"><div class="ghsprite" style="background: url('../../icons/alpaca4d.png') -24px -72px" data-toptip="Mass Point"></div></a>
+<a href="../../components/alpaca4d/meshLoad.html"><div class="ghsprite" style="background: url('../../icons/alpaca4d.png') -48px -72px" data-downtip="Mesh Load"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/alpaca4d/pointLoad.html"><div class="ghsprite" style="background: url('../../icons/alpaca4d.png') -168px -96px" data-toptip="Point Load"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+05_Load
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/alpaca4d/assembleModel.html"><div class="ghsprite" style="background: url('../../icons/alpaca4d.png') -72px 0px" data-toptip="AssembleModel"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+06_Assemble
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/alpaca4d/analysisSettings.html"><div class="ghsprite" style="background: url('../../icons/alpaca4d.png') 0px 0px" data-toptip="Analysis Settings"></div></a>
+<a href="../../components/alpaca4d/analysisStep.html"><div class="ghsprite" style="background: url('../../icons/alpaca4d.png') -24px 0px" data-downtip="Analysis Step"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/alpaca4d/integratorCentralDifference.html"><div class="ghsprite" style="background: url('../../icons/alpaca4d.png') -168px 0px" data-toptip="Integrator Central Difference"></div></a>
+<a href="../../components/alpaca4d/damping.html"><div class="ghsprite" style="background: url('../../icons/alpaca4d.png') -48px -24px" data-downtip="Damping"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/alpaca4d/integratorLoadControl.html"><div class="ghsprite" style="background: url('../../icons/alpaca4d.png') 0px -72px" data-toptip="Integrator Load Control"></div></a>
+<a href="../../components/alpaca4d/naturalVibrationAnalysis.html"><div class="ghsprite" style="background: url('../../icons/alpaca4d.png') -192px -72px" data-downtip="Natural Vibration Analysis"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/alpaca4d/integratorNewmark.html"><div class="ghsprite" style="background: url('../../icons/alpaca4d.png') -216px -72px" data-toptip="Integrator Newmark"></div></a>
+<a href="../../components/alpaca4d/runAnalysis.html"><div class="ghsprite" style="background: url('../../icons/alpaca4d.png') -96px -120px" data-downtip="Run Analysis"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/alpaca4d/test.html"><div class="ghsprite" style="background: url('../../icons/alpaca4d.png') -24px -144px" data-toptip="Test"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="5">
+07_Analysis
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/alpaca4d/beamForces.html"><div class="ghsprite" style="background: url('../../icons/alpaca4d.png') -96px 0px" data-toptip="Beam Forces"></div></a>
+<a href="../../components/alpaca4d/brickStresses.html"><div class="ghsprite" style="background: url('../../icons/alpaca4d.png') -144px 0px" data-downtip="Brick Stresses"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/alpaca4d/modalAnalysisReport.html"><div class="ghsprite" style="background: url('../../icons/alpaca4d.png') -120px -72px" data-toptip="Modal Analysis Report"></div></a>
+<a href="../../components/alpaca4d/nodalDisplacements.html"><div class="ghsprite" style="background: url('../../icons/alpaca4d.png') 0px -96px" data-downtip="Nodal Displacements"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/alpaca4d/reactionForces.html"><div class="ghsprite" style="background: url('../../icons/alpaca4d.png') -192px -96px" data-toptip="Reaction Forces"></div></a>
+<a href="../../components/alpaca4d/shellForces.html"><div class="ghsprite" style="background: url('../../icons/alpaca4d.png') -144px -120px" data-downtip="Shell Forces"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/alpaca4d/shellStresses.html"><div class="ghsprite" style="background: url('../../icons/alpaca4d.png') -168px -120px" data-toptip="Shell Stresses"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="4">
+08_NumericalOutput
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/alpaca4d/deformedModelView.html"><div class="ghsprite" style="background: url('../../icons/alpaca4d.png') -96px -24px" data-toptip="Deformed Model View"></div></a>
+<a href="../../components/alpaca4d/modelView.html"><div class="ghsprite" style="background: url('../../icons/alpaca4d.png') -144px -72px" data-downtip="Model View"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+09_Visualisation
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/alpaca4d/customCode.html"><div class="ghsprite" style="background: url('../../icons/alpaca4d.png') -24px -24px" data-toptip="Custom code"></div></a>
+<a href="../../components/alpaca4d/deconstruct.html"><div class="ghsprite" style="background: url('../../icons/alpaca4d.png') -72px -24px" data-downtip="Deconstruct"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/alpaca4d/deserialise.html"><div class="ghsprite" style="background: url('../../icons/alpaca4d.png') -120px -24px" data-toptip="Deserialise"></div></a>
+<a href="../../components/alpaca4d/colors.html"><div class="ghsprite" style="background: url('../../icons/alpaca4d.png') -72px -48px" data-downtip="Colors"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/alpaca4d/meshLoft.html"><div class="ghsprite" style="background: url('../../icons/alpaca4d.png') -72px -72px" data-toptip="MeshLoft"></div></a>
+<a href="../../components/alpaca4d/meshSeriesToBrick.html"><div class="ghsprite" style="background: url('../../icons/alpaca4d.png') -96px -72px" data-downtip="MeshSeriesToBrick"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/alpaca4d/serialize.html"><div class="ghsprite" style="background: url('../../icons/alpaca4d.png') -120px -120px" data-toptip="Serialize"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="4">
+10_Utility
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/alpaca4d/benchmark.html"><div class="ghsprite" style="background: url('../../icons/alpaca4d.png') -120px 0px" data-toptip="Benchmark"></div></a>
+<a href="../../components/alpaca4d/license.html"><div class="ghsprite" style="background: url('../../icons/alpaca4d.png') -168px -48px" data-downtip="License"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/alpaca4d/sponsor.html"><div class="ghsprite" style="background: url('../../icons/alpaca4d.png') -72px -96px" data-toptip="Sponsor"></div></a>
+<a href="../../components/alpaca4d/donation.html"><div class="ghsprite" style="background: url('../../icons/alpaca4d.png') -96px -96px" data-downtip="Donation"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="2">
+Info
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/alpaca4d/concrete01.html"><div class="ghsprite" style="background: url('../../icons/alpaca4d.png') -216px 0px" data-toptip="Concrete01"></div></a>
+<a href="../../components/alpaca4d/fiberSection.html"><div class="ghsprite" style="background: url('../../icons/alpaca4d.png') -216px -24px" data-downtip="Fiber Section"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/alpaca4d/fiberStressStrain.html"><div class="ghsprite" style="background: url('../../icons/alpaca4d.png') 0px -48px" data-toptip="Fiber Stress Strain"></div></a>
+<a href="../../components/alpaca4d/layerFiber.html"><div class="ghsprite" style="background: url('../../icons/alpaca4d.png') -144px -48px" data-downtip="Layer Fiber"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/alpaca4d/momentCurvature.html"><div class="ghsprite" style="background: url('../../icons/alpaca4d.png') -168px -72px" data-toptip="MomentCurvature"></div></a>
+<a href="../../components/alpaca4d/patch.html"><div class="ghsprite" style="background: url('../../icons/alpaca4d.png') -24px -96px" data-downtip="Patch"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/alpaca4d/fiberPoint.html"><div class="ghsprite" style="background: url('../../icons/alpaca4d.png') -144px -96px" data-toptip="Fiber Point"></div></a>
+<a href="../../components/alpaca4d/reinforcingSteel.html"><div class="ghsprite" style="background: url('../../icons/alpaca4d.png') -48px -120px" data-downtip="ReinforcingSteel"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/alpaca4d/steel01.html"><div class="ghsprite" style="background: url('../../icons/alpaca4d.png') -216px -120px" data-toptip="Steel01"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="5">
+MomentCurvature
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+
+<div class="addon-buttons">
+<a href="https://github.com/Alpaca4d/Alpaca4d">Source Code</a>
+<a href="https://alpaca4d.github.io/download.html">Download</a>
+
+</div>
+
+
+<div class="google-ad-sidebar">
+
+<!-- Carbon Ads -->
+<script async type="text/javascript" src="https://cdn.carbonads.com/carbon.js?serve=CK7IC27L&placement=grasshopperdocscom" id="_carbonads_js"></script>
+
+</div>
+
+<div class="compo-header">
+<h1><div class="ghsprite" style="background: url('../../icons/alpaca4d.png') -96px -72px" ></div> MeshSeriesToBrick</h1>
+
+<div class="breadcrumb">
+ <a href="../../index.html">Component Index</a>
+  <a href="../../addons/alpaca4d.html">Alpaca4d</a><a href="#" class="breadcrumb-nolink">10_Utility</a><a href="#" class="breadcrumb-nolink">MSTB</a>
+</div>
+
+</div>
+<h3>MeshSeriesToBrick</h3>
+<h2>Inputs</h2>
+<table class="params-table input-params">
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Meshes</b></td><td>Meshes</td><td>Meshes</td><td>Mesh</td></tr>
+<tr><td><b>Closed</b></td><td>Closed</td><td>Closed</td><td>Boolean</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table class="params-table output-params">
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Mesh</b></td><td>Mesh</td><td>Mesh</td><td>Mesh</td></tr>
+</tbody>
+</table>
+
+
+</div>
+
+</div>
+
+</div>
+
+<div id="docs-foot" class="docs-footindex">
+<div id="docs-foot-inner">
+<p class="left">
+Site design © <a href="https://github.com/robinrodricks/">Robin Rodricks</a>. &nbsp;
+
+Alpaca4d and associated data © 2023  <a href="https://alpaca4d.github.io/download.html">Marco Pellegrino</a>. &nbsp;
+<br>
+Rhinoceros and Grasshopper are registered trademarks of <a href="https://www.rhino3d.com/">Robert McNeel & Associates</a>.&nbsp;
+Hosted by <a href="http://www.github.com/">GitHub</a> 
+</p>
+<p class="right docs-lightfont">
+
+<a href="https://github.com/grasshopper3d/GrasshopperDocsSite/issues/new">Report an Issue</a> &nbsp;|&nbsp;
+<a href="/termsOfService.html">Terms of Service</a>
+</p>
+
+</div>
+
+
+
+</div>
+</div>
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DX6TG16YN7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DX6TG16YN7');
+</script>
+
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/jquery-autocomplete.min.js"></script>
+<script type="text/javascript" src="/js/app-searchbar.js"></script>
+
+    </body>
+</html>

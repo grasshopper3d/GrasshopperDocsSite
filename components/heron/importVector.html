@@ -7,7 +7,7 @@
 <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 <link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
 
-<meta name="description" content="Import vector GIS data clipped to a boundary, including SHP, GeoJSON, OSM, KML, MVT and GDB folders." />
+<meta name="description" content="Import vector GIS data clipped to a boundary, including SHP, GeoJSON, OSM, KML, MVT and GDB folders. Use the SetSRS component to set the spatial reference system used by this component." />
 <meta name="title" content="Import Vector - Heron - Component for Grasshopper | Grasshopper Docs" />
 <meta property="og:title" content="Import Vector - Heron - Component for Grasshopper | Grasshopper Docs" />
 <meta property="og:type" content="website" />
@@ -49,25 +49,31 @@
 <tr>
 <td>
 <div class="ghcolumn">
-<a href="../../components/heron/mapboxRaster.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -120px -48px" data-toptip="Mapbox Raster"></div></a>
-<a href="../../components/heron/mapboxTopography.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -144px -48px" data-downtip="Mapbox Topography"></div></a>
+<a href="../../components/heron/mapboxIsochrone.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -48px -72px" data-toptip="Mapbox Isochrone"></div></a>
+<a href="../../components/heron/mapboxRaster.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -72px -72px" data-downtip="Mapbox Raster"></div></a>
 </div>
 </td>
 <td>
 <div class="ghcolumn">
-<a href="../../components/heron/mapboxVector.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -168px -48px" data-toptip="Mapbox Vector"></div></a>
-<a href="../../components/heron/slippyRaster.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -72px -72px" data-downtip="Slippy Raster"></div></a>
+<a href="../../components/heron/mapboxTopography.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -96px -72px" data-toptip="Mapbox Topography"></div></a>
+<a href="../../components/heron/mapboxVector.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -120px -72px" data-downtip="Mapbox Vector"></div></a>
 </div>
 </td>
 <td>
 <div class="ghcolumn">
-<a href="../../components/heron/slippyTiles.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -96px -72px" data-toptip="Slippy Tiles"></div></a>
-<a href="../../components/heron/slippyViewport.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -120px -72px" data-downtip="Slippy Viewport"></div></a>
+<a href="../../components/heron/slippyRaster.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -48px -96px" data-toptip="Slippy Raster"></div></a>
+<a href="../../components/heron/slippyTiles.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -72px -96px" data-downtip="Slippy Tiles"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heron/slippyViewport.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -96px -96px" data-toptip="Slippy Viewport"></div></a>
+<a href="../../components/heron/yelp.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -144px -96px" data-downtip="Yelp"></div></a>
 </div>
 </td>
 </tr>
 <tr class="ghgroup-title-row">
-<td class="ghgroup-title" colspan="3">
+<td class="ghgroup-title" colspan="4">
 GIS API
 </td>
 </tr>
@@ -78,19 +84,20 @@ GIS API
 <tr>
 <td>
 <div class="ghcolumn">
-<a href="../../components/heron/exportVector.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -48px -24px" data-toptip="Export Vector"></div></a>
-<a href="../../components/heron/importLAZ.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -24px -48px" data-downtip="Import LAZ"></div></a>
+<a href="../../components/heron/exportVector.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -72px -24px" data-toptip="Export Vector"></div></a>
+<a href="../../components/heron/importLAZ.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -168px -48px" data-downtip="Import LAZ"></div></a>
 </div>
 </td>
 <td>
 <div class="ghcolumn">
-<a href="../../components/heron/importOSM.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -48px -48px" data-toptip="Import OSM"></div></a>
-<a href="../../components/heron/importRaster.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -72px -48px" data-downtip="Import Raster"></div></a>
+<a href="../../components/heron/importOSM.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -192px -48px" data-toptip="Import OSM"></div></a>
+<a href="../../components/heron/importRaster.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -216px -48px" data-downtip="Import Raster"></div></a>
 </div>
 </td>
 <td>
 <div class="ghcolumn">
-<a href="../../components/heron/importVector.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -96px -48px" data-toptip="Import Vector"></div></a>
+<a href="../../components/heron/importVectorLite.html"><div class="ghsprite" style="background: url('../../icons/heron.png') 0px -72px" data-toptip="Import Vector Lite"></div></a>
+<a href="../../components/heron/importVector.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -24px -72px" data-downtip="Import Vector"></div></a>
 </div>
 </td>
 </tr>
@@ -119,12 +126,12 @@ GIS Import | Export
 <td>
 <div class="ghcolumn">
 <a href="../../components/heron/getRESTVector.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -168px 0px" data-toptip="Get REST Vector"></div></a>
-<a href="../../components/heron/getRESTOSM.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -24px -72px" data-downtip="Get REST OSM"></div></a>
+<a href="../../components/heron/getRESTOSM.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -216px -72px" data-downtip="Get REST OSM"></div></a>
 </div>
 </td>
 <td>
 <div class="ghcolumn">
-<a href="../../components/heron/getRESTTopography.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -48px -72px" data-toptip="Get REST Topography"></div></a>
+<a href="../../components/heron/getRESTTopography.html"><div class="ghsprite" style="background: url('../../icons/heron.png') 0px -96px" data-toptip="Get REST Topography"></div></a>
 </div>
 </td>
 </tr>
@@ -158,18 +165,36 @@ GIS REST
 </td>
 <td>
 <div class="ghcolumn">
-<a href="../../components/heron/gdalOgr2Ogr.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -72px -24px" data-toptip="GdalOgr2Ogr"></div></a>
-<a href="../../components/heron/gdalTranslate.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -96px -24px" data-downtip="GdalTranslate"></div></a>
+<a href="../../components/heron/dMStoDD.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -48px -24px" data-toptip="DMStoDD"></div></a>
+<a href="../../components/heron/gdalBuffer.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -96px -24px" data-downtip="Gdal Buffer"></div></a>
 </div>
 </td>
 <td>
 <div class="ghcolumn">
-<a href="../../components/heron/gdalWarp.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -120px -24px" data-toptip="GdalWarp"></div></a>
+<a href="../../components/heron/gdalConvexHull.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -120px -24px" data-toptip="Gdal Convex Hull"></div></a>
+<a href="../../components/heron/gdalFillNoData.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -168px -24px" data-downtip="Gdal Fill No Data"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heron/gdalInfo.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -192px -24px" data-toptip="Gdal Info"></div></a>
+<a href="../../components/heron/gdalOgr2Ogr.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -216px -24px" data-downtip="GdalOgr2Ogr"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heron/gdalTranslate.html"><div class="ghsprite" style="background: url('../../icons/heron.png') 0px -48px" data-toptip="GdalTranslate"></div></a>
+<a href="../../components/heron/gdalWarp.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -24px -48px" data-downtip="GdalWarp"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heron/setSpatialReferenceSystem.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -24px -96px" data-toptip="Set Spatial Reference System"></div></a>
 </div>
 </td>
 </tr>
 <tr class="ghgroup-title-row">
-<td class="ghgroup-title" colspan="5">
+<td class="ghgroup-title" colspan="8">
 GIS Tools
 </td>
 </tr>
@@ -180,36 +205,42 @@ GIS Tools
 <tr>
 <td>
 <div class="ghcolumn">
-<a href="../../components/heron/colorToHex.html"><div class="ghsprite" style="background: url('../../icons/heron.png') 0px -24px" data-toptip="ColorToHex"></div></a>
-<a href="../../components/heron/hexToColor.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -144px -24px" data-downtip="HexToColor"></div></a>
+<a href="../../components/heron/colorToHex.html"><div class="ghsprite" style="background: url('../../icons/heron.png') 0px -24px" data-toptip="Color to Hex"></div></a>
+<a href="../../components/heron/gDALDetails.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -144px -24px" data-downtip="GDAL Details"></div></a>
 </div>
 </td>
 <td>
 <div class="ghcolumn">
-<a href="../../components/heron/cubemapFromView.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -168px -24px" data-toptip="Cubemap From View"></div></a>
-<a href="../../components/heron/cubemapFromViewPlus.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -192px -24px" data-downtip="Cubemap From View Plus"></div></a>
+<a href="../../components/heron/hexToColor.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -48px -48px" data-toptip="Hex to Color"></div></a>
+<a href="../../components/heron/cubemapFromView.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -72px -48px" data-downtip="Cubemap From View"></div></a>
 </div>
 </td>
 <td>
 <div class="ghcolumn">
-<a href="../../components/heron/flipImage.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -216px -24px" data-toptip="Flip Image"></div></a>
-<a href="../../components/heron/rotateImage.html"><div class="ghsprite" style="background: url('../../icons/heron.png') 0px -48px" data-downtip="Rotate Image"></div></a>
+<a href="../../components/heron/cubemapFromViewPlus.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -96px -48px" data-toptip="Cubemap From View Plus"></div></a>
+<a href="../../components/heron/flipImage.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -120px -48px" data-downtip="Flip Image"></div></a>
 </div>
 </td>
 <td>
 <div class="ghcolumn">
-<a href="../../components/heron/multiMeshPatch.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -192px -48px" data-toptip="Multi Mesh Patch"></div></a>
-<a href="../../components/heron/multiMoveToTopo.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -216px -48px" data-downtip="MultiMoveToTopo"></div></a>
+<a href="../../components/heron/rotateImage.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -144px -48px" data-toptip="Rotate Image"></div></a>
+<a href="../../components/heron/multiMeshPatch.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -144px -72px" data-downtip="Multi Mesh Patch"></div></a>
 </div>
 </td>
 <td>
 <div class="ghcolumn">
-<a href="../../components/heron/multiSDiff.html"><div class="ghsprite" style="background: url('../../icons/heron.png') 0px -72px" data-toptip="Multi SDiff"></div></a>
+<a href="../../components/heron/multiMoveToTopo.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -168px -72px" data-toptip="Multi Move to Topo"></div></a>
+<a href="../../components/heron/multiSDiff.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -192px -72px" data-downtip="Multi SDiff"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heron/topiaryFlatten.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -120px -96px" data-toptip="Topiary Flatten"></div></a>
 </div>
 </td>
 </tr>
 <tr class="ghgroup-title-row">
-<td class="ghgroup-title" colspan="5">
+<td class="ghgroup-title" colspan="6">
 Utilities
 </td>
 </tr>
@@ -233,25 +264,23 @@ Utilities
 </div>
 
 <div class="compo-header">
-<h1><div class="ghsprite" style="background: url('../../icons/heron.png') -96px -48px" ></div> Import Vector</h1>
+<h1><div class="ghsprite" style="background: url('../../icons/heron.png') -24px -72px" ></div> Import Vector</h1>
 
 <div class="breadcrumb">
  <a href="../../index.html">Component Index</a>
-  <a href="../../addons/heron.html">Heron</a><a href="#" class="breadcrumb-nolink">GIS Import | Export</a><a href="#" class="breadcrumb-nolink">ImportVector</a>
+  <a href="../../addons/heron.html">Heron</a><a href="#" class="breadcrumb-nolink">GIS Import | Export</a><a href="#" class="breadcrumb-nolink">IV</a>
 </div>
 
 </div>
-<h3>Import vector GIS data clipped to a boundary, including SHP, GeoJSON, OSM, KML, MVT and GDB folders.</h3>
+<h3>Import vector GIS data clipped to a boundary, including SHP, GeoJSON, OSM, KML, MVT and GDB folders.  Use the SetSRS component to set the spatial reference system used by this component.</h3>
 <h2>Inputs</h2>
 <table class="params-table input-params">
 <thead>
 <tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
 </thead>
 <tbody>
-<tr><td><b>Boundary</b></td><td>boundary</td><td>Boundary curve(s) for vector data</td><td>Curve</td></tr>
-<tr><td><b>Vector Data Location</b></td><td>filePath</td><td>File path for the vector data input</td><td>Text</td></tr>
-<tr><td><b>User Spatial Reference System</b></td><td>userSRS</td><td>Custom SRS</td><td>Text</td></tr>
-<tr><td><b>Crop file</b></td><td>cropIt</td><td>Crop the file to boundary?</td><td>Boolean</td></tr>
+<tr><td><b>Boundary</b></td><td>boundary</td><td>Boundary curve(s) for clipping the vector data.  Curves on the same branch will be considered as one polygon for clipping.</td><td>Curve</td></tr>
+<tr><td><b>File Path</b></td><td>filepath</td><td>File path(s) for the vector data source(s).</td><td>Text</td></tr>
 </tbody>
 </table>
 
@@ -261,15 +290,10 @@ Utilities
 <tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
 </thead>
 <tbody>
-<tr><td><b>Extents</b></td><td>extents</td><td>Bounding box of all the vector data features</td><td>Curve</td></tr>
-<tr><td><b>Source Spatial Reference System</b></td><td>sourceSRS</td><td>Spatial Reference of the input vector data</td><td>Text</td></tr>
-<tr><td><b>Fields</b></td><td>fields</td><td>Fields of data associated with the vector data features</td><td>Text</td></tr>
-<tr><td><b>Values</b></td><td>values</td><td>Field values for each feature</td><td>Text</td></tr>
-<tr><td><b>FeaturePoints</b></td><td>featurePoints</td><td>Point geometry describing each feature</td><td>Point</td></tr>
-<tr><td><b>FeaturePointsUser</b></td><td>featurePointsUser</td><td>Point geometry describing each feature</td><td>Point</td></tr>
-<tr><td><b>ExtentUser</b></td><td>extentsUser</td><td>Bounding box of all Shapefile features given the userSRS</td><td>Curve</td></tr>
-<tr><td><b>Feature Geometry</b></td><td>featureGeomery</td><td>Geometry contained in the feature</td><td>Geometry</td></tr>
-<tr><td><b>Geometry Type</b></td><td>geoType</td><td>Type of geometry contained in the feature</td><td>Text</td></tr>
+<tr><td><b>Data Extents</b></td><td>extents</td><td>Bounding box of all vector data source features.</td><td>Curve</td></tr>
+<tr><td><b>Fields</b></td><td>fields</td><td>Fields of data associated with the vector data features.</td><td>Text</td></tr>
+<tr><td><b>Values</b></td><td>values</td><td>Field values for each feature.</td><td>Text</td></tr>
+<tr><td><b>Feature Geometry</b></td><td>featureGeometry</td><td>Geometry contained in the feature.</td><td>Geometry</td></tr>
 </tbody>
 </table>
 
