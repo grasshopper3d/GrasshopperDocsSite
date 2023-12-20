@@ -1,0 +1,275 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TweenerStartFromCylBrep - Tweener - Component for Grasshopper | Grasshopper Docs</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+
+<meta name="description" content="Start a Tweener from a brep that topologically is a cylinder (a surface with two boundary components each of which is a circle). Produces an abstract &quot;Tweener&quot; object which can be previewed with a TweenerPreview component." />
+<meta name="title" content="TweenerStartFromCylBrep - Tweener - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:title" content="TweenerStartFromCylBrep - Tweener - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://grasshopperdocs.com/components/tweener/tweenerStartFromCylBrep.html" />
+<meta property="og:site_name" content="Grasshopper Docs" />
+
+<link href="../../style.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+
+<div id="docs">
+
+<div id="docs-head">
+<div id="docs-masthead">
+<p id="docs-sitename"><a href="http://grasshopperdocs.com/">
+	<img id="site-logo-icon" src="/images/logo-icon.png" alt=""></img>
+	<img id="site-logo-text" src="/images/logo-text.png" alt="Grasshopper Docs"></img>
+</a></p>
+<p id="docs-sitedesc">Community documentation for Grasshopper add-ons &amp; plugins</p>
+<div id="docs-sitesearch">
+	<input id="docs-sitesearch-inputbox" type="text" name="docs-sitesearch-inputbox" />
+	<img id="docs-searchicon" src="/images/search.png"/>
+</div>
+</div>
+</div>
+
+<div id="docs-body">
+
+<div class="page">
+
+<div class="content compo-page">
+
+<div class="ghbar ">
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/tweener/tweenerStartFromMeshAndCurves.html"><div class="ghsprite" style="background: url('../../icons/tweener.png') -144px -24px" data-toptip="TweenerStartFromMeshAndCurves"></div></a>
+<a href="../../components/tweener/tweenerStartFromCylMesh.html"><div class="ghsprite" style="background: url('../../icons/tweener.png') -168px -24px" data-downtip="TweenerStartFromCylMesh"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/tweener/tweenerStartFromCylBrep.html"><div class="ghsprite" style="background: url('../../icons/tweener.png') -192px -24px" data-toptip="TweenerStartFromCylBrep"></div></a>
+<a href="../../components/tweener/tweenerStartFromPlanarCurves.html"><div class="ghsprite" style="background: url('../../icons/tweener.png') -216px -24px" data-downtip="TweenerStartFromPlanarCurves"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/tweener/tweenerStartFromBrepAndCurves.html"><div class="ghsprite" style="background: url('../../icons/tweener.png') 0px -48px" data-toptip="TweenerStartFromBrepAndCurves"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+Main
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/tweener/tweenerCylindricalBrepExample.html"><div class="ghsprite" style="background: url('../../icons/tweener.png') 0px 0px" data-toptip="TweenerCylindricalBrepExample"></div></a>
+<a href="../../components/tweener/tweenerMeshNCurveExample.html"><div class="ghsprite" style="background: url('../../icons/tweener.png') -24px 0px" data-downtip="TweenerMeshNCurveExample"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/tweener/tweenerBrepNCurveExample.html"><div class="ghsprite" style="background: url('../../icons/tweener.png') -48px 0px" data-toptip="TweenerBrepNCurveExample"></div></a>
+<a href="../../components/tweener/tweenerCurvesExample.html"><div class="ghsprite" style="background: url('../../icons/tweener.png') -72px 0px" data-downtip="TweenerCurvesExample"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/tweener/tweenerStartCylindricalMeshExample.html"><div class="ghsprite" style="background: url('../../icons/tweener.png') -96px 0px" data-toptip="TweenerStartCylindricalMeshExample"></div></a>
+<a href="../../components/tweener/tweenerLicenseStatus.html"><div class="ghsprite" style="background: url('../../icons/tweener.png') -120px 0px" data-downtip="TweenerLicenseStatus"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+TweenerExampleInput
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/tweener/tweenerResetCurves.html"><div class="ghsprite" style="background: url('../../icons/tweener.png') -144px 0px" data-toptip="TweenerResetCurves"></div></a>
+<a href="../../components/tweener/tweenerTransform.html"><div class="ghsprite" style="background: url('../../icons/tweener.png') -168px 0px" data-downtip="TweenerTransform"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/tweener/tweenerAddControl.html"><div class="ghsprite" style="background: url('../../icons/tweener.png') -192px 0px" data-toptip="TweenerAddControl"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="2">
+TweenerModify
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/tweener/tweenerInfo.html"><div class="ghsprite" style="background: url('../../icons/tweener.png') -24px -24px" data-toptip="TweenerInfo"></div></a>
+<a href="../../components/tweener/tweenerCurves.html"><div class="ghsprite" style="background: url('../../icons/tweener.png') -48px -24px" data-downtip="TweenerCurves"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/tweener/tweenerPreview.html"><div class="ghsprite" style="background: url('../../icons/tweener.png') -72px -24px" data-toptip="TweenerPreview"></div></a>
+<a href="../../components/tweener/tweenerToMesh.html"><div class="ghsprite" style="background: url('../../icons/tweener.png') -96px -24px" data-downtip="TweenerToMesh"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/tweener/tweenerTopoFromPlanar.html"><div class="ghsprite" style="background: url('../../icons/tweener.png') -120px -24px" data-toptip="TweenerTopoFromPlanar"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+TweenerResults
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/tweener/tweenerCurveDisplay.html"><div class="ghsprite" style="background: url('../../icons/tweener.png') -216px 0px" data-toptip="TweenerCurveDisplay"></div></a>
+<a href="../../components/tweener/tweenerExtractNakedEdges.html"><div class="ghsprite" style="background: url('../../icons/tweener.png') 0px -24px" data-downtip="TweenerExtractNakedEdges"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+TweenerUtils
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+
+<div class="addon-buttons">
+<a href="https://mathiasfuchs.com/Tweeners.html">Download</a>
+
+</div>
+
+
+<div class="google-ad-sidebar">
+
+<!-- Carbon Ads -->
+<script async type="text/javascript" src="https://cdn.carbonads.com/carbon.js?serve=CK7IC27L&placement=grasshopperdocscom" id="_carbonads_js"></script>
+
+</div>
+
+<div class="compo-header">
+<h1><div class="ghsprite" style="background: url('../../icons/tweener.png') -192px -24px" ></div> TweenerStartFromCylBrep</h1>
+
+<div class="breadcrumb">
+ <a href="../../index.html">Component Index</a>
+  <a href="../../addons/tweener.html">Tweener</a><a href="#" class="breadcrumb-nolink">Main</a><a href="#" class="breadcrumb-nolink">TweenCylBrep</a>
+</div>
+
+</div>
+<h3>Start a Tweener from a brep that topologically is a cylinder (a surface with two boundary components each of which is a circle). Produces an abstract "Tweener" object which can be previewed with a TweenerPreview component.</h3>
+<h2>Inputs</h2>
+<table class="params-table input-params">
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>TweenRegionBrep</b></td><td>B</td><td>The brep whose boundaries you wish to tween</td><td>Brep</td></tr>
+<tr><td><b>Quality</b></td><td>Q</td><td>The quality between 0 and 14</td><td>Integer</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table class="params-table output-params">
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Tweener</b></td><td>T</td><td>A Tweener</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+
+</div>
+
+</div>
+
+</div>
+
+<div id="docs-foot" class="docs-footindex">
+<div id="docs-foot-inner">
+<p class="left">
+Site design © <a href="https://github.com/robinrodricks/">Robin Rodricks</a>. &nbsp;
+Co-created by <a href="http://andrewheumann.com/">Andrew Heumann</a>. &nbsp;
+Tweener and associated data © 2023  <a href="https://mathiasfuchs.com/Tweeners.html">Mathias Fuchs</a>. &nbsp;
+<br>
+Rhinoceros and Grasshopper are registered trademarks of <a href="https://www.rhino3d.com/">Robert McNeel & Associates</a>.&nbsp;
+Hosted by <a href="http://www.github.com/">GitHub</a> 
+</p>
+<p class="right docs-lightfont">
+
+<a href="https://github.com/grasshopper3d/GrasshopperDocsSite/issues/new">Report an Issue</a> &nbsp;|&nbsp;
+<a href="/termsOfService.html">Terms of Service</a>
+</p>
+
+</div>
+
+
+
+</div>
+</div>
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DX6TG16YN7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DX6TG16YN7');
+</script>
+
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/jquery-autocomplete.min.js"></script>
+<script type="text/javascript" src="/js/app-searchbar.js"></script>
+
+    </body>
+</html>

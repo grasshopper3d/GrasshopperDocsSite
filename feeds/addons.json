@@ -183,6 +183,19 @@
       "authorContact": "ekimroyrp@gmail.com"
     },
     {
+      "name": "BlueOrange",
+      "releaseDate": "2023-Dec",
+      "version": "1.0.15",
+      "downloadLink": "https://www.food4rhino.com/en/app/blueorange",
+      "helpLink": "https://grasshopperdocs.com/addons/blueorange.html",
+      "category": "Core Collections",
+      "isSystem": false,
+      "components": 125,
+      "description": "BlueOrange is a collection of useful utilities for Grasshopper. It provides rectangular geometries, block transforms, and and quick generation tools used for quick design concept modeling stage. Other miscellaneous interesting components like MIDI devices reader (For reading piano signal) or Converger for calculating a singular input-output converging process.",
+      "authorName": "wucl12",
+      "authorContact": "wucl12@foxmail.com"
+    },
+    {
       "name": "Bowerbird",
       "releaseDate": "2023-Dec",
       "version": "2.8.0",
@@ -2222,6 +2235,19 @@
       "description": "TT Toolbox features a range of different tools that we from the Core Studio at Thornton Tomasetti (former Advanced Computational Modeling Group) use on a regular basis, and we thought some of you might appreciate these.",
       "authorName": "Thornton Tomasetti (CORE studio)",
       "authorContact": "epoulsen@thorntontomasetti.com"
+    },
+    {
+      "name": "Tweener",
+      "releaseDate": "2023-Dec",
+      "version": "0.7.2182.2398",
+      "downloadLink": "https://mathiasfuchs.com/Tweeners.html",
+      "helpLink": "https://grasshopperdocs.com/addons/tweener.html",
+      "category": "Animation - Tweening",
+      "isSystem": false,
+      "components": 21,
+      "description": "Smooth curve interpolation on surfaces with isoline and texture export.\n\nTo \"tween\" means to generate curves that interpolate between given input curves. Often the problem is that the resulting curves overlap. Tweener solves that problem. \n\nThis Grasshopper/Rhino plugin generates curves that interpolate between: - either any number of closed planar curves, one of which is the outer one and emcompasses all others (This part of Tweener is called the \"planar Tweener\" even though there are also functions for extruding the curves to 3D), or between:  - two arbitrary, not necessarily closed input curves, on any constraint surface given by an input surface brep or surface mesh. \n\nThe resulting output curves are guaranteed not to cross each other or the input curves, no matter how complex your input is. Moreover, they are guaranteed to be smooth and parametrization-independent. The output is either the curves, or a mesh textured according to the tween gradient. Tweener curves are manipulated by their input curves, just the way usual curves are manipulated by their control points. Thus, Tweener can be thought of as introducing another modeling paradigm for curves.\n\nBoth the in-built Rhino and Grasshopper tweeners as well as a certain popular Grasshopper plugin don't leave the control-point paradigm for generating tween curves. As a result, the tween curves start to overlap quickly, as soon as the input becomes somewhat complex. In contrast, this package provides a tweening functionality whose emphasis on the mere curves' shapes is entirely independent on how the curve is controlled or parametrized. \n\nSince the tween curves don't cut each other or the input curves, Tweener lends itself specifically to applications such as general illustration, typography, 3d printing, layer design, CNC, landscape architecture etc - typically in landscapes, you don't want overhanging cliffs; likewise, a concrete printer usually has difficulties with excessive overhangs. There is a TweenerTopo component that allows to extrude planar tween curves to 3D in order to generate quality landscape isolines, allowing the user to provide an additional \"shape\" parameter that controls the convexity/concavity of the landscape.\n\nApart from landscape design, the planar Tweener lends itself for interior design where smooth guard curves steer people along the design language of your given interior - think Ikea, or think of the space between facade and core of a high-rise building.\n\nTweener is not limited to planar curves or simple extrusions of planar curves: it can tween between any two arbitrary, not necessarily closed curves, if there is a constraint surface as additional input. Tweener pulls the input curves back to the constraint surface and then generates curves between them, on the surface. Again, overlaps are guaranteed not to occur.\n\nMoreover, there is a powerful interactive TweenCurve editing environment that can be reached from the Rhino command line, including a \"Fish Eye effect\", and a way to drag the curves without disrupting the aesthetic and visual quality! Please watch the \"monkey face\" video on food4rhino to see what it does, and type \"TweenStartExample\" command to start an example editing environment.",
+      "authorName": "Mathias Fuchs",
+      "authorContact": ""
     },
     {
       "name": "VisualARQ",

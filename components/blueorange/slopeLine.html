@@ -1,0 +1,691 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Slope Line - BlueOrange - Component for Grasshopper | Grasshopper Docs</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+
+<meta name="description" content="Create arrowSize slope line from two point and slope rate" />
+<meta name="title" content="Slope Line - BlueOrange - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:title" content="Slope Line - BlueOrange - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://grasshopperdocs.com/components/blueorange/slopeLine.html" />
+<meta property="og:site_name" content="Grasshopper Docs" />
+
+<link href="../../style.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+
+<div id="docs">
+
+<div id="docs-head">
+<div id="docs-masthead">
+<p id="docs-sitename"><a href="http://grasshopperdocs.com/">
+	<img id="site-logo-icon" src="/images/logo-icon.png" alt=""></img>
+	<img id="site-logo-text" src="/images/logo-text.png" alt="Grasshopper Docs"></img>
+</a></p>
+<p id="docs-sitedesc">Community documentation for Grasshopper add-ons &amp; plugins</p>
+<div id="docs-sitesearch">
+	<input id="docs-sitesearch-inputbox" type="text" name="docs-sitesearch-inputbox" />
+	<img id="docs-searchicon" src="/images/search.png"/>
+</div>
+</div>
+</div>
+
+<div id="docs-body">
+
+<div class="page">
+
+<div class="content compo-page">
+
+<div class="ghbar ">
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/blueorange/ramp.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -96px -96px" data-toptip="Ramp"></div></a>
+<a href="../../components/blueorange/pointToCollum.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -120px -96px" data-downtip="Point To Collum"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/blueorange/pointsToPanel.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -144px -96px" data-toptip="Points to Panel"></div></a>
+<a href="../../components/blueorange/lineToCollum.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -168px -96px" data-downtip="Line To Collum"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/blueorange/subdivideSurface.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -192px -96px" data-toptip="Subdivide Surface"></div></a>
+<a href="../../components/blueorange/linesToPanel.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -216px -96px" data-downtip="Lines to Panel"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/blueorange/brepToStairs.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') 0px -120px" data-toptip="Brep To Stairs"></div></a>
+<a href="../../components/blueorange/getRamp.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -24px -120px" data-downtip="Get Ramp"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/blueorange/panelingPolyline.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -48px -120px" data-toptip="Paneling Polyline"></div></a>
+<a href="../../components/blueorange/setFloorHeights.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -72px -120px" data-downtip="Set Floor Heights"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/blueorange/meshBeam.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -96px -120px" data-toptip="Mesh Beam"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="6">
+Archi
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/blueorange/explodeBlock.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -48px -216px" data-toptip="Explode Block"></div></a>
+<a href="../../components/blueorange/transformBlock.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -72px -216px" data-downtip="Transform Block"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/blueorange/bakeBlockReference.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -96px -216px" data-toptip="Bake Block Reference"></div></a>
+<a href="../../components/blueorange/definitionToBlock.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -120px -216px" data-downtip="Definition To Block"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/blueorange/definitionFromName.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -144px -216px" data-toptip="Definition From Name"></div></a>
+<a href="../../components/blueorange/importBlockReference.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -168px -216px" data-downtip="Import Block Reference"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/blueorange/bakeDefinition.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -192px -216px" data-toptip="Bake Definition"></div></a>
+<a href="../../components/blueorange/existDefinition.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -216px -216px" data-downtip="Exist Definition"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/blueorange/previewBlock.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') 0px -240px" data-toptip="Preview Block"></div></a>
+<a href="../../components/blueorange/definitionFromBlock.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -24px -240px" data-downtip="Definition from Block"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="5">
+Block
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/blueorange/curveDirection.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') 0px -48px" data-toptip="Curve Direction"></div></a>
+<a href="../../components/blueorange/curveEnd.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -24px -48px" data-downtip="Curve End"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/blueorange/divideFromMid.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -48px -48px" data-toptip="Divide From Mid"></div></a>
+<a href="../../components/blueorange/extendLines.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -72px -48px" data-downtip="Extend Lines"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/blueorange/boundingRectangle.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -96px -48px" data-toptip="Bounding Rectangle"></div></a>
+<a href="../../components/blueorange/offsetCap.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -120px -48px" data-downtip="Offset Cap"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/blueorange/curvesToRegion.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -144px -48px" data-toptip="Curves to Region"></div></a>
+<a href="../../components/blueorange/offsetInner.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -168px -48px" data-downtip="Offset Inner"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/blueorange/offsetZ.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -192px -48px" data-toptip="Offset Z"></div></a>
+<a href="../../components/blueorange/divideCrvByPlane.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -216px -48px" data-downtip="Divide Crv By Plane"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/blueorange/shrinkCurve.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') 0px -72px" data-toptip="Shrink Curve"></div></a>
+<a href="../../components/blueorange/slopeLine.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -24px -72px" data-downtip="Slope Line"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/blueorange/curvePlaneIntersect.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -48px -72px" data-toptip="Curve Plane Intersect"></div></a>
+<a href="../../components/blueorange/curveStart.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -72px -72px" data-downtip="Curve Start"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/blueorange/lineToPlane.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -96px -72px" data-toptip="Line To Plane"></div></a>
+<a href="../../components/blueorange/divideEvenly.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -120px -72px" data-downtip="Divide Evenly"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/blueorange/deconstructCircle.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -144px -72px" data-toptip="Deconstruct Circle"></div></a>
+<a href="../../components/blueorange/projectCurveLoose.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -168px -72px" data-downtip="Project Curve Loose"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="9">
+Curve
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/blueorange/minimalAnchor.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -48px -168px" data-toptip="MinimalAnchor"></div></a>
+<a href="../../components/blueorange/minimalSurfaceEngine.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -72px -168px" data-downtip="Minimal Surface Engine"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/blueorange/movableAnchors.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -96px -168px" data-toptip="Movable Anchors"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="2">
+Engine
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/blueorange/examples.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -96px -288px" data-toptip="Examples"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+Example
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/blueorange/selectRhinoObject.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -144px -264px" data-toptip="SelectRhinoObject"></div></a>
+<a href="../../components/blueorange/filterByArea.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -168px -264px" data-downtip="FilterByArea"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/blueorange/planeFilter.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -192px -264px" data-toptip="Plane Filter"></div></a>
+<a href="../../components/blueorange/curveRegionFilter.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -216px -264px" data-downtip="Curve Region Filter"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/blueorange/filterClosed.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') 0px -288px" data-toptip="FilterClosed"></div></a>
+<a href="../../components/blueorange/filterByLength.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -24px -288px" data-downtip="FilterByLength"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/blueorange/groupBy.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -48px -288px" data-toptip="GroupBy"></div></a>
+<a href="../../components/blueorange/filterByContain.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -72px -288px" data-downtip="FilterByContain"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="4">
+Filter
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/blueorange/boids.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -48px -96px" data-toptip="Boids"></div></a>
+<a href="../../components/blueorange/gH2048.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -72px -96px" data-downtip="GH2048"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+Fun
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/blueorange/extrudeMesh.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -48px -192px" data-toptip="Extrude Mesh"></div></a>
+<a href="../../components/blueorange/loftMesh.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -72px -192px" data-downtip="LoftMesh"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/blueorange/tweenCurveMesh.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -96px -192px" data-toptip="Tween Curve Mesh"></div></a>
+<a href="../../components/blueorange/meshPlanarNgons.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -120px -192px" data-downtip="Mesh Planar Ngons"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/blueorange/meshToNurbs.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -144px -192px" data-toptip="Mesh To Nurbs"></div></a>
+<a href="../../components/blueorange/meshPipe.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -168px -192px" data-downtip="MeshPipe"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/blueorange/alignVertices.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -192px -192px" data-toptip="AlignVertices"></div></a>
+<a href="../../components/blueorange/offsetMesh.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -216px -192px" data-downtip="OffsetMesh"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/blueorange/extrudeMeshFromCurve.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') 0px -216px" data-toptip="Extrude Mesh From Curve"></div></a>
+<a href="../../components/blueorange/morphMesh.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -24px -216px" data-downtip="Morph Mesh"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="5">
+Mesh
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/blueorange/yZCPlane.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -120px -120px" data-toptip="YZCPlane"></div></a>
+<a href="../../components/blueorange/setCPlane.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -144px -120px" data-downtip="SetCPlane"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/blueorange/xZCPlane.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -168px -120px" data-toptip="XZCPlane"></div></a>
+<a href="../../components/blueorange/xYCPlane.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -192px -120px" data-downtip="XYCPlane"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/blueorange/previewPlane.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -216px -120px" data-toptip="Preview Plane"></div></a>
+<a href="../../components/blueorange/planeNormalY.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') 0px -144px" data-downtip="Plane Normal Y"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+Plane
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/blueorange/recRemoveLeft.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') 0px 0px" data-toptip="Rec Remove Left"></div></a>
+<a href="../../components/blueorange/splitRecWithCurve.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -24px 0px" data-downtip="Split Rec With Curve"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/blueorange/recToMesh.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -48px 0px" data-toptip="Rec To Mesh"></div></a>
+<a href="../../components/blueorange/recSubdivideSide.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -72px 0px" data-downtip="Rec Subdivide Side"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/blueorange/recSubdivide.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -96px 0px" data-toptip="Rec Subdivide"></div></a>
+<a href="../../components/blueorange/makeRecVertical.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -120px 0px" data-downtip="Make Rec Vertical"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/blueorange/twoLinesToRec.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -144px 0px" data-toptip="TwoLinesToRec"></div></a>
+<a href="../../components/blueorange/recRemoveButtom.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -168px 0px" data-downtip="Rec Remove Buttom"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/blueorange/pointAtQuadrilateral.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -192px 0px" data-toptip="Point At Quadrilateral"></div></a>
+<a href="../../components/blueorange/splitRecWithPlane.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -216px 0px" data-downtip="Split Rec With Plane"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/blueorange/offsetRecByEdge.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') 0px -24px" data-toptip="Offset Rec By Edge"></div></a>
+<a href="../../components/blueorange/recMoveOneSide.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -24px -24px" data-downtip="Rec Move One Side"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/blueorange/recRemoveRight.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -48px -24px" data-toptip="Rec Remove Right"></div></a>
+<a href="../../components/blueorange/offsetRecEdgeInDirection.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -72px -24px" data-downtip="Offset Rec Edge in Direction"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/blueorange/deconstructRectangle.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -96px -24px" data-toptip="Deconstruct Rectangle"></div></a>
+<a href="../../components/blueorange/recXYLine.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -120px -24px" data-downtip="RecXYLine"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/blueorange/recRemoveTop.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -144px -24px" data-toptip="Rec Remove Top"></div></a>
+<a href="../../components/blueorange/recDiamondSubdivide.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -168px -24px" data-downtip="Rec Diamond Subdivide"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/blueorange/pointToRec.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -192px -24px" data-toptip="Point To Rec"></div></a>
+<a href="../../components/blueorange/recToSrf.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -216px -24px" data-downtip="Rec To Srf"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="10">
+Rec
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/blueorange/faceScreen.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -48px -240px" data-toptip="Face Screen"></div></a>
+<a href="../../components/blueorange/bmpToJpeg.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -72px -240px" data-downtip="Bmp To Jpeg"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/blueorange/solverDam.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -96px -240px" data-toptip="Solver Dam"></div></a>
+<a href="../../components/blueorange/bakeToLayer.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -120px -240px" data-downtip="Bake To Layer"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/blueorange/version.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -144px -240px" data-toptip="Version"></div></a>
+<a href="../../components/blueorange/findGHA.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -168px -240px" data-downtip="Find GHA"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/blueorange/scatterFromLibrary.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -192px -240px" data-toptip="Scatter From Library"></div></a>
+<a href="../../components/blueorange/midiKeys.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -216px -240px" data-downtip="Midi Keys"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/blueorange/selectAndTag.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') 0px -264px" data-toptip="Select And Tag"></div></a>
+<a href="../../components/blueorange/clipImage.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -24px -264px" data-downtip="Clip Image"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/blueorange/iNTERNALISE.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -48px -264px" data-toptip="INTERNALISE"></div></a>
+<a href="../../components/blueorange/panoramaView.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -72px -264px" data-downtip="PanoramaView"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/blueorange/screenSlider.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -96px -264px" data-toptip="ScreenSlider"></div></a>
+<a href="../../components/blueorange/converger.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -120px -264px" data-downtip="Converger"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="7">
+Rhino
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/blueorange/negPosi.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -24px -144px" data-toptip="Neg Posi"></div></a>
+<a href="../../components/blueorange/ruleNumbers.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -48px -144px" data-downtip="Rule Numbers"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/blueorange/everyTwo.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -72px -144px" data-toptip="EveryTwo"></div></a>
+<a href="../../components/blueorange/relativePosition.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -96px -144px" data-downtip="Relative Position"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/blueorange/removeListEnds.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -120px -144px" data-toptip="Remove List Ends"></div></a>
+<a href="../../components/blueorange/dispatchByProportion.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -144px -144px" data-downtip="DispatchByProportion"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/blueorange/distributeArrayX.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -168px -144px" data-toptip="Distribute Array X"></div></a>
+<a href="../../components/blueorange/fillFromSource.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -192px -144px" data-downtip="Fill From Source"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/blueorange/distributeArrayZ.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -216px -144px" data-toptip="Distribute Array Z"></div></a>
+<a href="../../components/blueorange/distributeArrayY.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') 0px -168px" data-downtip="Distribute Array Y"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/blueorange/jitterList.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -24px -168px" data-toptip="JitterList"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="6">
+Sets
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/blueorange/triangularSurface.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -120px -168px" data-toptip="Triangular Surface"></div></a>
+<a href="../../components/blueorange/brepLoops.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -144px -168px" data-downtip="Brep Loops"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/blueorange/boxToVerticalSurfaces.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -168px -168px" data-toptip="Box To Vertical Surfaces"></div></a>
+<a href="../../components/blueorange/swapUV.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -192px -168px" data-downtip="Swap UV"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/blueorange/brepBottomTop.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -216px -168px" data-toptip="BrepBottomTop"></div></a>
+<a href="../../components/blueorange/diamondSurface.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') 0px -192px" data-downtip="Diamond Surface"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/blueorange/brepSide.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -24px -192px" data-toptip="BrepSide"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="4">
+Surface
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/blueorange/cageTransform.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -192px -72px" data-toptip="Cage Transform"></div></a>
+<a href="../../components/blueorange/cage.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -216px -72px" data-downtip="Cage"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/blueorange/recRecShear.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') 0px -96px" data-toptip="Rec Rec Shear"></div></a>
+<a href="../../components/blueorange/twoPlaneTransform.html"><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -24px -96px" data-downtip="Two Plane Transform"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="2">
+Transform
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+
+<div class="addon-buttons">
+<a href="https://www.food4rhino.com/en/app/blueorange">Download</a>
+
+</div>
+
+
+<div class="google-ad-sidebar">
+
+<!-- Carbon Ads -->
+<script async type="text/javascript" src="https://cdn.carbonads.com/carbon.js?serve=CK7IC27L&placement=grasshopperdocscom" id="_carbonads_js"></script>
+
+</div>
+
+<div class="compo-header">
+<h1><div class="ghsprite" style="background: url('../../icons/blueOrange.png') -24px -72px" ></div> Slope Line</h1>
+
+<div class="breadcrumb">
+ <a href="../../index.html">Component Index</a>
+  <a href="../../addons/blueorange.html">BlueOrange</a><a href="#" class="breadcrumb-nolink">Curve</a><a href="#" class="breadcrumb-nolink">Slope Line</a>
+</div>
+
+</div>
+<h3>Create arrowSize slope line from two point and slope rate</h3>
+<h2>Inputs</h2>
+<table class="params-table input-params">
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>From Point</b></td><td>From</td><td>From Point as slope start</td><td>Point</td></tr>
+<tr><td><b>To Point</b></td><td>To</td><td>To Point to indicate XY Coordinate</td><td>Point</td></tr>
+<tr><td><b>Slope Rate</b></td><td>Rate</td><td>Slope Rate to decrease from the start point</td><td>Number</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table class="params-table output-params">
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Line</b></td><td>Line</td><td>Line</td><td>Line</td></tr>
+</tbody>
+</table>
+
+
+</div>
+
+</div>
+
+</div>
+
+<div id="docs-foot" class="docs-footindex">
+<div id="docs-foot-inner">
+<p class="left">
+Site design © <a href="https://github.com/robinrodricks/">Robin Rodricks</a>. &nbsp;
+Co-created by <a href="http://andrewheumann.com/">Andrew Heumann</a>. &nbsp;
+BlueOrange and associated data © 2023  <a href="https://www.food4rhino.com/en/app/blueorange">wucl12</a>. &nbsp;
+<br>
+Rhinoceros and Grasshopper are registered trademarks of <a href="https://www.rhino3d.com/">Robert McNeel & Associates</a>.&nbsp;
+Hosted by <a href="http://www.github.com/">GitHub</a> 
+</p>
+<p class="right docs-lightfont">
+
+<a href="https://github.com/grasshopper3d/GrasshopperDocsSite/issues/new">Report an Issue</a> &nbsp;|&nbsp;
+<a href="/termsOfService.html">Terms of Service</a>
+</p>
+
+</div>
+
+
+
+</div>
+</div>
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DX6TG16YN7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DX6TG16YN7');
+</script>
+
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/jquery-autocomplete.min.js"></script>
+<script type="text/javascript" src="/js/app-searchbar.js"></script>
+
+    </body>
+</html>
