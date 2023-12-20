@@ -1,0 +1,351 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Point Cloud Section - Grasshopper Intersect - Component for Grasshopper | Grasshopper Docs</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+
+<meta name="description" content="Create a planar section by intersecting a plane with a cloud of points" />
+<meta name="title" content="Point Cloud Section - Grasshopper Intersect - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:title" content="Point Cloud Section - Grasshopper Intersect - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://grasshopperdocs.com/components/grasshopperintersect/pointCloudSection.html" />
+<meta property="og:site_name" content="Grasshopper Docs" />
+
+<link href="../../style.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+
+<div id="docs">
+
+<div id="docs-head">
+<div id="docs-masthead">
+<p id="docs-sitename"><a href="http://grasshopperdocs.com/">
+	<img id="site-logo-icon" src="/images/logo-icon.png" alt=""></img>
+	<img id="site-logo-text" src="/images/logo-text.png" alt="Grasshopper Docs"></img>
+</a></p>
+<p id="docs-sitedesc">Community documentation for Grasshopper add-ons &amp; plugins</p>
+<div id="docs-sitesearch">
+	<input id="docs-sitesearch-inputbox" type="text" name="docs-sitesearch-inputbox" />
+	<img id="docs-searchicon" src="/images/search.png"/>
+</div>
+</div>
+</div>
+
+<div id="docs-body">
+
+<div class="page">
+
+<div class="content compo-page">
+
+<div class="ghbar ">
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperintersect/curveLine.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIntersect.png') -24px 0px" data-toptip="Curve | Line"></div></a>
+<a href="../../components/grasshopperintersect/curvePlane.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIntersect.png') -48px 0px" data-downtip="Curve | Plane"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperintersect/lineLine.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIntersect.png') -120px 0px" data-toptip="Line | Line"></div></a>
+<a href="../../components/grasshopperintersect/linePlane.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIntersect.png') -144px 0px" data-downtip="Line | Plane"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperintersect/pointCloudContour.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIntersect.png') -72px -24px" data-toptip="Point Cloud Contour"></div></a>
+<a href="../../components/grasshopperintersect/pointCloudSection.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIntersect.png') -96px -24px" data-downtip="Point Cloud Section"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperintersect/brepLine.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIntersect.png') -48px -48px" data-toptip="Brep | Line"></div></a>
+<a href="../../components/grasshopperintersect/brepPlane.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIntersect.png') -72px -48px" data-downtip="Brep | Plane"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperintersect/contour.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIntersect.png') -144px -48px" data-toptip="Contour"></div></a>
+<a href="../../components/grasshopperintersect/contourex.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIntersect.png') -168px -48px" data-downtip="Contour (ex)"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperintersect/meshRay.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIntersect.png') -192px -72px" data-toptip="Mesh | Ray"></div></a>
+<a href="../../components/grasshopperintersect/meshPlane.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIntersect.png') -216px -72px" data-downtip="Mesh | Plane"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperintersect/surfaceLine.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIntersect.png') -120px -96px" data-toptip="Surface | Line"></div></a>
+<a href="../../components/grasshopperintersect/isoVist.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIntersect.png') -144px -96px" data-downtip="IsoVist"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperintersect/isoVistRay.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIntersect.png') -168px -96px" data-toptip="IsoVist Ray"></div></a>
+<a href="../../components/grasshopperintersect/planePlanePlane.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIntersect.png') -192px -96px" data-downtip="Plane | Plane | Plane"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperintersect/planePlane.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIntersect.png') -216px -96px" data-toptip="Plane | Plane"></div></a>
+<a href="../../components/grasshopperintersect/planeRegion.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIntersect.png') 0px -120px" data-downtip="Plane Region"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="9">
+Mathematical
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperintersect/curveCurve.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIntersect.png') 0px 0px" data-toptip="Curve | Curve"></div></a>
+<a href="../../components/grasshopperintersect/curveSelf.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIntersect.png') -72px 0px" data-downtip="Curve | Self"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperintersect/multipleCurves.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIntersect.png') -96px 0px" data-toptip="Multiple Curves"></div></a>
+<a href="../../components/grasshopperintersect/brepCurve.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIntersect.png') 0px -48px" data-downtip="Brep | Curve"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperintersect/brepBrep.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIntersect.png') -24px -48px" data-toptip="Brep | Brep"></div></a>
+<a href="../../components/grasshopperintersect/collisionManyMany.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIntersect.png') -96px -48px" data-downtip="Collision Many|Many"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperintersect/collisionOneMany.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIntersect.png') -120px -48px" data-toptip="Collision One|Many"></div></a>
+<a href="../../components/grasshopperintersect/meshCurve.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIntersect.png') -120px -72px" data-downtip="Mesh | Curve"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperintersect/meshMesh.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIntersect.png') -144px -72px" data-toptip="Mesh | Mesh"></div></a>
+<a href="../../components/grasshopperintersect/surfaceCurve.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIntersect.png') -72px -96px" data-downtip="Surface | Curve"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperintersect/surfaceSplit.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIntersect.png') -96px -96px" data-toptip="Surface Split"></div></a>
+<a href="../../components/grasshopperintersect/clash.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIntersect.png') -24px -120px" data-downtip="Clash"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="6">
+Physical
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperintersect/splitWithBrep.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIntersect.png') -168px 0px" data-toptip="Split with Brep"></div></a>
+<a href="../../components/grasshopperintersect/splitWithBreps.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIntersect.png') -192px 0px" data-downtip="Split with Breps"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperintersect/trimWithBrep.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIntersect.png') -216px 0px" data-toptip="Trim with Brep"></div></a>
+<a href="../../components/grasshopperintersect/trimWithBreps.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIntersect.png') 0px -24px" data-downtip="Trim with Breps"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperintersect/trimWithRegions.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIntersect.png') -24px -24px" data-toptip="Trim with Regions"></div></a>
+<a href="../../components/grasshopperintersect/trimWithRegion.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIntersect.png') -48px -24px" data-downtip="Trim with Region"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+Region
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperintersect/solidDifference.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIntersect.png') -120px -24px" data-toptip="Solid Difference"></div></a>
+<a href="../../components/grasshopperintersect/solidIntersection.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIntersect.png') -144px -24px" data-downtip="Solid Intersection"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperintersect/trimSolid.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIntersect.png') -168px -24px" data-toptip="Trim Solid"></div></a>
+<a href="../../components/grasshopperintersect/solidUnion.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIntersect.png') -192px -24px" data-downtip="Solid Union"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperintersect/boxSlits.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIntersect.png') -216px -24px" data-toptip="Box Slits"></div></a>
+<a href="../../components/grasshopperintersect/boundaryVolume.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIntersect.png') -192px -48px" data-downtip="Boundary Volume"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperintersect/regionDifference.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIntersect.png') -216px -48px" data-toptip="Region Difference"></div></a>
+<a href="../../components/grasshopperintersect/regionIntersection.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIntersect.png') 0px -72px" data-downtip="Region Intersection"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperintersect/regionUnion.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIntersect.png') -24px -72px" data-toptip="Region Union"></div></a>
+<a href="../../components/grasshopperintersect/meshDifference.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIntersect.png') -48px -72px" data-downtip="Mesh Difference"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperintersect/meshIntersection.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIntersect.png') -72px -72px" data-toptip="Mesh Intersection"></div></a>
+<a href="../../components/grasshopperintersect/meshUnion.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIntersect.png') -96px -72px" data-downtip="Mesh Union"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperintersect/meshSplit.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIntersect.png') -168px -72px" data-toptip="Mesh Split"></div></a>
+<a href="../../components/grasshopperintersect/regionSlits.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIntersect.png') 0px -96px" data-downtip="Region Slits"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperintersect/splitBrep.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIntersect.png') -24px -96px" data-toptip="Split Brep"></div></a>
+<a href="../../components/grasshopperintersect/splitBrepMultiple.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIntersect.png') -48px -96px" data-downtip="Split Brep Multiple"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="8">
+Shape
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+
+<div class="addon-buttons">
+<a href="https://www.rhino3d.com/6/new/grasshopper">Download</a>
+
+</div>
+
+
+<div class="google-ad-sidebar">
+
+<!-- Carbon Ads -->
+<script async type="text/javascript" src="https://cdn.carbonads.com/carbon.js?serve=CK7IC27L&placement=grasshopperdocscom" id="_carbonads_js"></script>
+
+</div>
+
+<div class="compo-header">
+<h1><div class="ghsprite" style="background: url('../../icons/grasshopperIntersect.png') -96px -24px" ></div> Point Cloud Section</h1>
+
+<div class="breadcrumb">
+ <a href="../../index.html">Component Index</a>
+  <a href="../../addons/grasshopper-intersect.html">Grasshopper Intersect</a><a href="#" class="breadcrumb-nolink">Mathematical</a><a href="#" class="breadcrumb-nolink">PC Section</a>
+</div>
+
+</div>
+<h3>Create a planar section by intersecting a plane with a cloud of points</h3>
+<h2>Inputs</h2>
+<table class="params-table input-params">
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Cloud</b></td><td>Pc</td><td>Point Cloud</td><td>Point Cloud</td></tr>
+<tr><td><b>Plane</b></td><td>Pl</td><td>The intersecting plane</td><td>Plane</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table class="params-table output-params">
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Curves</b></td><td>C</td><td>The section curves</td><td>Curve</td></tr>
+</tbody>
+</table>
+
+
+</div>
+
+</div>
+
+</div>
+
+<div id="docs-foot" class="docs-footindex">
+<div id="docs-foot-inner">
+<p class="left">
+Site design © <a href="https://github.com/robinrodricks/">Robin Rodricks</a>. &nbsp;
+
+Grasshopper Intersect and associated data © 2023  <a href="https://www.rhino3d.com/6/new/grasshopper">Robert McNeel &amp; Associates</a>. &nbsp;
+<br>
+Rhinoceros and Grasshopper are registered trademarks of <a href="https://www.rhino3d.com/">Robert McNeel & Associates</a>.&nbsp;
+Hosted by <a href="http://www.github.com/">GitHub</a> 
+</p>
+<p class="right docs-lightfont">
+
+<a href="https://github.com/grasshopper3d/GrasshopperDocsSite/issues/new">Report an Issue</a> &nbsp;|&nbsp;
+<a href="/termsOfService.html">Terms of Service</a>
+</p>
+
+</div>
+
+
+
+</div>
+</div>
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DX6TG16YN7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DX6TG16YN7');
+</script>
+
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/jquery-autocomplete.min.js"></script>
+<script type="text/javascript" src="/js/app-searchbar.js"></script>
+
+    </body>
+</html>

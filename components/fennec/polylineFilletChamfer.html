@@ -1,0 +1,942 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Polyline Fillet & Chamfer - Fennec - Component for Grasshopper | Grasshopper Docs</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+
+<meta name="description" content="Create fillet and chamfer polyline" />
+<meta name="title" content="Polyline Fillet & Chamfer - Fennec - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:title" content="Polyline Fillet & Chamfer - Fennec - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://grasshopperdocs.com/components/fennec/polylineFilletChamfer.html" />
+<meta property="og:site_name" content="Grasshopper Docs" />
+
+<link href="../../style.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+
+<div id="docs">
+
+<div id="docs-head">
+<div id="docs-masthead">
+<p id="docs-sitename"><a href="http://grasshopperdocs.com/">
+	<img id="site-logo-icon" src="/images/logo-icon.png" alt=""></img>
+	<img id="site-logo-text" src="/images/logo-text.png" alt="Grasshopper Docs"></img>
+</a></p>
+<p id="docs-sitedesc">Community documentation for Grasshopper add-ons &amp; plugins</p>
+<div id="docs-sitesearch">
+	<input id="docs-sitesearch-inputbox" type="text" name="docs-sitesearch-inputbox" />
+	<img id="docs-searchicon" src="/images/search.png"/>
+</div>
+</div>
+</div>
+
+<div id="docs-body">
+
+<div class="page">
+
+<div class="content compo-page">
+
+<div class="ghbar ">
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/stairFromPlan.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -48px -360px" data-toptip="Stair From Plan"></div></a>
+<a href="../../components/fennec/architecturalGrid.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -72px -360px" data-downtip="Architectural Grid"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/singleDoor.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -96px -360px" data-toptip="Single Door"></div></a>
+<a href="../../components/fennec/column.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -120px -360px" data-downtip="Column"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/spiralStair.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -144px -360px" data-toptip="Spiral Stair"></div></a>
+<a href="../../components/fennec/stair.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -168px -360px" data-downtip="Stair"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/window.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -192px -360px" data-toptip="Window"></div></a>
+<a href="../../components/fennec/doubleDoors.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -216px -360px" data-downtip="Double Doors"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="4">
+Architecture
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/ellipseTangentLine.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -168px -96px" data-toptip="Ellipse Tangent Line"></div></a>
+<a href="../../components/fennec/multiplesCurvesShatter.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -192px -96px" data-downtip="Multiples Curves &amp; Shatter"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/parabolaFromFocus.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -216px -96px" data-toptip="Parabola From Focus"></div></a>
+<a href="../../components/fennec/offsetToPoints.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') 0px -120px" data-downtip="Offset to points"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/filletChamfer.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -24px -120px" data-toptip="Fillet &amp; Chamfer"></div></a>
+<a href="../../components/fennec/helixAroundCurve.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -48px -120px" data-downtip="Helix around Curve"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/knot.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -72px -120px" data-toptip="Knot"></div></a>
+<a href="../../components/fennec/ellipseFit.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -96px -120px" data-downtip="Ellipse Fit"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/ellipseTangentVector.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -120px -120px" data-toptip="Ellipse Tangent Vector"></div></a>
+<a href="../../components/fennec/circle2Points.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -144px -120px" data-downtip="Circle 2 Points"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/smallestEnclosingCircle.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -168px -120px" data-toptip="Smallest Enclosing Circle"></div></a>
+<a href="../../components/fennec/regions.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -192px -120px" data-downtip="Regions"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/ellipse3Points.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -216px -120px" data-toptip="Ellipse 3 Points"></div></a>
+<a href="../../components/fennec/polygon.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') 0px -144px" data-downtip="Polygon"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/extendToGeometry.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -24px -144px" data-toptip="Extend to Geometry"></div></a>
+<a href="../../components/fennec/curvesTangent.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -48px -144px" data-downtip="Curves Tangent"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/angleBetween2Lines.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -72px -144px" data-toptip="Angle between 2 lines"></div></a>
+<a href="../../components/fennec/ribbon.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -96px -144px" data-downtip="Ribbon"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/closedCurveOrientation.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -120px -144px" data-toptip="Closed Curve Orientation"></div></a>
+<a href="../../components/fennec/parabolaFromVertex.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -144px -144px" data-downtip="Parabola From Vertex"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/knot2.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -168px -144px" data-toptip="Knot2"></div></a>
+<a href="../../components/fennec/thickOffset.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -192px -144px" data-downtip="Thick Offset"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/arcSER.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -216px -144px" data-toptip="Arc SER"></div></a>
+<a href="../../components/fennec/curvePart.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') 0px -168px" data-downtip="Curve Part"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/circleTangent.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -24px -168px" data-toptip="Circle Tangent"></div></a>
+<a href="../../components/fennec/extendByLength.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -48px -168px" data-downtip="Extend by Length"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/extendToPoint.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -72px -168px" data-toptip="Extend to Point"></div></a>
+<a href="../../components/fennec/polygonStar.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -96px -168px" data-downtip="Polygon Star"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/offsetCurve.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -120px -168px" data-toptip="Offset Curve"></div></a>
+<a href="../../components/fennec/polylineFilletChamfer.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -144px -168px" data-downtip="Polyline Fillet &amp; Chamfer"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/spiralHelix.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -168px -168px" data-toptip="Spiral &amp; Helix"></div></a>
+<a href="../../components/fennec/circleLineTanTan.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -192px -168px" data-downtip="Circle Line TanTan"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/circleTanTanTan.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -216px -168px" data-toptip="Circle Tan Tan Tan"></div></a>
+<a href="../../components/fennec/shortCurves.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') 0px -192px" data-downtip="Short Curves"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/circleTanTan.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -24px -192px" data-toptip="Circle Tan Tan"></div></a>
+<a href="../../components/fennec/pullCurve.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -48px -192px" data-downtip="Pull Curve"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/duplicateBorder.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -72px -192px" data-toptip="Duplicate Border"></div></a>
+<a href="../../components/fennec/offsetIntersection.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -96px -192px" data-downtip="Offset Intersection"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="19">
+Curve
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/zebraPreview.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -216px -240px" data-toptip="Zebra Preview"></div></a>
+<a href="../../components/fennec/randomColors.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') 0px -264px" data-downtip="Random Colors"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/createHatch.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -24px -264px" data-toptip="Create Hatch"></div></a>
+<a href="../../components/fennec/explodeHatch.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -48px -264px" data-downtip="Explode Hatch"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/curveDisplay.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -72px -264px" data-toptip="Curve Display"></div></a>
+<a href="../../components/fennec/dottedCurve.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -96px -264px" data-downtip="Dotted Curve"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/curveDirection.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -120px -264px" data-toptip="Curve Direction"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="4">
+Display
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/curveFrom2Views.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -168px -264px" data-toptip="Curve From 2Views"></div></a>
+<a href="../../components/fennec/curveSoftEdit.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -192px -264px" data-downtip="Curve SoftEdit"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/surfaceVariableOffset.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -216px -264px" data-toptip="Surface Variable Offset"></div></a>
+<a href="../../components/fennec/filletEdges.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') 0px -288px" data-downtip="Fillet Edges"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="2">
+Edit
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/traceImage.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -24px -240px" data-toptip="Trace Image"></div></a>
+<a href="../../components/fennec/imageViewport.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -48px -240px" data-downtip="Image Viewport"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/viewImage.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -72px -240px" data-toptip="View Image"></div></a>
+<a href="../../components/fennec/pixelateImage.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -96px -240px" data-downtip="Pixelate Image"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/curvesInViewport.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -120px -240px" data-toptip="Curves in Viewport"></div></a>
+<a href="../../components/fennec/3ViewsImages.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -144px -240px" data-downtip="3 Views Images"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/pixelateDataPoints.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -168px -240px" data-toptip="Pixelate Data Points"></div></a>
+<a href="../../components/fennec/imageBoundary.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -192px -240px" data-downtip="Image Boundary"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="4">
+Image
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/xLine.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -72px -408px" data-toptip="X Line"></div></a>
+<a href="../../components/fennec/vLine.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -96px -408px" data-downtip="V Line"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/yLine.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -120px -408px" data-toptip="Y Line"></div></a>
+<a href="../../components/fennec/zLine.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -144px -408px" data-downtip="Z Line"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="2">
+Line
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/createMaterial.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') 0px -408px" data-toptip="Create Material"></div></a>
+<a href="../../components/fennec/materialsList.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -24px -408px" data-downtip="Materials List"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/removeMaterials.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -48px -408px" data-toptip="Remove Materials"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="2">
+Material
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/hyperbolicFunctions.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') 0px -384px" data-toptip="Hyperbolic functions"></div></a>
+<a href="../../components/fennec/geometricProgression.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -24px -384px" data-downtip="Geometric Progression"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/trigonometricFunctions.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -48px -384px" data-toptip="Trigonometric functions"></div></a>
+<a href="../../components/fennec/goldenSpiral.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -72px -384px" data-downtip="Golden Spiral"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/quadraticEquation.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -96px -384px" data-toptip="Quadratic Equation"></div></a>
+<a href="../../components/fennec/greatestCommonDivisorLeastCommonMultiple.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -120px -384px" data-downtip="Greatest common divisor &amp; Least common multiple"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/arithmeticProgression.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -144px -384px" data-toptip="Arithmetic Progression"></div></a>
+<a href="../../components/fennec/shuffleChoice.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -168px -384px" data-downtip="Shuffle &amp; Choice"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/generalRoot.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -192px -384px" data-toptip="General Root"></div></a>
+<a href="../../components/fennec/range.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -216px -384px" data-downtip="Range"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="5">
+Math
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/meshPipe.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -24px -48px" data-toptip="Mesh Pipe"></div></a>
+<a href="../../components/fennec/edgeSoftening.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -48px -48px" data-downtip="EdgeSoftening"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/shutLining.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -72px -48px" data-toptip="ShutLining"></div></a>
+<a href="../../components/fennec/ornament.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -96px -48px" data-downtip="Ornament"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/meshToNGon.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -120px -48px" data-toptip="Mesh to NGon"></div></a>
+<a href="../../components/fennec/shutLiningInfo.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -144px -48px" data-downtip="ShutLining Info"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/joinWeldMeshes.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -168px -48px" data-toptip="Join &amp; Weld Meshes"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="4">
+Mesh
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/sortPoints.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -72px 0px" data-toptip="Sort Points"></div></a>
+<a href="../../components/fennec/projectPoints.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -96px 0px" data-downtip="Project Points"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/inflectionPoints.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -120px 0px" data-toptip="Inflection Points"></div></a>
+<a href="../../components/fennec/pointsOnCurves.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -144px 0px" data-downtip="Points On Curves"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/arcFromTangent.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -168px 0px" data-toptip="Arc from Tangent"></div></a>
+<a href="../../components/fennec/angleBetweenTwoPoints.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -192px 0px" data-downtip="Angle between Two points"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/pointsInCurves.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -216px 0px" data-toptip="Points in Curves"></div></a>
+<a href="../../components/fennec/tangentPoint.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') 0px -24px" data-downtip="Tangent Point"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/sortPointList.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -24px -24px" data-toptip="Sort Point List"></div></a>
+<a href="../../components/fennec/curveSME.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -48px -24px" data-downtip="Curve S.M.E"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/extremes.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -72px -24px" data-toptip="Extremes"></div></a>
+<a href="../../components/fennec/perpendicularPoint.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -96px -24px" data-downtip="Perpendicular Point"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/maxCurvaturePoints.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -120px -24px" data-toptip="Max Curvature Points"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="7">
+Point
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/curveToPointCloud.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') 0px 0px" data-toptip="Curve To PointCloud"></div></a>
+<a href="../../components/fennec/pointCloudColors.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -24px 0px" data-downtip="PointCloud Colors"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/pointCloudDisplay.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -48px 0px" data-toptip="PointCloud Display"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="2">
+PointCloud
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/modelUnitSystem.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -96px -312px" data-toptip="Model Unit System"></div></a>
+<a href="../../components/fennec/showHideGrid.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -120px -312px" data-downtip="Show Hide Grid"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/sun.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -144px -312px" data-toptip="Sun"></div></a>
+<a href="../../components/fennec/zoomExtents.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -168px -312px" data-downtip="Zoom Extents"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/modifyTolerance.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -192px -312px" data-toptip="Modify Tolerance"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+Rhino
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/geometryPlane.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -144px -24px" data-toptip="Geometry Plane"></div></a>
+<a href="../../components/fennec/meshOutlines.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -168px -24px" data-downtip="Mesh Outlines"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/silhouetteVector.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -192px -24px" data-toptip="Silhouette Vector"></div></a>
+<a href="../../components/fennec/silhouettePerspective.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -216px -24px" data-downtip="Silhouette Perspective"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/silhouetteParallel.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') 0px -48px" data-toptip="Silhouette Parallel"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+Section
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/listIndex.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -192px -336px" data-toptip="List Index"></div></a>
+<a href="../../components/fennec/setsIntersection.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -216px -336px" data-downtip="Sets Intersection"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/consecutiveNumbers.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') 0px -360px" data-toptip="Consecutive Numbers"></div></a>
+<a href="../../components/fennec/cullDuplNumbers.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -24px -360px" data-downtip="Cull Dupl Numbers"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="2">
+Sets
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/unrollOloid.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -192px -48px" data-toptip="Unroll Oloid"></div></a>
+<a href="../../components/fennec/pyramid.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -216px -48px" data-downtip="Pyramid"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/oloidShape.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') 0px -72px" data-toptip="Oloid Shape"></div></a>
+<a href="../../components/fennec/planarDifference.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -24px -72px" data-downtip="Planar Difference"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/cylinderExtrusion.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -48px -72px" data-toptip="Cylinder Extrusion"></div></a>
+<a href="../../components/fennec/planarUnion.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -72px -72px" data-downtip="Planar Union"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/extractFaces.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -96px -72px" data-toptip="Extract Faces"></div></a>
+<a href="../../components/fennec/extrusion.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -120px -72px" data-downtip="Extrusion"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/booleanSplitAll.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -144px -72px" data-toptip="Boolean Split All"></div></a>
+<a href="../../components/fennec/pipe.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -168px -72px" data-downtip="Pipe"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/removeFaces.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -192px -72px" data-toptip="Remove Faces"></div></a>
+<a href="../../components/fennec/baseballSphere.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -216px -72px" data-downtip="Baseball Sphere"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/booleanSplit.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') 0px -96px" data-toptip="Boolean Split"></div></a>
+<a href="../../components/fennec/truncatedCone.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -24px -96px" data-downtip="Truncated Cone"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/trimBrepWithPlane.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -48px -96px" data-toptip="Trim Brep with Plane"></div></a>
+<a href="../../components/fennec/innerProfile.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -72px -96px" data-downtip="Inner Profile"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/offsetBrep.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -96px -96px" data-toptip="Offset Brep"></div></a>
+<a href="../../components/fennec/pipeExtrusion.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -120px -96px" data-downtip="Pipe Extrusion"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/suBDOloid.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -144px -96px" data-toptip="SuBD Oloid"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="10">
+Solid
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/meshToSubd.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -144px -216px" data-toptip="Mesh to Subd"></div></a>
+<a href="../../components/fennec/subdToMesh.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -168px -216px" data-downtip="Subd to Mesh"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/meshOffsetToSubd.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -192px -216px" data-toptip="Mesh Offset to Subd"></div></a>
+<a href="../../components/fennec/subDDisplayToggle.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -216px -216px" data-downtip="SubDDisplayToggle"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/subDOffset.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') 0px -240px" data-toptip="SubD Offset"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+SuBD
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/sweepCurve.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -216px -312px" data-toptip="Sweep Curve"></div></a>
+<a href="../../components/fennec/hemiSphere.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') 0px -336px" data-downtip="HemiSphere"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/torus.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -24px -336px" data-toptip="Torus"></div></a>
+<a href="../../components/fennec/egg.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -48px -336px" data-downtip="Egg"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/swapUV.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -72px -336px" data-toptip="Swap UV"></div></a>
+<a href="../../components/fennec/ruledSurfaceNew.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -96px -336px" data-downtip="Ruled Surface New"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/sphere2Points.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -120px -336px" data-toptip="Sphere 2 Points"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="4">
+Surface
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/textStyle.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -120px -192px" data-toptip="Text Style"></div></a>
+<a href="../../components/fennec/arabicText.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -144px -192px" data-downtip="Arabic Text"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/textEntity.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -168px -192px" data-toptip="Text Entity"></div></a>
+<a href="../../components/fennec/replaceText.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -192px -192px" data-downtip="Replace Text"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/replaceTextAttributes.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -216px -192px" data-toptip="Replace Text Attributes"></div></a>
+<a href="../../components/fennec/dimensionsStyles.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') 0px -216px" data-downtip="Dimensions Styles"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/textToGeometry.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -24px -216px" data-toptip="Text To Geometry"></div></a>
+<a href="../../components/fennec/textOutlines.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -48px -216px" data-downtip="Text Outlines"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/fonts.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -72px -216px" data-toptip="Fonts"></div></a>
+<a href="../../components/fennec/textAttributes.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -96px -216px" data-downtip="Text Attributes"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/alphabet.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -120px -216px" data-toptip="Alphabet"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="6">
+Text
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/componentsFolder.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -24px -288px" data-toptip="Components Folder"></div></a>
+<a href="../../components/fennec/createMaze.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -48px -288px" data-downtip="Create Maze"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/renumberTree.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -72px -288px" data-toptip="Renumber Tree"></div></a>
+<a href="../../components/fennec/componentData.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -96px -288px" data-downtip="Component Data"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/solveMaze.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -120px -288px" data-toptip="Solve Maze"></div></a>
+<a href="../../components/fennec/wireDisplay.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -144px -288px" data-downtip="Wire Display"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/visualizeScript.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -168px -288px" data-toptip="Visualize Script"></div></a>
+<a href="../../components/fennec/removePlaceholders.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -192px -288px" data-downtip="Remove Placeholders"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/table.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -216px -288px" data-toptip="Table"></div></a>
+<a href="../../components/fennec/parMer.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') 0px -312px" data-downtip="Par &amp; Mer"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/readData.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -24px -312px" data-toptip="Read Data"></div></a>
+<a href="../../components/fennec/toggle.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -48px -312px" data-downtip="Toggle"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/componentsList.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -72px -312px" data-toptip="Components List"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="7">
+Util
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/planes.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -144px -336px" data-toptip="Planes"></div></a>
+<a href="../../components/fennec/vectors.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -168px -336px" data-downtip="Vectors"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+Vector
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/fennec/about.html"><div class="ghsprite" style="background: url('../../icons/fennec.png') -144px -264px" data-toptip="About"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+Version
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+
+<div class="addon-buttons">
+<a href="https://www.food4rhino.com/en/app/fennec">Download</a>
+
+</div>
+
+
+<div class="google-ad-sidebar">
+
+<!-- Carbon Ads -->
+<script async type="text/javascript" src="https://cdn.carbonads.com/carbon.js?serve=CK7IC27L&placement=grasshopperdocscom" id="_carbonads_js"></script>
+
+</div>
+
+<div class="compo-header">
+<h1><div class="ghsprite" style="background: url('../../icons/fennec.png') -144px -168px" ></div> Polyline Fillet & Chamfer</h1>
+
+<div class="breadcrumb">
+ <a href="../../index.html">Component Index</a>
+  <a href="../../addons/fennec.html">Fennec</a><a href="#" class="breadcrumb-nolink">Curve</a><a href="#" class="breadcrumb-nolink">PolyChamFil</a>
+</div>
+
+</div>
+<h3>Create fillet and chamfer polyline</h3>
+<h2>Inputs</h2>
+<table class="params-table input-params">
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Curve</b></td><td>C</td><td>closed or opened polyline</td><td>Curve</td></tr>
+<tr><td><b>Radius</b></td><td>R</td><td>fillet or chamfer radius</td><td>Number</td></tr>
+<tr><td><b>Count</b></td><td>N</td><td>fillet segments</td><td>Integer</td></tr>
+<tr><td><b>Type</b></td><td>T</td><td>True = fillet, False = chamfer</td><td>Boolean</td></tr>
+<tr><td><b>Direction</b></td><td>D</td><td>fillet or chamfer direction: True = outside, False = inside</td><td>Boolean</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table class="params-table output-params">
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Curve</b></td><td>C</td><td>polyline</td><td>Goo</td></tr>
+</tbody>
+</table>
+
+
+</div>
+
+</div>
+
+</div>
+
+<div id="docs-foot" class="docs-footindex">
+<div id="docs-foot-inner">
+<p class="left">
+Site design © <a href="https://github.com/robinrodricks/">Robin Rodricks</a>. &nbsp;
+Co-created by <a href="http://andrewheumann.com/">Andrew Heumann</a>. &nbsp;
+Fennec and associated data © 2023  <a href="https://www.food4rhino.com/en/app/fennec">Segheir</a>. &nbsp;
+<br>
+Rhinoceros and Grasshopper are registered trademarks of <a href="https://www.rhino3d.com/">Robert McNeel & Associates</a>.&nbsp;
+Hosted by <a href="http://www.github.com/">GitHub</a> 
+</p>
+<p class="right docs-lightfont">
+
+<a href="https://github.com/grasshopper3d/GrasshopperDocsSite/issues/new">Report an Issue</a> &nbsp;|&nbsp;
+<a href="/termsOfService.html">Terms of Service</a>
+</p>
+
+</div>
+
+
+
+</div>
+</div>
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DX6TG16YN7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DX6TG16YN7');
+</script>
+
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/jquery-autocomplete.min.js"></script>
+<script type="text/javascript" src="/js/app-searchbar.js"></script>
+
+    </body>
+</html>

@@ -599,6 +599,19 @@
       "authorContact": ""
     },
     {
+      "name": "Fennec",
+      "releaseDate": "2023-Oct-01",
+      "version": "1",
+      "downloadLink": "https://www.food4rhino.com/en/app/fennec",
+      "helpLink": "https://grasshopperdocs.com/addons/fennec.html",
+      "category": "Core Collections",
+      "isSystem": false,
+      "components": 177,
+      "description": "This addon have useful tools like different extend tools, convert Grasshopper script to geometry, modified pipe , math tools , text tools and more.",
+      "authorName": "Segheir",
+      "authorContact": "seghierdesign@gmail.com"
+    },
+    {
       "name": "Firefly",
       "releaseDate": "2015-Mar-25",
       "version": "1.0.0.70",
@@ -1886,6 +1899,19 @@
       "authorContact": "https://github.com/visose/robots"
     },
     {
+      "name": "Robots Extended",
+      "releaseDate": "2023-Dec",
+      "version": "1.6.5.0",
+      "downloadLink": "https://github.com/lin-ycv/RobotsExtended",
+      "helpLink": "https://grasshopperdocs.com/addons/robots-extended.html",
+      "category": "Electronic - Robot Control",
+      "isSystem": false,
+      "components": 9,
+      "description": "An extension to the robots plugin. To be use alongside of Robots plugin.",
+      "authorName": "Lin Yu-Chieh",
+      "authorContact": "https://github.com/lin-ycv/RobotsExtended"
+    },
+    {
       "name": "Salamander",
       "releaseDate": "2019-Jan-02",
       "version": "0.5.0",
@@ -2322,7 +2348,7 @@
       "helpLink": "https://grasshopperdocs.com/addons/grasshopper-display.html",
       "category": null,
       "isSystem": true,
-      "components": 36,
+      "components": 37,
       "description": "",
       "authorName": "David Rutten",
       "authorContact": ""
@@ -2341,6 +2367,19 @@
       "authorContact": ""
     },
     {
+      "name": "Grasshopper Maths",
+      "releaseDate": "2023-Dec",
+      "version": "1.0.0007",
+      "downloadLink": "https://www.rhino3d.com/6/new/grasshopper",
+      "helpLink": "https://grasshopperdocs.com/addons/grasshopper-maths.html",
+      "category": null,
+      "isSystem": true,
+      "components": 100,
+      "description": "",
+      "authorName": "David Rutten",
+      "authorContact": ""
+    },
+    {
       "name": "Grasshopper Surface",
       "releaseDate": "2023-Dec",
       "version": "1.0.0007",
@@ -2348,7 +2387,7 @@
       "helpLink": "https://grasshopperdocs.com/addons/grasshopper-surface.html",
       "category": null,
       "isSystem": true,
-      "components": 87,
+      "components": 86,
       "description": "",
       "authorName": "David Rutten",
       "authorContact": ""
@@ -2361,7 +2400,20 @@
       "helpLink": "https://grasshopperdocs.com/addons/grasshopper-intersect.html",
       "category": null,
       "isSystem": true,
-      "components": 50,
+      "components": 52,
+      "description": "",
+      "authorName": "David Rutten",
+      "authorContact": ""
+    },
+    {
+      "name": "Grasshopper Mesh",
+      "releaseDate": "2023-Dec",
+      "version": "1.0.0007",
+      "downloadLink": "https://www.rhino3d.com/6/new/grasshopper",
+      "helpLink": "https://grasshopperdocs.com/addons/grasshopper-mesh.html",
+      "category": null,
+      "isSystem": true,
+      "components": 57,
       "description": "",
       "authorName": "David Rutten",
       "authorContact": ""
@@ -2374,7 +2426,7 @@
       "helpLink": "https://grasshopperdocs.com/addons/grasshopper-params.html",
       "category": null,
       "isSystem": true,
-      "components": 12,
+      "components": 11,
       "description": "",
       "authorName": "David Rutten",
       "authorContact": ""
@@ -2387,7 +2439,7 @@
       "helpLink": "https://grasshopperdocs.com/addons/grasshopper-vector.html",
       "category": null,
       "isSystem": true,
-      "components": 68,
+      "components": 71,
       "description": "",
       "authorName": "David Rutten",
       "authorContact": ""
@@ -2406,27 +2458,14 @@
       "authorContact": ""
     },
     {
-      "name": "Grasshopper Maths",
+      "name": "Grasshopper Rhino",
       "releaseDate": "2023-Dec",
       "version": "1.0.0007",
       "downloadLink": "https://www.rhino3d.com/6/new/grasshopper",
-      "helpLink": "https://grasshopperdocs.com/addons/grasshopper-maths.html",
+      "helpLink": "https://grasshopperdocs.com/addons/grasshopper-rhino.html",
       "category": null,
       "isSystem": true,
-      "components": 102,
-      "description": "",
-      "authorName": "David Rutten",
-      "authorContact": ""
-    },
-    {
-      "name": "Grasshopper Mesh",
-      "releaseDate": "2023-Dec",
-      "version": "1.0.0007",
-      "downloadLink": "https://www.rhino3d.com/6/new/grasshopper",
-      "helpLink": "https://grasshopperdocs.com/addons/grasshopper-mesh.html",
-      "category": null,
-      "isSystem": true,
-      "components": 56,
+      "components": 81,
       "description": "",
       "authorName": "David Rutten",
       "authorContact": ""
