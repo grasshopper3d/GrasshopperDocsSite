@@ -1521,13 +1521,53 @@
       "helpLink": "https://grasshopperdocs.com/components/animation/saveFrames.html"
     },
     {
+      "name": "AssemblyObject",
+      "id": "AO",
+      "library": "Assembler",
+      "category": "Components",
+      "summary": "Maintains a collection of AssemblyObject data for Assembler",
+      "description": null,
+      "iconCss": "background: url('icons/assembler.png') -144px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/assembler/assemblyObject.html"
+    },
+    {
+      "name": "Construct AssemblyObject",
+      "id": "AOCon",
+      "library": "Assembler",
+      "category": "Components",
+      "summary": "Construct an Assembly Object from relevant data",
+      "description": null,
+      "iconCss": "background: url('icons/assembler.png') -24px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/assembler/constructAssemblyObject.html"
+    },
+    {
+      "name": "Construct XData",
+      "id": "XDCon",
+      "library": "Assembler",
+      "category": "Components",
+      "summary": "Construct an XData instance<br>XData can be any kind of Xtended/Xtra data (Geometry, String, Numbers, ...) associated to an AssemblyObject Type",
+      "description": null,
+      "iconCss": "background: url('icons/assembler.png') -168px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/assembler/constructXData.html"
+    },
+    {
+      "name": "ConstructHandle",
+      "id": "HandCon",
+      "library": "Assembler",
+      "category": "Components",
+      "summary": "Construct a Handle",
+      "description": null,
+      "iconCss": "background: url('icons/assembler.png') -192px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/assembler/constructHandle.html"
+    },
+    {
       "name": "Deconstruct AssemblyObject",
       "id": "AODecon",
       "library": "Assembler",
       "category": "Components",
       "summary": "Deconstruct an AssemblyObject",
       "description": null,
-      "iconCss": "background: url('icons/assembler.png') -24px 0px",
+      "iconCss": "background: url('icons/assembler.png') -72px 0px",
       "helpLink": "https://grasshopperdocs.com/components/assembler/deconstructAssemblyObject.html"
     },
     {
@@ -1537,7 +1577,7 @@
       "category": "Components",
       "summary": "Deconstruct Handle",
       "description": null,
-      "iconCss": "background: url('icons/assembler.png') -72px 0px",
+      "iconCss": "background: url('icons/assembler.png') -216px 0px",
       "helpLink": "https://grasshopperdocs.com/components/assembler/deconstructHandle.html"
     },
     {
@@ -1557,8 +1597,18 @@
       "category": "Components",
       "summary": "Displays Handle Type, weight, sender and receiver planes with rotations for all Handles in the input list",
       "description": null,
-      "iconCss": "background: url('icons/assembler.png') -144px 0px",
+      "iconCss": "background: url('icons/assembler.png') -48px 0px",
       "helpLink": "https://grasshopperdocs.com/components/assembler/displayHandles.html"
+    },
+    {
+      "name": "Reset AssemblyObject",
+      "id": "AOReset",
+      "library": "Assembler",
+      "category": "Components",
+      "summary": "Resets an AssemblyObject's values to default",
+      "description": null,
+      "iconCss": "background: url('icons/assembler.png') -120px 0px",
+      "helpLink": "https://grasshopperdocs.com/components/assembler/resetAssemblyObject.html"
     },
     {
       "name": "Transform XData",
@@ -1567,8 +1617,18 @@
       "category": "Components",
       "summary": "Apply a transformation to an XData item",
       "description": null,
-      "iconCss": "background: url('icons/assembler.png') -96px -24px",
+      "iconCss": "background: url('icons/assembler.png') 0px 0px",
       "helpLink": "https://grasshopperdocs.com/components/assembler/transformXData.html"
+    },
+    {
+      "name": "Assembler Engine",
+      "id": "AOaEngine",
+      "library": "Assembler",
+      "category": "Engine",
+      "summary": "Assembler Engine<br>Where the magic happens...",
+      "description": null,
+      "iconCss": "background: url('icons/assembler.png') -120px -72px",
+      "helpLink": "https://grasshopperdocs.com/components/assembler/assemblerEngine.html"
     },
     {
       "name": "Color Field",
@@ -1577,8 +1637,38 @@
       "category": "Exogenous",
       "summary": "Generates Field Point colors by scalar values",
       "description": null,
-      "iconCss": "background: url('icons/assembler.png') 0px 0px",
+      "iconCss": "background: url('icons/assembler.png') -168px -48px",
       "helpLink": "https://grasshopperdocs.com/components/assembler/colorField.html"
+    },
+    {
+      "name": "Construct Field N",
+      "id": "AFieldN",
+      "library": "Assembler",
+      "category": "Exogenous",
+      "summary": "Constructs an empty Field from a Box<br>N cells along largest Box dimension",
+      "description": null,
+      "iconCss": "background: url('icons/assembler.png') -216px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/assembler/constructFieldN.html"
+    },
+    {
+      "name": "Construct Field XYZ",
+      "id": "AFieldXYZ",
+      "library": "Assembler",
+      "category": "Exogenous",
+      "summary": "Constructs an empty Field from a Box<br>Individual n. of cells along Box XYZ dimensions",
+      "description": null,
+      "iconCss": "background: url('icons/assembler.png') 0px -72px",
+      "helpLink": "https://grasshopperdocs.com/components/assembler/constructFieldXYZ.html"
+    },
+    {
+      "name": "Construct Sparse Field",
+      "id": "AFieldSp",
+      "library": "Assembler",
+      "category": "Exogenous",
+      "summary": "Constructs an empty Field from a sparse list of points and optional topology information",
+      "description": null,
+      "iconCss": "background: url('icons/assembler.png') -24px -72px",
+      "helpLink": "https://grasshopperdocs.com/components/assembler/constructSparseField.html"
     },
     {
       "name": "Deconstruct Field",
@@ -1587,7 +1677,7 @@
       "category": "Exogenous",
       "summary": "Deconstructs a Field",
       "description": null,
-      "iconCss": "background: url('icons/assembler.png') -48px 0px",
+      "iconCss": "background: url('icons/assembler.png') -48px -72px",
       "helpLink": "https://grasshopperdocs.com/components/assembler/deconstructField.html"
     },
     {
@@ -1597,8 +1687,18 @@
       "category": "Exogenous",
       "summary": "Collects exogenous related settings",
       "description": null,
-      "iconCss": "background: url('icons/assembler.png') -144px -24px",
+      "iconCss": "background: url('icons/assembler.png') -144px -48px",
       "helpLink": "https://grasshopperdocs.com/components/assembler/exogenousSettings.html"
+    },
+    {
+      "name": "Populate Field",
+      "id": "AFPop",
+      "library": "Assembler",
+      "category": "Exogenous",
+      "summary": "Populates a Field with Scalar, Vector, and integer Weight values (optional)",
+      "description": null,
+      "iconCss": "background: url('icons/assembler.png') -192px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/assembler/populateField.html"
     },
     {
       "name": "Heuristic Display",
@@ -1607,8 +1707,18 @@
       "category": "Heuristics",
       "summary": "Display Heuristics as visual combination of AssemblyObjects",
       "description": null,
-      "iconCss": "background: url('icons/assembler.png') -24px -24px",
+      "iconCss": "background: url('icons/assembler.png') -48px -48px",
       "helpLink": "https://grasshopperdocs.com/components/assembler/heuristicDisplay.html"
+    },
+    {
+      "name": "Heuristics Display Ex",
+      "id": "HeuDeX",
+      "library": "Assembler",
+      "category": "Heuristics",
+      "summary": "Display Heuristics as visual combination of AssemblyObjects - extended version",
+      "description": null,
+      "iconCss": "background: url('icons/assembler.png') -72px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/assembler/heuristicsDisplayEx.html"
     },
     {
       "name": "Heuristics Settings",
@@ -1617,7 +1727,7 @@
       "category": "Heuristics",
       "summary": "Collects Heuristics related settings",
       "description": null,
-      "iconCss": "background: url('icons/assembler.png') -48px -24px",
+      "iconCss": "background: url('icons/assembler.png') -24px -48px",
       "helpLink": "https://grasshopperdocs.com/components/assembler/heuristicsSettings.html"
     },
     {
@@ -1627,7 +1737,7 @@
       "category": "Heuristics",
       "summary": "Generates Heuristics Set for an AssemblyObjects Set",
       "description": null,
-      "iconCss": "background: url('icons/assembler.png') -72px -24px",
+      "iconCss": "background: url('icons/assembler.png') -96px -48px",
       "helpLink": "https://grasshopperdocs.com/components/assembler/heuristicsWriter.html"
     },
     {
@@ -1637,8 +1747,58 @@
       "category": "Heuristics",
       "summary": "Assigns custom integer weights to the Heuristics rules",
       "description": null,
-      "iconCss": "background: url('icons/assembler.png') -120px -24px",
+      "iconCss": "background: url('icons/assembler.png') -120px -48px",
       "helpLink": "https://grasshopperdocs.com/components/assembler/weighHeuristics.html"
+    },
+    {
+      "name": "AssemblyObjects From JSON",
+      "id": "JSON>AO",
+      "library": "Assembler",
+      "category": "I/O",
+      "summary": "Load a list of AssemblyObjects from a JSON file saved with brute force method",
+      "description": null,
+      "iconCss": "background: url('icons/assembler.png') -72px -72px",
+      "helpLink": "https://grasshopperdocs.com/components/assembler/assemblyObjectsFromJSON.html"
+    },
+    {
+      "name": "AssemblyObjects To JSON",
+      "id": "AO>JSON",
+      "library": "Assembler",
+      "category": "I/O",
+      "summary": "Save a list of AssemblyObjects to a JSON file - brute force method",
+      "description": null,
+      "iconCss": "background: url('icons/assembler.png') -96px -72px",
+      "helpLink": "https://grasshopperdocs.com/components/assembler/assemblyObjectsToJSON.html"
+    },
+    {
+      "name": "Associate XData",
+      "id": "AO<>XD",
+      "library": "Assembler",
+      "category": "Post Processing",
+      "summary": "Associates XData to a list of AssemblyObjects<br>Make sure the XData matches the corresponding AssemblyObject kinds present in the list",
+      "description": null,
+      "iconCss": "background: url('icons/assembler.png') -120px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/assembler/associateXData.html"
+    },
+    {
+      "name": "Deconstruct Assemblage",
+      "id": "AOaDecon",
+      "library": "Assembler",
+      "category": "Post Processing",
+      "summary": "Deconstructs an Assemblage<br>Tree Branch indexes are the unique indexes of objects in the assemblage",
+      "description": null,
+      "iconCss": "background: url('icons/assembler.png') -72px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/assembler/deconstructAssemblage.html"
+    },
+    {
+      "name": "Display Assemblage",
+      "id": "AOaDisp",
+      "library": "Assembler",
+      "category": "Post Processing",
+      "summary": "Display Assemblage with a set of modes",
+      "description": null,
+      "iconCss": "background: url('icons/assembler.png') -192px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/assembler/displayAssemblage.html"
     },
     {
       "name": "Display Candidates",
@@ -1647,7 +1807,7 @@
       "category": "Post Processing",
       "summary": "Displays Candidate Objects at last step in the Assemblage",
       "description": null,
-      "iconCss": "background: url('icons/assembler.png') -120px 0px",
+      "iconCss": "background: url('icons/assembler.png') -96px -24px",
       "helpLink": "https://grasshopperdocs.com/components/assembler/displayCandidates.html"
     },
     {
@@ -1657,7 +1817,7 @@
       "category": "Post Processing",
       "summary": "Extracts the set of unique AssemblyObjects kinds used in an Assemblage",
       "description": null,
-      "iconCss": "background: url('icons/assembler.png') -168px 0px",
+      "iconCss": "background: url('icons/assembler.png') -168px -24px",
       "helpLink": "https://grasshopperdocs.com/components/assembler/extractAOSet.html"
     },
     {
@@ -1667,7 +1827,7 @@
       "category": "Post Processing",
       "summary": "Extract the collision mesh of an AssemblyObject",
       "description": null,
-      "iconCss": "background: url('icons/assembler.png') -192px 0px",
+      "iconCss": "background: url('icons/assembler.png') -24px -24px",
       "helpLink": "https://grasshopperdocs.com/components/assembler/extractCollisionMesh.html"
     },
     {
@@ -1677,7 +1837,7 @@
       "category": "Post Processing",
       "summary": "Extract essential Handle information for an AssemblyObject",
       "description": null,
-      "iconCss": "background: url('icons/assembler.png') -216px 0px",
+      "iconCss": "background: url('icons/assembler.png') -144px -24px",
       "helpLink": "https://grasshopperdocs.com/components/assembler/extractHandles.html"
     },
     {
@@ -1689,6 +1849,36 @@
       "description": null,
       "iconCss": "background: url('icons/assembler.png') 0px -24px",
       "helpLink": "https://grasshopperdocs.com/components/assembler/extractReferencePlane.html"
+    },
+    {
+      "name": "Extract Type",
+      "id": "AOeType",
+      "library": "Assembler",
+      "category": "Post Processing",
+      "summary": "Extract the Type of an AssemblyObject",
+      "description": null,
+      "iconCss": "background: url('icons/assembler.png') -48px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/assembler/extractType.html"
+    },
+    {
+      "name": "ExtractTopology",
+      "id": "AOaTopo",
+      "library": "Assembler",
+      "category": "Post Processing",
+      "summary": "Extract connection data from an Assemblage",
+      "description": null,
+      "iconCss": "background: url('icons/assembler.png') 0px -48px",
+      "helpLink": "https://grasshopperdocs.com/components/assembler/extractTopology.html"
+    },
+    {
+      "name": "Remove AssemblyObjects",
+      "id": "AORem",
+      "library": "Assembler",
+      "category": "Post Processing",
+      "summary": "Removes AssemblyObjects from an Assemblage given their indexes - updating Topology",
+      "description": null,
+      "iconCss": "background: url('icons/assembler.png') -216px -24px",
+      "helpLink": "https://grasshopperdocs.com/components/assembler/removeAssemblyObjects.html"
     },
     {
       "name": "Box",
