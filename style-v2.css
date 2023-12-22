@@ -6,6 +6,7 @@ body {
 	margin: 0 !important;
 	line-height: 1.3;
 	background-color: #767e80;
+	overflow-x: hidden;
 }
 
 div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,font,fieldset,input,button,p,blockquote,th,td {
@@ -305,8 +306,8 @@ ul.backlink li a {
 	top: 0;
 	width: 100%;
 	clear: left;
-	z-index: 2;
-	background-color: #fafafb;
+	z-index: 1000;
+	background-color: #242829;
 	height: 60px;
 	box-sizing: border-box;
 	border-top: 3px solid #4fc67b;
@@ -320,10 +321,14 @@ ul.backlink li a {
 	margin-top: 3px;
 }
 
+
+
+/* MAIN MENU BUTTONS */
+
 #docs-sitename a {
 	font-weight: 700;
 	text-align: left;
-	color: #242829;
+	color: #fff;
 	margin-top: 20px;
 	font-size: 30px;
 	padding: 15px;
@@ -332,17 +337,34 @@ ul.backlink li a {
 	font-weight: 400;
 }
 
-#docs-sitedesc {
+#docs-sitemenu {
 	display: inline-block;
-	color: #575757;
+	color: #959595;
 	white-space: nowrap;
-	font-family: "Open Sans", Verdana, Arial, sans-serif;
-	font-size: 10pt;
-	height: 55px;
-	vertical-align: middle;
 	position: fixed;
-	top: 22px;
+	top: 0px;
 }
+#docs-sitemenu a {
+	display: inline-block;
+	height: 60px;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-family: "Open Sans", Verdana, Arial, sans-serif;
+	font-size: 11pt;
+	vertical-align: middle;
+	color: #b5b5b5;
+	line-height: 60px;
+	transition: background-color 100ms;
+}
+#docs-sitemenu a:hover {
+	background-color: rgb(255,255,255,0.1);
+}
+
+
+
+
+
+/* SEARCH */
 
 #docs-sitesearch {
 	display: inline-block;
@@ -350,6 +372,10 @@ ul.backlink li a {
 	float: right;
 	margin: 12px;
 }
+
+
+
+
 
 .page {
   position: relative;
@@ -507,15 +533,17 @@ img {
 }
 
 a {
-  color: #dc3912;
+  color: #4631ff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #7566f9;
+  text-decoration: none;
 }
 
 a:visited {
   color: #b82e12;
-}
-
-a:hover {
-  color: #f43f14;
 }
 
 
@@ -549,6 +577,10 @@ h3 {
   font-size: 120%;
 }
 
+
+
+/* HOMEPAGE SECTION HEADERS */
+
 .libheader {
 	position: relative;
 	left: -20px;
@@ -558,9 +590,9 @@ h3 {
     color: #fff;
 	background: #2f9756;
 	box-shadow: 0 1px 2px rgba(0,0,0,0.05), 0 1px 4px rgba(0,0,0,0.05), 0 2px 8px rgba(0,0,0,0.05);
-	margin-top: 50px;
 	padding-top: 0px;
 	padding-left: 20px;
+	padding-right: 40px;
 }
 
 .libheader a {
@@ -592,6 +624,14 @@ h3 {
     text-decoration: none;
 }
 
+.index-ghbar {
+	margin-top: 20px;
+}
+
+
+
+
+
 .cparent {
 	width: 100%;
 }
@@ -615,6 +655,27 @@ h3 {
   border: none;
   padding: 2px 5px;
 }
+
+
+
+
+
+/* ADDON COMPO TABLE LINKS */
+
+.addon-compos a {
+  color: #9d0000;
+  text-decoration: none;
+  padding: 2px 8px 2px 8px;
+  margin-left: -8px;
+  border-radius: 10px;
+}
+
+.addon-compos a:hover {
+  color: #fff;
+  background-color: #555;
+  text-decoration: none;
+}
+
 
 
 
@@ -714,12 +775,17 @@ h3 {
 #docs-body .libheadercell .codeword {
     transition: background-color 100ms, color 100ms;
 }
+
+
+/* INDEX PAGE - LINKS */
+
 #docs-body .libheadercell a, .libheadercell a:hover, .libheadercell a:focus {
     text-decoration: none;
 	color: #9d0000;
+	border-radius: 10px;
 }
 #docs-body .libheadercell a:hover, .libheadercell a:focus, .libheadercell a:hover .codeword, .libheadercell a:focus .codeword {
-    background-color: #d44200;
+    background-color: #555;
 	color: #fff;
 }
 
@@ -732,18 +798,21 @@ h3 {
 }
 .addon-buttons a {
 	display: inline-block;
-	border: 5px solid #2f9756;
+	border-radius: 10px;
 	padding: 10px 20px 5px 20px;
 	margin: 10px 10px 10px 10px;
-	color: #FFF;
-	background-color: #4cb673;
-	height: 35px;
-	font-size: 16px;
+	color: #fff;
+	height: 30px;
+	font-size: 14px;
+	font-weight: 600;
     text-decoration: none;
-    transition: background-color 100ms;
+	background-color: #7566f9;
+	transition: background-color 100ms, color 100ms;
+	box-shadow: 0 10px 16px 0 rgba(0,0,0,0.3), 0 6px 10px 0 rgba(0,0,0,0.19) !important;
 }
 .addon-buttons a:hover, .addon-buttons a:focus {
-	background-color: #2f9756;
+	color: #fff;
+	background-color: #4631ff;
     text-decoration: none;
 }
 h6 {
@@ -948,13 +1017,13 @@ img.ghicon {
 /* hover/active styles */
 .breadcrumb a:hover, .breadcrumb a.active, 
 .breadcrumb a:hover:after, .breadcrumb a.active:after{
-	background: #d44200;
+	background: #4631ff;
 	color: #fff;
 }
 /* unlinked breadcrumbs coloring */
 .breadcrumb-nolink, .breadcrumb-nolink:after,
 .breadcrumb-nolink:hover, .breadcrumb-nolink a.active {
-	background: #ddd !important;
+	background: #adadad !important;
 	color: black !important;
 	cursor: default;
 }
@@ -982,6 +1051,105 @@ img.ghicon {
 .compo-header breadcrumbs {
 	margin-bottom: 10px;
 }
+
+
+
+/* ADDON BACKGROUND IMAGE */
+.lead-header {
+	position: relative;
+	margin: -20px -20px 15px -20px;
+	padding: 30px 30px 1px 30px;
+}
+.lead-gradient {
+	margin: -20px 0 0 -30px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    background: linear-gradient(180deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.8) 5%, rgba(0,0,0,0) 100%);
+    padding: 0;
+}
+.lead-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: -20px 0 0 -30px;
+    filter: blur(2px);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    padding: 0;
+}
+
+
+/* ADJUSTMENTS FOR CATEGORY PAGE */
+.lead-category-page {
+	min-height: 260px;
+}
+.index-page .google-ad-sidebar {
+	margin-top: 30px;
+}
+.category-page .google-ad-sidebar {
+	margin-top: 30px;
+}
+
+
+/* LAYER HEADER CONTENT ABOVE IMAGE */
+.addon-header {
+	z-index: 10;
+    position: relative;
+}
+.compo-header {
+	z-index: 10;
+    position: relative;
+}
+.ghbar-addon-page {
+	z-index: 20;
+    position: relative;
+}
+.ghbar-compo-page {
+	z-index: 20;
+    position: relative;
+}
+.addon-buttons {
+	padding-top: 40px;
+	z-index: 30;
+    position: relative;
+}
+.compo-buttons {
+	padding-top: 0px !important;
+}
+#carbonads {
+	z-index: 50;
+    position: relative;
+}
+
+
+
+/* SHADOWS FOR GH TOOLBAR */
+.lead-header .breadcrumb {
+	box-shadow: 0 10px 16px 0 rgba(0,0,0,0.3), 0 6px 10px 0 rgba(0,0,0,0.19) !important;
+}
+.lead-header .ghgroup {
+	box-shadow: 0 10px 16px 0 rgba(0,0,0,0.3), 0 6px 10px 0 rgba(0,0,0,0.19) !important;
+}
+
+
+
+/* TEXT GLOW */
+.addon-header h1 {
+	color: #fff;
+	text-shadow: rgba(0,0,0,1) 0 3px 6px;
+}
+.addon-header h5 {
+	color: #fff;
+}
+.compo-header h1 {
+	color: #fff;
+	text-shadow: rgba(0,0,0,1) 0 3px 6px;
+}
+
+
 
 
 /* TOS */
@@ -1021,7 +1189,7 @@ img.ghicon {
 	padding: 5px 0px !important;
 }
 .html5gallery-tn-selected-0 {
-	background: #d44200 !important;
+	background: #009939 !important;
 	color: #fff !important;
 }
 .html5gallery-tn-selected-0 .html5gallery-tn-title-0 {
@@ -1066,7 +1234,7 @@ img.ghicon {
 	height: 250px;
 	/*background-color: #f3eec1;*/
 	margin-left: 30px;
-	margin-top: 30px;
+	margin-top: 0px;
 	clear: right;
 	padding: 10px;
 }
@@ -1092,7 +1260,7 @@ img.ghicon {
 @media screen and (max-width: 1000px) and (min-width: 601px) {
 	
 	/* HIDE DESC ON MENUBAR */
-	#docs-sitedesc {
+	#docs-sitemenu {
 		visibility: hidden;
 		display: none;
 	}
@@ -1145,7 +1313,7 @@ img.ghicon {
 	}
 	
 	/* IMPROVED TITLE DISPLAY */
-	#docs-sitedesc {
+	#docs-sitemenu {
 		display: none;
 	}
 	.index-page {
@@ -1433,4 +1601,44 @@ img.ghicon {
 	min-height:600px; 
 	border-radius: 5px;
 	border: solid 1px #ccc;
+}
+
+
+
+/* TILED HOMEPAGE */
+.category-gallery {
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+.category-tile {
+	display: inline-block;
+}
+.category-link {
+	display: block;
+	text-align: center;
+    text-decoration: none;
+	padding: 0px;
+    margin: 10px;
+    background-color: #fff;
+    box-shadow: 0 10px 16px 0 rgba(0,0,0,0.3), 0 6px 10px 0 rgba(0,0,0,0.19) !important;
+	transition: background-color 100ms;
+}
+.category-thumb {
+	display: block;
+}
+.category-title {
+	display: block;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+	padding-top: 8px;
+	padding-bottom: 12px;
+    color: #000;
+	transition: color 100ms;
+}
+.category-link:hover, .category-link:active, .category-link:focus {
+    background-color: #444;
+}
+.category-link:hover .category-title, .category-link:active .category-title, .category-link:focus .category-title {
+    color: #fff;
 }
