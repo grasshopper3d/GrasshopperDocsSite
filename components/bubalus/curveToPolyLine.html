@@ -1,0 +1,494 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Curve To Poly Line - Bubalus - Component for Grasshopper | Grasshopper Docs</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+
+<meta name="description" content="Fit curve to polyline within specified tolerance." />
+<meta name="title" content="Curve To Poly Line - Bubalus - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:title" content="Curve To Poly Line - Bubalus - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://grasshopperdocs.com/components/bubalus/curveToPolyLine.html" />
+<meta property="og:site_name" content="Grasshopper Docs" />
+
+<link href="../../style-v2.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+
+<div id="docs">
+
+<div id="docs-head">
+<div id="docs-masthead">
+<p id="docs-sitename"><a href="http://grasshopperdocs.com/">
+	<img id="site-logo-icon" src="/images/logo-icon.png" alt=""></img>
+	<img id="site-logo-text" src="/images/logo-text.png" alt="Grasshopper Docs"></img>
+</a></p>
+<div id="docs-sitemenu">
+	<a class="sitemenu-item" href="/index.html">Categories</a>
+	<a class="sitemenu-item" href="/addonIndex.html">Addons</a>
+	<a class="sitemenu-item" href="/completeIndex.html">Components</a>
+</div>
+<div id="docs-sitesearch">
+	<input id="docs-sitesearch-inputbox" type="text" name="docs-sitesearch-inputbox" />
+	<img id="docs-searchicon" src="/images/search.png"/>
+</div>
+</div>
+</div>
+
+<div id="docs-body">
+
+<div class="page">
+
+<div class="content compo-page">
+
+<div class="lead-header">
+
+<div class="addon-buttons compo-buttons">
+<a href="https://www.food4rhino.com/app/bubalusgh">Download</a>
+
+</div>
+
+
+<div class="google-ad-sidebar">
+
+<!-- Carbon Ads -->
+<script async type="text/javascript" src="https://cdn.carbonads.com/carbon.js?serve=CK7IC27L&placement=grasshopperdocscom" id="_carbonads_js"></script>
+
+</div>
+
+<div class="lead-gradient"></div>
+<div class="lead-image" style="background-image: url('../../images/header/Rhino.png');"></div>
+
+<div class="ghbar ghbar-compo-page">
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/bubalus/curveDeviation.html"><div class="ghsprite" style="background: url('../../icons/bubalus.png') -72px 0px" data-toptip="Curve Deviation"></div></a>
+<a href="../../components/bubalus/curveToPolyLine.html"><div class="ghsprite" style="background: url('../../icons/bubalus.png') -96px 0px" data-downtip="Curve To Poly Line"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/bubalus/curveOffsetDirection.html"><div class="ghsprite" style="background: url('../../icons/bubalus.png') -120px 0px" data-toptip="Curve Offset Direction"></div></a>
+<a href="../../components/bubalus/isClockwise.html"><div class="ghsprite" style="background: url('../../icons/bubalus.png') -144px 0px" data-downtip="Is Clockwise"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/bubalus/offsetOnSrf.html"><div class="ghsprite" style="background: url('../../icons/bubalus.png') -168px 0px" data-toptip="Offset on Srf"></div></a>
+<a href="../../components/bubalus/offsetCurve.html"><div class="ghsprite" style="background: url('../../icons/bubalus.png') -192px 0px" data-downtip="Offset Curve"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/bubalus/polyLineCurveAngle.html"><div class="ghsprite" style="background: url('../../icons/bubalus.png') -216px 0px" data-toptip="Poly Line Curve Angle"></div></a>
+<a href="../../components/bubalus/curveMinBoundingBox.html"><div class="ghsprite" style="background: url('../../icons/bubalus.png') 0px -24px" data-downtip="Curve Min Bounding Box"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/bubalus/extendCrvOnSrf.html"><div class="ghsprite" style="background: url('../../icons/bubalus.png') -24px -24px" data-toptip="Extend Crv On Srf"></div></a>
+<a href="../../components/bubalus/filletCorners.html"><div class="ghsprite" style="background: url('../../icons/bubalus.png') -48px -24px" data-downtip="Fillet Corners"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/bubalus/splitCurves.html"><div class="ghsprite" style="background: url('../../icons/bubalus.png') -24px -72px" data-toptip="Split Curves"></div></a>
+<a href="../../components/bubalus/line.html"><div class="ghsprite" style="background: url('../../icons/bubalus.png') -96px -120px" data-downtip="Line"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/bubalus/polygon.html"><div class="ghsprite" style="background: url('../../icons/bubalus.png') -168px -120px" data-toptip="Polygon"></div></a>
+<a href="../../components/bubalus/lineSDL.html"><div class="ghsprite" style="background: url('../../icons/bubalus.png') -216px -144px" data-downtip="Line SDL"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="7">
+Curve
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/bubalus/cameraPlane.html"><div class="ghsprite" style="background: url('../../icons/bubalus.png') -96px -96px" data-toptip="Camera Plane"></div></a>
+<a href="../../components/bubalus/geometryFaceToCamera.html"><div class="ghsprite" style="background: url('../../icons/bubalus.png') -120px -96px" data-downtip="Geometry Face To Camera"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/bubalus/textTagCamera.html"><div class="ghsprite" style="background: url('../../icons/bubalus.png') -216px -96px" data-toptip="Text Tag Camera"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="2">
+Drawing
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/bubalus/listStatistics.html"><div class="ghsprite" style="background: url('../../icons/bubalus.png') -96px -72px" data-toptip="List Statistics"></div></a>
+<a href="../../components/bubalus/randomPartitionList.html"><div class="ghsprite" style="background: url('../../icons/bubalus.png') -72px -144px" data-downtip="Random Partition List"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/bubalus/randomInt.html"><div class="ghsprite" style="background: url('../../icons/bubalus.png') -48px -168px" data-toptip="Random Int"></div></a>
+<a href="../../components/bubalus/listSlice.html"><div class="ghsprite" style="background: url('../../icons/bubalus.png') -72px -168px" data-downtip="List Slice"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="2">
+List
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/bubalus/setPtXYZ.html"><div class="ghsprite" style="background: url('../../icons/bubalus.png') 0px -72px" data-toptip="Set Pt XYZ"></div></a>
+<a href="../../components/bubalus/isParallel.html"><div class="ghsprite" style="background: url('../../icons/bubalus.png') -144px -72px" data-downtip="Is Parallel"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/bubalus/vectorAngle.html"><div class="ghsprite" style="background: url('../../icons/bubalus.png') -168px -72px" data-toptip="Vector Angle"></div></a>
+<a href="../../components/bubalus/populate2C.html"><div class="ghsprite" style="background: url('../../icons/bubalus.png') -144px -96px" data-downtip="Populate 2C"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/bubalus/sortPointList.html"><div class="ghsprite" style="background: url('../../icons/bubalus.png') -168px -96px" data-toptip="Sort Point List"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+Point
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/bubalus/getLayerBySelection.html"><div class="ghsprite" style="background: url('../../icons/bubalus.png') -216px -24px" data-toptip="Get Layer By Selection"></div></a>
+<a href="../../components/bubalus/findLayerByName.html"><div class="ghsprite" style="background: url('../../icons/bubalus.png') -48px -48px" data-downtip="Find Layer By Name"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/bubalus/setLayerProperty.html"><div class="ghsprite" style="background: url('../../icons/bubalus.png') -120px -48px" data-toptip="Set Layer Property"></div></a>
+<a href="../../components/bubalus/bakeBlock.html"><div class="ghsprite" style="background: url('../../icons/bubalus.png') -72px -96px" data-downtip="Bake Block"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/bubalus/transformRhinoObject.html"><div class="ghsprite" style="background: url('../../icons/bubalus.png') 0px -120px" data-toptip="Transform Rhino Object"></div></a>
+<a href="../../components/bubalus/getGuidBySelection.html"><div class="ghsprite" style="background: url('../../icons/bubalus.png') -192px -120px" data-downtip="Get Guid By Selection"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/bubalus/explodeBlock.html"><div class="ghsprite" style="background: url('../../icons/bubalus.png') -216px -120px" data-toptip="Explode Block"></div></a>
+<a href="../../components/bubalus/explodeDot.html"><div class="ghsprite" style="background: url('../../icons/bubalus.png') 0px -144px" data-downtip="Explode Dot"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/bubalus/getLayerObjects.html"><div class="ghsprite" style="background: url('../../icons/bubalus.png') -24px -144px" data-toptip="Get Layer Objects"></div></a>
+<a href="../../components/bubalus/getLayerName.html"><div class="ghsprite" style="background: url('../../icons/bubalus.png') -48px -144px" data-downtip="Get Layer Name"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/bubalus/explodeText.html"><div class="ghsprite" style="background: url('../../icons/bubalus.png') -96px -144px" data-toptip="Explode Text"></div></a>
+<a href="../../components/bubalus/lockGuid.html"><div class="ghsprite" style="background: url('../../icons/bubalus.png') -120px -144px" data-downtip="Lock Guid"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/bubalus/hideGuid.html"><div class="ghsprite" style="background: url('../../icons/bubalus.png') -144px -144px" data-toptip="Hide Guid"></div></a>
+<a href="../../components/bubalus/deleteGuid.html"><div class="ghsprite" style="background: url('../../icons/bubalus.png') -168px -144px" data-downtip="Delete Guid"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/bubalus/saveGuid.html"><div class="ghsprite" style="background: url('../../icons/bubalus.png') -192px -144px" data-toptip="Save Guid"></div></a>
+<a href="../../components/bubalus/selectGuid.html"><div class="ghsprite" style="background: url('../../icons/bubalus.png') 0px -168px" data-downtip="Select Guid"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/bubalus/objectTypeFilters.html"><div class="ghsprite" style="background: url('../../icons/bubalus.png') -24px -168px" data-toptip="Object Type Filters"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="9">
+Rhino
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/bubalus/booleanSplit.html"><div class="ghsprite" style="background: url('../../icons/bubalus.png') -24px 0px" data-toptip="Boolean Split"></div></a>
+<a href="../../components/bubalus/offsetBrep.html"><div class="ghsprite" style="background: url('../../icons/bubalus.png') -168px -24px" data-downtip="Offset Brep"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/bubalus/offsetNormalToSurface.html"><div class="ghsprite" style="background: url('../../icons/bubalus.png') -192px -24px" data-toptip="Offset Normal To Surface"></div></a>
+<a href="../../components/bubalus/shrinkTrimmedSrfToEdge.html"><div class="ghsprite" style="background: url('../../icons/bubalus.png') 0px -48px" data-downtip="Shrink Trimmed Srf To Edge"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/bubalus/extractRenderMesh.html"><div class="ghsprite" style="background: url('../../icons/bubalus.png') -24px -48px" data-toptip="Extract Render Mesh"></div></a>
+<a href="../../components/bubalus/surfaceExtrusion.html"><div class="ghsprite" style="background: url('../../icons/bubalus.png') -48px -72px" data-downtip="Surface Extrusion"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/bubalus/surfaceType.html"><div class="ghsprite" style="background: url('../../icons/bubalus.png') -120px -72px" data-toptip="Surface Type"></div></a>
+<a href="../../components/bubalus/boxExtrusion.html"><div class="ghsprite" style="background: url('../../icons/bubalus.png') 0px -96px" data-downtip="Box Extrusion"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/bubalus/curveExtrusion.html"><div class="ghsprite" style="background: url('../../icons/bubalus.png') -24px -96px" data-toptip="Curve Extrusion"></div></a>
+<a href="../../components/bubalus/cylinderExtrusion.html"><div class="ghsprite" style="background: url('../../icons/bubalus.png') -48px -96px" data-downtip="Cylinder Extrusion"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/bubalus/tubeExtrusion.html"><div class="ghsprite" style="background: url('../../icons/bubalus.png') -192px -96px" data-toptip="Tube Extrusion"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="6">
+Surface
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/bubalus/pickChinese.html"><div class="ghsprite" style="background: url('../../icons/bubalus.png') -144px -48px" data-toptip="Pick Chinese"></div></a>
+<a href="../../components/bubalus/pickEnglish.html"><div class="ghsprite" style="background: url('../../icons/bubalus.png') -168px -48px" data-downtip="Pick English"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/bubalus/pickNumber.html"><div class="ghsprite" style="background: url('../../icons/bubalus.png') -192px -48px" data-toptip="Pick Number"></div></a>
+<a href="../../components/bubalus/isNumber.html"><div class="ghsprite" style="background: url('../../icons/bubalus.png') -216px -48px" data-downtip="Is Number"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="2">
+Text
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/bubalus/findComponentsByName.html"><div class="ghsprite" style="background: url('../../icons/bubalus.png') -72px -24px" data-toptip="Find Components By Name"></div></a>
+<a href="../../components/bubalus/setComponentsProperty.html"><div class="ghsprite" style="background: url('../../icons/bubalus.png') -96px -24px" data-downtip="Set Components Property"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/bubalus/findComponentsBySelection.html"><div class="ghsprite" style="background: url('../../icons/bubalus.png') -144px -24px" data-toptip="Find Components By Selection"></div></a>
+<a href="../../components/bubalus/deleteDupGeometry.html"><div class="ghsprite" style="background: url('../../icons/bubalus.png') -72px -72px" data-downtip="Delete Dup Geometry"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/bubalus/bifocalsPlus.html"><div class="ghsprite" style="background: url('../../icons/bubalus.png') -48px -120px" data-toptip="Bifocals Plus"></div></a>
+<a href="../../components/bubalus/componentInfo.html"><div class="ghsprite" style="background: url('../../icons/bubalus.png') -72px -120px" data-downtip="Component Info"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/bubalus/deleteDupCurve.html"><div class="ghsprite" style="background: url('../../icons/bubalus.png') -120px -120px" data-toptip="Delete Dup Curve"></div></a>
+<a href="../../components/bubalus/deleteDupData.html"><div class="ghsprite" style="background: url('../../icons/bubalus.png') -144px -120px" data-downtip="Delete Dup Data"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="4">
+Utils
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/bubalus/getRhinoObjectGrips.html"><div class="ghsprite" style="background: url('../../icons/bubalus.png') 0px 0px" data-toptip="Get Rhino Object Grips"></div></a>
+<a href="../../components/bubalus/alignedDimensionObject.html"><div class="ghsprite" style="background: url('../../icons/bubalus.png') -48px 0px" data-downtip="Aligned Dimension Object"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/bubalus/explodeClippingPlane.html"><div class="ghsprite" style="background: url('../../icons/bubalus.png') -120px -24px" data-toptip="Explode Clipping Plane"></div></a>
+<a href="../../components/bubalus/moveClippingPlane.html"><div class="ghsprite" style="background: url('../../icons/bubalus.png') -72px -48px" data-downtip="Move Clipping Plane"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/bubalus/textObject.html"><div class="ghsprite" style="background: url('../../icons/bubalus.png') -96px -48px" data-toptip="Text Object"></div></a>
+<a href="../../components/bubalus/addGeometrys.html"><div class="ghsprite" style="background: url('../../icons/bubalus.png') -192px -72px" data-downtip="Add Geometrys"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/bubalus/addGeometry.html"><div class="ghsprite" style="background: url('../../icons/bubalus.png') -216px -72px" data-toptip="Add Geometry"></div></a>
+<a href="../../components/bubalus/geometryLocation.html"><div class="ghsprite" style="background: url('../../icons/bubalus.png') -24px -120px" data-downtip="Geometry Location"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="4">
+Vray
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+
+<div class="compo-header">
+<h1><div class="ghsprite" style="background: url('../../icons/bubalus.png') -96px 0px" ></div> Curve To Poly Line</h1>
+
+<div class="breadcrumb">
+ <a href="../../index.html">Component Index</a>
+  <a href="../../addons/bubalus.html">Bubalus</a><a href="#" class="breadcrumb-nolink">Curve</a><a href="#" class="breadcrumb-nolink">CurveToPolyLine</a>
+</div>
+
+</div>
+
+</div>
+<h3>Fit curve to polyline within specified tolerance.</h3>
+<h2>Inputs</h2>
+<table class="params-table input-params">
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Curve</b></td><td>C</td><td>Curve to polyline</td><td>Curve</td></tr>
+<tr><td><b>Tolerance</b></td><td>T</td><td>Tolerance (maximum distance between polyline and curve)</td><td>Number</td></tr>
+<tr><td><b>MaxIteration</b></td><td>M</td><td>The maximum number of iterations</td><td>Integer</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table class="params-table output-params">
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>PolyLine</b></td><td>Pl</td><td>Resulting Polyline</td><td>Curve</td></tr>
+<tr><td><b>Tolerances</b></td><td>Ts</td><td>Actual tolerance (when the number of iterations is exceeded, the maximum tolerance may be greater than the fitting tolerance)</td><td>Number</td></tr>
+<tr><td><b>Iteration</b></td><td>I</td><td>Actual number of iterations</td><td>Integer</td></tr>
+</tbody>
+</table>
+
+
+</div>
+
+</div>
+
+</div>
+
+<div id="docs-foot" class="docs-footindex">
+<div id="docs-foot-inner">
+<p class="left">
+Site design © <a href="https://github.com/robinrodricks/">Robin Rodricks</a>. &nbsp;
+Co-created by <a href="http://andrewheumann.com/">Andrew Heumann</a>. &nbsp;
+Bubalus and associated data © 2023  <a href="https://www.food4rhino.com/app/bubalusgh">NARUTO</a>. &nbsp;
+<br>
+Rhinoceros and Grasshopper are registered trademarks of <a href="https://www.rhino3d.com/">Robert McNeel & Associates</a>.&nbsp;
+Hosted by <a href="http://www.github.com/">GitHub</a> 
+</p>
+<p class="right docs-lightfont">
+
+<a href="https://github.com/grasshopper3d/GrasshopperDocsSite/issues/new">Report an Issue</a> &nbsp;|&nbsp;
+<a href="/termsOfService.html">Terms of Service</a>
+</p>
+
+</div>
+
+
+
+</div>
+</div>
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DX6TG16YN7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DX6TG16YN7');
+</script>
+
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/jquery-autocomplete.min.js"></script>
+<script type="text/javascript" src="/js/app-searchbar.js"></script>
+
+    </body>
+</html>

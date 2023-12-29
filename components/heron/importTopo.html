@@ -7,7 +7,7 @@
 <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 <link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
 
-<meta name="description" content="Create a topographic mesh from an IMG or HGT file clipped to a boundary" />
+<meta name="description" content="Create a topographic mesh from a raster file (IMG, HGT, ASCII, DEM, TIF, etc) clipped to a boundary" />
 <meta name="title" content="Import Topo - Heron - Component for Grasshopper | Grasshopper Docs" />
 <meta property="og:title" content="Import Topo - Heron - Component for Grasshopper | Grasshopper Docs" />
 <meta property="og:type" content="website" />
@@ -72,26 +72,26 @@
 <tr>
 <td>
 <div class="ghcolumn">
-<a href="../../components/heron/mapboxIsochrone.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -48px -72px" data-toptip="Mapbox Isochrone"></div></a>
-<a href="../../components/heron/mapboxRaster.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -72px -72px" data-downtip="Mapbox Raster"></div></a>
+<a href="../../components/heron/mapboxIsochrone.html"><div class="ghsprite" style="background: url('../../icons/heron.png') 0px 0px" data-toptip="Mapbox Isochrone"></div></a>
+<a href="../../components/heron/yelp.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -24px 0px" data-downtip="Yelp"></div></a>
 </div>
 </td>
 <td>
 <div class="ghcolumn">
-<a href="../../components/heron/mapboxTopography.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -96px -72px" data-toptip="Mapbox Topography"></div></a>
-<a href="../../components/heron/mapboxVector.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -120px -72px" data-downtip="Mapbox Vector"></div></a>
+<a href="../../components/heron/mapboxRaster.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -24px -72px" data-toptip="Mapbox Raster"></div></a>
+<a href="../../components/heron/mapboxTopography.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -48px -72px" data-downtip="Mapbox Topography"></div></a>
 </div>
 </td>
 <td>
 <div class="ghcolumn">
-<a href="../../components/heron/slippyRaster.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -48px -96px" data-toptip="Slippy Raster"></div></a>
-<a href="../../components/heron/slippyTiles.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -72px -96px" data-downtip="Slippy Tiles"></div></a>
+<a href="../../components/heron/mapboxVector.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -72px -72px" data-toptip="Mapbox Vector"></div></a>
+<a href="../../components/heron/slippyRaster.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -168px -72px" data-downtip="Slippy Raster"></div></a>
 </div>
 </td>
 <td>
 <div class="ghcolumn">
-<a href="../../components/heron/slippyViewport.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -96px -96px" data-toptip="Slippy Viewport"></div></a>
-<a href="../../components/heron/yelp.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -144px -96px" data-downtip="Yelp"></div></a>
+<a href="../../components/heron/slippyTiles.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -48px -96px" data-toptip="Slippy Tiles"></div></a>
+<a href="../../components/heron/slippyViewport.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -72px -96px" data-downtip="Slippy Viewport"></div></a>
 </div>
 </td>
 </tr>
@@ -107,7 +107,13 @@ GIS API
 <tr>
 <td>
 <div class="ghcolumn">
-<a href="../../components/heron/exportVector.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -72px -24px" data-toptip="Export Vector"></div></a>
+<a href="../../components/heron/importVectorLite.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -48px 0px" data-toptip="Import Vector Lite"></div></a>
+<a href="../../components/heron/importVector.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -72px 0px" data-downtip="Import Vector"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heron/exportVector.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -144px -24px" data-toptip="Export Vector"></div></a>
 <a href="../../components/heron/importLAZ.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -168px -48px" data-downtip="Import LAZ"></div></a>
 </div>
 </td>
@@ -119,13 +125,12 @@ GIS API
 </td>
 <td>
 <div class="ghcolumn">
-<a href="../../components/heron/importVectorLite.html"><div class="ghsprite" style="background: url('../../icons/heron.png') 0px -72px" data-toptip="Import Vector Lite"></div></a>
-<a href="../../components/heron/importVector.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -24px -72px" data-downtip="Import Vector"></div></a>
+<a href="../../components/heron/importTopo.html"><div class="ghsprite" style="background: url('../../icons/heron.png') 0px -72px" data-toptip="Import Topo"></div></a>
 </div>
 </td>
 </tr>
 <tr class="ghgroup-title-row">
-<td class="ghgroup-title" colspan="3">
+<td class="ghgroup-title" colspan="4">
 GIS Import | Export
 </td>
 </tr>
@@ -136,25 +141,25 @@ GIS Import | Export
 <tr>
 <td>
 <div class="ghcolumn">
-<a href="../../components/heron/eSRIRESTServiceGeocode.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -72px 0px" data-toptip="ESRI REST Service Geocode"></div></a>
-<a href="../../components/heron/getRESTServiceLayers.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -96px 0px" data-downtip="Get REST Service Layers"></div></a>
+<a href="../../components/heron/getRESTRaster.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -96px 0px" data-toptip="Get REST Raster"></div></a>
+<a href="../../components/heron/getRESTVector.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -120px 0px" data-downtip="Get REST Vector"></div></a>
 </div>
 </td>
 <td>
 <div class="ghcolumn">
-<a href="../../components/heron/getRESTRaster.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -120px 0px" data-toptip="Get REST Raster"></div></a>
-<a href="../../components/heron/eSRIRESTServiceReverseGeocode.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -144px 0px" data-downtip="ESRI REST Service Reverse Geocode"></div></a>
+<a href="../../components/heron/getRESTServiceLayers.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -120px -72px" data-toptip="Get REST Service Layers"></div></a>
+<a href="../../components/heron/getRESTOSM.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -144px -72px" data-downtip="Get REST OSM"></div></a>
 </div>
 </td>
 <td>
 <div class="ghcolumn">
-<a href="../../components/heron/getRESTVector.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -168px 0px" data-toptip="Get REST Vector"></div></a>
-<a href="../../components/heron/getRESTOSM.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -216px -72px" data-downtip="Get REST OSM"></div></a>
+<a href="../../components/heron/eSRIRESTServiceReverseGeocode.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -192px -72px" data-toptip="ESRI REST Service Reverse Geocode"></div></a>
+<a href="../../components/heron/getRESTTopography.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -216px -72px" data-downtip="Get REST Topography"></div></a>
 </div>
 </td>
 <td>
 <div class="ghcolumn">
-<a href="../../components/heron/getRESTTopography.html"><div class="ghsprite" style="background: url('../../icons/heron.png') 0px -96px" data-toptip="Get REST Topography"></div></a>
+<a href="../../components/heron/eSRIRESTServiceGeocode.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -24px -96px" data-toptip="ESRI REST Service Geocode"></div></a>
 </div>
 </td>
 </tr>
@@ -170,54 +175,48 @@ GIS REST
 <tr>
 <td>
 <div class="ghcolumn">
-<a href="../../components/heron/decimalDegreesToXY.html"><div class="ghsprite" style="background: url('../../icons/heron.png') 0px 0px" data-toptip="Decimal Degrees to XY"></div></a>
-<a href="../../components/heron/importSHP.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -24px 0px" data-downtip="Import SHP"></div></a>
+<a href="../../components/heron/dMStoDD.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -144px 0px" data-toptip="DMStoDD"></div></a>
+<a href="../../components/heron/gdalFillNoData.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -168px 0px" data-downtip="Gdal Fill No Data"></div></a>
 </div>
 </td>
 <td>
 <div class="ghcolumn">
-<a href="../../components/heron/importTopo.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -48px 0px" data-toptip="Import Topo"></div></a>
-<a href="../../components/heron/setEarthAnchorPoint.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -192px 0px" data-downtip="Set EarthAnchorPoint"></div></a>
+<a href="../../components/heron/gdalInfo.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -192px 0px" data-toptip="Gdal Info"></div></a>
+<a href="../../components/heron/setEarthAnchorPoint.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -216px 0px" data-downtip="Set EarthAnchorPoint"></div></a>
 </div>
 </td>
 <td>
 <div class="ghcolumn">
-<a href="../../components/heron/xYToDecimalDegrees.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -216px 0px" data-toptip="XY to Decimal Degrees"></div></a>
-<a href="../../components/heron/coordinateTransformation.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -24px -24px" data-downtip="Coordinate Transformation"></div></a>
+<a href="../../components/heron/setSpatialReferenceSystem.html"><div class="ghsprite" style="background: url('../../icons/heron.png') 0px -24px" data-toptip="Set Spatial Reference System"></div></a>
+<a href="../../components/heron/gdalOgr2Ogr.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -96px -48px" data-downtip="GdalOgr2Ogr"></div></a>
 </div>
 </td>
 <td>
 <div class="ghcolumn">
-<a href="../../components/heron/dMStoDD.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -48px -24px" data-toptip="DMStoDD"></div></a>
-<a href="../../components/heron/gdalBuffer.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -96px -24px" data-downtip="Gdal Buffer"></div></a>
+<a href="../../components/heron/gdalWarp.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -120px -48px" data-toptip="GdalWarp"></div></a>
+<a href="../../components/heron/gdalTranslate.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -144px -48px" data-downtip="GdalTranslate"></div></a>
 </div>
 </td>
 <td>
 <div class="ghcolumn">
-<a href="../../components/heron/gdalConvexHull.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -120px -24px" data-toptip="Gdal Convex Hull"></div></a>
-<a href="../../components/heron/gdalFillNoData.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -168px -24px" data-downtip="Gdal Fill No Data"></div></a>
+<a href="../../components/heron/decimalDegreesToXY.html"><div class="ghsprite" style="background: url('../../icons/heron.png') 0px -96px" data-toptip="Decimal Degrees to XY"></div></a>
+<a href="../../components/heron/coordinateTransformation.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -96px -96px" data-downtip="Coordinate Transformation"></div></a>
 </div>
 </td>
 <td>
 <div class="ghcolumn">
-<a href="../../components/heron/gdalInfo.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -192px -24px" data-toptip="Gdal Info"></div></a>
-<a href="../../components/heron/gdalOgr2Ogr.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -216px -24px" data-downtip="GdalOgr2Ogr"></div></a>
+<a href="../../components/heron/xYToDecimalDegrees.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -144px -96px" data-toptip="XY to Decimal Degrees"></div></a>
+<a href="../../components/heron/gdalConvexHull.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -168px -96px" data-downtip="Gdal Convex Hull"></div></a>
 </div>
 </td>
 <td>
 <div class="ghcolumn">
-<a href="../../components/heron/gdalTranslate.html"><div class="ghsprite" style="background: url('../../icons/heron.png') 0px -48px" data-toptip="GdalTranslate"></div></a>
-<a href="../../components/heron/gdalWarp.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -24px -48px" data-downtip="GdalWarp"></div></a>
-</div>
-</td>
-<td>
-<div class="ghcolumn">
-<a href="../../components/heron/setSpatialReferenceSystem.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -24px -96px" data-toptip="Set Spatial Reference System"></div></a>
+<a href="../../components/heron/gdalBuffer.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -192px -96px" data-toptip="Gdal Buffer"></div></a>
 </div>
 </td>
 </tr>
 <tr class="ghgroup-title-row">
-<td class="ghgroup-title" colspan="8">
+<td class="ghgroup-title" colspan="7">
 GIS Tools
 </td>
 </tr>
@@ -228,42 +227,54 @@ GIS Tools
 <tr>
 <td>
 <div class="ghcolumn">
-<a href="../../components/heron/colorToHex.html"><div class="ghsprite" style="background: url('../../icons/heron.png') 0px -24px" data-toptip="Color to Hex"></div></a>
-<a href="../../components/heron/gDALDetails.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -144px -24px" data-downtip="GDAL Details"></div></a>
+<a href="../../components/heron/multiSDiff.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -24px -24px" data-toptip="Multi SDiff"></div></a>
+<a href="../../components/heron/gDALDetails.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -48px -24px" data-downtip="GDAL Details"></div></a>
 </div>
 </td>
 <td>
 <div class="ghcolumn">
-<a href="../../components/heron/hexToColor.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -48px -48px" data-toptip="Hex to Color"></div></a>
-<a href="../../components/heron/cubemapFromView.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -72px -48px" data-downtip="Cubemap From View"></div></a>
+<a href="../../components/heron/topiaryFlatten.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -72px -24px" data-toptip="Topiary Flatten"></div></a>
+<a href="../../components/heron/hexToColor.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -96px -24px" data-downtip="Hex to Color"></div></a>
 </div>
 </td>
 <td>
 <div class="ghcolumn">
-<a href="../../components/heron/cubemapFromViewPlus.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -96px -48px" data-toptip="Cubemap From View Plus"></div></a>
-<a href="../../components/heron/flipImage.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -120px -48px" data-downtip="Flip Image"></div></a>
+<a href="../../components/heron/colorToHex.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -120px -24px" data-toptip="Color to Hex"></div></a>
+<a href="../../components/heron/imageFilteredColors.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -168px -24px" data-downtip="Image Filtered Colors"></div></a>
 </div>
 </td>
 <td>
 <div class="ghcolumn">
-<a href="../../components/heron/rotateImage.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -144px -48px" data-toptip="Rotate Image"></div></a>
-<a href="../../components/heron/multiMeshPatch.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -144px -72px" data-downtip="Multi Mesh Patch"></div></a>
+<a href="../../components/heron/cubemapFromViewPlus.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -192px -24px" data-toptip="Cubemap From View Plus"></div></a>
+<a href="../../components/heron/cubemapFromView.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -216px -24px" data-downtip="Cubemap From View"></div></a>
 </div>
 </td>
 <td>
 <div class="ghcolumn">
-<a href="../../components/heron/multiMoveToTopo.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -168px -72px" data-toptip="Multi Move to Topo"></div></a>
-<a href="../../components/heron/multiSDiff.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -192px -72px" data-downtip="Multi SDiff"></div></a>
+<a href="../../components/heron/cubemapToEquirectangular.html"><div class="ghsprite" style="background: url('../../icons/heron.png') 0px -48px" data-toptip="Cubemap To Equirectangular"></div></a>
+<a href="../../components/heron/imageTopColors.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -24px -48px" data-downtip="Image Top Colors"></div></a>
 </div>
 </td>
 <td>
 <div class="ghcolumn">
-<a href="../../components/heron/topiaryFlatten.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -120px -96px" data-toptip="Topiary Flatten"></div></a>
+<a href="../../components/heron/rotateImage.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -48px -48px" data-toptip="Rotate Image"></div></a>
+<a href="../../components/heron/flipImage.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -72px -48px" data-downtip="Flip Image"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heron/multiMeshPatch.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -96px -72px" data-toptip="Multi Mesh Patch"></div></a>
+<a href="../../components/heron/visualCenter.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -120px -96px" data-downtip="Visual Center"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/heron/multiMoveToTopo.html"><div class="ghsprite" style="background: url('../../icons/heron.png') -216px -96px" data-toptip="Multi Move to Topo"></div></a>
 </div>
 </td>
 </tr>
 <tr class="ghgroup-title-row">
-<td class="ghgroup-title" colspan="6">
+<td class="ghgroup-title" colspan="8">
 Utilities
 </td>
 </tr>
@@ -273,17 +284,17 @@ Utilities
 
 
 <div class="compo-header">
-<h1><div class="ghsprite" style="background: url('../../icons/heron.png') -48px 0px" ></div> Import Topo</h1>
+<h1><div class="ghsprite" style="background: url('../../icons/heron.png') 0px -72px" ></div> Import Topo</h1>
 
 <div class="breadcrumb">
  <a href="../../index.html">Component Index</a>
-  <a href="../../addons/heron.html">Heron</a><a href="#" class="breadcrumb-nolink">GIS Tools</a><a href="#" class="breadcrumb-nolink">ImportTopo</a>
+  <a href="../../addons/heron.html">Heron</a><a href="#" class="breadcrumb-nolink">GIS Import | Export</a><a href="#" class="breadcrumb-nolink">ImportTopo</a>
 </div>
 
 </div>
 
 </div>
-<h3>Create a topographic mesh from an IMG or HGT file clipped to a boundary</h3>
+<h3>Create a topographic mesh from a raster file (IMG, HGT, ASCII, DEM, TIF, etc) clipped to a boundary</h3>
 <h2>Inputs</h2>
 <table class="params-table input-params">
 <thead>
@@ -291,7 +302,6 @@ Utilities
 </thead>
 <tbody>
 <tr><td><b>Boundary</b></td><td>boundary</td><td>Boundary curve(s) for vector data</td><td>Curve</td></tr>
-<tr><td><b>IMG Location</b></td><td>imgLocation</td><td>Filepath for the *.img or *.hgt input</td><td>Text</td></tr>
 <tr><td><b>Topography Raster File</b></td><td>topoFile</td><td>Filepath for the raster topography input</td><td>Text</td></tr>
 </tbody>
 </table>
@@ -302,8 +312,8 @@ Utilities
 <tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
 </thead>
 <tbody>
-<tr><td><b>topoMesh</b></td><td>topoMesh</td><td>Resultant topographic mesh from IMG or HGT file</td><td>Mesh</td></tr>
-<tr><td><b>topoExtent</b></td><td>topoExtent</td><td>Bounding box for the entire IMG or HGT file</td><td>Rectangle</td></tr>
+<tr><td><b>Topography Mesh</b></td><td>topoMesh</td><td>Resultant topographic mesh from the source file</td><td>Mesh</td></tr>
+<tr><td><b>Topography Extent</b></td><td>topoExtent</td><td>Bounding box for the entire source file</td><td>Rectangle</td></tr>
 <tr><td><b>Topography Source Info</b></td><td>topoInfo</td><td>Raster info about topography source</td><td>Text</td></tr>
 </tbody>
 </table>

@@ -1,0 +1,396 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Construct Composite AssemblyObject - Assembler - Component for Grasshopper | Grasshopper Docs</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+
+<meta name="description" content="Construct a composite Assembly Object" />
+<meta name="title" content="Construct Composite AssemblyObject - Assembler - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:title" content="Construct Composite AssemblyObject - Assembler - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://grasshopperdocs.com/components/assembler/constructCompositeAssemblyObject.html" />
+<meta property="og:site_name" content="Grasshopper Docs" />
+
+<link href="../../style-v2.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+
+<div id="docs">
+
+<div id="docs-head">
+<div id="docs-masthead">
+<p id="docs-sitename"><a href="http://grasshopperdocs.com/">
+	<img id="site-logo-icon" src="/images/logo-icon.png" alt=""></img>
+	<img id="site-logo-text" src="/images/logo-text.png" alt="Grasshopper Docs"></img>
+</a></p>
+<div id="docs-sitemenu">
+	<a class="sitemenu-item" href="/index.html">Categories</a>
+	<a class="sitemenu-item" href="/addonIndex.html">Addons</a>
+	<a class="sitemenu-item" href="/completeIndex.html">Components</a>
+</div>
+<div id="docs-sitesearch">
+	<input id="docs-sitesearch-inputbox" type="text" name="docs-sitesearch-inputbox" />
+	<img id="docs-searchicon" src="/images/search.png"/>
+</div>
+</div>
+</div>
+
+<div id="docs-body">
+
+<div class="page">
+
+<div class="content compo-page">
+
+<div class="lead-header">
+
+<div class="addon-buttons compo-buttons">
+<a href="https://github.com/Co-de-iT/Assembler">Source Code</a>
+<a href="https://www.food4rhino.com/en/app/assembler">Download</a>
+
+</div>
+
+
+<div class="google-ad-sidebar">
+
+<!-- Carbon Ads -->
+<script async type="text/javascript" src="https://cdn.carbonads.com/carbon.js?serve=CK7IC27L&placement=grasshopperdocscom" id="_carbonads_js"></script>
+
+</div>
+
+<div class="lead-gradient"></div>
+<div class="lead-image" style="background-image: url('../../images/header/Rhino.png');"></div>
+
+<div class="ghbar ghbar-compo-page">
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/assembler/iGHTypeViewer.html"><div class="ghsprite" style="background: url('../../icons/assembler.png') 0px -48px" data-toptip="IGH_TypeViewer"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+AAA
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/assembler/constructAssemblyObject.html"><div class="ghsprite" style="background: url('../../icons/assembler.png') 0px 0px" data-toptip="Construct AssemblyObject"></div></a>
+<a href="../../components/assembler/constructHandle.html"><div class="ghsprite" style="background: url('../../icons/assembler.png') -24px 0px" data-downtip="ConstructHandle"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/assembler/constructXData.html"><div class="ghsprite" style="background: url('../../icons/assembler.png') -48px 0px" data-toptip="Construct XData"></div></a>
+<a href="../../components/assembler/deconstructAssemblyObject.html"><div class="ghsprite" style="background: url('../../icons/assembler.png') -72px 0px" data-downtip="Deconstruct AssemblyObject"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/assembler/deconstructXData.html"><div class="ghsprite" style="background: url('../../icons/assembler.png') -96px 0px" data-toptip="Deconstruct XData"></div></a>
+<a href="../../components/assembler/displayHandles.html"><div class="ghsprite" style="background: url('../../icons/assembler.png') -120px 0px" data-downtip="DisplayHandles"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/assembler/resetAssemblyObject.html"><div class="ghsprite" style="background: url('../../icons/assembler.png') -144px 0px" data-toptip="Reset AssemblyObject"></div></a>
+<a href="../../components/assembler/setSupports.html"><div class="ghsprite" style="background: url('../../icons/assembler.png') -96px -24px" data-downtip="Set Supports"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/assembler/inspectAOValues.html"><div class="ghsprite" style="background: url('../../icons/assembler.png') -24px -48px" data-toptip="Inspect AO values"></div></a>
+<a href="../../components/assembler/extractOffsetMesh.html"><div class="ghsprite" style="background: url('../../icons/assembler.png') -72px -48px" data-downtip="Extract Offset Mesh"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/assembler/constructCompositeAssemblyObject.html"><div class="ghsprite" style="background: url('../../icons/assembler.png') -144px -48px" data-toptip="Construct Composite AssemblyObject"></div></a>
+<a href="../../components/assembler/deconstructHandle.html"><div class="ghsprite" style="background: url('../../icons/assembler.png') 0px -72px" data-downtip="Deconstruct Handle"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/assembler/transformXData.html"><div class="ghsprite" style="background: url('../../icons/assembler.png') -24px -96px" data-toptip="Transform XData"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="7">
+Components
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/assembler/assemblerEngine.html"><div class="ghsprite" style="background: url('../../icons/assembler.png') -216px -24px" data-toptip="Assembler Engine"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+Engine
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/assembler/constructFieldN.html"><div class="ghsprite" style="background: url('../../icons/assembler.png') -168px 0px" data-toptip="Construct Field N"></div></a>
+<a href="../../components/assembler/constructSparseField.html"><div class="ghsprite" style="background: url('../../icons/assembler.png') -192px 0px" data-downtip="Construct Sparse Field"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/assembler/colorField.html"><div class="ghsprite" style="background: url('../../icons/assembler.png') -120px -48px" data-toptip="Color Field"></div></a>
+<a href="../../components/assembler/constructFieldXYZ.html"><div class="ghsprite" style="background: url('../../icons/assembler.png') -168px -48px" data-downtip="Construct Field XYZ"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/assembler/deconstructField.html"><div class="ghsprite" style="background: url('../../icons/assembler.png') -216px -48px" data-toptip="Deconstruct Field"></div></a>
+<a href="../../components/assembler/exogenousSettings.html"><div class="ghsprite" style="background: url('../../icons/assembler.png') -48px -72px" data-downtip="Exogenous Settings"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/assembler/populateField.html"><div class="ghsprite" style="background: url('../../icons/assembler.png') 0px -96px" data-toptip="Populate Field"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="4">
+Exogenous
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/assembler/heuristicDisplay.html"><div class="ghsprite" style="background: url('../../icons/assembler.png') -216px 0px" data-toptip="Heuristic Display"></div></a>
+<a href="../../components/assembler/deconstructRule.html"><div class="ghsprite" style="background: url('../../icons/assembler.png') -144px -24px" data-downtip="Deconstruct Rule"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/assembler/heuristicsDisplayEx.html"><div class="ghsprite" style="background: url('../../icons/assembler.png') -96px -48px" data-toptip="Heuristics Display Ex"></div></a>
+<a href="../../components/assembler/heuristicsSettings.html"><div class="ghsprite" style="background: url('../../icons/assembler.png') -192px -72px" data-downtip="Heuristics Settings"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/assembler/heuristicsWriter.html"><div class="ghsprite" style="background: url('../../icons/assembler.png') -216px -72px" data-toptip="Heuristics Writer"></div></a>
+<a href="../../components/assembler/weighHeuristics.html"><div class="ghsprite" style="background: url('../../icons/assembler.png') -48px -96px" data-downtip="Weigh Heuristics"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+Heuristics
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/assembler/assemblyObjectsFromJSON.html"><div class="ghsprite" style="background: url('../../icons/assembler.png') -168px -24px" data-toptip="AssemblyObjects From JSON"></div></a>
+<a href="../../components/assembler/assemblyObjectsToJSON.html"><div class="ghsprite" style="background: url('../../icons/assembler.png') -192px -24px" data-downtip="AssemblyObjects To JSON"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+I/O
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/assembler/displayAssemblage.html"><div class="ghsprite" style="background: url('../../icons/assembler.png') 0px -24px" data-toptip="Display Assemblage"></div></a>
+<a href="../../components/assembler/extractHandles.html"><div class="ghsprite" style="background: url('../../icons/assembler.png') -24px -24px" data-downtip="Extract Handles"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/assembler/removeAssemblyObjects.html"><div class="ghsprite" style="background: url('../../icons/assembler.png') -48px -24px" data-toptip="Remove AssemblyObjects"></div></a>
+<a href="../../components/assembler/extractSupports.html"><div class="ghsprite" style="background: url('../../icons/assembler.png') -120px -24px" data-downtip="ExtractSupports"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/assembler/associateXData.html"><div class="ghsprite" style="background: url('../../icons/assembler.png') -48px -48px" data-toptip="Associate XData"></div></a>
+<a href="../../components/assembler/deconstructAssemblage.html"><div class="ghsprite" style="background: url('../../icons/assembler.png') -192px -48px" data-downtip="Deconstruct Assemblage"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/assembler/displayCandidates.html"><div class="ghsprite" style="background: url('../../icons/assembler.png') -24px -72px" data-toptip="Display Candidates"></div></a>
+<a href="../../components/assembler/extractAOSet.html"><div class="ghsprite" style="background: url('../../icons/assembler.png') -72px -72px" data-downtip="Extract AOSet"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/assembler/extractCollisionMesh.html"><div class="ghsprite" style="background: url('../../icons/assembler.png') -96px -72px" data-toptip="Extract Collision Mesh"></div></a>
+<a href="../../components/assembler/extractReferencePlane.html"><div class="ghsprite" style="background: url('../../icons/assembler.png') -120px -72px" data-downtip="Extract Reference Plane"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/assembler/extractTopology.html"><div class="ghsprite" style="background: url('../../icons/assembler.png') -144px -72px" data-toptip="ExtractTopology"></div></a>
+<a href="../../components/assembler/extractType.html"><div class="ghsprite" style="background: url('../../icons/assembler.png') -168px -72px" data-downtip="Extract Type"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="6">
+Post Processing
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/assembler/dMyCustomPreviewComponent.html"><div class="ghsprite" style="background: url('../../icons/assembler.png') -72px -24px" data-toptip="D_MyCustomPreviewComponent"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+Z_experimental
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+
+<div class="compo-header">
+<h1><div class="ghsprite" style="background: url('../../icons/assembler.png') -144px -48px" ></div> Construct Composite AssemblyObject</h1>
+
+<div class="breadcrumb">
+ <a href="../../index.html">Component Index</a>
+  <a href="../../addons/assembler.html">Assembler</a><a href="#" class="breadcrumb-nolink">Components</a><a href="#" class="breadcrumb-nolink">AOComCon</a>
+</div>
+
+</div>
+
+</div>
+<h3>Construct a composite Assembly Object</h3>
+<h2>Inputs</h2>
+<table class="params-table input-params">
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Name</b></td><td>N</td><td>The object's unique name</td><td>Text</td></tr>
+<tr><td><b>Collision Mesh</b></td><td>M</td><td>The mesh geometry used for collision checks</td><td>Mesh</td></tr>
+<tr><td><b>Reference Plane</b></td><td>P</td><td>The object's reference plane</td><td>Plane</td></tr>
+<tr><td><b>Direction</b></td><td>D</td><td>The object's direction vector</td><td>Vector</td></tr>
+<tr><td><b>Weight</b></td><td>W</td><td>The object's weight (optional)</td><td>Number</td></tr>
+<tr><td><b>Children AO</b></td><td>AOc</td><td>The children AssemblyObjects forming the composite object</td><td>Generic Data</td></tr>
+<tr><td><b>Handles</b></td><td>H</td><td>The object's Handles
+If no input is given, Handles are automatically calculated</td><td>Generic Data</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table class="params-table output-params">
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Assembly Object</b></td><td>AO</td><td>The newly created Assembly Object</td><td>Generic Data</td></tr>
+</tbody>
+</table>
+
+
+</div>
+
+</div>
+
+</div>
+
+<div id="docs-foot" class="docs-footindex">
+<div id="docs-foot-inner">
+<p class="left">
+Site design © <a href="https://github.com/robinrodricks/">Robin Rodricks</a>. &nbsp;
+Co-created by <a href="http://andrewheumann.com/">Andrew Heumann</a>. &nbsp;
+Assembler and associated data © 2023  <a href="https://www.food4rhino.com/en/app/assembler">Co-de-iT (Computational Design Italy)</a>. &nbsp;
+<br>
+Rhinoceros and Grasshopper are registered trademarks of <a href="https://www.rhino3d.com/">Robert McNeel & Associates</a>.&nbsp;
+Hosted by <a href="http://www.github.com/">GitHub</a> 
+</p>
+<p class="right docs-lightfont">
+
+<a href="https://github.com/grasshopper3d/GrasshopperDocsSite/issues/new">Report an Issue</a> &nbsp;|&nbsp;
+<a href="/termsOfService.html">Terms of Service</a>
+</p>
+
+</div>
+
+
+
+</div>
+</div>
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DX6TG16YN7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DX6TG16YN7');
+</script>
+
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/jquery-autocomplete.min.js"></script>
+<script type="text/javascript" src="/js/app-searchbar.js"></script>
+
+    </body>
+</html>

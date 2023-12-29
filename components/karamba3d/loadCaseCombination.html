@@ -1,0 +1,620 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Load-Case Combination - Karamba3D - Component for Grasshopper | Grasshopper Docs</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+
+<meta name="description" content="Superimposes load-cases." />
+<meta name="title" content="Load-Case Combination - Karamba3D - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:title" content="Load-Case Combination - Karamba3D - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://grasshopperdocs.com/components/karamba3d/loadCaseCombination.html" />
+<meta property="og:site_name" content="Grasshopper Docs" />
+
+<link href="../../style-v2.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+
+<div id="docs">
+
+<div id="docs-head">
+<div id="docs-masthead">
+<p id="docs-sitename"><a href="http://grasshopperdocs.com/">
+	<img id="site-logo-icon" src="/images/logo-icon.png" alt=""></img>
+	<img id="site-logo-text" src="/images/logo-text.png" alt="Grasshopper Docs"></img>
+</a></p>
+<div id="docs-sitemenu">
+	<a class="sitemenu-item" href="/index.html">Categories</a>
+	<a class="sitemenu-item" href="/addonIndex.html">Addons</a>
+	<a class="sitemenu-item" href="/completeIndex.html">Components</a>
+</div>
+<div id="docs-sitesearch">
+	<input id="docs-sitesearch-inputbox" type="text" name="docs-sitesearch-inputbox" />
+	<img id="docs-searchicon" src="/images/search.png"/>
+</div>
+</div>
+</div>
+
+<div id="docs-body">
+
+<div class="page">
+
+<div class="content compo-page">
+
+<div class="lead-header">
+
+<div class="addon-buttons compo-buttons">
+<a href="#tutorials">Video Tutorials</a>
+<a href="https://www.food4rhino.com/app/karamba3d">Download</a>
+
+</div>
+
+
+<div class="google-ad-sidebar">
+
+<!-- Carbon Ads -->
+<script async type="text/javascript" src="https://cdn.carbonads.com/carbon.js?serve=CK7IC27L&placement=grasshopperdocscom" id="_carbonads_js"></script>
+
+</div>
+
+<div class="lead-gradient"></div>
+<div class="lead-image" style="background-image: url('../../images/header/Architecture-SimulationFEM.png');"></div>
+
+<div class="ghbar ghbar-compo-page">
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/karamba3d/support.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -96px -48px" data-toptip="Support"></div></a>
+<a href="../../components/karamba3d/selectElements.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -120px -120px" data-downtip="Select Elements"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/karamba3d/assembleModel.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -144px -120px" data-toptip="Assemble Model"></div></a>
+<a href="../../components/karamba3d/connectedParts.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -192px -120px" data-downtip="Connected Parts"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/karamba3d/disassembleModel.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -216px -120px" data-toptip="Disassemble Model"></div></a>
+<a href="../../components/karamba3d/elementActivation.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') 0px -144px" data-downtip="Element Activation"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/karamba3d/modifyModel.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -48px -144px" data-toptip="Modify Model"></div></a>
+<a href="../../components/karamba3d/connectivityToBeam.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -120px -144px" data-downtip="Connectivity to Beam"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/karamba3d/disassembleElement.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -144px -144px" data-toptip="Disassemble Element"></div></a>
+<a href="../../components/karamba3d/dispatchElementsFromListOfElements.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -168px -144px" data-downtip="Dispatch Elements from List of Elements"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/karamba3d/makeElementSet.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -216px -144px" data-toptip="Make Element-Set"></div></a>
+<a href="../../components/karamba3d/indexToBeam.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') 0px -168px" data-downtip="Index to Beam"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/karamba3d/lineToBeam.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -24px -168px" data-toptip="Line to Beam"></div></a>
+<a href="../../components/karamba3d/meshToShell.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -48px -168px" data-downtip="Mesh to Shell"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/karamba3d/modifyElement.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -72px -168px" data-toptip="Modify Element"></div></a>
+<a href="../../components/karamba3d/orientateElem.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -96px -168px" data-downtip="Orientate Elem"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/karamba3d/pointMass.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -120px -168px" data-toptip="Point-Mass"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="9">
+1.Model
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/karamba3d/prescribedDisplacement.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -72px -48px" data-toptip="Prescribed Displacement"></div></a>
+<a href="../../components/karamba3d/disassembleMeshLoad.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -72px -96px" data-downtip="Disassemble Mesh Load"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/karamba3d/loads.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -96px -96px" data-toptip="Loads"></div></a>
+<a href="../../components/karamba3d/loadCaseCombination.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -120px -96px" data-downtip="Load-Case Combination"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/karamba3d/beamLoads.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -144px -96px" data-toptip="Beam Loads"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+2.Load
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/karamba3d/eccentricityOnBeam.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -96px -144px" data-toptip="Eccentricity on Beam"></div></a>
+<a href="../../components/karamba3d/crossSection.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -144px -168px" data-downtip="Cross Section"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/karamba3d/disassembleCrossSection.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -168px -168px" data-toptip="Disassemble Cross Section"></div></a>
+<a href="../../components/karamba3d/eccentricityOnCrossSection.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -192px -168px" data-downtip="Eccentricity on Cross Section"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/karamba3d/crossSectionMatcher.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -216px -168px" data-toptip="Cross Section Matcher"></div></a>
+<a href="../../components/karamba3d/modifyCrossSection.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') 0px -192px" data-downtip="Modify Cross Section"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/karamba3d/crossSectionSelector.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -24px -192px" data-toptip="Cross Section Selector"></div></a>
+<a href="../../components/karamba3d/crossSectionRangeSelector.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -48px -192px" data-downtip="Cross Section Range Selector"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/karamba3d/generateCrossSectionTable.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -72px -192px" data-toptip="Generate Cross Section Table"></div></a>
+<a href="../../components/karamba3d/readCrossSectionTableFromFile.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -96px -192px" data-downtip="Read Cross Section Table from File"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="5">
+3.Cross Section
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/karamba3d/beamJoints.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -216px -96px" data-toptip="Beam-Joints"></div></a>
+<a href="../../components/karamba3d/beamJointAgent.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') 0px -120px" data-downtip="Beam-Joint-Agent"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/karamba3d/lineJoint.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -24px -120px" data-toptip="Line-Joint"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="2">
+4.Joint
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/karamba3d/disassembleMaterial.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -216px -72px" data-toptip="Disassemble Material"></div></a>
+<a href="../../components/karamba3d/materialProperties.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') 0px -96px" data-downtip="Material Properties"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/karamba3d/materialSelection.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -24px -96px" data-toptip="Material Selection"></div></a>
+<a href="../../components/karamba3d/readMaterialTableFromFile.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -48px -96px" data-downtip="Read Material Table from File"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="2">
+5.Material
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/karamba3d/bESOForBeams.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -120px -192px" data-toptip="BESO for Beams"></div></a>
+<a href="../../components/karamba3d/bESOForShells.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -144px -192px" data-downtip="BESO for Shells"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/karamba3d/bucklingModes.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -168px -192px" data-toptip="Buckling Modes"></div></a>
+<a href="../../components/karamba3d/eigenModes.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -192px -192px" data-downtip="Eigen Modes"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/karamba3d/largeDeformationAnalysis.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -216px -192px" data-toptip="Large Deformation Analysis"></div></a>
+<a href="../../components/karamba3d/naturalVibrations.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') 0px -216px" data-downtip="Natural Vibrations"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/karamba3d/analyzeNonlinearWIP.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -24px -216px" data-toptip="Analyze Nonlinear WIP"></div></a>
+<a href="../../components/karamba3d/optimizeCrossSection.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -48px -216px" data-downtip="Optimize Cross Section"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/karamba3d/optimizeReinforcement.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -72px -216px" data-toptip="Optimize Reinforcement"></div></a>
+<a href="../../components/karamba3d/tensionCompressionEliminator.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -96px -216px" data-downtip="Tension/Compression Eliminator"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/karamba3d/analyze.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -120px -216px" data-toptip="Analyze"></div></a>
+<a href="../../components/karamba3d/analyzeThI.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -144px -216px" data-downtip="AnalyzeThI"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/karamba3d/analyzeThII.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -168px -216px" data-toptip="AnalyzeThII"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="7">
+6.Algorithms
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/karamba3d/principalStrainsApproximation.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -120px -48px" data-toptip="Principal Strains Approximation"></div></a>
+<a href="../../components/karamba3d/deformationEnergy.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -144px -48px" data-downtip="Deformation-Energy"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/karamba3d/elementQuery.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -168px -48px" data-toptip="Element Query"></div></a>
+<a href="../../components/karamba3d/nodalDisplacements.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -192px -48px" data-downtip="Nodal Displacements"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/karamba3d/reactionForces.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -216px -48px" data-toptip="Reaction Forces"></div></a>
+<a href="../../components/karamba3d/utilizationOfElements.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') 0px -72px" data-downtip="Utilization of Elements"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/karamba3d/beamDisplacements.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -24px -72px" data-toptip="Beam Displacements"></div></a>
+<a href="../../components/karamba3d/beamForces.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -48px -72px" data-downtip="Beam Forces"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/karamba3d/beamResultantForces.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -72px -72px" data-toptip="Beam Resultant Forces"></div></a>
+<a href="../../components/karamba3d/nodeForces.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -96px -72px" data-downtip="Node Forces"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/karamba3d/shellForces.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -120px -72px" data-toptip="Shell Forces"></div></a>
+<a href="../../components/karamba3d/lineResultsOnShells.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -144px -72px" data-downtip="Line Results on Shells"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/karamba3d/shellSection.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -168px -72px" data-toptip="Shell Section"></div></a>
+<a href="../../components/karamba3d/resultVectorsOnShells.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -192px -72px" data-downtip="Result Vectors on Shells"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/karamba3d/beamView.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -168px -120px" data-toptip="Beam View"></div></a>
+<a href="../../components/karamba3d/modelView.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -24px -144px" data-downtip="Model View"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/karamba3d/shellView.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -72px -144px" data-toptip="Shell View"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="9">
+7.Results
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/karamba3d/exportModelToDStV.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -48px -120px" data-toptip="Export Model to DStV"></div></a>
+<a href="../../components/karamba3d/exportModelToJSONBSON.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -72px -120px" data-downtip="Export Model to JSON/BSON"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/karamba3d/importModelFromJSONOrBSON.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -96px -120px" data-toptip="Import Model from JSON or BSON"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="2">
+8.Export
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/karamba3d/closestPoints.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -96px 0px" data-toptip="Closest Points"></div></a>
+<a href="../../components/karamba3d/closestPointsMultiDimensional.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -120px 0px" data-downtip="Closest Points Multi-Dimensional"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/karamba3d/detectCollision.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -144px 0px" data-toptip="Detect Collision"></div></a>
+<a href="../../components/karamba3d/crossSectionProperties.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -168px 0px" data-downtip="Cross Section Properties"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/karamba3d/cullCurves.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -192px 0px" data-toptip="Cull Curves"></div></a>
+<a href="../../components/karamba3d/getCellsFromLines.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -216px 0px" data-downtip="Get Cells from Lines"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/karamba3d/lineLineIntersection.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') 0px -24px" data-toptip="Line-Line Intersection"></div></a>
+<a href="../../components/karamba3d/localVector.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -24px -24px" data-downtip="LocalVector"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/karamba3d/meshBreps.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -48px -24px" data-toptip="Mesh Breps"></div></a>
+<a href="../../components/karamba3d/meshBrepsII.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -72px -24px" data-downtip="Mesh Breps II"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/karamba3d/principalStatesTransformation.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -96px -24px" data-toptip="Principal States Transformation"></div></a>
+<a href="../../components/karamba3d/removeDuplicateLines.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -120px -24px" data-downtip="Remove Duplicate Lines"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/karamba3d/removeDuplicatePoints.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -144px -24px" data-toptip="Remove Duplicate Points"></div></a>
+<a href="../../components/karamba3d/simplifyModel.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -168px -24px" data-downtip="Simplify Model"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/karamba3d/userIsoLines.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -192px -24px" data-toptip="User Iso-Lines"></div></a>
+<a href="../../components/karamba3d/userStreamLines.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -216px -24px" data-downtip="User Stream-Lines"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/karamba3d/interpolateShapes.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') 0px -48px" data-toptip="Interpolate Shapes"></div></a>
+<a href="../../components/karamba3d/mapper.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -24px -48px" data-downtip="Mapper"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/karamba3d/stitches.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -48px -48px" data-toptip="Stitches"></div></a>
+<a href="../../components/karamba3d/elementFelting.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -192px -144px" data-downtip="Element Felting"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="10">
+9.Utilities
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/karamba3d/license.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -168px -96px" data-toptip="License"></div></a>
+<a href="../../components/karamba3d/settings.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -192px -96px" data-downtip="Settings"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+Settings
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/karamba3d/beamViewKaramba3DPUI.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') 0px 0px" data-toptip="Beam View (Karamba3D_PUI)"></div></a>
+<a href="../../components/karamba3d/modelViewKaramba3DPUI.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -24px 0px" data-downtip="Model View (Karamba3D_PUI)"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/karamba3d/renderedViewKaramba3DPUI.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -48px 0px" data-toptip="Rendered View (Karamba3D_PUI)"></div></a>
+<a href="../../components/karamba3d/shellViewKaramba3DPUI.html"><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -72px 0px" data-downtip="Shell View (Karamba3D_PUI)"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="2">
+x1.ParamUI
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+
+<div class="compo-header">
+<h1><div class="ghsprite" style="background: url('../../icons/karamba3D.png') -120px -96px" ></div> Load-Case Combination</h1>
+
+<div class="breadcrumb">
+ <a href="../../index.html">Component Index</a>
+  <a href="../../addons/karamba3d.html">Karamba3D</a><a href="#" class="breadcrumb-nolink">2.Load</a><a href="#" class="breadcrumb-nolink">LCCombi</a>
+</div>
+
+</div>
+
+</div>
+<h3>Superimposes load-cases.</h3>
+<h2>Inputs</h2>
+<table class="params-table input-params">
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Load-case Combination Rules (Karamba3D)</b></td><td>Rules</td><td>Rules for combining load-cases. This is the syntax in a nutshell:
+blanks are ignored, everything after '#' is a remark.
+A combination rule looks like this: name = expr
+Names are case sensitive and need to start with a letter followed by numbers or letter
+Expressions may contain factored names of load-cases combined with '|', '+', '-',  and '&'.
+'|' has the lowest, '&' the highest priority. Changes in priority may be expressed via '(' and ')'.
+A factored name looks like this: 'number*name' or '(number1|number2)*name'.
+'(number1|number2)*name' means number1 or number2 times name. number1 is assumed to be the larger of the two.
+'|' means 'or'.
+'+' means 'and'.
+'-' means 'and minus'
+'&' means combination with upper and lower limit multiplication:
+'(2|1)*name1 & (4|3)*name2' results in (2*name1 + 3*name2)|(1*name1 + 4*name2)
+</td><td>Text</td></tr>
+<tr><td><b>Load-case Selection</b></td><td>Selection</td><td>List of load-case of load-combination names to be calculated. If empty all load-cases and load-combinations are included in the calculation.</td><td>Text</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table class="params-table output-params">
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Load</b></td><td>Load</td><td>Load for a structural model which describes a load-case combination.</td><td>Load</td></tr>
+</tbody>
+</table>
+
+<div class="ghtutorials">
+<a name="tutorials"></a>
+<h2>Video Tutorials</h2>
+<div style="display:none;" class="html5gallery" data-skin="verticallight" data-width="1000" data-height="600" data-thumbwidth="280" data-thumbheight="70" data-thumbgap="5">
+
+<a href="http://www.youtube.com/embed/j6KLIqK0pDI"><img src="http://img.youtube.com/vi/j6KLIqK0pDI/1.jpg" alt="141113 Karamba To Gsa And Robot Via Ifc"></a>
+<a href="http://www.youtube.com/embed/fzF9hi3LNmQ"><img src="http://img.youtube.com/vi/fzF9hi3LNmQ/1.jpg" alt="Perform Structural Analysis And Form Simulation In Real Time Using Karamba And Silvereye"></a>
+<a href="http://www.youtube.com/embed/49Z91bqf_Bo"><img src="http://img.youtube.com/vi/49Z91bqf_Bo/1.jpg" alt="Session 08 | Introduction To Structural Analysis Using Karamba"></a>
+<a href="http://www.youtube.com/embed/quxKw9Q9zX4"><img src="http://img.youtube.com/vi/quxKw9Q9zX4/1.jpg" alt="Tutorial: Simple Truss Structural Analysis In  With Karamba"></a>
+
+
+</div>
+</div>
+
+<script type="text/javascript" src="/html5gallery/jquery.js"></script>
+<script type="text/javascript" src="/html5gallery/html5gallery.js"></script>
+
+
+</div>
+
+</div>
+
+</div>
+
+<div id="docs-foot" class="docs-footindex">
+<div id="docs-foot-inner">
+<p class="left">
+Site design © <a href="https://github.com/robinrodricks/">Robin Rodricks</a>. &nbsp;
+Co-created by <a href="http://andrewheumann.com/">Andrew Heumann</a>. &nbsp;
+Karamba3D and associated data © 2023  <a href="https://www.food4rhino.com/app/karamba3d">Clemens Preisinger</a>. &nbsp;
+<br>
+Rhinoceros and Grasshopper are registered trademarks of <a href="https://www.rhino3d.com/">Robert McNeel & Associates</a>.&nbsp;
+Hosted by <a href="http://www.github.com/">GitHub</a> 
+</p>
+<p class="right docs-lightfont">
+
+<a href="https://github.com/grasshopper3d/GrasshopperDocsSite/issues/new">Report an Issue</a> &nbsp;|&nbsp;
+<a href="/termsOfService.html">Terms of Service</a>
+</p>
+
+</div>
+
+
+
+</div>
+</div>
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DX6TG16YN7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DX6TG16YN7');
+</script>
+
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/jquery-autocomplete.min.js"></script>
+<script type="text/javascript" src="/js/app-searchbar.js"></script>
+
+    </body>
+</html>

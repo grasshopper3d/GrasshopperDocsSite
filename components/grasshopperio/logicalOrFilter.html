@@ -1,0 +1,601 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Logical Or Filter - Grasshopper IO - Component for Grasshopper | Grasshopper Docs</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+
+<meta name="description" content="Combine two filters together using a logical OR operator." />
+<meta name="title" content="Logical Or Filter - Grasshopper IO - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:title" content="Logical Or Filter - Grasshopper IO - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://grasshopperdocs.com/components/grasshopperio/logicalOrFilter.html" />
+<meta property="og:site_name" content="Grasshopper Docs" />
+
+<link href="../../style-v2.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+
+<div id="docs">
+
+<div id="docs-head">
+<div id="docs-masthead">
+<p id="docs-sitename"><a href="http://grasshopperdocs.com/">
+	<img id="site-logo-icon" src="/images/logo-icon.png" alt=""></img>
+	<img id="site-logo-text" src="/images/logo-text.png" alt="Grasshopper Docs"></img>
+</a></p>
+<div id="docs-sitemenu">
+	<a class="sitemenu-item" href="/index.html">Categories</a>
+	<a class="sitemenu-item" href="/addonIndex.html">Addons</a>
+	<a class="sitemenu-item" href="/completeIndex.html">Components</a>
+</div>
+<div id="docs-sitesearch">
+	<input id="docs-sitesearch-inputbox" type="text" name="docs-sitesearch-inputbox" />
+	<img id="docs-searchicon" src="/images/search.png"/>
+</div>
+</div>
+</div>
+
+<div id="docs-body">
+
+<div class="page">
+
+<div class="content compo-page">
+
+<div class="lead-header">
+
+<div class="addon-buttons compo-buttons">
+<a href="https://www.rhino3d.com/6/new/grasshopper">Download</a>
+
+</div>
+
+
+<div class="google-ad-sidebar">
+
+<!-- Carbon Ads -->
+<script async type="text/javascript" src="https://cdn.carbonads.com/carbon.js?serve=CK7IC27L&placement=grasshopperdocscom" id="_carbonads_js"></script>
+
+</div>
+
+<div class="lead-gradient"></div>
+<div class="lead-image" style="background-image: url('../../images/header/Grasshopper.png');"></div>
+
+<div class="ghbar ghbar-compo-page">
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperio/queryAnnotationStyles.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') 0px -24px" data-toptip="Query Annotation Styles"></div></a>
+<a href="../../components/grasshopperio/queryInstalledFonts.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -96px -24px" data-downtip="Query Installed Fonts"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperio/angleDimensionLines.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -24px -144px" data-toptip="Angle Dimension (Lines)"></div></a>
+<a href="../../components/grasshopperio/angleDimensionPoints.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -48px -144px" data-downtip="Angle Dimension (Points)"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperio/angleDimensionArc.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -72px -144px" data-toptip="Angle Dimension (Arc)"></div></a>
+<a href="../../components/grasshopperio/annotationStyleOverrides.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -96px -144px" data-downtip="Annotation Style Overrides"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperio/annotationTextOverrides.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -120px -144px" data-toptip="Annotation Text Overrides"></div></a>
+<a href="../../components/grasshopperio/annotationArrowSettings.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -144px -144px" data-downtip="Annotation Arrow Settings"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperio/annotationDimensionSettings.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -168px -144px" data-toptip="Annotation Dimension Settings"></div></a>
+<a href="../../components/grasshopperio/annotationLeaderSettings.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -192px -144px" data-downtip="Annotation Leader Settings"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperio/annotationTextSettings.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -216px -144px" data-toptip="Annotation Text Settings"></div></a>
+<a href="../../components/grasshopperio/annotationToleranceSettings.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') 0px -168px" data-downtip="Annotation Tolerance Settings"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperio/annotationUnitsSettings.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -24px -168px" data-toptip="Annotation Units Settings"></div></a>
+<a href="../../components/grasshopperio/centermark.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -48px -168px" data-downtip="Centermark"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperio/evaluateAnnotationText.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -72px -168px" data-toptip="Evaluate Annotation Text"></div></a>
+<a href="../../components/grasshopperio/leader.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -96px -168px" data-downtip="Leader"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperio/linearDimension.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -120px -168px" data-toptip="Linear Dimension"></div></a>
+<a href="../../components/grasshopperio/alignedDimension.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -144px -168px" data-downtip="Aligned Dimension"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperio/annotationStyle.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -168px -168px" data-toptip="Annotation Style"></div></a>
+<a href="../../components/grasshopperio/modelFont.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -192px -168px" data-downtip="Model Font"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperio/ordinateDimension.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -216px -168px" data-toptip="Ordinate Dimension"></div></a>
+<a href="../../components/grasshopperio/radialDimension.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') 0px -192px" data-downtip="Radial Dimension"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperio/textDot.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -24px -192px" data-toptip="Text Dot"></div></a>
+<a href="../../components/grasshopperio/textEntity.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -48px -192px" data-downtip="Text Entity"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="12">
+Annotations
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperio/queryDirectory.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') 0px 0px" data-toptip="Query Directory"></div></a>
+<a href="../../components/grasshopperio/filterContent.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') 0px -72px" data-downtip="Filter Content"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperio/logicalAndFilter.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -24px -72px" data-toptip="Logical And Filter"></div></a>
+<a href="../../components/grasshopperio/containsTextFilter.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -48px -72px" data-downtip="Contains Text Filter"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperio/equalityFilter.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -72px -72px" data-toptip="Equality Filter"></div></a>
+<a href="../../components/grasshopperio/intersectionFilter.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -96px -72px" data-downtip="Intersection Filter"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperio/greaterThanFilter.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -120px -72px" data-toptip="Greater Than Filter"></div></a>
+<a href="../../components/grasshopperio/logicalNotFilter.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -144px -72px" data-downtip="Logical Not Filter"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperio/logicalOrFilter.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -168px -72px" data-toptip="Logical Or Filter"></div></a>
+<a href="../../components/grasshopperio/lessThanFilter.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -192px -72px" data-downtip="Less Than Filter"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperio/matchTextFilter.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -216px -72px" data-toptip="Match Text Filter"></div></a>
+<a href="../../components/grasshopperio/unionFilter.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') 0px -96px" data-downtip="Union Filter"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperio/groupContent.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -24px -96px" data-toptip="Group Content"></div></a>
+<a href="../../components/grasshopperio/orderContent.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -48px -96px" data-downtip="Order Content"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperio/contentCache.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -168px -120px" data-toptip="Content Cache"></div></a>
+<a href="../../components/grasshopperio/textFieldExpression.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -192px -120px" data-downtip="Text Field Expression"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperio/evaluateTextFields.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -216px -120px" data-toptip="Evaluate Text Fields"></div></a>
+<a href="../../components/grasshopperio/userText.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') 0px -144px" data-downtip="User Text"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperio/importContent.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -72px -192px" data-toptip="Import Content"></div></a>
+<a href="../../components/grasshopperio/contentDetails.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -96px -192px" data-downtip="Content Details"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperio/contentInformation.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -120px -192px" data-toptip="Content Information"></div></a>
+<a href="../../components/grasshopperio/unitSystem.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -216px -192px" data-downtip="Unit System"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperio/convertUnits.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') 0px -216px" data-toptip="Convert Units"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="12">
+Content
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperio/queryModelLinetypes.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -192px 0px" data-toptip="Query Model Linetypes"></div></a>
+<a href="../../components/grasshopperio/queryModelHatchPatterns.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -216px 0px" data-downtip="Query Model Hatch Patterns"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperio/modelSpaceScale.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -192px -96px" data-toptip="Model Space Scale"></div></a>
+<a href="../../components/grasshopperio/modelHatch.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -216px -96px" data-downtip="Model Hatch"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperio/importHatchPattern.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') 0px -120px" data-toptip="Import Hatch Pattern"></div></a>
+<a href="../../components/grasshopperio/hatchLine.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -24px -120px" data-downtip="Hatch Line"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperio/modelHatchPattern.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -48px -120px" data-toptip="Model Hatch Pattern"></div></a>
+<a href="../../components/grasshopperio/modelLinetype.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -72px -120px" data-downtip="Model Linetype"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperio/colourGradient.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -120px -120px" data-toptip="Colour Gradient"></div></a>
+<a href="../../components/grasshopperio/gradientColourStop.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -144px -120px" data-downtip="Gradient Colour Stop"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="5">
+Drafting
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperio/importCoordinates.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -24px 0px" data-toptip="Import Coordinates"></div></a>
+<a href="../../components/grasshopperio/importSHP.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -24px -216px" data-downtip="Import SHP"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperio/importPDB.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -48px -216px" data-toptip="Import PDB"></div></a>
+<a href="../../components/grasshopperio/atomData.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -72px -216px" data-downtip="Atom Data"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperio/objectDetails.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -96px -216px" data-toptip="Object Details"></div></a>
+<a href="../../components/grasshopperio/import3DM.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -120px -216px" data-downtip="Import 3DM"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperio/importImage.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -144px -216px" data-toptip="Import Image"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="4">
+Input
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperio/pointCloudSection.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -192px -24px" data-toptip="Point Cloud Section"></div></a>
+<a href="../../components/grasshopperio/pointCloudContour.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -216px -24px" data-downtip="Point Cloud Contour"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+Mathematical
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperio/queryModelBlockDefinitions.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -144px 0px" data-toptip="Query Model Block Definitions"></div></a>
+<a href="../../components/grasshopperio/queryModelLayers.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -168px 0px" data-downtip="Query Model Layers"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperio/modelBlockInstance.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -96px -96px" data-toptip="Model Block Instance"></div></a>
+<a href="../../components/grasshopperio/modelLayer.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -120px -96px" data-downtip="Model Layer"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperio/hideModelLayer.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -144px -96px" data-toptip="Hide Model Layer"></div></a>
+<a href="../../components/grasshopperio/modelBlockDefinition.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -144px -192px" data-downtip="Model Block Definition"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperio/importModelBlockDefinition.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -168px -192px" data-toptip="Import Model Block Definition"></div></a>
+<a href="../../components/grasshopperio/exportModelBlockDefinition.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -192px -192px" data-downtip="Export Model Block Definition"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="4">
+Model
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperio/queryModelObjects.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -120px 0px" data-toptip="Query Model Objects"></div></a>
+<a href="../../components/grasshopperio/displayAttributes.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') 0px -48px" data-downtip="Display Attributes"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperio/displayColour.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -24px -48px" data-toptip="Display Colour"></div></a>
+<a href="../../components/grasshopperio/draftingAttributes.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -48px -48px" data-downtip="Drafting Attributes"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperio/printColour.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -72px -48px" data-toptip="Print Colour"></div></a>
+<a href="../../components/grasshopperio/printWidth.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -96px -48px" data-downtip="Print Width"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperio/objectLinetype.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -120px -48px" data-toptip="Object Linetype"></div></a>
+<a href="../../components/grasshopperio/renderAttributes.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -144px -48px" data-downtip="Render Attributes"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperio/renderMaterial.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -168px -48px" data-toptip="Render Material"></div></a>
+<a href="../../components/grasshopperio/visibilityAttributes.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -192px -48px" data-downtip="Visibility Attributes"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperio/explodeObject.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -72px -96px" data-toptip="Explode Object"></div></a>
+<a href="../../components/grasshopperio/modelObject.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -168px -96px" data-downtip="Model Object"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="6">
+Objects
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperio/pointCloudAttributes.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -120px -24px" data-toptip="Point Cloud Attributes"></div></a>
+<a href="../../components/grasshopperio/pointCloudClosestPoint.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -144px -24px" data-downtip="Point Cloud Closest Point"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperio/reducePointCloud.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -168px -24px" data-toptip="Reduce Point Cloud"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="2">
+Point
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperio/customCurvePreview.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -96px -120px" data-toptip="Custom Curve Preview"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+Preview
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperio/queryModelMaterials.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -24px -24px" data-toptip="Query Model Materials"></div></a>
+<a href="../../components/grasshopperio/modelMaterial.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -216px -48px" data-downtip="Model Material"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+Render
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperio/dataOutput.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -168px -216px" data-toptip="Data Output"></div></a>
+<a href="../../components/grasshopperio/dataInput.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -192px -216px" data-downtip="Data Input"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+Util
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperio/modelViewport.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -48px 0px" data-toptip="Model Viewport"></div></a>
+<a href="../../components/grasshopperio/modelView.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -72px 0px" data-downtip="Model View"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperio/zoomExtents.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -96px 0px" data-toptip="Zoom Extents"></div></a>
+<a href="../../components/grasshopperio/queryViewports.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -48px -24px" data-downtip="Query Viewports"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperio/queryPages.html"><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -72px -24px" data-toptip="Query Pages"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+Viewports
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+
+<div class="compo-header">
+<h1><div class="ghsprite" style="background: url('../../icons/grasshopperIO.png') -168px -72px" ></div> Logical Or Filter</h1>
+
+<div class="breadcrumb">
+ <a href="../../index.html">Component Index</a>
+  <a href="../../addons/grasshopper-io.html">Grasshopper IO</a><a href="#" class="breadcrumb-nolink">Content</a><a href="#" class="breadcrumb-nolink">Or</a>
+</div>
+
+</div>
+
+</div>
+<h3>Combine two filters together using a logical OR operator.</h3>
+<h2>Inputs</h2>
+<table class="params-table input-params">
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Filter A</b></td><td>A</td><td>The first filter</td><td>Predicate</td></tr>
+<tr><td><b>Filter B</b></td><td>B</td><td>The second filter</td><td>Predicate</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table class="params-table output-params">
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Filter</b></td><td>F</td><td>A combined filter that determine if Filter A or Filter B pass</td><td>Predicate</td></tr>
+</tbody>
+</table>
+
+
+</div>
+
+</div>
+
+</div>
+
+<div id="docs-foot" class="docs-footindex">
+<div id="docs-foot-inner">
+<p class="left">
+Site design © <a href="https://github.com/robinrodricks/">Robin Rodricks</a>. &nbsp;
+
+Grasshopper IO and associated data © 2023  <a href="https://www.rhino3d.com/6/new/grasshopper">Robert McNeel &amp; Associates</a>. &nbsp;
+<br>
+Rhinoceros and Grasshopper are registered trademarks of <a href="https://www.rhino3d.com/">Robert McNeel & Associates</a>.&nbsp;
+Hosted by <a href="http://www.github.com/">GitHub</a> 
+</p>
+<p class="right docs-lightfont">
+
+<a href="https://github.com/grasshopper3d/GrasshopperDocsSite/issues/new">Report an Issue</a> &nbsp;|&nbsp;
+<a href="/termsOfService.html">Terms of Service</a>
+</p>
+
+</div>
+
+
+
+</div>
+</div>
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DX6TG16YN7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DX6TG16YN7');
+</script>
+
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/jquery-autocomplete.min.js"></script>
+<script type="text/javascript" src="/js/app-searchbar.js"></script>
+
+    </body>
+</html>

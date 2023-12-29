@@ -1,0 +1,892 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Square Root - Grasshopper Math - Component for Grasshopper | Grasshopper Docs</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+
+<meta name="description" content="Compute the square root of a value" />
+<meta name="title" content="Square Root - Grasshopper Math - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:title" content="Square Root - Grasshopper Math - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://grasshopperdocs.com/components/grasshoppermath/squareRoot.html" />
+<meta property="og:site_name" content="Grasshopper Docs" />
+
+<link href="../../style-v2.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+
+<div id="docs">
+
+<div id="docs-head">
+<div id="docs-masthead">
+<p id="docs-sitename"><a href="http://grasshopperdocs.com/">
+	<img id="site-logo-icon" src="/images/logo-icon.png" alt=""></img>
+	<img id="site-logo-text" src="/images/logo-text.png" alt="Grasshopper Docs"></img>
+</a></p>
+<div id="docs-sitemenu">
+	<a class="sitemenu-item" href="/index.html">Categories</a>
+	<a class="sitemenu-item" href="/addonIndex.html">Addons</a>
+	<a class="sitemenu-item" href="/completeIndex.html">Components</a>
+</div>
+<div id="docs-sitesearch">
+	<input id="docs-sitesearch-inputbox" type="text" name="docs-sitesearch-inputbox" />
+	<img id="docs-searchicon" src="/images/search.png"/>
+</div>
+</div>
+</div>
+
+<div id="docs-body">
+
+<div class="page">
+
+<div class="content compo-page">
+
+<div class="lead-header">
+
+<div class="addon-buttons compo-buttons">
+<a href="https://www.rhino3d.com/6/new/grasshopper">Download</a>
+
+</div>
+
+
+<div class="google-ad-sidebar">
+
+<!-- Carbon Ads -->
+<script async type="text/javascript" src="https://cdn.carbonads.com/carbon.js?serve=CK7IC27L&placement=grasshopperdocscom" id="_carbonads_js"></script>
+
+</div>
+
+<div class="lead-gradient"></div>
+<div class="lead-image" style="background-image: url('../../images/header/Grasshopper.png');"></div>
+
+<div class="ghbar ghbar-compo-page">
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/colourRGB.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -48px -240px" data-toptip="Colour RGB"></div></a>
+<a href="../../components/grasshoppermath/colourRGBf.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -72px -240px" data-downtip="Colour RGB (f)"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/colourHSL.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -96px -240px" data-toptip="Colour HSL"></div></a>
+<a href="../../components/grasshoppermath/colourHSV.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -120px -240px" data-downtip="Colour HSV"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/colourXYZ.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -144px -240px" data-toptip="Colour XYZ"></div></a>
+<a href="../../components/grasshoppermath/colourCMYK.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -168px -240px" data-downtip="Colour CMYK"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/colourLab.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -192px -240px" data-toptip="Colour L*ab"></div></a>
+<a href="../../components/grasshoppermath/colourLCH.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -216px -240px" data-downtip="Colour LCH"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/splitARGB.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') 0px -264px" data-toptip="Split ARGB"></div></a>
+<a href="../../components/grasshoppermath/splitAHSV.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -24px -264px" data-downtip="Split AHSV"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/splitAHSL.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -48px -264px" data-toptip="Split AHSL"></div></a>
+<a href="../../components/grasshoppermath/blendColours.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -72px -264px" data-downtip="Blend Colours"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="6">
+Colour
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/constructDomain.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -24px -288px" data-toptip="Construct Domain"></div></a>
+<a href="../../components/grasshoppermath/deconstructDomain.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -48px -288px" data-downtip="Deconstruct Domain"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/consecutiveDomains.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -72px -288px" data-toptip="Consecutive Domains"></div></a>
+<a href="../../components/grasshoppermath/bounds.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -96px -288px" data-downtip="Bounds"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/bounds2D.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -120px -288px" data-toptip="Bounds 2D"></div></a>
+<a href="../../components/grasshoppermath/includes.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -144px -288px" data-downtip="Includes"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/remapNumbers.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -168px -288px" data-toptip="Remap Numbers"></div></a>
+<a href="../../components/grasshoppermath/constructDomain.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -192px -288px" data-downtip="Construct Domain&#178;"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/deconstructDomain.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -216px -288px" data-toptip="Deconstruct Domain&#178;"></div></a>
+<a href="../../components/grasshoppermath/divideDomain.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') 0px -312px" data-downtip="Divide Domain"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/divideDomain.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -24px -312px" data-toptip="Divide Domain&#178;"></div></a>
+<a href="../../components/grasshoppermath/findDomain.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -48px -312px" data-downtip="Find Domain"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="6">
+Domain
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/listItem.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -216px -120px" data-toptip="List Item"></div></a>
+<a href="../../components/grasshoppermath/itemIndex.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -120px -144px" data-downtip="Item Index"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/nullItem.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -144px -144px" data-toptip="Null Item"></div></a>
+<a href="../../components/grasshoppermath/replaceNulls.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -168px -144px" data-downtip="Replace Nulls"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/listLength.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') 0px -168px" data-toptip="List Length"></div></a>
+<a href="../../components/grasshoppermath/insertItems.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -24px -168px" data-downtip="Insert Items"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/replaceItems.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -48px -168px" data-toptip="Replace Items"></div></a>
+<a href="../../components/grasshoppermath/partitionList.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -144px -168px" data-downtip="Partition List"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/dispatch.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -168px -168px" data-toptip="Dispatch"></div></a>
+<a href="../../components/grasshoppermath/weave.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -192px -168px" data-downtip="Weave"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/picknChoose.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -216px -168px" data-toptip="Pick&#39;n&#39;Choose"></div></a>
+<a href="../../components/grasshoppermath/shortestList.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') 0px -192px" data-downtip="Shortest List"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/longestList.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -24px -192px" data-toptip="Longest List"></div></a>
+<a href="../../components/grasshoppermath/crossReference.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -48px -192px" data-downtip="Cross Reference"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/siftPattern.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -144px -192px" data-toptip="Sift Pattern"></div></a>
+<a href="../../components/grasshoppermath/combineData.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -168px -192px" data-downtip="Combine Data"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/shiftList.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -216px -192px" data-toptip="Shift List"></div></a>
+<a href="../../components/grasshoppermath/subList.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') 0px -216px" data-downtip="Sub List"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/splitList.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -24px -216px" data-toptip="Split List"></div></a>
+<a href="../../components/grasshoppermath/reverseList.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -48px -216px" data-downtip="Reverse List"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/sortList.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -72px -216px" data-toptip="Sort List"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="11">
+List
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/constructMatrix.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -120px -312px" data-toptip="Construct Matrix"></div></a>
+<a href="../../components/grasshoppermath/deconstructMatrix.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -144px -312px" data-downtip="Deconstruct Matrix"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/invertMatrix.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -168px -312px" data-toptip="Invert Matrix"></div></a>
+<a href="../../components/grasshoppermath/transposeMatrix.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -192px -312px" data-downtip="Transpose Matrix"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/swapRows.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -216px -312px" data-toptip="Swap Rows"></div></a>
+<a href="../../components/grasshoppermath/swapColumns.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') 0px -336px" data-downtip="Swap Columns"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+Matrix
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/negative.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -24px -48px" data-toptip="Negative"></div></a>
+<a href="../../components/grasshoppermath/absolute.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -48px -48px" data-downtip="Absolute"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/factorial.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -168px -48px" data-toptip="Factorial"></div></a>
+<a href="../../components/grasshoppermath/division.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -120px -72px" data-downtip="Division"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/integerDivision.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -144px -72px" data-toptip="Integer Division"></div></a>
+<a href="../../components/grasshoppermath/addition.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -168px -72px" data-downtip="Addition"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/subtraction.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -192px -72px" data-toptip="Subtraction"></div></a>
+<a href="../../components/grasshoppermath/multiplication.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -216px -72px" data-downtip="Multiplication"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/modulus.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -72px -96px" data-toptip="Modulus"></div></a>
+<a href="../../components/grasshoppermath/power.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -96px -96px" data-downtip="Power"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/massAddition.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -168px -96px" data-toptip="Mass Addition"></div></a>
+<a href="../../components/grasshoppermath/massMultiplication.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -192px -96px" data-downtip="Mass Multiplication"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/seriesAddition.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -216px -96px" data-toptip="Series Addition"></div></a>
+<a href="../../components/grasshoppermath/relativeDifferences.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') 0px -120px" data-downtip="Relative Differences"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/smallerThan.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -120px -120px" data-toptip="Smaller Than"></div></a>
+<a href="../../components/grasshoppermath/largerThan.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -144px -120px" data-downtip="Larger Than"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/equality.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -168px -120px" data-toptip="Equality"></div></a>
+<a href="../../components/grasshoppermath/similarity.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -192px -120px" data-downtip="Similarity"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/gateAnd.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -96px -216px" data-toptip="Gate And"></div></a>
+<a href="../../components/grasshoppermath/gateOr.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -120px -216px" data-downtip="Gate Or"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/gateNot.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -144px -216px" data-toptip="Gate Not"></div></a>
+<a href="../../components/grasshoppermath/gateXor.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -168px -216px" data-downtip="Gate Xor"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/gateNand.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -192px -216px" data-toptip="Gate Nand"></div></a>
+<a href="../../components/grasshoppermath/gateNor.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -216px -216px" data-downtip="Gate Nor"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/gateXnor.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') 0px -240px" data-toptip="Gate Xnor"></div></a>
+<a href="../../components/grasshoppermath/gateMajority.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -24px -240px" data-downtip="Gate Majority"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="13">
+Operators
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/square.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') 0px 0px" data-toptip="Square"></div></a>
+<a href="../../components/grasshoppermath/squareRoot.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -24px 0px" data-downtip="Square Root"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/cube.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -48px 0px" data-toptip="Cube"></div></a>
+<a href="../../components/grasshoppermath/cubeRoot.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -72px 0px" data-downtip="Cube Root"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/logarithm.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -96px 0px" data-toptip="Logarithm"></div></a>
+<a href="../../components/grasshoppermath/naturalLogarithm.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -120px 0px" data-downtip="Natural logarithm"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/powerOfE.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -144px 0px" data-toptip="Power of E"></div></a>
+<a href="../../components/grasshoppermath/powerOf2.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -168px 0px" data-downtip="Power of 2"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/powerOf10.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -192px 0px" data-toptip="Power of 10"></div></a>
+<a href="../../components/grasshoppermath/oneOverX.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -72px -48px" data-downtip="One Over X"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/logN.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -144px -96px" data-toptip="Log N"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="6">
+Polynomials
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/createMaterial.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -96px -264px" data-toptip="Create Material"></div></a>
+<a href="../../components/grasshoppermath/deconstructMaterial.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -120px -264px" data-downtip="Deconstruct Material"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+Preview
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/evaluate.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -72px -312px" data-toptip="Evaluate"></div></a>
+<a href="../../components/grasshoppermath/expression.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -96px -312px" data-downtip="Expression"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+Script
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/range.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -192px -48px" data-toptip="Range"></div></a>
+<a href="../../components/grasshoppermath/series.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -216px -48px" data-downtip="Series"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/fibonacci.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') 0px -72px" data-toptip="Fibonacci"></div></a>
+<a href="../../components/grasshoppermath/sequence.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -24px -72px" data-downtip="Sequence"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/charSequence.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -48px -72px" data-toptip="Char Sequence"></div></a>
+<a href="../../components/grasshoppermath/random.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -72px -72px" data-downtip="Random"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/jitter.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -96px -72px" data-toptip="Jitter"></div></a>
+<a href="../../components/grasshoppermath/duplicateData.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -72px -168px" data-downtip="Duplicate Data"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/repeatData.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -96px -168px" data-toptip="Repeat Data"></div></a>
+<a href="../../components/grasshoppermath/stackData.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -120px -168px" data-downtip="Stack Data"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/cullNth.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -72px -192px" data-toptip="Cull Nth"></div></a>
+<a href="../../components/grasshoppermath/cullPattern.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -96px -192px" data-downtip="Cull Pattern"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/cullIndex.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -120px -192px" data-toptip="Cull Index"></div></a>
+<a href="../../components/grasshoppermath/randomReduce.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -192px -192px" data-downtip="Random Reduce"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="7">
+Sequence
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/createSet.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') 0px -360px" data-toptip="Create Set"></div></a>
+<a href="../../components/grasshoppermath/setUnion.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -24px -360px" data-downtip="Set Union"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/setIntersection.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -48px -360px" data-toptip="Set Intersection"></div></a>
+<a href="../../components/grasshoppermath/setDifference.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -72px -360px" data-downtip="Set Difference"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/setDifferenceS.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -96px -360px" data-toptip="Set Difference (S)"></div></a>
+<a href="../../components/grasshoppermath/subSet.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -120px -360px" data-downtip="SubSet"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/disjoint.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -144px -360px" data-toptip="Disjoint"></div></a>
+<a href="../../components/grasshoppermath/carthesianProduct.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -168px -360px" data-downtip="Carthesian Product"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/setMajority.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -192px -360px" data-toptip="Set Majority"></div></a>
+<a href="../../components/grasshoppermath/replaceMembers.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -216px -360px" data-downtip="Replace Members"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/memberIndex.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') 0px -384px" data-toptip="Member Index"></div></a>
+<a href="../../components/grasshoppermath/deleteConsecutive.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -24px -384px" data-downtip="Delete Consecutive"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/findSimilarMember.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -48px -384px" data-toptip="Find similar member"></div></a>
+<a href="../../components/grasshoppermath/keyValueSearch.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -72px -384px" data-downtip="Key/Value Search"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="7">
+Sets
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/textLength.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -120px -384px" data-toptip="Text Length"></div></a>
+<a href="../../components/grasshoppermath/textSplit.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -144px -384px" data-downtip="Text Split"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/concatenate.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -168px -384px" data-toptip="Concatenate"></div></a>
+<a href="../../components/grasshoppermath/textJoin.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -192px -384px" data-downtip="Text Join"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/characters.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -216px -384px" data-toptip="Characters"></div></a>
+<a href="../../components/grasshoppermath/textTrim.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') 0px -408px" data-downtip="Text Trim"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/textCase.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -24px -408px" data-toptip="Text Case"></div></a>
+<a href="../../components/grasshoppermath/textFragment.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -48px -408px" data-downtip="Text Fragment"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/format.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -72px -408px" data-toptip="Format"></div></a>
+<a href="../../components/grasshoppermath/replaceText.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -96px -408px" data-downtip="Replace Text"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/sortText.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -120px -408px" data-toptip="Sort Text"></div></a>
+<a href="../../components/grasshoppermath/matchText.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -144px -408px" data-downtip="Match Text"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/textDistance.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -168px -408px" data-toptip="Text Distance"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="7">
+Text
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/constructDate.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -192px -408px" data-toptip="Construct Date"></div></a>
+<a href="../../components/grasshoppermath/constructExoticDate.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -216px -408px" data-downtip="Construct Exotic Date"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/constructTime.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') 0px -432px" data-toptip="Construct Time"></div></a>
+<a href="../../components/grasshoppermath/constructSmoothTime.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -24px -432px" data-downtip="Construct Smooth Time"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/deconstructDate.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -48px -432px" data-toptip="Deconstruct Date"></div></a>
+<a href="../../components/grasshoppermath/combineDateTime.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -72px -432px" data-downtip="Combine Date &amp; Time"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/interpolateDate.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -96px -432px" data-toptip="Interpolate Date"></div></a>
+<a href="../../components/grasshoppermath/dateRange.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -120px -432px" data-downtip="Date Range"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="4">
+Time
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/treeItem.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') 0px -144px" data-toptip="Tree Item"></div></a>
+<a href="../../components/grasshoppermath/treeBranch.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -24px -144px" data-downtip="Tree Branch"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/treeStatistics.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -48px -144px" data-toptip="Tree Statistics"></div></a>
+<a href="../../components/grasshoppermath/relativeItem.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -72px -144px" data-downtip="Relative Item"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/relativeItems.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -96px -144px" data-toptip="Relative Items"></div></a>
+<a href="../../components/grasshoppermath/constructPath.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -192px -144px" data-downtip="Construct Path"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/deconstructPath.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -216px -144px" data-toptip="Deconstruct Path"></div></a>
+<a href="../../components/grasshoppermath/merge.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -24px -336px" data-downtip="Merge"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/merge03.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -48px -336px" data-toptip="Merge 03"></div></a>
+<a href="../../components/grasshoppermath/merge04.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -72px -336px" data-downtip="Merge 04"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/merge05.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -96px -336px" data-toptip="Merge 05"></div></a>
+<a href="../../components/grasshoppermath/merge06.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -120px -336px" data-downtip="Merge 06"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/merge08.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -144px -336px" data-toptip="Merge 08"></div></a>
+<a href="../../components/grasshoppermath/merge10.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -168px -336px" data-downtip="Merge 10"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/mergeMultiple.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -192px -336px" data-toptip="Merge Multiple"></div></a>
+<a href="../../components/grasshoppermath/entwine.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -216px -336px" data-downtip="Entwine"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="8">
+Tree
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/sine.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -216px 0px" data-toptip="Sine"></div></a>
+<a href="../../components/grasshoppermath/sinc.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') 0px -24px" data-downtip="Sinc"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/cosine.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -24px -24px" data-toptip="Cosine"></div></a>
+<a href="../../components/grasshoppermath/tangent.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -48px -24px" data-downtip="Tangent"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/arcSine.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -72px -24px" data-toptip="ArcSine"></div></a>
+<a href="../../components/grasshoppermath/arcCosine.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -96px -24px" data-downtip="ArcCosine"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/arcTangent.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -120px -24px" data-toptip="ArcTangent"></div></a>
+<a href="../../components/grasshoppermath/secant.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -144px -24px" data-downtip="Secant"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/coSecant.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -168px -24px" data-toptip="CoSecant"></div></a>
+<a href="../../components/grasshoppermath/coTangent.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -192px -24px" data-downtip="CoTangent"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/degrees.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -216px -24px" data-toptip="Degrees"></div></a>
+<a href="../../components/grasshoppermath/radians.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') 0px -48px" data-downtip="Radians"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="6">
+Trig
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/pi.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -96px -48px" data-toptip="Pi"></div></a>
+<a href="../../components/grasshoppermath/goldenRatio.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -120px -48px" data-downtip="Golden Ratio"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/epsilon.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -144px -48px" data-toptip="Epsilon"></div></a>
+<a href="../../components/grasshoppermath/minimum.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') 0px -96px" data-downtip="Minimum"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/maximum.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -24px -96px" data-toptip="Maximum"></div></a>
+<a href="../../components/grasshoppermath/extremes.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -48px -96px" data-downtip="Extremes"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/round.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -120px -96px" data-toptip="Round"></div></a>
+<a href="../../components/grasshoppermath/blurNumbers.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -24px -120px" data-downtip="Blur Numbers"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/truncate.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -48px -120px" data-toptip="Truncate"></div></a>
+<a href="../../components/grasshoppermath/average.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -72px -120px" data-downtip="Average"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/weightedAverage.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -96px -120px" data-toptip="Weighted Average"></div></a>
+<a href="../../components/grasshoppermath/createComplex.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -144px -264px" data-downtip="Create Complex"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/complexComponents.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -168px -264px" data-toptip="Complex Components"></div></a>
+<a href="../../components/grasshoppermath/complexConjugate.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -192px -264px" data-downtip="Complex Conjugate"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/complexArgument.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -216px -264px" data-toptip="Complex Argument"></div></a>
+<a href="../../components/grasshoppermath/complexModulus.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') 0px -288px" data-downtip="Complex Modulus"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermath/interpolateData.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -96px -384px" data-toptip="Interpolate data"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="9">
+Util
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+
+<div class="compo-header">
+<h1><div class="ghsprite" style="background: url('../../icons/grasshopperMath.png') -24px 0px" ></div> Square Root</h1>
+
+<div class="breadcrumb">
+ <a href="../../index.html">Component Index</a>
+  <a href="../../addons/grasshopper-math.html">Grasshopper Math</a><a href="#" class="breadcrumb-nolink">Polynomials</a><a href="#" class="breadcrumb-nolink">Sqrt</a>
+</div>
+
+</div>
+
+</div>
+<h3>Compute the square root of a value</h3>
+<h2>Inputs</h2>
+<table class="params-table input-params">
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Value</b></td><td>x</td><td>Input value</td><td>Generic Data</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table class="params-table output-params">
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Result</b></td><td>y</td><td>Output value</td><td>Generic Data</td></tr>
+</tbody>
+</table>
+
+
+</div>
+
+</div>
+
+</div>
+
+<div id="docs-foot" class="docs-footindex">
+<div id="docs-foot-inner">
+<p class="left">
+Site design © <a href="https://github.com/robinrodricks/">Robin Rodricks</a>. &nbsp;
+
+Grasshopper Math and associated data © 2023  <a href="https://www.rhino3d.com/6/new/grasshopper">Robert McNeel &amp; Associates</a>. &nbsp;
+<br>
+Rhinoceros and Grasshopper are registered trademarks of <a href="https://www.rhino3d.com/">Robert McNeel & Associates</a>.&nbsp;
+Hosted by <a href="http://www.github.com/">GitHub</a> 
+</p>
+<p class="right docs-lightfont">
+
+<a href="https://github.com/grasshopper3d/GrasshopperDocsSite/issues/new">Report an Issue</a> &nbsp;|&nbsp;
+<a href="/termsOfService.html">Terms of Service</a>
+</p>
+
+</div>
+
+
+
+</div>
+</div>
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DX6TG16YN7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DX6TG16YN7');
+</script>
+
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/jquery-autocomplete.min.js"></script>
+<script type="text/javascript" src="/js/app-searchbar.js"></script>
+
+    </body>
+</html>

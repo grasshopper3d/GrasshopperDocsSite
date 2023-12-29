@@ -100,7 +100,7 @@ About
 </tr>
 <tr class="ghgroup-title-row">
 <td class="ghgroup-title" colspan="2">
-Caribou
+Parse
 </td>
 </tr>
 </table>
@@ -130,7 +130,7 @@ Select
 
 <div class="breadcrumb">
  <a href="../../index.html">Component Index</a>
-  <a href="../../addons/caribou.html">Caribou</a><a href="#" class="breadcrumb-nolink">Caribou</a><a href="#" class="breadcrumb-nolink">Ways</a>
+  <a href="../../addons/caribou.html">Caribou</a><a href="#" class="breadcrumb-nolink">Parse</a><a href="#" class="breadcrumb-nolink">Ways</a>
 </div>
 
 </div>
@@ -145,6 +145,19 @@ Select
 <tbody>
 <tr><td><b>OSM File Path</b></td><td>FP</td><td>The path to XML file(s) downloaded from Open Street map</td><td>Text</td></tr>
 <tr><td><b>OSM Features</b></td><td>OF</td><td>A list of features and subfeatures to extract from the OSM file, in a 'key=value' format separated by newlines or commas</td><td>Text</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table class="params-table output-params">
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Ways</b></td><td>W</td><td>Ways; e.g. nodes linked in a linear order via a Polyline</td><td>Curve</td></tr>
+<tr><td><b>Tags</b></td><td>T</td><td>The metadata attached to each particular node</td><td>Text</td></tr>
+<tr><td><b>Report</b></td><td>R</td><td>The name, description, and number of items found of each specified feature</td><td>Text</td></tr>
+<tr><td><b>Bounds</b></td><td>B</td><td>The boundary extends of the OSM file(s)</td><td>Rectangle</td></tr>
 </tbody>
 </table>
 

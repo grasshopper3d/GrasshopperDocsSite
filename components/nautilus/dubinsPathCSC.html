@@ -1,0 +1,807 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dubins Path CSC - Nautilus - Component for Grasshopper | Grasshopper Docs</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+
+<meta name="description" content="Calculate the shortest and 4 possible Dubins Path using Circular Straight Circular (CSC), paths will be on a plane containing start and arrival, https://en.wikipedia.org/wiki/Dubins_path" />
+<meta name="title" content="Dubins Path CSC - Nautilus - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:title" content="Dubins Path CSC - Nautilus - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://grasshopperdocs.com/components/nautilus/dubinsPathCSC.html" />
+<meta property="og:site_name" content="Grasshopper Docs" />
+
+<link href="../../style-v2.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+
+<div id="docs">
+
+<div id="docs-head">
+<div id="docs-masthead">
+<p id="docs-sitename"><a href="http://grasshopperdocs.com/">
+	<img id="site-logo-icon" src="/images/logo-icon.png" alt=""></img>
+	<img id="site-logo-text" src="/images/logo-text.png" alt="Grasshopper Docs"></img>
+</a></p>
+<div id="docs-sitemenu">
+	<a class="sitemenu-item" href="/index.html">Categories</a>
+	<a class="sitemenu-item" href="/addonIndex.html">Addons</a>
+	<a class="sitemenu-item" href="/completeIndex.html">Components</a>
+</div>
+<div id="docs-sitesearch">
+	<input id="docs-sitesearch-inputbox" type="text" name="docs-sitesearch-inputbox" />
+	<img id="docs-searchicon" src="/images/search.png"/>
+</div>
+</div>
+</div>
+
+<div id="docs-body">
+
+<div class="page">
+
+<div class="content compo-page">
+
+<div class="lead-header">
+
+<div class="addon-buttons compo-buttons">
+<a href="https://www.food4rhino.com/en/app/nautilus">Download</a>
+
+</div>
+
+
+<div class="google-ad-sidebar">
+
+<!-- Carbon Ads -->
+<script async type="text/javascript" src="https://cdn.carbonads.com/carbon.js?serve=CK7IC27L&placement=grasshopperdocscom" id="_carbonads_js"></script>
+
+</div>
+
+<div class="lead-gradient"></div>
+<div class="lead-image" style="background-image: url('../../images/header/CoreCollections.png');"></div>
+
+<div class="ghbar ghbar-compo-page">
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/bendAndBlurLines.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') 0px 0px" data-toptip="Bend and blur lines"></div></a>
+<a href="../../components/nautilus/convexHullCircles.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -24px 0px" data-downtip="Convex Hull Circles"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/curveDivideDistances.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -48px 0px" data-toptip="Curve Divide Distances"></div></a>
+<a href="../../components/nautilus/curveToArches.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -72px 0px" data-downtip="CurveToArches"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/curveToRaster.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -96px 0px" data-toptip="Curve To Raster"></div></a>
+<a href="../../components/nautilus/dubinsCSC.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -120px 0px" data-downtip="Dubins CSC"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/dubinsPathCSC.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -144px 0px" data-toptip="Dubins Path CSC"></div></a>
+<a href="../../components/nautilus/dubinsPathFromPoints.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -168px 0px" data-downtip="Dubins Path From Points"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/equalAreaCells.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -192px 0px" data-toptip="Equal Area Cells"></div></a>
+<a href="../../components/nautilus/fernSpores.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -216px 0px" data-downtip="Fern Spores"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/geodesicCurveFromPoint.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') 0px -24px" data-toptip="Geodesic Curve From Point"></div></a>
+<a href="../../components/nautilus/geodesicPointToPoint.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -24px -24px" data-downtip="Geodesic Point To Point"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/geodesicsPointToPoint.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -48px -24px" data-toptip="Geodesics Point To Point"></div></a>
+<a href="../../components/nautilus/gilbertTessellation3D.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -72px -24px" data-downtip="Gilbert Tessellation 3D"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/gilbertTessellationFansOnMesh.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -96px -24px" data-toptip="Gilbert Tessellation Fans On Mesh"></div></a>
+<a href="../../components/nautilus/gilbertTessellationStarsOnMesh.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -120px -24px" data-downtip="Gilbert Tessellation Stars On Mesh"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/gilbertTessellation.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -144px -24px" data-toptip="Gilbert Tessellation"></div></a>
+<a href="../../components/nautilus/groupCurvesByPlane.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -168px -24px" data-downtip="Group Curves By Plane"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/curvesRegionOffset.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -192px -24px" data-toptip="Curves Region Offset"></div></a>
+<a href="../../components/nautilus/groupCurvesByRegion.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -216px -24px" data-downtip="Group Curves by Region"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/hexagonOnSurface.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') 0px -48px" data-toptip="Hexagon On Surface"></div></a>
+<a href="../../components/nautilus/medialAxisFromCurves.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -24px -48px" data-downtip="Medial Axis From Curves"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/medialAxisFromOneCurve.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -48px -48px" data-toptip="Medial Axis From One Curve"></div></a>
+<a href="../../components/nautilus/medialAxisFromRegion.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -72px -48px" data-downtip="Medial Axis From Region"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/planksInRegion.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -96px -48px" data-toptip="Planks In Region"></div></a>
+<a href="../../components/nautilus/polylineDivide.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -120px -48px" data-downtip="Polyline Divide"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/polylineToLinesAndArcs.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -144px -48px" data-toptip="Polyline to Lines and Arcs"></div></a>
+<a href="../../components/nautilus/randomGrowthOfLines.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -168px -48px" data-downtip="Random Growth Of Lines"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/removeDeadEnds.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -192px -48px" data-toptip="Remove Dead Ends"></div></a>
+<a href="../../components/nautilus/removeDuplicateLines.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -216px -48px" data-downtip="Remove Duplicate Lines"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/removeOverlappingCircles.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') 0px -72px" data-toptip="Remove Overlapping Circles"></div></a>
+<a href="../../components/nautilus/cleanOverlappingCurves.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -24px -72px" data-downtip="Clean Overlapping Curves"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/removeShortSegments.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -48px -72px" data-toptip="Remove Short Segments"></div></a>
+<a href="../../components/nautilus/rubberBand2.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -72px -72px" data-downtip="Rubber Band 2"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/rubberBand1.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -96px -72px" data-toptip="Rubber Band 1"></div></a>
+<a href="../../components/nautilus/smoothNetworkOfCurves.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -120px -72px" data-downtip="Smooth Network Of Curves"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/smoothNetworkOfLinesByDanielPiker.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -144px -72px" data-toptip="Smooth Network Of Lines by Daniel Piker"></div></a>
+<a href="../../components/nautilus/stringOfPearlsOnCurve.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -168px -72px" data-downtip="String Of Pearls On Curve"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/stringOfPearlsOnCurveUsingImage.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -192px -72px" data-toptip="String Of Pearls On Curve using Image"></div></a>
+<a href="../../components/nautilus/tSPFromMesh.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -216px -72px" data-downtip="TSP From Mesh"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/tSPFromTopology.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') 0px -96px" data-toptip="TSP from Topology"></div></a>
+<a href="../../components/nautilus/voronoiFrom2DPoints.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -24px -96px" data-downtip="Voronoi from 2D points"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="21">
+Curve
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/imageThinner1.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -48px -96px" data-toptip="Image Thinner 1"></div></a>
+<a href="../../components/nautilus/imageThinner2.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -72px -96px" data-downtip="Image Thinner 2"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/objectToImage.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -96px -96px" data-toptip="Object to Image"></div></a>
+<a href="../../components/nautilus/rGBToCMYK.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -192px -384px" data-downtip="RGB To CMYK"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/rGBToCMYKGreyColor.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -216px -384px" data-toptip="RGB To CMYK GreyColor"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+Image
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/blendingDelaunayAndVoronoiLines.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -120px -96px" data-toptip="Blending Delaunay and Voronoi : Lines"></div></a>
+<a href="../../components/nautilus/blendingDelaunayAndVoronoiMesh.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -144px -96px" data-downtip="Blending Delaunay and Voronoi : Mesh"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/clusterMesh.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -168px -96px" data-toptip="Cluster Mesh"></div></a>
+<a href="../../components/nautilus/colorDualMesh.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -192px -96px" data-downtip="Color Dual Mesh"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/colorMeshVerticesWithGradiant.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -216px -96px" data-toptip="Color Mesh Vertices with Gradiant"></div></a>
+<a href="../../components/nautilus/colorMeshVerticesRandom.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') 0px -120px" data-downtip="Color Mesh Vertices Random"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/colorMeshReactionDiffusion.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -24px -120px" data-toptip="Color Mesh Reaction Diffusion"></div></a>
+<a href="../../components/nautilus/colorMeshWeights.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -48px -120px" data-downtip="Color Mesh Weights"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/colorObjects.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -72px -120px" data-toptip="Color Objects"></div></a>
+<a href="../../components/nautilus/3DConvexHull.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -96px -120px" data-downtip="3D Convex Hull"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/cutMeshAndRotate.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -120px -120px" data-toptip="Cut Mesh And Rotate"></div></a>
+<a href="../../components/nautilus/cutMeshWithPolylines.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -144px -120px" data-downtip="Cut mesh with polylines"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/cutMeshWithMeshes.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -168px -120px" data-toptip="Cut Mesh With Meshes"></div></a>
+<a href="../../components/nautilus/delaunay2D.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -192px -120px" data-downtip="Delaunay2D"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/ellipsoidFromPolyline.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -216px -120px" data-toptip="Ellipsoid from Polyline"></div></a>
+<a href="../../components/nautilus/healAndOrientAMesh.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') 0px -144px" data-downtip="Heal And Orient a Mesh"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/importImageColorOnFace.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -24px -144px" data-toptip="Import Image Color On Face"></div></a>
+<a href="../../components/nautilus/mazeKruskalExtended.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -48px -144px" data-downtip="Maze Kruskal Extended"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/kruskalMaze.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -72px -144px" data-toptip="Kruskal Maze"></div></a>
+<a href="../../components/nautilus/meshBump.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -96px -144px" data-downtip="MeshBump"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/meshCage.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -120px -144px" data-toptip="Mesh Cage"></div></a>
+<a href="../../components/nautilus/meshGroove.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -144px -144px" data-downtip="Mesh Groove"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/meshIsoSplittingToLines.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -168px -144px" data-toptip="Mesh Iso Splitting to Lines"></div></a>
+<a href="../../components/nautilus/meshIsoSplittingToLinesExt.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -192px -144px" data-downtip="Mesh Iso Splitting to Lines Ext"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/meshIsoSplittingToMeshes.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -216px -144px" data-toptip="Mesh Iso Splitting to Meshes"></div></a>
+<a href="../../components/nautilus/meshIsoSplittingToMeshesExt.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') 0px -168px" data-downtip="Mesh Iso Splitting to Meshes Ext"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/meshMap.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -24px -168px" data-toptip="Mesh Map"></div></a>
+<a href="../../components/nautilus/meshRemoveColor.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -48px -168px" data-downtip="Mesh Remove Color"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/icosahedronMesh.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -72px -168px" data-toptip="Icosahedron Mesh"></div></a>
+<a href="../../components/nautilus/icosahedronMeshPrecision.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -96px -168px" data-downtip="Icosahedron Mesh Precision"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/meshSteppedBump.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -120px -168px" data-toptip="MeshSteppedBump"></div></a>
+<a href="../../components/nautilus/twistedTorus.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -144px -168px" data-downtip="Twisted Torus"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/noiseOnMesh.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -168px -168px" data-toptip="Noise on Mesh"></div></a>
+<a href="../../components/nautilus/polylineExtrudeBothSideOfMesh.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -192px -168px" data-downtip="Polyline Extrude Both Side of Mesh"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/polylineExtrudeBothSide.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -216px -168px" data-toptip="Polyline Extrude Both Side"></div></a>
+<a href="../../components/nautilus/polylineSlab.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') 0px -192px" data-downtip="Polyline Slab"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/quadMeshStripper.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -24px -192px" data-toptip="Quad Mesh Stripper"></div></a>
+<a href="../../components/nautilus/reactionBelousov.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -48px -192px" data-downtip="Reaction Belousov"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/reactionDiffusionOnMesh.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -72px -192px" data-toptip="Reaction Diffusion On mesh"></div></a>
+<a href="../../components/nautilus/reactionDiffusionExtended.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -96px -192px" data-downtip="Reaction Diffusion Extended"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/snowFlake.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -120px -192px" data-toptip="Snow Flake"></div></a>
+<a href="../../components/nautilus/regionToMesh.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -144px -192px" data-downtip="Region To Mesh"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/smoothWeightsOnMesh.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -168px -192px" data-toptip="Smooth Weights On Mesh"></div></a>
+<a href="../../components/nautilus/catmullClarkSubdivision.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -192px -192px" data-downtip="Catmull-Clark Subdivision"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/vectorFromCurvesOnMesh.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -216px -192px" data-toptip="Vector from curves on mesh"></div></a>
+<a href="../../components/nautilus/weldTheVerticesOfAMesh.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') 0px -216px" data-downtip="Weld the Vertices of a Mesh"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="23">
+Mesh
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/populateABox.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -24px -216px" data-toptip="Populate a box"></div></a>
+<a href="../../components/nautilus/populateBoxUniformly.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -48px -216px" data-downtip="Populate Box Uniformly"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/populateAnImage.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -72px -216px" data-toptip="Populate an Image"></div></a>
+<a href="../../components/nautilus/overPopulateAnImage.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -96px -216px" data-downtip="Over Populate an Image"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/populateMeshRandomly.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -120px -216px" data-toptip="Populate Mesh Randomly"></div></a>
+<a href="../../components/nautilus/wordle.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -144px -216px" data-downtip="Wordle"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+Populate
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/joinClosedCurvesStacked.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -168px -216px" data-toptip="Join Closed Curves Stacked"></div></a>
+<a href="../../components/nautilus/singlePathFillWithLines.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -192px -216px" data-downtip="Single Path Fill with Lines"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/singleLineFillWithOffsets.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -216px -216px" data-toptip="Single Line Fill with Offsets"></div></a>
+<a href="../../components/nautilus/singleLineFillWithSinus.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') 0px -240px" data-downtip="Single Line Fill with Sinus"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/singleLineFillWithSpiral.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -24px -240px" data-toptip="Single Line Fill with Spiral"></div></a>
+<a href="../../components/nautilus/singleLineFillWithZigzags.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -48px -240px" data-downtip="Single Line Fill with Zigzags"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/suppressSelfIntersections.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -168px -384px" data-toptip="Suppress Self Intersections"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="4">
+Print
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/helixSpiralOnCurve.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -72px -240px" data-toptip="Helix//Spiral on Curve"></div></a>
+<a href="../../components/nautilus/loxodrome.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -96px -240px" data-downtip="Loxodrome"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/loxodromePiped.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -120px -240px" data-toptip="Loxodrome Piped"></div></a>
+<a href="../../components/nautilus/polylineSpiral.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -144px -240px" data-downtip="Polyline Spiral"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/hyperSpiral.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -168px -240px" data-toptip="Hyper Spiral"></div></a>
+<a href="../../components/nautilus/archimedeanSpiral.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -192px -240px" data-downtip="Archimedean Spiral"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/spiralConstanAngle.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -216px -240px" data-toptip="Spiral Constan Angle"></div></a>
+<a href="../../components/nautilus/fermatSpiral.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') 0px -264px" data-downtip="Fermat Spiral"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/spiralFromPolyline.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -24px -264px" data-toptip="Spiral From Polyline"></div></a>
+<a href="../../components/nautilus/spiralFromPolylineGraphMapper.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -48px -264px" data-downtip="Spiral From Polyline GraphMapper"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/logarithmicSpiralTurns.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -72px -264px" data-toptip="Logarithmic Spiral Turns"></div></a>
+<a href="../../components/nautilus/logarithmicSpiralRadiuses.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -96px -264px" data-downtip="Logarithmic Spiral Radiuses"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/spiralOfTheodorus.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -120px -264px" data-toptip="Spiral Of Theodorus"></div></a>
+<a href="../../components/nautilus/archimedianSpiralPlane.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -144px -264px" data-downtip="Archimedian Spiral Plane"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/polygonalSpiral.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -168px -264px" data-toptip="Polygonal Spiral"></div></a>
+<a href="../../components/nautilus/spiralsFromCurve.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -192px -264px" data-downtip="Spirals From Curve"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="8">
+Spiral
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/egg0.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -216px -264px" data-toptip="Egg0"></div></a>
+<a href="../../components/nautilus/egg1.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') 0px -288px" data-downtip="Egg1"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/egg3.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -24px -288px" data-toptip="Egg3"></div></a>
+<a href="../../components/nautilus/egg5.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -48px -288px" data-downtip="Egg5"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/fourCurvesToBulb.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -72px -288px" data-toptip="Four Curves To Bulb"></div></a>
+<a href="../../components/nautilus/fourCurvesToDome.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -96px -288px" data-downtip="Four Curves To Dome"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/regionToRoof.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -120px -288px" data-toptip="Region To Roof"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="4">
+Surface
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/cistercianNotation.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -144px -288px" data-toptip="Cistercian Notation"></div></a>
+<a href="../../components/nautilus/text.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -216px -336px" data-downtip="Text"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/fonts.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') 0px -360px" data-toptip="Fonts"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="2">
+Text
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/brepFacesTopology.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -168px -288px" data-toptip="Brep Faces Topology"></div></a>
+<a href="../../components/nautilus/linesTopology.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -192px -288px" data-downtip="LinesTopology"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/meshFacesTopology.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -216px -288px" data-toptip="Mesh Faces Topology"></div></a>
+<a href="../../components/nautilus/nColor.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') 0px -312px" data-downtip="nColor"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/topologyOfCellsFromCurve.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -24px -312px" data-toptip="Topology of Cells From curve"></div></a>
+<a href="../../components/nautilus/topologyFromBrepCellsComponent.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -48px -312px" data-downtip="Topology From Brep Cells Component"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/topologyFromConnectedClosedPolycurves.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -72px -312px" data-toptip="Topology From Connected Closed Polycurves"></div></a>
+<a href="../../components/nautilus/indexToBlackWhite.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -144px -336px" data-downtip="Index To Black&amp;White"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/indexToColor.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -168px -336px" data-toptip="Index To Color"></div></a>
+<a href="../../components/nautilus/topologyOfDualMesh.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -192px -336px" data-downtip="Topology Of Dual Mesh"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="5">
+Topology
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/envelopLines.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -96px -312px" data-toptip="Envelop Lines"></div></a>
+<a href="../../components/nautilus/radiusInterpolate.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -120px -312px" data-downtip="Radius Interpolate"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/treeFromNetworkOfCurves.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -144px -312px" data-toptip="Tree From Network Of Curves"></div></a>
+<a href="../../components/nautilus/treeRibs.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -168px -312px" data-downtip="Tree Ribs"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="2">
+Tree
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/planarPointsBoundingEllipse.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -192px -312px" data-toptip="Planar Points Bounding Ellipse"></div></a>
+<a href="../../components/nautilus/explodePositions.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -216px -312px" data-downtip="Explode Positions"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/nautilusLicenceInformation.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') 0px -336px" data-toptip="Nautilus Licence Information"></div></a>
+<a href="../../components/nautilus/noiseBlender3D.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -24px -336px" data-downtip="NoiseBlender3D"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/packGeometriesOnGrid.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -48px -336px" data-toptip="Pack Geometries on Grid"></div></a>
+<a href="../../components/nautilus/packGeometriesOnUnitGrid.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -72px -336px" data-downtip="Pack Geometries on Unit Grid"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/planeInsideObject.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -96px -336px" data-toptip="PlaneInsideObject"></div></a>
+<a href="../../components/nautilus/readSTL.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -120px -336px" data-downtip="Read STL"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/extrudeSheet.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -24px -360px" data-toptip="Extrude Sheet"></div></a>
+<a href="../../components/nautilus/inverseSawFunction.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -48px -360px" data-downtip="Inverse Saw Function"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/noise1D.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -72px -360px" data-toptip="Noise1D"></div></a>
+<a href="../../components/nautilus/noiseFiedl3DStepped.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -96px -360px" data-downtip="Noise Fiedl 3D Stepped"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/noiseField2D.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -120px -360px" data-toptip="Noise Field 2D"></div></a>
+<a href="../../components/nautilus/noiseField2DOneDirection.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -144px -360px" data-downtip="Noise Field 2D One Direction"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/noiseBlenderField.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -168px -360px" data-toptip="Noise Blender Field"></div></a>
+<a href="../../components/nautilus/noiseFieldPerp2D.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -192px -360px" data-downtip="Noise Field Perp2D"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/packGeometriesOnASizedGrid.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -216px -360px" data-toptip="Pack Geometries on a Sized Grid"></div></a>
+<a href="../../components/nautilus/regionSlitsExt.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') 0px -384px" data-downtip="Region Slits Ext"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/sawFunction.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -24px -384px" data-toptip="Saw Function"></div></a>
+<a href="../../components/nautilus/squareFunction.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -48px -384px" data-downtip="Square Function"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/stablePositions.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -72px -384px" data-toptip="Stable Positions"></div></a>
+<a href="../../components/nautilus/changeRadiusOfCirclesInRhino.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -96px -384px" data-downtip="Change Radius of Circles In Rhino"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/nautilus/transformGeometryInRhino.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -120px -384px" data-toptip="Transform Geometry In Rhino"></div></a>
+<a href="../../components/nautilus/zigZagOrTriangleWaveFunction.html"><div class="ghsprite" style="background: url('../../icons/nautilus.png') -144px -384px" data-downtip="ZigZag or Triangle Wave Function"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="12">
+Various
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+
+<div class="compo-header">
+<h1><div class="ghsprite" style="background: url('../../icons/nautilus.png') -144px 0px" ></div> Dubins Path CSC</h1>
+
+<div class="breadcrumb">
+ <a href="../../index.html">Component Index</a>
+  <a href="../../addons/nautilus.html">Nautilus</a><a href="#" class="breadcrumb-nolink">Curve</a><a href="#" class="breadcrumb-nolink">DubinsCSC</a>
+</div>
+
+</div>
+
+</div>
+<h3>Calculate the shortest and 4 possible Dubins Path using Circular Straight Circular (CSC), paths will be on a plane containing start and arrival, https://en.wikipedia.org/wiki/Dubins_path</h3>
+<h2>Inputs</h2>
+<table class="params-table input-params">
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Curve</b></td><td>A</td><td>First Curve for the Dubins path, End point will be used as starting point, End tangent will be used as Direction (like Blend Component)</td><td>Curve</td></tr>
+<tr><td><b>Curve</b></td><td>B</td><td>Second Curve for the Dubins path, Start point will be used as ending point, Start tangent will be used as Direction (like Blend Component)</td><td>Curve</td></tr>
+<tr><td><b>Radius</b></td><td>R1</td><td>Radius at start</td><td>Number</td></tr>
+<tr><td><b>Radius</b></td><td>R2</td><td>Radius at End</td><td>Number</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table class="params-table output-params">
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Shortest</b></td><td>S</td><td>Shortest path</td><td>Curve</td></tr>
+<tr><td><b>Curve LR</b></td><td>LR</td><td>Left Right path</td><td>Curve</td></tr>
+<tr><td><b>Curve RL</b></td><td>RL</td><td>Right Left Path</td><td>Curve</td></tr>
+<tr><td><b>Curve RR</b></td><td>RR</td><td>Right Right Path</td><td>Curve</td></tr>
+<tr><td><b>Curve LL</b></td><td>LL</td><td>Left Left Path</td><td>Curve</td></tr>
+</tbody>
+</table>
+
+
+</div>
+
+</div>
+
+</div>
+
+<div id="docs-foot" class="docs-footindex">
+<div id="docs-foot-inner">
+<p class="left">
+Site design © <a href="https://github.com/robinrodricks/">Robin Rodricks</a>. &nbsp;
+
+Nautilus and associated data © 2023  <a href="https://www.food4rhino.com/en/app/nautilus">Laurent Delrieu</a>. &nbsp;
+<br>
+Rhinoceros and Grasshopper are registered trademarks of <a href="https://www.rhino3d.com/">Robert McNeel & Associates</a>.&nbsp;
+Hosted by <a href="http://www.github.com/">GitHub</a> 
+</p>
+<p class="right docs-lightfont">
+
+<a href="https://github.com/grasshopper3d/GrasshopperDocsSite/issues/new">Report an Issue</a> &nbsp;|&nbsp;
+<a href="/termsOfService.html">Terms of Service</a>
+</p>
+
+</div>
+
+
+
+</div>
+</div>
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DX6TG16YN7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DX6TG16YN7');
+</script>
+
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/jquery-autocomplete.min.js"></script>
+<script type="text/javascript" src="/js/app-searchbar.js"></script>
+
+    </body>
+</html>

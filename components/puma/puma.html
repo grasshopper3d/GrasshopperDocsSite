@@ -7,7 +7,7 @@
 <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 <link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
 
-<meta name="description" content="Puma runs CityEngine CGA rules on input shapes and returns the generated models. (Version" />
+<meta name="description" content="Puma runs CityEngine CGA rules on input shapes and returns the generated models. (Version 1.1.0.2)" />
 <meta name="title" content="Puma - Puma - Component for Grasshopper | Grasshopper Docs" />
 <meta property="og:title" content="Puma - Puma - Component for Grasshopper | Grasshopper Docs" />
 <meta property="og:type" content="website" />
@@ -84,7 +84,7 @@
 </tr>
 <tr class="ghgroup-title-row">
 <td class="ghgroup-title" colspan="2">
-Esri
+Puma
 </td>
 </tr>
 </table>
@@ -97,13 +97,39 @@ Esri
 
 <div class="breadcrumb">
  <a href="../../index.html">Component Index</a>
-  <a href="../../addons/puma.html">Puma</a><a href="#" class="breadcrumb-nolink">Esri</a><a href="#" class="breadcrumb-nolink">CityEngine Puma</a>
+  <a href="../../addons/puma.html">Puma</a><a href="#" class="breadcrumb-nolink">Puma</a><a href="#" class="breadcrumb-nolink">CityEngine Puma</a>
 </div>
 
 </div>
 
 </div>
-<h3>Puma runs CityEngine CGA rules on input shapes and returns the generated models. (Version</h3>
+<h3>Puma runs CityEngine CGA rules on input shapes and returns the generated models. (Version 1.1.0.2)</h3>
+<h2>Inputs</h2>
+<table class="params-table input-params">
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Path to Rule Package</b></td><td>RPK</td><td>Path to a CityEngine rule package (RPK).</td><td>Text</td></tr>
+<tr><td><b>Input Shapes</b></td><td>Shapes</td><td>Input shapes on which to execute the rules.</td><td>Geometry</td></tr>
+<tr><td><b>seed</b></td><td>Seed</td><td>A number that will be used to seed the PRT random number generator.</td><td>Integer</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table class="params-table output-params">
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Generated Models</b></td><td>Models</td><td>Generated model geometry per input shape.</td><td>Geometry</td></tr>
+<tr><td><b>Materials</b></td><td>Materials</td><td>Material attributes per input shape.</td><td>Generic Data</td></tr>
+<tr><td><b>CGA Reports</b></td><td>Reports</td><td>CGA report values per input shape.</td><td>Generic Data</td></tr>
+<tr><td><b>CGA Print Output</b></td><td>Prints</td><td>CGA print output per input shape.</td><td>Generic Data</td></tr>
+<tr><td><b>CGA and Asset Errors</b></td><td>Errors</td><td>CGA and asset errors encountered per input shape.</td><td>Generic Data</td></tr>
+</tbody>
+</table>
+
 
 </div>
 

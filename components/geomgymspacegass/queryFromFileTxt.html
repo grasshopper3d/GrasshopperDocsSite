@@ -1,0 +1,551 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Query From File Txt - GeomGym Spacegass - Component for Grasshopper | Grasshopper Docs</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+
+<meta name="description" content="This component will Query result from an Exported SpaceGass Result txt file." />
+<meta name="title" content="Query From File Txt - GeomGym Spacegass - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:title" content="Query From File Txt - GeomGym Spacegass - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://grasshopperdocs.com/components/geomgymspacegass/queryFromFileTxt.html" />
+<meta property="og:site_name" content="Grasshopper Docs" />
+
+<link href="../../style-v2.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+
+<div id="docs">
+
+<div id="docs-head">
+<div id="docs-masthead">
+<p id="docs-sitename"><a href="http://grasshopperdocs.com/">
+	<img id="site-logo-icon" src="/images/logo-icon.png" alt=""></img>
+	<img id="site-logo-text" src="/images/logo-text.png" alt="Grasshopper Docs"></img>
+</a></p>
+<div id="docs-sitemenu">
+	<a class="sitemenu-item" href="/index.html">Categories</a>
+	<a class="sitemenu-item" href="/addonIndex.html">Addons</a>
+	<a class="sitemenu-item" href="/completeIndex.html">Components</a>
+</div>
+<div id="docs-sitesearch">
+	<input id="docs-sitesearch-inputbox" type="text" name="docs-sitesearch-inputbox" />
+	<img id="docs-searchicon" src="/images/search.png"/>
+</div>
+</div>
+</div>
+
+<div id="docs-body">
+
+<div class="page">
+
+<div class="content compo-page">
+
+<div class="lead-header">
+
+<div class="addon-buttons compo-buttons">
+<a href="https://technical.geometrygym.com/rhino-grasshopper/structuralanalysis/spacegass">Download</a>
+
+</div>
+
+
+<div class="google-ad-sidebar">
+
+<!-- Carbon Ads -->
+<script async type="text/javascript" src="https://cdn.carbonads.com/carbon.js?serve=CK7IC27L&placement=grasshopperdocscom" id="_carbonads_js"></script>
+
+</div>
+
+<div class="lead-gradient"></div>
+<div class="lead-image" style="background-image: url('../../images/header/Integration-StructuralAnalysis.png');"></div>
+
+<div class="ghbar ghbar-compo-page">
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymspacegass/ggKarambaSPACEGASS.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') 0px 0px" data-toptip="gg Karamba SPACEGASS"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+Karamba
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymspacegass/mapProfile.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -24px 0px" data-toptip="Map Profile"></div></a>
+<a href="../../components/geomgymspacegass/streamBakeToIfc.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -48px 0px" data-downtip="Stream Bake To Ifc"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymspacegass/convertIfcOptions.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -72px 0px" data-toptip="Convert Ifc Options"></div></a>
+<a href="../../components/geomgymspacegass/convertIfcFilter.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -96px 0px" data-downtip="Convert Ifc Filter"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymspacegass/convertFromIfc.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -120px 0px" data-toptip="Convert From Ifc"></div></a>
+<a href="../../components/geomgymspacegass/modelDecompose.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') 0px -24px" data-downtip="Model Decompose"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymspacegass/bakeModel.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -216px -72px" data-toptip="Bake Model"></div></a>
+<a href="../../components/geomgymspacegass/modelSettings.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') 0px -96px" data-downtip="Model Settings"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymspacegass/importData.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -144px -192px" data-toptip="Import Data"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="5">
+SpaceGass
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymspacegass/createSectionProp.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -144px 0px" data-toptip="Create Section Prop"></div></a>
+<a href="../../components/geomgymspacegass/create2dFiniteElementProp.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -168px 0px" data-downtip="Create 2d Finite Element Prop"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymspacegass/findSectionProp.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -192px 0px" data-toptip="Find Section Prop"></div></a>
+<a href="../../components/geomgymspacegass/nodeRestraint.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -216px 0px" data-downtip="Node Restraint"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymspacegass/finiteElementGenerationOption.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -120px -72px" data-toptip="Finite Element Generation Option"></div></a>
+<a href="../../components/geomgymspacegass/elementOrientation.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -192px -72px" data-downtip="Element Orientation"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymspacegass/steelDesignMemberParams.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -120px -96px" data-toptip="Steel Design Member Params"></div></a>
+<a href="../../components/geomgymspacegass/steelDesignMemberAtts.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -144px -96px" data-downtip="Steel Design Member Atts"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymspacegass/steelMemberRestraint.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -168px -96px" data-toptip="Steel Member Restraint"></div></a>
+<a href="../../components/geomgymspacegass/materialCreateElasticIsotropic.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -168px -192px" data-downtip="Material Create Elastic Isotropic"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymspacegass/materialStd.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -192px -192px" data-toptip="Material Std"></div></a>
+<a href="../../components/geomgymspacegass/nodeSupport.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -216px -192px" data-downtip="Node Support"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymspacegass/beamAtts.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -48px -216px" data-toptip="Beam Atts"></div></a>
+<a href="../../components/geomgymspacegass/sectionPropertyParameters.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -72px -216px" data-downtip="Section Property Parameters"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymspacegass/beamPropModifier.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -96px -216px" data-toptip="Beam Prop Modifier"></div></a>
+<a href="../../components/geomgymspacegass/createSectionPropExplicit.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -120px -216px" data-downtip="Create Section Prop Explicit"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymspacegass/profileStd.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -144px -216px" data-toptip="Profile Std"></div></a>
+<a href="../../components/geomgymspacegass/beamRelease.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -216px -216px" data-downtip="Beam Release"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="9">
+SpaceGassAtt
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymspacegass/transformStructure.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -24px -24px" data-toptip="Transform Structure"></div></a>
+<a href="../../components/geomgymspacegass/decomposeBeam.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -48px -24px" data-downtip="Decompose Beam"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymspacegass/constraint.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -48px -72px" data-toptip="Constraint"></div></a>
+<a href="../../components/geomgymspacegass/decomposeList.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -72px -72px" data-downtip="Decompose List"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymspacegass/createFiniteElement.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -96px -72px" data-toptip="Create Finite Element"></div></a>
+<a href="../../components/geomgymspacegass/brepConvertFiniteElements.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -144px -72px" data-downtip="Brep Convert Finite Elements"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymspacegass/meshConvertFiniteElements.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -168px -72px" data-toptip="Mesh Convert Finite Elements"></div></a>
+<a href="../../components/geomgymspacegass/createMemberGroupAuto.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -192px -96px" data-downtip="Create Member Group Auto"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymspacegass/createMemberGroup.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -216px -96px" data-toptip="Create Member Group"></div></a>
+<a href="../../components/geomgymspacegass/createOrFindNode.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') 0px -216px" data-downtip="Create Or Find Node"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymspacegass/createBeam.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -24px -216px" data-toptip="Create Beam"></div></a>
+<a href="../../components/geomgymspacegass/createSectionFilter.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -168px -216px" data-downtip="Create Section Filter"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymspacegass/createList.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -192px -216px" data-toptip="Create List"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="7">
+SpaceGassElem
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymspacegass/loadCase.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -72px -24px" data-toptip="Load Case"></div></a>
+<a href="../../components/geomgymspacegass/caseCombination.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -96px -24px" data-downtip="Case Combination"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymspacegass/loadGravity.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -120px -24px" data-toptip="Load Gravity"></div></a>
+<a href="../../components/geomgymspacegass/loadNode.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -144px -24px" data-downtip="Load Node"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymspacegass/loadNetworkTribArea.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -168px -24px" data-toptip="Load Network Trib Area"></div></a>
+<a href="../../components/geomgymspacegass/nodeDisplacmentLoad.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -192px -24px" data-downtip="Node Displacment Load"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymspacegass/loadTherm.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -216px -24px" data-toptip="Load Therm"></div></a>
+<a href="../../components/geomgymspacegass/loadCrvUDL.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') 0px -48px" data-downtip="Load Crv UDL"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymspacegass/loadCrvPrestress.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -24px -48px" data-toptip="Load Crv Prestress"></div></a>
+<a href="../../components/geomgymspacegass/lumpedMassNode.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -48px -120px" data-downtip="Lumped Mass Node"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymspacegass/loadCrvPatch.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -72px -120px" data-toptip="Load Crv Patch"></div></a>
+<a href="../../components/geomgymspacegass/loadCrvTorsion.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -96px -120px" data-downtip="Load Crv Torsion"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymspacegass/loadCrvPoint.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -120px -120px" data-toptip="Load Crv Point"></div></a>
+<a href="../../components/geomgymspacegass/loadSprectral.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -144px -120px" data-downtip="Load Sprectral"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymspacegass/load2dFace.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -168px -120px" data-toptip="Load2d Face"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="8">
+SpaceGassLoads
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymspacegass/movingLoadSettings.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -72px -168px" data-toptip="Moving Load Settings"></div></a>
+<a href="../../components/geomgymspacegass/movingLoadScenario.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -96px -168px" data-downtip="Moving Load Scenario"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymspacegass/movingLoadScenarioCombine.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -120px -168px" data-toptip="Moving Load Scenario Combine"></div></a>
+<a href="../../components/geomgymspacegass/path.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -144px -168px" data-downtip="Path"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymspacegass/pathAlignment.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -168px -168px" data-toptip="Path Alignment"></div></a>
+<a href="../../components/geomgymspacegass/pathAlignmentPoint.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -192px -168px" data-downtip="Path Alignment Point"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymspacegass/pathAlignmentPointNode.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -216px -168px" data-toptip="Path Alignment Point Node"></div></a>
+<a href="../../components/geomgymspacegass/pathLoad.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') 0px -192px" data-downtip="Path Load"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymspacegass/userVechicle.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -24px -192px" data-toptip="User Vechicle"></div></a>
+<a href="../../components/geomgymspacegass/vechicleAxle.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -48px -192px" data-downtip="Vechicle Axle"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymspacegass/libraryVechicle.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -72px -192px" data-toptip="Library Vechicle"></div></a>
+<a href="../../components/geomgymspacegass/pathPressureLoad.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -96px -192px" data-downtip="Path Pressure Load"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymspacegass/bakeMovingLoadFile.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -120px -192px" data-toptip="Bake Moving Load File"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="7">
+SpaceGassLoadsBridge
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymspacegass/queryNodeDisplacements.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -48px -48px" data-toptip="Query Node Displacements"></div></a>
+<a href="../../components/geomgymspacegass/queryNodeReactionForce.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -72px -48px" data-downtip="Query Node Reaction Force"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymspacegass/queryNodeReactionMoment.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -96px -48px" data-toptip="Query Node Reaction Moment"></div></a>
+<a href="../../components/geomgymspacegass/decomposeResultSetBeamForce.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -120px -48px" data-downtip="Decompose Result Set Beam Force"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymspacegass/decomposeResultSetBeamForces.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -144px -48px" data-toptip="Decompose Result Set Beam Forces"></div></a>
+<a href="../../components/geomgymspacegass/queryBucklingFactor.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -168px -48px" data-downtip="Query Buckling Factor"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymspacegass/decomposeResultBucklingLoadFactors.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -192px -48px" data-toptip="Decompose Result Buckling Load Factors"></div></a>
+<a href="../../components/geomgymspacegass/decomposeResultSetModalFreq.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -216px -48px" data-downtip="Decompose Result Set Modal Freq"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymspacegass/queryModalFrequencies.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') 0px -72px" data-toptip="Query Modal Frequencies"></div></a>
+<a href="../../components/geomgymspacegass/decomposeResultSetNode.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -24px -72px" data-downtip="Decompose Result Set Node"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymspacegass/designSteel.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -24px -96px" data-toptip="Design Steel"></div></a>
+<a href="../../components/geomgymspacegass/designTaskSteelAS4100.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -48px -96px" data-downtip="Design Task Steel AS4100"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymspacegass/steelDesignTaskParams.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -72px -96px" data-toptip="Steel Design Task Params"></div></a>
+<a href="../../components/geomgymspacegass/steelDesignTaskFilter.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -96px -96px" data-downtip="Steel Design Task Filter"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymspacegass/queryBeamUtilisationSummary.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') 0px -120px" data-toptip="Query Beam Utilisation Summary"></div></a>
+<a href="../../components/geomgymspacegass/decomposeResultSetUtilisationSummary.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -24px -120px" data-downtip="Decompose Result Set Utilisation Summary"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymspacegass/solver.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -192px -120px" data-toptip="Solver"></div></a>
+<a href="../../components/geomgymspacegass/query.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -216px -120px" data-downtip="Query"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymspacegass/createResultDBFromFileTxt.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') 0px -144px" data-toptip="Create Result DBFrom File Txt"></div></a>
+<a href="../../components/geomgymspacegass/queryFromResultDB.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -24px -144px" data-downtip="Query From Result DB"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymspacegass/queryFromFileTxt.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -48px -144px" data-toptip="Query From File Txt"></div></a>
+<a href="../../components/geomgymspacegass/solveExportOptions.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -72px -144px" data-downtip="Solve Export Options"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymspacegass/analysisResultOptions.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -96px -144px" data-toptip="Analysis Result Options"></div></a>
+<a href="../../components/geomgymspacegass/solverOptions.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -120px -144px" data-downtip="Solver Options"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymspacegass/analysisTaskStaticLinear.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -144px -144px" data-toptip="Analysis Task Static Linear"></div></a>
+<a href="../../components/geomgymspacegass/analysisTaskStaticNonLinear.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -168px -144px" data-downtip="Analysis Task Static Non Linear"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymspacegass/analysisTaskBuckling.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -192px -144px" data-toptip="Analysis Task Buckling"></div></a>
+<a href="../../components/geomgymspacegass/analysisTaskDynamicFreq.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -216px -144px" data-downtip="Analysis Task Dynamic Freq"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymspacegass/analysisTaskSpectral.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') 0px -168px" data-toptip="Analysis Task Spectral"></div></a>
+<a href="../../components/geomgymspacegass/queryBeamForce.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -24px -168px" data-downtip="Query Beam Force"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/geomgymspacegass/queryBeamForces.html"><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -48px -168px" data-toptip="Query Beam Forces"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="16">
+SpaceGassSolver
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+
+<div class="compo-header">
+<h1><div class="ghsprite" style="background: url('../../icons/geomGymSpacegass.png') -48px -144px" ></div> Query From File Txt</h1>
+
+<div class="breadcrumb">
+ <a href="../../index.html">Component Index</a>
+  <a href="../../addons/geomgym-spacegass.html">GeomGym Spacegass</a><a href="#" class="breadcrumb-nolink">SpaceGassSolver</a><a href="#" class="breadcrumb-nolink">ggQT</a>
+</div>
+
+</div>
+
+</div>
+<h3>This component will Query result from an Exported SpaceGass Result txt file.</h3>
+<h2>Inputs</h2>
+<table class="params-table input-params">
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Results File</b></td><td>M</td><td>Path to Results file already Run (file name should end with .txt)</td><td>Text</td></tr>
+<tr><td><b>Result Queries</b></td><td>Q</td><td>Result Queries</td><td>Generic Data</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table class="params-table output-params">
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Results</b></td><td>R</td><td>Results</td><td>Generic Data</td></tr>
+</tbody>
+</table>
+
+
+</div>
+
+</div>
+
+</div>
+
+<div id="docs-foot" class="docs-footindex">
+<div id="docs-foot-inner">
+<p class="left">
+Site design © <a href="https://github.com/robinrodricks/">Robin Rodricks</a>. &nbsp;
+
+GeomGym Spacegass and associated data © 2023  <a href="https://technical.geometrygym.com/rhino-grasshopper/structuralanalysis/spacegass">Geometry Gym Pty Ltd</a>. &nbsp;
+<br>
+Rhinoceros and Grasshopper are registered trademarks of <a href="https://www.rhino3d.com/">Robert McNeel & Associates</a>.&nbsp;
+Hosted by <a href="http://www.github.com/">GitHub</a> 
+</p>
+<p class="right docs-lightfont">
+
+<a href="https://github.com/grasshopper3d/GrasshopperDocsSite/issues/new">Report an Issue</a> &nbsp;|&nbsp;
+<a href="/termsOfService.html">Terms of Service</a>
+</p>
+
+</div>
+
+
+
+</div>
+</div>
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DX6TG16YN7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DX6TG16YN7');
+</script>
+
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/jquery-autocomplete.min.js"></script>
+<script type="text/javascript" src="/js/app-searchbar.js"></script>
+
+    </body>
+</html>

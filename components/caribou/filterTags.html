@@ -100,7 +100,7 @@ About
 </tr>
 <tr class="ghgroup-title-row">
 <td class="ghgroup-title" colspan="2">
-Caribou
+Parse
 </td>
 </tr>
 </table>
@@ -143,8 +143,20 @@ Select
 <tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
 </thead>
 <tbody>
-<tr><td><b>Items</b></td><td>I</td><td>Nodes, Ways, or Building outputs from one of the Extract components</td><td>Generic</td></tr>
+<tr><td><b>Items</b></td><td>I</td><td>Nodes, Ways, or Building outputs from one of the Extract components</td><td>Generic Data</td></tr>
 <tr><td><b>Tags</b></td><td>R</td><td>The Tags output from the same extract component whose nodes/ways/buildings you are providing as Items</td><td>Text</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table class="params-table output-params">
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Items</b></td><td>I</td><td>The geometry that possess the specified tags</td><td>Geometry</td></tr>
+<tr><td><b>Tags</b></td><td>T</td><td>The metadata attached to each particular item</td><td>Text</td></tr>
+<tr><td><b>Report</b></td><td>R</td><td>The name, count, and description of each feature</td><td>Text</td></tr>
 </tbody>
 </table>
 

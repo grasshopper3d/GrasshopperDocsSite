@@ -1,0 +1,514 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Plane | Plane - Grasshopper Vector - Component for Grasshopper | Grasshopper Docs</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+
+<meta name="description" content="Solve the intersection event of two planes." />
+<meta name="title" content="Plane | Plane - Grasshopper Vector - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:title" content="Plane | Plane - Grasshopper Vector - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://grasshopperdocs.com/components/grasshoppervector/planePlane.html" />
+<meta property="og:site_name" content="Grasshopper Docs" />
+
+<link href="../../style-v2.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+
+<div id="docs">
+
+<div id="docs-head">
+<div id="docs-masthead">
+<p id="docs-sitename"><a href="http://grasshopperdocs.com/">
+	<img id="site-logo-icon" src="/images/logo-icon.png" alt=""></img>
+	<img id="site-logo-text" src="/images/logo-text.png" alt="Grasshopper Docs"></img>
+</a></p>
+<div id="docs-sitemenu">
+	<a class="sitemenu-item" href="/index.html">Categories</a>
+	<a class="sitemenu-item" href="/addonIndex.html">Addons</a>
+	<a class="sitemenu-item" href="/completeIndex.html">Components</a>
+</div>
+<div id="docs-sitesearch">
+	<input id="docs-sitesearch-inputbox" type="text" name="docs-sitesearch-inputbox" />
+	<img id="docs-searchicon" src="/images/search.png"/>
+</div>
+</div>
+</div>
+
+<div id="docs-body">
+
+<div class="page">
+
+<div class="content compo-page">
+
+<div class="lead-header">
+
+<div class="addon-buttons compo-buttons">
+<a href="https://www.rhino3d.com/6/new/grasshopper">Download</a>
+
+</div>
+
+
+<div class="google-ad-sidebar">
+
+<!-- Carbon Ads -->
+<script async type="text/javascript" src="https://cdn.carbonads.com/carbon.js?serve=CK7IC27L&placement=grasshopperdocscom" id="_carbonads_js"></script>
+
+</div>
+
+<div class="lead-gradient"></div>
+<div class="lead-image" style="background-image: url('../../images/header/Grasshopper.png');"></div>
+
+<div class="ghbar ghbar-compo-page">
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppervector/curveFrame.html"><div class="ghsprite" style="background: url('../../icons/grasshopperVector.png') -120px 0px" data-toptip="Curve Frame"></div></a>
+<a href="../../components/grasshoppervector/horizontalFrame.html"><div class="ghsprite" style="background: url('../../icons/grasshopperVector.png') -168px 0px" data-downtip="Horizontal Frame"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppervector/perpFrame.html"><div class="ghsprite" style="background: url('../../icons/grasshopperVector.png') -216px 0px" data-toptip="Perp Frame"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="2">
+Analysis
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppervector/divideCurve.html"><div class="ghsprite" style="background: url('../../icons/grasshopperVector.png') 0px 0px" data-toptip="Divide Curve"></div></a>
+<a href="../../components/grasshoppervector/divideLength.html"><div class="ghsprite" style="background: url('../../icons/grasshopperVector.png') -24px 0px" data-downtip="Divide Length"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppervector/divideDistance.html"><div class="ghsprite" style="background: url('../../icons/grasshopperVector.png') -48px 0px" data-toptip="Divide Distance"></div></a>
+<a href="../../components/grasshoppervector/divideByDeviation.html"><div class="ghsprite" style="background: url('../../icons/grasshopperVector.png') -72px 0px" data-downtip="Divide By Deviation"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppervector/curveFrames.html"><div class="ghsprite" style="background: url('../../icons/grasshopperVector.png') -96px 0px" data-toptip="Curve Frames"></div></a>
+<a href="../../components/grasshoppervector/horizontalFrames.html"><div class="ghsprite" style="background: url('../../icons/grasshopperVector.png') -144px 0px" data-downtip="Horizontal Frames"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppervector/perpFrames.html"><div class="ghsprite" style="background: url('../../icons/grasshopperVector.png') -192px 0px" data-toptip="Perp Frames"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="4">
+Division
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppervector/square.html"><div class="ghsprite" style="background: url('../../icons/grasshopperVector.png') -48px -24px" data-toptip="Square"></div></a>
+<a href="../../components/grasshoppervector/rectangular.html"><div class="ghsprite" style="background: url('../../icons/grasshopperVector.png') -72px -24px" data-downtip="Rectangular"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppervector/hexagonal.html"><div class="ghsprite" style="background: url('../../icons/grasshopperVector.png') -96px -24px" data-toptip="Hexagonal"></div></a>
+<a href="../../components/grasshoppervector/triangular.html"><div class="ghsprite" style="background: url('../../icons/grasshopperVector.png') -120px -24px" data-downtip="Triangular"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppervector/radial.html"><div class="ghsprite" style="background: url('../../icons/grasshopperVector.png') -144px -24px" data-toptip="Radial"></div></a>
+<a href="../../components/grasshoppervector/populate2D.html"><div class="ghsprite" style="background: url('../../icons/grasshopperVector.png') -96px -120px" data-downtip="Populate 2D"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppervector/populate3D.html"><div class="ghsprite" style="background: url('../../icons/grasshopperVector.png') -120px -120px" data-toptip="Populate 3D"></div></a>
+<a href="../../components/grasshoppervector/populateGeometry.html"><div class="ghsprite" style="background: url('../../icons/grasshopperVector.png') -144px -120px" data-downtip="Populate Geometry"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="4">
+Grid
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppervector/planePlane.html"><div class="ghsprite" style="background: url('../../icons/grasshopperVector.png') 0px -72px" data-toptip="Plane | Plane"></div></a>
+<a href="../../components/grasshoppervector/planePlanePlane.html"><div class="ghsprite" style="background: url('../../icons/grasshopperVector.png') -24px -72px" data-downtip="Plane | Plane | Plane"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppervector/planeRegion.html"><div class="ghsprite" style="background: url('../../icons/grasshopperVector.png') -168px -72px" data-toptip="Plane Region"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="2">
+Mathematical
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppervector/xYPlane.html"><div class="ghsprite" style="background: url('../../icons/grasshopperVector.png') -168px -24px" data-toptip="XY Plane"></div></a>
+<a href="../../components/grasshoppervector/xZPlane.html"><div class="ghsprite" style="background: url('../../icons/grasshopperVector.png') -192px -24px" data-downtip="XZ Plane"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppervector/yZPlane.html"><div class="ghsprite" style="background: url('../../icons/grasshopperVector.png') -216px -24px" data-toptip="YZ Plane"></div></a>
+<a href="../../components/grasshoppervector/deconstructPlane.html"><div class="ghsprite" style="background: url('../../icons/grasshopperVector.png') 0px -48px" data-downtip="Deconstruct Plane"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppervector/constructPlane.html"><div class="ghsprite" style="background: url('../../icons/grasshopperVector.png') -24px -48px" data-toptip="Construct Plane"></div></a>
+<a href="../../components/grasshoppervector/planeOrigin.html"><div class="ghsprite" style="background: url('../../icons/grasshopperVector.png') -48px -48px" data-downtip="Plane Origin"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppervector/planeOffset.html"><div class="ghsprite" style="background: url('../../icons/grasshopperVector.png') -72px -48px" data-toptip="Plane Offset"></div></a>
+<a href="../../components/grasshoppervector/planeNormal.html"><div class="ghsprite" style="background: url('../../icons/grasshopperVector.png') -96px -48px" data-downtip="Plane Normal"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppervector/plane3Pt.html"><div class="ghsprite" style="background: url('../../icons/grasshopperVector.png') -120px -48px" data-toptip="Plane 3Pt"></div></a>
+<a href="../../components/grasshoppervector/planeFit.html"><div class="ghsprite" style="background: url('../../icons/grasshopperVector.png') -144px -48px" data-downtip="Plane Fit"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppervector/linePt.html"><div class="ghsprite" style="background: url('../../icons/grasshopperVector.png') -168px -48px" data-toptip="Line + Pt"></div></a>
+<a href="../../components/grasshoppervector/lineLine.html"><div class="ghsprite" style="background: url('../../icons/grasshopperVector.png') -192px -48px" data-downtip="Line + Line"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppervector/planeClosestPoint.html"><div class="ghsprite" style="background: url('../../icons/grasshopperVector.png') -216px -48px" data-toptip="Plane Closest Point"></div></a>
+<a href="../../components/grasshoppervector/alignPlanes.html"><div class="ghsprite" style="background: url('../../icons/grasshopperVector.png') -48px -72px" data-downtip="Align Planes"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppervector/alignPlane.html"><div class="ghsprite" style="background: url('../../icons/grasshopperVector.png') -72px -72px" data-toptip="Align Plane"></div></a>
+<a href="../../components/grasshoppervector/rotatePlane.html"><div class="ghsprite" style="background: url('../../icons/grasshopperVector.png') -96px -72px" data-downtip="Rotate Plane"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppervector/adjustPlane.html"><div class="ghsprite" style="background: url('../../icons/grasshopperVector.png') -120px -72px" data-toptip="Adjust Plane"></div></a>
+<a href="../../components/grasshoppervector/flipPlane.html"><div class="ghsprite" style="background: url('../../icons/grasshopperVector.png') -144px -72px" data-downtip="Flip Plane"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppervector/planeCoordinates.html"><div class="ghsprite" style="background: url('../../icons/grasshopperVector.png') -72px -96px" data-toptip="Plane Coordinates"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="10">
+Plane
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppervector/constructPoint.html"><div class="ghsprite" style="background: url('../../icons/grasshopperVector.png') -192px -72px" data-toptip="Construct Point"></div></a>
+<a href="../../components/grasshoppervector/deconstruct.html"><div class="ghsprite" style="background: url('../../icons/grasshopperVector.png') -216px -72px" data-downtip="Deconstruct"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppervector/pointPolar.html"><div class="ghsprite" style="background: url('../../icons/grasshopperVector.png') 0px -96px" data-toptip="Point Polar"></div></a>
+<a href="../../components/grasshoppervector/toPolar.html"><div class="ghsprite" style="background: url('../../icons/grasshopperVector.png') -24px -96px" data-downtip="To Polar"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppervector/pointOriented.html"><div class="ghsprite" style="background: url('../../icons/grasshopperVector.png') -48px -96px" data-toptip="Point Oriented"></div></a>
+<a href="../../components/grasshoppervector/pointCylindrical.html"><div class="ghsprite" style="background: url('../../icons/grasshopperVector.png') -96px -96px" data-downtip="Point Cylindrical"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppervector/barycentric.html"><div class="ghsprite" style="background: url('../../icons/grasshopperVector.png') -120px -96px" data-toptip="Barycentric"></div></a>
+<a href="../../components/grasshoppervector/distance.html"><div class="ghsprite" style="background: url('../../icons/grasshopperVector.png') -144px -96px" data-downtip="Distance"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppervector/closestPoint.html"><div class="ghsprite" style="background: url('../../icons/grasshopperVector.png') -168px -96px" data-toptip="Closest Point"></div></a>
+<a href="../../components/grasshoppervector/closestPoints.html"><div class="ghsprite" style="background: url('../../icons/grasshopperVector.png') -192px -96px" data-downtip="Closest Points"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppervector/pullPoint.html"><div class="ghsprite" style="background: url('../../icons/grasshopperVector.png') -216px -96px" data-toptip="Pull Point"></div></a>
+<a href="../../components/grasshoppervector/sortPoints.html"><div class="ghsprite" style="background: url('../../icons/grasshopperVector.png') 0px -120px" data-downtip="Sort Points"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppervector/sortAlongCurve.html"><div class="ghsprite" style="background: url('../../icons/grasshopperVector.png') -24px -120px" data-toptip="Sort Along Curve"></div></a>
+<a href="../../components/grasshoppervector/pointsToNumbers.html"><div class="ghsprite" style="background: url('../../icons/grasshopperVector.png') -48px -120px" data-downtip="Points to Numbers"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppervector/numbersToPoints.html"><div class="ghsprite" style="background: url('../../icons/grasshopperVector.png') -72px -120px" data-toptip="Numbers to Points"></div></a>
+<a href="../../components/grasshoppervector/pointGroups.html"><div class="ghsprite" style="background: url('../../icons/grasshopperVector.png') -168px -120px" data-downtip="Point Groups"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppervector/cullDuplicates.html"><div class="ghsprite" style="background: url('../../icons/grasshopperVector.png') 0px -144px" data-toptip="Cull Duplicates"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="9">
+Point
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppervector/cloudDisplay.html"><div class="ghsprite" style="background: url('../../icons/grasshopperVector.png') -192px -120px" data-toptip="Cloud Display"></div></a>
+<a href="../../components/grasshoppervector/dotDisplay.html"><div class="ghsprite" style="background: url('../../icons/grasshopperVector.png') -216px -120px" data-downtip="Dot Display"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+Preview
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppervector/divideSurface.html"><div class="ghsprite" style="background: url('../../icons/grasshopperVector.png') 0px -24px" data-toptip="Divide Surface"></div></a>
+<a href="../../components/grasshoppervector/surfaceFrames.html"><div class="ghsprite" style="background: url('../../icons/grasshopperVector.png') -24px -24px" data-downtip="Surface Frames"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+Util
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppervector/solarIncidence.html"><div class="ghsprite" style="background: url('../../icons/grasshopperVector.png') -24px -144px" data-toptip="Solar Incidence"></div></a>
+<a href="../../components/grasshoppervector/vectorXYZ.html"><div class="ghsprite" style="background: url('../../icons/grasshopperVector.png') -48px -144px" data-downtip="Vector XYZ"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppervector/deconstructVector.html"><div class="ghsprite" style="background: url('../../icons/grasshopperVector.png') -72px -144px" data-toptip="Deconstruct Vector"></div></a>
+<a href="../../components/grasshoppervector/vectorLength.html"><div class="ghsprite" style="background: url('../../icons/grasshopperVector.png') -96px -144px" data-downtip="Vector Length"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppervector/vector2Pt.html"><div class="ghsprite" style="background: url('../../icons/grasshopperVector.png') -120px -144px" data-toptip="Vector 2Pt"></div></a>
+<a href="../../components/grasshoppervector/unitVector.html"><div class="ghsprite" style="background: url('../../icons/grasshopperVector.png') -144px -144px" data-downtip="Unit Vector"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppervector/reverse.html"><div class="ghsprite" style="background: url('../../icons/grasshopperVector.png') -168px -144px" data-toptip="Reverse"></div></a>
+<a href="../../components/grasshoppervector/multiply.html"><div class="ghsprite" style="background: url('../../icons/grasshopperVector.png') -192px -144px" data-downtip="Multiply"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppervector/divide.html"><div class="ghsprite" style="background: url('../../icons/grasshopperVector.png') -216px -144px" data-toptip="Divide"></div></a>
+<a href="../../components/grasshoppervector/amplitude.html"><div class="ghsprite" style="background: url('../../icons/grasshopperVector.png') 0px -168px" data-downtip="Amplitude"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppervector/addition.html"><div class="ghsprite" style="background: url('../../icons/grasshopperVector.png') -24px -168px" data-toptip="Addition"></div></a>
+<a href="../../components/grasshoppervector/rotate.html"><div class="ghsprite" style="background: url('../../icons/grasshopperVector.png') -48px -168px" data-downtip="Rotate"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppervector/crossProduct.html"><div class="ghsprite" style="background: url('../../icons/grasshopperVector.png') -72px -168px" data-toptip="Cross Product"></div></a>
+<a href="../../components/grasshoppervector/dotProduct.html"><div class="ghsprite" style="background: url('../../icons/grasshopperVector.png') -96px -168px" data-downtip="Dot Product"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppervector/angle.html"><div class="ghsprite" style="background: url('../../icons/grasshopperVector.png') -120px -168px" data-toptip="Angle"></div></a>
+<a href="../../components/grasshoppervector/unitX.html"><div class="ghsprite" style="background: url('../../icons/grasshopperVector.png') -144px -168px" data-downtip="Unit X"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppervector/unitY.html"><div class="ghsprite" style="background: url('../../icons/grasshopperVector.png') -168px -168px" data-toptip="Unit Y"></div></a>
+<a href="../../components/grasshoppervector/unitZ.html"><div class="ghsprite" style="background: url('../../icons/grasshopperVector.png') -192px -168px" data-downtip="Unit Z"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppervector/vectorDisplay.html"><div class="ghsprite" style="background: url('../../icons/grasshopperVector.png') -216px -168px" data-toptip="Vector Display"></div></a>
+<a href="../../components/grasshoppervector/vectorDisplayEx.html"><div class="ghsprite" style="background: url('../../icons/grasshopperVector.png') 0px -192px" data-downtip="Vector Display Ex"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="10">
+Vector
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+
+<div class="compo-header">
+<h1><div class="ghsprite" style="background: url('../../icons/grasshopperVector.png') 0px -72px" ></div> Plane | Plane</h1>
+
+<div class="breadcrumb">
+ <a href="../../index.html">Component Index</a>
+  <a href="../../addons/grasshopper-vector.html">Grasshopper Vector</a><a href="#" class="breadcrumb-nolink">Mathematical</a><a href="#" class="breadcrumb-nolink">PPX</a>
+</div>
+
+</div>
+
+</div>
+<h3>Solve the intersection event of two planes.</h3>
+<h2>Inputs</h2>
+<table class="params-table input-params">
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Plane A</b></td><td>A</td><td>First plane</td><td>Plane</td></tr>
+<tr><td><b>Plane B</b></td><td>B</td><td>Second plane</td><td>Plane</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table class="params-table output-params">
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Line</b></td><td>L</td><td>Intersection line</td><td>Line</td></tr>
+</tbody>
+</table>
+
+
+</div>
+
+</div>
+
+</div>
+
+<div id="docs-foot" class="docs-footindex">
+<div id="docs-foot-inner">
+<p class="left">
+Site design © <a href="https://github.com/robinrodricks/">Robin Rodricks</a>. &nbsp;
+
+Grasshopper Vector and associated data © 2023  <a href="https://www.rhino3d.com/6/new/grasshopper">Robert McNeel &amp; Associates</a>. &nbsp;
+<br>
+Rhinoceros and Grasshopper are registered trademarks of <a href="https://www.rhino3d.com/">Robert McNeel & Associates</a>.&nbsp;
+Hosted by <a href="http://www.github.com/">GitHub</a> 
+</p>
+<p class="right docs-lightfont">
+
+<a href="https://github.com/grasshopper3d/GrasshopperDocsSite/issues/new">Report an Issue</a> &nbsp;|&nbsp;
+<a href="/termsOfService.html">Terms of Service</a>
+</p>
+
+</div>
+
+
+
+</div>
+</div>
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DX6TG16YN7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DX6TG16YN7');
+</script>
+
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/jquery-autocomplete.min.js"></script>
+<script type="text/javascript" src="/js/app-searchbar.js"></script>
+
+    </body>
+</html>
