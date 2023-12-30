@@ -3,13 +3,13 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Fuzzy Inference System - Angora - Component for Grasshopper | Grasshopper Docs</title>
+<title>FuzzyInferenceSystem - Angora - Component for Grasshopper | Grasshopper Docs</title>
 <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 <link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
 
 <meta name="description" content="Fuzzy inference system." />
-<meta name="title" content="Fuzzy Inference System - Angora - Component for Grasshopper | Grasshopper Docs" />
-<meta property="og:title" content="Fuzzy Inference System - Angora - Component for Grasshopper | Grasshopper Docs" />
+<meta name="title" content="FuzzyInferenceSystem - Angora - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:title" content="FuzzyInferenceSystem - Angora - Component for Grasshopper | Grasshopper Docs" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://grasshopperdocs.com/components/angora/fuzzyInferenceSystem.html" />
 <meta property="og:site_name" content="Grasshopper Docs" />
@@ -93,9 +93,14 @@
 <a href="../../components/angora/triangularTerm.html"><div class="ghsprite" style="background: url('../../icons/angora.png') -192px -24px" data-downtip="Triangular Term"></div></a>
 </div>
 </td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/angora/fuzzyTerm.html"><div class="ghsprite" style="background: url('../../icons/angora.png') -168px -48px" data-toptip="FuzzyTerm"></div></a>
+</div>
+</td>
 </tr>
 <tr class="ghgroup-title-row">
-<td class="ghgroup-title" colspan="4">
+<td class="ghgroup-title" colspan="5">
 1. Terms
 </td>
 </tr>
@@ -110,9 +115,20 @@
 <a href="../../components/angora/fuzzyOutputVariable.html"><div class="ghsprite" style="background: url('../../icons/angora.png') -48px -24px" data-downtip="Fuzzy Output Variable"></div></a>
 </div>
 </td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/angora/fuzzyImputVar.html"><div class="ghsprite" style="background: url('../../icons/angora.png') -48px -48px" data-toptip="FuzzyImputVar"></div></a>
+<a href="../../components/angora/fuzzyOutputVar.html"><div class="ghsprite" style="background: url('../../icons/angora.png') -72px -48px" data-downtip="FuzzyOutputVar"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/angora/displayVariable.html"><div class="ghsprite" style="background: url('../../icons/angora.png') -216px -48px" data-toptip="Display Variable"></div></a>
+</div>
+</td>
 </tr>
 <tr class="ghgroup-title-row">
-<td class="ghgroup-title" colspan="1">
+<td class="ghgroup-title" colspan="3">
 2. Variables
 </td>
 </tr>
@@ -133,9 +149,20 @@
 <a href="../../components/angora/customUnarySetOp.html"><div class="ghsprite" style="background: url('../../icons/angora.png') -24px -48px" data-downtip="CustomUnarySetOp"></div></a>
 </div>
 </td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/angora/fuzzyBinaryOp.html"><div class="ghsprite" style="background: url('../../icons/angora.png') -96px -48px" data-toptip="FuzzyBinaryOp"></div></a>
+<a href="../../components/angora/fuzzyMethods.html"><div class="ghsprite" style="background: url('../../icons/angora.png') -120px -48px" data-downtip="FuzzyMethods"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/angora/fuzzyUnaryOp.html"><div class="ghsprite" style="background: url('../../icons/angora.png') -192px -48px" data-toptip="FuzzyUnaryOp"></div></a>
+</div>
+</td>
 </tr>
 <tr class="ghgroup-title-row">
-<td class="ghgroup-title" colspan="2">
+<td class="ghgroup-title" colspan="4">
 3. Methods
 </td>
 </tr>
@@ -159,6 +186,7 @@
 <td>
 <div class="ghcolumn">
 <a href="../../components/angora/updateRuleWeights.html"><div class="ghsprite" style="background: url('../../icons/angora.png') -192px 0px" data-toptip="Update Rule Weights"></div></a>
+<a href="../../components/angora/fuzzyInferenceSystem.html"><div class="ghsprite" style="background: url('../../icons/angora.png') -144px -48px" data-downtip="FuzzyInferenceSystem"></div></a>
 </div>
 </td>
 </tr>
@@ -195,7 +223,7 @@
 
 
 <div class="compo-header">
-<h1><div class="ghsprite" style="background: url('../../icons/angora.png') -120px 0px" ></div> Fuzzy Inference System</h1>
+<h1><div class="ghsprite" style="background: url('../../icons/angora.png') -144px -48px" ></div> FuzzyInferenceSystem</h1>
 
 <div class="breadcrumb">
  <a href="../../index.html">Component Index</a>
@@ -206,30 +234,6 @@
 
 </div>
 <h3>Fuzzy inference system.</h3>
-<h2>Inputs</h2>
-<table class="params-table input-params">
-<thead>
-<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
-</thead>
-<tbody>
-<tr><td><b>InputVars</b></td><td>VI</td><td>Input Vars</td><td>FuzzyInputVar</td></tr>
-<tr><td><b>OutputVars</b></td><td>VO</td><td>Output Vars</td><td>FuzzyOutputVar</td></tr>
-<tr><td><b>Rules</b></td><td>R</td><td>Rules</td><td>Text</td></tr>
-<tr><td><b>Methods</b></td><td>M</td><td>Methods</td><td>FuzzyMethodsConfig</td></tr>
-</tbody>
-</table>
-
-<h2>Outputs</h2>
-<table class="params-table output-params">
-<thead>
-<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
-</thead>
-<tbody>
-<tr><td><b>Fuzzy Inference System</b></td><td>FIS</td><td>Fuzzy inference system.</td><td>FuzzySystem</td></tr>
-<tr><td><b>out</b></td><td>out</td><td>out</td><td>Text</td></tr>
-</tbody>
-</table>
-
 
 </div>
 

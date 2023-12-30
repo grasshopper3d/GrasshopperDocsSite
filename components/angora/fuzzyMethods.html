@@ -3,13 +3,13 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Fuzzy Methods - Angora - Component for Grasshopper | Grasshopper Docs</title>
+<title>FuzzyMethods - Angora - Component for Grasshopper | Grasshopper Docs</title>
 <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 <link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
 
-<meta name="description" content="Fuzzy methods configuration." />
-<meta name="title" content="Fuzzy Methods - Angora - Component for Grasshopper | Grasshopper Docs" />
-<meta property="og:title" content="Fuzzy Methods - Angora - Component for Grasshopper | Grasshopper Docs" />
+<meta name="description" content="Fuzzy methods." />
+<meta name="title" content="FuzzyMethods - Angora - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:title" content="FuzzyMethods - Angora - Component for Grasshopper | Grasshopper Docs" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://grasshopperdocs.com/components/angora/fuzzyMethods.html" />
 <meta property="og:site_name" content="Grasshopper Docs" />
@@ -93,9 +93,14 @@
 <a href="../../components/angora/triangularTerm.html"><div class="ghsprite" style="background: url('../../icons/angora.png') -192px -24px" data-downtip="Triangular Term"></div></a>
 </div>
 </td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/angora/fuzzyTerm.html"><div class="ghsprite" style="background: url('../../icons/angora.png') -168px -48px" data-toptip="FuzzyTerm"></div></a>
+</div>
+</td>
 </tr>
 <tr class="ghgroup-title-row">
-<td class="ghgroup-title" colspan="4">
+<td class="ghgroup-title" colspan="5">
 1. Terms
 </td>
 </tr>
@@ -110,9 +115,20 @@
 <a href="../../components/angora/fuzzyOutputVariable.html"><div class="ghsprite" style="background: url('../../icons/angora.png') -48px -24px" data-downtip="Fuzzy Output Variable"></div></a>
 </div>
 </td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/angora/fuzzyImputVar.html"><div class="ghsprite" style="background: url('../../icons/angora.png') -48px -48px" data-toptip="FuzzyImputVar"></div></a>
+<a href="../../components/angora/fuzzyOutputVar.html"><div class="ghsprite" style="background: url('../../icons/angora.png') -72px -48px" data-downtip="FuzzyOutputVar"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/angora/displayVariable.html"><div class="ghsprite" style="background: url('../../icons/angora.png') -216px -48px" data-toptip="Display Variable"></div></a>
+</div>
+</td>
 </tr>
 <tr class="ghgroup-title-row">
-<td class="ghgroup-title" colspan="1">
+<td class="ghgroup-title" colspan="3">
 2. Variables
 </td>
 </tr>
@@ -133,9 +149,20 @@
 <a href="../../components/angora/customUnarySetOp.html"><div class="ghsprite" style="background: url('../../icons/angora.png') -24px -48px" data-downtip="CustomUnarySetOp"></div></a>
 </div>
 </td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/angora/fuzzyBinaryOp.html"><div class="ghsprite" style="background: url('../../icons/angora.png') -96px -48px" data-toptip="FuzzyBinaryOp"></div></a>
+<a href="../../components/angora/fuzzyMethods.html"><div class="ghsprite" style="background: url('../../icons/angora.png') -120px -48px" data-downtip="FuzzyMethods"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/angora/fuzzyUnaryOp.html"><div class="ghsprite" style="background: url('../../icons/angora.png') -192px -48px" data-toptip="FuzzyUnaryOp"></div></a>
+</div>
+</td>
 </tr>
 <tr class="ghgroup-title-row">
-<td class="ghgroup-title" colspan="2">
+<td class="ghgroup-title" colspan="4">
 3. Methods
 </td>
 </tr>
@@ -159,6 +186,7 @@
 <td>
 <div class="ghcolumn">
 <a href="../../components/angora/updateRuleWeights.html"><div class="ghsprite" style="background: url('../../icons/angora.png') -192px 0px" data-toptip="Update Rule Weights"></div></a>
+<a href="../../components/angora/fuzzyInferenceSystem.html"><div class="ghsprite" style="background: url('../../icons/angora.png') -144px -48px" data-downtip="FuzzyInferenceSystem"></div></a>
 </div>
 </td>
 </tr>
@@ -195,7 +223,7 @@
 
 
 <div class="compo-header">
-<h1><div class="ghsprite" style="background: url('../../icons/angora.png') -96px 0px" ></div> Fuzzy Methods</h1>
+<h1><div class="ghsprite" style="background: url('../../icons/angora.png') -120px -48px" ></div> FuzzyMethods</h1>
 
 <div class="breadcrumb">
  <a href="../../index.html">Component Index</a>
@@ -205,33 +233,7 @@
 </div>
 
 </div>
-<h3>Fuzzy methods configuration.</h3>
-<h2>Inputs</h2>
-<table class="params-table input-params">
-<thead>
-<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
-</thead>
-<tbody>
-<tr><td><b>ComplementOperator</b></td><td>ComplementOp</td><td>Complement operator (StdNeg, CosineNeg, Sugeno:lambda, Yager:mu).</td><td>UnaryOperator</td></tr>
-<tr><td><b>UnionOperator</b></td><td>UnionOp</td><td>Union operator (Max, ArithmeticSum, LukasiewiczSum or ModSum).</td><td>BinaryOperator</td></tr>
-<tr><td><b>IntersectionOperator</b></td><td>IntersectionOp</td><td>Intersection operator (Min, ArithmeticProd, LukasiewiczProduct or ModSProduct).</td><td>BinaryOperator</td></tr>
-<tr><td><b>Accumulator</b></td><td>Accumulator</td><td>Rule Accumulator (Maximum, Average, Minimum).</td><td>Text</td></tr>
-<tr><td><b>Sampling</b></td><td>Sampling</td><td>Sampling for set modifiers.</td><td>Integer</td></tr>
-<tr><td><b>Modifiers</b></td><td>Mods</td><td>List of custom unary operators for linguistic hedges.</td><td>UnaryOperator</td></tr>
-<tr><td><b>SetModifiers</b></td><td>SetMods</td><td>List of custom unary set operators for linguistic hedges that act on the whole set.</td><td>Generic Data</td></tr>
-</tbody>
-</table>
-
-<h2>Outputs</h2>
-<table class="params-table output-params">
-<thead>
-<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
-</thead>
-<tbody>
-<tr><td><b>Methods</b></td><td>M</td><td>Methods</td><td>FuzzyMethodsConfig</td></tr>
-</tbody>
-</table>
-
+<h3>Fuzzy methods.</h3>
 
 </div>
 

@@ -60,7 +60,7 @@
       "helpLink": "https://grasshopperdocs.com/addons/angora.html",
       "category": "Logic - Fuzzy Logic",
       "isSystem": false,
-      "components": 22,
+      "components": 30,
       "description": "Fuzzy logic components for Grasshopper",
       "authorName": "Frédéric Becquelin",
       "authorContact": "f.becquelin@protonmail.com"
@@ -112,7 +112,7 @@
       "helpLink": "https://grasshopperdocs.com/addons/beaver.html",
       "category": "Architecture - Wood",
       "isSystem": false,
-      "components": 25,
+      "components": 31,
       "description": "Beaver is a tool that allows timber engineering procedures to be executed in computational design workflows. The tool was developed following the “Eurocode5 - Design of Timber Structures” for verifying frame cross-sections, deformations and design of fastener-type timber connections. Also, Beaver is now fully integrated to Karamba3D.",
       "authorName": "João Pini, Márcio Sartorelli, Renan Prandini",
       "authorContact": "beaver.structures@gmail.com"
@@ -190,7 +190,7 @@
       "helpLink": "https://grasshopperdocs.com/addons/blueorange.html",
       "category": "Core Collections",
       "isSystem": false,
-      "components": 124,
+      "components": 126,
       "description": "BlueOrange is a collection of useful utilities for Grasshopper. It provides rectangular geometries, block transforms, and and quick generation tools used for quick design concept modeling stage. Other miscellaneous interesting components like MIDI devices reader (For reading piano signal) or Converger for calculating a singular input-output converging process.",
       "authorName": "wucl12",
       "authorContact": "wucl12@foxmail.com"
@@ -203,7 +203,7 @@
       "helpLink": "https://grasshopperdocs.com/addons/bowerbird.html",
       "category": "Geometry - Meshes",
       "isSystem": false,
-      "components": 32,
+      "components": 34,
       "description": "",
       "authorName": "Unknown",
       "authorContact": ""
@@ -242,7 +242,7 @@
       "helpLink": "https://grasshopperdocs.com/addons/bullant.html",
       "category": "Architecture - Architectural & BIM",
       "isSystem": false,
-      "components": 66,
+      "components": 67,
       "description": "BullAnt is a Rhino3d/Grasshopper plug-in primarily for Architects and Engineers (but also other Rhino/Grasshopper users) featuring computational design tools to enhance and extend the parent program and other 3rd party plug-ins. \n\nBullAnt features commands including mesh relaxation (minimal surfaces), mesh inflation (ETFE cushions), symmetry automation, tessellation (polygon packing), structural modelling/sketching (including parametric generation in Grasshopper), geodesic domes and curve network processing. \n\nAlso included are commands to model members such as steel beams. International standard profiles are included in the plug-in library, which can be easily extended with custom user profiles. Parametric profile from a property table can be applied to a document layer (swept along all curves within layer) or discrete curves. Profile table may be exchanged with external software. Swept profiles are updated automatically if rail curve is altered by user.",
       "authorName": "Jon Mirtschin",
       "authorContact": "support@geometrygym.com"
@@ -437,7 +437,7 @@
       "helpLink": "https://grasshopperdocs.com/addons/dhictionary.html",
       "category": "Logic - Data Structures",
       "isSystem": false,
-      "components": 4,
+      "components": 5,
       "description": "Adds a Dictionary type in Grasshopper.",
       "authorName": "Frédéric Becquelin",
       "authorContact": "f.becquelin@protonmail.com"
@@ -678,21 +678,21 @@
     },
     {
       "name": "FroGH",
-      "releaseDate": "29-Jun-2023",
-      "version": "2.2.8",
+      "releaseDate": "30-Dec-2023",
+      "version": "2.2.9",
       "downloadLink": "https://www.food4rhino.com/en/app/frogh",
       "helpLink": "https://grasshopperdocs.com/addons/frogh.html",
       "category": "Core Collections",
       "isSystem": false,
-      "components": 94,
+      "components": 93,
       "description": "froGH is a sparse collection of components born out of necessity or play in our daily Grasshopper experience.",
       "authorName": "Co-de-iT (Computational Design Italy)",
       "authorContact": ""
     },
     {
       "name": "FURobot",
-      "releaseDate": "27-Dec-2023",
-      "version": "0.9.17.2",
+      "releaseDate": "30-Dec-2023",
+      "version": "0.9.17.3",
       "downloadLink": "https://fabunion.github.io/",
       "helpLink": "https://grasshopperdocs.com/addons/furobot.html",
       "category": "Electronic - Robot Control",
@@ -970,7 +970,7 @@
       "helpLink": "https://grasshopperdocs.com/addons/heteroptera.html",
       "category": "Core Collections",
       "isSystem": false,
-      "components": 143,
+      "components": 146,
       "description": "Heteroptera is a plug-in for grasshopper comprised of a variety of tools in different categories that can be used as a toolbox, but it mostly focuses on Uncertainty and Generation.",
       "authorName": "Amin Bahrami (Helioripple Studio)",
       "authorContact": "amin.bahrami@helioripple.com"
@@ -1048,7 +1048,7 @@
       "helpLink": "https://grasshopperdocs.com/addons/hypar-elements.html",
       "category": "Logic - Machine Learning",
       "isSystem": false,
-      "components": 13,
+      "components": 15,
       "description": "Create Hypar Functions in Grasshopper",
       "authorName": "Hypar.io",
       "authorContact": ""
@@ -1386,7 +1386,7 @@
       "helpLink": "https://grasshopperdocs.com/addons/metahopper.html",
       "category": "Core Collections",
       "isSystem": false,
-      "components": 49,
+      "components": 50,
       "description": "",
       "authorName": "Andrew Heumann",
       "authorContact": "andheum@gmail.com"
@@ -1763,7 +1763,7 @@
       "helpLink": "https://grasshopperdocs.com/addons/planthopper.html",
       "category": "Generation - Gears",
       "isSystem": false,
-      "components": 4,
+      "components": 5,
       "description": "Planthopper helps you create involute gear set inside grasshopper.",
       "authorName": "mahdiyar",
       "authorContact": "Mahdiyar@outlook.com"
@@ -1919,7 +1919,7 @@
       "helpLink": "https://grasshopperdocs.com/addons/robots.html",
       "category": "Electronic - Robot Control",
       "isSystem": false,
-      "components": 29,
+      "components": 31,
       "description": "Robots is a Grasshopper plugin for programming and simulating ABB, KUKA, UR and Staubli robots. Special care is taken to have feature parity between all manufacturers and have them behave as similar as possible. The plugin can also be used as a .NET library to create robot programs through scripting inside Rhino (using Python, C# or VB.NET). Advanced functionality is only exposed through scripting.",
       "authorName": "Vicente Soler & others",
       "authorContact": ""
@@ -2127,7 +2127,7 @@
       "helpLink": "https://grasshopperdocs.com/addons/swiftlet.html",
       "category": "Integration - Web API",
       "isSystem": false,
-      "components": 76,
+      "components": 88,
       "description": "Swiftlet is a tool that lets you call into Web APIs directly from Grasshopper. If you are interested in scraping the internet, tapping into public and private  APIs or testing your own web backends, Swiftlet is a tool for you! It provides a  streamlined workflow for sending GET, POST, DELETE, PUT and PATCH requests to  any API endpoint. It gives you advanced control over request headers,  query params, supports several kinds of web authentication and lets you parse  JSON formatted web responses.",
       "authorName": "Sergey Pigach",
       "authorContact": ""
@@ -2374,7 +2374,7 @@
       "helpLink": "https://grasshopperdocs.com/addons/grasshopper-curve.html",
       "category": null,
       "isSystem": true,
-      "components": 114,
+      "components": 115,
       "description": "",
       "authorName": "David Rutten",
       "authorContact": ""
@@ -2413,7 +2413,7 @@
       "helpLink": "https://grasshopperdocs.com/addons/grasshopper-params.html",
       "category": null,
       "isSystem": true,
-      "components": 12,
+      "components": 20,
       "description": "",
       "authorName": "David Rutten",
       "authorContact": ""
@@ -2426,7 +2426,7 @@
       "helpLink": "https://grasshopperdocs.com/addons/grasshopper-maths.html",
       "category": null,
       "isSystem": true,
-      "components": 103,
+      "components": 102,
       "description": "",
       "authorName": "David Rutten",
       "authorContact": ""
@@ -2504,7 +2504,7 @@
       "helpLink": "https://grasshopperdocs.com/addons/grasshopper-transform.html",
       "category": null,
       "isSystem": true,
-      "components": 50,
+      "components": 51,
       "description": "",
       "authorName": "David Rutten",
       "authorContact": ""
