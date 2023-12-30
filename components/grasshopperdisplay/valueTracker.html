@@ -1,0 +1,375 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Value Tracker - Grasshopper Display - Component for Grasshopper | Grasshopper Docs</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+
+<meta name="description" content="Track a collection of numeric values over time" />
+<meta name="title" content="Value Tracker - Grasshopper Display - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:title" content="Value Tracker - Grasshopper Display - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://grasshopperdocs.com/components/grasshopperdisplay/valueTracker.html" />
+<meta property="og:site_name" content="Grasshopper Docs" />
+
+<link href="../../style-v2.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+
+<div id="docs">
+
+<div id="docs-head">
+<div id="docs-masthead">
+<p id="docs-sitename"><a href="http://grasshopperdocs.com/">
+	<img id="site-logo-icon" src="/images/logo-icon.png" alt=""></img>
+	<img id="site-logo-text" src="/images/logo-text.png" alt="Grasshopper Docs"></img>
+</a></p>
+<div id="docs-sitemenu">
+	<a class="sitemenu-item" href="/index.html">Categories</a>
+	<a class="sitemenu-item" href="/addonIndex.html">Addons</a>
+	<a class="sitemenu-item" href="/completeIndex.html">Components</a>
+</div>
+<div id="docs-sitesearch">
+	<input id="docs-sitesearch-inputbox" type="text" name="docs-sitesearch-inputbox" />
+	<img id="docs-searchicon" src="/images/search.png"/>
+</div>
+</div>
+</div>
+
+<div id="docs-body">
+
+<div class="page">
+
+<div class="content compo-page">
+
+<div class="lead-header">
+
+<div class="addon-buttons compo-buttons">
+<a href="https://www.rhino3d.com/6/new/grasshopper">Download</a>
+
+</div>
+
+
+<div class="google-ad-sidebar">
+
+<!-- Carbon Ads -->
+<script async type="text/javascript" src="https://cdn.carbonads.com/carbon.js?serve=CK7IC27L&placement=grasshopperdocscom" id="_carbonads_js"></script>
+
+</div>
+
+<div class="lead-gradient"></div>
+<div class="lead-image" style="background-image: url('../../images/header/Grasshopper.png');"></div>
+
+<div class="ghbar ghbar-compo-page">
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperdisplay/colourRGB.html"><div class="ghsprite" style="background: url('../../icons/grasshopperDisplay.png') -48px -72px" data-toptip="Colour RGB"></div></a>
+<a href="../../components/grasshopperdisplay/colourRGBf.html"><div class="ghsprite" style="background: url('../../icons/grasshopperDisplay.png') -72px -72px" data-downtip="Colour RGB (f)"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperdisplay/colourHSL.html"><div class="ghsprite" style="background: url('../../icons/grasshopperDisplay.png') -96px -72px" data-toptip="Colour HSL"></div></a>
+<a href="../../components/grasshopperdisplay/colourHSV.html"><div class="ghsprite" style="background: url('../../icons/grasshopperDisplay.png') -120px -72px" data-downtip="Colour HSV"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperdisplay/colourXYZ.html"><div class="ghsprite" style="background: url('../../icons/grasshopperDisplay.png') -144px -72px" data-toptip="Colour XYZ"></div></a>
+<a href="../../components/grasshopperdisplay/colourCMYK.html"><div class="ghsprite" style="background: url('../../icons/grasshopperDisplay.png') -168px -72px" data-downtip="Colour CMYK"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperdisplay/colourLab.html"><div class="ghsprite" style="background: url('../../icons/grasshopperDisplay.png') -192px -72px" data-toptip="Colour L*ab"></div></a>
+<a href="../../components/grasshopperdisplay/colourLCH.html"><div class="ghsprite" style="background: url('../../icons/grasshopperDisplay.png') -216px -72px" data-downtip="Colour LCH"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperdisplay/splitARGB.html"><div class="ghsprite" style="background: url('../../icons/grasshopperDisplay.png') 0px -96px" data-toptip="Split ARGB"></div></a>
+<a href="../../components/grasshopperdisplay/splitAHSV.html"><div class="ghsprite" style="background: url('../../icons/grasshopperDisplay.png') -24px -96px" data-downtip="Split AHSV"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperdisplay/splitAHSL.html"><div class="ghsprite" style="background: url('../../icons/grasshopperDisplay.png') -48px -96px" data-toptip="Split AHSL"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="6">
+Colour
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperdisplay/textTag3D.html"><div class="ghsprite" style="background: url('../../icons/grasshopperDisplay.png') -72px 0px" data-toptip="Text Tag 3D"></div></a>
+<a href="../../components/grasshopperdisplay/textTag.html"><div class="ghsprite" style="background: url('../../icons/grasshopperDisplay.png') -96px 0px" data-downtip="Text Tag"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperdisplay/patternHatch.html"><div class="ghsprite" style="background: url('../../icons/grasshopperDisplay.png') -216px 0px" data-toptip="Pattern Hatch"></div></a>
+<a href="../../components/grasshopperdisplay/gradientHatch.html"><div class="ghsprite" style="background: url('../../icons/grasshopperDisplay.png') 0px -24px" data-downtip="Gradient Hatch"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperdisplay/markerDimension.html"><div class="ghsprite" style="background: url('../../icons/grasshopperDisplay.png') -24px -24px" data-toptip="Marker Dimension"></div></a>
+<a href="../../components/grasshopperdisplay/lineDimension.html"><div class="ghsprite" style="background: url('../../icons/grasshopperDisplay.png') -48px -24px" data-downtip="Line Dimension"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperdisplay/alignedDimension.html"><div class="ghsprite" style="background: url('../../icons/grasshopperDisplay.png') -72px -24px" data-toptip="Aligned Dimension"></div></a>
+<a href="../../components/grasshopperdisplay/linearDimension.html"><div class="ghsprite" style="background: url('../../icons/grasshopperDisplay.png') -96px -24px" data-downtip="Linear Dimension"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperdisplay/serialDimension.html"><div class="ghsprite" style="background: url('../../icons/grasshopperDisplay.png') -120px -24px" data-toptip="Serial Dimension"></div></a>
+<a href="../../components/grasshopperdisplay/angularDimension.html"><div class="ghsprite" style="background: url('../../icons/grasshopperDisplay.png') -144px -24px" data-downtip="Angular Dimension"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperdisplay/circularDimension.html"><div class="ghsprite" style="background: url('../../icons/grasshopperDisplay.png') -168px -24px" data-toptip="Circular Dimension"></div></a>
+<a href="../../components/grasshopperdisplay/arcDimension.html"><div class="ghsprite" style="background: url('../../icons/grasshopperDisplay.png') -192px -24px" data-downtip="Arc Dimension"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperdisplay/angularDimensionsMesh.html"><div class="ghsprite" style="background: url('../../icons/grasshopperDisplay.png') -216px -24px" data-toptip="Angular Dimensions (Mesh)"></div></a>
+<a href="../../components/grasshopperdisplay/make2DParallelView.html"><div class="ghsprite" style="background: url('../../icons/grasshopperDisplay.png') -24px -48px" data-downtip="Make2D Parallel View"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperdisplay/make2DPerspectiveView.html"><div class="ghsprite" style="background: url('../../icons/grasshopperDisplay.png') -48px -48px" data-toptip="Make2D Perspective View"></div></a>
+<a href="../../components/grasshopperdisplay/make2DRhinoView.html"><div class="ghsprite" style="background: url('../../icons/grasshopperDisplay.png') -72px -48px" data-downtip="Make2D Rhino View"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperdisplay/make2D.html"><div class="ghsprite" style="background: url('../../icons/grasshopperDisplay.png') -96px -48px" data-toptip="Make2D"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="9">
+Dimensions
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperdisplay/legend.html"><div class="ghsprite" style="background: url('../../icons/grasshopperDisplay.png') 0px 0px" data-toptip="Legend"></div></a>
+<a href="../../components/grasshopperdisplay/barGraph.html"><div class="ghsprite" style="background: url('../../icons/grasshopperDisplay.png') -120px 0px" data-downtip="Bar Graph"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperdisplay/pieChart.html"><div class="ghsprite" style="background: url('../../icons/grasshopperDisplay.png') -144px 0px" data-toptip="Pie Chart"></div></a>
+<a href="../../components/grasshopperdisplay/quickGraph.html"><div class="ghsprite" style="background: url('../../icons/grasshopperDisplay.png') -168px 0px" data-downtip="Quick Graph"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperdisplay/valueTracker.html"><div class="ghsprite" style="background: url('../../icons/grasshopperDisplay.png') -192px 0px" data-toptip="Value Tracker"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+Graphs
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperdisplay/customPreview.html"><div class="ghsprite" style="background: url('../../icons/grasshopperDisplay.png') -24px 0px" data-toptip="Custom Preview"></div></a>
+<a href="../../components/grasshopperdisplay/symbolSimple.html"><div class="ghsprite" style="background: url('../../icons/grasshopperDisplay.png') -192px -48px" data-downtip="Symbol (Simple)"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperdisplay/symbolAdvanced.html"><div class="ghsprite" style="background: url('../../icons/grasshopperDisplay.png') -216px -48px" data-toptip="Symbol (Advanced)"></div></a>
+<a href="../../components/grasshopperdisplay/symbolDisplay.html"><div class="ghsprite" style="background: url('../../icons/grasshopperDisplay.png') 0px -72px" data-downtip="Symbol Display"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperdisplay/customCurvePreview.html"><div class="ghsprite" style="background: url('../../icons/grasshopperDisplay.png') -24px -72px" data-toptip="Custom Curve Preview"></div></a>
+<a href="../../components/grasshopperdisplay/createMaterial.html"><div class="ghsprite" style="background: url('../../icons/grasshopperDisplay.png') -72px -96px" data-downtip="Create Material"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperdisplay/deconstructMaterial.html"><div class="ghsprite" style="background: url('../../icons/grasshopperDisplay.png') -96px -96px" data-toptip="Deconstruct Material"></div></a>
+<a href="../../components/grasshopperdisplay/cloudDisplay.html"><div class="ghsprite" style="background: url('../../icons/grasshopperDisplay.png') -120px -96px" data-downtip="Cloud Display"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperdisplay/dotDisplay.html"><div class="ghsprite" style="background: url('../../icons/grasshopperDisplay.png') -144px -96px" data-toptip="Dot Display"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="5">
+Preview
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperdisplay/testCrash.html"><div class="ghsprite" style="background: url('../../icons/grasshopperDisplay.png') -144px -48px" data-toptip="Test Crash"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+Test
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperdisplay/pointList.html"><div class="ghsprite" style="background: url('../../icons/grasshopperDisplay.png') -48px 0px" data-toptip="Point List"></div></a>
+<a href="../../components/grasshopperdisplay/pointOrder.html"><div class="ghsprite" style="background: url('../../icons/grasshopperDisplay.png') 0px -48px" data-downtip="Point Order"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperdisplay/vectorDisplay.html"><div class="ghsprite" style="background: url('../../icons/grasshopperDisplay.png') -168px -96px" data-toptip="Vector Display"></div></a>
+<a href="../../components/grasshopperdisplay/vectorDisplayEx.html"><div class="ghsprite" style="background: url('../../icons/grasshopperDisplay.png') -192px -96px" data-downtip="Vector Display Ex"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="2">
+Vector
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshopperdisplay/fancyCurves.html"><div class="ghsprite" style="background: url('../../icons/grasshopperDisplay.png') -120px -48px" data-toptip="Fancy Curves"></div></a>
+<a href="../../components/grasshopperdisplay/viewportDisplay.html"><div class="ghsprite" style="background: url('../../icons/grasshopperDisplay.png') -168px -48px" data-downtip="Viewport Display"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="1">
+Viewport
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+
+<div class="compo-header">
+<h1><div class="ghsprite" style="background: url('../../icons/grasshopperDisplay.png') -192px 0px" ></div> Value Tracker</h1>
+
+<div class="breadcrumb">
+ <a href="../../index.html">Component Index</a>
+  <a href="../../addons/grasshopper-display.html">Grasshopper Display</a><a href="#" class="breadcrumb-nolink">Graphs</a><a href="#" class="breadcrumb-nolink">Tracker</a>
+</div>
+
+</div>
+
+</div>
+<h3>Track a collection of numeric values over time</h3>
+
+</div>
+
+</div>
+
+</div>
+
+<div id="docs-foot" class="docs-footindex">
+<div id="docs-foot-inner">
+<p class="left">
+Site design © <a href="https://github.com/robinrodricks/">Robin Rodricks</a>. &nbsp;
+
+Grasshopper Display and associated data © 2023  <a href="https://www.rhino3d.com/6/new/grasshopper">Robert McNeel &amp; Associates</a>. &nbsp;
+<br>
+Rhinoceros and Grasshopper are registered trademarks of <a href="https://www.rhino3d.com/">Robert McNeel & Associates</a>.&nbsp;
+Hosted by <a href="http://www.github.com/">GitHub</a> 
+</p>
+<p class="right docs-lightfont">
+
+<a href="https://github.com/grasshopper3d/GrasshopperDocsSite/issues/new">Report an Issue</a> &nbsp;|&nbsp;
+<a href="/termsOfService.html">Terms of Service</a>
+</p>
+
+</div>
+
+
+
+</div>
+</div>
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DX6TG16YN7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DX6TG16YN7');
+</script>
+
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/jquery-autocomplete.min.js"></script>
+<script type="text/javascript" src="/js/app-searchbar.js"></script>
+
+    </body>
+</html>

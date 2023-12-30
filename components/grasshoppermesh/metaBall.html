@@ -1,0 +1,403 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MetaBall - Grasshopper Mesh - Component for Grasshopper | Grasshopper Docs</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+
+<meta name="description" content="2D Metaball isocurve through point" />
+<meta name="title" content="MetaBall - Grasshopper Mesh - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:title" content="MetaBall - Grasshopper Mesh - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://grasshopperdocs.com/components/grasshoppermesh/metaBall.html" />
+<meta property="og:site_name" content="Grasshopper Docs" />
+
+<link href="../../style-v2.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+
+<div id="docs">
+
+<div id="docs-head">
+<div id="docs-masthead">
+<p id="docs-sitename"><a href="http://grasshopperdocs.com/">
+	<img id="site-logo-icon" src="/images/logo-icon.png" alt=""></img>
+	<img id="site-logo-text" src="/images/logo-text.png" alt="Grasshopper Docs"></img>
+</a></p>
+<div id="docs-sitemenu">
+	<a class="sitemenu-item" href="/index.html">Categories</a>
+	<a class="sitemenu-item" href="/addonIndex.html">Addons</a>
+	<a class="sitemenu-item" href="/completeIndex.html">Components</a>
+</div>
+<div id="docs-sitesearch">
+	<input id="docs-sitesearch-inputbox" type="text" name="docs-sitesearch-inputbox" />
+	<img id="docs-searchicon" src="/images/search.png"/>
+</div>
+</div>
+</div>
+
+<div id="docs-body">
+
+<div class="page">
+
+<div class="content compo-page">
+
+<div class="lead-header">
+
+<div class="addon-buttons compo-buttons">
+<a href="https://www.rhino3d.com/6/new/grasshopper">Download</a>
+
+</div>
+
+
+<div class="google-ad-sidebar">
+
+<!-- Carbon Ads -->
+<script async type="text/javascript" src="https://cdn.carbonads.com/carbon.js?serve=CK7IC27L&placement=grasshopperdocscom" id="_carbonads_js"></script>
+
+</div>
+
+<div class="lead-gradient"></div>
+<div class="lead-image" style="background-image: url('../../images/header/Grasshopper.png');"></div>
+
+<div class="ghbar ghbar-compo-page">
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermesh/meshClosestPoint.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMesh.png') -48px -48px" data-toptip="Mesh Closest Point"></div></a>
+<a href="../../components/grasshoppermesh/meshEval.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMesh.png') -72px -48px" data-downtip="Mesh Eval"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermesh/deconstructMesh.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMesh.png') -96px -48px" data-toptip="Deconstruct Mesh"></div></a>
+<a href="../../components/grasshoppermesh/deconstructFace.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMesh.png') -120px -48px" data-downtip="Deconstruct Face"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermesh/faceNormals.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMesh.png') -168px -72px" data-toptip="Face Normals"></div></a>
+<a href="../../components/grasshoppermesh/faceCircles.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMesh.png') -192px -72px" data-downtip="Face Circles"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermesh/faceBoundaries.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMesh.png') -216px -72px" data-toptip="Face Boundaries"></div></a>
+<a href="../../components/grasshoppermesh/meshEdges.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMesh.png') 0px -96px" data-downtip="Mesh Edges"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermesh/meshInclusion.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMesh.png') -120px -96px" data-toptip="Mesh Inclusion"></div></a>
+<a href="../../components/grasshoppermesh/meshDepth.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMesh.png') -144px -96px" data-downtip="Mesh Depth"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="5">
+Analysis
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermesh/constructMesh.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMesh.png') -144px 0px" data-toptip="Construct Mesh"></div></a>
+<a href="../../components/grasshoppermesh/meshTriangle.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMesh.png') -168px 0px" data-downtip="Mesh Triangle"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermesh/meshQuad.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMesh.png') -192px 0px" data-toptip="Mesh Quad"></div></a>
+<a href="../../components/grasshoppermesh/meshPlane.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMesh.png') -216px 0px" data-downtip="Mesh Plane"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermesh/meshBox.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMesh.png') 0px -24px" data-toptip="Mesh Box"></div></a>
+<a href="../../components/grasshoppermesh/meshSphere.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMesh.png') -24px -24px" data-downtip="Mesh Sphere"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermesh/meshSphereEx.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMesh.png') -48px -24px" data-toptip="Mesh Sphere Ex"></div></a>
+<a href="../../components/grasshoppermesh/meshColours.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMesh.png') -144px -48px" data-downtip="Mesh Colours"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermesh/meshSpray.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMesh.png') -168px -48px" data-toptip="Mesh Spray"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="5">
+Primitive
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermesh/metaBall.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMesh.png') 0px 0px" data-toptip="MetaBall"></div></a>
+<a href="../../components/grasshoppermesh/metaBallt.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMesh.png') -24px 0px" data-downtip="MetaBall(t)"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermesh/metaBalltCustom.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMesh.png') -48px 0px" data-toptip="MetaBall(t) Custom"></div></a>
+<a href="../../components/grasshoppermesh/shrinkWrap.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMesh.png') -72px 0px" data-downtip="ShrinkWrap"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermesh/quadRemeshSettings.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMesh.png') -168px -96px" data-toptip="Quad Remesh Settings"></div></a>
+<a href="../../components/grasshoppermesh/quadRemesh.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMesh.png') -192px -96px" data-downtip="Quad Remesh"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermesh/convexHull.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMesh.png') -216px -96px" data-toptip="Convex Hull"></div></a>
+<a href="../../components/grasshoppermesh/delaunayMesh.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMesh.png') 0px -120px" data-downtip="Delaunay Mesh"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermesh/delaunayEdges.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMesh.png') -24px -120px" data-toptip="Delaunay Edges"></div></a>
+<a href="../../components/grasshoppermesh/quadTree.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMesh.png') -48px -120px" data-downtip="QuadTree"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermesh/ocTree.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMesh.png') -72px -120px" data-toptip="OcTree"></div></a>
+<a href="../../components/grasshoppermesh/proximity2D.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMesh.png') -96px -120px" data-downtip="Proximity 2D"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermesh/proximity3D.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMesh.png') -120px -120px" data-toptip="Proximity 3D"></div></a>
+<a href="../../components/grasshoppermesh/substrate.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMesh.png') -168px -120px" data-downtip="Substrate"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermesh/voronoi.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMesh.png') -192px -120px" data-toptip="Voronoi"></div></a>
+<a href="../../components/grasshoppermesh/voronoiGroups.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMesh.png') -216px -120px" data-downtip="Voronoi Groups"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermesh/facetDome.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMesh.png') 0px -144px" data-toptip="Facet Dome"></div></a>
+<a href="../../components/grasshoppermesh/voronoiCell.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMesh.png') -24px -144px" data-downtip="Voronoi Cell"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermesh/voronoi3D.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMesh.png') -48px -144px" data-toptip="Voronoi 3D"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="10">
+Triangulation
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermesh/occlusion.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMesh.png') -96px 0px" data-toptip="Occlusion"></div></a>
+<a href="../../components/grasshoppermesh/exposure.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMesh.png') -120px 0px" data-downtip="Exposure"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermesh/meshShadow.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMesh.png') -72px -24px" data-toptip="Mesh Shadow"></div></a>
+<a href="../../components/grasshoppermesh/meshJoin.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMesh.png') -96px -24px" data-downtip="Mesh Join"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermesh/disjointMesh.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMesh.png') -120px -24px" data-toptip="Disjoint Mesh"></div></a>
+<a href="../../components/grasshoppermesh/meshSplitPlane.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMesh.png') -144px -24px" data-downtip="Mesh Split Plane"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermesh/alignVertices.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMesh.png') -168px -24px" data-toptip="Align Vertices"></div></a>
+<a href="../../components/grasshoppermesh/weldMesh.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMesh.png') -192px -24px" data-downtip="Weld Mesh"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermesh/unweldMesh.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMesh.png') -216px -24px" data-toptip="Unweld Mesh"></div></a>
+<a href="../../components/grasshoppermesh/flipMesh.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMesh.png') 0px -48px" data-downtip="Flip Mesh"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermesh/unifyMesh.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMesh.png') -24px -48px" data-toptip="Unify Mesh"></div></a>
+<a href="../../components/grasshoppermesh/blurMesh.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMesh.png') -192px -48px" data-downtip="Blur Mesh"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermesh/settingsSpeed.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMesh.png') -216px -48px" data-toptip="Settings (Speed)"></div></a>
+<a href="../../components/grasshoppermesh/settingsQuality.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMesh.png') 0px -72px" data-downtip="Settings (Quality)"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermesh/settingsCustom.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMesh.png') -24px -72px" data-toptip="Settings (Custom)"></div></a>
+<a href="../../components/grasshoppermesh/meshBrep.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMesh.png') -48px -72px" data-downtip="Mesh Brep"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermesh/meshSurface.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMesh.png') -72px -72px" data-toptip="Mesh Surface"></div></a>
+<a href="../../components/grasshoppermesh/simpleMesh.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMesh.png') -96px -72px" data-downtip="Simple Mesh"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermesh/triangulate.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMesh.png') -120px -72px" data-toptip="Triangulate"></div></a>
+<a href="../../components/grasshoppermesh/quadrangulate.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMesh.png') -144px -72px" data-downtip="Quadrangulate"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermesh/deleteFaces.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMesh.png') -24px -96px" data-toptip="Delete Faces"></div></a>
+<a href="../../components/grasshoppermesh/cullFaces.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMesh.png') -48px -96px" data-downtip="Cull Faces"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermesh/deleteVertices.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMesh.png') -72px -96px" data-toptip="Delete Vertices"></div></a>
+<a href="../../components/grasshoppermesh/cullVertices.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMesh.png') -96px -96px" data-downtip="Cull Vertices"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/grasshoppermesh/smoothMesh.html"><div class="ghsprite" style="background: url('../../icons/grasshopperMesh.png') -144px -120px" data-toptip="Smooth Mesh"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="13">
+Util
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+
+<div class="compo-header">
+<h1><div class="ghsprite" style="background: url('../../icons/grasshopperMesh.png') 0px 0px" ></div> MetaBall</h1>
+
+<div class="breadcrumb">
+ <a href="../../index.html">Component Index</a>
+  <a href="../../addons/grasshopper-mesh.html">Grasshopper Mesh</a><a href="#" class="breadcrumb-nolink">Triangulation</a><a href="#" class="breadcrumb-nolink">MetaBall</a>
+</div>
+
+</div>
+
+</div>
+<h3>2D Metaball isocurve through point</h3>
+<h2>Inputs</h2>
+<table class="params-table input-params">
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Points</b></td><td>P</td><td>Point charge locations</td><td>Point</td></tr>
+<tr><td><b>Plane</b></td><td>Pl</td><td>Metaball section plane</td><td>Plane</td></tr>
+<tr><td><b>Point</b></td><td>X</td><td>Isocurve intersection</td><td>Point</td></tr>
+<tr><td><b>Accuracy</b></td><td>A</td><td>Isocurve sampling accuracy (leave blank for adaptive accuracy)</td><td>Number</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table class="params-table output-params">
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Isocurve</b></td><td>I</td><td>Metaball isocurve</td><td>Curve</td></tr>
+</tbody>
+</table>
+
+
+</div>
+
+</div>
+
+</div>
+
+<div id="docs-foot" class="docs-footindex">
+<div id="docs-foot-inner">
+<p class="left">
+Site design © <a href="https://github.com/robinrodricks/">Robin Rodricks</a>. &nbsp;
+
+Grasshopper Mesh and associated data © 2023  <a href="https://www.rhino3d.com/6/new/grasshopper">Robert McNeel &amp; Associates</a>. &nbsp;
+<br>
+Rhinoceros and Grasshopper are registered trademarks of <a href="https://www.rhino3d.com/">Robert McNeel & Associates</a>.&nbsp;
+Hosted by <a href="http://www.github.com/">GitHub</a> 
+</p>
+<p class="right docs-lightfont">
+
+<a href="https://github.com/grasshopper3d/GrasshopperDocsSite/issues/new">Report an Issue</a> &nbsp;|&nbsp;
+<a href="/termsOfService.html">Terms of Service</a>
+</p>
+
+</div>
+
+
+
+</div>
+</div>
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DX6TG16YN7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DX6TG16YN7');
+</script>
+
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/jquery-autocomplete.min.js"></script>
+<script type="text/javascript" src="/js/app-searchbar.js"></script>
+
+    </body>
+</html>
