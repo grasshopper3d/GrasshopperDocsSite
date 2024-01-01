@@ -60,7 +60,7 @@
       "helpLink": "https://grasshopperdocs.com/addons/angora.html",
       "category": "Logic - Fuzzy Logic",
       "isSystem": false,
-      "components": 30,
+      "components": 29,
       "description": "Fuzzy logic components for Grasshopper",
       "authorName": "Frédéric Becquelin",
       "authorContact": "f.becquelin@protonmail.com"
@@ -86,7 +86,7 @@
       "helpLink": "https://grasshopperdocs.com/addons/assembler.html",
       "category": "Rhino",
       "isSystem": false,
-      "components": 43,
+      "components": 36,
       "description": "Assembler is a Grasshopper plugin that helps you create and manage assemblages of parts, conceived with (but not limited to) the architectural scale in mind.\n\nWith Assembler, you can create assemblages from parts and rules for their connection, manage the criteria for the assemblage growth and its interaction with environmental geometries and data, and perform local (part) and global (assemblage) level computation on the results for analysis or post-processing.",
       "authorName": "Co-de-iT (Computational Design Italy)",
       "authorContact": ""
@@ -203,7 +203,7 @@
       "helpLink": "https://grasshopperdocs.com/addons/bowerbird.html",
       "category": "Geometry - Meshes",
       "isSystem": false,
-      "components": 34,
+      "components": 29,
       "description": "",
       "authorName": "Unknown",
       "authorContact": ""
@@ -385,7 +385,7 @@
       "helpLink": "https://grasshopperdocs.com/addons/crane.html",
       "category": "Generation - Origami",
       "isSystem": false,
-      "components": 39,
+      "components": 38,
       "description": "Crane is a Grasshopper plugin to design origami products. Designing of foldable products with rigid folding motion is difficult for designers, architects, and researchers who are not origami experts. Crane is a powerful tool for not only such people but also origami experts. This software focuses on design, rigid folding simulation, form-finding, and fabrication for origami. Because Crane Solver is a hard constraint solver, it can precisely simulate a rigid folding motion and form-finding with geometrical constraints like Freeform Origami.",
       "authorName": "Suto Kai",
       "authorContact": "dqm2kai@gmail.com"
@@ -697,7 +697,7 @@
       "helpLink": "https://grasshopperdocs.com/addons/furobot.html",
       "category": "Electronic - Robot Control",
       "isSystem": false,
-      "components": 263,
+      "components": 240,
       "description": "FURobot is a robot programming platform developed by Fab-Union for the construction industry.The purpose of FURobot is to program on robot more easily,and convert the design into real object with little effort by using some technique packages.",
       "authorName": "FabUnion",
       "authorContact": ""
@@ -775,7 +775,7 @@
       "helpLink": "https://grasshopperdocs.com/addons/geomgym-ifc.html",
       "category": "Integration - Industry Foundation Classes",
       "isSystem": false,
-      "components": 695,
+      "components": 693,
       "description": "OpenBIM addon for Rhino and Grasshopper enabling IFC (Industry Foundation Class) model to be generated and exchanged to ArchiCAD, Revit, Bently, Tekla and any other BIM software with IFC capability.",
       "authorName": "Geometry Gym Pty Ltd",
       "authorContact": "support@geometrygym.com"
@@ -853,7 +853,7 @@
       "helpLink": "https://grasshopperdocs.com/addons/geomgym-strand.html",
       "category": "Integration - Structural Analysis",
       "isSystem": false,
-      "components": 76,
+      "components": 74,
       "description": "Rhino plugin and Grasshopper Components to generate Strand7 Structural Analysis Data",
       "authorName": "Geometry Gym Pty Ltd",
       "authorContact": ""
@@ -1022,7 +1022,7 @@
       "helpLink": "https://grasshopperdocs.com/addons/human-ui.html",
       "category": "User Interface Design",
       "isSystem": false,
-      "components": 84,
+      "components": 83,
       "description": "",
       "authorName": "Andrew Heumann",
       "authorContact": "andheum@gmail.com"
@@ -1048,7 +1048,7 @@
       "helpLink": "https://grasshopperdocs.com/addons/hypar-elements.html",
       "category": "Logic - Machine Learning",
       "isSystem": false,
-      "components": 15,
+      "components": 13,
       "description": "Create Hypar Functions in Grasshopper",
       "authorName": "Hypar.io",
       "authorContact": ""
@@ -1477,7 +1477,7 @@
       "helpLink": "https://grasshopperdocs.com/addons/nautilus.html",
       "category": "Core Collections",
       "isSystem": false,
-      "components": 170,
+      "components": 165,
       "description": "This plugin is a set of 150 components at the moments. It is a Work In Progress (WIP), that means that some components can change a bit. A part of these components were developed in order to help people on the Grasshopper forums.",
       "authorName": "Laurent Delrieu",
       "authorContact": "NautilusPlugin@gmail.com"
@@ -1906,7 +1906,7 @@
       "helpLink": "https://grasshopperdocs.com/addons/robot-components.html",
       "category": "Electronic - Robot Control",
       "isSystem": false,
-      "components": 133,
+      "components": 129,
       "description": "Robot Components is a plugin for intuitive robot programming for ABB robots inside of Rhinoceros Grasshopper. Robot Components offers a wide set of tools to create toolpaths, simulate robotic motion and generate RAPID code within Grasshopper. Main features include:\n\n40+ predefined ABB robot models, \nPossibility to add your own robot models, \nSupport for external axes (both linear and rotational), \nPossibility to define custom strategies for all external axis values, \nSupport for work objects (including movable work objects), \nEfficient forward and inverse kinematics, \nPossibility to add your own custom code lines, \nReal-time connection with IRC5 controllers, \nRobot Components API to develop your custom components using either Python or C#.",
       "authorName": "Arjen Deetman, Gabriel Rumpf, Benedikt Wannemacher, Mohamed Dawod, Zuardin Akbar, Andrea Rossi",
       "authorContact": ""
@@ -2127,7 +2127,7 @@
       "helpLink": "https://grasshopperdocs.com/addons/swiftlet.html",
       "category": "Integration - Web API",
       "isSystem": false,
-      "components": 88,
+      "components": 87,
       "description": "Swiftlet is a tool that lets you call into Web APIs directly from Grasshopper. If you are interested in scraping the internet, tapping into public and private  APIs or testing your own web backends, Swiftlet is a tool for you! It provides a  streamlined workflow for sending GET, POST, DELETE, PUT and PATCH requests to  any API endpoint. It gives you advanced control over request headers,  query params, supports several kinds of web authentication and lets you parse  JSON formatted web responses.",
       "authorName": "Sergey Pigach",
       "authorContact": ""
@@ -2140,7 +2140,7 @@
       "helpLink": "https://grasshopperdocs.com/addons/synapse.html",
       "category": "User Interface Design",
       "isSystem": false,
-      "components": 41,
+      "components": 40,
       "description": "Grasshopper plugin that makes graphic user interfaces with the help of Eto.Forms. Currently compiled on a Windows machine. This plugin is meant to help not only build more intuitive GUIs with Grasshopper components, but also share scripts between Windows and Mac OS as Eto is a cross-platform tool. At the moment, this is a weekend project for fun so only core functionalities are added incrementally. However any questions and suggestions are welcome.",
       "authorName": "Will Wang",
       "authorContact": ""
@@ -2374,7 +2374,7 @@
       "helpLink": "https://grasshopperdocs.com/addons/grasshopper-params.html",
       "category": null,
       "isSystem": true,
-      "components": 50,
+      "components": 48,
       "description": "",
       "authorName": "David Rutten",
       "authorContact": ""
@@ -2387,7 +2387,7 @@
       "helpLink": "https://grasshopperdocs.com/addons/grasshopper-display.html",
       "category": null,
       "isSystem": true,
-      "components": 49,
+      "components": 46,
       "description": "",
       "authorName": "David Rutten",
       "authorContact": ""
@@ -2400,7 +2400,7 @@
       "helpLink": "https://grasshopperdocs.com/addons/grasshopper-curve.html",
       "category": null,
       "isSystem": true,
-      "components": 116,
+      "components": 111,
       "description": "",
       "authorName": "David Rutten",
       "authorContact": ""
@@ -2413,7 +2413,7 @@
       "helpLink": "https://grasshopperdocs.com/addons/grasshopper-mesh.html",
       "category": null,
       "isSystem": true,
-      "components": 63,
+      "components": 62,
       "description": "",
       "authorName": "David Rutten",
       "authorContact": ""
@@ -2426,7 +2426,7 @@
       "helpLink": "https://grasshopperdocs.com/addons/grasshopper-sets.html",
       "category": null,
       "isSystem": true,
-      "components": 97,
+      "components": 89,
       "description": "",
       "authorName": "David Rutten",
       "authorContact": ""
@@ -2439,7 +2439,7 @@
       "helpLink": "https://grasshopperdocs.com/addons/grasshopper-transform.html",
       "category": null,
       "isSystem": true,
-      "components": 56,
+      "components": 55,
       "description": "",
       "authorName": "David Rutten",
       "authorContact": ""
@@ -2452,7 +2452,7 @@
       "helpLink": "https://grasshopperdocs.com/addons/grasshopper-maths.html",
       "category": null,
       "isSystem": true,
-      "components": 103,
+      "components": 102,
       "description": "",
       "authorName": "David Rutten",
       "authorContact": ""
@@ -2465,7 +2465,7 @@
       "helpLink": "https://grasshopperdocs.com/addons/grasshopper-surface.html",
       "category": null,
       "isSystem": true,
-      "components": 94,
+      "components": 90,
       "description": "",
       "authorName": "David Rutten",
       "authorContact": ""
@@ -2504,7 +2504,7 @@
       "helpLink": "https://grasshopperdocs.com/addons/grasshopper-rhino.html",
       "category": null,
       "isSystem": true,
-      "components": 84,
+      "components": 83,
       "description": "",
       "authorName": "David Rutten",
       "authorContact": ""
