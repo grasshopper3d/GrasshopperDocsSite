@@ -1,0 +1,260 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Filter Pipe - RhinoMembrane - Component for Grasshopper | Grasshopper Docs</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+
+<meta name="description" content="Filter curves included in pipe" />
+<meta name="title" content="Filter Pipe - RhinoMembrane - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:title" content="Filter Pipe - RhinoMembrane - Component for Grasshopper | Grasshopper Docs" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://grasshopperdocs.com/components/rhinomembrane/filterPipe.html" />
+<meta property="og:site_name" content="Grasshopper Docs" />
+
+<link href="../../style-v2.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+
+<div id="docs">
+
+<div id="docs-head">
+<div id="docs-masthead">
+<p id="docs-sitename"><a href="http://grasshopperdocs.com/">
+	<img id="site-logo-icon" src="/images/logo-icon.png" alt=""></img>
+	<img id="site-logo-text" src="/images/logo-text.png" alt="Grasshopper Docs"></img>
+</a></p>
+<div id="docs-sitemenu">
+	<a class="sitemenu-item" href="/index.html">Categories</a>
+	<a class="sitemenu-item" href="/addonIndex.html">Addons</a>
+	<a class="sitemenu-item" href="/completeIndex.html">Components</a>
+</div>
+<div id="docs-sitesearch">
+	<input id="docs-sitesearch-inputbox" type="text" name="docs-sitesearch-inputbox" />
+	<img id="docs-searchicon" src="/images/search.png"/>
+</div>
+</div>
+</div>
+
+<div id="docs-body">
+
+<div class="page">
+
+<div class="content compo-page">
+
+<div class="lead-header">
+
+<div class="addon-buttons compo-buttons">
+<a href="#tutorials">Video Tutorials</a>
+<a href="https://www.food4rhino.com/app/rhinomembrane-v-30-rhino-60">Download</a>
+
+</div>
+
+
+<div class="google-ad-sidebar">
+
+<!-- Carbon Ads -->
+<script async type="text/javascript" src="https://cdn.carbonads.com/carbon.js?serve=CK7IC27L&placement=grasshopperdocscom" id="_carbonads_js"></script>
+
+</div>
+
+<div class="lead-gradient"></div>
+<div class="lead-image" style="background-image: url('../../images/header/Geometry-Exotic.png');"></div>
+
+<div class="ghbar ghbar-compo-page">
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/rhinomembrane/extLink.html"><div class="ghsprite" style="background: url('../../icons/rhinoMembrane.png') 0px 0px" data-toptip="Ext Link"></div></a>
+<a href="../../components/rhinomembrane/extMeshVar.html"><div class="ghsprite" style="background: url('../../icons/rhinoMembrane.png') -24px 0px" data-downtip="Ext Mesh Var"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/rhinomembrane/extMesh.html"><div class="ghsprite" style="background: url('../../icons/rhinoMembrane.png') -48px 0px" data-toptip="Ext Mesh"></div></a>
+<a href="../../components/rhinomembrane/extPoint.html"><div class="ghsprite" style="background: url('../../icons/rhinoMembrane.png') -72px 0px" data-downtip="Ext Point"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="2">
+Components
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/rhinomembrane/relaxMulti.html"><div class="ghsprite" style="background: url('../../icons/rhinoMembrane.png') -96px 0px" data-toptip="Relax Multi"></div></a>
+<a href="../../components/rhinomembrane/fDMSolver.html"><div class="ghsprite" style="background: url('../../icons/rhinoMembrane.png') -120px 0px" data-downtip="FDM Solver"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/rhinomembrane/relaxCablenet.html"><div class="ghsprite" style="background: url('../../icons/rhinoMembrane.png') -144px 0px" data-toptip="Relax Cablenet"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="2">
+Solver
+</td>
+</tr>
+</table>
+</div>
+<div class="ghgroup">
+<table class="ghgroup-table">
+<tr>
+<td>
+<div class="ghcolumn">
+<a href="../../components/rhinomembrane/meshFaceCenter.html"><div class="ghsprite" style="background: url('../../icons/rhinoMembrane.png') -168px 0px" data-toptip="Mesh Face Center"></div></a>
+<a href="../../components/rhinomembrane/meshEdge.html"><div class="ghsprite" style="background: url('../../icons/rhinoMembrane.png') -192px 0px" data-downtip="Mesh Edge"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/rhinomembrane/joinSurface.html"><div class="ghsprite" style="background: url('../../icons/rhinoMembrane.png') -216px 0px" data-toptip="Join Surface"></div></a>
+<a href="../../components/rhinomembrane/splitCurve.html"><div class="ghsprite" style="background: url('../../icons/rhinoMembrane.png') 0px -24px" data-downtip="Split Curve"></div></a>
+</div>
+</td>
+<td>
+<div class="ghcolumn">
+<a href="../../components/rhinomembrane/filterGeometry.html"><div class="ghsprite" style="background: url('../../icons/rhinoMembrane.png') -24px -24px" data-toptip="Filter Geometry"></div></a>
+<a href="../../components/rhinomembrane/filterPipe.html"><div class="ghsprite" style="background: url('../../icons/rhinoMembrane.png') -48px -24px" data-downtip="Filter Pipe"></div></a>
+</div>
+</td>
+</tr>
+<tr class="ghgroup-title-row">
+<td class="ghgroup-title" colspan="3">
+Util
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+
+<div class="compo-header">
+<h1><div class="ghsprite" style="background: url('../../icons/rhinoMembrane.png') -48px -24px" ></div> Filter Pipe</h1>
+
+<div class="breadcrumb">
+ <a href="../../index.html">Home</a>
+  <a href="../../categories/geometry-exotic.html">Exotic addons</a><a href="../../addons/rhinomembrane.html">RhinoMembrane</a><a href="#" class="breadcrumb-nolink">Util</a><a href="#" class="breadcrumb-nolink">PipeFilter</a>
+</div>
+
+</div>
+
+</div>
+<h3>Filter curves included in pipe</h3>
+<h2>Inputs</h2>
+<table class="params-table input-params">
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Ps</b></td><td>Pipe spline</td><td>Spline of pipes</td><td>GeometricGoo</td></tr>
+<tr><td><b>R</b></td><td>Radius</td><td>Radius of pipe</td><td>Number</td></tr>
+<tr><td><b>Curves</b></td><td>Curves</td><td>Curves to filter</td><td>GeometricGoo</td></tr>
+</tbody>
+</table>
+
+<h2>Outputs</h2>
+<table class="params-table output-params">
+<thead>
+<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Curves</b></td><td>Curves</td><td>Filtered curves</td><td>GeometricGoo</td></tr>
+</tbody>
+</table>
+
+<div class="ghtutorials">
+<a name="tutorials"></a>
+<h2>Video Tutorials</h2>
+<div style="display:none;" class="html5gallery" data-skin="verticallight" data-width="1000" data-height="600" data-thumbwidth="280" data-thumbheight="70" data-thumbgap="5">
+
+<a href="http://www.youtube.com/embed/wRtoie1kbkI"><img src="http://img.youtube.com/vi/wRtoie1kbkI/1.jpg" alt="4. Rhino Membrane Tutorial - Inflated Cushion"></a>
+<a href="http://www.youtube.com/embed/rHsec557HxE"><img src="http://img.youtube.com/vi/rHsec557HxE/1.jpg" alt="3. Rhino Membrane Tutorial - Ridge Cable"></a>
+<a href="http://www.youtube.com/embed/HrqJoMHpT4g"><img src="http://img.youtube.com/vi/HrqJoMHpT4g/1.jpg" alt="2. Rhino Membrane Tutorial - Eye Loop"></a>
+<a href="http://www.youtube.com/embed/RjkrEe5S6ms"><img src="http://img.youtube.com/vi/RjkrEe5S6ms/1.jpg" alt="1. Rhino Membrane Tutorial - Hypar 4 Points"></a>
+<a href="http://www.youtube.com/embed/9i8dGtcQxMk"><img src="http://img.youtube.com/vi/9i8dGtcQxMk/1.jpg" alt="5. Tensile Surface Structures Form Finding"></a>
+<a href="http://www.youtube.com/embed/yNODKQQ34XQ"><img src="http://img.youtube.com/vi/yNODKQQ34XQ/1.jpg" alt="4. Tensile Surface Structures Form Finding"></a>
+<a href="http://www.youtube.com/embed/C7mriMIt528"><img src="http://img.youtube.com/vi/C7mriMIt528/1.jpg" alt="2. Tensile Surface Structures Form Finding"></a>
+<a href="http://www.youtube.com/embed/yFv4zquIW-Q"><img src="http://img.youtube.com/vi/yFv4zquIW-Q/1.jpg" alt="1. Tensile Surface Structures Form Finding"></a>
+<a href="http://www.youtube.com/embed/nVnra8YCfUs"><img src="http://img.youtube.com/vi/nVnra8YCfUs/1.jpg" alt="3. Tensile Surface Structures Form Finding"></a>
+
+
+</div>
+</div>
+
+<script type="text/javascript" src="/html5gallery/jquery.js"></script>
+<script type="text/javascript" src="/html5gallery/html5gallery.js"></script>
+
+
+</div>
+
+</div>
+
+</div>
+
+<div id="docs-foot" class="docs-footindex">
+<div id="docs-foot-inner">
+<p class="left">
+Site design © <a href="https://github.com/robinrodricks/">Robin Rodricks</a>. &nbsp;
+Co-created by <a href="http://andrewheumann.com/">Andrew Heumann</a>. &nbsp;
+RhinoMembrane and associated data © 2024  <a href="https://www.food4rhino.com/app/rhinomembrane-v-30-rhino-60">Gerry D&#39;anza</a>. &nbsp;
+<br>
+Rhinoceros and Grasshopper are registered trademarks of <a href="https://www.rhino3d.com/">Robert McNeel & Associates</a>.&nbsp;
+Hosted by <a href="http://www.github.com/">GitHub</a> 
+</p>
+<p class="right docs-lightfont">
+
+<a href="https://github.com/grasshopper3d/GrasshopperDocsSite/issues/new">Report an Issue</a> &nbsp;|&nbsp;
+<a href="/termsOfService.html">Terms of Service</a>
+</p>
+
+</div>
+
+
+
+</div>
+</div>
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78477269-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DX6TG16YN7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DX6TG16YN7');
+</script>
+
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/jquery-autocomplete.min.js"></script>
+<script type="text/javascript" src="/js/app-searchbar.js"></script>
+
+    </body>
+</html>
