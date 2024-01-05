@@ -1,9 +1,19 @@
-$( document ).ready(function() {
+
+// after load
+$(document).ready(function() {
 	
-	// if ads are blocked
-    if($('#carbonads').length == 0){
+	// after 2 sec
+	setTimeout(function() {
 		
-		// show the help notice
-		$('#help-notice').show();
-	}
+		// if ads are blocked
+		if($('#carbonads').length == 0){
+			
+			// show the help notice
+			$('#help-notice').show();
+			
+			// animate it in
+			$('#help-notice').animate({ right: '0' }, 1000);
+		}
+		
+	}, 2000);
 });
