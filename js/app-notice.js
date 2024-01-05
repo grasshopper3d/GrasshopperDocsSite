@@ -2,7 +2,7 @@
 // after load
 $(document).ready(function() {
 	
-	// after 2 sec
+	// after 1 sec
 	setTimeout(function() {
 		
 		// if ads are blocked
@@ -15,5 +15,5 @@ $(document).ready(function() {
 			$('#help-notice').animate({ right: '0' }, 500);
 		}
 		
-	}, 2000);
+	}, 1000);
 });
