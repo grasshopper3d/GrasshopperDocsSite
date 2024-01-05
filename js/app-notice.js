@@ -12,7 +12,7 @@ $(document).ready(function() {
 			$('#help-notice').show();
 			
 			// animate it in
-			$('#help-notice').animate({ right: '0' }, 1000);
+			$('#help-notice').animate({ right: '0' }, 500);
 		}
 		
 	}, 2000);
