@@ -1133,10 +1133,10 @@ img.ghicon {
 .lead-category-page {
 	min-height: 260px;
 }
-.index-page .google-ad-sidebar {
+.index-page .side-content {
 	margin-top: 30px;
 }
-.category-page .google-ad-sidebar {
+.category-page .side-content {
 	margin-top: 30px;
 }
 
@@ -1274,7 +1274,7 @@ img.ghicon {
 
 
 /* ADS */
-.google-ad-sidebar {
+.side-content {
 	float: right;
 	display: block;
 	width: 250px;
@@ -1333,7 +1333,7 @@ img.ghicon {
 	}
 	
 	/* MOBILE DISPLAY OF ADS */
-	.google-ad-sidebar {
+	.side-content {
 		/*height: 300px;*/
 	}
 }
@@ -1460,7 +1460,7 @@ img.ghicon {
 	}
 	
 	/* MOBILE DISPLAY OF ADS */
-	.google-ad-sidebar {
+	.side-content {
 		display: none;
 	}
 }
