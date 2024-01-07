@@ -1672,6 +1672,8 @@ img.ghicon {
 }
 .category-thumb {
 	display: block;
+	min-width: 200px;
+	min-height: 200px;
 }
 .category-title {
 	display: block;
