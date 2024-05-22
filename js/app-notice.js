@@ -2,7 +2,7 @@
 // after load
 $(document).ready(function() {
 	
-	// after 1 sec
+	// after 3 sec
 	setTimeout(function() {
 		
 		// if ads are blocked
@@ -26,5 +26,5 @@ $(document).ready(function() {
 			});
 		}
 		
-	}, 1000);
+	}, 3000);
 });
