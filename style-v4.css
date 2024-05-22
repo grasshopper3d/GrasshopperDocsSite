@@ -344,7 +344,7 @@ ul.backlink li a {
 	position: fixed;
 	top: 0px;
 }
-.sitemenu-item {
+.sitemenu-item, .sitemenu-item:visited {
 	display: inline-block;
 	height: 57px;
 	padding-left: 20px;
