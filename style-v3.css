@@ -344,23 +344,32 @@ ul.backlink li a {
 	position: fixed;
 	top: 0px;
 }
-#docs-sitemenu a {
+.sitemenu-item {
 	display: inline-block;
-	height: 60px;
+	height: 57px;
 	padding-left: 20px;
 	padding-right: 20px;
+	margin-top: 3px;
 	font-family: "Open Sans", Verdana, Arial, sans-serif;
 	font-size: 11pt;
 	vertical-align: middle;
 	color: #b5b5b5;
-	line-height: 60px;
+	line-height: 55px;
 	transition: background-color 100ms;
 }
-#docs-sitemenu a:hover {
+.sitemenu-item:hover {
 	background-color: rgb(255,255,255,0.1);
+	color: #fff;
 }
 
-
+.sitemenu-donate {
+	background-color: #2d593b;
+	color: #fff !important;
+}
+.sitemenu-donate:hover {
+	background-color: #4fc67b;
+	color: #000 !important;
+}
 
 
 
