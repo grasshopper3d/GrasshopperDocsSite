@@ -726,7 +726,7 @@ var factory = function($, window) {
      * Filter the given items by the search term active
      */
     filterItemsBySearchTerm: function(items, itemsLower) {
-      var term = this.field.val();
+      var term = this.field.val().toLowerCase();
       var result = [];
 	  for (var i=0; i<items.length; i++){
 		  itemLower = itemsLower[i];
