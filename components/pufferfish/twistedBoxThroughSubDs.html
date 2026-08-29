@@ -1235,33 +1235,6 @@ Vector
 
 </div>
 <h3>Create a layered array of connected twisted boxes through a set of SubDs from the faces, SubDs must have the same topology.<br><br>(*Rhino 7 only)</h3>
-<h2>Inputs</h2>
-<table class="params-table input-params">
-<thead>
-<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
-</thead>
-<tbody>
-<tr><td><b>SubDs</b></td><td>SD</td><td>Set of SubDs to create twisted box array through</td><td>Goo</td></tr>
-<tr><td><b>Levels</b></td><td>L</td><td>Number of subdivision levels for each SubD face</td><td>Integer</td></tr>
-<tr><td><b>Parameters W</b></td><td>w</td><td>Division parameters through SubDs {w} domain ({w}0.0 = SubD at SD start, {w}1.0 = SubD at SD end), unless Normalized is False</td><td>Number</td></tr>
-<tr><td><b>Normalized</b></td><td>N</td><td>If False, the rules for {w} parameters are ({w}0.0 = SubD at index 0, {w}Index number of last SubD = SubD at last index). For best results {w} parameters should be between 0 and the index of the last SubD, in numerical order, and non duplicate</td><td>Boolean</td></tr>
-<tr><td><b>Equalized</b></td><td>E</td><td>If True, parameters {w} distribution is evaluated along the interpolation path without considering the locations of the input SubD set</td><td>Boolean</td></tr>
-<tr><td><b>Weighted</b></td><td>W</td><td>If True, parameters {w} distribution is weighted by the input SubD set and the interpolation path curvature</td><td>Boolean</td></tr>
-<tr><td><b>Degree</b></td><td>D</td><td>Curvature degree of the {w} interpolation path, degree should be a positive odd number</td><td>Integer</td></tr>
-<tr><td><b>Interpolation Type</b></td><td>I</td><td>Determines how the {w} interpolation path is interpolated (0 = Linear, 1 = Chord, 2 = Square Root, 3 = Uniform)</td><td>Integer</td></tr>
-</tbody>
-</table>
-
-<h2>Outputs</h2>
-<table class="params-table output-params">
-<thead>
-<tr><th>Name</th><th>ID</th><th>Description</th><th>Type</th></tr>
-</thead>
-<tbody>
-<tr><td><b>Twisted Boxes</b></td><td>TB</td><td>Resulting twisted box array through SubDs</td><td>TwistedBox</td></tr>
-</tbody>
-</table>
-
 <div class="ghtutorials">
 <a name="tutorials"></a>
 <h2>Video Tutorials</h2>
@@ -1294,7 +1267,7 @@ Vector
 <p class="left">
 Site design © <a href="https://github.com/robinrodricks/">Robin Rodricks</a>. &nbsp;
 
-Pufferfish and associated data © 2025  <a href="https://www.food4rhino.com/app/pufferfish">Michael Pryor</a>. &nbsp;
+Pufferfish and associated data © 2026  <a href="https://www.food4rhino.com/app/pufferfish">Michael Pryor</a>. &nbsp;
 <br>
 Rhinoceros and Grasshopper are registered trademarks of <a href="https://www.rhino3d.com/">Robert McNeel & Associates</a>.&nbsp;
 Hosted by <a href="http://www.github.com/">GitHub</a> 

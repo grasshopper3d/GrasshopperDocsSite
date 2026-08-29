@@ -833,15 +833,6 @@
       "helpLink": "https://grasshopperdocs.com/components/alpaca4d/shellStresses.html"
     },
     {
-      "name": "Beam Forces View",
-      "id": "Beam Forces View (Alpaca4d)",
-      "library": "Alpaca4d",
-      "category": "09_Visualisation",
-      "summary": "",
-      "iconCss": "background: url('icons/alpaca4d.png') -96px -144px",
-      "helpLink": "https://grasshopperdocs.com/components/alpaca4d/beamForcesView.html"
-    },
-    {
       "name": "Deformed Model View",
       "id": "Deformed Model View",
       "library": "Alpaca4d",
@@ -858,15 +849,6 @@
       "summary": "ModelView",
       "iconCss": "background: url('icons/alpaca4d.png') -144px -96px",
       "helpLink": "https://grasshopperdocs.com/components/alpaca4d/modelView.html"
-    },
-    {
-      "name": "Shell Forces View",
-      "id": "Shell Forces View (Alpaca4d)",
-      "library": "Alpaca4d",
-      "category": "09_Visualisation",
-      "summary": "",
-      "iconCss": "background: url('icons/alpaca4d.png') -120px -144px",
-      "helpLink": "https://grasshopperdocs.com/components/alpaca4d/shellForcesView.html"
     },
     {
       "name": "Colors",
@@ -17343,10 +17325,10 @@
       "helpLink": "https://grasshopperdocs.com/components/flexibility/roundNd.html"
     },
     {
-      "name": "Force attractor",
-      "id": "Force attractor",
+      "name": "Force attractor+",
+      "id": "Force attractor+",
       "library": "Flexibility",
-      "category": "panel",
+      "category": "Panel",
       "summary": "Flexibility orce attractorn only for Rhino8\";by ehsan samad",
       "iconCss": "background: url('icons/flexibility.png') -168px -408px",
       "helpLink": "https://grasshopperdocs.com/components/flexibility/forceAttractor.html"
@@ -31522,7 +31504,7 @@
       "name": "Blend",
       "id": "Blend",
       "library": "GeomGym Revit",
-      "category": "Core",
+      "category": "gg Core",
       "summary": "Create a Blend in Revit",
       "iconCss": "background: url('icons/geomGymRevit.png') -72px 0px",
       "helpLink": "https://grasshopperdocs.com/components/geomgymrevit/blend.html"
@@ -31531,7 +31513,7 @@
       "name": "Brep",
       "id": "Brep",
       "library": "GeomGym Revit",
-      "category": "Core",
+      "category": "gg Core",
       "summary": "Create a Brep for Revit",
       "iconCss": "background: url('icons/geomGymRevit.png') -96px 0px",
       "helpLink": "https://grasshopperdocs.com/components/geomgymrevit/brep.html"
@@ -31540,7 +31522,7 @@
       "name": "Circle Profile",
       "id": "Circle Profile",
       "library": "GeomGym Revit",
-      "category": "Core",
+      "category": "gg Core",
       "summary": "Create Revit Circular Profile",
       "iconCss": "background: url('icons/geomGymRevit.png') -192px -24px",
       "helpLink": "https://grasshopperdocs.com/components/geomgymrevit/circleProfile.html"
@@ -31549,7 +31531,7 @@
       "name": "CProfile Def",
       "id": "CProfile Def",
       "library": "GeomGym Revit",
-      "category": "Core",
+      "category": "gg Core",
       "summary": "Create Revit C Profile Def",
       "iconCss": "background: url('icons/geomGymRevit.png') -216px -24px",
       "helpLink": "https://grasshopperdocs.com/components/geomgymrevit/cProfileDef.html"
@@ -31558,7 +31540,7 @@
       "name": "Cut",
       "id": "Cut",
       "library": "GeomGym Revit",
-      "category": "Core",
+      "category": "gg Core",
       "summary": "Create a Revit cut shape",
       "iconCss": "background: url('icons/geomGymRevit.png') -120px 0px",
       "helpLink": "https://grasshopperdocs.com/components/geomgymrevit/cut.html"
@@ -31567,7 +31549,7 @@
       "name": "Extrusion",
       "id": "Extrusion",
       "library": "GeomGym Revit",
-      "category": "Core",
+      "category": "gg Core",
       "summary": "Create an extrusion in Revit",
       "iconCss": "background: url('icons/geomGymRevit.png') -144px 0px",
       "helpLink": "https://grasshopperdocs.com/components/geomgymrevit/extrusion.html"
@@ -31576,7 +31558,7 @@
       "name": "Extrusion Symmetric",
       "id": "Extrusion Symmetric",
       "library": "GeomGym Revit",
-      "category": "Core",
+      "category": "gg Core",
       "summary": "Create an extrusion in Revit both sides from profile",
       "iconCss": "background: url('icons/geomGymRevit.png') -168px 0px",
       "helpLink": "https://grasshopperdocs.com/components/geomgymrevit/extrusionSymmetric.html"
@@ -31585,7 +31567,7 @@
       "name": "Grid",
       "id": "Grid",
       "library": "GeomGym Revit",
-      "category": "Core",
+      "category": "gg Core",
       "summary": "Create Revit Grid",
       "iconCss": "background: url('icons/geomGymRevit.png') -192px 0px",
       "helpLink": "https://grasshopperdocs.com/components/geomgymrevit/grid.html"
@@ -31594,7 +31576,7 @@
       "name": "IProfile Def",
       "id": "IProfile Def",
       "library": "GeomGym Revit",
-      "category": "Core",
+      "category": "gg Core",
       "summary": "Create Revit I Profile Def",
       "iconCss": "background: url('icons/geomGymRevit.png') 0px -48px",
       "helpLink": "https://grasshopperdocs.com/components/geomgymrevit/iProfileDef.html"
@@ -31603,7 +31585,7 @@
       "name": "Level",
       "id": "Level",
       "library": "GeomGym Revit",
-      "category": "Core",
+      "category": "gg Core",
       "summary": "Create Revit Level",
       "iconCss": "background: url('icons/geomGymRevit.png') -216px 0px",
       "helpLink": "https://grasshopperdocs.com/components/geomgymrevit/level.html"
@@ -31612,7 +31594,7 @@
       "name": "Loft",
       "id": "Loft",
       "library": "GeomGym Revit",
-      "category": "Core",
+      "category": "gg Core",
       "summary": "Create a loft for a mass in Revit",
       "iconCss": "background: url('icons/geomGymRevit.png') 0px -24px",
       "helpLink": "https://grasshopperdocs.com/components/geomgymrevit/loft.html"
@@ -31621,7 +31603,7 @@
       "name": "Material",
       "id": "Material",
       "library": "GeomGym Revit",
-      "category": "Core",
+      "category": "gg Core",
       "summary": "Create Revit Material",
       "iconCss": "background: url('icons/geomGymRevit.png') -24px -24px",
       "helpLink": "https://grasshopperdocs.com/components/geomgymrevit/material.html"
@@ -31630,7 +31612,7 @@
       "name": "Material Layer",
       "id": "Material Layer",
       "library": "GeomGym Revit",
-      "category": "Core",
+      "category": "gg Core",
       "summary": "Create Revit Material Layer",
       "iconCss": "background: url('icons/geomGymRevit.png') -48px -24px",
       "helpLink": "https://grasshopperdocs.com/components/geomgymrevit/materialLayer.html"
@@ -31639,7 +31621,7 @@
       "name": "Profile",
       "id": "Profile",
       "library": "GeomGym Revit",
-      "category": "Core",
+      "category": "gg Core",
       "summary": "Create Revit Profile",
       "iconCss": "background: url('icons/geomGymRevit.png') -72px -24px",
       "helpLink": "https://grasshopperdocs.com/components/geomgymrevit/profile.html"
@@ -31648,7 +31630,7 @@
       "name": "Project Info",
       "id": "Project Info",
       "library": "GeomGym Revit",
-      "category": "Core",
+      "category": "gg Core",
       "summary": "Revit Project Information",
       "iconCss": "background: url('icons/geomGymRevit.png') -144px -24px",
       "helpLink": "https://grasshopperdocs.com/components/geomgymrevit/projectInfo.html"
@@ -31657,7 +31639,7 @@
       "name": "Rectangle Profile",
       "id": "Rectangle Profile",
       "library": "GeomGym Revit",
-      "category": "Core",
+      "category": "gg Core",
       "summary": "Create Revit Rectangle Profile",
       "iconCss": "background: url('icons/geomGymRevit.png') -24px -48px",
       "helpLink": "https://grasshopperdocs.com/components/geomgymrevit/rectangleProfile.html"
@@ -31666,7 +31648,7 @@
       "name": "Set Host",
       "id": "Set Host",
       "library": "GeomGym Revit",
-      "category": "Core",
+      "category": "gg Core",
       "summary": "Nominate Host of element",
       "iconCss": "background: url('icons/geomGymRevit.png') -168px -24px",
       "helpLink": "https://grasshopperdocs.com/components/geomgymrevit/setHost.html"
@@ -31675,7 +31657,7 @@
       "name": "Stream",
       "id": "Stream",
       "library": "GeomGym Revit",
-      "category": "Core",
+      "category": "gg Core",
       "summary": "Revit IFC Stream",
       "iconCss": "background: url('icons/geomGymRevit.png') -24px 0px",
       "helpLink": "https://grasshopperdocs.com/components/geomgymrevit/stream.html"
@@ -31684,7 +31666,7 @@
       "name": "Stream Bake",
       "id": "Stream Bake",
       "library": "GeomGym Revit",
-      "category": "Core",
+      "category": "gg Core",
       "summary": "Revit IFC Stream Bake",
       "iconCss": "background: url('icons/geomGymRevit.png') 0px 0px",
       "helpLink": "https://grasshopperdocs.com/components/geomgymrevit/streamBake.html"
@@ -31693,7 +31675,7 @@
       "name": "Sweep",
       "id": "Sweep",
       "library": "GeomGym Revit",
-      "category": "Core",
+      "category": "gg Core",
       "summary": "Create a sweep in Revit",
       "iconCss": "background: url('icons/geomGymRevit.png') -120px -24px",
       "helpLink": "https://grasshopperdocs.com/components/geomgymrevit/sweep.html"
@@ -31702,7 +31684,7 @@
       "name": "Swept Blend",
       "id": "Swept Blend",
       "library": "GeomGym Revit",
-      "category": "Core",
+      "category": "gg Core",
       "summary": "Create a swept blend in Revit.",
       "iconCss": "background: url('icons/geomGymRevit.png') -48px 0px",
       "helpLink": "https://grasshopperdocs.com/components/geomgymrevit/sweptBlend.html"
@@ -31711,7 +31693,7 @@
       "name": "Taper Profile",
       "id": "Taper Profile",
       "library": "GeomGym Revit",
-      "category": "Core",
+      "category": "gg Core",
       "summary": "Create Revit Taper Profile",
       "iconCss": "background: url('icons/geomGymRevit.png') -96px -24px",
       "helpLink": "https://grasshopperdocs.com/components/geomgymrevit/taperProfile.html"
@@ -31720,7 +31702,7 @@
       "name": "TProfile Def",
       "id": "TProfile Def",
       "library": "GeomGym Revit",
-      "category": "Core",
+      "category": "gg Core",
       "summary": "Create Revit T Profile Def",
       "iconCss": "background: url('icons/geomGymRevit.png') -48px -48px",
       "helpLink": "https://grasshopperdocs.com/components/geomgymrevit/tProfileDef.html"
@@ -31729,7 +31711,7 @@
       "name": "Arch Adapt Comp Type",
       "id": "Arch Adapt Comp Type",
       "library": "GeomGym Revit",
-      "category": "ElementType",
+      "category": "gg ElementType",
       "summary": "Create Architecture Adaptive Component Type",
       "iconCss": "background: url('icons/geomGymRevit.png') -216px -96px",
       "helpLink": "https://grasshopperdocs.com/components/geomgymrevit/archAdaptCompType.html"
@@ -31738,7 +31720,7 @@
       "name": "Arch Generic Model Type",
       "id": "Arch Generic Model Type",
       "library": "GeomGym Revit",
-      "category": "ElementType",
+      "category": "gg ElementType",
       "summary": "Create Architecture Generic Model Type",
       "iconCss": "background: url('icons/geomGymRevit.png') 0px -120px",
       "helpLink": "https://grasshopperdocs.com/components/geomgymrevit/archGenericModelType.html"
@@ -31747,7 +31729,7 @@
       "name": "Column Type",
       "id": "Column Type",
       "library": "GeomGym Revit",
-      "category": "ElementType",
+      "category": "gg ElementType",
       "summary": "Create Revit Column Type",
       "iconCss": "background: url('icons/geomGymRevit.png') -24px -120px",
       "helpLink": "https://grasshopperdocs.com/components/geomgymrevit/columnType.html"
@@ -31756,7 +31738,7 @@
       "name": "Door Type",
       "id": "Door Type",
       "library": "GeomGym Revit",
-      "category": "ElementType",
+      "category": "gg ElementType",
       "summary": "Assign a Revit Door Type.  This should be an existing door type loaded in the revit project prior to import (else an opening should be created).",
       "iconCss": "background: url('icons/geomGymRevit.png') -48px -120px",
       "helpLink": "https://grasshopperdocs.com/components/geomgymrevit/doorType.html"
@@ -31765,7 +31747,7 @@
       "name": "Floor Type",
       "id": "Floor Type",
       "library": "GeomGym Revit",
-      "category": "ElementType",
+      "category": "gg ElementType",
       "summary": "Create Revit Floor Type",
       "iconCss": "background: url('icons/geomGymRevit.png') -72px -120px",
       "helpLink": "https://grasshopperdocs.com/components/geomgymrevit/floorType.html"
@@ -31774,7 +31756,7 @@
       "name": "Foundation Type",
       "id": "Foundation Type",
       "library": "GeomGym Revit",
-      "category": "ElementType",
+      "category": "gg ElementType",
       "summary": "Create Revit Foundation Type",
       "iconCss": "background: url('icons/geomGymRevit.png') -96px -120px",
       "helpLink": "https://grasshopperdocs.com/components/geomgymrevit/foundationType.html"
@@ -31783,7 +31765,7 @@
       "name": "Framing Type",
       "id": "Framing Type",
       "library": "GeomGym Revit",
-      "category": "ElementType",
+      "category": "gg ElementType",
       "summary": "Create Revit Framing Type",
       "iconCss": "background: url('icons/geomGymRevit.png') -120px -120px",
       "helpLink": "https://grasshopperdocs.com/components/geomgymrevit/framingType.html"
@@ -31792,7 +31774,7 @@
       "name": "Mass Type",
       "id": "Mass Type",
       "library": "GeomGym Revit",
-      "category": "ElementType",
+      "category": "gg ElementType",
       "summary": "Create a Mass Type",
       "iconCss": "background: url('icons/geomGymRevit.png') -144px -120px",
       "helpLink": "https://grasshopperdocs.com/components/geomgymrevit/massType.html"
@@ -31801,7 +31783,7 @@
       "name": "Roof Type",
       "id": "Roof Type",
       "library": "GeomGym Revit",
-      "category": "ElementType",
+      "category": "gg ElementType",
       "summary": "Create Revit Roof Type",
       "iconCss": "background: url('icons/geomGymRevit.png') -168px -120px",
       "helpLink": "https://grasshopperdocs.com/components/geomgymrevit/roofType.html"
@@ -31810,7 +31792,7 @@
       "name": "Struct Generic Model Type",
       "id": "Struct Generic Model Type",
       "library": "GeomGym Revit",
-      "category": "ElementType",
+      "category": "gg ElementType",
       "summary": "Create Architecture Generic Model Type",
       "iconCss": "background: url('icons/geomGymRevit.png') -192px -120px",
       "helpLink": "https://grasshopperdocs.com/components/geomgymrevit/structGenericModelType.html"
@@ -31819,7 +31801,7 @@
       "name": "Type Attributes",
       "id": "Type Attributes",
       "library": "GeomGym Revit",
-      "category": "ElementType",
+      "category": "gg ElementType",
       "summary": "Create Revit Type Attributes",
       "iconCss": "background: url('icons/geomGymRevit.png') -216px -120px",
       "helpLink": "https://grasshopperdocs.com/components/geomgymrevit/typeAttributes.html"
@@ -31828,7 +31810,7 @@
       "name": "Wall Type",
       "id": "Wall Type",
       "library": "GeomGym Revit",
-      "category": "ElementType",
+      "category": "gg ElementType",
       "summary": "Create Revit Floor Type",
       "iconCss": "background: url('icons/geomGymRevit.png') 0px -144px",
       "helpLink": "https://grasshopperdocs.com/components/geomgymrevit/wallType.html"
@@ -31837,7 +31819,7 @@
       "name": "Window Type",
       "id": "Window Type",
       "library": "GeomGym Revit",
-      "category": "ElementType",
+      "category": "gg ElementType",
       "summary": "Assign a Revit Window Type.  This should be an existing Window type loaded in the revit project prior to import (else an opening should be created).",
       "iconCss": "background: url('icons/geomGymRevit.png') -24px -144px",
       "helpLink": "https://grasshopperdocs.com/components/geomgymrevit/windowType.html"
@@ -31846,7 +31828,7 @@
       "name": "Arch Direct Shape",
       "id": "Arch Direct Shape",
       "library": "GeomGym Revit",
-      "category": "Instance",
+      "category": "gg Instance",
       "summary": "Create Architecture DirectShape Instance, works well with Geometry Gym importer for Revit 2015 and newer, or native IFC import by Autodesk in earlier (so use Ifc2x3)",
       "iconCss": "background: url('icons/geomGymRevit.png') -120px -72px",
       "helpLink": "https://grasshopperdocs.com/components/geomgymrevit/archDirectShape.html"
@@ -31855,7 +31837,7 @@
       "name": "Column",
       "id": "Column",
       "library": "GeomGym Revit",
-      "category": "Instance",
+      "category": "gg Instance",
       "summary": "Create Revit Column",
       "iconCss": "background: url('icons/geomGymRevit.png') -144px -72px",
       "helpLink": "https://grasshopperdocs.com/components/geomgymrevit/column.html"
@@ -31864,7 +31846,7 @@
       "name": "Create Adaptive Component",
       "id": "Create Adaptive Component",
       "library": "GeomGym Revit",
-      "category": "Instance",
+      "category": "gg Instance",
       "summary": "Create instance of an Adaptive Component",
       "iconCss": "background: url('icons/geomGymRevit.png') -96px -72px",
       "helpLink": "https://grasshopperdocs.com/components/geomgymrevit/createAdaptiveComponent.html"
@@ -31873,7 +31855,7 @@
       "name": "Create Instance",
       "id": "Create Instance",
       "library": "GeomGym Revit",
-      "category": "Instance",
+      "category": "gg Instance",
       "summary": "Create instance of a family",
       "iconCss": "background: url('icons/geomGymRevit.png') -72px -96px",
       "helpLink": "https://grasshopperdocs.com/components/geomgymrevit/createInstance.html"
@@ -31882,7 +31864,7 @@
       "name": "Cut Geometry",
       "id": "Cut Geometry",
       "library": "GeomGym Revit",
-      "category": "Instance",
+      "category": "gg Instance",
       "summary": "Cut an element with a void",
       "iconCss": "background: url('icons/geomGymRevit.png') -192px -96px",
       "helpLink": "https://grasshopperdocs.com/components/geomgymrevit/cutGeometry.html"
@@ -31891,7 +31873,7 @@
       "name": "Door",
       "id": "Door",
       "library": "GeomGym Revit",
-      "category": "Instance",
+      "category": "gg Instance",
       "summary": "Create Revit Door",
       "iconCss": "background: url('icons/geomGymRevit.png') -168px -72px",
       "helpLink": "https://grasshopperdocs.com/components/geomgymrevit/door.html"
@@ -31900,7 +31882,7 @@
       "name": "Element Attributes",
       "id": "Element Attributes",
       "library": "GeomGym Revit",
-      "category": "Instance",
+      "category": "gg Instance",
       "summary": "Create Revit Element Attributes",
       "iconCss": "background: url('icons/geomGymRevit.png') -192px -72px",
       "helpLink": "https://grasshopperdocs.com/components/geomgymrevit/elementAttributes.html"
@@ -31909,7 +31891,7 @@
       "name": "Floor",
       "id": "Floor",
       "library": "GeomGym Revit",
-      "category": "Instance",
+      "category": "gg Instance",
       "summary": "Create Revit Floor",
       "iconCss": "background: url('icons/geomGymRevit.png') -216px -72px",
       "helpLink": "https://grasshopperdocs.com/components/geomgymrevit/floor.html"
@@ -31918,7 +31900,7 @@
       "name": "Foundation",
       "id": "Foundation",
       "library": "GeomGym Revit",
-      "category": "Instance",
+      "category": "gg Instance",
       "summary": "Create Revit Foundation",
       "iconCss": "background: url('icons/geomGymRevit.png') 0px -96px",
       "helpLink": "https://grasshopperdocs.com/components/geomgymrevit/foundation.html"
@@ -31927,7 +31909,7 @@
       "name": "Framing",
       "id": "Framing",
       "library": "GeomGym Revit",
-      "category": "Instance",
+      "category": "gg Instance",
       "summary": "Create Revit Structural Framing",
       "iconCss": "background: url('icons/geomGymRevit.png') -24px -96px",
       "helpLink": "https://grasshopperdocs.com/components/geomgymrevit/framing.html"
@@ -31936,7 +31918,7 @@
       "name": "Framing Void",
       "id": "Framing Void",
       "library": "GeomGym Revit",
-      "category": "Instance",
+      "category": "gg Instance",
       "summary": "Create Void for Revit Structural Framing",
       "iconCss": "background: url('icons/geomGymRevit.png') -48px -96px",
       "helpLink": "https://grasshopperdocs.com/components/geomgymrevit/framingVoid.html"
@@ -31945,7 +31927,7 @@
       "name": "Model Curve",
       "id": "Model Curve",
       "library": "GeomGym Revit",
-      "category": "Instance",
+      "category": "gg Instance",
       "summary": "Create Model Curve",
       "iconCss": "background: url('icons/geomGymRevit.png') -96px -96px",
       "helpLink": "https://grasshopperdocs.com/components/geomgymrevit/modelCurve.html"
@@ -31954,7 +31936,7 @@
       "name": "Roof",
       "id": "Roof",
       "library": "GeomGym Revit",
-      "category": "Instance",
+      "category": "gg Instance",
       "summary": "Create Revit Roof",
       "iconCss": "background: url('icons/geomGymRevit.png') -120px -96px",
       "helpLink": "https://grasshopperdocs.com/components/geomgymrevit/roof.html"
@@ -31963,7 +31945,7 @@
       "name": "Wall",
       "id": "Wall",
       "library": "GeomGym Revit",
-      "category": "Instance",
+      "category": "gg Instance",
       "summary": "Create Revit Wall",
       "iconCss": "background: url('icons/geomGymRevit.png') -144px -96px",
       "helpLink": "https://grasshopperdocs.com/components/geomgymrevit/wall.html"
@@ -31972,7 +31954,7 @@
       "name": "Window",
       "id": "Window",
       "library": "GeomGym Revit",
-      "category": "Instance",
+      "category": "gg Instance",
       "summary": "Create Revit Window",
       "iconCss": "background: url('icons/geomGymRevit.png') -168px -96px",
       "helpLink": "https://grasshopperdocs.com/components/geomgymrevit/window.html"
@@ -31981,7 +31963,7 @@
       "name": "Angle Parameter",
       "id": "Angle Parameter",
       "library": "GeomGym Revit",
-      "category": "Parameters",
+      "category": "gg Parameters",
       "summary": "Create Revit Angle Parameter",
       "iconCss": "background: url('icons/geomGymRevit.png') -144px -48px",
       "helpLink": "https://grasshopperdocs.com/components/geomgymrevit/angleParameter.html"
@@ -31990,7 +31972,7 @@
       "name": "Area Parameter",
       "id": "Area Parameter",
       "library": "GeomGym Revit",
-      "category": "Parameters",
+      "category": "gg Parameters",
       "summary": "Create Revit Area Parameter",
       "iconCss": "background: url('icons/geomGymRevit.png') -168px -48px",
       "helpLink": "https://grasshopperdocs.com/components/geomgymrevit/areaParameter.html"
@@ -31999,7 +31981,7 @@
       "name": "Boolean Parameter",
       "id": "Boolean Parameter",
       "library": "GeomGym Revit",
-      "category": "Parameters",
+      "category": "gg Parameters",
       "summary": "Create Revit Boolean Parameter",
       "iconCss": "background: url('icons/geomGymRevit.png') -192px -48px",
       "helpLink": "https://grasshopperdocs.com/components/geomgymrevit/booleanParameter.html"
@@ -32008,7 +31990,7 @@
       "name": "Integer Parameter",
       "id": "Integer Parameter",
       "library": "GeomGym Revit",
-      "category": "Parameters",
+      "category": "gg Parameters",
       "summary": "Create Revit Integer Parameter",
       "iconCss": "background: url('icons/geomGymRevit.png') -216px -48px",
       "helpLink": "https://grasshopperdocs.com/components/geomgymrevit/integerParameter.html"
@@ -32017,7 +31999,7 @@
       "name": "Length Parameter",
       "id": "Length Parameter",
       "library": "GeomGym Revit",
-      "category": "Parameters",
+      "category": "gg Parameters",
       "summary": "Create Revit Length Parameter",
       "iconCss": "background: url('icons/geomGymRevit.png') 0px -72px",
       "helpLink": "https://grasshopperdocs.com/components/geomgymrevit/lengthParameter.html"
@@ -32026,7 +32008,7 @@
       "name": "Number Parameter",
       "id": "Number Parameter",
       "library": "GeomGym Revit",
-      "category": "Parameters",
+      "category": "gg Parameters",
       "summary": "Create Revit Number Parameter",
       "iconCss": "background: url('icons/geomGymRevit.png') -24px -72px",
       "helpLink": "https://grasshopperdocs.com/components/geomgymrevit/numberParameter.html"
@@ -32035,7 +32017,7 @@
       "name": "Text Parameter",
       "id": "Text Parameter",
       "library": "GeomGym Revit",
-      "category": "Parameters",
+      "category": "gg Parameters",
       "summary": "Create Revit Text Parameter",
       "iconCss": "background: url('icons/geomGymRevit.png') -48px -72px",
       "helpLink": "https://grasshopperdocs.com/components/geomgymrevit/textParameter.html"
@@ -32044,7 +32026,7 @@
       "name": "Volume Parameter",
       "id": "Volume Parameter",
       "library": "GeomGym Revit",
-      "category": "Parameters",
+      "category": "gg Parameters",
       "summary": "Create Revit Volume Parameter",
       "iconCss": "background: url('icons/geomGymRevit.png') -72px -72px",
       "helpLink": "https://grasshopperdocs.com/components/geomgymrevit/volumeParameter.html"
@@ -32053,7 +32035,7 @@
       "name": "Curve Analytic Member",
       "id": "Curve Analytic Member",
       "library": "GeomGym Revit",
-      "category": "StructAnalysis",
+      "category": "gg StructAnalysis",
       "summary": "Assign Structural Curve Analytic Member",
       "iconCss": "background: url('icons/geomGymRevit.png') -72px -48px",
       "helpLink": "https://grasshopperdocs.com/components/geomgymrevit/curveAnalyticMember.html"
@@ -32062,7 +32044,7 @@
       "name": "End Release",
       "id": "End Release",
       "library": "GeomGym Revit",
-      "category": "StructAnalysis",
+      "category": "gg StructAnalysis",
       "summary": "Create Revit Element End Release",
       "iconCss": "background: url('icons/geomGymRevit.png') -96px -48px",
       "helpLink": "https://grasshopperdocs.com/components/geomgymrevit/endRelease.html"
@@ -32071,7 +32053,7 @@
       "name": "Point Restraint",
       "id": "Point Restraint",
       "library": "GeomGym Revit",
-      "category": "StructAnalysis",
+      "category": "gg StructAnalysis",
       "summary": "Create Revit Point Restraint",
       "iconCss": "background: url('icons/geomGymRevit.png') -120px -48px",
       "helpLink": "https://grasshopperdocs.com/components/geomgymrevit/pointRestraint.html"
@@ -32080,7 +32062,7 @@
       "name": "Filled Region",
       "id": "Filled Region",
       "library": "GeomGym Revit",
-      "category": "View",
+      "category": "gg View",
       "summary": "Create Revit Filled Region",
       "iconCss": "background: url('icons/geomGymRevit.png') -48px -144px",
       "helpLink": "https://grasshopperdocs.com/components/geomgymrevit/filledRegion.html"
@@ -32089,7 +32071,7 @@
       "name": "Nominate Filled Region Type",
       "id": "Nominate Filled Region Type",
       "library": "GeomGym Revit",
-      "category": "View",
+      "category": "gg View",
       "summary": "Nominate Revit Filled Region Type",
       "iconCss": "background: url('icons/geomGymRevit.png') -144px -144px",
       "helpLink": "https://grasshopperdocs.com/components/geomgymrevit/nominateFilledRegionType.html"
@@ -32098,7 +32080,7 @@
       "name": "Nominate View",
       "id": "Nominate View",
       "library": "GeomGym Revit",
-      "category": "View",
+      "category": "gg View",
       "summary": "Nominate Revit View by Id",
       "iconCss": "background: url('icons/geomGymRevit.png') -168px -144px",
       "helpLink": "https://grasshopperdocs.com/components/geomgymrevit/nominateView.html"
@@ -32107,7 +32089,7 @@
       "name": "Plan View",
       "id": "Plan View",
       "library": "GeomGym Revit",
-      "category": "View",
+      "category": "gg View",
       "summary": "Create Revit Plan View",
       "iconCss": "background: url('icons/geomGymRevit.png') -72px -144px",
       "helpLink": "https://grasshopperdocs.com/components/geomgymrevit/planView.html"
@@ -32116,7 +32098,7 @@
       "name": "Sheet",
       "id": "Sheet",
       "library": "GeomGym Revit",
-      "category": "View",
+      "category": "gg View",
       "summary": "Create Revit Sheet",
       "iconCss": "background: url('icons/geomGymRevit.png') -96px -144px",
       "helpLink": "https://grasshopperdocs.com/components/geomgymrevit/sheet.html"
@@ -32125,7 +32107,7 @@
       "name": "View Port",
       "id": "View Port",
       "library": "GeomGym Revit",
-      "category": "View",
+      "category": "gg View",
       "summary": "Create Revit ViewPort",
       "iconCss": "background: url('icons/geomGymRevit.png') -120px -144px",
       "helpLink": "https://grasshopperdocs.com/components/geomgymrevit/viewPort.html"
@@ -51514,7 +51496,7 @@
       "library": "Impala",
       "category": "Benchmarking",
       "summary": "Returns the runtimes of all its inputs on any recompute.",
-      "iconCss": "background: url('icons/impala.png') -120px -72px",
+      "iconCss": "background: url('icons/impala.png') -96px -72px",
       "helpLink": "https://grasshopperdocs.com/components/impala/benchComponent.html"
     },
     {
@@ -51541,7 +51523,7 @@
       "library": "Impala",
       "category": "Containment",
       "summary": "Test whether a point is inside a closed brep.",
-      "iconCss": "background: url('icons/impala.png') 0px -24px",
+      "iconCss": "background: url('icons/impala.png') -216px 0px",
       "helpLink": "https://grasshopperdocs.com/components/impala/parMBrepInc.html"
     },
     {
@@ -51550,7 +51532,7 @@
       "library": "Impala",
       "category": "Containment",
       "summary": "Test whether a point is inside a closed mesh.",
-      "iconCss": "background: url('icons/impala.png') -96px -24px",
+      "iconCss": "background: url('icons/impala.png') -72px -24px",
       "helpLink": "https://grasshopperdocs.com/components/impala/parMeshInc.html"
     },
     {
@@ -51559,7 +51541,7 @@
       "library": "Impala",
       "category": "Containment",
       "summary": "Test whether a point is inside multiple closed meshes.",
-      "iconCss": "background: url('icons/impala.png') -144px -24px",
+      "iconCss": "background: url('icons/impala.png') -120px -24px",
       "helpLink": "https://grasshopperdocs.com/components/impala/parMMeshInc.html"
     },
     {
@@ -51568,7 +51550,7 @@
       "library": "Impala",
       "category": "Containment",
       "summary": "Test whether a point is inside a closed curve.",
-      "iconCss": "background: url('icons/impala.png') -192px -24px",
+      "iconCss": "background: url('icons/impala.png') -168px -24px",
       "helpLink": "https://grasshopperdocs.com/components/impala/parPointInCurve.html"
     },
     {
@@ -51577,7 +51559,7 @@
       "library": "Impala",
       "category": "Containment",
       "summary": "Test whether a point is inside multiple curves.",
-      "iconCss": "background: url('icons/impala.png') -216px -24px",
+      "iconCss": "background: url('icons/impala.png') -192px -24px",
       "helpLink": "https://grasshopperdocs.com/components/impala/parPointInCurves.html"
     },
     {
@@ -51586,7 +51568,7 @@
       "library": "Impala",
       "category": "Extensions",
       "summary": "Find flow lines along a mesh according to a gravitational vector",
-      "iconCss": "background: url('icons/impala.png') -72px -24px",
+      "iconCss": "background: url('icons/impala.png') -48px -24px",
       "helpLink": "https://grasshopperdocs.com/components/impala/parMeshFlow.html"
     },
     {
@@ -51595,7 +51577,7 @@
       "library": "Impala",
       "category": "Extensions",
       "summary": "Find the visual center of a closed curve.",
-      "iconCss": "background: url('icons/impala.png') -24px -48px",
+      "iconCss": "background: url('icons/impala.png') 0px -48px",
       "helpLink": "https://grasshopperdocs.com/components/impala/parVisualCenter.html"
     },
     {
@@ -51622,7 +51604,7 @@
       "library": "Impala",
       "category": "Intersection",
       "summary": "Shoot a ring of rays at a set of obstacles.",
-      "iconCss": "background: url('icons/impala.png') -192px 0px",
+      "iconCss": "background: url('icons/impala.png') -168px 0px",
       "helpLink": "https://grasshopperdocs.com/components/impala/parIsoVist2D.html"
     },
     {
@@ -51631,7 +51613,7 @@
       "library": "Impala",
       "category": "Intersection",
       "summary": "Shoot a ring of rays at a set of obstacles.",
-      "iconCss": "background: url('icons/impala.png') -216px 0px",
+      "iconCss": "background: url('icons/impala.png') -192px 0px",
       "helpLink": "https://grasshopperdocs.com/components/impala/parIsoVist3D.html"
     },
     {
@@ -51640,7 +51622,7 @@
       "library": "Impala",
       "category": "Intersection",
       "summary": "Test whether a mesh and a curve intersect.",
-      "iconCss": "background: url('icons/impala.png') -24px -24px",
+      "iconCss": "background: url('icons/impala.png') 0px -24px",
       "helpLink": "https://grasshopperdocs.com/components/impala/parMeshCurveIntersect.html"
     },
     {
@@ -51649,7 +51631,7 @@
       "library": "Impala",
       "category": "Intersection",
       "summary": "Shoot a ray at a mesh.",
-      "iconCss": "background: url('icons/impala.png') -120px -24px",
+      "iconCss": "background: url('icons/impala.png') -96px -24px",
       "helpLink": "https://grasshopperdocs.com/components/impala/parMeshRayIntersect.html"
     },
     {
@@ -51658,7 +51640,7 @@
       "library": "Impala",
       "category": "Physical",
       "summary": "Generate random points within a bounding area",
-      "iconCss": "background: url('icons/impala.png') 0px -96px",
+      "iconCss": "background: url('icons/impala.png') -216px -72px",
       "helpLink": "https://grasshopperdocs.com/components/impala/haltonSequence.html"
     },
     {
@@ -51685,7 +51667,7 @@
       "library": "Impala",
       "category": "Physical",
       "summary": "Divide a curve into segments with a preset length.",
-      "iconCss": "background: url('icons/impala.png') -168px 0px",
+      "iconCss": "background: url('icons/impala.png') -144px 0px",
       "helpLink": "https://grasshopperdocs.com/components/impala/parDivideLength.html"
     },
     {
@@ -51694,7 +51676,7 @@
       "library": "Impala",
       "category": "Physical",
       "summary": "Closest point on a mesh to a sample point",
-      "iconCss": "background: url('icons/impala.png') -48px -24px",
+      "iconCss": "background: url('icons/impala.png') -24px -24px",
       "helpLink": "https://grasshopperdocs.com/components/impala/parMeshCP.html"
     },
     {
@@ -51703,7 +51685,7 @@
       "library": "Impala",
       "category": "Physical",
       "summary": "Find the k closest points in a set to a sample point",
-      "iconCss": "background: url('icons/impala.png') -168px -24px",
+      "iconCss": "background: url('icons/impala.png') -144px -24px",
       "helpLink": "https://grasshopperdocs.com/components/impala/parPointCP.html"
     },
     {
@@ -51712,7 +51694,7 @@
       "library": "Impala",
       "category": "Physical",
       "summary": "Shatter the curve along selected parameters.",
-      "iconCss": "background: url('icons/impala.png') 0px -48px",
+      "iconCss": "background: url('icons/impala.png') -216px -24px",
       "helpLink": "https://grasshopperdocs.com/components/impala/parShatter.html"
     },
     {
@@ -51721,7 +51703,7 @@
       "library": "Impala",
       "category": "Quick",
       "summary": "Absolute value of a number.",
-      "iconCss": "background: url('icons/impala.png') -48px -48px",
+      "iconCss": "background: url('icons/impala.png') -24px -48px",
       "helpLink": "https://grasshopperdocs.com/components/impala/quickAbs.html"
     },
     {
@@ -51730,7 +51712,7 @@
       "library": "Impala",
       "category": "Quick",
       "summary": "Adds two numbers or integers together.",
-      "iconCss": "background: url('icons/impala.png') -72px -48px",
+      "iconCss": "background: url('icons/impala.png') -48px -48px",
       "helpLink": "https://grasshopperdocs.com/components/impala/quickAdd.html"
     },
     {
@@ -51739,7 +51721,7 @@
       "library": "Impala",
       "category": "Quick",
       "summary": "Checks two numbers for equality in tolerance",
-      "iconCss": "background: url('icons/impala.png') -96px -48px",
+      "iconCss": "background: url('icons/impala.png') -72px -48px",
       "helpLink": "https://grasshopperdocs.com/components/impala/quickAEQ.html"
     },
     {
@@ -51748,7 +51730,7 @@
       "library": "Impala",
       "category": "Quick",
       "summary": "Averages a list of numbers.",
-      "iconCss": "background: url('icons/impala.png') -120px -48px",
+      "iconCss": "background: url('icons/impala.png') -96px -48px",
       "helpLink": "https://grasshopperdocs.com/components/impala/quickAvg.html"
     },
     {
@@ -51757,7 +51739,7 @@
       "library": "Impala",
       "category": "Quick",
       "summary": "Gets 1D bounds for a list of numbers",
-      "iconCss": "background: url('icons/impala.png') -144px -48px",
+      "iconCss": "background: url('icons/impala.png') -120px -48px",
       "helpLink": "https://grasshopperdocs.com/components/impala/quickBounds.html"
     },
     {
@@ -51766,7 +51748,7 @@
       "library": "Impala",
       "category": "Quick",
       "summary": "Divides two numbers or integers.",
-      "iconCss": "background: url('icons/impala.png') -168px -48px",
+      "iconCss": "background: url('icons/impala.png') -144px -48px",
       "helpLink": "https://grasshopperdocs.com/components/impala/quickDivide.html"
     },
     {
@@ -51775,7 +51757,7 @@
       "library": "Impala",
       "category": "Quick",
       "summary": "Checks two numbers for equality",
-      "iconCss": "background: url('icons/impala.png') -192px -48px",
+      "iconCss": "background: url('icons/impala.png') -168px -48px",
       "helpLink": "https://grasshopperdocs.com/components/impala/quickEq.html"
     },
     {
@@ -51784,7 +51766,7 @@
       "library": "Impala",
       "category": "Quick",
       "summary": "Test two numbers within a tolerance",
-      "iconCss": "background: url('icons/impala.png') -216px -48px",
+      "iconCss": "background: url('icons/impala.png') -192px -48px",
       "helpLink": "https://grasshopperdocs.com/components/impala/quickGT.html"
     },
     {
@@ -51793,7 +51775,7 @@
       "library": "Impala",
       "category": "Quick",
       "summary": "Tests two numbers within a tolerance",
-      "iconCss": "background: url('icons/impala.png') 0px -72px",
+      "iconCss": "background: url('icons/impala.png') -216px -48px",
       "helpLink": "https://grasshopperdocs.com/components/impala/quickLT.html"
     },
     {
@@ -51802,7 +51784,7 @@
       "library": "Impala",
       "category": "Quick",
       "summary": "Modulus of two numbers",
-      "iconCss": "background: url('icons/impala.png') -24px -72px",
+      "iconCss": "background: url('icons/impala.png') 0px -72px",
       "helpLink": "https://grasshopperdocs.com/components/impala/quickMod.html"
     },
     {
@@ -51811,7 +51793,7 @@
       "library": "Impala",
       "category": "Quick",
       "summary": "Multiplies two numbers or integers together.",
-      "iconCss": "background: url('icons/impala.png') -48px -72px",
+      "iconCss": "background: url('icons/impala.png') -24px -72px",
       "helpLink": "https://grasshopperdocs.com/components/impala/quickMultiply.html"
     },
     {
@@ -51820,7 +51802,7 @@
       "library": "Impala",
       "category": "Quick",
       "summary": "Negative of a number",
-      "iconCss": "background: url('icons/impala.png') -72px -72px",
+      "iconCss": "background: url('icons/impala.png') -48px -72px",
       "helpLink": "https://grasshopperdocs.com/components/impala/quickNeg.html"
     },
     {
@@ -51829,7 +51811,7 @@
       "library": "Impala",
       "category": "Quick",
       "summary": "Subtract two numbers or integers.",
-      "iconCss": "background: url('icons/impala.png') -96px -72px",
+      "iconCss": "background: url('icons/impala.png') -72px -72px",
       "helpLink": "https://grasshopperdocs.com/components/impala/quickSubtract.html"
     },
     {
@@ -51838,7 +51820,7 @@
       "library": "Impala",
       "category": "Quick",
       "summary": "Add two points or vectors.",
-      "iconCss": "background: url('icons/impala.png') -168px -72px",
+      "iconCss": "background: url('icons/impala.png') -144px -72px",
       "helpLink": "https://grasshopperdocs.com/components/impala/vecAdd.html"
     },
     {
@@ -51847,7 +51829,7 @@
       "library": "Impala",
       "category": "Quick",
       "summary": "Subtract two points or vectors.",
-      "iconCss": "background: url('icons/impala.png') -216px -72px",
+      "iconCss": "background: url('icons/impala.png') -192px -72px",
       "helpLink": "https://grasshopperdocs.com/components/impala/vecSubtract.html"
     },
     {
@@ -51856,7 +51838,7 @@
       "library": "Impala",
       "category": "Quick",
       "summary": "Averages a list of vectors of points.",
-      "iconCss": "background: url('icons/impala.png') -144px -72px",
+      "iconCss": "background: url('icons/impala.png') -120px -72px",
       "helpLink": "https://grasshopperdocs.com/components/impala/vectorAvg.html"
     },
     {
@@ -51865,7 +51847,7 @@
       "library": "Impala",
       "category": "Quick",
       "summary": "Gets 2D bounds for a list of Points or Vectors",
-      "iconCss": "background: url('icons/impala.png') -192px -72px",
+      "iconCss": "background: url('icons/impala.png') -168px -72px",
       "helpLink": "https://grasshopperdocs.com/components/impala/vectorBounds.html"
     },
     {
@@ -51874,7 +51856,7 @@
       "library": "Impala",
       "category": "Test",
       "summary": "Impala Generic testing",
-      "iconCss": "background: url('icons/impala.png') -144px 0px",
+      "iconCss": "background: url('icons/impala.png') 0px -96px",
       "helpLink": "https://grasshopperdocs.com/components/impala/parallelDiv.html"
     },
     {
@@ -77204,7 +77186,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "00_Conversion",
       "summary": "converse closed polylines to a QMesh",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -168px -264px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -96px -264px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/fromCurves.html"
     },
     {
@@ -77213,7 +77195,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "00_Conversion",
       "summary": "Converts a 'Vertex-Vertex' OR 'Face-Vertex'-Connection-table to a QMesh-Topology",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -144px -264px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -72px -264px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/fromDataTree.html"
     },
     {
@@ -77222,7 +77204,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "00_Conversion",
       "summary": "converse lines to a QMesh",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -24px -264px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -192px -240px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/fromLines.html"
     },
     {
@@ -77231,7 +77213,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "00_Conversion",
       "summary": "converse a obj-string to a QMesh",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -96px -264px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -24px -264px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/fromObj.html"
     },
     {
@@ -77240,7 +77222,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "00_Conversion",
       "summary": "converse a QMesh to closed polylines",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -72px -264px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') 0px -264px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/toCurves.html"
     },
     {
@@ -77249,7 +77231,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "00_Conversion",
       "summary": "Converts a QMesh-Topology to a 'Vertex-Vertex' OR 'Face-Vertex'-Connection-table",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -48px -264px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -216px -240px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/toDataTree.html"
     },
     {
@@ -77258,7 +77240,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "00_Conversion",
       "summary": "Converts the QMesh-Topology to a 'Matrix'",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -192px -264px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -120px -264px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/toMatrix.html"
     },
     {
@@ -77267,7 +77249,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "00_Conversion",
       "summary": "converse a mesh to a obj-string",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -120px -264px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -48px -264px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/toObj.html"
     },
     {
@@ -77276,7 +77258,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "01_Parameter",
       "summary": "matrix holding Paths to each other nodes",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -48px -192px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') 0px -192px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/allPairsPath.html"
     },
     {
@@ -77285,7 +77267,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "01_Parameter",
       "summary": "Compose a QuadElement of primitiv data",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') 0px -192px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -192px -168px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/composeElement.html"
     },
     {
@@ -77294,7 +77276,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "01_Parameter",
       "summary": "deCompose a QuadElement to primitiv data",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -96px -168px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -48px -168px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/deComposeElement.html"
     },
     {
@@ -77303,7 +77285,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "01_Parameter",
       "summary": "An expression against an edge",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -216px -168px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -168px -168px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/edgeExpression.html"
     },
     {
@@ -77312,7 +77294,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "01_Parameter",
       "summary": "either a node OR an edge, described by primitiv data",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -120px -168px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -72px -168px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/element.html"
     },
     {
@@ -77321,7 +77303,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "01_Parameter",
       "summary": "primitiv data to set the dicitionary of the element",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -48px -168px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') 0px -168px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/elementkeyvalue.html"
     },
     {
@@ -77330,7 +77312,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "01_Parameter",
       "summary": "agent for path-algorithm",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -192px -168px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -144px -168px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/environment.html"
     },
     {
@@ -77339,7 +77321,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "01_Parameter",
       "summary": "An heuristik-expression against a node",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -72px -168px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -24px -168px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/heuristikExpression.html"
     },
     {
@@ -77348,7 +77330,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "01_Parameter",
       "summary": "An expression against a node",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -168px -168px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -120px -168px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/nodeExpression.html"
     },
     {
@@ -77357,7 +77339,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "01_Parameter",
       "summary": "n-gonal mesh composed by QuadEdgeDataStructure",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -24px -192px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -216px -168px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/qMesh.html"
     },
     {
@@ -77366,7 +77348,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "01_Parameter",
       "summary": "A path from a single source",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -144px -168px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -96px -168px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/singleSourcePath.html"
     },
     {
@@ -77509,7 +77491,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "03_Topology",
       "summary": "Approximates the given QMesh",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -96px -72px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -72px -72px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/approximate.html"
     },
     {
@@ -77518,7 +77500,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "03_Topology",
       "summary": "Collapse edges",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -192px -48px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -168px -48px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/collapseEdge.html"
     },
     {
@@ -77527,7 +77509,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "03_Topology",
       "summary": "",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -24px -72px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') 0px -72px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/decomposeTopologyChanged.html"
     },
     {
@@ -77536,7 +77518,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "03_Topology",
       "summary": "Swaps the dimension of the QMesh (Dual-Mesh)",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -24px -96px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -216px -72px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/dualSwap.html"
     },
     {
@@ -77545,7 +77527,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "03_Topology",
       "summary": "Extrude the given QMesh",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -192px -72px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -168px -72px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/extrude.html"
     },
     {
@@ -77563,7 +77545,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "03_Topology",
       "summary": "Frame faces",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -48px -48px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -24px -48px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/frame.html"
     },
     {
@@ -77572,7 +77554,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "03_Topology",
       "summary": "",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') 0px -48px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -216px -24px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/getTopologyChangedResult.html"
     },
     {
@@ -77581,7 +77563,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "03_Topology",
       "summary": "",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -216px -24px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -192px -24px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/makeEdge.html"
     },
     {
@@ -77590,7 +77572,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "03_Topology",
       "summary": "",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -144px -48px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -120px -48px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/makeEdgeMaster.html"
     },
     {
@@ -77599,7 +77581,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "03_Topology",
       "summary": "",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') 0px -72px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -216px -48px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/makeEdgeMasterSlave.html"
     },
     {
@@ -77609,7 +77591,7 @@
       "category": "03_Topology",
       "summary": "Creates a open Polyline hanging on QEdge given as world.<br>",
       "description": "Creates a open Polyline hanging on QEdge given as world.<br> (Note: primal only)",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -48px -72px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -24px -72px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/makePolyEdgeMaster.html"
     },
     {
@@ -77619,7 +77601,7 @@
       "category": "03_Topology",
       "summary": "Creates a Polyline hanging on the QEdges given as A and B.<br>",
       "description": "Creates a Polyline hanging on the QEdges given as A and B.<br> (Note: primal only)",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -168px -48px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -144px -48px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/makePolyEdgeMasterSlave.html"
     },
     {
@@ -77628,7 +77610,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "03_Topology",
       "summary": "",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -216px -48px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -192px -48px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/qDisjoint.html"
     },
     {
@@ -77637,7 +77619,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "03_Topology",
       "summary": "Dependices of a QEdge",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -72px -48px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -48px -48px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/qEdge.html"
     },
     {
@@ -77646,7 +77628,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "03_Topology",
       "summary": "",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -96px -48px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -72px -48px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/qJoin.html"
     },
     {
@@ -77655,7 +77637,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "03_Topology",
       "summary": "infos about the mesh",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -168px -72px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -144px -72px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/qMeshInfo.html"
     },
     {
@@ -77673,7 +77655,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "03_Topology",
       "summary": "Remove edges",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -24px -48px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') 0px -48px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/removeEdge.html"
     },
     {
@@ -77682,17 +77664,8 @@
       "library": "QuadEdgeDataStructure",
       "category": "03_Topology",
       "summary": "Remove all leafs",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -120px -48px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -96px -48px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/removeLeafs.html"
-    },
-    {
-      "name": "Shift Edge",
-      "id": "shift",
-      "library": "QuadEdgeDataStructure",
-      "category": "03_Topology",
-      "summary": "shift edges",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') 0px -96px",
-      "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/shiftEdge.html"
     },
     {
       "name": "Splice",
@@ -77710,7 +77683,7 @@
       "category": "03_Topology",
       "summary": "Split given Edge and insert 'n' Nodes/Edges<br>Added/Removed:<br> + 'n' quads of Edges<br> + 'n' primal Nodes<br>",
       "description": "Split given Edge and insert 'n' Nodes/Edges<br>Added/Removed:<br> + 'n' quads of Edges<br> + 'n' primal Nodes<br>(Note: primal only)",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -216px -72px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -192px -72px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/splitEdge.html"
     },
     {
@@ -77719,7 +77692,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "03_Topology",
       "summary": "Split master slave",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -120px -72px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -96px -72px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/splitNode.html"
     },
     {
@@ -77728,17 +77701,8 @@
       "library": "QuadEdgeDataStructure",
       "category": "03_Topology",
       "summary": "Subdivides the given QMesh",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -144px -72px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -120px -72px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/subdivide.html"
-    },
-    {
-      "name": "Tessellation",
-      "id": "QTess",
-      "library": "QuadEdgeDataStructure",
-      "category": "03_Topology",
-      "summary": "Tessellate a QMesh with triangles from nearly same edge-length",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -192px -24px",
-      "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/tessellation.html"
     },
     {
       "name": "Triangulate",
@@ -77746,7 +77710,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "03_Topology",
       "summary": "Triangulate the given QMesh",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -72px -72px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -48px -72px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/triangulate.html"
     },
     {
@@ -77764,7 +77728,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "04_Data",
       "summary": "Clear all Data",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -216px -216px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -144px -216px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/clearData.html"
     },
     {
@@ -77773,17 +77737,8 @@
       "library": "QuadEdgeDataStructure",
       "category": "04_Data",
       "summary": "compose a setter",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -24px -240px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -192px -216px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/composeSetter.html"
-    },
-    {
-      "name": "Naked-Edges",
-      "id": "QNkE",
-      "library": "QuadEdgeDataStructure",
-      "category": "04_Data",
-      "summary": "World-Modifier",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -168px -216px",
-      "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/nakedEdges.html"
     },
     {
       "name": "QEdge Value",
@@ -77791,7 +77746,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "04_Data",
       "summary": "Value of a QEdge",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -48px -240px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -216px -216px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/qEdgeValue.html"
     },
     {
@@ -77800,7 +77755,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "04_Data",
       "summary": "Value of a QNode",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') 0px -240px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -168px -216px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/qNodeValue.html"
     },
     {
@@ -77809,7 +77764,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "04_Data",
       "summary": "Set Data",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -192px -216px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -120px -216px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/setData.html"
     },
     {
@@ -77818,7 +77773,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "04_Data",
       "summary": "clear all worldness",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -120px -216px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -72px -216px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/worldClear.html"
     },
     {
@@ -77827,7 +77782,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "04_Data",
       "summary": "World-Modifier",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -144px -216px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -96px -216px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/worldGetter.html"
     },
     {
@@ -77836,7 +77791,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "04_Data",
       "summary": "World-Modifier",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -72px -240px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') 0px -240px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/worldSetter.html"
     },
     {
@@ -77845,7 +77800,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "05_Euclidean",
       "summary": "Get Location",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') 0px -264px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -168px -240px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/getLocation.html"
     },
     {
@@ -77854,7 +77809,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "05_Euclidean",
       "summary": "Get vector-data <br> Node => Location/Normal <br> Edge => OriginLocation/Vector",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -192px -240px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -120px -240px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/getVectorData.html"
     },
     {
@@ -77863,7 +77818,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "05_Euclidean",
       "summary": "Checks if a node is planar",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -120px -240px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -48px -240px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/isPlanar.html"
     },
     {
@@ -77872,7 +77827,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "05_Euclidean",
       "summary": "Set Location",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -168px -240px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -96px -240px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/setLocation.html"
     },
     {
@@ -77881,7 +77836,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "05_Euclidean",
       "summary": "Smooth the mesh displacing vertices",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -96px -240px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -24px -240px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/smoothing.html"
     },
     {
@@ -77890,7 +77845,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "05_Euclidean",
       "summary": "Transform an element",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -216px -240px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -144px -240px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/transformElement.html"
     },
     {
@@ -77899,7 +77854,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "05_Euclidean",
       "summary": "Transform a Mesh with a field",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -144px -240px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -72px -240px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/transformWithField.html"
     },
     {
@@ -77908,7 +77863,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "06_Analysis",
       "summary": "All pairs path",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -168px -144px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -120px -144px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/allPairPath.html"
     },
     {
@@ -77917,7 +77872,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "06_Analysis",
       "summary": "All pairs path get",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -168px -96px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -120px -96px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/allPairPathGetPath.html"
     },
     {
@@ -77926,7 +77881,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "06_Analysis",
       "summary": "Centrality from all-pairs-path",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -96px -96px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -48px -96px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/centrality.html"
     },
     {
@@ -77935,7 +77890,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "06_Analysis",
       "summary": "assigns 'colors' to nodes according to the neighbourhood",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') 0px -168px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -192px -144px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/coloring.html"
     },
     {
@@ -77944,7 +77899,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "06_Analysis",
       "summary": "",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -120px -96px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -72px -96px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/composeAgent.html"
     },
     {
@@ -77953,7 +77908,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "06_Analysis",
       "summary": "",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -144px -120px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -96px -120px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/composeAgentOLD.html"
     },
     {
@@ -77962,7 +77917,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "06_Analysis",
       "summary": "",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -216px -144px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -168px -144px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/composeFieldEnvironment.html"
     },
     {
@@ -77971,7 +77926,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "06_Analysis",
       "summary": "",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -96px -144px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -48px -144px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/composeFunEnvironment.html"
     },
     {
@@ -77980,7 +77935,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "06_Analysis",
       "summary": "",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -72px -96px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -24px -96px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/composeIsovistEnvironment.html"
     },
     {
@@ -77989,7 +77944,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "06_Analysis",
       "summary": "",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -48px -120px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') 0px -120px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/composePointVisibilityEnvironment.html"
     },
     {
@@ -77998,7 +77953,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "06_Analysis",
       "summary": "",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -216px -96px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -168px -96px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/composeTensorAgent.html"
     },
     {
@@ -78007,7 +77962,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "06_Analysis",
       "summary": "",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -72px -120px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -24px -120px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/composeTensorFieldEnvironment.html"
     },
     {
@@ -78016,7 +77971,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "06_Analysis",
       "summary": "",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -48px -96px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') 0px -96px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/decomposeAgent.html"
     },
     {
@@ -78025,7 +77980,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "06_Analysis",
       "summary": "",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -168px -120px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -120px -120px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/decomposeEnvironment.html"
     },
     {
@@ -78034,7 +77989,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "06_Analysis",
       "summary": "",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -144px -96px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -96px -96px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/findCycles.html"
     },
     {
@@ -78043,7 +77998,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "06_Analysis",
       "summary": "FirstSearch-Algorithm to solve Connectivity-Problems",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -72px -144px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -24px -144px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/firstSearch.html"
     },
     {
@@ -78052,7 +78007,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "06_Analysis",
       "summary": "",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -120px -144px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -72px -144px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/groupAgent.html"
     },
     {
@@ -78061,7 +78016,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "06_Analysis",
       "summary": "maximal flow from source to target (Preflow-Push)",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -24px -120px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -216px -96px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/maxFlow.html"
     },
     {
@@ -78070,7 +78025,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "06_Analysis",
       "summary": "",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -24px -168px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -216px -144px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/mergeEnvironments.html"
     },
     {
@@ -78079,7 +78034,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "06_Analysis",
       "summary": "Algorithm to solve Path-Problems",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -192px -120px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -144px -120px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/pathAgentSearch.html"
     },
     {
@@ -78088,7 +78043,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "06_Analysis",
       "summary": "",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') 0px -120px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -192px -96px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/salesmanPath.html"
     },
     {
@@ -78097,7 +78052,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "06_Analysis",
       "summary": "Decompose a SingleSourcePath",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -48px -144px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') 0px -144px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/singleSourcePathDecompose.html"
     },
     {
@@ -78106,7 +78061,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "06_Analysis",
       "summary": "Set the goal of a SingleSourcePath",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -120px -120px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -72px -120px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/singleSourcePathSetGoal.html"
     },
     {
@@ -78115,7 +78070,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "06_Analysis",
       "summary": "",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -96px -120px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -48px -120px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/singleSourcePathTrough.html"
     },
     {
@@ -78124,7 +78079,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "06_Analysis",
       "summary": "Source-Goal-Algorithm to solve Path-Problems",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') 0px -144px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -192px -120px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/sourceGoalPath.html"
     },
     {
@@ -78133,7 +78088,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "06_Analysis",
       "summary": "Source-Algorithm to solve Path-Problems",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -24px -144px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -216px -120px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/sourcePath.html"
     },
     {
@@ -78142,7 +78097,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "06_Analysis",
       "summary": "SpanningForest for given mesh",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -216px -120px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -168px -120px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/spanningForest.html"
     },
     {
@@ -78151,7 +78106,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "06_Analysis",
       "summary": "SpanningTree for given mesh",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -192px -144px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -144px -144px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/spanningTree.html"
     },
     {
@@ -78160,7 +78115,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "06_Analysis",
       "summary": "",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -192px -96px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -144px -96px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/stronglyConnected.html"
     },
     {
@@ -78169,7 +78124,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "06_Analysis",
       "summary": "",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -144px -144px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -96px -144px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/unGroupAgent.html"
     },
     {
@@ -78178,7 +78133,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "07_Preview",
       "summary": "extended preview for a QEdge",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -120px -192px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -72px -192px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/qEdgePreview.html"
     },
     {
@@ -78187,7 +78142,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "07_Preview",
       "summary": "extended preview for a QMesh",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -72px -192px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -24px -192px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/qMeshPreview.html"
     },
     {
@@ -78196,7 +78151,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "07_Preview",
       "summary": "extended preview for a QNode",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -96px -192px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -48px -192px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/qNodePreview.html"
     },
     {
@@ -78205,7 +78160,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "07_Preview",
       "summary": "",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -144px -192px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -96px -192px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/selectableEdges.html"
     },
     {
@@ -78214,7 +78169,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "07_Preview",
       "summary": "",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -168px -192px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -120px -192px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/selectableNodes.html"
     },
     {
@@ -78223,7 +78178,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "08_Util",
       "summary": "Element-List* to Edge-List",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') 0px -216px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -192px -192px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/element2EdgeList.html"
     },
     {
@@ -78232,7 +78187,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "08_Util",
       "summary": "",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -216px -192px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -168px -192px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/firstPerQuad.html"
     },
     {
@@ -78241,7 +78196,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "08_Util",
       "summary": "",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -24px -216px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -216px -192px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/groupNodes.html"
     },
     {
@@ -78250,7 +78205,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "08_Util",
       "summary": "",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -192px -192px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -144px -192px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/qDispatch.html"
     },
     {
@@ -78259,7 +78214,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "08_Util",
       "summary": "",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -48px -216px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') 0px -216px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/qEqual.html"
     },
     {
@@ -78268,7 +78223,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "08_Util",
       "summary": "",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -72px -216px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -24px -216px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/qSet.html"
     },
     {
@@ -78277,7 +78232,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "08_Util",
       "summary": "Reindex all elements in the mesh",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -96px -216px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -48px -216px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/reindex.html"
     },
     {
@@ -78286,7 +78241,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "09_Geometry",
       "summary": "Try to intersect and insert a Curve",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -24px -288px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -192px -264px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/intersectCurve.html"
     },
     {
@@ -78295,7 +78250,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "09_Geometry",
       "summary": "Try to intersect and insert a Point-Chain",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') 0px -288px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -168px -264px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/intersectPointChain.html"
     },
     {
@@ -78304,7 +78259,7 @@
       "library": "QuadEdgeDataStructure",
       "category": "10_Fabrication",
       "summary": "",
-      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -216px -264px",
+      "iconCss": "background: url('icons/quadEdgeDataStructure.png') -144px -264px",
       "helpLink": "https://grasshopperdocs.com/components/quadedgedatastructure/unroll.html"
     },
     {
@@ -81752,15 +81707,6 @@
       "summary": "Save a selection of nodes as a named node set",
       "iconCss": "background: url('icons/salamander.png') -192px -144px",
       "helpLink": "https://grasshopperdocs.com/components/salamander/saveNodeSelection.html"
-    },
-    {
-      "name": "Geometric Properties",
-      "id": "Geo",
-      "library": "Salamander",
-      "category": "Test",
-      "summary": "Calculate the geometric properties of a profile",
-      "iconCss": "background: url('icons/salamander.png') -24px -168px",
-      "helpLink": "https://grasshopperdocs.com/components/salamander/geometricProperties.html"
     },
     {
       "name": "Brep Topology Edge",
